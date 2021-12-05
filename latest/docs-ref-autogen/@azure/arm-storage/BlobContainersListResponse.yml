@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: BlobContainersListResponse
+uid: '@azure/arm-storage.BlobContainersListResponse'
+package: '@azure/arm-storage'
+summary: Contains response data for the list operation.
+fullName: BlobContainersListResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type BlobContainersListResponse = ListContainerItems & { _response:
+  HttpResponse & { bodyAsText: string, parsedBody: ListContainerItems } }

@@ -1,0 +1,14 @@
+### YamlMime:TSTypeAlias
+name: BlobContainersDeleteImmutabilityPolicyResponse
+uid: '@azure/arm-storage.BlobContainersDeleteImmutabilityPolicyResponse'
+package: '@azure/arm-storage'
+summary: Contains response data for the deleteImmutabilityPolicy operation.
+fullName: BlobContainersDeleteImmutabilityPolicyResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type BlobContainersDeleteImmutabilityPolicyResponse = ImmutabilityPolicy &
+  BlobContainersDeleteImmutabilityPolicyHeaders & { _response: HttpResponse & {
+  bodyAsText: string, parsedBody: ImmutabilityPolicy, parsedHeaders:
+  BlobContainersDeleteImmutabilityPolicyHeaders } }

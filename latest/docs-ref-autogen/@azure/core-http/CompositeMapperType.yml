@@ -1,0 +1,89 @@
+### YamlMime:TSType
+name: CompositeMapperType
+uid: '@azure/core-http.CompositeMapperType'
+package: '@azure/core-http'
+summary: ''
+fullName: CompositeMapperType
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: additionalProperties
+    uid: '@azure/core-http.CompositeMapperType.additionalProperties'
+    package: '@azure/core-http'
+    summary: ''
+    fullName: additionalProperties
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'additionalProperties?: Mapper'
+      return:
+        description: ''
+        type: <xref uid="@azure/core-http.Mapper" />
+  - name: className
+    uid: '@azure/core-http.CompositeMapperType.className'
+    package: '@azure/core-http'
+    summary: ''
+    fullName: className
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'className?: string'
+      return:
+        description: ''
+        type: string
+  - name: modelProperties
+    uid: '@azure/core-http.CompositeMapperType.modelProperties'
+    package: '@azure/core-http'
+    summary: ''
+    fullName: modelProperties
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'modelProperties?: [key: string]: Mapper'
+      return:
+        description: ''
+        type: '[key: string]\: <xref uid="@azure/core-http.Mapper" />'
+  - name: name
+    uid: '@azure/core-http.CompositeMapperType.name'
+    package: '@azure/core-http'
+    summary: ''
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: "Composite"'
+      return:
+        description: ''
+        type: '"Composite"'
+  - name: polymorphicDiscriminator
+    uid: '@azure/core-http.CompositeMapperType.polymorphicDiscriminator'
+    package: '@azure/core-http'
+    summary: ''
+    fullName: polymorphicDiscriminator
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'polymorphicDiscriminator?: PolymorphicDiscriminator'
+      return:
+        description: ''
+        type: <xref uid="@azure/core-http.PolymorphicDiscriminator" />
+  - name: uberParent
+    uid: '@azure/core-http.CompositeMapperType.uberParent'
+    package: '@azure/core-http'
+    summary: ''
+    fullName: uberParent
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'uberParent?: string'
+      return:
+        description: ''
+        type: string

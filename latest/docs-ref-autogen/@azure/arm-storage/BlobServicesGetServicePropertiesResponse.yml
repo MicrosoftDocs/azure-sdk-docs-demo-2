@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: BlobServicesGetServicePropertiesResponse
+uid: '@azure/arm-storage.BlobServicesGetServicePropertiesResponse'
+package: '@azure/arm-storage'
+summary: Contains response data for the getServiceProperties operation.
+fullName: BlobServicesGetServicePropertiesResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type BlobServicesGetServicePropertiesResponse = BlobServiceProperties & {
+  _response: HttpResponse & { bodyAsText: string, parsedBody:
+  BlobServiceProperties } }

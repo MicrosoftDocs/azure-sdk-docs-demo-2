@@ -1,0 +1,523 @@
+### YamlMime:TSType
+name: StorageManagementClient
+uid: '@azure/arm-storage.StorageManagementClient'
+package: '@azure/arm-storage'
+summary: ''
+fullName: StorageManagementClient
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: >-
+      StorageManagementClient(ServiceClientCredentials | TokenCredential,
+      string, Models.StorageManagementClientOptions)
+    uid: '@azure/arm-storage.StorageManagementClient.constructor'
+    package: '@azure/arm-storage'
+    summary: Initializes a new instance of the StorageManagementClient class.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        new StorageManagementClient(credentials: ServiceClientCredentials |
+        TokenCredential, subscriptionId: string, options?:
+        Models.StorageManagementClientOptions)
+      parameters:
+        - id: credentials
+          type: ServiceClientCredentials | TokenCredential
+          description: >-
+            Credentials needed for the client to connect to Azure. Credentials
+
+            implementing the TokenCredential interface from the @azure/identity
+            package are recommended. For
+
+            more information about these credentials, see
+
+            https://www.npmjs.com/package/@azure/identity. Credentials
+            implementing the
+
+            ServiceClientCredentials interface from the older packages
+            @azure/ms-rest-nodeauth and
+        - id: subscriptionId
+          type: string
+          description: The ID of the target subscription.
+        - id: options
+          type: <xref uid="Models.StorageManagementClientOptions" />
+          description: ''
+properties:
+  - name: acceptLanguage
+    uid: '@azure/arm-storage.StorageManagementClient.acceptLanguage'
+    package: '@azure/arm-storage'
+    summary: ''
+    fullName: acceptLanguage
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'acceptLanguage: string'
+      return:
+        description: ''
+        type: string
+  - name: apiVersion
+    uid: '@azure/arm-storage.StorageManagementClient.apiVersion'
+    package: '@azure/arm-storage'
+    summary: ''
+    fullName: apiVersion
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'apiVersion?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: blobContainers
+    uid: '@azure/arm-storage.StorageManagementClient.blobContainers'
+    package: '@azure/arm-storage'
+    summary: ''
+    fullName: blobContainers
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'blobContainers: BlobContainers'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-storage.BlobContainers" />
+  - name: blobInventoryPolicies
+    uid: '@azure/arm-storage.StorageManagementClient.blobInventoryPolicies'
+    package: '@azure/arm-storage'
+    summary: ''
+    fullName: blobInventoryPolicies
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'blobInventoryPolicies: BlobInventoryPolicies'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-storage.BlobInventoryPolicies" />
+  - name: blobServices
+    uid: '@azure/arm-storage.StorageManagementClient.blobServices'
+    package: '@azure/arm-storage'
+    summary: ''
+    fullName: blobServices
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'blobServices: BlobServices'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-storage.BlobServices" />
+  - name: credentials
+    uid: '@azure/arm-storage.StorageManagementClient.credentials'
+    package: '@azure/arm-storage'
+    summary: ''
+    fullName: credentials
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'credentials: ServiceClientCredentials | TokenCredential'
+      return:
+        description: ''
+        type: ServiceClientCredentials | TokenCredential
+  - name: deletedAccounts
+    uid: '@azure/arm-storage.StorageManagementClient.deletedAccounts'
+    package: '@azure/arm-storage'
+    summary: ''
+    fullName: deletedAccounts
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'deletedAccounts: DeletedAccounts'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-storage.DeletedAccounts" />
+  - name: encryptionScopes
+    uid: '@azure/arm-storage.StorageManagementClient.encryptionScopes'
+    package: '@azure/arm-storage'
+    summary: ''
+    fullName: encryptionScopes
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'encryptionScopes: EncryptionScopes'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-storage.EncryptionScopes" />
+  - name: fileServices
+    uid: '@azure/arm-storage.StorageManagementClient.fileServices'
+    package: '@azure/arm-storage'
+    summary: ''
+    fullName: fileServices
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'fileServices: FileServices'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-storage.FileServices" />
+  - name: fileShares
+    uid: '@azure/arm-storage.StorageManagementClient.fileShares'
+    package: '@azure/arm-storage'
+    summary: ''
+    fullName: fileShares
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'fileShares: FileShares'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-storage.FileShares" />
+  - name: longRunningOperationRetryTimeout
+    uid: >-
+      @azure/arm-storage.StorageManagementClient.longRunningOperationRetryTimeout
+    package: '@azure/arm-storage'
+    summary: >-
+      The retry timeout in seconds for Long Running Operations. Default value is
+      30.
+    fullName: longRunningOperationRetryTimeout
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'longRunningOperationRetryTimeout?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: managementPolicies
+    uid: '@azure/arm-storage.StorageManagementClient.managementPolicies'
+    package: '@azure/arm-storage'
+    summary: ''
+    fullName: managementPolicies
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'managementPolicies: ManagementPolicies'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-storage.ManagementPolicies" />
+  - name: objectReplicationPolicies
+    uid: '@azure/arm-storage.StorageManagementClient.objectReplicationPolicies'
+    package: '@azure/arm-storage'
+    summary: ''
+    fullName: objectReplicationPolicies
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'objectReplicationPolicies: ObjectReplicationPoliciesOperations'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-storage.ObjectReplicationPoliciesOperations" />
+  - name: operations
+    uid: '@azure/arm-storage.StorageManagementClient.operations'
+    package: '@azure/arm-storage'
+    summary: ''
+    fullName: operations
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'operations: Operations'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-storage.Operations" />
+  - name: privateEndpointConnections
+    uid: '@azure/arm-storage.StorageManagementClient.privateEndpointConnections'
+    package: '@azure/arm-storage'
+    summary: ''
+    fullName: privateEndpointConnections
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'privateEndpointConnections: PrivateEndpointConnections'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-storage.PrivateEndpointConnections" />
+  - name: privateLinkResources
+    uid: '@azure/arm-storage.StorageManagementClient.privateLinkResources'
+    package: '@azure/arm-storage'
+    summary: ''
+    fullName: privateLinkResources
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'privateLinkResources: PrivateLinkResources'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-storage.PrivateLinkResources" />
+  - name: queue
+    uid: '@azure/arm-storage.StorageManagementClient.queue'
+    package: '@azure/arm-storage'
+    summary: ''
+    fullName: queue
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'queue: Queue'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-storage.Queue" />
+  - name: queueServices
+    uid: '@azure/arm-storage.StorageManagementClient.queueServices'
+    package: '@azure/arm-storage'
+    summary: ''
+    fullName: queueServices
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'queueServices: QueueServices'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-storage.QueueServices" />
+  - name: skus
+    uid: '@azure/arm-storage.StorageManagementClient.skus'
+    package: '@azure/arm-storage'
+    summary: ''
+    fullName: skus
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'skus: Skus'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-storage.Skus" />
+  - name: storageAccounts
+    uid: '@azure/arm-storage.StorageManagementClient.storageAccounts'
+    package: '@azure/arm-storage'
+    summary: ''
+    fullName: storageAccounts
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'storageAccounts: StorageAccounts'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-storage.StorageAccounts" />
+  - name: subscriptionId
+    uid: '@azure/arm-storage.StorageManagementClient.subscriptionId'
+    package: '@azure/arm-storage'
+    summary: ''
+    fullName: subscriptionId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'subscriptionId: string'
+      return:
+        description: ''
+        type: string
+  - name: table
+    uid: '@azure/arm-storage.StorageManagementClient.table'
+    package: '@azure/arm-storage'
+    summary: ''
+    fullName: table
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'table: TableOperations'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-storage.TableOperations" />
+  - name: tableServices
+    uid: '@azure/arm-storage.StorageManagementClient.tableServices'
+    package: '@azure/arm-storage'
+    summary: ''
+    fullName: tableServices
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tableServices: TableServices'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-storage.TableServices" />
+  - name: usages
+    uid: '@azure/arm-storage.StorageManagementClient.usages'
+    package: '@azure/arm-storage'
+    summary: ''
+    fullName: usages
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'usages: Usages'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-storage.Usages" />
+methods:
+  - name: >-
+      beginLongRunningRequest(RequestPrepareOptions | WebResource,
+      RequestOptionsBase)
+    uid: '@azure/arm-storage.StorageManagementClient.beginLongRunningRequest'
+    package: '@azure/arm-storage'
+    summary: >-
+      Send the initial request of a LRO (long running operation) and get back an
+
+      HttpLongRunningOperationResponse that provides methods for polling the LRO
+      and checking if the
+
+      LRO is finished.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginLongRunningRequest(request: RequestPrepareOptions |
+        WebResource, options?: RequestOptionsBase): Promise<LROPoller>
+      parameters:
+        - id: request
+          type: RequestPrepareOptions | WebResource
+          description: The request object
+        - id: options
+          type: RequestOptionsBase
+          description: ''
+      return:
+        description: |-
+          The HttpLongRunningOperationResponse
+          that provides methods for interacting with the LRO.
+        type: Promise&lt;LROPoller&gt;
+  - name: restoreLROPoller(LROPollState)
+    uid: '@azure/arm-storage.StorageManagementClient.restoreLROPoller'
+    package: '@azure/arm-storage'
+    summary: >-
+      Restore an LROPoller from the provided LROPollState. This method can be
+      used to recreate an
+
+      LROPoller on a different process or machine.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function restoreLROPoller(lroPollState: LROPollState): LROPoller'
+      parameters:
+        - id: lroPollState
+          type: LROPollState
+          description: ''
+      return:
+        description: ''
+        type: LROPoller
+  - name: >-
+      sendLongRunningRequest(RequestPrepareOptions | WebResource,
+      RequestOptionsBase)
+    uid: '@azure/arm-storage.StorageManagementClient.sendLongRunningRequest'
+    package: '@azure/arm-storage'
+    summary: >-
+      Provides a mechanism to make a request that will poll and provide the
+      final result.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function sendLongRunningRequest(request: RequestPrepareOptions |
+        WebResource, options?: RequestOptionsBase):
+        Promise<HttpOperationResponse>
+      parameters:
+        - id: request
+          type: RequestPrepareOptions | WebResource
+          description: The request object
+        - id: options
+          type: RequestOptionsBase
+          description: ''
+      return:
+        description: >-
+          The HttpOperationResponse containing the final polling request,
+          response and the responseBody.
+        type: Promise&lt;HttpOperationResponse&gt;
+  - name: 'sendLRORequest(OperationArguments, OperationSpec, RequestOptionsBase)'
+    uid: '@azure/arm-storage.StorageManagementClient.sendLRORequest'
+    package: '@azure/arm-storage'
+    summary: >-
+      Send the initial request of a LRO (long running operation) and get back an
+
+      LROPoller that provides methods for polling the LRO and checking if the
+      LRO is finished.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function sendLRORequest(operationArguments: OperationArguments,
+        operationSpec: OperationSpec, options?: RequestOptionsBase):
+        Promise<LROPoller>
+      parameters:
+        - id: operationArguments
+          type: OperationArguments
+          description: The arguments to the operation.
+        - id: operationSpec
+          type: OperationSpec
+          description: The specification for the operation.
+        - id: options
+          type: RequestOptionsBase
+          description: Additional options to be sent while making the request.
+      return:
+        description: >-
+          The LROPoller object that provides methods for interacting with the
+          LRO.
+        type: Promise&lt;LROPoller&gt;
+  - name: >-
+      sendOperationRequest(OperationArguments, OperationSpec,
+      ServiceCallback<any>)
+    uid: '@azure/arm-storage.StorageManagementClient.sendOperationRequest'
+    package: '@azure/arm-storage'
+    summary: Send an HTTP request that is populated using the provided OperationSpec.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function sendOperationRequest(operationArguments: OperationArguments,
+        operationSpec: OperationSpec, callback?: ServiceCallback<any>):
+        Promise<RestResponse>
+      parameters:
+        - id: operationArguments
+          type: OperationArguments
+          description: >-
+            The arguments that the HTTP request's templated values will be
+            populated from.
+        - id: operationSpec
+          type: OperationSpec
+          description: The OperationSpec to use to populate the httpRequest.
+        - id: callback
+          type: ServiceCallback&lt;any&gt;
+          description: |
+            The callback to call when the response is received.
+      return:
+        description: ''
+        type: Promise&lt;RestResponse&gt;
+  - name: sendRequest(RequestPrepareOptions | WebResourceLike)
+    uid: '@azure/arm-storage.StorageManagementClient.sendRequest'
+    package: '@azure/arm-storage'
+    summary: Send the provided httpRequest.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function sendRequest(options: RequestPrepareOptions | WebResourceLike):
+        Promise<HttpOperationResponse>
+      parameters:
+        - id: options
+          type: RequestPrepareOptions | WebResourceLike
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;HttpOperationResponse&gt;
+extends: <xref uid="@azure/arm-storage.StorageManagementClientContext" />

@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: NamespacesListNetworkRuleSetsResponse
+uid: '@azure/arm-servicebus.NamespacesListNetworkRuleSetsResponse'
+package: '@azure/arm-servicebus'
+summary: Contains response data for the listNetworkRuleSets operation.
+fullName: NamespacesListNetworkRuleSetsResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type NamespacesListNetworkRuleSetsResponse = NetworkRuleSetListResult & {
+  _response: HttpResponse & { bodyAsText: string, parsedBody:
+  NetworkRuleSetListResult } }
