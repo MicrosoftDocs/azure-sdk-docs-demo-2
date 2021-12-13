@@ -233,9 +233,9 @@ methods:
       a given copy authorization.
 
       See
-      <xref:@azure/ai-form-recognizer.DocumentModelAdministrationClient.getCopyAuthorization>
+      <xref:@azure/ai-form-recognizer.DocumentModelAdministrationClient.getCopyAuthorization|beta>
       and
-      <xref:@azure/ai-form-recognizer.DocumentModelAdministrationClient.getCopyAuthorization>.
+      <xref:@azure/ai-form-recognizer.DocumentModelAdministrationClient.getCopyAuthorization|beta>.
 
 
       ### Example
@@ -301,7 +301,7 @@ methods:
           type: <xref uid="@azure/ai-form-recognizer.CopyAuthorization|beta" />
           description: >-
             an authorization to copy the model, created using the
-            <xref:@azure/ai-form-recognizer.DocumentModelAdministrationClient.getCopyAuthorization>
+            <xref:@azure/ai-form-recognizer.DocumentModelAdministrationClient.getCopyAuthorization|beta>
         - id: options
           type: <xref uid="@azure/ai-form-recognizer.CopyModelOptions|beta" />
           description: optional settings for
@@ -437,7 +437,7 @@ methods:
     package: '@azure/ai-form-recognizer|beta'
     summary: >
       Retrieves information about a model
-      (<xref:@azure/ai-form-recognizer.ModelInfo>) by ID.
+      (<xref:@azure/ai-form-recognizer.ModelInfo|beta>) by ID.
 
       This method can retrieve information about custom as well as prebuilt
       models.
@@ -456,9 +456,9 @@ methods:
       Failed models are now retrieved through the
 
       "operations" APIs, see
-      <xref:@azure/ai-form-recognizer.DocumentModelAdministrationClient.getOperation>
+      <xref:@azure/ai-form-recognizer.DocumentModelAdministrationClient.getOperation|beta>
       and
-      <xref:@azure/ai-form-recognizer.DocumentModelAdministrationClient.listOperations>.
+      <xref:@azure/ai-form-recognizer.DocumentModelAdministrationClient.listOperations|beta>.
 
 
       ### Example
@@ -563,15 +563,15 @@ methods:
 
       supports paging.
 
-      The model summary (<xref:@azure/ai-form-recognizer.ModelSummary>) includes
-      only the basic information about the model, and does not include
+      The model summary (<xref:@azure/ai-form-recognizer.ModelSummary|beta>)
+      includes only the basic information about the model, and does not include
 
       information about the document types in the model (such as the field
       schemas and confidence values).
 
 
       To access the full information about the model, use
-      <xref:@azure/ai-form-recognizer.DocumentModelAdministrationClient.getModel>.
+      <xref:@azure/ai-form-recognizer.DocumentModelAdministrationClient.getModel|beta>.
 
 
       ### **Breaking Change**
@@ -587,9 +587,9 @@ methods:
       Failed models are now retrieved through the
 
       "operations" APIs, see
-      <xref:@azure/ai-form-recognizer.DocumentModelAdministrationClient.getOperation>
+      <xref:@azure/ai-form-recognizer.DocumentModelAdministrationClient.getOperation|beta>
       and
-      <xref:@azure/ai-form-recognizer.DocumentModelAdministrationClient.listOperations>.
+      <xref:@azure/ai-form-recognizer.DocumentModelAdministrationClient.listOperations|beta>.
 
 
       ### Examples

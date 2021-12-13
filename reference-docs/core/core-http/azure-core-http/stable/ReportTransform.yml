@@ -1747,8 +1747,8 @@ methods:
       also be emitted.
 
 
-      Calling <xref:@azure/core-http.ReportTransform.read> after the `'end'`
-      event has
+      Calling <xref:@azure/core-http.ReportTransform.read|stable> after the
+      `'end'` event has
 
       been emitted will return `null`. No runtime error will be raised.
     remarks: ''
@@ -2094,7 +2094,7 @@ methods:
       The `readable.unpipe()` method detaches a `Writable` stream previously
       attached
 
-      using the <xref:@azure/core-http.ReportTransform.pipe> method.
+      using the <xref:@azure/core-http.ReportTransform.pipe|stable> method.
 
       If the `destination` is not specified, then _all_ pipes are detached.
 
@@ -2221,7 +2221,7 @@ methods:
       ```
 
 
-      Unlike <xref:@azure/core-http.ReportTransform.push>,
+      Unlike <xref:@azure/core-http.ReportTransform.push|stable>,
       `stream.unshift(chunk)` will not
 
       end the reading process by resetting the internal reading state of the
@@ -2233,8 +2233,8 @@ methods:
       read (i.e. from within a _read implementation on a
 
       custom stream). Following the call to `readable.unshift()` with an
-      immediate <xref:@azure/core-http.ReportTransform.push> will reset the
-      reading state appropriately,
+      immediate <xref:@azure/core-http.ReportTransform.push|stable> will reset
+      the reading state appropriately,
 
       however it is best to simply avoid calling `readable.unshift()` while in
       the
@@ -2269,8 +2269,9 @@ methods:
       as it is currently defined. (See `Compatibility` for more information.)
 
       When using an older Node.js library that emits `'data'` events and has a
-      <xref:@azure/core-http.ReportTransform.pause> method that is advisory
-      only, the`readable.wrap()` method can be used to create a `Readable`
+      <xref:@azure/core-http.ReportTransform.pause|stable> method that is
+      advisory only, the`readable.wrap()` method can be used to create a
+      `Readable`
 
       stream that uses
 

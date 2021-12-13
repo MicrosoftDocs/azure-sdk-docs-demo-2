@@ -6,8 +6,8 @@ summary: >-
   Used to create, upsert, query, and read all users.
 
 
-  See <xref:@azure/cosmos.User> to read, replace, or delete a specific User by
-  id.
+  See <xref:@azure/cosmos.User|stable> to read, replace, or delete a specific
+  User by id.
 fullName: Users
 remarks: ''
 isPreview: false
@@ -33,7 +33,7 @@ methods:
     package: '@azure/cosmos|stable'
     summary: >-
       Create a database user with the specified
-      <xref:@azure/cosmos.UserDefinition>.
+      <xref:@azure/cosmos.UserDefinition|stable>.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -45,7 +45,7 @@ methods:
         - id: body
           type: <xref uid="@azure/cosmos.UserDefinition|stable" />
           description: |
-            The specified <xref:@azure/cosmos.UserDefinition>.
+            The specified <xref:@azure/cosmos.UserDefinition|stable>.
         - id: options
           type: <xref uid="@azure/cosmos.RequestOptions|stable" />
           description: ''
@@ -68,8 +68,8 @@ methods:
           type: <xref uid="@azure/cosmos.SqlQuerySpec|stable" />
           description: >
             Query configuration for the operation. See
-            <xref:@azure/cosmos.SqlQuerySpec> for more info on how to configure
-            a query.
+            <xref:@azure/cosmos.SqlQuerySpec|stable> for more info on how to
+            configure a query.
         - id: options
           type: <xref uid="@azure/cosmos.FeedOptions|stable" />
           description: ''
@@ -92,8 +92,8 @@ methods:
           type: <xref uid="@azure/cosmos.SqlQuerySpec|stable" />
           description: >
             Query configuration for the operation. See
-            <xref:@azure/cosmos.SqlQuerySpec> for more info on how to configure
-            a query.
+            <xref:@azure/cosmos.SqlQuerySpec|stable> for more info on how to
+            configure a query.
         - id: options
           type: <xref uid="@azure/cosmos.FeedOptions|stable" />
           description: ''
@@ -135,7 +135,7 @@ methods:
     package: '@azure/cosmos|stable'
     summary: >-
       Upsert a database user with a specified
-      <xref:@azure/cosmos.UserDefinition>.
+      <xref:@azure/cosmos.UserDefinition|stable>.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -147,7 +147,7 @@ methods:
         - id: body
           type: <xref uid="@azure/cosmos.UserDefinition|stable" />
           description: |
-            The specified <xref:@azure/cosmos.UserDefinition>.
+            The specified <xref:@azure/cosmos.UserDefinition|stable>.
         - id: options
           type: <xref uid="@azure/cosmos.RequestOptions|stable" />
           description: ''

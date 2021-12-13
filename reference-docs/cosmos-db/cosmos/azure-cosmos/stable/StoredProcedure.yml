@@ -56,7 +56,7 @@ methods:
   - name: delete(RequestOptions)
     uid: '@azure/cosmos.StoredProcedure.delete|stable'
     package: '@azure/cosmos|stable'
-    summary: Delete the given <xref:@azure/cosmos.StoredProcedure>.
+    summary: Delete the given <xref:@azure/cosmos.StoredProcedure|stable>.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -77,7 +77,7 @@ methods:
     uid: '@azure/cosmos.StoredProcedure.execute|stable'
     package: '@azure/cosmos|stable'
     summary: >
-      Execute the given <xref:@azure/cosmos.StoredProcedure>.
+      Execute the given <xref:@azure/cosmos.StoredProcedure|stable>.
 
       The specified type, T, is not enforced by the client.
 
@@ -98,12 +98,12 @@ methods:
           type: any[]
           description: >-
             Array of parameters to pass as arguments to the given
-            <xref:@azure/cosmos.StoredProcedure>.
+            <xref:@azure/cosmos.StoredProcedure|stable>.
         - id: options
           type: <xref uid="@azure/cosmos.RequestOptions|stable" />
           description: >
             Additional options, such as the partition key to invoke the
-            <xref:@azure/cosmos.StoredProcedure> on.
+            <xref:@azure/cosmos.StoredProcedure|stable> on.
       return:
         description: ''
         type: >-
@@ -113,8 +113,8 @@ methods:
     uid: '@azure/cosmos.StoredProcedure.read|stable'
     package: '@azure/cosmos|stable'
     summary: >-
-      Read the <xref:@azure/cosmos.StoredProcedureDefinition> for the given
-      <xref:@azure/cosmos.StoredProcedure>.
+      Read the <xref:@azure/cosmos.StoredProcedureDefinition|stable> for the
+      given <xref:@azure/cosmos.StoredProcedure|stable>.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -135,8 +135,8 @@ methods:
     uid: '@azure/cosmos.StoredProcedure.replace|stable'
     package: '@azure/cosmos|stable'
     summary: >-
-      Replace the given <xref:@azure/cosmos.StoredProcedure> with the specified
-      <xref:@azure/cosmos.StoredProcedureDefinition>.
+      Replace the given <xref:@azure/cosmos.StoredProcedure|stable> with the
+      specified <xref:@azure/cosmos.StoredProcedureDefinition|stable>.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -148,8 +148,8 @@ methods:
         - id: body
           type: <xref uid="@azure/cosmos.StoredProcedureDefinition|stable" />
           description: >
-            The specified <xref:@azure/cosmos.StoredProcedureDefinition> to
-            replace the existing definition.
+            The specified <xref:@azure/cosmos.StoredProcedureDefinition|stable>
+            to replace the existing definition.
         - id: options
           type: <xref uid="@azure/cosmos.RequestOptions|stable" />
           description: ''

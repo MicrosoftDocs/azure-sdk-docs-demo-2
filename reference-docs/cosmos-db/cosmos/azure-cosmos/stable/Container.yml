@@ -7,7 +7,7 @@ summary: >-
   by id.
 
 
-  See <xref:@azure/cosmos.Containers> for creating new containers, and
+  See <xref:@azure/cosmos.Containers|stable> for creating new containers, and
   reading/querying all containers; use `.containers`.
 
 
@@ -130,7 +130,7 @@ methods:
     package: '@azure/cosmos|stable'
     summary: >-
       Used to read, replace, or delete a specific, existing
-      <xref:@azure/cosmos.Conflict> by id.
+      <xref:@azure/cosmos.Conflict|stable> by id.
 
       Use `.conflicts` for creating new conflicts, or querying/reading all
       conflicts.
@@ -143,7 +143,7 @@ methods:
         - id: id
           type: string
           description: |
-            The id of the <xref:@azure/cosmos.Conflict>.
+            The id of the <xref:@azure/cosmos.Conflict|stable>.
         - id: partitionKey
           type: <xref uid="@azure/cosmos.PartitionKey|stable" />
           description: ''
@@ -209,7 +209,7 @@ methods:
     package: '@azure/cosmos|stable'
     summary: >+
       Used to read, replace, or delete a specific, existing
-      <xref:@azure/cosmos.Item> by id.
+      <xref:@azure/cosmos.Item|stable> by id.
 
       Use `.items` for creating new items, or querying/reading all items.
 
@@ -232,10 +232,10 @@ methods:
       parameters:
         - id: id
           type: string
-          description: The id of the <xref:@azure/cosmos.Item>.
+          description: The id of the <xref:@azure/cosmos.Item|stable>.
         - id: partitionKeyValue
           type: <xref uid="@azure/cosmos.PartitionKey|stable" />
-          description: The value of the <xref:@azure/cosmos.Item> partition key
+          description: The value of the <xref:@azure/cosmos.Item|stable> partition key
       return:
         description: ''
         type: <xref uid="@azure/cosmos.Item|stable" />

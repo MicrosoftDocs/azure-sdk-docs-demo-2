@@ -9,11 +9,11 @@ summary: >-
   for an Azure Storage account. Once
 
   all the values here are set appropriately, call
-  <xref:@azure/storage-file-datalake.generateAccountSASQueryParameters> to
-  obtain a representation
+  <xref:@azure/storage-file-datalake.generateAccountSASQueryParameters|stable>
+  to obtain a representation
 
   of the SAS which can actually be applied to data lake urls. Note: that both
-  this class and <xref:@azure/storage-file-datalake.SASQueryParameters>
+  this class and <xref:@azure/storage-file-datalake.SASQueryParameters|stable>
 
   exist because the former is mutable and a logical representation while the
   latter is immutable and used to generate
@@ -69,7 +69,7 @@ properties:
     package: '@azure/storage-file-datalake|stable'
     summary: >-
       Specifies which operations the SAS user may perform. Please refer to
-      <xref:@azure/storage-file-datalake.AccountSASPermissions> for help
+      <xref:@azure/storage-file-datalake.AccountSASPermissions|stable> for help
 
       constructing the permissions string.
     fullName: permissions
@@ -104,7 +104,7 @@ properties:
       The values that indicate the resource types accessible with this SAS.
       Please refer
 
-      to <xref:@azure/storage-file-datalake.AccountSASResourceTypes> to
+      to <xref:@azure/storage-file-datalake.AccountSASResourceTypes|stable> to
       construct this value.
     fullName: resourceTypes
     remarks: ''
@@ -120,7 +120,7 @@ properties:
     package: '@azure/storage-file-datalake|stable'
     summary: >-
       The values that indicate the services accessible with this SAS. Please
-      refer to <xref:@azure/storage-file-datalake.AccountSASServices> to
+      refer to <xref:@azure/storage-file-datalake.AccountSASServices|stable> to
 
       construct this value.
     fullName: services

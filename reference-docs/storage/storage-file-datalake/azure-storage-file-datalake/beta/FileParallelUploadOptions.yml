@@ -5,9 +5,9 @@ package: '@azure/storage-file-datalake|beta'
 summary: |
   Option interface for Data Lake file - Upload operations
   See:
-  - <xref:@azure/storage-file-datalake.DataLakeFileClient.upload>
-  - <xref:@azure/storage-file-datalake.DataLakeFileClient.uploadFile>
-  - <xref:@azure/storage-file-datalake.DataLakeFileClient.uploadStream>
+  - <xref:@azure/storage-file-datalake.DataLakeFileClient.upload|beta>
+  - <xref:@azure/storage-file-datalake.DataLakeFileClient.uploadFile|beta>
+  - <xref:@azure/storage-file-datalake.DataLakeFileClient.uploadStream|beta>
 fullName: FileParallelUploadOptions
 remarks: ''
 isPreview: false
@@ -177,7 +177,8 @@ properties:
 
       Its default and max value is FILE_MAX_SINGLE_UPLOAD_THRESHOLD.
 
-      Note: <xref:@azure/storage-file-datalake.DataLakeFileClient.uploadStream>
+      Note:
+      <xref:@azure/storage-file-datalake.DataLakeFileClient.uploadStream|beta>
       do not respect this field and always do parallel uploading.
     fullName: singleUploadThreshold
     remarks: ''

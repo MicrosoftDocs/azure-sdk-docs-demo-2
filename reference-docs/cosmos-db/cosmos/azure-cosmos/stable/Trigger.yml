@@ -3,7 +3,7 @@ name: Trigger
 uid: '@azure/cosmos.Trigger|stable'
 package: '@azure/cosmos|stable'
 summary: |
-  Operations to read, replace, or delete a <xref:@azure/cosmos.Trigger>.
+  Operations to read, replace, or delete a <xref:@azure/cosmos.Trigger|stable>.
   Use `container.triggers` to create, upsert, query, or read all.
 fullName: Trigger
 remarks: ''
@@ -54,7 +54,7 @@ methods:
   - name: delete(RequestOptions)
     uid: '@azure/cosmos.Trigger.delete|stable'
     package: '@azure/cosmos|stable'
-    summary: Delete the given <xref:@azure/cosmos.Trigger>.
+    summary: Delete the given <xref:@azure/cosmos.Trigger|stable>.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -71,8 +71,8 @@ methods:
     uid: '@azure/cosmos.Trigger.read|stable'
     package: '@azure/cosmos|stable'
     summary: >-
-      Read the <xref:@azure/cosmos.TriggerDefinition> for the given
-      <xref:@azure/cosmos.Trigger>.
+      Read the <xref:@azure/cosmos.TriggerDefinition|stable> for the given
+      <xref:@azure/cosmos.Trigger|stable>.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -89,8 +89,8 @@ methods:
     uid: '@azure/cosmos.Trigger.replace|stable'
     package: '@azure/cosmos|stable'
     summary: >-
-      Replace the given <xref:@azure/cosmos.Trigger> with the specified
-      <xref:@azure/cosmos.TriggerDefinition>.
+      Replace the given <xref:@azure/cosmos.Trigger|stable> with the specified
+      <xref:@azure/cosmos.TriggerDefinition|stable>.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -102,8 +102,8 @@ methods:
         - id: body
           type: <xref uid="@azure/cosmos.TriggerDefinition|stable" />
           description: >
-            The specified <xref:@azure/cosmos.TriggerDefinition> to replace the
-            existing definition with.
+            The specified <xref:@azure/cosmos.TriggerDefinition|stable> to
+            replace the existing definition with.
         - id: options
           type: <xref uid="@azure/cosmos.RequestOptions|stable" />
           description: ''

@@ -6,7 +6,7 @@ summary: >-
   Operations for reading or deleting an existing database.
 
 
-  See <xref:@azure/cosmos.Databases> for creating new databases, and
+  See <xref:@azure/cosmos.Databases|stable> for creating new databases, and
   reading/querying all databases; use `client.databases`.
 
 
@@ -29,10 +29,10 @@ constructors:
     uid: '@azure/cosmos.Database.constructor|stable'
     package: '@azure/cosmos|stable'
     summary: >
-      Returns a new <xref:@azure/cosmos.Database> instance.
+      Returns a new <xref:@azure/cosmos.Database|stable> instance.
 
       Note: the intention is to get this object from
-      <xref:@azure/cosmos.CosmosClient> via `client.database(id)`, not to
+      <xref:@azure/cosmos.CosmosClient|stable> via `client.database(id)`, not to
       instantiate it yourself.
     remarks: ''
     isPreview: false
@@ -72,7 +72,7 @@ properties:
       Used for creating new containers, or querying/reading all containers.
 
       Use `.database(id)` to read, replace, or delete a specific, existing
-      <xref:@azure/cosmos.Database> by id.
+      <xref:@azure/cosmos.Database|stable> by id.
 
 
 
@@ -130,7 +130,7 @@ properties:
       Used for creating new users, or querying/reading all users.
 
       Use `.user(id)` to read, replace, or delete a specific, existing
-      <xref:@azure/cosmos.User> by id.
+      <xref:@azure/cosmos.User|stable> by id.
     fullName: users
     remarks: ''
     isPreview: false
@@ -146,7 +146,7 @@ methods:
     package: '@azure/cosmos|stable'
     summary: >+
       Used to read, replace, or delete a specific, existing
-      <xref:@azure/cosmos.Database> by id.
+      <xref:@azure/cosmos.Database|stable> by id.
 
       Use `.containers` creating new containers, or querying/reading all
       containers.
@@ -231,7 +231,7 @@ methods:
     package: '@azure/cosmos|stable'
     summary: >
       Used to read, replace, or delete a specific, existing
-      <xref:@azure/cosmos.User> by id.
+      <xref:@azure/cosmos.User|stable> by id.
 
       Use `.users` for creating new users, or querying/reading all users.
     remarks: ''

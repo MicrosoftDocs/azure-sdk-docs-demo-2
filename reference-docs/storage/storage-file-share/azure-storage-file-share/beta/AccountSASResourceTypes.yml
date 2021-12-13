@@ -14,7 +14,7 @@ summary: >
   values are set, this should be serialized with toString and set as the
   resources field on an
 
-  <xref:@azure/storage-file-share.AccountSASSignatureValues> object. It is
+  <xref:@azure/storage-file-share.AccountSASSignatureValues|beta> object. It is
   possible to construct the resources string without this class, but
 
   the order of the resources is particular and this class guarantees
@@ -73,8 +73,8 @@ methods:
     uid: '@azure/storage-file-share.AccountSASResourceTypes.parse|beta'
     package: '@azure/storage-file-share|beta'
     summary: >-
-      Creates an <xref:@azure/storage-file-share.AccountSASResourceTypes> from
-      the specified resource types string. This method will throw an
+      Creates an <xref:@azure/storage-file-share.AccountSASResourceTypes|beta>
+      from the specified resource types string. This method will throw an
 
       Error if it encounters a character that does not correspond to a valid
       resource type.

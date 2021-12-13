@@ -2,7 +2,9 @@
 name: FilterBlobItem
 uid: '@azure/storage-blob.FilterBlobItem|beta'
 package: '@azure/storage-blob|beta'
-summary: Blob info from a <xref:@azure/storage-blob.BlobServiceClient.findBlobsByTags>
+summary: >-
+  Blob info from a
+  <xref:@azure/storage-blob.BlobServiceClient.findBlobsByTags|beta>
 fullName: FilterBlobItem
 remarks: ''
 isPreview: false
@@ -58,7 +60,7 @@ properties:
     isDeprecated: true
     customDeprecatedMessage: >-
       The service no longer returns this value. Use
-      <xref:@azure/storage-blob.AppendBlobCreateOptions.tags> to fetch all
+      <xref:@azure/storage-blob.AppendBlobCreateOptions.tags|beta> to fetch all
       matching Blob Tags.
     syntax:
       content: 'tagValue: string'

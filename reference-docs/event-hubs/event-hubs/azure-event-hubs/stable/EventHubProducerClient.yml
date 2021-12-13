@@ -228,8 +228,8 @@ methods:
       the maximum supported size is reached.
 
       The batch can be passed to the
-      <xref:@azure/event-hubs.EventHubProducerClient.sendBatch> method of the
-      `EventHubProducerClient` to be sent to Azure Event Hubs.
+      <xref:@azure/event-hubs.EventHubProducerClient.sendBatch|stable> method of
+      the `EventHubProducerClient` to be sent to Azure Event Hubs.
 
       Example usage:
 
@@ -384,7 +384,8 @@ methods:
           type: <xref uid="@azure/event-hubs.EventDataBatch|stable" />
           description: >-
             A batch of events that you can create using the
-            <xref:@azure/event-hubs.EventHubProducerClient.createBatch> method.
+            <xref:@azure/event-hubs.EventHubProducerClient.createBatch|stable>
+            method.
         - id: options
           type: <xref uid="@azure/event-hubs.OperationOptions|stable" />
           description: >
@@ -420,7 +421,7 @@ methods:
             <xref uid="@azure/event-hubs.EventData|stable" />[] |
             AmqpAnnotatedMessage[]
           description: >-
-            An array of <xref:@azure/event-hubs.EventData> or
+            An array of <xref:@azure/event-hubs.EventData|stable> or
             `AmqpAnnotatedMessage`.
         - id: options
           type: <xref uid="@azure/event-hubs.SendBatchOptions|stable" />

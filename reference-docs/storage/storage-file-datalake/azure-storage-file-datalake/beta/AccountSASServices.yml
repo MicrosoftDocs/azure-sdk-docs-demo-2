@@ -14,8 +14,8 @@ summary: >
   values are set, this should be serialized with toString and set as the
   services field on an
 
-  <xref:@azure/storage-file-datalake.AccountSASSignatureValues> object. It is
-  possible to construct the services string without this class, but
+  <xref:@azure/storage-file-datalake.AccountSASSignatureValues|beta> object. It
+  is possible to construct the services string without this class, but
 
   the order of the services is particular and this class guarantees correctness.
 fullName: AccountSASServices
@@ -81,8 +81,8 @@ methods:
     uid: '@azure/storage-file-datalake.AccountSASServices.parse|beta'
     package: '@azure/storage-file-datalake|beta'
     summary: >-
-      Creates an <xref:@azure/storage-file-datalake.AccountSASServices> from the
-      specified services string. This method will throw an
+      Creates an <xref:@azure/storage-file-datalake.AccountSASServices|beta>
+      from the specified services string. This method will throw an
 
       Error if it encounters a character that does not correspond to a valid
       service.

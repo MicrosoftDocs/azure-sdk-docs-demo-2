@@ -4,15 +4,15 @@ uid: '@azure/keyvault-keys.KeyClient|beta'
 package: '@azure/keyvault-keys|beta'
 summary: >-
   The KeyClient provides methods to manage
-  <xref:@azure/keyvault-keys.KeyVaultKey> in the
+  <xref:@azure/keyvault-keys.KeyVaultKey|beta> in the
 
   Azure Key Vault. The client supports creating, retrieving, updating,
 
   deleting, purging, backing up, restoring and listing KeyVaultKeys. The
 
   client also supports listing
-  <xref:@azure/keyvault-keys.KeyClient.beginRecoverDeletedKey> for a soft-delete
-  enabled Azure Key
+  <xref:@azure/keyvault-keys.KeyClient.beginRecoverDeletedKey|beta> for a
+  soft-delete enabled Azure Key
 
   Vault.
 fullName: KeyClient
@@ -432,13 +432,20 @@ methods:
   - name: getCryptographyClient(string, GetCryptographyClientOptions)
     uid: '@azure/keyvault-keys.KeyClient.getCryptographyClient|beta'
     package: '@azure/keyvault-keys|beta'
-    summary: |-
-      Gets a <xref:@azure/keyvault-keys.CryptographyClient> for the given key.
+    summary: >-
+      Gets a <xref:@azure/keyvault-keys.CryptographyClient|beta> for the given
+      key.
+
       Example usage:
+
       ```ts
+
       let client = new KeyClient(url, credentials);
+
       // get a cryptography client for a given key
+
       let cryptographyClient = client.getCryptographyClient("MyKey");
+
       ```
     remarks: ''
     isPreview: false

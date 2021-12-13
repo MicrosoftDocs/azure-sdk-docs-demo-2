@@ -389,8 +389,9 @@ methods:
       successfully written
 
       to the server in a prior
-      <xref:@azure/storage-blob.BlockBlobClient.stageBlock> operation. You can
-      call <xref:@azure/storage-blob.BlockBlobClient.commitBlockList> to
+      <xref:@azure/storage-blob.BlockBlobClient.stageBlock|stable> operation.
+      You can call
+      <xref:@azure/storage-blob.BlockBlobClient.commitBlockList|stable> to
 
       update a blob by uploading only those blocks that have changed, then
       committing the new and existing
@@ -677,7 +678,8 @@ methods:
       gigabytes on 64-bit systems due to limitations of Node.js/V8. For blobs
       larger than this size,
 
-      consider <xref:@azure/storage-blob.AppendBlobClient.downloadToFile>.
+      consider
+      <xref:@azure/storage-blob.AppendBlobClient.downloadToFile|stable>.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -724,7 +726,8 @@ methods:
       gigabytes on 64-bit systems due to limitations of Node.js/V8. For blobs
       larger than this size,
 
-      consider <xref:@azure/storage-blob.AppendBlobClient.downloadToFile>.
+      consider
+      <xref:@azure/storage-blob.AppendBlobClient.downloadToFile|stable>.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -869,7 +872,8 @@ methods:
     uid: '@azure/storage-blob.BlockBlobClient.getBlobLeaseClient|stable'
     package: '@azure/storage-blob|stable'
     summary: >-
-      Get a <xref:@azure/storage-blob.AppendBlobClient.getBlobLeaseClient> that
+      Get a
+      <xref:@azure/storage-blob.AppendBlobClient.getBlobLeaseClient|stable> that
       manages leases on the blob.
     remarks: ''
     isPreview: false
@@ -959,8 +963,8 @@ methods:
       metadata keys returned by
 
       the methods of
-      <xref:@azure/storage-blob.BlobServiceClient.getContainerClient> that list
-      blobs using the `includeMetadata` option, which
+      <xref:@azure/storage-blob.BlobServiceClient.getContainerClient|stable>
+      that list blobs using the `includeMetadata` option, which
 
       will retain their original casing.
     remarks: ''
@@ -1417,8 +1421,8 @@ methods:
       contents using a
 
       source URL, use
-      <xref:@azure/storage-blob.BlockBlobClient.stageBlockFromURL> and
-      <xref:@azure/storage-blob.BlockBlobClient.commitBlockList>.
+      <xref:@azure/storage-blob.BlockBlobClient.stageBlockFromURL|stable> and
+      <xref:@azure/storage-blob.BlockBlobClient.commitBlockList|stable>.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1499,15 +1503,15 @@ methods:
       overwritten with the new content. To perform a partial update of a block
       blob's,
 
-      use <xref:@azure/storage-blob.BlockBlobClient.stageBlock> and
-      <xref:@azure/storage-blob.BlockBlobClient.commitBlockList>.
+      use <xref:@azure/storage-blob.BlockBlobClient.stageBlock|stable> and
+      <xref:@azure/storage-blob.BlockBlobClient.commitBlockList|stable>.
 
       This is a non-parallel uploading method, please use
-      <xref:@azure/storage-blob.BlockBlobClient.uploadFile>,
+      <xref:@azure/storage-blob.BlockBlobClient.uploadFile|stable>,
 
-      <xref:@azure/storage-blob.BlockBlobClient.uploadStream> or
-      <xref:@azure/storage-blob.BlockBlobClient.uploadBrowserData> for better
-      performance
+      <xref:@azure/storage-blob.BlockBlobClient.uploadStream|stable> or
+      <xref:@azure/storage-blob.BlockBlobClient.uploadBrowserData|stable> for
+      better performance
 
       with concurrency uploading.
 
@@ -1571,15 +1575,15 @@ methods:
       upload call to finish the upload.
 
       Otherwise, this method will call
-      <xref:@azure/storage-blob.BlockBlobClient.stageBlock> to upload blocks,
-      and finally call
+      <xref:@azure/storage-blob.BlockBlobClient.stageBlock|stable> to upload
+      blocks, and finally call
 
-      <xref:@azure/storage-blob.BlockBlobClient.commitBlockList> to commit the
-      block list.
+      <xref:@azure/storage-blob.BlockBlobClient.commitBlockList|stable> to
+      commit the block list.
 
 
       A common
-      <xref:@azure/storage-blob.BlockBlobParallelUploadOptions.blobHTTPHeaders>
+      <xref:@azure/storage-blob.BlockBlobParallelUploadOptions.blobHTTPHeaders|stable>
       option to set is
 
       `blobContentType`, enabling the browser to provide
@@ -1588,7 +1592,7 @@ methods:
     remarks: ''
     isPreview: false
     isDeprecated: true
-    customDeprecatedMessage: Use <xref:@azure/storage-blob.BlockBlobClient.uploadData> instead.
+    customDeprecatedMessage: Use <xref:@azure/storage-blob.BlockBlobClient.uploadData|stable> instead.
     syntax:
       content: >-
         function uploadBrowserData(browserData: Blob | ArrayBuffer |
@@ -1618,23 +1622,23 @@ methods:
       object to a BlockBlob.
 
       When data length is no more than the specifiled
-      <xref:@azure/storage-blob.BlockBlobParallelUploadOptions.maxSingleShotSize>
+      <xref:@azure/storage-blob.BlockBlobParallelUploadOptions.maxSingleShotSize|stable>
       (default is
 
       BLOCK_BLOB_MAX_UPLOAD_BLOB_BYTES), this method will use 1
-      <xref:@azure/storage-blob.BlockBlobClient.upload> call to finish the
-      upload.
+      <xref:@azure/storage-blob.BlockBlobClient.upload|stable> call to finish
+      the upload.
 
       Otherwise, this method will call
-      <xref:@azure/storage-blob.BlockBlobClient.stageBlock> to upload blocks,
-      and finally call
-      <xref:@azure/storage-blob.BlockBlobClient.commitBlockList>
+      <xref:@azure/storage-blob.BlockBlobClient.stageBlock|stable> to upload
+      blocks, and finally call
+      <xref:@azure/storage-blob.BlockBlobClient.commitBlockList|stable>
 
       to commit the block list.
 
 
       A common
-      <xref:@azure/storage-blob.BlockBlobParallelUploadOptions.blobHTTPHeaders>
+      <xref:@azure/storage-blob.BlockBlobParallelUploadOptions.blobHTTPHeaders|stable>
       option to set is
 
       `blobContentType`, enabling the browser to provide

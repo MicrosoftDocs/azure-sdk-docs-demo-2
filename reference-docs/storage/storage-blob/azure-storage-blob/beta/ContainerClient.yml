@@ -446,7 +446,7 @@ methods:
   - name: getAppendBlobClient(string)
     uid: '@azure/storage-blob.ContainerClient.getAppendBlobClient|beta'
     package: '@azure/storage-blob|beta'
-    summary: Creates an <xref:@azure/storage-blob.AppendBlobClient>
+    summary: Creates an <xref:@azure/storage-blob.AppendBlobClient|beta>
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -478,7 +478,7 @@ methods:
   - name: getBlobClient(string)
     uid: '@azure/storage-blob.ContainerClient.getBlobClient|beta'
     package: '@azure/storage-blob|beta'
-    summary: Creates a <xref:@azure/storage-blob.AppendBlobClient>
+    summary: Creates a <xref:@azure/storage-blob.AppendBlobClient|beta>
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -495,8 +495,8 @@ methods:
     uid: '@azure/storage-blob.ContainerClient.getBlobLeaseClient|beta'
     package: '@azure/storage-blob|beta'
     summary: >-
-      Get a <xref:@azure/storage-blob.AppendBlobClient.getBlobLeaseClient> that
-      manages leases on the container.
+      Get a <xref:@azure/storage-blob.AppendBlobClient.getBlobLeaseClient|beta>
+      that manages leases on the container.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -512,7 +512,9 @@ methods:
   - name: getBlockBlobClient(string)
     uid: '@azure/storage-blob.ContainerClient.getBlockBlobClient|beta'
     package: '@azure/storage-blob|beta'
-    summary: Creates a <xref:@azure/storage-blob.AppendBlobClient.getBlockBlobClient>
+    summary: >-
+      Creates a
+      <xref:@azure/storage-blob.AppendBlobClient.getBlockBlobClient|beta>
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -547,7 +549,9 @@ methods:
   - name: getPageBlobClient(string)
     uid: '@azure/storage-blob.ContainerClient.getPageBlobClient|beta'
     package: '@azure/storage-blob|beta'
-    summary: Creates a <xref:@azure/storage-blob.AppendBlobClient.getPageBlobClient>
+    summary: >-
+      Creates a
+      <xref:@azure/storage-blob.AppendBlobClient.getPageBlobClient|beta>
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -582,8 +586,8 @@ methods:
       metadata keys returned by
 
       the `listContainers` method of
-      <xref:@azure/storage-blob.BlobServiceClient> using the `includeMetadata`
-      option, which
+      <xref:@azure/storage-blob.BlobServiceClient|beta> using the
+      `includeMetadata` option, which
 
       will retain their original casing.
     remarks: ''
@@ -970,15 +974,16 @@ methods:
       overwritten with the new content. To perform a partial update of a block
       blob's,
 
-      use <xref:@azure/storage-blob.BlockBlobClient.stageBlock> and
-      <xref:@azure/storage-blob.BlockBlobClient.commitBlockList>.
+      use <xref:@azure/storage-blob.BlockBlobClient.stageBlock|beta> and
+      <xref:@azure/storage-blob.BlockBlobClient.commitBlockList|beta>.
 
 
       This is a non-parallel uploading method, please use
-      <xref:@azure/storage-blob.BlockBlobClient.uploadFile>,
+      <xref:@azure/storage-blob.BlockBlobClient.uploadFile|beta>,
 
-      <xref:@azure/storage-blob.BlockBlobClient.uploadStream> or
-      <xref:@azure/storage-blob.BlockBlobClient.uploadBrowserData> for better
+      <xref:@azure/storage-blob.BlockBlobClient.uploadStream|beta> or
+      <xref:@azure/storage-blob.BlockBlobClient.uploadBrowserData|beta> for
+      better
 
       performance with concurrency uploading.
 

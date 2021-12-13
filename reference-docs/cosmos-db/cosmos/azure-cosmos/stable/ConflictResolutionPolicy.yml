@@ -27,7 +27,7 @@ properties:
       If the path is unspecified, by default the timestamp path will be used.
 
       This value should only be set when using
-      <xref:@azure/cosmos.ConflictResolutionMode.LastWriterWins>.
+      <xref:@azure/cosmos.ConflictResolutionMode.LastWriterWins|stable>.
 
 
       ```typescript
@@ -49,14 +49,15 @@ properties:
     uid: '@azure/cosmos.ConflictResolutionPolicy.conflictResolutionProcedure|stable'
     package: '@azure/cosmos|stable'
     summary: >
-      Gets or sets the <xref:@azure/cosmos.StoredProcedure> which is used for
-      conflict resolution in the Azure Cosmos DB service.
+      Gets or sets the <xref:@azure/cosmos.StoredProcedure|stable> which is used
+      for conflict resolution in the Azure Cosmos DB service.
 
       This stored procedure may be created after the
-      <xref:@azure/cosmos.Container> is created and can be changed as required.
+      <xref:@azure/cosmos.Container|stable> is created and can be changed as
+      required.
 
       1. This value should only be set when using
-      <xref:@azure/cosmos.ConflictResolutionMode.Custom>.
+      <xref:@azure/cosmos.ConflictResolutionMode.Custom|stable>.
 
       2. In case the stored procedure fails or throws an exception, the conflict
       resolution will default to registering conflicts in the conflicts feed.
@@ -82,7 +83,7 @@ properties:
     summary: >-
       Gets or sets the <see cref="ConflictResolutionMode"/> in the Azure Cosmos
       DB service. By default it is
-      <xref:@azure/cosmos.ConflictResolutionMode.LastWriterWins>.
+      <xref:@azure/cosmos.ConflictResolutionMode.LastWriterWins|stable>.
     fullName: mode
     remarks: ''
     isPreview: false

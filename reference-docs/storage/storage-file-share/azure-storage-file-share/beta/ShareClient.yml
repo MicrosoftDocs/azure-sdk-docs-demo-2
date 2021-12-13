@@ -562,7 +562,9 @@ methods:
   - name: getDirectoryClient(string)
     uid: '@azure/storage-file-share.ShareClient.getDirectoryClient|beta'
     package: '@azure/storage-file-share|beta'
-    summary: Creates a <xref:@azure/storage-file-share.ShareDirectoryClient> object.
+    summary: >-
+      Creates a <xref:@azure/storage-file-share.ShareDirectoryClient|beta>
+      object.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -630,7 +632,7 @@ methods:
       metadata keys returned by
 
       the `listShares` method of
-      <xref:@azure/storage-file-share.ShareServiceClient> using the
+      <xref:@azure/storage-file-share.ShareServiceClient|beta> using the
       `includeMetadata` option, which
 
       will retain their original casing.
@@ -792,7 +794,9 @@ methods:
     remarks: ''
     isPreview: false
     isDeprecated: true
-    customDeprecatedMessage: Use <xref:@azure/storage-file-share.ShareClient.setProperties> instead.
+    customDeprecatedMessage: >-
+      Use <xref:@azure/storage-file-share.ShareClient.setProperties|beta>
+      instead.
     syntax:
       content: >-
         function setQuota(quotaInGB: number, options?: ShareSetQuotaOptions):

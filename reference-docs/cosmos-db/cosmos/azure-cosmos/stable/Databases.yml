@@ -6,7 +6,7 @@ summary: >-
   Operations for creating new databases, and reading/querying all databases
 
 
-  See <xref:@azure/cosmos.Database> for reading or deleting an existing
+  See <xref:@azure/cosmos.Database|stable> for reading or deleting an existing
   database; use `client.database(id)`.
 
 
@@ -72,8 +72,8 @@ methods:
         - id: body
           type: <xref uid="@azure/cosmos.DatabaseRequest|stable" />
           description: >-
-            The <xref:@azure/cosmos.DatabaseDefinition> that represents the
-            <xref:@azure/cosmos.Database> to be created.
+            The <xref:@azure/cosmos.DatabaseDefinition|stable> that represents
+            the <xref:@azure/cosmos.Database|stable> to be created.
         - id: options
           type: <xref uid="@azure/cosmos.RequestOptions|stable" />
           description: >
@@ -118,8 +118,8 @@ methods:
         - id: body
           type: <xref uid="@azure/cosmos.DatabaseRequest|stable" />
           description: >-
-            The <xref:@azure/cosmos.DatabaseDefinition> that represents the
-            <xref:@azure/cosmos.Database> to be created.
+            The <xref:@azure/cosmos.DatabaseDefinition|stable> that represents
+            the <xref:@azure/cosmos.Database|stable> to be created.
         - id: options
           type: <xref uid="@azure/cosmos.RequestOptions|stable" />
           description: |
@@ -165,8 +165,8 @@ methods:
           type: string | <xref uid="@azure/cosmos.SqlQuerySpec|stable" />
           description: >-
             Query configuration for the operation. See
-            <xref:@azure/cosmos.SqlQuerySpec> for more info on how to configure
-            a query.
+            <xref:@azure/cosmos.SqlQuerySpec|stable> for more info on how to
+            configure a query.
         - id: options
           type: <xref uid="@azure/cosmos.FeedOptions|stable" />
           description: >-
@@ -215,8 +215,8 @@ methods:
           type: string | <xref uid="@azure/cosmos.SqlQuerySpec|stable" />
           description: >-
             Query configuration for the operation. See
-            <xref:@azure/cosmos.SqlQuerySpec> for more info on how to configure
-            a query.
+            <xref:@azure/cosmos.SqlQuerySpec|stable> for more info on how to
+            configure a query.
         - id: options
           type: <xref uid="@azure/cosmos.FeedOptions|stable" />
           description: >-

@@ -14,8 +14,8 @@ summary: >
   values are set, this should be serialized with toString and set as the
   services field on an
 
-  <xref:@azure/storage-queue.AccountSASSignatureValues> object. It is possible
-  to construct the services string without this class, but
+  <xref:@azure/storage-queue.AccountSASSignatureValues|stable> object. It is
+  possible to construct the services string without this class, but
 
   the order of the services is particular and this class guarantees correctness.
 fullName: AccountSASServices
@@ -81,7 +81,7 @@ methods:
     uid: '@azure/storage-queue.AccountSASServices.parse|stable'
     package: '@azure/storage-queue|stable'
     summary: >-
-      Creates an <xref:@azure/storage-queue.AccountSASServices> from the
+      Creates an <xref:@azure/storage-queue.AccountSASServices|stable> from the
       specified services string. This method will throw an
 
       Error if it encounters a character that does not correspond to a valid
