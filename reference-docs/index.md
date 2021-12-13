@@ -16,7 +16,7 @@ ROBOTS: NOINDEX
 
 ## App Configuration
 
-#### Latest stable packages
+#### Stable packages
 
 | Name                  | Package               | Version          | Docs                                      | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
@@ -31,24 +31,24 @@ ROBOTS: NOINDEX
 
 ## Cognitive Services
 
-#### Latest stable packages
+#### Stable packages
 
 | Name                  | Package               | Version          | Docs                                      | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
 | Anomaly Detector  | @azure/cognitiveservices-anomalydetector | 2.1.0 |  [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/cognitiveservices-anomalydetector/azure-cognitiveservices-anomalydetector/stable)  | npm [2.1.0](https://www.npmjs.com/package/%40azure%2Fcognitiveservices-anomalydetector) |
-| Form Recognizer  | @azure/ai-form-recognizer | 3.2.0 |  [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/ai-form-recognizer/azure-ai-form-recognizer/stable)  | npm [3.2.0](https://www.npmjs.com/package/%40azure%2Fai-form-recognizer) |
 | Cognitive Search  | @azure/search-documents | 11.2.1 |  [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/search-documents/azure-search-documents/stable)  | npm [11.2.1](https://www.npmjs.com/package/%40azure%2Fsearch-documents) |
+| Form Recognizer  | @azure/ai-form-recognizer | 3.2.0 |  [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/ai-form-recognizer/azure-ai-form-recognizer/stable)  | npm [3.2.0](https://www.npmjs.com/package/%40azure%2Fai-form-recognizer) |
 | Text Analytics  | @azure/ai-text-analytics | 5.1.0 |  [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/ai-text-analytics/azure-ai-text-analytics/stable)  | npm [5.1.0](https://www.npmjs.com/package/%40azure%2Fai-text-analytics) |
 | Cognitive Services - Resource Management  | @azure/arm-cognitiveservices | 6.1.0 |  [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/arm-cognitiveservices/azure-arm-cognitiveservices/stable)  | npm [6.1.0](https://www.npmjs.com/package/%40azure%2Farm-cognitiveservices) |
  
 
-#### Preview packages
+#### Beta packages
 
 | Name                  | Package               | Version          | Docs                                      | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
 | Anomaly Detector  | @azure/ai-anomaly-detector | 3.0.0-beta.3 |  [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/ai-anomaly-detector/azure-ai-anomaly-detector/beta)  | npm [3.0.0-beta.3](https://www.npmjs.com/package/%40azure%2Fai-anomaly-detector%403.0.0-beta.3) |
-| Form Recognizer  | @azure/ai-form-recognizer | 4.0.0-beta.2 |  [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/ai-form-recognizer/azure-ai-form-recognizer/beta)  | npm [4.0.0-beta.2](https://www.npmjs.com/package/%40azure%2Fai-form-recognizer%404.0.0-beta.2) |
 | Cognitive Search  | @azure/search-documents | 11.3.0-beta.5 |  [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/search-documents/azure-search-documents/beta)  | npm [11.3.0-beta.5](https://www.npmjs.com/package/%40azure%2Fsearch-documents%4011.3.0-beta.5) |
+| Form Recognizer  | @azure/ai-form-recognizer | 4.0.0-beta.2 |  [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/ai-form-recognizer/azure-ai-form-recognizer/beta)  | npm [4.0.0-beta.2](https://www.npmjs.com/package/%40azure%2Fai-form-recognizer%404.0.0-beta.2) |
 | Text Analytics  | @azure/ai-text-analytics | 5.2.0-beta.2 |  [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/ai-text-analytics/azure-ai-text-analytics/beta)  | npm [5.2.0-beta.2](https://www.npmjs.com/package/%40azure%2Fai-text-analytics%405.2.0-beta.2) |
 | Form Recognizer  | @azure/cognitiveservices-formrecognizer | 2.0.1 |  [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/legacy/cognitiveservices-formrecognizer/azure-cognitiveservices-formrecognizer/legacy)  | npm [2.0.1](https://www.npmjs.com/package/%40azure%2Fcognitiveservices-formrecognizer%402.0.1) |
 | Text Analytics  | @azure/cognitiveservices-textanalytics | 4.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/legacy/cognitiveservices-textanalytics/azure-cognitiveservices-textanalytics/legacy)  | npm [4.0.0](https://www.npmjs.com/package/%40azure%2Fcognitiveservices-textanalytics%404.0.0) |
@@ -59,7 +59,7 @@ ROBOTS: NOINDEX
 
 ## Core
 
-#### Latest stable packages
+#### Stable packages
 
 | Name                  | Package               | Version          | Docs                                      | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
@@ -72,7 +72,7 @@ ROBOTS: NOINDEX
 | Paging  | @azure/core-paging | 1.2.0 |  [docs](/azure/javascript/sdk/sdk-demo2/core/core-paging/azure-core-paging/stable)  | npm [1.2.0](https://www.npmjs.com/package/%40azure%2Fcore-paging) |
  
 
-#### Preview packages
+#### Beta packages
 
 | Name                  | Package               | Version          | Docs                                      | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
@@ -84,7 +84,7 @@ ROBOTS: NOINDEX
 
 ## Cosmos DB
 
-#### Latest stable packages
+#### Stable packages
 
 | Name                  | Package               | Version          | Docs                                      | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
@@ -98,7 +98,7 @@ ROBOTS: NOINDEX
 
 ## Event Grid
 
-#### Latest stable packages
+#### Stable packages
 
 | Name                  | Package               | Version          | Docs                                      | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
@@ -106,7 +106,7 @@ ROBOTS: NOINDEX
 | Event Grid - Resource Management  | @azure/arm-eventgrid | 13.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/event-grid/arm-eventgrid/azure-arm-eventgrid/stable)  | npm [13.0.0](https://www.npmjs.com/package/%40azure%2Farm-eventgrid) |
  
 
-#### Preview packages
+#### Beta packages
 
 | Name                  | Package               | Version          | Docs                                      | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
@@ -118,7 +118,7 @@ ROBOTS: NOINDEX
 
 ## Event Hubs
 
-#### Latest stable packages
+#### Stable packages
 
 | Name                  | Package               | Version          | Docs                                      | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
@@ -127,7 +127,7 @@ ROBOTS: NOINDEX
 | Event Hubs - Resource Management  | @azure/arm-eventhub | 5.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/event-hubs/arm-eventhub/azure-arm-eventhub/stable)  | npm [5.0.0](https://www.npmjs.com/package/%40azure%2Farm-eventhub) |
  
 
-#### Preview packages
+#### Beta packages
 
 | Name                  | Package               | Version          | Docs                                      | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
@@ -139,7 +139,7 @@ ROBOTS: NOINDEX
 
 ## Identity
 
-#### Latest stable packages
+#### Stable packages
 
 | Name                  | Package               | Version          | Docs                                      | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
@@ -153,7 +153,7 @@ ROBOTS: NOINDEX
 
 ## Key Vault
 
-#### Latest stable packages
+#### Stable packages
 
 | Name                  | Package               | Version          | Docs                                      | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
@@ -164,7 +164,7 @@ ROBOTS: NOINDEX
 | Key Vault - Resource Management  | @azure/arm-keyvault | 1.3.2 |  [docs](/azure/javascript/sdk/sdk-demo2/key-vault/arm-keyvault/azure-arm-keyvault/stable)  | npm [1.3.2](https://www.npmjs.com/package/%40azure%2Farm-keyvault) |
  
 
-#### Preview packages
+#### Beta packages
 
 | Name                  | Package               | Version          | Docs                                      | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
@@ -182,7 +182,7 @@ ROBOTS: NOINDEX
 
 ## Service Bus
 
-#### Latest stable packages
+#### Stable packages
 
 | Name                  | Package               | Version          | Docs                                      | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
@@ -190,7 +190,7 @@ ROBOTS: NOINDEX
 | Service Bus - Resource Management  | @azure/arm-servicebus | 4.1.1 |  [docs](/azure/javascript/sdk/sdk-demo2/service-bus/arm-servicebus/azure-arm-servicebus/stable)  | npm [4.1.1](https://www.npmjs.com/package/%40azure%2Farm-servicebus) |
  
 
-#### Preview packages
+#### Beta packages
 
 | Name                  | Package               | Version          | Docs                                      | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
@@ -202,7 +202,7 @@ ROBOTS: NOINDEX
 
 ## Storage
 
-#### Latest stable packages
+#### Stable packages
 
 | Name                  | Package               | Version          | Docs                                      | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
@@ -213,7 +213,7 @@ ROBOTS: NOINDEX
 | Storage - Resource Management  | @azure/arm-storage | 17.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/storage/arm-storage/azure-arm-storage/stable)  | npm [17.0.0](https://www.npmjs.com/package/%40azure%2Farm-storage) |
  
 
-#### Preview packages
+#### Beta packages
 
 | Name                  | Package               | Version          | Docs                                      | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
@@ -228,7 +228,7 @@ ROBOTS: NOINDEX
 
 ## Tables
 
-#### Latest stable packages
+#### Stable packages
 
 | Name                  | Package               | Version          | Docs                                      | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
