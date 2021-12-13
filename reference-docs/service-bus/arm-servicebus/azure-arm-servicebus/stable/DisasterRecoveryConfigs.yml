@@ -1,0 +1,1145 @@
+### YamlMime:TSType
+name: DisasterRecoveryConfigs
+uid: '@azure/arm-servicebus.DisasterRecoveryConfigs|stable'
+package: '@azure/arm-servicebus|stable'
+summary: Class representing a DisasterRecoveryConfigs.
+fullName: DisasterRecoveryConfigs
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: DisasterRecoveryConfigs(ServiceBusManagementClientContext)
+    uid: '@azure/arm-servicebus.DisasterRecoveryConfigs.constructor|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Create a DisasterRecoveryConfigs.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'new DisasterRecoveryConfigs(client: ServiceBusManagementClientContext)'
+      parameters:
+        - id: client
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.ServiceBusManagementClientContext|stable"
+            />
+          description: |
+            Reference to the service client.
+methods:
+  - name: breakPairing(string, string, string, msRest.RequestOptionsBase)
+    uid: '@azure/arm-servicebus.DisasterRecoveryConfigs.breakPairing|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: >-
+      This operation disables the Disaster Recovery and stops replicating
+      changes from primary to
+
+      secondary namespaces
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function breakPairing(resourceGroupName: string, namespaceName: string,
+        alias: string, options?: msRest.RequestOptionsBase):
+        Promise<RestResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: alias
+          type: string
+          description: The Disaster Recovery configuration name
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<msRest.RestResponse>
+        type: Promise&lt;RestResponse&gt;
+  - name: >-
+      breakPairing(string, string, string, RequestOptionsBase,
+      ServiceCallback<void>)
+    uid: '@azure/arm-servicebus.DisasterRecoveryConfigs.breakPairing_2|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function breakPairing(resourceGroupName: string, namespaceName: string,
+        alias: string, options: RequestOptionsBase, callback:
+        ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: alias
+          type: string
+          description: The Disaster Recovery configuration name
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: ServiceCallback&lt;void&gt;
+          description: |
+            The callback
+  - name: breakPairing(string, string, string, ServiceCallback<void>)
+    uid: '@azure/arm-servicebus.DisasterRecoveryConfigs.breakPairing_1|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function breakPairing(resourceGroupName: string, namespaceName: string,
+        alias: string, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: alias
+          type: string
+          description: The Disaster Recovery configuration name
+        - id: callback
+          type: ServiceCallback&lt;void&gt;
+          description: |
+            The callback
+  - name: >-
+      checkNameAvailabilityMethod(string, string, CheckNameAvailability,
+      msRest.RequestOptionsBase)
+    uid: >-
+      @azure/arm-servicebus.DisasterRecoveryConfigs.checkNameAvailabilityMethod|stable
+    package: '@azure/arm-servicebus|stable'
+    summary: Check the give namespace name availability.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function checkNameAvailabilityMethod(resourceGroupName: string,
+        namespaceName: string, parameters: CheckNameAvailability, options?:
+        msRest.RequestOptionsBase):
+        Promise<Models.DisasterRecoveryConfigsCheckNameAvailabilityMethodResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: parameters
+          type: <xref uid="@azure/arm-servicebus.CheckNameAvailability|stable" />
+          description: Parameters to check availability of the given namespace name
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: >-
+          Promise<Models.DisasterRecoveryConfigsCheckNameAvailabilityMethodResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-servicebus.DisasterRecoveryConfigsCheckNameAvailabilityMethodResponse|stable"
+          />&gt;
+  - name: >-
+      checkNameAvailabilityMethod(string, string, CheckNameAvailability,
+      RequestOptionsBase, ServiceCallback<CheckNameAvailabilityResult>)
+    uid: >-
+      @azure/arm-servicebus.DisasterRecoveryConfigs.checkNameAvailabilityMethod_2|stable
+    package: '@azure/arm-servicebus|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function checkNameAvailabilityMethod(resourceGroupName: string,
+        namespaceName: string, parameters: CheckNameAvailability, options:
+        RequestOptionsBase, callback:
+        ServiceCallback<CheckNameAvailabilityResult>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: parameters
+          type: <xref uid="@azure/arm-servicebus.CheckNameAvailability|stable" />
+          description: Parameters to check availability of the given namespace name
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-servicebus.CheckNameAvailabilityResult|stable"
+            />&gt;
+          description: |
+            The callback
+  - name: >-
+      checkNameAvailabilityMethod(string, string, CheckNameAvailability,
+      ServiceCallback<CheckNameAvailabilityResult>)
+    uid: >-
+      @azure/arm-servicebus.DisasterRecoveryConfigs.checkNameAvailabilityMethod_1|stable
+    package: '@azure/arm-servicebus|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function checkNameAvailabilityMethod(resourceGroupName: string,
+        namespaceName: string, parameters: CheckNameAvailability, callback:
+        ServiceCallback<CheckNameAvailabilityResult>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: parameters
+          type: <xref uid="@azure/arm-servicebus.CheckNameAvailability|stable" />
+          description: Parameters to check availability of the given namespace name
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-servicebus.CheckNameAvailabilityResult|stable"
+            />&gt;
+          description: |
+            The callback
+  - name: >-
+      createOrUpdate(string, string, string, ArmDisasterRecovery,
+      msRest.RequestOptionsBase)
+    uid: '@azure/arm-servicebus.DisasterRecoveryConfigs.createOrUpdate|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Creates or updates a new Alias(Disaster Recovery configuration)
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, namespaceName:
+        string, alias: string, parameters: ArmDisasterRecovery, options?:
+        msRest.RequestOptionsBase):
+        Promise<Models.DisasterRecoveryConfigsCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: alias
+          type: string
+          description: The Disaster Recovery configuration name
+        - id: parameters
+          type: <xref uid="@azure/arm-servicebus.ArmDisasterRecovery|stable" />
+          description: >-
+            Parameters required to create an Alias(Disaster Recovery
+            configuration)
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.DisasterRecoveryConfigsCreateOrUpdateResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-servicebus.DisasterRecoveryConfigsCreateOrUpdateResponse|stable"
+          />&gt;
+  - name: >-
+      createOrUpdate(string, string, string, ArmDisasterRecovery,
+      RequestOptionsBase, ServiceCallback<ArmDisasterRecovery>)
+    uid: '@azure/arm-servicebus.DisasterRecoveryConfigs.createOrUpdate_2|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, namespaceName:
+        string, alias: string, parameters: ArmDisasterRecovery, options:
+        RequestOptionsBase, callback: ServiceCallback<ArmDisasterRecovery>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: alias
+          type: string
+          description: The Disaster Recovery configuration name
+        - id: parameters
+          type: <xref uid="@azure/arm-servicebus.ArmDisasterRecovery|stable" />
+          description: >-
+            Parameters required to create an Alias(Disaster Recovery
+            configuration)
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-servicebus.ArmDisasterRecovery|stable" />&gt;
+          description: |
+            The callback
+  - name: >-
+      createOrUpdate(string, string, string, ArmDisasterRecovery,
+      ServiceCallback<ArmDisasterRecovery>)
+    uid: '@azure/arm-servicebus.DisasterRecoveryConfigs.createOrUpdate_1|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, namespaceName:
+        string, alias: string, parameters: ArmDisasterRecovery, callback:
+        ServiceCallback<ArmDisasterRecovery>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: alias
+          type: string
+          description: The Disaster Recovery configuration name
+        - id: parameters
+          type: <xref uid="@azure/arm-servicebus.ArmDisasterRecovery|stable" />
+          description: >-
+            Parameters required to create an Alias(Disaster Recovery
+            configuration)
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-servicebus.ArmDisasterRecovery|stable" />&gt;
+          description: |
+            The callback
+  - name: deleteMethod(string, string, string, msRest.RequestOptionsBase)
+    uid: '@azure/arm-servicebus.DisasterRecoveryConfigs.deleteMethod|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Deletes an Alias(Disaster Recovery configuration)
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, namespaceName: string,
+        alias: string, options?: msRest.RequestOptionsBase):
+        Promise<RestResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: alias
+          type: string
+          description: The Disaster Recovery configuration name
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<msRest.RestResponse>
+        type: Promise&lt;RestResponse&gt;
+  - name: >-
+      deleteMethod(string, string, string, RequestOptionsBase,
+      ServiceCallback<void>)
+    uid: '@azure/arm-servicebus.DisasterRecoveryConfigs.deleteMethod_2|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, namespaceName: string,
+        alias: string, options: RequestOptionsBase, callback:
+        ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: alias
+          type: string
+          description: The Disaster Recovery configuration name
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: ServiceCallback&lt;void&gt;
+          description: |
+            The callback
+  - name: deleteMethod(string, string, string, ServiceCallback<void>)
+    uid: '@azure/arm-servicebus.DisasterRecoveryConfigs.deleteMethod_1|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, namespaceName: string,
+        alias: string, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: alias
+          type: string
+          description: The Disaster Recovery configuration name
+        - id: callback
+          type: ServiceCallback&lt;void&gt;
+          description: |
+            The callback
+  - name: failOver(string, string, string, msRest.RequestOptionsBase)
+    uid: '@azure/arm-servicebus.DisasterRecoveryConfigs.failOver|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: >-
+      Invokes GEO DR failover and reconfigure the alias to point to the
+      secondary namespace
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function failOver(resourceGroupName: string, namespaceName: string,
+        alias: string, options?: msRest.RequestOptionsBase):
+        Promise<RestResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: alias
+          type: string
+          description: The Disaster Recovery configuration name
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<msRest.RestResponse>
+        type: Promise&lt;RestResponse&gt;
+  - name: >-
+      failOver(string, string, string, RequestOptionsBase,
+      ServiceCallback<void>)
+    uid: '@azure/arm-servicebus.DisasterRecoveryConfigs.failOver_2|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function failOver(resourceGroupName: string, namespaceName: string,
+        alias: string, options: RequestOptionsBase, callback:
+        ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: alias
+          type: string
+          description: The Disaster Recovery configuration name
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: ServiceCallback&lt;void&gt;
+          description: |
+            The callback
+  - name: failOver(string, string, string, ServiceCallback<void>)
+    uid: '@azure/arm-servicebus.DisasterRecoveryConfigs.failOver_1|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function failOver(resourceGroupName: string, namespaceName: string,
+        alias: string, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: alias
+          type: string
+          description: The Disaster Recovery configuration name
+        - id: callback
+          type: ServiceCallback&lt;void&gt;
+          description: |
+            The callback
+  - name: get(string, string, string, msRest.RequestOptionsBase)
+    uid: '@azure/arm-servicebus.DisasterRecoveryConfigs.get|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: >-
+      Retrieves Alias(Disaster Recovery configuration) for primary or secondary
+      namespace
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, namespaceName: string, alias:
+        string, options?: msRest.RequestOptionsBase):
+        Promise<Models.DisasterRecoveryConfigsGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: alias
+          type: string
+          description: The Disaster Recovery configuration name
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.DisasterRecoveryConfigsGetResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-servicebus.DisasterRecoveryConfigsGetResponse|stable"
+          />&gt;
+  - name: >-
+      get(string, string, string, RequestOptionsBase,
+      ServiceCallback<ArmDisasterRecovery>)
+    uid: '@azure/arm-servicebus.DisasterRecoveryConfigs.get_2|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, namespaceName: string, alias:
+        string, options: RequestOptionsBase, callback:
+        ServiceCallback<ArmDisasterRecovery>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: alias
+          type: string
+          description: The Disaster Recovery configuration name
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-servicebus.ArmDisasterRecovery|stable" />&gt;
+          description: |
+            The callback
+  - name: get(string, string, string, ServiceCallback<ArmDisasterRecovery>)
+    uid: '@azure/arm-servicebus.DisasterRecoveryConfigs.get_1|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, namespaceName: string, alias:
+        string, callback: ServiceCallback<ArmDisasterRecovery>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: alias
+          type: string
+          description: The Disaster Recovery configuration name
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-servicebus.ArmDisasterRecovery|stable" />&gt;
+          description: |
+            The callback
+  - name: >-
+      getAuthorizationRule(string, string, string, string,
+      msRest.RequestOptionsBase)
+    uid: '@azure/arm-servicebus.DisasterRecoveryConfigs.getAuthorizationRule|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Gets an authorization rule for a namespace by rule name.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getAuthorizationRule(resourceGroupName: string, namespaceName:
+        string, alias: string, authorizationRuleName: string, options?:
+        msRest.RequestOptionsBase):
+        Promise<Models.DisasterRecoveryConfigsGetAuthorizationRuleResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: alias
+          type: string
+          description: The Disaster Recovery configuration name
+        - id: authorizationRuleName
+          type: string
+          description: The authorization rule name.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.DisasterRecoveryConfigsGetAuthorizationRuleResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-servicebus.DisasterRecoveryConfigsGetAuthorizationRuleResponse|stable"
+          />&gt;
+  - name: >-
+      getAuthorizationRule(string, string, string, string, RequestOptionsBase,
+      ServiceCallback<SBAuthorizationRule>)
+    uid: >-
+      @azure/arm-servicebus.DisasterRecoveryConfigs.getAuthorizationRule_2|stable
+    package: '@azure/arm-servicebus|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getAuthorizationRule(resourceGroupName: string, namespaceName:
+        string, alias: string, authorizationRuleName: string, options:
+        RequestOptionsBase, callback: ServiceCallback<SBAuthorizationRule>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: alias
+          type: string
+          description: The Disaster Recovery configuration name
+        - id: authorizationRuleName
+          type: string
+          description: The authorization rule name.
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-servicebus.SBAuthorizationRule|stable" />&gt;
+          description: |
+            The callback
+  - name: >-
+      getAuthorizationRule(string, string, string, string,
+      ServiceCallback<SBAuthorizationRule>)
+    uid: >-
+      @azure/arm-servicebus.DisasterRecoveryConfigs.getAuthorizationRule_1|stable
+    package: '@azure/arm-servicebus|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getAuthorizationRule(resourceGroupName: string, namespaceName:
+        string, alias: string, authorizationRuleName: string, callback:
+        ServiceCallback<SBAuthorizationRule>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: alias
+          type: string
+          description: The Disaster Recovery configuration name
+        - id: authorizationRuleName
+          type: string
+          description: The authorization rule name.
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-servicebus.SBAuthorizationRule|stable" />&gt;
+          description: |
+            The callback
+  - name: list(string, string, msRest.RequestOptionsBase)
+    uid: '@azure/arm-servicebus.DisasterRecoveryConfigs.list|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Gets all Alias(Disaster Recovery configurations)
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, namespaceName: string,
+        options?: msRest.RequestOptionsBase):
+        Promise<Models.DisasterRecoveryConfigsListResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.DisasterRecoveryConfigsListResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-servicebus.DisasterRecoveryConfigsListResponse|stable"
+          />&gt;
+  - name: >-
+      list(string, string, RequestOptionsBase,
+      ServiceCallback<ArmDisasterRecoveryListResult>)
+    uid: '@azure/arm-servicebus.DisasterRecoveryConfigs.list_2|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, namespaceName: string, options:
+        RequestOptionsBase, callback:
+        ServiceCallback<ArmDisasterRecoveryListResult>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-servicebus.ArmDisasterRecoveryListResult|stable"
+            />&gt;
+          description: |
+            The callback
+  - name: list(string, string, ServiceCallback<ArmDisasterRecoveryListResult>)
+    uid: '@azure/arm-servicebus.DisasterRecoveryConfigs.list_1|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, namespaceName: string,
+        callback: ServiceCallback<ArmDisasterRecoveryListResult>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-servicebus.ArmDisasterRecoveryListResult|stable"
+            />&gt;
+          description: |
+            The callback
+  - name: listAuthorizationRules(string, string, string, msRest.RequestOptionsBase)
+    uid: >-
+      @azure/arm-servicebus.DisasterRecoveryConfigs.listAuthorizationRules|stable
+    package: '@azure/arm-servicebus|stable'
+    summary: Gets the authorization rules for a namespace.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listAuthorizationRules(resourceGroupName: string,
+        namespaceName: string, alias: string, options?:
+        msRest.RequestOptionsBase):
+        Promise<Models.DisasterRecoveryConfigsListAuthorizationRulesResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: alias
+          type: string
+          description: The Disaster Recovery configuration name
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.DisasterRecoveryConfigsListAuthorizationRulesResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-servicebus.DisasterRecoveryConfigsListAuthorizationRulesResponse|stable"
+          />&gt;
+  - name: >-
+      listAuthorizationRules(string, string, string, RequestOptionsBase,
+      ServiceCallback<SBAuthorizationRuleListResult>)
+    uid: >-
+      @azure/arm-servicebus.DisasterRecoveryConfigs.listAuthorizationRules_2|stable
+    package: '@azure/arm-servicebus|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listAuthorizationRules(resourceGroupName: string,
+        namespaceName: string, alias: string, options: RequestOptionsBase,
+        callback: ServiceCallback<SBAuthorizationRuleListResult>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: alias
+          type: string
+          description: The Disaster Recovery configuration name
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-servicebus.SBAuthorizationRuleListResult|stable"
+            />&gt;
+          description: |
+            The callback
+  - name: >-
+      listAuthorizationRules(string, string, string,
+      ServiceCallback<SBAuthorizationRuleListResult>)
+    uid: >-
+      @azure/arm-servicebus.DisasterRecoveryConfigs.listAuthorizationRules_1|stable
+    package: '@azure/arm-servicebus|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listAuthorizationRules(resourceGroupName: string,
+        namespaceName: string, alias: string, callback:
+        ServiceCallback<SBAuthorizationRuleListResult>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: alias
+          type: string
+          description: The Disaster Recovery configuration name
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-servicebus.SBAuthorizationRuleListResult|stable"
+            />&gt;
+          description: |
+            The callback
+  - name: listAuthorizationRulesNext(string, msRest.RequestOptionsBase)
+    uid: >-
+      @azure/arm-servicebus.DisasterRecoveryConfigs.listAuthorizationRulesNext|stable
+    package: '@azure/arm-servicebus|stable'
+    summary: Gets the authorization rules for a namespace.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listAuthorizationRulesNext(nextPageLink: string, options?:
+        msRest.RequestOptionsBase):
+        Promise<Models.DisasterRecoveryConfigsListAuthorizationRulesNextResponse>
+      parameters:
+        - id: nextPageLink
+          type: string
+          description: The NextLink from the previous successful call to List operation.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: >-
+          Promise<Models.DisasterRecoveryConfigsListAuthorizationRulesNextResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-servicebus.DisasterRecoveryConfigsListAuthorizationRulesNextResponse|stable"
+          />&gt;
+  - name: >-
+      listAuthorizationRulesNext(string, RequestOptionsBase,
+      ServiceCallback<SBAuthorizationRuleListResult>)
+    uid: >-
+      @azure/arm-servicebus.DisasterRecoveryConfigs.listAuthorizationRulesNext_2|stable
+    package: '@azure/arm-servicebus|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listAuthorizationRulesNext(nextPageLink: string, options:
+        RequestOptionsBase, callback:
+        ServiceCallback<SBAuthorizationRuleListResult>)
+      parameters:
+        - id: nextPageLink
+          type: string
+          description: The NextLink from the previous successful call to List operation.
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-servicebus.SBAuthorizationRuleListResult|stable"
+            />&gt;
+          description: |
+            The callback
+  - name: >-
+      listAuthorizationRulesNext(string,
+      ServiceCallback<SBAuthorizationRuleListResult>)
+    uid: >-
+      @azure/arm-servicebus.DisasterRecoveryConfigs.listAuthorizationRulesNext_1|stable
+    package: '@azure/arm-servicebus|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listAuthorizationRulesNext(nextPageLink: string, callback:
+        ServiceCallback<SBAuthorizationRuleListResult>)
+      parameters:
+        - id: nextPageLink
+          type: string
+          description: The NextLink from the previous successful call to List operation.
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-servicebus.SBAuthorizationRuleListResult|stable"
+            />&gt;
+          description: |
+            The callback
+  - name: listKeys(string, string, string, string, msRest.RequestOptionsBase)
+    uid: '@azure/arm-servicebus.DisasterRecoveryConfigs.listKeys|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Gets the primary and secondary connection strings for the namespace.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listKeys(resourceGroupName: string, namespaceName: string,
+        alias: string, authorizationRuleName: string, options?:
+        msRest.RequestOptionsBase):
+        Promise<Models.DisasterRecoveryConfigsListKeysResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: alias
+          type: string
+          description: The Disaster Recovery configuration name
+        - id: authorizationRuleName
+          type: string
+          description: The authorization rule name.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.DisasterRecoveryConfigsListKeysResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-servicebus.DisasterRecoveryConfigsListKeysResponse|stable"
+          />&gt;
+  - name: >-
+      listKeys(string, string, string, string, RequestOptionsBase,
+      ServiceCallback<AccessKeys>)
+    uid: '@azure/arm-servicebus.DisasterRecoveryConfigs.listKeys_2|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listKeys(resourceGroupName: string, namespaceName: string,
+        alias: string, authorizationRuleName: string, options:
+        RequestOptionsBase, callback: ServiceCallback<AccessKeys>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: alias
+          type: string
+          description: The Disaster Recovery configuration name
+        - id: authorizationRuleName
+          type: string
+          description: The authorization rule name.
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-servicebus.AccessKeys|stable" />&gt;
+          description: |
+            The callback
+  - name: listKeys(string, string, string, string, ServiceCallback<AccessKeys>)
+    uid: '@azure/arm-servicebus.DisasterRecoveryConfigs.listKeys_1|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listKeys(resourceGroupName: string, namespaceName: string,
+        alias: string, authorizationRuleName: string, callback:
+        ServiceCallback<AccessKeys>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: alias
+          type: string
+          description: The Disaster Recovery configuration name
+        - id: authorizationRuleName
+          type: string
+          description: The authorization rule name.
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-servicebus.AccessKeys|stable" />&gt;
+          description: |
+            The callback
+  - name: listNext(string, msRest.RequestOptionsBase)
+    uid: '@azure/arm-servicebus.DisasterRecoveryConfigs.listNext|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Gets all Alias(Disaster Recovery configurations)
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, options?:
+        msRest.RequestOptionsBase):
+        Promise<Models.DisasterRecoveryConfigsListNextResponse>
+      parameters:
+        - id: nextPageLink
+          type: string
+          description: The NextLink from the previous successful call to List operation.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.DisasterRecoveryConfigsListNextResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-servicebus.DisasterRecoveryConfigsListNextResponse|stable"
+          />&gt;
+  - name: >-
+      listNext(string, RequestOptionsBase,
+      ServiceCallback<ArmDisasterRecoveryListResult>)
+    uid: '@azure/arm-servicebus.DisasterRecoveryConfigs.listNext_2|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, options: RequestOptionsBase,
+        callback: ServiceCallback<ArmDisasterRecoveryListResult>)
+      parameters:
+        - id: nextPageLink
+          type: string
+          description: The NextLink from the previous successful call to List operation.
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-servicebus.ArmDisasterRecoveryListResult|stable"
+            />&gt;
+          description: |
+            The callback
+  - name: listNext(string, ServiceCallback<ArmDisasterRecoveryListResult>)
+    uid: '@azure/arm-servicebus.DisasterRecoveryConfigs.listNext_1|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, callback:
+        ServiceCallback<ArmDisasterRecoveryListResult>)
+      parameters:
+        - id: nextPageLink
+          type: string
+          description: The NextLink from the previous successful call to List operation.
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-servicebus.ArmDisasterRecoveryListResult|stable"
+            />&gt;
+          description: |
+            The callback

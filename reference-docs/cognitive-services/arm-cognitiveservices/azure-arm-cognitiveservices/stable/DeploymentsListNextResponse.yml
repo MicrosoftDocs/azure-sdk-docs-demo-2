@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: DeploymentsListNextResponse
+uid: '@azure/arm-cognitiveservices.DeploymentsListNextResponse|stable'
+package: '@azure/arm-cognitiveservices|stable'
+summary: Contains response data for the listNext operation.
+fullName: DeploymentsListNextResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type DeploymentsListNextResponse = DeploymentListResult & { _response:
+  HttpResponse & { bodyAsText: string, parsedBody: DeploymentListResult } }

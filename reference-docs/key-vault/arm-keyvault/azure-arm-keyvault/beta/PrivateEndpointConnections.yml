@@ -1,0 +1,221 @@
+### YamlMime:TSType
+name: PrivateEndpointConnections
+uid: '@azure/arm-keyvault.PrivateEndpointConnections|beta'
+package: '@azure/arm-keyvault|beta'
+summary: Interface representing a PrivateEndpointConnections.
+fullName: PrivateEndpointConnections
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      beginDelete(string, string, string,
+      PrivateEndpointConnectionsDeleteOptionalParams)
+    uid: '@azure/arm-keyvault.PrivateEndpointConnections.beginDelete|beta'
+    package: '@azure/arm-keyvault|beta'
+    summary: >-
+      Deletes the specified private endpoint connection associated with the key
+      vault.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDelete(resourceGroupName: string, vaultName: string,
+        privateEndpointConnectionName: string, options?:
+        PrivateEndpointConnectionsDeleteOptionalParams):
+        Promise<PollerLike<PollOperationState<PrivateEndpointConnectionsDeleteResponse>,
+        PrivateEndpointConnectionsDeleteResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group that contains the key vault.
+        - id: vaultName
+          type: string
+          description: The name of the key vault.
+        - id: privateEndpointConnectionName
+          type: string
+          description: |-
+            Name of the private endpoint connection associated with the key
+                                                 vault.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-keyvault.PrivateEndpointConnectionsDeleteOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-keyvault.PrivateEndpointConnectionsDeleteResponse|beta"
+          />&gt;, <xref
+          uid="@azure/arm-keyvault.PrivateEndpointConnectionsDeleteResponse|beta"
+          />&gt;&gt;
+  - name: >-
+      beginDeleteAndWait(string, string, string,
+      PrivateEndpointConnectionsDeleteOptionalParams)
+    uid: '@azure/arm-keyvault.PrivateEndpointConnections.beginDeleteAndWait|beta'
+    package: '@azure/arm-keyvault|beta'
+    summary: >-
+      Deletes the specified private endpoint connection associated with the key
+      vault.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteAndWait(resourceGroupName: string, vaultName:
+        string, privateEndpointConnectionName: string, options?:
+        PrivateEndpointConnectionsDeleteOptionalParams):
+        Promise<PrivateEndpointConnectionsDeleteResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group that contains the key vault.
+        - id: vaultName
+          type: string
+          description: The name of the key vault.
+        - id: privateEndpointConnectionName
+          type: string
+          description: |-
+            Name of the private endpoint connection associated with the key
+                                                 vault.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-keyvault.PrivateEndpointConnectionsDeleteOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-keyvault.PrivateEndpointConnectionsDeleteResponse|beta"
+          />&gt;
+  - name: get(string, string, string, PrivateEndpointConnectionsGetOptionalParams)
+    uid: '@azure/arm-keyvault.PrivateEndpointConnections.get|beta'
+    package: '@azure/arm-keyvault|beta'
+    summary: >-
+      Gets the specified private endpoint connection associated with the key
+      vault.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, vaultName: string,
+        privateEndpointConnectionName: string, options?:
+        PrivateEndpointConnectionsGetOptionalParams):
+        Promise<PrivateEndpointConnectionsGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group that contains the key vault.
+        - id: vaultName
+          type: string
+          description: The name of the key vault.
+        - id: privateEndpointConnectionName
+          type: string
+          description: |-
+            Name of the private endpoint connection associated with the key
+                                                 vault.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-keyvault.PrivateEndpointConnectionsGetOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-keyvault.PrivateEndpointConnectionsGetResponse|beta"
+          />&gt;
+  - name: >-
+      listByResource(string, string,
+      PrivateEndpointConnectionsListByResourceOptionalParams)
+    uid: '@azure/arm-keyvault.PrivateEndpointConnections.listByResource|beta'
+    package: '@azure/arm-keyvault|beta'
+    summary: >-
+      The List operation gets information about the private endpoint connections
+      associated with the
+
+      vault.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByResource(resourceGroupName: string, vaultName: string,
+        options?: PrivateEndpointConnectionsListByResourceOptionalParams):
+        PagedAsyncIterableIterator<PrivateEndpointConnection>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group that contains the key vault.
+        - id: vaultName
+          type: string
+          description: The name of the key vault.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-keyvault.PrivateEndpointConnectionsListByResourceOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-keyvault.PrivateEndpointConnection|beta" />&gt;
+  - name: >-
+      put(string, string, string, PrivateEndpointConnection,
+      PrivateEndpointConnectionsPutOptionalParams)
+    uid: '@azure/arm-keyvault.PrivateEndpointConnections.put|beta'
+    package: '@azure/arm-keyvault|beta'
+    summary: >-
+      Updates the specified private endpoint connection associated with the key
+      vault.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function put(resourceGroupName: string, vaultName: string,
+        privateEndpointConnectionName: string, properties:
+        PrivateEndpointConnection, options?:
+        PrivateEndpointConnectionsPutOptionalParams):
+        Promise<PrivateEndpointConnectionsPutResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group that contains the key vault.
+        - id: vaultName
+          type: string
+          description: The name of the key vault.
+        - id: privateEndpointConnectionName
+          type: string
+          description: |-
+            Name of the private endpoint connection associated with the key
+                                                 vault.
+        - id: properties
+          type: <xref uid="@azure/arm-keyvault.PrivateEndpointConnection|beta" />
+          description: The intended state of private endpoint connection.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-keyvault.PrivateEndpointConnectionsPutOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-keyvault.PrivateEndpointConnectionsPutResponse|beta"
+          />&gt;

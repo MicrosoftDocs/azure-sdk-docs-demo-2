@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: DomainsRegenerateKeyResponse
+uid: '@azure/arm-eventgrid.DomainsRegenerateKeyResponse|stable'
+package: '@azure/arm-eventgrid|stable'
+summary: Contains response data for the regenerateKey operation.
+fullName: DomainsRegenerateKeyResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type DomainsRegenerateKeyResponse = DomainSharedAccessKeys & { _response:
+  HttpResponse & { bodyAsText: string, parsedBody: DomainSharedAccessKeys } }

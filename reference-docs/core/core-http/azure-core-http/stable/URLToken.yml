@@ -1,0 +1,135 @@
+### YamlMime:TSType
+name: URLToken
+uid: '@azure/core-http.URLToken|stable'
+package: '@azure/core-http|stable'
+summary: ''
+fullName: URLToken
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: URLToken(string, URLTokenType)
+    uid: '@azure/core-http.URLToken.constructor|stable'
+    package: '@azure/core-http|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'new URLToken(text: string, type: URLTokenType)'
+      parameters:
+        - id: text
+          type: string
+          description: ''
+        - id: type
+          type: <xref uid="@azure/core-http.URLTokenType|stable" />
+          description: ''
+properties:
+  - name: text
+    uid: '@azure/core-http.URLToken.text|stable'
+    package: '@azure/core-http|stable'
+    summary: ''
+    fullName: text
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'text: string'
+      return:
+        description: ''
+        type: string
+  - name: type
+    uid: '@azure/core-http.URLToken.type|stable'
+    package: '@azure/core-http|stable'
+    summary: ''
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: URLTokenType'
+      return:
+        description: ''
+        type: <xref uid="@azure/core-http.URLTokenType|stable" />
+methods:
+  - name: host(string)
+    uid: '@azure/core-http.URLToken.host|stable'
+    package: '@azure/core-http|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static function host(text: string): URLToken'
+      parameters:
+        - id: text
+          type: string
+          description: ''
+      return:
+        description: ''
+        type: <xref uid="@azure/core-http.URLToken|stable" />
+  - name: path(string)
+    uid: '@azure/core-http.URLToken.path|stable'
+    package: '@azure/core-http|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static function path(text: string): URLToken'
+      parameters:
+        - id: text
+          type: string
+          description: ''
+      return:
+        description: ''
+        type: <xref uid="@azure/core-http.URLToken|stable" />
+  - name: port(string)
+    uid: '@azure/core-http.URLToken.port|stable'
+    package: '@azure/core-http|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static function port(text: string): URLToken'
+      parameters:
+        - id: text
+          type: string
+          description: ''
+      return:
+        description: ''
+        type: <xref uid="@azure/core-http.URLToken|stable" />
+  - name: query(string)
+    uid: '@azure/core-http.URLToken.query|stable'
+    package: '@azure/core-http|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static function query(text: string): URLToken'
+      parameters:
+        - id: text
+          type: string
+          description: ''
+      return:
+        description: ''
+        type: <xref uid="@azure/core-http.URLToken|stable" />
+  - name: scheme(string)
+    uid: '@azure/core-http.URLToken.scheme|stable'
+    package: '@azure/core-http|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static function scheme(text: string): URLToken'
+      parameters:
+        - id: text
+          type: string
+          description: ''
+      return:
+        description: ''
+        type: <xref uid="@azure/core-http.URLToken|stable" />

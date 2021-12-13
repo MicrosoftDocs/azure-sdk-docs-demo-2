@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: MessageIdDeleteResponse
+uid: '@azure/storage-queue.MessageIdDeleteResponse|stable'
+package: '@azure/storage-queue|stable'
+summary: Contains response data for the delete operation.
+fullName: MessageIdDeleteResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type MessageIdDeleteResponse = MessageIdDeleteHeaders & { _response:
+  HttpResponse & { parsedHeaders: MessageIdDeleteHeaders } }

@@ -1,0 +1,104 @@
+### YamlMime:TSType
+name: SearchIndexerClientOptions
+uid: '@azure/search-documents.SearchIndexerClientOptions|beta'
+package: '@azure/search-documents|beta'
+summary: Client options used to configure Cognitive Search API requests.
+fullName: SearchIndexerClientOptions
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: allowInsecureConnection
+    uid: >-
+      @azure/search-documents.SearchIndexerClientOptions.allowInsecureConnection|beta
+    package: '@azure/search-documents|beta'
+    summary: Set to true if the request is sent over HTTP instead of HTTPS
+    fullName: allowInsecureConnection
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowInsecureConnection?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: apiVersion
+    uid: '@azure/search-documents.SearchIndexerClientOptions.apiVersion|beta'
+    package: '@azure/search-documents|beta'
+    summary: The API version to use when communicating with the service.
+    fullName: apiVersion
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'apiVersion?: string'
+      return:
+        description: ''
+        type: string
+  - name: httpClient
+    uid: '@azure/search-documents.SearchIndexerClientOptions.httpClient|beta'
+    package: '@azure/search-documents|beta'
+    summary: The HttpClient that will be used to send HTTP requests.
+    fullName: httpClient
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'httpClient?: HttpClient'
+      return:
+        description: ''
+        type: HttpClient
+  - name: proxyOptions
+    uid: '@azure/search-documents.SearchIndexerClientOptions.proxyOptions|beta'
+    package: '@azure/search-documents|beta'
+    summary: Options to configure a proxy for outgoing requests.
+    fullName: proxyOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'proxyOptions?: ProxySettings'
+      return:
+        description: ''
+        type: ProxySettings
+  - name: redirectOptions
+    uid: '@azure/search-documents.SearchIndexerClientOptions.redirectOptions|beta'
+    package: '@azure/search-documents|beta'
+    summary: Options for how redirect responses are handled.
+    fullName: redirectOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'redirectOptions?: RedirectPolicyOptions'
+      return:
+        description: ''
+        type: RedirectPolicyOptions
+  - name: retryOptions
+    uid: '@azure/search-documents.SearchIndexerClientOptions.retryOptions|beta'
+    package: '@azure/search-documents|beta'
+    summary: Options that control how to retry failed requests.
+    fullName: retryOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'retryOptions?: ExponentialRetryPolicyOptions'
+      return:
+        description: ''
+        type: ExponentialRetryPolicyOptions
+  - name: userAgentOptions
+    uid: '@azure/search-documents.SearchIndexerClientOptions.userAgentOptions|beta'
+    package: '@azure/search-documents|beta'
+    summary: Options for adding user agent details to outgoing requests.
+    fullName: userAgentOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'userAgentOptions?: UserAgentPolicyOptions'
+      return:
+        description: ''
+        type: UserAgentPolicyOptions
+extends: CommonClientOptions

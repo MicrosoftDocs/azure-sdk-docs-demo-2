@@ -1,0 +1,100 @@
+### YamlMime:TSType
+name: ManagementPolicy
+uid: '@azure/arm-storage.ManagementPolicy|stable'
+package: '@azure/arm-storage|stable'
+summary: The Get Storage Account ManagementPolicies operation response.
+fullName: ManagementPolicy
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: id
+    uid: '@azure/arm-storage.ManagementPolicy.id|stable'
+    package: '@azure/arm-storage|stable'
+    summary: >-
+      Fully qualified resource ID for the resource. Ex -
+
+      /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: lastModifiedTime
+    uid: '@azure/arm-storage.ManagementPolicy.lastModifiedTime|stable'
+    package: '@azure/arm-storage|stable'
+    summary: >-
+      Returns the date and time the ManagementPolicies was last modified.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: lastModifiedTime
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lastModifiedTime?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: name
+    uid: '@azure/arm-storage.ManagementPolicy.name|stable'
+    package: '@azure/arm-storage|stable'
+    summary: >-
+      The name of the resource
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: policy
+    uid: '@azure/arm-storage.ManagementPolicy.policy|stable'
+    package: '@azure/arm-storage|stable'
+    summary: >-
+      The Storage Account ManagementPolicy, in JSON format. See more details in:
+
+      https://docs.microsoft.com/en-us/azure/storage/common/storage-lifecycle-managment-concepts.
+    fullName: policy
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'policy: ManagementPolicySchema'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-storage.ManagementPolicySchema|stable" />
+  - name: type
+    uid: '@azure/arm-storage.ManagementPolicy.type|stable'
+    package: '@azure/arm-storage|stable'
+    summary: >-
+      The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or
+
+      "Microsoft.Storage/storageAccounts"
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+extends: <xref uid="@azure/arm-storage.Resource|stable" />

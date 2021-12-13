@@ -1,0 +1,16 @@
+### YamlMime:TSTypeAlias
+name: EventSubscriptionsListRegionalByResourceGroupForTopicTypeResponse
+uid: >-
+  @azure/arm-eventgrid.EventSubscriptionsListRegionalByResourceGroupForTopicTypeResponse|stable
+package: '@azure/arm-eventgrid|stable'
+summary: >-
+  Contains response data for the listRegionalByResourceGroupForTopicType
+  operation.
+fullName: EventSubscriptionsListRegionalByResourceGroupForTopicTypeResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type EventSubscriptionsListRegionalByResourceGroupForTopicTypeResponse =
+  EventSubscriptionsListResult & { _response: HttpResponse & { bodyAsText:
+  string, parsedBody: EventSubscriptionsListResult } }

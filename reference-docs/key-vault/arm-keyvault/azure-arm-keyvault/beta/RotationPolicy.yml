@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: RotationPolicy
+uid: '@azure/arm-keyvault.RotationPolicy|beta'
+package: '@azure/arm-keyvault|beta'
+summary: ''
+fullName: RotationPolicy
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: attributes
+    uid: '@azure/arm-keyvault.RotationPolicy.attributes|beta'
+    package: '@azure/arm-keyvault|beta'
+    summary: The attributes of key rotation policy.
+    fullName: attributes
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'attributes?: KeyRotationPolicyAttributes'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-keyvault.KeyRotationPolicyAttributes|beta" />
+  - name: lifetimeActions
+    uid: '@azure/arm-keyvault.RotationPolicy.lifetimeActions|beta'
+    package: '@azure/arm-keyvault|beta'
+    summary: The lifetimeActions for key rotation action.
+    fullName: lifetimeActions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lifetimeActions?: LifetimeAction[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-keyvault.LifetimeAction|beta" />[]

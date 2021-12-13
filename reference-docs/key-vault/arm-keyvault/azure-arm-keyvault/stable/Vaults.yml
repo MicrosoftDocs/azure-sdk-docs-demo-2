@@ -1,0 +1,1234 @@
+### YamlMime:TSType
+name: Vaults
+uid: '@azure/arm-keyvault.Vaults|stable'
+package: '@azure/arm-keyvault|stable'
+summary: Class representing a Vaults.
+fullName: Vaults
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: Vaults(KeyVaultManagementClientContext)
+    uid: '@azure/arm-keyvault.Vaults.constructor|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: Create a Vaults.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'new Vaults(client: KeyVaultManagementClientContext)'
+      parameters:
+        - id: client
+          type: >-
+            <xref
+            uid="@azure/arm-keyvault.KeyVaultManagementClientContext|stable" />
+          description: |
+            Reference to the service client.
+methods:
+  - name: >-
+      beginCreateOrUpdate(string, string, VaultCreateOrUpdateParameters,
+      msRest.RequestOptionsBase)
+    uid: '@azure/arm-keyvault.Vaults.beginCreateOrUpdate|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: Create or update a key vault in the specified subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string, vaultName:
+        string, parameters: VaultCreateOrUpdateParameters, options?:
+        msRest.RequestOptionsBase): Promise<LROPoller>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the Resource Group to which the server belongs.
+        - id: vaultName
+          type: string
+          description: Name of the vault
+        - id: parameters
+          type: >-
+            <xref uid="@azure/arm-keyvault.VaultCreateOrUpdateParameters|stable"
+            />
+          description: Parameters to create or update the vault
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<msRestAzure.LROPoller>
+        type: Promise&lt;LROPoller&gt;
+  - name: beginPurgeDeleted(string, string, msRest.RequestOptionsBase)
+    uid: '@azure/arm-keyvault.Vaults.beginPurgeDeleted|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: >-
+      Permanently deletes the specified vault. aka Purges the deleted Azure key
+      vault.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginPurgeDeleted(vaultName: string, location: string,
+        options?: msRest.RequestOptionsBase): Promise<LROPoller>
+      parameters:
+        - id: vaultName
+          type: string
+          description: The name of the soft-deleted vault.
+        - id: location
+          type: string
+          description: The location of the soft-deleted vault.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<msRestAzure.LROPoller>
+        type: Promise&lt;LROPoller&gt;
+  - name: >-
+      checkNameAvailability(VaultCheckNameAvailabilityParameters,
+      msRest.RequestOptionsBase)
+    uid: '@azure/arm-keyvault.Vaults.checkNameAvailability|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: Checks that the vault name is valid and is not already in use.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function checkNameAvailability(vaultName:
+        VaultCheckNameAvailabilityParameters, options?:
+        msRest.RequestOptionsBase):
+        Promise<Models.VaultsCheckNameAvailabilityResponse>
+      parameters:
+        - id: vaultName
+          type: >-
+            <xref
+            uid="@azure/arm-keyvault.VaultCheckNameAvailabilityParameters|stable"
+            />
+          description: The name of the vault.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.VaultsCheckNameAvailabilityResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-keyvault.VaultsCheckNameAvailabilityResponse|stable"
+          />&gt;
+  - name: >-
+      checkNameAvailability(VaultCheckNameAvailabilityParameters,
+      RequestOptionsBase, ServiceCallback<CheckNameAvailabilityResult>)
+    uid: '@azure/arm-keyvault.Vaults.checkNameAvailability_2|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function checkNameAvailability(vaultName:
+        VaultCheckNameAvailabilityParameters, options: RequestOptionsBase,
+        callback: ServiceCallback<CheckNameAvailabilityResult>)
+      parameters:
+        - id: vaultName
+          type: >-
+            <xref
+            uid="@azure/arm-keyvault.VaultCheckNameAvailabilityParameters|stable"
+            />
+          description: The name of the vault.
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-keyvault.CheckNameAvailabilityResult|stable" />&gt;
+          description: |
+            The callback
+  - name: >-
+      checkNameAvailability(VaultCheckNameAvailabilityParameters,
+      ServiceCallback<CheckNameAvailabilityResult>)
+    uid: '@azure/arm-keyvault.Vaults.checkNameAvailability_1|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function checkNameAvailability(vaultName:
+        VaultCheckNameAvailabilityParameters, callback:
+        ServiceCallback<CheckNameAvailabilityResult>)
+      parameters:
+        - id: vaultName
+          type: >-
+            <xref
+            uid="@azure/arm-keyvault.VaultCheckNameAvailabilityParameters|stable"
+            />
+          description: The name of the vault.
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-keyvault.CheckNameAvailabilityResult|stable" />&gt;
+          description: |
+            The callback
+  - name: >-
+      createOrUpdate(string, string, VaultCreateOrUpdateParameters,
+      msRest.RequestOptionsBase)
+    uid: '@azure/arm-keyvault.Vaults.createOrUpdate|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: Create or update a key vault in the specified subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, vaultName: string,
+        parameters: VaultCreateOrUpdateParameters, options?:
+        msRest.RequestOptionsBase): Promise<Models.VaultsCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the Resource Group to which the server belongs.
+        - id: vaultName
+          type: string
+          description: Name of the vault
+        - id: parameters
+          type: >-
+            <xref uid="@azure/arm-keyvault.VaultCreateOrUpdateParameters|stable"
+            />
+          description: Parameters to create or update the vault
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.VaultsCreateOrUpdateResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-keyvault.VaultsCreateOrUpdateResponse|stable" />&gt;
+  - name: deleteMethod(string, string, msRest.RequestOptionsBase)
+    uid: '@azure/arm-keyvault.Vaults.deleteMethod|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: Deletes the specified Azure key vault.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, vaultName: string,
+        options?: msRest.RequestOptionsBase): Promise<RestResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the Resource Group to which the vault belongs.
+        - id: vaultName
+          type: string
+          description: The name of the vault to delete
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<msRest.RestResponse>
+        type: Promise&lt;RestResponse&gt;
+  - name: deleteMethod(string, string, RequestOptionsBase, ServiceCallback<void>)
+    uid: '@azure/arm-keyvault.Vaults.deleteMethod_2|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, vaultName: string,
+        options: RequestOptionsBase, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the Resource Group to which the vault belongs.
+        - id: vaultName
+          type: string
+          description: The name of the vault to delete
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: ServiceCallback&lt;void&gt;
+          description: |
+            The callback
+  - name: deleteMethod(string, string, ServiceCallback<void>)
+    uid: '@azure/arm-keyvault.Vaults.deleteMethod_1|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, vaultName: string,
+        callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the Resource Group to which the vault belongs.
+        - id: vaultName
+          type: string
+          description: The name of the vault to delete
+        - id: callback
+          type: ServiceCallback&lt;void&gt;
+          description: |
+            The callback
+  - name: get(string, string, msRest.RequestOptionsBase)
+    uid: '@azure/arm-keyvault.Vaults.get|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: Gets the specified Azure key vault.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, vaultName: string, options?:
+        msRest.RequestOptionsBase): Promise<Models.VaultsGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the Resource Group to which the vault belongs.
+        - id: vaultName
+          type: string
+          description: The name of the vault.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.VaultsGetResponse>
+        type: >-
+          Promise&lt;<xref uid="@azure/arm-keyvault.VaultsGetResponse|stable"
+          />&gt;
+  - name: get(string, string, RequestOptionsBase, ServiceCallback<Vault>)
+    uid: '@azure/arm-keyvault.Vaults.get_2|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, vaultName: string, options:
+        RequestOptionsBase, callback: ServiceCallback<Vault>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the Resource Group to which the vault belongs.
+        - id: vaultName
+          type: string
+          description: The name of the vault.
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref uid="@azure/arm-keyvault.Vault|stable"
+            />&gt;
+          description: |
+            The callback
+  - name: get(string, string, ServiceCallback<Vault>)
+    uid: '@azure/arm-keyvault.Vaults.get_1|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, vaultName: string, callback:
+        ServiceCallback<Vault>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the Resource Group to which the vault belongs.
+        - id: vaultName
+          type: string
+          description: The name of the vault.
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref uid="@azure/arm-keyvault.Vault|stable"
+            />&gt;
+          description: |
+            The callback
+  - name: getDeleted(string, string, msRest.RequestOptionsBase)
+    uid: '@azure/arm-keyvault.Vaults.getDeleted|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: Gets the deleted Azure key vault.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getDeleted(vaultName: string, location: string, options?:
+        msRest.RequestOptionsBase): Promise<Models.VaultsGetDeletedResponse>
+      parameters:
+        - id: vaultName
+          type: string
+          description: The name of the vault.
+        - id: location
+          type: string
+          description: The location of the deleted vault.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.VaultsGetDeletedResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-keyvault.VaultsGetDeletedResponse|stable" />&gt;
+  - name: >-
+      getDeleted(string, string, RequestOptionsBase,
+      ServiceCallback<DeletedVault>)
+    uid: '@azure/arm-keyvault.Vaults.getDeleted_2|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getDeleted(vaultName: string, location: string, options:
+        RequestOptionsBase, callback: ServiceCallback<DeletedVault>)
+      parameters:
+        - id: vaultName
+          type: string
+          description: The name of the vault.
+        - id: location
+          type: string
+          description: The location of the deleted vault.
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-keyvault.DeletedVault|stable" />&gt;
+          description: |
+            The callback
+  - name: getDeleted(string, string, ServiceCallback<DeletedVault>)
+    uid: '@azure/arm-keyvault.Vaults.getDeleted_1|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getDeleted(vaultName: string, location: string, callback:
+        ServiceCallback<DeletedVault>)
+      parameters:
+        - id: vaultName
+          type: string
+          description: The name of the vault.
+        - id: location
+          type: string
+          description: The location of the deleted vault.
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-keyvault.DeletedVault|stable" />&gt;
+          description: |
+            The callback
+  - name: list(Models.VaultsListOptionalParams)
+    uid: '@azure/arm-keyvault.Vaults.list|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: >-
+      The List operation gets information about the vaults associated with the
+      subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(options?: Models.VaultsListOptionalParams):
+        Promise<Models.VaultsListResponse>
+      parameters:
+        - id: options
+          type: <xref uid="@azure/arm-keyvault.VaultsListOptionalParams|stable" />
+          description: ''
+      return:
+        description: Promise<Models.VaultsListResponse>
+        type: >-
+          Promise&lt;<xref uid="@azure/arm-keyvault.VaultsListResponse|stable"
+          />&gt;
+  - name: list(ServiceCallback<ResourceListResult>)
+    uid: '@azure/arm-keyvault.Vaults.list_1|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function list(callback: ServiceCallback<ResourceListResult>)'
+      parameters:
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-keyvault.ResourceListResult|stable" />&gt;
+          description: |
+            The callback
+  - name: list(VaultsListOptionalParams, ServiceCallback<ResourceListResult>)
+    uid: '@azure/arm-keyvault.Vaults.list_2|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(options: VaultsListOptionalParams, callback:
+        ServiceCallback<ResourceListResult>)
+      parameters:
+        - id: options
+          type: <xref uid="@azure/arm-keyvault.VaultsListOptionalParams|stable" />
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-keyvault.ResourceListResult|stable" />&gt;
+          description: |
+            The callback
+  - name: >-
+      listByResourceGroup(string,
+      Models.VaultsListByResourceGroupOptionalParams)
+    uid: '@azure/arm-keyvault.Vaults.listByResourceGroup|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: >-
+      The List operation gets information about the vaults associated with the
+      subscription and within
+
+      the specified resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string, options?:
+        Models.VaultsListByResourceGroupOptionalParams):
+        Promise<Models.VaultsListByResourceGroupResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the Resource Group to which the vault belongs.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-keyvault.VaultsListByResourceGroupOptionalParams|stable"
+            />
+          description: ''
+      return:
+        description: Promise<Models.VaultsListByResourceGroupResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-keyvault.VaultsListByResourceGroupResponse|stable"
+          />&gt;
+  - name: listByResourceGroup(string, ServiceCallback<VaultListResult>)
+    uid: '@azure/arm-keyvault.Vaults.listByResourceGroup_1|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string, callback:
+        ServiceCallback<VaultListResult>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the Resource Group to which the vault belongs.
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-keyvault.VaultListResult|stable" />&gt;
+          description: |
+            The callback
+  - name: >-
+      listByResourceGroup(string, VaultsListByResourceGroupOptionalParams,
+      ServiceCallback<VaultListResult>)
+    uid: '@azure/arm-keyvault.Vaults.listByResourceGroup_2|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string, options:
+        VaultsListByResourceGroupOptionalParams, callback:
+        ServiceCallback<VaultListResult>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the Resource Group to which the vault belongs.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-keyvault.VaultsListByResourceGroupOptionalParams|stable"
+            />
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-keyvault.VaultListResult|stable" />&gt;
+          description: |
+            The callback
+  - name: listByResourceGroupNext(string, msRest.RequestOptionsBase)
+    uid: '@azure/arm-keyvault.Vaults.listByResourceGroupNext|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: >-
+      The List operation gets information about the vaults associated with the
+      subscription and within
+
+      the specified resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByResourceGroupNext(nextPageLink: string, options?:
+        msRest.RequestOptionsBase):
+        Promise<Models.VaultsListByResourceGroupNextResponse>
+      parameters:
+        - id: nextPageLink
+          type: string
+          description: The NextLink from the previous successful call to List operation.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.VaultsListByResourceGroupNextResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-keyvault.VaultsListByResourceGroupNextResponse|stable"
+          />&gt;
+  - name: >-
+      listByResourceGroupNext(string, RequestOptionsBase,
+      ServiceCallback<VaultListResult>)
+    uid: '@azure/arm-keyvault.Vaults.listByResourceGroupNext_2|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByResourceGroupNext(nextPageLink: string, options:
+        RequestOptionsBase, callback: ServiceCallback<VaultListResult>)
+      parameters:
+        - id: nextPageLink
+          type: string
+          description: The NextLink from the previous successful call to List operation.
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-keyvault.VaultListResult|stable" />&gt;
+          description: |
+            The callback
+  - name: listByResourceGroupNext(string, ServiceCallback<VaultListResult>)
+    uid: '@azure/arm-keyvault.Vaults.listByResourceGroupNext_1|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByResourceGroupNext(nextPageLink: string, callback:
+        ServiceCallback<VaultListResult>)
+      parameters:
+        - id: nextPageLink
+          type: string
+          description: The NextLink from the previous successful call to List operation.
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-keyvault.VaultListResult|stable" />&gt;
+          description: |
+            The callback
+  - name: listBySubscription(Models.VaultsListBySubscriptionOptionalParams)
+    uid: '@azure/arm-keyvault.Vaults.listBySubscription|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: >-
+      The List operation gets information about the vaults associated with the
+      subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listBySubscription(options?:
+        Models.VaultsListBySubscriptionOptionalParams):
+        Promise<Models.VaultsListBySubscriptionResponse>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-keyvault.VaultsListBySubscriptionOptionalParams|stable"
+            />
+          description: ''
+      return:
+        description: Promise<Models.VaultsListBySubscriptionResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-keyvault.VaultsListBySubscriptionResponse|stable"
+          />&gt;
+  - name: listBySubscription(ServiceCallback<VaultListResult>)
+    uid: '@azure/arm-keyvault.Vaults.listBySubscription_1|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function listBySubscription(callback: ServiceCallback<VaultListResult>)'
+      parameters:
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-keyvault.VaultListResult|stable" />&gt;
+          description: |
+            The callback
+  - name: >-
+      listBySubscription(VaultsListBySubscriptionOptionalParams,
+      ServiceCallback<VaultListResult>)
+    uid: '@azure/arm-keyvault.Vaults.listBySubscription_2|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listBySubscription(options:
+        VaultsListBySubscriptionOptionalParams, callback:
+        ServiceCallback<VaultListResult>)
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-keyvault.VaultsListBySubscriptionOptionalParams|stable"
+            />
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-keyvault.VaultListResult|stable" />&gt;
+          description: |
+            The callback
+  - name: listBySubscriptionNext(string, msRest.RequestOptionsBase)
+    uid: '@azure/arm-keyvault.Vaults.listBySubscriptionNext|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: >-
+      The List operation gets information about the vaults associated with the
+      subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listBySubscriptionNext(nextPageLink: string, options?:
+        msRest.RequestOptionsBase):
+        Promise<Models.VaultsListBySubscriptionNextResponse>
+      parameters:
+        - id: nextPageLink
+          type: string
+          description: The NextLink from the previous successful call to List operation.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.VaultsListBySubscriptionNextResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-keyvault.VaultsListBySubscriptionNextResponse|stable"
+          />&gt;
+  - name: >-
+      listBySubscriptionNext(string, RequestOptionsBase,
+      ServiceCallback<VaultListResult>)
+    uid: '@azure/arm-keyvault.Vaults.listBySubscriptionNext_2|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listBySubscriptionNext(nextPageLink: string, options:
+        RequestOptionsBase, callback: ServiceCallback<VaultListResult>)
+      parameters:
+        - id: nextPageLink
+          type: string
+          description: The NextLink from the previous successful call to List operation.
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-keyvault.VaultListResult|stable" />&gt;
+          description: |
+            The callback
+  - name: listBySubscriptionNext(string, ServiceCallback<VaultListResult>)
+    uid: '@azure/arm-keyvault.Vaults.listBySubscriptionNext_1|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listBySubscriptionNext(nextPageLink: string, callback:
+        ServiceCallback<VaultListResult>)
+      parameters:
+        - id: nextPageLink
+          type: string
+          description: The NextLink from the previous successful call to List operation.
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-keyvault.VaultListResult|stable" />&gt;
+          description: |
+            The callback
+  - name: listDeleted(msRest.RequestOptionsBase)
+    uid: '@azure/arm-keyvault.Vaults.listDeleted|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: Gets information about the deleted vaults in a subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listDeleted(options?: msRest.RequestOptionsBase):
+        Promise<Models.VaultsListDeletedResponse>
+      parameters:
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.VaultsListDeletedResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-keyvault.VaultsListDeletedResponse|stable" />&gt;
+  - name: listDeleted(RequestOptionsBase, ServiceCallback<DeletedVaultListResult>)
+    uid: '@azure/arm-keyvault.Vaults.listDeleted_2|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listDeleted(options: RequestOptionsBase, callback:
+        ServiceCallback<DeletedVaultListResult>)
+      parameters:
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-keyvault.DeletedVaultListResult|stable" />&gt;
+          description: |
+            The callback
+  - name: listDeleted(ServiceCallback<DeletedVaultListResult>)
+    uid: '@azure/arm-keyvault.Vaults.listDeleted_1|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function listDeleted(callback: ServiceCallback<DeletedVaultListResult>)'
+      parameters:
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-keyvault.DeletedVaultListResult|stable" />&gt;
+          description: |
+            The callback
+  - name: listDeletedNext(string, msRest.RequestOptionsBase)
+    uid: '@azure/arm-keyvault.Vaults.listDeletedNext|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: Gets information about the deleted vaults in a subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listDeletedNext(nextPageLink: string, options?:
+        msRest.RequestOptionsBase):
+        Promise<Models.VaultsListDeletedNextResponse>
+      parameters:
+        - id: nextPageLink
+          type: string
+          description: The NextLink from the previous successful call to List operation.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.VaultsListDeletedNextResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-keyvault.VaultsListDeletedNextResponse|stable" />&gt;
+  - name: >-
+      listDeletedNext(string, RequestOptionsBase,
+      ServiceCallback<DeletedVaultListResult>)
+    uid: '@azure/arm-keyvault.Vaults.listDeletedNext_2|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listDeletedNext(nextPageLink: string, options:
+        RequestOptionsBase, callback: ServiceCallback<DeletedVaultListResult>)
+      parameters:
+        - id: nextPageLink
+          type: string
+          description: The NextLink from the previous successful call to List operation.
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-keyvault.DeletedVaultListResult|stable" />&gt;
+          description: |
+            The callback
+  - name: listDeletedNext(string, ServiceCallback<DeletedVaultListResult>)
+    uid: '@azure/arm-keyvault.Vaults.listDeletedNext_1|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listDeletedNext(nextPageLink: string, callback:
+        ServiceCallback<DeletedVaultListResult>)
+      parameters:
+        - id: nextPageLink
+          type: string
+          description: The NextLink from the previous successful call to List operation.
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-keyvault.DeletedVaultListResult|stable" />&gt;
+          description: |
+            The callback
+  - name: listNext(string, msRest.RequestOptionsBase)
+    uid: '@azure/arm-keyvault.Vaults.listNext|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: >-
+      The List operation gets information about the vaults associated with the
+      subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, options?:
+        msRest.RequestOptionsBase): Promise<Models.VaultsListNextResponse>
+      parameters:
+        - id: nextPageLink
+          type: string
+          description: The NextLink from the previous successful call to List operation.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.VaultsListNextResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-keyvault.VaultsListNextResponse|stable" />&gt;
+  - name: listNext(string, RequestOptionsBase, ServiceCallback<ResourceListResult>)
+    uid: '@azure/arm-keyvault.Vaults.listNext_2|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, options: RequestOptionsBase,
+        callback: ServiceCallback<ResourceListResult>)
+      parameters:
+        - id: nextPageLink
+          type: string
+          description: The NextLink from the previous successful call to List operation.
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-keyvault.ResourceListResult|stable" />&gt;
+          description: |
+            The callback
+  - name: listNext(string, ServiceCallback<ResourceListResult>)
+    uid: '@azure/arm-keyvault.Vaults.listNext_1|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, callback:
+        ServiceCallback<ResourceListResult>)
+      parameters:
+        - id: nextPageLink
+          type: string
+          description: The NextLink from the previous successful call to List operation.
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-keyvault.ResourceListResult|stable" />&gt;
+          description: |
+            The callback
+  - name: purgeDeleted(string, string, msRest.RequestOptionsBase)
+    uid: '@azure/arm-keyvault.Vaults.purgeDeleted|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: >-
+      Permanently deletes the specified vault. aka Purges the deleted Azure key
+      vault.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function purgeDeleted(vaultName: string, location: string, options?:
+        msRest.RequestOptionsBase): Promise<RestResponse>
+      parameters:
+        - id: vaultName
+          type: string
+          description: The name of the soft-deleted vault.
+        - id: location
+          type: string
+          description: The location of the soft-deleted vault.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<msRest.RestResponse>
+        type: Promise&lt;RestResponse&gt;
+  - name: update(string, string, VaultPatchParameters, msRest.RequestOptionsBase)
+    uid: '@azure/arm-keyvault.Vaults.update|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: Update a key vault in the specified subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function update(resourceGroupName: string, vaultName: string,
+        parameters: VaultPatchParameters, options?: msRest.RequestOptionsBase):
+        Promise<Models.VaultsUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the Resource Group to which the server belongs.
+        - id: vaultName
+          type: string
+          description: Name of the vault
+        - id: parameters
+          type: <xref uid="@azure/arm-keyvault.VaultPatchParameters|stable" />
+          description: Parameters to patch the vault
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.VaultsUpdateResponse>
+        type: >-
+          Promise&lt;<xref uid="@azure/arm-keyvault.VaultsUpdateResponse|stable"
+          />&gt;
+  - name: >-
+      update(string, string, VaultPatchParameters, RequestOptionsBase,
+      ServiceCallback<Vault>)
+    uid: '@azure/arm-keyvault.Vaults.update_2|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function update(resourceGroupName: string, vaultName: string,
+        parameters: VaultPatchParameters, options: RequestOptionsBase, callback:
+        ServiceCallback<Vault>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the Resource Group to which the server belongs.
+        - id: vaultName
+          type: string
+          description: Name of the vault
+        - id: parameters
+          type: <xref uid="@azure/arm-keyvault.VaultPatchParameters|stable" />
+          description: Parameters to patch the vault
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref uid="@azure/arm-keyvault.Vault|stable"
+            />&gt;
+          description: |
+            The callback
+  - name: update(string, string, VaultPatchParameters, ServiceCallback<Vault>)
+    uid: '@azure/arm-keyvault.Vaults.update_1|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function update(resourceGroupName: string, vaultName: string,
+        parameters: VaultPatchParameters, callback: ServiceCallback<Vault>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the Resource Group to which the server belongs.
+        - id: vaultName
+          type: string
+          description: Name of the vault
+        - id: parameters
+          type: <xref uid="@azure/arm-keyvault.VaultPatchParameters|stable" />
+          description: Parameters to patch the vault
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref uid="@azure/arm-keyvault.Vault|stable"
+            />&gt;
+          description: |
+            The callback
+  - name: >-
+      updateAccessPolicy(string, string, Models.AccessPolicyUpdateKind,
+      VaultAccessPolicyParameters, msRest.RequestOptionsBase)
+    uid: '@azure/arm-keyvault.Vaults.updateAccessPolicy|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: Update access policies in a key vault in the specified subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function updateAccessPolicy(resourceGroupName: string, vaultName:
+        string, operationKind: Models.AccessPolicyUpdateKind, parameters:
+        VaultAccessPolicyParameters, options?: msRest.RequestOptionsBase):
+        Promise<Models.VaultsUpdateAccessPolicyResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the Resource Group to which the vault belongs.
+        - id: vaultName
+          type: string
+          description: Name of the vault
+        - id: operationKind
+          type: <xref uid="@azure/arm-keyvault.AccessPolicyUpdateKind|stable" />
+          description: >-
+            Name of the operation. Possible values include: 'add', 'replace',
+            'remove'
+        - id: parameters
+          type: >-
+            <xref uid="@azure/arm-keyvault.VaultAccessPolicyParameters|stable"
+            />
+          description: Access policy to merge into the vault
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.VaultsUpdateAccessPolicyResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-keyvault.VaultsUpdateAccessPolicyResponse|stable"
+          />&gt;
+  - name: >-
+      updateAccessPolicy(string, string, Models.AccessPolicyUpdateKind,
+      VaultAccessPolicyParameters, RequestOptionsBase,
+      ServiceCallback<VaultAccessPolicyParameters>)
+    uid: '@azure/arm-keyvault.Vaults.updateAccessPolicy_2|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function updateAccessPolicy(resourceGroupName: string, vaultName:
+        string, operationKind: Models.AccessPolicyUpdateKind, parameters:
+        VaultAccessPolicyParameters, options: RequestOptionsBase, callback:
+        ServiceCallback<VaultAccessPolicyParameters>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the Resource Group to which the vault belongs.
+        - id: vaultName
+          type: string
+          description: Name of the vault
+        - id: operationKind
+          type: <xref uid="@azure/arm-keyvault.AccessPolicyUpdateKind|stable" />
+          description: >-
+            Name of the operation. Possible values include: 'add', 'replace',
+            'remove'
+        - id: parameters
+          type: >-
+            <xref uid="@azure/arm-keyvault.VaultAccessPolicyParameters|stable"
+            />
+          description: Access policy to merge into the vault
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-keyvault.VaultAccessPolicyParameters|stable" />&gt;
+          description: |
+            The callback
+  - name: >-
+      updateAccessPolicy(string, string, Models.AccessPolicyUpdateKind,
+      VaultAccessPolicyParameters, ServiceCallback<VaultAccessPolicyParameters>)
+    uid: '@azure/arm-keyvault.Vaults.updateAccessPolicy_1|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function updateAccessPolicy(resourceGroupName: string, vaultName:
+        string, operationKind: Models.AccessPolicyUpdateKind, parameters:
+        VaultAccessPolicyParameters, callback:
+        ServiceCallback<VaultAccessPolicyParameters>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the Resource Group to which the vault belongs.
+        - id: vaultName
+          type: string
+          description: Name of the vault
+        - id: operationKind
+          type: <xref uid="@azure/arm-keyvault.AccessPolicyUpdateKind|stable" />
+          description: >-
+            Name of the operation. Possible values include: 'add', 'replace',
+            'remove'
+        - id: parameters
+          type: >-
+            <xref uid="@azure/arm-keyvault.VaultAccessPolicyParameters|stable"
+            />
+          description: Access policy to merge into the vault
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-keyvault.VaultAccessPolicyParameters|stable" />&gt;
+          description: |
+            The callback

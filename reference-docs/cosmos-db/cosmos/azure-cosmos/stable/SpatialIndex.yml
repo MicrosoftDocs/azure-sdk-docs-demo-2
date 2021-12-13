@@ -1,0 +1,50 @@
+### YamlMime:TSType
+name: SpatialIndex
+uid: '@azure/cosmos.SpatialIndex|stable'
+package: '@azure/cosmos|stable'
+summary: ''
+fullName: SpatialIndex
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: boundingBox
+    uid: '@azure/cosmos.SpatialIndex.boundingBox|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: boundingBox
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'boundingBox: { xmax: number, xmin: number, ymax: number, ymin: number }'
+      return:
+        description: ''
+        type: '{ xmax: number, xmin: number, ymax: number, ymin: number }'
+  - name: path
+    uid: '@azure/cosmos.SpatialIndex.path|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: path
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'path: string'
+      return:
+        description: ''
+        type: string
+  - name: types
+    uid: '@azure/cosmos.SpatialIndex.types|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: types
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'types: SpatialType[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/cosmos.SpatialType|stable" />[]

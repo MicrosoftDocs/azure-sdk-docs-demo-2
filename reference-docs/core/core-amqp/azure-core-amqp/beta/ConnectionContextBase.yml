@@ -1,0 +1,166 @@
+### YamlMime:TSType
+name: ConnectionContextBase
+uid: '@azure/core-amqp.ConnectionContextBase|beta'
+package: '@azure/core-amqp|beta'
+summary: >-
+  Provides contextual information like the underlying amqp connection, cbs
+  session, tokenProvider,
+
+  Connection config, data transformer, etc.
+fullName: ConnectionContextBase
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: cbsSession
+    uid: '@azure/core-amqp.ConnectionContextBase.cbsSession|beta'
+    package: '@azure/core-amqp|beta'
+    summary: >-
+      {CbsClient} cbsSession A reference to the cbs session ($cbs endpoint) on
+      the
+
+      underlying AMQP connection for the EventHub Client.
+    fullName: cbsSession
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'cbsSession: CbsClient'
+      return:
+        description: ''
+        type: <xref uid="@azure/core-amqp.CbsClient|beta" />
+  - name: config
+    uid: '@azure/core-amqp.ConnectionContextBase.config|beta'
+    package: '@azure/core-amqp|beta'
+    summary: >-
+      {ConnectionConfig} config The EventHub connection config that is created
+      after
+
+      parsing the connection string.
+    fullName: config
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'config: ConnectionConfig'
+      return:
+        description: ''
+        type: <xref uid="@azure/core-amqp.ConnectionConfig|beta" />
+  - name: connection
+    uid: '@azure/core-amqp.ConnectionContextBase.connection|beta'
+    package: '@azure/core-amqp|beta'
+    summary: '{Connection} connection The underlying AMQP connection.'
+    fullName: connection
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'connection: Connection'
+      return:
+        description: ''
+        type: Connection
+  - name: connectionId
+    uid: '@azure/core-amqp.ConnectionContextBase.connectionId|beta'
+    package: '@azure/core-amqp|beta'
+    summary: |-
+      {string} connectionId The amqp connection id that uniquely identifies the
+      connection within a process.
+    fullName: connectionId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'connectionId: string'
+      return:
+        description: ''
+        type: string
+  - name: connectionLock
+    uid: '@azure/core-amqp.ConnectionContextBase.connectionLock|beta'
+    package: '@azure/core-amqp|beta'
+    summary: >-
+      {string} connectionLock The unique lock name per connection that is used
+      to
+
+      acquire the lock for establishing an amqp connection per client if one
+      does not exist.
+    fullName: connectionLock
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'connectionLock: string'
+      return:
+        description: ''
+        type: string
+  - name: dataTransformer
+    uid: '@azure/core-amqp.ConnectionContextBase.dataTransformer|beta'
+    package: '@azure/core-amqp|beta'
+    summary: >-
+      {DataTransformer} dataTransformer A DataTransformer object that has
+      methods named
+
+      - encode Responsible for encoding the AMQP message before sending it on
+      the wire.
+
+      - decode Responsible for decoding the received AMQP message before passing
+      it to the customer.
+    fullName: dataTransformer
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dataTransformer: DataTransformer'
+      return:
+        description: ''
+        type: <xref uid="@azure/core-amqp.DataTransformer|beta" />
+  - name: negotiateClaimLock
+    uid: '@azure/core-amqp.ConnectionContextBase.negotiateClaimLock|beta'
+    package: '@azure/core-amqp|beta'
+    summary: >-
+      {string} negotiateClaimLock The unique lock name per connection that is
+      used to
+
+      acquire the lock for negotiating cbs claim by an entity on that
+      connection.
+    fullName: negotiateClaimLock
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'negotiateClaimLock: string'
+      return:
+        description: ''
+        type: string
+  - name: refreshConnection
+    uid: '@azure/core-amqp.ConnectionContextBase.refreshConnection|beta'
+    package: '@azure/core-amqp|beta'
+    summary: >-
+      Updates the context to use a new underlying AMQP connection and new cbs
+      session.
+    fullName: refreshConnection
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'refreshConnection: () => void'
+      return:
+        description: ''
+        type: () =&gt; void
+  - name: wasConnectionCloseCalled
+    uid: '@azure/core-amqp.ConnectionContextBase.wasConnectionCloseCalled|beta'
+    package: '@azure/core-amqp|beta'
+    summary: >-
+      {boolean} wasConnectionCloseCalled Indicates whether the close() method
+      was
+
+      called on the connection object.
+    fullName: wasConnectionCloseCalled
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'wasConnectionCloseCalled: boolean'
+      return:
+        description: ''
+        type: boolean

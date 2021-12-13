@@ -1,0 +1,69 @@
+### YamlMime:TSType
+name: DetectionResultSummary
+uid: '@azure/ai-anomaly-detector.DetectionResultSummary|beta'
+package: '@azure/ai-anomaly-detector|beta'
+summary: ''
+fullName: DetectionResultSummary
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: errors
+    uid: '@azure/ai-anomaly-detector.DetectionResultSummary.errors|beta'
+    package: '@azure/ai-anomaly-detector|beta'
+    summary: Error message when creating or training model fails.
+    fullName: errors
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'errors?: AnomalyDetectorClientErrorResponse[]'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/ai-anomaly-detector.AnomalyDetectorClientErrorResponse|beta"
+          />[]
+  - name: setupInfo
+    uid: '@azure/ai-anomaly-detector.DetectionResultSummary.setupInfo|beta'
+    package: '@azure/ai-anomaly-detector|beta'
+    summary: Request when creating the model.
+    fullName: setupInfo
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setupInfo: DetectionRequest'
+      return:
+        description: ''
+        type: <xref uid="@azure/ai-anomaly-detector.DetectionRequest|beta" />
+  - name: status
+    uid: '@azure/ai-anomaly-detector.DetectionResultSummary.status|beta'
+    package: '@azure/ai-anomaly-detector|beta'
+    summary: Multivariate anomaly detection status
+    fullName: status
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'status: DetectionStatus'
+      return:
+        description: ''
+        type: <xref uid="@azure/ai-anomaly-detector.DetectionStatus|beta" />
+  - name: variableStates
+    uid: '@azure/ai-anomaly-detector.DetectionResultSummary.variableStates|beta'
+    package: '@azure/ai-anomaly-detector|beta'
+    summary: ''
+    fullName: variableStates
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'variableStates?: AnomalyDetectorClientVariableState[]'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/ai-anomaly-detector.AnomalyDetectorClientVariableState|beta"
+          />[]

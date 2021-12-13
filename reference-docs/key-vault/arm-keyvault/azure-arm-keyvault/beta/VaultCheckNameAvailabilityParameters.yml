@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: VaultCheckNameAvailabilityParameters
+uid: '@azure/arm-keyvault.VaultCheckNameAvailabilityParameters|beta'
+package: '@azure/arm-keyvault|beta'
+summary: The parameters used to check the availability of the vault name.
+fullName: VaultCheckNameAvailabilityParameters
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: name
+    uid: '@azure/arm-keyvault.VaultCheckNameAvailabilityParameters.name|beta'
+    package: '@azure/arm-keyvault|beta'
+    summary: The vault name.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: string'
+      return:
+        description: ''
+        type: string
+  - name: type
+    uid: '@azure/arm-keyvault.VaultCheckNameAvailabilityParameters.type|beta'
+    package: '@azure/arm-keyvault|beta'
+    summary: The type of resource, Microsoft.KeyVault/vaults
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: "Microsoft.KeyVault/vaults"'
+      return:
+        description: ''
+        type: '"<xref uid="Microsoft.KeyVault/vaults|beta" />"'

@@ -1,0 +1,90 @@
+### YamlMime:TSType
+name: ClientSideMetrics
+uid: '@azure/cosmos.ClientSideMetrics|stable'
+package: '@azure/cosmos|stable'
+summary: ''
+fullName: ClientSideMetrics
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: ClientSideMetrics(number)
+    uid: '@azure/cosmos.ClientSideMetrics.constructor|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'new ClientSideMetrics(requestCharge: number)'
+      parameters:
+        - id: requestCharge
+          type: number
+          description: ''
+properties:
+  - name: requestCharge
+    uid: '@azure/cosmos.ClientSideMetrics.requestCharge|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: requestCharge
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'requestCharge: number'
+      return:
+        description: ''
+        type: number
+  - name: zero
+    uid: '@azure/cosmos.ClientSideMetrics.zero|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: zero
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static zero: ClientSideMetrics'
+      return:
+        description: ''
+        type: <xref uid="@azure/cosmos.ClientSideMetrics|stable" />
+methods:
+  - name: add(ClientSideMetrics[])
+    uid: '@azure/cosmos.ClientSideMetrics.add|stable'
+    package: '@azure/cosmos|stable'
+    summary: >-
+      Adds one or more ClientSideMetrics to a copy of this instance and returns
+      the result.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function add(clientSideMetricsArray: ClientSideMetrics[]):
+        ClientSideMetrics
+      parameters:
+        - id: clientSideMetricsArray
+          type: <xref uid="@azure/cosmos.ClientSideMetrics|stable" />[]
+          description: ''
+      return:
+        description: ''
+        type: <xref uid="@azure/cosmos.ClientSideMetrics|stable" />
+  - name: createFromArray(ClientSideMetrics[])
+    uid: '@azure/cosmos.ClientSideMetrics.createFromArray|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function createFromArray(clientSideMetricsArray:
+        ClientSideMetrics[]): ClientSideMetrics
+      parameters:
+        - id: clientSideMetricsArray
+          type: <xref uid="@azure/cosmos.ClientSideMetrics|stable" />[]
+          description: ''
+      return:
+        description: ''
+        type: <xref uid="@azure/cosmos.ClientSideMetrics|stable" />

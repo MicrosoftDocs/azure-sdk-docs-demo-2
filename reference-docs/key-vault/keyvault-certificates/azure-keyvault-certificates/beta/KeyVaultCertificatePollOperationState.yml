@@ -1,0 +1,98 @@
+### YamlMime:TSType
+name: KeyVaultCertificatePollOperationState
+uid: '@azure/keyvault-certificates.KeyVaultCertificatePollOperationState|beta'
+package: '@azure/keyvault-certificates|beta'
+summary: >-
+  An interface representing the public shape of the state of a Key Vault
+  Certificate Poller's operations.
+fullName: KeyVaultCertificatePollOperationState<TResult>
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: certificateName
+    uid: >-
+      @azure/keyvault-certificates.KeyVaultCertificatePollOperationState.certificateName|beta
+    package: '@azure/keyvault-certificates|beta'
+    summary: The name of the certificate.
+    fullName: certificateName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'certificateName: string'
+      return:
+        description: ''
+        type: string
+  - name: error
+    uid: >-
+      @azure/keyvault-certificates.KeyVaultCertificatePollOperationState.error|beta
+    package: '@azure/keyvault-certificates|beta'
+    summary: Will exist if the operation encountered any error.
+    fullName: error
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'error?: Error'
+      return:
+        description: ''
+        type: Error
+  - name: isCancelled
+    uid: >-
+      @azure/keyvault-certificates.KeyVaultCertificatePollOperationState.isCancelled|beta
+    package: '@azure/keyvault-certificates|beta'
+    summary: True if the operation has been cancelled.
+    fullName: isCancelled
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isCancelled?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: isCompleted
+    uid: >-
+      @azure/keyvault-certificates.KeyVaultCertificatePollOperationState.isCompleted|beta
+    package: '@azure/keyvault-certificates|beta'
+    summary: True if the operation has been completed.
+    fullName: isCompleted
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isCompleted?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: isStarted
+    uid: >-
+      @azure/keyvault-certificates.KeyVaultCertificatePollOperationState.isStarted|beta
+    package: '@azure/keyvault-certificates|beta'
+    summary: True if the operation has started.
+    fullName: isStarted
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isStarted?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: result
+    uid: >-
+      @azure/keyvault-certificates.KeyVaultCertificatePollOperationState.result|beta
+    package: '@azure/keyvault-certificates|beta'
+    summary: Will exist if the operation concluded in a result of an expected type.
+    fullName: result
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'result?: TResult'
+      return:
+        description: ''
+        type: TResult
+extends: PollOperationState&lt;TResult&gt;

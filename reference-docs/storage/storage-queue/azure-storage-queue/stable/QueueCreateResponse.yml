@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: QueueCreateResponse
+uid: '@azure/storage-queue.QueueCreateResponse|stable'
+package: '@azure/storage-queue|stable'
+summary: Contains response data for the create operation.
+fullName: QueueCreateResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type QueueCreateResponse = QueueCreateHeaders & { _response: HttpResponse & {
+  parsedHeaders: QueueCreateHeaders } }

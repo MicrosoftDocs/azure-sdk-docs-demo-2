@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: ConfigurationStoresListNextResponse
+uid: '@azure/arm-appconfiguration.ConfigurationStoresListNextResponse|stable'
+package: '@azure/arm-appconfiguration|stable'
+summary: Contains response data for the listNext operation.
+fullName: ConfigurationStoresListNextResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type ConfigurationStoresListNextResponse = ConfigurationStoreListResult & {
+  _response: HttpResponse & { bodyAsText: string, parsedBody:
+  ConfigurationStoreListResult } }

@@ -1,0 +1,169 @@
+### YamlMime:TSType
+name: Rules
+uid: '@azure/arm-servicebus.Rules|beta'
+package: '@azure/arm-servicebus|beta'
+summary: Interface representing a Rules.
+fullName: Rules
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      createOrUpdate(string, string, string, string, string, Rule,
+      RulesCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-servicebus.Rules.createOrUpdate|beta'
+    package: '@azure/arm-servicebus|beta'
+    summary: Creates a new rule and updates an existing rule
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, namespaceName:
+        string, topicName: string, subscriptionName: string, ruleName: string,
+        parameters: Rule, options?: RulesCreateOrUpdateOptionalParams):
+        Promise<RulesCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: topicName
+          type: string
+          description: The topic name.
+        - id: subscriptionName
+          type: string
+          description: The subscription name.
+        - id: ruleName
+          type: string
+          description: The rule name.
+        - id: parameters
+          type: <xref uid="@azure/arm-servicebus.Rule|beta" />
+          description: Parameters supplied to create a rule.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.RulesCreateOrUpdateOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-servicebus.RulesCreateOrUpdateResponse|beta" />&gt;
+  - name: delete(string, string, string, string, string, RulesDeleteOptionalParams)
+    uid: '@azure/arm-servicebus.Rules.delete|beta'
+    package: '@azure/arm-servicebus|beta'
+    summary: Deletes an existing rule.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function delete(resourceGroupName: string, namespaceName: string,
+        topicName: string, subscriptionName: string, ruleName: string, options?:
+        RulesDeleteOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: topicName
+          type: string
+          description: The topic name.
+        - id: subscriptionName
+          type: string
+          description: The subscription name.
+        - id: ruleName
+          type: string
+          description: The rule name.
+        - id: options
+          type: <xref uid="@azure/arm-servicebus.RulesDeleteOptionalParams|beta" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: get(string, string, string, string, string, RulesGetOptionalParams)
+    uid: '@azure/arm-servicebus.Rules.get|beta'
+    package: '@azure/arm-servicebus|beta'
+    summary: Retrieves the description for the specified rule.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, namespaceName: string,
+        topicName: string, subscriptionName: string, ruleName: string, options?:
+        RulesGetOptionalParams): Promise<RulesGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: topicName
+          type: string
+          description: The topic name.
+        - id: subscriptionName
+          type: string
+          description: The subscription name.
+        - id: ruleName
+          type: string
+          description: The rule name.
+        - id: options
+          type: <xref uid="@azure/arm-servicebus.RulesGetOptionalParams|beta" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref uid="@azure/arm-servicebus.RulesGetResponse|beta"
+          />&gt;
+  - name: >-
+      listBySubscriptions(string, string, string, string,
+      RulesListBySubscriptionsOptionalParams)
+    uid: '@azure/arm-servicebus.Rules.listBySubscriptions|beta'
+    package: '@azure/arm-servicebus|beta'
+    summary: List all the rules within given topic-subscription
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listBySubscriptions(resourceGroupName: string, namespaceName:
+        string, topicName: string, subscriptionName: string, options?:
+        RulesListBySubscriptionsOptionalParams):
+        PagedAsyncIterableIterator<Rule>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: topicName
+          type: string
+          description: The topic name.
+        - id: subscriptionName
+          type: string
+          description: The subscription name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.RulesListBySubscriptionsOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-servicebus.Rule|beta" />&gt;

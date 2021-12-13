@@ -1,0 +1,132 @@
+### YamlMime:TSType
+name: RecognizeFormsOperationState
+uid: '@azure/ai-form-recognizer.RecognizeFormsOperationState|stable'
+package: '@azure/ai-form-recognizer|stable'
+summary: The status of a form recognition operation
+fullName: RecognizeFormsOperationState
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: error
+    uid: '@azure/ai-form-recognizer.RecognizeFormsOperationState.error|stable'
+    package: '@azure/ai-form-recognizer|stable'
+    summary: Will exist if the operation encountered any error.
+    fullName: error
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'error?: Error'
+      return:
+        description: ''
+        type: Error
+  - name: expectedDocType
+    uid: >-
+      @azure/ai-form-recognizer.RecognizeFormsOperationState.expectedDocType|stable
+    package: '@azure/ai-form-recognizer|stable'
+    summary: Expected document type from recognition.
+    fullName: expectedDocType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'expectedDocType?: string'
+      return:
+        description: ''
+        type: string
+  - name: isCancelled
+    uid: '@azure/ai-form-recognizer.RecognizeFormsOperationState.isCancelled|stable'
+    package: '@azure/ai-form-recognizer|stable'
+    summary: True if the operation has been cancelled.
+    fullName: isCancelled
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isCancelled?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: isCompleted
+    uid: '@azure/ai-form-recognizer.RecognizeFormsOperationState.isCompleted|stable'
+    package: '@azure/ai-form-recognizer|stable'
+    summary: True if the operation has been completed.
+    fullName: isCompleted
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isCompleted?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: isStarted
+    uid: '@azure/ai-form-recognizer.RecognizeFormsOperationState.isStarted|stable'
+    package: '@azure/ai-form-recognizer|stable'
+    summary: True if the operation has started.
+    fullName: isStarted
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isStarted?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: modelId
+    uid: '@azure/ai-form-recognizer.RecognizeFormsOperationState.modelId|stable'
+    package: '@azure/ai-form-recognizer|stable'
+    summary: Identifier for the recognition operation.
+    fullName: modelId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'modelId?: string'
+      return:
+        description: ''
+        type: string
+  - name: result
+    uid: '@azure/ai-form-recognizer.RecognizeFormsOperationState.result|stable'
+    package: '@azure/ai-form-recognizer|stable'
+    summary: Will exist if the operation concluded in a result of an expected type.
+    fullName: result
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'result?: RecognizedFormArray'
+      return:
+        description: ''
+        type: <xref uid="@azure/ai-form-recognizer.RecognizedFormArray|stable" />
+  - name: resultId
+    uid: '@azure/ai-form-recognizer.RecognizeFormsOperationState.resultId|stable'
+    package: '@azure/ai-form-recognizer|stable'
+    summary: Identifier for the recognition operation
+    fullName: resultId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'resultId?: string'
+      return:
+        description: ''
+        type: string
+  - name: status
+    uid: '@azure/ai-form-recognizer.RecognizeFormsOperationState.status|stable'
+    package: '@azure/ai-form-recognizer|stable'
+    summary: Last-known status of the recognition operation
+    fullName: status
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'status: OperationStatus'
+      return:
+        description: ''
+        type: <xref uid="@azure/ai-form-recognizer.OperationStatus|stable" />
+extends: >-
+  PollOperationState&lt;<xref
+  uid="@azure/ai-form-recognizer.RecognizedFormArray|stable" />&gt;

@@ -1,0 +1,20 @@
+### YamlMime:TSEnum
+name: StorageRetryPolicyType
+uid: '@azure/storage-blob.StorageRetryPolicyType|beta'
+package: '@azure/storage-blob|beta'
+summary: RetryPolicy types.
+fullName: StorageRetryPolicyType
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: EXPONENTIAL
+    uid: '@azure/storage-blob.StorageRetryPolicyType.EXPONENTIAL|beta'
+    package: '@azure/storage-blob|beta'
+    summary: Exponential retry. Retry time delay grows exponentially.
+    numericValue: 0
+  - name: FIXED
+    uid: '@azure/storage-blob.StorageRetryPolicyType.FIXED|beta'
+    package: '@azure/storage-blob|beta'
+    summary: Linear retry. Retry time delay grows linearly.
+    numericValue: 1

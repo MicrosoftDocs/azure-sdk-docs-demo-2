@@ -1,0 +1,102 @@
+### YamlMime:TSType
+name: BlobInventoryPoliciesCreateOrUpdateOptionalParams
+uid: '@azure/arm-storage.BlobInventoryPoliciesCreateOrUpdateOptionalParams|stable'
+package: '@azure/arm-storage|stable'
+summary: Optional Parameters.
+fullName: BlobInventoryPoliciesCreateOrUpdateOptionalParams
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: abortSignal
+    uid: >-
+      @azure/arm-storage.BlobInventoryPoliciesCreateOrUpdateOptionalParams.abortSignal|stable
+    package: '@azure/arm-storage|stable'
+    summary: The signal which can be used to abort requests.
+    fullName: abortSignal
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'abortSignal?: AbortSignalLike'
+      return:
+        description: ''
+        type: AbortSignalLike
+  - name: customHeaders
+    uid: >-
+      @azure/arm-storage.BlobInventoryPoliciesCreateOrUpdateOptionalParams.customHeaders|stable
+    package: '@azure/arm-storage|stable'
+    summary: |-
+      {object} [customHeaders] User defined custom request headers that
+      will be applied before the request is sent.
+    fullName: customHeaders
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'customHeaders?: undefined | [key: string]: string'
+      return:
+        description: ''
+        type: 'undefined | [key: string]: string'
+  - name: onDownloadProgress
+    uid: >-
+      @azure/arm-storage.BlobInventoryPoliciesCreateOrUpdateOptionalParams.onDownloadProgress|stable
+    package: '@azure/arm-storage|stable'
+    summary: Callback which fires upon download progress.
+    fullName: onDownloadProgress
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        onDownloadProgress?: undefined | (progress: TransferProgressEvent) =>
+        void
+      return:
+        description: ''
+        type: 'undefined | (progress: TransferProgressEvent) =&gt; void'
+  - name: onUploadProgress
+    uid: >-
+      @azure/arm-storage.BlobInventoryPoliciesCreateOrUpdateOptionalParams.onUploadProgress|stable
+    package: '@azure/arm-storage|stable'
+    summary: Callback which fires upon upload progress.
+    fullName: onUploadProgress
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onUploadProgress?: undefined | (progress: TransferProgressEvent) => void'
+      return:
+        description: ''
+        type: 'undefined | (progress: TransferProgressEvent) =&gt; void'
+  - name: systemData
+    uid: >-
+      @azure/arm-storage.BlobInventoryPoliciesCreateOrUpdateOptionalParams.systemData|stable
+    package: '@azure/arm-storage|stable'
+    summary: ''
+    fullName: systemData
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'systemData?: SystemData'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-storage.SystemData|stable" />
+  - name: timeout
+    uid: >-
+      @azure/arm-storage.BlobInventoryPoliciesCreateOrUpdateOptionalParams.timeout|stable
+    package: '@azure/arm-storage|stable'
+    summary: >-
+      The number of milliseconds a request can take before automatically being
+      terminated.
+    fullName: timeout
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'timeout?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+extends: RequestOptionsBase

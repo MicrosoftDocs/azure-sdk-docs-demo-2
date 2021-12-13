@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: TopicsBeginCreateOrUpdateResponse
+uid: '@azure/arm-eventgrid.TopicsBeginCreateOrUpdateResponse|stable'
+package: '@azure/arm-eventgrid|stable'
+summary: Contains response data for the beginCreateOrUpdate operation.
+fullName: TopicsBeginCreateOrUpdateResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type TopicsBeginCreateOrUpdateResponse = Topic & { _response: HttpResponse & {
+  bodyAsText: string, parsedBody: Topic } }

@@ -1,0 +1,66 @@
+### YamlMime:TSType
+name: MapsGeofenceEnteredEventData
+uid: azure-eventgrid.MapsGeofenceEnteredEventData|legacy
+package: azure-eventgrid|legacy
+summary: ''
+fullName: MapsGeofenceEnteredEventData
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: expiredGeofenceGeometryId
+    uid: >-
+      azure-eventgrid.MapsGeofenceEnteredEventData.expiredGeofenceGeometryId|legacy
+    package: azure-eventgrid|legacy
+    summary: ''
+    fullName: expiredGeofenceGeometryId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'expiredGeofenceGeometryId?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: geometries
+    uid: azure-eventgrid.MapsGeofenceEnteredEventData.geometries|legacy
+    package: azure-eventgrid|legacy
+    summary: ''
+    fullName: geometries
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'geometries?: MapsGeofenceGeometry[]'
+      return:
+        description: ''
+        type: <xref uid="azure-eventgrid.MapsGeofenceGeometry|legacy" />[]
+  - name: invalidPeriodGeofenceGeometryId
+    uid: >-
+      azure-eventgrid.MapsGeofenceEnteredEventData.invalidPeriodGeofenceGeometryId|legacy
+    package: azure-eventgrid|legacy
+    summary: ''
+    fullName: invalidPeriodGeofenceGeometryId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'invalidPeriodGeofenceGeometryId?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: isEventPublished
+    uid: azure-eventgrid.MapsGeofenceEnteredEventData.isEventPublished|legacy
+    package: azure-eventgrid|legacy
+    summary: ''
+    fullName: isEventPublished
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isEventPublished?: boolean'
+      return:
+        description: ''
+        type: boolean
+extends: <xref uid="azure-eventgrid.MapsGeofenceEventProperties|legacy" />

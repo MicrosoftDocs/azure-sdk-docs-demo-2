@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: KeyValuesCreateOrUpdateResponse
+uid: '@azure/arm-appconfiguration.KeyValuesCreateOrUpdateResponse|stable'
+package: '@azure/arm-appconfiguration|stable'
+summary: Contains response data for the createOrUpdate operation.
+fullName: KeyValuesCreateOrUpdateResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type KeyValuesCreateOrUpdateResponse = KeyValue & { _response: HttpResponse &
+  { bodyAsText: string, parsedBody: KeyValue } }

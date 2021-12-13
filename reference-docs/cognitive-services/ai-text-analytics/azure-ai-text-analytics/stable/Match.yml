@@ -1,0 +1,67 @@
+### YamlMime:TSType
+name: Match
+uid: '@azure/ai-text-analytics.Match|stable'
+package: '@azure/ai-text-analytics|stable'
+summary: >-
+  Details about the specific substring in a document that refers to a linked
+  entity identified by the Text Analytics model.
+fullName: Match
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: confidenceScore
+    uid: '@azure/ai-text-analytics.Match.confidenceScore|stable'
+    package: '@azure/ai-text-analytics|stable'
+    summary: >-
+      If a well known item is recognized, a decimal number denoting the
+      confidence level between 0 and 1 will be returned.
+    fullName: confidenceScore
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'confidenceScore: number'
+      return:
+        description: ''
+        type: number
+  - name: length
+    uid: '@azure/ai-text-analytics.Match.length|stable'
+    package: '@azure/ai-text-analytics|stable'
+    summary: Length for the entity match text.
+    fullName: length
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'length: number'
+      return:
+        description: ''
+        type: number
+  - name: offset
+    uid: '@azure/ai-text-analytics.Match.offset|stable'
+    package: '@azure/ai-text-analytics|stable'
+    summary: Start position for the entity match text.
+    fullName: offset
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'offset: number'
+      return:
+        description: ''
+        type: number
+  - name: text
+    uid: '@azure/ai-text-analytics.Match.text|stable'
+    package: '@azure/ai-text-analytics|stable'
+    summary: Entity text as appears in the request.
+    fullName: text
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'text: string'
+      return:
+        description: ''
+        type: string

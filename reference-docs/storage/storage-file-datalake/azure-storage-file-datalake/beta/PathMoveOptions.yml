@@ -1,0 +1,68 @@
+### YamlMime:TSType
+name: PathMoveOptions
+uid: '@azure/storage-file-datalake.PathMoveOptions|beta'
+package: '@azure/storage-file-datalake|beta'
+summary: ''
+fullName: PathMoveOptions
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: abortSignal
+    uid: '@azure/storage-file-datalake.PathMoveOptions.abortSignal|beta'
+    package: '@azure/storage-file-datalake|beta'
+    summary: ''
+    fullName: abortSignal
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'abortSignal?: AbortSignalLike'
+      return:
+        description: ''
+        type: AbortSignalLike
+  - name: conditions
+    uid: '@azure/storage-file-datalake.PathMoveOptions.conditions|beta'
+    package: '@azure/storage-file-datalake|beta'
+    summary: ''
+    fullName: conditions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'conditions?: DataLakeRequestConditions'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/storage-file-datalake.DataLakeRequestConditions|beta" />
+  - name: destinationConditions
+    uid: '@azure/storage-file-datalake.PathMoveOptions.destinationConditions|beta'
+    package: '@azure/storage-file-datalake|beta'
+    summary: ''
+    fullName: destinationConditions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'destinationConditions?: DataLakeRequestConditions'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/storage-file-datalake.DataLakeRequestConditions|beta" />
+  - name: tracingOptions
+    uid: '@azure/storage-file-datalake.PathMoveOptions.tracingOptions|beta'
+    package: '@azure/storage-file-datalake|beta'
+    summary: Options to configure spans created when tracing is enabled.
+    fullName: tracingOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tracingOptions?: OperationTracingOptions'
+      return:
+        description: ''
+        type: OperationTracingOptions
+extends: <xref uid="@azure/storage-file-datalake.CommonOptions|beta" />

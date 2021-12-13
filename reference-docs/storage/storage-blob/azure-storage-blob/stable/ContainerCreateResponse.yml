@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: ContainerCreateResponse
+uid: '@azure/storage-blob.ContainerCreateResponse|stable'
+package: '@azure/storage-blob|stable'
+summary: Contains response data for the create operation.
+fullName: ContainerCreateResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type ContainerCreateResponse = ContainerCreateHeaders & { _response:
+  HttpResponse & { parsedHeaders: ContainerCreateHeaders } }

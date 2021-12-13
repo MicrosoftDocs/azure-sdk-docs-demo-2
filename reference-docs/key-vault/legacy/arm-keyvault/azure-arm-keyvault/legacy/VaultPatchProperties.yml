@@ -1,0 +1,142 @@
+### YamlMime:TSType
+name: VaultPatchProperties
+uid: azure-arm-keyvault.VaultPatchProperties|legacy
+package: azure-arm-keyvault|legacy
+summary: ''
+fullName: VaultPatchProperties
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: accessPolicies
+    uid: azure-arm-keyvault.VaultPatchProperties.accessPolicies|legacy
+    package: azure-arm-keyvault|legacy
+    summary: ''
+    fullName: accessPolicies
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'accessPolicies?: AccessPolicyEntry[]'
+      return:
+        description: ''
+        type: <xref uid="azure-arm-keyvault.AccessPolicyEntry|legacy" />[]
+  - name: createMode
+    uid: azure-arm-keyvault.VaultPatchProperties.createMode|legacy
+    package: azure-arm-keyvault|legacy
+    summary: ''
+    fullName: createMode
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'createMode?: string'
+      return:
+        description: ''
+        type: string
+  - name: enabledForDeployment
+    uid: azure-arm-keyvault.VaultPatchProperties.enabledForDeployment|legacy
+    package: azure-arm-keyvault|legacy
+    summary: ''
+    fullName: enabledForDeployment
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'enabledForDeployment?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: enabledForDiskEncryption
+    uid: azure-arm-keyvault.VaultPatchProperties.enabledForDiskEncryption|legacy
+    package: azure-arm-keyvault|legacy
+    summary: ''
+    fullName: enabledForDiskEncryption
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'enabledForDiskEncryption?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: enabledForTemplateDeployment
+    uid: >-
+      azure-arm-keyvault.VaultPatchProperties.enabledForTemplateDeployment|legacy
+    package: azure-arm-keyvault|legacy
+    summary: ''
+    fullName: enabledForTemplateDeployment
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'enabledForTemplateDeployment?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: enablePurgeProtection
+    uid: azure-arm-keyvault.VaultPatchProperties.enablePurgeProtection|legacy
+    package: azure-arm-keyvault|legacy
+    summary: ''
+    fullName: enablePurgeProtection
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'enablePurgeProtection?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: enableSoftDelete
+    uid: azure-arm-keyvault.VaultPatchProperties.enableSoftDelete|legacy
+    package: azure-arm-keyvault|legacy
+    summary: ''
+    fullName: enableSoftDelete
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'enableSoftDelete?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: networkAcls
+    uid: azure-arm-keyvault.VaultPatchProperties.networkAcls|legacy
+    package: azure-arm-keyvault|legacy
+    summary: ''
+    fullName: networkAcls
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'networkAcls?: NetworkRuleSet'
+      return:
+        description: ''
+        type: <xref uid="azure-arm-keyvault.NetworkRuleSet|legacy" />
+  - name: sku
+    uid: azure-arm-keyvault.VaultPatchProperties.sku|legacy
+    package: azure-arm-keyvault|legacy
+    summary: ''
+    fullName: sku
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sku?: Sku'
+      return:
+        description: ''
+        type: <xref uid="azure-arm-keyvault.Sku|legacy" />
+  - name: tenantId
+    uid: azure-arm-keyvault.VaultPatchProperties.tenantId|legacy
+    package: azure-arm-keyvault|legacy
+    summary: ''
+    fullName: tenantId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tenantId?: string'
+      return:
+        description: ''
+        type: string

@@ -1,0 +1,63 @@
+### YamlMime:TSType
+name: BlobQueryError
+uid: '@azure/storage-blob.BlobQueryError|beta'
+package: '@azure/storage-blob|beta'
+summary: Blob query error type.
+fullName: BlobQueryError
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: description
+    uid: '@azure/storage-blob.BlobQueryError.description|beta'
+    package: '@azure/storage-blob|beta'
+    summary: Error description.
+    fullName: description
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'description: string'
+      return:
+        description: ''
+        type: string
+  - name: isFatal
+    uid: '@azure/storage-blob.BlobQueryError.isFatal|beta'
+    package: '@azure/storage-blob|beta'
+    summary: Whether error is fatal. Fatal error will stop query.
+    fullName: isFatal
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isFatal: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: name
+    uid: '@azure/storage-blob.BlobQueryError.name|beta'
+    package: '@azure/storage-blob|beta'
+    summary: Error name.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: string'
+      return:
+        description: ''
+        type: string
+  - name: position
+    uid: '@azure/storage-blob.BlobQueryError.position|beta'
+    package: '@azure/storage-blob|beta'
+    summary: Position in bytes of the query.
+    fullName: position
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'position: number'
+      return:
+        description: ''
+        type: number

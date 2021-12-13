@@ -1,0 +1,24 @@
+### YamlMime:TSType
+name: KeysResult
+uid: '@azure/ai-form-recognizer.KeysResult|stable'
+package: '@azure/ai-form-recognizer|stable'
+summary: Keys extracted by the custom model.
+fullName: KeysResult
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: clusters
+    uid: '@azure/ai-form-recognizer.KeysResult.clusters|stable'
+    package: '@azure/ai-form-recognizer|stable'
+    summary: Object mapping clusterIds to a list of keys.
+    fullName: clusters
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clusters: [key: string]: function'
+      return:
+        description: ''
+        type: '[key: string]\: function'

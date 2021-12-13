@@ -1,0 +1,121 @@
+### YamlMime:TSType
+name: AccountSasOptions
+uid: '@azure/data-tables.AccountSasOptions|stable'
+package: '@azure/data-tables|stable'
+summary: Options to configure <xref:@azure/data-tables.generateAccountSas> operation.
+fullName: AccountSasOptions
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: expiresOn
+    uid: '@azure/data-tables.AccountSasOptions.expiresOn|stable'
+    package: '@azure/data-tables|stable'
+    summary: >-
+      The time at which the shared access signature becomes invalid. Default to
+      an hour later if not provided.
+    fullName: expiresOn
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'expiresOn?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: ipRange
+    uid: '@azure/data-tables.AccountSasOptions.ipRange|stable'
+    package: '@azure/data-tables|stable'
+    summary: IP range allowed.
+    fullName: ipRange
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ipRange?: SasIPRange'
+      return:
+        description: ''
+        type: <xref uid="@azure/data-tables.SasIPRange|stable" />
+  - name: permissions
+    uid: '@azure/data-tables.AccountSasOptions.permissions|stable'
+    package: '@azure/data-tables|stable'
+    summary: Specifies the list of permissions to be associated with the SAS.
+    fullName: permissions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'permissions?: AccountSasPermissions'
+      return:
+        description: ''
+        type: <xref uid="@azure/data-tables.AccountSasPermissions|stable" />
+  - name: protocol
+    uid: '@azure/data-tables.AccountSasOptions.protocol|stable'
+    package: '@azure/data-tables|stable'
+    summary: SAS protocols allowed.
+    fullName: protocol
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protocol?: SasProtocol'
+      return:
+        description: ''
+        type: <xref uid="@azure/data-tables.SasProtocol|stable" />
+  - name: resourceTypes
+    uid: '@azure/data-tables.AccountSasOptions.resourceTypes|stable'
+    package: '@azure/data-tables|stable'
+    summary: Specifies the resource types associated with the shared access signature.
+    fullName: resourceTypes
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'resourceTypes?: string'
+      return:
+        description: ''
+        type: string
+  - name: services
+    uid: '@azure/data-tables.AccountSasOptions.services|stable'
+    package: '@azure/data-tables|stable'
+    summary: Account services
+    fullName: services
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'services?: AccountSasServices'
+      return:
+        description: ''
+        type: <xref uid="@azure/data-tables.AccountSasServices|stable" />
+  - name: startsOn
+    uid: '@azure/data-tables.AccountSasOptions.startsOn|stable'
+    package: '@azure/data-tables|stable'
+    summary: When the SAS will take effect.
+    fullName: startsOn
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'startsOn?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: version
+    uid: '@azure/data-tables.AccountSasOptions.version|stable'
+    package: '@azure/data-tables|stable'
+    summary: >-
+      The version of the service this SAS will target. If not specified, it will
+      default to the version targeted by the
+
+      library.
+    fullName: version
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'version?: string'
+      return:
+        description: ''
+        type: string

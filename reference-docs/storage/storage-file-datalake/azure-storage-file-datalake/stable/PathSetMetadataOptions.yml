@@ -1,0 +1,53 @@
+### YamlMime:TSType
+name: PathSetMetadataOptions
+uid: '@azure/storage-file-datalake.PathSetMetadataOptions|stable'
+package: '@azure/storage-file-datalake|stable'
+summary: ''
+fullName: PathSetMetadataOptions
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: abortSignal
+    uid: '@azure/storage-file-datalake.PathSetMetadataOptions.abortSignal|stable'
+    package: '@azure/storage-file-datalake|stable'
+    summary: ''
+    fullName: abortSignal
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'abortSignal?: AbortSignalLike'
+      return:
+        description: ''
+        type: AbortSignalLike
+  - name: conditions
+    uid: '@azure/storage-file-datalake.PathSetMetadataOptions.conditions|stable'
+    package: '@azure/storage-file-datalake|stable'
+    summary: ''
+    fullName: conditions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'conditions?: DataLakeRequestConditions'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/storage-file-datalake.DataLakeRequestConditions|stable" />
+  - name: tracingOptions
+    uid: '@azure/storage-file-datalake.PathSetMetadataOptions.tracingOptions|stable'
+    package: '@azure/storage-file-datalake|stable'
+    summary: Options to configure spans created when tracing is enabled.
+    fullName: tracingOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tracingOptions?: OperationTracingOptions'
+      return:
+        description: ''
+        type: OperationTracingOptions
+extends: <xref uid="@azure/storage-file-datalake.CommonOptions|stable" />

@@ -1,0 +1,89 @@
+### YamlMime:TSType
+name: TrackedResource
+uid: '@azure/arm-eventgrid.TrackedResource|stable'
+package: '@azure/arm-eventgrid|stable'
+summary: Definition of a Tracked Resource.
+fullName: TrackedResource
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: id
+    uid: '@azure/arm-eventgrid.TrackedResource.id|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: >-
+      Fully qualified identifier of the resource.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: location
+    uid: '@azure/arm-eventgrid.TrackedResource.location|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Location of the resource.
+    fullName: location
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'location: string'
+      return:
+        description: ''
+        type: string
+  - name: name
+    uid: '@azure/arm-eventgrid.TrackedResource.name|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: >-
+      Name of the resource.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: tags
+    uid: '@azure/arm-eventgrid.TrackedResource.tags|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Tags of the resource.
+    fullName: tags
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tags?: undefined | [key: string]: string'
+      return:
+        description: ''
+        type: 'undefined | [key: string]: string'
+  - name: type
+    uid: '@azure/arm-eventgrid.TrackedResource.type|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: >-
+      Type of the resource.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+extends: <xref uid="@azure/arm-eventgrid.Resource|stable" />

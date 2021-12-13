@@ -1,0 +1,135 @@
+### YamlMime:TSType
+name: CustomFormModel
+uid: '@azure/ai-form-recognizer.CustomFormModel|stable'
+package: '@azure/ai-form-recognizer|stable'
+summary: Represents a model from training.
+fullName: CustomFormModel
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: errors
+    uid: '@azure/ai-form-recognizer.CustomFormModel.errors|stable'
+    package: '@azure/ai-form-recognizer|stable'
+    summary: Errors returned during training operation.
+    fullName: errors
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'errors?: FormRecognizerError[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/ai-form-recognizer.FormRecognizerError|stable" />[]
+  - name: modelId
+    uid: '@azure/ai-form-recognizer.CustomFormModel.modelId|stable'
+    package: '@azure/ai-form-recognizer|stable'
+    summary: Model identifier.
+    fullName: modelId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'modelId: string'
+      return:
+        description: ''
+        type: string
+  - name: modelName
+    uid: '@azure/ai-form-recognizer.CustomFormModel.modelName|stable'
+    package: '@azure/ai-form-recognizer|stable'
+    summary: |
+      The name of the model that was provided during model training.
+      Model names are not guaranteed to be unique.
+    fullName: modelName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'modelName?: string'
+      return:
+        description: ''
+        type: string
+  - name: properties
+    uid: '@azure/ai-form-recognizer.CustomFormModel.properties|stable'
+    package: '@azure/ai-form-recognizer|stable'
+    summary: Optional properties or flags associated with the model.
+    fullName: properties
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'properties?: CustomFormModelProperties'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/ai-form-recognizer.CustomFormModelProperties|stable"
+          />
+  - name: status
+    uid: '@azure/ai-form-recognizer.CustomFormModel.status|stable'
+    package: '@azure/ai-form-recognizer|stable'
+    summary: Status of the model.
+    fullName: status
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'status: ModelStatus'
+      return:
+        description: ''
+        type: <xref uid="@azure/ai-form-recognizer.ModelStatus|stable" />
+  - name: submodels
+    uid: '@azure/ai-form-recognizer.CustomFormModel.submodels|stable'
+    package: '@azure/ai-form-recognizer|stable'
+    summary: Form models created by training.
+    fullName: submodels
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'submodels?: CustomFormSubmodel[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/ai-form-recognizer.CustomFormSubmodel|stable" />[]
+  - name: trainingCompletedOn
+    uid: '@azure/ai-form-recognizer.CustomFormModel.trainingCompletedOn|stable'
+    package: '@azure/ai-form-recognizer|stable'
+    summary: Date and time (UTC) when the training operation completed.
+    fullName: trainingCompletedOn
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'trainingCompletedOn: Date'
+      return:
+        description: ''
+        type: Date
+  - name: trainingDocuments
+    uid: '@azure/ai-form-recognizer.CustomFormModel.trainingDocuments|stable'
+    package: '@azure/ai-form-recognizer|stable'
+    summary: >-
+      List of document used to train the model and any errors reported for each
+      document.
+    fullName: trainingDocuments
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'trainingDocuments?: TrainingDocumentInfo[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/ai-form-recognizer.TrainingDocumentInfo|stable" />[]
+  - name: trainingStartedOn
+    uid: '@azure/ai-form-recognizer.CustomFormModel.trainingStartedOn|stable'
+    package: '@azure/ai-form-recognizer|stable'
+    summary: Date and time (UTC) when the custom model training started.
+    fullName: trainingStartedOn
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'trainingStartedOn: Date'
+      return:
+        description: ''
+        type: Date
+extends: <xref uid="@azure/ai-form-recognizer.CustomFormModelInfo|stable" />

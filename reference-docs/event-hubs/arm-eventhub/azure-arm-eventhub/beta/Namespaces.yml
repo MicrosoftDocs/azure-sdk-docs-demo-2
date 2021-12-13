@@ -1,0 +1,607 @@
+### YamlMime:TSType
+name: Namespaces
+uid: '@azure/arm-eventhub.Namespaces|beta'
+package: '@azure/arm-eventhub|beta'
+summary: Interface representing a Namespaces.
+fullName: Namespaces
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      beginCreateOrUpdate(string, string, EHNamespace,
+      NamespacesCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-eventhub.Namespaces.beginCreateOrUpdate|beta'
+    package: '@azure/arm-eventhub|beta'
+    summary: >-
+      Creates or updates a namespace. Once created, this namespace's resource
+      manifest is immutable. This
+
+      operation is idempotent.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string, namespaceName:
+        string, parameters: EHNamespace, options?:
+        NamespacesCreateOrUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<NamespacesCreateOrUpdateResponse>,
+        NamespacesCreateOrUpdateResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group within the azure subscription.
+        - id: namespaceName
+          type: string
+          description: The Namespace name
+        - id: parameters
+          type: <xref uid="@azure/arm-eventhub.EHNamespace|beta" />
+          description: Parameters for creating a namespace resource.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventhub.NamespacesCreateOrUpdateOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-eventhub.NamespacesCreateOrUpdateResponse|beta"
+          />&gt;, <xref
+          uid="@azure/arm-eventhub.NamespacesCreateOrUpdateResponse|beta"
+          />&gt;&gt;
+  - name: >-
+      beginCreateOrUpdateAndWait(string, string, EHNamespace,
+      NamespacesCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-eventhub.Namespaces.beginCreateOrUpdateAndWait|beta'
+    package: '@azure/arm-eventhub|beta'
+    summary: >-
+      Creates or updates a namespace. Once created, this namespace's resource
+      manifest is immutable. This
+
+      operation is idempotent.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdateAndWait(resourceGroupName: string,
+        namespaceName: string, parameters: EHNamespace, options?:
+        NamespacesCreateOrUpdateOptionalParams):
+        Promise<NamespacesCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group within the azure subscription.
+        - id: namespaceName
+          type: string
+          description: The Namespace name
+        - id: parameters
+          type: <xref uid="@azure/arm-eventhub.EHNamespace|beta" />
+          description: Parameters for creating a namespace resource.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventhub.NamespacesCreateOrUpdateOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventhub.NamespacesCreateOrUpdateResponse|beta" />&gt;
+  - name: beginDelete(string, string, NamespacesDeleteOptionalParams)
+    uid: '@azure/arm-eventhub.Namespaces.beginDelete|beta'
+    package: '@azure/arm-eventhub|beta'
+    summary: >-
+      Deletes an existing namespace. This operation also removes all associated
+      resources under the
+
+      namespace.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDelete(resourceGroupName: string, namespaceName: string,
+        options?: NamespacesDeleteOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group within the azure subscription.
+        - id: namespaceName
+          type: string
+          description: The Namespace name
+        - id: options
+          type: >-
+            <xref uid="@azure/arm-eventhub.NamespacesDeleteOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: beginDeleteAndWait(string, string, NamespacesDeleteOptionalParams)
+    uid: '@azure/arm-eventhub.Namespaces.beginDeleteAndWait|beta'
+    package: '@azure/arm-eventhub|beta'
+    summary: >-
+      Deletes an existing namespace. This operation also removes all associated
+      resources under the
+
+      namespace.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteAndWait(resourceGroupName: string, namespaceName:
+        string, options?: NamespacesDeleteOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group within the azure subscription.
+        - id: namespaceName
+          type: string
+          description: The Namespace name
+        - id: options
+          type: >-
+            <xref uid="@azure/arm-eventhub.NamespacesDeleteOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      checkNameAvailability(CheckNameAvailabilityParameter,
+      NamespacesCheckNameAvailabilityOptionalParams)
+    uid: '@azure/arm-eventhub.Namespaces.checkNameAvailability|beta'
+    package: '@azure/arm-eventhub|beta'
+    summary: Check the give Namespace name availability.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function checkNameAvailability(parameters:
+        CheckNameAvailabilityParameter, options?:
+        NamespacesCheckNameAvailabilityOptionalParams):
+        Promise<NamespacesCheckNameAvailabilityResponse>
+      parameters:
+        - id: parameters
+          type: >-
+            <xref uid="@azure/arm-eventhub.CheckNameAvailabilityParameter|beta"
+            />
+          description: Parameters to check availability of the given Namespace name
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventhub.NamespacesCheckNameAvailabilityOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventhub.NamespacesCheckNameAvailabilityResponse|beta"
+          />&gt;
+  - name: >-
+      createOrUpdateAuthorizationRule(string, string, string, AuthorizationRule,
+      NamespacesCreateOrUpdateAuthorizationRuleOptionalParams)
+    uid: '@azure/arm-eventhub.Namespaces.createOrUpdateAuthorizationRule|beta'
+    package: '@azure/arm-eventhub|beta'
+    summary: Creates or updates an AuthorizationRule for a Namespace.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createOrUpdateAuthorizationRule(resourceGroupName: string,
+        namespaceName: string, authorizationRuleName: string, parameters:
+        AuthorizationRule, options?:
+        NamespacesCreateOrUpdateAuthorizationRuleOptionalParams):
+        Promise<NamespacesCreateOrUpdateAuthorizationRuleResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group within the azure subscription.
+        - id: namespaceName
+          type: string
+          description: The Namespace name
+        - id: authorizationRuleName
+          type: string
+          description: The authorization rule name.
+        - id: parameters
+          type: <xref uid="@azure/arm-eventhub.AuthorizationRule|beta" />
+          description: The shared access AuthorizationRule.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventhub.NamespacesCreateOrUpdateAuthorizationRuleOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventhub.NamespacesCreateOrUpdateAuthorizationRuleResponse|beta"
+          />&gt;
+  - name: >-
+      createOrUpdateNetworkRuleSet(string, string, NetworkRuleSet,
+      NamespacesCreateOrUpdateNetworkRuleSetOptionalParams)
+    uid: '@azure/arm-eventhub.Namespaces.createOrUpdateNetworkRuleSet|beta'
+    package: '@azure/arm-eventhub|beta'
+    summary: Create or update NetworkRuleSet for a Namespace.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createOrUpdateNetworkRuleSet(resourceGroupName: string,
+        namespaceName: string, parameters: NetworkRuleSet, options?:
+        NamespacesCreateOrUpdateNetworkRuleSetOptionalParams):
+        Promise<NamespacesCreateOrUpdateNetworkRuleSetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group within the azure subscription.
+        - id: namespaceName
+          type: string
+          description: The Namespace name
+        - id: parameters
+          type: <xref uid="@azure/arm-eventhub.NetworkRuleSet|beta" />
+          description: The Namespace IpFilterRule.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventhub.NamespacesCreateOrUpdateNetworkRuleSetOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventhub.NamespacesCreateOrUpdateNetworkRuleSetResponse|beta"
+          />&gt;
+  - name: >-
+      deleteAuthorizationRule(string, string, string,
+      NamespacesDeleteAuthorizationRuleOptionalParams)
+    uid: '@azure/arm-eventhub.Namespaces.deleteAuthorizationRule|beta'
+    package: '@azure/arm-eventhub|beta'
+    summary: Deletes an AuthorizationRule for a Namespace.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function deleteAuthorizationRule(resourceGroupName: string,
+        namespaceName: string, authorizationRuleName: string, options?:
+        NamespacesDeleteAuthorizationRuleOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group within the azure subscription.
+        - id: namespaceName
+          type: string
+          description: The Namespace name
+        - id: authorizationRuleName
+          type: string
+          description: The authorization rule name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventhub.NamespacesDeleteAuthorizationRuleOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: get(string, string, NamespacesGetOptionalParams)
+    uid: '@azure/arm-eventhub.Namespaces.get|beta'
+    package: '@azure/arm-eventhub|beta'
+    summary: Gets the description of the specified namespace.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, namespaceName: string, options?:
+        NamespacesGetOptionalParams): Promise<NamespacesGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group within the azure subscription.
+        - id: namespaceName
+          type: string
+          description: The Namespace name
+        - id: options
+          type: <xref uid="@azure/arm-eventhub.NamespacesGetOptionalParams|beta" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref uid="@azure/arm-eventhub.NamespacesGetResponse|beta"
+          />&gt;
+  - name: >-
+      getAuthorizationRule(string, string, string,
+      NamespacesGetAuthorizationRuleOptionalParams)
+    uid: '@azure/arm-eventhub.Namespaces.getAuthorizationRule|beta'
+    package: '@azure/arm-eventhub|beta'
+    summary: Gets an AuthorizationRule for a Namespace by rule name.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getAuthorizationRule(resourceGroupName: string, namespaceName:
+        string, authorizationRuleName: string, options?:
+        NamespacesGetAuthorizationRuleOptionalParams):
+        Promise<NamespacesGetAuthorizationRuleResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group within the azure subscription.
+        - id: namespaceName
+          type: string
+          description: The Namespace name
+        - id: authorizationRuleName
+          type: string
+          description: The authorization rule name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventhub.NamespacesGetAuthorizationRuleOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventhub.NamespacesGetAuthorizationRuleResponse|beta"
+          />&gt;
+  - name: >-
+      getNetworkRuleSet(string, string,
+      NamespacesGetNetworkRuleSetOptionalParams)
+    uid: '@azure/arm-eventhub.Namespaces.getNetworkRuleSet|beta'
+    package: '@azure/arm-eventhub|beta'
+    summary: Gets NetworkRuleSet for a Namespace.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getNetworkRuleSet(resourceGroupName: string, namespaceName:
+        string, options?: NamespacesGetNetworkRuleSetOptionalParams):
+        Promise<NamespacesGetNetworkRuleSetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group within the azure subscription.
+        - id: namespaceName
+          type: string
+          description: The Namespace name
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventhub.NamespacesGetNetworkRuleSetOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventhub.NamespacesGetNetworkRuleSetResponse|beta"
+          />&gt;
+  - name: list(NamespacesListOptionalParams)
+    uid: '@azure/arm-eventhub.Namespaces.list|beta'
+    package: '@azure/arm-eventhub|beta'
+    summary: >-
+      Lists all the available Namespaces within a subscription, irrespective of
+      the resource groups.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(options?: NamespacesListOptionalParams):
+        PagedAsyncIterableIterator<EHNamespace>
+      parameters:
+        - id: options
+          type: <xref uid="@azure/arm-eventhub.NamespacesListOptionalParams|beta" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-eventhub.EHNamespace|beta" />&gt;
+  - name: >-
+      listAuthorizationRules(string, string,
+      NamespacesListAuthorizationRulesOptionalParams)
+    uid: '@azure/arm-eventhub.Namespaces.listAuthorizationRules|beta'
+    package: '@azure/arm-eventhub|beta'
+    summary: Gets a list of authorization rules for a Namespace.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listAuthorizationRules(resourceGroupName: string,
+        namespaceName: string, options?:
+        NamespacesListAuthorizationRulesOptionalParams):
+        PagedAsyncIterableIterator<AuthorizationRule>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group within the azure subscription.
+        - id: namespaceName
+          type: string
+          description: The Namespace name
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventhub.NamespacesListAuthorizationRulesOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-eventhub.AuthorizationRule|beta" />&gt;
+  - name: listByResourceGroup(string, NamespacesListByResourceGroupOptionalParams)
+    uid: '@azure/arm-eventhub.Namespaces.listByResourceGroup|beta'
+    package: '@azure/arm-eventhub|beta'
+    summary: Lists the available Namespaces within a resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string, options?:
+        NamespacesListByResourceGroupOptionalParams):
+        PagedAsyncIterableIterator<EHNamespace>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group within the azure subscription.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventhub.NamespacesListByResourceGroupOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-eventhub.EHNamespace|beta" />&gt;
+  - name: listKeys(string, string, string, NamespacesListKeysOptionalParams)
+    uid: '@azure/arm-eventhub.Namespaces.listKeys|beta'
+    package: '@azure/arm-eventhub|beta'
+    summary: Gets the primary and secondary connection strings for the Namespace.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listKeys(resourceGroupName: string, namespaceName: string,
+        authorizationRuleName: string, options?:
+        NamespacesListKeysOptionalParams): Promise<NamespacesListKeysResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group within the azure subscription.
+        - id: namespaceName
+          type: string
+          description: The Namespace name
+        - id: authorizationRuleName
+          type: string
+          description: The authorization rule name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventhub.NamespacesListKeysOptionalParams|beta" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventhub.NamespacesListKeysResponse|beta" />&gt;
+  - name: >-
+      regenerateKeys(string, string, string, RegenerateAccessKeyParameters,
+      NamespacesRegenerateKeysOptionalParams)
+    uid: '@azure/arm-eventhub.Namespaces.regenerateKeys|beta'
+    package: '@azure/arm-eventhub|beta'
+    summary: >-
+      Regenerates the primary or secondary connection strings for the specified
+      Namespace.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function regenerateKeys(resourceGroupName: string, namespaceName:
+        string, authorizationRuleName: string, parameters:
+        RegenerateAccessKeyParameters, options?:
+        NamespacesRegenerateKeysOptionalParams):
+        Promise<NamespacesRegenerateKeysResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group within the azure subscription.
+        - id: namespaceName
+          type: string
+          description: The Namespace name
+        - id: authorizationRuleName
+          type: string
+          description: The authorization rule name.
+        - id: parameters
+          type: >-
+            <xref uid="@azure/arm-eventhub.RegenerateAccessKeyParameters|beta"
+            />
+          description: Parameters required to regenerate the connection string.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventhub.NamespacesRegenerateKeysOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventhub.NamespacesRegenerateKeysResponse|beta" />&gt;
+  - name: update(string, string, EHNamespace, NamespacesUpdateOptionalParams)
+    uid: '@azure/arm-eventhub.Namespaces.update|beta'
+    package: '@azure/arm-eventhub|beta'
+    summary: >-
+      Creates or updates a namespace. Once created, this namespace's resource
+      manifest is immutable. This
+
+      operation is idempotent.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function update(resourceGroupName: string, namespaceName: string,
+        parameters: EHNamespace, options?: NamespacesUpdateOptionalParams):
+        Promise<NamespacesUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group within the azure subscription.
+        - id: namespaceName
+          type: string
+          description: The Namespace name
+        - id: parameters
+          type: <xref uid="@azure/arm-eventhub.EHNamespace|beta" />
+          description: Parameters for updating a namespace resource.
+        - id: options
+          type: >-
+            <xref uid="@azure/arm-eventhub.NamespacesUpdateOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventhub.NamespacesUpdateResponse|beta" />&gt;

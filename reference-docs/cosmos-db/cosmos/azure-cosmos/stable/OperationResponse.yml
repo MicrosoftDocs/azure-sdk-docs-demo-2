@@ -1,0 +1,63 @@
+### YamlMime:TSType
+name: OperationResponse
+uid: '@azure/cosmos.OperationResponse|stable'
+package: '@azure/cosmos|stable'
+summary: ''
+fullName: OperationResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: eTag
+    uid: '@azure/cosmos.OperationResponse.eTag|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: eTag
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'eTag?: string'
+      return:
+        description: ''
+        type: string
+  - name: requestCharge
+    uid: '@azure/cosmos.OperationResponse.requestCharge|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: requestCharge
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'requestCharge: number'
+      return:
+        description: ''
+        type: number
+  - name: resourceBody
+    uid: '@azure/cosmos.OperationResponse.resourceBody|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: resourceBody
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'resourceBody?: JSONObject'
+      return:
+        description: ''
+        type: <xref uid="@azure/cosmos.JSONObject|stable" />
+  - name: statusCode
+    uid: '@azure/cosmos.OperationResponse.statusCode|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: statusCode
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'statusCode: number'
+      return:
+        description: ''
+        type: number

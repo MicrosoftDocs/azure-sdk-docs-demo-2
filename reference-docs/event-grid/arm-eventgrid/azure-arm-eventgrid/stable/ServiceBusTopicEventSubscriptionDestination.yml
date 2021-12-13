@@ -1,0 +1,59 @@
+### YamlMime:TSType
+name: ServiceBusTopicEventSubscriptionDestination
+uid: '@azure/arm-eventgrid.ServiceBusTopicEventSubscriptionDestination|stable'
+package: '@azure/arm-eventgrid|stable'
+summary: Information about the service bus topic destination for an event subscription.
+fullName: ServiceBusTopicEventSubscriptionDestination
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: deliveryAttributeMappings
+    uid: >-
+      @azure/arm-eventgrid.ServiceBusTopicEventSubscriptionDestination.deliveryAttributeMappings|stable
+    package: '@azure/arm-eventgrid|stable'
+    summary: Delivery attribute details.
+    fullName: deliveryAttributeMappings
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'deliveryAttributeMappings?: DeliveryAttributeMappingUnion[]'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/arm-eventgrid.DeliveryAttributeMappingUnion|stable"
+          />[]
+  - name: endpointType
+    uid: >-
+      @azure/arm-eventgrid.ServiceBusTopicEventSubscriptionDestination.endpointType|stable
+    package: '@azure/arm-eventgrid|stable'
+    summary: Polymorphic Discriminator
+    fullName: endpointType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'endpointType: "ServiceBusTopic"'
+      return:
+        description: ''
+        type: '"ServiceBusTopic"'
+  - name: resourceId
+    uid: >-
+      @azure/arm-eventgrid.ServiceBusTopicEventSubscriptionDestination.resourceId|stable
+    package: '@azure/arm-eventgrid|stable'
+    summary: >-
+      The Azure Resource Id that represents the endpoint of the Service Bus
+      Topic destination of an
+
+      event subscription.
+    fullName: resourceId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'resourceId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: BlobSetTierResponse
+uid: '@azure/storage-blob.BlobSetTierResponse|beta'
+package: '@azure/storage-blob|beta'
+summary: Contains response data for the setTier operation.
+fullName: BlobSetTierResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type BlobSetTierResponse = BlobSetTierHeaders & { _response: HttpResponse & {
+  parsedHeaders: BlobSetTierHeaders } }

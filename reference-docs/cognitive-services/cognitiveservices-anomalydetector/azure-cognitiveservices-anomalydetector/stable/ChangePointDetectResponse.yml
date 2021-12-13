@@ -1,0 +1,62 @@
+### YamlMime:TSType
+name: ChangePointDetectResponse
+uid: '@azure/cognitiveservices-anomalydetector.ChangePointDetectResponse|stable'
+package: '@azure/cognitiveservices-anomalydetector|stable'
+summary: An interface representing ChangePointDetectResponse.
+fullName: ChangePointDetectResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: confidenceScores
+    uid: >-
+      @azure/cognitiveservices-anomalydetector.ChangePointDetectResponse.confidenceScores|stable
+    package: '@azure/cognitiveservices-anomalydetector|stable'
+    summary: the change point confidence of each point
+    fullName: confidenceScores
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'confidenceScores: number[]'
+      return:
+        description: ''
+        type: number[]
+  - name: isChangePoint
+    uid: >-
+      @azure/cognitiveservices-anomalydetector.ChangePointDetectResponse.isChangePoint|stable
+    package: '@azure/cognitiveservices-anomalydetector|stable'
+    summary: >-
+      isChangePoint contains change point properties for each input point. True
+      means an anomaly
+
+      either negative or positive has been detected. The index of the array is
+      consistent with the
+
+      input series.
+    fullName: isChangePoint
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isChangePoint: boolean[]'
+      return:
+        description: ''
+        type: boolean[]
+  - name: period
+    uid: >-
+      @azure/cognitiveservices-anomalydetector.ChangePointDetectResponse.period|stable
+    package: '@azure/cognitiveservices-anomalydetector|stable'
+    summary: >-
+      Frequency extracted from the series, zero means no recurrent pattern has
+      been found.
+    fullName: period
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'period: number'
+      return:
+        description: ''
+        type: number

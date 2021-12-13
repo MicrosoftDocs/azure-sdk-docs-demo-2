@@ -1,0 +1,135 @@
+### YamlMime:TSType
+name: SkuInformation
+uid: '@azure/arm-storage.SkuInformation|stable'
+package: '@azure/arm-storage|stable'
+summary: Storage SKU and its properties
+fullName: SkuInformation
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: capabilities
+    uid: '@azure/arm-storage.SkuInformation.capabilities|stable'
+    package: '@azure/arm-storage|stable'
+    summary: >-
+      The capability information in the specified SKU, including file
+      encryption, network ACLs,
+
+      change notification, etc.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: capabilities
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'capabilities?: SKUCapability[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-storage.SKUCapability|stable" />[]
+  - name: kind
+    uid: '@azure/arm-storage.SkuInformation.kind|stable'
+    package: '@azure/arm-storage|stable'
+    summary: >-
+      Indicates the type of storage account. Possible values include: 'Storage',
+      'StorageV2',
+
+      'BlobStorage', 'FileStorage', 'BlockBlobStorage'
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: kind
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'kind?: Kind'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-storage.Kind|stable" />
+  - name: locations
+    uid: '@azure/arm-storage.SkuInformation.locations|stable'
+    package: '@azure/arm-storage|stable'
+    summary: >-
+      The set of locations that the SKU is available. This will be supported and
+      registered Azure
+
+      Geo Regions (e.g. West US, East US, Southeast Asia, etc.).
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: locations
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'locations?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: name
+    uid: '@azure/arm-storage.SkuInformation.name|stable'
+    package: '@azure/arm-storage|stable'
+    summary: >-
+      Possible values include: 'Standard_LRS', 'Standard_GRS', 'Standard_RAGRS',
+      'Standard_ZRS',
+
+      'Premium_LRS', 'Premium_ZRS', 'Standard_GZRS', 'Standard_RAGZRS'
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: SkuName'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-storage.SkuName|stable" />
+  - name: resourceType
+    uid: '@azure/arm-storage.SkuInformation.resourceType|stable'
+    package: '@azure/arm-storage|stable'
+    summary: >-
+      The type of the resource, usually it is 'storageAccounts'.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: resourceType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'resourceType?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: restrictions
+    uid: '@azure/arm-storage.SkuInformation.restrictions|stable'
+    package: '@azure/arm-storage|stable'
+    summary: >-
+      The restrictions because of which SKU cannot be used. This is empty if
+      there are no
+
+      restrictions.
+    fullName: restrictions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'restrictions?: Restriction[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-storage.Restriction|stable" />[]
+  - name: tier
+    uid: '@azure/arm-storage.SkuInformation.tier|stable'
+    package: '@azure/arm-storage|stable'
+    summary: 'Possible values include: ''Standard'', ''Premium'''
+    fullName: tier
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tier?: SkuTier'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-storage.SkuTier|stable" />

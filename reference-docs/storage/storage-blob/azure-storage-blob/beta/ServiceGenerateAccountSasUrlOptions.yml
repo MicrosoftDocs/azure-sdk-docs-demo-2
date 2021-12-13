@@ -1,0 +1,85 @@
+### YamlMime:TSType
+name: ServiceGenerateAccountSasUrlOptions
+uid: '@azure/storage-blob.ServiceGenerateAccountSasUrlOptions|beta'
+package: '@azure/storage-blob|beta'
+summary: >-
+  Options to configure
+  <xref:@azure/storage-blob.BlobServiceClient.generateAccountSasUrl> operation.
+fullName: ServiceGenerateAccountSasUrlOptions
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: encryptionScope
+    uid: >-
+      @azure/storage-blob.ServiceGenerateAccountSasUrlOptions.encryptionScope|beta
+    package: '@azure/storage-blob|beta'
+    summary: >-
+      Optional. Encryption scope to use when sending requests authorized with
+      this SAS URI.
+    fullName: encryptionScope
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'encryptionScope?: string'
+      return:
+        description: ''
+        type: string
+  - name: ipRange
+    uid: '@azure/storage-blob.ServiceGenerateAccountSasUrlOptions.ipRange|beta'
+    package: '@azure/storage-blob|beta'
+    summary: Optional. IP range allowed.
+    fullName: ipRange
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ipRange?: SasIPRange'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-blob.SasIPRange|beta" />
+  - name: protocol
+    uid: '@azure/storage-blob.ServiceGenerateAccountSasUrlOptions.protocol|beta'
+    package: '@azure/storage-blob|beta'
+    summary: Optional. SAS protocols allowed.
+    fullName: protocol
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protocol?: SASProtocol'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-blob.SASProtocol|beta" />
+  - name: startsOn
+    uid: '@azure/storage-blob.ServiceGenerateAccountSasUrlOptions.startsOn|beta'
+    package: '@azure/storage-blob|beta'
+    summary: Optional. When the SAS will take effect.
+    fullName: startsOn
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'startsOn?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: version
+    uid: '@azure/storage-blob.ServiceGenerateAccountSasUrlOptions.version|beta'
+    package: '@azure/storage-blob|beta'
+    summary: >-
+      The version of the service this SAS will target. If not specified, it will
+      default to the version targeted by the
+
+      library.
+    fullName: version
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'version?: string'
+      return:
+        description: ''
+        type: string

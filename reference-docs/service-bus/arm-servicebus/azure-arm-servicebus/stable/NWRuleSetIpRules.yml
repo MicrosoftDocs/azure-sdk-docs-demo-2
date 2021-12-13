@@ -1,0 +1,39 @@
+### YamlMime:TSType
+name: NWRuleSetIpRules
+uid: '@azure/arm-servicebus.NWRuleSetIpRules|stable'
+package: '@azure/arm-servicebus|stable'
+summary: Description of NetWorkRuleSet - IpRules resource.
+fullName: NWRuleSetIpRules
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: action
+    uid: '@azure/arm-servicebus.NWRuleSetIpRules.action|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: >-
+      The IP Filter Action. Possible values include: 'Allow'. Default value:
+      'Allow'.
+    fullName: action
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'action?: NetworkRuleIPAction'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-servicebus.NetworkRuleIPAction|stable" />
+  - name: ipMask
+    uid: '@azure/arm-servicebus.NWRuleSetIpRules.ipMask|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: IP Mask
+    fullName: ipMask
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ipMask?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

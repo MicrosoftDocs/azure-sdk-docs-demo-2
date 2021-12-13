@@ -1,0 +1,58 @@
+### YamlMime:TSType
+name: ManagementPolicySnapShot
+uid: '@azure/arm-storage.ManagementPolicySnapShot|stable'
+package: '@azure/arm-storage|stable'
+summary: Management policy action for snapshot.
+fullName: ManagementPolicySnapShot
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: deleteProperty
+    uid: '@azure/arm-storage.ManagementPolicySnapShot.deleteProperty|stable'
+    package: '@azure/arm-storage|stable'
+    summary: The function to delete the blob snapshot
+    fullName: deleteProperty
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'deleteProperty?: DateAfterCreation'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-storage.DateAfterCreation|stable" />
+  - name: tierToArchive
+    uid: '@azure/arm-storage.ManagementPolicySnapShot.tierToArchive|stable'
+    package: '@azure/arm-storage|stable'
+    summary: >-
+      The function to tier blob snapshot to archive storage. Support blob
+      snapshot currently at Hot
+
+      or Cool tier
+    fullName: tierToArchive
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tierToArchive?: DateAfterCreation'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-storage.DateAfterCreation|stable" />
+  - name: tierToCool
+    uid: '@azure/arm-storage.ManagementPolicySnapShot.tierToCool|stable'
+    package: '@azure/arm-storage|stable'
+    summary: >-
+      The function to tier blob snapshot to cool storage. Support blob snapshot
+      currently at Hot
+
+      tier
+    fullName: tierToCool
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tierToCool?: DateAfterCreation'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-storage.DateAfterCreation|stable" />

@@ -1,0 +1,95 @@
+### YamlMime:TSType
+name: ContainerCreateOptions
+uid: '@azure/storage-blob.ContainerCreateOptions|beta'
+package: '@azure/storage-blob|beta'
+summary: >-
+  Options to configure <xref:@azure/storage-blob.ContainerClient.create>
+  operation.
+fullName: ContainerCreateOptions
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: abortSignal
+    uid: '@azure/storage-blob.ContainerCreateOptions.abortSignal|beta'
+    package: '@azure/storage-blob|beta'
+    summary: >-
+      An implementation of the `AbortSignalLike` interface to signal the request
+      to cancel the operation.
+
+      For example, use the &commat;azure/abort-controller to create an
+      `AbortSignal`.
+    fullName: abortSignal
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'abortSignal?: AbortSignalLike'
+      return:
+        description: ''
+        type: AbortSignalLike
+  - name: access
+    uid: '@azure/storage-blob.ContainerCreateOptions.access|beta'
+    package: '@azure/storage-blob|beta'
+    summary: >-
+      Specifies whether data in the container may be accessed publicly and the
+      level of access. Possible values include:
+
+      - `container`: Specifies full public read access for container and blob
+      data. Clients can enumerate blobs within the container via anonymous
+      request, but cannot enumerate containers within the storage account.
+
+      - `blob`: Specifies public read access for blobs. Blob data within this
+      container can be read via anonymous request, but container data is not
+      available. Clients cannot enumerate blobs within the container via
+      anonymous request.
+    fullName: access
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'access?: PublicAccessType'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-blob.PublicAccessType|beta" />
+  - name: containerEncryptionScope
+    uid: '@azure/storage-blob.ContainerCreateOptions.containerEncryptionScope|beta'
+    package: '@azure/storage-blob|beta'
+    summary: Container encryption scope info.
+    fullName: containerEncryptionScope
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'containerEncryptionScope?: ContainerEncryptionScope'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-blob.ContainerEncryptionScope|beta" />
+  - name: metadata
+    uid: '@azure/storage-blob.ContainerCreateOptions.metadata|beta'
+    package: '@azure/storage-blob|beta'
+    summary: A collection of key-value string pair to associate with the container.
+    fullName: metadata
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'metadata?: Metadata'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-blob.Metadata|beta" />
+  - name: tracingOptions
+    uid: '@azure/storage-blob.ContainerCreateOptions.tracingOptions|beta'
+    package: '@azure/storage-blob|beta'
+    summary: Options to configure spans created when tracing is enabled.
+    fullName: tracingOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tracingOptions?: OperationTracingOptions'
+      return:
+        description: ''
+        type: OperationTracingOptions
+extends: <xref uid="@azure/storage-blob.CommonOptions|beta" />

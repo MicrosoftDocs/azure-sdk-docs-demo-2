@@ -1,0 +1,140 @@
+### YamlMime:TSType
+name: DirectoryListFilesAndDirectoriesOptions
+uid: '@azure/storage-file-share.DirectoryListFilesAndDirectoriesOptions|beta'
+package: '@azure/storage-file-share|beta'
+summary: >-
+  Options to configure
+  <xref:@azure/storage-file-share.ShareDirectoryClient.listFilesAndDirectories>
+  operation.
+fullName: DirectoryListFilesAndDirectoriesOptions
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: abortSignal
+    uid: >-
+      @azure/storage-file-share.DirectoryListFilesAndDirectoriesOptions.abortSignal|beta
+    package: '@azure/storage-file-share|beta'
+    summary: >-
+      An implementation of the `AbortSignalLike` interface to signal the request
+      to cancel the operation.
+
+      For example, use the &commat;azure/abort-controller to create an
+      `AbortSignal`.
+    fullName: abortSignal
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'abortSignal?: AbortSignalLike'
+      return:
+        description: ''
+        type: AbortSignalLike
+  - name: includeAttributes
+    uid: >-
+      @azure/storage-file-share.DirectoryListFilesAndDirectoriesOptions.includeAttributes|beta
+    package: '@azure/storage-file-share|beta'
+    summary: ''
+    fullName: includeAttributes
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'includeAttributes?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: includeEtag
+    uid: >-
+      @azure/storage-file-share.DirectoryListFilesAndDirectoriesOptions.includeEtag|beta
+    package: '@azure/storage-file-share|beta'
+    summary: ''
+    fullName: includeEtag
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'includeEtag?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: includeExtendedInfo
+    uid: >-
+      @azure/storage-file-share.DirectoryListFilesAndDirectoriesOptions.includeExtendedInfo|beta
+    package: '@azure/storage-file-share|beta'
+    summary: >-
+      Optional. Specified that extended info should be included in the returned
+      <xref:@azure/storage-file-share.FileItem> or
+      <xref:@azure/storage-file-share.DirectoryItem>.
+
+      If true, the Content-Length property will be up-to-date, FileId will be
+      returned in response.
+    fullName: includeExtendedInfo
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'includeExtendedInfo?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: includePermissionKey
+    uid: >-
+      @azure/storage-file-share.DirectoryListFilesAndDirectoriesOptions.includePermissionKey|beta
+    package: '@azure/storage-file-share|beta'
+    summary: ''
+    fullName: includePermissionKey
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'includePermissionKey?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: includeTimestamps
+    uid: >-
+      @azure/storage-file-share.DirectoryListFilesAndDirectoriesOptions.includeTimestamps|beta
+    package: '@azure/storage-file-share|beta'
+    summary: ''
+    fullName: includeTimestamps
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'includeTimestamps?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: prefix
+    uid: >-
+      @azure/storage-file-share.DirectoryListFilesAndDirectoriesOptions.prefix|beta
+    package: '@azure/storage-file-share|beta'
+    summary: |-
+      Filters the results to return only entries whose
+      name begins with the specified prefix.
+    fullName: prefix
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'prefix?: string'
+      return:
+        description: ''
+        type: string
+  - name: tracingOptions
+    uid: >-
+      @azure/storage-file-share.DirectoryListFilesAndDirectoriesOptions.tracingOptions|beta
+    package: '@azure/storage-file-share|beta'
+    summary: ''
+    fullName: tracingOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tracingOptions?: OperationTracingOptions'
+      return:
+        description: ''
+        type: OperationTracingOptions
+extends: <xref uid="@azure/storage-file-share.CommonOptions|beta" />

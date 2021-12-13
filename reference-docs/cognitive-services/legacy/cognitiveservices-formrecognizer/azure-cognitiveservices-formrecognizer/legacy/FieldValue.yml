@@ -1,0 +1,53 @@
+### YamlMime:TSType
+name: FieldValue
+uid: '@azure/cognitiveservices-formrecognizer.FieldValue|legacy'
+package: '@azure/cognitiveservices-formrecognizer|legacy'
+summary: Base class representing a recognized field value.
+fullName: FieldValue
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: elements
+    uid: '@azure/cognitiveservices-formrecognizer.FieldValue.elements|legacy'
+    package: '@azure/cognitiveservices-formrecognizer|legacy'
+    summary: List of references to OCR words comprising the recognized field value.
+    fullName: elements
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'elements?: ElementReference[]'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/cognitiveservices-formrecognizer.ElementReference|legacy"
+          />[]
+  - name: text
+    uid: '@azure/cognitiveservices-formrecognizer.FieldValue.text|legacy'
+    package: '@azure/cognitiveservices-formrecognizer|legacy'
+    summary: OCR text content of the recognized field.
+    fullName: text
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'text?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: valueType
+    uid: '@azure/cognitiveservices-formrecognizer.FieldValue.valueType|legacy'
+    package: '@azure/cognitiveservices-formrecognizer|legacy'
+    summary: Polymorphic Discriminator
+    fullName: valueType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'valueType: "fieldValue"'
+      return:
+        description: ''
+        type: '"fieldValue"'

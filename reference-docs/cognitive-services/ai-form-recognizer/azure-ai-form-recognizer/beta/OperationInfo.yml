@@ -1,0 +1,102 @@
+### YamlMime:TSType
+name: OperationInfo
+uid: '@azure/ai-form-recognizer.OperationInfo|beta'
+package: '@azure/ai-form-recognizer|beta'
+summary: Operation info.
+fullName: OperationInfo
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: createdDateTime
+    uid: '@azure/ai-form-recognizer.OperationInfo.createdDateTime|beta'
+    package: '@azure/ai-form-recognizer|beta'
+    summary: Date and time (UTC) when the operation was created.
+    fullName: createdDateTime
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'createdDateTime: Date'
+      return:
+        description: ''
+        type: Date
+  - name: kind
+    uid: '@azure/ai-form-recognizer.OperationInfo.kind|beta'
+    package: '@azure/ai-form-recognizer|beta'
+    summary: Type of operation.
+    fullName: kind
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'kind: OperationKind'
+      return:
+        description: ''
+        type: <xref uid="@azure/ai-form-recognizer.OperationKind|beta" />
+  - name: lastUpdatedDateTime
+    uid: '@azure/ai-form-recognizer.OperationInfo.lastUpdatedDateTime|beta'
+    package: '@azure/ai-form-recognizer|beta'
+    summary: Date and time (UTC) when the status was last updated.
+    fullName: lastUpdatedDateTime
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lastUpdatedDateTime: Date'
+      return:
+        description: ''
+        type: Date
+  - name: operationId
+    uid: '@azure/ai-form-recognizer.OperationInfo.operationId|beta'
+    package: '@azure/ai-form-recognizer|beta'
+    summary: Operation ID
+    fullName: operationId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'operationId: string'
+      return:
+        description: ''
+        type: string
+  - name: percentCompleted
+    uid: '@azure/ai-form-recognizer.OperationInfo.percentCompleted|beta'
+    package: '@azure/ai-form-recognizer|beta'
+    summary: Operation progress (0-100).
+    fullName: percentCompleted
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'percentCompleted?: number'
+      return:
+        description: ''
+        type: number
+  - name: resourceLocation
+    uid: '@azure/ai-form-recognizer.OperationInfo.resourceLocation|beta'
+    package: '@azure/ai-form-recognizer|beta'
+    summary: URL of the resource targeted by this operation.
+    fullName: resourceLocation
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'resourceLocation: string'
+      return:
+        description: ''
+        type: string
+  - name: status
+    uid: '@azure/ai-form-recognizer.OperationInfo.status|beta'
+    package: '@azure/ai-form-recognizer|beta'
+    summary: Operation status.
+    fullName: status
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'status: OperationStatus'
+      return:
+        description: ''
+        type: <xref uid="@azure/ai-form-recognizer.OperationStatus|beta" />

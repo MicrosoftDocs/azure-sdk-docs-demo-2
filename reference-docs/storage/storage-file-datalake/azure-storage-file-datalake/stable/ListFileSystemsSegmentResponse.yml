@@ -1,0 +1,93 @@
+### YamlMime:TSType
+name: ListFileSystemsSegmentResponse
+uid: '@azure/storage-file-datalake.ListFileSystemsSegmentResponse|stable'
+package: '@azure/storage-file-datalake|stable'
+summary: ''
+fullName: ListFileSystemsSegmentResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: continuationToken
+    uid: >-
+      @azure/storage-file-datalake.ListFileSystemsSegmentResponse.continuationToken|stable
+    package: '@azure/storage-file-datalake|stable'
+    summary: ''
+    fullName: continuationToken
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'continuationToken?: string'
+      return:
+        description: ''
+        type: string
+  - name: fileSystemItems
+    uid: >-
+      @azure/storage-file-datalake.ListFileSystemsSegmentResponse.fileSystemItems|stable
+    package: '@azure/storage-file-datalake|stable'
+    summary: ''
+    fullName: fileSystemItems
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'fileSystemItems: FileSystemItem[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-file-datalake.FileSystemItem|stable" />[]
+  - name: marker
+    uid: '@azure/storage-file-datalake.ListFileSystemsSegmentResponse.marker|stable'
+    package: '@azure/storage-file-datalake|stable'
+    summary: ''
+    fullName: marker
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'marker?: string'
+      return:
+        description: ''
+        type: string
+  - name: maxPageSize
+    uid: >-
+      @azure/storage-file-datalake.ListFileSystemsSegmentResponse.maxPageSize|stable
+    package: '@azure/storage-file-datalake|stable'
+    summary: ''
+    fullName: maxPageSize
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'maxPageSize?: number'
+      return:
+        description: ''
+        type: number
+  - name: prefix
+    uid: '@azure/storage-file-datalake.ListFileSystemsSegmentResponse.prefix|stable'
+    package: '@azure/storage-file-datalake|stable'
+    summary: ''
+    fullName: prefix
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'prefix?: string'
+      return:
+        description: ''
+        type: string
+  - name: serviceEndpoint
+    uid: >-
+      @azure/storage-file-datalake.ListFileSystemsSegmentResponse.serviceEndpoint|stable
+    package: '@azure/storage-file-datalake|stable'
+    summary: ''
+    fullName: serviceEndpoint
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'serviceEndpoint: string'
+      return:
+        description: ''
+        type: string

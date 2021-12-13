@@ -1,0 +1,39 @@
+### YamlMime:TSType
+name: UserDefinedFunctionDefinition
+uid: '@azure/cosmos.UserDefinedFunctionDefinition|stable'
+package: '@azure/cosmos|stable'
+summary: ''
+fullName: UserDefinedFunctionDefinition
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: body
+    uid: '@azure/cosmos.UserDefinedFunctionDefinition.body|stable'
+    package: '@azure/cosmos|stable'
+    summary: >-
+      The body of the user defined function, it can also be passed as a
+      stringifed function
+    fullName: body
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'body?: string | () => void'
+      return:
+        description: ''
+        type: string | () =&gt; void
+  - name: id
+    uid: '@azure/cosmos.UserDefinedFunctionDefinition.id|stable'
+    package: '@azure/cosmos|stable'
+    summary: The id of the <xref:@azure/cosmos.UserDefinedFunction>
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: string'
+      return:
+        description: ''
+        type: string

@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: AnomalyDetectorDetectChangePointResponse
+uid: '@azure/ai-anomaly-detector.AnomalyDetectorDetectChangePointResponse|beta'
+package: '@azure/ai-anomaly-detector|beta'
+summary: Contains response data for the detectChangePoint operation.
+fullName: AnomalyDetectorDetectChangePointResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type AnomalyDetectorDetectChangePointResponse = DetectChangePointResponse & {
+  _response: HttpResponse & { bodyAsText: string, parsedBody:
+  DetectChangePointResponse } }

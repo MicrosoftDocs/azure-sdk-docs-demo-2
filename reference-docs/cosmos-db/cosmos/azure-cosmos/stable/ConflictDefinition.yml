@@ -1,0 +1,76 @@
+### YamlMime:TSType
+name: ConflictDefinition
+uid: '@azure/cosmos.ConflictDefinition|stable'
+package: '@azure/cosmos|stable'
+summary: ''
+fullName: ConflictDefinition
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: content
+    uid: '@azure/cosmos.ConflictDefinition.content|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: content
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'content?: string'
+      return:
+        description: ''
+        type: string
+  - name: id
+    uid: '@azure/cosmos.ConflictDefinition.id|stable'
+    package: '@azure/cosmos|stable'
+    summary: The id of the conflict
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: string'
+      return:
+        description: ''
+        type: string
+  - name: operationType
+    uid: '@azure/cosmos.ConflictDefinition.operationType|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: operationType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'operationType?: OperationType'
+      return:
+        description: ''
+        type: OperationType
+  - name: resourceId
+    uid: '@azure/cosmos.ConflictDefinition.resourceId|stable'
+    package: '@azure/cosmos|stable'
+    summary: Source resource id
+    fullName: resourceId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'resourceId?: string'
+      return:
+        description: ''
+        type: string
+  - name: resourceType
+    uid: '@azure/cosmos.ConflictDefinition.resourceType|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: resourceType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'resourceType?: ResourceType'
+      return:
+        description: ''
+        type: ResourceType

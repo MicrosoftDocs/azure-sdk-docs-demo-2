@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: BlobContainersUpdateResponse
+uid: '@azure/arm-storage.BlobContainersUpdateResponse|stable'
+package: '@azure/arm-storage|stable'
+summary: Contains response data for the update operation.
+fullName: BlobContainersUpdateResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type BlobContainersUpdateResponse = BlobContainer & { _response: HttpResponse
+  & { bodyAsText: string, parsedBody: BlobContainer } }

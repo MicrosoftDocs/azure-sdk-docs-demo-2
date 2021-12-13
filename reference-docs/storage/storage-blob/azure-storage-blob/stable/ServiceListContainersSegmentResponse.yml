@@ -1,0 +1,15 @@
+### YamlMime:TSTypeAlias
+name: ServiceListContainersSegmentResponse
+uid: '@azure/storage-blob.ServiceListContainersSegmentResponse|stable'
+package: '@azure/storage-blob|stable'
+summary: Contains response data for the listContainersSegment operation.
+fullName: ServiceListContainersSegmentResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type ServiceListContainersSegmentResponse =
+  ServiceListContainersSegmentHeaders & ListContainersSegmentResponse & {
+  _response: HttpResponse & { bodyAsText: string, parsedBody:
+  ListContainersSegmentResponse, parsedHeaders:
+  ServiceListContainersSegmentHeaders } }

@@ -1,0 +1,100 @@
+### YamlMime:TSType
+name: BlobRequestConditions
+uid: '@azure/storage-blob.BlobRequestConditions|beta'
+package: '@azure/storage-blob|beta'
+summary: standard HTTP conditional headers, tags condition and lease condition
+fullName: BlobRequestConditions
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: ifMatch
+    uid: '@azure/storage-blob.BlobRequestConditions.ifMatch|beta'
+    package: '@azure/storage-blob|beta'
+    summary: Specify an ETag value to operate only on blobs with a matching value.
+    fullName: ifMatch
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ifMatch?: string'
+      return:
+        description: ''
+        type: string
+  - name: ifModifiedSince
+    uid: '@azure/storage-blob.BlobRequestConditions.ifModifiedSince|beta'
+    package: '@azure/storage-blob|beta'
+    summary: >-
+      Specify this header value to operate only on a blob if it has been
+      modified since the
+
+      specified date/time.
+    fullName: ifModifiedSince
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ifModifiedSince?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: ifNoneMatch
+    uid: '@azure/storage-blob.BlobRequestConditions.ifNoneMatch|beta'
+    package: '@azure/storage-blob|beta'
+    summary: Specify an ETag value to operate only on blobs without a matching value.
+    fullName: ifNoneMatch
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ifNoneMatch?: string'
+      return:
+        description: ''
+        type: string
+  - name: ifUnmodifiedSince
+    uid: '@azure/storage-blob.BlobRequestConditions.ifUnmodifiedSince|beta'
+    package: '@azure/storage-blob|beta'
+    summary: >-
+      Specify this header value to operate only on a blob if it has not been
+      modified since the
+
+      specified date/time.
+    fullName: ifUnmodifiedSince
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ifUnmodifiedSince?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: leaseId
+    uid: '@azure/storage-blob.BlobRequestConditions.leaseId|beta'
+    package: '@azure/storage-blob|beta'
+    summary: >-
+      If specified, the operation only succeeds if the resource's lease is
+      active and matches this ID.
+    fullName: leaseId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'leaseId?: string'
+      return:
+        description: ''
+        type: string
+  - name: tagConditions
+    uid: '@azure/storage-blob.BlobRequestConditions.tagConditions|beta'
+    package: '@azure/storage-blob|beta'
+    summary: Optional SQL statement to apply to the tags of the blob.
+    fullName: tagConditions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tagConditions?: string'
+      return:
+        description: ''
+        type: string
+extends: <xref uid="@azure/storage-blob.ModifiedAccessConditions|beta" />

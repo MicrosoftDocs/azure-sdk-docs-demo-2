@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: BlobContainersSetLegalHoldResponse
+uid: '@azure/arm-storage.BlobContainersSetLegalHoldResponse|stable'
+package: '@azure/arm-storage|stable'
+summary: Contains response data for the setLegalHold operation.
+fullName: BlobContainersSetLegalHoldResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type BlobContainersSetLegalHoldResponse = LegalHold & { _response:
+  HttpResponse & { bodyAsText: string, parsedBody: LegalHold } }

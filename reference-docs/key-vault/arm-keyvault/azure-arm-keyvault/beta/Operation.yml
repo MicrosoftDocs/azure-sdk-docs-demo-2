@@ -1,0 +1,76 @@
+### YamlMime:TSType
+name: Operation
+uid: '@azure/arm-keyvault.Operation|beta'
+package: '@azure/arm-keyvault|beta'
+summary: Key Vault REST API operation definition.
+fullName: Operation
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: display
+    uid: '@azure/arm-keyvault.Operation.display|beta'
+    package: '@azure/arm-keyvault|beta'
+    summary: Display metadata associated with the operation.
+    fullName: display
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'display?: OperationDisplay'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-keyvault.OperationDisplay|beta" />
+  - name: isDataAction
+    uid: '@azure/arm-keyvault.Operation.isDataAction|beta'
+    package: '@azure/arm-keyvault|beta'
+    summary: Property to specify whether the action is a data action.
+    fullName: isDataAction
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isDataAction?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true
+  - name: name
+    uid: '@azure/arm-keyvault.Operation.name|beta'
+    package: '@azure/arm-keyvault|beta'
+    summary: 'Operation name: {provider}/{resource}/{operation}'
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: origin
+    uid: '@azure/arm-keyvault.Operation.origin|beta'
+    package: '@azure/arm-keyvault|beta'
+    summary: The origin of operations.
+    fullName: origin
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'origin?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: serviceSpecification
+    uid: '@azure/arm-keyvault.Operation.serviceSpecification|beta'
+    package: '@azure/arm-keyvault|beta'
+    summary: One property of operation, include metric specifications.
+    fullName: serviceSpecification
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'serviceSpecification?: ServiceSpecification'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-keyvault.ServiceSpecification|beta" />

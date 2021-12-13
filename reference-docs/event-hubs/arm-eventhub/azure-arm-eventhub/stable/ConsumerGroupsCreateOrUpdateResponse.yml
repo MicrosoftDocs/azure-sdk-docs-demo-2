@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: ConsumerGroupsCreateOrUpdateResponse
+uid: '@azure/arm-eventhub.ConsumerGroupsCreateOrUpdateResponse|stable'
+package: '@azure/arm-eventhub|stable'
+summary: Contains response data for the createOrUpdate operation.
+fullName: ConsumerGroupsCreateOrUpdateResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type ConsumerGroupsCreateOrUpdateResponse = ConsumerGroup & { _response:
+  HttpResponse & { bodyAsText: string, parsedBody: ConsumerGroup } }

@@ -1,0 +1,143 @@
+### YamlMime:TSType
+name: CorrelationFilter
+uid: '@azure/arm-servicebus.CorrelationFilter|stable'
+package: '@azure/arm-servicebus|stable'
+summary: Represents the correlation filter expression.
+fullName: CorrelationFilter
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: contentType
+    uid: '@azure/arm-servicebus.CorrelationFilter.contentType|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Content type of the message.
+    fullName: contentType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'contentType?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: correlationId
+    uid: '@azure/arm-servicebus.CorrelationFilter.correlationId|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Identifier of the correlation.
+    fullName: correlationId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'correlationId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: label
+    uid: '@azure/arm-servicebus.CorrelationFilter.label|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Application specific label.
+    fullName: label
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'label?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: messageId
+    uid: '@azure/arm-servicebus.CorrelationFilter.messageId|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Identifier of the message.
+    fullName: messageId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'messageId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: properties
+    uid: '@azure/arm-servicebus.CorrelationFilter.properties|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: dictionary object for custom filters
+    fullName: properties
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'properties?: undefined | [key: string]: string'
+      return:
+        description: ''
+        type: 'undefined | [key: string]: string'
+  - name: replyTo
+    uid: '@azure/arm-servicebus.CorrelationFilter.replyTo|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Address of the queue to reply to.
+    fullName: replyTo
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'replyTo?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: replyToSessionId
+    uid: '@azure/arm-servicebus.CorrelationFilter.replyToSessionId|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Session identifier to reply to.
+    fullName: replyToSessionId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'replyToSessionId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: requiresPreprocessing
+    uid: '@azure/arm-servicebus.CorrelationFilter.requiresPreprocessing|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: >-
+      Value that indicates whether the rule action requires preprocessing.
+      Default value: true.
+    fullName: requiresPreprocessing
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'requiresPreprocessing?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true
+  - name: sessionId
+    uid: '@azure/arm-servicebus.CorrelationFilter.sessionId|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Session identifier.
+    fullName: sessionId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sessionId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: to
+    uid: '@azure/arm-servicebus.CorrelationFilter.to|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Address to send to.
+    fullName: to
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'to?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

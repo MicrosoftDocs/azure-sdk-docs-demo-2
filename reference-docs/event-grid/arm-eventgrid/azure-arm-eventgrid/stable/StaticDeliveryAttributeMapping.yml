@@ -1,0 +1,65 @@
+### YamlMime:TSType
+name: StaticDeliveryAttributeMapping
+uid: '@azure/arm-eventgrid.StaticDeliveryAttributeMapping|stable'
+package: '@azure/arm-eventgrid|stable'
+summary: Static delivery attribute mapping details.
+fullName: StaticDeliveryAttributeMapping
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: isSecret
+    uid: '@azure/arm-eventgrid.StaticDeliveryAttributeMapping.isSecret|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: >-
+      Boolean flag to tell if the attribute contains sensitive information .
+      Default value: false.
+    fullName: isSecret
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isSecret?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true
+  - name: name
+    uid: '@azure/arm-eventgrid.StaticDeliveryAttributeMapping.name|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Name of the delivery attribute or header.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: type
+    uid: '@azure/arm-eventgrid.StaticDeliveryAttributeMapping.type|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Polymorphic Discriminator
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: "Static"'
+      return:
+        description: ''
+        type: '"Static"'
+  - name: value
+    uid: '@azure/arm-eventgrid.StaticDeliveryAttributeMapping.value|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Value of the delivery attribute.
+    fullName: value
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

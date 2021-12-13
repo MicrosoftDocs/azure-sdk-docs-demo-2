@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: NamespacesGetAuthorizationRuleResponse
+uid: '@azure/arm-eventhub.NamespacesGetAuthorizationRuleResponse|stable'
+package: '@azure/arm-eventhub|stable'
+summary: Contains response data for the getAuthorizationRule operation.
+fullName: NamespacesGetAuthorizationRuleResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type NamespacesGetAuthorizationRuleResponse = AuthorizationRule & { _response:
+  HttpResponse & { bodyAsText: string, parsedBody: AuthorizationRule } }

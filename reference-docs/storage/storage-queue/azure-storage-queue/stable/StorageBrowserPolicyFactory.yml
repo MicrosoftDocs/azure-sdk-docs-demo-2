@@ -1,0 +1,35 @@
+### YamlMime:TSType
+name: StorageBrowserPolicyFactory
+uid: '@azure/storage-queue.StorageBrowserPolicyFactory|stable'
+package: '@azure/storage-queue|stable'
+summary: >-
+  StorageBrowserPolicyFactory is a factory class helping generating
+  <xref:@azure/storage-queue.StorageBrowserPolicy> objects.
+fullName: StorageBrowserPolicyFactory
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+methods:
+  - name: create(RequestPolicy, RequestPolicyOptions)
+    uid: '@azure/storage-queue.StorageBrowserPolicyFactory.create|stable'
+    package: '@azure/storage-queue|stable'
+    summary: Creates a StorageBrowserPolicyFactory object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function create(nextPolicy: RequestPolicy, options:
+        RequestPolicyOptions): StorageBrowserPolicy
+      parameters:
+        - id: nextPolicy
+          type: RequestPolicy
+          description: '-'
+        - id: options
+          type: RequestPolicyOptions
+          description: |
+            -
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-queue.StorageBrowserPolicy|stable" />

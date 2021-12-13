@@ -1,0 +1,93 @@
+### YamlMime:TSType
+name: AuthorizationRule
+uid: '@azure/arm-eventhub.AuthorizationRule|stable'
+package: '@azure/arm-eventhub|stable'
+summary: Single item in a List or Get AuthorizationRule operation
+fullName: AuthorizationRule
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: id
+    uid: '@azure/arm-eventhub.AuthorizationRule.id|stable'
+    package: '@azure/arm-eventhub|stable'
+    summary: >-
+      Resource ID.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: name
+    uid: '@azure/arm-eventhub.AuthorizationRule.name|stable'
+    package: '@azure/arm-eventhub|stable'
+    summary: >-
+      Resource name.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: rights
+    uid: '@azure/arm-eventhub.AuthorizationRule.rights|stable'
+    package: '@azure/arm-eventhub|stable'
+    summary: The rights associated with the rule.
+    fullName: rights
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rights: AccessRights[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-eventhub.AccessRights|stable" />[]
+  - name: systemData
+    uid: '@azure/arm-eventhub.AuthorizationRule.systemData|stable'
+    package: '@azure/arm-eventhub|stable'
+    summary: >-
+      The system meta data relating to this resource.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: systemData
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'systemData?: SystemData'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-eventhub.SystemData|stable" />
+  - name: type
+    uid: '@azure/arm-eventhub.AuthorizationRule.type|stable'
+    package: '@azure/arm-eventhub|stable'
+    summary: >-
+      Resource type.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+extends: <xref uid="@azure/arm-eventhub.Resource|stable" />

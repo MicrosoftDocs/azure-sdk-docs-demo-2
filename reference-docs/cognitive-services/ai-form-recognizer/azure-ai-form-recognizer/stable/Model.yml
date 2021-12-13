@@ -1,0 +1,50 @@
+### YamlMime:TSType
+name: Model
+uid: '@azure/ai-form-recognizer.Model|stable'
+package: '@azure/ai-form-recognizer|stable'
+summary: Response to the get custom model operation.
+fullName: Model
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: keys
+    uid: '@azure/ai-form-recognizer.Model.keys|stable'
+    package: '@azure/ai-form-recognizer|stable'
+    summary: Keys extracted by the custom model.
+    fullName: keys
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'keys?: KeysResult'
+      return:
+        description: ''
+        type: <xref uid="@azure/ai-form-recognizer.KeysResult|stable" />
+  - name: modelInfo
+    uid: '@azure/ai-form-recognizer.Model.modelInfo|stable'
+    package: '@azure/ai-form-recognizer|stable'
+    summary: Basic custom model information.
+    fullName: modelInfo
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'modelInfo: CustomFormModelInfo'
+      return:
+        description: ''
+        type: <xref uid="@azure/ai-form-recognizer.CustomFormModelInfo|stable" />
+  - name: trainResult
+    uid: '@azure/ai-form-recognizer.Model.trainResult|stable'
+    package: '@azure/ai-form-recognizer|stable'
+    summary: Custom model training result.
+    fullName: trainResult
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'trainResult?: TrainResult'
+      return:
+        description: ''
+        type: <xref uid="@azure/ai-form-recognizer.TrainResult|stable" />

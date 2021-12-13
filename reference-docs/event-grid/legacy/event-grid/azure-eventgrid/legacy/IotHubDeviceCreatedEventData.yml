@@ -1,0 +1,51 @@
+### YamlMime:TSType
+name: IotHubDeviceCreatedEventData
+uid: azure-eventgrid.IotHubDeviceCreatedEventData|legacy
+package: azure-eventgrid|legacy
+summary: ''
+fullName: IotHubDeviceCreatedEventData
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: deviceId
+    uid: azure-eventgrid.IotHubDeviceCreatedEventData.deviceId|legacy
+    package: azure-eventgrid|legacy
+    summary: ''
+    fullName: deviceId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'deviceId?: string'
+      return:
+        description: ''
+        type: string
+  - name: hubName
+    uid: azure-eventgrid.IotHubDeviceCreatedEventData.hubName|legacy
+    package: azure-eventgrid|legacy
+    summary: ''
+    fullName: hubName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hubName?: string'
+      return:
+        description: ''
+        type: string
+  - name: twin
+    uid: azure-eventgrid.IotHubDeviceCreatedEventData.twin|legacy
+    package: azure-eventgrid|legacy
+    summary: ''
+    fullName: twin
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'twin?: DeviceTwinInfo'
+      return:
+        description: ''
+        type: <xref uid="azure-eventgrid.DeviceTwinInfo|legacy" />
+extends: <xref uid="azure-eventgrid.DeviceLifeCycleEventProperties|legacy" />

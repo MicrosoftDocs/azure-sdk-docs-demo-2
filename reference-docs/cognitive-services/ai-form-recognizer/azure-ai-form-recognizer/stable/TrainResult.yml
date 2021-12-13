@@ -1,0 +1,67 @@
+### YamlMime:TSType
+name: TrainResult
+uid: '@azure/ai-form-recognizer.TrainResult|stable'
+package: '@azure/ai-form-recognizer|stable'
+summary: Custom model training result.
+fullName: TrainResult
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: averageModelAccuracy
+    uid: '@azure/ai-form-recognizer.TrainResult.averageModelAccuracy|stable'
+    package: '@azure/ai-form-recognizer|stable'
+    summary: Average accuracy.
+    fullName: averageModelAccuracy
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'averageModelAccuracy?: number'
+      return:
+        description: ''
+        type: number
+  - name: errors
+    uid: '@azure/ai-form-recognizer.TrainResult.errors|stable'
+    package: '@azure/ai-form-recognizer|stable'
+    summary: Errors returned during the training operation.
+    fullName: errors
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'errors?: FormRecognizerError[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/ai-form-recognizer.FormRecognizerError|stable" />[]
+  - name: fields
+    uid: '@azure/ai-form-recognizer.TrainResult.fields|stable'
+    package: '@azure/ai-form-recognizer|stable'
+    summary: >-
+      List of fields used to train the model and the train operation error
+      reported by each.
+    fullName: fields
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'fields?: FormFieldsReport[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/ai-form-recognizer.FormFieldsReport|stable" />[]
+  - name: trainingDocuments
+    uid: '@azure/ai-form-recognizer.TrainResult.trainingDocuments|stable'
+    package: '@azure/ai-form-recognizer|stable'
+    summary: >-
+      List of the documents used to train the model and any errors reported in
+      each document.
+    fullName: trainingDocuments
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'trainingDocuments: TrainingDocumentInfo[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/ai-form-recognizer.TrainingDocumentInfo|stable" />[]

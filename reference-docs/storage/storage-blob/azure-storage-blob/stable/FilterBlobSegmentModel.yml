@@ -1,0 +1,63 @@
+### YamlMime:TSType
+name: FilterBlobSegmentModel
+uid: '@azure/storage-blob.FilterBlobSegmentModel|stable'
+package: '@azure/storage-blob|stable'
+summary: The result of a Filter Blobs API call
+fullName: FilterBlobSegmentModel
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: blobs
+    uid: '@azure/storage-blob.FilterBlobSegmentModel.blobs|stable'
+    package: '@azure/storage-blob|stable'
+    summary: ''
+    fullName: blobs
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'blobs: FilterBlobItemModel[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-blob.FilterBlobItemModel|stable" />[]
+  - name: continuationToken
+    uid: '@azure/storage-blob.FilterBlobSegmentModel.continuationToken|stable'
+    package: '@azure/storage-blob|stable'
+    summary: ''
+    fullName: continuationToken
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'continuationToken?: string'
+      return:
+        description: ''
+        type: string
+  - name: serviceEndpoint
+    uid: '@azure/storage-blob.FilterBlobSegmentModel.serviceEndpoint|stable'
+    package: '@azure/storage-blob|stable'
+    summary: ''
+    fullName: serviceEndpoint
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'serviceEndpoint: string'
+      return:
+        description: ''
+        type: string
+  - name: where
+    uid: '@azure/storage-blob.FilterBlobSegmentModel.where|stable'
+    package: '@azure/storage-blob|stable'
+    summary: ''
+    fullName: where
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'where: string'
+      return:
+        description: ''
+        type: string

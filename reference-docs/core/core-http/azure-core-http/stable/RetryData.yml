@@ -1,0 +1,50 @@
+### YamlMime:TSType
+name: RetryData
+uid: '@azure/core-http.RetryData|stable'
+package: '@azure/core-http|stable'
+summary: ''
+fullName: RetryData
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: error
+    uid: '@azure/core-http.RetryData.error|stable'
+    package: '@azure/core-http|stable'
+    summary: ''
+    fullName: error
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'error?: RetryError'
+      return:
+        description: ''
+        type: <xref uid="@azure/core-http.RetryError|stable" />
+  - name: retryCount
+    uid: '@azure/core-http.RetryData.retryCount|stable'
+    package: '@azure/core-http|stable'
+    summary: ''
+    fullName: retryCount
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'retryCount: number'
+      return:
+        description: ''
+        type: number
+  - name: retryInterval
+    uid: '@azure/core-http.RetryData.retryInterval|stable'
+    package: '@azure/core-http|stable'
+    summary: ''
+    fullName: retryInterval
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'retryInterval: number'
+      return:
+        description: ''
+        type: number

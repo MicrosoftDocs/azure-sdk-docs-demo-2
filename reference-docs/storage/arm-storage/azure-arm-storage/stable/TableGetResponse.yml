@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: TableGetResponse
+uid: '@azure/arm-storage.TableGetResponse|stable'
+package: '@azure/arm-storage|stable'
+summary: Contains response data for the get operation.
+fullName: TableGetResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type TableGetResponse = Table & { _response: HttpResponse & { bodyAsText:
+  string, parsedBody: Table } }

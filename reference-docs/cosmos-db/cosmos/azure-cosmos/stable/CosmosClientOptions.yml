@@ -1,0 +1,182 @@
+### YamlMime:TSType
+name: CosmosClientOptions
+uid: '@azure/cosmos.CosmosClientOptions|stable'
+package: '@azure/cosmos|stable'
+summary: ''
+fullName: CosmosClientOptions
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: aadCredentials
+    uid: '@azure/cosmos.CosmosClientOptions.aadCredentials|stable'
+    package: '@azure/cosmos|stable'
+    summary: >-
+      AAD token from `@azure/identity`
+
+      Obtain a credential object by creating an `@azure/identity` credential
+      object
+
+      We will then use your credential object and a scope URL (your cosmos db
+      endpoint)
+
+      to authenticate requests to Cosmos
+
+      This feature is in private preview and not yet available for every Cosmos
+      account
+    fullName: aadCredentials
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'aadCredentials?: TokenCredential'
+      return:
+        description: ''
+        type: TokenCredential
+  - name: agent
+    uid: '@azure/cosmos.CosmosClientOptions.agent|stable'
+    package: '@azure/cosmos|stable'
+    summary: >-
+      An optional custom http(s) Agent to be used in NodeJS enironments
+
+      Use an agent such as https://github.com/TooTallNate/node-proxy-agent if
+      you need to connect to Cosmos via a proxy
+    fullName: agent
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'agent?: Agent'
+      return:
+        description: ''
+        type: <xref uid="@azure/cosmos.Agent|stable" />
+  - name: connectionPolicy
+    uid: '@azure/cosmos.CosmosClientOptions.connectionPolicy|stable'
+    package: '@azure/cosmos|stable'
+    summary: >-
+      An instance of <xref:@azure/cosmos.ConnectionPolicy> class.
+
+      This parameter is optional and the default connectionPolicy will be used
+      if omitted.
+    fullName: connectionPolicy
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'connectionPolicy?: ConnectionPolicy'
+      return:
+        description: ''
+        type: <xref uid="@azure/cosmos.ConnectionPolicy|stable" />
+  - name: consistencyLevel
+    uid: '@azure/cosmos.CosmosClientOptions.consistencyLevel|stable'
+    package: '@azure/cosmos|stable'
+    summary: |-
+      An optional parameter that represents the consistency level.
+      It can take any value from <xref:@azure/cosmos.ConsistencyLevel>.
+    fullName: consistencyLevel
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'consistencyLevel?: Object'
+      return:
+        description: ''
+        type: Object
+  - name: defaultHeaders
+    uid: '@azure/cosmos.CosmosClientOptions.defaultHeaders|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: defaultHeaders
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'defaultHeaders?: CosmosHeaders_2'
+      return:
+        description: ''
+        type: <xref uid="@azure/cosmos.CosmosHeaders_2|stable" />
+  - name: endpoint
+    uid: '@azure/cosmos.CosmosClientOptions.endpoint|stable'
+    package: '@azure/cosmos|stable'
+    summary: The service endpoint to use to create the client.
+    fullName: endpoint
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'endpoint: string'
+      return:
+        description: ''
+        type: string
+  - name: key
+    uid: '@azure/cosmos.CosmosClientOptions.key|stable'
+    package: '@azure/cosmos|stable'
+    summary: The account master or readonly key
+    fullName: key
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'key?: string'
+      return:
+        description: ''
+        type: string
+  - name: permissionFeed
+    uid: '@azure/cosmos.CosmosClientOptions.permissionFeed|stable'
+    package: '@azure/cosmos|stable'
+    summary: An array of <xref:@azure/cosmos.Permission> objects.
+    fullName: permissionFeed
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'permissionFeed?: PermissionDefinition[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/cosmos.PermissionDefinition|stable" />[]
+  - name: resourceTokens
+    uid: '@azure/cosmos.CosmosClientOptions.resourceTokens|stable'
+    package: '@azure/cosmos|stable'
+    summary: |-
+      An object that contains resources tokens.
+      Keys for the object are resource Ids and values are the resource tokens.
+    fullName: resourceTokens
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'resourceTokens?: [key: string]: string'
+      return:
+        description: ''
+        type: '[key: string]\: string'
+  - name: tokenProvider
+    uid: '@azure/cosmos.CosmosClientOptions.tokenProvider|stable'
+    package: '@azure/cosmos|stable'
+    summary: >-
+      A user supplied function for resolving header authorization tokens.
+
+      Allows users to generating their own auth tokens, potentially using a
+      separate service
+    fullName: tokenProvider
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tokenProvider?: TokenProvider'
+      return:
+        description: ''
+        type: <xref uid="@azure/cosmos.TokenProvider|stable" />
+  - name: userAgentSuffix
+    uid: '@azure/cosmos.CosmosClientOptions.userAgentSuffix|stable'
+    package: '@azure/cosmos|stable'
+    summary: A custom string to append to the default SDK user agent.
+    fullName: userAgentSuffix
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'userAgentSuffix?: string'
+      return:
+        description: ''
+        type: string

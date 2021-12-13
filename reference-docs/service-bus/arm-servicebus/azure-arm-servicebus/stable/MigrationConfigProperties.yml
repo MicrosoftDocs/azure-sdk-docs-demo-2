@@ -1,0 +1,146 @@
+### YamlMime:TSType
+name: MigrationConfigProperties
+uid: '@azure/arm-servicebus.MigrationConfigProperties|stable'
+package: '@azure/arm-servicebus|stable'
+summary: Single item in List or Get Migration Config operation
+fullName: MigrationConfigProperties
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: id
+    uid: '@azure/arm-servicebus.MigrationConfigProperties.id|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: >-
+      Resource Id
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: migrationState
+    uid: '@azure/arm-servicebus.MigrationConfigProperties.migrationState|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: >-
+      State in which Standard to Premium Migration is, possible values :
+      Unknown, Reverting,
+
+      Completing, Initiating, Syncing, Active
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: migrationState
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'migrationState?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: name
+    uid: '@azure/arm-servicebus.MigrationConfigProperties.name|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: >-
+      Resource name
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: pendingReplicationOperationsCount
+    uid: >-
+      @azure/arm-servicebus.MigrationConfigProperties.pendingReplicationOperationsCount|stable
+    package: '@azure/arm-servicebus|stable'
+    summary: >-
+      Number of entities pending to be replicated.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: pendingReplicationOperationsCount
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'pendingReplicationOperationsCount?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: postMigrationName
+    uid: '@azure/arm-servicebus.MigrationConfigProperties.postMigrationName|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Name to access Standard Namespace after migration
+    fullName: postMigrationName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'postMigrationName: string'
+      return:
+        description: ''
+        type: string
+  - name: provisioningState
+    uid: '@azure/arm-servicebus.MigrationConfigProperties.provisioningState|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: >-
+      Provisioning state of Migration Configuration
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: provisioningState
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'provisioningState?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: targetNamespace
+    uid: '@azure/arm-servicebus.MigrationConfigProperties.targetNamespace|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: >-
+      Existing premium Namespace ARM Id name which has no entities, will be used
+      for migration
+    fullName: targetNamespace
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'targetNamespace: string'
+      return:
+        description: ''
+        type: string
+  - name: type
+    uid: '@azure/arm-servicebus.MigrationConfigProperties.type|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: >-
+      Resource type
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+extends: <xref uid="@azure/arm-servicebus.Resource|stable" />

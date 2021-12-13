@@ -1,0 +1,16 @@
+### YamlMime:TSTypeAlias
+name: EventSubscriptionsListGlobalBySubscriptionForTopicTypeNextResponse
+uid: >-
+  @azure/arm-eventgrid.EventSubscriptionsListGlobalBySubscriptionForTopicTypeNextResponse|stable
+package: '@azure/arm-eventgrid|stable'
+summary: >-
+  Contains response data for the listGlobalBySubscriptionForTopicTypeNext
+  operation.
+fullName: EventSubscriptionsListGlobalBySubscriptionForTopicTypeNextResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type EventSubscriptionsListGlobalBySubscriptionForTopicTypeNextResponse =
+  EventSubscriptionsListResult & { _response: HttpResponse & { bodyAsText:
+  string, parsedBody: EventSubscriptionsListResult } }

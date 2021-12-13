@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: FileServicesGetServicePropertiesResponse
+uid: '@azure/arm-storage.FileServicesGetServicePropertiesResponse|stable'
+package: '@azure/arm-storage|stable'
+summary: Contains response data for the getServiceProperties operation.
+fullName: FileServicesGetServicePropertiesResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type FileServicesGetServicePropertiesResponse = FileServiceProperties & {
+  _response: HttpResponse & { bodyAsText: string, parsedBody:
+  FileServiceProperties } }

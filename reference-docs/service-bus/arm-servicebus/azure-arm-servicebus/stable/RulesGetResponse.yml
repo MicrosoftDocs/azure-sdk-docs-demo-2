@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: RulesGetResponse
+uid: '@azure/arm-servicebus.RulesGetResponse|stable'
+package: '@azure/arm-servicebus|stable'
+summary: Contains response data for the get operation.
+fullName: RulesGetResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type RulesGetResponse = Rule & { _response: HttpResponse & { bodyAsText:
+  string, parsedBody: Rule } }

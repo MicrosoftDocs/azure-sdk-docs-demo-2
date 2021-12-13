@@ -1,0 +1,66 @@
+### YamlMime:TSType
+name: KeyPhraseBatchResultItem
+uid: '@azure/cognitiveservices-textanalytics.KeyPhraseBatchResultItem|legacy'
+package: '@azure/cognitiveservices-textanalytics|legacy'
+summary: An interface representing KeyPhraseBatchResultItem.
+fullName: KeyPhraseBatchResultItem
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: id
+    uid: '@azure/cognitiveservices-textanalytics.KeyPhraseBatchResultItem.id|legacy'
+    package: '@azure/cognitiveservices-textanalytics|legacy'
+    summary: Unique, non-empty document identifier.
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: keyPhrases
+    uid: >-
+      @azure/cognitiveservices-textanalytics.KeyPhraseBatchResultItem.keyPhrases|legacy
+    package: '@azure/cognitiveservices-textanalytics|legacy'
+    summary: >-
+      A list of representative words or phrases. The number of key phrases
+      returned is proportional
+
+      to the number of words in the input document.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: keyPhrases
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'keyPhrases?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: statistics
+    uid: >-
+      @azure/cognitiveservices-textanalytics.KeyPhraseBatchResultItem.statistics|legacy
+    package: '@azure/cognitiveservices-textanalytics|legacy'
+    summary: >-
+      (Optional) if showStats=true was specified in the request this field will
+      contain information
+
+      about the document payload.
+    fullName: statistics
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'statistics?: DocumentStatistics'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/cognitiveservices-textanalytics.DocumentStatistics|legacy"
+          />

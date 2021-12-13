@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: EventSubscriptionsBeginCreateOrUpdateResponse
+uid: '@azure/arm-eventgrid.EventSubscriptionsBeginCreateOrUpdateResponse|stable'
+package: '@azure/arm-eventgrid|stable'
+summary: Contains response data for the beginCreateOrUpdate operation.
+fullName: EventSubscriptionsBeginCreateOrUpdateResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type EventSubscriptionsBeginCreateOrUpdateResponse = EventSubscription & {
+  _response: HttpResponse & { bodyAsText: string, parsedBody: EventSubscription
+  } }

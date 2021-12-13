@@ -1,0 +1,108 @@
+### YamlMime:TSType
+name: URLQuery
+uid: '@azure/core-http.URLQuery|stable'
+package: '@azure/core-http|stable'
+summary: A class that handles the query portion of a URLBuilder.
+fullName: URLQuery
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+methods:
+  - name: any()
+    uid: '@azure/core-http.URLQuery.any|stable'
+    package: '@azure/core-http|stable'
+    summary: Get whether or not there any query parameters in this URLQuery.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function any(): boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: get(string)
+    uid: '@azure/core-http.URLQuery.get|stable'
+    package: '@azure/core-http|stable'
+    summary: >-
+      Get the value of the query parameter with the provided name. If no
+      parameter exists with the
+
+      provided parameter name, then undefined will be returned.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function get(parameterName: string): string | string[] | undefined'
+      parameters:
+        - id: parameterName
+          type: string
+          description: ''
+      return:
+        description: ''
+        type: string | string[] | undefined
+  - name: keys()
+    uid: '@azure/core-http.URLQuery.keys|stable'
+    package: '@azure/core-http|stable'
+    summary: Get the keys of the query string.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function keys(): string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: parse(string)
+    uid: '@azure/core-http.URLQuery.parse|stable'
+    package: '@azure/core-http|stable'
+    summary: Parse a URLQuery from the provided text.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static function parse(text: string): URLQuery'
+      parameters:
+        - id: text
+          type: string
+          description: ''
+      return:
+        description: ''
+        type: <xref uid="@azure/core-http.URLQuery|stable" />
+  - name: set(string, unknown)
+    uid: '@azure/core-http.URLQuery.set|stable'
+    package: '@azure/core-http|stable'
+    summary: >-
+      Set a query parameter with the provided name and value. If the
+      parameterValue is undefined or
+
+      empty, then this will attempt to remove an existing query parameter with
+      the provided
+
+      parameterName.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function set(parameterName: string, parameterValue: unknown)'
+      parameters:
+        - id: parameterName
+          type: string
+          description: ''
+        - id: parameterValue
+          type: unknown
+          description: ''
+  - name: toString()
+    uid: '@azure/core-http.URLQuery.toString|stable'
+    package: '@azure/core-http|stable'
+    summary: >-
+      Get the string representation of this query. The return value will not
+      start with a "?".
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function toString(): string'
+      return:
+        description: ''
+        type: string

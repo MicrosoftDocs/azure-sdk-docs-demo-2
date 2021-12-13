@@ -1,0 +1,261 @@
+### YamlMime:TSType
+name: RequestOptions
+uid: '@azure/cosmos.RequestOptions|stable'
+package: '@azure/cosmos|stable'
+summary: >-
+  Options that can be specified for a requested issued to the Azure Cosmos DB
+  servers.=
+fullName: RequestOptions
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: abortSignal
+    uid: '@azure/cosmos.RequestOptions.abortSignal|stable'
+    package: '@azure/cosmos|stable'
+    summary: >+
+      abortSignal to pass to all underlying network requests created by this
+      method call. See
+      https://developer.mozilla.org/en-US/docs/Web/API/AbortController
+
+
+      **Example**
+
+
+      Cancel a read request
+
+      ```typescript
+
+      const controller = new AbortController()
+
+      const {result: item} = await items.query('SELECT * from c', { abortSignal:
+      controller.signal});
+
+      controller.abort()
+
+      ```
+
+    fullName: abortSignal
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'abortSignal?: AbortSignal'
+      return:
+        description: ''
+        type: AbortSignal
+  - name: accessCondition
+    uid: '@azure/cosmos.RequestOptions.accessCondition|stable'
+    package: '@azure/cosmos|stable'
+    summary: Conditions Associated with the request.
+    fullName: accessCondition
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'accessCondition?: { condition: string, type: string }'
+      return:
+        description: ''
+        type: '{ condition: string, type: string }'
+  - name: consistencyLevel
+    uid: '@azure/cosmos.RequestOptions.consistencyLevel|stable'
+    package: '@azure/cosmos|stable'
+    summary: Consistency level required by the client.
+    fullName: consistencyLevel
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'consistencyLevel?: string'
+      return:
+        description: ''
+        type: string
+  - name: disableAutomaticIdGeneration
+    uid: '@azure/cosmos.RequestOptions.disableAutomaticIdGeneration|stable'
+    package: '@azure/cosmos|stable'
+    summary: >-
+      Disable automatic id generation (will cause creates to fail if id isn't on
+      the definition)
+    fullName: disableAutomaticIdGeneration
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'disableAutomaticIdGeneration?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: disableRUPerMinuteUsage
+    uid: '@azure/cosmos.RequestOptions.disableRUPerMinuteUsage|stable'
+    package: '@azure/cosmos|stable'
+    summary: >-
+      DisableRUPerMinuteUsage is used to enable/disable Request
+      Units(RUs)/minute capacity
+
+      to serve the request if regular provisioned RUs/second is exhausted.
+    fullName: disableRUPerMinuteUsage
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'disableRUPerMinuteUsage?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: enableScriptLogging
+    uid: '@azure/cosmos.RequestOptions.enableScriptLogging|stable'
+    package: '@azure/cosmos|stable'
+    summary: Enables or disables logging in JavaScript stored procedures.
+    fullName: enableScriptLogging
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'enableScriptLogging?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: indexingDirective
+    uid: '@azure/cosmos.RequestOptions.indexingDirective|stable'
+    package: '@azure/cosmos|stable'
+    summary: Specifies indexing directives (index, do not index .. etc).
+    fullName: indexingDirective
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'indexingDirective?: string'
+      return:
+        description: ''
+        type: string
+  - name: initialHeaders
+    uid: '@azure/cosmos.RequestOptions.initialHeaders|stable'
+    package: '@azure/cosmos|stable'
+    summary: >-
+      (Advanced use case) Initial headers to start with when sending requests to
+      Cosmos
+    fullName: initialHeaders
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'initialHeaders?: CosmosHeaders'
+      return:
+        description: ''
+        type: <xref uid="@azure/cosmos.CosmosHeaders|stable" />
+  - name: offerThroughput
+    uid: '@azure/cosmos.RequestOptions.offerThroughput|stable'
+    package: '@azure/cosmos|stable'
+    summary: >-
+      The offer throughput provisioned for a container in measurement of
+      Requests-per-Unit.
+    fullName: offerThroughput
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'offerThroughput?: number'
+      return:
+        description: ''
+        type: number
+  - name: offerType
+    uid: '@azure/cosmos.RequestOptions.offerType|stable'
+    package: '@azure/cosmos|stable'
+    summary: |
+      Offer type when creating document containers.
+      This option is only valid when creating a document container.
+    fullName: offerType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'offerType?: string'
+      return:
+        description: ''
+        type: string
+  - name: populateQuotaInfo
+    uid: '@azure/cosmos.RequestOptions.populateQuotaInfo|stable'
+    package: '@azure/cosmos|stable'
+    summary: >-
+      Enables/disables getting document container quota related stats for
+      document container read requests.
+    fullName: populateQuotaInfo
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'populateQuotaInfo?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: postTriggerInclude
+    uid: '@azure/cosmos.RequestOptions.postTriggerInclude|stable'
+    package: '@azure/cosmos|stable'
+    summary: Indicates what is the post trigger to be invoked after the operation.
+    fullName: postTriggerInclude
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'postTriggerInclude?: string | string[]'
+      return:
+        description: ''
+        type: string | string[]
+  - name: preTriggerInclude
+    uid: '@azure/cosmos.RequestOptions.preTriggerInclude|stable'
+    package: '@azure/cosmos|stable'
+    summary: Indicates what is the pre trigger to be invoked before the operation.
+    fullName: preTriggerInclude
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'preTriggerInclude?: string | string[]'
+      return:
+        description: ''
+        type: string | string[]
+  - name: resourceTokenExpirySeconds
+    uid: '@azure/cosmos.RequestOptions.resourceTokenExpirySeconds|stable'
+    package: '@azure/cosmos|stable'
+    summary: >-
+      Expiry time (in seconds) for resource token associated with permission
+      (applicable only for requests on permissions).
+    fullName: resourceTokenExpirySeconds
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'resourceTokenExpirySeconds?: number'
+      return:
+        description: ''
+        type: number
+  - name: sessionToken
+    uid: '@azure/cosmos.RequestOptions.sessionToken|stable'
+    package: '@azure/cosmos|stable'
+    summary: >-
+      Enables/disables getting document container quota related stats for
+      document container read requests.
+    fullName: sessionToken
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sessionToken?: string'
+      return:
+        description: ''
+        type: string
+  - name: urlConnection
+    uid: '@azure/cosmos.RequestOptions.urlConnection|stable'
+    package: '@azure/cosmos|stable'
+    summary: (Advanced use case) The url to connect to.
+    fullName: urlConnection
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'urlConnection?: string'
+      return:
+        description: ''
+        type: string
+extends: <xref uid="@azure/cosmos.SharedOptions|stable" />

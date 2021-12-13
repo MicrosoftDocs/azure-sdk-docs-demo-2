@@ -1,0 +1,50 @@
+### YamlMime:TSType
+name: NumberInAdvancedFilter
+uid: '@azure/arm-eventgrid.NumberInAdvancedFilter|stable'
+package: '@azure/arm-eventgrid|stable'
+summary: NumberIn Advanced Filter.
+fullName: NumberInAdvancedFilter
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: key
+    uid: '@azure/arm-eventgrid.NumberInAdvancedFilter.key|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: The field/property in the event based on which you want to filter.
+    fullName: key
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'key?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: operatorType
+    uid: '@azure/arm-eventgrid.NumberInAdvancedFilter.operatorType|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Polymorphic Discriminator
+    fullName: operatorType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'operatorType: "NumberIn"'
+      return:
+        description: ''
+        type: '"NumberIn"'
+  - name: values
+    uid: '@azure/arm-eventgrid.NumberInAdvancedFilter.values|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: The set of filter values.
+    fullName: values
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'values?: number[]'
+      return:
+        description: ''
+        type: number[]

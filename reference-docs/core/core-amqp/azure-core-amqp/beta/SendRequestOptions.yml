@@ -1,0 +1,52 @@
+### YamlMime:TSType
+name: SendRequestOptions
+uid: '@azure/core-amqp.SendRequestOptions|beta'
+package: '@azure/core-amqp|beta'
+summary: Describes the options that can be specified while sending a request.
+fullName: SendRequestOptions
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: abortSignal
+    uid: '@azure/core-amqp.SendRequestOptions.abortSignal|beta'
+    package: '@azure/core-amqp|beta'
+    summary: '{AbortSignalLike} [abortSignal] Cancels the operation.'
+    fullName: abortSignal
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'abortSignal?: AbortSignalLike'
+      return:
+        description: ''
+        type: AbortSignalLike
+  - name: requestName
+    uid: '@azure/core-amqp.SendRequestOptions.requestName|beta'
+    package: '@azure/core-amqp|beta'
+    summary: '{string} [requestName] Name of the request being performed.'
+    fullName: requestName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'requestName?: string'
+      return:
+        description: ''
+        type: string
+  - name: timeoutInMs
+    uid: '@azure/core-amqp.SendRequestOptions.timeoutInMs|beta'
+    package: '@azure/core-amqp|beta'
+    summary: |-
+      {number} [timeoutInMs] Max time to wait for the operation to complete.
+      Default: `60000 milliseconds`.
+    fullName: timeoutInMs
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'timeoutInMs?: number'
+      return:
+        description: ''
+        type: number

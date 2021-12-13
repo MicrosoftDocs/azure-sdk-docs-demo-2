@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: NamespacesListAuthorizationRulesNextResponse
+uid: '@azure/arm-eventhub.NamespacesListAuthorizationRulesNextResponse|stable'
+package: '@azure/arm-eventhub|stable'
+summary: Contains response data for the listAuthorizationRulesNext operation.
+fullName: NamespacesListAuthorizationRulesNextResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type NamespacesListAuthorizationRulesNextResponse =
+  AuthorizationRuleListResult & { _response: HttpResponse & { bodyAsText:
+  string, parsedBody: AuthorizationRuleListResult } }

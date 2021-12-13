@@ -1,0 +1,15 @@
+### YamlMime:TSTypeAlias
+name: CjkBigramTokenFilter
+uid: '@azure/search-documents.CjkBigramTokenFilter|stable'
+package: '@azure/search-documents|stable'
+summary: >-
+  Forms bigrams of CJK terms that are generated from the standard tokenizer.
+  This token filter is implemented using Apache Lucene.
+fullName: CjkBigramTokenFilter
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type CjkBigramTokenFilter = BaseTokenFilter & { ignoreScripts?:
+  CjkBigramTokenFilterScripts[], odatatype:
+  "#Microsoft.Azure.Search.CjkBigramTokenFilter", outputUnigrams?: boolean }

@@ -1,0 +1,39 @@
+### YamlMime:TSType
+name: AnomalyContributor
+uid: '@azure/ai-anomaly-detector.AnomalyContributor|beta'
+package: '@azure/ai-anomaly-detector|beta'
+summary: ''
+fullName: AnomalyContributor
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: contributionScore
+    uid: '@azure/ai-anomaly-detector.AnomalyContributor.contributionScore|beta'
+    package: '@azure/ai-anomaly-detector|beta'
+    summary: >-
+      The higher the contribution score is, the more likely the variable to be
+      the root cause of a anomaly.
+    fullName: contributionScore
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'contributionScore?: number'
+      return:
+        description: ''
+        type: number
+  - name: variable
+    uid: '@azure/ai-anomaly-detector.AnomalyContributor.variable|beta'
+    package: '@azure/ai-anomaly-detector|beta'
+    summary: Variable name of a contributor
+    fullName: variable
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'variable?: string'
+      return:
+        description: ''
+        type: string

@@ -1,0 +1,136 @@
+### YamlMime:TSType
+name: CloudEvent
+uid: '@azure/eventgrid.CloudEvent|stable'
+package: '@azure/eventgrid|stable'
+summary: An event in the Cloud Event 1.0 schema.
+fullName: CloudEvent<T>
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: data
+    uid: '@azure/eventgrid.CloudEvent.data|stable'
+    package: '@azure/eventgrid|stable'
+    summary: Event data specific to the event type.
+    fullName: data
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'data?: T'
+      return:
+        description: ''
+        type: T
+  - name: datacontenttype
+    uid: '@azure/eventgrid.CloudEvent.datacontenttype|stable'
+    package: '@azure/eventgrid|stable'
+    summary: Content type of data value.
+    fullName: datacontenttype
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'datacontenttype?: string'
+      return:
+        description: ''
+        type: string
+  - name: dataschema
+    uid: '@azure/eventgrid.CloudEvent.dataschema|stable'
+    package: '@azure/eventgrid|stable'
+    summary: Identifies the schema that data adheres to.
+    fullName: dataschema
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dataschema?: string'
+      return:
+        description: ''
+        type: string
+  - name: extensionAttributes
+    uid: '@azure/eventgrid.CloudEvent.extensionAttributes|stable'
+    package: '@azure/eventgrid|stable'
+    summary: >-
+      Additional context attributes for the event. The Cloud Event specification
+      refers to these as "extension attributes".
+    fullName: extensionAttributes
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'extensionAttributes?: Record<string, unknown>'
+      return:
+        description: ''
+        type: Record&lt;string, unknown&gt;
+  - name: id
+    uid: '@azure/eventgrid.CloudEvent.id|stable'
+    package: '@azure/eventgrid|stable'
+    summary: >-
+      An identifier for the event. The combination of id and source must be
+      unique for each distinct event.
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id: string'
+      return:
+        description: ''
+        type: string
+  - name: source
+    uid: '@azure/eventgrid.CloudEvent.source|stable'
+    package: '@azure/eventgrid|stable'
+    summary: >-
+      Identifies the context in which an event happened. The combination of id
+      and source must be unique for each distinct event.
+    fullName: source
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'source: string'
+      return:
+        description: ''
+        type: string
+  - name: subject
+    uid: '@azure/eventgrid.CloudEvent.subject|stable'
+    package: '@azure/eventgrid|stable'
+    summary: >-
+      This describes the subject of the event in the context of the event
+      producer (identified by source).
+    fullName: subject
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'subject?: string'
+      return:
+        description: ''
+        type: string
+  - name: time
+    uid: '@azure/eventgrid.CloudEvent.time|stable'
+    package: '@azure/eventgrid|stable'
+    summary: The time the event was generated.
+    fullName: time
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'time?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: type
+    uid: '@azure/eventgrid.CloudEvent.type|stable'
+    package: '@azure/eventgrid|stable'
+    summary: Type of event related to the originating occurrence.
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: string'
+      return:
+        description: ''
+        type: string

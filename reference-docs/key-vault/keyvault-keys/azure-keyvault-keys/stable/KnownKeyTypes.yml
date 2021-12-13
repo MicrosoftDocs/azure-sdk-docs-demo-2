@@ -1,0 +1,36 @@
+### YamlMime:TSEnum
+name: KnownKeyTypes
+uid: '@azure/keyvault-keys.KnownKeyTypes|stable'
+package: '@azure/keyvault-keys|stable'
+summary: Known values of JsonWebKeyType that the service accepts.
+fullName: KnownKeyTypes
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: EC
+    uid: '@azure/keyvault-keys.KnownKeyTypes.EC|stable'
+    package: '@azure/keyvault-keys|stable'
+    summary: Elliptic Curve.
+  - name: ECHSM
+    uid: '@azure/keyvault-keys.KnownKeyTypes.ECHSM|stable'
+    package: '@azure/keyvault-keys|stable'
+    summary: Elliptic Curve with a private key which is not exportable from the HSM.
+  - name: Oct
+    uid: '@azure/keyvault-keys.KnownKeyTypes.Oct|stable'
+    package: '@azure/keyvault-keys|stable'
+    summary: Octet sequence (used to represent symmetric keys)
+  - name: OctHSM
+    uid: '@azure/keyvault-keys.KnownKeyTypes.OctHSM|stable'
+    package: '@azure/keyvault-keys|stable'
+    summary: >-
+      Octet sequence (used to represent symmetric keys) which is not exportable
+      from the HSM.
+  - name: RSA
+    uid: '@azure/keyvault-keys.KnownKeyTypes.RSA|stable'
+    package: '@azure/keyvault-keys|stable'
+    summary: RSA (https://tools.ietf.org/html/rfc3447)
+  - name: RSAHSM
+    uid: '@azure/keyvault-keys.KnownKeyTypes.RSAHSM|stable'
+    package: '@azure/keyvault-keys|stable'
+    summary: RSA with a private key which is not exportable from the HSM.

@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: RulesListBySubscriptionsResponse
+uid: '@azure/arm-servicebus.RulesListBySubscriptionsResponse|stable'
+package: '@azure/arm-servicebus|stable'
+summary: Contains response data for the listBySubscriptions operation.
+fullName: RulesListBySubscriptionsResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type RulesListBySubscriptionsResponse = RuleListResult & { _response:
+  HttpResponse & { bodyAsText: string, parsedBody: RuleListResult } }

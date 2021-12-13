@@ -1,0 +1,102 @@
+### YamlMime:TSType
+name: DomainTopic
+uid: '@azure/arm-eventgrid.DomainTopic|stable'
+package: '@azure/arm-eventgrid|stable'
+summary: Domain Topic.
+fullName: DomainTopic
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: id
+    uid: '@azure/arm-eventgrid.DomainTopic.id|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: >-
+      Fully qualified identifier of the resource.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: name
+    uid: '@azure/arm-eventgrid.DomainTopic.name|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: >-
+      Name of the resource.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: provisioningState
+    uid: '@azure/arm-eventgrid.DomainTopic.provisioningState|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: >-
+      Provisioning state of the domain topic. Possible values include:
+      'Creating', 'Updating',
+
+      'Deleting', 'Succeeded', 'Canceled', 'Failed'
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: provisioningState
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'provisioningState?: DomainTopicProvisioningState'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/arm-eventgrid.DomainTopicProvisioningState|stable"
+          />
+  - name: systemData
+    uid: '@azure/arm-eventgrid.DomainTopic.systemData|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: >-
+      The system metadata relating to Domain Topic resource.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: systemData
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'systemData?: SystemData'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-eventgrid.SystemData|stable" />
+  - name: type
+    uid: '@azure/arm-eventgrid.DomainTopic.type|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: >-
+      Type of the resource.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+extends: <xref uid="@azure/arm-eventgrid.Resource|stable" />

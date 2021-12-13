@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: DeletedAccountsListResponse
+uid: '@azure/arm-cognitiveservices.DeletedAccountsListResponse|stable'
+package: '@azure/arm-cognitiveservices|stable'
+summary: Contains response data for the list operation.
+fullName: DeletedAccountsListResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type DeletedAccountsListResponse = AccountListResult & { _response:
+  HttpResponse & { bodyAsText: string, parsedBody: AccountListResult } }

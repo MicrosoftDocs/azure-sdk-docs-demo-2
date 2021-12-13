@@ -1,0 +1,14 @@
+### YamlMime:TSTypeAlias
+name: KeyVaultBackupOperationState
+uid: '@azure/keyvault-admin.KeyVaultBackupOperationState|beta'
+package: '@azure/keyvault-admin|beta'
+summary: >-
+  An interface representing the publicly available properties of the state of a
+  backup Key Vault's poll operation.
+fullName: KeyVaultBackupOperationState
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type KeyVaultBackupOperationState =
+  KeyVaultAdminPollOperationState<KeyVaultBackupResult>

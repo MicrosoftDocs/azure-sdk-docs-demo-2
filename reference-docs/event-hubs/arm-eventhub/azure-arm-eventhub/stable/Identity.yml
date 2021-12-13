@@ -1,0 +1,77 @@
+### YamlMime:TSType
+name: Identity
+uid: '@azure/arm-eventhub.Identity|stable'
+package: '@azure/arm-eventhub|stable'
+summary: Properties to configure Identity for Bring your Own Keys
+fullName: Identity
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: principalId
+    uid: '@azure/arm-eventhub.Identity.principalId|stable'
+    package: '@azure/arm-eventhub|stable'
+    summary: >-
+      ObjectId from the KeyVault
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: principalId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'principalId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: tenantId
+    uid: '@azure/arm-eventhub.Identity.tenantId|stable'
+    package: '@azure/arm-eventhub|stable'
+    summary: >-
+      TenantId from the KeyVault
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: tenantId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tenantId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: type
+    uid: '@azure/arm-eventhub.Identity.type|stable'
+    package: '@azure/arm-eventhub|stable'
+    summary: >-
+      Type of managed service identity. Possible values include:
+      'SystemAssigned', 'UserAssigned',
+
+      'SystemAssigned, UserAssigned', 'None'
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: ManagedServiceIdentityType'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-eventhub.ManagedServiceIdentityType|stable" />
+  - name: userAssignedIdentities
+    uid: '@azure/arm-eventhub.Identity.userAssignedIdentities|stable'
+    package: '@azure/arm-eventhub|stable'
+    summary: Properties for User Assigned Identities
+    fullName: userAssignedIdentities
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'userAssignedIdentities?: undefined | [key: string]: UserAssignedIdentity'
+      return:
+        description: ''
+        type: >-
+          undefined | [key: string]: <xref
+          uid="@azure/arm-eventhub.UserAssignedIdentity|stable" />

@@ -1,0 +1,130 @@
+### YamlMime:TSType
+name: FileServiceProperties
+uid: '@azure/arm-storage.FileServiceProperties|stable'
+package: '@azure/arm-storage|stable'
+summary: The properties of File services in storage account.
+fullName: FileServiceProperties
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: cors
+    uid: '@azure/arm-storage.FileServiceProperties.cors|stable'
+    package: '@azure/arm-storage|stable'
+    summary: >-
+      Specifies CORS rules for the File service. You can include up to five
+      CorsRule elements in the
+
+      request. If no CorsRule elements are included in the request body, all
+      CORS rules will be
+
+      deleted, and CORS will be disabled for the File service.
+    fullName: cors
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'cors?: CorsRules'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-storage.CorsRules|stable" />
+  - name: id
+    uid: '@azure/arm-storage.FileServiceProperties.id|stable'
+    package: '@azure/arm-storage|stable'
+    summary: >-
+      Fully qualified resource ID for the resource. Ex -
+
+      /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: name
+    uid: '@azure/arm-storage.FileServiceProperties.name|stable'
+    package: '@azure/arm-storage|stable'
+    summary: >-
+      The name of the resource
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: protocolSettings
+    uid: '@azure/arm-storage.FileServiceProperties.protocolSettings|stable'
+    package: '@azure/arm-storage|stable'
+    summary: Protocol settings for file service
+    fullName: protocolSettings
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protocolSettings?: ProtocolSettings'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-storage.ProtocolSettings|stable" />
+  - name: shareDeleteRetentionPolicy
+    uid: '@azure/arm-storage.FileServiceProperties.shareDeleteRetentionPolicy|stable'
+    package: '@azure/arm-storage|stable'
+    summary: The file service properties for share soft delete.
+    fullName: shareDeleteRetentionPolicy
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'shareDeleteRetentionPolicy?: DeleteRetentionPolicy'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-storage.DeleteRetentionPolicy|stable" />
+  - name: sku
+    uid: '@azure/arm-storage.FileServiceProperties.sku|stable'
+    package: '@azure/arm-storage|stable'
+    summary: >-
+      Sku name and tier.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: sku
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sku?: Sku'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-storage.Sku|stable" />
+  - name: type
+    uid: '@azure/arm-storage.FileServiceProperties.type|stable'
+    package: '@azure/arm-storage|stable'
+    summary: >-
+      The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or
+
+      "Microsoft.Storage/storageAccounts"
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+extends: <xref uid="@azure/arm-storage.Resource|stable" />

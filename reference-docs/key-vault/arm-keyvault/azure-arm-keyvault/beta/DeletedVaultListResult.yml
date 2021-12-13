@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: DeletedVaultListResult
+uid: '@azure/arm-keyvault.DeletedVaultListResult|beta'
+package: '@azure/arm-keyvault|beta'
+summary: List of vaults
+fullName: DeletedVaultListResult
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: nextLink
+    uid: '@azure/arm-keyvault.DeletedVaultListResult.nextLink|beta'
+    package: '@azure/arm-keyvault|beta'
+    summary: The URL to get the next set of deleted vaults.
+    fullName: nextLink
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nextLink?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: value
+    uid: '@azure/arm-keyvault.DeletedVaultListResult.value|beta'
+    package: '@azure/arm-keyvault|beta'
+    summary: The list of deleted vaults.
+    fullName: value
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: DeletedVault[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-keyvault.DeletedVault|beta" />[]

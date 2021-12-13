@@ -1,0 +1,111 @@
+### YamlMime:TSType
+name: BlobServiceProperties
+uid: '@azure/storage-blob.BlobServiceProperties|beta'
+package: '@azure/storage-blob|beta'
+summary: Storage Service Properties.
+fullName: BlobServiceProperties
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: blobAnalyticsLogging
+    uid: '@azure/storage-blob.BlobServiceProperties.blobAnalyticsLogging|beta'
+    package: '@azure/storage-blob|beta'
+    summary: Azure Analytics Logging settings.
+    fullName: blobAnalyticsLogging
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'blobAnalyticsLogging?: Logging'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-blob.Logging|beta" />
+  - name: cors
+    uid: '@azure/storage-blob.BlobServiceProperties.cors|beta'
+    package: '@azure/storage-blob|beta'
+    summary: The set of CORS rules.
+    fullName: cors
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'cors?: CorsRule[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-blob.CorsRule|beta" />[]
+  - name: defaultServiceVersion
+    uid: '@azure/storage-blob.BlobServiceProperties.defaultServiceVersion|beta'
+    package: '@azure/storage-blob|beta'
+    summary: >-
+      The default version to use for requests to the Blob service if an incoming
+      request's version is not specified. Possible values include version
+      2008-10-27 and all more recent versions
+    fullName: defaultServiceVersion
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'defaultServiceVersion?: string'
+      return:
+        description: ''
+        type: string
+  - name: deleteRetentionPolicy
+    uid: '@azure/storage-blob.BlobServiceProperties.deleteRetentionPolicy|beta'
+    package: '@azure/storage-blob|beta'
+    summary: >-
+      the retention policy which determines how long the associated data should
+      persist
+    fullName: deleteRetentionPolicy
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'deleteRetentionPolicy?: RetentionPolicy'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-blob.RetentionPolicy|beta" />
+  - name: hourMetrics
+    uid: '@azure/storage-blob.BlobServiceProperties.hourMetrics|beta'
+    package: '@azure/storage-blob|beta'
+    summary: >-
+      a summary of request statistics grouped by API in hour or minute
+      aggregates for blobs
+    fullName: hourMetrics
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hourMetrics?: Metrics'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-blob.Metrics|beta" />
+  - name: minuteMetrics
+    uid: '@azure/storage-blob.BlobServiceProperties.minuteMetrics|beta'
+    package: '@azure/storage-blob|beta'
+    summary: >-
+      a summary of request statistics grouped by API in hour or minute
+      aggregates for blobs
+    fullName: minuteMetrics
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'minuteMetrics?: Metrics'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-blob.Metrics|beta" />
+  - name: staticWebsite
+    uid: '@azure/storage-blob.BlobServiceProperties.staticWebsite|beta'
+    package: '@azure/storage-blob|beta'
+    summary: The properties that enable an account to host a static website
+    fullName: staticWebsite
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'staticWebsite?: StaticWebsite'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-blob.StaticWebsite|beta" />

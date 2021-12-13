@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: PathGetAccessControlResponse
+uid: '@azure/storage-file-datalake.PathGetAccessControlResponse|beta'
+package: '@azure/storage-file-datalake|beta'
+summary: ''
+fullName: PathGetAccessControlResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type PathGetAccessControlResponse = PathAccessControl &
+  PathGetAccessControlHeaders & { _response: HttpResponse & { parsedHeaders:
+  PathGetPropertiesHeadersModel } }

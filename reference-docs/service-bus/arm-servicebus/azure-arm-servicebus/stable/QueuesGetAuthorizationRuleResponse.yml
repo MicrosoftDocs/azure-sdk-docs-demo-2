@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: QueuesGetAuthorizationRuleResponse
+uid: '@azure/arm-servicebus.QueuesGetAuthorizationRuleResponse|stable'
+package: '@azure/arm-servicebus|stable'
+summary: Contains response data for the getAuthorizationRule operation.
+fullName: QueuesGetAuthorizationRuleResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type QueuesGetAuthorizationRuleResponse = SBAuthorizationRule & { _response:
+  HttpResponse & { bodyAsText: string, parsedBody: SBAuthorizationRule } }

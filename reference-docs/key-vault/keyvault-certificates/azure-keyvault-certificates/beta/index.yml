@@ -1,0 +1,124 @@
+### YamlMime:TSPackage
+uid: '@azure/keyvault-certificates|beta'
+name: '@azure/keyvault-certificates (4.4.0-beta.2 - undefined)'
+summary: ''
+type: package
+enums:
+  - '@azure/keyvault-certificates.KnownCertificateKeyCurveNames|beta'
+  - '@azure/keyvault-certificates.KnownCertificateKeyTypes|beta'
+  - '@azure/keyvault-certificates.KnownDeletionRecoveryLevels|beta'
+  - '@azure/keyvault-certificates.KnownKeyUsageTypes|beta'
+  - '@azure/keyvault-certificates.WellKnownIssuer|beta'
+classes:
+  - '@azure/keyvault-certificates.CertificateClient|beta'
+interfaces:
+  - '@azure/keyvault-certificates.AdministratorContact|beta'
+  - '@azure/keyvault-certificates.BackupCertificateResult|beta'
+  - '@azure/keyvault-certificates.BeginCreateCertificateOptions|beta'
+  - '@azure/keyvault-certificates.CertificateClientOptions|beta'
+  - '@azure/keyvault-certificates.CertificateContactAll|beta'
+  - '@azure/keyvault-certificates.CertificateIssuer|beta'
+  - '@azure/keyvault-certificates.CertificateOperation|beta'
+  - '@azure/keyvault-certificates.CertificateOperationError|beta'
+  - '@azure/keyvault-certificates.CertificateOperationState|beta'
+  - '@azure/keyvault-certificates.CertificatePolicyProperties|beta'
+  - '@azure/keyvault-certificates.CertificatePollerOptions|beta'
+  - '@azure/keyvault-certificates.CertificateProperties|beta'
+  - '@azure/keyvault-certificates.CoreSubjectAlternativeNames|beta'
+  - '@azure/keyvault-certificates.CreateCertificateOptions|beta'
+  - '@azure/keyvault-certificates.CreateIssuerOptions|beta'
+  - '@azure/keyvault-certificates.DeletedCertificate|beta'
+  - '@azure/keyvault-certificates.ErrorModel|beta'
+  - '@azure/keyvault-certificates.ImportCertificateOptions|beta'
+  - '@azure/keyvault-certificates.IssuerAttributes|beta'
+  - '@azure/keyvault-certificates.IssuerCredentials|beta'
+  - '@azure/keyvault-certificates.IssuerParameters|beta'
+  - '@azure/keyvault-certificates.IssuerProperties|beta'
+  - '@azure/keyvault-certificates.KeyVaultCertificate|beta'
+  - '@azure/keyvault-certificates.KeyVaultCertificateIdentifier|beta'
+  - '@azure/keyvault-certificates.KeyVaultCertificatePollOperationState|beta'
+  - '@azure/keyvault-certificates.KeyVaultCertificateWithPolicy|beta'
+  - '@azure/keyvault-certificates.LifetimeAction|beta'
+  - '@azure/keyvault-certificates.ListDeletedCertificatesOptions|beta'
+  - '@azure/keyvault-certificates.ListPropertiesOfCertificatesOptions|beta'
+  - '@azure/keyvault-certificates.PolicySubjectProperties|beta'
+  - '@azure/keyvault-certificates.SubjectAlternativeNamesAll|beta'
+  - '@azure/keyvault-certificates.UpdateCertificateOptions|beta'
+  - '@azure/keyvault-certificates.UpdateIssuerOptions|beta'
+  - '@azure/keyvault-certificates.X509CertificateProperties|beta'
+typeAliases:
+  - '@azure/keyvault-certificates.ActionType|beta'
+  - '@azure/keyvault-certificates.ArrayOneOrMore|beta'
+  - '@azure/keyvault-certificates.BackupCertificateOptions|beta'
+  - '@azure/keyvault-certificates.BeginDeleteCertificateOptions|beta'
+  - '@azure/keyvault-certificates.BeginRecoverDeletedCertificateOptions|beta'
+  - '@azure/keyvault-certificates.CancelCertificateOperationOptions|beta'
+  - '@azure/keyvault-certificates.CertificateContact|beta'
+  - '@azure/keyvault-certificates.CertificateContentType|beta'
+  - '@azure/keyvault-certificates.CertificateKeyCurveName|beta'
+  - '@azure/keyvault-certificates.CertificateKeyType|beta'
+  - '@azure/keyvault-certificates.CertificatePolicy|beta'
+  - '@azure/keyvault-certificates.CertificatePolicyAction|beta'
+  - '@azure/keyvault-certificates.CertificateTags|beta'
+  - '@azure/keyvault-certificates.CreateCertificateState|beta'
+  - '@azure/keyvault-certificates.DeleteCertificateOperationOptions|beta'
+  - '@azure/keyvault-certificates.DeleteCertificateState|beta'
+  - '@azure/keyvault-certificates.DeleteContactsOptions|beta'
+  - '@azure/keyvault-certificates.DeleteIssuerOptions|beta'
+  - '@azure/keyvault-certificates.DeletionRecoveryLevel|beta'
+  - '@azure/keyvault-certificates.GetCertificateOperationOptions|beta'
+  - '@azure/keyvault-certificates.GetCertificateOptions|beta'
+  - '@azure/keyvault-certificates.GetCertificatePolicyOptions|beta'
+  - '@azure/keyvault-certificates.GetCertificateVersionOptions|beta'
+  - '@azure/keyvault-certificates.GetContactsOptions|beta'
+  - '@azure/keyvault-certificates.GetDeletedCertificateOptions|beta'
+  - '@azure/keyvault-certificates.GetIssuerOptions|beta'
+  - '@azure/keyvault-certificates.GetPlainCertificateOperationOptions|beta'
+  - '@azure/keyvault-certificates.ImportCertificatePolicy|beta'
+  - '@azure/keyvault-certificates.KVPollerLike|beta'
+  - '@azure/keyvault-certificates.KeyUsageType|beta'
+  - '@azure/keyvault-certificates.ListPropertiesOfCertificateVersionsOptions|beta'
+  - '@azure/keyvault-certificates.ListPropertiesOfIssuersOptions|beta'
+  - '@azure/keyvault-certificates.MergeCertificateOptions|beta'
+  - '@azure/keyvault-certificates.PurgeDeletedCertificateOptions|beta'
+  - '@azure/keyvault-certificates.RecoverDeletedCertificateState|beta'
+  - '@azure/keyvault-certificates.RequireAtLeastOne|beta'
+  - '@azure/keyvault-certificates.RestoreCertificateBackupOptions|beta'
+  - '@azure/keyvault-certificates.SetContactsOptions|beta'
+  - '@azure/keyvault-certificates.SubjectAlternativeNames|beta'
+  - '@azure/keyvault-certificates.UpdateCertificatePolicyOptions|beta'
+functions:
+  - name: parseKeyVaultCertificateIdentifier(string)
+    uid: '@azure/keyvault-certificates.parseKeyVaultCertificateIdentifier|beta'
+    package: '@azure/keyvault-certificates|beta'
+    summary: |-
+      Parses the given Key Vault Certificate Id. An example is:
+        https://<keyvault-name>.vault.azure.net/certificates/<certificate-name>/<unique-version-id>
+
+      On parsing the above Id, this function returns:
+      ```ts
+        {
+           sourceId: "https://<keyvault-name>.vault.azure.net/certificates/<certificate-name>/<unique-version-id>",
+           vaultUrl: "https://<keyvault-name>.vault.azure.net",
+           version: "<unique-version-id>",
+           name: "<certificate-name>"
+        }
+      ```
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function parseKeyVaultCertificateIdentifier(id: string):
+        KeyVaultCertificateIdentifier
+      parameters:
+        - id: id
+          type: string
+          description: |
+            The Id of the Key Vault Certificate.
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/keyvault-certificates.KeyVaultCertificateIdentifier|beta"
+          />

@@ -1,0 +1,125 @@
+### YamlMime:TSPackage
+uid: '@azure/keyvault-certificates|stable'
+name: '@azure/keyvault-certificates (4.3.0 - undefined)'
+summary: ''
+type: package
+enums:
+  - '@azure/keyvault-certificates.KnownCertificateKeyCurveNames|stable'
+  - '@azure/keyvault-certificates.KnownCertificateKeyTypes|stable'
+  - '@azure/keyvault-certificates.KnownDeletionRecoveryLevels|stable'
+  - '@azure/keyvault-certificates.KnownKeyUsageTypes|stable'
+  - '@azure/keyvault-certificates.WellKnownIssuer|stable'
+classes:
+  - '@azure/keyvault-certificates.CertificateClient|stable'
+interfaces:
+  - '@azure/keyvault-certificates.AdministratorContact|stable'
+  - '@azure/keyvault-certificates.BackupCertificateResult|stable'
+  - '@azure/keyvault-certificates.BeginCreateCertificateOptions|stable'
+  - '@azure/keyvault-certificates.CertificateClientOptions|stable'
+  - '@azure/keyvault-certificates.CertificateContactAll|stable'
+  - '@azure/keyvault-certificates.CertificateIssuer|stable'
+  - '@azure/keyvault-certificates.CertificateOperation|stable'
+  - '@azure/keyvault-certificates.CertificateOperationError|stable'
+  - '@azure/keyvault-certificates.CertificateOperationState|stable'
+  - '@azure/keyvault-certificates.CertificatePolicyProperties|stable'
+  - '@azure/keyvault-certificates.CertificatePollerOptions|stable'
+  - '@azure/keyvault-certificates.CertificateProperties|stable'
+  - '@azure/keyvault-certificates.CoreSubjectAlternativeNames|stable'
+  - '@azure/keyvault-certificates.CreateCertificateOptions|stable'
+  - '@azure/keyvault-certificates.CreateIssuerOptions|stable'
+  - '@azure/keyvault-certificates.DeletedCertificate|stable'
+  - '@azure/keyvault-certificates.ErrorModel|stable'
+  - '@azure/keyvault-certificates.ImportCertificateOptions|stable'
+  - '@azure/keyvault-certificates.IssuerAttributes|stable'
+  - '@azure/keyvault-certificates.IssuerCredentials|stable'
+  - '@azure/keyvault-certificates.IssuerParameters|stable'
+  - '@azure/keyvault-certificates.IssuerProperties|stable'
+  - '@azure/keyvault-certificates.KeyVaultCertificate|stable'
+  - '@azure/keyvault-certificates.KeyVaultCertificateIdentifier|stable'
+  - '@azure/keyvault-certificates.KeyVaultCertificatePollOperationState|stable'
+  - '@azure/keyvault-certificates.KeyVaultCertificateWithPolicy|stable'
+  - '@azure/keyvault-certificates.LifetimeAction|stable'
+  - '@azure/keyvault-certificates.ListDeletedCertificatesOptions|stable'
+  - '@azure/keyvault-certificates.ListPropertiesOfCertificatesOptions|stable'
+  - '@azure/keyvault-certificates.PolicySubjectProperties|stable'
+  - '@azure/keyvault-certificates.SubjectAlternativeNamesAll|stable'
+  - '@azure/keyvault-certificates.UpdateCertificateOptions|stable'
+  - '@azure/keyvault-certificates.UpdateIssuerOptions|stable'
+  - '@azure/keyvault-certificates.X509CertificateProperties|stable'
+typeAliases:
+  - '@azure/keyvault-certificates.ActionType|stable'
+  - '@azure/keyvault-certificates.ArrayOneOrMore|stable'
+  - '@azure/keyvault-certificates.BackupCertificateOptions|stable'
+  - '@azure/keyvault-certificates.BeginDeleteCertificateOptions|stable'
+  - '@azure/keyvault-certificates.BeginRecoverDeletedCertificateOptions|stable'
+  - '@azure/keyvault-certificates.CancelCertificateOperationOptions|stable'
+  - '@azure/keyvault-certificates.CertificateContact|stable'
+  - '@azure/keyvault-certificates.CertificateContentType|stable'
+  - '@azure/keyvault-certificates.CertificateKeyCurveName|stable'
+  - '@azure/keyvault-certificates.CertificateKeyType|stable'
+  - '@azure/keyvault-certificates.CertificatePolicy|stable'
+  - '@azure/keyvault-certificates.CertificatePolicyAction|stable'
+  - '@azure/keyvault-certificates.CertificateTags|stable'
+  - '@azure/keyvault-certificates.CreateCertificateState|stable'
+  - '@azure/keyvault-certificates.DeleteCertificateOperationOptions|stable'
+  - '@azure/keyvault-certificates.DeleteCertificateState|stable'
+  - '@azure/keyvault-certificates.DeleteContactsOptions|stable'
+  - '@azure/keyvault-certificates.DeleteIssuerOptions|stable'
+  - '@azure/keyvault-certificates.DeletionRecoveryLevel|stable'
+  - '@azure/keyvault-certificates.GetCertificateOperationOptions|stable'
+  - '@azure/keyvault-certificates.GetCertificateOptions|stable'
+  - '@azure/keyvault-certificates.GetCertificatePolicyOptions|stable'
+  - '@azure/keyvault-certificates.GetCertificateVersionOptions|stable'
+  - '@azure/keyvault-certificates.GetContactsOptions|stable'
+  - '@azure/keyvault-certificates.GetDeletedCertificateOptions|stable'
+  - '@azure/keyvault-certificates.GetIssuerOptions|stable'
+  - '@azure/keyvault-certificates.GetPlainCertificateOperationOptions|stable'
+  - '@azure/keyvault-certificates.ImportCertificatePolicy|stable'
+  - '@azure/keyvault-certificates.KVPollerLike|stable'
+  - '@azure/keyvault-certificates.KeyUsageType|stable'
+  - >-
+    @azure/keyvault-certificates.ListPropertiesOfCertificateVersionsOptions|stable
+  - '@azure/keyvault-certificates.ListPropertiesOfIssuersOptions|stable'
+  - '@azure/keyvault-certificates.MergeCertificateOptions|stable'
+  - '@azure/keyvault-certificates.PurgeDeletedCertificateOptions|stable'
+  - '@azure/keyvault-certificates.RecoverDeletedCertificateState|stable'
+  - '@azure/keyvault-certificates.RequireAtLeastOne|stable'
+  - '@azure/keyvault-certificates.RestoreCertificateBackupOptions|stable'
+  - '@azure/keyvault-certificates.SetContactsOptions|stable'
+  - '@azure/keyvault-certificates.SubjectAlternativeNames|stable'
+  - '@azure/keyvault-certificates.UpdateCertificatePolicyOptions|stable'
+functions:
+  - name: parseKeyVaultCertificateIdentifier(string)
+    uid: '@azure/keyvault-certificates.parseKeyVaultCertificateIdentifier|stable'
+    package: '@azure/keyvault-certificates|stable'
+    summary: |-
+      Parses the given Key Vault Certificate Id. An example is:
+        https://<keyvault-name>.vault.azure.net/certificates/<certificate-name>/<unique-version-id>
+
+      On parsing the above Id, this function returns:
+      ```ts
+        {
+           sourceId: "https://<keyvault-name>.vault.azure.net/certificates/<certificate-name>/<unique-version-id>",
+           vaultUrl: "https://<keyvault-name>.vault.azure.net",
+           version: "<unique-version-id>",
+           name: "<certificate-name>"
+        }
+      ```
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function parseKeyVaultCertificateIdentifier(id: string):
+        KeyVaultCertificateIdentifier
+      parameters:
+        - id: id
+          type: string
+          description: |
+            The Id of the Key Vault Certificate.
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/keyvault-certificates.KeyVaultCertificateIdentifier|stable"
+          />

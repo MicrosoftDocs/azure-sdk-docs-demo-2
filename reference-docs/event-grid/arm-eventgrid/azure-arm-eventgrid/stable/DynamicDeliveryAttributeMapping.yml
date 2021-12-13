@@ -1,0 +1,50 @@
+### YamlMime:TSType
+name: DynamicDeliveryAttributeMapping
+uid: '@azure/arm-eventgrid.DynamicDeliveryAttributeMapping|stable'
+package: '@azure/arm-eventgrid|stable'
+summary: Dynamic delivery attribute mapping details.
+fullName: DynamicDeliveryAttributeMapping
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: name
+    uid: '@azure/arm-eventgrid.DynamicDeliveryAttributeMapping.name|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Name of the delivery attribute or header.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: sourceField
+    uid: '@azure/arm-eventgrid.DynamicDeliveryAttributeMapping.sourceField|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: JSON path in the event which contains attribute value.
+    fullName: sourceField
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sourceField?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: type
+    uid: '@azure/arm-eventgrid.DynamicDeliveryAttributeMapping.type|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Polymorphic Discriminator
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: "Dynamic"'
+      return:
+        description: ''
+        type: '"Dynamic"'

@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: ResponseHandler
+uid: '@azure/core-http.ResponseHandler|stable'
+package: '@azure/core-http|stable'
+summary: ''
+fullName: ResponseHandler
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type ResponseHandler = (httpRequest: WebResourceLike, response:
+  HttpOperationResponse) => Promise<HttpOperationResponse>

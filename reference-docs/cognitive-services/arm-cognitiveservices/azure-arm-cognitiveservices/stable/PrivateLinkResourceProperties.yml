@@ -1,0 +1,78 @@
+### YamlMime:TSType
+name: PrivateLinkResourceProperties
+uid: '@azure/arm-cognitiveservices.PrivateLinkResourceProperties|stable'
+package: '@azure/arm-cognitiveservices|stable'
+summary: Properties of a private link resource.
+fullName: PrivateLinkResourceProperties
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: displayName
+    uid: >-
+      @azure/arm-cognitiveservices.PrivateLinkResourceProperties.displayName|stable
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: >-
+      The private link resource display name.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: displayName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'displayName?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: groupId
+    uid: '@azure/arm-cognitiveservices.PrivateLinkResourceProperties.groupId|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: >-
+      The private link resource group id.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: groupId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'groupId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: requiredMembers
+    uid: >-
+      @azure/arm-cognitiveservices.PrivateLinkResourceProperties.requiredMembers|stable
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: >-
+      The private link resource required member names.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: requiredMembers
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'requiredMembers?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: requiredZoneNames
+    uid: >-
+      @azure/arm-cognitiveservices.PrivateLinkResourceProperties.requiredZoneNames|stable
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: The private link resource Private link DNS zone name.
+    fullName: requiredZoneNames
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'requiredZoneNames?: string[]'
+      return:
+        description: ''
+        type: string[]

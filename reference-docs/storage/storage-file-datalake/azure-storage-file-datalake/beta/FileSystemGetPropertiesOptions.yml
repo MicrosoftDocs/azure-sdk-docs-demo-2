@@ -1,0 +1,54 @@
+### YamlMime:TSType
+name: FileSystemGetPropertiesOptions
+uid: '@azure/storage-file-datalake.FileSystemGetPropertiesOptions|beta'
+package: '@azure/storage-file-datalake|beta'
+summary: ''
+fullName: FileSystemGetPropertiesOptions
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: abortSignal
+    uid: >-
+      @azure/storage-file-datalake.FileSystemGetPropertiesOptions.abortSignal|beta
+    package: '@azure/storage-file-datalake|beta'
+    summary: ''
+    fullName: abortSignal
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'abortSignal?: AbortSignalLike'
+      return:
+        description: ''
+        type: AbortSignalLike
+  - name: conditions
+    uid: >-
+      @azure/storage-file-datalake.FileSystemGetPropertiesOptions.conditions|beta
+    package: '@azure/storage-file-datalake|beta'
+    summary: ''
+    fullName: conditions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'conditions?: LeaseAccessConditions'
+      return:
+        description: ''
+        type: LeaseAccessConditions
+  - name: tracingOptions
+    uid: >-
+      @azure/storage-file-datalake.FileSystemGetPropertiesOptions.tracingOptions|beta
+    package: '@azure/storage-file-datalake|beta'
+    summary: Options to configure spans created when tracing is enabled.
+    fullName: tracingOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tracingOptions?: OperationTracingOptions'
+      return:
+        description: ''
+        type: OperationTracingOptions
+extends: <xref uid="@azure/storage-file-datalake.CommonOptions|beta" />

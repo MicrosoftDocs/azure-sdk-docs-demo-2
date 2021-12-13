@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: PageBlobUploadPagesFromURLResponse
+uid: '@azure/storage-blob.PageBlobUploadPagesFromURLResponse|beta'
+package: '@azure/storage-blob|beta'
+summary: Contains response data for the uploadPagesFromURL operation.
+fullName: PageBlobUploadPagesFromURLResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type PageBlobUploadPagesFromURLResponse = PageBlobUploadPagesFromURLHeaders &
+  { _response: HttpResponse & { parsedHeaders: PageBlobUploadPagesFromURLHeaders
+  } }

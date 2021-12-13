@@ -1,0 +1,265 @@
+### YamlMime:TSType
+name: ServiceSasParameters
+uid: '@azure/arm-storage.ServiceSasParameters|stable'
+package: '@azure/arm-storage|stable'
+summary: The parameters to list service SAS credentials of a specific resource.
+fullName: ServiceSasParameters
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: cacheControl
+    uid: '@azure/arm-storage.ServiceSasParameters.cacheControl|stable'
+    package: '@azure/arm-storage|stable'
+    summary: The response header override for cache control.
+    fullName: cacheControl
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'cacheControl?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: canonicalizedResource
+    uid: '@azure/arm-storage.ServiceSasParameters.canonicalizedResource|stable'
+    package: '@azure/arm-storage|stable'
+    summary: The canonical path to the signed resource.
+    fullName: canonicalizedResource
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'canonicalizedResource: string'
+      return:
+        description: ''
+        type: string
+  - name: contentDisposition
+    uid: '@azure/arm-storage.ServiceSasParameters.contentDisposition|stable'
+    package: '@azure/arm-storage|stable'
+    summary: The response header override for content disposition.
+    fullName: contentDisposition
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'contentDisposition?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: contentEncoding
+    uid: '@azure/arm-storage.ServiceSasParameters.contentEncoding|stable'
+    package: '@azure/arm-storage|stable'
+    summary: The response header override for content encoding.
+    fullName: contentEncoding
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'contentEncoding?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: contentLanguage
+    uid: '@azure/arm-storage.ServiceSasParameters.contentLanguage|stable'
+    package: '@azure/arm-storage|stable'
+    summary: The response header override for content language.
+    fullName: contentLanguage
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'contentLanguage?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: contentType
+    uid: '@azure/arm-storage.ServiceSasParameters.contentType|stable'
+    package: '@azure/arm-storage|stable'
+    summary: The response header override for content type.
+    fullName: contentType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'contentType?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: identifier
+    uid: '@azure/arm-storage.ServiceSasParameters.identifier|stable'
+    package: '@azure/arm-storage|stable'
+    summary: >-
+      A unique value up to 64 characters in length that correlates to an access
+      policy specified for
+
+      the container, queue, or table.
+    fullName: identifier
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'identifier?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: iPAddressOrRange
+    uid: '@azure/arm-storage.ServiceSasParameters.iPAddressOrRange|stable'
+    package: '@azure/arm-storage|stable'
+    summary: An IP address or a range of IP addresses from which to accept requests.
+    fullName: iPAddressOrRange
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'iPAddressOrRange?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: keyToSign
+    uid: '@azure/arm-storage.ServiceSasParameters.keyToSign|stable'
+    package: '@azure/arm-storage|stable'
+    summary: The key to sign the account SAS token with.
+    fullName: keyToSign
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'keyToSign?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: partitionKeyEnd
+    uid: '@azure/arm-storage.ServiceSasParameters.partitionKeyEnd|stable'
+    package: '@azure/arm-storage|stable'
+    summary: The end of partition key.
+    fullName: partitionKeyEnd
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'partitionKeyEnd?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: partitionKeyStart
+    uid: '@azure/arm-storage.ServiceSasParameters.partitionKeyStart|stable'
+    package: '@azure/arm-storage|stable'
+    summary: The start of partition key.
+    fullName: partitionKeyStart
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'partitionKeyStart?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: permissions
+    uid: '@azure/arm-storage.ServiceSasParameters.permissions|stable'
+    package: '@azure/arm-storage|stable'
+    summary: >-
+      The signed permissions for the service SAS. Possible values include: Read
+      (r), Write (w),
+
+      Delete (d), List (l), Add (a), Create (c), Update (u) and Process (p).
+      Possible values
+
+      include: 'r', 'd', 'w', 'l', 'a', 'c', 'u', 'p'
+    fullName: permissions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'permissions?: Permissions'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-storage.Permissions|stable" />
+  - name: protocols
+    uid: '@azure/arm-storage.ServiceSasParameters.protocols|stable'
+    package: '@azure/arm-storage|stable'
+    summary: >-
+      The protocol permitted for a request made with the account SAS. Possible
+      values include:
+
+      'https,http', 'https'
+    fullName: protocols
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protocols?: HttpProtocol'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-storage.HttpProtocol|stable" />
+  - name: resource
+    uid: '@azure/arm-storage.ServiceSasParameters.resource|stable'
+    package: '@azure/arm-storage|stable'
+    summary: >-
+      The signed services accessible with the service SAS. Possible values
+      include: Blob (b),
+
+      Container (c), File (f), Share (s). Possible values include: 'b', 'c',
+      'f', 's'
+    fullName: resource
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'resource?: SignedResource'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-storage.SignedResource|stable" />
+  - name: rowKeyEnd
+    uid: '@azure/arm-storage.ServiceSasParameters.rowKeyEnd|stable'
+    package: '@azure/arm-storage|stable'
+    summary: The end of row key.
+    fullName: rowKeyEnd
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rowKeyEnd?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: rowKeyStart
+    uid: '@azure/arm-storage.ServiceSasParameters.rowKeyStart|stable'
+    package: '@azure/arm-storage|stable'
+    summary: The start of row key.
+    fullName: rowKeyStart
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rowKeyStart?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: sharedAccessExpiryTime
+    uid: '@azure/arm-storage.ServiceSasParameters.sharedAccessExpiryTime|stable'
+    package: '@azure/arm-storage|stable'
+    summary: The time at which the shared access signature becomes invalid.
+    fullName: sharedAccessExpiryTime
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sharedAccessExpiryTime?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: sharedAccessStartTime
+    uid: '@azure/arm-storage.ServiceSasParameters.sharedAccessStartTime|stable'
+    package: '@azure/arm-storage|stable'
+    summary: The time at which the SAS becomes valid.
+    fullName: sharedAccessStartTime
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sharedAccessStartTime?: Date'
+      return:
+        description: ''
+        type: Date

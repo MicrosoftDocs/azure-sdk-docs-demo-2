@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: NamespacesListByResourceGroupNextResponse
+uid: '@azure/arm-eventhub.NamespacesListByResourceGroupNextResponse|stable'
+package: '@azure/arm-eventhub|stable'
+summary: Contains response data for the listByResourceGroupNext operation.
+fullName: NamespacesListByResourceGroupNextResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type NamespacesListByResourceGroupNextResponse = EHNamespaceListResult & {
+  _response: HttpResponse & { bodyAsText: string, parsedBody:
+  EHNamespaceListResult } }

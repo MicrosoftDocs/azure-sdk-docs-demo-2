@@ -1,0 +1,75 @@
+### YamlMime:TSType
+name: DeletedManagedHsm
+uid: '@azure/arm-keyvault.DeletedManagedHsm|beta'
+package: '@azure/arm-keyvault|beta'
+summary: ''
+fullName: DeletedManagedHsm
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: id
+    uid: '@azure/arm-keyvault.DeletedManagedHsm.id|beta'
+    package: '@azure/arm-keyvault|beta'
+    summary: >-
+      The Azure Resource Manager resource ID for the deleted managed HSM Pool.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: name
+    uid: '@azure/arm-keyvault.DeletedManagedHsm.name|beta'
+    package: '@azure/arm-keyvault|beta'
+    summary: >-
+      The name of the managed HSM Pool.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: properties
+    uid: '@azure/arm-keyvault.DeletedManagedHsm.properties|beta'
+    package: '@azure/arm-keyvault|beta'
+    summary: Properties of the deleted managed HSM
+    fullName: properties
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'properties?: DeletedManagedHsmProperties'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-keyvault.DeletedManagedHsmProperties|beta" />
+  - name: type
+    uid: '@azure/arm-keyvault.DeletedManagedHsm.type|beta'
+    package: '@azure/arm-keyvault|beta'
+    summary: >-
+      The resource type of the managed HSM Pool.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

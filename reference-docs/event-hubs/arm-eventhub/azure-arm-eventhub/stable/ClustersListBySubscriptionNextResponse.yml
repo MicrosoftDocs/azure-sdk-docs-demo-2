@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: ClustersListBySubscriptionNextResponse
+uid: '@azure/arm-eventhub.ClustersListBySubscriptionNextResponse|stable'
+package: '@azure/arm-eventhub|stable'
+summary: Contains response data for the listBySubscriptionNext operation.
+fullName: ClustersListBySubscriptionNextResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type ClustersListBySubscriptionNextResponse = ClusterListResult & { _response:
+  HttpResponse & { bodyAsText: string, parsedBody: ClusterListResult } }

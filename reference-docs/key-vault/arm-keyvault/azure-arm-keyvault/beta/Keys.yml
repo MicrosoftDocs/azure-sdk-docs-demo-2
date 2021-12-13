@@ -1,0 +1,197 @@
+### YamlMime:TSType
+name: Keys
+uid: '@azure/arm-keyvault.Keys|beta'
+package: '@azure/arm-keyvault|beta'
+summary: Interface representing a Keys.
+fullName: Keys
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      createIfNotExist(string, string, string, KeyCreateParameters,
+      KeysCreateIfNotExistOptionalParams)
+    uid: '@azure/arm-keyvault.Keys.createIfNotExist|beta'
+    package: '@azure/arm-keyvault|beta'
+    summary: >-
+      Creates the first version of a new key if it does not exist. If it already
+      exists, then the existing
+
+      key is returned without any write operations being performed. This API
+      does not create subsequent
+
+      versions, and does not update existing keys.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createIfNotExist(resourceGroupName: string, vaultName: string,
+        keyName: string, parameters: KeyCreateParameters, options?:
+        KeysCreateIfNotExistOptionalParams):
+        Promise<KeysCreateIfNotExistResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group which contains the specified key
+            vault.
+        - id: vaultName
+          type: string
+          description: The name of the key vault which contains the key to be created.
+        - id: keyName
+          type: string
+          description: The name of the key to be created.
+        - id: parameters
+          type: <xref uid="@azure/arm-keyvault.KeyCreateParameters|beta" />
+          description: The parameters used to create the specified key.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-keyvault.KeysCreateIfNotExistOptionalParams|beta" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-keyvault.KeysCreateIfNotExistResponse|beta" />&gt;
+  - name: get(string, string, string, KeysGetOptionalParams)
+    uid: '@azure/arm-keyvault.Keys.get|beta'
+    package: '@azure/arm-keyvault|beta'
+    summary: >-
+      Gets the current version of the specified key from the specified key
+      vault.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, vaultName: string, keyName:
+        string, options?: KeysGetOptionalParams): Promise<KeysGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group which contains the specified key
+            vault.
+        - id: vaultName
+          type: string
+          description: The name of the vault which contains the key to be retrieved.
+        - id: keyName
+          type: string
+          description: The name of the key to be retrieved.
+        - id: options
+          type: <xref uid="@azure/arm-keyvault.KeysGetOptionalParams|beta" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;<xref uid="@azure/arm-keyvault.KeysGetResponse|beta" />&gt;
+  - name: getVersion(string, string, string, string, KeysGetVersionOptionalParams)
+    uid: '@azure/arm-keyvault.Keys.getVersion|beta'
+    package: '@azure/arm-keyvault|beta'
+    summary: >-
+      Gets the specified version of the specified key in the specified key
+      vault.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getVersion(resourceGroupName: string, vaultName: string,
+        keyName: string, keyVersion: string, options?:
+        KeysGetVersionOptionalParams): Promise<KeysGetVersionResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group which contains the specified key
+            vault.
+        - id: vaultName
+          type: string
+          description: >-
+            The name of the vault which contains the key version to be
+            retrieved.
+        - id: keyName
+          type: string
+          description: The name of the key version to be retrieved.
+        - id: keyVersion
+          type: string
+          description: The version of the key to be retrieved.
+        - id: options
+          type: <xref uid="@azure/arm-keyvault.KeysGetVersionOptionalParams|beta" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref uid="@azure/arm-keyvault.KeysGetVersionResponse|beta"
+          />&gt;
+  - name: list(string, string, KeysListOptionalParams)
+    uid: '@azure/arm-keyvault.Keys.list|beta'
+    package: '@azure/arm-keyvault|beta'
+    summary: Lists the keys in the specified key vault.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, vaultName: string, options?:
+        KeysListOptionalParams): PagedAsyncIterableIterator<Key>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group which contains the specified key
+            vault.
+        - id: vaultName
+          type: string
+          description: The name of the vault which contains the keys to be retrieved.
+        - id: options
+          type: <xref uid="@azure/arm-keyvault.KeysListOptionalParams|beta" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref uid="@azure/arm-keyvault.Key|beta"
+          />&gt;
+  - name: listVersions(string, string, string, KeysListVersionsOptionalParams)
+    uid: '@azure/arm-keyvault.Keys.listVersions|beta'
+    package: '@azure/arm-keyvault|beta'
+    summary: Lists the versions of the specified key in the specified key vault.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listVersions(resourceGroupName: string, vaultName: string,
+        keyName: string, options?: KeysListVersionsOptionalParams):
+        PagedAsyncIterableIterator<Key>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group which contains the specified key
+            vault.
+        - id: vaultName
+          type: string
+          description: >-
+            The name of the vault which contains the key versions to be
+            retrieved.
+        - id: keyName
+          type: string
+          description: The name of the key versions to be retrieved.
+        - id: options
+          type: >-
+            <xref uid="@azure/arm-keyvault.KeysListVersionsOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref uid="@azure/arm-keyvault.Key|beta"
+          />&gt;

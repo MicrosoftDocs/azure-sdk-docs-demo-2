@@ -1,0 +1,161 @@
+### YamlMime:TSType
+name: CreateKeyOptions
+uid: '@azure/keyvault-keys.CreateKeyOptions|stable'
+package: '@azure/keyvault-keys|stable'
+summary: |-
+  An interface representing the optional parameters that can be
+  passed to <xref:@azure/keyvault-keys.KeyClient.createKey>
+fullName: CreateKeyOptions
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: abortSignal
+    uid: '@azure/keyvault-keys.CreateKeyOptions.abortSignal|stable'
+    package: '@azure/keyvault-keys|stable'
+    summary: The signal which can be used to abort requests.
+    fullName: abortSignal
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'abortSignal?: AbortSignalLike'
+      return:
+        description: ''
+        type: AbortSignalLike
+  - name: curve
+    uid: '@azure/keyvault-keys.CreateKeyOptions.curve|stable'
+    package: '@azure/keyvault-keys|stable'
+    summary: |-
+      Elliptic curve name. For valid values, see KeyCurveName.
+      Possible values include: 'P-256', 'P-384', 'P-521', 'P-256K'
+    fullName: curve
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'curve?: KeyCurveName'
+      return:
+        description: ''
+        type: <xref uid="@azure/keyvault-keys.KeyCurveName|stable" />
+  - name: enabled
+    uid: '@azure/keyvault-keys.CreateKeyOptions.enabled|stable'
+    package: '@azure/keyvault-keys|stable'
+    summary: Determines whether the object is enabled.
+    fullName: enabled
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'enabled?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: expiresOn
+    uid: '@azure/keyvault-keys.CreateKeyOptions.expiresOn|stable'
+    package: '@azure/keyvault-keys|stable'
+    summary: Expiry date in UTC.
+    fullName: expiresOn
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'expiresOn?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: hsm
+    uid: '@azure/keyvault-keys.CreateKeyOptions.hsm|stable'
+    package: '@azure/keyvault-keys|stable'
+    summary: Whether to import as a hardware key (HSM) or software key.
+    fullName: hsm
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hsm?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: keyOps
+    uid: '@azure/keyvault-keys.CreateKeyOptions.keyOps|stable'
+    package: '@azure/keyvault-keys|stable'
+    summary: |-
+      Json web key operations. For more
+      information on possible key operations, see KeyOperation.
+    fullName: keyOps
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'keyOps?: KeyOperation[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/keyvault-keys.KeyOperation|stable" />[]
+  - name: keySize
+    uid: '@azure/keyvault-keys.CreateKeyOptions.keySize|stable'
+    package: '@azure/keyvault-keys|stable'
+    summary: 'The key size in bits. For example: 2048, 3072, or 4096 for RSA.'
+    fullName: keySize
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'keySize?: number'
+      return:
+        description: ''
+        type: number
+  - name: notBefore
+    uid: '@azure/keyvault-keys.CreateKeyOptions.notBefore|stable'
+    package: '@azure/keyvault-keys|stable'
+    summary: Not before date in UTC.
+    fullName: notBefore
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'notBefore?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: requestOptions
+    uid: '@azure/keyvault-keys.CreateKeyOptions.requestOptions|stable'
+    package: '@azure/keyvault-keys|stable'
+    summary: Options used when creating and sending HTTP requests for this operation.
+    fullName: requestOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'requestOptions?: OperationRequestOptions'
+      return:
+        description: ''
+        type: OperationRequestOptions
+  - name: tags
+    uid: '@azure/keyvault-keys.CreateKeyOptions.tags|stable'
+    package: '@azure/keyvault-keys|stable'
+    summary: Application specific metadata in the form of key-value pairs.
+    fullName: tags
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        description: ''
+        type: '[key: string]\: string'
+  - name: tracingOptions
+    uid: '@azure/keyvault-keys.CreateKeyOptions.tracingOptions|stable'
+    package: '@azure/keyvault-keys|stable'
+    summary: Options used when tracing is enabled.
+    fullName: tracingOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tracingOptions?: OperationTracingOptions'
+      return:
+        description: ''
+        type: OperationTracingOptions
+extends: OperationOptions

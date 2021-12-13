@@ -1,0 +1,44 @@
+### YamlMime:TSType
+name: HealthcareEntityRelation
+uid: '@azure/ai-text-analytics.HealthcareEntityRelation|stable'
+package: '@azure/ai-text-analytics|stable'
+summary: A relationship between two or more healthcare entities.
+fullName: HealthcareEntityRelation
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: relationType
+    uid: '@azure/ai-text-analytics.HealthcareEntityRelation.relationType|stable'
+    package: '@azure/ai-text-analytics|stable'
+    summary: The type of the healthcare relation.
+    fullName: relationType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'relationType: HealthcareEntityRelationType'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/ai-text-analytics.HealthcareEntityRelationType|stable" />
+  - name: roles
+    uid: '@azure/ai-text-analytics.HealthcareEntityRelation.roles|stable'
+    package: '@azure/ai-text-analytics|stable'
+    summary: >-
+      The list of healthcare entities and their roles in the healthcare
+      relation.
+    fullName: roles
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'roles: HealthcareEntityRelationRole[]'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/ai-text-analytics.HealthcareEntityRelationRole|stable"
+          />[]

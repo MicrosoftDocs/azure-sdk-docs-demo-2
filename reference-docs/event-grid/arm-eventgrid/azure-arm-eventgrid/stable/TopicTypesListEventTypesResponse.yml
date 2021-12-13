@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: TopicTypesListEventTypesResponse
+uid: '@azure/arm-eventgrid.TopicTypesListEventTypesResponse|stable'
+package: '@azure/arm-eventgrid|stable'
+summary: Contains response data for the listEventTypes operation.
+fullName: TopicTypesListEventTypesResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type TopicTypesListEventTypesResponse = EventTypesListResult & { _response:
+  HttpResponse & { bodyAsText: string, parsedBody: EventTypesListResult } }

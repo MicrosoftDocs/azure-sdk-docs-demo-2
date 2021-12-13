@@ -1,0 +1,42 @@
+### YamlMime:TSType
+name: PrivateLinkResources
+uid: '@azure/arm-eventhub.PrivateLinkResources|beta'
+package: '@azure/arm-eventhub|beta'
+summary: Interface representing a PrivateLinkResources.
+fullName: PrivateLinkResources
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: get(string, string, PrivateLinkResourcesGetOptionalParams)
+    uid: '@azure/arm-eventhub.PrivateLinkResources.get|beta'
+    package: '@azure/arm-eventhub|beta'
+    summary: Gets lists of resources that supports Privatelinks.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, namespaceName: string, options?:
+        PrivateLinkResourcesGetOptionalParams):
+        Promise<PrivateLinkResourcesGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group within the azure subscription.
+        - id: namespaceName
+          type: string
+          description: The Namespace name
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventhub.PrivateLinkResourcesGetOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventhub.PrivateLinkResourcesGetResponse|beta" />&gt;

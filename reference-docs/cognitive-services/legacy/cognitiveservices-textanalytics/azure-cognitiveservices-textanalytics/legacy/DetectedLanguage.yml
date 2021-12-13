@@ -1,0 +1,58 @@
+### YamlMime:TSType
+name: DetectedLanguage
+uid: '@azure/cognitiveservices-textanalytics.DetectedLanguage|legacy'
+package: '@azure/cognitiveservices-textanalytics|legacy'
+summary: An interface representing DetectedLanguage.
+fullName: DetectedLanguage
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: iso6391Name
+    uid: '@azure/cognitiveservices-textanalytics.DetectedLanguage.iso6391Name|legacy'
+    package: '@azure/cognitiveservices-textanalytics|legacy'
+    summary: >-
+      A two letter representation of the detected language according to the ISO
+      639-1 standard (e.g.
+
+      en, fr).
+    fullName: iso6391Name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'iso6391Name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: name
+    uid: '@azure/cognitiveservices-textanalytics.DetectedLanguage.name|legacy'
+    package: '@azure/cognitiveservices-textanalytics|legacy'
+    summary: Long name of a detected language (e.g. English, French).
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: score
+    uid: '@azure/cognitiveservices-textanalytics.DetectedLanguage.score|legacy'
+    package: '@azure/cognitiveservices-textanalytics|legacy'
+    summary: >-
+      A confidence score between 0 and 1. Scores close to 1 indicate 100%
+      certainty that the
+
+      identified language is true.
+    fullName: score
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'score?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number

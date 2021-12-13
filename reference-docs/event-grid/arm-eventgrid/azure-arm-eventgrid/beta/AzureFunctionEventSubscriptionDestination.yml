@@ -1,0 +1,15 @@
+### YamlMime:TSTypeAlias
+name: AzureFunctionEventSubscriptionDestination
+uid: '@azure/arm-eventgrid.AzureFunctionEventSubscriptionDestination|beta'
+package: '@azure/arm-eventgrid|beta'
+summary: Information about the azure function destination for an event subscription.
+fullName: AzureFunctionEventSubscriptionDestination
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type AzureFunctionEventSubscriptionDestination = EventSubscriptionDestination
+  & { deliveryAttributeMappings?: DeliveryAttributeMappingUnion[], endpointType:
+  "AzureFunction", maxEventsPerBatch?: undefined | number,
+  preferredBatchSizeInKilobytes?: undefined | number, resourceId?: undefined |
+  string }

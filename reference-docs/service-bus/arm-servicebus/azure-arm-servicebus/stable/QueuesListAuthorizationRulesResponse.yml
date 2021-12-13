@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: QueuesListAuthorizationRulesResponse
+uid: '@azure/arm-servicebus.QueuesListAuthorizationRulesResponse|stable'
+package: '@azure/arm-servicebus|stable'
+summary: Contains response data for the listAuthorizationRules operation.
+fullName: QueuesListAuthorizationRulesResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type QueuesListAuthorizationRulesResponse = SBAuthorizationRuleListResult & {
+  _response: HttpResponse & { bodyAsText: string, parsedBody:
+  SBAuthorizationRuleListResult } }

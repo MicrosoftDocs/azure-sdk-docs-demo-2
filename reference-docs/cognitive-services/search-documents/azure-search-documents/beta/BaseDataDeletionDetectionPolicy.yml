@@ -1,0 +1,31 @@
+### YamlMime:TSType
+name: BaseDataDeletionDetectionPolicy
+uid: '@azure/search-documents.BaseDataDeletionDetectionPolicy|beta'
+package: '@azure/search-documents|beta'
+summary: Base type for data deletion detection policies.
+fullName: BaseDataDeletionDetectionPolicy
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: odatatype
+    uid: '@azure/search-documents.BaseDataDeletionDetectionPolicy.odatatype|beta'
+    package: '@azure/search-documents|beta'
+    summary: >-
+      Polymorphic discriminator, which specifies the different types this object
+      can be
+    fullName: odatatype
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        odatatype:
+        "#Microsoft.Azure.Search.SoftDeleteColumnDeletionDetectionPolicy"
+      return:
+        description: ''
+        type: >-
+          "#<xref
+          uid="Microsoft.Azure.Search.SoftDeleteColumnDeletionDetectionPolicy|beta"
+          />"

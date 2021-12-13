@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: FileSystemGetPropertiesResponse
+uid: '@azure/storage-file-datalake.FileSystemGetPropertiesResponse|beta'
+package: '@azure/storage-file-datalake|beta'
+summary: ''
+fullName: FileSystemGetPropertiesResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type FileSystemGetPropertiesResponse = FileSystemGetPropertiesHeaders & {
+  _response: HttpResponse & { parsedHeaders: FileSystemGetPropertiesHeaders } }

@@ -1,0 +1,72 @@
+### YamlMime:TSPackage
+uid: '@azure/event-hubs|stable'
+name: '@azure/event-hubs (5.6.0 - undefined)'
+summary: ''
+type: package
+enums:
+  - '@azure/event-hubs.CloseReason|stable'
+classes:
+  - '@azure/event-hubs.EventHubConsumerClient|stable'
+  - '@azure/event-hubs.EventHubProducerClient|stable'
+interfaces:
+  - '@azure/event-hubs.Checkpoint|stable'
+  - '@azure/event-hubs.CheckpointStore|stable'
+  - '@azure/event-hubs.CreateBatchOptions|stable'
+  - '@azure/event-hubs.EventData|stable'
+  - '@azure/event-hubs.EventDataBatch|stable'
+  - '@azure/event-hubs.EventHubClientOptions|stable'
+  - '@azure/event-hubs.EventHubConnectionStringProperties|stable'
+  - '@azure/event-hubs.EventHubConsumerClientOptions|stable'
+  - '@azure/event-hubs.EventHubProperties|stable'
+  - '@azure/event-hubs.EventPosition|stable'
+  - '@azure/event-hubs.GetEventHubPropertiesOptions|stable'
+  - '@azure/event-hubs.GetPartitionIdsOptions|stable'
+  - '@azure/event-hubs.GetPartitionPropertiesOptions|stable'
+  - '@azure/event-hubs.LastEnqueuedEventProperties|stable'
+  - '@azure/event-hubs.LoadBalancingOptions|stable'
+  - '@azure/event-hubs.OperationOptions|stable'
+  - '@azure/event-hubs.PartitionContext|stable'
+  - '@azure/event-hubs.PartitionOwnership|stable'
+  - '@azure/event-hubs.PartitionProperties|stable'
+  - '@azure/event-hubs.ReceivedEventData|stable'
+  - '@azure/event-hubs.SendBatchOptions|stable'
+  - '@azure/event-hubs.SubscribeOptions|stable'
+  - '@azure/event-hubs.Subscription|stable'
+  - '@azure/event-hubs.SubscriptionEventHandlers|stable'
+  - '@azure/event-hubs.TryAddOptions|stable'
+typeAliases:
+  - '@azure/event-hubs.ProcessCloseHandler|stable'
+  - '@azure/event-hubs.ProcessErrorHandler|stable'
+  - '@azure/event-hubs.ProcessEventsHandler|stable'
+  - '@azure/event-hubs.ProcessInitializeHandler|stable'
+functions:
+  - name: parseEventHubConnectionString(string)
+    uid: '@azure/event-hubs.parseEventHubConnectionString|stable'
+    package: '@azure/event-hubs|stable'
+    summary: >-
+      Parses given connection string into the different properties applicable to
+      Azure Event Hubs.
+
+      The properties are useful to then construct an EventHubProducerClient or
+      an EventHubConsumerClient.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function parseEventHubConnectionString(connectionString: string):
+        Readonly<EventHubConnectionStringProperties>
+      parameters:
+        - id: connectionString
+          type: string
+          description: >
+            The connection string associated with the Shared Access Policy
+            created
+
+            for the Event Hubs namespace.
+      return:
+        description: ''
+        type: >-
+          Readonly&lt;<xref
+          uid="@azure/event-hubs.EventHubConnectionStringProperties|stable"
+          />&gt;

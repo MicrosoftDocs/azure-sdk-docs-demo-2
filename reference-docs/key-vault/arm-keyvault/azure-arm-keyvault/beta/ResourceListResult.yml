@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: ResourceListResult
+uid: '@azure/arm-keyvault.ResourceListResult|beta'
+package: '@azure/arm-keyvault|beta'
+summary: List of vault resources.
+fullName: ResourceListResult
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: nextLink
+    uid: '@azure/arm-keyvault.ResourceListResult.nextLink|beta'
+    package: '@azure/arm-keyvault|beta'
+    summary: The URL to get the next set of vault resources.
+    fullName: nextLink
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nextLink?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: value
+    uid: '@azure/arm-keyvault.ResourceListResult.value|beta'
+    package: '@azure/arm-keyvault|beta'
+    summary: The list of vault resources.
+    fullName: value
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: Resource[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-keyvault.Resource|beta" />[]

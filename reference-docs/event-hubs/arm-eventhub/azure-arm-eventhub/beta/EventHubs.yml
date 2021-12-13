@@ -1,0 +1,395 @@
+### YamlMime:TSType
+name: EventHubs
+uid: '@azure/arm-eventhub.EventHubs|beta'
+package: '@azure/arm-eventhub|beta'
+summary: Interface representing a EventHubs.
+fullName: EventHubs
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      createOrUpdate(string, string, string, Eventhub,
+      EventHubsCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-eventhub.EventHubs.createOrUpdate|beta'
+    package: '@azure/arm-eventhub|beta'
+    summary: >-
+      Creates or updates a new Event Hub as a nested resource within a
+      Namespace.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, namespaceName:
+        string, eventHubName: string, parameters: Eventhub, options?:
+        EventHubsCreateOrUpdateOptionalParams):
+        Promise<EventHubsCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group within the azure subscription.
+        - id: namespaceName
+          type: string
+          description: The Namespace name
+        - id: eventHubName
+          type: string
+          description: The Event Hub name
+        - id: parameters
+          type: <xref uid="@azure/arm-eventhub.Eventhub|beta" />
+          description: Parameters supplied to create an Event Hub resource.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventhub.EventHubsCreateOrUpdateOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventhub.EventHubsCreateOrUpdateResponse|beta" />&gt;
+  - name: >-
+      createOrUpdateAuthorizationRule(string, string, string, string,
+      AuthorizationRule, EventHubsCreateOrUpdateAuthorizationRuleOptionalParams)
+    uid: '@azure/arm-eventhub.EventHubs.createOrUpdateAuthorizationRule|beta'
+    package: '@azure/arm-eventhub|beta'
+    summary: >-
+      Creates or updates an AuthorizationRule for the specified Event Hub.
+      Creation/update of the
+
+      AuthorizationRule will take a few seconds to take effect.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createOrUpdateAuthorizationRule(resourceGroupName: string,
+        namespaceName: string, eventHubName: string, authorizationRuleName:
+        string, parameters: AuthorizationRule, options?:
+        EventHubsCreateOrUpdateAuthorizationRuleOptionalParams):
+        Promise<EventHubsCreateOrUpdateAuthorizationRuleResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group within the azure subscription.
+        - id: namespaceName
+          type: string
+          description: The Namespace name
+        - id: eventHubName
+          type: string
+          description: The Event Hub name
+        - id: authorizationRuleName
+          type: string
+          description: The authorization rule name.
+        - id: parameters
+          type: <xref uid="@azure/arm-eventhub.AuthorizationRule|beta" />
+          description: The shared access AuthorizationRule.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventhub.EventHubsCreateOrUpdateAuthorizationRuleOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventhub.EventHubsCreateOrUpdateAuthorizationRuleResponse|beta"
+          />&gt;
+  - name: delete(string, string, string, EventHubsDeleteOptionalParams)
+    uid: '@azure/arm-eventhub.EventHubs.delete|beta'
+    package: '@azure/arm-eventhub|beta'
+    summary: Deletes an Event Hub from the specified Namespace and resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function delete(resourceGroupName: string, namespaceName: string,
+        eventHubName: string, options?: EventHubsDeleteOptionalParams):
+        Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group within the azure subscription.
+        - id: namespaceName
+          type: string
+          description: The Namespace name
+        - id: eventHubName
+          type: string
+          description: The Event Hub name
+        - id: options
+          type: >-
+            <xref uid="@azure/arm-eventhub.EventHubsDeleteOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      deleteAuthorizationRule(string, string, string, string,
+      EventHubsDeleteAuthorizationRuleOptionalParams)
+    uid: '@azure/arm-eventhub.EventHubs.deleteAuthorizationRule|beta'
+    package: '@azure/arm-eventhub|beta'
+    summary: Deletes an Event Hub AuthorizationRule.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function deleteAuthorizationRule(resourceGroupName: string,
+        namespaceName: string, eventHubName: string, authorizationRuleName:
+        string, options?: EventHubsDeleteAuthorizationRuleOptionalParams):
+        Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group within the azure subscription.
+        - id: namespaceName
+          type: string
+          description: The Namespace name
+        - id: eventHubName
+          type: string
+          description: The Event Hub name
+        - id: authorizationRuleName
+          type: string
+          description: The authorization rule name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventhub.EventHubsDeleteAuthorizationRuleOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: get(string, string, string, EventHubsGetOptionalParams)
+    uid: '@azure/arm-eventhub.EventHubs.get|beta'
+    package: '@azure/arm-eventhub|beta'
+    summary: Gets an Event Hubs description for the specified Event Hub.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, namespaceName: string,
+        eventHubName: string, options?: EventHubsGetOptionalParams):
+        Promise<EventHubsGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group within the azure subscription.
+        - id: namespaceName
+          type: string
+          description: The Namespace name
+        - id: eventHubName
+          type: string
+          description: The Event Hub name
+        - id: options
+          type: <xref uid="@azure/arm-eventhub.EventHubsGetOptionalParams|beta" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref uid="@azure/arm-eventhub.EventHubsGetResponse|beta"
+          />&gt;
+  - name: >-
+      getAuthorizationRule(string, string, string, string,
+      EventHubsGetAuthorizationRuleOptionalParams)
+    uid: '@azure/arm-eventhub.EventHubs.getAuthorizationRule|beta'
+    package: '@azure/arm-eventhub|beta'
+    summary: Gets an AuthorizationRule for an Event Hub by rule name.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getAuthorizationRule(resourceGroupName: string, namespaceName:
+        string, eventHubName: string, authorizationRuleName: string, options?:
+        EventHubsGetAuthorizationRuleOptionalParams):
+        Promise<EventHubsGetAuthorizationRuleResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group within the azure subscription.
+        - id: namespaceName
+          type: string
+          description: The Namespace name
+        - id: eventHubName
+          type: string
+          description: The Event Hub name
+        - id: authorizationRuleName
+          type: string
+          description: The authorization rule name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventhub.EventHubsGetAuthorizationRuleOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventhub.EventHubsGetAuthorizationRuleResponse|beta"
+          />&gt;
+  - name: >-
+      listAuthorizationRules(string, string, string,
+      EventHubsListAuthorizationRulesOptionalParams)
+    uid: '@azure/arm-eventhub.EventHubs.listAuthorizationRules|beta'
+    package: '@azure/arm-eventhub|beta'
+    summary: Gets the authorization rules for an Event Hub.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listAuthorizationRules(resourceGroupName: string,
+        namespaceName: string, eventHubName: string, options?:
+        EventHubsListAuthorizationRulesOptionalParams):
+        PagedAsyncIterableIterator<AuthorizationRule>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group within the azure subscription.
+        - id: namespaceName
+          type: string
+          description: The Namespace name
+        - id: eventHubName
+          type: string
+          description: The Event Hub name
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventhub.EventHubsListAuthorizationRulesOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-eventhub.AuthorizationRule|beta" />&gt;
+  - name: listByNamespace(string, string, EventHubsListByNamespaceOptionalParams)
+    uid: '@azure/arm-eventhub.EventHubs.listByNamespace|beta'
+    package: '@azure/arm-eventhub|beta'
+    summary: Gets all the Event Hubs in a Namespace.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByNamespace(resourceGroupName: string, namespaceName:
+        string, options?: EventHubsListByNamespaceOptionalParams):
+        PagedAsyncIterableIterator<Eventhub>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group within the azure subscription.
+        - id: namespaceName
+          type: string
+          description: The Namespace name
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventhub.EventHubsListByNamespaceOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-eventhub.Eventhub|beta" />&gt;
+  - name: listKeys(string, string, string, string, EventHubsListKeysOptionalParams)
+    uid: '@azure/arm-eventhub.EventHubs.listKeys|beta'
+    package: '@azure/arm-eventhub|beta'
+    summary: Gets the ACS and SAS connection strings for the Event Hub.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listKeys(resourceGroupName: string, namespaceName: string,
+        eventHubName: string, authorizationRuleName: string, options?:
+        EventHubsListKeysOptionalParams): Promise<EventHubsListKeysResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group within the azure subscription.
+        - id: namespaceName
+          type: string
+          description: The Namespace name
+        - id: eventHubName
+          type: string
+          description: The Event Hub name
+        - id: authorizationRuleName
+          type: string
+          description: The authorization rule name.
+        - id: options
+          type: >-
+            <xref uid="@azure/arm-eventhub.EventHubsListKeysOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventhub.EventHubsListKeysResponse|beta" />&gt;
+  - name: >-
+      regenerateKeys(string, string, string, string,
+      RegenerateAccessKeyParameters, EventHubsRegenerateKeysOptionalParams)
+    uid: '@azure/arm-eventhub.EventHubs.regenerateKeys|beta'
+    package: '@azure/arm-eventhub|beta'
+    summary: Regenerates the ACS and SAS connection strings for the Event Hub.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function regenerateKeys(resourceGroupName: string, namespaceName:
+        string, eventHubName: string, authorizationRuleName: string, parameters:
+        RegenerateAccessKeyParameters, options?:
+        EventHubsRegenerateKeysOptionalParams):
+        Promise<EventHubsRegenerateKeysResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group within the azure subscription.
+        - id: namespaceName
+          type: string
+          description: The Namespace name
+        - id: eventHubName
+          type: string
+          description: The Event Hub name
+        - id: authorizationRuleName
+          type: string
+          description: The authorization rule name.
+        - id: parameters
+          type: >-
+            <xref uid="@azure/arm-eventhub.RegenerateAccessKeyParameters|beta"
+            />
+          description: |-
+            Parameters supplied to regenerate the AuthorizationRule Keys
+                              (PrimaryKey/SecondaryKey).
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventhub.EventHubsRegenerateKeysOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventhub.EventHubsRegenerateKeysResponse|beta" />&gt;

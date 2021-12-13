@@ -1,0 +1,132 @@
+### YamlMime:TSType
+name: Serializer
+uid: '@azure/core-http.Serializer|stable'
+package: '@azure/core-http|stable'
+summary: ''
+fullName: Serializer
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: 'Serializer([key: string]: any, boolean | undefined)'
+    uid: '@azure/core-http.Serializer.constructor|stable'
+    package: '@azure/core-http|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        new Serializer(modelMappers?: [key: string]: any, isXML?: boolean |
+        undefined)
+      parameters:
+        - id: modelMappers
+          type: '[key: string]\: any'
+          description: ''
+        - id: isXML
+          type: boolean | undefined
+          description: ''
+properties:
+  - name: isXML
+    uid: '@azure/core-http.Serializer.isXML|stable'
+    package: '@azure/core-http|stable'
+    summary: ''
+    fullName: isXML
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isXML?: boolean | undefined'
+      return:
+        description: ''
+        type: boolean | undefined
+  - name: modelMappers
+    uid: '@azure/core-http.Serializer.modelMappers|stable'
+    package: '@azure/core-http|stable'
+    summary: ''
+    fullName: modelMappers
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'modelMappers: [key: string]: any'
+      return:
+        description: ''
+        type: '[key: string]\: any'
+methods:
+  - name: deserialize(Mapper, unknown, string, SerializerOptions)
+    uid: '@azure/core-http.Serializer.deserialize|stable'
+    package: '@azure/core-http|stable'
+    summary: Deserialize the given object based on its metadata defined in the mapper
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function deserialize(mapper: Mapper, responseBody: unknown, objectName:
+        string, options?: SerializerOptions): any
+      parameters:
+        - id: mapper
+          type: <xref uid="@azure/core-http.Mapper|stable" />
+          description: The mapper which defines the metadata of the serializable object
+        - id: responseBody
+          type: unknown
+          description: A valid Javascript entity to be deserialized
+        - id: objectName
+          type: string
+          description: Name of the deserialized object
+        - id: options
+          type: <xref uid="@azure/core-http.SerializerOptions|stable" />
+          description: Controls behavior of XML parser and builder.
+      return:
+        description: A valid deserialized Javascript object
+        type: any
+  - name: serialize(Mapper, unknown, string, SerializerOptions)
+    uid: '@azure/core-http.Serializer.serialize|stable'
+    package: '@azure/core-http|stable'
+    summary: Serialize the given object based on its metadata defined in the mapper
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function serialize(mapper: Mapper, object: unknown, objectName?: string,
+        options?: SerializerOptions): any
+      parameters:
+        - id: mapper
+          type: <xref uid="@azure/core-http.Mapper|stable" />
+          description: The mapper which defines the metadata of the serializable object
+        - id: object
+          type: unknown
+          description: A valid Javascript object to be serialized
+        - id: objectName
+          type: string
+          description: Name of the serialized object
+        - id: options
+          type: <xref uid="@azure/core-http.SerializerOptions|stable" />
+          description: additional options to deserialization
+      return:
+        description: A valid serialized Javascript object
+        type: any
+  - name: validateConstraints(Mapper, unknown, string)
+    uid: '@azure/core-http.Serializer.validateConstraints|stable'
+    package: '@azure/core-http|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function validateConstraints(mapper: Mapper, value: unknown, objectName:
+        string)
+      parameters:
+        - id: mapper
+          type: <xref uid="@azure/core-http.Mapper|stable" />
+          description: ''
+        - id: value
+          type: unknown
+          description: ''
+        - id: objectName
+          type: string
+          description: ''

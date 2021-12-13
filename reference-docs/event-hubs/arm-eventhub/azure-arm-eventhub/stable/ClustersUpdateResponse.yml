@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: ClustersUpdateResponse
+uid: '@azure/arm-eventhub.ClustersUpdateResponse|stable'
+package: '@azure/arm-eventhub|stable'
+summary: Contains response data for the update operation.
+fullName: ClustersUpdateResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type ClustersUpdateResponse = Cluster & { _response: HttpResponse & {
+  bodyAsText: string, parsedBody: Cluster } }

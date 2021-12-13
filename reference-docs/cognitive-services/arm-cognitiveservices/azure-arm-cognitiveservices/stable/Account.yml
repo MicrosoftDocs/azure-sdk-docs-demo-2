@@ -1,0 +1,181 @@
+### YamlMime:TSType
+name: Account
+uid: '@azure/arm-cognitiveservices.Account|stable'
+package: '@azure/arm-cognitiveservices|stable'
+summary: >-
+  Cognitive Services account is an Azure resource representing the provisioned
+  account, it's type,
+
+  location and SKU.
+fullName: Account
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: etag
+    uid: '@azure/arm-cognitiveservices.Account.etag|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: >-
+      Resource Etag.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: etag
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'etag?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: id
+    uid: '@azure/arm-cognitiveservices.Account.id|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: >-
+      Fully qualified resource ID for the resource. Ex -
+
+      /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: identity
+    uid: '@azure/arm-cognitiveservices.Account.identity|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: ''
+    fullName: identity
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'identity?: Identity'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-cognitiveservices.Identity|stable" />
+  - name: kind
+    uid: '@azure/arm-cognitiveservices.Account.kind|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: The Kind of the resource.
+    fullName: kind
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'kind?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: location
+    uid: '@azure/arm-cognitiveservices.Account.location|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: The geo-location where the resource lives
+    fullName: location
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'location?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: name
+    uid: '@azure/arm-cognitiveservices.Account.name|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: >-
+      The name of the resource
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: properties
+    uid: '@azure/arm-cognitiveservices.Account.properties|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: Properties of Cognitive Services account.
+    fullName: properties
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'properties?: AccountProperties'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-cognitiveservices.AccountProperties|stable" />
+  - name: sku
+    uid: '@azure/arm-cognitiveservices.Account.sku|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: ''
+    fullName: sku
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sku?: Sku'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-cognitiveservices.Sku|stable" />
+  - name: systemData
+    uid: '@azure/arm-cognitiveservices.Account.systemData|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: >-
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: systemData
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'systemData?: SystemData'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-cognitiveservices.SystemData|stable" />
+  - name: tags
+    uid: '@azure/arm-cognitiveservices.Account.tags|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: Resource tags.
+    fullName: tags
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tags?: undefined | [key: string]: string'
+      return:
+        description: ''
+        type: 'undefined | [key: string]: string'
+  - name: type
+    uid: '@azure/arm-cognitiveservices.Account.type|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: >-
+      The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or
+
+      "Microsoft.Storage/storageAccounts"
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+extends: <xref uid="@azure/arm-cognitiveservices.AzureEntityResource|stable" />

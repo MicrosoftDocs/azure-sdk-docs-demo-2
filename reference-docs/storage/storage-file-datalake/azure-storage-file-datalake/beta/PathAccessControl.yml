@@ -1,0 +1,65 @@
+### YamlMime:TSType
+name: PathAccessControl
+uid: '@azure/storage-file-datalake.PathAccessControl|beta'
+package: '@azure/storage-file-datalake|beta'
+summary: ''
+fullName: PathAccessControl
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: acl
+    uid: '@azure/storage-file-datalake.PathAccessControl.acl|beta'
+    package: '@azure/storage-file-datalake|beta'
+    summary: ''
+    fullName: acl
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'acl: PathAccessControlItem[]'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/storage-file-datalake.PathAccessControlItem|beta"
+          />[]
+  - name: group
+    uid: '@azure/storage-file-datalake.PathAccessControl.group|beta'
+    package: '@azure/storage-file-datalake|beta'
+    summary: ''
+    fullName: group
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'group?: string'
+      return:
+        description: ''
+        type: string
+  - name: owner
+    uid: '@azure/storage-file-datalake.PathAccessControl.owner|beta'
+    package: '@azure/storage-file-datalake|beta'
+    summary: ''
+    fullName: owner
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'owner?: string'
+      return:
+        description: ''
+        type: string
+  - name: permissions
+    uid: '@azure/storage-file-datalake.PathAccessControl.permissions|beta'
+    package: '@azure/storage-file-datalake|beta'
+    summary: ''
+    fullName: permissions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'permissions?: PathPermissions'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-file-datalake.PathPermissions|beta" />

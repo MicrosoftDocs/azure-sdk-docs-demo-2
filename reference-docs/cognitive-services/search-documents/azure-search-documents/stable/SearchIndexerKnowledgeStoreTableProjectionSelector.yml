@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: SearchIndexerKnowledgeStoreTableProjectionSelector
+uid: >-
+  @azure/search-documents.SearchIndexerKnowledgeStoreTableProjectionSelector|stable
+package: '@azure/search-documents|stable'
+summary: Description for what data to store in Azure Tables.
+fullName: SearchIndexerKnowledgeStoreTableProjectionSelector
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type SearchIndexerKnowledgeStoreTableProjectionSelector =
+  SearchIndexerKnowledgeStoreProjectionSelector & { tableName: string }

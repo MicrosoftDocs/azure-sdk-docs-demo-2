@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: DeletedAccountsListNextResponse
+uid: '@azure/arm-storage.DeletedAccountsListNextResponse|stable'
+package: '@azure/arm-storage|stable'
+summary: Contains response data for the listNext operation.
+fullName: DeletedAccountsListNextResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type DeletedAccountsListNextResponse = DeletedAccountListResult & { _response:
+  HttpResponse & { bodyAsText: string, parsedBody: DeletedAccountListResult } }

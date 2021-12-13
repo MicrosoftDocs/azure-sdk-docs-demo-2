@@ -1,0 +1,87 @@
+### YamlMime:TSType
+name: Skus
+uid: '@azure/arm-storage.Skus|stable'
+package: '@azure/arm-storage|stable'
+summary: Class representing a Skus.
+fullName: Skus
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: Skus(StorageManagementClientContext)
+    uid: '@azure/arm-storage.Skus.constructor|stable'
+    package: '@azure/arm-storage|stable'
+    summary: Create a Skus.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'new Skus(client: StorageManagementClientContext)'
+      parameters:
+        - id: client
+          type: >-
+            <xref uid="@azure/arm-storage.StorageManagementClientContext|stable"
+            />
+          description: |
+            Reference to the service client.
+methods:
+  - name: list(msRest.RequestOptionsBase)
+    uid: '@azure/arm-storage.Skus.list|stable'
+    package: '@azure/arm-storage|stable'
+    summary: >-
+      Lists the available SKUs supported by Microsoft.Storage for given
+      subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(options?: msRest.RequestOptionsBase):
+        Promise<Models.SkusListResponse>
+      parameters:
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.SkusListResponse>
+        type: >-
+          Promise&lt;<xref uid="@azure/arm-storage.SkusListResponse|stable"
+          />&gt;
+  - name: list(RequestOptionsBase, ServiceCallback<StorageSkuListResult>)
+    uid: '@azure/arm-storage.Skus.list_2|stable'
+    package: '@azure/arm-storage|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(options: RequestOptionsBase, callback:
+        ServiceCallback<StorageSkuListResult>)
+      parameters:
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-storage.StorageSkuListResult|stable" />&gt;
+          description: |
+            The callback
+  - name: list(ServiceCallback<StorageSkuListResult>)
+    uid: '@azure/arm-storage.Skus.list_1|stable'
+    package: '@azure/arm-storage|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function list(callback: ServiceCallback<StorageSkuListResult>)'
+      parameters:
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-storage.StorageSkuListResult|stable" />&gt;
+          description: |
+            The callback

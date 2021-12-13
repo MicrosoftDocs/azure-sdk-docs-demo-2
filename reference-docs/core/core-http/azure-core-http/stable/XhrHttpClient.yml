@@ -1,0 +1,31 @@
+### YamlMime:TSType
+name: XhrHttpClient
+uid: '@azure/core-http.XhrHttpClient|stable'
+package: '@azure/core-http|stable'
+summary: A HttpClient implementation that uses XMLHttpRequest to send HTTP requests.
+fullName: XhrHttpClient
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+methods:
+  - name: sendRequest(WebResourceLike)
+    uid: '@azure/core-http.XhrHttpClient.sendRequest|stable'
+    package: '@azure/core-http|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function sendRequest(request: WebResourceLike):
+        Promise<HttpOperationResponse>
+      parameters:
+        - id: request
+          type: <xref uid="@azure/core-http.WebResourceLike|stable" />
+          description: ''
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref uid="@azure/core-http.HttpOperationResponse|stable"
+          />&gt;

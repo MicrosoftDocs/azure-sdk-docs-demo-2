@@ -1,0 +1,39 @@
+### YamlMime:TSType
+name: VerifyResult
+uid: '@azure/keyvault-keys.VerifyResult|beta'
+package: '@azure/keyvault-keys|beta'
+summary: Result of the <xref:@azure/keyvault-keys.CryptographyClient.verify> operation.
+fullName: VerifyResult
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: keyID
+    uid: '@azure/keyvault-keys.VerifyResult.keyID|beta'
+    package: '@azure/keyvault-keys|beta'
+    summary: The ID of the Key Vault Key used to verify the data.
+    fullName: keyID
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'keyID?: string'
+      return:
+        description: ''
+        type: string
+  - name: result
+    uid: '@azure/keyvault-keys.VerifyResult.result|beta'
+    package: '@azure/keyvault-keys|beta'
+    summary: >-
+      Result of the <xref:@azure/keyvault-keys.CryptographyClient.verify>
+      operation in bytes.
+    fullName: result
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'result: boolean'
+      return:
+        description: ''
+        type: boolean

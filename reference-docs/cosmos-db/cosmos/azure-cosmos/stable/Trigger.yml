@@ -1,0 +1,112 @@
+### YamlMime:TSType
+name: Trigger
+uid: '@azure/cosmos.Trigger|stable'
+package: '@azure/cosmos|stable'
+summary: |
+  Operations to read, replace, or delete a <xref:@azure/cosmos.Trigger>.
+  Use `container.triggers` to create, upsert, query, or read all.
+fullName: Trigger
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: container
+    uid: '@azure/cosmos.Trigger.container|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: container
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'container: Container'
+      return:
+        description: ''
+        type: <xref uid="@azure/cosmos.Container|stable" />
+  - name: id
+    uid: '@azure/cosmos.Trigger.id|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id: string'
+      return:
+        description: ''
+        type: string
+  - name: url
+    uid: '@azure/cosmos.Trigger.url|stable'
+    package: '@azure/cosmos|stable'
+    summary: Returns a reference URL to the resource. Used for linking in Permissions.
+    fullName: url
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: string url
+      return:
+        description: ''
+        type: string
+methods:
+  - name: delete(RequestOptions)
+    uid: '@azure/cosmos.Trigger.delete|stable'
+    package: '@azure/cosmos|stable'
+    summary: Delete the given <xref:@azure/cosmos.Trigger>.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function delete(options?: RequestOptions): Promise<TriggerResponse>'
+      parameters:
+        - id: options
+          type: <xref uid="@azure/cosmos.RequestOptions|stable" />
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;<xref uid="@azure/cosmos.TriggerResponse|stable" />&gt;
+  - name: read(RequestOptions)
+    uid: '@azure/cosmos.Trigger.read|stable'
+    package: '@azure/cosmos|stable'
+    summary: >-
+      Read the <xref:@azure/cosmos.TriggerDefinition> for the given
+      <xref:@azure/cosmos.Trigger>.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function read(options?: RequestOptions): Promise<TriggerResponse>'
+      parameters:
+        - id: options
+          type: <xref uid="@azure/cosmos.RequestOptions|stable" />
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;<xref uid="@azure/cosmos.TriggerResponse|stable" />&gt;
+  - name: replace(TriggerDefinition, RequestOptions)
+    uid: '@azure/cosmos.Trigger.replace|stable'
+    package: '@azure/cosmos|stable'
+    summary: >-
+      Replace the given <xref:@azure/cosmos.Trigger> with the specified
+      <xref:@azure/cosmos.TriggerDefinition>.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function replace(body: TriggerDefinition, options?: RequestOptions):
+        Promise<TriggerResponse>
+      parameters:
+        - id: body
+          type: <xref uid="@azure/cosmos.TriggerDefinition|stable" />
+          description: >
+            The specified <xref:@azure/cosmos.TriggerDefinition> to replace the
+            existing definition with.
+        - id: options
+          type: <xref uid="@azure/cosmos.RequestOptions|stable" />
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;<xref uid="@azure/cosmos.TriggerResponse|stable" />&gt;

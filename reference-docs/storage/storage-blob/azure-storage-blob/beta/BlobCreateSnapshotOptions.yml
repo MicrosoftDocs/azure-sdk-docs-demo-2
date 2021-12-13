@@ -1,0 +1,107 @@
+### YamlMime:TSType
+name: BlobCreateSnapshotOptions
+uid: '@azure/storage-blob.BlobCreateSnapshotOptions|beta'
+package: '@azure/storage-blob|beta'
+summary: >-
+  Options to configure the
+  <xref:@azure/storage-blob.AppendBlobClient.createSnapshot> operation.
+fullName: BlobCreateSnapshotOptions
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: abortSignal
+    uid: '@azure/storage-blob.BlobCreateSnapshotOptions.abortSignal|beta'
+    package: '@azure/storage-blob|beta'
+    summary: >-
+      An implementation of the `AbortSignalLike` interface to signal the request
+      to cancel the operation.
+
+      For example, use the &commat;azure/abort-controller to create an
+      `AbortSignal`.
+    fullName: abortSignal
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'abortSignal?: AbortSignalLike'
+      return:
+        description: ''
+        type: AbortSignalLike
+  - name: conditions
+    uid: '@azure/storage-blob.BlobCreateSnapshotOptions.conditions|beta'
+    package: '@azure/storage-blob|beta'
+    summary: Conditions to meet when creating blob snapshots.
+    fullName: conditions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'conditions?: BlobRequestConditions'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-blob.BlobRequestConditions|beta" />
+  - name: customerProvidedKey
+    uid: '@azure/storage-blob.BlobCreateSnapshotOptions.customerProvidedKey|beta'
+    package: '@azure/storage-blob|beta'
+    summary: Customer Provided Key Info.
+    fullName: customerProvidedKey
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'customerProvidedKey?: CpkInfo'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-blob.CpkInfo|beta" />
+  - name: encryptionScope
+    uid: '@azure/storage-blob.BlobCreateSnapshotOptions.encryptionScope|beta'
+    package: '@azure/storage-blob|beta'
+    summary: >-
+      Optional. Version 2019-07-07 and later.  Specifies the name of the
+      encryption scope to use to
+
+      encrypt the data provided in the request. If not specified, encryption is
+      performed with the
+
+      default account encryption scope.  For more information, see Encryption at
+      Rest for Azure
+
+      Storage Services.
+    fullName: encryptionScope
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'encryptionScope?: string'
+      return:
+        description: ''
+        type: string
+  - name: metadata
+    uid: '@azure/storage-blob.BlobCreateSnapshotOptions.metadata|beta'
+    package: '@azure/storage-blob|beta'
+    summary: A collection of key-value string pair to associate with the snapshot.
+    fullName: metadata
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'metadata?: Metadata'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-blob.Metadata|beta" />
+  - name: tracingOptions
+    uid: '@azure/storage-blob.BlobCreateSnapshotOptions.tracingOptions|beta'
+    package: '@azure/storage-blob|beta'
+    summary: Options to configure spans created when tracing is enabled.
+    fullName: tracingOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tracingOptions?: OperationTracingOptions'
+      return:
+        description: ''
+        type: OperationTracingOptions
+extends: <xref uid="@azure/storage-blob.CommonOptions|beta" />

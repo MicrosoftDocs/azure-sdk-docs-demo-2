@@ -1,0 +1,102 @@
+### YamlMime:TSType
+name: Usages
+uid: '@azure/arm-storage.Usages|stable'
+package: '@azure/arm-storage|stable'
+summary: Class representing a Usages.
+fullName: Usages
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: Usages(StorageManagementClientContext)
+    uid: '@azure/arm-storage.Usages.constructor|stable'
+    package: '@azure/arm-storage|stable'
+    summary: Create a Usages.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'new Usages(client: StorageManagementClientContext)'
+      parameters:
+        - id: client
+          type: >-
+            <xref uid="@azure/arm-storage.StorageManagementClientContext|stable"
+            />
+          description: |
+            Reference to the service client.
+methods:
+  - name: listByLocation(string, msRest.RequestOptionsBase)
+    uid: '@azure/arm-storage.Usages.listByLocation|stable'
+    package: '@azure/arm-storage|stable'
+    summary: >-
+      Gets the current usage count and the limit for the resources of the
+      location under the
+
+      subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByLocation(location: string, options?:
+        msRest.RequestOptionsBase): Promise<Models.UsagesListByLocationResponse>
+      parameters:
+        - id: location
+          type: string
+          description: The location of the Azure Storage resource.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.UsagesListByLocationResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-storage.UsagesListByLocationResponse|stable" />&gt;
+  - name: >-
+      listByLocation(string, RequestOptionsBase,
+      ServiceCallback<UsageListResult>)
+    uid: '@azure/arm-storage.Usages.listByLocation_2|stable'
+    package: '@azure/arm-storage|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByLocation(location: string, options: RequestOptionsBase,
+        callback: ServiceCallback<UsageListResult>)
+      parameters:
+        - id: location
+          type: string
+          description: The location of the Azure Storage resource.
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-storage.UsageListResult|stable" />&gt;
+          description: |
+            The callback
+  - name: listByLocation(string, ServiceCallback<UsageListResult>)
+    uid: '@azure/arm-storage.Usages.listByLocation_1|stable'
+    package: '@azure/arm-storage|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByLocation(location: string, callback:
+        ServiceCallback<UsageListResult>)
+      parameters:
+        - id: location
+          type: string
+          description: The location of the Azure Storage resource.
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-storage.UsageListResult|stable" />&gt;
+          description: |
+            The callback

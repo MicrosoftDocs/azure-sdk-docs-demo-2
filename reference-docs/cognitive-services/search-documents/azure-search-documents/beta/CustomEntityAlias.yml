@@ -1,0 +1,65 @@
+### YamlMime:TSType
+name: CustomEntityAlias
+uid: '@azure/search-documents.CustomEntityAlias|beta'
+package: '@azure/search-documents|beta'
+summary: >-
+  A complex object that can be used to specify alternative spellings or synonyms
+  to the root entity name.
+fullName: CustomEntityAlias
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: accentSensitive
+    uid: '@azure/search-documents.CustomEntityAlias.accentSensitive|beta'
+    package: '@azure/search-documents|beta'
+    summary: Determine if the alias is accent sensitive.
+    fullName: accentSensitive
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'accentSensitive?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: caseSensitive
+    uid: '@azure/search-documents.CustomEntityAlias.caseSensitive|beta'
+    package: '@azure/search-documents|beta'
+    summary: Determine if the alias is case sensitive.
+    fullName: caseSensitive
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'caseSensitive?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: fuzzyEditDistance
+    uid: '@azure/search-documents.CustomEntityAlias.fuzzyEditDistance|beta'
+    package: '@azure/search-documents|beta'
+    summary: Determine the fuzzy edit distance of the alias.
+    fullName: fuzzyEditDistance
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'fuzzyEditDistance?: number'
+      return:
+        description: ''
+        type: number
+  - name: text
+    uid: '@azure/search-documents.CustomEntityAlias.text|beta'
+    package: '@azure/search-documents|beta'
+    summary: The text of the alias.
+    fullName: text
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'text: string'
+      return:
+        description: ''
+        type: string

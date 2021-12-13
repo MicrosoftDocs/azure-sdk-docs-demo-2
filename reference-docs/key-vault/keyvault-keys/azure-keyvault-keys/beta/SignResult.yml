@@ -1,0 +1,54 @@
+### YamlMime:TSType
+name: SignResult
+uid: '@azure/keyvault-keys.SignResult|beta'
+package: '@azure/keyvault-keys|beta'
+summary: Result of the <xref:@azure/keyvault-keys.CryptographyClient.sign> operation.
+fullName: SignResult
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: algorithm
+    uid: '@azure/keyvault-keys.SignResult.algorithm|beta'
+    package: '@azure/keyvault-keys|beta'
+    summary: >-
+      The <xref:@azure/keyvault-keys.KnownKeyExportEncryptionAlgorithm> used to
+      sign the data.
+    fullName: algorithm
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'algorithm: SignatureAlgorithm'
+      return:
+        description: ''
+        type: <xref uid="@azure/keyvault-keys.SignatureAlgorithm|beta" />
+  - name: keyID
+    uid: '@azure/keyvault-keys.SignResult.keyID|beta'
+    package: '@azure/keyvault-keys|beta'
+    summary: The ID of the Key Vault Key used to sign the data.
+    fullName: keyID
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'keyID?: string'
+      return:
+        description: ''
+        type: string
+  - name: result
+    uid: '@azure/keyvault-keys.SignResult.result|beta'
+    package: '@azure/keyvault-keys|beta'
+    summary: >-
+      Result of the <xref:@azure/keyvault-keys.CryptographyClient.sign>
+      operation in bytes.
+    fullName: result
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'result: Uint8Array'
+      return:
+        description: ''
+        type: Uint8Array

@@ -1,0 +1,50 @@
+### YamlMime:TSType
+name: CoreSubjectAlternativeNames
+uid: '@azure/keyvault-certificates.CoreSubjectAlternativeNames|beta'
+package: '@azure/keyvault-certificates|beta'
+summary: The subject alternate names of a X509 object.
+fullName: CoreSubjectAlternativeNames
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: dnsNames
+    uid: '@azure/keyvault-certificates.CoreSubjectAlternativeNames.dnsNames|beta'
+    package: '@azure/keyvault-certificates|beta'
+    summary: Domain names.
+    fullName: dnsNames
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dnsNames?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: emails
+    uid: '@azure/keyvault-certificates.CoreSubjectAlternativeNames.emails|beta'
+    package: '@azure/keyvault-certificates|beta'
+    summary: Email addresses.
+    fullName: emails
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'emails?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: upns
+    uid: '@azure/keyvault-certificates.CoreSubjectAlternativeNames.upns|beta'
+    package: '@azure/keyvault-certificates|beta'
+    summary: User principal names.
+    fullName: upns
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'upns?: string[]'
+      return:
+        description: ''
+        type: string[]

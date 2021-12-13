@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: PathGetPropertiesResponse
+uid: '@azure/storage-file-datalake.PathGetPropertiesResponse|stable'
+package: '@azure/storage-file-datalake|stable'
+summary: ''
+fullName: PathGetPropertiesResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type PathGetPropertiesResponse = PathGetPropertiesHeaders & { _response:
+  HttpResponse & { parsedHeaders: PathGetPropertiesHeaders } }

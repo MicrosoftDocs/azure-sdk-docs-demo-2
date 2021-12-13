@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: QueuesGetResponse
+uid: '@azure/arm-servicebus.QueuesGetResponse|stable'
+package: '@azure/arm-servicebus|stable'
+summary: Contains response data for the get operation.
+fullName: QueuesGetResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type QueuesGetResponse = SBQueue & { _response: HttpResponse & { bodyAsText:
+  string, parsedBody: SBQueue } }

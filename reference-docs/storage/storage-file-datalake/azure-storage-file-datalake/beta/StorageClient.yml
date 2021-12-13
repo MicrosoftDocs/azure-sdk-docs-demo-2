@@ -1,0 +1,64 @@
+### YamlMime:TSType
+name: StorageClient
+uid: '@azure/storage-file-datalake.StorageClient|beta'
+package: '@azure/storage-file-datalake|beta'
+summary: >-
+  A StorageClient represents a based URL class for BlobServiceClient,
+  ContainerClient
+
+  and etc.
+fullName: StorageClient
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: accountName
+    uid: '@azure/storage-file-datalake.StorageClient.accountName|beta'
+    package: '@azure/storage-file-datalake|beta'
+    summary: ''
+    fullName: accountName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'accountName: string'
+      return:
+        description: ''
+        type: string
+  - name: credential
+    uid: '@azure/storage-file-datalake.StorageClient.credential|beta'
+    package: '@azure/storage-file-datalake|beta'
+    summary: >-
+      Such as AnonymousCredential, StorageSharedKeyCredential or any credential
+      from the `@azure/identity` package to authenticate requests to the
+      service. You can also provide an object that implements the
+      TokenCredential interface. If not specified, AnonymousCredential is used.
+    fullName: credential
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        credential: StorageSharedKeyCredential | AnonymousCredential |
+        TokenCredential
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/storage-file-datalake.StorageSharedKeyCredential|beta" />
+          | <xref uid="@azure/storage-file-datalake.AnonymousCredential|beta" />
+          | TokenCredential
+  - name: url
+    uid: '@azure/storage-file-datalake.StorageClient.url|beta'
+    package: '@azure/storage-file-datalake|beta'
+    summary: Encoded URL string value.
+    fullName: url
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'url: string'
+      return:
+        description: ''
+        type: string

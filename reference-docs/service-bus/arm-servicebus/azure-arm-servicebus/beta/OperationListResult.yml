@@ -1,0 +1,48 @@
+### YamlMime:TSType
+name: OperationListResult
+uid: '@azure/arm-servicebus.OperationListResult|beta'
+package: '@azure/arm-servicebus|beta'
+summary: >-
+  Result of the request to list ServiceBus operations. It contains a list of
+  operations and a URL link to get the next set of results.
+fullName: OperationListResult
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: nextLink
+    uid: '@azure/arm-servicebus.OperationListResult.nextLink|beta'
+    package: '@azure/arm-servicebus|beta'
+    summary: >-
+      URL to get the next set of operation list results if there are any.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: nextLink
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nextLink?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: value
+    uid: '@azure/arm-servicebus.OperationListResult.value|beta'
+    package: '@azure/arm-servicebus|beta'
+    summary: >-
+      List of ServiceBus operations supported by the Microsoft.ServiceBus
+      resource provider.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: value
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: Operation[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-servicebus.Operation|beta" />[]

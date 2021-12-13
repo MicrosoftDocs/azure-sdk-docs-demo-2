@@ -1,0 +1,132 @@
+### YamlMime:TSEnum
+name: KnownKeyVaultDataAction
+uid: '@azure/keyvault-admin.KnownKeyVaultDataAction|stable'
+package: '@azure/keyvault-admin|stable'
+summary: >-
+  Known values of <xref:@azure/keyvault-admin.KnownKeyVaultDataAction> that the
+  service accepts.
+fullName: KnownKeyVaultDataAction
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: BackupHsmKeys
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.BackupHsmKeys|stable'
+    package: '@azure/keyvault-admin|stable'
+    summary: Backup HSM keys.
+  - name: CreateHsmKey
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.CreateHsmKey|stable'
+    package: '@azure/keyvault-admin|stable'
+    summary: Create an HSM key.
+  - name: DecryptHsmKey
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.DecryptHsmKey|stable'
+    package: '@azure/keyvault-admin|stable'
+    summary: Decrypt using an HSM key.
+  - name: DeleteHsmKey
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.DeleteHsmKey|stable'
+    package: '@azure/keyvault-admin|stable'
+    summary: Delete an HSM key.
+  - name: DeleteRoleAssignment
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.DeleteRoleAssignment|stable'
+    package: '@azure/keyvault-admin|stable'
+    summary: Delete role assignment.
+  - name: DownloadHsmSecurityDomain
+    uid: >-
+      @azure/keyvault-admin.KnownKeyVaultDataAction.DownloadHsmSecurityDomain|stable
+    package: '@azure/keyvault-admin|stable'
+    summary: Download an HSM security domain.
+  - name: EncryptHsmKey
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.EncryptHsmKey|stable'
+    package: '@azure/keyvault-admin|stable'
+    summary: Encrypt using an HSM key.
+  - name: ExportHsmKey
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.ExportHsmKey|stable'
+    package: '@azure/keyvault-admin|stable'
+    summary: Export an HSM key.
+  - name: GetRoleAssignment
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.GetRoleAssignment|stable'
+    package: '@azure/keyvault-admin|stable'
+    summary: Get role assignment.
+  - name: ImportHsmKey
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.ImportHsmKey|stable'
+    package: '@azure/keyvault-admin|stable'
+    summary: Import an HSM key.
+  - name: PurgeDeletedHsmKey
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.PurgeDeletedHsmKey|stable'
+    package: '@azure/keyvault-admin|stable'
+    summary: Purge a deleted HSM key.
+  - name: ReadDeletedHsmKey
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.ReadDeletedHsmKey|stable'
+    package: '@azure/keyvault-admin|stable'
+    summary: Read deleted HSM key.
+  - name: ReadHsmBackupStatus
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.ReadHsmBackupStatus|stable'
+    package: '@azure/keyvault-admin|stable'
+    summary: Read an HSM backup status.
+  - name: ReadHsmKey
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.ReadHsmKey|stable'
+    package: '@azure/keyvault-admin|stable'
+    summary: Read HSM key metadata.
+  - name: ReadHsmRestoreStatus
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.ReadHsmRestoreStatus|stable'
+    package: '@azure/keyvault-admin|stable'
+    summary: Read an HSM restore status.
+  - name: ReadHsmSecurityDomainStatus
+    uid: >-
+      @azure/keyvault-admin.KnownKeyVaultDataAction.ReadHsmSecurityDomainStatus|stable
+    package: '@azure/keyvault-admin|stable'
+    summary: Check the status of the HSM security domain exchange file.
+  - name: ReadHsmSecurityDomainTransferKey
+    uid: >-
+      @azure/keyvault-admin.KnownKeyVaultDataAction.ReadHsmSecurityDomainTransferKey|stable
+    package: '@azure/keyvault-admin|stable'
+    summary: Download an HSM security domain transfer key.
+  - name: ReadRoleDefinition
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.ReadRoleDefinition|stable'
+    package: '@azure/keyvault-admin|stable'
+    summary: Get role definition.
+  - name: RecoverDeletedHsmKey
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.RecoverDeletedHsmKey|stable'
+    package: '@azure/keyvault-admin|stable'
+    summary: Recover deleted HSM key.
+  - name: RestoreHsmKeys
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.RestoreHsmKeys|stable'
+    package: '@azure/keyvault-admin|stable'
+    summary: Restore HSM keys.
+  - name: SignHsmKey
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.SignHsmKey|stable'
+    package: '@azure/keyvault-admin|stable'
+    summary: Sign using an HSM key.
+  - name: StartHsmBackup
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.StartHsmBackup|stable'
+    package: '@azure/keyvault-admin|stable'
+    summary: Start an HSM backup.
+  - name: StartHsmRestore
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.StartHsmRestore|stable'
+    package: '@azure/keyvault-admin|stable'
+    summary: Start an HSM restore.
+  - name: UnwrapHsmKey
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.UnwrapHsmKey|stable'
+    package: '@azure/keyvault-admin|stable'
+    summary: Unwrap using an HSM key.
+  - name: UploadHsmSecurityDomain
+    uid: >-
+      @azure/keyvault-admin.KnownKeyVaultDataAction.UploadHsmSecurityDomain|stable
+    package: '@azure/keyvault-admin|stable'
+    summary: Upload an HSM security domain.
+  - name: VerifyHsmKey
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.VerifyHsmKey|stable'
+    package: '@azure/keyvault-admin|stable'
+    summary: Verify using an HSM key.
+  - name: WrapHsmKey
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.WrapHsmKey|stable'
+    package: '@azure/keyvault-admin|stable'
+    summary: Wrap using an HSM key.
+  - name: WriteHsmKey
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.WriteHsmKey|stable'
+    package: '@azure/keyvault-admin|stable'
+    summary: Update an HSM key.
+  - name: WriteRoleAssignment
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.WriteRoleAssignment|stable'
+    package: '@azure/keyvault-admin|stable'
+    summary: Create or update role assignment.

@@ -1,0 +1,43 @@
+### YamlMime:TSType
+name: DiagnosticsInfo
+uid: '@azure/ai-anomaly-detector.DiagnosticsInfo|beta'
+package: '@azure/ai-anomaly-detector|beta'
+summary: ''
+fullName: DiagnosticsInfo
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: modelState
+    uid: '@azure/ai-anomaly-detector.DiagnosticsInfo.modelState|beta'
+    package: '@azure/ai-anomaly-detector|beta'
+    summary: ''
+    fullName: modelState
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'modelState?: AnomalyDetectorClientModelState'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/ai-anomaly-detector.AnomalyDetectorClientModelState|beta"
+          />
+  - name: variableStates
+    uid: '@azure/ai-anomaly-detector.DiagnosticsInfo.variableStates|beta'
+    package: '@azure/ai-anomaly-detector|beta'
+    summary: ''
+    fullName: variableStates
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'variableStates?: AnomalyDetectorClientVariableState[]'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/ai-anomaly-detector.AnomalyDetectorClientVariableState|beta"
+          />[]

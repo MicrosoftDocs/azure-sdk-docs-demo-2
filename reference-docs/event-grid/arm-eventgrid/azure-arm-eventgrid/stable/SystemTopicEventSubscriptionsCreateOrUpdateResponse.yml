@@ -1,0 +1,14 @@
+### YamlMime:TSTypeAlias
+name: SystemTopicEventSubscriptionsCreateOrUpdateResponse
+uid: >-
+  @azure/arm-eventgrid.SystemTopicEventSubscriptionsCreateOrUpdateResponse|stable
+package: '@azure/arm-eventgrid|stable'
+summary: Contains response data for the createOrUpdate operation.
+fullName: SystemTopicEventSubscriptionsCreateOrUpdateResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type SystemTopicEventSubscriptionsCreateOrUpdateResponse = EventSubscription &
+  { _response: HttpResponse & { bodyAsText: string, parsedBody:
+  EventSubscription } }

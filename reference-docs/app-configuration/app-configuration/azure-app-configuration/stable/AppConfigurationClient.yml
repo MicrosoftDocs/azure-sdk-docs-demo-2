@@ -1,0 +1,388 @@
+### YamlMime:TSType
+name: AppConfigurationClient
+uid: '@azure/app-configuration.AppConfigurationClient|stable'
+package: '@azure/app-configuration|stable'
+summary: Client for the Azure App Configuration service.
+fullName: AppConfigurationClient
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: AppConfigurationClient(string, AppConfigurationClientOptions)
+    uid: '@azure/app-configuration.AppConfigurationClient.constructor|stable'
+    package: '@azure/app-configuration|stable'
+    summary: Initializes a new instance of the AppConfigurationClient class.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        new AppConfigurationClient(connectionString: string, options?:
+        AppConfigurationClientOptions)
+      parameters:
+        - id: connectionString
+          type: string
+          description: Connection string needed for a client to connect to Azure.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/app-configuration.AppConfigurationClientOptions|stable"
+            />
+          description: |
+            Options for the AppConfigurationClient.
+  - name: >-
+      AppConfigurationClient(string, TokenCredential,
+      AppConfigurationClientOptions)
+    uid: '@azure/app-configuration.AppConfigurationClient.constructor_1|stable'
+    package: '@azure/app-configuration|stable'
+    summary: |-
+      Initializes a new instance of the AppConfigurationClient class using
+      a TokenCredential.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        new AppConfigurationClient(endpoint: string, tokenCredential:
+        TokenCredential, options?: AppConfigurationClientOptions)
+      parameters:
+        - id: endpoint
+          type: string
+          description: >-
+            The endpoint of the App Configuration service (ex:
+            https://sample.azconfig.io).
+        - id: tokenCredential
+          type: TokenCredential
+          description: >-
+            An object that implements the `TokenCredential` interface used to
+            authenticate requests to the service. Use the \@azure/identity
+            package to create a credential that suits your needs.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/app-configuration.AppConfigurationClientOptions|stable"
+            />
+          description: |
+            Options for the AppConfigurationClient.
+methods:
+  - name: >-
+      addConfigurationSetting(AddConfigurationSettingParam |
+      AddConfigurationSettingParam<FeatureFlagValue> |
+      AddConfigurationSettingParam<SecretReferenceValue>,
+      AddConfigurationSettingOptions)
+    uid: >-
+      @azure/app-configuration.AppConfigurationClient.addConfigurationSetting|stable
+    package: '@azure/app-configuration|stable'
+    summary: >-
+      Add a setting into the Azure App Configuration service, failing if it
+
+      already exists.
+
+      Example usage:
+
+      ```ts
+
+      const result = await client.addConfigurationSetting({ key: "MyKey", label:
+      "MyLabel", value: "MyValue" });
+
+      ```
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function addConfigurationSetting(configurationSetting:
+        AddConfigurationSettingParam |
+        AddConfigurationSettingParam<FeatureFlagValue> |
+        AddConfigurationSettingParam<SecretReferenceValue>, options?:
+        AddConfigurationSettingOptions):
+        Promise<AddConfigurationSettingResponse>
+      parameters:
+        - id: configurationSetting
+          type: >-
+            <xref
+            uid="@azure/app-configuration.AddConfigurationSettingParam|stable"
+            /> | <xref
+            uid="@azure/app-configuration.AddConfigurationSettingParam|stable"
+            />&lt;<xref uid="@azure/app-configuration.FeatureFlagValue|stable"
+            />&gt; | <xref
+            uid="@azure/app-configuration.AddConfigurationSettingParam|stable"
+            />&lt;<xref
+            uid="@azure/app-configuration.SecretReferenceValue|stable" />&gt;
+          description: A configuration setting.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/app-configuration.AddConfigurationSettingOptions|stable"
+            />
+          description: |
+            Optional parameters for the request.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/app-configuration.AddConfigurationSettingResponse|stable"
+          />&gt;
+  - name: >-
+      deleteConfigurationSetting(ConfigurationSettingId,
+      DeleteConfigurationSettingOptions)
+    uid: >-
+      @azure/app-configuration.AppConfigurationClient.deleteConfigurationSetting|stable
+    package: '@azure/app-configuration|stable'
+    summary: >-
+      Delete a setting from the Azure App Configuration service
+
+      Example usage:
+
+      ```ts
+
+      const deletedSetting = await client.deleteConfigurationSetting({ key:
+      "MyKey", label: "MyLabel" });
+
+      ```
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function deleteConfigurationSetting(id: ConfigurationSettingId,
+        options?: DeleteConfigurationSettingOptions):
+        Promise<DeleteConfigurationSettingResponse>
+      parameters:
+        - id: id
+          type: >-
+            <xref uid="@azure/app-configuration.ConfigurationSettingId|stable"
+            />
+          description: The id of the configuration setting to delete.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/app-configuration.DeleteConfigurationSettingOptions|stable"
+            />
+          description: |
+            Optional parameters for the request (ex: etag, label)
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/app-configuration.DeleteConfigurationSettingResponse|stable"
+          />&gt;
+  - name: >-
+      getConfigurationSetting(ConfigurationSettingId,
+      GetConfigurationSettingOptions)
+    uid: >-
+      @azure/app-configuration.AppConfigurationClient.getConfigurationSetting|stable
+    package: '@azure/app-configuration|stable'
+    summary: >-
+      Gets a setting from the Azure App Configuration service.
+
+      Example code:
+
+      ```ts
+
+      const setting = await client.getConfigurationSetting({ key: "MyKey",
+      label: "MyLabel" });
+
+      ```
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getConfigurationSetting(id: ConfigurationSettingId, options?:
+        GetConfigurationSettingOptions):
+        Promise<GetConfigurationSettingResponse>
+      parameters:
+        - id: id
+          type: >-
+            <xref uid="@azure/app-configuration.ConfigurationSettingId|stable"
+            />
+          description: The id of the configuration setting to get.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/app-configuration.GetConfigurationSettingOptions|stable"
+            />
+          description: |
+            Optional parameters for the request.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/app-configuration.GetConfigurationSettingResponse|stable"
+          />&gt;
+  - name: listConfigurationSettings(ListConfigurationSettingsOptions)
+    uid: >-
+      @azure/app-configuration.AppConfigurationClient.listConfigurationSettings|stable
+    package: '@azure/app-configuration|stable'
+    summary: >-
+      Lists settings from the Azure App Configuration service, optionally
+
+      filtered by key names, labels and accept datetime.
+
+      Example code:
+
+      ```ts
+
+      const allSettingsWithLabel = client.listConfigurationSettings({
+      labelFilter: "MyLabel" });
+
+      ```
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listConfigurationSettings(options?:
+        ListConfigurationSettingsOptions):
+        PagedAsyncIterableIterator<ConfigurationSetting,
+        ListConfigurationSettingPage, PageSettings>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/app-configuration.ListConfigurationSettingsOptions|stable"
+            />
+          description: |
+            Optional parameters for the request.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/app-configuration.ConfigurationSetting|stable" />, <xref
+          uid="@azure/app-configuration.ListConfigurationSettingPage|stable" />,
+          <xref uid="@azure/app-configuration.PageSettings|stable" />&gt;
+  - name: listRevisions(ListRevisionsOptions)
+    uid: '@azure/app-configuration.AppConfigurationClient.listRevisions|stable'
+    package: '@azure/app-configuration|stable'
+    summary: |-
+      Lists revisions of a set of keys, optionally filtered by key names,
+      labels and accept datetime.
+      Example code:
+      ```ts
+      const revisionsIterator = client.listRevisions({ keys: ["MyKey"] });
+      ```
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listRevisions(options?: ListRevisionsOptions):
+        PagedAsyncIterableIterator<ConfigurationSetting, ListRevisionsPage,
+        PageSettings>
+      parameters:
+        - id: options
+          type: <xref uid="@azure/app-configuration.ListRevisionsOptions|stable" />
+          description: |
+            Optional parameters for the request.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/app-configuration.ConfigurationSetting|stable" />, <xref
+          uid="@azure/app-configuration.ListRevisionsPage|stable" />, <xref
+          uid="@azure/app-configuration.PageSettings|stable" />&gt;
+  - name: >-
+      setConfigurationSetting(SetConfigurationSettingParam |
+      SetConfigurationSettingParam<FeatureFlagValue> |
+      SetConfigurationSettingParam<SecretReferenceValue>,
+      SetConfigurationSettingOptions)
+    uid: >-
+      @azure/app-configuration.AppConfigurationClient.setConfigurationSetting|stable
+    package: '@azure/app-configuration|stable'
+    summary: >-
+      Sets the value of a key in the Azure App Configuration service, allowing
+      for an optional etag.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function setConfigurationSetting(configurationSetting:
+        SetConfigurationSettingParam |
+        SetConfigurationSettingParam<FeatureFlagValue> |
+        SetConfigurationSettingParam<SecretReferenceValue>, options?:
+        SetConfigurationSettingOptions):
+        Promise<SetConfigurationSettingResponse>
+      parameters:
+        - id: configurationSetting
+          type: >-
+            <xref
+            uid="@azure/app-configuration.SetConfigurationSettingParam|stable"
+            /> | <xref
+            uid="@azure/app-configuration.SetConfigurationSettingParam|stable"
+            />&lt;<xref uid="@azure/app-configuration.FeatureFlagValue|stable"
+            />&gt; | <xref
+            uid="@azure/app-configuration.SetConfigurationSettingParam|stable"
+            />&lt;<xref
+            uid="@azure/app-configuration.SecretReferenceValue|stable" />&gt;
+          description: A configuration value.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/app-configuration.SetConfigurationSettingOptions|stable"
+            />
+          description: >
+            Optional parameters for the request.
+
+
+            Example code:
+
+            ```ts
+
+            await client.setConfigurationSetting({ key: "MyKey", value:
+            "MyValue" });
+
+            ```
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/app-configuration.SetConfigurationSettingResponse|stable"
+          />&gt;
+  - name: setReadOnly(ConfigurationSettingId, boolean, SetReadOnlyOptions)
+    uid: '@azure/app-configuration.AppConfigurationClient.setReadOnly|stable'
+    package: '@azure/app-configuration|stable'
+    summary: Sets or clears a key's read-only status.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function setReadOnly(id: ConfigurationSettingId, readOnly: boolean,
+        options?: SetReadOnlyOptions): Promise<SetReadOnlyResponse>
+      parameters:
+        - id: id
+          type: >-
+            <xref uid="@azure/app-configuration.ConfigurationSettingId|stable"
+            />
+          description: |
+            The id of the configuration setting to modify.
+        - id: readOnly
+          type: boolean
+          description: ''
+        - id: options
+          type: <xref uid="@azure/app-configuration.SetReadOnlyOptions|stable" />
+          description: ''
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/app-configuration.SetReadOnlyResponse|stable" />&gt;
+  - name: updateSyncToken(string)
+    uid: '@azure/app-configuration.AppConfigurationClient.updateSyncToken|stable'
+    package: '@azure/app-configuration|stable'
+    summary: >-
+      Adds an external synchronization token to ensure service requests receive
+      up-to-date values.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function updateSyncToken(syncToken: string)'
+      parameters:
+        - id: syncToken
+          type: string
+          description: |
+            The synchronization token value.

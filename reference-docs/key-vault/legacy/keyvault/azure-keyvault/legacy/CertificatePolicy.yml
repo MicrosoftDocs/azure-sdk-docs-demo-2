@@ -1,0 +1,102 @@
+### YamlMime:TSType
+name: CertificatePolicy
+uid: azure-keyvault.CertificatePolicy|legacy
+package: azure-keyvault|legacy
+summary: ''
+fullName: CertificatePolicy
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: attributes
+    uid: azure-keyvault.CertificatePolicy.attributes|legacy
+    package: azure-keyvault|legacy
+    summary: ''
+    fullName: attributes
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'attributes?: CertificateAttributes'
+      return:
+        description: ''
+        type: <xref uid="azure-keyvault.CertificateAttributes|legacy" />
+  - name: id
+    uid: azure-keyvault.CertificatePolicy.id|legacy
+    package: azure-keyvault|legacy
+    summary: ''
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: string'
+      return:
+        description: ''
+        type: string
+  - name: issuerParameters
+    uid: azure-keyvault.CertificatePolicy.issuerParameters|legacy
+    package: azure-keyvault|legacy
+    summary: ''
+    fullName: issuerParameters
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'issuerParameters?: IssuerParameters'
+      return:
+        description: ''
+        type: <xref uid="azure-keyvault.IssuerParameters|legacy" />
+  - name: keyProperties
+    uid: azure-keyvault.CertificatePolicy.keyProperties|legacy
+    package: azure-keyvault|legacy
+    summary: ''
+    fullName: keyProperties
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'keyProperties?: KeyProperties'
+      return:
+        description: ''
+        type: <xref uid="azure-keyvault.KeyProperties|legacy" />
+  - name: lifetimeActions
+    uid: azure-keyvault.CertificatePolicy.lifetimeActions|legacy
+    package: azure-keyvault|legacy
+    summary: ''
+    fullName: lifetimeActions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lifetimeActions?: LifetimeAction[]'
+      return:
+        description: ''
+        type: <xref uid="azure-keyvault.LifetimeAction|legacy" />[]
+  - name: secretProperties
+    uid: azure-keyvault.CertificatePolicy.secretProperties|legacy
+    package: azure-keyvault|legacy
+    summary: ''
+    fullName: secretProperties
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'secretProperties?: SecretProperties'
+      return:
+        description: ''
+        type: <xref uid="azure-keyvault.SecretProperties|legacy" />
+  - name: x509CertificateProperties
+    uid: azure-keyvault.CertificatePolicy.x509CertificateProperties|legacy
+    package: azure-keyvault|legacy
+    summary: ''
+    fullName: x509CertificateProperties
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'x509CertificateProperties?: X509CertificateProperties'
+      return:
+        description: ''
+        type: <xref uid="azure-keyvault.X509CertificateProperties|legacy" />

@@ -1,0 +1,58 @@
+### YamlMime:TSType
+name: ShareCreateSnapshotOptions
+uid: '@azure/storage-file-share.ShareCreateSnapshotOptions|beta'
+package: '@azure/storage-file-share|beta'
+summary: >-
+  Options to configure the
+  <xref:@azure/storage-file-share.ShareClient.createSnapshot> operation.
+fullName: ShareCreateSnapshotOptions
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: abortSignal
+    uid: '@azure/storage-file-share.ShareCreateSnapshotOptions.abortSignal|beta'
+    package: '@azure/storage-file-share|beta'
+    summary: >-
+      An implementation of the `AbortSignalLike` interface to signal the request
+      to cancel the operation.
+
+      For example, use the &commat;azure/abort-controller to create an
+      `AbortSignal`.
+    fullName: abortSignal
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'abortSignal?: AbortSignalLike'
+      return:
+        description: ''
+        type: AbortSignalLike
+  - name: metadata
+    uid: '@azure/storage-file-share.ShareCreateSnapshotOptions.metadata|beta'
+    package: '@azure/storage-file-share|beta'
+    summary: A name-value pair to associate with a file storage object.
+    fullName: metadata
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'metadata?: [key: string]: string'
+      return:
+        description: ''
+        type: '[key: string]\: string'
+  - name: tracingOptions
+    uid: '@azure/storage-file-share.ShareCreateSnapshotOptions.tracingOptions|beta'
+    package: '@azure/storage-file-share|beta'
+    summary: ''
+    fullName: tracingOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tracingOptions?: OperationTracingOptions'
+      return:
+        description: ''
+        type: OperationTracingOptions
+extends: <xref uid="@azure/storage-file-share.CommonOptions|beta" />

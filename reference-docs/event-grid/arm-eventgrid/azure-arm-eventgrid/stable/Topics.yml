@@ -1,0 +1,832 @@
+### YamlMime:TSType
+name: Topics
+uid: '@azure/arm-eventgrid.Topics|stable'
+package: '@azure/arm-eventgrid|stable'
+summary: Class representing a Topics.
+fullName: Topics
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: Topics(EventGridManagementClientContext)
+    uid: '@azure/arm-eventgrid.Topics.constructor|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Create a Topics.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'new Topics(client: EventGridManagementClientContext)'
+      parameters:
+        - id: client
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.EventGridManagementClientContext|stable"
+            />
+          description: |
+            Reference to the service client.
+methods:
+  - name: beginCreateOrUpdate(string, string, Topic, msRest.RequestOptionsBase)
+    uid: '@azure/arm-eventgrid.Topics.beginCreateOrUpdate|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Asynchronously creates a new topic with the specified parameters.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string, topicName:
+        string, topicInfo: Topic, options?: msRest.RequestOptionsBase):
+        Promise<LROPoller>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: topicName
+          type: string
+          description: Name of the topic.
+        - id: topicInfo
+          type: <xref uid="@azure/arm-eventgrid.Topic|stable" />
+          description: Topic information.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<msRestAzure.LROPoller>
+        type: Promise&lt;LROPoller&gt;
+  - name: beginDeleteMethod(string, string, msRest.RequestOptionsBase)
+    uid: '@azure/arm-eventgrid.Topics.beginDeleteMethod|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Delete existing topic.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string, topicName: string,
+        options?: msRest.RequestOptionsBase): Promise<LROPoller>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: topicName
+          type: string
+          description: Name of the topic.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<msRestAzure.LROPoller>
+        type: Promise&lt;LROPoller&gt;
+  - name: >-
+      beginRegenerateKey(string, string, TopicRegenerateKeyRequest,
+      msRest.RequestOptionsBase)
+    uid: '@azure/arm-eventgrid.Topics.beginRegenerateKey|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Regenerate a shared access key for a topic.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginRegenerateKey(resourceGroupName: string, topicName:
+        string, regenerateKeyRequest: TopicRegenerateKeyRequest, options?:
+        msRest.RequestOptionsBase): Promise<LROPoller>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: topicName
+          type: string
+          description: Name of the topic.
+        - id: regenerateKeyRequest
+          type: <xref uid="@azure/arm-eventgrid.TopicRegenerateKeyRequest|stable" />
+          description: Request body to regenerate key.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<msRestAzure.LROPoller>
+        type: Promise&lt;LROPoller&gt;
+  - name: >-
+      beginUpdate(string, string, TopicUpdateParameters,
+      msRest.RequestOptionsBase)
+    uid: '@azure/arm-eventgrid.Topics.beginUpdate|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Asynchronously updates a topic with the specified parameters.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginUpdate(resourceGroupName: string, topicName: string,
+        topicUpdateParameters: TopicUpdateParameters, options?:
+        msRest.RequestOptionsBase): Promise<LROPoller>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: topicName
+          type: string
+          description: Name of the topic.
+        - id: topicUpdateParameters
+          type: <xref uid="@azure/arm-eventgrid.TopicUpdateParameters|stable" />
+          description: Topic update information.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<msRestAzure.LROPoller>
+        type: Promise&lt;LROPoller&gt;
+  - name: createOrUpdate(string, string, Topic, msRest.RequestOptionsBase)
+    uid: '@azure/arm-eventgrid.Topics.createOrUpdate|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Asynchronously creates a new topic with the specified parameters.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, topicName: string,
+        topicInfo: Topic, options?: msRest.RequestOptionsBase):
+        Promise<Models.TopicsCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: topicName
+          type: string
+          description: Name of the topic.
+        - id: topicInfo
+          type: <xref uid="@azure/arm-eventgrid.Topic|stable" />
+          description: Topic information.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.TopicsCreateOrUpdateResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventgrid.TopicsCreateOrUpdateResponse|stable" />&gt;
+  - name: deleteMethod(string, string, msRest.RequestOptionsBase)
+    uid: '@azure/arm-eventgrid.Topics.deleteMethod|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Delete existing topic.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, topicName: string,
+        options?: msRest.RequestOptionsBase): Promise<RestResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: topicName
+          type: string
+          description: Name of the topic.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<msRest.RestResponse>
+        type: Promise&lt;RestResponse&gt;
+  - name: get(string, string, msRest.RequestOptionsBase)
+    uid: '@azure/arm-eventgrid.Topics.get|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Get properties of a topic.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, topicName: string, options?:
+        msRest.RequestOptionsBase): Promise<Models.TopicsGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: topicName
+          type: string
+          description: Name of the topic.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.TopicsGetResponse>
+        type: >-
+          Promise&lt;<xref uid="@azure/arm-eventgrid.TopicsGetResponse|stable"
+          />&gt;
+  - name: get(string, string, RequestOptionsBase, ServiceCallback<Topic>)
+    uid: '@azure/arm-eventgrid.Topics.get_2|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, topicName: string, options:
+        RequestOptionsBase, callback: ServiceCallback<Topic>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: topicName
+          type: string
+          description: Name of the topic.
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref uid="@azure/arm-eventgrid.Topic|stable"
+            />&gt;
+          description: |
+            The callback
+  - name: get(string, string, ServiceCallback<Topic>)
+    uid: '@azure/arm-eventgrid.Topics.get_1|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, topicName: string, callback:
+        ServiceCallback<Topic>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: topicName
+          type: string
+          description: Name of the topic.
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref uid="@azure/arm-eventgrid.Topic|stable"
+            />&gt;
+          description: |
+            The callback
+  - name: >-
+      listByResourceGroup(string,
+      Models.TopicsListByResourceGroupOptionalParams)
+    uid: '@azure/arm-eventgrid.Topics.listByResourceGroup|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: List all the topics under a resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string, options?:
+        Models.TopicsListByResourceGroupOptionalParams):
+        Promise<Models.TopicsListByResourceGroupResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.TopicsListByResourceGroupOptionalParams|stable"
+            />
+          description: ''
+      return:
+        description: Promise<Models.TopicsListByResourceGroupResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventgrid.TopicsListByResourceGroupResponse|stable"
+          />&gt;
+  - name: listByResourceGroup(string, ServiceCallback<TopicsListResult>)
+    uid: '@azure/arm-eventgrid.Topics.listByResourceGroup_1|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string, callback:
+        ServiceCallback<TopicsListResult>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-eventgrid.TopicsListResult|stable" />&gt;
+          description: |
+            The callback
+  - name: >-
+      listByResourceGroup(string, TopicsListByResourceGroupOptionalParams,
+      ServiceCallback<TopicsListResult>)
+    uid: '@azure/arm-eventgrid.Topics.listByResourceGroup_2|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string, options:
+        TopicsListByResourceGroupOptionalParams, callback:
+        ServiceCallback<TopicsListResult>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.TopicsListByResourceGroupOptionalParams|stable"
+            />
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-eventgrid.TopicsListResult|stable" />&gt;
+          description: |
+            The callback
+  - name: >-
+      listByResourceGroupNext(string,
+      Models.TopicsListByResourceGroupNextOptionalParams)
+    uid: '@azure/arm-eventgrid.Topics.listByResourceGroupNext|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: List all the topics under a resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByResourceGroupNext(nextPageLink: string, options?:
+        Models.TopicsListByResourceGroupNextOptionalParams):
+        Promise<Models.TopicsListByResourceGroupNextResponse>
+      parameters:
+        - id: nextPageLink
+          type: string
+          description: The NextLink from the previous successful call to List operation.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.TopicsListByResourceGroupNextOptionalParams|stable"
+            />
+          description: ''
+      return:
+        description: Promise<Models.TopicsListByResourceGroupNextResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventgrid.TopicsListByResourceGroupNextResponse|stable"
+          />&gt;
+  - name: listByResourceGroupNext(string, ServiceCallback<TopicsListResult>)
+    uid: '@azure/arm-eventgrid.Topics.listByResourceGroupNext_1|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByResourceGroupNext(nextPageLink: string, callback:
+        ServiceCallback<TopicsListResult>)
+      parameters:
+        - id: nextPageLink
+          type: string
+          description: The NextLink from the previous successful call to List operation.
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-eventgrid.TopicsListResult|stable" />&gt;
+          description: |
+            The callback
+  - name: >-
+      listByResourceGroupNext(string,
+      TopicsListByResourceGroupNextOptionalParams,
+      ServiceCallback<TopicsListResult>)
+    uid: '@azure/arm-eventgrid.Topics.listByResourceGroupNext_2|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByResourceGroupNext(nextPageLink: string, options:
+        TopicsListByResourceGroupNextOptionalParams, callback:
+        ServiceCallback<TopicsListResult>)
+      parameters:
+        - id: nextPageLink
+          type: string
+          description: The NextLink from the previous successful call to List operation.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.TopicsListByResourceGroupNextOptionalParams|stable"
+            />
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-eventgrid.TopicsListResult|stable" />&gt;
+          description: |
+            The callback
+  - name: listBySubscription(Models.TopicsListBySubscriptionOptionalParams)
+    uid: '@azure/arm-eventgrid.Topics.listBySubscription|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: List all the topics under an Azure subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listBySubscription(options?:
+        Models.TopicsListBySubscriptionOptionalParams):
+        Promise<Models.TopicsListBySubscriptionResponse>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.TopicsListBySubscriptionOptionalParams|stable"
+            />
+          description: ''
+      return:
+        description: Promise<Models.TopicsListBySubscriptionResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventgrid.TopicsListBySubscriptionResponse|stable"
+          />&gt;
+  - name: listBySubscription(ServiceCallback<TopicsListResult>)
+    uid: '@azure/arm-eventgrid.Topics.listBySubscription_1|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function listBySubscription(callback: ServiceCallback<TopicsListResult>)'
+      parameters:
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-eventgrid.TopicsListResult|stable" />&gt;
+          description: |
+            The callback
+  - name: >-
+      listBySubscription(TopicsListBySubscriptionOptionalParams,
+      ServiceCallback<TopicsListResult>)
+    uid: '@azure/arm-eventgrid.Topics.listBySubscription_2|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listBySubscription(options:
+        TopicsListBySubscriptionOptionalParams, callback:
+        ServiceCallback<TopicsListResult>)
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.TopicsListBySubscriptionOptionalParams|stable"
+            />
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-eventgrid.TopicsListResult|stable" />&gt;
+          description: |
+            The callback
+  - name: >-
+      listBySubscriptionNext(string,
+      Models.TopicsListBySubscriptionNextOptionalParams)
+    uid: '@azure/arm-eventgrid.Topics.listBySubscriptionNext|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: List all the topics under an Azure subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listBySubscriptionNext(nextPageLink: string, options?:
+        Models.TopicsListBySubscriptionNextOptionalParams):
+        Promise<Models.TopicsListBySubscriptionNextResponse>
+      parameters:
+        - id: nextPageLink
+          type: string
+          description: The NextLink from the previous successful call to List operation.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.TopicsListBySubscriptionNextOptionalParams|stable"
+            />
+          description: ''
+      return:
+        description: Promise<Models.TopicsListBySubscriptionNextResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventgrid.TopicsListBySubscriptionNextResponse|stable"
+          />&gt;
+  - name: listBySubscriptionNext(string, ServiceCallback<TopicsListResult>)
+    uid: '@azure/arm-eventgrid.Topics.listBySubscriptionNext_1|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listBySubscriptionNext(nextPageLink: string, callback:
+        ServiceCallback<TopicsListResult>)
+      parameters:
+        - id: nextPageLink
+          type: string
+          description: The NextLink from the previous successful call to List operation.
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-eventgrid.TopicsListResult|stable" />&gt;
+          description: |
+            The callback
+  - name: >-
+      listBySubscriptionNext(string, TopicsListBySubscriptionNextOptionalParams,
+      ServiceCallback<TopicsListResult>)
+    uid: '@azure/arm-eventgrid.Topics.listBySubscriptionNext_2|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listBySubscriptionNext(nextPageLink: string, options:
+        TopicsListBySubscriptionNextOptionalParams, callback:
+        ServiceCallback<TopicsListResult>)
+      parameters:
+        - id: nextPageLink
+          type: string
+          description: The NextLink from the previous successful call to List operation.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.TopicsListBySubscriptionNextOptionalParams|stable"
+            />
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-eventgrid.TopicsListResult|stable" />&gt;
+          description: |
+            The callback
+  - name: listEventTypes(string, string, string, string, msRest.RequestOptionsBase)
+    uid: '@azure/arm-eventgrid.Topics.listEventTypes|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: List event types for a topic.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listEventTypes(resourceGroupName: string, providerNamespace:
+        string, resourceTypeName: string, resourceName: string, options?:
+        msRest.RequestOptionsBase): Promise<Models.TopicsListEventTypesResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: providerNamespace
+          type: string
+          description: Namespace of the provider of the topic.
+        - id: resourceTypeName
+          type: string
+          description: Name of the topic type.
+        - id: resourceName
+          type: string
+          description: Name of the topic.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.TopicsListEventTypesResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventgrid.TopicsListEventTypesResponse|stable" />&gt;
+  - name: >-
+      listEventTypes(string, string, string, string, RequestOptionsBase,
+      ServiceCallback<EventTypesListResult>)
+    uid: '@azure/arm-eventgrid.Topics.listEventTypes_2|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listEventTypes(resourceGroupName: string, providerNamespace:
+        string, resourceTypeName: string, resourceName: string, options:
+        RequestOptionsBase, callback: ServiceCallback<EventTypesListResult>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: providerNamespace
+          type: string
+          description: Namespace of the provider of the topic.
+        - id: resourceTypeName
+          type: string
+          description: Name of the topic type.
+        - id: resourceName
+          type: string
+          description: Name of the topic.
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-eventgrid.EventTypesListResult|stable" />&gt;
+          description: |
+            The callback
+  - name: >-
+      listEventTypes(string, string, string, string,
+      ServiceCallback<EventTypesListResult>)
+    uid: '@azure/arm-eventgrid.Topics.listEventTypes_1|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listEventTypes(resourceGroupName: string, providerNamespace:
+        string, resourceTypeName: string, resourceName: string, callback:
+        ServiceCallback<EventTypesListResult>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: providerNamespace
+          type: string
+          description: Namespace of the provider of the topic.
+        - id: resourceTypeName
+          type: string
+          description: Name of the topic type.
+        - id: resourceName
+          type: string
+          description: Name of the topic.
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-eventgrid.EventTypesListResult|stable" />&gt;
+          description: |
+            The callback
+  - name: listSharedAccessKeys(string, string, msRest.RequestOptionsBase)
+    uid: '@azure/arm-eventgrid.Topics.listSharedAccessKeys|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: List the two keys used to publish to a topic.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listSharedAccessKeys(resourceGroupName: string, topicName:
+        string, options?: msRest.RequestOptionsBase):
+        Promise<Models.TopicsListSharedAccessKeysResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: topicName
+          type: string
+          description: Name of the topic.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.TopicsListSharedAccessKeysResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventgrid.TopicsListSharedAccessKeysResponse|stable"
+          />&gt;
+  - name: >-
+      listSharedAccessKeys(string, string, RequestOptionsBase,
+      ServiceCallback<TopicSharedAccessKeys>)
+    uid: '@azure/arm-eventgrid.Topics.listSharedAccessKeys_2|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listSharedAccessKeys(resourceGroupName: string, topicName:
+        string, options: RequestOptionsBase, callback:
+        ServiceCallback<TopicSharedAccessKeys>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: topicName
+          type: string
+          description: Name of the topic.
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-eventgrid.TopicSharedAccessKeys|stable" />&gt;
+          description: |
+            The callback
+  - name: >-
+      listSharedAccessKeys(string, string,
+      ServiceCallback<TopicSharedAccessKeys>)
+    uid: '@azure/arm-eventgrid.Topics.listSharedAccessKeys_1|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listSharedAccessKeys(resourceGroupName: string, topicName:
+        string, callback: ServiceCallback<TopicSharedAccessKeys>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: topicName
+          type: string
+          description: Name of the topic.
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-eventgrid.TopicSharedAccessKeys|stable" />&gt;
+          description: |
+            The callback
+  - name: >-
+      regenerateKey(string, string, TopicRegenerateKeyRequest,
+      msRest.RequestOptionsBase)
+    uid: '@azure/arm-eventgrid.Topics.regenerateKey|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Regenerate a shared access key for a topic.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function regenerateKey(resourceGroupName: string, topicName: string,
+        regenerateKeyRequest: TopicRegenerateKeyRequest, options?:
+        msRest.RequestOptionsBase): Promise<Models.TopicsRegenerateKeyResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: topicName
+          type: string
+          description: Name of the topic.
+        - id: regenerateKeyRequest
+          type: <xref uid="@azure/arm-eventgrid.TopicRegenerateKeyRequest|stable" />
+          description: Request body to regenerate key.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.TopicsRegenerateKeyResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventgrid.TopicsRegenerateKeyResponse|stable" />&gt;
+  - name: update(string, string, TopicUpdateParameters, msRest.RequestOptionsBase)
+    uid: '@azure/arm-eventgrid.Topics.update|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Asynchronously updates a topic with the specified parameters.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function update(resourceGroupName: string, topicName: string,
+        topicUpdateParameters: TopicUpdateParameters, options?:
+        msRest.RequestOptionsBase): Promise<Models.TopicsUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: topicName
+          type: string
+          description: Name of the topic.
+        - id: topicUpdateParameters
+          type: <xref uid="@azure/arm-eventgrid.TopicUpdateParameters|stable" />
+          description: Topic update information.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.TopicsUpdateResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventgrid.TopicsUpdateResponse|stable" />&gt;

@@ -1,0 +1,74 @@
+### YamlMime:TSPackage
+uid: '@azure/core-auth|stable'
+name: '@azure/core-auth (1.3.2 - undefined)'
+summary: ''
+type: package
+classes:
+  - '@azure/core-auth.AzureKeyCredential|stable'
+  - '@azure/core-auth.AzureNamedKeyCredential|stable'
+  - '@azure/core-auth.AzureSASCredential|stable'
+interfaces:
+  - '@azure/core-auth.AccessToken|stable'
+  - '@azure/core-auth.Context|stable'
+  - '@azure/core-auth.GetTokenOptions|stable'
+  - '@azure/core-auth.KeyCredential|stable'
+  - '@azure/core-auth.NamedKeyCredential|stable'
+  - '@azure/core-auth.SASCredential|stable'
+  - '@azure/core-auth.SpanAttributes|stable'
+  - '@azure/core-auth.SpanContext|stable'
+  - '@azure/core-auth.SpanOptions|stable'
+  - '@azure/core-auth.TokenCredential|stable'
+typeAliases:
+  - '@azure/core-auth.SpanAttributeValue|stable'
+functions:
+  - name: isNamedKeyCredential(unknown)
+    uid: '@azure/core-auth.isNamedKeyCredential|stable'
+    package: '@azure/core-auth|stable'
+    summary: Tests an object to determine whether it implements NamedKeyCredential.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function isNamedKeyCredential(credential: unknown): boolean'
+      parameters:
+        - id: credential
+          type: unknown
+          description: |
+            The assumed NamedKeyCredential to be tested.
+      return:
+        description: ''
+        type: boolean
+  - name: isSASCredential(unknown)
+    uid: '@azure/core-auth.isSASCredential|stable'
+    package: '@azure/core-auth|stable'
+    summary: Tests an object to determine whether it implements SASCredential.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function isSASCredential(credential: unknown): boolean'
+      parameters:
+        - id: credential
+          type: unknown
+          description: |
+            The assumed SASCredential to be tested.
+      return:
+        description: ''
+        type: boolean
+  - name: isTokenCredential(unknown)
+    uid: '@azure/core-auth.isTokenCredential|stable'
+    package: '@azure/core-auth|stable'
+    summary: Tests an object to determine whether it implements TokenCredential.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function isTokenCredential(credential: unknown): boolean'
+      parameters:
+        - id: credential
+          type: unknown
+          description: |
+            The assumed TokenCredential to be tested.
+      return:
+        description: ''
+        type: boolean

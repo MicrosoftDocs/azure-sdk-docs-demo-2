@@ -1,0 +1,80 @@
+### YamlMime:TSType
+name: CommonFieldValue
+uid: '@azure/ai-form-recognizer.CommonFieldValue|stable'
+package: '@azure/ai-form-recognizer|stable'
+summary: Properties common to the recognized text field
+fullName: CommonFieldValue
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: boundingBox
+    uid: '@azure/ai-form-recognizer.CommonFieldValue.boundingBox|stable'
+    package: '@azure/ai-form-recognizer|stable'
+    summary: Bounding box of the field value, if appropriate.
+    fullName: boundingBox
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'boundingBox?: Point2D[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/ai-form-recognizer.Point2D|stable" />[]
+  - name: confidence
+    uid: '@azure/ai-form-recognizer.CommonFieldValue.confidence|stable'
+    package: '@azure/ai-form-recognizer|stable'
+    summary: Confidence score.
+    fullName: confidence
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'confidence?: number'
+      return:
+        description: ''
+        type: number
+  - name: fieldElements
+    uid: '@azure/ai-form-recognizer.CommonFieldValue.fieldElements|stable'
+    package: '@azure/ai-form-recognizer|stable'
+    summary: >-
+      When includeFieldElements is set to true, a list of references to the
+      elements constituting
+
+      this field.
+    fullName: fieldElements
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'fieldElements?: FormElement[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/ai-form-recognizer.FormElement|stable" />[]
+  - name: pageNumber
+    uid: '@azure/ai-form-recognizer.CommonFieldValue.pageNumber|stable'
+    package: '@azure/ai-form-recognizer|stable'
+    summary: The 1-based page number in the input document.
+    fullName: pageNumber
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'pageNumber?: number'
+      return:
+        description: ''
+        type: number
+  - name: text
+    uid: '@azure/ai-form-recognizer.CommonFieldValue.text|stable'
+    package: '@azure/ai-form-recognizer|stable'
+    summary: Text content of the recognized field.
+    fullName: text
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'text?: string'
+      return:
+        description: ''
+        type: string

@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: DeletedManagedHsmListResult
+uid: '@azure/arm-keyvault.DeletedManagedHsmListResult|beta'
+package: '@azure/arm-keyvault|beta'
+summary: List of deleted managed HSM Pools
+fullName: DeletedManagedHsmListResult
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: nextLink
+    uid: '@azure/arm-keyvault.DeletedManagedHsmListResult.nextLink|beta'
+    package: '@azure/arm-keyvault|beta'
+    summary: The URL to get the next set of deleted managed HSM Pools.
+    fullName: nextLink
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nextLink?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: value
+    uid: '@azure/arm-keyvault.DeletedManagedHsmListResult.value|beta'
+    package: '@azure/arm-keyvault|beta'
+    summary: The list of deleted managed HSM Pools.
+    fullName: value
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: DeletedManagedHsm[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-keyvault.DeletedManagedHsm|beta" />[]

@@ -1,0 +1,561 @@
+### YamlMime:TSType
+name: MigrationConfigs
+uid: '@azure/arm-servicebus.MigrationConfigs|stable'
+package: '@azure/arm-servicebus|stable'
+summary: Class representing a MigrationConfigs.
+fullName: MigrationConfigs
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: MigrationConfigs(ServiceBusManagementClientContext)
+    uid: '@azure/arm-servicebus.MigrationConfigs.constructor|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Create a MigrationConfigs.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'new MigrationConfigs(client: ServiceBusManagementClientContext)'
+      parameters:
+        - id: client
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.ServiceBusManagementClientContext|stable"
+            />
+          description: |
+            Reference to the service client.
+methods:
+  - name: >-
+      beginCreateAndStartMigration(string, string, MigrationConfigProperties,
+      msRest.RequestOptionsBase)
+    uid: '@azure/arm-servicebus.MigrationConfigs.beginCreateAndStartMigration|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: >-
+      Creates Migration configuration and starts migration of entities from
+      Standard to Premium
+
+      namespace
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateAndStartMigration(resourceGroupName: string,
+        namespaceName: string, parameters: MigrationConfigProperties, options?:
+        msRest.RequestOptionsBase): Promise<LROPoller>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: parameters
+          type: >-
+            <xref uid="@azure/arm-servicebus.MigrationConfigProperties|stable"
+            />
+          description: Parameters required to create Migration Configuration
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<msRestAzure.LROPoller>
+        type: Promise&lt;LROPoller&gt;
+  - name: completeMigration(string, string, msRest.RequestOptionsBase)
+    uid: '@azure/arm-servicebus.MigrationConfigs.completeMigration|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: >-
+      This operation Completes Migration of entities by pointing the connection
+      strings to Premium
+
+      namespace and any entities created after the operation will be under
+      Premium Namespace.
+
+      CompleteMigration operation will fail when entity migration is
+      in-progress.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function completeMigration(resourceGroupName: string, namespaceName:
+        string, options?: msRest.RequestOptionsBase): Promise<RestResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<msRest.RestResponse>
+        type: Promise&lt;RestResponse&gt;
+  - name: >-
+      completeMigration(string, string, RequestOptionsBase,
+      ServiceCallback<void>)
+    uid: '@azure/arm-servicebus.MigrationConfigs.completeMigration_2|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function completeMigration(resourceGroupName: string, namespaceName:
+        string, options: RequestOptionsBase, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: ServiceCallback&lt;void&gt;
+          description: |
+            The callback
+  - name: completeMigration(string, string, ServiceCallback<void>)
+    uid: '@azure/arm-servicebus.MigrationConfigs.completeMigration_1|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function completeMigration(resourceGroupName: string, namespaceName:
+        string, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: callback
+          type: ServiceCallback&lt;void&gt;
+          description: |
+            The callback
+  - name: >-
+      createAndStartMigration(string, string, MigrationConfigProperties,
+      msRest.RequestOptionsBase)
+    uid: '@azure/arm-servicebus.MigrationConfigs.createAndStartMigration|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: >-
+      Creates Migration configuration and starts migration of entities from
+      Standard to Premium
+
+      namespace
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createAndStartMigration(resourceGroupName: string,
+        namespaceName: string, parameters: MigrationConfigProperties, options?:
+        msRest.RequestOptionsBase):
+        Promise<Models.MigrationConfigsCreateAndStartMigrationResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: parameters
+          type: >-
+            <xref uid="@azure/arm-servicebus.MigrationConfigProperties|stable"
+            />
+          description: Parameters required to create Migration Configuration
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.MigrationConfigsCreateAndStartMigrationResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-servicebus.MigrationConfigsCreateAndStartMigrationResponse|stable"
+          />&gt;
+  - name: deleteMethod(string, string, msRest.RequestOptionsBase)
+    uid: '@azure/arm-servicebus.MigrationConfigs.deleteMethod|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Deletes a MigrationConfiguration
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, namespaceName: string,
+        options?: msRest.RequestOptionsBase): Promise<RestResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<msRest.RestResponse>
+        type: Promise&lt;RestResponse&gt;
+  - name: deleteMethod(string, string, RequestOptionsBase, ServiceCallback<void>)
+    uid: '@azure/arm-servicebus.MigrationConfigs.deleteMethod_2|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, namespaceName: string,
+        options: RequestOptionsBase, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: ServiceCallback&lt;void&gt;
+          description: |
+            The callback
+  - name: deleteMethod(string, string, ServiceCallback<void>)
+    uid: '@azure/arm-servicebus.MigrationConfigs.deleteMethod_1|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, namespaceName: string,
+        callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: callback
+          type: ServiceCallback&lt;void&gt;
+          description: |
+            The callback
+  - name: get(string, string, msRest.RequestOptionsBase)
+    uid: '@azure/arm-servicebus.MigrationConfigs.get|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Retrieves Migration Config
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, namespaceName: string, options?:
+        msRest.RequestOptionsBase): Promise<Models.MigrationConfigsGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.MigrationConfigsGetResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-servicebus.MigrationConfigsGetResponse|stable" />&gt;
+  - name: >-
+      get(string, string, RequestOptionsBase,
+      ServiceCallback<MigrationConfigProperties>)
+    uid: '@azure/arm-servicebus.MigrationConfigs.get_2|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, namespaceName: string, options:
+        RequestOptionsBase, callback:
+        ServiceCallback<MigrationConfigProperties>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-servicebus.MigrationConfigProperties|stable" />&gt;
+          description: |
+            The callback
+  - name: get(string, string, ServiceCallback<MigrationConfigProperties>)
+    uid: '@azure/arm-servicebus.MigrationConfigs.get_1|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, namespaceName: string, callback:
+        ServiceCallback<MigrationConfigProperties>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-servicebus.MigrationConfigProperties|stable" />&gt;
+          description: |
+            The callback
+  - name: list(string, string, msRest.RequestOptionsBase)
+    uid: '@azure/arm-servicebus.MigrationConfigs.list|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Gets all migrationConfigurations
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, namespaceName: string,
+        options?: msRest.RequestOptionsBase):
+        Promise<Models.MigrationConfigsListResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.MigrationConfigsListResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-servicebus.MigrationConfigsListResponse|stable" />&gt;
+  - name: >-
+      list(string, string, RequestOptionsBase,
+      ServiceCallback<MigrationConfigListResult>)
+    uid: '@azure/arm-servicebus.MigrationConfigs.list_2|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, namespaceName: string, options:
+        RequestOptionsBase, callback:
+        ServiceCallback<MigrationConfigListResult>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-servicebus.MigrationConfigListResult|stable" />&gt;
+          description: |
+            The callback
+  - name: list(string, string, ServiceCallback<MigrationConfigListResult>)
+    uid: '@azure/arm-servicebus.MigrationConfigs.list_1|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, namespaceName: string,
+        callback: ServiceCallback<MigrationConfigListResult>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-servicebus.MigrationConfigListResult|stable" />&gt;
+          description: |
+            The callback
+  - name: listNext(string, msRest.RequestOptionsBase)
+    uid: '@azure/arm-servicebus.MigrationConfigs.listNext|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Gets all migrationConfigurations
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, options?:
+        msRest.RequestOptionsBase):
+        Promise<Models.MigrationConfigsListNextResponse>
+      parameters:
+        - id: nextPageLink
+          type: string
+          description: The NextLink from the previous successful call to List operation.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.MigrationConfigsListNextResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-servicebus.MigrationConfigsListNextResponse|stable"
+          />&gt;
+  - name: >-
+      listNext(string, RequestOptionsBase,
+      ServiceCallback<MigrationConfigListResult>)
+    uid: '@azure/arm-servicebus.MigrationConfigs.listNext_2|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, options: RequestOptionsBase,
+        callback: ServiceCallback<MigrationConfigListResult>)
+      parameters:
+        - id: nextPageLink
+          type: string
+          description: The NextLink from the previous successful call to List operation.
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-servicebus.MigrationConfigListResult|stable" />&gt;
+          description: |
+            The callback
+  - name: listNext(string, ServiceCallback<MigrationConfigListResult>)
+    uid: '@azure/arm-servicebus.MigrationConfigs.listNext_1|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, callback:
+        ServiceCallback<MigrationConfigListResult>)
+      parameters:
+        - id: nextPageLink
+          type: string
+          description: The NextLink from the previous successful call to List operation.
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-servicebus.MigrationConfigListResult|stable" />&gt;
+          description: |
+            The callback
+  - name: revert(string, string, msRest.RequestOptionsBase)
+    uid: '@azure/arm-servicebus.MigrationConfigs.revert|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: This operation reverts Migration
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function revert(resourceGroupName: string, namespaceName: string,
+        options?: msRest.RequestOptionsBase): Promise<RestResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<msRest.RestResponse>
+        type: Promise&lt;RestResponse&gt;
+  - name: revert(string, string, RequestOptionsBase, ServiceCallback<void>)
+    uid: '@azure/arm-servicebus.MigrationConfigs.revert_2|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function revert(resourceGroupName: string, namespaceName: string,
+        options: RequestOptionsBase, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: ServiceCallback&lt;void&gt;
+          description: |
+            The callback
+  - name: revert(string, string, ServiceCallback<void>)
+    uid: '@azure/arm-servicebus.MigrationConfigs.revert_1|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function revert(resourceGroupName: string, namespaceName: string,
+        callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: callback
+          type: ServiceCallback&lt;void&gt;
+          description: |
+            The callback

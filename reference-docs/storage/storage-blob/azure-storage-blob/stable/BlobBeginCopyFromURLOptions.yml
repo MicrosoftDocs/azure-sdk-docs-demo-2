@@ -1,0 +1,237 @@
+### YamlMime:TSType
+name: BlobBeginCopyFromURLOptions
+uid: '@azure/storage-blob.BlobBeginCopyFromURLOptions|stable'
+package: '@azure/storage-blob|stable'
+summary: >-
+  Options to configure the
+  <xref:@azure/storage-blob.AppendBlobClient.beginCopyFromURL> operation.
+fullName: BlobBeginCopyFromURLOptions
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: abortSignal
+    uid: '@azure/storage-blob.BlobBeginCopyFromURLOptions.abortSignal|stable'
+    package: '@azure/storage-blob|stable'
+    summary: >-
+      An implementation of the `AbortSignalLike` interface to signal the request
+      to cancel the operation.
+
+      For example, use the &commat;azure/abort-controller to create an
+      `AbortSignal`.
+    fullName: abortSignal
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'abortSignal?: AbortSignalLike'
+      return:
+        description: ''
+        type: AbortSignalLike
+  - name: conditions
+    uid: '@azure/storage-blob.BlobBeginCopyFromURLOptions.conditions|stable'
+    package: '@azure/storage-blob|stable'
+    summary: >-
+      Conditions to meet for the destination blob when copying from a URL to the
+      blob.
+    fullName: conditions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'conditions?: BlobRequestConditions'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-blob.BlobRequestConditions|stable" />
+  - name: immutabilityPolicy
+    uid: '@azure/storage-blob.BlobBeginCopyFromURLOptions.immutabilityPolicy|stable'
+    package: '@azure/storage-blob|stable'
+    summary: >-
+      Optional. Specifies immutability policy for a blob.
+
+      Note that is parameter is only applicable to a blob within a container
+      that
+
+      has version level worm enabled.
+    fullName: immutabilityPolicy
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'immutabilityPolicy?: BlobImmutabilityPolicy'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-blob.BlobImmutabilityPolicy|stable" />
+  - name: intervalInMs
+    uid: '@azure/storage-blob.BlobBeginCopyFromURLOptions.intervalInMs|stable'
+    package: '@azure/storage-blob|stable'
+    summary: |-
+      The amount of time in milliseconds the poller should wait between
+      calls to the service to determine the status of the Blob copy.
+      Defaults to 15 seconds.
+    fullName: intervalInMs
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'intervalInMs?: number'
+      return:
+        description: ''
+        type: number
+  - name: legalHold
+    uid: '@azure/storage-blob.BlobBeginCopyFromURLOptions.legalHold|stable'
+    package: '@azure/storage-blob|stable'
+    summary: >-
+      Optional. Indicates if a legal hold should be placed on the blob.
+
+      Note that is parameter is only applicable to a blob within a container
+      that
+
+      has version level worm enabled.
+    fullName: legalHold
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'legalHold?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: metadata
+    uid: '@azure/storage-blob.BlobBeginCopyFromURLOptions.metadata|stable'
+    package: '@azure/storage-blob|stable'
+    summary: >-
+      A collection of key-value string pair to associate with the blob that are
+      being copied.
+    fullName: metadata
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'metadata?: Metadata'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-blob.Metadata|stable" />
+  - name: onProgress
+    uid: '@azure/storage-blob.BlobBeginCopyFromURLOptions.onProgress|stable'
+    package: '@azure/storage-blob|stable'
+    summary: Callback to receive the state of the copy progress.
+    fullName: onProgress
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onProgress?: (state: BlobBeginCopyFromUrlPollState) => void'
+      return:
+        description: ''
+        type: '(state: BlobBeginCopyFromUrlPollState) =&gt; void'
+  - name: rehydratePriority
+    uid: '@azure/storage-blob.BlobBeginCopyFromURLOptions.rehydratePriority|stable'
+    package: '@azure/storage-blob|stable'
+    summary: >-
+      Rehydrate Priority - possible values include 'High', 'Standard'.
+
+      More Details -
+      https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-rehydration#rehydrate-an-archived-blob-to-an-online-tier
+    fullName: rehydratePriority
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rehydratePriority?: RehydratePriority'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-blob.RehydratePriority|stable" />
+  - name: resumeFrom
+    uid: '@azure/storage-blob.BlobBeginCopyFromURLOptions.resumeFrom|stable'
+    package: '@azure/storage-blob|stable'
+    summary: |
+      Serialized poller state that can be used to resume polling from.
+      This may be useful when starting a copy on one process or thread
+      and you wish to continue polling on another process or thread.
+      To get serialized poller state, call `poller.toString()` on an existing
+      poller.
+    fullName: resumeFrom
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'resumeFrom?: string'
+      return:
+        description: ''
+        type: string
+  - name: sealBlob
+    uid: '@azure/storage-blob.BlobBeginCopyFromURLOptions.sealBlob|stable'
+    package: '@azure/storage-blob|stable'
+    summary: Overrides the sealed state of the destination blob. Default true.
+    fullName: sealBlob
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sealBlob?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: sourceConditions
+    uid: '@azure/storage-blob.BlobBeginCopyFromURLOptions.sourceConditions|stable'
+    package: '@azure/storage-blob|stable'
+    summary: >-
+      Conditions to meet for the source Azure Blob/File when copying from a URL
+      to the blob.
+    fullName: sourceConditions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sourceConditions?: ModifiedAccessConditions'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-blob.ModifiedAccessConditions|stable" />
+  - name: tags
+    uid: '@azure/storage-blob.BlobBeginCopyFromURLOptions.tags|stable'
+    package: '@azure/storage-blob|stable'
+    summary: Blob tags.
+    fullName: tags
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tags?: Tags'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-blob.Tags|stable" />
+  - name: tier
+    uid: '@azure/storage-blob.BlobBeginCopyFromURLOptions.tier|stable'
+    package: '@azure/storage-blob|stable'
+    summary: >-
+      Access tier.
+
+      More Details -
+      https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-storage-tiers
+    fullName: tier
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tier?: BlockBlobTier | PremiumPageBlobTier | string'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/storage-blob.BlockBlobTier|stable" /> | <xref
+          uid="@azure/storage-blob.PremiumPageBlobTier|stable" /> | string
+  - name: tracingOptions
+    uid: '@azure/storage-blob.BlobBeginCopyFromURLOptions.tracingOptions|stable'
+    package: '@azure/storage-blob|stable'
+    summary: Options to configure spans created when tracing is enabled.
+    fullName: tracingOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tracingOptions?: OperationTracingOptions'
+      return:
+        description: ''
+        type: OperationTracingOptions
+extends: <xref uid="@azure/storage-blob.BlobStartCopyFromURLOptions|stable" />

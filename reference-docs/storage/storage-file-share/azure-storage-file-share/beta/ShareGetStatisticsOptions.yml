@@ -1,0 +1,61 @@
+### YamlMime:TSType
+name: ShareGetStatisticsOptions
+uid: '@azure/storage-file-share.ShareGetStatisticsOptions|beta'
+package: '@azure/storage-file-share|beta'
+summary: >-
+  Options to configure the
+  <xref:@azure/storage-file-share.ShareClient.getStatistics> operation.
+fullName: ShareGetStatisticsOptions
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: abortSignal
+    uid: '@azure/storage-file-share.ShareGetStatisticsOptions.abortSignal|beta'
+    package: '@azure/storage-file-share|beta'
+    summary: >-
+      An implementation of the `AbortSignalLike` interface to signal the request
+      to cancel the operation.
+
+      For example, use the &commat;azure/abort-controller to create an
+      `AbortSignal`.
+    fullName: abortSignal
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'abortSignal?: AbortSignalLike'
+      return:
+        description: ''
+        type: AbortSignalLike
+  - name: leaseAccessConditions
+    uid: >-
+      @azure/storage-file-share.ShareGetStatisticsOptions.leaseAccessConditions|beta
+    package: '@azure/storage-file-share|beta'
+    summary: >-
+      If specified, the operation only succeeds if the resource's lease is
+      active and matches this ID.
+    fullName: leaseAccessConditions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'leaseAccessConditions?: LeaseAccessConditions'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-file-share.LeaseAccessConditions|beta" />
+  - name: tracingOptions
+    uid: '@azure/storage-file-share.ShareGetStatisticsOptions.tracingOptions|beta'
+    package: '@azure/storage-file-share|beta'
+    summary: ''
+    fullName: tracingOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tracingOptions?: OperationTracingOptions'
+      return:
+        description: ''
+        type: OperationTracingOptions
+extends: <xref uid="@azure/storage-file-share.CommonOptions|beta" />

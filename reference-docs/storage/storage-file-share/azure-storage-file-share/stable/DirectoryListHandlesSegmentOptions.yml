@@ -1,0 +1,88 @@
+### YamlMime:TSType
+name: DirectoryListHandlesSegmentOptions
+uid: '@azure/storage-file-share.DirectoryListHandlesSegmentOptions|stable'
+package: '@azure/storage-file-share|stable'
+summary: |+
+  Options to configure Directory - List Handles Segment operations.
+  See:
+  - ShareDirectoryClient.listHandlesSegment
+  - ShareDirectoryClient.iterateHandleSegments
+  - ShareDirectoryClient.listHandleItems
+
+fullName: DirectoryListHandlesSegmentOptions
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: abortSignal
+    uid: >-
+      @azure/storage-file-share.DirectoryListHandlesSegmentOptions.abortSignal|stable
+    package: '@azure/storage-file-share|stable'
+    summary: >-
+      An implementation of the `AbortSignalLike` interface to signal the request
+      to cancel the operation.
+
+      For example, use the &commat;azure/abort-controller to create an
+      `AbortSignal`.
+    fullName: abortSignal
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'abortSignal?: AbortSignalLike'
+      return:
+        description: ''
+        type: AbortSignalLike
+  - name: maxResults
+    uid: >-
+      @azure/storage-file-share.DirectoryListHandlesSegmentOptions.maxResults|stable
+    package: '@azure/storage-file-share|stable'
+    summary: >-
+      Specifies the maximum number of entries to return. If the request does not
+      specify maxResults,
+
+      or specifies a value greater than 5,000, the server will return up to
+      5,000 items.
+    fullName: maxResults
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'maxResults?: number'
+      return:
+        description: ''
+        type: number
+  - name: recursive
+    uid: >-
+      @azure/storage-file-share.DirectoryListHandlesSegmentOptions.recursive|stable
+    package: '@azure/storage-file-share|stable'
+    summary: >-
+      Specifies operation should apply to the directory specified in the URI,
+      its files, its
+
+      subdirectories and their files.
+    fullName: recursive
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'recursive?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: tracingOptions
+    uid: >-
+      @azure/storage-file-share.DirectoryListHandlesSegmentOptions.tracingOptions|stable
+    package: '@azure/storage-file-share|stable'
+    summary: ''
+    fullName: tracingOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tracingOptions?: OperationTracingOptions'
+      return:
+        description: ''
+        type: OperationTracingOptions
+extends: <xref uid="@azure/storage-file-share.CommonOptions|stable" />

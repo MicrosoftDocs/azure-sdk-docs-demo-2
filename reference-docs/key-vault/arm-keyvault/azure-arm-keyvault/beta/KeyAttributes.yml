@@ -1,0 +1,104 @@
+### YamlMime:TSType
+name: KeyAttributes
+uid: '@azure/arm-keyvault.KeyAttributes|beta'
+package: '@azure/arm-keyvault|beta'
+summary: The object attributes managed by the Azure Key Vault service.
+fullName: KeyAttributes
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: created
+    uid: '@azure/arm-keyvault.KeyAttributes.created|beta'
+    package: '@azure/arm-keyvault|beta'
+    summary: >-
+      Creation time in seconds since 1970-01-01T00:00:00Z.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: created
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'created?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: enabled
+    uid: '@azure/arm-keyvault.KeyAttributes.enabled|beta'
+    package: '@azure/arm-keyvault|beta'
+    summary: Determines whether or not the object is enabled.
+    fullName: enabled
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'enabled?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true
+  - name: expires
+    uid: '@azure/arm-keyvault.KeyAttributes.expires|beta'
+    package: '@azure/arm-keyvault|beta'
+    summary: Expiry date in seconds since 1970-01-01T00:00:00Z.
+    fullName: expires
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'expires?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: notBefore
+    uid: '@azure/arm-keyvault.KeyAttributes.notBefore|beta'
+    package: '@azure/arm-keyvault|beta'
+    summary: Not before date in seconds since 1970-01-01T00:00:00Z.
+    fullName: notBefore
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'notBefore?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: recoveryLevel
+    uid: '@azure/arm-keyvault.KeyAttributes.recoveryLevel|beta'
+    package: '@azure/arm-keyvault|beta'
+    summary: >-
+      The deletion recovery level currently in effect for the object. If it
+      contains 'Purgeable', then the object can be permanently deleted by a
+      privileged user; otherwise, only the system can purge the object at the
+      end of the retention interval.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: recoveryLevel
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'recoveryLevel?: DeletionRecoveryLevel'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-keyvault.DeletionRecoveryLevel|beta" />
+  - name: updated
+    uid: '@azure/arm-keyvault.KeyAttributes.updated|beta'
+    package: '@azure/arm-keyvault|beta'
+    summary: >-
+      Last updated time in seconds since 1970-01-01T00:00:00Z.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: updated
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'updated?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number

@@ -1,0 +1,41 @@
+### YamlMime:TSType
+name: IndexDocumentsClient
+uid: '@azure/search-documents.IndexDocumentsClient|beta'
+package: '@azure/search-documents|beta'
+summary: Index Documents Client
+fullName: IndexDocumentsClient<T>
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: indexDocuments(IndexDocumentsBatch<T>, IndexDocumentsOptions)
+    uid: '@azure/search-documents.IndexDocumentsClient.indexDocuments|beta'
+    package: '@azure/search-documents|beta'
+    summary: >-
+      Perform a set of index modifications (upload, merge, mergeOrUpload,
+      delete)
+
+      for the given set of documents.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function indexDocuments(batch: IndexDocumentsBatch<T>, options:
+        IndexDocumentsOptions): Promise<IndexDocumentsResult>
+      parameters:
+        - id: batch
+          type: >-
+            <xref uid="@azure/search-documents.IndexDocumentsBatch|beta"
+            />&lt;T&gt;
+          description: An array of actions to perform on the index.
+        - id: options
+          type: <xref uid="@azure/search-documents.IndexDocumentsOptions|beta" />
+          description: |
+            Additional options.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/search-documents.IndexDocumentsResult|beta" />&gt;

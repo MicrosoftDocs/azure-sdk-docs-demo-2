@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: DetectLanguageResponse
+uid: '@azure/cognitiveservices-textanalytics.DetectLanguageResponse|legacy'
+package: '@azure/cognitiveservices-textanalytics|legacy'
+summary: Contains response data for the detectLanguage operation.
+fullName: DetectLanguageResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type DetectLanguageResponse = LanguageBatchResult & { _response: HttpResponse
+  & { bodyAsText: string, parsedBody: LanguageBatchResult } }

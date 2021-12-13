@@ -1,0 +1,124 @@
+### YamlMime:TSType
+name: HttpOperationResponse
+uid: '@azure/core-http.HttpOperationResponse|stable'
+package: '@azure/core-http|stable'
+summary: |-
+  Wrapper object for http request and response. Deserialized object is stored in
+  the `parsedBody` property when the response body is received in JSON or XML.
+fullName: HttpOperationResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: blobBody
+    uid: '@azure/core-http.HttpOperationResponse.blobBody|stable'
+    package: '@azure/core-http|stable'
+    summary: |
+      BROWSER ONLY
+      The response body as a browser Blob.
+      Always undefined in node.js.
+    fullName: blobBody
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'blobBody?: Promise<Blob>'
+      return:
+        description: ''
+        type: Promise&lt;Blob&gt;
+  - name: bodyAsText
+    uid: '@azure/core-http.HttpOperationResponse.bodyAsText|stable'
+    package: '@azure/core-http|stable'
+    summary: The response body as text (string format)
+    fullName: bodyAsText
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'bodyAsText?: string | null'
+      return:
+        description: ''
+        type: string | null
+  - name: headers
+    uid: '@azure/core-http.HttpOperationResponse.headers|stable'
+    package: '@azure/core-http|stable'
+    summary: The HTTP response headers.
+    fullName: headers
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'headers: HttpHeadersLike'
+      return:
+        description: ''
+        type: <xref uid="@azure/core-http.HttpHeadersLike|stable" />
+  - name: parsedBody
+    uid: '@azure/core-http.HttpOperationResponse.parsedBody|stable'
+    package: '@azure/core-http|stable'
+    summary: The response body as parsed JSON or XML
+    fullName: parsedBody
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'parsedBody?: any'
+      return:
+        description: ''
+        type: any
+  - name: parsedHeaders
+    uid: '@azure/core-http.HttpOperationResponse.parsedHeaders|stable'
+    package: '@azure/core-http|stable'
+    summary: The parsed HTTP response headers.
+    fullName: parsedHeaders
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'parsedHeaders?: [key: string]: any'
+      return:
+        description: ''
+        type: '[key: string]\: any'
+  - name: readableStreamBody
+    uid: '@azure/core-http.HttpOperationResponse.readableStreamBody|stable'
+    package: '@azure/core-http|stable'
+    summary: |
+      NODEJS ONLY
+      The response body as a node.js Readable stream.
+      Always undefined in the browser.
+    fullName: readableStreamBody
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readableStreamBody?: ReadableStream'
+      return:
+        description: ''
+        type: ReadableStream
+  - name: request
+    uid: '@azure/core-http.HttpOperationResponse.request|stable'
+    package: '@azure/core-http|stable'
+    summary: The raw request
+    fullName: request
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'request: WebResourceLike'
+      return:
+        description: ''
+        type: <xref uid="@azure/core-http.WebResourceLike|stable" />
+  - name: status
+    uid: '@azure/core-http.HttpOperationResponse.status|stable'
+    package: '@azure/core-http|stable'
+    summary: The HTTP response status (e.g. 200)
+    fullName: status
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'status: number'
+      return:
+        description: ''
+        type: number
+extends: <xref uid="@azure/core-http.HttpResponse|stable" />
