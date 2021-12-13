@@ -16,9 +16,9 @@ ms.author: daberry
 
 #### Latest stable
 
-| Package               | User guide                           | Version                | Package Manager                |
-|-----------------------|--------------------------------------|------------------------|--------------------------------|
-| @azure/identity  | [User guide](/javascript/sdk-demo/identity/identity/azure-identity/readme)  | 2.0.1 [(Docs)](/javascript/sdk-demo/identity/identity/azure-identity/stable)  | [`npm install @azure/identity`](https://www.npmjs.com/package/%40azure%2Fidentity) |
+| Name                  | Package              | Version          | Docs                   | Package Manager                |
+|-----------------------|----------------------|------------------|------------------------|--------------------------------|
+| Identity | @azure/identity | 2.0.1 | [(docs)](/javascript/sdk-demo/identity/identity/azure-identity/stable)  | npm [2.0.1](https://www.npmjs.com/package/%40azure%2Fidentity) |
  
 
  

@@ -16,9 +16,9 @@ ms.author: daberry
 
 #### Latest stable
 
-| Package               | User guide                           | Version                | Package Manager                |
-|-----------------------|--------------------------------------|------------------------|--------------------------------|
-| @azure/app-configuration  | [User guide](/javascript/sdk-demo/app-configuration/app-configuration/azure-app-configuration/readme)  | 1.3.0 [(Docs)](/javascript/sdk-demo/app-configuration/app-configuration/azure-app-configuration/stable)  | [`npm install @azure/app-configuration`](https://www.npmjs.com/package/%40azure%2Fapp-configuration) |
+| Name                  | Package              | Version          | Docs                   | Package Manager                |
+|-----------------------|----------------------|------------------|------------------------|--------------------------------|
+| App Configuration | @azure/app-configuration | 1.3.0 | [(docs)](/javascript/sdk-demo/app-configuration/app-configuration/azure-app-configuration/stable)  | npm [1.3.0](https://www.npmjs.com/package/%40azure%2Fapp-configuration) |
  
 
  
@@ -31,9 +31,9 @@ ms.author: daberry
 
 #### Latest stable
 
-| Package               | User guide                           | Version                | Package Manager                |
-|-----------------------|--------------------------------------|------------------------|--------------------------------|
-| @azure/arm-appconfiguration  | [User guide](/javascript/sdk-demo/app-configuration/arm-appconfiguration/azure-arm-appconfiguration/readme)  | 2.0.0 [(Docs)](/javascript/sdk-demo/app-configuration/arm-appconfiguration/azure-arm-appconfiguration/stable)  | [`npm install @azure/arm-appconfiguration`](https://www.npmjs.com/package/%40azure%2Farm-appconfiguration) |
+| Name                  | Package              | Version          | Docs                   | Package Manager                |
+|-----------------------|----------------------|------------------|------------------------|--------------------------------|
+| App Configuration - Resource Management | @azure/arm-appconfiguration | 2.0.0 | [(docs)](/javascript/sdk-demo/app-configuration/arm-appconfiguration/azure-arm-appconfiguration/stable)  | npm [2.0.0](https://www.npmjs.com/package/%40azure%2Farm-appconfiguration) |
  
 
  
