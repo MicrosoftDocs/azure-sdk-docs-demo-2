@@ -50,10 +50,14 @@ ROBOTS: NOINDEX
 | Cognitive Search  | @azure/search-documents | 11.3.0-beta.5 |  [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/search-documents/azure-search-documents/beta)  | npm [11.3.0-beta.5](https://www.npmjs.com/package/%40azure%2Fsearch-documents%4011.3.0-beta.5) |
 | Form Recognizer  | @azure/ai-form-recognizer | 4.0.0-beta.2 |  [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/ai-form-recognizer/azure-ai-form-recognizer/beta)  | npm [4.0.0-beta.2](https://www.npmjs.com/package/%40azure%2Fai-form-recognizer%404.0.0-beta.2) |
 | Text Analytics  | @azure/ai-text-analytics | 5.2.0-beta.2 |  [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/ai-text-analytics/azure-ai-text-analytics/beta)  | npm [5.2.0-beta.2](https://www.npmjs.com/package/%40azure%2Fai-text-analytics%405.2.0-beta.2) |
-| Form Recognizer  | @azure/cognitiveservices-formrecognizer | 2.0.1 |  [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/legacy/cognitiveservices-formrecognizer/azure-cognitiveservices-formrecognizer/legacy)  | npm [2.0.1](https://www.npmjs.com/package/%40azure%2Fcognitiveservices-formrecognizer%402.0.1) |
-| Text Analytics  | @azure/cognitiveservices-textanalytics | 4.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/legacy/cognitiveservices-textanalytics/azure-cognitiveservices-textanalytics/legacy)  | npm [4.0.0](https://www.npmjs.com/package/%40azure%2Fcognitiveservices-textanalytics%404.0.0) |
  
 
+#### Legacy packages
+
+| Name                  | Package               | Version          | Docs                                      | Package Manager                |
+|-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
+| Form Recognizer  | @azure/cognitiveservices-formrecognizer | 2.0.1 |  [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/legacy/cognitiveservices-formrecognizer/azure-cognitiveservices-formrecognizer/legacy)  | npm [2.0.1](https://www.npmjs.com/package/%40azure%2Fcognitiveservices-formrecognizer%402.0.1) |
+| Text Analytics  | @azure/cognitiveservices-textanalytics | 4.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/legacy/cognitiveservices-textanalytics/azure-cognitiveservices-textanalytics/legacy)  | npm [4.0.0](https://www.npmjs.com/package/%40azure%2Fcognitiveservices-textanalytics%404.0.0) |
  
 
 
@@ -106,13 +110,13 @@ ROBOTS: NOINDEX
 | Event Grid - Resource Management  | @azure/arm-eventgrid | 13.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/event-grid/arm-eventgrid/azure-arm-eventgrid/stable)  | npm [13.0.0](https://www.npmjs.com/package/%40azure%2Farm-eventgrid) |
  
 
-#### Beta packages
+ 
+
+#### Legacy packages
 
 | Name                  | Package               | Version          | Docs                                      | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
 | Event Grid  | azure-eventgrid | 1.6.0 |  [docs](/azure/javascript/sdk/sdk-demo2/event-grid/legacy/event-grid/azure-eventgrid/legacy)  | npm [1.6.0](https://www.npmjs.com/package/azure-eventgrid%401.6.0) |
- 
-
  
 
 
@@ -173,10 +177,14 @@ ROBOTS: NOINDEX
 | Key Vault - Keys  | @azure/keyvault-keys | 4.4.0-beta.3 |  [docs](/azure/javascript/sdk/sdk-demo2/key-vault/keyvault-keys/azure-keyvault-keys/beta)  | npm [4.4.0-beta.3](https://www.npmjs.com/package/%40azure%2Fkeyvault-keys%404.4.0-beta.3) |
 | Key Vault - Secrets  | @azure/keyvault-secrets | 4.4.0-beta.2 |  [docs](/azure/javascript/sdk/sdk-demo2/key-vault/keyvault-secrets/azure-keyvault-secrets/beta)  | npm [4.4.0-beta.2](https://www.npmjs.com/package/%40azure%2Fkeyvault-secrets%404.4.0-beta.2) |
 | Key Vault - Resource Management  | @azure/arm-keyvault | 2.0.0-beta.1 |  [docs](/azure/javascript/sdk/sdk-demo2/key-vault/arm-keyvault/azure-arm-keyvault/beta)  | npm [2.0.0-beta.1](https://www.npmjs.com/package/%40azure%2Farm-keyvault%402.0.0-beta.1) |
-| Key Vault  | azure-keyvault | 3.0.5 |  [docs](/azure/javascript/sdk/sdk-demo2/key-vault/legacy/keyvault/azure-keyvault/legacy)  | npm [3.0.5](https://www.npmjs.com/package/azure-keyvault%403.0.5) |
-| Key Vault - Resource Management  | azure-arm-keyvault | 1.2.0 |  [docs](/azure/javascript/sdk/sdk-demo2/key-vault/legacy/arm-keyvault/azure-arm-keyvault/legacy)  | npm [1.2.0](https://www.npmjs.com/package/azure-arm-keyvault%401.2.0) |
  
 
+#### Legacy packages
+
+| Name                  | Package               | Version          | Docs                                      | Package Manager                |
+|-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
+| Key Vault  | azure-keyvault | 3.0.5 |  [docs](/azure/javascript/sdk/sdk-demo2/key-vault/legacy/keyvault/azure-keyvault/legacy)  | npm [3.0.5](https://www.npmjs.com/package/azure-keyvault%403.0.5) |
+| Key Vault - Resource Management  | azure-arm-keyvault | 1.2.0 |  [docs](/azure/javascript/sdk/sdk-demo2/key-vault/legacy/arm-keyvault/azure-arm-keyvault/legacy)  | npm [1.2.0](https://www.npmjs.com/package/azure-arm-keyvault%401.2.0) |
  
 
 
