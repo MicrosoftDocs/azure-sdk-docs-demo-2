@@ -18,7 +18,7 @@ ms.author: daberry
 
 | Name                  | Package              | Version          | Docs                   | Package Manager                |
 |-----------------------|----------------------|------------------|------------------------|--------------------------------|
-| App Configuration | @azure/app-configuration | 1.3.0 | [(docs)](/javascript/sdk-demo/app-configuration/app-configuration/azure-app-configuration/stable)  | npm [1.3.0](https://www.npmjs.com/package/%40azure%2Fapp-configuration) |
+| App Configuration | @azure/app-configuration | 1.3.0 | [(docs)](/javascript/sdk-demo2/app-configuration/app-configuration/azure-app-configuration/stable)  | npm [1.3.0](https://www.npmjs.com/package/%40azure%2Fapp-configuration) |
  
 
  
@@ -33,7 +33,7 @@ ms.author: daberry
 
 | Name                  | Package              | Version          | Docs                   | Package Manager                |
 |-----------------------|----------------------|------------------|------------------------|--------------------------------|
-| App Configuration - Resource Management | @azure/arm-appconfiguration | 2.0.0 | [(docs)](/javascript/sdk-demo/app-configuration/arm-appconfiguration/azure-arm-appconfiguration/stable)  | npm [2.0.0](https://www.npmjs.com/package/%40azure%2Farm-appconfiguration) |
+| App Configuration - Resource Management | @azure/arm-appconfiguration | 2.0.0 | [(docs)](/javascript/sdk-demo2/app-configuration/arm-appconfiguration/azure-arm-appconfiguration/stable)  | npm [2.0.0](https://www.npmjs.com/package/%40azure%2Farm-appconfiguration) |
  
 
  
