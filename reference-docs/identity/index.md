@@ -18,7 +18,7 @@ ms.author: daberry
 
 | Name                  | Package              | Version          | Docs                   | Package Manager                |
 |-----------------------|----------------------|------------------|------------------------|--------------------------------|
-| Identity | @azure/identity | 2.0.1 | [(docs)](/javascript/sdk-demo2/identity/identity/azure-identity/stable)  | npm [2.0.1](https://www.npmjs.com/package/%40azure%2Fidentity) |
+| Identity | @azure/identity | 2.0.1 | [(docs)](/azure/javascript/sdk/sdk-demo2/identity/identity/azure-identity/stable)  | npm [2.0.1](https://www.npmjs.com/package/%40azure%2Fidentity) |
  
 
  
