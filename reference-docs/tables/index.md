@@ -12,26 +12,14 @@ ms.author: daberry
 
 # Azure SDK for JavaScript - Tables packages
 
-## Client Packages
-
-#### Latest stable
+## Stable packages
 
 | Name                  | Package              | Version          | Docs                   | Package Manager                |
 |-----------------------|----------------------|------------------|------------------------|--------------------------------|
-| Data Tables | @azure/data-tables | 13.0.0 | [(docs)](/azure/javascript/sdk/sdk-demo2/tables/data-tables/azure-data-tables/stable)  | npm [13.0.0](https://www.npmjs.com/package/%40azure%2Fdata-tables) |
+| Data Tables | @azure/data-tables | 13.0.0 | [docs](/azure/javascript/sdk/sdk-demo2/tables/data-tables/azure-data-tables/stable)  | npm [13.0.0](https://www.npmjs.com/package/%40azure%2Fdata-tables) |
  
 
  
 
 
- 
- 
-
-## Management Packages
-
- 
-
- 
-
- 
  
