@@ -7,7 +7,4 @@ fullName: QueueServicesSetServicePropertiesResponse
 remarks: ''
 isPreview: false
 isDeprecated: false
-syntax: >-
-  type QueueServicesSetServicePropertiesResponse = QueueServiceProperties & {
-  _response: HttpResponse & { bodyAsText: string, parsedBody:
-  QueueServiceProperties } }
+syntax: type QueueServicesSetServicePropertiesResponse = QueueServiceProperties

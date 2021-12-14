@@ -7,6 +7,4 @@ fullName: SkusListResponse
 remarks: ''
 isPreview: false
 isDeprecated: false
-syntax: >-
-  type SkusListResponse = StorageSkuListResult & { _response: HttpResponse & {
-  bodyAsText: string, parsedBody: StorageSkuListResult } }
+syntax: type SkusListResponse = StorageSkuListResult

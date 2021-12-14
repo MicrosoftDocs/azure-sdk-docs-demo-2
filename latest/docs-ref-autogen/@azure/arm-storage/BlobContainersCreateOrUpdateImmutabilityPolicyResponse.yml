@@ -9,7 +9,4 @@ isPreview: false
 isDeprecated: false
 syntax: >-
   type BlobContainersCreateOrUpdateImmutabilityPolicyResponse =
-  ImmutabilityPolicy & BlobContainersCreateOrUpdateImmutabilityPolicyHeaders & {
-  _response: HttpResponse & { bodyAsText: string, parsedBody:
-  ImmutabilityPolicy, parsedHeaders:
-  BlobContainersCreateOrUpdateImmutabilityPolicyHeaders } }
+  BlobContainersCreateOrUpdateImmutabilityPolicyHeaders & ImmutabilityPolicy

@@ -15,8 +15,8 @@ properties:
     summary: >-
       Gets the current count of the allocated resources in the subscription.
 
-      **NOTE: This property will not be serialized. It can only be populated by
-      the server.**
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
     fullName: currentValue
     remarks: ''
     isPreview: false
@@ -33,8 +33,8 @@ properties:
       Gets the maximum count of the resources that can be allocated in the
       subscription.
 
-      **NOTE: This property will not be serialized. It can only be populated by
-      the server.**
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
     fullName: limit
     remarks: ''
     isPreview: false
@@ -50,8 +50,8 @@ properties:
     summary: >-
       Gets the name of the type of usage.
 
-      **NOTE: This property will not be serialized. It can only be populated by
-      the server.**
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
     fullName: name
     remarks: ''
     isPreview: false
@@ -65,13 +65,10 @@ properties:
     uid: '@azure/arm-storage.Usage.unit'
     package: '@azure/arm-storage'
     summary: >-
-      Gets the unit of measurement. Possible values include: 'Count', 'Bytes',
-      'Seconds', 'Percent',
+      Gets the unit of measurement.
 
-      'CountsPerSecond', 'BytesPerSecond'
-
-      **NOTE: This property will not be serialized. It can only be populated by
-      the server.**
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
     fullName: unit
     remarks: ''
     isPreview: false

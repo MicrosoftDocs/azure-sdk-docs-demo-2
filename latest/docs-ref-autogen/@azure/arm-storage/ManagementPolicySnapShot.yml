@@ -9,16 +9,16 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: deleteProperty
-    uid: '@azure/arm-storage.ManagementPolicySnapShot.deleteProperty'
+  - name: delete
+    uid: '@azure/arm-storage.ManagementPolicySnapShot.delete'
     package: '@azure/arm-storage'
     summary: The function to delete the blob snapshot
-    fullName: deleteProperty
+    fullName: delete
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'deleteProperty?: DateAfterCreation'
+      content: 'delete?: DateAfterCreation'
       return:
         description: ''
         type: <xref uid="@azure/arm-storage.DateAfterCreation" />
@@ -27,9 +27,7 @@ properties:
     package: '@azure/arm-storage'
     summary: >-
       The function to tier blob snapshot to archive storage. Support blob
-      snapshot currently at Hot
-
-      or Cool tier
+      snapshot currently at Hot or Cool tier
     fullName: tierToArchive
     remarks: ''
     isPreview: false
@@ -44,9 +42,7 @@ properties:
     package: '@azure/arm-storage'
     summary: >-
       The function to tier blob snapshot to cool storage. Support blob snapshot
-      currently at Hot
-
-      tier
+      currently at Hot tier
     fullName: tierToCool
     remarks: ''
     isPreview: false

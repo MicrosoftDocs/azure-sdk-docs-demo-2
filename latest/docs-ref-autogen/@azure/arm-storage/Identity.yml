@@ -15,8 +15,8 @@ properties:
     summary: >-
       The principal ID of resource identity.
 
-      **NOTE: This property will not be serialized. It can only be populated by
-      the server.**
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
     fullName: principalId
     remarks: ''
     isPreview: false
@@ -32,8 +32,8 @@ properties:
     summary: >-
       The tenant ID of resource.
 
-      **NOTE: This property will not be serialized. It can only be populated by
-      the server.**
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
     fullName: tenantId
     remarks: ''
     isPreview: false
@@ -46,11 +46,7 @@ properties:
   - name: type
     uid: '@azure/arm-storage.Identity.type'
     package: '@azure/arm-storage'
-    summary: >-
-      The identity type. Possible values include: 'None', 'SystemAssigned',
-      'UserAssigned',
-
-      'SystemAssigned,UserAssigned'
+    summary: The identity type.
     fullName: type
     remarks: ''
     isPreview: false
@@ -65,12 +61,9 @@ properties:
     package: '@azure/arm-storage'
     summary: >-
       Gets or sets a list of key value pairs that describe the set of User
-      Assigned identities that
-
-      will be used with this storage account. The key is the ARM resource
-      identifier of the
-
-      identity. Only 1 User Assigned identity is permitted here.
+      Assigned identities that will be used with this storage account. The key
+      is the ARM resource identifier of the identity. Only 1 User Assigned
+      identity is permitted here.
     fullName: userAssignedIdentities
     remarks: ''
     isPreview: false

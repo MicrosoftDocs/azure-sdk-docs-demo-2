@@ -7,7 +7,4 @@ fullName: BlobInventoryPoliciesListResponse
 remarks: ''
 isPreview: false
 isDeprecated: false
-syntax: >-
-  type BlobInventoryPoliciesListResponse = ListBlobInventoryPolicy & {
-  _response: HttpResponse & { bodyAsText: string, parsedBody:
-  ListBlobInventoryPolicy } }
+syntax: type BlobInventoryPoliciesListResponse = ListBlobInventoryPolicy

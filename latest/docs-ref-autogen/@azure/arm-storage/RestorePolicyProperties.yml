@@ -14,9 +14,7 @@ properties:
     package: '@azure/arm-storage'
     summary: >-
       how long this blob can be restored. It should be great than zero and less
-      than
-
-      DeleteRetentionPolicy.days.
+      than DeleteRetentionPolicy.days.
     fullName: days
     remarks: ''
     isPreview: false
@@ -45,8 +43,8 @@ properties:
     summary: >-
       Deprecated in favor of minRestoreTime property.
 
-      **NOTE: This property will not be serialized. It can only be populated by
-      the server.**
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
     fullName: lastEnabledTime
     remarks: ''
     isPreview: false
@@ -62,8 +60,8 @@ properties:
     summary: >-
       Returns the minimum date and time that the restore can be started.
 
-      **NOTE: This property will not be serialized. It can only be populated by
-      the server.**
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
     fullName: minRestoreTime
     remarks: ''
     isPreview: false

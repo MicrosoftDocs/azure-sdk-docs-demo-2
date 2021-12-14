@@ -92,9 +92,7 @@ properties:
     package: '@azure/arm-storage'
     summary: >-
       A unique value up to 64 characters in length that correlates to an access
-      policy specified for
-
-      the container, queue, or table.
+      policy specified for the container, queue, or table.
     fullName: identifier
     remarks: ''
     isPreview: false
@@ -161,29 +159,21 @@ properties:
     package: '@azure/arm-storage'
     summary: >-
       The signed permissions for the service SAS. Possible values include: Read
-      (r), Write (w),
-
-      Delete (d), List (l), Add (a), Create (c), Update (u) and Process (p).
-      Possible values
-
-      include: 'r', 'd', 'w', 'l', 'a', 'c', 'u', 'p'
+      (r), Write (w), Delete (d), List (l), Add (a), Create (c), Update (u) and
+      Process (p).
     fullName: permissions
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'permissions?: Permissions'
+      content: 'permissions?: Permissions_2'
       return:
         description: ''
-        type: <xref uid="@azure/arm-storage.Permissions" />
+        type: <xref uid="@azure/arm-storage.Permissions_2" />
   - name: protocols
     uid: '@azure/arm-storage.ServiceSasParameters.protocols'
     package: '@azure/arm-storage'
-    summary: >-
-      The protocol permitted for a request made with the account SAS. Possible
-      values include:
-
-      'https,http', 'https'
+    summary: The protocol permitted for a request made with the account SAS.
     fullName: protocols
     remarks: ''
     isPreview: false
@@ -198,10 +188,7 @@ properties:
     package: '@azure/arm-storage'
     summary: >-
       The signed services accessible with the service SAS. Possible values
-      include: Blob (b),
-
-      Container (c), File (f), Share (s). Possible values include: 'b', 'c',
-      'f', 's'
+      include: Blob (b), Container (c), File (f), Share (s).
     fullName: resource
     remarks: ''
     isPreview: false

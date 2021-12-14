@@ -7,6 +7,4 @@ fullName: TableListResponse
 remarks: ''
 isPreview: false
 isDeprecated: false
-syntax: >-
-  type TableListResponse = ListTableResource & { _response: HttpResponse & {
-  bodyAsText: string, parsedBody: ListTableResource } }
+syntax: type TableListResponse = ListTableResource

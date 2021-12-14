@@ -7,7 +7,4 @@ fullName: TableServicesGetServicePropertiesResponse
 remarks: ''
 isPreview: false
 isDeprecated: false
-syntax: >-
-  type TableServicesGetServicePropertiesResponse = TableServiceProperties & {
-  _response: HttpResponse & { bodyAsText: string, parsedBody:
-  TableServiceProperties } }
+syntax: type TableServicesGetServicePropertiesResponse = TableServiceProperties

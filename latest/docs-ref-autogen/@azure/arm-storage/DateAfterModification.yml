@@ -4,10 +4,8 @@ uid: '@azure/arm-storage.DateAfterModification'
 package: '@azure/arm-storage'
 summary: >-
   Object to define the number of days after object last modification Or last
-  access. Properties
-
-  daysAfterModificationGreaterThan and daysAfterLastAccessTimeGreaterThan are
-  mutually exclusive.
+  access. Properties daysAfterModificationGreaterThan and
+  daysAfterLastAccessTimeGreaterThan are mutually exclusive.
 fullName: DateAfterModification
 remarks: ''
 isPreview: false
@@ -20,9 +18,7 @@ properties:
     package: '@azure/arm-storage'
     summary: >-
       Value indicating the age in days after last blob access. This property can
-      only be used in
-
-      conjunction with last access time tracking policy
+      only be used in conjunction with last access time tracking policy
     fullName: daysAfterLastAccessTimeGreaterThan
     remarks: ''
     isPreview: false

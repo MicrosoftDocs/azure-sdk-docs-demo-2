@@ -27,12 +27,7 @@ properties:
     package: '@azure/arm-storage'
     summary: >-
       The encryption keySource (provider). Possible values (case-insensitive): 
-      Microsoft.Storage,
-
-      Microsoft.Keyvault. Possible values include: 'Microsoft.Storage',
-      'Microsoft.Keyvault'.
-
-      Default value: 'Microsoft.Storage'.
+      Microsoft.Storage, Microsoft.Keyvault
     fullName: keySource
     remarks: ''
     isPreview: false
@@ -60,9 +55,7 @@ properties:
     package: '@azure/arm-storage'
     summary: >-
       A boolean indicating whether or not the service applies a secondary layer
-      of encryption with
-
-      platform managed keys for data at rest.
+      of encryption with platform managed keys for data at rest.
     fullName: requireInfrastructureEncryption
     remarks: ''
     isPreview: false

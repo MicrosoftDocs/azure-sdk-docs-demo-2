@@ -15,8 +15,8 @@ properties:
     summary: >-
       Failure reason when blob restore is failed.
 
-      **NOTE: This property will not be serialized. It can only be populated by
-      the server.**
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
     fullName: failureReason
     remarks: ''
     isPreview: false
@@ -32,8 +32,8 @@ properties:
     summary: >-
       Blob restore request parameters.
 
-      **NOTE: This property will not be serialized. It can only be populated by
-      the server.**
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
     fullName: parameters
     remarks: ''
     isPreview: false
@@ -49,8 +49,8 @@ properties:
     summary: >-
       Id for tracking blob restore request.
 
-      **NOTE: This property will not be serialized. It can only be populated by
-      the server.**
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
     fullName: restoreId
     remarks: ''
     isPreview: false
@@ -65,18 +65,12 @@ properties:
     package: '@azure/arm-storage'
     summary: >-
       The status of blob restore progress. Possible values are: - InProgress:
-      Indicates that blob
+      Indicates that blob restore is ongoing. - Complete: Indicates that blob
+      restore has been completed successfully. - Failed: Indicates that blob
+      restore is failed.
 
-      restore is ongoing. - Complete: Indicates that blob restore has been
-      completed successfully. -
-
-      Failed: Indicates that blob restore is failed. Possible values include:
-      'InProgress',
-
-      'Complete', 'Failed'
-
-      **NOTE: This property will not be serialized. It can only be populated by
-      the server.**
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
     fullName: status
     remarks: ''
     isPreview: false
