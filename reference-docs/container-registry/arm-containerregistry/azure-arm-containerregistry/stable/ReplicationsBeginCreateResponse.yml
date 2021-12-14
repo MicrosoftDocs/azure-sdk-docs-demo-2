@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: ReplicationsBeginCreateResponse
+uid: '@azure/arm-containerregistry.ReplicationsBeginCreateResponse|stable'
+package: '@azure/arm-containerregistry|stable'
+summary: Contains response data for the beginCreate operation.
+fullName: ReplicationsBeginCreateResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type ReplicationsBeginCreateResponse = Replication & { _response: HttpResponse
+  & { bodyAsText: string, parsedBody: Replication } }

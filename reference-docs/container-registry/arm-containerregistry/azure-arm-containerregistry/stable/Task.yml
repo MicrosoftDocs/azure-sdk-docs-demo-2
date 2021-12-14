@@ -1,0 +1,300 @@
+### YamlMime:TSType
+name: Task
+uid: '@azure/arm-containerregistry.Task|stable'
+package: '@azure/arm-containerregistry|stable'
+summary: |-
+  The task that has the ARM resource and task properties.
+  The task will have all information to schedule a run against it.
+fullName: Task
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: agentConfiguration
+    uid: '@azure/arm-containerregistry.Task.agentConfiguration|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: The machine configuration of the run agent.
+    fullName: agentConfiguration
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'agentConfiguration?: AgentProperties'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-containerregistry.AgentProperties|stable" />
+  - name: agentPoolName
+    uid: '@azure/arm-containerregistry.Task.agentPoolName|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: The dedicated agent pool for the task.
+    fullName: agentPoolName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'agentPoolName?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: creationDate
+    uid: '@azure/arm-containerregistry.Task.creationDate|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: >-
+      The creation date of task.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: creationDate
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'creationDate?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: credentials
+    uid: '@azure/arm-containerregistry.Task.credentials|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: >-
+      The properties that describes a set of credentials that will be used when
+      this run is invoked.
+    fullName: credentials
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'credentials?: Credentials'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-containerregistry.Credentials|stable" />
+  - name: id
+    uid: '@azure/arm-containerregistry.Task.id|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: >-
+      The resource ID.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: identity
+    uid: '@azure/arm-containerregistry.Task.identity|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: Identity for the resource.
+    fullName: identity
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'identity?: IdentityProperties'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-containerregistry.IdentityProperties|stable" />
+  - name: isSystemTask
+    uid: '@azure/arm-containerregistry.Task.isSystemTask|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: >-
+      The value of this property indicates whether the task resource is system
+      task or not. Default
+
+      value: false.
+    fullName: isSystemTask
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isSystemTask?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true
+  - name: location
+    uid: '@azure/arm-containerregistry.Task.location|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: >-
+      The location of the resource. This cannot be changed after the resource is
+      created.
+    fullName: location
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'location: string'
+      return:
+        description: ''
+        type: string
+  - name: logTemplate
+    uid: '@azure/arm-containerregistry.Task.logTemplate|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: >-
+      The template that describes the repository and tag information for run log
+      artifact.
+    fullName: logTemplate
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'logTemplate?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: name
+    uid: '@azure/arm-containerregistry.Task.name|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: >-
+      The name of the resource.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: platform
+    uid: '@azure/arm-containerregistry.Task.platform|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: The platform properties against which the run has to happen.
+    fullName: platform
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'platform?: PlatformProperties'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-containerregistry.PlatformProperties|stable" />
+  - name: provisioningState
+    uid: '@azure/arm-containerregistry.Task.provisioningState|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: >-
+      The provisioning state of the task. Possible values include: 'Creating',
+      'Updating',
+
+      'Deleting', 'Succeeded', 'Failed', 'Canceled'
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: provisioningState
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'provisioningState?: ProvisioningState'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-containerregistry.ProvisioningState|stable" />
+  - name: status
+    uid: '@azure/arm-containerregistry.Task.status|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: 'The current status of task. Possible values include: ''Disabled'', ''Enabled'''
+    fullName: status
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'status?: TaskStatus'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-containerregistry.TaskStatus|stable" />
+  - name: step
+    uid: '@azure/arm-containerregistry.Task.step|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: The properties of a task step.
+    fullName: step
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'step?: TaskStepPropertiesUnion'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-containerregistry.TaskStepPropertiesUnion|stable" />
+  - name: systemData
+    uid: '@azure/arm-containerregistry.Task.systemData|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: >-
+      Metadata pertaining to creation and last modification of the resource.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: systemData
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'systemData?: SystemData'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-containerregistry.SystemData|stable" />
+  - name: tags
+    uid: '@azure/arm-containerregistry.Task.tags|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: The tags of the resource.
+    fullName: tags
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tags?: undefined | [key: string]: string'
+      return:
+        description: ''
+        type: 'undefined | [key: string]: string'
+  - name: timeout
+    uid: '@azure/arm-containerregistry.Task.timeout|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: 'Run timeout in seconds. Default value: 3600.'
+    fullName: timeout
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'timeout?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: trigger
+    uid: '@azure/arm-containerregistry.Task.trigger|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: The properties that describe all triggers for the task.
+    fullName: trigger
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'trigger?: TriggerProperties'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-containerregistry.TriggerProperties|stable" />
+  - name: type
+    uid: '@azure/arm-containerregistry.Task.type|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: >-
+      The type of the resource.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+extends: <xref uid="@azure/arm-containerregistry.Resource|stable" />

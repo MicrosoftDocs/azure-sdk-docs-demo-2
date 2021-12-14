@@ -3,14 +3,26 @@ name: DomainProvisioningState
 uid: '@azure/arm-eventgrid.DomainProvisioningState|stable'
 package: '@azure/arm-eventgrid|stable'
 summary: >-
-  Defines values for DomainProvisioningState.
+  Defines values for DomainProvisioningState. \
 
-  Possible values include: 'Creating', 'Updating', 'Deleting', 'Succeeded',
-  'Canceled', 'Failed'
+  <xref:@azure/arm-eventgrid.KnownDomainProvisioningState|stable> can be used
+  interchangeably with DomainProvisioningState,
+   this enum contains the known values that the service supports.
+  ### Known values supported by the service
+
+  **Creating** \
+
+  **Updating** \
+
+  **Deleting** \
+
+  **Succeeded** \
+
+  **Canceled** \
+
+  **Failed**
 fullName: DomainProvisioningState
 remarks: ''
 isPreview: false
 isDeprecated: false
-syntax: >-
-  type DomainProvisioningState = "Creating" | "Updating" | "Deleting" |
-  "Succeeded" | "Canceled" | "Failed"
+syntax: type DomainProvisioningState = string

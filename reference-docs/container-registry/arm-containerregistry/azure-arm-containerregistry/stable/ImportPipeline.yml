@@ -1,0 +1,171 @@
+### YamlMime:TSType
+name: ImportPipeline
+uid: '@azure/arm-containerregistry.ImportPipeline|stable'
+package: '@azure/arm-containerregistry|stable'
+summary: An object that represents an import pipeline for a container registry.
+fullName: ImportPipeline
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: id
+    uid: '@azure/arm-containerregistry.ImportPipeline.id|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: >-
+      The resource ID.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: identity
+    uid: '@azure/arm-containerregistry.ImportPipeline.identity|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: The identity of the import pipeline.
+    fullName: identity
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'identity?: IdentityProperties'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-containerregistry.IdentityProperties|stable" />
+  - name: location
+    uid: '@azure/arm-containerregistry.ImportPipeline.location|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: The location of the import pipeline.
+    fullName: location
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'location?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: name
+    uid: '@azure/arm-containerregistry.ImportPipeline.name|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: >-
+      The name of the resource.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: options
+    uid: '@azure/arm-containerregistry.ImportPipeline.options|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: The list of all options configured for the pipeline.
+    fullName: options
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'options?: PipelineOptions[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-containerregistry.PipelineOptions|stable" />[]
+  - name: provisioningState
+    uid: '@azure/arm-containerregistry.ImportPipeline.provisioningState|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: >-
+      The provisioning state of the pipeline at the time the operation was
+      called. Possible values
+
+      include: 'Creating', 'Updating', 'Deleting', 'Succeeded', 'Failed',
+      'Canceled'
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: provisioningState
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'provisioningState?: ProvisioningState'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-containerregistry.ProvisioningState|stable" />
+  - name: source
+    uid: '@azure/arm-containerregistry.ImportPipeline.source|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: The source properties of the import pipeline.
+    fullName: source
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'source: ImportPipelineSourceProperties'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-containerregistry.ImportPipelineSourceProperties|stable"
+          />
+  - name: systemData
+    uid: '@azure/arm-containerregistry.ImportPipeline.systemData|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: >-
+      Metadata pertaining to creation and last modification of the resource.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: systemData
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'systemData?: SystemData'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-containerregistry.SystemData|stable" />
+  - name: trigger
+    uid: '@azure/arm-containerregistry.ImportPipeline.trigger|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: The properties that describe the trigger of the import pipeline.
+    fullName: trigger
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'trigger?: PipelineTriggerProperties'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-containerregistry.PipelineTriggerProperties|stable" />
+  - name: type
+    uid: '@azure/arm-containerregistry.ImportPipeline.type|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: >-
+      The type of the resource.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+extends: <xref uid="@azure/arm-containerregistry.ProxyResource|stable" />

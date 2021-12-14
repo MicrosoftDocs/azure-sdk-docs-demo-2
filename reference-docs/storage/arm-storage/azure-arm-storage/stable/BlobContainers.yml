@@ -2,217 +2,186 @@
 name: BlobContainers
 uid: '@azure/arm-storage.BlobContainers|stable'
 package: '@azure/arm-storage|stable'
-summary: Class representing a BlobContainers.
+summary: Interface representing a BlobContainers.
 fullName: BlobContainers
 remarks: ''
 isPreview: false
 isDeprecated: false
-type: class
-constructors:
-  - name: BlobContainers(StorageManagementClientContext)
-    uid: '@azure/arm-storage.BlobContainers.constructor|stable'
+type: interface
+methods:
+  - name: >-
+      beginObjectLevelWorm(string, string, string,
+      BlobContainersObjectLevelWormOptionalParams)
+    uid: '@azure/arm-storage.BlobContainers.beginObjectLevelWorm|stable'
     package: '@azure/arm-storage|stable'
-    summary: Create a BlobContainers.
+    summary: >-
+      This operation migrates a blob container from container level WORM to
+      object level immutability
+
+      enabled container. Prerequisites require a container level immutability
+      policy either in locked or
+
+      unlocked state, Account level versioning must be enabled and there should
+      be no Legal hold on the
+
+      container.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'new BlobContainers(client: StorageManagementClientContext)'
+      content: >-
+        function beginObjectLevelWorm(resourceGroupName: string, accountName:
+        string, containerName: string, options?:
+        BlobContainersObjectLevelWormOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
       parameters:
-        - id: client
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group within the user's subscription. The
+            name is
+                                     case insensitive.
+        - id: accountName
+          type: string
+          description: >-
+            The name of the storage account within the specified resource group.
+            Storage
+                               account names must be between 3 and 24 characters in length and use numbers and lower-case letters
+                               only.
+        - id: containerName
+          type: string
+          description: >-
+            The name of the blob container within the specified storage account.
+            Blob
+                                 container names must be between 3 and 63 characters in length and use numbers, lower-case letters
+                                 and dash (-) only. Every dash (-) character must be immediately preceded and followed by a letter or
+                                 number.
+        - id: options
           type: >-
-            <xref uid="@azure/arm-storage.StorageManagementClientContext|stable"
+            <xref
+            uid="@azure/arm-storage.BlobContainersObjectLevelWormOptionalParams|stable"
             />
           description: |
-            Reference to the service client.
-methods:
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
   - name: >-
-      clearLegalHold(string, string, string, string[],
-      msRest.RequestOptionsBase)
+      beginObjectLevelWormAndWait(string, string, string,
+      BlobContainersObjectLevelWormOptionalParams)
+    uid: '@azure/arm-storage.BlobContainers.beginObjectLevelWormAndWait|stable'
+    package: '@azure/arm-storage|stable'
+    summary: >-
+      This operation migrates a blob container from container level WORM to
+      object level immutability
+
+      enabled container. Prerequisites require a container level immutability
+      policy either in locked or
+
+      unlocked state, Account level versioning must be enabled and there should
+      be no Legal hold on the
+
+      container.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginObjectLevelWormAndWait(resourceGroupName: string,
+        accountName: string, containerName: string, options?:
+        BlobContainersObjectLevelWormOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group within the user's subscription. The
+            name is
+                                     case insensitive.
+        - id: accountName
+          type: string
+          description: >-
+            The name of the storage account within the specified resource group.
+            Storage
+                               account names must be between 3 and 24 characters in length and use numbers and lower-case letters
+                               only.
+        - id: containerName
+          type: string
+          description: >-
+            The name of the blob container within the specified storage account.
+            Blob
+                                 container names must be between 3 and 63 characters in length and use numbers, lower-case letters
+                                 and dash (-) only. Every dash (-) character must be immediately preceded and followed by a letter or
+                                 number.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-storage.BlobContainersObjectLevelWormOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      clearLegalHold(string, string, string, LegalHold,
+      BlobContainersClearLegalHoldOptionalParams)
     uid: '@azure/arm-storage.BlobContainers.clearLegalHold|stable'
     package: '@azure/arm-storage|stable'
     summary: >-
       Clears legal hold tags. Clearing the same or non-existent tag results in
-      an idempotent
+      an idempotent operation.
 
-      operation. ClearLegalHold clears out only the specified tags in the
-      request.
+      ClearLegalHold clears out only the specified tags in the request.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
         function clearLegalHold(resourceGroupName: string, accountName: string,
-        containerName: string, tags: string[], options?:
-        msRest.RequestOptionsBase):
-        Promise<Models.BlobContainersClearLegalHoldResponse>
+        containerName: string, legalHold: LegalHold, options?:
+        BlobContainersClearLegalHoldOptionalParams):
+        Promise<BlobContainersClearLegalHoldResponse>
       parameters:
         - id: resourceGroupName
           type: string
           description: >-
             The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
+            name is
+                                     case insensitive.
         - id: accountName
           type: string
           description: >-
             The name of the storage account within the specified resource group.
             Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
+                               account names must be between 3 and 24 characters in length and use numbers and lower-case letters
+                               only.
         - id: containerName
           type: string
           description: >-
             The name of the blob container within the specified storage account.
             Blob
-
-            container names must be between 3 and 63 characters in length and
-            use numbers, lower-case
-
-            letters and dash (-) only. Every dash (-) character must be
-            immediately preceded and followed by
-
-            a letter or number.
-        - id: tags
-          type: string[]
-          description: >-
-            Each tag should be 3 to 23 alphanumeric characters and is normalized
-            to lower case
-
-            at SRP.
+                                 container names must be between 3 and 63 characters in length and use numbers, lower-case letters
+                                 and dash (-) only. Every dash (-) character must be immediately preceded and followed by a letter or
+                                 number.
+        - id: legalHold
+          type: <xref uid="@azure/arm-storage.LegalHold|stable" />
+          description: The LegalHold property that will be clear from a blob container.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-storage.BlobContainersClearLegalHoldOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.BlobContainersClearLegalHoldResponse>
+        description: ''
         type: >-
           Promise&lt;<xref
           uid="@azure/arm-storage.BlobContainersClearLegalHoldResponse|stable"
           />&gt;
   - name: >-
-      clearLegalHold(string, string, string, string[], RequestOptionsBase,
-      ServiceCallback<LegalHold>)
-    uid: '@azure/arm-storage.BlobContainers.clearLegalHold_2|stable'
-    package: '@azure/arm-storage|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function clearLegalHold(resourceGroupName: string, accountName: string,
-        containerName: string, tags: string[], options: RequestOptionsBase,
-        callback: ServiceCallback<LegalHold>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
-        - id: accountName
-          type: string
-          description: >-
-            The name of the storage account within the specified resource group.
-            Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
-        - id: containerName
-          type: string
-          description: >-
-            The name of the blob container within the specified storage account.
-            Blob
-
-            container names must be between 3 and 63 characters in length and
-            use numbers, lower-case
-
-            letters and dash (-) only. Every dash (-) character must be
-            immediately preceded and followed by
-
-            a letter or number.
-        - id: tags
-          type: string[]
-          description: >-
-            Each tag should be 3 to 23 alphanumeric characters and is normalized
-            to lower case
-
-            at SRP.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref uid="@azure/arm-storage.LegalHold|stable"
-            />&gt;
-          description: |
-            The callback
-  - name: >-
-      clearLegalHold(string, string, string, string[],
-      ServiceCallback<LegalHold>)
-    uid: '@azure/arm-storage.BlobContainers.clearLegalHold_1|stable'
-    package: '@azure/arm-storage|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function clearLegalHold(resourceGroupName: string, accountName: string,
-        containerName: string, tags: string[], callback:
-        ServiceCallback<LegalHold>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
-        - id: accountName
-          type: string
-          description: >-
-            The name of the storage account within the specified resource group.
-            Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
-        - id: containerName
-          type: string
-          description: >-
-            The name of the blob container within the specified storage account.
-            Blob
-
-            container names must be between 3 and 63 characters in length and
-            use numbers, lower-case
-
-            letters and dash (-) only. Every dash (-) character must be
-            immediately preceded and followed by
-
-            a letter or number.
-        - id: tags
-          type: string[]
-          description: >-
-            Each tag should be 3 to 23 alphanumeric characters and is normalized
-            to lower case
-
-            at SRP.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref uid="@azure/arm-storage.LegalHold|stable"
-            />&gt;
-          description: |
-            The callback
-  - name: create(string, string, string, BlobContainer, msRest.RequestOptionsBase)
+      create(string, string, string, BlobContainer,
+      BlobContainersCreateOptionalParams)
     uid: '@azure/arm-storage.BlobContainers.create|stable'
     package: '@azure/arm-storage|stable'
     summary: >-
@@ -230,223 +199,48 @@ methods:
       content: >-
         function create(resourceGroupName: string, accountName: string,
         containerName: string, blobContainer: BlobContainer, options?:
-        msRest.RequestOptionsBase): Promise<Models.BlobContainersCreateResponse>
+        BlobContainersCreateOptionalParams):
+        Promise<BlobContainersCreateResponse>
       parameters:
         - id: resourceGroupName
           type: string
           description: >-
             The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
+            name is
+                                     case insensitive.
         - id: accountName
           type: string
           description: >-
             The name of the storage account within the specified resource group.
             Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
+                               account names must be between 3 and 24 characters in length and use numbers and lower-case letters
+                               only.
         - id: containerName
           type: string
           description: >-
             The name of the blob container within the specified storage account.
             Blob
-
-            container names must be between 3 and 63 characters in length and
-            use numbers, lower-case
-
-            letters and dash (-) only. Every dash (-) character must be
-            immediately preceded and followed by
-
-            a letter or number.
+                                 container names must be between 3 and 63 characters in length and use numbers, lower-case letters
+                                 and dash (-) only. Every dash (-) character must be immediately preceded and followed by a letter or
+                                 number.
         - id: blobContainer
           type: <xref uid="@azure/arm-storage.BlobContainer|stable" />
           description: Properties of the blob container to create.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-storage.BlobContainersCreateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.BlobContainersCreateResponse>
+        description: ''
         type: >-
           Promise&lt;<xref
           uid="@azure/arm-storage.BlobContainersCreateResponse|stable" />&gt;
   - name: >-
-      create(string, string, string, BlobContainer, RequestOptionsBase,
-      ServiceCallback<BlobContainer>)
-    uid: '@azure/arm-storage.BlobContainers.create_2|stable'
-    package: '@azure/arm-storage|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function create(resourceGroupName: string, accountName: string,
-        containerName: string, blobContainer: BlobContainer, options:
-        RequestOptionsBase, callback: ServiceCallback<BlobContainer>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
-        - id: accountName
-          type: string
-          description: >-
-            The name of the storage account within the specified resource group.
-            Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
-        - id: containerName
-          type: string
-          description: >-
-            The name of the blob container within the specified storage account.
-            Blob
-
-            container names must be between 3 and 63 characters in length and
-            use numbers, lower-case
-
-            letters and dash (-) only. Every dash (-) character must be
-            immediately preceded and followed by
-
-            a letter or number.
-        - id: blobContainer
-          type: <xref uid="@azure/arm-storage.BlobContainer|stable" />
-          description: Properties of the blob container to create.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-storage.BlobContainer|stable" />&gt;
-          description: |
-            The callback
-  - name: >-
-      create(string, string, string, BlobContainer,
-      ServiceCallback<BlobContainer>)
-    uid: '@azure/arm-storage.BlobContainers.create_1|stable'
-    package: '@azure/arm-storage|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function create(resourceGroupName: string, accountName: string,
-        containerName: string, blobContainer: BlobContainer, callback:
-        ServiceCallback<BlobContainer>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
-        - id: accountName
-          type: string
-          description: >-
-            The name of the storage account within the specified resource group.
-            Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
-        - id: containerName
-          type: string
-          description: >-
-            The name of the blob container within the specified storage account.
-            Blob
-
-            container names must be between 3 and 63 characters in length and
-            use numbers, lower-case
-
-            letters and dash (-) only. Every dash (-) character must be
-            immediately preceded and followed by
-
-            a letter or number.
-        - id: blobContainer
-          type: <xref uid="@azure/arm-storage.BlobContainer|stable" />
-          description: Properties of the blob container to create.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-storage.BlobContainer|stable" />&gt;
-          description: |
-            The callback
-  - name: >-
       createOrUpdateImmutabilityPolicy(string, string, string,
-      BlobContainersCreateOrUpdateImmutabilityPolicyOptionalParams,
-      ServiceCallback<ImmutabilityPolicy>)
-    uid: >-
-      @azure/arm-storage.BlobContainers.createOrUpdateImmutabilityPolicy_2|stable
-    package: '@azure/arm-storage|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function createOrUpdateImmutabilityPolicy(resourceGroupName: string,
-        accountName: string, containerName: string, options:
-        BlobContainersCreateOrUpdateImmutabilityPolicyOptionalParams, callback:
-        ServiceCallback<ImmutabilityPolicy>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
-        - id: accountName
-          type: string
-          description: >-
-            The name of the storage account within the specified resource group.
-            Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
-        - id: containerName
-          type: string
-          description: >-
-            The name of the blob container within the specified storage account.
-            Blob
-
-            container names must be between 3 and 63 characters in length and
-            use numbers, lower-case
-
-            letters and dash (-) only. Every dash (-) character must be
-            immediately preceded and followed by
-
-            a letter or number.
-        - id: options
-          type: >-
-            <xref
-            uid="@azure/arm-storage.BlobContainersCreateOrUpdateImmutabilityPolicyOptionalParams|stable"
-            />
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-storage.ImmutabilityPolicy|stable" />&gt;
-          description: |
-            The callback
-  - name: >-
-      createOrUpdateImmutabilityPolicy(string, string, string,
-      Models.BlobContainersCreateOrUpdateImmutabilityPolicyOptionalParams)
+      BlobContainersCreateOrUpdateImmutabilityPolicyOptionalParams)
     uid: '@azure/arm-storage.BlobContainers.createOrUpdateImmutabilityPolicy|stable'
     package: '@azure/arm-storage|stable'
     summary: >-
@@ -461,106 +255,90 @@ methods:
       content: >-
         function createOrUpdateImmutabilityPolicy(resourceGroupName: string,
         accountName: string, containerName: string, options?:
-        Models.BlobContainersCreateOrUpdateImmutabilityPolicyOptionalParams):
-        Promise<Models.BlobContainersCreateOrUpdateImmutabilityPolicyResponse>
+        BlobContainersCreateOrUpdateImmutabilityPolicyOptionalParams):
+        Promise<BlobContainersCreateOrUpdateImmutabilityPolicyResponse>
       parameters:
         - id: resourceGroupName
           type: string
           description: >-
             The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
+            name is
+                                     case insensitive.
         - id: accountName
           type: string
           description: >-
             The name of the storage account within the specified resource group.
             Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
+                               account names must be between 3 and 24 characters in length and use numbers and lower-case letters
+                               only.
         - id: containerName
           type: string
           description: >-
             The name of the blob container within the specified storage account.
             Blob
-
-            container names must be between 3 and 63 characters in length and
-            use numbers, lower-case
-
-            letters and dash (-) only. Every dash (-) character must be
-            immediately preceded and followed by
-
-            a letter or number.
+                                 container names must be between 3 and 63 characters in length and use numbers, lower-case letters
+                                 and dash (-) only. Every dash (-) character must be immediately preceded and followed by a letter or
+                                 number.
         - id: options
           type: >-
             <xref
             uid="@azure/arm-storage.BlobContainersCreateOrUpdateImmutabilityPolicyOptionalParams|stable"
             />
-          description: ''
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.BlobContainersCreateOrUpdateImmutabilityPolicyResponse>
+        description: ''
         type: >-
           Promise&lt;<xref
           uid="@azure/arm-storage.BlobContainersCreateOrUpdateImmutabilityPolicyResponse|stable"
           />&gt;
-  - name: >-
-      createOrUpdateImmutabilityPolicy(string, string, string,
-      ServiceCallback<ImmutabilityPolicy>)
-    uid: >-
-      @azure/arm-storage.BlobContainers.createOrUpdateImmutabilityPolicy_1|stable
+  - name: delete(string, string, string, BlobContainersDeleteOptionalParams)
+    uid: '@azure/arm-storage.BlobContainers.delete|stable'
     package: '@azure/arm-storage|stable'
-    summary: ''
+    summary: Deletes specified container under its account.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        function createOrUpdateImmutabilityPolicy(resourceGroupName: string,
-        accountName: string, containerName: string, callback:
-        ServiceCallback<ImmutabilityPolicy>)
+        function delete(resourceGroupName: string, accountName: string,
+        containerName: string, options?: BlobContainersDeleteOptionalParams):
+        Promise<void>
       parameters:
         - id: resourceGroupName
           type: string
           description: >-
             The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
+            name is
+                                     case insensitive.
         - id: accountName
           type: string
           description: >-
             The name of the storage account within the specified resource group.
             Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
+                               account names must be between 3 and 24 characters in length and use numbers and lower-case letters
+                               only.
         - id: containerName
           type: string
           description: >-
             The name of the blob container within the specified storage account.
             Blob
-
-            container names must be between 3 and 63 characters in length and
-            use numbers, lower-case
-
-            letters and dash (-) only. Every dash (-) character must be
-            immediately preceded and followed by
-
-            a letter or number.
-        - id: callback
+                                 container names must be between 3 and 63 characters in length and use numbers, lower-case letters
+                                 and dash (-) only. Every dash (-) character must be immediately preceded and followed by a letter or
+                                 number.
+        - id: options
           type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-storage.ImmutabilityPolicy|stable" />&gt;
+            <xref
+            uid="@azure/arm-storage.BlobContainersDeleteOptionalParams|stable"
+            />
           description: |
-            The callback
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
   - name: >-
       deleteImmutabilityPolicy(string, string, string, string,
-      msRest.RequestOptionsBase)
+      BlobContainersDeleteImmutabilityPolicyOptionalParams)
     uid: '@azure/arm-storage.BlobContainers.deleteImmutabilityPolicy|stable'
     package: '@azure/arm-storage|stable'
     summary: >-
@@ -570,9 +348,9 @@ methods:
       required for this operation.
 
       Deleting a locked immutability policy is not allowed, the only way is to
-      delete the container
+      delete the container after
 
-      after deleting all expired blobs inside the policy locked container.
+      deleting all expired blobs inside the policy locked container.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -580,412 +358,61 @@ methods:
       content: >-
         function deleteImmutabilityPolicy(resourceGroupName: string,
         accountName: string, containerName: string, ifMatch: string, options?:
-        msRest.RequestOptionsBase):
-        Promise<Models.BlobContainersDeleteImmutabilityPolicyResponse>
+        BlobContainersDeleteImmutabilityPolicyOptionalParams):
+        Promise<BlobContainersDeleteImmutabilityPolicyResponse>
       parameters:
         - id: resourceGroupName
           type: string
           description: >-
             The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
+            name is
+                                     case insensitive.
         - id: accountName
           type: string
           description: >-
             The name of the storage account within the specified resource group.
             Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
+                               account names must be between 3 and 24 characters in length and use numbers and lower-case letters
+                               only.
         - id: containerName
           type: string
           description: >-
             The name of the blob container within the specified storage account.
             Blob
-
-            container names must be between 3 and 63 characters in length and
-            use numbers, lower-case
-
-            letters and dash (-) only. Every dash (-) character must be
-            immediately preceded and followed by
-
-            a letter or number.
+                                 container names must be between 3 and 63 characters in length and use numbers, lower-case letters
+                                 and dash (-) only. Every dash (-) character must be immediately preceded and followed by a letter or
+                                 number.
         - id: ifMatch
           type: string
           description: >-
             The entity state (ETag) version of the immutability policy to
-            update. A value of
-
-            "*" can be used to apply the operation only if the immutability
-            policy already exists. If
-
-            omitted, this operation will always be applied.
+            update. A value of "*"
+                           can be used to apply the operation only if the immutability policy already exists. If omitted, this
+                           operation will always be applied.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-storage.BlobContainersDeleteImmutabilityPolicyOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.BlobContainersDeleteImmutabilityPolicyResponse>
+        description: ''
         type: >-
           Promise&lt;<xref
           uid="@azure/arm-storage.BlobContainersDeleteImmutabilityPolicyResponse|stable"
           />&gt;
   - name: >-
-      deleteImmutabilityPolicy(string, string, string, string,
-      RequestOptionsBase, ServiceCallback<ImmutabilityPolicy>)
-    uid: '@azure/arm-storage.BlobContainers.deleteImmutabilityPolicy_2|stable'
-    package: '@azure/arm-storage|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function deleteImmutabilityPolicy(resourceGroupName: string,
-        accountName: string, containerName: string, ifMatch: string, options:
-        RequestOptionsBase, callback: ServiceCallback<ImmutabilityPolicy>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
-        - id: accountName
-          type: string
-          description: >-
-            The name of the storage account within the specified resource group.
-            Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
-        - id: containerName
-          type: string
-          description: >-
-            The name of the blob container within the specified storage account.
-            Blob
-
-            container names must be between 3 and 63 characters in length and
-            use numbers, lower-case
-
-            letters and dash (-) only. Every dash (-) character must be
-            immediately preceded and followed by
-
-            a letter or number.
-        - id: ifMatch
-          type: string
-          description: >-
-            The entity state (ETag) version of the immutability policy to
-            update. A value of
-
-            "*" can be used to apply the operation only if the immutability
-            policy already exists. If
-
-            omitted, this operation will always be applied.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-storage.ImmutabilityPolicy|stable" />&gt;
-          description: |
-            The callback
-  - name: >-
-      deleteImmutabilityPolicy(string, string, string, string,
-      ServiceCallback<ImmutabilityPolicy>)
-    uid: '@azure/arm-storage.BlobContainers.deleteImmutabilityPolicy_1|stable'
-    package: '@azure/arm-storage|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function deleteImmutabilityPolicy(resourceGroupName: string,
-        accountName: string, containerName: string, ifMatch: string, callback:
-        ServiceCallback<ImmutabilityPolicy>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
-        - id: accountName
-          type: string
-          description: >-
-            The name of the storage account within the specified resource group.
-            Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
-        - id: containerName
-          type: string
-          description: >-
-            The name of the blob container within the specified storage account.
-            Blob
-
-            container names must be between 3 and 63 characters in length and
-            use numbers, lower-case
-
-            letters and dash (-) only. Every dash (-) character must be
-            immediately preceded and followed by
-
-            a letter or number.
-        - id: ifMatch
-          type: string
-          description: >-
-            The entity state (ETag) version of the immutability policy to
-            update. A value of
-
-            "*" can be used to apply the operation only if the immutability
-            policy already exists. If
-
-            omitted, this operation will always be applied.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-storage.ImmutabilityPolicy|stable" />&gt;
-          description: |
-            The callback
-  - name: deleteMethod(string, string, string, msRest.RequestOptionsBase)
-    uid: '@azure/arm-storage.BlobContainers.deleteMethod|stable'
-    package: '@azure/arm-storage|stable'
-    summary: Deletes specified container under its account.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function deleteMethod(resourceGroupName: string, accountName: string,
-        containerName: string, options?: msRest.RequestOptionsBase):
-        Promise<RestResponse>
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
-        - id: accountName
-          type: string
-          description: >-
-            The name of the storage account within the specified resource group.
-            Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
-        - id: containerName
-          type: string
-          description: >-
-            The name of the blob container within the specified storage account.
-            Blob
-
-            container names must be between 3 and 63 characters in length and
-            use numbers, lower-case
-
-            letters and dash (-) only. Every dash (-) character must be
-            immediately preceded and followed by
-
-            a letter or number.
-        - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
-      return:
-        description: Promise<msRest.RestResponse>
-        type: Promise&lt;RestResponse&gt;
-  - name: >-
-      deleteMethod(string, string, string, RequestOptionsBase,
-      ServiceCallback<void>)
-    uid: '@azure/arm-storage.BlobContainers.deleteMethod_2|stable'
-    package: '@azure/arm-storage|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function deleteMethod(resourceGroupName: string, accountName: string,
-        containerName: string, options: RequestOptionsBase, callback:
-        ServiceCallback<void>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
-        - id: accountName
-          type: string
-          description: >-
-            The name of the storage account within the specified resource group.
-            Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
-        - id: containerName
-          type: string
-          description: >-
-            The name of the blob container within the specified storage account.
-            Blob
-
-            container names must be between 3 and 63 characters in length and
-            use numbers, lower-case
-
-            letters and dash (-) only. Every dash (-) character must be
-            immediately preceded and followed by
-
-            a letter or number.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: ServiceCallback&lt;void&gt;
-          description: |
-            The callback
-  - name: deleteMethod(string, string, string, ServiceCallback<void>)
-    uid: '@azure/arm-storage.BlobContainers.deleteMethod_1|stable'
-    package: '@azure/arm-storage|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function deleteMethod(resourceGroupName: string, accountName: string,
-        containerName: string, callback: ServiceCallback<void>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
-        - id: accountName
-          type: string
-          description: >-
-            The name of the storage account within the specified resource group.
-            Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
-        - id: containerName
-          type: string
-          description: >-
-            The name of the blob container within the specified storage account.
-            Blob
-
-            container names must be between 3 and 63 characters in length and
-            use numbers, lower-case
-
-            letters and dash (-) only. Every dash (-) character must be
-            immediately preceded and followed by
-
-            a letter or number.
-        - id: callback
-          type: ServiceCallback&lt;void&gt;
-          description: |
-            The callback
-  - name: >-
       extendImmutabilityPolicy(string, string, string, string,
-      BlobContainersExtendImmutabilityPolicyOptionalParams,
-      ServiceCallback<ImmutabilityPolicy>)
-    uid: '@azure/arm-storage.BlobContainers.extendImmutabilityPolicy_2|stable'
-    package: '@azure/arm-storage|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function extendImmutabilityPolicy(resourceGroupName: string,
-        accountName: string, containerName: string, ifMatch: string, options:
-        BlobContainersExtendImmutabilityPolicyOptionalParams, callback:
-        ServiceCallback<ImmutabilityPolicy>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
-        - id: accountName
-          type: string
-          description: >-
-            The name of the storage account within the specified resource group.
-            Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
-        - id: containerName
-          type: string
-          description: >-
-            The name of the blob container within the specified storage account.
-            Blob
-
-            container names must be between 3 and 63 characters in length and
-            use numbers, lower-case
-
-            letters and dash (-) only. Every dash (-) character must be
-            immediately preceded and followed by
-
-            a letter or number.
-        - id: ifMatch
-          type: string
-          description: >-
-            The entity state (ETag) version of the immutability policy to
-            update. A value of
-
-            "*" can be used to apply the operation only if the immutability
-            policy already exists. If
-
-            omitted, this operation will always be applied.
-        - id: options
-          type: >-
-            <xref
-            uid="@azure/arm-storage.BlobContainersExtendImmutabilityPolicyOptionalParams|stable"
-            />
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-storage.ImmutabilityPolicy|stable" />&gt;
-          description: |
-            The callback
-  - name: >-
-      extendImmutabilityPolicy(string, string, string, string,
-      Models.BlobContainersExtendImmutabilityPolicyOptionalParams)
+      BlobContainersExtendImmutabilityPolicyOptionalParams)
     uid: '@azure/arm-storage.BlobContainers.extendImmutabilityPolicy|stable'
     package: '@azure/arm-storage|stable'
     summary: >-
       Extends the immutabilityPeriodSinceCreationInDays of a locked
-      immutabilityPolicy. The only
+      immutabilityPolicy. The only action
 
-      action allowed on a Locked policy will be this action. ETag in If-Match is
-      required for this
-
-      operation.
+      allowed on a Locked policy will be this action. ETag in If-Match is
+      required for this operation.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -993,123 +420,51 @@ methods:
       content: >-
         function extendImmutabilityPolicy(resourceGroupName: string,
         accountName: string, containerName: string, ifMatch: string, options?:
-        Models.BlobContainersExtendImmutabilityPolicyOptionalParams):
-        Promise<Models.BlobContainersExtendImmutabilityPolicyResponse>
+        BlobContainersExtendImmutabilityPolicyOptionalParams):
+        Promise<BlobContainersExtendImmutabilityPolicyResponse>
       parameters:
         - id: resourceGroupName
           type: string
           description: >-
             The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
+            name is
+                                     case insensitive.
         - id: accountName
           type: string
           description: >-
             The name of the storage account within the specified resource group.
             Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
+                               account names must be between 3 and 24 characters in length and use numbers and lower-case letters
+                               only.
         - id: containerName
           type: string
           description: >-
             The name of the blob container within the specified storage account.
             Blob
-
-            container names must be between 3 and 63 characters in length and
-            use numbers, lower-case
-
-            letters and dash (-) only. Every dash (-) character must be
-            immediately preceded and followed by
-
-            a letter or number.
+                                 container names must be between 3 and 63 characters in length and use numbers, lower-case letters
+                                 and dash (-) only. Every dash (-) character must be immediately preceded and followed by a letter or
+                                 number.
         - id: ifMatch
           type: string
           description: >-
             The entity state (ETag) version of the immutability policy to
-            update. A value of
-
-            "*" can be used to apply the operation only if the immutability
-            policy already exists. If
-
-            omitted, this operation will always be applied.
+            update. A value of "*"
+                           can be used to apply the operation only if the immutability policy already exists. If omitted, this
+                           operation will always be applied.
         - id: options
           type: >-
             <xref
             uid="@azure/arm-storage.BlobContainersExtendImmutabilityPolicyOptionalParams|stable"
             />
-          description: ''
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.BlobContainersExtendImmutabilityPolicyResponse>
+        description: ''
         type: >-
           Promise&lt;<xref
           uid="@azure/arm-storage.BlobContainersExtendImmutabilityPolicyResponse|stable"
           />&gt;
-  - name: >-
-      extendImmutabilityPolicy(string, string, string, string,
-      ServiceCallback<ImmutabilityPolicy>)
-    uid: '@azure/arm-storage.BlobContainers.extendImmutabilityPolicy_1|stable'
-    package: '@azure/arm-storage|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function extendImmutabilityPolicy(resourceGroupName: string,
-        accountName: string, containerName: string, ifMatch: string, callback:
-        ServiceCallback<ImmutabilityPolicy>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
-        - id: accountName
-          type: string
-          description: >-
-            The name of the storage account within the specified resource group.
-            Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
-        - id: containerName
-          type: string
-          description: >-
-            The name of the blob container within the specified storage account.
-            Blob
-
-            container names must be between 3 and 63 characters in length and
-            use numbers, lower-case
-
-            letters and dash (-) only. Every dash (-) character must be
-            immediately preceded and followed by
-
-            a letter or number.
-        - id: ifMatch
-          type: string
-          description: >-
-            The entity state (ETag) version of the immutability policy to
-            update. A value of
-
-            "*" can be used to apply the operation only if the immutability
-            policy already exists. If
-
-            omitted, this operation will always be applied.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-storage.ImmutabilityPolicy|stable" />&gt;
-          description: |
-            The callback
-  - name: get(string, string, string, msRest.RequestOptionsBase)
+  - name: get(string, string, string, BlobContainersGetOptionalParams)
     uid: '@azure/arm-storage.BlobContainers.get|stable'
     package: '@azure/arm-storage|stable'
     summary: Gets properties of a specified container.
@@ -1119,211 +474,44 @@ methods:
     syntax:
       content: >-
         function get(resourceGroupName: string, accountName: string,
-        containerName: string, options?: msRest.RequestOptionsBase):
-        Promise<Models.BlobContainersGetResponse>
+        containerName: string, options?: BlobContainersGetOptionalParams):
+        Promise<BlobContainersGetResponse>
       parameters:
         - id: resourceGroupName
           type: string
           description: >-
             The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
+            name is
+                                     case insensitive.
         - id: accountName
           type: string
           description: >-
             The name of the storage account within the specified resource group.
             Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
+                               account names must be between 3 and 24 characters in length and use numbers and lower-case letters
+                               only.
         - id: containerName
           type: string
           description: >-
             The name of the blob container within the specified storage account.
             Blob
-
-            container names must be between 3 and 63 characters in length and
-            use numbers, lower-case
-
-            letters and dash (-) only. Every dash (-) character must be
-            immediately preceded and followed by
-
-            a letter or number.
+                                 container names must be between 3 and 63 characters in length and use numbers, lower-case letters
+                                 and dash (-) only. Every dash (-) character must be immediately preceded and followed by a letter or
+                                 number.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-storage.BlobContainersGetOptionalParams|stable" />
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.BlobContainersGetResponse>
+        description: ''
         type: >-
           Promise&lt;<xref
           uid="@azure/arm-storage.BlobContainersGetResponse|stable" />&gt;
   - name: >-
-      get(string, string, string, RequestOptionsBase,
-      ServiceCallback<BlobContainer>)
-    uid: '@azure/arm-storage.BlobContainers.get_2|stable'
-    package: '@azure/arm-storage|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function get(resourceGroupName: string, accountName: string,
-        containerName: string, options: RequestOptionsBase, callback:
-        ServiceCallback<BlobContainer>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
-        - id: accountName
-          type: string
-          description: >-
-            The name of the storage account within the specified resource group.
-            Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
-        - id: containerName
-          type: string
-          description: >-
-            The name of the blob container within the specified storage account.
-            Blob
-
-            container names must be between 3 and 63 characters in length and
-            use numbers, lower-case
-
-            letters and dash (-) only. Every dash (-) character must be
-            immediately preceded and followed by
-
-            a letter or number.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-storage.BlobContainer|stable" />&gt;
-          description: |
-            The callback
-  - name: get(string, string, string, ServiceCallback<BlobContainer>)
-    uid: '@azure/arm-storage.BlobContainers.get_1|stable'
-    package: '@azure/arm-storage|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function get(resourceGroupName: string, accountName: string,
-        containerName: string, callback: ServiceCallback<BlobContainer>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
-        - id: accountName
-          type: string
-          description: >-
-            The name of the storage account within the specified resource group.
-            Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
-        - id: containerName
-          type: string
-          description: >-
-            The name of the blob container within the specified storage account.
-            Blob
-
-            container names must be between 3 and 63 characters in length and
-            use numbers, lower-case
-
-            letters and dash (-) only. Every dash (-) character must be
-            immediately preceded and followed by
-
-            a letter or number.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-storage.BlobContainer|stable" />&gt;
-          description: |
-            The callback
-  - name: >-
       getImmutabilityPolicy(string, string, string,
-      BlobContainersGetImmutabilityPolicyOptionalParams,
-      ServiceCallback<ImmutabilityPolicy>)
-    uid: '@azure/arm-storage.BlobContainers.getImmutabilityPolicy_2|stable'
-    package: '@azure/arm-storage|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function getImmutabilityPolicy(resourceGroupName: string, accountName:
-        string, containerName: string, options:
-        BlobContainersGetImmutabilityPolicyOptionalParams, callback:
-        ServiceCallback<ImmutabilityPolicy>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
-        - id: accountName
-          type: string
-          description: >-
-            The name of the storage account within the specified resource group.
-            Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
-        - id: containerName
-          type: string
-          description: >-
-            The name of the blob container within the specified storage account.
-            Blob
-
-            container names must be between 3 and 63 characters in length and
-            use numbers, lower-case
-
-            letters and dash (-) only. Every dash (-) character must be
-            immediately preceded and followed by
-
-            a letter or number.
-        - id: options
-          type: >-
-            <xref
-            uid="@azure/arm-storage.BlobContainersGetImmutabilityPolicyOptionalParams|stable"
-            />
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-storage.ImmutabilityPolicy|stable" />&gt;
-          description: |
-            The callback
-  - name: >-
-      getImmutabilityPolicy(string, string, string,
-      Models.BlobContainersGetImmutabilityPolicyOptionalParams)
+      BlobContainersGetImmutabilityPolicyOptionalParams)
     uid: '@azure/arm-storage.BlobContainers.getImmutabilityPolicy|stable'
     package: '@azure/arm-storage|stable'
     summary: >-
@@ -1338,472 +526,136 @@ methods:
       content: >-
         function getImmutabilityPolicy(resourceGroupName: string, accountName:
         string, containerName: string, options?:
-        Models.BlobContainersGetImmutabilityPolicyOptionalParams):
-        Promise<Models.BlobContainersGetImmutabilityPolicyResponse>
+        BlobContainersGetImmutabilityPolicyOptionalParams):
+        Promise<BlobContainersGetImmutabilityPolicyResponse>
       parameters:
         - id: resourceGroupName
           type: string
           description: >-
             The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
+            name is
+                                     case insensitive.
         - id: accountName
           type: string
           description: >-
             The name of the storage account within the specified resource group.
             Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
+                               account names must be between 3 and 24 characters in length and use numbers and lower-case letters
+                               only.
         - id: containerName
           type: string
           description: >-
             The name of the blob container within the specified storage account.
             Blob
-
-            container names must be between 3 and 63 characters in length and
-            use numbers, lower-case
-
-            letters and dash (-) only. Every dash (-) character must be
-            immediately preceded and followed by
-
-            a letter or number.
+                                 container names must be between 3 and 63 characters in length and use numbers, lower-case letters
+                                 and dash (-) only. Every dash (-) character must be immediately preceded and followed by a letter or
+                                 number.
         - id: options
           type: >-
             <xref
             uid="@azure/arm-storage.BlobContainersGetImmutabilityPolicyOptionalParams|stable"
             />
-          description: ''
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.BlobContainersGetImmutabilityPolicyResponse>
+        description: ''
         type: >-
           Promise&lt;<xref
           uid="@azure/arm-storage.BlobContainersGetImmutabilityPolicyResponse|stable"
           />&gt;
-  - name: >-
-      getImmutabilityPolicy(string, string, string,
-      ServiceCallback<ImmutabilityPolicy>)
-    uid: '@azure/arm-storage.BlobContainers.getImmutabilityPolicy_1|stable'
-    package: '@azure/arm-storage|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function getImmutabilityPolicy(resourceGroupName: string, accountName:
-        string, containerName: string, callback:
-        ServiceCallback<ImmutabilityPolicy>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
-        - id: accountName
-          type: string
-          description: >-
-            The name of the storage account within the specified resource group.
-            Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
-        - id: containerName
-          type: string
-          description: >-
-            The name of the blob container within the specified storage account.
-            Blob
-
-            container names must be between 3 and 63 characters in length and
-            use numbers, lower-case
-
-            letters and dash (-) only. Every dash (-) character must be
-            immediately preceded and followed by
-
-            a letter or number.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-storage.ImmutabilityPolicy|stable" />&gt;
-          description: |
-            The callback
-  - name: >-
-      lease(string, string, string, BlobContainersLeaseOptionalParams,
-      ServiceCallback<LeaseContainerResponse>)
-    uid: '@azure/arm-storage.BlobContainers.lease_2|stable'
-    package: '@azure/arm-storage|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function lease(resourceGroupName: string, accountName: string,
-        containerName: string, options: BlobContainersLeaseOptionalParams,
-        callback: ServiceCallback<LeaseContainerResponse>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
-        - id: accountName
-          type: string
-          description: >-
-            The name of the storage account within the specified resource group.
-            Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
-        - id: containerName
-          type: string
-          description: >-
-            The name of the blob container within the specified storage account.
-            Blob
-
-            container names must be between 3 and 63 characters in length and
-            use numbers, lower-case
-
-            letters and dash (-) only. Every dash (-) character must be
-            immediately preceded and followed by
-
-            a letter or number.
-        - id: options
-          type: >-
-            <xref
-            uid="@azure/arm-storage.BlobContainersLeaseOptionalParams|stable" />
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-storage.LeaseContainerResponse|stable" />&gt;
-          description: |
-            The callback
-  - name: lease(string, string, string, Models.BlobContainersLeaseOptionalParams)
+  - name: lease(string, string, string, BlobContainersLeaseOptionalParams)
     uid: '@azure/arm-storage.BlobContainers.lease|stable'
     package: '@azure/arm-storage|stable'
     summary: >-
       The Lease Container operation establishes and manages a lock on a
-      container for delete
+      container for delete operations.
 
-      operations. The lock duration can be 15 to 60 seconds, or can be infinite.
+      The lock duration can be 15 to 60 seconds, or can be infinite.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
         function lease(resourceGroupName: string, accountName: string,
-        containerName: string, options?:
-        Models.BlobContainersLeaseOptionalParams):
-        Promise<Models.BlobContainersLeaseResponse>
+        containerName: string, options?: BlobContainersLeaseOptionalParams):
+        Promise<BlobContainersLeaseResponse>
       parameters:
         - id: resourceGroupName
           type: string
           description: >-
             The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
+            name is
+                                     case insensitive.
         - id: accountName
           type: string
           description: >-
             The name of the storage account within the specified resource group.
             Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
+                               account names must be between 3 and 24 characters in length and use numbers and lower-case letters
+                               only.
         - id: containerName
           type: string
           description: >-
             The name of the blob container within the specified storage account.
             Blob
-
-            container names must be between 3 and 63 characters in length and
-            use numbers, lower-case
-
-            letters and dash (-) only. Every dash (-) character must be
-            immediately preceded and followed by
-
-            a letter or number.
+                                 container names must be between 3 and 63 characters in length and use numbers, lower-case letters
+                                 and dash (-) only. Every dash (-) character must be immediately preceded and followed by a letter or
+                                 number.
         - id: options
           type: >-
             <xref
             uid="@azure/arm-storage.BlobContainersLeaseOptionalParams|stable" />
-          description: ''
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.BlobContainersLeaseResponse>
+        description: ''
         type: >-
           Promise&lt;<xref
           uid="@azure/arm-storage.BlobContainersLeaseResponse|stable" />&gt;
-  - name: lease(string, string, string, ServiceCallback<LeaseContainerResponse>)
-    uid: '@azure/arm-storage.BlobContainers.lease_1|stable'
-    package: '@azure/arm-storage|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function lease(resourceGroupName: string, accountName: string,
-        containerName: string, callback:
-        ServiceCallback<LeaseContainerResponse>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
-        - id: accountName
-          type: string
-          description: >-
-            The name of the storage account within the specified resource group.
-            Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
-        - id: containerName
-          type: string
-          description: >-
-            The name of the blob container within the specified storage account.
-            Blob
-
-            container names must be between 3 and 63 characters in length and
-            use numbers, lower-case
-
-            letters and dash (-) only. Every dash (-) character must be
-            immediately preceded and followed by
-
-            a letter or number.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-storage.LeaseContainerResponse|stable" />&gt;
-          description: |
-            The callback
-  - name: >-
-      list(string, string, BlobContainersListOptionalParams,
-      ServiceCallback<ListContainerItems>)
-    uid: '@azure/arm-storage.BlobContainers.list_2|stable'
-    package: '@azure/arm-storage|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function list(resourceGroupName: string, accountName: string, options:
-        BlobContainersListOptionalParams, callback:
-        ServiceCallback<ListContainerItems>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
-        - id: accountName
-          type: string
-          description: >-
-            The name of the storage account within the specified resource group.
-            Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
-        - id: options
-          type: >-
-            <xref
-            uid="@azure/arm-storage.BlobContainersListOptionalParams|stable" />
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-storage.ListContainerItems|stable" />&gt;
-          description: |
-            The callback
-  - name: list(string, string, Models.BlobContainersListOptionalParams)
+  - name: list(string, string, BlobContainersListOptionalParams)
     uid: '@azure/arm-storage.BlobContainers.list|stable'
     package: '@azure/arm-storage|stable'
     summary: >-
       Lists all containers and does not support a prefix like data plane. Also
-      SRP today does not
+      SRP today does not return
 
-      return continuation token.
+      continuation token.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
         function list(resourceGroupName: string, accountName: string, options?:
-        Models.BlobContainersListOptionalParams):
-        Promise<Models.BlobContainersListResponse>
+        BlobContainersListOptionalParams):
+        PagedAsyncIterableIterator<ListContainerItem>
       parameters:
         - id: resourceGroupName
           type: string
           description: >-
             The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
+            name is
+                                     case insensitive.
         - id: accountName
           type: string
           description: >-
             The name of the storage account within the specified resource group.
             Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
+                               account names must be between 3 and 24 characters in length and use numbers and lower-case letters
+                               only.
         - id: options
           type: >-
             <xref
             uid="@azure/arm-storage.BlobContainersListOptionalParams|stable" />
-          description: ''
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.BlobContainersListResponse>
+        description: ''
         type: >-
-          Promise&lt;<xref
-          uid="@azure/arm-storage.BlobContainersListResponse|stable" />&gt;
-  - name: list(string, string, ServiceCallback<ListContainerItems>)
-    uid: '@azure/arm-storage.BlobContainers.list_1|stable'
-    package: '@azure/arm-storage|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function list(resourceGroupName: string, accountName: string, callback:
-        ServiceCallback<ListContainerItems>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
-        - id: accountName
-          type: string
-          description: >-
-            The name of the storage account within the specified resource group.
-            Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-storage.ListContainerItems|stable" />&gt;
-          description: |
-            The callback
-  - name: >-
-      listNext(string, BlobContainersListNextOptionalParams,
-      ServiceCallback<ListContainerItems>)
-    uid: '@azure/arm-storage.BlobContainers.listNext_2|stable'
-    package: '@azure/arm-storage|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listNext(nextPageLink: string, options:
-        BlobContainersListNextOptionalParams, callback:
-        ServiceCallback<ListContainerItems>)
-      parameters:
-        - id: nextPageLink
-          type: string
-          description: The NextLink from the previous successful call to List operation.
-        - id: options
-          type: >-
-            <xref
-            uid="@azure/arm-storage.BlobContainersListNextOptionalParams|stable"
-            />
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-storage.ListContainerItems|stable" />&gt;
-          description: |
-            The callback
-  - name: listNext(string, Models.BlobContainersListNextOptionalParams)
-    uid: '@azure/arm-storage.BlobContainers.listNext|stable'
-    package: '@azure/arm-storage|stable'
-    summary: >-
-      Lists all containers and does not support a prefix like data plane. Also
-      SRP today does not
-
-      return continuation token.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listNext(nextPageLink: string, options?:
-        Models.BlobContainersListNextOptionalParams):
-        Promise<Models.BlobContainersListNextResponse>
-      parameters:
-        - id: nextPageLink
-          type: string
-          description: The NextLink from the previous successful call to List operation.
-        - id: options
-          type: >-
-            <xref
-            uid="@azure/arm-storage.BlobContainersListNextOptionalParams|stable"
-            />
-          description: ''
-      return:
-        description: Promise<Models.BlobContainersListNextResponse>
-        type: >-
-          Promise&lt;<xref
-          uid="@azure/arm-storage.BlobContainersListNextResponse|stable" />&gt;
-  - name: listNext(string, ServiceCallback<ListContainerItems>)
-    uid: '@azure/arm-storage.BlobContainers.listNext_1|stable'
-    package: '@azure/arm-storage|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listNext(nextPageLink: string, callback:
-        ServiceCallback<ListContainerItems>)
-      parameters:
-        - id: nextPageLink
-          type: string
-          description: The NextLink from the previous successful call to List operation.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-storage.ListContainerItems|stable" />&gt;
-          description: |
-            The callback
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-storage.ListContainerItem|stable" />&gt;
   - name: >-
       lockImmutabilityPolicy(string, string, string, string,
-      msRest.RequestOptionsBase)
+      BlobContainersLockImmutabilityPolicyOptionalParams)
     uid: '@azure/arm-storage.BlobContainers.lockImmutabilityPolicy|stable'
     package: '@azure/arm-storage|stable'
     summary: >-
@@ -1819,376 +671,119 @@ methods:
       content: >-
         function lockImmutabilityPolicy(resourceGroupName: string, accountName:
         string, containerName: string, ifMatch: string, options?:
-        msRest.RequestOptionsBase):
-        Promise<Models.BlobContainersLockImmutabilityPolicyResponse>
+        BlobContainersLockImmutabilityPolicyOptionalParams):
+        Promise<BlobContainersLockImmutabilityPolicyResponse>
       parameters:
         - id: resourceGroupName
           type: string
           description: >-
             The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
+            name is
+                                     case insensitive.
         - id: accountName
           type: string
           description: >-
             The name of the storage account within the specified resource group.
             Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
+                               account names must be between 3 and 24 characters in length and use numbers and lower-case letters
+                               only.
         - id: containerName
           type: string
           description: >-
             The name of the blob container within the specified storage account.
             Blob
-
-            container names must be between 3 and 63 characters in length and
-            use numbers, lower-case
-
-            letters and dash (-) only. Every dash (-) character must be
-            immediately preceded and followed by
-
-            a letter or number.
+                                 container names must be between 3 and 63 characters in length and use numbers, lower-case letters
+                                 and dash (-) only. Every dash (-) character must be immediately preceded and followed by a letter or
+                                 number.
         - id: ifMatch
           type: string
           description: >-
             The entity state (ETag) version of the immutability policy to
-            update. A value of
-
-            "*" can be used to apply the operation only if the immutability
-            policy already exists. If
-
-            omitted, this operation will always be applied.
+            update. A value of "*"
+                           can be used to apply the operation only if the immutability policy already exists. If omitted, this
+                           operation will always be applied.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-storage.BlobContainersLockImmutabilityPolicyOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.BlobContainersLockImmutabilityPolicyResponse>
+        description: ''
         type: >-
           Promise&lt;<xref
           uid="@azure/arm-storage.BlobContainersLockImmutabilityPolicyResponse|stable"
           />&gt;
   - name: >-
-      lockImmutabilityPolicy(string, string, string, string, RequestOptionsBase,
-      ServiceCallback<ImmutabilityPolicy>)
-    uid: '@azure/arm-storage.BlobContainers.lockImmutabilityPolicy_2|stable'
-    package: '@azure/arm-storage|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function lockImmutabilityPolicy(resourceGroupName: string, accountName:
-        string, containerName: string, ifMatch: string, options:
-        RequestOptionsBase, callback: ServiceCallback<ImmutabilityPolicy>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
-        - id: accountName
-          type: string
-          description: >-
-            The name of the storage account within the specified resource group.
-            Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
-        - id: containerName
-          type: string
-          description: >-
-            The name of the blob container within the specified storage account.
-            Blob
-
-            container names must be between 3 and 63 characters in length and
-            use numbers, lower-case
-
-            letters and dash (-) only. Every dash (-) character must be
-            immediately preceded and followed by
-
-            a letter or number.
-        - id: ifMatch
-          type: string
-          description: >-
-            The entity state (ETag) version of the immutability policy to
-            update. A value of
-
-            "*" can be used to apply the operation only if the immutability
-            policy already exists. If
-
-            omitted, this operation will always be applied.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-storage.ImmutabilityPolicy|stable" />&gt;
-          description: |
-            The callback
-  - name: >-
-      lockImmutabilityPolicy(string, string, string, string,
-      ServiceCallback<ImmutabilityPolicy>)
-    uid: '@azure/arm-storage.BlobContainers.lockImmutabilityPolicy_1|stable'
-    package: '@azure/arm-storage|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function lockImmutabilityPolicy(resourceGroupName: string, accountName:
-        string, containerName: string, ifMatch: string, callback:
-        ServiceCallback<ImmutabilityPolicy>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
-        - id: accountName
-          type: string
-          description: >-
-            The name of the storage account within the specified resource group.
-            Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
-        - id: containerName
-          type: string
-          description: >-
-            The name of the blob container within the specified storage account.
-            Blob
-
-            container names must be between 3 and 63 characters in length and
-            use numbers, lower-case
-
-            letters and dash (-) only. Every dash (-) character must be
-            immediately preceded and followed by
-
-            a letter or number.
-        - id: ifMatch
-          type: string
-          description: >-
-            The entity state (ETag) version of the immutability policy to
-            update. A value of
-
-            "*" can be used to apply the operation only if the immutability
-            policy already exists. If
-
-            omitted, this operation will always be applied.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-storage.ImmutabilityPolicy|stable" />&gt;
-          description: |
-            The callback
-  - name: setLegalHold(string, string, string, string[], msRest.RequestOptionsBase)
+      setLegalHold(string, string, string, LegalHold,
+      BlobContainersSetLegalHoldOptionalParams)
     uid: '@azure/arm-storage.BlobContainers.setLegalHold|stable'
     package: '@azure/arm-storage|stable'
     summary: >-
       Sets legal hold tags. Setting the same tag results in an idempotent
-      operation. SetLegalHold
+      operation. SetLegalHold follows
 
-      follows an append pattern and does not clear out the existing tags that
-      are not specified in the
-
-      request.
+      an append pattern and does not clear out the existing tags that are not
+      specified in the request.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
         function setLegalHold(resourceGroupName: string, accountName: string,
-        containerName: string, tags: string[], options?:
-        msRest.RequestOptionsBase):
-        Promise<Models.BlobContainersSetLegalHoldResponse>
+        containerName: string, legalHold: LegalHold, options?:
+        BlobContainersSetLegalHoldOptionalParams):
+        Promise<BlobContainersSetLegalHoldResponse>
       parameters:
         - id: resourceGroupName
           type: string
           description: >-
             The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
+            name is
+                                     case insensitive.
         - id: accountName
           type: string
           description: >-
             The name of the storage account within the specified resource group.
             Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
+                               account names must be between 3 and 24 characters in length and use numbers and lower-case letters
+                               only.
         - id: containerName
           type: string
           description: >-
             The name of the blob container within the specified storage account.
             Blob
-
-            container names must be between 3 and 63 characters in length and
-            use numbers, lower-case
-
-            letters and dash (-) only. Every dash (-) character must be
-            immediately preceded and followed by
-
-            a letter or number.
-        - id: tags
-          type: string[]
-          description: >-
-            Each tag should be 3 to 23 alphanumeric characters and is normalized
-            to lower case
-
-            at SRP.
+                                 container names must be between 3 and 63 characters in length and use numbers, lower-case letters
+                                 and dash (-) only. Every dash (-) character must be immediately preceded and followed by a letter or
+                                 number.
+        - id: legalHold
+          type: <xref uid="@azure/arm-storage.LegalHold|stable" />
+          description: The LegalHold property that will be set to a blob container.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-storage.BlobContainersSetLegalHoldOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.BlobContainersSetLegalHoldResponse>
+        description: ''
         type: >-
           Promise&lt;<xref
           uid="@azure/arm-storage.BlobContainersSetLegalHoldResponse|stable"
           />&gt;
   - name: >-
-      setLegalHold(string, string, string, string[], RequestOptionsBase,
-      ServiceCallback<LegalHold>)
-    uid: '@azure/arm-storage.BlobContainers.setLegalHold_2|stable'
-    package: '@azure/arm-storage|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function setLegalHold(resourceGroupName: string, accountName: string,
-        containerName: string, tags: string[], options: RequestOptionsBase,
-        callback: ServiceCallback<LegalHold>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
-        - id: accountName
-          type: string
-          description: >-
-            The name of the storage account within the specified resource group.
-            Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
-        - id: containerName
-          type: string
-          description: >-
-            The name of the blob container within the specified storage account.
-            Blob
-
-            container names must be between 3 and 63 characters in length and
-            use numbers, lower-case
-
-            letters and dash (-) only. Every dash (-) character must be
-            immediately preceded and followed by
-
-            a letter or number.
-        - id: tags
-          type: string[]
-          description: >-
-            Each tag should be 3 to 23 alphanumeric characters and is normalized
-            to lower case
-
-            at SRP.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref uid="@azure/arm-storage.LegalHold|stable"
-            />&gt;
-          description: |
-            The callback
-  - name: setLegalHold(string, string, string, string[], ServiceCallback<LegalHold>)
-    uid: '@azure/arm-storage.BlobContainers.setLegalHold_1|stable'
-    package: '@azure/arm-storage|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function setLegalHold(resourceGroupName: string, accountName: string,
-        containerName: string, tags: string[], callback:
-        ServiceCallback<LegalHold>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
-        - id: accountName
-          type: string
-          description: >-
-            The name of the storage account within the specified resource group.
-            Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
-        - id: containerName
-          type: string
-          description: >-
-            The name of the blob container within the specified storage account.
-            Blob
-
-            container names must be between 3 and 63 characters in length and
-            use numbers, lower-case
-
-            letters and dash (-) only. Every dash (-) character must be
-            immediately preceded and followed by
-
-            a letter or number.
-        - id: tags
-          type: string[]
-          description: >-
-            Each tag should be 3 to 23 alphanumeric characters and is normalized
-            to lower case
-
-            at SRP.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref uid="@azure/arm-storage.LegalHold|stable"
-            />&gt;
-          description: |
-            The callback
-  - name: update(string, string, string, BlobContainer, msRest.RequestOptionsBase)
+      update(string, string, string, BlobContainer,
+      BlobContainersUpdateOptionalParams)
     uid: '@azure/arm-storage.BlobContainers.update|stable'
     package: '@azure/arm-storage|stable'
     summary: >-
       Updates container properties as specified in request body. Properties not
-      mentioned in the
+      mentioned in the request
 
-      request will be unchanged. Update fails if the specified container doesn't
-      already exist.
+      will be unchanged. Update fails if the specified container doesn't already
+      exist.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -2196,157 +791,42 @@ methods:
       content: >-
         function update(resourceGroupName: string, accountName: string,
         containerName: string, blobContainer: BlobContainer, options?:
-        msRest.RequestOptionsBase): Promise<Models.BlobContainersUpdateResponse>
+        BlobContainersUpdateOptionalParams):
+        Promise<BlobContainersUpdateResponse>
       parameters:
         - id: resourceGroupName
           type: string
           description: >-
             The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
+            name is
+                                     case insensitive.
         - id: accountName
           type: string
           description: >-
             The name of the storage account within the specified resource group.
             Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
+                               account names must be between 3 and 24 characters in length and use numbers and lower-case letters
+                               only.
         - id: containerName
           type: string
           description: >-
             The name of the blob container within the specified storage account.
             Blob
-
-            container names must be between 3 and 63 characters in length and
-            use numbers, lower-case
-
-            letters and dash (-) only. Every dash (-) character must be
-            immediately preceded and followed by
-
-            a letter or number.
+                                 container names must be between 3 and 63 characters in length and use numbers, lower-case letters
+                                 and dash (-) only. Every dash (-) character must be immediately preceded and followed by a letter or
+                                 number.
         - id: blobContainer
           type: <xref uid="@azure/arm-storage.BlobContainer|stable" />
           description: Properties to update for the blob container.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-storage.BlobContainersUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.BlobContainersUpdateResponse>
+        description: ''
         type: >-
           Promise&lt;<xref
           uid="@azure/arm-storage.BlobContainersUpdateResponse|stable" />&gt;
-  - name: >-
-      update(string, string, string, BlobContainer, RequestOptionsBase,
-      ServiceCallback<BlobContainer>)
-    uid: '@azure/arm-storage.BlobContainers.update_2|stable'
-    package: '@azure/arm-storage|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function update(resourceGroupName: string, accountName: string,
-        containerName: string, blobContainer: BlobContainer, options:
-        RequestOptionsBase, callback: ServiceCallback<BlobContainer>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
-        - id: accountName
-          type: string
-          description: >-
-            The name of the storage account within the specified resource group.
-            Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
-        - id: containerName
-          type: string
-          description: >-
-            The name of the blob container within the specified storage account.
-            Blob
-
-            container names must be between 3 and 63 characters in length and
-            use numbers, lower-case
-
-            letters and dash (-) only. Every dash (-) character must be
-            immediately preceded and followed by
-
-            a letter or number.
-        - id: blobContainer
-          type: <xref uid="@azure/arm-storage.BlobContainer|stable" />
-          description: Properties to update for the blob container.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-storage.BlobContainer|stable" />&gt;
-          description: |
-            The callback
-  - name: >-
-      update(string, string, string, BlobContainer,
-      ServiceCallback<BlobContainer>)
-    uid: '@azure/arm-storage.BlobContainers.update_1|stable'
-    package: '@azure/arm-storage|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function update(resourceGroupName: string, accountName: string,
-        containerName: string, blobContainer: BlobContainer, callback:
-        ServiceCallback<BlobContainer>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
-        - id: accountName
-          type: string
-          description: >-
-            The name of the storage account within the specified resource group.
-            Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
-        - id: containerName
-          type: string
-          description: >-
-            The name of the blob container within the specified storage account.
-            Blob
-
-            container names must be between 3 and 63 characters in length and
-            use numbers, lower-case
-
-            letters and dash (-) only. Every dash (-) character must be
-            immediately preceded and followed by
-
-            a letter or number.
-        - id: blobContainer
-          type: <xref uid="@azure/arm-storage.BlobContainer|stable" />
-          description: Properties to update for the blob container.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-storage.BlobContainer|stable" />&gt;
-          description: |
-            The callback

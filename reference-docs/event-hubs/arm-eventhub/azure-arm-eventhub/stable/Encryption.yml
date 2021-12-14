@@ -12,20 +12,16 @@ properties:
   - name: keySource
     uid: '@azure/arm-eventhub.Encryption.keySource|stable'
     package: '@azure/arm-eventhub|stable'
-    summary: >-
-      Enumerates the possible value of keySource for Encryption. Possible values
-      include:
-
-      'Microsoft.KeyVault'. Default value: 'Microsoft.KeyVault'.
+    summary: Enumerates the possible value of keySource for Encryption
     fullName: keySource
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'keySource?: KeySource'
+      content: 'keySource?: undefined | "Microsoft.KeyVault"'
       return:
         description: ''
-        type: <xref uid="@azure/arm-eventhub.KeySource|stable" />
+        type: undefined | "<xref uid="Microsoft.KeyVault|stable" />"
   - name: keyVaultProperties
     uid: '@azure/arm-eventhub.Encryption.keyVaultProperties|stable'
     package: '@azure/arm-eventhub|stable'

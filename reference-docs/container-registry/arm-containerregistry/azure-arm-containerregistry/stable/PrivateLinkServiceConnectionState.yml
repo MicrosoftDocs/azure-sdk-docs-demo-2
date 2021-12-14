@@ -1,0 +1,65 @@
+### YamlMime:TSType
+name: PrivateLinkServiceConnectionState
+uid: '@azure/arm-containerregistry.PrivateLinkServiceConnectionState|stable'
+package: '@azure/arm-containerregistry|stable'
+summary: The state of a private link service connection.
+fullName: PrivateLinkServiceConnectionState
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: actionsRequired
+    uid: >-
+      @azure/arm-containerregistry.PrivateLinkServiceConnectionState.actionsRequired|stable
+    package: '@azure/arm-containerregistry|stable'
+    summary: >-
+      A message indicating if changes on the service provider require any
+      updates on the consumer.
+
+      Possible values include: 'None', 'Recreate'
+    fullName: actionsRequired
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'actionsRequired?: ActionsRequired'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-containerregistry.ActionsRequired|stable" />
+  - name: description
+    uid: >-
+      @azure/arm-containerregistry.PrivateLinkServiceConnectionState.description|stable
+    package: '@azure/arm-containerregistry|stable'
+    summary: >-
+      The description for connection status. For example if connection is
+      rejected it can indicate
+
+      reason for rejection.
+    fullName: description
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'description?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: status
+    uid: >-
+      @azure/arm-containerregistry.PrivateLinkServiceConnectionState.status|stable
+    package: '@azure/arm-containerregistry|stable'
+    summary: >-
+      The private link service connection status. Possible values include:
+      'Approved', 'Pending',
+
+      'Rejected', 'Disconnected'
+    fullName: status
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'status?: ConnectionStatus'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-containerregistry.ConnectionStatus|stable" />

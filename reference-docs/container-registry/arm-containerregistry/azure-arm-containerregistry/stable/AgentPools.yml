@@ -1,0 +1,594 @@
+### YamlMime:TSType
+name: AgentPools
+uid: '@azure/arm-containerregistry.AgentPools|stable'
+package: '@azure/arm-containerregistry|stable'
+summary: Class representing a AgentPools.
+fullName: AgentPools
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: AgentPools(ContainerRegistryManagementClientContext)
+    uid: '@azure/arm-containerregistry.AgentPools.constructor|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: Create a AgentPools.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'new AgentPools(client: ContainerRegistryManagementClientContext)'
+      parameters:
+        - id: client
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.ContainerRegistryManagementClientContext|stable"
+            />
+          description: |
+            Reference to the service client.
+methods:
+  - name: beginCreate(string, string, string, AgentPool, msRest.RequestOptionsBase)
+    uid: '@azure/arm-containerregistry.AgentPools.beginCreate|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: >-
+      Creates an agent pool for a container registry with the specified
+      parameters.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreate(resourceGroupName: string, registryName: string,
+        agentPoolName: string, agentPool: AgentPool, options?:
+        msRest.RequestOptionsBase): Promise<LROPoller>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: agentPoolName
+          type: string
+          description: The name of the agent pool.
+        - id: agentPool
+          type: <xref uid="@azure/arm-containerregistry.AgentPool|stable" />
+          description: The parameters of an agent pool that needs to scheduled.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<msRestAzure.LROPoller>
+        type: Promise&lt;LROPoller&gt;
+  - name: beginDeleteMethod(string, string, string, msRest.RequestOptionsBase)
+    uid: '@azure/arm-containerregistry.AgentPools.beginDeleteMethod|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: Deletes a specified agent pool resource.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string, registryName:
+        string, agentPoolName: string, options?: msRest.RequestOptionsBase):
+        Promise<LROPoller>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: agentPoolName
+          type: string
+          description: The name of the agent pool.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<msRestAzure.LROPoller>
+        type: Promise&lt;LROPoller&gt;
+  - name: >-
+      beginUpdate(string, string, string, AgentPoolUpdateParameters,
+      msRest.RequestOptionsBase)
+    uid: '@azure/arm-containerregistry.AgentPools.beginUpdate|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: Updates an agent pool with the specified parameters.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginUpdate(resourceGroupName: string, registryName: string,
+        agentPoolName: string, updateParameters: AgentPoolUpdateParameters,
+        options?: msRest.RequestOptionsBase): Promise<LROPoller>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: agentPoolName
+          type: string
+          description: The name of the agent pool.
+        - id: updateParameters
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.AgentPoolUpdateParameters|stable"
+            />
+          description: The parameters for updating an agent pool.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<msRestAzure.LROPoller>
+        type: Promise&lt;LROPoller&gt;
+  - name: create(string, string, string, AgentPool, msRest.RequestOptionsBase)
+    uid: '@azure/arm-containerregistry.AgentPools.create|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: >-
+      Creates an agent pool for a container registry with the specified
+      parameters.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function create(resourceGroupName: string, registryName: string,
+        agentPoolName: string, agentPool: AgentPool, options?:
+        msRest.RequestOptionsBase): Promise<Models.AgentPoolsCreateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: agentPoolName
+          type: string
+          description: The name of the agent pool.
+        - id: agentPool
+          type: <xref uid="@azure/arm-containerregistry.AgentPool|stable" />
+          description: The parameters of an agent pool that needs to scheduled.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.AgentPoolsCreateResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-containerregistry.AgentPoolsCreateResponse|stable"
+          />&gt;
+  - name: deleteMethod(string, string, string, msRest.RequestOptionsBase)
+    uid: '@azure/arm-containerregistry.AgentPools.deleteMethod|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: Deletes a specified agent pool resource.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, registryName: string,
+        agentPoolName: string, options?: msRest.RequestOptionsBase):
+        Promise<RestResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: agentPoolName
+          type: string
+          description: The name of the agent pool.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<msRest.RestResponse>
+        type: Promise&lt;RestResponse&gt;
+  - name: get(string, string, string, msRest.RequestOptionsBase)
+    uid: '@azure/arm-containerregistry.AgentPools.get|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: Gets the detailed information for a given agent pool.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, registryName: string,
+        agentPoolName: string, options?: msRest.RequestOptionsBase):
+        Promise<Models.AgentPoolsGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: agentPoolName
+          type: string
+          description: The name of the agent pool.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.AgentPoolsGetResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-containerregistry.AgentPoolsGetResponse|stable" />&gt;
+  - name: >-
+      get(string, string, string, RequestOptionsBase,
+      ServiceCallback<AgentPool>)
+    uid: '@azure/arm-containerregistry.AgentPools.get_2|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, registryName: string,
+        agentPoolName: string, options: RequestOptionsBase, callback:
+        ServiceCallback<AgentPool>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: agentPoolName
+          type: string
+          description: The name of the agent pool.
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-containerregistry.AgentPool|stable" />&gt;
+          description: |
+            The callback
+  - name: get(string, string, string, ServiceCallback<AgentPool>)
+    uid: '@azure/arm-containerregistry.AgentPools.get_1|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, registryName: string,
+        agentPoolName: string, callback: ServiceCallback<AgentPool>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: agentPoolName
+          type: string
+          description: The name of the agent pool.
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-containerregistry.AgentPool|stable" />&gt;
+          description: |
+            The callback
+  - name: getQueueStatus(string, string, string, msRest.RequestOptionsBase)
+    uid: '@azure/arm-containerregistry.AgentPools.getQueueStatus|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: Gets the count of queued runs for a given agent pool.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getQueueStatus(resourceGroupName: string, registryName: string,
+        agentPoolName: string, options?: msRest.RequestOptionsBase):
+        Promise<Models.AgentPoolsGetQueueStatusResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: agentPoolName
+          type: string
+          description: The name of the agent pool.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.AgentPoolsGetQueueStatusResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-containerregistry.AgentPoolsGetQueueStatusResponse|stable"
+          />&gt;
+  - name: >-
+      getQueueStatus(string, string, string, RequestOptionsBase,
+      ServiceCallback<AgentPoolQueueStatus>)
+    uid: '@azure/arm-containerregistry.AgentPools.getQueueStatus_2|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getQueueStatus(resourceGroupName: string, registryName: string,
+        agentPoolName: string, options: RequestOptionsBase, callback:
+        ServiceCallback<AgentPoolQueueStatus>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: agentPoolName
+          type: string
+          description: The name of the agent pool.
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-containerregistry.AgentPoolQueueStatus|stable"
+            />&gt;
+          description: |
+            The callback
+  - name: >-
+      getQueueStatus(string, string, string,
+      ServiceCallback<AgentPoolQueueStatus>)
+    uid: '@azure/arm-containerregistry.AgentPools.getQueueStatus_1|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getQueueStatus(resourceGroupName: string, registryName: string,
+        agentPoolName: string, callback: ServiceCallback<AgentPoolQueueStatus>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: agentPoolName
+          type: string
+          description: The name of the agent pool.
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-containerregistry.AgentPoolQueueStatus|stable"
+            />&gt;
+          description: |
+            The callback
+  - name: list(string, string, msRest.RequestOptionsBase)
+    uid: '@azure/arm-containerregistry.AgentPools.list|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: Lists all the agent pools for a specified container registry.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, registryName: string, options?:
+        msRest.RequestOptionsBase): Promise<Models.AgentPoolsListResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.AgentPoolsListResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-containerregistry.AgentPoolsListResponse|stable"
+          />&gt;
+  - name: >-
+      list(string, string, RequestOptionsBase,
+      ServiceCallback<AgentPoolListResult>)
+    uid: '@azure/arm-containerregistry.AgentPools.list_2|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, registryName: string, options:
+        RequestOptionsBase, callback: ServiceCallback<AgentPoolListResult>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-containerregistry.AgentPoolListResult|stable" />&gt;
+          description: |
+            The callback
+  - name: list(string, string, ServiceCallback<AgentPoolListResult>)
+    uid: '@azure/arm-containerregistry.AgentPools.list_1|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, registryName: string, callback:
+        ServiceCallback<AgentPoolListResult>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-containerregistry.AgentPoolListResult|stable" />&gt;
+          description: |
+            The callback
+  - name: listNext(string, msRest.RequestOptionsBase)
+    uid: '@azure/arm-containerregistry.AgentPools.listNext|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: Lists all the agent pools for a specified container registry.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, options?:
+        msRest.RequestOptionsBase): Promise<Models.AgentPoolsListNextResponse>
+      parameters:
+        - id: nextPageLink
+          type: string
+          description: The NextLink from the previous successful call to List operation.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.AgentPoolsListNextResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-containerregistry.AgentPoolsListNextResponse|stable"
+          />&gt;
+  - name: listNext(string, RequestOptionsBase, ServiceCallback<AgentPoolListResult>)
+    uid: '@azure/arm-containerregistry.AgentPools.listNext_2|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, options: RequestOptionsBase,
+        callback: ServiceCallback<AgentPoolListResult>)
+      parameters:
+        - id: nextPageLink
+          type: string
+          description: The NextLink from the previous successful call to List operation.
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-containerregistry.AgentPoolListResult|stable" />&gt;
+          description: |
+            The callback
+  - name: listNext(string, ServiceCallback<AgentPoolListResult>)
+    uid: '@azure/arm-containerregistry.AgentPools.listNext_1|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, callback:
+        ServiceCallback<AgentPoolListResult>)
+      parameters:
+        - id: nextPageLink
+          type: string
+          description: The NextLink from the previous successful call to List operation.
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-containerregistry.AgentPoolListResult|stable" />&gt;
+          description: |
+            The callback
+  - name: >-
+      update(string, string, string, AgentPoolUpdateParameters,
+      msRest.RequestOptionsBase)
+    uid: '@azure/arm-containerregistry.AgentPools.update|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: Updates an agent pool with the specified parameters.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function update(resourceGroupName: string, registryName: string,
+        agentPoolName: string, updateParameters: AgentPoolUpdateParameters,
+        options?: msRest.RequestOptionsBase):
+        Promise<Models.AgentPoolsUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: agentPoolName
+          type: string
+          description: The name of the agent pool.
+        - id: updateParameters
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.AgentPoolUpdateParameters|stable"
+            />
+          description: The parameters for updating an agent pool.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.AgentPoolsUpdateResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-containerregistry.AgentPoolsUpdateResponse|stable"
+          />&gt;

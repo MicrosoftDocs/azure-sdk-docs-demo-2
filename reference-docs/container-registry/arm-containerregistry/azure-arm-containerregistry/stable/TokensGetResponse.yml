@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: TokensGetResponse
+uid: '@azure/arm-containerregistry.TokensGetResponse|stable'
+package: '@azure/arm-containerregistry|stable'
+summary: Contains response data for the get operation.
+fullName: TokensGetResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type TokensGetResponse = Token & { _response: HttpResponse & { bodyAsText:
+  string, parsedBody: Token } }

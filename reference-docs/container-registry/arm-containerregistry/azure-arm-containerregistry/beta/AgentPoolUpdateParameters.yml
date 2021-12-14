@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: AgentPoolUpdateParameters
+uid: '@azure/arm-containerregistry.AgentPoolUpdateParameters|beta'
+package: '@azure/arm-containerregistry|beta'
+summary: The parameters for updating an agent pool.
+fullName: AgentPoolUpdateParameters
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: count
+    uid: '@azure/arm-containerregistry.AgentPoolUpdateParameters.count|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: The count of agent machine
+    fullName: count
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'count?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: tags
+    uid: '@azure/arm-containerregistry.AgentPoolUpdateParameters.tags|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: The ARM resource tags.
+    fullName: tags
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tags?: undefined | [key: string]: string'
+      return:
+        description: ''
+        type: 'undefined | [key: string]: string'

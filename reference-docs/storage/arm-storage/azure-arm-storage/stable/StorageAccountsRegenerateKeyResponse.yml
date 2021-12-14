@@ -7,7 +7,4 @@ fullName: StorageAccountsRegenerateKeyResponse
 remarks: ''
 isPreview: false
 isDeprecated: false
-syntax: >-
-  type StorageAccountsRegenerateKeyResponse = StorageAccountListKeysResult & {
-  _response: HttpResponse & { bodyAsText: string, parsedBody:
-  StorageAccountListKeysResult } }
+syntax: type StorageAccountsRegenerateKeyResponse = StorageAccountListKeysResult

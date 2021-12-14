@@ -2,32 +2,14 @@
 name: TopicTypes
 uid: '@azure/arm-eventgrid.TopicTypes|stable'
 package: '@azure/arm-eventgrid|stable'
-summary: Class representing a TopicTypes.
+summary: Interface representing a TopicTypes.
 fullName: TopicTypes
 remarks: ''
 isPreview: false
 isDeprecated: false
-type: class
-constructors:
-  - name: TopicTypes(EventGridManagementClientContext)
-    uid: '@azure/arm-eventgrid.TopicTypes.constructor|stable'
-    package: '@azure/arm-eventgrid|stable'
-    summary: Create a TopicTypes.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'new TopicTypes(client: EventGridManagementClientContext)'
-      parameters:
-        - id: client
-          type: >-
-            <xref
-            uid="@azure/arm-eventgrid.EventGridManagementClientContext|stable"
-            />
-          description: |
-            Reference to the service client.
+type: interface
 methods:
-  - name: get(string, msRest.RequestOptionsBase)
+  - name: get(string, TopicTypesGetOptionalParams)
     uid: '@azure/arm-eventgrid.TopicTypes.get|stable'
     package: '@azure/arm-eventgrid|stable'
     summary: Get information about a topic type.
@@ -37,65 +19,23 @@ methods:
     syntax:
       content: >-
         function get(topicTypeName: string, options?:
-        msRest.RequestOptionsBase): Promise<Models.TopicTypesGetResponse>
+        TopicTypesGetOptionalParams): Promise<TopicTypesGetResponse>
       parameters:
         - id: topicTypeName
           type: string
           description: Name of the topic type.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref uid="@azure/arm-eventgrid.TopicTypesGetOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.TopicTypesGetResponse>
+        description: ''
         type: >-
           Promise&lt;<xref
           uid="@azure/arm-eventgrid.TopicTypesGetResponse|stable" />&gt;
-  - name: get(string, RequestOptionsBase, ServiceCallback<TopicTypeInfo>)
-    uid: '@azure/arm-eventgrid.TopicTypes.get_2|stable'
-    package: '@azure/arm-eventgrid|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function get(topicTypeName: string, options: RequestOptionsBase,
-        callback: ServiceCallback<TopicTypeInfo>)
-      parameters:
-        - id: topicTypeName
-          type: string
-          description: Name of the topic type.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-eventgrid.TopicTypeInfo|stable" />&gt;
-          description: |
-            The callback
-  - name: get(string, ServiceCallback<TopicTypeInfo>)
-    uid: '@azure/arm-eventgrid.TopicTypes.get_1|stable'
-    package: '@azure/arm-eventgrid|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function get(topicTypeName: string, callback:
-        ServiceCallback<TopicTypeInfo>)
-      parameters:
-        - id: topicTypeName
-          type: string
-          description: Name of the topic type.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-eventgrid.TopicTypeInfo|stable" />&gt;
-          description: |
-            The callback
-  - name: list(msRest.RequestOptionsBase)
+  - name: list(TopicTypesListOptionalParams)
     uid: '@azure/arm-eventgrid.TopicTypes.list|stable'
     package: '@azure/arm-eventgrid|stable'
     summary: List all registered topic types.
@@ -104,55 +44,21 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function list(options?: msRest.RequestOptionsBase):
-        Promise<Models.TopicTypesListResponse>
+        function list(options?: TopicTypesListOptionalParams):
+        PagedAsyncIterableIterator<TopicTypeInfo>
       parameters:
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref uid="@azure/arm-eventgrid.TopicTypesListOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.TopicTypesListResponse>
+        description: ''
         type: >-
-          Promise&lt;<xref
-          uid="@azure/arm-eventgrid.TopicTypesListResponse|stable" />&gt;
-  - name: list(RequestOptionsBase, ServiceCallback<TopicTypesListResult>)
-    uid: '@azure/arm-eventgrid.TopicTypes.list_2|stable'
-    package: '@azure/arm-eventgrid|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function list(options: RequestOptionsBase, callback:
-        ServiceCallback<TopicTypesListResult>)
-      parameters:
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-eventgrid.TopicTypesListResult|stable" />&gt;
-          description: |
-            The callback
-  - name: list(ServiceCallback<TopicTypesListResult>)
-    uid: '@azure/arm-eventgrid.TopicTypes.list_1|stable'
-    package: '@azure/arm-eventgrid|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function list(callback: ServiceCallback<TopicTypesListResult>)'
-      parameters:
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-eventgrid.TopicTypesListResult|stable" />&gt;
-          description: |
-            The callback
-  - name: listEventTypes(string, msRest.RequestOptionsBase)
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-eventgrid.TopicTypeInfo|stable" />&gt;
+  - name: listEventTypes(string, TopicTypesListEventTypesOptionalParams)
     uid: '@azure/arm-eventgrid.TopicTypes.listEventTypes|stable'
     package: '@azure/arm-eventgrid|stable'
     summary: List event types for a topic type.
@@ -162,65 +68,21 @@ methods:
     syntax:
       content: >-
         function listEventTypes(topicTypeName: string, options?:
-        msRest.RequestOptionsBase):
-        Promise<Models.TopicTypesListEventTypesResponse>
+        TopicTypesListEventTypesOptionalParams):
+        PagedAsyncIterableIterator<EventType>
       parameters:
         - id: topicTypeName
           type: string
           description: Name of the topic type.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.TopicTypesListEventTypesOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.TopicTypesListEventTypesResponse>
+        description: ''
         type: >-
-          Promise&lt;<xref
-          uid="@azure/arm-eventgrid.TopicTypesListEventTypesResponse|stable"
-          />&gt;
-  - name: >-
-      listEventTypes(string, RequestOptionsBase,
-      ServiceCallback<EventTypesListResult>)
-    uid: '@azure/arm-eventgrid.TopicTypes.listEventTypes_2|stable'
-    package: '@azure/arm-eventgrid|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listEventTypes(topicTypeName: string, options:
-        RequestOptionsBase, callback: ServiceCallback<EventTypesListResult>)
-      parameters:
-        - id: topicTypeName
-          type: string
-          description: Name of the topic type.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-eventgrid.EventTypesListResult|stable" />&gt;
-          description: |
-            The callback
-  - name: listEventTypes(string, ServiceCallback<EventTypesListResult>)
-    uid: '@azure/arm-eventgrid.TopicTypes.listEventTypes_1|stable'
-    package: '@azure/arm-eventgrid|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listEventTypes(topicTypeName: string, callback:
-        ServiceCallback<EventTypesListResult>)
-      parameters:
-        - id: topicTypeName
-          type: string
-          description: Name of the topic type.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-eventgrid.EventTypesListResult|stable" />&gt;
-          description: |
-            The callback
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-eventgrid.EventType|stable" />&gt;

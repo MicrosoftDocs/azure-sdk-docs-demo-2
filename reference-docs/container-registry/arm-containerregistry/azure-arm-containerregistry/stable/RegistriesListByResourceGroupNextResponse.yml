@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: RegistriesListByResourceGroupNextResponse
+uid: '@azure/arm-containerregistry.RegistriesListByResourceGroupNextResponse|stable'
+package: '@azure/arm-containerregistry|stable'
+summary: Contains response data for the listByResourceGroupNext operation.
+fullName: RegistriesListByResourceGroupNextResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type RegistriesListByResourceGroupNextResponse = RegistryListResult & {
+  _response: HttpResponse & { bodyAsText: string, parsedBody: RegistryListResult
+  } }

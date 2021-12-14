@@ -1,0 +1,99 @@
+### YamlMime:TSType
+name: FileTaskStepUpdateParameters
+uid: '@azure/arm-containerregistry.FileTaskStepUpdateParameters|stable'
+package: '@azure/arm-containerregistry|stable'
+summary: The properties of updating a task step.
+fullName: FileTaskStepUpdateParameters
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: contextAccessToken
+    uid: >-
+      @azure/arm-containerregistry.FileTaskStepUpdateParameters.contextAccessToken|stable
+    package: '@azure/arm-containerregistry|stable'
+    summary: >-
+      The token (git PAT or SAS token of storage account blob) associated with
+      the context for a
+
+      step.
+    fullName: contextAccessToken
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'contextAccessToken?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: contextPath
+    uid: >-
+      @azure/arm-containerregistry.FileTaskStepUpdateParameters.contextPath|stable
+    package: '@azure/arm-containerregistry|stable'
+    summary: The URL(absolute or relative) of the source context for the task step.
+    fullName: contextPath
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'contextPath?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: taskFilePath
+    uid: >-
+      @azure/arm-containerregistry.FileTaskStepUpdateParameters.taskFilePath|stable
+    package: '@azure/arm-containerregistry|stable'
+    summary: The task template/definition file path relative to the source context.
+    fullName: taskFilePath
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'taskFilePath?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: type
+    uid: '@azure/arm-containerregistry.FileTaskStepUpdateParameters.type|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: Polymorphic Discriminator
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: "FileTask"'
+      return:
+        description: ''
+        type: '"FileTask"'
+  - name: values
+    uid: '@azure/arm-containerregistry.FileTaskStepUpdateParameters.values|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: >-
+      The collection of overridable values that can be passed when running a
+      task.
+    fullName: values
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'values?: SetValue[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-containerregistry.SetValue|stable" />[]
+  - name: valuesFilePath
+    uid: >-
+      @azure/arm-containerregistry.FileTaskStepUpdateParameters.valuesFilePath|stable
+    package: '@azure/arm-containerregistry|stable'
+    summary: The values/parameters file path relative to the source context.
+    fullName: valuesFilePath
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'valuesFilePath?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

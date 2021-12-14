@@ -9,16 +9,16 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: deleteProperty
-    uid: '@azure/arm-storage.ManagementPolicyBaseBlob.deleteProperty|stable'
+  - name: delete
+    uid: '@azure/arm-storage.ManagementPolicyBaseBlob.delete|stable'
     package: '@azure/arm-storage|stable'
     summary: The function to delete the blob
-    fullName: deleteProperty
+    fullName: delete
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'deleteProperty?: DateAfterModification'
+      content: 'delete?: DateAfterModification'
       return:
         description: ''
         type: <xref uid="@azure/arm-storage.DateAfterModification|stable" />
@@ -28,9 +28,8 @@ properties:
     package: '@azure/arm-storage|stable'
     summary: >-
       This property enables auto tiering of a blob from cool to hot on a blob
-      access. This property
-
-      requires tierToCool.daysAfterLastAccessTimeGreaterThan.
+      access. This property requires
+      tierToCool.daysAfterLastAccessTimeGreaterThan.
     fullName: enableAutoTierToHotFromCool
     remarks: ''
     isPreview: false

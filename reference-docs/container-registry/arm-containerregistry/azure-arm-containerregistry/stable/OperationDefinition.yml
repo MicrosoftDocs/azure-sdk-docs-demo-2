@@ -1,0 +1,88 @@
+### YamlMime:TSType
+name: OperationDefinition
+uid: '@azure/arm-containerregistry.OperationDefinition|stable'
+package: '@azure/arm-containerregistry|stable'
+summary: The definition of a container registry operation.
+fullName: OperationDefinition
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: display
+    uid: '@azure/arm-containerregistry.OperationDefinition.display|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: The display information for the container registry operation.
+    fullName: display
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'display?: OperationDisplayDefinition'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-containerregistry.OperationDisplayDefinition|stable"
+          />
+  - name: isDataAction
+    uid: '@azure/arm-containerregistry.OperationDefinition.isDataAction|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: >-
+      This property indicates if the operation is an action or a data action
+
+      ref:
+
+      https://docs.microsoft.com/en-us/azure/role-based-access-control/role-definitions#management-and-data-operations
+    fullName: isDataAction
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isDataAction?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true
+  - name: name
+    uid: '@azure/arm-containerregistry.OperationDefinition.name|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: 'Operation name: {provider}/{resource}/{operation}.'
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: origin
+    uid: '@azure/arm-containerregistry.OperationDefinition.origin|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: The origin information of the container registry operation.
+    fullName: origin
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'origin?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: serviceSpecification
+    uid: >-
+      @azure/arm-containerregistry.OperationDefinition.serviceSpecification|stable
+    package: '@azure/arm-containerregistry|stable'
+    summary: The definition of Azure Monitoring service.
+    fullName: serviceSpecification
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'serviceSpecification?: OperationServiceSpecificationDefinition'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-containerregistry.OperationServiceSpecificationDefinition|stable"
+          />

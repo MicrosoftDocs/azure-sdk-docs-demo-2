@@ -23,13 +23,27 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-storage.ActiveDirectoryProperties|stable" />
+  - name: defaultSharePermission
+    uid: >-
+      @azure/arm-storage.AzureFilesIdentityBasedAuthentication.defaultSharePermission|stable
+    package: '@azure/arm-storage|stable'
+    summary: >-
+      Default share permission for users using Kerberos authentication if RBAC
+      role is not assigned.
+    fullName: defaultSharePermission
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'defaultSharePermission?: DefaultSharePermission'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-storage.DefaultSharePermission|stable" />
   - name: directoryServiceOptions
     uid: >-
       @azure/arm-storage.AzureFilesIdentityBasedAuthentication.directoryServiceOptions|stable
     package: '@azure/arm-storage|stable'
-    summary: >-
-      Indicates the directory service used. Possible values include: 'None',
-      'AADDS', 'AD'
+    summary: Indicates the directory service used.
     fullName: directoryServiceOptions
     remarks: ''
     isPreview: false

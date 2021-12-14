@@ -1,4 +1,4 @@
-### YamlMime:TSType
+### YamlMime:TSTypeAlias
 name: NumberLessThanAdvancedFilter
 uid: '@azure/arm-eventgrid.NumberLessThanAdvancedFilter|stable'
 package: '@azure/arm-eventgrid|stable'
@@ -7,44 +7,6 @@ fullName: NumberLessThanAdvancedFilter
 remarks: ''
 isPreview: false
 isDeprecated: false
-type: interface
-properties:
-  - name: key
-    uid: '@azure/arm-eventgrid.NumberLessThanAdvancedFilter.key|stable'
-    package: '@azure/arm-eventgrid|stable'
-    summary: The field/property in the event based on which you want to filter.
-    fullName: key
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'key?: undefined | string'
-      return:
-        description: ''
-        type: undefined | string
-  - name: operatorType
-    uid: '@azure/arm-eventgrid.NumberLessThanAdvancedFilter.operatorType|stable'
-    package: '@azure/arm-eventgrid|stable'
-    summary: Polymorphic Discriminator
-    fullName: operatorType
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'operatorType: "NumberLessThan"'
-      return:
-        description: ''
-        type: '"NumberLessThan"'
-  - name: value
-    uid: '@azure/arm-eventgrid.NumberLessThanAdvancedFilter.value|stable'
-    package: '@azure/arm-eventgrid|stable'
-    summary: The filter value.
-    fullName: value
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'value?: undefined | number'
-      return:
-        description: ''
-        type: undefined | number
+syntax: >-
+  type NumberLessThanAdvancedFilter = AdvancedFilter & { operatorType:
+  "NumberLessThan", value?: undefined | number }

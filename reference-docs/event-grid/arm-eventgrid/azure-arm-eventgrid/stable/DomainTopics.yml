@@ -2,32 +2,16 @@
 name: DomainTopics
 uid: '@azure/arm-eventgrid.DomainTopics|stable'
 package: '@azure/arm-eventgrid|stable'
-summary: Class representing a DomainTopics.
+summary: Interface representing a DomainTopics.
 fullName: DomainTopics
 remarks: ''
 isPreview: false
 isDeprecated: false
-type: class
-constructors:
-  - name: DomainTopics(EventGridManagementClientContext)
-    uid: '@azure/arm-eventgrid.DomainTopics.constructor|stable'
-    package: '@azure/arm-eventgrid|stable'
-    summary: Create a DomainTopics.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'new DomainTopics(client: EventGridManagementClientContext)'
-      parameters:
-        - id: client
-          type: >-
-            <xref
-            uid="@azure/arm-eventgrid.EventGridManagementClientContext|stable"
-            />
-          description: |
-            Reference to the service client.
+type: interface
 methods:
-  - name: beginCreateOrUpdate(string, string, string, msRest.RequestOptionsBase)
+  - name: >-
+      beginCreateOrUpdate(string, string, string,
+      DomainTopicsCreateOrUpdateOptionalParams)
     uid: '@azure/arm-eventgrid.DomainTopics.beginCreateOrUpdate|stable'
     package: '@azure/arm-eventgrid|stable'
     summary: >-
@@ -39,8 +23,10 @@ methods:
     syntax:
       content: >-
         function beginCreateOrUpdate(resourceGroupName: string, domainName:
-        string, domainTopicName: string, options?: msRest.RequestOptionsBase):
-        Promise<LROPoller>
+        string, domainTopicName: string, options?:
+        DomainTopicsCreateOrUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<DomainTopicsCreateOrUpdateResponse>,
+        DomainTopicsCreateOrUpdateResponse>>
       parameters:
         - id: resourceGroupName
           type: string
@@ -52,41 +38,24 @@ methods:
           type: string
           description: Name of the domain topic.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.DomainTopicsCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<msRestAzure.LROPoller>
-        type: Promise&lt;LROPoller&gt;
-  - name: beginDeleteMethod(string, string, string, msRest.RequestOptionsBase)
-    uid: '@azure/arm-eventgrid.DomainTopics.beginDeleteMethod|stable'
-    package: '@azure/arm-eventgrid|stable'
-    summary: Delete existing domain topic.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function beginDeleteMethod(resourceGroupName: string, domainName:
-        string, domainTopicName: string, options?: msRest.RequestOptionsBase):
-        Promise<LROPoller>
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: The name of the resource group within the user's subscription.
-        - id: domainName
-          type: string
-          description: Name of the domain.
-        - id: domainTopicName
-          type: string
-          description: Name of the domain topic.
-        - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
-      return:
-        description: Promise<msRestAzure.LROPoller>
-        type: Promise&lt;LROPoller&gt;
-  - name: createOrUpdate(string, string, string, msRest.RequestOptionsBase)
-    uid: '@azure/arm-eventgrid.DomainTopics.createOrUpdate|stable'
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-eventgrid.DomainTopicsCreateOrUpdateResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-eventgrid.DomainTopicsCreateOrUpdateResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginCreateOrUpdateAndWait(string, string, string,
+      DomainTopicsCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-eventgrid.DomainTopics.beginCreateOrUpdateAndWait|stable'
     package: '@azure/arm-eventgrid|stable'
     summary: >-
       Asynchronously creates or updates a new domain topic with the specified
@@ -96,9 +65,10 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function createOrUpdate(resourceGroupName: string, domainName: string,
-        domainTopicName: string, options?: msRest.RequestOptionsBase):
-        Promise<Models.DomainTopicsCreateOrUpdateResponse>
+        function beginCreateOrUpdateAndWait(resourceGroupName: string,
+        domainName: string, domainTopicName: string, options?:
+        DomainTopicsCreateOrUpdateOptionalParams):
+        Promise<DomainTopicsCreateOrUpdateResponse>
       parameters:
         - id: resourceGroupName
           type: string
@@ -110,16 +80,20 @@ methods:
           type: string
           description: Name of the domain topic.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.DomainTopicsCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.DomainTopicsCreateOrUpdateResponse>
+        description: ''
         type: >-
           Promise&lt;<xref
           uid="@azure/arm-eventgrid.DomainTopicsCreateOrUpdateResponse|stable"
           />&gt;
-  - name: deleteMethod(string, string, string, msRest.RequestOptionsBase)
-    uid: '@azure/arm-eventgrid.DomainTopics.deleteMethod|stable'
+  - name: beginDelete(string, string, string, DomainTopicsDeleteOptionalParams)
+    uid: '@azure/arm-eventgrid.DomainTopics.beginDelete|stable'
     package: '@azure/arm-eventgrid|stable'
     summary: Delete existing domain topic.
     remarks: ''
@@ -127,9 +101,9 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function deleteMethod(resourceGroupName: string, domainName: string,
-        domainTopicName: string, options?: msRest.RequestOptionsBase):
-        Promise<RestResponse>
+        function beginDelete(resourceGroupName: string, domainName: string,
+        domainTopicName: string, options?: DomainTopicsDeleteOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
       parameters:
         - id: resourceGroupName
           type: string
@@ -141,12 +115,50 @@ methods:
           type: string
           description: Name of the domain topic.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.DomainTopicsDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<msRest.RestResponse>
-        type: Promise&lt;RestResponse&gt;
-  - name: get(string, string, string, msRest.RequestOptionsBase)
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: >-
+      beginDeleteAndWait(string, string, string,
+      DomainTopicsDeleteOptionalParams)
+    uid: '@azure/arm-eventgrid.DomainTopics.beginDeleteAndWait|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Delete existing domain topic.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteAndWait(resourceGroupName: string, domainName:
+        string, domainTopicName: string, options?:
+        DomainTopicsDeleteOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: domainName
+          type: string
+          description: Name of the domain.
+        - id: domainTopicName
+          type: string
+          description: Name of the domain topic.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.DomainTopicsDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: get(string, string, string, DomainTopicsGetOptionalParams)
     uid: '@azure/arm-eventgrid.DomainTopics.get|stable'
     package: '@azure/arm-eventgrid|stable'
     summary: Get properties of a domain topic.
@@ -156,8 +168,8 @@ methods:
     syntax:
       content: >-
         function get(resourceGroupName: string, domainName: string,
-        domainTopicName: string, options?: msRest.RequestOptionsBase):
-        Promise<Models.DomainTopicsGetResponse>
+        domainTopicName: string, options?: DomainTopicsGetOptionalParams):
+        Promise<DomainTopicsGetResponse>
       parameters:
         - id: resourceGroupName
           type: string
@@ -168,110 +180,18 @@ methods:
         - id: domainTopicName
           type: string
           description: Name of the topic.
-        - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
-      return:
-        description: Promise<Models.DomainTopicsGetResponse>
-        type: >-
-          Promise&lt;<xref
-          uid="@azure/arm-eventgrid.DomainTopicsGetResponse|stable" />&gt;
-  - name: >-
-      get(string, string, string, RequestOptionsBase,
-      ServiceCallback<DomainTopic>)
-    uid: '@azure/arm-eventgrid.DomainTopics.get_2|stable'
-    package: '@azure/arm-eventgrid|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function get(resourceGroupName: string, domainName: string,
-        domainTopicName: string, options: RequestOptionsBase, callback:
-        ServiceCallback<DomainTopic>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: The name of the resource group within the user's subscription.
-        - id: domainName
-          type: string
-          description: Name of the domain.
-        - id: domainTopicName
-          type: string
-          description: Name of the topic.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-eventgrid.DomainTopic|stable" />&gt;
-          description: |
-            The callback
-  - name: get(string, string, string, ServiceCallback<DomainTopic>)
-    uid: '@azure/arm-eventgrid.DomainTopics.get_1|stable'
-    package: '@azure/arm-eventgrid|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function get(resourceGroupName: string, domainName: string,
-        domainTopicName: string, callback: ServiceCallback<DomainTopic>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: The name of the resource group within the user's subscription.
-        - id: domainName
-          type: string
-          description: Name of the domain.
-        - id: domainTopicName
-          type: string
-          description: Name of the topic.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-eventgrid.DomainTopic|stable" />&gt;
-          description: |
-            The callback
-  - name: >-
-      listByDomain(string, string, DomainTopicsListByDomainOptionalParams,
-      ServiceCallback<DomainTopicsListResult>)
-    uid: '@azure/arm-eventgrid.DomainTopics.listByDomain_2|stable'
-    package: '@azure/arm-eventgrid|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listByDomain(resourceGroupName: string, domainName: string,
-        options: DomainTopicsListByDomainOptionalParams, callback:
-        ServiceCallback<DomainTopicsListResult>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: The name of the resource group within the user's subscription.
-        - id: domainName
-          type: string
-          description: Domain name.
         - id: options
           type: >-
             <xref
-            uid="@azure/arm-eventgrid.DomainTopicsListByDomainOptionalParams|stable"
-            />
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-eventgrid.DomainTopicsListResult|stable" />&gt;
+            uid="@azure/arm-eventgrid.DomainTopicsGetOptionalParams|stable" />
           description: |
-            The callback
-  - name: >-
-      listByDomain(string, string,
-      Models.DomainTopicsListByDomainOptionalParams)
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventgrid.DomainTopicsGetResponse|stable" />&gt;
+  - name: listByDomain(string, string, DomainTopicsListByDomainOptionalParams)
     uid: '@azure/arm-eventgrid.DomainTopics.listByDomain|stable'
     package: '@azure/arm-eventgrid|stable'
     summary: List all the topics in a domain.
@@ -281,8 +201,8 @@ methods:
     syntax:
       content: >-
         function listByDomain(resourceGroupName: string, domainName: string,
-        options?: Models.DomainTopicsListByDomainOptionalParams):
-        Promise<Models.DomainTopicsListByDomainResponse>
+        options?: DomainTopicsListByDomainOptionalParams):
+        PagedAsyncIterableIterator<DomainTopic>
       parameters:
         - id: resourceGroupName
           type: string
@@ -295,115 +215,10 @@ methods:
             <xref
             uid="@azure/arm-eventgrid.DomainTopicsListByDomainOptionalParams|stable"
             />
-          description: ''
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.DomainTopicsListByDomainResponse>
+        description: ''
         type: >-
-          Promise&lt;<xref
-          uid="@azure/arm-eventgrid.DomainTopicsListByDomainResponse|stable"
-          />&gt;
-  - name: listByDomain(string, string, ServiceCallback<DomainTopicsListResult>)
-    uid: '@azure/arm-eventgrid.DomainTopics.listByDomain_1|stable'
-    package: '@azure/arm-eventgrid|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listByDomain(resourceGroupName: string, domainName: string,
-        callback: ServiceCallback<DomainTopicsListResult>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: The name of the resource group within the user's subscription.
-        - id: domainName
-          type: string
-          description: Domain name.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-eventgrid.DomainTopicsListResult|stable" />&gt;
-          description: |
-            The callback
-  - name: >-
-      listByDomainNext(string, DomainTopicsListByDomainNextOptionalParams,
-      ServiceCallback<DomainTopicsListResult>)
-    uid: '@azure/arm-eventgrid.DomainTopics.listByDomainNext_2|stable'
-    package: '@azure/arm-eventgrid|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listByDomainNext(nextPageLink: string, options:
-        DomainTopicsListByDomainNextOptionalParams, callback:
-        ServiceCallback<DomainTopicsListResult>)
-      parameters:
-        - id: nextPageLink
-          type: string
-          description: The NextLink from the previous successful call to List operation.
-        - id: options
-          type: >-
-            <xref
-            uid="@azure/arm-eventgrid.DomainTopicsListByDomainNextOptionalParams|stable"
-            />
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-eventgrid.DomainTopicsListResult|stable" />&gt;
-          description: |
-            The callback
-  - name: >-
-      listByDomainNext(string,
-      Models.DomainTopicsListByDomainNextOptionalParams)
-    uid: '@azure/arm-eventgrid.DomainTopics.listByDomainNext|stable'
-    package: '@azure/arm-eventgrid|stable'
-    summary: List all the topics in a domain.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listByDomainNext(nextPageLink: string, options?:
-        Models.DomainTopicsListByDomainNextOptionalParams):
-        Promise<Models.DomainTopicsListByDomainNextResponse>
-      parameters:
-        - id: nextPageLink
-          type: string
-          description: The NextLink from the previous successful call to List operation.
-        - id: options
-          type: >-
-            <xref
-            uid="@azure/arm-eventgrid.DomainTopicsListByDomainNextOptionalParams|stable"
-            />
-          description: ''
-      return:
-        description: Promise<Models.DomainTopicsListByDomainNextResponse>
-        type: >-
-          Promise&lt;<xref
-          uid="@azure/arm-eventgrid.DomainTopicsListByDomainNextResponse|stable"
-          />&gt;
-  - name: listByDomainNext(string, ServiceCallback<DomainTopicsListResult>)
-    uid: '@azure/arm-eventgrid.DomainTopics.listByDomainNext_1|stable'
-    package: '@azure/arm-eventgrid|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listByDomainNext(nextPageLink: string, callback:
-        ServiceCallback<DomainTopicsListResult>)
-      parameters:
-        - id: nextPageLink
-          type: string
-          description: The NextLink from the previous successful call to List operation.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-eventgrid.DomainTopicsListResult|stable" />&gt;
-          description: |
-            The callback
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-eventgrid.DomainTopic|stable" />&gt;

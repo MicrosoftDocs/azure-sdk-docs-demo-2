@@ -1,0 +1,70 @@
+### YamlMime:TSType
+name: SourceProperties
+uid: '@azure/arm-containerregistry.SourceProperties|stable'
+package: '@azure/arm-containerregistry|stable'
+summary: The properties of the source code repository.
+fullName: SourceProperties
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: branch
+    uid: '@azure/arm-containerregistry.SourceProperties.branch|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: The branch name of the source code.
+    fullName: branch
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'branch?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: repositoryUrl
+    uid: '@azure/arm-containerregistry.SourceProperties.repositoryUrl|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: The full URL to the source code repository
+    fullName: repositoryUrl
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'repositoryUrl: string'
+      return:
+        description: ''
+        type: string
+  - name: sourceControlAuthProperties
+    uid: >-
+      @azure/arm-containerregistry.SourceProperties.sourceControlAuthProperties|stable
+    package: '@azure/arm-containerregistry|stable'
+    summary: >-
+      The authorization properties for accessing the source code repository and
+      to set up
+
+      webhooks for notifications.
+    fullName: sourceControlAuthProperties
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sourceControlAuthProperties?: AuthInfo'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-containerregistry.AuthInfo|stable" />
+  - name: sourceControlType
+    uid: '@azure/arm-containerregistry.SourceProperties.sourceControlType|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: |-
+      The type of source control service. Possible values include: 'Github',
+      'VisualStudioTeamService'
+    fullName: sourceControlType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sourceControlType: SourceControlType'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-containerregistry.SourceControlType|stable" />

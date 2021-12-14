@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: TaskRunsListResponse
+uid: '@azure/arm-containerregistry.TaskRunsListResponse|stable'
+package: '@azure/arm-containerregistry|stable'
+summary: Contains response data for the list operation.
+fullName: TaskRunsListResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type TaskRunsListResponse = TaskRunListResult & { _response: HttpResponse & {
+  bodyAsText: string, parsedBody: TaskRunListResult } }

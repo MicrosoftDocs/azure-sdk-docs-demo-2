@@ -40,12 +40,13 @@ classes:
   - '@azure/cosmos.Offers|stable'
   - '@azure/cosmos.Permission|stable'
   - '@azure/cosmos.PermissionResponse|stable'
-  - '@azure/cosmos.Permissions|stable'
+  - '@azure/cosmos.Permissions_2|stable'
   - '@azure/cosmos.QueryIterator|stable'
   - '@azure/cosmos.QueryMetrics|stable'
   - '@azure/cosmos.QueryPreparationTimes|stable'
   - '@azure/cosmos.ResourceResponse|stable'
   - '@azure/cosmos.RuntimeExecutionTimes|stable'
+  - '@azure/cosmos.SasTokenProperties|stable'
   - '@azure/cosmos.Scripts|stable'
   - '@azure/cosmos.StoredProcedure|stable'
   - '@azure/cosmos.StoredProcedureResponse|stable'
@@ -85,7 +86,7 @@ interfaces:
   - '@azure/cosmos.ItemDefinition|stable'
   - '@azure/cosmos.JSONArray|stable'
   - '@azure/cosmos.JSONObject|stable'
-  - '@azure/cosmos.Location|stable'
+  - '@azure/cosmos.Location_2|stable'
   - '@azure/cosmos.OfferDefinition|stable'
   - '@azure/cosmos.OperationBase|stable'
   - '@azure/cosmos.OperationResponse|stable'
@@ -130,3 +131,29 @@ typeAliases:
   - '@azure/cosmos.TokenProvider|stable'
   - '@azure/cosmos.UpsertOperation|stable'
   - '@azure/cosmos.VerboseOmit|stable'
+functions:
+  - name: createAuthorizationSasToken(string, SasTokenProperties)
+    uid: '@azure/cosmos.createAuthorizationSasToken|stable'
+    package: '@azure/cosmos|stable'
+    summary: >-
+      Experimental internal only
+
+      Generates the payload representing the permission configuration for the
+      sas token.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createAuthorizationSasToken(masterKey: string,
+        sasTokenProperties: SasTokenProperties): Promise<string>
+      parameters:
+        - id: masterKey
+          type: string
+          description: ''
+        - id: sasTokenProperties
+          type: <xref uid="@azure/cosmos.SasTokenProperties|stable" />
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;string&gt;

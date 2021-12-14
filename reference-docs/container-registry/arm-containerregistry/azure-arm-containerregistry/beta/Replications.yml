@@ -1,0 +1,341 @@
+### YamlMime:TSType
+name: Replications
+uid: '@azure/arm-containerregistry.Replications|beta'
+package: '@azure/arm-containerregistry|beta'
+summary: Interface representing a Replications.
+fullName: Replications
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      beginCreate(string, string, string, Replication,
+      ReplicationsCreateOptionalParams)
+    uid: '@azure/arm-containerregistry.Replications.beginCreate|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: >-
+      Creates a replication for a container registry with the specified
+      parameters.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreate(resourceGroupName: string, registryName: string,
+        replicationName: string, replication: Replication, options?:
+        ReplicationsCreateOptionalParams):
+        Promise<PollerLike<PollOperationState<ReplicationsCreateResponse>,
+        ReplicationsCreateResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: replicationName
+          type: string
+          description: The name of the replication.
+        - id: replication
+          type: <xref uid="@azure/arm-containerregistry.Replication|beta" />
+          description: The parameters for creating a replication.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.ReplicationsCreateOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-containerregistry.ReplicationsCreateResponse|beta"
+          />&gt;, <xref
+          uid="@azure/arm-containerregistry.ReplicationsCreateResponse|beta"
+          />&gt;&gt;
+  - name: >-
+      beginCreateAndWait(string, string, string, Replication,
+      ReplicationsCreateOptionalParams)
+    uid: '@azure/arm-containerregistry.Replications.beginCreateAndWait|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: >-
+      Creates a replication for a container registry with the specified
+      parameters.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateAndWait(resourceGroupName: string, registryName:
+        string, replicationName: string, replication: Replication, options?:
+        ReplicationsCreateOptionalParams): Promise<ReplicationsCreateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: replicationName
+          type: string
+          description: The name of the replication.
+        - id: replication
+          type: <xref uid="@azure/arm-containerregistry.Replication|beta" />
+          description: The parameters for creating a replication.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.ReplicationsCreateOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-containerregistry.ReplicationsCreateResponse|beta"
+          />&gt;
+  - name: beginDelete(string, string, string, ReplicationsDeleteOptionalParams)
+    uid: '@azure/arm-containerregistry.Replications.beginDelete|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: Deletes a replication from a container registry.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDelete(resourceGroupName: string, registryName: string,
+        replicationName: string, options?: ReplicationsDeleteOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: replicationName
+          type: string
+          description: The name of the replication.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.ReplicationsDeleteOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: >-
+      beginDeleteAndWait(string, string, string,
+      ReplicationsDeleteOptionalParams)
+    uid: '@azure/arm-containerregistry.Replications.beginDeleteAndWait|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: Deletes a replication from a container registry.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteAndWait(resourceGroupName: string, registryName:
+        string, replicationName: string, options?:
+        ReplicationsDeleteOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: replicationName
+          type: string
+          description: The name of the replication.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.ReplicationsDeleteOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      beginUpdate(string, string, string, ReplicationUpdateParameters,
+      ReplicationsUpdateOptionalParams)
+    uid: '@azure/arm-containerregistry.Replications.beginUpdate|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: >-
+      Updates a replication for a container registry with the specified
+      parameters.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginUpdate(resourceGroupName: string, registryName: string,
+        replicationName: string, replicationUpdateParameters:
+        ReplicationUpdateParameters, options?:
+        ReplicationsUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<ReplicationsUpdateResponse>,
+        ReplicationsUpdateResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: replicationName
+          type: string
+          description: The name of the replication.
+        - id: replicationUpdateParameters
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.ReplicationUpdateParameters|beta"
+            />
+          description: The parameters for updating a replication.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.ReplicationsUpdateOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-containerregistry.ReplicationsUpdateResponse|beta"
+          />&gt;, <xref
+          uid="@azure/arm-containerregistry.ReplicationsUpdateResponse|beta"
+          />&gt;&gt;
+  - name: >-
+      beginUpdateAndWait(string, string, string, ReplicationUpdateParameters,
+      ReplicationsUpdateOptionalParams)
+    uid: '@azure/arm-containerregistry.Replications.beginUpdateAndWait|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: >-
+      Updates a replication for a container registry with the specified
+      parameters.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginUpdateAndWait(resourceGroupName: string, registryName:
+        string, replicationName: string, replicationUpdateParameters:
+        ReplicationUpdateParameters, options?:
+        ReplicationsUpdateOptionalParams): Promise<ReplicationsUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: replicationName
+          type: string
+          description: The name of the replication.
+        - id: replicationUpdateParameters
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.ReplicationUpdateParameters|beta"
+            />
+          description: The parameters for updating a replication.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.ReplicationsUpdateOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-containerregistry.ReplicationsUpdateResponse|beta"
+          />&gt;
+  - name: get(string, string, string, ReplicationsGetOptionalParams)
+    uid: '@azure/arm-containerregistry.Replications.get|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: Gets the properties of the specified replication.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, registryName: string,
+        replicationName: string, options?: ReplicationsGetOptionalParams):
+        Promise<ReplicationsGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: replicationName
+          type: string
+          description: The name of the replication.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.ReplicationsGetOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-containerregistry.ReplicationsGetResponse|beta" />&gt;
+  - name: list(string, string, ReplicationsListOptionalParams)
+    uid: '@azure/arm-containerregistry.Replications.list|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: Lists all the replications for the specified container registry.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, registryName: string, options?:
+        ReplicationsListOptionalParams): PagedAsyncIterableIterator<Replication>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.ReplicationsListOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-containerregistry.Replication|beta" />&gt;

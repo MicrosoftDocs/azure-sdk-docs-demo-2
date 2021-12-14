@@ -1,0 +1,183 @@
+### YamlMime:TSType
+name: AgentPool
+uid: '@azure/arm-containerregistry.AgentPool|stable'
+package: '@azure/arm-containerregistry|stable'
+summary: |-
+  The agentpool that has the ARM resource and properties.
+  The agentpool will have all information to create an agent pool.
+fullName: AgentPool
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: count
+    uid: '@azure/arm-containerregistry.AgentPool.count|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: The count of agent machine
+    fullName: count
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'count?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: id
+    uid: '@azure/arm-containerregistry.AgentPool.id|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: >-
+      The resource ID.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: location
+    uid: '@azure/arm-containerregistry.AgentPool.location|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: >-
+      The location of the resource. This cannot be changed after the resource is
+      created.
+    fullName: location
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'location: string'
+      return:
+        description: ''
+        type: string
+  - name: name
+    uid: '@azure/arm-containerregistry.AgentPool.name|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: >-
+      The name of the resource.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: os
+    uid: '@azure/arm-containerregistry.AgentPool.os|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: 'The OS of agent machine. Possible values include: ''Windows'', ''Linux'''
+    fullName: os
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'os?: OS'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-containerregistry.OS|stable" />
+  - name: provisioningState
+    uid: '@azure/arm-containerregistry.AgentPool.provisioningState|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: >-
+      The provisioning state of this agent pool. Possible values include:
+      'Creating', 'Updating',
+
+      'Deleting', 'Succeeded', 'Failed', 'Canceled'
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: provisioningState
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'provisioningState?: ProvisioningState'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-containerregistry.ProvisioningState|stable" />
+  - name: systemData
+    uid: '@azure/arm-containerregistry.AgentPool.systemData|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: >-
+      Metadata pertaining to creation and last modification of the resource.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: systemData
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'systemData?: SystemData'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-containerregistry.SystemData|stable" />
+  - name: tags
+    uid: '@azure/arm-containerregistry.AgentPool.tags|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: The tags of the resource.
+    fullName: tags
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tags?: undefined | [key: string]: string'
+      return:
+        description: ''
+        type: 'undefined | [key: string]: string'
+  - name: tier
+    uid: '@azure/arm-containerregistry.AgentPool.tier|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: The Tier of agent machine
+    fullName: tier
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tier?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: type
+    uid: '@azure/arm-containerregistry.AgentPool.type|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: >-
+      The type of the resource.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: virtualNetworkSubnetResourceId
+    uid: >-
+      @azure/arm-containerregistry.AgentPool.virtualNetworkSubnetResourceId|stable
+    package: '@azure/arm-containerregistry|stable'
+    summary: The Virtual Network Subnet Resource Id of the agent machine
+    fullName: virtualNetworkSubnetResourceId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'virtualNetworkSubnetResourceId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+extends: <xref uid="@azure/arm-containerregistry.Resource|stable" />

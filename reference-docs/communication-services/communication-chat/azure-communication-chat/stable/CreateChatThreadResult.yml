@@ -1,0 +1,42 @@
+### YamlMime:TSType
+name: CreateChatThreadResult
+uid: '@azure/communication-chat.CreateChatThreadResult|stable'
+package: '@azure/communication-chat|stable'
+summary: Result of the create chat thread operation.
+fullName: CreateChatThreadResult
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: chatThread
+    uid: '@azure/communication-chat.CreateChatThreadResult.chatThread|stable'
+    package: '@azure/communication-chat|stable'
+    summary: Chat thread.
+    fullName: chatThread
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'chatThread?: ChatThreadProperties'
+      return:
+        description: ''
+        type: <xref uid="@azure/communication-chat.ChatThreadProperties|stable" />
+  - name: invalidParticipants
+    uid: >-
+      @azure/communication-chat.CreateChatThreadResult.invalidParticipants|stable
+    package: '@azure/communication-chat|stable'
+    summary: >-
+      The participants that failed to be added to the chat thread.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: invalidParticipants
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'invalidParticipants?: ChatError[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/communication-chat.ChatError|stable" />[]

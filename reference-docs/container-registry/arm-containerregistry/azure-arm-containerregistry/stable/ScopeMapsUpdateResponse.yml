@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: ScopeMapsUpdateResponse
+uid: '@azure/arm-containerregistry.ScopeMapsUpdateResponse|stable'
+package: '@azure/arm-containerregistry|stable'
+summary: Contains response data for the update operation.
+fullName: ScopeMapsUpdateResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type ScopeMapsUpdateResponse = ScopeMap & { _response: HttpResponse & {
+  bodyAsText: string, parsedBody: ScopeMap } }

@@ -12,7 +12,7 @@ properties:
   - name: display
     uid: '@azure/arm-eventhub.Operation.display|stable'
     package: '@azure/arm-eventhub|stable'
-    summary: The object that represents the operation.
+    summary: Display of the operation
     fullName: display
     remarks: ''
     isPreview: false
@@ -22,14 +22,27 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-eventhub.OperationDisplay|stable" />
+  - name: isDataAction
+    uid: '@azure/arm-eventhub.Operation.isDataAction|stable'
+    package: '@azure/arm-eventhub|stable'
+    summary: Indicates whether the operation is a data action
+    fullName: isDataAction
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isDataAction?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true
   - name: name
     uid: '@azure/arm-eventhub.Operation.name|stable'
     package: '@azure/arm-eventhub|stable'
     summary: >-
       Operation name: {provider}/{resource}/{operation}
 
-      **NOTE: This property will not be serialized. It can only be populated by
-      the server.**
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
     fullName: name
     remarks: ''
     isPreview: false
@@ -39,3 +52,29 @@ properties:
       return:
         description: ''
         type: undefined | string
+  - name: origin
+    uid: '@azure/arm-eventhub.Operation.origin|stable'
+    package: '@azure/arm-eventhub|stable'
+    summary: Origin of the operation
+    fullName: origin
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'origin?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: properties
+    uid: '@azure/arm-eventhub.Operation.properties|stable'
+    package: '@azure/arm-eventhub|stable'
+    summary: Properties of the operation
+    fullName: properties
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'properties?: Record<string, unknown>'
+      return:
+        description: ''
+        type: Record&lt;string, unknown&gt;

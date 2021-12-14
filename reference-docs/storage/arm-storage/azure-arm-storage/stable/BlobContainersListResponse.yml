@@ -7,6 +7,4 @@ fullName: BlobContainersListResponse
 remarks: ''
 isPreview: false
 isDeprecated: false
-syntax: >-
-  type BlobContainersListResponse = ListContainerItems & { _response:
-  HttpResponse & { bodyAsText: string, parsedBody: ListContainerItems } }
+syntax: type BlobContainersListResponse = ListContainerItems

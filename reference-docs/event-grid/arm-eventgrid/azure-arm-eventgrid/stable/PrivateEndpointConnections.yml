@@ -2,35 +2,17 @@
 name: PrivateEndpointConnections
 uid: '@azure/arm-eventgrid.PrivateEndpointConnections|stable'
 package: '@azure/arm-eventgrid|stable'
-summary: Class representing a PrivateEndpointConnections.
+summary: Interface representing a PrivateEndpointConnections.
 fullName: PrivateEndpointConnections
 remarks: ''
 isPreview: false
 isDeprecated: false
-type: class
-constructors:
-  - name: PrivateEndpointConnections(EventGridManagementClientContext)
-    uid: '@azure/arm-eventgrid.PrivateEndpointConnections.constructor|stable'
-    package: '@azure/arm-eventgrid|stable'
-    summary: Create a PrivateEndpointConnections.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'new PrivateEndpointConnections(client: EventGridManagementClientContext)'
-      parameters:
-        - id: client
-          type: >-
-            <xref
-            uid="@azure/arm-eventgrid.EventGridManagementClientContext|stable"
-            />
-          description: |
-            Reference to the service client.
+type: interface
 methods:
   - name: >-
-      beginDeleteMethod(string, Models.ParentType2, string, string,
-      msRest.RequestOptionsBase)
-    uid: '@azure/arm-eventgrid.PrivateEndpointConnections.beginDeleteMethod|stable'
+      beginDelete(string, Enum20, string, string,
+      PrivateEndpointConnectionsDeleteOptionalParams)
+    uid: '@azure/arm-eventgrid.PrivateEndpointConnections.beginDelete|stable'
     package: '@azure/arm-eventgrid|stable'
     summary: Delete a specific private endpoint connection under a topic or domain.
     remarks: ''
@@ -38,39 +20,81 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function beginDeleteMethod(resourceGroupName: string, parentType:
-        Models.ParentType2, parentName: string, privateEndpointConnectionName:
-        string, options?: msRest.RequestOptionsBase): Promise<LROPoller>
+        function beginDelete(resourceGroupName: string, parentType: Enum20,
+        parentName: string, privateEndpointConnectionName: string, options?:
+        PrivateEndpointConnectionsDeleteOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
       parameters:
         - id: resourceGroupName
           type: string
           description: The name of the resource group within the user's subscription.
         - id: parentType
-          type: <xref uid="@azure/arm-eventgrid.ParentType2|stable" />
+          type: <xref uid="@azure/arm-eventgrid.Enum20|stable" />
           description: >-
             The type of the parent resource. This can be either \'topics\' or
             \'domains\'.
-
-            Possible values include: 'topics', 'domains'
         - id: parentName
           type: string
           description: >-
             The name of the parent resource (namely, either, the topic name or
-            domain
-
-            name).
+            domain name).
         - id: privateEndpointConnectionName
           type: string
           description: The name of the private endpoint connection connection.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.PrivateEndpointConnectionsDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<msRestAzure.LROPoller>
-        type: Promise&lt;LROPoller&gt;
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
   - name: >-
-      beginUpdate(string, Models.ParentType1, string, string,
-      PrivateEndpointConnection, msRest.RequestOptionsBase)
+      beginDeleteAndWait(string, Enum20, string, string,
+      PrivateEndpointConnectionsDeleteOptionalParams)
+    uid: '@azure/arm-eventgrid.PrivateEndpointConnections.beginDeleteAndWait|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Delete a specific private endpoint connection under a topic or domain.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteAndWait(resourceGroupName: string, parentType:
+        Enum20, parentName: string, privateEndpointConnectionName: string,
+        options?: PrivateEndpointConnectionsDeleteOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: parentType
+          type: <xref uid="@azure/arm-eventgrid.Enum20|stable" />
+          description: >-
+            The type of the parent resource. This can be either \'topics\' or
+            \'domains\'.
+        - id: parentName
+          type: string
+          description: >-
+            The name of the parent resource (namely, either, the topic name or
+            domain name).
+        - id: privateEndpointConnectionName
+          type: string
+          description: The name of the private endpoint connection connection.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.PrivateEndpointConnectionsDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      beginUpdate(string, Enum19, string, string, PrivateEndpointConnection,
+      PrivateEndpointConnectionsUpdateOptionalParams)
     uid: '@azure/arm-eventgrid.PrivateEndpointConnections.beginUpdate|stable'
     package: '@azure/arm-eventgrid|stable'
     summary: Update a specific private endpoint connection under a topic or domain.
@@ -79,28 +103,26 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function beginUpdate(resourceGroupName: string, parentType:
-        Models.ParentType1, parentName: string, privateEndpointConnectionName:
-        string, privateEndpointConnection: PrivateEndpointConnection, options?:
-        msRest.RequestOptionsBase): Promise<LROPoller>
+        function beginUpdate(resourceGroupName: string, parentType: Enum19,
+        parentName: string, privateEndpointConnectionName: string,
+        privateEndpointConnection: PrivateEndpointConnection, options?:
+        PrivateEndpointConnectionsUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<PrivateEndpointConnectionsUpdateResponse>,
+        PrivateEndpointConnectionsUpdateResponse>>
       parameters:
         - id: resourceGroupName
           type: string
           description: The name of the resource group within the user's subscription.
         - id: parentType
-          type: <xref uid="@azure/arm-eventgrid.ParentType1|stable" />
+          type: <xref uid="@azure/arm-eventgrid.Enum19|stable" />
           description: >-
             The type of the parent resource. This can be either \'topics\' or
             \'domains\'.
-
-            Possible values include: 'topics', 'domains'
         - id: parentName
           type: string
           description: >-
             The name of the parent resource (namely, either, the topic name or
-            domain
-
-            name).
+            domain name).
         - id: privateEndpointConnectionName
           type: string
           description: The name of the private endpoint connection connection.
@@ -108,53 +130,72 @@ methods:
           type: <xref uid="@azure/arm-eventgrid.PrivateEndpointConnection|stable" />
           description: The private endpoint connection object to update.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.PrivateEndpointConnectionsUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<msRestAzure.LROPoller>
-        type: Promise&lt;LROPoller&gt;
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-eventgrid.PrivateEndpointConnectionsUpdateResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-eventgrid.PrivateEndpointConnectionsUpdateResponse|stable"
+          />&gt;&gt;
   - name: >-
-      deleteMethod(string, Models.ParentType2, string, string,
-      msRest.RequestOptionsBase)
-    uid: '@azure/arm-eventgrid.PrivateEndpointConnections.deleteMethod|stable'
+      beginUpdateAndWait(string, Enum19, string, string,
+      PrivateEndpointConnection, PrivateEndpointConnectionsUpdateOptionalParams)
+    uid: '@azure/arm-eventgrid.PrivateEndpointConnections.beginUpdateAndWait|stable'
     package: '@azure/arm-eventgrid|stable'
-    summary: Delete a specific private endpoint connection under a topic or domain.
+    summary: Update a specific private endpoint connection under a topic or domain.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        function deleteMethod(resourceGroupName: string, parentType:
-        Models.ParentType2, parentName: string, privateEndpointConnectionName:
-        string, options?: msRest.RequestOptionsBase): Promise<RestResponse>
+        function beginUpdateAndWait(resourceGroupName: string, parentType:
+        Enum19, parentName: string, privateEndpointConnectionName: string,
+        privateEndpointConnection: PrivateEndpointConnection, options?:
+        PrivateEndpointConnectionsUpdateOptionalParams):
+        Promise<PrivateEndpointConnectionsUpdateResponse>
       parameters:
         - id: resourceGroupName
           type: string
           description: The name of the resource group within the user's subscription.
         - id: parentType
-          type: <xref uid="@azure/arm-eventgrid.ParentType2|stable" />
+          type: <xref uid="@azure/arm-eventgrid.Enum19|stable" />
           description: >-
             The type of the parent resource. This can be either \'topics\' or
             \'domains\'.
-
-            Possible values include: 'topics', 'domains'
         - id: parentName
           type: string
           description: >-
             The name of the parent resource (namely, either, the topic name or
-            domain
-
-            name).
+            domain name).
         - id: privateEndpointConnectionName
           type: string
           description: The name of the private endpoint connection connection.
+        - id: privateEndpointConnection
+          type: <xref uid="@azure/arm-eventgrid.PrivateEndpointConnection|stable" />
+          description: The private endpoint connection object to update.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.PrivateEndpointConnectionsUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<msRest.RestResponse>
-        type: Promise&lt;RestResponse&gt;
-  - name: get(string, Models.ParentType, string, string, msRest.RequestOptionsBase)
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventgrid.PrivateEndpointConnectionsUpdateResponse|stable"
+          />&gt;
+  - name: >-
+      get(string, Enum18, string, string,
+      PrivateEndpointConnectionsGetOptionalParams)
     uid: '@azure/arm-eventgrid.PrivateEndpointConnections.get|stable'
     package: '@azure/arm-eventgrid|stable'
     summary: Get a specific private endpoint connection under a topic or domain.
@@ -163,129 +204,43 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function get(resourceGroupName: string, parentType: Models.ParentType,
-        parentName: string, privateEndpointConnectionName: string, options?:
-        msRest.RequestOptionsBase):
-        Promise<Models.PrivateEndpointConnectionsGetResponse>
+        function get(resourceGroupName: string, parentType: Enum18, parentName:
+        string, privateEndpointConnectionName: string, options?:
+        PrivateEndpointConnectionsGetOptionalParams):
+        Promise<PrivateEndpointConnectionsGetResponse>
       parameters:
         - id: resourceGroupName
           type: string
           description: The name of the resource group within the user's subscription.
         - id: parentType
-          type: <xref uid="@azure/arm-eventgrid.ParentType|stable" />
+          type: <xref uid="@azure/arm-eventgrid.Enum18|stable" />
           description: >-
             The type of the parent resource. This can be either \'topics\' or
             \'domains\'.
-
-            Possible values include: 'topics', 'domains'
         - id: parentName
           type: string
           description: >-
             The name of the parent resource (namely, either, the topic name or
-            domain
-
-            name).
+            domain name).
         - id: privateEndpointConnectionName
           type: string
           description: The name of the private endpoint connection connection.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.PrivateEndpointConnectionsGetOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.PrivateEndpointConnectionsGetResponse>
+        description: ''
         type: >-
           Promise&lt;<xref
           uid="@azure/arm-eventgrid.PrivateEndpointConnectionsGetResponse|stable"
           />&gt;
   - name: >-
-      get(string, Models.ParentType, string, string, RequestOptionsBase,
-      ServiceCallback<PrivateEndpointConnection>)
-    uid: '@azure/arm-eventgrid.PrivateEndpointConnections.get_2|stable'
-    package: '@azure/arm-eventgrid|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function get(resourceGroupName: string, parentType: Models.ParentType,
-        parentName: string, privateEndpointConnectionName: string, options:
-        RequestOptionsBase, callback:
-        ServiceCallback<PrivateEndpointConnection>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: The name of the resource group within the user's subscription.
-        - id: parentType
-          type: <xref uid="@azure/arm-eventgrid.ParentType|stable" />
-          description: >-
-            The type of the parent resource. This can be either \'topics\' or
-            \'domains\'.
-
-            Possible values include: 'topics', 'domains'
-        - id: parentName
-          type: string
-          description: >-
-            The name of the parent resource (namely, either, the topic name or
-            domain
-
-            name).
-        - id: privateEndpointConnectionName
-          type: string
-          description: The name of the private endpoint connection connection.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-eventgrid.PrivateEndpointConnection|stable" />&gt;
-          description: |
-            The callback
-  - name: >-
-      get(string, Models.ParentType, string, string,
-      ServiceCallback<PrivateEndpointConnection>)
-    uid: '@azure/arm-eventgrid.PrivateEndpointConnections.get_1|stable'
-    package: '@azure/arm-eventgrid|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function get(resourceGroupName: string, parentType: Models.ParentType,
-        parentName: string, privateEndpointConnectionName: string, callback:
-        ServiceCallback<PrivateEndpointConnection>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: The name of the resource group within the user's subscription.
-        - id: parentType
-          type: <xref uid="@azure/arm-eventgrid.ParentType|stable" />
-          description: >-
-            The type of the parent resource. This can be either \'topics\' or
-            \'domains\'.
-
-            Possible values include: 'topics', 'domains'
-        - id: parentName
-          type: string
-          description: >-
-            The name of the parent resource (namely, either, the topic name or
-            domain
-
-            name).
-        - id: privateEndpointConnectionName
-          type: string
-          description: The name of the private endpoint connection connection.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-eventgrid.PrivateEndpointConnection|stable" />&gt;
-          description: |
-            The callback
-  - name: >-
-      listByResource(string, Models.ParentType3, string,
-      Models.PrivateEndpointConnectionsListByResourceOptionalParams)
+      listByResource(string, Enum21, string,
+      PrivateEndpointConnectionsListByResourceOptionalParams)
     uid: '@azure/arm-eventgrid.PrivateEndpointConnections.listByResource|stable'
     package: '@azure/arm-eventgrid|stable'
     summary: Get all private endpoint connections under a topic or domain.
@@ -294,260 +249,33 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function listByResource(resourceGroupName: string, parentType:
-        Models.ParentType3, parentName: string, options?:
-        Models.PrivateEndpointConnectionsListByResourceOptionalParams):
-        Promise<Models.PrivateEndpointConnectionsListByResourceResponse>
+        function listByResource(resourceGroupName: string, parentType: Enum21,
+        parentName: string, options?:
+        PrivateEndpointConnectionsListByResourceOptionalParams):
+        PagedAsyncIterableIterator<PrivateEndpointConnection>
       parameters:
         - id: resourceGroupName
           type: string
           description: The name of the resource group within the user's subscription.
         - id: parentType
-          type: <xref uid="@azure/arm-eventgrid.ParentType3|stable" />
+          type: <xref uid="@azure/arm-eventgrid.Enum21|stable" />
           description: >-
             The type of the parent resource. This can be either \'topics\' or
             \'domains\'.
-
-            Possible values include: 'topics', 'domains'
         - id: parentName
           type: string
           description: >-
             The name of the parent resource (namely, either, the topic name or
-            domain
-
-            name).
+            domain name).
         - id: options
           type: >-
             <xref
             uid="@azure/arm-eventgrid.PrivateEndpointConnectionsListByResourceOptionalParams|stable"
             />
-          description: ''
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.PrivateEndpointConnectionsListByResourceResponse>
+        description: ''
         type: >-
-          Promise&lt;<xref
-          uid="@azure/arm-eventgrid.PrivateEndpointConnectionsListByResourceResponse|stable"
-          />&gt;
-  - name: >-
-      listByResource(string, Models.ParentType3, string,
-      PrivateEndpointConnectionsListByResourceOptionalParams,
-      ServiceCallback<PrivateEndpointConnectionListResult>)
-    uid: '@azure/arm-eventgrid.PrivateEndpointConnections.listByResource_2|stable'
-    package: '@azure/arm-eventgrid|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listByResource(resourceGroupName: string, parentType:
-        Models.ParentType3, parentName: string, options:
-        PrivateEndpointConnectionsListByResourceOptionalParams, callback:
-        ServiceCallback<PrivateEndpointConnectionListResult>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: The name of the resource group within the user's subscription.
-        - id: parentType
-          type: <xref uid="@azure/arm-eventgrid.ParentType3|stable" />
-          description: >-
-            The type of the parent resource. This can be either \'topics\' or
-            \'domains\'.
-
-            Possible values include: 'topics', 'domains'
-        - id: parentName
-          type: string
-          description: >-
-            The name of the parent resource (namely, either, the topic name or
-            domain
-
-            name).
-        - id: options
-          type: >-
-            <xref
-            uid="@azure/arm-eventgrid.PrivateEndpointConnectionsListByResourceOptionalParams|stable"
-            />
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-eventgrid.PrivateEndpointConnectionListResult|stable"
-            />&gt;
-          description: |
-            The callback
-  - name: >-
-      listByResource(string, Models.ParentType3, string,
-      ServiceCallback<PrivateEndpointConnectionListResult>)
-    uid: '@azure/arm-eventgrid.PrivateEndpointConnections.listByResource_1|stable'
-    package: '@azure/arm-eventgrid|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listByResource(resourceGroupName: string, parentType:
-        Models.ParentType3, parentName: string, callback:
-        ServiceCallback<PrivateEndpointConnectionListResult>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: The name of the resource group within the user's subscription.
-        - id: parentType
-          type: <xref uid="@azure/arm-eventgrid.ParentType3|stable" />
-          description: >-
-            The type of the parent resource. This can be either \'topics\' or
-            \'domains\'.
-
-            Possible values include: 'topics', 'domains'
-        - id: parentName
-          type: string
-          description: >-
-            The name of the parent resource (namely, either, the topic name or
-            domain
-
-            name).
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-eventgrid.PrivateEndpointConnectionListResult|stable"
-            />&gt;
-          description: |
-            The callback
-  - name: >-
-      listByResourceNext(string,
-      Models.PrivateEndpointConnectionsListByResourceNextOptionalParams)
-    uid: '@azure/arm-eventgrid.PrivateEndpointConnections.listByResourceNext|stable'
-    package: '@azure/arm-eventgrid|stable'
-    summary: Get all private endpoint connections under a topic or domain.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listByResourceNext(nextPageLink: string, options?:
-        Models.PrivateEndpointConnectionsListByResourceNextOptionalParams):
-        Promise<Models.PrivateEndpointConnectionsListByResourceNextResponse>
-      parameters:
-        - id: nextPageLink
-          type: string
-          description: The NextLink from the previous successful call to List operation.
-        - id: options
-          type: >-
-            <xref
-            uid="@azure/arm-eventgrid.PrivateEndpointConnectionsListByResourceNextOptionalParams|stable"
-            />
-          description: ''
-      return:
-        description: Promise<Models.PrivateEndpointConnectionsListByResourceNextResponse>
-        type: >-
-          Promise&lt;<xref
-          uid="@azure/arm-eventgrid.PrivateEndpointConnectionsListByResourceNextResponse|stable"
-          />&gt;
-  - name: >-
-      listByResourceNext(string,
-      PrivateEndpointConnectionsListByResourceNextOptionalParams,
-      ServiceCallback<PrivateEndpointConnectionListResult>)
-    uid: >-
-      @azure/arm-eventgrid.PrivateEndpointConnections.listByResourceNext_2|stable
-    package: '@azure/arm-eventgrid|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listByResourceNext(nextPageLink: string, options:
-        PrivateEndpointConnectionsListByResourceNextOptionalParams, callback:
-        ServiceCallback<PrivateEndpointConnectionListResult>)
-      parameters:
-        - id: nextPageLink
-          type: string
-          description: The NextLink from the previous successful call to List operation.
-        - id: options
-          type: >-
-            <xref
-            uid="@azure/arm-eventgrid.PrivateEndpointConnectionsListByResourceNextOptionalParams|stable"
-            />
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-eventgrid.PrivateEndpointConnectionListResult|stable"
-            />&gt;
-          description: |
-            The callback
-  - name: >-
-      listByResourceNext(string,
-      ServiceCallback<PrivateEndpointConnectionListResult>)
-    uid: >-
-      @azure/arm-eventgrid.PrivateEndpointConnections.listByResourceNext_1|stable
-    package: '@azure/arm-eventgrid|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listByResourceNext(nextPageLink: string, callback:
-        ServiceCallback<PrivateEndpointConnectionListResult>)
-      parameters:
-        - id: nextPageLink
-          type: string
-          description: The NextLink from the previous successful call to List operation.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-eventgrid.PrivateEndpointConnectionListResult|stable"
-            />&gt;
-          description: |
-            The callback
-  - name: >-
-      update(string, Models.ParentType1, string, string,
-      PrivateEndpointConnection, msRest.RequestOptionsBase)
-    uid: '@azure/arm-eventgrid.PrivateEndpointConnections.update|stable'
-    package: '@azure/arm-eventgrid|stable'
-    summary: Update a specific private endpoint connection under a topic or domain.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function update(resourceGroupName: string, parentType:
-        Models.ParentType1, parentName: string, privateEndpointConnectionName:
-        string, privateEndpointConnection: PrivateEndpointConnection, options?:
-        msRest.RequestOptionsBase):
-        Promise<Models.PrivateEndpointConnectionsUpdateResponse>
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: The name of the resource group within the user's subscription.
-        - id: parentType
-          type: <xref uid="@azure/arm-eventgrid.ParentType1|stable" />
-          description: >-
-            The type of the parent resource. This can be either \'topics\' or
-            \'domains\'.
-
-            Possible values include: 'topics', 'domains'
-        - id: parentName
-          type: string
-          description: >-
-            The name of the parent resource (namely, either, the topic name or
-            domain
-
-            name).
-        - id: privateEndpointConnectionName
-          type: string
-          description: The name of the private endpoint connection connection.
-        - id: privateEndpointConnection
-          type: <xref uid="@azure/arm-eventgrid.PrivateEndpointConnection|stable" />
-          description: The private endpoint connection object to update.
-        - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
-      return:
-        description: Promise<Models.PrivateEndpointConnectionsUpdateResponse>
-        type: >-
-          Promise&lt;<xref
-          uid="@azure/arm-eventgrid.PrivateEndpointConnectionsUpdateResponse|stable"
-          />&gt;
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-eventgrid.PrivateEndpointConnection|stable" />&gt;

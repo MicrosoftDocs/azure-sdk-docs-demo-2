@@ -1,0 +1,65 @@
+### YamlMime:TSType
+name: SendChatMessageRequest
+uid: '@azure/communication-chat.SendChatMessageRequest|stable'
+package: '@azure/communication-chat|stable'
+summary: Details of the message to send.
+fullName: SendChatMessageRequest
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: content
+    uid: '@azure/communication-chat.SendChatMessageRequest.content|stable'
+    package: '@azure/communication-chat|stable'
+    summary: Chat message content.
+    fullName: content
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'content: string'
+      return:
+        description: ''
+        type: string
+  - name: metadata
+    uid: '@azure/communication-chat.SendChatMessageRequest.metadata|stable'
+    package: '@azure/communication-chat|stable'
+    summary: Message metadata.
+    fullName: metadata
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'metadata?: [key: string]: string'
+      return:
+        description: ''
+        type: '[key: string]\: string'
+  - name: senderDisplayName
+    uid: '@azure/communication-chat.SendChatMessageRequest.senderDisplayName|stable'
+    package: '@azure/communication-chat|stable'
+    summary: >-
+      The display name of the chat message sender. This property is used to
+      populate sender name for push notifications.
+    fullName: senderDisplayName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'senderDisplayName?: string'
+      return:
+        description: ''
+        type: string
+  - name: type
+    uid: '@azure/communication-chat.SendChatMessageRequest.type|stable'
+    package: '@azure/communication-chat|stable'
+    summary: The chat message type.
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: ChatMessageType'
+      return:
+        description: ''
+        type: <xref uid="@azure/communication-chat.ChatMessageType|stable" />

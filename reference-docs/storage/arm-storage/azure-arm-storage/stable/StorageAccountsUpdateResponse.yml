@@ -7,6 +7,4 @@ fullName: StorageAccountsUpdateResponse
 remarks: ''
 isPreview: false
 isDeprecated: false
-syntax: >-
-  type StorageAccountsUpdateResponse = StorageAccount & { _response:
-  HttpResponse & { bodyAsText: string, parsedBody: StorageAccount } }
+syntax: type StorageAccountsUpdateResponse = StorageAccount

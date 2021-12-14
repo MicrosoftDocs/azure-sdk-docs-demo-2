@@ -2,32 +2,17 @@
 name: PrivateEndpointConnections
 uid: '@azure/arm-eventhub.PrivateEndpointConnections|stable'
 package: '@azure/arm-eventhub|stable'
-summary: Class representing a PrivateEndpointConnections.
+summary: Interface representing a PrivateEndpointConnections.
 fullName: PrivateEndpointConnections
 remarks: ''
 isPreview: false
 isDeprecated: false
-type: class
-constructors:
-  - name: PrivateEndpointConnections(EventHubManagementClientContext)
-    uid: '@azure/arm-eventhub.PrivateEndpointConnections.constructor|stable'
-    package: '@azure/arm-eventhub|stable'
-    summary: Create a PrivateEndpointConnections.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'new PrivateEndpointConnections(client: EventHubManagementClientContext)'
-      parameters:
-        - id: client
-          type: >-
-            <xref
-            uid="@azure/arm-eventhub.EventHubManagementClientContext|stable" />
-          description: |
-            Reference to the service client.
+type: interface
 methods:
-  - name: beginDeleteMethod(string, string, string, msRest.RequestOptionsBase)
-    uid: '@azure/arm-eventhub.PrivateEndpointConnections.beginDeleteMethod|stable'
+  - name: >-
+      beginDelete(string, string, string,
+      PrivateEndpointConnectionsDeleteOptionalParams)
+    uid: '@azure/arm-eventhub.PrivateEndpointConnections.beginDelete|stable'
     package: '@azure/arm-eventhub|stable'
     summary: >-
       Deletes an existing namespace. This operation also removes all associated
@@ -39,9 +24,10 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function beginDeleteMethod(resourceGroupName: string, namespaceName:
-        string, privateEndpointConnectionName: string, options?:
-        msRest.RequestOptionsBase): Promise<LROPoller>
+        function beginDelete(resourceGroupName: string, namespaceName: string,
+        privateEndpointConnectionName: string, options?:
+        PrivateEndpointConnectionsDeleteOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
       parameters:
         - id: resourceGroupName
           type: string
@@ -53,14 +39,56 @@ methods:
           type: string
           description: The PrivateEndpointConnection name
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-eventhub.PrivateEndpointConnectionsDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<msRestAzure.LROPoller>
-        type: Promise&lt;LROPoller&gt;
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: >-
+      beginDeleteAndWait(string, string, string,
+      PrivateEndpointConnectionsDeleteOptionalParams)
+    uid: '@azure/arm-eventhub.PrivateEndpointConnections.beginDeleteAndWait|stable'
+    package: '@azure/arm-eventhub|stable'
+    summary: >-
+      Deletes an existing namespace. This operation also removes all associated
+      resources under the
+
+      namespace.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteAndWait(resourceGroupName: string, namespaceName:
+        string, privateEndpointConnectionName: string, options?:
+        PrivateEndpointConnectionsDeleteOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group within the azure subscription.
+        - id: namespaceName
+          type: string
+          description: The Namespace name
+        - id: privateEndpointConnectionName
+          type: string
+          description: The PrivateEndpointConnection name
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventhub.PrivateEndpointConnectionsDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
   - name: >-
       createOrUpdate(string, string, string, PrivateEndpointConnection,
-      msRest.RequestOptionsBase)
+      PrivateEndpointConnectionsCreateOrUpdateOptionalParams)
     uid: '@azure/arm-eventhub.PrivateEndpointConnections.createOrUpdate|stable'
     package: '@azure/arm-eventhub|stable'
     summary: Creates or updates PrivateEndpointConnections of service namespace.
@@ -71,8 +99,9 @@ methods:
       content: >-
         function createOrUpdate(resourceGroupName: string, namespaceName:
         string, privateEndpointConnectionName: string, parameters:
-        PrivateEndpointConnection, options?: msRest.RequestOptionsBase):
-        Promise<Models.PrivateEndpointConnectionsCreateOrUpdateResponse>
+        PrivateEndpointConnection, options?:
+        PrivateEndpointConnectionsCreateOrUpdateOptionalParams):
+        Promise<PrivateEndpointConnectionsCreateOrUpdateResponse>
       parameters:
         - id: resourceGroupName
           type: string
@@ -87,130 +116,22 @@ methods:
           type: <xref uid="@azure/arm-eventhub.PrivateEndpointConnection|stable" />
           description: >-
             Parameters supplied to update Status of PrivateEndPoint Connection
-            to
-
-            namespace resource.
+            to namespace
+                              resource.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-eventhub.PrivateEndpointConnectionsCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.PrivateEndpointConnectionsCreateOrUpdateResponse>
+        description: ''
         type: >-
           Promise&lt;<xref
           uid="@azure/arm-eventhub.PrivateEndpointConnectionsCreateOrUpdateResponse|stable"
           />&gt;
-  - name: >-
-      createOrUpdate(string, string, string, PrivateEndpointConnection,
-      RequestOptionsBase, ServiceCallback<PrivateEndpointConnection>)
-    uid: '@azure/arm-eventhub.PrivateEndpointConnections.createOrUpdate_2|stable'
-    package: '@azure/arm-eventhub|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function createOrUpdate(resourceGroupName: string, namespaceName:
-        string, privateEndpointConnectionName: string, parameters:
-        PrivateEndpointConnection, options: RequestOptionsBase, callback:
-        ServiceCallback<PrivateEndpointConnection>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: Name of the resource group within the azure subscription.
-        - id: namespaceName
-          type: string
-          description: The Namespace name
-        - id: privateEndpointConnectionName
-          type: string
-          description: The PrivateEndpointConnection name
-        - id: parameters
-          type: <xref uid="@azure/arm-eventhub.PrivateEndpointConnection|stable" />
-          description: >-
-            Parameters supplied to update Status of PrivateEndPoint Connection
-            to
-
-            namespace resource.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-eventhub.PrivateEndpointConnection|stable" />&gt;
-          description: |
-            The callback
-  - name: >-
-      createOrUpdate(string, string, string, PrivateEndpointConnection,
-      ServiceCallback<PrivateEndpointConnection>)
-    uid: '@azure/arm-eventhub.PrivateEndpointConnections.createOrUpdate_1|stable'
-    package: '@azure/arm-eventhub|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function createOrUpdate(resourceGroupName: string, namespaceName:
-        string, privateEndpointConnectionName: string, parameters:
-        PrivateEndpointConnection, callback:
-        ServiceCallback<PrivateEndpointConnection>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: Name of the resource group within the azure subscription.
-        - id: namespaceName
-          type: string
-          description: The Namespace name
-        - id: privateEndpointConnectionName
-          type: string
-          description: The PrivateEndpointConnection name
-        - id: parameters
-          type: <xref uid="@azure/arm-eventhub.PrivateEndpointConnection|stable" />
-          description: >-
-            Parameters supplied to update Status of PrivateEndPoint Connection
-            to
-
-            namespace resource.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-eventhub.PrivateEndpointConnection|stable" />&gt;
-          description: |
-            The callback
-  - name: deleteMethod(string, string, string, msRest.RequestOptionsBase)
-    uid: '@azure/arm-eventhub.PrivateEndpointConnections.deleteMethod|stable'
-    package: '@azure/arm-eventhub|stable'
-    summary: >-
-      Deletes an existing namespace. This operation also removes all associated
-      resources under the
-
-      namespace.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function deleteMethod(resourceGroupName: string, namespaceName: string,
-        privateEndpointConnectionName: string, options?:
-        msRest.RequestOptionsBase): Promise<RestResponse>
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: Name of the resource group within the azure subscription.
-        - id: namespaceName
-          type: string
-          description: The Namespace name
-        - id: privateEndpointConnectionName
-          type: string
-          description: The PrivateEndpointConnection name
-        - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
-      return:
-        description: Promise<msRest.RestResponse>
-        type: Promise&lt;RestResponse&gt;
-  - name: get(string, string, string, msRest.RequestOptionsBase)
+  - name: get(string, string, string, PrivateEndpointConnectionsGetOptionalParams)
     uid: '@azure/arm-eventhub.PrivateEndpointConnections.get|stable'
     package: '@azure/arm-eventhub|stable'
     summary: Gets a description for the specified Private Endpoint Connection name.
@@ -221,8 +142,8 @@ methods:
       content: >-
         function get(resourceGroupName: string, namespaceName: string,
         privateEndpointConnectionName: string, options?:
-        msRest.RequestOptionsBase):
-        Promise<Models.PrivateEndpointConnectionsGetResponse>
+        PrivateEndpointConnectionsGetOptionalParams):
+        Promise<PrivateEndpointConnectionsGetResponse>
       parameters:
         - id: resourceGroupName
           type: string
@@ -234,76 +155,19 @@ methods:
           type: string
           description: The PrivateEndpointConnection name
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-eventhub.PrivateEndpointConnectionsGetOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.PrivateEndpointConnectionsGetResponse>
+        description: ''
         type: >-
           Promise&lt;<xref
           uid="@azure/arm-eventhub.PrivateEndpointConnectionsGetResponse|stable"
           />&gt;
-  - name: >-
-      get(string, string, string, RequestOptionsBase,
-      ServiceCallback<PrivateEndpointConnection>)
-    uid: '@azure/arm-eventhub.PrivateEndpointConnections.get_2|stable'
-    package: '@azure/arm-eventhub|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function get(resourceGroupName: string, namespaceName: string,
-        privateEndpointConnectionName: string, options: RequestOptionsBase,
-        callback: ServiceCallback<PrivateEndpointConnection>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: Name of the resource group within the azure subscription.
-        - id: namespaceName
-          type: string
-          description: The Namespace name
-        - id: privateEndpointConnectionName
-          type: string
-          description: The PrivateEndpointConnection name
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-eventhub.PrivateEndpointConnection|stable" />&gt;
-          description: |
-            The callback
-  - name: get(string, string, string, ServiceCallback<PrivateEndpointConnection>)
-    uid: '@azure/arm-eventhub.PrivateEndpointConnections.get_1|stable'
-    package: '@azure/arm-eventhub|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function get(resourceGroupName: string, namespaceName: string,
-        privateEndpointConnectionName: string, callback:
-        ServiceCallback<PrivateEndpointConnection>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: Name of the resource group within the azure subscription.
-        - id: namespaceName
-          type: string
-          description: The Namespace name
-        - id: privateEndpointConnectionName
-          type: string
-          description: The PrivateEndpointConnection name
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-eventhub.PrivateEndpointConnection|stable" />&gt;
-          description: |
-            The callback
-  - name: list(string, string, msRest.RequestOptionsBase)
+  - name: list(string, string, PrivateEndpointConnectionsListOptionalParams)
     uid: '@azure/arm-eventhub.PrivateEndpointConnections.list|stable'
     package: '@azure/arm-eventhub|stable'
     summary: Gets the available PrivateEndpointConnections within a namespace.
@@ -313,8 +177,8 @@ methods:
     syntax:
       content: >-
         function list(resourceGroupName: string, namespaceName: string,
-        options?: msRest.RequestOptionsBase):
-        Promise<Models.PrivateEndpointConnectionsListResponse>
+        options?: PrivateEndpointConnectionsListOptionalParams):
+        PagedAsyncIterableIterator<PrivateEndpointConnection>
       parameters:
         - id: resourceGroupName
           type: string
@@ -323,141 +187,14 @@ methods:
           type: string
           description: The Namespace name
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-eventhub.PrivateEndpointConnectionsListOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.PrivateEndpointConnectionsListResponse>
+        description: ''
         type: >-
-          Promise&lt;<xref
-          uid="@azure/arm-eventhub.PrivateEndpointConnectionsListResponse|stable"
-          />&gt;
-  - name: >-
-      list(string, string, RequestOptionsBase,
-      ServiceCallback<PrivateEndpointConnectionListResult>)
-    uid: '@azure/arm-eventhub.PrivateEndpointConnections.list_2|stable'
-    package: '@azure/arm-eventhub|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function list(resourceGroupName: string, namespaceName: string, options:
-        RequestOptionsBase, callback:
-        ServiceCallback<PrivateEndpointConnectionListResult>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: Name of the resource group within the azure subscription.
-        - id: namespaceName
-          type: string
-          description: The Namespace name
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-eventhub.PrivateEndpointConnectionListResult|stable"
-            />&gt;
-          description: |
-            The callback
-  - name: list(string, string, ServiceCallback<PrivateEndpointConnectionListResult>)
-    uid: '@azure/arm-eventhub.PrivateEndpointConnections.list_1|stable'
-    package: '@azure/arm-eventhub|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function list(resourceGroupName: string, namespaceName: string,
-        callback: ServiceCallback<PrivateEndpointConnectionListResult>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: Name of the resource group within the azure subscription.
-        - id: namespaceName
-          type: string
-          description: The Namespace name
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-eventhub.PrivateEndpointConnectionListResult|stable"
-            />&gt;
-          description: |
-            The callback
-  - name: listNext(string, msRest.RequestOptionsBase)
-    uid: '@azure/arm-eventhub.PrivateEndpointConnections.listNext|stable'
-    package: '@azure/arm-eventhub|stable'
-    summary: Gets the available PrivateEndpointConnections within a namespace.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listNext(nextPageLink: string, options?:
-        msRest.RequestOptionsBase):
-        Promise<Models.PrivateEndpointConnectionsListNextResponse>
-      parameters:
-        - id: nextPageLink
-          type: string
-          description: The NextLink from the previous successful call to List operation.
-        - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
-      return:
-        description: Promise<Models.PrivateEndpointConnectionsListNextResponse>
-        type: >-
-          Promise&lt;<xref
-          uid="@azure/arm-eventhub.PrivateEndpointConnectionsListNextResponse|stable"
-          />&gt;
-  - name: >-
-      listNext(string, RequestOptionsBase,
-      ServiceCallback<PrivateEndpointConnectionListResult>)
-    uid: '@azure/arm-eventhub.PrivateEndpointConnections.listNext_2|stable'
-    package: '@azure/arm-eventhub|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listNext(nextPageLink: string, options: RequestOptionsBase,
-        callback: ServiceCallback<PrivateEndpointConnectionListResult>)
-      parameters:
-        - id: nextPageLink
-          type: string
-          description: The NextLink from the previous successful call to List operation.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-eventhub.PrivateEndpointConnectionListResult|stable"
-            />&gt;
-          description: |
-            The callback
-  - name: listNext(string, ServiceCallback<PrivateEndpointConnectionListResult>)
-    uid: '@azure/arm-eventhub.PrivateEndpointConnections.listNext_1|stable'
-    package: '@azure/arm-eventhub|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listNext(nextPageLink: string, callback:
-        ServiceCallback<PrivateEndpointConnectionListResult>)
-      parameters:
-        - id: nextPageLink
-          type: string
-          description: The NextLink from the previous successful call to List operation.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-eventhub.PrivateEndpointConnectionListResult|stable"
-            />&gt;
-          description: |
-            The callback
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-eventhub.PrivateEndpointConnection|stable" />&gt;

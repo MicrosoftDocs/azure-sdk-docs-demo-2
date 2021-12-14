@@ -7,6 +7,4 @@ fullName: FileSharesListResponse
 remarks: ''
 isPreview: false
 isDeprecated: false
-syntax: >-
-  type FileSharesListResponse = FileShareItems & { _response: HttpResponse & {
-  bodyAsText: string, parsedBody: FileShareItems } }
+syntax: type FileSharesListResponse = FileShareItems

@@ -1,0 +1,28 @@
+### YamlMime:TSType
+name: PipelineSourceTriggerProperties
+uid: '@azure/arm-containerregistry.PipelineSourceTriggerProperties|stable'
+package: '@azure/arm-containerregistry|stable'
+summary: An interface representing PipelineSourceTriggerProperties.
+fullName: PipelineSourceTriggerProperties
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: status
+    uid: '@azure/arm-containerregistry.PipelineSourceTriggerProperties.status|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: >-
+      The current status of the source trigger. Possible values include:
+      'Enabled', 'Disabled'.
+
+      Default value: 'Enabled'.
+    fullName: status
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'status: TriggerStatus'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-containerregistry.TriggerStatus|stable" />

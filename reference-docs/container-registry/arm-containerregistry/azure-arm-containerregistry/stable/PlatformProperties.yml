@@ -1,0 +1,54 @@
+### YamlMime:TSType
+name: PlatformProperties
+uid: '@azure/arm-containerregistry.PlatformProperties|stable'
+package: '@azure/arm-containerregistry|stable'
+summary: The platform properties against which the run has to happen.
+fullName: PlatformProperties
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: architecture
+    uid: '@azure/arm-containerregistry.PlatformProperties.architecture|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: >-
+      The OS architecture. Possible values include: 'amd64', 'x86', '386',
+      'arm', 'arm64'
+    fullName: architecture
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'architecture?: Architecture'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-containerregistry.Architecture|stable" />
+  - name: os
+    uid: '@azure/arm-containerregistry.PlatformProperties.os|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: >-
+      The operating system type required for the run. Possible values include:
+      'Windows', 'Linux'
+    fullName: os
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'os: OS'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-containerregistry.OS|stable" />
+  - name: variant
+    uid: '@azure/arm-containerregistry.PlatformProperties.variant|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: 'Variant of the CPU. Possible values include: ''v6'', ''v7'', ''v8'''
+    fullName: variant
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'variant?: Variant'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-containerregistry.Variant|stable" />

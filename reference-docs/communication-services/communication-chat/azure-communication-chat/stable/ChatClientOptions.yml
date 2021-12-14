@@ -1,0 +1,90 @@
+### YamlMime:TSType
+name: ChatClientOptions
+uid: '@azure/communication-chat.ChatClientOptions|stable'
+package: '@azure/communication-chat|stable'
+summary: Options to create chat client.
+fullName: ChatClientOptions
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: allowInsecureConnection
+    uid: '@azure/communication-chat.ChatClientOptions.allowInsecureConnection|stable'
+    package: '@azure/communication-chat|stable'
+    summary: Set to true if the request is sent over HTTP instead of HTTPS
+    fullName: allowInsecureConnection
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowInsecureConnection?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: httpClient
+    uid: '@azure/communication-chat.ChatClientOptions.httpClient|stable'
+    package: '@azure/communication-chat|stable'
+    summary: The HttpClient that will be used to send HTTP requests.
+    fullName: httpClient
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'httpClient?: HttpClient'
+      return:
+        description: ''
+        type: HttpClient
+  - name: proxyOptions
+    uid: '@azure/communication-chat.ChatClientOptions.proxyOptions|stable'
+    package: '@azure/communication-chat|stable'
+    summary: Options to configure a proxy for outgoing requests.
+    fullName: proxyOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'proxyOptions?: ProxySettings'
+      return:
+        description: ''
+        type: ProxySettings
+  - name: redirectOptions
+    uid: '@azure/communication-chat.ChatClientOptions.redirectOptions|stable'
+    package: '@azure/communication-chat|stable'
+    summary: Options for how redirect responses are handled.
+    fullName: redirectOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'redirectOptions?: RedirectPolicyOptions'
+      return:
+        description: ''
+        type: RedirectPolicyOptions
+  - name: retryOptions
+    uid: '@azure/communication-chat.ChatClientOptions.retryOptions|stable'
+    package: '@azure/communication-chat|stable'
+    summary: Options that control how to retry failed requests.
+    fullName: retryOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'retryOptions?: ExponentialRetryPolicyOptions'
+      return:
+        description: ''
+        type: ExponentialRetryPolicyOptions
+  - name: userAgentOptions
+    uid: '@azure/communication-chat.ChatClientOptions.userAgentOptions|stable'
+    package: '@azure/communication-chat|stable'
+    summary: Options for adding user agent details to outgoing requests.
+    fullName: userAgentOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'userAgentOptions?: UserAgentPolicyOptions'
+      return:
+        description: ''
+        type: UserAgentPolicyOptions
+extends: CommonClientOptions

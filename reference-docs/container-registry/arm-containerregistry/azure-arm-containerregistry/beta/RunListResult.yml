@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: RunListResult
+uid: '@azure/arm-containerregistry.RunListResult|beta'
+package: '@azure/arm-containerregistry|beta'
+summary: Collection of runs.
+fullName: RunListResult
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: nextLink
+    uid: '@azure/arm-containerregistry.RunListResult.nextLink|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: The URI that can be used to request the next set of paged results.
+    fullName: nextLink
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nextLink?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: value
+    uid: '@azure/arm-containerregistry.RunListResult.value|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: The collection value.
+    fullName: value
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: Run[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-containerregistry.Run|beta" />[]

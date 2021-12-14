@@ -1,0 +1,203 @@
+### YamlMime:TSPackage
+uid: '@azure/communication-chat|stable'
+name: '@azure/communication-chat (1.1.1 - Stable)'
+summary: ''
+type: package
+classes:
+  - '@azure/communication-chat.ChatClient|stable'
+  - '@azure/communication-chat.ChatThreadClient|stable'
+  - '@azure/communication-chat.ChatApiClient|stable'
+  - '@azure/communication-chat.ChatApiClientContext|stable'
+  - '@azure/communication-chat.ChatImpl|stable'
+  - '@azure/communication-chat.ChatThreadImpl|stable'
+interfaces:
+  - '@azure/communication-chat.AddChatParticipantsResult|stable'
+  - '@azure/communication-chat.AddParticipantsRequest|stable'
+  - '@azure/communication-chat.ChatClientOptions|stable'
+  - '@azure/communication-chat.ChatError|stable'
+  - '@azure/communication-chat.ChatMessage|stable'
+  - '@azure/communication-chat.ChatMessageContent|stable'
+  - '@azure/communication-chat.ChatMessageReadReceipt|stable'
+  - '@azure/communication-chat.ChatParticipant|stable'
+  - '@azure/communication-chat.ChatThreadClientOptions|stable'
+  - '@azure/communication-chat.ChatThreadItem|stable'
+  - '@azure/communication-chat.ChatThreadProperties|stable'
+  - '@azure/communication-chat.CreateChatThreadOptions|stable'
+  - '@azure/communication-chat.CreateChatThreadRequest|stable'
+  - '@azure/communication-chat.CreateChatThreadResult|stable'
+  - '@azure/communication-chat.ListPageSettings|stable'
+  - '@azure/communication-chat.RestListChatThreadsOptions|stable'
+  - '@azure/communication-chat.RestListMessagesOptions|stable'
+  - '@azure/communication-chat.RestListParticipantsOptions|stable'
+  - '@azure/communication-chat.RestListReadReceiptsOptions|stable'
+  - '@azure/communication-chat.SendChatMessageResult|stable'
+  - '@azure/communication-chat.SendMessageOptions|stable'
+  - '@azure/communication-chat.SendMessageRequest|stable'
+  - '@azure/communication-chat.SendReadReceiptRequest|stable'
+  - '@azure/communication-chat.SendTypingNotificationOptions|stable'
+  - '@azure/communication-chat.UpdateMessageOptions|stable'
+  - '@azure/communication-chat.UpdateTopicOptions|stable'
+  - '@azure/communication-chat.AddChatParticipantsRequest|stable'
+  - '@azure/communication-chat.ChatApiClientOptionalParams|stable'
+  - '@azure/communication-chat.ChatCreateChatThreadOptionalParams|stable'
+  - '@azure/communication-chat.ChatDeleteChatThreadOptionalParams|stable'
+  - '@azure/communication-chat.ChatListChatThreadsNextOptionalParams|stable'
+  - '@azure/communication-chat.ChatListChatThreadsOptionalParams|stable'
+  - '@azure/communication-chat.ChatMessageReadReceiptsCollection|stable'
+  - '@azure/communication-chat.ChatMessagesCollection|stable'
+  - '@azure/communication-chat.ChatParticipantsCollection|stable'
+  - '@azure/communication-chat.ChatThreadAddChatParticipantsOptionalParams|stable'
+  - '@azure/communication-chat.ChatThreadDeleteChatMessageOptionalParams|stable'
+  - '@azure/communication-chat.ChatThreadGetChatMessageOptionalParams|stable'
+  - >-
+    @azure/communication-chat.ChatThreadGetChatThreadPropertiesOptionalParams|stable
+  - >-
+    @azure/communication-chat.ChatThreadListChatMessagesNextOptionalParams|stable
+  - '@azure/communication-chat.ChatThreadListChatMessagesOptionalParams|stable'
+  - >-
+    @azure/communication-chat.ChatThreadListChatParticipantsNextOptionalParams|stable
+  - >-
+    @azure/communication-chat.ChatThreadListChatParticipantsOptionalParams|stable
+  - >-
+    @azure/communication-chat.ChatThreadListChatReadReceiptsNextOptionalParams|stable
+  - >-
+    @azure/communication-chat.ChatThreadListChatReadReceiptsOptionalParams|stable
+  - >-
+    @azure/communication-chat.ChatThreadRemoveChatParticipantOptionalParams|stable
+  - '@azure/communication-chat.ChatThreadSendChatMessageOptionalParams|stable'
+  - '@azure/communication-chat.ChatThreadSendChatReadReceiptOptionalParams|stable'
+  - >-
+    @azure/communication-chat.ChatThreadSendTypingNotificationOptionalParams|stable
+  - '@azure/communication-chat.ChatThreadUpdateChatMessageOptionalParams|stable'
+  - >-
+    @azure/communication-chat.ChatThreadUpdateChatThreadPropertiesOptionalParams|stable
+  - '@azure/communication-chat.ChatThreadsItemCollection|stable'
+  - '@azure/communication-chat.CommunicationErrorResponse|stable'
+  - '@azure/communication-chat.CommunicationIdentifierModel|stable'
+  - '@azure/communication-chat.CommunicationUserIdentifierModel|stable'
+  - '@azure/communication-chat.MicrosoftTeamsUserIdentifierModel|stable'
+  - '@azure/communication-chat.PhoneNumberIdentifierModel|stable'
+  - '@azure/communication-chat.SendChatMessageRequest|stable'
+  - '@azure/communication-chat.SendTypingNotificationRequest|stable'
+  - '@azure/communication-chat.UpdateChatMessageRequest|stable'
+  - '@azure/communication-chat.UpdateChatThreadRequest|stable'
+  - '@azure/communication-chat.Chat|stable'
+  - '@azure/communication-chat.ChatThread|stable'
+  - '@azure/communication-chat.SignalingClientOptions|stable'
+  - '@azure/communication-chat.RecordedClient|stable'
+typeAliases:
+  - '@azure/communication-chat.AddParticipantsOptions|stable'
+  - '@azure/communication-chat.ChatMessageType|stable'
+  - '@azure/communication-chat.DeleteChatThreadOptions|stable'
+  - '@azure/communication-chat.DeleteMessageOptions|stable'
+  - '@azure/communication-chat.GetMessageOptions|stable'
+  - '@azure/communication-chat.GetPropertiesOptions|stable'
+  - '@azure/communication-chat.ListChatThreadsOptions|stable'
+  - '@azure/communication-chat.ListMessagesOptions|stable'
+  - '@azure/communication-chat.ListParticipantsOptions|stable'
+  - '@azure/communication-chat.ListReadReceiptsOptions|stable'
+  - '@azure/communication-chat.RemoveParticipantOptions|stable'
+  - '@azure/communication-chat.SendReadReceiptOptions|stable'
+  - '@azure/communication-chat.ChatCreateChatThreadResponse|stable'
+  - '@azure/communication-chat.ChatListChatThreadsNextResponse|stable'
+  - '@azure/communication-chat.ChatListChatThreadsResponse|stable'
+  - '@azure/communication-chat.ChatThreadAddChatParticipantsResponse|stable'
+  - '@azure/communication-chat.ChatThreadGetChatMessageResponse|stable'
+  - '@azure/communication-chat.ChatThreadGetChatThreadPropertiesResponse|stable'
+  - '@azure/communication-chat.ChatThreadListChatMessagesNextResponse|stable'
+  - '@azure/communication-chat.ChatThreadListChatMessagesResponse|stable'
+  - '@azure/communication-chat.ChatThreadListChatParticipantsNextResponse|stable'
+  - '@azure/communication-chat.ChatThreadListChatParticipantsResponse|stable'
+  - '@azure/communication-chat.ChatThreadListChatReadReceiptsNextResponse|stable'
+  - '@azure/communication-chat.ChatThreadListChatReadReceiptsResponse|stable'
+  - '@azure/communication-chat.ChatThreadSendChatMessageResponse|stable'
+  - '@azure/communication-chat.CommunicationCloudEnvironmentModel|stable'
+functions:
+  - name: main()
+    uid: '@azure/communication-chat.main|stable'
+    package: '@azure/communication-chat|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function main(): Promise<void>'
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: generateUuid()
+    uid: '@azure/communication-chat.generateUuid|stable'
+    package: '@azure/communication-chat|stable'
+    summary: Generated Universally Unique Identifier
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function generateUuid(): string'
+      return:
+        description: RFC4122 v4 UUID.
+        type: string
+  - name: createChatClient(string)
+    uid: '@azure/communication-chat.createChatClient|stable'
+    package: '@azure/communication-chat|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function createChatClient(userToken: string): ChatClient'
+      parameters:
+        - id: userToken
+          type: string
+          description: ''
+      return:
+        description: ''
+        type: <xref uid="@azure/communication-chat.ChatClient|stable" />
+  - name: createRecorder(Context)
+    uid: '@azure/communication-chat.createRecorder|stable'
+    package: '@azure/communication-chat|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function createRecorder(context: Context): Recorder'
+      parameters:
+        - id: context
+          type: Context
+          description: ''
+      return:
+        description: ''
+        type: Recorder
+  - name: createTestUser()
+    uid: '@azure/communication-chat.createTestUser|stable'
+    package: '@azure/communication-chat|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function createTestUser(): Promise<CommunicationUserToken>'
+      return:
+        description: ''
+        type: Promise&lt;CommunicationUserToken&gt;
+  - name: deleteTestUser(CommunicationUserIdentifier)
+    uid: '@azure/communication-chat.deleteTestUser|stable'
+    package: '@azure/communication-chat|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function deleteTestUser(testUser: CommunicationUserIdentifier):
+        Promise<void>
+      parameters:
+        - id: testUser
+          type: CommunicationUserIdentifier
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+enums:
+  - '@azure/communication-chat.KnownCommunicationCloudEnvironmentModel|stable'

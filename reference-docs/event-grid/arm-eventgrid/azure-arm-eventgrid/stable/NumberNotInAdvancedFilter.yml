@@ -1,4 +1,4 @@
-### YamlMime:TSType
+### YamlMime:TSTypeAlias
 name: NumberNotInAdvancedFilter
 uid: '@azure/arm-eventgrid.NumberNotInAdvancedFilter|stable'
 package: '@azure/arm-eventgrid|stable'
@@ -7,44 +7,6 @@ fullName: NumberNotInAdvancedFilter
 remarks: ''
 isPreview: false
 isDeprecated: false
-type: interface
-properties:
-  - name: key
-    uid: '@azure/arm-eventgrid.NumberNotInAdvancedFilter.key|stable'
-    package: '@azure/arm-eventgrid|stable'
-    summary: The field/property in the event based on which you want to filter.
-    fullName: key
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'key?: undefined | string'
-      return:
-        description: ''
-        type: undefined | string
-  - name: operatorType
-    uid: '@azure/arm-eventgrid.NumberNotInAdvancedFilter.operatorType|stable'
-    package: '@azure/arm-eventgrid|stable'
-    summary: Polymorphic Discriminator
-    fullName: operatorType
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'operatorType: "NumberNotIn"'
-      return:
-        description: ''
-        type: '"NumberNotIn"'
-  - name: values
-    uid: '@azure/arm-eventgrid.NumberNotInAdvancedFilter.values|stable'
-    package: '@azure/arm-eventgrid|stable'
-    summary: The set of filter values.
-    fullName: values
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'values?: number[]'
-      return:
-        description: ''
-        type: number[]
+syntax: >-
+  type NumberNotInAdvancedFilter = AdvancedFilter & { operatorType:
+  "NumberNotIn", values?: number[] }

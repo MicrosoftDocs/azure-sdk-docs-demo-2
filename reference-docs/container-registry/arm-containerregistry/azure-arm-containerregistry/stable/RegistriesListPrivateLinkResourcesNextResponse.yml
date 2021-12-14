@@ -1,0 +1,14 @@
+### YamlMime:TSTypeAlias
+name: RegistriesListPrivateLinkResourcesNextResponse
+uid: >-
+  @azure/arm-containerregistry.RegistriesListPrivateLinkResourcesNextResponse|stable
+package: '@azure/arm-containerregistry|stable'
+summary: Contains response data for the listPrivateLinkResourcesNext operation.
+fullName: RegistriesListPrivateLinkResourcesNextResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type RegistriesListPrivateLinkResourcesNextResponse =
+  PrivateLinkResourceListResult & { _response: HttpResponse & { bodyAsText:
+  string, parsedBody: PrivateLinkResourceListResult } }

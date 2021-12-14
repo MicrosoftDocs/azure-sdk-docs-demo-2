@@ -9,6 +9,45 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
+  - name: allowProtectedAppendWrites
+    uid: '@azure/arm-storage.UpdateHistoryProperty.allowProtectedAppendWrites|stable'
+    package: '@azure/arm-storage|stable'
+    summary: >-
+      This property can only be changed for unlocked time-based retention
+      policies. When enabled, new blocks can be written to an append blob while
+      maintaining immutability protection and compliance. Only new blocks can be
+      added and any existing blocks cannot be modified or deleted. This property
+      cannot be changed with ExtendImmutabilityPolicy API.
+    fullName: allowProtectedAppendWrites
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowProtectedAppendWrites?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true
+  - name: allowProtectedAppendWritesAll
+    uid: >-
+      @azure/arm-storage.UpdateHistoryProperty.allowProtectedAppendWritesAll|stable
+    package: '@azure/arm-storage|stable'
+    summary: >-
+      This property can only be changed for unlocked time-based retention
+      policies. When enabled, new blocks can be written to both 'Append and Bock
+      Blobs' while maintaining immutability protection and compliance. Only new
+      blocks can be added and any existing blocks cannot be modified or deleted.
+      This property cannot be changed with ExtendImmutabilityPolicy API. The
+      'allowProtectedAppendWrites' and 'allowProtectedAppendWritesAll'
+      properties are mutually exclusive.
+    fullName: allowProtectedAppendWritesAll
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowProtectedAppendWritesAll?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true
   - name: immutabilityPeriodSinceCreationInDays
     uid: >-
       @azure/arm-storage.UpdateHistoryProperty.immutabilityPeriodSinceCreationInDays|stable
@@ -17,8 +56,8 @@ properties:
       The immutability period for the blobs in the container since the policy
       creation, in days.
 
-      **NOTE: This property will not be serialized. It can only be populated by
-      the server.**
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
     fullName: immutabilityPeriodSinceCreationInDays
     remarks: ''
     isPreview: false
@@ -34,8 +73,8 @@ properties:
     summary: >-
       Returns the Object ID of the user who updated the ImmutabilityPolicy.
 
-      **NOTE: This property will not be serialized. It can only be populated by
-      the server.**
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
     fullName: objectIdentifier
     remarks: ''
     isPreview: false
@@ -52,8 +91,8 @@ properties:
       Returns the Tenant ID that issued the token for the user who updated the
       ImmutabilityPolicy.
 
-      **NOTE: This property will not be serialized. It can only be populated by
-      the server.**
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
     fullName: tenantId
     remarks: ''
     isPreview: false
@@ -69,8 +108,8 @@ properties:
     summary: >-
       Returns the date and time the ImmutabilityPolicy was updated.
 
-      **NOTE: This property will not be serialized. It can only be populated by
-      the server.**
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
     fullName: timestamp
     remarks: ''
     isPreview: false
@@ -85,12 +124,10 @@ properties:
     package: '@azure/arm-storage|stable'
     summary: >-
       The ImmutabilityPolicy update type of a blob container, possible values
-      include: put, lock and
+      include: put, lock and extend.
 
-      extend. Possible values include: 'put', 'lock', 'extend'
-
-      **NOTE: This property will not be serialized. It can only be populated by
-      the server.**
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
     fullName: update
     remarks: ''
     isPreview: false
@@ -107,8 +144,8 @@ properties:
       Returns the User Principal Name of the user who updated the
       ImmutabilityPolicy.
 
-      **NOTE: This property will not be serialized. It can only be populated by
-      the server.**
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
     fullName: upn
     remarks: ''
     isPreview: false

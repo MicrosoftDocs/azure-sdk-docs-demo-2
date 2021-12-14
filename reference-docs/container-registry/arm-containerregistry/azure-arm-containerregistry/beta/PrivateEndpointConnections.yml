@@ -1,0 +1,265 @@
+### YamlMime:TSType
+name: PrivateEndpointConnections
+uid: '@azure/arm-containerregistry.PrivateEndpointConnections|beta'
+package: '@azure/arm-containerregistry|beta'
+summary: Interface representing a PrivateEndpointConnections.
+fullName: PrivateEndpointConnections
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      beginCreateOrUpdate(string, string, string, PrivateEndpointConnection,
+      PrivateEndpointConnectionsCreateOrUpdateOptionalParams)
+    uid: >-
+      @azure/arm-containerregistry.PrivateEndpointConnections.beginCreateOrUpdate|beta
+    package: '@azure/arm-containerregistry|beta'
+    summary: >-
+      Update the state of specified private endpoint connection associated with
+      the container registry.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string, registryName:
+        string, privateEndpointConnectionName: string,
+        privateEndpointConnection: PrivateEndpointConnection, options?:
+        PrivateEndpointConnectionsCreateOrUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<PrivateEndpointConnectionsCreateOrUpdateResponse>,
+        PrivateEndpointConnectionsCreateOrUpdateResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: privateEndpointConnectionName
+          type: string
+          description: The name of the private endpoint connection.
+        - id: privateEndpointConnection
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.PrivateEndpointConnection|beta" />
+          description: The parameters for creating a private endpoint connection.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.PrivateEndpointConnectionsCreateOrUpdateOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-containerregistry.PrivateEndpointConnectionsCreateOrUpdateResponse|beta"
+          />&gt;, <xref
+          uid="@azure/arm-containerregistry.PrivateEndpointConnectionsCreateOrUpdateResponse|beta"
+          />&gt;&gt;
+  - name: >-
+      beginCreateOrUpdateAndWait(string, string, string,
+      PrivateEndpointConnection,
+      PrivateEndpointConnectionsCreateOrUpdateOptionalParams)
+    uid: >-
+      @azure/arm-containerregistry.PrivateEndpointConnections.beginCreateOrUpdateAndWait|beta
+    package: '@azure/arm-containerregistry|beta'
+    summary: >-
+      Update the state of specified private endpoint connection associated with
+      the container registry.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdateAndWait(resourceGroupName: string,
+        registryName: string, privateEndpointConnectionName: string,
+        privateEndpointConnection: PrivateEndpointConnection, options?:
+        PrivateEndpointConnectionsCreateOrUpdateOptionalParams):
+        Promise<PrivateEndpointConnectionsCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: privateEndpointConnectionName
+          type: string
+          description: The name of the private endpoint connection.
+        - id: privateEndpointConnection
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.PrivateEndpointConnection|beta" />
+          description: The parameters for creating a private endpoint connection.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.PrivateEndpointConnectionsCreateOrUpdateOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-containerregistry.PrivateEndpointConnectionsCreateOrUpdateResponse|beta"
+          />&gt;
+  - name: >-
+      beginDelete(string, string, string,
+      PrivateEndpointConnectionsDeleteOptionalParams)
+    uid: '@azure/arm-containerregistry.PrivateEndpointConnections.beginDelete|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: >-
+      Deletes the specified private endpoint connection associated with the
+      container registry.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDelete(resourceGroupName: string, registryName: string,
+        privateEndpointConnectionName: string, options?:
+        PrivateEndpointConnectionsDeleteOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: privateEndpointConnectionName
+          type: string
+          description: The name of the private endpoint connection.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.PrivateEndpointConnectionsDeleteOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: >-
+      beginDeleteAndWait(string, string, string,
+      PrivateEndpointConnectionsDeleteOptionalParams)
+    uid: >-
+      @azure/arm-containerregistry.PrivateEndpointConnections.beginDeleteAndWait|beta
+    package: '@azure/arm-containerregistry|beta'
+    summary: >-
+      Deletes the specified private endpoint connection associated with the
+      container registry.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteAndWait(resourceGroupName: string, registryName:
+        string, privateEndpointConnectionName: string, options?:
+        PrivateEndpointConnectionsDeleteOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: privateEndpointConnectionName
+          type: string
+          description: The name of the private endpoint connection.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.PrivateEndpointConnectionsDeleteOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: get(string, string, string, PrivateEndpointConnectionsGetOptionalParams)
+    uid: '@azure/arm-containerregistry.PrivateEndpointConnections.get|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: >-
+      Get the specified private endpoint connection associated with the
+      container registry.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, registryName: string,
+        privateEndpointConnectionName: string, options?:
+        PrivateEndpointConnectionsGetOptionalParams):
+        Promise<PrivateEndpointConnectionsGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: privateEndpointConnectionName
+          type: string
+          description: The name of the private endpoint connection.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.PrivateEndpointConnectionsGetOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-containerregistry.PrivateEndpointConnectionsGetResponse|beta"
+          />&gt;
+  - name: list(string, string, PrivateEndpointConnectionsListOptionalParams)
+    uid: '@azure/arm-containerregistry.PrivateEndpointConnections.list|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: List all private endpoint connections in a container registry.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, registryName: string, options?:
+        PrivateEndpointConnectionsListOptionalParams):
+        PagedAsyncIterableIterator<PrivateEndpointConnection>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.PrivateEndpointConnectionsListOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-containerregistry.PrivateEndpointConnection|beta"
+          />&gt;

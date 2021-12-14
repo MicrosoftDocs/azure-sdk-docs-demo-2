@@ -2,152 +2,59 @@
 name: BlobServices
 uid: '@azure/arm-storage.BlobServices|stable'
 package: '@azure/arm-storage|stable'
-summary: Class representing a BlobServices.
+summary: Interface representing a BlobServices.
 fullName: BlobServices
 remarks: ''
 isPreview: false
 isDeprecated: false
-type: class
-constructors:
-  - name: BlobServices(StorageManagementClientContext)
-    uid: '@azure/arm-storage.BlobServices.constructor|stable'
-    package: '@azure/arm-storage|stable'
-    summary: Create a BlobServices.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'new BlobServices(client: StorageManagementClientContext)'
-      parameters:
-        - id: client
-          type: >-
-            <xref uid="@azure/arm-storage.StorageManagementClientContext|stable"
-            />
-          description: |
-            Reference to the service client.
+type: interface
 methods:
-  - name: getServiceProperties(string, string, msRest.RequestOptionsBase)
+  - name: >-
+      getServiceProperties(string, string,
+      BlobServicesGetServicePropertiesOptionalParams)
     uid: '@azure/arm-storage.BlobServices.getServiceProperties|stable'
     package: '@azure/arm-storage|stable'
     summary: >-
       Gets the properties of a storage account’s Blob service, including
-      properties for Storage
+      properties for Storage Analytics
 
-      Analytics and CORS (Cross-Origin Resource Sharing) rules.
+      and CORS (Cross-Origin Resource Sharing) rules.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
         function getServiceProperties(resourceGroupName: string, accountName:
-        string, options?: msRest.RequestOptionsBase):
-        Promise<Models.BlobServicesGetServicePropertiesResponse>
+        string, options?: BlobServicesGetServicePropertiesOptionalParams):
+        Promise<BlobServicesGetServicePropertiesResponse>
       parameters:
         - id: resourceGroupName
           type: string
           description: >-
             The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
+            name is
+                                     case insensitive.
         - id: accountName
           type: string
           description: >-
             The name of the storage account within the specified resource group.
             Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
+                               account names must be between 3 and 24 characters in length and use numbers and lower-case letters
+                               only.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-storage.BlobServicesGetServicePropertiesOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.BlobServicesGetServicePropertiesResponse>
+        description: ''
         type: >-
           Promise&lt;<xref
           uid="@azure/arm-storage.BlobServicesGetServicePropertiesResponse|stable"
           />&gt;
-  - name: >-
-      getServiceProperties(string, string, RequestOptionsBase,
-      ServiceCallback<BlobServiceProperties>)
-    uid: '@azure/arm-storage.BlobServices.getServiceProperties_2|stable'
-    package: '@azure/arm-storage|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function getServiceProperties(resourceGroupName: string, accountName:
-        string, options: RequestOptionsBase, callback:
-        ServiceCallback<BlobServiceProperties>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
-        - id: accountName
-          type: string
-          description: >-
-            The name of the storage account within the specified resource group.
-            Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-storage.BlobServiceProperties|stable" />&gt;
-          description: |
-            The callback
-  - name: >-
-      getServiceProperties(string, string,
-      ServiceCallback<BlobServiceProperties>)
-    uid: '@azure/arm-storage.BlobServices.getServiceProperties_1|stable'
-    package: '@azure/arm-storage|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function getServiceProperties(resourceGroupName: string, accountName:
-        string, callback: ServiceCallback<BlobServiceProperties>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
-        - id: accountName
-          type: string
-          description: >-
-            The name of the storage account within the specified resource group.
-            Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-storage.BlobServiceProperties|stable" />&gt;
-          description: |
-            The callback
-  - name: list(string, string, msRest.RequestOptionsBase)
+  - name: list(string, string, BlobServicesListOptionalParams)
     uid: '@azure/arm-storage.BlobServices.list|stable'
     package: '@azure/arm-storage|stable'
     summary: >-
@@ -159,118 +66,43 @@ methods:
     syntax:
       content: >-
         function list(resourceGroupName: string, accountName: string, options?:
-        msRest.RequestOptionsBase): Promise<Models.BlobServicesListResponse>
+        BlobServicesListOptionalParams):
+        PagedAsyncIterableIterator<BlobServiceProperties>
       parameters:
         - id: resourceGroupName
           type: string
           description: >-
             The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
+            name is
+                                     case insensitive.
         - id: accountName
           type: string
           description: >-
             The name of the storage account within the specified resource group.
             Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
+                               account names must be between 3 and 24 characters in length and use numbers and lower-case letters
+                               only.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref uid="@azure/arm-storage.BlobServicesListOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.BlobServicesListResponse>
+        description: ''
         type: >-
-          Promise&lt;<xref
-          uid="@azure/arm-storage.BlobServicesListResponse|stable" />&gt;
-  - name: >-
-      list(string, string, RequestOptionsBase,
-      ServiceCallback<BlobServiceItems>)
-    uid: '@azure/arm-storage.BlobServices.list_2|stable'
-    package: '@azure/arm-storage|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function list(resourceGroupName: string, accountName: string, options:
-        RequestOptionsBase, callback: ServiceCallback<BlobServiceItems>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
-        - id: accountName
-          type: string
-          description: >-
-            The name of the storage account within the specified resource group.
-            Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-storage.BlobServiceItems|stable" />&gt;
-          description: |
-            The callback
-  - name: list(string, string, ServiceCallback<BlobServiceItems>)
-    uid: '@azure/arm-storage.BlobServices.list_1|stable'
-    package: '@azure/arm-storage|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function list(resourceGroupName: string, accountName: string, callback:
-        ServiceCallback<BlobServiceItems>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
-        - id: accountName
-          type: string
-          description: >-
-            The name of the storage account within the specified resource group.
-            Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-storage.BlobServiceItems|stable" />&gt;
-          description: |
-            The callback
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-storage.BlobServiceProperties|stable" />&gt;
   - name: >-
       setServiceProperties(string, string, BlobServiceProperties,
-      msRest.RequestOptionsBase)
+      BlobServicesSetServicePropertiesOptionalParams)
     uid: '@azure/arm-storage.BlobServices.setServiceProperties|stable'
     package: '@azure/arm-storage|stable'
     summary: >-
       Sets the properties of a storage account’s Blob service, including
-      properties for Storage
+      properties for Storage Analytics
 
-      Analytics and CORS (Cross-Origin Resource Sharing) rules.
+      and CORS (Cross-Origin Resource Sharing) rules.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -278,132 +110,38 @@ methods:
       content: >-
         function setServiceProperties(resourceGroupName: string, accountName:
         string, parameters: BlobServiceProperties, options?:
-        msRest.RequestOptionsBase):
-        Promise<Models.BlobServicesSetServicePropertiesResponse>
+        BlobServicesSetServicePropertiesOptionalParams):
+        Promise<BlobServicesSetServicePropertiesResponse>
       parameters:
         - id: resourceGroupName
           type: string
           description: >-
             The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
+            name is
+                                     case insensitive.
         - id: accountName
           type: string
           description: >-
             The name of the storage account within the specified resource group.
             Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
+                               account names must be between 3 and 24 characters in length and use numbers and lower-case letters
+                               only.
         - id: parameters
           type: <xref uid="@azure/arm-storage.BlobServiceProperties|stable" />
           description: >-
             The properties of a storage account’s Blob service, including
             properties for
-
-            Storage Analytics and CORS (Cross-Origin Resource Sharing) rules.
+                              Storage Analytics and CORS (Cross-Origin Resource Sharing) rules.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-storage.BlobServicesSetServicePropertiesOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.BlobServicesSetServicePropertiesResponse>
+        description: ''
         type: >-
           Promise&lt;<xref
           uid="@azure/arm-storage.BlobServicesSetServicePropertiesResponse|stable"
           />&gt;
-  - name: >-
-      setServiceProperties(string, string, BlobServiceProperties,
-      RequestOptionsBase, ServiceCallback<BlobServiceProperties>)
-    uid: '@azure/arm-storage.BlobServices.setServiceProperties_2|stable'
-    package: '@azure/arm-storage|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function setServiceProperties(resourceGroupName: string, accountName:
-        string, parameters: BlobServiceProperties, options: RequestOptionsBase,
-        callback: ServiceCallback<BlobServiceProperties>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
-        - id: accountName
-          type: string
-          description: >-
-            The name of the storage account within the specified resource group.
-            Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
-        - id: parameters
-          type: <xref uid="@azure/arm-storage.BlobServiceProperties|stable" />
-          description: >-
-            The properties of a storage account’s Blob service, including
-            properties for
-
-            Storage Analytics and CORS (Cross-Origin Resource Sharing) rules.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-storage.BlobServiceProperties|stable" />&gt;
-          description: |
-            The callback
-  - name: >-
-      setServiceProperties(string, string, BlobServiceProperties,
-      ServiceCallback<BlobServiceProperties>)
-    uid: '@azure/arm-storage.BlobServices.setServiceProperties_1|stable'
-    package: '@azure/arm-storage|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function setServiceProperties(resourceGroupName: string, accountName:
-        string, parameters: BlobServiceProperties, callback:
-        ServiceCallback<BlobServiceProperties>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group within the user's subscription. The
-            name
-
-            is case insensitive.
-        - id: accountName
-          type: string
-          description: >-
-            The name of the storage account within the specified resource group.
-            Storage
-
-            account names must be between 3 and 24 characters in length and use
-            numbers and lower-case
-
-            letters only.
-        - id: parameters
-          type: <xref uid="@azure/arm-storage.BlobServiceProperties|stable" />
-          description: >-
-            The properties of a storage account’s Blob service, including
-            properties for
-
-            Storage Analytics and CORS (Cross-Origin Resource Sharing) rules.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-storage.BlobServiceProperties|stable" />&gt;
-          description: |
-            The callback

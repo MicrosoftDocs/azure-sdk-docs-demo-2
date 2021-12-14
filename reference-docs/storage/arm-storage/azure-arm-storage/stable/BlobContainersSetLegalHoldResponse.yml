@@ -7,6 +7,4 @@ fullName: BlobContainersSetLegalHoldResponse
 remarks: ''
 isPreview: false
 isDeprecated: false
-syntax: >-
-  type BlobContainersSetLegalHoldResponse = LegalHold & { _response:
-  HttpResponse & { bodyAsText: string, parsedBody: LegalHold } }
+syntax: type BlobContainersSetLegalHoldResponse = LegalHold

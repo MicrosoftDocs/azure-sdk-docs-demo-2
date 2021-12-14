@@ -1,0 +1,51 @@
+### YamlMime:TSType
+name: CommunicationUserToken
+uid: '@azure/communication-identity.CommunicationUserToken|stable'
+package: '@azure/communication-identity|stable'
+summary: The issued token and the user it was issued for.
+fullName: CommunicationUserToken
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: expiresOn
+    uid: '@azure/communication-identity.CommunicationUserToken.expiresOn|stable'
+    package: '@azure/communication-identity|stable'
+    summary: The expiry time of the token.
+    fullName: expiresOn
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'expiresOn: Date'
+      return:
+        description: ''
+        type: Date
+  - name: token
+    uid: '@azure/communication-identity.CommunicationUserToken.token|stable'
+    package: '@azure/communication-identity|stable'
+    summary: The access token issued for the user.
+    fullName: token
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'token: string'
+      return:
+        description: ''
+        type: string
+  - name: user
+    uid: '@azure/communication-identity.CommunicationUserToken.user|stable'
+    package: '@azure/communication-identity|stable'
+    summary: Represents the user the token was issued for
+    fullName: user
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'user: CommunicationUserIdentifier'
+      return:
+        description: ''
+        type: CommunicationUserIdentifier
+extends: <xref uid="@azure/communication-identity.CommunicationAccessToken|stable" />

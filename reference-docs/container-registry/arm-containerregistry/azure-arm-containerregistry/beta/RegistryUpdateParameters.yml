@@ -1,0 +1,165 @@
+### YamlMime:TSType
+name: RegistryUpdateParameters
+uid: '@azure/arm-containerregistry.RegistryUpdateParameters|beta'
+package: '@azure/arm-containerregistry|beta'
+summary: The parameters for updating a container registry.
+fullName: RegistryUpdateParameters
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: adminUserEnabled
+    uid: >-
+      @azure/arm-containerregistry.RegistryUpdateParameters.adminUserEnabled|beta
+    package: '@azure/arm-containerregistry|beta'
+    summary: The value that indicates whether the admin user is enabled.
+    fullName: adminUserEnabled
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'adminUserEnabled?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true
+  - name: anonymousPullEnabled
+    uid: >-
+      @azure/arm-containerregistry.RegistryUpdateParameters.anonymousPullEnabled|beta
+    package: '@azure/arm-containerregistry|beta'
+    summary: Enables registry-wide pull from unauthenticated clients.
+    fullName: anonymousPullEnabled
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'anonymousPullEnabled?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true
+  - name: dataEndpointEnabled
+    uid: >-
+      @azure/arm-containerregistry.RegistryUpdateParameters.dataEndpointEnabled|beta
+    package: '@azure/arm-containerregistry|beta'
+    summary: Enable a single data endpoint per region for serving data.
+    fullName: dataEndpointEnabled
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dataEndpointEnabled?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true
+  - name: encryption
+    uid: '@azure/arm-containerregistry.RegistryUpdateParameters.encryption|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: The encryption settings of container registry.
+    fullName: encryption
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'encryption?: EncryptionProperty'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-containerregistry.EncryptionProperty|beta" />
+  - name: identity
+    uid: '@azure/arm-containerregistry.RegistryUpdateParameters.identity|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: The identity of the container registry.
+    fullName: identity
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'identity?: IdentityProperties'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-containerregistry.IdentityProperties|beta" />
+  - name: networkRuleBypassOptions
+    uid: >-
+      @azure/arm-containerregistry.RegistryUpdateParameters.networkRuleBypassOptions|beta
+    package: '@azure/arm-containerregistry|beta'
+    summary: >-
+      Whether to allow trusted Azure services to access a network restricted
+      registry.
+    fullName: networkRuleBypassOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'networkRuleBypassOptions?: NetworkRuleBypassOptions'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/arm-containerregistry.NetworkRuleBypassOptions|beta"
+          />
+  - name: networkRuleSet
+    uid: '@azure/arm-containerregistry.RegistryUpdateParameters.networkRuleSet|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: The network rule set for a container registry.
+    fullName: networkRuleSet
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'networkRuleSet?: NetworkRuleSet'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-containerregistry.NetworkRuleSet|beta" />
+  - name: policies
+    uid: '@azure/arm-containerregistry.RegistryUpdateParameters.policies|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: The policies for a container registry.
+    fullName: policies
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'policies?: Policies'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-containerregistry.Policies|beta" />
+  - name: publicNetworkAccess
+    uid: >-
+      @azure/arm-containerregistry.RegistryUpdateParameters.publicNetworkAccess|beta
+    package: '@azure/arm-containerregistry|beta'
+    summary: >-
+      Whether or not public network access is allowed for the container
+      registry.
+    fullName: publicNetworkAccess
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'publicNetworkAccess?: PublicNetworkAccess'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-containerregistry.PublicNetworkAccess|beta" />
+  - name: sku
+    uid: '@azure/arm-containerregistry.RegistryUpdateParameters.sku|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: The SKU of the container registry.
+    fullName: sku
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sku?: Sku'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-containerregistry.Sku|beta" />
+  - name: tags
+    uid: '@azure/arm-containerregistry.RegistryUpdateParameters.tags|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: The tags for the container registry.
+    fullName: tags
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tags?: undefined | [key: string]: string'
+      return:
+        description: ''
+        type: 'undefined | [key: string]: string'

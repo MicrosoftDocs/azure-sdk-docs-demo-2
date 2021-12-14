@@ -40,29 +40,21 @@ properties:
     package: '@azure/arm-storage|stable'
     summary: >-
       The signed permissions for the account SAS. Possible values include: Read
-      (r), Write (w),
-
-      Delete (d), List (l), Add (a), Create (c), Update (u) and Process (p).
-      Possible values
-
-      include: 'r', 'd', 'w', 'l', 'a', 'c', 'u', 'p'
+      (r), Write (w), Delete (d), List (l), Add (a), Create (c), Update (u) and
+      Process (p).
     fullName: permissions
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'permissions: Permissions'
+      content: 'permissions: Permissions_2'
       return:
         description: ''
-        type: <xref uid="@azure/arm-storage.Permissions|stable" />
+        type: <xref uid="@azure/arm-storage.Permissions_2|stable" />
   - name: protocols
     uid: '@azure/arm-storage.AccountSasParameters.protocols|stable'
     package: '@azure/arm-storage|stable'
-    summary: >-
-      The protocol permitted for a request made with the account SAS. Possible
-      values include:
-
-      'https,http', 'https'
+    summary: The protocol permitted for a request made with the account SAS.
     fullName: protocols
     remarks: ''
     isPreview: false
@@ -77,15 +69,9 @@ properties:
     package: '@azure/arm-storage|stable'
     summary: >-
       The signed resource types that are accessible with the account SAS.
-      Service (s): Access to
-
-      service-level APIs; Container (c): Access to container-level APIs; Object
-      (o): Access to
-
-      object-level APIs for blobs, queue messages, table entities, and files.
-      Possible values
-
-      include: 's', 'c', 'o'
+      Service (s): Access to service-level APIs; Container (c): Access to
+      container-level APIs; Object (o): Access to object-level APIs for blobs,
+      queue messages, table entities, and files.
     fullName: resourceTypes
     remarks: ''
     isPreview: false
@@ -100,9 +86,7 @@ properties:
     package: '@azure/arm-storage|stable'
     summary: >-
       The signed services accessible with the account SAS. Possible values
-      include: Blob (b), Queue
-
-      (q), Table (t), File (f). Possible values include: 'b', 'q', 't', 'f'
+      include: Blob (b), Queue (q), Table (t), File (f).
     fullName: services
     remarks: ''
     isPreview: false

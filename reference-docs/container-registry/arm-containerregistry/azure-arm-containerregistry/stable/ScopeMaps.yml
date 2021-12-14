@@ -1,0 +1,491 @@
+### YamlMime:TSType
+name: ScopeMaps
+uid: '@azure/arm-containerregistry.ScopeMaps|stable'
+package: '@azure/arm-containerregistry|stable'
+summary: Class representing a ScopeMaps.
+fullName: ScopeMaps
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: ScopeMaps(ContainerRegistryManagementClientContext)
+    uid: '@azure/arm-containerregistry.ScopeMaps.constructor|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: Create a ScopeMaps.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'new ScopeMaps(client: ContainerRegistryManagementClientContext)'
+      parameters:
+        - id: client
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.ContainerRegistryManagementClientContext|stable"
+            />
+          description: |
+            Reference to the service client.
+methods:
+  - name: beginCreate(string, string, string, ScopeMap, msRest.RequestOptionsBase)
+    uid: '@azure/arm-containerregistry.ScopeMaps.beginCreate|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: >-
+      Creates a scope map for a container registry with the specified
+      parameters.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreate(resourceGroupName: string, registryName: string,
+        scopeMapName: string, scopeMapCreateParameters: ScopeMap, options?:
+        msRest.RequestOptionsBase): Promise<LROPoller>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: scopeMapName
+          type: string
+          description: The name of the scope map.
+        - id: scopeMapCreateParameters
+          type: <xref uid="@azure/arm-containerregistry.ScopeMap|stable" />
+          description: The parameters for creating a scope map.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<msRestAzure.LROPoller>
+        type: Promise&lt;LROPoller&gt;
+  - name: beginDeleteMethod(string, string, string, msRest.RequestOptionsBase)
+    uid: '@azure/arm-containerregistry.ScopeMaps.beginDeleteMethod|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: Deletes a scope map from a container registry.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string, registryName:
+        string, scopeMapName: string, options?: msRest.RequestOptionsBase):
+        Promise<LROPoller>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: scopeMapName
+          type: string
+          description: The name of the scope map.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<msRestAzure.LROPoller>
+        type: Promise&lt;LROPoller&gt;
+  - name: >-
+      beginUpdate(string, string, string, ScopeMapUpdateParameters,
+      msRest.RequestOptionsBase)
+    uid: '@azure/arm-containerregistry.ScopeMaps.beginUpdate|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: Updates a scope map with the specified parameters.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginUpdate(resourceGroupName: string, registryName: string,
+        scopeMapName: string, scopeMapUpdateParameters:
+        ScopeMapUpdateParameters, options?: msRest.RequestOptionsBase):
+        Promise<LROPoller>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: scopeMapName
+          type: string
+          description: The name of the scope map.
+        - id: scopeMapUpdateParameters
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.ScopeMapUpdateParameters|stable"
+            />
+          description: The parameters for updating a scope map.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<msRestAzure.LROPoller>
+        type: Promise&lt;LROPoller&gt;
+  - name: create(string, string, string, ScopeMap, msRest.RequestOptionsBase)
+    uid: '@azure/arm-containerregistry.ScopeMaps.create|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: >-
+      Creates a scope map for a container registry with the specified
+      parameters.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function create(resourceGroupName: string, registryName: string,
+        scopeMapName: string, scopeMapCreateParameters: ScopeMap, options?:
+        msRest.RequestOptionsBase): Promise<Models.ScopeMapsCreateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: scopeMapName
+          type: string
+          description: The name of the scope map.
+        - id: scopeMapCreateParameters
+          type: <xref uid="@azure/arm-containerregistry.ScopeMap|stable" />
+          description: The parameters for creating a scope map.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.ScopeMapsCreateResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-containerregistry.ScopeMapsCreateResponse|stable"
+          />&gt;
+  - name: deleteMethod(string, string, string, msRest.RequestOptionsBase)
+    uid: '@azure/arm-containerregistry.ScopeMaps.deleteMethod|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: Deletes a scope map from a container registry.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, registryName: string,
+        scopeMapName: string, options?: msRest.RequestOptionsBase):
+        Promise<RestResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: scopeMapName
+          type: string
+          description: The name of the scope map.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<msRest.RestResponse>
+        type: Promise&lt;RestResponse&gt;
+  - name: get(string, string, string, msRest.RequestOptionsBase)
+    uid: '@azure/arm-containerregistry.ScopeMaps.get|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: Gets the properties of the specified scope map.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, registryName: string,
+        scopeMapName: string, options?: msRest.RequestOptionsBase):
+        Promise<Models.ScopeMapsGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: scopeMapName
+          type: string
+          description: The name of the scope map.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.ScopeMapsGetResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-containerregistry.ScopeMapsGetResponse|stable" />&gt;
+  - name: get(string, string, string, RequestOptionsBase, ServiceCallback<ScopeMap>)
+    uid: '@azure/arm-containerregistry.ScopeMaps.get_2|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, registryName: string,
+        scopeMapName: string, options: RequestOptionsBase, callback:
+        ServiceCallback<ScopeMap>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: scopeMapName
+          type: string
+          description: The name of the scope map.
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-containerregistry.ScopeMap|stable" />&gt;
+          description: |
+            The callback
+  - name: get(string, string, string, ServiceCallback<ScopeMap>)
+    uid: '@azure/arm-containerregistry.ScopeMaps.get_1|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, registryName: string,
+        scopeMapName: string, callback: ServiceCallback<ScopeMap>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: scopeMapName
+          type: string
+          description: The name of the scope map.
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-containerregistry.ScopeMap|stable" />&gt;
+          description: |
+            The callback
+  - name: list(string, string, msRest.RequestOptionsBase)
+    uid: '@azure/arm-containerregistry.ScopeMaps.list|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: Lists all the scope maps for the specified container registry.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, registryName: string, options?:
+        msRest.RequestOptionsBase): Promise<Models.ScopeMapsListResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.ScopeMapsListResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-containerregistry.ScopeMapsListResponse|stable" />&gt;
+  - name: >-
+      list(string, string, RequestOptionsBase,
+      ServiceCallback<ScopeMapListResult>)
+    uid: '@azure/arm-containerregistry.ScopeMaps.list_2|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, registryName: string, options:
+        RequestOptionsBase, callback: ServiceCallback<ScopeMapListResult>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-containerregistry.ScopeMapListResult|stable" />&gt;
+          description: |
+            The callback
+  - name: list(string, string, ServiceCallback<ScopeMapListResult>)
+    uid: '@azure/arm-containerregistry.ScopeMaps.list_1|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, registryName: string, callback:
+        ServiceCallback<ScopeMapListResult>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-containerregistry.ScopeMapListResult|stable" />&gt;
+          description: |
+            The callback
+  - name: listNext(string, msRest.RequestOptionsBase)
+    uid: '@azure/arm-containerregistry.ScopeMaps.listNext|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: Lists all the scope maps for the specified container registry.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, options?:
+        msRest.RequestOptionsBase): Promise<Models.ScopeMapsListNextResponse>
+      parameters:
+        - id: nextPageLink
+          type: string
+          description: The NextLink from the previous successful call to List operation.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.ScopeMapsListNextResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-containerregistry.ScopeMapsListNextResponse|stable"
+          />&gt;
+  - name: listNext(string, RequestOptionsBase, ServiceCallback<ScopeMapListResult>)
+    uid: '@azure/arm-containerregistry.ScopeMaps.listNext_2|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, options: RequestOptionsBase,
+        callback: ServiceCallback<ScopeMapListResult>)
+      parameters:
+        - id: nextPageLink
+          type: string
+          description: The NextLink from the previous successful call to List operation.
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-containerregistry.ScopeMapListResult|stable" />&gt;
+          description: |
+            The callback
+  - name: listNext(string, ServiceCallback<ScopeMapListResult>)
+    uid: '@azure/arm-containerregistry.ScopeMaps.listNext_1|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, callback:
+        ServiceCallback<ScopeMapListResult>)
+      parameters:
+        - id: nextPageLink
+          type: string
+          description: The NextLink from the previous successful call to List operation.
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-containerregistry.ScopeMapListResult|stable" />&gt;
+          description: |
+            The callback
+  - name: >-
+      update(string, string, string, ScopeMapUpdateParameters,
+      msRest.RequestOptionsBase)
+    uid: '@azure/arm-containerregistry.ScopeMaps.update|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: Updates a scope map with the specified parameters.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function update(resourceGroupName: string, registryName: string,
+        scopeMapName: string, scopeMapUpdateParameters:
+        ScopeMapUpdateParameters, options?: msRest.RequestOptionsBase):
+        Promise<Models.ScopeMapsUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: scopeMapName
+          type: string
+          description: The name of the scope map.
+        - id: scopeMapUpdateParameters
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.ScopeMapUpdateParameters|stable"
+            />
+          description: The parameters for updating a scope map.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.ScopeMapsUpdateResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-containerregistry.ScopeMapsUpdateResponse|stable"
+          />&gt;

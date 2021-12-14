@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: TrustPolicy
+uid: '@azure/arm-containerregistry.TrustPolicy|beta'
+package: '@azure/arm-containerregistry|beta'
+summary: The content trust policy for a container registry.
+fullName: TrustPolicy
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: status
+    uid: '@azure/arm-containerregistry.TrustPolicy.status|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: The value that indicates whether the policy is enabled or not.
+    fullName: status
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'status?: PolicyStatus'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-containerregistry.PolicyStatus|beta" />
+  - name: type
+    uid: '@azure/arm-containerregistry.TrustPolicy.type|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: The type of trust policy.
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: TrustPolicyType'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-containerregistry.TrustPolicyType|beta" />

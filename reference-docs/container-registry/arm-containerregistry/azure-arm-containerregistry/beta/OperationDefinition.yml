@@ -1,0 +1,85 @@
+### YamlMime:TSType
+name: OperationDefinition
+uid: '@azure/arm-containerregistry.OperationDefinition|beta'
+package: '@azure/arm-containerregistry|beta'
+summary: The definition of a container registry operation.
+fullName: OperationDefinition
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: display
+    uid: '@azure/arm-containerregistry.OperationDefinition.display|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: The display information for the container registry operation.
+    fullName: display
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'display?: OperationDisplayDefinition'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-containerregistry.OperationDisplayDefinition|beta" />
+  - name: isDataAction
+    uid: '@azure/arm-containerregistry.OperationDefinition.isDataAction|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: >-
+      This property indicates if the operation is an action or a data action
+
+      ref:
+      https://docs.microsoft.com/en-us/azure/role-based-access-control/role-definitions#management-and-data-operations
+    fullName: isDataAction
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isDataAction?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true
+  - name: name
+    uid: '@azure/arm-containerregistry.OperationDefinition.name|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: 'Operation name: {provider}/{resource}/{operation}.'
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: origin
+    uid: '@azure/arm-containerregistry.OperationDefinition.origin|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: The origin information of the container registry operation.
+    fullName: origin
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'origin?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: serviceSpecification
+    uid: '@azure/arm-containerregistry.OperationDefinition.serviceSpecification|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: The definition of Azure Monitoring service.
+    fullName: serviceSpecification
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'serviceSpecification?: OperationServiceSpecificationDefinition'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-containerregistry.OperationServiceSpecificationDefinition|beta"
+          />

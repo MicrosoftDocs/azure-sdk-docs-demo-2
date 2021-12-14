@@ -2,31 +2,14 @@
 name: DeletedAccounts
 uid: '@azure/arm-storage.DeletedAccounts|stable'
 package: '@azure/arm-storage|stable'
-summary: Class representing a DeletedAccounts.
+summary: Interface representing a DeletedAccounts.
 fullName: DeletedAccounts
 remarks: ''
 isPreview: false
 isDeprecated: false
-type: class
-constructors:
-  - name: DeletedAccounts(StorageManagementClientContext)
-    uid: '@azure/arm-storage.DeletedAccounts.constructor|stable'
-    package: '@azure/arm-storage|stable'
-    summary: Create a DeletedAccounts.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'new DeletedAccounts(client: StorageManagementClientContext)'
-      parameters:
-        - id: client
-          type: >-
-            <xref uid="@azure/arm-storage.StorageManagementClientContext|stable"
-            />
-          description: |
-            Reference to the service client.
+type: interface
 methods:
-  - name: get(string, string, msRest.RequestOptionsBase)
+  - name: get(string, string, DeletedAccountsGetOptionalParams)
     uid: '@azure/arm-storage.DeletedAccounts.get|stable'
     package: '@azure/arm-storage|stable'
     summary: Get properties of specified deleted account resource.
@@ -36,7 +19,7 @@ methods:
     syntax:
       content: >-
         function get(deletedAccountName: string, location: string, options?:
-        msRest.RequestOptionsBase): Promise<Models.DeletedAccountsGetResponse>
+        DeletedAccountsGetOptionalParams): Promise<DeletedAccountsGetResponse>
       parameters:
         - id: deletedAccountName
           type: string
@@ -45,65 +28,17 @@ methods:
           type: string
           description: The location of the deleted storage account.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-storage.DeletedAccountsGetOptionalParams|stable" />
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.DeletedAccountsGetResponse>
+        description: ''
         type: >-
           Promise&lt;<xref
           uid="@azure/arm-storage.DeletedAccountsGetResponse|stable" />&gt;
-  - name: get(string, string, RequestOptionsBase, ServiceCallback<DeletedAccount>)
-    uid: '@azure/arm-storage.DeletedAccounts.get_2|stable'
-    package: '@azure/arm-storage|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function get(deletedAccountName: string, location: string, options:
-        RequestOptionsBase, callback: ServiceCallback<DeletedAccount>)
-      parameters:
-        - id: deletedAccountName
-          type: string
-          description: Name of the deleted storage account.
-        - id: location
-          type: string
-          description: The location of the deleted storage account.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-storage.DeletedAccount|stable" />&gt;
-          description: |
-            The callback
-  - name: get(string, string, ServiceCallback<DeletedAccount>)
-    uid: '@azure/arm-storage.DeletedAccounts.get_1|stable'
-    package: '@azure/arm-storage|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function get(deletedAccountName: string, location: string, callback:
-        ServiceCallback<DeletedAccount>)
-      parameters:
-        - id: deletedAccountName
-          type: string
-          description: Name of the deleted storage account.
-        - id: location
-          type: string
-          description: The location of the deleted storage account.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-storage.DeletedAccount|stable" />&gt;
-          description: |
-            The callback
-  - name: list(msRest.RequestOptionsBase)
+  - name: list(DeletedAccountsListOptionalParams)
     uid: '@azure/arm-storage.DeletedAccounts.list|stable'
     package: '@azure/arm-storage|stable'
     summary: Lists deleted accounts under the subscription.
@@ -112,122 +47,17 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function list(options?: msRest.RequestOptionsBase):
-        Promise<Models.DeletedAccountsListResponse>
+        function list(options?: DeletedAccountsListOptionalParams):
+        PagedAsyncIterableIterator<DeletedAccount>
       parameters:
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-storage.DeletedAccountsListOptionalParams|stable" />
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.DeletedAccountsListResponse>
+        description: ''
         type: >-
-          Promise&lt;<xref
-          uid="@azure/arm-storage.DeletedAccountsListResponse|stable" />&gt;
-  - name: list(RequestOptionsBase, ServiceCallback<DeletedAccountListResult>)
-    uid: '@azure/arm-storage.DeletedAccounts.list_2|stable'
-    package: '@azure/arm-storage|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function list(options: RequestOptionsBase, callback:
-        ServiceCallback<DeletedAccountListResult>)
-      parameters:
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-storage.DeletedAccountListResult|stable" />&gt;
-          description: |
-            The callback
-  - name: list(ServiceCallback<DeletedAccountListResult>)
-    uid: '@azure/arm-storage.DeletedAccounts.list_1|stable'
-    package: '@azure/arm-storage|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function list(callback: ServiceCallback<DeletedAccountListResult>)'
-      parameters:
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-storage.DeletedAccountListResult|stable" />&gt;
-          description: |
-            The callback
-  - name: listNext(string, msRest.RequestOptionsBase)
-    uid: '@azure/arm-storage.DeletedAccounts.listNext|stable'
-    package: '@azure/arm-storage|stable'
-    summary: Lists deleted accounts under the subscription.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listNext(nextPageLink: string, options?:
-        msRest.RequestOptionsBase):
-        Promise<Models.DeletedAccountsListNextResponse>
-      parameters:
-        - id: nextPageLink
-          type: string
-          description: The NextLink from the previous successful call to List operation.
-        - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
-      return:
-        description: Promise<Models.DeletedAccountsListNextResponse>
-        type: >-
-          Promise&lt;<xref
-          uid="@azure/arm-storage.DeletedAccountsListNextResponse|stable" />&gt;
-  - name: >-
-      listNext(string, RequestOptionsBase,
-      ServiceCallback<DeletedAccountListResult>)
-    uid: '@azure/arm-storage.DeletedAccounts.listNext_2|stable'
-    package: '@azure/arm-storage|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listNext(nextPageLink: string, options: RequestOptionsBase,
-        callback: ServiceCallback<DeletedAccountListResult>)
-      parameters:
-        - id: nextPageLink
-          type: string
-          description: The NextLink from the previous successful call to List operation.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-storage.DeletedAccountListResult|stable" />&gt;
-          description: |
-            The callback
-  - name: listNext(string, ServiceCallback<DeletedAccountListResult>)
-    uid: '@azure/arm-storage.DeletedAccounts.listNext_1|stable'
-    package: '@azure/arm-storage|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listNext(nextPageLink: string, callback:
-        ServiceCallback<DeletedAccountListResult>)
-      parameters:
-        - id: nextPageLink
-          type: string
-          description: The NextLink from the previous successful call to List operation.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-storage.DeletedAccountListResult|stable" />&gt;
-          description: |
-            The callback
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-storage.DeletedAccount|stable" />&gt;

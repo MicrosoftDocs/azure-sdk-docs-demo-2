@@ -1,0 +1,130 @@
+### YamlMime:TSType
+name: Target
+uid: '@azure/arm-containerregistry.Target|beta'
+package: '@azure/arm-containerregistry|beta'
+summary: The target of the event.
+fullName: Target
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: digest
+    uid: '@azure/arm-containerregistry.Target.digest|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: >-
+      The digest of the content, as defined by the Registry V2 HTTP API
+      Specification.
+    fullName: digest
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'digest?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: length
+    uid: '@azure/arm-containerregistry.Target.length|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: The number of bytes of the content. Same as Size field.
+    fullName: length
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'length?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: mediaType
+    uid: '@azure/arm-containerregistry.Target.mediaType|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: The MIME type of the referenced object.
+    fullName: mediaType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'mediaType?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: name
+    uid: '@azure/arm-containerregistry.Target.name|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: The name of the artifact.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: repository
+    uid: '@azure/arm-containerregistry.Target.repository|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: The repository name.
+    fullName: repository
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'repository?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: size
+    uid: '@azure/arm-containerregistry.Target.size|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: The number of bytes of the content. Same as Length field.
+    fullName: size
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'size?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: tag
+    uid: '@azure/arm-containerregistry.Target.tag|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: The tag name.
+    fullName: tag
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tag?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: url
+    uid: '@azure/arm-containerregistry.Target.url|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: The direct URL to the content.
+    fullName: url
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'url?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: version
+    uid: '@azure/arm-containerregistry.Target.version|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: The version of the artifact.
+    fullName: version
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'version?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

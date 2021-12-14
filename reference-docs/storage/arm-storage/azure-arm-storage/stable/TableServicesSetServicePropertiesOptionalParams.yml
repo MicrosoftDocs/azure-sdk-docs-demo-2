@@ -2,7 +2,7 @@
 name: TableServicesSetServicePropertiesOptionalParams
 uid: '@azure/arm-storage.TableServicesSetServicePropertiesOptionalParams|stable'
 package: '@azure/arm-storage|stable'
-summary: Optional Parameters.
+summary: Optional parameters.
 fullName: TableServicesSetServicePropertiesOptionalParams
 remarks: ''
 isPreview: false
@@ -23,87 +23,63 @@ properties:
       return:
         description: ''
         type: AbortSignalLike
-  - name: cors
+  - name: onResponse
     uid: >-
-      @azure/arm-storage.TableServicesSetServicePropertiesOptionalParams.cors|stable
-    package: '@azure/arm-storage|stable'
-    summary: >-
-      Specifies CORS rules for the Table service. You can include up to five
-      CorsRule elements in
-
-      the request. If no CorsRule elements are included in the request body, all
-      CORS rules will be
-
-      deleted, and CORS will be disabled for the Table service.
-    fullName: cors
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'cors?: CorsRules'
-      return:
-        description: ''
-        type: <xref uid="@azure/arm-storage.CorsRules|stable" />
-  - name: customHeaders
-    uid: >-
-      @azure/arm-storage.TableServicesSetServicePropertiesOptionalParams.customHeaders|stable
+      @azure/arm-storage.TableServicesSetServicePropertiesOptionalParams.onResponse|stable
     package: '@azure/arm-storage|stable'
     summary: |-
-      {object} [customHeaders] User defined custom request headers that
-      will be applied before the request is sent.
-    fullName: customHeaders
+      A function to be called each time a response is received from the server
+      while performing the requested operation.
+      May be called multiple times.
+    fullName: onResponse
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'customHeaders?: undefined | [key: string]: string'
+      content: 'onResponse?: RawResponseCallback'
       return:
         description: ''
-        type: 'undefined | [key: string]: string'
-  - name: onDownloadProgress
+        type: RawResponseCallback
+  - name: requestOptions
     uid: >-
-      @azure/arm-storage.TableServicesSetServicePropertiesOptionalParams.onDownloadProgress|stable
+      @azure/arm-storage.TableServicesSetServicePropertiesOptionalParams.requestOptions|stable
     package: '@azure/arm-storage|stable'
-    summary: Callback which fires upon download progress.
-    fullName: onDownloadProgress
+    summary: Options used when creating and sending HTTP requests for this operation.
+    fullName: requestOptions
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        onDownloadProgress?: undefined | (progress: TransferProgressEvent) =>
-        void
+      content: 'requestOptions?: OperationRequestOptions'
       return:
         description: ''
-        type: 'undefined | (progress: TransferProgressEvent) =&gt; void'
-  - name: onUploadProgress
+        type: OperationRequestOptions
+  - name: serializerOptions
     uid: >-
-      @azure/arm-storage.TableServicesSetServicePropertiesOptionalParams.onUploadProgress|stable
+      @azure/arm-storage.TableServicesSetServicePropertiesOptionalParams.serializerOptions|stable
     package: '@azure/arm-storage|stable'
-    summary: Callback which fires upon upload progress.
-    fullName: onUploadProgress
+    summary: Options to override serialization/de-serialization behavior.
+    fullName: serializerOptions
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'onUploadProgress?: undefined | (progress: TransferProgressEvent) => void'
+      content: 'serializerOptions?: SerializerOptions'
       return:
         description: ''
-        type: 'undefined | (progress: TransferProgressEvent) =&gt; void'
-  - name: timeout
+        type: SerializerOptions
+  - name: tracingOptions
     uid: >-
-      @azure/arm-storage.TableServicesSetServicePropertiesOptionalParams.timeout|stable
+      @azure/arm-storage.TableServicesSetServicePropertiesOptionalParams.tracingOptions|stable
     package: '@azure/arm-storage|stable'
-    summary: >-
-      The number of milliseconds a request can take before automatically being
-      terminated.
-    fullName: timeout
+    summary: Options used when tracing is enabled.
+    fullName: tracingOptions
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'timeout?: undefined | number'
+      content: 'tracingOptions?: OperationTracingOptions'
       return:
         description: ''
-        type: undefined | number
-extends: RequestOptionsBase
+        type: OperationTracingOptions
+extends: OperationOptions

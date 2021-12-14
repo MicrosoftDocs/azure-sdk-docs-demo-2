@@ -1,0 +1,131 @@
+### YamlMime:TSType
+name: PurchasedPhoneNumber
+uid: '@azure/communication-phone-numbers.PurchasedPhoneNumber|stable'
+package: '@azure/communication-phone-numbers|stable'
+summary: Represents a purchased phone number.
+fullName: PurchasedPhoneNumber
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: assignmentType
+    uid: >-
+      @azure/communication-phone-numbers.PurchasedPhoneNumber.assignmentType|stable
+    package: '@azure/communication-phone-numbers|stable'
+    summary: >-
+      The assignment type of the phone number. A phone number can be assigned to
+      a person, or to an application.
+    fullName: assignmentType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'assignmentType: PhoneNumberAssignmentType'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/communication-phone-numbers.PhoneNumberAssignmentType|stable"
+          />
+  - name: capabilities
+    uid: >-
+      @azure/communication-phone-numbers.PurchasedPhoneNumber.capabilities|stable
+    package: '@azure/communication-phone-numbers|stable'
+    summary: Capabilities of a phone number.
+    fullName: capabilities
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'capabilities: PhoneNumberCapabilities'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/communication-phone-numbers.PhoneNumberCapabilities|stable"
+          />
+  - name: cost
+    uid: '@azure/communication-phone-numbers.PurchasedPhoneNumber.cost|stable'
+    package: '@azure/communication-phone-numbers|stable'
+    summary: The incurred cost for a single phone number.
+    fullName: cost
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'cost: PhoneNumberCost'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/communication-phone-numbers.PhoneNumberCost|stable"
+          />
+  - name: countryCode
+    uid: '@azure/communication-phone-numbers.PurchasedPhoneNumber.countryCode|stable'
+    package: '@azure/communication-phone-numbers|stable'
+    summary: The ISO 3166-2 code of the phone number's country, e.g. US.
+    fullName: countryCode
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'countryCode: string'
+      return:
+        description: ''
+        type: string
+  - name: id
+    uid: '@azure/communication-phone-numbers.PurchasedPhoneNumber.id|stable'
+    package: '@azure/communication-phone-numbers|stable'
+    summary: The id of the phone number, e.g. 11234567890.
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id: string'
+      return:
+        description: ''
+        type: string
+  - name: phoneNumber
+    uid: '@azure/communication-phone-numbers.PurchasedPhoneNumber.phoneNumber|stable'
+    package: '@azure/communication-phone-numbers|stable'
+    summary: String of the E.164 format of the phone number, e.g. +11234567890.
+    fullName: phoneNumber
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'phoneNumber: string'
+      return:
+        description: ''
+        type: string
+  - name: phoneNumberType
+    uid: >-
+      @azure/communication-phone-numbers.PurchasedPhoneNumber.phoneNumberType|stable
+    package: '@azure/communication-phone-numbers|stable'
+    summary: The phone number's type, e.g. Geographic, TollFree.
+    fullName: phoneNumberType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'phoneNumberType: PhoneNumberType'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/communication-phone-numbers.PhoneNumberType|stable"
+          />
+  - name: purchaseDate
+    uid: >-
+      @azure/communication-phone-numbers.PurchasedPhoneNumber.purchaseDate|stable
+    package: '@azure/communication-phone-numbers|stable'
+    summary: The date and time that the phone number was purchased.
+    fullName: purchaseDate
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'purchaseDate: Date'
+      return:
+        description: ''
+        type: Date
