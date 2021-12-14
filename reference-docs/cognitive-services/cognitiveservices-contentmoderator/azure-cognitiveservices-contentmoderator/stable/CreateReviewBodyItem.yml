@@ -1,0 +1,83 @@
+### YamlMime:TSType
+name: CreateReviewBodyItem
+uid: '@azure/cognitiveservices-contentmoderator.CreateReviewBodyItem|stable'
+package: '@azure/cognitiveservices-contentmoderator|stable'
+summary: Schema items of the body.
+fullName: CreateReviewBodyItem
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: callbackEndpoint
+    uid: >-
+      @azure/cognitiveservices-contentmoderator.CreateReviewBodyItem.callbackEndpoint|stable
+    package: '@azure/cognitiveservices-contentmoderator|stable'
+    summary: Optional CallbackEndpoint.
+    fullName: callbackEndpoint
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'callbackEndpoint?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: content
+    uid: >-
+      @azure/cognitiveservices-contentmoderator.CreateReviewBodyItem.content|stable
+    package: '@azure/cognitiveservices-contentmoderator|stable'
+    summary: Content to review.
+    fullName: content
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'content: string'
+      return:
+        description: ''
+        type: string
+  - name: contentId
+    uid: >-
+      @azure/cognitiveservices-contentmoderator.CreateReviewBodyItem.contentId|stable
+    package: '@azure/cognitiveservices-contentmoderator|stable'
+    summary: Content Identifier.
+    fullName: contentId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'contentId: string'
+      return:
+        description: ''
+        type: string
+  - name: metadata
+    uid: >-
+      @azure/cognitiveservices-contentmoderator.CreateReviewBodyItem.metadata|stable
+    package: '@azure/cognitiveservices-contentmoderator|stable'
+    summary: Optional metadata details.
+    fullName: metadata
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'metadata?: CreateReviewBodyItemMetadataItem[]'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/cognitiveservices-contentmoderator.CreateReviewBodyItemMetadataItem|stable"
+          />[]
+  - name: type
+    uid: '@azure/cognitiveservices-contentmoderator.CreateReviewBodyItem.type|stable'
+    package: '@azure/cognitiveservices-contentmoderator|stable'
+    summary: 'Type of the content. Possible values include: ''Image'', ''Text'''
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: Type'
+      return:
+        description: ''
+        type: <xref uid="@azure/cognitiveservices-contentmoderator.Type|stable" />

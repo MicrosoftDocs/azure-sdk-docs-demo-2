@@ -1,0 +1,128 @@
+### YamlMime:TSType
+name: SearchResponse
+uid: '@azure/cognitiveservices-entitysearch.SearchResponse|stable'
+package: '@azure/cognitiveservices-entitysearch|stable'
+summary: >-
+  Defines the top-level object that the response includes when the request
+  succeeds.
+fullName: SearchResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: contractualRules
+    uid: >-
+      @azure/cognitiveservices-entitysearch.SearchResponse.contractualRules|stable
+    package: '@azure/cognitiveservices-entitysearch|stable'
+    summary: >-
+      A list of rules that you must adhere to if you display the item.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: contractualRules
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'contractualRules?: ContractualRulesContractualRuleUnion[]'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/cognitiveservices-entitysearch.ContractualRulesContractualRuleUnion|stable"
+          />[]
+  - name: entities
+    uid: '@azure/cognitiveservices-entitysearch.SearchResponse.entities|stable'
+    package: '@azure/cognitiveservices-entitysearch|stable'
+    summary: >-
+      A list of entities that are relevant to the search query.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: entities
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'entities?: Entities'
+      return:
+        description: ''
+        type: <xref uid="@azure/cognitiveservices-entitysearch.Entities|stable" />
+  - name: id
+    uid: '@azure/cognitiveservices-entitysearch.SearchResponse.id|stable'
+    package: '@azure/cognitiveservices-entitysearch|stable'
+    summary: >-
+      A String identifier.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: places
+    uid: '@azure/cognitiveservices-entitysearch.SearchResponse.places|stable'
+    package: '@azure/cognitiveservices-entitysearch|stable'
+    summary: >-
+      A list of local entities such as restaurants or hotels that are relevant
+      to the query.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: places
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'places?: Places'
+      return:
+        description: ''
+        type: <xref uid="@azure/cognitiveservices-entitysearch.Places|stable" />
+  - name: queryContext
+    uid: '@azure/cognitiveservices-entitysearch.SearchResponse.queryContext|stable'
+    package: '@azure/cognitiveservices-entitysearch|stable'
+    summary: >-
+      An object that contains the query string that Bing used for the request.
+      This object contains
+
+      the query string as entered by the user. It may also contain an altered
+      query string that Bing
+
+      used for the query if the query string contained a spelling mistake.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: queryContext
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'queryContext?: QueryContext'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/cognitiveservices-entitysearch.QueryContext|stable"
+          />
+  - name: webSearchUrl
+    uid: '@azure/cognitiveservices-entitysearch.SearchResponse.webSearchUrl|stable'
+    package: '@azure/cognitiveservices-entitysearch|stable'
+    summary: >-
+      The URL To Bing's search result for this item.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: webSearchUrl
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'webSearchUrl?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

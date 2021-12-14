@@ -1,0 +1,147 @@
+### YamlMime:TSType
+name: Screen
+uid: '@azure/cognitiveservices-contentmoderator.Screen|stable'
+package: '@azure/cognitiveservices-contentmoderator|stable'
+summary: The response for a Screen text request.
+fullName: Screen
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: autoCorrectedText
+    uid: '@azure/cognitiveservices-contentmoderator.Screen.autoCorrectedText|stable'
+    package: '@azure/cognitiveservices-contentmoderator|stable'
+    summary: The autocorrected text
+    fullName: autoCorrectedText
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'autoCorrectedText?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: classification
+    uid: '@azure/cognitiveservices-contentmoderator.Screen.classification|stable'
+    package: '@azure/cognitiveservices-contentmoderator|stable'
+    summary: The classification details of the text.
+    fullName: classification
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'classification?: Classification'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/cognitiveservices-contentmoderator.Classification|stable"
+          />
+  - name: language
+    uid: '@azure/cognitiveservices-contentmoderator.Screen.language|stable'
+    package: '@azure/cognitiveservices-contentmoderator|stable'
+    summary: Language of the input text content.
+    fullName: language
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'language?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: misrepresentation
+    uid: '@azure/cognitiveservices-contentmoderator.Screen.misrepresentation|stable'
+    package: '@azure/cognitiveservices-contentmoderator|stable'
+    summary: The misrepresentation text.
+    fullName: misrepresentation
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'misrepresentation?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: normalizedText
+    uid: '@azure/cognitiveservices-contentmoderator.Screen.normalizedText|stable'
+    package: '@azure/cognitiveservices-contentmoderator|stable'
+    summary: The normalized text.
+    fullName: normalizedText
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'normalizedText?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: originalText
+    uid: '@azure/cognitiveservices-contentmoderator.Screen.originalText|stable'
+    package: '@azure/cognitiveservices-contentmoderator|stable'
+    summary: The original text.
+    fullName: originalText
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'originalText?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: pII
+    uid: '@azure/cognitiveservices-contentmoderator.Screen.pII|stable'
+    package: '@azure/cognitiveservices-contentmoderator|stable'
+    summary: Personal Identifier Information details.
+    fullName: pII
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'pII?: PII'
+      return:
+        description: ''
+        type: <xref uid="@azure/cognitiveservices-contentmoderator.PII|stable" />
+  - name: status
+    uid: '@azure/cognitiveservices-contentmoderator.Screen.status|stable'
+    package: '@azure/cognitiveservices-contentmoderator|stable'
+    summary: The evaluate status.
+    fullName: status
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'status?: Status'
+      return:
+        description: ''
+        type: <xref uid="@azure/cognitiveservices-contentmoderator.Status|stable" />
+  - name: terms
+    uid: '@azure/cognitiveservices-contentmoderator.Screen.terms|stable'
+    package: '@azure/cognitiveservices-contentmoderator|stable'
+    summary: ''
+    fullName: terms
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'terms?: DetectedTerms[]'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/cognitiveservices-contentmoderator.DetectedTerms|stable"
+          />[]
+  - name: trackingId
+    uid: '@azure/cognitiveservices-contentmoderator.Screen.trackingId|stable'
+    package: '@azure/cognitiveservices-contentmoderator|stable'
+    summary: Unique Content Moderator transaction Id.
+    fullName: trackingId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'trackingId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

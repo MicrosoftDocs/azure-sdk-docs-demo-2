@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: GetImagesResponse
+uid: '@azure/cognitiveservices-customvision-training.GetImagesResponse|stable'
+package: '@azure/cognitiveservices-customvision-training|stable'
+summary: Contains response data for the getImages operation.
+fullName: GetImagesResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type GetImagesResponse = Array<Image> & { _response: HttpResponse & {
+  bodyAsText: string, parsedBody: Image[] } }

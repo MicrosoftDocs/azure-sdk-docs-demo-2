@@ -1,0 +1,98 @@
+### YamlMime:TSType
+name: Images
+uid: '@azure/cognitiveservices-visualsearch.Images|stable'
+package: '@azure/cognitiveservices-visualsearch|stable'
+summary: Class representing a Images.
+fullName: Images
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: Images(VisualSearchClientContext)
+    uid: '@azure/cognitiveservices-visualsearch.Images.constructor|stable'
+    package: '@azure/cognitiveservices-visualsearch|stable'
+    summary: Create a Images.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'new Images(client: VisualSearchClientContext)'
+      parameters:
+        - id: client
+          type: >-
+            <xref
+            uid="@azure/cognitiveservices-visualsearch.VisualSearchClientContext|stable"
+            />
+          description: |
+            Reference to the service client.
+methods:
+  - name: >-
+      visualSearch(ImagesVisualSearchOptionalParams,
+      ServiceCallback<ImageKnowledge>)
+    uid: '@azure/cognitiveservices-visualsearch.Images.visualSearch_2|stable'
+    package: '@azure/cognitiveservices-visualsearch|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function visualSearch(options: ImagesVisualSearchOptionalParams,
+        callback: ServiceCallback<ImageKnowledge>)
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/cognitiveservices-visualsearch.ImagesVisualSearchOptionalParams|stable"
+            />
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/cognitiveservices-visualsearch.ImageKnowledge|stable"
+            />&gt;
+          description: |
+            The callback
+  - name: visualSearch(Models.ImagesVisualSearchOptionalParams)
+    uid: '@azure/cognitiveservices-visualsearch.Images.visualSearch|stable'
+    package: '@azure/cognitiveservices-visualsearch|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function visualSearch(options?:
+        Models.ImagesVisualSearchOptionalParams):
+        Promise<Models.ImagesVisualSearchResponse>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/cognitiveservices-visualsearch.ImagesVisualSearchOptionalParams|stable"
+            />
+          description: ''
+      return:
+        description: Promise<Models.ImagesVisualSearchResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/cognitiveservices-visualsearch.ImagesVisualSearchResponse|stable"
+          />&gt;
+  - name: visualSearch(ServiceCallback<ImageKnowledge>)
+    uid: '@azure/cognitiveservices-visualsearch.Images.visualSearch_1|stable'
+    package: '@azure/cognitiveservices-visualsearch|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function visualSearch(callback: ServiceCallback<ImageKnowledge>)'
+      parameters:
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/cognitiveservices-visualsearch.ImageKnowledge|stable"
+            />&gt;
+          description: |
+            The callback

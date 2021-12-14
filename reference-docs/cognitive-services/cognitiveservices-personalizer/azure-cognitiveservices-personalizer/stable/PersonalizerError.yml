@@ -1,0 +1,85 @@
+### YamlMime:TSType
+name: PersonalizerError
+uid: '@azure/cognitiveservices-personalizer.PersonalizerError|stable'
+package: '@azure/cognitiveservices-personalizer|stable'
+summary: The error object.
+fullName: PersonalizerError
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: code
+    uid: '@azure/cognitiveservices-personalizer.PersonalizerError.code|stable'
+    package: '@azure/cognitiveservices-personalizer|stable'
+    summary: >-
+      High level error code. Possible values include: 'BadRequest',
+      'ResourceNotFound',
+
+      'InternalServerError'
+    fullName: code
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'code: ErrorCode'
+      return:
+        description: ''
+        type: <xref uid="@azure/cognitiveservices-personalizer.ErrorCode|stable" />
+  - name: details
+    uid: '@azure/cognitiveservices-personalizer.PersonalizerError.details|stable'
+    package: '@azure/cognitiveservices-personalizer|stable'
+    summary: An array of details about specific errors that led to this reported error.
+    fullName: details
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'details?: PersonalizerError[]'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/cognitiveservices-personalizer.PersonalizerError|stable"
+          />[]
+  - name: innerError
+    uid: '@azure/cognitiveservices-personalizer.PersonalizerError.innerError|stable'
+    package: '@azure/cognitiveservices-personalizer|stable'
+    summary: Finer error details.
+    fullName: innerError
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'innerError?: InternalError'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/cognitiveservices-personalizer.InternalError|stable"
+          />
+  - name: message
+    uid: '@azure/cognitiveservices-personalizer.PersonalizerError.message|stable'
+    package: '@azure/cognitiveservices-personalizer|stable'
+    summary: A message explaining the error reported by the service.
+    fullName: message
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'message: string'
+      return:
+        description: ''
+        type: string
+  - name: target
+    uid: '@azure/cognitiveservices-personalizer.PersonalizerError.target|stable'
+    package: '@azure/cognitiveservices-personalizer|stable'
+    summary: Error source element.
+    fullName: target
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'target?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

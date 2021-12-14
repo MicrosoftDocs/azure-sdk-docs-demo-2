@@ -1,0 +1,151 @@
+### YamlMime:TSType
+name: CreateKbDTO
+uid: '@azure/cognitiveservices-qnamaker.CreateKbDTO|stable'
+package: '@azure/cognitiveservices-qnamaker|stable'
+summary: Post body schema for CreateKb operation.
+fullName: CreateKbDTO
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: defaultAnswer
+    uid: '@azure/cognitiveservices-qnamaker.CreateKbDTO.defaultAnswer|stable'
+    package: '@azure/cognitiveservices-qnamaker|stable'
+    summary: Default answer sent to user if no good match is found in the KB.
+    fullName: defaultAnswer
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'defaultAnswer?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: defaultAnswerUsedForExtraction
+    uid: >-
+      @azure/cognitiveservices-qnamaker.CreateKbDTO.defaultAnswerUsedForExtraction|stable
+    package: '@azure/cognitiveservices-qnamaker|stable'
+    summary: >-
+      Text string to be used as the answer in any Q-A which has no extracted
+      answer from the
+
+      document but has a hierarchy. Required when EnableHierarchicalExtraction
+      field is set to True.
+    fullName: defaultAnswerUsedForExtraction
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'defaultAnswerUsedForExtraction?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: enableHierarchicalExtraction
+    uid: >-
+      @azure/cognitiveservices-qnamaker.CreateKbDTO.enableHierarchicalExtraction|stable
+    package: '@azure/cognitiveservices-qnamaker|stable'
+    summary: >-
+      Enable hierarchical extraction of Q-A from files and urls. Value to be
+      considered False if
+
+      this field is not present.
+    fullName: enableHierarchicalExtraction
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'enableHierarchicalExtraction?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true
+  - name: enableMultipleLanguages
+    uid: >-
+      @azure/cognitiveservices-qnamaker.CreateKbDTO.enableMultipleLanguages|stable
+    package: '@azure/cognitiveservices-qnamaker|stable'
+    summary: >-
+      Set to true to enable creating KBs in different languages for the same
+      resource.
+    fullName: enableMultipleLanguages
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'enableMultipleLanguages?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true
+  - name: files
+    uid: '@azure/cognitiveservices-qnamaker.CreateKbDTO.files|stable'
+    package: '@azure/cognitiveservices-qnamaker|stable'
+    summary: List of files from which to Extract Q-A.
+    fullName: files
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'files?: FileDTO[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/cognitiveservices-qnamaker.FileDTO|stable" />[]
+  - name: language
+    uid: '@azure/cognitiveservices-qnamaker.CreateKbDTO.language|stable'
+    package: '@azure/cognitiveservices-qnamaker|stable'
+    summary: >-
+      Language of the knowledgebase. Please find the list of supported languages
+      <a
+
+      href="https://aka.ms/qnamaker-languages#languages-supported"
+      target="_blank">here</a>.
+    fullName: language
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'language?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: name
+    uid: '@azure/cognitiveservices-qnamaker.CreateKbDTO.name|stable'
+    package: '@azure/cognitiveservices-qnamaker|stable'
+    summary: Friendly name for the knowledgebase.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: string'
+      return:
+        description: ''
+        type: string
+  - name: qnaList
+    uid: '@azure/cognitiveservices-qnamaker.CreateKbDTO.qnaList|stable'
+    package: '@azure/cognitiveservices-qnamaker|stable'
+    summary: >-
+      List of Q-A (QnADTO) to be added to the knowledgebase. Q-A Ids are
+      assigned by the service and
+
+      should be omitted.
+    fullName: qnaList
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'qnaList?: QnADTO[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/cognitiveservices-qnamaker.QnADTO|stable" />[]
+  - name: urls
+    uid: '@azure/cognitiveservices-qnamaker.CreateKbDTO.urls|stable'
+    package: '@azure/cognitiveservices-qnamaker|stable'
+    summary: List of URLs to be used for extracting Q-A.
+    fullName: urls
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'urls?: string[]'
+      return:
+        description: ''
+        type: string[]

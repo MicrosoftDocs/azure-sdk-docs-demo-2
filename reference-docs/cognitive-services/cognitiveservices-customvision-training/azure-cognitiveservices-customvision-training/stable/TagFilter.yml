@@ -1,0 +1,41 @@
+### YamlMime:TSType
+name: TagFilter
+uid: '@azure/cognitiveservices-customvision-training.TagFilter|stable'
+package: '@azure/cognitiveservices-customvision-training|stable'
+summary: >-
+  Model that query for counting of images whose suggested tags match given tags
+  and their
+
+  probability are greater than or equal to the given threshold.
+fullName: TagFilter
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: tagIds
+    uid: '@azure/cognitiveservices-customvision-training.TagFilter.tagIds|stable'
+    package: '@azure/cognitiveservices-customvision-training|stable'
+    summary: Existing TagIds in project to get suggested tags count for.
+    fullName: tagIds
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tagIds?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: threshold
+    uid: '@azure/cognitiveservices-customvision-training.TagFilter.threshold|stable'
+    package: '@azure/cognitiveservices-customvision-training|stable'
+    summary: Confidence threshold to filter suggested tags on.
+    fullName: threshold
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'threshold?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number

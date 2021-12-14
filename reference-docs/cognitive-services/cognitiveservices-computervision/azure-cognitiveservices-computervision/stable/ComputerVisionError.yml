@@ -1,0 +1,61 @@
+### YamlMime:TSType
+name: ComputerVisionError
+uid: '@azure/cognitiveservices-computervision.ComputerVisionError|stable'
+package: '@azure/cognitiveservices-computervision|stable'
+summary: The API request error.
+fullName: ComputerVisionError
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: code
+    uid: '@azure/cognitiveservices-computervision.ComputerVisionError.code|stable'
+    package: '@azure/cognitiveservices-computervision|stable'
+    summary: >-
+      The error code. Possible values include: 'InvalidRequest',
+      'InvalidArgument',
+
+      'InternalServerError', 'ServiceUnavailable'
+    fullName: code
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'code: ComputerVisionErrorCodes'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/cognitiveservices-computervision.ComputerVisionErrorCodes|stable"
+          />
+  - name: innererror
+    uid: >-
+      @azure/cognitiveservices-computervision.ComputerVisionError.innererror|stable
+    package: '@azure/cognitiveservices-computervision|stable'
+    summary: Inner error contains more specific information.
+    fullName: innererror
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'innererror?: ComputerVisionInnerError'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/cognitiveservices-computervision.ComputerVisionInnerError|stable"
+          />
+  - name: message
+    uid: '@azure/cognitiveservices-computervision.ComputerVisionError.message|stable'
+    package: '@azure/cognitiveservices-computervision|stable'
+    summary: A message explaining the error reported by the service.
+    fullName: message
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'message: string'
+      return:
+        description: ''
+        type: string

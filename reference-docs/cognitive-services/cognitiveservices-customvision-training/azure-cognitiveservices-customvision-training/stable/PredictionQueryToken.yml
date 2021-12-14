@@ -1,0 +1,142 @@
+### YamlMime:TSType
+name: PredictionQueryToken
+uid: '@azure/cognitiveservices-customvision-training.PredictionQueryToken|stable'
+package: '@azure/cognitiveservices-customvision-training|stable'
+summary: An interface representing PredictionQueryToken.
+fullName: PredictionQueryToken
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: application
+    uid: >-
+      @azure/cognitiveservices-customvision-training.PredictionQueryToken.application|stable
+    package: '@azure/cognitiveservices-customvision-training|stable'
+    summary: ''
+    fullName: application
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'application?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: continuation
+    uid: >-
+      @azure/cognitiveservices-customvision-training.PredictionQueryToken.continuation|stable
+    package: '@azure/cognitiveservices-customvision-training|stable'
+    summary: ''
+    fullName: continuation
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'continuation?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: endTime
+    uid: >-
+      @azure/cognitiveservices-customvision-training.PredictionQueryToken.endTime|stable
+    package: '@azure/cognitiveservices-customvision-training|stable'
+    summary: ''
+    fullName: endTime
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'endTime?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: iterationId
+    uid: >-
+      @azure/cognitiveservices-customvision-training.PredictionQueryToken.iterationId|stable
+    package: '@azure/cognitiveservices-customvision-training|stable'
+    summary: ''
+    fullName: iterationId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'iterationId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: maxCount
+    uid: >-
+      @azure/cognitiveservices-customvision-training.PredictionQueryToken.maxCount|stable
+    package: '@azure/cognitiveservices-customvision-training|stable'
+    summary: ''
+    fullName: maxCount
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'maxCount?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: orderBy
+    uid: >-
+      @azure/cognitiveservices-customvision-training.PredictionQueryToken.orderBy|stable
+    package: '@azure/cognitiveservices-customvision-training|stable'
+    summary: 'Possible values include: ''Newest'', ''Oldest'', ''Suggested'''
+    fullName: orderBy
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'orderBy?: OrderBy'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/cognitiveservices-customvision-training.OrderBy|stable" />
+  - name: session
+    uid: >-
+      @azure/cognitiveservices-customvision-training.PredictionQueryToken.session|stable
+    package: '@azure/cognitiveservices-customvision-training|stable'
+    summary: ''
+    fullName: session
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'session?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: startTime
+    uid: >-
+      @azure/cognitiveservices-customvision-training.PredictionQueryToken.startTime|stable
+    package: '@azure/cognitiveservices-customvision-training|stable'
+    summary: ''
+    fullName: startTime
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'startTime?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: tags
+    uid: >-
+      @azure/cognitiveservices-customvision-training.PredictionQueryToken.tags|stable
+    package: '@azure/cognitiveservices-customvision-training|stable'
+    summary: ''
+    fullName: tags
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tags?: PredictionQueryTag[]'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/cognitiveservices-customvision-training.PredictionQueryTag|stable"
+          />[]

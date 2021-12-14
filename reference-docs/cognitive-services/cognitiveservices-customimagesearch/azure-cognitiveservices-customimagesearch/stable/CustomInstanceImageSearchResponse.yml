@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: CustomInstanceImageSearchResponse
+uid: >-
+  @azure/cognitiveservices-customimagesearch.CustomInstanceImageSearchResponse|stable
+package: '@azure/cognitiveservices-customimagesearch|stable'
+summary: Contains response data for the imageSearch operation.
+fullName: CustomInstanceImageSearchResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type CustomInstanceImageSearchResponse = Images & { _response: HttpResponse &
+  { bodyAsText: string, parsedBody: Images } }

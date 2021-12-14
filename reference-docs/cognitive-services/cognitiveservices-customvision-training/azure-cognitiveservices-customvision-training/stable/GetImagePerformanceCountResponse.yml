@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: GetImagePerformanceCountResponse
+uid: >-
+  @azure/cognitiveservices-customvision-training.GetImagePerformanceCountResponse|stable
+package: '@azure/cognitiveservices-customvision-training|stable'
+summary: Contains response data for the getImagePerformanceCount operation.
+fullName: GetImagePerformanceCountResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type GetImagePerformanceCountResponse = { _response: HttpResponse & {
+  bodyAsText: string, parsedBody: number }, body: number }

@@ -1,0 +1,116 @@
+### YamlMime:TSType
+name: KnowledgebaseDownloadOptionalParams
+uid: '@azure/cognitiveservices-qnamaker.KnowledgebaseDownloadOptionalParams|stable'
+package: '@azure/cognitiveservices-qnamaker|stable'
+summary: Optional Parameters.
+fullName: KnowledgebaseDownloadOptionalParams
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: abortSignal
+    uid: >-
+      @azure/cognitiveservices-qnamaker.KnowledgebaseDownloadOptionalParams.abortSignal|stable
+    package: '@azure/cognitiveservices-qnamaker|stable'
+    summary: The signal which can be used to abort requests.
+    fullName: abortSignal
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'abortSignal?: AbortSignalLike'
+      return:
+        description: ''
+        type: AbortSignalLike
+  - name: changedSince
+    uid: >-
+      @azure/cognitiveservices-qnamaker.KnowledgebaseDownloadOptionalParams.changedSince|stable
+    package: '@azure/cognitiveservices-qnamaker|stable'
+    summary: The last changed status property filter to apply.
+    fullName: changedSince
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'changedSince?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: customHeaders
+    uid: >-
+      @azure/cognitiveservices-qnamaker.KnowledgebaseDownloadOptionalParams.customHeaders|stable
+    package: '@azure/cognitiveservices-qnamaker|stable'
+    summary: |-
+      {object} [customHeaders] User defined custom request headers that
+      will be applied before the request is sent.
+    fullName: customHeaders
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'customHeaders?: undefined | [key: string]: string'
+      return:
+        description: ''
+        type: 'undefined | [key: string]: string'
+  - name: onDownloadProgress
+    uid: >-
+      @azure/cognitiveservices-qnamaker.KnowledgebaseDownloadOptionalParams.onDownloadProgress|stable
+    package: '@azure/cognitiveservices-qnamaker|stable'
+    summary: Callback which fires upon download progress.
+    fullName: onDownloadProgress
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        onDownloadProgress?: undefined | (progress: TransferProgressEvent) =>
+        void
+      return:
+        description: ''
+        type: 'undefined | (progress: TransferProgressEvent) =&gt; void'
+  - name: onUploadProgress
+    uid: >-
+      @azure/cognitiveservices-qnamaker.KnowledgebaseDownloadOptionalParams.onUploadProgress|stable
+    package: '@azure/cognitiveservices-qnamaker|stable'
+    summary: Callback which fires upon upload progress.
+    fullName: onUploadProgress
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onUploadProgress?: undefined | (progress: TransferProgressEvent) => void'
+      return:
+        description: ''
+        type: 'undefined | (progress: TransferProgressEvent) =&gt; void'
+  - name: source
+    uid: >-
+      @azure/cognitiveservices-qnamaker.KnowledgebaseDownloadOptionalParams.source|stable
+    package: '@azure/cognitiveservices-qnamaker|stable'
+    summary: The source property filter to apply.
+    fullName: source
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'source?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: timeout
+    uid: >-
+      @azure/cognitiveservices-qnamaker.KnowledgebaseDownloadOptionalParams.timeout|stable
+    package: '@azure/cognitiveservices-qnamaker|stable'
+    summary: >-
+      The number of milliseconds a request can take before automatically being
+      terminated.
+    fullName: timeout
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'timeout?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+extends: RequestOptionsBase

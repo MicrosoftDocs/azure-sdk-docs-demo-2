@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: CreateImagesFromFilesResponse
+uid: >-
+  @azure/cognitiveservices-customvision-training.CreateImagesFromFilesResponse|stable
+package: '@azure/cognitiveservices-customvision-training|stable'
+summary: Contains response data for the createImagesFromFiles operation.
+fullName: CreateImagesFromFilesResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type CreateImagesFromFilesResponse = ImageCreateSummary & { _response:
+  HttpResponse & { bodyAsText: string, parsedBody: ImageCreateSummary } }

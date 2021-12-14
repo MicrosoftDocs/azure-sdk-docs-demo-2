@@ -1,0 +1,103 @@
+### YamlMime:TSType
+name: ImagePrediction
+uid: '@azure/cognitiveservices-customvision-prediction.ImagePrediction|stable'
+package: '@azure/cognitiveservices-customvision-prediction|stable'
+summary: Result of an image prediction request.
+fullName: ImagePrediction
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: created
+    uid: >-
+      @azure/cognitiveservices-customvision-prediction.ImagePrediction.created|stable
+    package: '@azure/cognitiveservices-customvision-prediction|stable'
+    summary: >-
+      Date this prediction was created.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: created
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'created?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: id
+    uid: '@azure/cognitiveservices-customvision-prediction.ImagePrediction.id|stable'
+    package: '@azure/cognitiveservices-customvision-prediction|stable'
+    summary: >-
+      Prediction Id.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: iteration
+    uid: >-
+      @azure/cognitiveservices-customvision-prediction.ImagePrediction.iteration|stable
+    package: '@azure/cognitiveservices-customvision-prediction|stable'
+    summary: >-
+      Iteration Id.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: iteration
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'iteration?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: predictions
+    uid: >-
+      @azure/cognitiveservices-customvision-prediction.ImagePrediction.predictions|stable
+    package: '@azure/cognitiveservices-customvision-prediction|stable'
+    summary: >-
+      List of predictions.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: predictions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'predictions?: Prediction[]'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/cognitiveservices-customvision-prediction.Prediction|stable"
+          />[]
+  - name: project
+    uid: >-
+      @azure/cognitiveservices-customvision-prediction.ImagePrediction.project|stable
+    package: '@azure/cognitiveservices-customvision-prediction|stable'
+    summary: >-
+      Project Id.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: project
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'project?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

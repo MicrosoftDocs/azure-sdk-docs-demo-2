@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: QuerySuggestedImageCountResponse
+uid: >-
+  @azure/cognitiveservices-customvision-training.QuerySuggestedImageCountResponse|stable
+package: '@azure/cognitiveservices-customvision-training|stable'
+summary: Contains response data for the querySuggestedImageCount operation.
+fullName: QuerySuggestedImageCountResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type QuerySuggestedImageCountResponse = [key: string]: number & { _response:
+  HttpResponse & { bodyAsText: string, parsedBody: [key: string]: number } }

@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: ListManagementImageListsUpdateResponse
+uid: >-
+  @azure/cognitiveservices-contentmoderator.ListManagementImageListsUpdateResponse|stable
+package: '@azure/cognitiveservices-contentmoderator|stable'
+summary: Contains response data for the update operation.
+fullName: ListManagementImageListsUpdateResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type ListManagementImageListsUpdateResponse = ImageList & { _response:
+  HttpResponse & { bodyAsText: string, parsedBody: ImageList } }

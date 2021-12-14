@@ -1,0 +1,63 @@
+### YamlMime:TSType
+name: ImageIds
+uid: '@azure/cognitiveservices-contentmoderator.ImageIds|stable'
+package: '@azure/cognitiveservices-contentmoderator|stable'
+summary: Image Id properties.
+fullName: ImageIds
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: contentIds
+    uid: '@azure/cognitiveservices-contentmoderator.ImageIds.contentIds|stable'
+    package: '@azure/cognitiveservices-contentmoderator|stable'
+    summary: Id of the contents.
+    fullName: contentIds
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'contentIds?: number[]'
+      return:
+        description: ''
+        type: number[]
+  - name: contentSource
+    uid: '@azure/cognitiveservices-contentmoderator.ImageIds.contentSource|stable'
+    package: '@azure/cognitiveservices-contentmoderator|stable'
+    summary: Source of the content.
+    fullName: contentSource
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'contentSource?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: status
+    uid: '@azure/cognitiveservices-contentmoderator.ImageIds.status|stable'
+    package: '@azure/cognitiveservices-contentmoderator|stable'
+    summary: Get Image status.
+    fullName: status
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'status?: Status'
+      return:
+        description: ''
+        type: <xref uid="@azure/cognitiveservices-contentmoderator.Status|stable" />
+  - name: trackingId
+    uid: '@azure/cognitiveservices-contentmoderator.ImageIds.trackingId|stable'
+    package: '@azure/cognitiveservices-contentmoderator|stable'
+    summary: Tracking Id.
+    fullName: trackingId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'trackingId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

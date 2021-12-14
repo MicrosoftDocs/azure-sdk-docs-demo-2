@@ -2,7 +2,7 @@
 title: Azure SDK for JavaScript - Core Release Notes
 description: 
 ms.topic: reference
-ms.date: 12/13/2021
+ms.date: 12/14/2021
 ms.service: core
 ms.role: developer
 ms.devlang: javascript

@@ -2,7 +2,7 @@
 title: Azure SDK for JavaScript - Communication Services packages
 description: 
 ms.topic: reference
-ms.date: 12/13/2021
+ms.date: 12/14/2021
 ms.service: azure-communication-services
 ms.role: developer
 ms.devlang: javascript

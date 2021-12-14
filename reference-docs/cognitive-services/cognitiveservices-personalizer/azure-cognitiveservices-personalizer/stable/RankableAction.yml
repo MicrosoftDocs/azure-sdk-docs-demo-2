@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: RankableAction
+uid: '@azure/cognitiveservices-personalizer.RankableAction|stable'
+package: '@azure/cognitiveservices-personalizer|stable'
+summary: An action with it's associated features used for ranking.
+fullName: RankableAction
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: features
+    uid: '@azure/cognitiveservices-personalizer.RankableAction.features|stable'
+    package: '@azure/cognitiveservices-personalizer|stable'
+    summary: List of dictionaries containing features.
+    fullName: features
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'features: any[]'
+      return:
+        description: ''
+        type: any[]
+  - name: id
+    uid: '@azure/cognitiveservices-personalizer.RankableAction.id|stable'
+    package: '@azure/cognitiveservices-personalizer|stable'
+    summary: Id of the action.
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id: string'
+      return:
+        description: ''
+        type: string

@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: QueryContextDTO
+uid: '@azure/cognitiveservices-qnamaker.QueryContextDTO|stable'
+package: '@azure/cognitiveservices-qnamaker|stable'
+summary: Context object with previous QnA's information.
+fullName: QueryContextDTO
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: previousQnaId
+    uid: '@azure/cognitiveservices-qnamaker.QueryContextDTO.previousQnaId|stable'
+    package: '@azure/cognitiveservices-qnamaker|stable'
+    summary: Previous QnA Id - qnaId of the top result.
+    fullName: previousQnaId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'previousQnaId?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: previousUserQuery
+    uid: '@azure/cognitiveservices-qnamaker.QueryContextDTO.previousUserQuery|stable'
+    package: '@azure/cognitiveservices-qnamaker|stable'
+    summary: Previous user query.
+    fullName: previousUserQuery
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'previousUserQuery?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

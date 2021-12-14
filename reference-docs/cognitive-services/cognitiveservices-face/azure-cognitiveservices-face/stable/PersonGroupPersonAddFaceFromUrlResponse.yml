@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: PersonGroupPersonAddFaceFromUrlResponse
+uid: '@azure/cognitiveservices-face.PersonGroupPersonAddFaceFromUrlResponse|stable'
+package: '@azure/cognitiveservices-face|stable'
+summary: Contains response data for the addFaceFromUrl operation.
+fullName: PersonGroupPersonAddFaceFromUrlResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type PersonGroupPersonAddFaceFromUrlResponse = PersistedFace & { _response:
+  HttpResponse & { bodyAsText: string, parsedBody: PersistedFace } }

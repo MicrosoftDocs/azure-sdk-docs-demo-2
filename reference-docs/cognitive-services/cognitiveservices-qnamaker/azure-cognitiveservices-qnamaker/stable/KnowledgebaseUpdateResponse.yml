@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: KnowledgebaseUpdateResponse
+uid: '@azure/cognitiveservices-qnamaker.KnowledgebaseUpdateResponse|stable'
+package: '@azure/cognitiveservices-qnamaker|stable'
+summary: Contains response data for the update operation.
+fullName: KnowledgebaseUpdateResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type KnowledgebaseUpdateResponse = Operation & KnowledgebaseUpdateHeaders & {
+  _response: HttpResponse & { bodyAsText: string, parsedBody: Operation,
+  parsedHeaders: KnowledgebaseUpdateHeaders } }
