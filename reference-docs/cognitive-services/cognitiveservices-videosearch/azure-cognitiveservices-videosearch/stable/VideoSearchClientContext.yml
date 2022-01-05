@@ -69,8 +69,8 @@ inheritedMethods:
       sendOperationRequest(OperationArguments, OperationSpec,
       ServiceCallback<any>)
     uid: >-
-      @azure/cognitiveservices-videosearch.VideoSearchClientContext.sendOperationRequest
-    package: '@azure/cognitiveservices-videosearch'
+      @azure/cognitiveservices-videosearch.VideoSearchClientContext.sendOperationRequest|stable
+    package: '@azure/cognitiveservices-videosearch|stable'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
     isPreview: false
@@ -97,8 +97,9 @@ inheritedMethods:
         description: ''
         type: Promise&lt;RestResponse&gt;
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
-    uid: '@azure/cognitiveservices-videosearch.VideoSearchClientContext.sendRequest'
-    package: '@azure/cognitiveservices-videosearch'
+    uid: >-
+      @azure/cognitiveservices-videosearch.VideoSearchClientContext.sendRequest|stable
+    package: '@azure/cognitiveservices-videosearch|stable'
     summary: Send the provided httpRequest.
     remarks: ''
     isPreview: false

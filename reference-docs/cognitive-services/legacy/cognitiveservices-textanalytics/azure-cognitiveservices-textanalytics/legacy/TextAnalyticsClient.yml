@@ -72,8 +72,8 @@ inheritedMethods:
       sendOperationRequest(OperationArguments, OperationSpec,
       ServiceCallback<any>)
     uid: >-
-      @azure/cognitiveservices-textanalytics.TextAnalyticsClient.sendOperationRequest
-    package: '@azure/cognitiveservices-textanalytics'
+      @azure/cognitiveservices-textanalytics.TextAnalyticsClient.sendOperationRequest|legacy
+    package: '@azure/cognitiveservices-textanalytics|legacy'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
     isPreview: false
@@ -100,8 +100,9 @@ inheritedMethods:
         description: ''
         type: Promise&lt;RestResponse&gt;
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
-    uid: '@azure/cognitiveservices-textanalytics.TextAnalyticsClient.sendRequest'
-    package: '@azure/cognitiveservices-textanalytics'
+    uid: >-
+      @azure/cognitiveservices-textanalytics.TextAnalyticsClient.sendRequest|legacy
+    package: '@azure/cognitiveservices-textanalytics|legacy'
     summary: Send the provided httpRequest.
     remarks: ''
     isPreview: false

@@ -65,8 +65,9 @@ properties:
         type: string
 inheritedMethods:
   - name: deleteMultivariateModel(string, OperationOptions)
-    uid: '@azure/ai-anomaly-detector.AnomalyDetectorClient.deleteMultivariateModel'
-    package: '@azure/ai-anomaly-detector'
+    uid: >-
+      @azure/ai-anomaly-detector.AnomalyDetectorClient.deleteMultivariateModel|beta
+    package: '@azure/ai-anomaly-detector|beta'
     summary: Delete an existing multivariate model according to the modelId
     remarks: ''
     isPreview: false
@@ -87,8 +88,8 @@ inheritedMethods:
         description: ''
         type: Promise&lt;RestResponse&gt;
   - name: detectAnomaly(string, DetectionRequest, OperationOptions)
-    uid: '@azure/ai-anomaly-detector.AnomalyDetectorClient.detectAnomaly'
-    package: '@azure/ai-anomaly-detector'
+    uid: '@azure/ai-anomaly-detector.AnomalyDetectorClient.detectAnomaly|beta'
+    package: '@azure/ai-anomaly-detector|beta'
     summary: >-
       Submit detection multivariate anomaly task with the trained model of
       modelId, the input schema
@@ -132,8 +133,8 @@ inheritedMethods:
           uid="@azure/ai-anomaly-detector.AnomalyDetectorDetectAnomalyResponse|beta"
           />&gt;
   - name: detectChangePoint(DetectChangePointRequest, OperationOptions)
-    uid: '@azure/ai-anomaly-detector.AnomalyDetectorClient.detectChangePoint'
-    package: '@azure/ai-anomaly-detector'
+    uid: '@azure/ai-anomaly-detector.AnomalyDetectorClient.detectChangePoint|beta'
+    package: '@azure/ai-anomaly-detector|beta'
     summary: Evaluate change point score of every series point
     remarks: ''
     isPreview: false
@@ -162,8 +163,8 @@ inheritedMethods:
           uid="@azure/ai-anomaly-detector.AnomalyDetectorDetectChangePointResponse|beta"
           />&gt;
   - name: detectEntireSeries(DetectRequest, OperationOptions)
-    uid: '@azure/ai-anomaly-detector.AnomalyDetectorClient.detectEntireSeries'
-    package: '@azure/ai-anomaly-detector'
+    uid: '@azure/ai-anomaly-detector.AnomalyDetectorClient.detectEntireSeries|beta'
+    package: '@azure/ai-anomaly-detector|beta'
     summary: >-
       This operation generates a model with an entire series, each point is
       detected with the same model.
@@ -198,8 +199,8 @@ inheritedMethods:
           uid="@azure/ai-anomaly-detector.AnomalyDetectorDetectEntireSeriesResponse|beta"
           />&gt;
   - name: detectLastPoint(DetectRequest, OperationOptions)
-    uid: '@azure/ai-anomaly-detector.AnomalyDetectorClient.detectLastPoint'
-    package: '@azure/ai-anomaly-detector'
+    uid: '@azure/ai-anomaly-detector.AnomalyDetectorClient.detectLastPoint|beta'
+    package: '@azure/ai-anomaly-detector|beta'
     summary: >-
       This operation generates a model using points before the latest one. With
       this method, only
@@ -234,8 +235,8 @@ inheritedMethods:
           uid="@azure/ai-anomaly-detector.AnomalyDetectorDetectLastPointResponse|beta"
           />&gt;
   - name: exportModel(string, OperationOptions)
-    uid: '@azure/ai-anomaly-detector.AnomalyDetectorClient.exportModel'
-    package: '@azure/ai-anomaly-detector'
+    uid: '@azure/ai-anomaly-detector.AnomalyDetectorClient.exportModel|beta'
+    package: '@azure/ai-anomaly-detector|beta'
     summary: Export multivariate anomaly detection model based on modelId
     remarks: ''
     isPreview: false
@@ -259,8 +260,8 @@ inheritedMethods:
           uid="@azure/ai-anomaly-detector.AnomalyDetectorExportModelResponse|beta"
           />&gt;
   - name: getDetectionResult(string, OperationOptions)
-    uid: '@azure/ai-anomaly-detector.AnomalyDetectorClient.getDetectionResult'
-    package: '@azure/ai-anomaly-detector'
+    uid: '@azure/ai-anomaly-detector.AnomalyDetectorClient.getDetectionResult|beta'
+    package: '@azure/ai-anomaly-detector|beta'
     summary: >-
       Get multivariate anomaly detection result based on resultId returned by
       the DetectAnomalyAsync api
@@ -286,8 +287,8 @@ inheritedMethods:
           uid="@azure/ai-anomaly-detector.AnomalyDetectorGetDetectionResultResponse|beta"
           />&gt;
   - name: getMultivariateModel(string, OperationOptions)
-    uid: '@azure/ai-anomaly-detector.AnomalyDetectorClient.getMultivariateModel'
-    package: '@azure/ai-anomaly-detector'
+    uid: '@azure/ai-anomaly-detector.AnomalyDetectorClient.getMultivariateModel|beta'
+    package: '@azure/ai-anomaly-detector|beta'
     summary: >-
       Get detailed information of multivariate model, including the training
       status and variables used in
@@ -315,8 +316,9 @@ inheritedMethods:
           uid="@azure/ai-anomaly-detector.AnomalyDetectorGetMultivariateModelResponse|beta"
           />&gt;
   - name: listMultivariateModel(AnomalyDetectorListMultivariateModelOptionalParams)
-    uid: '@azure/ai-anomaly-detector.AnomalyDetectorClient.listMultivariateModel'
-    package: '@azure/ai-anomaly-detector'
+    uid: >-
+      @azure/ai-anomaly-detector.AnomalyDetectorClient.listMultivariateModel|beta
+    package: '@azure/ai-anomaly-detector|beta'
     summary: List models of a subscription
     remarks: ''
     isPreview: false
@@ -343,8 +345,8 @@ inheritedMethods:
   - name: >-
       sendOperationRequest(OperationArguments, OperationSpec,
       ServiceCallback<any>)
-    uid: '@azure/ai-anomaly-detector.AnomalyDetectorClient.sendOperationRequest'
-    package: '@azure/ai-anomaly-detector'
+    uid: '@azure/ai-anomaly-detector.AnomalyDetectorClient.sendOperationRequest|beta'
+    package: '@azure/ai-anomaly-detector|beta'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
     isPreview: false
@@ -371,8 +373,8 @@ inheritedMethods:
         description: ''
         type: Promise&lt;RestResponse&gt;
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
-    uid: '@azure/ai-anomaly-detector.AnomalyDetectorClient.sendRequest'
-    package: '@azure/ai-anomaly-detector'
+    uid: '@azure/ai-anomaly-detector.AnomalyDetectorClient.sendRequest|beta'
+    package: '@azure/ai-anomaly-detector|beta'
     summary: Send the provided httpRequest.
     remarks: ''
     isPreview: false
@@ -389,8 +391,9 @@ inheritedMethods:
         description: ''
         type: Promise&lt;HttpOperationResponse&gt;
   - name: trainMultivariateModel(AnomalyDetectorClientModelInfo, OperationOptions)
-    uid: '@azure/ai-anomaly-detector.AnomalyDetectorClient.trainMultivariateModel'
-    package: '@azure/ai-anomaly-detector'
+    uid: >-
+      @azure/ai-anomaly-detector.AnomalyDetectorClient.trainMultivariateModel|beta
+    package: '@azure/ai-anomaly-detector|beta'
     summary: >-
       Create and train a multivariate anomaly detection model. The request must
       include a source parameter

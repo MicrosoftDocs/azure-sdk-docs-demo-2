@@ -84,8 +84,8 @@ inheritedMethods:
       sendOperationRequest(OperationArguments, OperationSpec,
       ServiceCallback<any>)
     uid: >-
-      @azure/cognitiveservices-customsearch.CustomSearchClient.sendOperationRequest
-    package: '@azure/cognitiveservices-customsearch'
+      @azure/cognitiveservices-customsearch.CustomSearchClient.sendOperationRequest|stable
+    package: '@azure/cognitiveservices-customsearch|stable'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
     isPreview: false
@@ -112,8 +112,9 @@ inheritedMethods:
         description: ''
         type: Promise&lt;RestResponse&gt;
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
-    uid: '@azure/cognitiveservices-customsearch.CustomSearchClient.sendRequest'
-    package: '@azure/cognitiveservices-customsearch'
+    uid: >-
+      @azure/cognitiveservices-customsearch.CustomSearchClient.sendRequest|stable
+    package: '@azure/cognitiveservices-customsearch|stable'
     summary: Send the provided httpRequest.
     remarks: ''
     isPreview: false

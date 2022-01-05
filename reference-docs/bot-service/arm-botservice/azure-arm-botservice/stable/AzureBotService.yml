@@ -235,8 +235,8 @@ inheritedMethods:
   - name: >-
       beginLongRunningRequest(RequestPrepareOptions | WebResource,
       RequestOptionsBase)
-    uid: '@azure/arm-botservice.AzureBotService.beginLongRunningRequest'
-    package: '@azure/arm-botservice'
+    uid: '@azure/arm-botservice.AzureBotService.beginLongRunningRequest|stable'
+    package: '@azure/arm-botservice|stable'
     summary: >-
       Send the initial request of a LRO (long running operation) and get back an
 
@@ -264,8 +264,8 @@ inheritedMethods:
           that provides methods for interacting with the LRO.
         type: Promise&lt;LROPoller&gt;
   - name: restoreLROPoller(LROPollState)
-    uid: '@azure/arm-botservice.AzureBotService.restoreLROPoller'
-    package: '@azure/arm-botservice'
+    uid: '@azure/arm-botservice.AzureBotService.restoreLROPoller|stable'
+    package: '@azure/arm-botservice|stable'
     summary: >-
       Restore an LROPoller from the provided LROPollState. This method can be
       used to recreate an
@@ -286,8 +286,8 @@ inheritedMethods:
   - name: >-
       sendLongRunningRequest(RequestPrepareOptions | WebResource,
       RequestOptionsBase)
-    uid: '@azure/arm-botservice.AzureBotService.sendLongRunningRequest'
-    package: '@azure/arm-botservice'
+    uid: '@azure/arm-botservice.AzureBotService.sendLongRunningRequest|stable'
+    package: '@azure/arm-botservice|stable'
     summary: >-
       Provides a mechanism to make a request that will poll and provide the
       final result.
@@ -312,8 +312,8 @@ inheritedMethods:
           response and the responseBody.
         type: Promise&lt;HttpOperationResponse&gt;
   - name: sendLRORequest(OperationArguments, OperationSpec, RequestOptionsBase)
-    uid: '@azure/arm-botservice.AzureBotService.sendLRORequest'
-    package: '@azure/arm-botservice'
+    uid: '@azure/arm-botservice.AzureBotService.sendLRORequest|stable'
+    package: '@azure/arm-botservice|stable'
     summary: >-
       Send the initial request of a LRO (long running operation) and get back an
 
@@ -345,8 +345,8 @@ inheritedMethods:
   - name: >-
       sendOperationRequest(OperationArguments, OperationSpec,
       ServiceCallback<any>)
-    uid: '@azure/arm-botservice.AzureBotService.sendOperationRequest'
-    package: '@azure/arm-botservice'
+    uid: '@azure/arm-botservice.AzureBotService.sendOperationRequest|stable'
+    package: '@azure/arm-botservice|stable'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
     isPreview: false
@@ -373,8 +373,8 @@ inheritedMethods:
         description: ''
         type: Promise&lt;RestResponse&gt;
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
-    uid: '@azure/arm-botservice.AzureBotService.sendRequest'
-    package: '@azure/arm-botservice'
+    uid: '@azure/arm-botservice.AzureBotService.sendRequest|stable'
+    package: '@azure/arm-botservice|stable'
     summary: Send the provided httpRequest.
     remarks: ''
     isPreview: false

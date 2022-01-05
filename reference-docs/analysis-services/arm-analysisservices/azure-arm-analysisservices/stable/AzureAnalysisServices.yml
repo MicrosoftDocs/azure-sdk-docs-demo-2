@@ -122,8 +122,9 @@ properties:
         type: string
 inheritedMethods:
   - name: sendOperationRequest<T>(OperationArguments, OperationSpec)
-    uid: '@azure/arm-analysisservices.AzureAnalysisServices.sendOperationRequest'
-    package: '@azure/arm-analysisservices'
+    uid: >-
+      @azure/arm-analysisservices.AzureAnalysisServices.sendOperationRequest|stable
+    package: '@azure/arm-analysisservices|stable'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
     isPreview: false
@@ -146,8 +147,8 @@ inheritedMethods:
         description: ''
         type: Promise&lt;T&gt;
   - name: sendRequest(PipelineRequest)
-    uid: '@azure/arm-analysisservices.AzureAnalysisServices.sendRequest'
-    package: '@azure/arm-analysisservices'
+    uid: '@azure/arm-analysisservices.AzureAnalysisServices.sendRequest|stable'
+    package: '@azure/arm-analysisservices|stable'
     summary: Send the provided httpRequest.
     remarks: ''
     isPreview: false

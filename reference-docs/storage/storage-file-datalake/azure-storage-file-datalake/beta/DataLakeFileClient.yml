@@ -148,8 +148,8 @@ properties:
         type: string
 inheritedMethods:
   - name: delete(boolean, PathDeleteOptions)
-    uid: '@azure/storage-file-datalake.DataLakeFileClient.delete'
-    package: '@azure/storage-file-datalake'
+    uid: '@azure/storage-file-datalake.DataLakeFileClient.delete|beta'
+    package: '@azure/storage-file-datalake|beta'
     summary: >-
       Delete current path (directory or file).
 
@@ -179,8 +179,8 @@ inheritedMethods:
           Promise&lt;<xref
           uid="@azure/storage-file-datalake.PathDeleteResponse|beta" />&gt;
   - name: deleteIfExists(boolean, PathDeleteOptions)
-    uid: '@azure/storage-file-datalake.DataLakeFileClient.deleteIfExists'
-    package: '@azure/storage-file-datalake'
+    uid: '@azure/storage-file-datalake.DataLakeFileClient.deleteIfExists|beta'
+    package: '@azure/storage-file-datalake|beta'
     summary: >-
       Delete current path (directory or file) if it exists.
 
@@ -211,8 +211,8 @@ inheritedMethods:
           uid="@azure/storage-file-datalake.PathDeleteIfExistsResponse|beta"
           />&gt;
   - name: exists(PathExistsOptions)
-    uid: '@azure/storage-file-datalake.DataLakeFileClient.exists'
-    package: '@azure/storage-file-datalake'
+    uid: '@azure/storage-file-datalake.DataLakeFileClient.exists|beta'
+    package: '@azure/storage-file-datalake|beta'
     summary: >
       Returns true if the Data Lake file represented by this client exists;
       false otherwise.
@@ -238,8 +238,8 @@ inheritedMethods:
         description: ''
         type: Promise&lt;boolean&gt;
   - name: getAccessControl(PathGetAccessControlOptions)
-    uid: '@azure/storage-file-datalake.DataLakeFileClient.getAccessControl'
-    package: '@azure/storage-file-datalake'
+    uid: '@azure/storage-file-datalake.DataLakeFileClient.getAccessControl|beta'
+    package: '@azure/storage-file-datalake|beta'
     summary: >-
       Returns the access control data for a path (directory of file).
 
@@ -268,8 +268,9 @@ inheritedMethods:
           uid="@azure/storage-file-datalake.PathGetAccessControlResponse|beta"
           />&gt;
   - name: getDataLakeLeaseClient(string)
-    uid: '@azure/storage-file-datalake.DataLakeFileClient.getDataLakeLeaseClient'
-    package: '@azure/storage-file-datalake'
+    uid: >-
+      @azure/storage-file-datalake.DataLakeFileClient.getDataLakeLeaseClient|beta
+    package: '@azure/storage-file-datalake|beta'
     summary: >-
       Get a
       <xref:@azure/storage-file-datalake.DataLakeDirectoryClient.getDataLakeLeaseClient|beta>
@@ -290,8 +291,8 @@ inheritedMethods:
         description: ''
         type: <xref uid="@azure/storage-file-datalake.DataLakeLeaseClient|beta" />
   - name: getProperties(PathGetPropertiesOptions)
-    uid: '@azure/storage-file-datalake.DataLakeFileClient.getProperties'
-    package: '@azure/storage-file-datalake'
+    uid: '@azure/storage-file-datalake.DataLakeFileClient.getProperties|beta'
+    package: '@azure/storage-file-datalake|beta'
     summary: >-
       Returns all user-defined metadata, standard HTTP properties, and system
       properties
@@ -335,8 +336,8 @@ inheritedMethods:
           uid="@azure/storage-file-datalake.PathGetPropertiesResponse|beta"
           />&gt;
   - name: move(string, PathMoveOptions)
-    uid: '@azure/storage-file-datalake.DataLakeFileClient.move'
-    package: '@azure/storage-file-datalake'
+    uid: '@azure/storage-file-datalake.DataLakeFileClient.move|beta'
+    package: '@azure/storage-file-datalake|beta'
     summary: >-
       Move directory or file within same file system.
 
@@ -367,8 +368,8 @@ inheritedMethods:
           Promise&lt;<xref
           uid="@azure/storage-file-datalake.PathMoveResponse|beta" />&gt;
   - name: move(string, string, PathMoveOptions)
-    uid: '@azure/storage-file-datalake.DataLakeFileClient.move_1'
-    package: '@azure/storage-file-datalake'
+    uid: '@azure/storage-file-datalake.DataLakeFileClient.move_1|beta'
+    package: '@azure/storage-file-datalake|beta'
     summary: >-
       Move directory or file to another file system.
 
@@ -405,8 +406,8 @@ inheritedMethods:
       removeAccessControlRecursive(RemovePathAccessControlItem[],
       PathChangeAccessControlRecursiveOptions)
     uid: >-
-      @azure/storage-file-datalake.DataLakeFileClient.removeAccessControlRecursive
-    package: '@azure/storage-file-datalake'
+      @azure/storage-file-datalake.DataLakeFileClient.removeAccessControlRecursive|beta
+    package: '@azure/storage-file-datalake|beta'
     summary: >-
       Removes the Access Control on a path and sub paths.
 
@@ -443,8 +444,8 @@ inheritedMethods:
           uid="@azure/storage-file-datalake.PathChangeAccessControlRecursiveResponse|beta"
           />&gt;
   - name: setAccessControl(PathAccessControlItem[], PathSetAccessControlOptions)
-    uid: '@azure/storage-file-datalake.DataLakeFileClient.setAccessControl'
-    package: '@azure/storage-file-datalake'
+    uid: '@azure/storage-file-datalake.DataLakeFileClient.setAccessControl|beta'
+    package: '@azure/storage-file-datalake|beta'
     summary: >-
       Set the access control data for a path (directory of file).
 
@@ -480,8 +481,9 @@ inheritedMethods:
   - name: >-
       setAccessControlRecursive(PathAccessControlItem[],
       PathChangeAccessControlRecursiveOptions)
-    uid: '@azure/storage-file-datalake.DataLakeFileClient.setAccessControlRecursive'
-    package: '@azure/storage-file-datalake'
+    uid: >-
+      @azure/storage-file-datalake.DataLakeFileClient.setAccessControlRecursive|beta
+    package: '@azure/storage-file-datalake|beta'
     summary: >-
       Sets the Access Control on a path and sub paths.
 
@@ -516,8 +518,8 @@ inheritedMethods:
           uid="@azure/storage-file-datalake.PathChangeAccessControlRecursiveResponse|beta"
           />&gt;
   - name: setHttpHeaders(PathHttpHeaders, PathSetHttpHeadersOptions)
-    uid: '@azure/storage-file-datalake.DataLakeFileClient.setHttpHeaders'
-    package: '@azure/storage-file-datalake'
+    uid: '@azure/storage-file-datalake.DataLakeFileClient.setHttpHeaders|beta'
+    package: '@azure/storage-file-datalake|beta'
     summary: >-
       Sets system properties on the path (directory or file).
 
@@ -553,8 +555,8 @@ inheritedMethods:
           uid="@azure/storage-file-datalake.PathSetHttpHeadersResponse|beta"
           />&gt;
   - name: setMetadata(Metadata, PathSetMetadataOptions)
-    uid: '@azure/storage-file-datalake.DataLakeFileClient.setMetadata'
-    package: '@azure/storage-file-datalake'
+    uid: '@azure/storage-file-datalake.DataLakeFileClient.setMetadata|beta'
+    package: '@azure/storage-file-datalake|beta'
     summary: >-
       Sets user-defined metadata for the specified path (directory of file) as
       one or more name-value pairs.
@@ -592,8 +594,8 @@ inheritedMethods:
           Promise&lt;<xref
           uid="@azure/storage-file-datalake.PathSetMetadataResponse|beta" />&gt;
   - name: setPermissions(PathPermissions, PathSetPermissionsOptions)
-    uid: '@azure/storage-file-datalake.DataLakeFileClient.setPermissions'
-    package: '@azure/storage-file-datalake'
+    uid: '@azure/storage-file-datalake.DataLakeFileClient.setPermissions|beta'
+    package: '@azure/storage-file-datalake|beta'
     summary: >-
       Sets the file permissions on a path.
 
@@ -626,8 +628,8 @@ inheritedMethods:
           uid="@azure/storage-file-datalake.PathSetAccessControlResponse|beta"
           />&gt;
   - name: toDirectoryClient()
-    uid: '@azure/storage-file-datalake.DataLakeFileClient.toDirectoryClient'
-    package: '@azure/storage-file-datalake'
+    uid: '@azure/storage-file-datalake.DataLakeFileClient.toDirectoryClient|beta'
+    package: '@azure/storage-file-datalake|beta'
     summary: >-
       Convert current DataLakePathClient to DataLakeDirectoryClient if current
       path is a directory.
@@ -642,8 +644,8 @@ inheritedMethods:
           <xref uid="@azure/storage-file-datalake.DataLakeDirectoryClient|beta"
           />
   - name: toFileClient()
-    uid: '@azure/storage-file-datalake.DataLakeFileClient.toFileClient'
-    package: '@azure/storage-file-datalake'
+    uid: '@azure/storage-file-datalake.DataLakeFileClient.toFileClient|beta'
+    package: '@azure/storage-file-datalake|beta'
     summary: >-
       Convert current DataLakePathClient to DataLakeFileClient if current path
       is a file.
@@ -659,8 +661,8 @@ inheritedMethods:
       updateAccessControlRecursive(PathAccessControlItem[],
       PathChangeAccessControlRecursiveOptions)
     uid: >-
-      @azure/storage-file-datalake.DataLakeFileClient.updateAccessControlRecursive
-    package: '@azure/storage-file-datalake'
+      @azure/storage-file-datalake.DataLakeFileClient.updateAccessControlRecursive|beta
+    package: '@azure/storage-file-datalake|beta'
     summary: >-
       Modifies the Access Control on a path and sub paths.
 

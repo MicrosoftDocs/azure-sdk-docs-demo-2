@@ -69,8 +69,8 @@ inheritedMethods:
       sendOperationRequest(OperationArguments, OperationSpec,
       ServiceCallback<any>)
     uid: >-
-      @azure/cognitiveservices-computervision.ComputerVisionClient.sendOperationRequest
-    package: '@azure/cognitiveservices-computervision'
+      @azure/cognitiveservices-computervision.ComputerVisionClient.sendOperationRequest|stable
+    package: '@azure/cognitiveservices-computervision|stable'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
     isPreview: false
@@ -97,8 +97,9 @@ inheritedMethods:
         description: ''
         type: Promise&lt;RestResponse&gt;
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
-    uid: '@azure/cognitiveservices-computervision.ComputerVisionClient.sendRequest'
-    package: '@azure/cognitiveservices-computervision'
+    uid: >-
+      @azure/cognitiveservices-computervision.ComputerVisionClient.sendRequest|stable
+    package: '@azure/cognitiveservices-computervision|stable'
     summary: Send the provided httpRequest.
     remarks: ''
     isPreview: false

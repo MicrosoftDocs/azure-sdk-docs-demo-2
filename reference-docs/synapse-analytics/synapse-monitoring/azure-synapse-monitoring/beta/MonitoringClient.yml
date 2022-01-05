@@ -85,8 +85,8 @@ inheritedMethods:
   - name: >-
       sendOperationRequest(OperationArguments, OperationSpec,
       ServiceCallback<any>)
-    uid: '@azure/synapse-monitoring.MonitoringClient.sendOperationRequest'
-    package: '@azure/synapse-monitoring'
+    uid: '@azure/synapse-monitoring.MonitoringClient.sendOperationRequest|beta'
+    package: '@azure/synapse-monitoring|beta'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
     isPreview: false
@@ -113,8 +113,8 @@ inheritedMethods:
         description: ''
         type: Promise&lt;RestResponse&gt;
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
-    uid: '@azure/synapse-monitoring.MonitoringClient.sendRequest'
-    package: '@azure/synapse-monitoring'
+    uid: '@azure/synapse-monitoring.MonitoringClient.sendRequest|beta'
+    package: '@azure/synapse-monitoring|beta'
     summary: Send the provided httpRequest.
     remarks: ''
     isPreview: false

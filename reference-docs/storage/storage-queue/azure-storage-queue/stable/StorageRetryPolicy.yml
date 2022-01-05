@@ -35,8 +35,8 @@ constructors:
             -
 inheritedMethods:
   - name: log(HttpPipelineLogLevel, string)
-    uid: '@azure/storage-queue.StorageRetryPolicy.log'
-    package: '@azure/storage-queue'
+    uid: '@azure/storage-queue.StorageRetryPolicy.log|stable'
+    package: '@azure/storage-queue|stable'
     summary: >-
       Attempt to log the provided message to the provided logger. If no logger
       was provided or if
@@ -57,8 +57,8 @@ inheritedMethods:
           description: |
             The message of this log.
   - name: shouldLog(HttpPipelineLogLevel)
-    uid: '@azure/storage-queue.StorageRetryPolicy.shouldLog'
-    package: '@azure/storage-queue'
+    uid: '@azure/storage-queue.StorageRetryPolicy.shouldLog|stable'
+    package: '@azure/storage-queue|stable'
     summary: Get whether or not a log with the provided log level should be logged.
     remarks: ''
     isPreview: false

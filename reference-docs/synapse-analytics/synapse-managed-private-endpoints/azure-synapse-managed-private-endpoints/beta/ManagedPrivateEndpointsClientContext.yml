@@ -90,8 +90,8 @@ properties:
 inheritedMethods:
   - name: sendOperationRequest<T>(OperationArguments, OperationSpec)
     uid: >-
-      @azure/synapse-managed-private-endpoints.ManagedPrivateEndpointsClientContext.sendOperationRequest
-    package: '@azure/synapse-managed-private-endpoints'
+      @azure/synapse-managed-private-endpoints.ManagedPrivateEndpointsClientContext.sendOperationRequest|beta
+    package: '@azure/synapse-managed-private-endpoints|beta'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
     isPreview: false
@@ -115,8 +115,8 @@ inheritedMethods:
         type: Promise&lt;T&gt;
   - name: sendRequest(PipelineRequest)
     uid: >-
-      @azure/synapse-managed-private-endpoints.ManagedPrivateEndpointsClientContext.sendRequest
-    package: '@azure/synapse-managed-private-endpoints'
+      @azure/synapse-managed-private-endpoints.ManagedPrivateEndpointsClientContext.sendRequest|beta
+    package: '@azure/synapse-managed-private-endpoints|beta'
     summary: Send the provided httpRequest.
     remarks: ''
     isPreview: false

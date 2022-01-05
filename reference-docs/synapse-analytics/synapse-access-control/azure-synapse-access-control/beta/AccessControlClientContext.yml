@@ -83,8 +83,8 @@ properties:
 inheritedMethods:
   - name: sendOperationRequest<T>(OperationArguments, OperationSpec)
     uid: >-
-      @azure/synapse-access-control.AccessControlClientContext.sendOperationRequest
-    package: '@azure/synapse-access-control'
+      @azure/synapse-access-control.AccessControlClientContext.sendOperationRequest|beta
+    package: '@azure/synapse-access-control|beta'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
     isPreview: false
@@ -107,8 +107,8 @@ inheritedMethods:
         description: ''
         type: Promise&lt;T&gt;
   - name: sendRequest(PipelineRequest)
-    uid: '@azure/synapse-access-control.AccessControlClientContext.sendRequest'
-    package: '@azure/synapse-access-control'
+    uid: '@azure/synapse-access-control.AccessControlClientContext.sendRequest|beta'
+    package: '@azure/synapse-access-control|beta'
     summary: Send the provided httpRequest.
     remarks: ''
     isPreview: false

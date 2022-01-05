@@ -66,8 +66,8 @@ inheritedMethods:
       sendOperationRequest(OperationArguments, OperationSpec,
       ServiceCallback<any>)
     uid: >-
-      @azure/cognitiveservices-autosuggest.AutoSuggestClient.sendOperationRequest
-    package: '@azure/cognitiveservices-autosuggest'
+      @azure/cognitiveservices-autosuggest.AutoSuggestClient.sendOperationRequest|stable
+    package: '@azure/cognitiveservices-autosuggest|stable'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
     isPreview: false
@@ -94,8 +94,8 @@ inheritedMethods:
         description: ''
         type: Promise&lt;RestResponse&gt;
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
-    uid: '@azure/cognitiveservices-autosuggest.AutoSuggestClient.sendRequest'
-    package: '@azure/cognitiveservices-autosuggest'
+    uid: '@azure/cognitiveservices-autosuggest.AutoSuggestClient.sendRequest|stable'
+    package: '@azure/cognitiveservices-autosuggest|stable'
     summary: Send the provided httpRequest.
     remarks: ''
     isPreview: false

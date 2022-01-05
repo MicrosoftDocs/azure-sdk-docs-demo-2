@@ -73,8 +73,8 @@ inheritedMethods:
       sendOperationRequest(OperationArguments, OperationSpec,
       ServiceCallback<any>)
     uid: >-
-      @azure/cognitiveservices-formrecognizer.FormRecognizerClientContext.sendOperationRequest
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer.FormRecognizerClientContext.sendOperationRequest|legacy
+    package: '@azure/cognitiveservices-formrecognizer|legacy'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
     isPreview: false
@@ -102,8 +102,8 @@ inheritedMethods:
         type: Promise&lt;RestResponse&gt;
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
     uid: >-
-      @azure/cognitiveservices-formrecognizer.FormRecognizerClientContext.sendRequest
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer.FormRecognizerClientContext.sendRequest|legacy
+    package: '@azure/cognitiveservices-formrecognizer|legacy'
     summary: Send the provided httpRequest.
     remarks: ''
     isPreview: false

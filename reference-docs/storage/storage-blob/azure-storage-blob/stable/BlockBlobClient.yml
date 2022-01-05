@@ -203,8 +203,8 @@ properties:
         type: string
 inheritedMethods:
   - name: abortCopyFromURL(string, BlobAbortCopyFromURLOptions)
-    uid: '@azure/storage-blob.BlockBlobClient.abortCopyFromURL'
-    package: '@azure/storage-blob'
+    uid: '@azure/storage-blob.BlockBlobClient.abortCopyFromURL|stable'
+    package: '@azure/storage-blob|stable'
     summary: >-
       Aborts a pending asynchronous Copy Blob operation, and leaves a
       destination blob with zero
@@ -237,8 +237,8 @@ inheritedMethods:
           Promise&lt;<xref
           uid="@azure/storage-blob.BlobAbortCopyFromURLResponse|stable" />&gt;
   - name: beginCopyFromURL(string, BlobBeginCopyFromURLOptions)
-    uid: '@azure/storage-blob.BlockBlobClient.beginCopyFromURL'
-    package: '@azure/storage-blob'
+    uid: '@azure/storage-blob.BlockBlobClient.beginCopyFromURL|stable'
+    package: '@azure/storage-blob|stable'
     summary: >-
       Asynchronously copies a blob to a destination within the storage account.
 
@@ -380,8 +380,8 @@ inheritedMethods:
           <xref uid="@azure/storage-blob.BlobBeginCopyFromURLResponse|stable"
           />&gt;&gt;
   - name: createSnapshot(BlobCreateSnapshotOptions)
-    uid: '@azure/storage-blob.BlockBlobClient.createSnapshot'
-    package: '@azure/storage-blob'
+    uid: '@azure/storage-blob.BlockBlobClient.createSnapshot|stable'
+    package: '@azure/storage-blob|stable'
     summary: >-
       Creates a read-only snapshot of a blob.
 
@@ -406,8 +406,8 @@ inheritedMethods:
           Promise&lt;<xref
           uid="@azure/storage-blob.BlobCreateSnapshotResponse|stable" />&gt;
   - name: delete(BlobDeleteOptions)
-    uid: '@azure/storage-blob.BlockBlobClient.delete'
-    package: '@azure/storage-blob'
+    uid: '@azure/storage-blob.BlockBlobClient.delete|stable'
+    package: '@azure/storage-blob|stable'
     summary: >-
       Marks the specified blob or snapshot for deletion. The blob is later
       deleted
@@ -439,8 +439,8 @@ inheritedMethods:
           Promise&lt;<xref uid="@azure/storage-blob.BlobDeleteResponse|stable"
           />&gt;
   - name: deleteIfExists(BlobDeleteOptions)
-    uid: '@azure/storage-blob.BlockBlobClient.deleteIfExists'
-    package: '@azure/storage-blob'
+    uid: '@azure/storage-blob.BlockBlobClient.deleteIfExists|stable'
+    package: '@azure/storage-blob|stable'
     summary: >-
       Marks the specified blob or snapshot for deletion if it exists. The blob
       is later deleted
@@ -472,8 +472,8 @@ inheritedMethods:
           Promise&lt;<xref
           uid="@azure/storage-blob.BlobDeleteIfExistsResponse|stable" />&gt;
   - name: deleteImmutabilityPolicy(BlobDeleteImmutabilityPolicyOptions)
-    uid: '@azure/storage-blob.BlockBlobClient.deleteImmutabilityPolicy'
-    package: '@azure/storage-blob'
+    uid: '@azure/storage-blob.BlockBlobClient.deleteImmutabilityPolicy|stable'
+    package: '@azure/storage-blob|stable'
     summary: Delete the immutablility policy on the blob.
     remarks: ''
     isPreview: false
@@ -498,8 +498,8 @@ inheritedMethods:
           uid="@azure/storage-blob.BlobDeleteImmutabilityPolicyResponse|stable"
           />&gt;
   - name: download(number, number, BlobDownloadOptions)
-    uid: '@azure/storage-blob.BlockBlobClient.download'
-    package: '@azure/storage-blob'
+    uid: '@azure/storage-blob.BlockBlobClient.download|stable'
+    package: '@azure/storage-blob|stable'
     summary: >-
       Reads or downloads a blob from the system, including its metadata and
       properties.
@@ -616,8 +616,8 @@ inheritedMethods:
           Promise&lt;<xref
           uid="@azure/storage-blob.BlobDownloadResponseParsed|stable" />&gt;
   - name: downloadToBuffer(Buffer, number, number, BlobDownloadToBufferOptions)
-    uid: '@azure/storage-blob.BlockBlobClient.downloadToBuffer_1'
-    package: '@azure/storage-blob'
+    uid: '@azure/storage-blob.BlockBlobClient.downloadToBuffer_1|stable'
+    package: '@azure/storage-blob|stable'
     summary: >
       ONLY AVAILABLE IN NODE.JS RUNTIME.
 
@@ -664,8 +664,8 @@ inheritedMethods:
         description: ''
         type: Promise&lt;Buffer&gt;
   - name: downloadToBuffer(number, number, BlobDownloadToBufferOptions)
-    uid: '@azure/storage-blob.BlockBlobClient.downloadToBuffer'
-    package: '@azure/storage-blob'
+    uid: '@azure/storage-blob.BlockBlobClient.downloadToBuffer|stable'
+    package: '@azure/storage-blob|stable'
     summary: >
       ONLY AVAILABLE IN NODE.JS RUNTIME.
 
@@ -709,8 +709,8 @@ inheritedMethods:
         description: ''
         type: Promise&lt;Buffer&gt;
   - name: downloadToFile(string, number, number, BlobDownloadOptions)
-    uid: '@azure/storage-blob.BlockBlobClient.downloadToFile'
-    package: '@azure/storage-blob'
+    uid: '@azure/storage-blob.BlockBlobClient.downloadToFile|stable'
+    package: '@azure/storage-blob|stable'
     summary: >
       ONLY AVAILABLE IN NODE.JS RUNTIME.
 
@@ -753,8 +753,8 @@ inheritedMethods:
           Promise&lt;<xref
           uid="@azure/storage-blob.BlobDownloadResponseParsed|stable" />&gt;
   - name: exists(BlobExistsOptions)
-    uid: '@azure/storage-blob.BlockBlobClient.exists'
-    package: '@azure/storage-blob'
+    uid: '@azure/storage-blob.BlockBlobClient.exists|stable'
+    package: '@azure/storage-blob|stable'
     summary: >
       Returns true if the Azure blob resource represented by this client exists;
       false otherwise.
@@ -780,8 +780,8 @@ inheritedMethods:
         description: ''
         type: Promise&lt;boolean&gt;
   - name: generateSasUrl(BlobGenerateSasUrlOptions)
-    uid: '@azure/storage-blob.BlockBlobClient.generateSasUrl'
-    package: '@azure/storage-blob'
+    uid: '@azure/storage-blob.BlockBlobClient.generateSasUrl|stable'
+    package: '@azure/storage-blob|stable'
     summary: >-
       Only available for BlobClient constructed with a shared key credential.
 
@@ -812,8 +812,8 @@ inheritedMethods:
           client, followed by the generated SAS token.
         type: Promise&lt;string&gt;
   - name: getAppendBlobClient()
-    uid: '@azure/storage-blob.BlockBlobClient.getAppendBlobClient'
-    package: '@azure/storage-blob'
+    uid: '@azure/storage-blob.BlockBlobClient.getAppendBlobClient|stable'
+    package: '@azure/storage-blob|stable'
     summary: Creates a AppendBlobClient object.
     remarks: ''
     isPreview: false
@@ -824,8 +824,8 @@ inheritedMethods:
         description: ''
         type: <xref uid="@azure/storage-blob.AppendBlobClient|stable" />
   - name: getBlobLeaseClient(string)
-    uid: '@azure/storage-blob.BlockBlobClient.getBlobLeaseClient'
-    package: '@azure/storage-blob'
+    uid: '@azure/storage-blob.BlockBlobClient.getBlobLeaseClient|stable'
+    package: '@azure/storage-blob|stable'
     summary: >-
       Get a
       <xref:@azure/storage-blob.AppendBlobClient.getBlobLeaseClient|stable> that
@@ -843,8 +843,8 @@ inheritedMethods:
         description: A new BlobLeaseClient object for managing leases on the blob.
         type: <xref uid="@azure/storage-blob.BlobLeaseClient|stable" />
   - name: getBlockBlobClient()
-    uid: '@azure/storage-blob.BlockBlobClient.getBlockBlobClient'
-    package: '@azure/storage-blob'
+    uid: '@azure/storage-blob.BlockBlobClient.getBlockBlobClient|stable'
+    package: '@azure/storage-blob|stable'
     summary: Creates a BlockBlobClient object.
     remarks: ''
     isPreview: false
@@ -855,8 +855,8 @@ inheritedMethods:
         description: ''
         type: <xref uid="@azure/storage-blob.BlockBlobClient|stable" />
   - name: getPageBlobClient()
-    uid: '@azure/storage-blob.BlockBlobClient.getPageBlobClient'
-    package: '@azure/storage-blob'
+    uid: '@azure/storage-blob.BlockBlobClient.getPageBlobClient|stable'
+    package: '@azure/storage-blob|stable'
     summary: Creates a PageBlobClient object.
     remarks: ''
     isPreview: false
@@ -867,8 +867,8 @@ inheritedMethods:
         description: ''
         type: <xref uid="@azure/storage-blob.PageBlobClient|stable" />
   - name: getProperties(BlobGetPropertiesOptions)
-    uid: '@azure/storage-blob.BlockBlobClient.getProperties'
-    package: '@azure/storage-blob'
+    uid: '@azure/storage-blob.BlockBlobClient.getProperties|stable'
+    package: '@azure/storage-blob|stable'
     summary: >-
       Returns all user-defined metadata, standard HTTP properties, and system
       properties
@@ -909,8 +909,8 @@ inheritedMethods:
           Promise&lt;<xref
           uid="@azure/storage-blob.BlobGetPropertiesResponse|stable" />&gt;
   - name: getTags(BlobGetTagsOptions)
-    uid: '@azure/storage-blob.BlockBlobClient.getTags'
-    package: '@azure/storage-blob'
+    uid: '@azure/storage-blob.BlockBlobClient.getTags|stable'
+    package: '@azure/storage-blob|stable'
     summary: Gets the tags associated with the underlying blob.
     remarks: ''
     isPreview: false
@@ -932,8 +932,8 @@ inheritedMethods:
   - name: >-
       setAccessTier(BlockBlobTier | PremiumPageBlobTier | string,
       BlobSetTierOptions)
-    uid: '@azure/storage-blob.BlockBlobClient.setAccessTier'
-    package: '@azure/storage-blob'
+    uid: '@azure/storage-blob.BlockBlobClient.setAccessTier|stable'
+    package: '@azure/storage-blob|stable'
     summary: >-
       Sets the tier on a blob. The operation is allowed on a page blob in a
       premium
@@ -976,8 +976,8 @@ inheritedMethods:
           Promise&lt;<xref uid="@azure/storage-blob.BlobSetTierResponse|stable"
           />&gt;
   - name: setHTTPHeaders(BlobHTTPHeaders, BlobSetHTTPHeadersOptions)
-    uid: '@azure/storage-blob.BlockBlobClient.setHTTPHeaders'
-    package: '@azure/storage-blob'
+    uid: '@azure/storage-blob.BlockBlobClient.setHTTPHeaders|stable'
+    package: '@azure/storage-blob|stable'
     summary: >-
       Sets system properties on the blob.
 
@@ -1018,8 +1018,8 @@ inheritedMethods:
   - name: >-
       setImmutabilityPolicy(BlobImmutabilityPolicy,
       BlobSetImmutabilityPolicyOptions)
-    uid: '@azure/storage-blob.BlockBlobClient.setImmutabilityPolicy'
-    package: '@azure/storage-blob'
+    uid: '@azure/storage-blob.BlockBlobClient.setImmutabilityPolicy|stable'
+    package: '@azure/storage-blob|stable'
     summary: Set immutablility policy on the blob.
     remarks: ''
     isPreview: false
@@ -1046,8 +1046,8 @@ inheritedMethods:
           uid="@azure/storage-blob.BlobSetImmutabilityPolicyResponse|stable"
           />&gt;
   - name: setLegalHold(boolean, BlobSetLegalHoldOptions)
-    uid: '@azure/storage-blob.BlockBlobClient.setLegalHold'
-    package: '@azure/storage-blob'
+    uid: '@azure/storage-blob.BlockBlobClient.setLegalHold|stable'
+    package: '@azure/storage-blob|stable'
     summary: Set legal hold on the blob.
     remarks: ''
     isPreview: false
@@ -1070,8 +1070,8 @@ inheritedMethods:
           Promise&lt;<xref
           uid="@azure/storage-blob.BlobSetLegalHoldResponse|stable" />&gt;
   - name: setMetadata(Metadata, BlobSetMetadataOptions)
-    uid: '@azure/storage-blob.BlockBlobClient.setMetadata'
-    package: '@azure/storage-blob'
+    uid: '@azure/storage-blob.BlockBlobClient.setMetadata|stable'
+    package: '@azure/storage-blob|stable'
     summary: >-
       Sets user-defined metadata for the specified blob as one or more
       name-value pairs.
@@ -1106,8 +1106,8 @@ inheritedMethods:
           Promise&lt;<xref
           uid="@azure/storage-blob.BlobSetMetadataResponse|stable" />&gt;
   - name: setTags(Tags, BlobSetTagsOptions)
-    uid: '@azure/storage-blob.BlockBlobClient.setTags'
-    package: '@azure/storage-blob'
+    uid: '@azure/storage-blob.BlockBlobClient.setTags|stable'
+    package: '@azure/storage-blob|stable'
     summary: >-
       Sets tags on the underlying blob.
 
@@ -1140,8 +1140,8 @@ inheritedMethods:
           Promise&lt;<xref uid="@azure/storage-blob.BlobSetTagsResponse|stable"
           />&gt;
   - name: syncCopyFromURL(string, BlobSyncCopyFromURLOptions)
-    uid: '@azure/storage-blob.BlockBlobClient.syncCopyFromURL'
-    package: '@azure/storage-blob'
+    uid: '@azure/storage-blob.BlockBlobClient.syncCopyFromURL|stable'
+    package: '@azure/storage-blob|stable'
     summary: >-
       The synchronous Copy From URL operation copies a blob or an internet
       resource to a new blob. It will not
@@ -1174,8 +1174,8 @@ inheritedMethods:
           Promise&lt;<xref
           uid="@azure/storage-blob.BlobCopyFromURLResponse|stable" />&gt;
   - name: undelete(BlobUndeleteOptions)
-    uid: '@azure/storage-blob.BlockBlobClient.undelete'
-    package: '@azure/storage-blob'
+    uid: '@azure/storage-blob.BlockBlobClient.undelete|stable'
+    package: '@azure/storage-blob|stable'
     summary: >-
       Restores the contents and metadata of soft deleted blob and any associated
 
@@ -1205,8 +1205,8 @@ inheritedMethods:
           Promise&lt;<xref uid="@azure/storage-blob.BlobUndeleteResponse|stable"
           />&gt;
   - name: withVersion(string)
-    uid: '@azure/storage-blob.BlockBlobClient.withVersion'
-    package: '@azure/storage-blob'
+    uid: '@azure/storage-blob.BlockBlobClient.withVersion|stable'
+    package: '@azure/storage-blob|stable'
     summary: |-
       Creates a new BlobClient object pointing to a version of this blob.
       Provide "" will remove the versionId and return a Client to the base blob.

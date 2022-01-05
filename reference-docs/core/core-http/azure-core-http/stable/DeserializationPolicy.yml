@@ -83,8 +83,8 @@ properties:
         type: string[]
 inheritedMethods:
   - name: log(HttpPipelineLogLevel, string)
-    uid: '@azure/core-http.DeserializationPolicy.log'
-    package: '@azure/core-http'
+    uid: '@azure/core-http.DeserializationPolicy.log|stable'
+    package: '@azure/core-http|stable'
     summary: >-
       Attempt to log the provided message to the provided logger. If no logger
       was provided or if
@@ -105,8 +105,8 @@ inheritedMethods:
           description: |
             The message of this log.
   - name: shouldLog(HttpPipelineLogLevel)
-    uid: '@azure/core-http.DeserializationPolicy.shouldLog'
-    package: '@azure/core-http'
+    uid: '@azure/core-http.DeserializationPolicy.shouldLog|stable'
+    package: '@azure/core-http|stable'
     summary: Get whether or not a log with the provided log level should be logged.
     remarks: ''
     isPreview: false

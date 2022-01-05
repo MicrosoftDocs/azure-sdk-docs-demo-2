@@ -81,8 +81,8 @@ inheritedMethods:
       sendOperationRequest(OperationArguments, OperationSpec,
       ServiceCallback<any>)
     uid: >-
-      @azure/cognitiveservices-personalizer.PersonalizerClient.sendOperationRequest
-    package: '@azure/cognitiveservices-personalizer'
+      @azure/cognitiveservices-personalizer.PersonalizerClient.sendOperationRequest|stable
+    package: '@azure/cognitiveservices-personalizer|stable'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
     isPreview: false
@@ -109,8 +109,9 @@ inheritedMethods:
         description: ''
         type: Promise&lt;RestResponse&gt;
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
-    uid: '@azure/cognitiveservices-personalizer.PersonalizerClient.sendRequest'
-    package: '@azure/cognitiveservices-personalizer'
+    uid: >-
+      @azure/cognitiveservices-personalizer.PersonalizerClient.sendRequest|stable
+    package: '@azure/cognitiveservices-personalizer|stable'
     summary: Send the provided httpRequest.
     remarks: ''
     isPreview: false

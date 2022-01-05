@@ -93,8 +93,9 @@ inheritedMethods:
   - name: >-
       sendOperationRequest(OperationArguments, OperationSpec,
       ServiceCallback<any>)
-    uid: '@azure/service-bus.ServiceBusAdministrationClient.sendOperationRequest'
-    package: '@azure/service-bus'
+    uid: >-
+      @azure/service-bus.ServiceBusAdministrationClient.sendOperationRequest|stable
+    package: '@azure/service-bus|stable'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
     isPreview: false
@@ -121,8 +122,8 @@ inheritedMethods:
         description: ''
         type: Promise&lt;RestResponse&gt;
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
-    uid: '@azure/service-bus.ServiceBusAdministrationClient.sendRequest'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus.ServiceBusAdministrationClient.sendRequest|stable'
+    package: '@azure/service-bus|stable'
     summary: Send the provided httpRequest.
     remarks: ''
     isPreview: false

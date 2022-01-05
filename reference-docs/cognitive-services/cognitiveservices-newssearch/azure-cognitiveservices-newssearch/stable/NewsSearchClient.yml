@@ -78,8 +78,9 @@ inheritedMethods:
   - name: >-
       sendOperationRequest(OperationArguments, OperationSpec,
       ServiceCallback<any>)
-    uid: '@azure/cognitiveservices-newssearch.NewsSearchClient.sendOperationRequest'
-    package: '@azure/cognitiveservices-newssearch'
+    uid: >-
+      @azure/cognitiveservices-newssearch.NewsSearchClient.sendOperationRequest|stable
+    package: '@azure/cognitiveservices-newssearch|stable'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
     isPreview: false
@@ -106,8 +107,8 @@ inheritedMethods:
         description: ''
         type: Promise&lt;RestResponse&gt;
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
-    uid: '@azure/cognitiveservices-newssearch.NewsSearchClient.sendRequest'
-    package: '@azure/cognitiveservices-newssearch'
+    uid: '@azure/cognitiveservices-newssearch.NewsSearchClient.sendRequest|stable'
+    package: '@azure/cognitiveservices-newssearch|stable'
     summary: Send the provided httpRequest.
     remarks: ''
     isPreview: false

@@ -327,8 +327,9 @@ properties:
         type: <xref uid="@azure/arm-postgresql.VirtualNetworkRules|stable" />
 inheritedMethods:
   - name: sendOperationRequest<T>(OperationArguments, OperationSpec)
-    uid: '@azure/arm-postgresql.PostgreSQLManagementClient.sendOperationRequest'
-    package: '@azure/arm-postgresql'
+    uid: >-
+      @azure/arm-postgresql.PostgreSQLManagementClient.sendOperationRequest|stable
+    package: '@azure/arm-postgresql|stable'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
     isPreview: false
@@ -351,8 +352,8 @@ inheritedMethods:
         description: ''
         type: Promise&lt;T&gt;
   - name: sendRequest(PipelineRequest)
-    uid: '@azure/arm-postgresql.PostgreSQLManagementClient.sendRequest'
-    package: '@azure/arm-postgresql'
+    uid: '@azure/arm-postgresql.PostgreSQLManagementClient.sendRequest|stable'
+    package: '@azure/arm-postgresql|stable'
     summary: Send the provided httpRequest.
     remarks: ''
     isPreview: false

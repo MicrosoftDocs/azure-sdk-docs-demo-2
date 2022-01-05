@@ -274,8 +274,8 @@ properties:
         type: string
 inheritedMethods:
   - name: getBody()
-    uid: '@azure/attestation.AttestationPolicyToken.getBody'
-    package: '@azure/attestation'
+    uid: '@azure/attestation.AttestationPolicyToken.getBody|stable'
+    package: '@azure/attestation|stable'
     summary: Returns the deserialized body of the AttestationToken object.
     remarks: ''
     isPreview: false
@@ -286,8 +286,8 @@ inheritedMethods:
         description: The body of the attestation token as an object.
         type: unknown
   - name: getTokenProblems(AttestationSigner[], AttestationTokenValidationOptions)
-    uid: '@azure/attestation.AttestationPolicyToken.getTokenProblems'
-    package: '@azure/attestation'
+    uid: '@azure/attestation.AttestationPolicyToken.getTokenProblems|stable'
+    package: '@azure/attestation|stable'
     summary: Validates the attestation token to verify that it is semantically correct.
     remarks: ''
     isPreview: false
@@ -310,8 +310,8 @@ inheritedMethods:
         description: ''
         type: string[]
   - name: serialize()
-    uid: '@azure/attestation.AttestationPolicyToken.serialize'
-    package: '@azure/attestation'
+    uid: '@azure/attestation.AttestationPolicyToken.serialize|stable'
+    package: '@azure/attestation|stable'
     summary: the token to a string.
     remarks: Serializes the token to a string.
     isPreview: false

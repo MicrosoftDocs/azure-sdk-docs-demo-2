@@ -122,8 +122,9 @@ inheritedMethods:
   - name: >-
       beginLongRunningRequest(RequestPrepareOptions | WebResource,
       RequestOptionsBase)
-    uid: '@azure/arm-mixedreality.MixedRealityClientContext.beginLongRunningRequest'
-    package: '@azure/arm-mixedreality'
+    uid: >-
+      @azure/arm-mixedreality.MixedRealityClientContext.beginLongRunningRequest|stable
+    package: '@azure/arm-mixedreality|stable'
     summary: >-
       Send the initial request of a LRO (long running operation) and get back an
 
@@ -151,8 +152,8 @@ inheritedMethods:
           that provides methods for interacting with the LRO.
         type: Promise&lt;LROPoller&gt;
   - name: restoreLROPoller(LROPollState)
-    uid: '@azure/arm-mixedreality.MixedRealityClientContext.restoreLROPoller'
-    package: '@azure/arm-mixedreality'
+    uid: '@azure/arm-mixedreality.MixedRealityClientContext.restoreLROPoller|stable'
+    package: '@azure/arm-mixedreality|stable'
     summary: >-
       Restore an LROPoller from the provided LROPollState. This method can be
       used to recreate an
@@ -173,8 +174,9 @@ inheritedMethods:
   - name: >-
       sendLongRunningRequest(RequestPrepareOptions | WebResource,
       RequestOptionsBase)
-    uid: '@azure/arm-mixedreality.MixedRealityClientContext.sendLongRunningRequest'
-    package: '@azure/arm-mixedreality'
+    uid: >-
+      @azure/arm-mixedreality.MixedRealityClientContext.sendLongRunningRequest|stable
+    package: '@azure/arm-mixedreality|stable'
     summary: >-
       Provides a mechanism to make a request that will poll and provide the
       final result.
@@ -199,8 +201,8 @@ inheritedMethods:
           response and the responseBody.
         type: Promise&lt;HttpOperationResponse&gt;
   - name: sendLRORequest(OperationArguments, OperationSpec, RequestOptionsBase)
-    uid: '@azure/arm-mixedreality.MixedRealityClientContext.sendLRORequest'
-    package: '@azure/arm-mixedreality'
+    uid: '@azure/arm-mixedreality.MixedRealityClientContext.sendLRORequest|stable'
+    package: '@azure/arm-mixedreality|stable'
     summary: >-
       Send the initial request of a LRO (long running operation) and get back an
 
@@ -232,8 +234,9 @@ inheritedMethods:
   - name: >-
       sendOperationRequest(OperationArguments, OperationSpec,
       ServiceCallback<any>)
-    uid: '@azure/arm-mixedreality.MixedRealityClientContext.sendOperationRequest'
-    package: '@azure/arm-mixedreality'
+    uid: >-
+      @azure/arm-mixedreality.MixedRealityClientContext.sendOperationRequest|stable
+    package: '@azure/arm-mixedreality|stable'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
     isPreview: false
@@ -260,8 +263,8 @@ inheritedMethods:
         description: ''
         type: Promise&lt;RestResponse&gt;
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
-    uid: '@azure/arm-mixedreality.MixedRealityClientContext.sendRequest'
-    package: '@azure/arm-mixedreality'
+    uid: '@azure/arm-mixedreality.MixedRealityClientContext.sendRequest|stable'
+    package: '@azure/arm-mixedreality|stable'
     summary: Send the provided httpRequest.
     remarks: ''
     isPreview: false

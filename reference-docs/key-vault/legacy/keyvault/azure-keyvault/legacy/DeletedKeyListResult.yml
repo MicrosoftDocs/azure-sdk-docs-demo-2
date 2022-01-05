@@ -52,8 +52,8 @@ properties:
         type: string
 inheritedMethods:
   - name: at(number)
-    uid: azure-keyvault.DeletedKeyListResult.at
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.at|legacy
+    package: azure-keyvault|legacy
     summary: |-
       Takes an integer value and returns the item at that index,
       allowing for positive and negative integers.
@@ -71,8 +71,8 @@ inheritedMethods:
         description: ''
         type: <xref uid="azure-keyvault.DeletedKeyItem|legacy" /> | undefined
   - name: concat(ConcatArray<DeletedKeyItem>[])
-    uid: azure-keyvault.DeletedKeyListResult.concat
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.concat|legacy
+    package: azure-keyvault|legacy
     summary: Combines two or more arrays.
     remarks: ''
     isPreview: false
@@ -90,8 +90,8 @@ inheritedMethods:
         description: ''
         type: <xref uid="azure-keyvault.DeletedKeyItem|legacy" />[]
   - name: concat(T | ConcatArray<T>[])
-    uid: azure-keyvault.DeletedKeyListResult.concat_1
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.concat_1|legacy
+    package: azure-keyvault|legacy
     summary: Combines two or more arrays.
     remarks: ''
     isPreview: false
@@ -107,8 +107,8 @@ inheritedMethods:
         description: ''
         type: <xref uid="azure-keyvault.DeletedKeyItem|legacy" />[]
   - name: copyWithin(number, number, number)
-    uid: azure-keyvault.DeletedKeyListResult.copyWithin
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.copyWithin|legacy
+    package: azure-keyvault|legacy
     summary: >-
       Returns the this object after copying a section of the array identified by
       start and end
@@ -143,8 +143,8 @@ inheritedMethods:
         description: ''
         type: this
   - name: entries()
-    uid: azure-keyvault.DeletedKeyListResult.entries
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.entries|legacy
+    package: azure-keyvault|legacy
     summary: Returns an iterable of key, value pairs for every entry in the array
     remarks: ''
     isPreview: false
@@ -157,8 +157,8 @@ inheritedMethods:
   - name: >-
       every((value: DeletedKeyItem, index: number, array: DeletedKeyItem[]) =>
       unknown, any)
-    uid: azure-keyvault.DeletedKeyListResult.every
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.every|legacy
+    package: azure-keyvault|legacy
     summary: Determines whether all the members of an array satisfy the specified test.
     remarks: ''
     isPreview: false
@@ -186,8 +186,8 @@ inheritedMethods:
         description: ''
         type: boolean
   - name: fill(DeletedKeyItem, number, number)
-    uid: azure-keyvault.DeletedKeyListResult.fill
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.fill|legacy
+    package: azure-keyvault|legacy
     summary: >-
       Returns the this object after filling the section identified by start and
       end with value
@@ -220,8 +220,8 @@ inheritedMethods:
   - name: >-
       filter((value: DeletedKeyItem, index: number, array: DeletedKeyItem[]) =>
       unknown, any)
-    uid: azure-keyvault.DeletedKeyListResult.filter_1
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.filter_1|legacy
+    package: azure-keyvault|legacy
     summary: >-
       Returns the elements of an array that meet the condition specified in a
       callback function.
@@ -253,8 +253,8 @@ inheritedMethods:
   - name: >-
       filter<S>((value: DeletedKeyItem, index: number, array: DeletedKeyItem[])
       => boolean, any)
-    uid: azure-keyvault.DeletedKeyListResult.filter
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.filter|legacy
+    package: azure-keyvault|legacy
     summary: >-
       Returns the elements of an array that meet the condition specified in a
       callback function.
@@ -286,8 +286,8 @@ inheritedMethods:
   - name: >-
       find((value: DeletedKeyItem, index: number, obj: DeletedKeyItem[]) =>
       unknown, any)
-    uid: azure-keyvault.DeletedKeyListResult.find_1
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.find_1|legacy
+    package: azure-keyvault|legacy
     summary: ''
     remarks: ''
     isPreview: false
@@ -311,8 +311,8 @@ inheritedMethods:
   - name: >-
       find<S>((this: void, value: DeletedKeyItem, index: number, obj:
       DeletedKeyItem[]) => boolean, any)
-    uid: azure-keyvault.DeletedKeyListResult.find
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.find|legacy
+    package: azure-keyvault|legacy
     summary: >-
       Returns the value of the first element in the array where predicate is
       true, and undefined
@@ -352,8 +352,8 @@ inheritedMethods:
   - name: >-
       findIndex((value: DeletedKeyItem, index: number, obj: DeletedKeyItem[]) =>
       unknown, any)
-    uid: azure-keyvault.DeletedKeyListResult.findIndex
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.findIndex|legacy
+    package: azure-keyvault|legacy
     summary: >-
       Returns the index of the first element in the array where predicate is
       true, and -1
@@ -391,8 +391,8 @@ inheritedMethods:
         description: ''
         type: number
   - name: flat<U>(number)
-    uid: azure-keyvault.DeletedKeyListResult.flat_8
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.flat_8|legacy
+    package: azure-keyvault|legacy
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -413,8 +413,8 @@ inheritedMethods:
         description: ''
         type: any[]
   - name: flat<U>(U[], 0)
-    uid: azure-keyvault.DeletedKeyListResult.flat_7
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.flat_7|legacy
+    package: azure-keyvault|legacy
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -437,8 +437,8 @@ inheritedMethods:
         description: ''
         type: U[]
   - name: flat<U>(U[][], 1)
-    uid: azure-keyvault.DeletedKeyListResult.flat_6
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.flat_6|legacy
+    package: azure-keyvault|legacy
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -461,8 +461,8 @@ inheritedMethods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][], 2)
-    uid: azure-keyvault.DeletedKeyListResult.flat_5
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.flat_5|legacy
+    package: azure-keyvault|legacy
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -485,8 +485,8 @@ inheritedMethods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][][], 3)
-    uid: azure-keyvault.DeletedKeyListResult.flat_4
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.flat_4|legacy
+    package: azure-keyvault|legacy
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -509,8 +509,8 @@ inheritedMethods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][][][], 4)
-    uid: azure-keyvault.DeletedKeyListResult.flat_3
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.flat_3|legacy
+    package: azure-keyvault|legacy
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -533,8 +533,8 @@ inheritedMethods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][][][][], 5)
-    uid: azure-keyvault.DeletedKeyListResult.flat_2
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.flat_2|legacy
+    package: azure-keyvault|legacy
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -557,8 +557,8 @@ inheritedMethods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][][][][][], 6)
-    uid: azure-keyvault.DeletedKeyListResult.flat_1
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.flat_1|legacy
+    package: azure-keyvault|legacy
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -581,8 +581,8 @@ inheritedMethods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][][][][][][], 7)
-    uid: azure-keyvault.DeletedKeyListResult.flat
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.flat|legacy
+    package: azure-keyvault|legacy
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -607,8 +607,8 @@ inheritedMethods:
   - name: >-
       flatMap<U, This>((this: This, value: DeletedKeyItem, index: number, array:
       DeletedKeyItem[]) => U | ReadonlyArray<U>, This)
-    uid: azure-keyvault.DeletedKeyListResult.flatMap
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.flatMap|legacy
+    package: azure-keyvault|legacy
     summary: >-
       Calls a defined callback function on each element of an array. Then,
       flattens the result into
@@ -647,8 +647,8 @@ inheritedMethods:
   - name: >-
       forEach((value: DeletedKeyItem, index: number, array: DeletedKeyItem[]) =>
       void, any)
-    uid: azure-keyvault.DeletedKeyListResult.forEach
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.forEach|legacy
+    package: azure-keyvault|legacy
     summary: Performs the specified action for each element in an array.
     remarks: ''
     isPreview: false
@@ -672,8 +672,8 @@ inheritedMethods:
             function. If thisArg is omitted, undefined is used as the this
             value.
   - name: includes(DeletedKeyItem, number)
-    uid: azure-keyvault.DeletedKeyListResult.includes
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.includes|legacy
+    package: azure-keyvault|legacy
     summary: >-
       Determines whether an array includes a certain element, returning true or
       false as appropriate.
@@ -697,8 +697,8 @@ inheritedMethods:
         description: ''
         type: boolean
   - name: indexOf(DeletedKeyItem, number)
-    uid: azure-keyvault.DeletedKeyListResult.indexOf
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.indexOf|legacy
+    package: azure-keyvault|legacy
     summary: Returns the index of the first occurrence of a value in an array.
     remarks: ''
     isPreview: false
@@ -720,8 +720,8 @@ inheritedMethods:
         description: ''
         type: number
   - name: join(string)
-    uid: azure-keyvault.DeletedKeyListResult.join
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.join|legacy
+    package: azure-keyvault|legacy
     summary: >-
       Adds all the elements of an array separated by the specified separator
       string.
@@ -741,8 +741,8 @@ inheritedMethods:
         description: ''
         type: string
   - name: keys()
-    uid: azure-keyvault.DeletedKeyListResult.keys
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.keys|legacy
+    package: azure-keyvault|legacy
     summary: Returns an iterable of keys in the array
     remarks: ''
     isPreview: false
@@ -753,8 +753,8 @@ inheritedMethods:
         description: ''
         type: IterableIterator&lt;number&gt;
   - name: lastIndexOf(DeletedKeyItem, number)
-    uid: azure-keyvault.DeletedKeyListResult.lastIndexOf
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.lastIndexOf|legacy
+    package: azure-keyvault|legacy
     summary: Returns the index of the last occurrence of a specified value in an array.
     remarks: ''
     isPreview: false
@@ -778,8 +778,8 @@ inheritedMethods:
   - name: >-
       map<U>((value: DeletedKeyItem, index: number, array: DeletedKeyItem[]) =>
       U, any)
-    uid: azure-keyvault.DeletedKeyListResult.map
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.map|legacy
+    package: azure-keyvault|legacy
     summary: >-
       Calls a defined callback function on each element of an array, and returns
       an array that contains the results.
@@ -808,8 +808,8 @@ inheritedMethods:
         description: ''
         type: U[]
   - name: pop()
-    uid: azure-keyvault.DeletedKeyListResult.pop
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.pop|legacy
+    package: azure-keyvault|legacy
     summary: Removes the last element from an array and returns it.
     remarks: ''
     isPreview: false
@@ -820,8 +820,8 @@ inheritedMethods:
         description: ''
         type: <xref uid="azure-keyvault.DeletedKeyItem|legacy" /> | undefined
   - name: push(DeletedKeyItem[])
-    uid: azure-keyvault.DeletedKeyListResult.push
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.push|legacy
+    package: azure-keyvault|legacy
     summary: Appends new elements to an array, and returns the new length of the array.
     remarks: ''
     isPreview: false
@@ -839,8 +839,8 @@ inheritedMethods:
   - name: >-
       reduce((previousValue: DeletedKeyItem, currentValue: DeletedKeyItem,
       currentIndex: number, array: DeletedKeyItem[]) => DeletedKeyItem)
-    uid: azure-keyvault.DeletedKeyListResult.reduce
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.reduce|legacy
+    package: azure-keyvault|legacy
     summary: >-
       Calls the specified callback function for all the elements in an array.
       The return value of the callback function is the accumulated result, and
@@ -869,8 +869,8 @@ inheritedMethods:
       reduce((previousValue: DeletedKeyItem, currentValue: DeletedKeyItem,
       currentIndex: number, array: DeletedKeyItem[]) => DeletedKeyItem,
       DeletedKeyItem)
-    uid: azure-keyvault.DeletedKeyListResult.reduce_1
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.reduce_1|legacy
+    package: azure-keyvault|legacy
     summary: ''
     remarks: ''
     isPreview: false
@@ -896,8 +896,8 @@ inheritedMethods:
   - name: >-
       reduce<U>((previousValue: U, currentValue: DeletedKeyItem, currentIndex:
       number, array: DeletedKeyItem[]) => U, U)
-    uid: azure-keyvault.DeletedKeyListResult.reduce_2
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.reduce_2|legacy
+    package: azure-keyvault|legacy
     summary: >-
       Calls the specified callback function for all the elements in an array.
       The return value of the callback function is the accumulated result, and
@@ -931,8 +931,8 @@ inheritedMethods:
   - name: >-
       reduceRight((previousValue: DeletedKeyItem, currentValue: DeletedKeyItem,
       currentIndex: number, array: DeletedKeyItem[]) => DeletedKeyItem)
-    uid: azure-keyvault.DeletedKeyListResult.reduceRight
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.reduceRight|legacy
+    package: azure-keyvault|legacy
     summary: >-
       Calls the specified callback function for all the elements in an array, in
       descending order. The return value of the callback function is the
@@ -962,8 +962,8 @@ inheritedMethods:
       reduceRight((previousValue: DeletedKeyItem, currentValue: DeletedKeyItem,
       currentIndex: number, array: DeletedKeyItem[]) => DeletedKeyItem,
       DeletedKeyItem)
-    uid: azure-keyvault.DeletedKeyListResult.reduceRight_1
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.reduceRight_1|legacy
+    package: azure-keyvault|legacy
     summary: ''
     remarks: ''
     isPreview: false
@@ -989,8 +989,8 @@ inheritedMethods:
   - name: >-
       reduceRight<U>((previousValue: U, currentValue: DeletedKeyItem,
       currentIndex: number, array: DeletedKeyItem[]) => U, U)
-    uid: azure-keyvault.DeletedKeyListResult.reduceRight_2
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.reduceRight_2|legacy
+    package: azure-keyvault|legacy
     summary: >-
       Calls the specified callback function for all the elements in an array, in
       descending order. The return value of the callback function is the
@@ -1023,8 +1023,8 @@ inheritedMethods:
         description: ''
         type: U
   - name: reverse()
-    uid: azure-keyvault.DeletedKeyListResult.reverse
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.reverse|legacy
+    package: azure-keyvault|legacy
     summary: Reverses the elements in an Array.
     remarks: ''
     isPreview: false
@@ -1035,8 +1035,8 @@ inheritedMethods:
         description: ''
         type: <xref uid="azure-keyvault.DeletedKeyItem|legacy" />[]
   - name: shift()
-    uid: azure-keyvault.DeletedKeyListResult.shift
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.shift|legacy
+    package: azure-keyvault|legacy
     summary: Removes the first element from an array and returns it.
     remarks: ''
     isPreview: false
@@ -1047,8 +1047,8 @@ inheritedMethods:
         description: ''
         type: <xref uid="azure-keyvault.DeletedKeyItem|legacy" /> | undefined
   - name: slice(number, number)
-    uid: azure-keyvault.DeletedKeyListResult.slice
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.slice|legacy
+    package: azure-keyvault|legacy
     summary: Returns a section of an array.
     remarks: ''
     isPreview: false
@@ -1069,8 +1069,8 @@ inheritedMethods:
   - name: >-
       some((value: DeletedKeyItem, index: number, array: DeletedKeyItem[]) =>
       unknown, any)
-    uid: azure-keyvault.DeletedKeyListResult.some
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.some|legacy
+    package: azure-keyvault|legacy
     summary: >-
       Determines whether the specified callback function returns true for any
       element of an array.
@@ -1100,8 +1100,8 @@ inheritedMethods:
         description: ''
         type: boolean
   - name: 'sort((a: DeletedKeyItem, b: DeletedKeyItem) => number)'
-    uid: azure-keyvault.DeletedKeyListResult.sort
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.sort|legacy
+    package: azure-keyvault|legacy
     summary: Sorts an array.
     remarks: ''
     isPreview: false
@@ -1121,8 +1121,8 @@ inheritedMethods:
         description: ''
         type: this
   - name: splice(number, number)
-    uid: azure-keyvault.DeletedKeyListResult.splice
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.splice|legacy
+    package: azure-keyvault|legacy
     summary: >-
       Removes elements from an array and, if necessary, inserts new elements in
       their place, returning the deleted elements.
@@ -1145,8 +1145,8 @@ inheritedMethods:
         description: ''
         type: <xref uid="azure-keyvault.DeletedKeyItem|legacy" />[]
   - name: splice(number, number, DeletedKeyItem[])
-    uid: azure-keyvault.DeletedKeyListResult.splice_1
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.splice_1|legacy
+    package: azure-keyvault|legacy
     summary: >-
       Removes elements from an array and, if necessary, inserts new elements in
       their place, returning the deleted elements.
@@ -1174,8 +1174,8 @@ inheritedMethods:
         description: ''
         type: <xref uid="azure-keyvault.DeletedKeyItem|legacy" />[]
   - name: toLocaleString()
-    uid: azure-keyvault.DeletedKeyListResult.toLocaleString
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.toLocaleString|legacy
+    package: azure-keyvault|legacy
     summary: >-
       Returns a string representation of an array. The elements are converted to
       string using their toLocalString methods.
@@ -1188,8 +1188,8 @@ inheritedMethods:
         description: ''
         type: string
   - name: toString()
-    uid: azure-keyvault.DeletedKeyListResult.toString
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.toString|legacy
+    package: azure-keyvault|legacy
     summary: Returns a string representation of an array.
     remarks: ''
     isPreview: false
@@ -1200,8 +1200,8 @@ inheritedMethods:
         description: ''
         type: string
   - name: unshift(DeletedKeyItem[])
-    uid: azure-keyvault.DeletedKeyListResult.unshift
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.unshift|legacy
+    package: azure-keyvault|legacy
     summary: Inserts new elements at the start of an array.
     remarks: ''
     isPreview: false
@@ -1217,8 +1217,8 @@ inheritedMethods:
         description: ''
         type: number
   - name: values()
-    uid: azure-keyvault.DeletedKeyListResult.values
-    package: azure-keyvault
+    uid: azure-keyvault.DeletedKeyListResult.values|legacy
+    package: azure-keyvault|legacy
     summary: Returns an iterable of values in the array
     remarks: ''
     isPreview: false

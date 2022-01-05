@@ -73,8 +73,8 @@ inheritedMethods:
       sendOperationRequest(OperationArguments, OperationSpec,
       ServiceCallback<any>)
     uid: >-
-      @azure/cognitiveservices-anomalydetector.AnomalyDetectorClient.sendOperationRequest
-    package: '@azure/cognitiveservices-anomalydetector'
+      @azure/cognitiveservices-anomalydetector.AnomalyDetectorClient.sendOperationRequest|stable
+    package: '@azure/cognitiveservices-anomalydetector|stable'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
     isPreview: false
@@ -101,8 +101,9 @@ inheritedMethods:
         description: ''
         type: Promise&lt;RestResponse&gt;
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
-    uid: '@azure/cognitiveservices-anomalydetector.AnomalyDetectorClient.sendRequest'
-    package: '@azure/cognitiveservices-anomalydetector'
+    uid: >-
+      @azure/cognitiveservices-anomalydetector.AnomalyDetectorClient.sendRequest|stable
+    package: '@azure/cognitiveservices-anomalydetector|stable'
     summary: Send the provided httpRequest.
     remarks: ''
     isPreview: false

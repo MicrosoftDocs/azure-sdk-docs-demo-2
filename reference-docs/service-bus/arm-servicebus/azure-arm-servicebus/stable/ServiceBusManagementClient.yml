@@ -229,8 +229,9 @@ properties:
         type: <xref uid="@azure/arm-servicebus.Topics|stable" />
 inheritedMethods:
   - name: sendOperationRequest<T>(OperationArguments, OperationSpec)
-    uid: '@azure/arm-servicebus.ServiceBusManagementClient.sendOperationRequest'
-    package: '@azure/arm-servicebus'
+    uid: >-
+      @azure/arm-servicebus.ServiceBusManagementClient.sendOperationRequest|stable
+    package: '@azure/arm-servicebus|stable'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
     isPreview: false
@@ -253,8 +254,8 @@ inheritedMethods:
         description: ''
         type: Promise&lt;T&gt;
   - name: sendRequest(PipelineRequest)
-    uid: '@azure/arm-servicebus.ServiceBusManagementClient.sendRequest'
-    package: '@azure/arm-servicebus'
+    uid: '@azure/arm-servicebus.ServiceBusManagementClient.sendRequest|stable'
+    package: '@azure/arm-servicebus|stable'
     summary: Send the provided httpRequest.
     remarks: ''
     isPreview: false

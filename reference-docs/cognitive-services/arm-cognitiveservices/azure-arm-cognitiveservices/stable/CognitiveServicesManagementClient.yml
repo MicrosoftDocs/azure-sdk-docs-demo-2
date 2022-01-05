@@ -231,8 +231,8 @@ properties:
 inheritedMethods:
   - name: sendOperationRequest<T>(OperationArguments, OperationSpec)
     uid: >-
-      @azure/arm-cognitiveservices.CognitiveServicesManagementClient.sendOperationRequest
-    package: '@azure/arm-cognitiveservices'
+      @azure/arm-cognitiveservices.CognitiveServicesManagementClient.sendOperationRequest|stable
+    package: '@azure/arm-cognitiveservices|stable'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
     isPreview: false
@@ -255,8 +255,9 @@ inheritedMethods:
         description: ''
         type: Promise&lt;T&gt;
   - name: sendRequest(PipelineRequest)
-    uid: '@azure/arm-cognitiveservices.CognitiveServicesManagementClient.sendRequest'
-    package: '@azure/arm-cognitiveservices'
+    uid: >-
+      @azure/arm-cognitiveservices.CognitiveServicesManagementClient.sendRequest|stable
+    package: '@azure/arm-cognitiveservices|stable'
     summary: Send the provided httpRequest.
     remarks: ''
     isPreview: false

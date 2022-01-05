@@ -96,8 +96,8 @@ properties:
         type: number
 inheritedMethods:
   - name: addUserAgentInfo(any)
-    uid: azure-eventgrid.EventGridClient.addUserAgentInfo
-    package: azure-eventgrid
+    uid: azure-eventgrid.EventGridClient.addUserAgentInfo|legacy
+    package: azure-eventgrid|legacy
     summary: Adds custom information to user agent header
     remarks: ''
     isPreview: false
@@ -112,8 +112,8 @@ inheritedMethods:
   - name: >-
       getLongRunningOperationResult<TResult>(HttpOperationResponse<TResult>,
       RequestOptions)
-    uid: azure-eventgrid.EventGridClient.getLongRunningOperationResult_2
-    package: azure-eventgrid
+    uid: azure-eventgrid.EventGridClient.getLongRunningOperationResult_2|legacy
+    package: azure-eventgrid|legacy
     summary: ''
     remarks: ''
     isPreview: false
@@ -136,8 +136,8 @@ inheritedMethods:
   - name: >-
       getLongRunningOperationResult<TResult>(HttpOperationResponse<TResult>,
       RequestOptions, ServiceCallback<TResult>)
-    uid: azure-eventgrid.EventGridClient.getLongRunningOperationResult
-    package: azure-eventgrid
+    uid: azure-eventgrid.EventGridClient.getLongRunningOperationResult|legacy
+    package: azure-eventgrid|legacy
     summary: ''
     remarks: ''
     isPreview: false
@@ -160,8 +160,8 @@ inheritedMethods:
   - name: >-
       getLongRunningOperationResult<TResult>(HttpOperationResponse<TResult>,
       ServiceCallback<TResult>)
-    uid: azure-eventgrid.EventGridClient.getLongRunningOperationResult_1
-    package: azure-eventgrid
+    uid: azure-eventgrid.EventGridClient.getLongRunningOperationResult_1|legacy
+    package: azure-eventgrid|legacy
     summary: ''
     remarks: ''
     isPreview: false
@@ -178,8 +178,8 @@ inheritedMethods:
           type: ServiceCallback&lt;TResult&gt;
           description: ''
   - name: getPackageJsonInfo(string)
-    uid: azure-eventgrid.EventGridClient.getPackageJsonInfo
-    package: azure-eventgrid
+    uid: azure-eventgrid.EventGridClient.getPackageJsonInfo|legacy
+    package: azure-eventgrid|legacy
     summary: >-
       Attempts to find package.json for the given azure nodejs package.
 
@@ -204,8 +204,8 @@ inheritedMethods:
   - name: >-
       sendLongRunningRequest<TResult>(LongRunningUrlBasedRequestPrepareOptions |
       LongRunningPathTemplateBasedRequestPrepareOptions)
-    uid: azure-eventgrid.EventGridClient.sendLongRunningRequest_1
-    package: azure-eventgrid
+    uid: azure-eventgrid.EventGridClient.sendLongRunningRequest_1|legacy
+    package: azure-eventgrid|legacy
     summary: ''
     remarks: ''
     isPreview: false
@@ -228,8 +228,8 @@ inheritedMethods:
       sendLongRunningRequest<TResult>(LongRunningUrlBasedRequestPrepareOptions |
       LongRunningPathTemplateBasedRequestPrepareOptions,
       ServiceCallback<TResult>)
-    uid: azure-eventgrid.EventGridClient.sendLongRunningRequest
-    package: azure-eventgrid
+    uid: azure-eventgrid.EventGridClient.sendLongRunningRequest|legacy
+    package: azure-eventgrid|legacy
     summary: ''
     remarks: ''
     isPreview: false
@@ -253,8 +253,8 @@ inheritedMethods:
       sendLongRunningRequestWithHttpOperationResponse<TResult>(LongRunningUrlBasedRequestPrepareOptions
       | LongRunningPathTemplateBasedRequestPrepareOptions)
     uid: >-
-      azure-eventgrid.EventGridClient.sendLongRunningRequestWithHttpOperationResponse
-    package: azure-eventgrid
+      azure-eventgrid.EventGridClient.sendLongRunningRequestWithHttpOperationResponse|legacy
+    package: azure-eventgrid|legacy
     summary: ''
     remarks: ''
     isPreview: false
@@ -278,8 +278,8 @@ inheritedMethods:
   - name: >-
       sendRequest<TResult>(PathTemplateBasedRequestPrepareOptions |
       UrlBasedRequestPrepareOptions)
-    uid: azure-eventgrid.EventGridClient.sendRequest_1
-    package: azure-eventgrid
+    uid: azure-eventgrid.EventGridClient.sendRequest_1|legacy
+    package: azure-eventgrid|legacy
     summary: ''
     remarks: ''
     isPreview: false
@@ -301,8 +301,8 @@ inheritedMethods:
   - name: >-
       sendRequest<TResult>(PathTemplateBasedRequestPrepareOptions |
       UrlBasedRequestPrepareOptions, ServiceCallback<TResult>)
-    uid: azure-eventgrid.EventGridClient.sendRequest
-    package: azure-eventgrid
+    uid: azure-eventgrid.EventGridClient.sendRequest|legacy
+    package: azure-eventgrid|legacy
     summary: ''
     remarks: ''
     isPreview: false
@@ -324,8 +324,9 @@ inheritedMethods:
   - name: >-
       sendRequestWithHttpOperationResponse<TResult>(PathTemplateBasedRequestPrepareOptions
       | UrlBasedRequestPrepareOptions)
-    uid: azure-eventgrid.EventGridClient.sendRequestWithHttpOperationResponse
-    package: azure-eventgrid
+    uid: >-
+      azure-eventgrid.EventGridClient.sendRequestWithHttpOperationResponse|legacy
+    package: azure-eventgrid|legacy
     summary: ''
     remarks: ''
     isPreview: false

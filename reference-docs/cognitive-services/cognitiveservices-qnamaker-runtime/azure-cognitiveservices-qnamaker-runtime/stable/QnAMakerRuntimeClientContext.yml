@@ -71,8 +71,8 @@ inheritedMethods:
       sendOperationRequest(OperationArguments, OperationSpec,
       ServiceCallback<any>)
     uid: >-
-      @azure/cognitiveservices-qnamaker-runtime.QnAMakerRuntimeClientContext.sendOperationRequest
-    package: '@azure/cognitiveservices-qnamaker-runtime'
+      @azure/cognitiveservices-qnamaker-runtime.QnAMakerRuntimeClientContext.sendOperationRequest|stable
+    package: '@azure/cognitiveservices-qnamaker-runtime|stable'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
     isPreview: false
@@ -100,8 +100,8 @@ inheritedMethods:
         type: Promise&lt;RestResponse&gt;
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
     uid: >-
-      @azure/cognitiveservices-qnamaker-runtime.QnAMakerRuntimeClientContext.sendRequest
-    package: '@azure/cognitiveservices-qnamaker-runtime'
+      @azure/cognitiveservices-qnamaker-runtime.QnAMakerRuntimeClientContext.sendRequest|stable
+    package: '@azure/cognitiveservices-qnamaker-runtime|stable'
     summary: Send the provided httpRequest.
     remarks: ''
     isPreview: false

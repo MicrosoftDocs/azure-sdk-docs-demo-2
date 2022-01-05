@@ -32,8 +32,8 @@ constructors:
           description: ''
 inheritedMethods:
   - name: log(HttpPipelineLogLevel, string)
-    uid: '@azure/core-http.GenerateClientRequestIdPolicy.log'
-    package: '@azure/core-http'
+    uid: '@azure/core-http.GenerateClientRequestIdPolicy.log|stable'
+    package: '@azure/core-http|stable'
     summary: >-
       Attempt to log the provided message to the provided logger. If no logger
       was provided or if
@@ -54,8 +54,8 @@ inheritedMethods:
           description: |
             The message of this log.
   - name: shouldLog(HttpPipelineLogLevel)
-    uid: '@azure/core-http.GenerateClientRequestIdPolicy.shouldLog'
-    package: '@azure/core-http'
+    uid: '@azure/core-http.GenerateClientRequestIdPolicy.shouldLog|stable'
+    package: '@azure/core-http|stable'
     summary: Get whether or not a log with the provided log level should be logged.
     remarks: ''
     isPreview: false
