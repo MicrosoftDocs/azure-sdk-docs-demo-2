@@ -1,0 +1,127 @@
+### YamlMime:TSType
+name: DiagnosticsExecuteSiteDetectorOptionalParams
+uid: '@azure/arm-appservice.DiagnosticsExecuteSiteDetectorOptionalParams|stable'
+package: '@azure/arm-appservice|stable'
+summary: Optional parameters.
+fullName: DiagnosticsExecuteSiteDetectorOptionalParams
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: abortSignal
+    uid: >-
+      @azure/arm-appservice.DiagnosticsExecuteSiteDetectorOptionalParams.abortSignal|stable
+    package: '@azure/arm-appservice|stable'
+    summary: The signal which can be used to abort requests.
+    fullName: abortSignal
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'abortSignal?: AbortSignalLike'
+      return:
+        description: ''
+        type: AbortSignalLike
+  - name: endTime
+    uid: >-
+      @azure/arm-appservice.DiagnosticsExecuteSiteDetectorOptionalParams.endTime|stable
+    package: '@azure/arm-appservice|stable'
+    summary: End Time
+    fullName: endTime
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'endTime?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: onResponse
+    uid: >-
+      @azure/arm-appservice.DiagnosticsExecuteSiteDetectorOptionalParams.onResponse|stable
+    package: '@azure/arm-appservice|stable'
+    summary: |-
+      A function to be called each time a response is received from the server
+      while performing the requested operation.
+      May be called multiple times.
+    fullName: onResponse
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onResponse?: RawResponseCallback'
+      return:
+        description: ''
+        type: RawResponseCallback
+  - name: requestOptions
+    uid: >-
+      @azure/arm-appservice.DiagnosticsExecuteSiteDetectorOptionalParams.requestOptions|stable
+    package: '@azure/arm-appservice|stable'
+    summary: Options used when creating and sending HTTP requests for this operation.
+    fullName: requestOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'requestOptions?: OperationRequestOptions'
+      return:
+        description: ''
+        type: OperationRequestOptions
+  - name: serializerOptions
+    uid: >-
+      @azure/arm-appservice.DiagnosticsExecuteSiteDetectorOptionalParams.serializerOptions|stable
+    package: '@azure/arm-appservice|stable'
+    summary: Options to override serialization/de-serialization behavior.
+    fullName: serializerOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'serializerOptions?: SerializerOptions'
+      return:
+        description: ''
+        type: SerializerOptions
+  - name: startTime
+    uid: >-
+      @azure/arm-appservice.DiagnosticsExecuteSiteDetectorOptionalParams.startTime|stable
+    package: '@azure/arm-appservice|stable'
+    summary: Start Time
+    fullName: startTime
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'startTime?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: timeGrain
+    uid: >-
+      @azure/arm-appservice.DiagnosticsExecuteSiteDetectorOptionalParams.timeGrain|stable
+    package: '@azure/arm-appservice|stable'
+    summary: Time Grain
+    fullName: timeGrain
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'timeGrain?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: tracingOptions
+    uid: >-
+      @azure/arm-appservice.DiagnosticsExecuteSiteDetectorOptionalParams.tracingOptions|stable
+    package: '@azure/arm-appservice|stable'
+    summary: Options used when tracing is enabled.
+    fullName: tracingOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tracingOptions?: OperationTracingOptions'
+      return:
+        description: ''
+        type: OperationTracingOptions
+extends: OperationOptions

@@ -1,0 +1,17 @@
+### YamlMime:TSTypeAlias
+name: WorkflowVersion
+uid: '@azure/arm-logic.WorkflowVersion|stable'
+package: '@azure/arm-logic|stable'
+summary: The workflow version.
+fullName: WorkflowVersion
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type WorkflowVersion = Resource & { accessControl?:
+  FlowAccessControlConfiguration, accessEndpoint?: undefined | string,
+  changedTime?: Date, createdTime?: Date, definition?: Record<string, unknown>,
+  endpointsConfiguration?: FlowEndpointsConfiguration, integrationAccount?:
+  ResourceReference, parameters?: undefined | [key: string]: WorkflowParameter,
+  provisioningState?: WorkflowProvisioningState, sku?: Sku, state?:
+  WorkflowState, version?: undefined | string }

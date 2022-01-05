@@ -1,0 +1,94 @@
+### YamlMime:TSType
+name: PostArgsMatchConditionParameters
+uid: '@azure/arm-cdn.PostArgsMatchConditionParameters|stable'
+package: '@azure/arm-cdn|stable'
+summary: Defines the parameters for PostArgs match conditions
+fullName: PostArgsMatchConditionParameters
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: matchValues
+    uid: '@azure/arm-cdn.PostArgsMatchConditionParameters.matchValues|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: The match value for the condition of the delivery rule
+    fullName: matchValues
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'matchValues?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: negateCondition
+    uid: '@azure/arm-cdn.PostArgsMatchConditionParameters.negateCondition|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: Describes if this is negate condition or not
+    fullName: negateCondition
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'negateCondition?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true
+  - name: odataType
+    uid: '@azure/arm-cdn.PostArgsMatchConditionParameters.odataType|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: ''
+    fullName: odataType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        odataType:
+        "#Microsoft.Azure.Cdn.Models.DeliveryRulePostArgsConditionParameters"
+      return:
+        description: ''
+        type: >-
+          "#<xref
+          uid="Microsoft.Azure.Cdn.Models.DeliveryRulePostArgsConditionParameters|stable"
+          />"
+  - name: operator
+    uid: '@azure/arm-cdn.PostArgsMatchConditionParameters.operator|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: Describes operator to be matched
+    fullName: operator
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'operator: PostArgsOperator'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-cdn.PostArgsOperator|stable" />
+  - name: selector
+    uid: '@azure/arm-cdn.PostArgsMatchConditionParameters.selector|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: Name of PostArg to be matched
+    fullName: selector
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'selector?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: transforms
+    uid: '@azure/arm-cdn.PostArgsMatchConditionParameters.transforms|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: List of transforms
+    fullName: transforms
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'transforms?: Transform[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-cdn.Transform|stable" />[]

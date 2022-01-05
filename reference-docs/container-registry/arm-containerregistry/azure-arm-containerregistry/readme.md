@@ -2,7 +2,7 @@
 title: Azure SDK for JavaScript - Container Registry User Guide
 description: 
 ms.topic: reference
-ms.date: 12/14/2021
+ms.date: 01/05/2022
 ms.service: container-registry
 ms.role: developer
 ms.devlang: javascript
@@ -64,6 +64,10 @@ const { DefaultAzureCredential } = require("@azure/identity");
 const subscriptionId = "00000000-0000-0000-0000-000000000000";
 const client = new ContainerRegistryManagementClient(new DefaultAzureCredential(), subscriptionId);
 ```
+
+
+### JavaScript Bundle
+To use this client library in the browser, first you need to use a bundler. For details on how to do this, please refer to our [bundling documentation](https://aka.ms/AzureSDKBundling).
 
 ## Key concepts
 

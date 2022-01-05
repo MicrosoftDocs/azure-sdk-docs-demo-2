@@ -1,0 +1,574 @@
+### YamlMime:TSType
+name: MySQLManagementClient
+uid: '@azure/arm-mysql.MySQLManagementClient|stable'
+package: '@azure/arm-mysql|stable'
+summary: ''
+fullName: MySQLManagementClient
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: >-
+      MySQLManagementClient(TokenCredential, string,
+      MySQLManagementClientOptionalParams)
+    uid: '@azure/arm-mysql.MySQLManagementClient.constructor|stable'
+    package: '@azure/arm-mysql|stable'
+    summary: Initializes a new instance of the MySQLManagementClient class.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        new MySQLManagementClient(credentials: TokenCredential, subscriptionId:
+        string, options?: MySQLManagementClientOptionalParams)
+      parameters:
+        - id: credentials
+          type: TokenCredential
+          description: >-
+            Subscription credentials which uniquely identify client
+            subscription.
+        - id: subscriptionId
+          type: string
+          description: The ID of the target subscription.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mysql.MySQLManagementClientOptionalParams|stable" />
+          description: |
+            The parameter options
+properties:
+  - name: $host
+    uid: '@azure/arm-mysql.MySQLManagementClient.$host|stable'
+    package: '@azure/arm-mysql|stable'
+    summary: ''
+    fullName: $host
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$host: string'
+      return:
+        description: ''
+        type: string
+  - name: advisors
+    uid: '@azure/arm-mysql.MySQLManagementClient.advisors|stable'
+    package: '@azure/arm-mysql|stable'
+    summary: ''
+    fullName: advisors
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'advisors: Advisors'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mysql.Advisors|stable" />
+  - name: checkNameAvailability
+    uid: '@azure/arm-mysql.MySQLManagementClient.checkNameAvailability|stable'
+    package: '@azure/arm-mysql|stable'
+    summary: ''
+    fullName: checkNameAvailability
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'checkNameAvailability: CheckNameAvailability'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mysql.CheckNameAvailability|stable" />
+  - name: configurations
+    uid: '@azure/arm-mysql.MySQLManagementClient.configurations|stable'
+    package: '@azure/arm-mysql|stable'
+    summary: ''
+    fullName: configurations
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'configurations: Configurations'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mysql.Configurations|stable" />
+  - name: databases
+    uid: '@azure/arm-mysql.MySQLManagementClient.databases|stable'
+    package: '@azure/arm-mysql|stable'
+    summary: ''
+    fullName: databases
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'databases: Databases'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mysql.Databases|stable" />
+  - name: firewallRules
+    uid: '@azure/arm-mysql.MySQLManagementClient.firewallRules|stable'
+    package: '@azure/arm-mysql|stable'
+    summary: ''
+    fullName: firewallRules
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'firewallRules: FirewallRules'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mysql.FirewallRules|stable" />
+  - name: locationBasedPerformanceTier
+    uid: '@azure/arm-mysql.MySQLManagementClient.locationBasedPerformanceTier|stable'
+    package: '@azure/arm-mysql|stable'
+    summary: ''
+    fullName: locationBasedPerformanceTier
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'locationBasedPerformanceTier: LocationBasedPerformanceTier'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mysql.LocationBasedPerformanceTier|stable" />
+  - name: locationBasedRecommendedActionSessionsOperationStatus
+    uid: >-
+      @azure/arm-mysql.MySQLManagementClient.locationBasedRecommendedActionSessionsOperationStatus|stable
+    package: '@azure/arm-mysql|stable'
+    summary: ''
+    fullName: locationBasedRecommendedActionSessionsOperationStatus
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        locationBasedRecommendedActionSessionsOperationStatus:
+        LocationBasedRecommendedActionSessionsOperationStatus
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-mysql.LocationBasedRecommendedActionSessionsOperationStatus|stable"
+          />
+  - name: locationBasedRecommendedActionSessionsResult
+    uid: >-
+      @azure/arm-mysql.MySQLManagementClient.locationBasedRecommendedActionSessionsResult|stable
+    package: '@azure/arm-mysql|stable'
+    summary: ''
+    fullName: locationBasedRecommendedActionSessionsResult
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        locationBasedRecommendedActionSessionsResult:
+        LocationBasedRecommendedActionSessionsResult
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-mysql.LocationBasedRecommendedActionSessionsResult|stable"
+          />
+  - name: logFiles
+    uid: '@azure/arm-mysql.MySQLManagementClient.logFiles|stable'
+    package: '@azure/arm-mysql|stable'
+    summary: ''
+    fullName: logFiles
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'logFiles: LogFiles'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mysql.LogFiles|stable" />
+  - name: operations
+    uid: '@azure/arm-mysql.MySQLManagementClient.operations|stable'
+    package: '@azure/arm-mysql|stable'
+    summary: ''
+    fullName: operations
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'operations: Operations'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mysql.Operations|stable" />
+  - name: pipeline
+    uid: '@azure/arm-mysql.MySQLManagementClient.pipeline|stable'
+    package: '@azure/arm-mysql|stable'
+    summary: The pipeline used by this client to make requests
+    fullName: pipeline
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'pipeline: Pipeline'
+      return:
+        description: ''
+        type: Pipeline
+  - name: privateEndpointConnections
+    uid: '@azure/arm-mysql.MySQLManagementClient.privateEndpointConnections|stable'
+    package: '@azure/arm-mysql|stable'
+    summary: ''
+    fullName: privateEndpointConnections
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'privateEndpointConnections: PrivateEndpointConnections'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mysql.PrivateEndpointConnections|stable" />
+  - name: privateLinkResources
+    uid: '@azure/arm-mysql.MySQLManagementClient.privateLinkResources|stable'
+    package: '@azure/arm-mysql|stable'
+    summary: ''
+    fullName: privateLinkResources
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'privateLinkResources: PrivateLinkResources'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mysql.PrivateLinkResources|stable" />
+  - name: queryTexts
+    uid: '@azure/arm-mysql.MySQLManagementClient.queryTexts|stable'
+    package: '@azure/arm-mysql|stable'
+    summary: ''
+    fullName: queryTexts
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'queryTexts: QueryTexts'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mysql.QueryTexts|stable" />
+  - name: recommendedActions
+    uid: '@azure/arm-mysql.MySQLManagementClient.recommendedActions|stable'
+    package: '@azure/arm-mysql|stable'
+    summary: ''
+    fullName: recommendedActions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'recommendedActions: RecommendedActions'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mysql.RecommendedActions|stable" />
+  - name: recoverableServers
+    uid: '@azure/arm-mysql.MySQLManagementClient.recoverableServers|stable'
+    package: '@azure/arm-mysql|stable'
+    summary: ''
+    fullName: recoverableServers
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'recoverableServers: RecoverableServers'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mysql.RecoverableServers|stable" />
+  - name: replicas
+    uid: '@azure/arm-mysql.MySQLManagementClient.replicas|stable'
+    package: '@azure/arm-mysql|stable'
+    summary: ''
+    fullName: replicas
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'replicas: Replicas'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mysql.Replicas|stable" />
+  - name: serverAdministrators
+    uid: '@azure/arm-mysql.MySQLManagementClient.serverAdministrators|stable'
+    package: '@azure/arm-mysql|stable'
+    summary: ''
+    fullName: serverAdministrators
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'serverAdministrators: ServerAdministrators'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mysql.ServerAdministrators|stable" />
+  - name: serverBasedPerformanceTier
+    uid: '@azure/arm-mysql.MySQLManagementClient.serverBasedPerformanceTier|stable'
+    package: '@azure/arm-mysql|stable'
+    summary: ''
+    fullName: serverBasedPerformanceTier
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'serverBasedPerformanceTier: ServerBasedPerformanceTier'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mysql.ServerBasedPerformanceTier|stable" />
+  - name: serverKeys
+    uid: '@azure/arm-mysql.MySQLManagementClient.serverKeys|stable'
+    package: '@azure/arm-mysql|stable'
+    summary: ''
+    fullName: serverKeys
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'serverKeys: ServerKeys'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mysql.ServerKeys|stable" />
+  - name: serverParameters
+    uid: '@azure/arm-mysql.MySQLManagementClient.serverParameters|stable'
+    package: '@azure/arm-mysql|stable'
+    summary: ''
+    fullName: serverParameters
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'serverParameters: ServerParameters'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mysql.ServerParameters|stable" />
+  - name: servers
+    uid: '@azure/arm-mysql.MySQLManagementClient.servers|stable'
+    package: '@azure/arm-mysql|stable'
+    summary: ''
+    fullName: servers
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'servers: Servers'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mysql.Servers|stable" />
+  - name: serverSecurityAlertPolicies
+    uid: '@azure/arm-mysql.MySQLManagementClient.serverSecurityAlertPolicies|stable'
+    package: '@azure/arm-mysql|stable'
+    summary: ''
+    fullName: serverSecurityAlertPolicies
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'serverSecurityAlertPolicies: ServerSecurityAlertPolicies'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mysql.ServerSecurityAlertPolicies|stable" />
+  - name: subscriptionId
+    uid: '@azure/arm-mysql.MySQLManagementClient.subscriptionId|stable'
+    package: '@azure/arm-mysql|stable'
+    summary: ''
+    fullName: subscriptionId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'subscriptionId: string'
+      return:
+        description: ''
+        type: string
+  - name: topQueryStatistics
+    uid: '@azure/arm-mysql.MySQLManagementClient.topQueryStatistics|stable'
+    package: '@azure/arm-mysql|stable'
+    summary: ''
+    fullName: topQueryStatistics
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'topQueryStatistics: TopQueryStatistics'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mysql.TopQueryStatistics|stable" />
+  - name: virtualNetworkRules
+    uid: '@azure/arm-mysql.MySQLManagementClient.virtualNetworkRules|stable'
+    package: '@azure/arm-mysql|stable'
+    summary: ''
+    fullName: virtualNetworkRules
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'virtualNetworkRules: VirtualNetworkRules'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mysql.VirtualNetworkRules|stable" />
+  - name: waitStatistics
+    uid: '@azure/arm-mysql.MySQLManagementClient.waitStatistics|stable'
+    package: '@azure/arm-mysql|stable'
+    summary: ''
+    fullName: waitStatistics
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'waitStatistics: WaitStatistics'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mysql.WaitStatistics|stable" />
+inheritedMethods:
+  - name: sendOperationRequest<T>(OperationArguments, OperationSpec)
+    uid: '@azure/arm-mysql.MySQLManagementClient.sendOperationRequest'
+    package: '@azure/arm-mysql'
+    summary: Send an HTTP request that is populated using the provided OperationSpec.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function sendOperationRequest<T>(operationArguments: OperationArguments,
+        operationSpec: OperationSpec): Promise<T>
+      parameters:
+        - id: operationArguments
+          type: OperationArguments
+          description: >-
+            The arguments that the HTTP request's templated values will be
+            populated from.
+        - id: operationSpec
+          type: OperationSpec
+          description: |
+            The OperationSpec to use to populate the httpRequest.
+      return:
+        description: ''
+        type: Promise&lt;T&gt;
+  - name: sendRequest(PipelineRequest)
+    uid: '@azure/arm-mysql.MySQLManagementClient.sendRequest'
+    package: '@azure/arm-mysql'
+    summary: Send the provided httpRequest.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function sendRequest(request: PipelineRequest):
+        Promise<PipelineResponse>
+      parameters:
+        - id: request
+          type: PipelineRequest
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;PipelineResponse&gt;
+methods:
+  - name: >-
+      beginCreateRecommendedActionSession(string, string, string, string,
+      CreateRecommendedActionSessionOptionalParams)
+    uid: >-
+      @azure/arm-mysql.MySQLManagementClient.beginCreateRecommendedActionSession|stable
+    package: '@azure/arm-mysql|stable'
+    summary: Create recommendation action session for the advisor.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateRecommendedActionSession(resourceGroupName: string,
+        serverName: string, advisorName: string, databaseName: string, options?:
+        CreateRecommendedActionSessionOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: serverName
+          type: string
+          description: The name of the server.
+        - id: advisorName
+          type: string
+          description: The advisor name for recommendation action.
+        - id: databaseName
+          type: string
+          description: The name of the database.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mysql.CreateRecommendedActionSessionOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: >-
+      beginCreateRecommendedActionSessionAndWait(string, string, string, string,
+      CreateRecommendedActionSessionOptionalParams)
+    uid: >-
+      @azure/arm-mysql.MySQLManagementClient.beginCreateRecommendedActionSessionAndWait|stable
+    package: '@azure/arm-mysql|stable'
+    summary: Create recommendation action session for the advisor.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateRecommendedActionSessionAndWait(resourceGroupName:
+        string, serverName: string, advisorName: string, databaseName: string,
+        options?: CreateRecommendedActionSessionOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: serverName
+          type: string
+          description: The name of the server.
+        - id: advisorName
+          type: string
+          description: The advisor name for recommendation action.
+        - id: databaseName
+          type: string
+          description: The name of the database.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mysql.CreateRecommendedActionSessionOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      resetQueryPerformanceInsightData(string, string,
+      ResetQueryPerformanceInsightDataOptionalParams)
+    uid: >-
+      @azure/arm-mysql.MySQLManagementClient.resetQueryPerformanceInsightData|stable
+    package: '@azure/arm-mysql|stable'
+    summary: Reset data for Query Performance Insight.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function resetQueryPerformanceInsightData(resourceGroupName: string,
+        serverName: string, options?:
+        ResetQueryPerformanceInsightDataOptionalParams):
+        Promise<ResetQueryPerformanceInsightDataResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: serverName
+          type: string
+          description: The name of the server.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mysql.ResetQueryPerformanceInsightDataOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-mysql.ResetQueryPerformanceInsightDataResponse|stable"
+          />&gt;
+extends: ServiceClient

@@ -1,0 +1,39 @@
+### YamlMime:TSType
+name: DataFlowDebugResultResponse
+uid: '@azure/synapse-artifacts.DataFlowDebugResultResponse|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: >-
+  Response body structure of data flow result for data preview, statistics or
+  expression preview.
+fullName: DataFlowDebugResultResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: data
+    uid: '@azure/synapse-artifacts.DataFlowDebugResultResponse.data|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: The result data of data preview, statistics or expression preview.
+    fullName: data
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'data?: string'
+      return:
+        description: ''
+        type: string
+  - name: status
+    uid: '@azure/synapse-artifacts.DataFlowDebugResultResponse.status|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: The run status of data preview, statistics or expression preview.
+    fullName: status
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'status?: string'
+      return:
+        description: ''
+        type: string

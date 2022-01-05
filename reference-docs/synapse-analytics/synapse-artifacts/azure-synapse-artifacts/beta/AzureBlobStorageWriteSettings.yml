@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: AzureBlobStorageWriteSettings
+uid: '@azure/synapse-artifacts.AzureBlobStorageWriteSettings|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: Azure blob write settings.
+fullName: AzureBlobStorageWriteSettings
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type AzureBlobStorageWriteSettings = StoreWriteSettings & { blockSizeInMB?:
+  any, type: "AzureBlobStorageWriteSettings" }

@@ -1,0 +1,39 @@
+### YamlMime:TSType
+name: PortalSettingsCollection
+uid: '@azure/arm-apimanagement.PortalSettingsCollection|stable'
+package: '@azure/arm-apimanagement|stable'
+summary: Descriptions of APIM policies.
+fullName: PortalSettingsCollection
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: count
+    uid: '@azure/arm-apimanagement.PortalSettingsCollection.count|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: Total record count number.
+    fullName: count
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'count?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: value
+    uid: '@azure/arm-apimanagement.PortalSettingsCollection.value|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: Descriptions of APIM policies.
+    fullName: value
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: PortalSettingsContract[]'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/arm-apimanagement.PortalSettingsContract|stable"
+          />[]

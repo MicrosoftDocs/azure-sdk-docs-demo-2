@@ -1,0 +1,2650 @@
+### YamlMime:TSPackage
+uid: '@azure/arm-network|stable'
+name: '@azure/arm-network (26.0.0 - Stable)'
+summary: ''
+type: package
+enums:
+  - '@azure/arm-network.KnownAccess|stable'
+  - '@azure/arm-network.KnownApplicationGatewayBackendHealthServerHealth|stable'
+  - '@azure/arm-network.KnownApplicationGatewayCookieBasedAffinity|stable'
+  - '@azure/arm-network.KnownApplicationGatewayCustomErrorStatusCode|stable'
+  - '@azure/arm-network.KnownApplicationGatewayFirewallMode|stable'
+  - '@azure/arm-network.KnownApplicationGatewayLoadDistributionAlgorithm|stable'
+  - '@azure/arm-network.KnownApplicationGatewayOperationalState|stable'
+  - '@azure/arm-network.KnownApplicationGatewayProtocol|stable'
+  - '@azure/arm-network.KnownApplicationGatewayRedirectType|stable'
+  - '@azure/arm-network.KnownApplicationGatewayRequestRoutingRuleType|stable'
+  - '@azure/arm-network.KnownApplicationGatewaySkuName|stable'
+  - '@azure/arm-network.KnownApplicationGatewaySslCipherSuite|stable'
+  - '@azure/arm-network.KnownApplicationGatewaySslPolicyName|stable'
+  - '@azure/arm-network.KnownApplicationGatewaySslPolicyType|stable'
+  - '@azure/arm-network.KnownApplicationGatewaySslProtocol|stable'
+  - '@azure/arm-network.KnownApplicationGatewayTier|stable'
+  - '@azure/arm-network.KnownAssociationType|stable'
+  - '@azure/arm-network.KnownAuthenticationMethod|stable'
+  - '@azure/arm-network.KnownAuthorizationUseStatus|stable'
+  - '@azure/arm-network.KnownAzureFirewallApplicationRuleProtocolType|stable'
+  - '@azure/arm-network.KnownAzureFirewallNatRCActionType|stable'
+  - '@azure/arm-network.KnownAzureFirewallNetworkRuleProtocol|stable'
+  - '@azure/arm-network.KnownAzureFirewallRCActionType|stable'
+  - '@azure/arm-network.KnownAzureFirewallSkuName|stable'
+  - '@azure/arm-network.KnownAzureFirewallSkuTier|stable'
+  - '@azure/arm-network.KnownAzureFirewallThreatIntelMode|stable'
+  - '@azure/arm-network.KnownBastionConnectProtocol|stable'
+  - '@azure/arm-network.KnownBastionHostSkuName|stable'
+  - '@azure/arm-network.KnownBgpPeerState|stable'
+  - '@azure/arm-network.KnownCircuitConnectionStatus|stable'
+  - '@azure/arm-network.KnownCommissionedState|stable'
+  - '@azure/arm-network.KnownConnectionMonitorEndpointFilterItemType|stable'
+  - '@azure/arm-network.KnownConnectionMonitorEndpointFilterType|stable'
+  - '@azure/arm-network.KnownConnectionMonitorSourceStatus|stable'
+  - '@azure/arm-network.KnownConnectionMonitorTestConfigurationProtocol|stable'
+  - '@azure/arm-network.KnownConnectionMonitorType|stable'
+  - '@azure/arm-network.KnownConnectionState|stable'
+  - '@azure/arm-network.KnownConnectionStatus|stable'
+  - '@azure/arm-network.KnownCoverageLevel|stable'
+  - '@azure/arm-network.KnownDdosCustomPolicyProtocol|stable'
+  - '@azure/arm-network.KnownDdosCustomPolicyTriggerSensitivityOverride|stable'
+  - '@azure/arm-network.KnownDdosSettingsProtectionCoverage|stable'
+  - '@azure/arm-network.KnownDeleteOptions|stable'
+  - '@azure/arm-network.KnownDestinationPortBehavior|stable'
+  - '@azure/arm-network.KnownDhGroup|stable'
+  - '@azure/arm-network.KnownDirection|stable'
+  - '@azure/arm-network.KnownEffectiveRouteSource|stable'
+  - '@azure/arm-network.KnownEffectiveRouteState|stable'
+  - '@azure/arm-network.KnownEffectiveSecurityRuleProtocol|stable'
+  - '@azure/arm-network.KnownEndpointType|stable'
+  - '@azure/arm-network.KnownEnum69|stable'
+  - '@azure/arm-network.KnownEnum70|stable'
+  - '@azure/arm-network.KnownEnum71|stable'
+  - '@azure/arm-network.KnownEvaluationState|stable'
+  - >-
+    @azure/arm-network.KnownExpressRouteCircuitPeeringAdvertisedPublicPrefixState|stable
+  - '@azure/arm-network.KnownExpressRouteCircuitPeeringState|stable'
+  - '@azure/arm-network.KnownExpressRouteCircuitSkuFamily|stable'
+  - '@azure/arm-network.KnownExpressRouteCircuitSkuTier|stable'
+  - '@azure/arm-network.KnownExpressRouteLinkAdminState|stable'
+  - '@azure/arm-network.KnownExpressRouteLinkConnectorType|stable'
+  - '@azure/arm-network.KnownExpressRouteLinkMacSecCipher|stable'
+  - '@azure/arm-network.KnownExpressRouteLinkMacSecSciState|stable'
+  - '@azure/arm-network.KnownExpressRoutePeeringState|stable'
+  - '@azure/arm-network.KnownExpressRoutePeeringType|stable'
+  - '@azure/arm-network.KnownExpressRoutePortsEncapsulation|stable'
+  - '@azure/arm-network.KnownExtendedLocationTypes|stable'
+  - '@azure/arm-network.KnownFirewallPolicyFilterRuleCollectionActionType|stable'
+  - '@azure/arm-network.KnownFirewallPolicyIntrusionDetectionProtocol|stable'
+  - '@azure/arm-network.KnownFirewallPolicyIntrusionDetectionStateType|stable'
+  - '@azure/arm-network.KnownFirewallPolicyNatRuleCollectionActionType|stable'
+  - '@azure/arm-network.KnownFirewallPolicyRuleApplicationProtocolType|stable'
+  - '@azure/arm-network.KnownFirewallPolicyRuleCollectionType|stable'
+  - '@azure/arm-network.KnownFirewallPolicyRuleNetworkProtocol|stable'
+  - '@azure/arm-network.KnownFirewallPolicyRuleType|stable'
+  - '@azure/arm-network.KnownFirewallPolicySkuTier|stable'
+  - '@azure/arm-network.KnownFlowLogFormatType|stable'
+  - '@azure/arm-network.KnownGatewayLoadBalancerTunnelInterfaceType|stable'
+  - '@azure/arm-network.KnownGatewayLoadBalancerTunnelProtocol|stable'
+  - '@azure/arm-network.KnownHttpConfigurationMethod|stable'
+  - '@azure/arm-network.KnownHttpMethod|stable'
+  - '@azure/arm-network.KnownHubBgpConnectionStatus|stable'
+  - '@azure/arm-network.KnownHubVirtualNetworkConnectionStatus|stable'
+  - '@azure/arm-network.KnownIPAllocationMethod|stable'
+  - '@azure/arm-network.KnownIPVersion|stable'
+  - '@azure/arm-network.KnownIkeEncryption|stable'
+  - '@azure/arm-network.KnownIkeIntegrity|stable'
+  - '@azure/arm-network.KnownInboundSecurityRulesProtocol|stable'
+  - '@azure/arm-network.KnownIpAllocationType|stable'
+  - '@azure/arm-network.KnownIpFlowProtocol|stable'
+  - '@azure/arm-network.KnownIpsecEncryption|stable'
+  - '@azure/arm-network.KnownIpsecIntegrity|stable'
+  - '@azure/arm-network.KnownIssueType|stable'
+  - '@azure/arm-network.KnownLoadBalancerOutboundRuleProtocol|stable'
+  - '@azure/arm-network.KnownLoadBalancerSkuName|stable'
+  - '@azure/arm-network.KnownLoadBalancerSkuTier|stable'
+  - '@azure/arm-network.KnownLoadDistribution|stable'
+  - '@azure/arm-network.KnownManagedRuleEnabledState|stable'
+  - '@azure/arm-network.KnownNatGatewaySkuName|stable'
+  - '@azure/arm-network.KnownNetworkInterfaceMigrationPhase|stable'
+  - '@azure/arm-network.KnownNetworkInterfaceNicType|stable'
+  - '@azure/arm-network.KnownNetworkOperationStatus|stable'
+  - '@azure/arm-network.KnownNextHopType|stable'
+  - '@azure/arm-network.KnownOfficeTrafficCategory|stable'
+  - '@azure/arm-network.KnownOrderByOrder|stable'
+  - '@azure/arm-network.KnownOrigin|stable'
+  - '@azure/arm-network.KnownOutputType|stable'
+  - '@azure/arm-network.KnownOwaspCrsExclusionEntryMatchVariable|stable'
+  - '@azure/arm-network.KnownOwaspCrsExclusionEntrySelectorMatchOperator|stable'
+  - '@azure/arm-network.KnownPcError|stable'
+  - '@azure/arm-network.KnownPcProtocol|stable'
+  - '@azure/arm-network.KnownPcStatus|stable'
+  - '@azure/arm-network.KnownPfsGroup|stable'
+  - '@azure/arm-network.KnownPreferredIPVersion|stable'
+  - '@azure/arm-network.KnownPreferredRoutingGateway|stable'
+  - '@azure/arm-network.KnownProbeProtocol|stable'
+  - '@azure/arm-network.KnownProcessorArchitecture|stable'
+  - '@azure/arm-network.KnownProtocol|stable'
+  - '@azure/arm-network.KnownProtocolType|stable'
+  - '@azure/arm-network.KnownProvisioningState|stable'
+  - '@azure/arm-network.KnownPublicIPAddressMigrationPhase|stable'
+  - '@azure/arm-network.KnownPublicIPAddressSkuName|stable'
+  - '@azure/arm-network.KnownPublicIPAddressSkuTier|stable'
+  - '@azure/arm-network.KnownPublicIPPrefixSkuName|stable'
+  - '@azure/arm-network.KnownPublicIPPrefixSkuTier|stable'
+  - '@azure/arm-network.KnownRouteFilterRuleType|stable'
+  - '@azure/arm-network.KnownRouteNextHopType|stable'
+  - '@azure/arm-network.KnownRoutingState|stable'
+  - '@azure/arm-network.KnownSecurityPartnerProviderConnectionStatus|stable'
+  - '@azure/arm-network.KnownSecurityProviderName|stable'
+  - '@azure/arm-network.KnownSecurityRuleAccess|stable'
+  - '@azure/arm-network.KnownSecurityRuleDirection|stable'
+  - '@azure/arm-network.KnownSecurityRuleProtocol|stable'
+  - '@azure/arm-network.KnownServiceProviderProvisioningState|stable'
+  - '@azure/arm-network.KnownSeverity|stable'
+  - '@azure/arm-network.KnownSyncRemoteAddressSpace|stable'
+  - '@azure/arm-network.KnownTransportProtocol|stable'
+  - '@azure/arm-network.KnownTunnelConnectionStatus|stable'
+  - '@azure/arm-network.KnownUsageUnit|stable'
+  - '@azure/arm-network.KnownVerbosityLevel|stable'
+  - '@azure/arm-network.KnownVirtualNetworkEncryptionEnforcement|stable'
+  - '@azure/arm-network.KnownVirtualNetworkGatewayConnectionMode|stable'
+  - '@azure/arm-network.KnownVirtualNetworkGatewayConnectionProtocol|stable'
+  - '@azure/arm-network.KnownVirtualNetworkGatewayConnectionStatus|stable'
+  - '@azure/arm-network.KnownVirtualNetworkGatewayConnectionType|stable'
+  - '@azure/arm-network.KnownVirtualNetworkGatewaySkuName|stable'
+  - '@azure/arm-network.KnownVirtualNetworkGatewaySkuTier|stable'
+  - '@azure/arm-network.KnownVirtualNetworkGatewayType|stable'
+  - '@azure/arm-network.KnownVirtualNetworkPeeringLevel|stable'
+  - '@azure/arm-network.KnownVirtualNetworkPeeringState|stable'
+  - '@azure/arm-network.KnownVirtualNetworkPrivateEndpointNetworkPolicies|stable'
+  - >-
+    @azure/arm-network.KnownVirtualNetworkPrivateLinkServiceNetworkPolicies|stable
+  - '@azure/arm-network.KnownVirtualWanSecurityProviderType|stable'
+  - '@azure/arm-network.KnownVpnAuthenticationType|stable'
+  - '@azure/arm-network.KnownVpnClientProtocol|stable'
+  - '@azure/arm-network.KnownVpnConnectionStatus|stable'
+  - '@azure/arm-network.KnownVpnGatewayGeneration|stable'
+  - '@azure/arm-network.KnownVpnGatewayTunnelingProtocol|stable'
+  - '@azure/arm-network.KnownVpnLinkConnectionMode|stable'
+  - '@azure/arm-network.KnownVpnNatRuleMode|stable'
+  - '@azure/arm-network.KnownVpnNatRuleType|stable'
+  - '@azure/arm-network.KnownVpnType|stable'
+  - '@azure/arm-network.KnownWebApplicationFirewallAction|stable'
+  - '@azure/arm-network.KnownWebApplicationFirewallEnabledState|stable'
+  - '@azure/arm-network.KnownWebApplicationFirewallMatchVariable|stable'
+  - '@azure/arm-network.KnownWebApplicationFirewallMode|stable'
+  - '@azure/arm-network.KnownWebApplicationFirewallOperator|stable'
+  - '@azure/arm-network.KnownWebApplicationFirewallPolicyResourceState|stable'
+  - '@azure/arm-network.KnownWebApplicationFirewallRuleType|stable'
+  - '@azure/arm-network.KnownWebApplicationFirewallTransform|stable'
+classes:
+  - '@azure/arm-network.NetworkManagementClient|stable'
+interfaces:
+  - '@azure/arm-network.AadAuthenticationParameters|stable'
+  - '@azure/arm-network.AddressSpace|stable'
+  - '@azure/arm-network.ApplicationGatewayAutoscaleConfiguration|stable'
+  - '@azure/arm-network.ApplicationGatewayAvailableSslPredefinedPolicies|stable'
+  - '@azure/arm-network.ApplicationGatewayAvailableWafRuleSetsResult|stable'
+  - '@azure/arm-network.ApplicationGatewayBackendAddress|stable'
+  - '@azure/arm-network.ApplicationGatewayBackendHealth|stable'
+  - '@azure/arm-network.ApplicationGatewayBackendHealthHttpSettings|stable'
+  - '@azure/arm-network.ApplicationGatewayBackendHealthOnDemand|stable'
+  - '@azure/arm-network.ApplicationGatewayBackendHealthPool|stable'
+  - '@azure/arm-network.ApplicationGatewayBackendHealthServer|stable'
+  - '@azure/arm-network.ApplicationGatewayClientAuthConfiguration|stable'
+  - '@azure/arm-network.ApplicationGatewayConnectionDraining|stable'
+  - '@azure/arm-network.ApplicationGatewayCustomError|stable'
+  - '@azure/arm-network.ApplicationGatewayFirewallDisabledRuleGroup|stable'
+  - '@azure/arm-network.ApplicationGatewayFirewallExclusion|stable'
+  - '@azure/arm-network.ApplicationGatewayFirewallRule|stable'
+  - '@azure/arm-network.ApplicationGatewayFirewallRuleGroup|stable'
+  - '@azure/arm-network.ApplicationGatewayGlobalConfiguration|stable'
+  - '@azure/arm-network.ApplicationGatewayHeaderConfiguration|stable'
+  - '@azure/arm-network.ApplicationGatewayListResult|stable'
+  - '@azure/arm-network.ApplicationGatewayOnDemandProbe|stable'
+  - >-
+    @azure/arm-network.ApplicationGatewayPrivateEndpointConnectionListResult|stable
+  - '@azure/arm-network.ApplicationGatewayPrivateEndpointConnections|stable'
+  - >-
+    @azure/arm-network.ApplicationGatewayPrivateEndpointConnectionsDeleteOptionalParams|stable
+  - >-
+    @azure/arm-network.ApplicationGatewayPrivateEndpointConnectionsGetOptionalParams|stable
+  - >-
+    @azure/arm-network.ApplicationGatewayPrivateEndpointConnectionsListNextOptionalParams|stable
+  - >-
+    @azure/arm-network.ApplicationGatewayPrivateEndpointConnectionsListOptionalParams|stable
+  - >-
+    @azure/arm-network.ApplicationGatewayPrivateEndpointConnectionsUpdateOptionalParams|stable
+  - '@azure/arm-network.ApplicationGatewayPrivateLinkResourceListResult|stable'
+  - '@azure/arm-network.ApplicationGatewayPrivateLinkResources|stable'
+  - >-
+    @azure/arm-network.ApplicationGatewayPrivateLinkResourcesListNextOptionalParams|stable
+  - >-
+    @azure/arm-network.ApplicationGatewayPrivateLinkResourcesListOptionalParams|stable
+  - '@azure/arm-network.ApplicationGatewayProbeHealthResponseMatch|stable'
+  - '@azure/arm-network.ApplicationGatewayRewriteRule|stable'
+  - '@azure/arm-network.ApplicationGatewayRewriteRuleActionSet|stable'
+  - '@azure/arm-network.ApplicationGatewayRewriteRuleCondition|stable'
+  - '@azure/arm-network.ApplicationGatewaySku|stable'
+  - '@azure/arm-network.ApplicationGatewaySslPolicy|stable'
+  - '@azure/arm-network.ApplicationGatewayUrlConfiguration|stable'
+  - >-
+    @azure/arm-network.ApplicationGatewayWebApplicationFirewallConfiguration|stable
+  - '@azure/arm-network.ApplicationGateways|stable'
+  - >-
+    @azure/arm-network.ApplicationGatewaysBackendHealthOnDemandOptionalParams|stable
+  - '@azure/arm-network.ApplicationGatewaysBackendHealthOptionalParams|stable'
+  - '@azure/arm-network.ApplicationGatewaysCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.ApplicationGatewaysDeleteOptionalParams|stable'
+  - '@azure/arm-network.ApplicationGatewaysGetOptionalParams|stable'
+  - >-
+    @azure/arm-network.ApplicationGatewaysGetSslPredefinedPolicyOptionalParams|stable
+  - '@azure/arm-network.ApplicationGatewaysListAllNextOptionalParams|stable'
+  - '@azure/arm-network.ApplicationGatewaysListAllOptionalParams|stable'
+  - >-
+    @azure/arm-network.ApplicationGatewaysListAvailableRequestHeadersOptionalParams|stable
+  - >-
+    @azure/arm-network.ApplicationGatewaysListAvailableResponseHeadersOptionalParams|stable
+  - >-
+    @azure/arm-network.ApplicationGatewaysListAvailableServerVariablesOptionalParams|stable
+  - >-
+    @azure/arm-network.ApplicationGatewaysListAvailableSslOptionsOptionalParams|stable
+  - >-
+    @azure/arm-network.ApplicationGatewaysListAvailableSslPredefinedPoliciesNextOptionalParams|stable
+  - >-
+    @azure/arm-network.ApplicationGatewaysListAvailableSslPredefinedPoliciesOptionalParams|stable
+  - >-
+    @azure/arm-network.ApplicationGatewaysListAvailableWafRuleSetsOptionalParams|stable
+  - '@azure/arm-network.ApplicationGatewaysListNextOptionalParams|stable'
+  - '@azure/arm-network.ApplicationGatewaysListOptionalParams|stable'
+  - '@azure/arm-network.ApplicationGatewaysStartOptionalParams|stable'
+  - '@azure/arm-network.ApplicationGatewaysStopOptionalParams|stable'
+  - '@azure/arm-network.ApplicationGatewaysUpdateTagsOptionalParams|stable'
+  - '@azure/arm-network.ApplicationSecurityGroupListResult|stable'
+  - '@azure/arm-network.ApplicationSecurityGroups|stable'
+  - >-
+    @azure/arm-network.ApplicationSecurityGroupsCreateOrUpdateOptionalParams|stable
+  - '@azure/arm-network.ApplicationSecurityGroupsDeleteOptionalParams|stable'
+  - '@azure/arm-network.ApplicationSecurityGroupsGetOptionalParams|stable'
+  - '@azure/arm-network.ApplicationSecurityGroupsListAllNextOptionalParams|stable'
+  - '@azure/arm-network.ApplicationSecurityGroupsListAllOptionalParams|stable'
+  - '@azure/arm-network.ApplicationSecurityGroupsListNextOptionalParams|stable'
+  - '@azure/arm-network.ApplicationSecurityGroupsListOptionalParams|stable'
+  - '@azure/arm-network.ApplicationSecurityGroupsUpdateTagsOptionalParams|stable'
+  - '@azure/arm-network.AuthorizationListResult|stable'
+  - '@azure/arm-network.AutoApprovedPrivateLinkService|stable'
+  - '@azure/arm-network.AutoApprovedPrivateLinkServicesResult|stable'
+  - '@azure/arm-network.Availability|stable'
+  - '@azure/arm-network.AvailableDelegation|stable'
+  - '@azure/arm-network.AvailableDelegations|stable'
+  - '@azure/arm-network.AvailableDelegationsListNextOptionalParams|stable'
+  - '@azure/arm-network.AvailableDelegationsListOptionalParams|stable'
+  - '@azure/arm-network.AvailableDelegationsResult|stable'
+  - '@azure/arm-network.AvailableEndpointServices|stable'
+  - '@azure/arm-network.AvailableEndpointServicesListNextOptionalParams|stable'
+  - '@azure/arm-network.AvailableEndpointServicesListOptionalParams|stable'
+  - '@azure/arm-network.AvailablePrivateEndpointType|stable'
+  - '@azure/arm-network.AvailablePrivateEndpointTypes|stable'
+  - >-
+    @azure/arm-network.AvailablePrivateEndpointTypesListByResourceGroupNextOptionalParams|stable
+  - >-
+    @azure/arm-network.AvailablePrivateEndpointTypesListByResourceGroupOptionalParams|stable
+  - >-
+    @azure/arm-network.AvailablePrivateEndpointTypesListNextOptionalParams|stable
+  - '@azure/arm-network.AvailablePrivateEndpointTypesListOptionalParams|stable'
+  - '@azure/arm-network.AvailablePrivateEndpointTypesResult|stable'
+  - '@azure/arm-network.AvailableProvidersList|stable'
+  - '@azure/arm-network.AvailableProvidersListCity|stable'
+  - '@azure/arm-network.AvailableProvidersListCountry|stable'
+  - '@azure/arm-network.AvailableProvidersListParameters|stable'
+  - '@azure/arm-network.AvailableProvidersListState|stable'
+  - '@azure/arm-network.AvailableResourceGroupDelegations|stable'
+  - >-
+    @azure/arm-network.AvailableResourceGroupDelegationsListNextOptionalParams|stable
+  - >-
+    @azure/arm-network.AvailableResourceGroupDelegationsListOptionalParams|stable
+  - '@azure/arm-network.AvailableServiceAlias|stable'
+  - '@azure/arm-network.AvailableServiceAliases|stable'
+  - >-
+    @azure/arm-network.AvailableServiceAliasesListByResourceGroupNextOptionalParams|stable
+  - >-
+    @azure/arm-network.AvailableServiceAliasesListByResourceGroupOptionalParams|stable
+  - '@azure/arm-network.AvailableServiceAliasesListNextOptionalParams|stable'
+  - '@azure/arm-network.AvailableServiceAliasesListOptionalParams|stable'
+  - '@azure/arm-network.AvailableServiceAliasesResult|stable'
+  - '@azure/arm-network.AzureAsyncOperationResult|stable'
+  - '@azure/arm-network.AzureFirewallApplicationRule|stable'
+  - '@azure/arm-network.AzureFirewallApplicationRuleProtocol|stable'
+  - '@azure/arm-network.AzureFirewallFqdnTagListResult|stable'
+  - '@azure/arm-network.AzureFirewallFqdnTags|stable'
+  - '@azure/arm-network.AzureFirewallFqdnTagsListAllNextOptionalParams|stable'
+  - '@azure/arm-network.AzureFirewallFqdnTagsListAllOptionalParams|stable'
+  - '@azure/arm-network.AzureFirewallIpGroups|stable'
+  - '@azure/arm-network.AzureFirewallListResult|stable'
+  - '@azure/arm-network.AzureFirewallNatRCAction|stable'
+  - '@azure/arm-network.AzureFirewallNatRule|stable'
+  - '@azure/arm-network.AzureFirewallNetworkRule|stable'
+  - '@azure/arm-network.AzureFirewallPublicIPAddress|stable'
+  - '@azure/arm-network.AzureFirewallRCAction|stable'
+  - '@azure/arm-network.AzureFirewallSku|stable'
+  - '@azure/arm-network.AzureFirewalls|stable'
+  - '@azure/arm-network.AzureFirewallsCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.AzureFirewallsDeleteOptionalParams|stable'
+  - '@azure/arm-network.AzureFirewallsGetOptionalParams|stable'
+  - '@azure/arm-network.AzureFirewallsListAllNextOptionalParams|stable'
+  - '@azure/arm-network.AzureFirewallsListAllOptionalParams|stable'
+  - '@azure/arm-network.AzureFirewallsListNextOptionalParams|stable'
+  - '@azure/arm-network.AzureFirewallsListOptionalParams|stable'
+  - '@azure/arm-network.AzureFirewallsUpdateTagsOptionalParams|stable'
+  - '@azure/arm-network.AzureReachabilityReport|stable'
+  - '@azure/arm-network.AzureReachabilityReportItem|stable'
+  - '@azure/arm-network.AzureReachabilityReportLatencyInfo|stable'
+  - '@azure/arm-network.AzureReachabilityReportLocation|stable'
+  - '@azure/arm-network.AzureReachabilityReportParameters|stable'
+  - '@azure/arm-network.AzureWebCategory|stable'
+  - '@azure/arm-network.AzureWebCategoryListResult|stable'
+  - '@azure/arm-network.BGPCommunity|stable'
+  - '@azure/arm-network.BackendAddressInboundNatRulePortMappings|stable'
+  - '@azure/arm-network.BastionActiveSession|stable'
+  - '@azure/arm-network.BastionActiveSessionListResult|stable'
+  - '@azure/arm-network.BastionHostListResult|stable'
+  - '@azure/arm-network.BastionHosts|stable'
+  - '@azure/arm-network.BastionHostsCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.BastionHostsDeleteOptionalParams|stable'
+  - '@azure/arm-network.BastionHostsGetOptionalParams|stable'
+  - '@azure/arm-network.BastionHostsListByResourceGroupNextOptionalParams|stable'
+  - '@azure/arm-network.BastionHostsListByResourceGroupOptionalParams|stable'
+  - '@azure/arm-network.BastionHostsListNextOptionalParams|stable'
+  - '@azure/arm-network.BastionHostsListOptionalParams|stable'
+  - '@azure/arm-network.BastionHostsUpdateTagsOptionalParams|stable'
+  - '@azure/arm-network.BastionSessionDeleteResult|stable'
+  - '@azure/arm-network.BastionSessionState|stable'
+  - '@azure/arm-network.BastionShareableLink|stable'
+  - '@azure/arm-network.BastionShareableLinkListRequest|stable'
+  - '@azure/arm-network.BastionShareableLinkListResult|stable'
+  - '@azure/arm-network.BgpPeerStatus|stable'
+  - '@azure/arm-network.BgpPeerStatusListResult|stable'
+  - '@azure/arm-network.BgpServiceCommunities|stable'
+  - '@azure/arm-network.BgpServiceCommunitiesListNextOptionalParams|stable'
+  - '@azure/arm-network.BgpServiceCommunitiesListOptionalParams|stable'
+  - '@azure/arm-network.BgpServiceCommunityListResult|stable'
+  - '@azure/arm-network.BgpSettings|stable'
+  - '@azure/arm-network.BreakOutCategoryPolicies|stable'
+  - '@azure/arm-network.CheckDnsNameAvailabilityOptionalParams|stable'
+  - '@azure/arm-network.CheckPrivateLinkServiceVisibilityRequest|stable'
+  - '@azure/arm-network.CloudError|stable'
+  - '@azure/arm-network.CloudErrorBody|stable'
+  - >-
+    @azure/arm-network.Components1Jq1T4ISchemasManagedserviceidentityPropertiesUserassignedidentitiesAdditionalproperties|stable
+  - '@azure/arm-network.ConnectionMonitor|stable'
+  - '@azure/arm-network.ConnectionMonitorDestination|stable'
+  - '@azure/arm-network.ConnectionMonitorEndpoint|stable'
+  - '@azure/arm-network.ConnectionMonitorEndpointFilter|stable'
+  - '@azure/arm-network.ConnectionMonitorEndpointFilterItem|stable'
+  - '@azure/arm-network.ConnectionMonitorEndpointScope|stable'
+  - '@azure/arm-network.ConnectionMonitorEndpointScopeItem|stable'
+  - '@azure/arm-network.ConnectionMonitorHttpConfiguration|stable'
+  - '@azure/arm-network.ConnectionMonitorIcmpConfiguration|stable'
+  - '@azure/arm-network.ConnectionMonitorListResult|stable'
+  - '@azure/arm-network.ConnectionMonitorOutput|stable'
+  - '@azure/arm-network.ConnectionMonitorParameters|stable'
+  - '@azure/arm-network.ConnectionMonitorQueryResult|stable'
+  - '@azure/arm-network.ConnectionMonitorResult|stable'
+  - '@azure/arm-network.ConnectionMonitorSource|stable'
+  - '@azure/arm-network.ConnectionMonitorSuccessThreshold|stable'
+  - '@azure/arm-network.ConnectionMonitorTcpConfiguration|stable'
+  - '@azure/arm-network.ConnectionMonitorTestConfiguration|stable'
+  - '@azure/arm-network.ConnectionMonitorTestGroup|stable'
+  - '@azure/arm-network.ConnectionMonitorWorkspaceSettings|stable'
+  - '@azure/arm-network.ConnectionMonitors|stable'
+  - '@azure/arm-network.ConnectionMonitorsCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.ConnectionMonitorsDeleteOptionalParams|stable'
+  - '@azure/arm-network.ConnectionMonitorsGetOptionalParams|stable'
+  - '@azure/arm-network.ConnectionMonitorsListOptionalParams|stable'
+  - '@azure/arm-network.ConnectionMonitorsQueryOptionalParams|stable'
+  - '@azure/arm-network.ConnectionMonitorsStartOptionalParams|stable'
+  - '@azure/arm-network.ConnectionMonitorsStopOptionalParams|stable'
+  - '@azure/arm-network.ConnectionMonitorsUpdateTagsOptionalParams|stable'
+  - '@azure/arm-network.ConnectionResetSharedKey|stable'
+  - '@azure/arm-network.ConnectionStateSnapshot|stable'
+  - '@azure/arm-network.ConnectivityDestination|stable'
+  - '@azure/arm-network.ConnectivityHop|stable'
+  - '@azure/arm-network.ConnectivityInformation|stable'
+  - '@azure/arm-network.ConnectivityIssue|stable'
+  - '@azure/arm-network.ConnectivityParameters|stable'
+  - '@azure/arm-network.ConnectivitySource|stable'
+  - '@azure/arm-network.ContainerNetworkInterfaceIpConfiguration|stable'
+  - '@azure/arm-network.CustomDnsConfigPropertiesFormat|stable'
+  - '@azure/arm-network.CustomIPPrefixes|stable'
+  - '@azure/arm-network.CustomIPPrefixesCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.CustomIPPrefixesDeleteOptionalParams|stable'
+  - '@azure/arm-network.CustomIPPrefixesGetOptionalParams|stable'
+  - '@azure/arm-network.CustomIPPrefixesListAllNextOptionalParams|stable'
+  - '@azure/arm-network.CustomIPPrefixesListAllOptionalParams|stable'
+  - '@azure/arm-network.CustomIPPrefixesListNextOptionalParams|stable'
+  - '@azure/arm-network.CustomIPPrefixesListOptionalParams|stable'
+  - '@azure/arm-network.CustomIPPrefixesUpdateTagsOptionalParams|stable'
+  - '@azure/arm-network.CustomIpPrefixListResult|stable'
+  - '@azure/arm-network.DdosCustomPolicies|stable'
+  - '@azure/arm-network.DdosCustomPoliciesCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.DdosCustomPoliciesDeleteOptionalParams|stable'
+  - '@azure/arm-network.DdosCustomPoliciesGetOptionalParams|stable'
+  - '@azure/arm-network.DdosCustomPoliciesUpdateTagsOptionalParams|stable'
+  - '@azure/arm-network.DdosProtectionPlan|stable'
+  - '@azure/arm-network.DdosProtectionPlanListResult|stable'
+  - '@azure/arm-network.DdosProtectionPlans|stable'
+  - '@azure/arm-network.DdosProtectionPlansCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.DdosProtectionPlansDeleteOptionalParams|stable'
+  - '@azure/arm-network.DdosProtectionPlansGetOptionalParams|stable'
+  - >-
+    @azure/arm-network.DdosProtectionPlansListByResourceGroupNextOptionalParams|stable
+  - >-
+    @azure/arm-network.DdosProtectionPlansListByResourceGroupOptionalParams|stable
+  - '@azure/arm-network.DdosProtectionPlansListNextOptionalParams|stable'
+  - '@azure/arm-network.DdosProtectionPlansListOptionalParams|stable'
+  - '@azure/arm-network.DdosProtectionPlansUpdateTagsOptionalParams|stable'
+  - '@azure/arm-network.DdosSettings|stable'
+  - '@azure/arm-network.DefaultSecurityRules|stable'
+  - '@azure/arm-network.DefaultSecurityRulesGetOptionalParams|stable'
+  - '@azure/arm-network.DefaultSecurityRulesListNextOptionalParams|stable'
+  - '@azure/arm-network.DefaultSecurityRulesListOptionalParams|stable'
+  - '@azure/arm-network.DeleteBastionShareableLinkOptionalParams|stable'
+  - '@azure/arm-network.DeviceProperties|stable'
+  - '@azure/arm-network.DhcpOptions|stable'
+  - '@azure/arm-network.Dimension|stable'
+  - '@azure/arm-network.DisconnectActiveSessionsNextOptionalParams|stable'
+  - '@azure/arm-network.DisconnectActiveSessionsOptionalParams|stable'
+  - '@azure/arm-network.DnsNameAvailabilityResult|stable'
+  - '@azure/arm-network.DnsSettings|stable'
+  - '@azure/arm-network.DscpConfigurationCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.DscpConfigurationDeleteOptionalParams|stable'
+  - '@azure/arm-network.DscpConfigurationGetOptionalParams|stable'
+  - '@azure/arm-network.DscpConfigurationListAllNextOptionalParams|stable'
+  - '@azure/arm-network.DscpConfigurationListAllOptionalParams|stable'
+  - '@azure/arm-network.DscpConfigurationListNextOptionalParams|stable'
+  - '@azure/arm-network.DscpConfigurationListOptionalParams|stable'
+  - '@azure/arm-network.DscpConfigurationListResult|stable'
+  - '@azure/arm-network.DscpConfigurationOperations|stable'
+  - '@azure/arm-network.EffectiveNetworkSecurityGroup|stable'
+  - '@azure/arm-network.EffectiveNetworkSecurityGroupAssociation|stable'
+  - '@azure/arm-network.EffectiveNetworkSecurityGroupListResult|stable'
+  - '@azure/arm-network.EffectiveNetworkSecurityRule|stable'
+  - '@azure/arm-network.EffectiveRoute|stable'
+  - '@azure/arm-network.EffectiveRouteListResult|stable'
+  - '@azure/arm-network.EffectiveRoutesParameters|stable'
+  - '@azure/arm-network.EndpointServicesListResult|stable'
+  - '@azure/arm-network.ErrorDetails|stable'
+  - '@azure/arm-network.ErrorModel|stable'
+  - '@azure/arm-network.ErrorResponse|stable'
+  - '@azure/arm-network.EvaluatedNetworkSecurityGroup|stable'
+  - '@azure/arm-network.ExclusionManagedRule|stable'
+  - '@azure/arm-network.ExclusionManagedRuleGroup|stable'
+  - '@azure/arm-network.ExclusionManagedRuleSet|stable'
+  - '@azure/arm-network.ExplicitProxySettings|stable'
+  - '@azure/arm-network.ExpressRouteCircuitArpTable|stable'
+  - '@azure/arm-network.ExpressRouteCircuitAuthorizations|stable'
+  - >-
+    @azure/arm-network.ExpressRouteCircuitAuthorizationsCreateOrUpdateOptionalParams|stable
+  - >-
+    @azure/arm-network.ExpressRouteCircuitAuthorizationsDeleteOptionalParams|stable
+  - '@azure/arm-network.ExpressRouteCircuitAuthorizationsGetOptionalParams|stable'
+  - >-
+    @azure/arm-network.ExpressRouteCircuitAuthorizationsListNextOptionalParams|stable
+  - >-
+    @azure/arm-network.ExpressRouteCircuitAuthorizationsListOptionalParams|stable
+  - '@azure/arm-network.ExpressRouteCircuitConnectionListResult|stable'
+  - '@azure/arm-network.ExpressRouteCircuitConnections|stable'
+  - >-
+    @azure/arm-network.ExpressRouteCircuitConnectionsCreateOrUpdateOptionalParams|stable
+  - '@azure/arm-network.ExpressRouteCircuitConnectionsDeleteOptionalParams|stable'
+  - '@azure/arm-network.ExpressRouteCircuitConnectionsGetOptionalParams|stable'
+  - >-
+    @azure/arm-network.ExpressRouteCircuitConnectionsListNextOptionalParams|stable
+  - '@azure/arm-network.ExpressRouteCircuitConnectionsListOptionalParams|stable'
+  - '@azure/arm-network.ExpressRouteCircuitListResult|stable'
+  - '@azure/arm-network.ExpressRouteCircuitPeeringConfig|stable'
+  - '@azure/arm-network.ExpressRouteCircuitPeeringId|stable'
+  - '@azure/arm-network.ExpressRouteCircuitPeeringListResult|stable'
+  - '@azure/arm-network.ExpressRouteCircuitPeerings|stable'
+  - >-
+    @azure/arm-network.ExpressRouteCircuitPeeringsCreateOrUpdateOptionalParams|stable
+  - '@azure/arm-network.ExpressRouteCircuitPeeringsDeleteOptionalParams|stable'
+  - '@azure/arm-network.ExpressRouteCircuitPeeringsGetOptionalParams|stable'
+  - '@azure/arm-network.ExpressRouteCircuitPeeringsListNextOptionalParams|stable'
+  - '@azure/arm-network.ExpressRouteCircuitPeeringsListOptionalParams|stable'
+  - '@azure/arm-network.ExpressRouteCircuitReference|stable'
+  - '@azure/arm-network.ExpressRouteCircuitRoutesTable|stable'
+  - '@azure/arm-network.ExpressRouteCircuitRoutesTableSummary|stable'
+  - '@azure/arm-network.ExpressRouteCircuitServiceProviderProperties|stable'
+  - '@azure/arm-network.ExpressRouteCircuitSku|stable'
+  - '@azure/arm-network.ExpressRouteCircuitStats|stable'
+  - '@azure/arm-network.ExpressRouteCircuits|stable'
+  - '@azure/arm-network.ExpressRouteCircuitsArpTableListResult|stable'
+  - '@azure/arm-network.ExpressRouteCircuitsCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.ExpressRouteCircuitsDeleteOptionalParams|stable'
+  - '@azure/arm-network.ExpressRouteCircuitsGetOptionalParams|stable'
+  - '@azure/arm-network.ExpressRouteCircuitsGetPeeringStatsOptionalParams|stable'
+  - '@azure/arm-network.ExpressRouteCircuitsGetStatsOptionalParams|stable'
+  - '@azure/arm-network.ExpressRouteCircuitsListAllNextOptionalParams|stable'
+  - '@azure/arm-network.ExpressRouteCircuitsListAllOptionalParams|stable'
+  - '@azure/arm-network.ExpressRouteCircuitsListArpTableOptionalParams|stable'
+  - '@azure/arm-network.ExpressRouteCircuitsListNextOptionalParams|stable'
+  - '@azure/arm-network.ExpressRouteCircuitsListOptionalParams|stable'
+  - '@azure/arm-network.ExpressRouteCircuitsListRoutesTableOptionalParams|stable'
+  - >-
+    @azure/arm-network.ExpressRouteCircuitsListRoutesTableSummaryOptionalParams|stable
+  - '@azure/arm-network.ExpressRouteCircuitsRoutesTableListResult|stable'
+  - '@azure/arm-network.ExpressRouteCircuitsRoutesTableSummaryListResult|stable'
+  - '@azure/arm-network.ExpressRouteCircuitsUpdateTagsOptionalParams|stable'
+  - '@azure/arm-network.ExpressRouteConnectionId|stable'
+  - '@azure/arm-network.ExpressRouteConnectionList|stable'
+  - '@azure/arm-network.ExpressRouteConnections|stable'
+  - >-
+    @azure/arm-network.ExpressRouteConnectionsCreateOrUpdateOptionalParams|stable
+  - '@azure/arm-network.ExpressRouteConnectionsDeleteOptionalParams|stable'
+  - '@azure/arm-network.ExpressRouteConnectionsGetOptionalParams|stable'
+  - '@azure/arm-network.ExpressRouteConnectionsListOptionalParams|stable'
+  - '@azure/arm-network.ExpressRouteCrossConnectionListResult|stable'
+  - '@azure/arm-network.ExpressRouteCrossConnectionPeeringList|stable'
+  - '@azure/arm-network.ExpressRouteCrossConnectionPeerings|stable'
+  - >-
+    @azure/arm-network.ExpressRouteCrossConnectionPeeringsCreateOrUpdateOptionalParams|stable
+  - >-
+    @azure/arm-network.ExpressRouteCrossConnectionPeeringsDeleteOptionalParams|stable
+  - >-
+    @azure/arm-network.ExpressRouteCrossConnectionPeeringsGetOptionalParams|stable
+  - >-
+    @azure/arm-network.ExpressRouteCrossConnectionPeeringsListNextOptionalParams|stable
+  - >-
+    @azure/arm-network.ExpressRouteCrossConnectionPeeringsListOptionalParams|stable
+  - '@azure/arm-network.ExpressRouteCrossConnectionRoutesTableSummary|stable'
+  - '@azure/arm-network.ExpressRouteCrossConnections|stable'
+  - >-
+    @azure/arm-network.ExpressRouteCrossConnectionsCreateOrUpdateOptionalParams|stable
+  - '@azure/arm-network.ExpressRouteCrossConnectionsGetOptionalParams|stable'
+  - >-
+    @azure/arm-network.ExpressRouteCrossConnectionsListArpTableOptionalParams|stable
+  - >-
+    @azure/arm-network.ExpressRouteCrossConnectionsListByResourceGroupNextOptionalParams|stable
+  - >-
+    @azure/arm-network.ExpressRouteCrossConnectionsListByResourceGroupOptionalParams|stable
+  - '@azure/arm-network.ExpressRouteCrossConnectionsListNextOptionalParams|stable'
+  - '@azure/arm-network.ExpressRouteCrossConnectionsListOptionalParams|stable'
+  - >-
+    @azure/arm-network.ExpressRouteCrossConnectionsListRoutesTableOptionalParams|stable
+  - >-
+    @azure/arm-network.ExpressRouteCrossConnectionsListRoutesTableSummaryOptionalParams|stable
+  - >-
+    @azure/arm-network.ExpressRouteCrossConnectionsRoutesTableSummaryListResult|stable
+  - >-
+    @azure/arm-network.ExpressRouteCrossConnectionsUpdateTagsOptionalParams|stable
+  - '@azure/arm-network.ExpressRouteGatewayList|stable'
+  - >-
+    @azure/arm-network.ExpressRouteGatewayPropertiesAutoScaleConfiguration|stable
+  - >-
+    @azure/arm-network.ExpressRouteGatewayPropertiesAutoScaleConfigurationBounds|stable
+  - '@azure/arm-network.ExpressRouteGateways|stable'
+  - '@azure/arm-network.ExpressRouteGatewaysCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.ExpressRouteGatewaysDeleteOptionalParams|stable'
+  - '@azure/arm-network.ExpressRouteGatewaysGetOptionalParams|stable'
+  - >-
+    @azure/arm-network.ExpressRouteGatewaysListByResourceGroupOptionalParams|stable
+  - >-
+    @azure/arm-network.ExpressRouteGatewaysListBySubscriptionOptionalParams|stable
+  - '@azure/arm-network.ExpressRouteGatewaysUpdateTagsOptionalParams|stable'
+  - '@azure/arm-network.ExpressRouteLinkListResult|stable'
+  - '@azure/arm-network.ExpressRouteLinkMacSecConfig|stable'
+  - '@azure/arm-network.ExpressRouteLinks|stable'
+  - '@azure/arm-network.ExpressRouteLinksGetOptionalParams|stable'
+  - '@azure/arm-network.ExpressRouteLinksListNextOptionalParams|stable'
+  - '@azure/arm-network.ExpressRouteLinksListOptionalParams|stable'
+  - '@azure/arm-network.ExpressRoutePortListResult|stable'
+  - '@azure/arm-network.ExpressRoutePorts|stable'
+  - '@azure/arm-network.ExpressRoutePortsCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.ExpressRoutePortsDeleteOptionalParams|stable'
+  - '@azure/arm-network.ExpressRoutePortsGenerateLOAOptionalParams|stable'
+  - '@azure/arm-network.ExpressRoutePortsGetOptionalParams|stable'
+  - >-
+    @azure/arm-network.ExpressRoutePortsListByResourceGroupNextOptionalParams|stable
+  - '@azure/arm-network.ExpressRoutePortsListByResourceGroupOptionalParams|stable'
+  - '@azure/arm-network.ExpressRoutePortsListNextOptionalParams|stable'
+  - '@azure/arm-network.ExpressRoutePortsListOptionalParams|stable'
+  - '@azure/arm-network.ExpressRoutePortsLocationBandwidths|stable'
+  - '@azure/arm-network.ExpressRoutePortsLocationListResult|stable'
+  - '@azure/arm-network.ExpressRoutePortsLocations|stable'
+  - '@azure/arm-network.ExpressRoutePortsLocationsGetOptionalParams|stable'
+  - '@azure/arm-network.ExpressRoutePortsLocationsListNextOptionalParams|stable'
+  - '@azure/arm-network.ExpressRoutePortsLocationsListOptionalParams|stable'
+  - '@azure/arm-network.ExpressRoutePortsUpdateTagsOptionalParams|stable'
+  - '@azure/arm-network.ExpressRouteServiceProviderBandwidthsOffered|stable'
+  - '@azure/arm-network.ExpressRouteServiceProviderListResult|stable'
+  - '@azure/arm-network.ExpressRouteServiceProviders|stable'
+  - '@azure/arm-network.ExpressRouteServiceProvidersListNextOptionalParams|stable'
+  - '@azure/arm-network.ExpressRouteServiceProvidersListOptionalParams|stable'
+  - '@azure/arm-network.ExtendedLocation|stable'
+  - '@azure/arm-network.FilterItems|stable'
+  - '@azure/arm-network.FirewallPolicies|stable'
+  - '@azure/arm-network.FirewallPoliciesCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.FirewallPoliciesDeleteOptionalParams|stable'
+  - '@azure/arm-network.FirewallPoliciesGetOptionalParams|stable'
+  - '@azure/arm-network.FirewallPoliciesListAllNextOptionalParams|stable'
+  - '@azure/arm-network.FirewallPoliciesListAllOptionalParams|stable'
+  - '@azure/arm-network.FirewallPoliciesListNextOptionalParams|stable'
+  - '@azure/arm-network.FirewallPoliciesListOptionalParams|stable'
+  - '@azure/arm-network.FirewallPolicyCertificateAuthority|stable'
+  - '@azure/arm-network.FirewallPolicyFilterRuleCollectionAction|stable'
+  - '@azure/arm-network.FirewallPolicyIdpsSignatures|stable'
+  - '@azure/arm-network.FirewallPolicyIdpsSignaturesFilterValues|stable'
+  - >-
+    @azure/arm-network.FirewallPolicyIdpsSignaturesFilterValuesListOptionalParams|stable
+  - '@azure/arm-network.FirewallPolicyIdpsSignaturesListOptionalParams|stable'
+  - '@azure/arm-network.FirewallPolicyIdpsSignaturesOverrides|stable'
+  - >-
+    @azure/arm-network.FirewallPolicyIdpsSignaturesOverridesGetOptionalParams|stable
+  - >-
+    @azure/arm-network.FirewallPolicyIdpsSignaturesOverridesListOptionalParams|stable
+  - >-
+    @azure/arm-network.FirewallPolicyIdpsSignaturesOverridesPatchOptionalParams|stable
+  - >-
+    @azure/arm-network.FirewallPolicyIdpsSignaturesOverridesPutOptionalParams|stable
+  - '@azure/arm-network.FirewallPolicyInsights|stable'
+  - '@azure/arm-network.FirewallPolicyIntrusionDetection|stable'
+  - >-
+    @azure/arm-network.FirewallPolicyIntrusionDetectionBypassTrafficSpecifications|stable
+  - '@azure/arm-network.FirewallPolicyIntrusionDetectionConfiguration|stable'
+  - >-
+    @azure/arm-network.FirewallPolicyIntrusionDetectionSignatureSpecification|stable
+  - '@azure/arm-network.FirewallPolicyListResult|stable'
+  - '@azure/arm-network.FirewallPolicyLogAnalyticsResources|stable'
+  - '@azure/arm-network.FirewallPolicyLogAnalyticsWorkspace|stable'
+  - '@azure/arm-network.FirewallPolicyNatRuleCollectionAction|stable'
+  - '@azure/arm-network.FirewallPolicyRule|stable'
+  - '@azure/arm-network.FirewallPolicyRuleApplicationProtocol|stable'
+  - '@azure/arm-network.FirewallPolicyRuleCollection|stable'
+  - '@azure/arm-network.FirewallPolicyRuleCollectionGroupListResult|stable'
+  - '@azure/arm-network.FirewallPolicyRuleCollectionGroups|stable'
+  - >-
+    @azure/arm-network.FirewallPolicyRuleCollectionGroupsCreateOrUpdateOptionalParams|stable
+  - >-
+    @azure/arm-network.FirewallPolicyRuleCollectionGroupsDeleteOptionalParams|stable
+  - >-
+    @azure/arm-network.FirewallPolicyRuleCollectionGroupsGetOptionalParams|stable
+  - >-
+    @azure/arm-network.FirewallPolicyRuleCollectionGroupsListNextOptionalParams|stable
+  - >-
+    @azure/arm-network.FirewallPolicyRuleCollectionGroupsListOptionalParams|stable
+  - '@azure/arm-network.FirewallPolicySQL|stable'
+  - '@azure/arm-network.FirewallPolicySku|stable'
+  - '@azure/arm-network.FirewallPolicySnat|stable'
+  - '@azure/arm-network.FirewallPolicyThreatIntelWhitelist|stable'
+  - '@azure/arm-network.FirewallPolicyTransportSecurity|stable'
+  - '@azure/arm-network.FlowLogFormatParameters|stable'
+  - '@azure/arm-network.FlowLogInformation|stable'
+  - '@azure/arm-network.FlowLogListResult|stable'
+  - '@azure/arm-network.FlowLogStatusParameters|stable'
+  - '@azure/arm-network.FlowLogs|stable'
+  - '@azure/arm-network.FlowLogsCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.FlowLogsDeleteOptionalParams|stable'
+  - '@azure/arm-network.FlowLogsGetOptionalParams|stable'
+  - '@azure/arm-network.FlowLogsListNextOptionalParams|stable'
+  - '@azure/arm-network.FlowLogsListOptionalParams|stable'
+  - '@azure/arm-network.FlowLogsUpdateTagsOptionalParams|stable'
+  - '@azure/arm-network.GatewayLoadBalancerTunnelInterface|stable'
+  - '@azure/arm-network.GatewayRoute|stable'
+  - '@azure/arm-network.GatewayRouteListResult|stable'
+  - '@azure/arm-network.GenerateExpressRoutePortsLOARequest|stable'
+  - '@azure/arm-network.GenerateExpressRoutePortsLOAResult|stable'
+  - >-
+    @azure/arm-network.GeneratevirtualwanvpnserverconfigurationvpnprofileOptionalParams|stable
+  - '@azure/arm-network.GetActiveSessionsNextOptionalParams|stable'
+  - '@azure/arm-network.GetActiveSessionsOptionalParams|stable'
+  - '@azure/arm-network.GetBastionShareableLinkNextOptionalParams|stable'
+  - '@azure/arm-network.GetBastionShareableLinkOptionalParams|stable'
+  - '@azure/arm-network.GetVpnSitesConfigurationRequest|stable'
+  - '@azure/arm-network.HopLink|stable'
+  - '@azure/arm-network.HttpConfiguration|stable'
+  - '@azure/arm-network.HttpHeader|stable'
+  - '@azure/arm-network.HubIPAddresses|stable'
+  - '@azure/arm-network.HubPublicIPAddresses|stable'
+  - '@azure/arm-network.HubRoute|stable'
+  - '@azure/arm-network.HubRouteTables|stable'
+  - '@azure/arm-network.HubRouteTablesCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.HubRouteTablesDeleteOptionalParams|stable'
+  - '@azure/arm-network.HubRouteTablesGetOptionalParams|stable'
+  - '@azure/arm-network.HubRouteTablesListNextOptionalParams|stable'
+  - '@azure/arm-network.HubRouteTablesListOptionalParams|stable'
+  - '@azure/arm-network.HubVirtualNetworkConnections|stable'
+  - >-
+    @azure/arm-network.HubVirtualNetworkConnectionsCreateOrUpdateOptionalParams|stable
+  - '@azure/arm-network.HubVirtualNetworkConnectionsDeleteOptionalParams|stable'
+  - '@azure/arm-network.HubVirtualNetworkConnectionsGetOptionalParams|stable'
+  - '@azure/arm-network.HubVirtualNetworkConnectionsListNextOptionalParams|stable'
+  - '@azure/arm-network.HubVirtualNetworkConnectionsListOptionalParams|stable'
+  - '@azure/arm-network.IPAddressAvailabilityResult|stable'
+  - '@azure/arm-network.IPConfigurationBgpPeeringAddress|stable'
+  - '@azure/arm-network.IdpsQueryObject|stable'
+  - '@azure/arm-network.InboundNatRuleListResult|stable'
+  - '@azure/arm-network.InboundNatRulePortMapping|stable'
+  - '@azure/arm-network.InboundNatRules|stable'
+  - '@azure/arm-network.InboundNatRulesCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.InboundNatRulesDeleteOptionalParams|stable'
+  - '@azure/arm-network.InboundNatRulesGetOptionalParams|stable'
+  - '@azure/arm-network.InboundNatRulesListNextOptionalParams|stable'
+  - '@azure/arm-network.InboundNatRulesListOptionalParams|stable'
+  - '@azure/arm-network.InboundSecurityRuleCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.InboundSecurityRuleOperations|stable'
+  - '@azure/arm-network.InboundSecurityRules|stable'
+  - '@azure/arm-network.IpAllocationListResult|stable'
+  - '@azure/arm-network.IpAllocations|stable'
+  - '@azure/arm-network.IpAllocationsCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.IpAllocationsDeleteOptionalParams|stable'
+  - '@azure/arm-network.IpAllocationsGetOptionalParams|stable'
+  - '@azure/arm-network.IpAllocationsListByResourceGroupNextOptionalParams|stable'
+  - '@azure/arm-network.IpAllocationsListByResourceGroupOptionalParams|stable'
+  - '@azure/arm-network.IpAllocationsListNextOptionalParams|stable'
+  - '@azure/arm-network.IpAllocationsListOptionalParams|stable'
+  - '@azure/arm-network.IpAllocationsUpdateTagsOptionalParams|stable'
+  - '@azure/arm-network.IpGroupListResult|stable'
+  - '@azure/arm-network.IpGroups|stable'
+  - '@azure/arm-network.IpGroupsCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.IpGroupsDeleteOptionalParams|stable'
+  - '@azure/arm-network.IpGroupsGetOptionalParams|stable'
+  - '@azure/arm-network.IpGroupsListByResourceGroupNextOptionalParams|stable'
+  - '@azure/arm-network.IpGroupsListByResourceGroupOptionalParams|stable'
+  - '@azure/arm-network.IpGroupsListNextOptionalParams|stable'
+  - '@azure/arm-network.IpGroupsListOptionalParams|stable'
+  - '@azure/arm-network.IpGroupsUpdateGroupsOptionalParams|stable'
+  - '@azure/arm-network.IpTag|stable'
+  - '@azure/arm-network.IpsecPolicy|stable'
+  - '@azure/arm-network.Ipv6CircuitConnectionConfig|stable'
+  - '@azure/arm-network.Ipv6ExpressRouteCircuitPeeringConfig|stable'
+  - '@azure/arm-network.ListHubRouteTablesResult|stable'
+  - '@azure/arm-network.ListHubVirtualNetworkConnectionsResult|stable'
+  - '@azure/arm-network.ListP2SVpnGatewaysResult|stable'
+  - '@azure/arm-network.ListRoutingIntentResult|stable'
+  - '@azure/arm-network.ListVirtualHubBgpConnectionResults|stable'
+  - '@azure/arm-network.ListVirtualHubIpConfigurationResults|stable'
+  - '@azure/arm-network.ListVirtualHubRouteTableV2SResult|stable'
+  - '@azure/arm-network.ListVirtualHubsResult|stable'
+  - '@azure/arm-network.ListVirtualNetworkGatewayNatRulesResult|stable'
+  - '@azure/arm-network.ListVirtualWANsResult|stable'
+  - '@azure/arm-network.ListVpnConnectionsResult|stable'
+  - '@azure/arm-network.ListVpnGatewayNatRulesResult|stable'
+  - '@azure/arm-network.ListVpnGatewaysResult|stable'
+  - '@azure/arm-network.ListVpnServerConfigurationsResult|stable'
+  - '@azure/arm-network.ListVpnSiteLinkConnectionsResult|stable'
+  - '@azure/arm-network.ListVpnSiteLinksResult|stable'
+  - '@azure/arm-network.ListVpnSitesResult|stable'
+  - '@azure/arm-network.LoadBalancerBackendAddress|stable'
+  - '@azure/arm-network.LoadBalancerBackendAddressPoolListResult|stable'
+  - '@azure/arm-network.LoadBalancerBackendAddressPools|stable'
+  - >-
+    @azure/arm-network.LoadBalancerBackendAddressPoolsCreateOrUpdateOptionalParams|stable
+  - >-
+    @azure/arm-network.LoadBalancerBackendAddressPoolsDeleteOptionalParams|stable
+  - '@azure/arm-network.LoadBalancerBackendAddressPoolsGetOptionalParams|stable'
+  - >-
+    @azure/arm-network.LoadBalancerBackendAddressPoolsListNextOptionalParams|stable
+  - '@azure/arm-network.LoadBalancerBackendAddressPoolsListOptionalParams|stable'
+  - '@azure/arm-network.LoadBalancerFrontendIPConfigurationListResult|stable'
+  - '@azure/arm-network.LoadBalancerFrontendIPConfigurations|stable'
+  - >-
+    @azure/arm-network.LoadBalancerFrontendIPConfigurationsGetOptionalParams|stable
+  - >-
+    @azure/arm-network.LoadBalancerFrontendIPConfigurationsListNextOptionalParams|stable
+  - >-
+    @azure/arm-network.LoadBalancerFrontendIPConfigurationsListOptionalParams|stable
+  - '@azure/arm-network.LoadBalancerListResult|stable'
+  - '@azure/arm-network.LoadBalancerLoadBalancingRuleListResult|stable'
+  - '@azure/arm-network.LoadBalancerLoadBalancingRules|stable'
+  - '@azure/arm-network.LoadBalancerLoadBalancingRulesGetOptionalParams|stable'
+  - >-
+    @azure/arm-network.LoadBalancerLoadBalancingRulesListNextOptionalParams|stable
+  - '@azure/arm-network.LoadBalancerLoadBalancingRulesListOptionalParams|stable'
+  - '@azure/arm-network.LoadBalancerNetworkInterfaces|stable'
+  - >-
+    @azure/arm-network.LoadBalancerNetworkInterfacesListNextOptionalParams|stable
+  - '@azure/arm-network.LoadBalancerNetworkInterfacesListOptionalParams|stable'
+  - '@azure/arm-network.LoadBalancerOutboundRuleListResult|stable'
+  - '@azure/arm-network.LoadBalancerOutboundRules|stable'
+  - '@azure/arm-network.LoadBalancerOutboundRulesGetOptionalParams|stable'
+  - '@azure/arm-network.LoadBalancerOutboundRulesListNextOptionalParams|stable'
+  - '@azure/arm-network.LoadBalancerOutboundRulesListOptionalParams|stable'
+  - '@azure/arm-network.LoadBalancerProbeListResult|stable'
+  - '@azure/arm-network.LoadBalancerProbes|stable'
+  - '@azure/arm-network.LoadBalancerProbesGetOptionalParams|stable'
+  - '@azure/arm-network.LoadBalancerProbesListNextOptionalParams|stable'
+  - '@azure/arm-network.LoadBalancerProbesListOptionalParams|stable'
+  - '@azure/arm-network.LoadBalancerSku|stable'
+  - '@azure/arm-network.LoadBalancerVipSwapRequest|stable'
+  - '@azure/arm-network.LoadBalancerVipSwapRequestFrontendIPConfiguration|stable'
+  - '@azure/arm-network.LoadBalancers|stable'
+  - '@azure/arm-network.LoadBalancersCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.LoadBalancersDeleteOptionalParams|stable'
+  - '@azure/arm-network.LoadBalancersGetOptionalParams|stable'
+  - '@azure/arm-network.LoadBalancersListAllNextOptionalParams|stable'
+  - '@azure/arm-network.LoadBalancersListAllOptionalParams|stable'
+  - >-
+    @azure/arm-network.LoadBalancersListInboundNatRulePortMappingsOptionalParams|stable
+  - '@azure/arm-network.LoadBalancersListNextOptionalParams|stable'
+  - '@azure/arm-network.LoadBalancersListOptionalParams|stable'
+  - '@azure/arm-network.LoadBalancersSwapPublicIpAddressesOptionalParams|stable'
+  - '@azure/arm-network.LoadBalancersUpdateTagsOptionalParams|stable'
+  - '@azure/arm-network.LocalNetworkGatewayListResult|stable'
+  - '@azure/arm-network.LocalNetworkGateways|stable'
+  - '@azure/arm-network.LocalNetworkGatewaysCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.LocalNetworkGatewaysDeleteOptionalParams|stable'
+  - '@azure/arm-network.LocalNetworkGatewaysGetOptionalParams|stable'
+  - '@azure/arm-network.LocalNetworkGatewaysListNextOptionalParams|stable'
+  - '@azure/arm-network.LocalNetworkGatewaysListOptionalParams|stable'
+  - '@azure/arm-network.LocalNetworkGatewaysUpdateTagsOptionalParams|stable'
+  - '@azure/arm-network.LogSpecification|stable'
+  - '@azure/arm-network.ManagedRuleGroupOverride|stable'
+  - '@azure/arm-network.ManagedRuleOverride|stable'
+  - '@azure/arm-network.ManagedRuleSet|stable'
+  - '@azure/arm-network.ManagedRulesDefinition|stable'
+  - '@azure/arm-network.ManagedServiceIdentity|stable'
+  - '@azure/arm-network.MatchCondition|stable'
+  - '@azure/arm-network.MatchVariable|stable'
+  - '@azure/arm-network.MatchedRule|stable'
+  - '@azure/arm-network.MetricSpecification|stable'
+  - '@azure/arm-network.NatGatewayListResult|stable'
+  - '@azure/arm-network.NatGatewaySku|stable'
+  - '@azure/arm-network.NatGateways|stable'
+  - '@azure/arm-network.NatGatewaysCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.NatGatewaysDeleteOptionalParams|stable'
+  - '@azure/arm-network.NatGatewaysGetOptionalParams|stable'
+  - '@azure/arm-network.NatGatewaysListAllNextOptionalParams|stable'
+  - '@azure/arm-network.NatGatewaysListAllOptionalParams|stable'
+  - '@azure/arm-network.NatGatewaysListNextOptionalParams|stable'
+  - '@azure/arm-network.NatGatewaysListOptionalParams|stable'
+  - '@azure/arm-network.NatGatewaysUpdateTagsOptionalParams|stable'
+  - '@azure/arm-network.NatRulePortMapping|stable'
+  - '@azure/arm-network.NatRules|stable'
+  - '@azure/arm-network.NatRulesCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.NatRulesDeleteOptionalParams|stable'
+  - '@azure/arm-network.NatRulesGetOptionalParams|stable'
+  - '@azure/arm-network.NatRulesListByVpnGatewayNextOptionalParams|stable'
+  - '@azure/arm-network.NatRulesListByVpnGatewayOptionalParams|stable'
+  - '@azure/arm-network.NetworkConfigurationDiagnosticParameters|stable'
+  - '@azure/arm-network.NetworkConfigurationDiagnosticProfile|stable'
+  - '@azure/arm-network.NetworkConfigurationDiagnosticResponse|stable'
+  - '@azure/arm-network.NetworkConfigurationDiagnosticResult|stable'
+  - '@azure/arm-network.NetworkIntentPolicyConfiguration|stable'
+  - '@azure/arm-network.NetworkInterfaceAssociation|stable'
+  - '@azure/arm-network.NetworkInterfaceDnsSettings|stable'
+  - '@azure/arm-network.NetworkInterfaceIPConfigurationListResult|stable'
+  - >-
+    @azure/arm-network.NetworkInterfaceIPConfigurationPrivateLinkConnectionProperties|stable
+  - '@azure/arm-network.NetworkInterfaceIPConfigurations|stable'
+  - '@azure/arm-network.NetworkInterfaceIPConfigurationsGetOptionalParams|stable'
+  - >-
+    @azure/arm-network.NetworkInterfaceIPConfigurationsListNextOptionalParams|stable
+  - '@azure/arm-network.NetworkInterfaceIPConfigurationsListOptionalParams|stable'
+  - '@azure/arm-network.NetworkInterfaceListResult|stable'
+  - '@azure/arm-network.NetworkInterfaceLoadBalancerListResult|stable'
+  - '@azure/arm-network.NetworkInterfaceLoadBalancers|stable'
+  - >-
+    @azure/arm-network.NetworkInterfaceLoadBalancersListNextOptionalParams|stable
+  - '@azure/arm-network.NetworkInterfaceLoadBalancersListOptionalParams|stable'
+  - '@azure/arm-network.NetworkInterfaceTapConfigurationListResult|stable'
+  - '@azure/arm-network.NetworkInterfaceTapConfigurations|stable'
+  - >-
+    @azure/arm-network.NetworkInterfaceTapConfigurationsCreateOrUpdateOptionalParams|stable
+  - >-
+    @azure/arm-network.NetworkInterfaceTapConfigurationsDeleteOptionalParams|stable
+  - '@azure/arm-network.NetworkInterfaceTapConfigurationsGetOptionalParams|stable'
+  - >-
+    @azure/arm-network.NetworkInterfaceTapConfigurationsListNextOptionalParams|stable
+  - >-
+    @azure/arm-network.NetworkInterfaceTapConfigurationsListOptionalParams|stable
+  - '@azure/arm-network.NetworkInterfaces|stable'
+  - '@azure/arm-network.NetworkInterfacesCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.NetworkInterfacesDeleteOptionalParams|stable'
+  - >-
+    @azure/arm-network.NetworkInterfacesGetCloudServiceNetworkInterfaceOptionalParams|stable
+  - >-
+    @azure/arm-network.NetworkInterfacesGetEffectiveRouteTableOptionalParams|stable
+  - '@azure/arm-network.NetworkInterfacesGetOptionalParams|stable'
+  - >-
+    @azure/arm-network.NetworkInterfacesGetVirtualMachineScaleSetIpConfigurationOptionalParams|stable
+  - >-
+    @azure/arm-network.NetworkInterfacesGetVirtualMachineScaleSetNetworkInterfaceOptionalParams|stable
+  - '@azure/arm-network.NetworkInterfacesListAllNextOptionalParams|stable'
+  - '@azure/arm-network.NetworkInterfacesListAllOptionalParams|stable'
+  - >-
+    @azure/arm-network.NetworkInterfacesListCloudServiceNetworkInterfacesNextOptionalParams|stable
+  - >-
+    @azure/arm-network.NetworkInterfacesListCloudServiceNetworkInterfacesOptionalParams|stable
+  - >-
+    @azure/arm-network.NetworkInterfacesListCloudServiceRoleInstanceNetworkInterfacesNextOptionalParams|stable
+  - >-
+    @azure/arm-network.NetworkInterfacesListCloudServiceRoleInstanceNetworkInterfacesOptionalParams|stable
+  - >-
+    @azure/arm-network.NetworkInterfacesListEffectiveNetworkSecurityGroupsOptionalParams|stable
+  - '@azure/arm-network.NetworkInterfacesListNextOptionalParams|stable'
+  - '@azure/arm-network.NetworkInterfacesListOptionalParams|stable'
+  - >-
+    @azure/arm-network.NetworkInterfacesListVirtualMachineScaleSetIpConfigurationsNextOptionalParams|stable
+  - >-
+    @azure/arm-network.NetworkInterfacesListVirtualMachineScaleSetIpConfigurationsOptionalParams|stable
+  - >-
+    @azure/arm-network.NetworkInterfacesListVirtualMachineScaleSetNetworkInterfacesNextOptionalParams|stable
+  - >-
+    @azure/arm-network.NetworkInterfacesListVirtualMachineScaleSetNetworkInterfacesOptionalParams|stable
+  - >-
+    @azure/arm-network.NetworkInterfacesListVirtualMachineScaleSetVMNetworkInterfacesNextOptionalParams|stable
+  - >-
+    @azure/arm-network.NetworkInterfacesListVirtualMachineScaleSetVMNetworkInterfacesOptionalParams|stable
+  - '@azure/arm-network.NetworkInterfacesUpdateTagsOptionalParams|stable'
+  - '@azure/arm-network.NetworkManagementClientOptionalParams|stable'
+  - '@azure/arm-network.NetworkProfileListResult|stable'
+  - '@azure/arm-network.NetworkProfiles|stable'
+  - '@azure/arm-network.NetworkProfilesCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.NetworkProfilesDeleteOptionalParams|stable'
+  - '@azure/arm-network.NetworkProfilesGetOptionalParams|stable'
+  - '@azure/arm-network.NetworkProfilesListAllNextOptionalParams|stable'
+  - '@azure/arm-network.NetworkProfilesListAllOptionalParams|stable'
+  - '@azure/arm-network.NetworkProfilesListNextOptionalParams|stable'
+  - '@azure/arm-network.NetworkProfilesListOptionalParams|stable'
+  - '@azure/arm-network.NetworkProfilesUpdateTagsOptionalParams|stable'
+  - '@azure/arm-network.NetworkSecurityGroupListResult|stable'
+  - '@azure/arm-network.NetworkSecurityGroupResult|stable'
+  - '@azure/arm-network.NetworkSecurityGroups|stable'
+  - '@azure/arm-network.NetworkSecurityGroupsCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.NetworkSecurityGroupsDeleteOptionalParams|stable'
+  - '@azure/arm-network.NetworkSecurityGroupsGetOptionalParams|stable'
+  - '@azure/arm-network.NetworkSecurityGroupsListAllNextOptionalParams|stable'
+  - '@azure/arm-network.NetworkSecurityGroupsListAllOptionalParams|stable'
+  - '@azure/arm-network.NetworkSecurityGroupsListNextOptionalParams|stable'
+  - '@azure/arm-network.NetworkSecurityGroupsListOptionalParams|stable'
+  - '@azure/arm-network.NetworkSecurityGroupsUpdateTagsOptionalParams|stable'
+  - '@azure/arm-network.NetworkSecurityRulesEvaluationResult|stable'
+  - '@azure/arm-network.NetworkVirtualApplianceListResult|stable'
+  - '@azure/arm-network.NetworkVirtualApplianceSiteListResult|stable'
+  - '@azure/arm-network.NetworkVirtualApplianceSkuInstances|stable'
+  - '@azure/arm-network.NetworkVirtualApplianceSkuListResult|stable'
+  - '@azure/arm-network.NetworkVirtualAppliances|stable'
+  - >-
+    @azure/arm-network.NetworkVirtualAppliancesCreateOrUpdateOptionalParams|stable
+  - '@azure/arm-network.NetworkVirtualAppliancesDeleteOptionalParams|stable'
+  - '@azure/arm-network.NetworkVirtualAppliancesGetOptionalParams|stable'
+  - >-
+    @azure/arm-network.NetworkVirtualAppliancesListByResourceGroupNextOptionalParams|stable
+  - >-
+    @azure/arm-network.NetworkVirtualAppliancesListByResourceGroupOptionalParams|stable
+  - '@azure/arm-network.NetworkVirtualAppliancesListNextOptionalParams|stable'
+  - '@azure/arm-network.NetworkVirtualAppliancesListOptionalParams|stable'
+  - '@azure/arm-network.NetworkVirtualAppliancesUpdateTagsOptionalParams|stable'
+  - '@azure/arm-network.NetworkWatcherListResult|stable'
+  - '@azure/arm-network.NetworkWatchers|stable'
+  - '@azure/arm-network.NetworkWatchersCheckConnectivityOptionalParams|stable'
+  - '@azure/arm-network.NetworkWatchersCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.NetworkWatchersDeleteOptionalParams|stable'
+  - >-
+    @azure/arm-network.NetworkWatchersGetAzureReachabilityReportOptionalParams|stable
+  - '@azure/arm-network.NetworkWatchersGetFlowLogStatusOptionalParams|stable'
+  - >-
+    @azure/arm-network.NetworkWatchersGetNetworkConfigurationDiagnosticOptionalParams|stable
+  - '@azure/arm-network.NetworkWatchersGetNextHopOptionalParams|stable'
+  - '@azure/arm-network.NetworkWatchersGetOptionalParams|stable'
+  - '@azure/arm-network.NetworkWatchersGetTopologyOptionalParams|stable'
+  - '@azure/arm-network.NetworkWatchersGetTroubleshootingOptionalParams|stable'
+  - >-
+    @azure/arm-network.NetworkWatchersGetTroubleshootingResultOptionalParams|stable
+  - '@azure/arm-network.NetworkWatchersGetVMSecurityRulesOptionalParams|stable'
+  - '@azure/arm-network.NetworkWatchersListAllOptionalParams|stable'
+  - >-
+    @azure/arm-network.NetworkWatchersListAvailableProvidersOptionalParams|stable
+  - '@azure/arm-network.NetworkWatchersListOptionalParams|stable'
+  - >-
+    @azure/arm-network.NetworkWatchersSetFlowLogConfigurationOptionalParams|stable
+  - '@azure/arm-network.NetworkWatchersUpdateTagsOptionalParams|stable'
+  - '@azure/arm-network.NetworkWatchersVerifyIPFlowOptionalParams|stable'
+  - '@azure/arm-network.NextHopParameters|stable'
+  - '@azure/arm-network.NextHopResult|stable'
+  - '@azure/arm-network.O365BreakOutCategoryPolicies|stable'
+  - '@azure/arm-network.O365PolicyProperties|stable'
+  - '@azure/arm-network.Office365PolicyProperties|stable'
+  - '@azure/arm-network.Operation|stable'
+  - '@azure/arm-network.OperationDisplay|stable'
+  - '@azure/arm-network.OperationListResult|stable'
+  - '@azure/arm-network.OperationPropertiesFormatServiceSpecification|stable'
+  - '@azure/arm-network.Operations|stable'
+  - '@azure/arm-network.OperationsListNextOptionalParams|stable'
+  - '@azure/arm-network.OperationsListOptionalParams|stable'
+  - '@azure/arm-network.OrderBy|stable'
+  - '@azure/arm-network.OwaspCrsExclusionEntry|stable'
+  - '@azure/arm-network.P2SVpnConnectionHealth|stable'
+  - '@azure/arm-network.P2SVpnConnectionHealthRequest|stable'
+  - '@azure/arm-network.P2SVpnConnectionRequest|stable'
+  - '@azure/arm-network.P2SVpnGateways|stable'
+  - '@azure/arm-network.P2SVpnGatewaysCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.P2SVpnGatewaysDeleteOptionalParams|stable'
+  - >-
+    @azure/arm-network.P2SVpnGatewaysDisconnectP2SVpnConnectionsOptionalParams|stable
+  - '@azure/arm-network.P2SVpnGatewaysGenerateVpnProfileOptionalParams|stable'
+  - '@azure/arm-network.P2SVpnGatewaysGetOptionalParams|stable'
+  - >-
+    @azure/arm-network.P2SVpnGatewaysGetP2SVpnConnectionHealthDetailedOptionalParams|stable
+  - >-
+    @azure/arm-network.P2SVpnGatewaysGetP2SVpnConnectionHealthOptionalParams|stable
+  - >-
+    @azure/arm-network.P2SVpnGatewaysListByResourceGroupNextOptionalParams|stable
+  - '@azure/arm-network.P2SVpnGatewaysListByResourceGroupOptionalParams|stable'
+  - '@azure/arm-network.P2SVpnGatewaysListNextOptionalParams|stable'
+  - '@azure/arm-network.P2SVpnGatewaysListOptionalParams|stable'
+  - '@azure/arm-network.P2SVpnGatewaysResetOptionalParams|stable'
+  - '@azure/arm-network.P2SVpnGatewaysUpdateTagsOptionalParams|stable'
+  - '@azure/arm-network.P2SVpnProfileParameters|stable'
+  - '@azure/arm-network.PacketCapture|stable'
+  - '@azure/arm-network.PacketCaptureFilter|stable'
+  - '@azure/arm-network.PacketCaptureListResult|stable'
+  - '@azure/arm-network.PacketCaptureParameters|stable'
+  - '@azure/arm-network.PacketCaptureQueryStatusResult|stable'
+  - '@azure/arm-network.PacketCaptureResult|stable'
+  - '@azure/arm-network.PacketCaptureStorageLocation|stable'
+  - '@azure/arm-network.PacketCaptures|stable'
+  - '@azure/arm-network.PacketCapturesCreateOptionalParams|stable'
+  - '@azure/arm-network.PacketCapturesDeleteOptionalParams|stable'
+  - '@azure/arm-network.PacketCapturesGetOptionalParams|stable'
+  - '@azure/arm-network.PacketCapturesGetStatusOptionalParams|stable'
+  - '@azure/arm-network.PacketCapturesListOptionalParams|stable'
+  - '@azure/arm-network.PacketCapturesStopOptionalParams|stable'
+  - '@azure/arm-network.PeerExpressRouteCircuitConnectionListResult|stable'
+  - '@azure/arm-network.PeerExpressRouteCircuitConnections|stable'
+  - >-
+    @azure/arm-network.PeerExpressRouteCircuitConnectionsGetOptionalParams|stable
+  - >-
+    @azure/arm-network.PeerExpressRouteCircuitConnectionsListNextOptionalParams|stable
+  - >-
+    @azure/arm-network.PeerExpressRouteCircuitConnectionsListOptionalParams|stable
+  - '@azure/arm-network.PeerRoute|stable'
+  - '@azure/arm-network.PeerRouteList|stable'
+  - '@azure/arm-network.PolicySettings|stable'
+  - '@azure/arm-network.PrepareNetworkPoliciesRequest|stable'
+  - '@azure/arm-network.PrivateDnsZoneConfig|stable'
+  - '@azure/arm-network.PrivateDnsZoneGroupListResult|stable'
+  - '@azure/arm-network.PrivateDnsZoneGroups|stable'
+  - '@azure/arm-network.PrivateDnsZoneGroupsCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.PrivateDnsZoneGroupsDeleteOptionalParams|stable'
+  - '@azure/arm-network.PrivateDnsZoneGroupsGetOptionalParams|stable'
+  - '@azure/arm-network.PrivateDnsZoneGroupsListNextOptionalParams|stable'
+  - '@azure/arm-network.PrivateDnsZoneGroupsListOptionalParams|stable'
+  - '@azure/arm-network.PrivateEndpointConnectionListResult|stable'
+  - '@azure/arm-network.PrivateEndpointIPConfiguration|stable'
+  - '@azure/arm-network.PrivateEndpointListResult|stable'
+  - '@azure/arm-network.PrivateEndpoints|stable'
+  - '@azure/arm-network.PrivateEndpointsCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.PrivateEndpointsDeleteOptionalParams|stable'
+  - '@azure/arm-network.PrivateEndpointsGetOptionalParams|stable'
+  - >-
+    @azure/arm-network.PrivateEndpointsListBySubscriptionNextOptionalParams|stable
+  - '@azure/arm-network.PrivateEndpointsListBySubscriptionOptionalParams|stable'
+  - '@azure/arm-network.PrivateEndpointsListNextOptionalParams|stable'
+  - '@azure/arm-network.PrivateEndpointsListOptionalParams|stable'
+  - '@azure/arm-network.PrivateLinkServiceConnectionState|stable'
+  - '@azure/arm-network.PrivateLinkServiceListResult|stable'
+  - '@azure/arm-network.PrivateLinkServiceVisibility|stable'
+  - '@azure/arm-network.PrivateLinkServices|stable'
+  - >-
+    @azure/arm-network.PrivateLinkServicesCheckPrivateLinkServiceVisibilityByResourceGroupOptionalParams|stable
+  - >-
+    @azure/arm-network.PrivateLinkServicesCheckPrivateLinkServiceVisibilityOptionalParams|stable
+  - '@azure/arm-network.PrivateLinkServicesCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.PrivateLinkServicesDeleteOptionalParams|stable'
+  - >-
+    @azure/arm-network.PrivateLinkServicesDeletePrivateEndpointConnectionOptionalParams|stable
+  - '@azure/arm-network.PrivateLinkServicesGetOptionalParams|stable'
+  - >-
+    @azure/arm-network.PrivateLinkServicesGetPrivateEndpointConnectionOptionalParams|stable
+  - >-
+    @azure/arm-network.PrivateLinkServicesListAutoApprovedPrivateLinkServicesByResourceGroupNextOptionalParams|stable
+  - >-
+    @azure/arm-network.PrivateLinkServicesListAutoApprovedPrivateLinkServicesByResourceGroupOptionalParams|stable
+  - >-
+    @azure/arm-network.PrivateLinkServicesListAutoApprovedPrivateLinkServicesNextOptionalParams|stable
+  - >-
+    @azure/arm-network.PrivateLinkServicesListAutoApprovedPrivateLinkServicesOptionalParams|stable
+  - >-
+    @azure/arm-network.PrivateLinkServicesListBySubscriptionNextOptionalParams|stable
+  - >-
+    @azure/arm-network.PrivateLinkServicesListBySubscriptionOptionalParams|stable
+  - '@azure/arm-network.PrivateLinkServicesListNextOptionalParams|stable'
+  - '@azure/arm-network.PrivateLinkServicesListOptionalParams|stable'
+  - >-
+    @azure/arm-network.PrivateLinkServicesListPrivateEndpointConnectionsNextOptionalParams|stable
+  - >-
+    @azure/arm-network.PrivateLinkServicesListPrivateEndpointConnectionsOptionalParams|stable
+  - >-
+    @azure/arm-network.PrivateLinkServicesUpdatePrivateEndpointConnectionOptionalParams|stable
+  - '@azure/arm-network.PropagatedRouteTable|stable'
+  - '@azure/arm-network.ProtocolConfiguration|stable'
+  - '@azure/arm-network.ProtocolCustomSettingsFormat|stable'
+  - '@azure/arm-network.PublicIPAddressDnsSettings|stable'
+  - '@azure/arm-network.PublicIPAddressListResult|stable'
+  - '@azure/arm-network.PublicIPAddressSku|stable'
+  - '@azure/arm-network.PublicIPAddresses|stable'
+  - '@azure/arm-network.PublicIPAddressesCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.PublicIPAddressesDeleteOptionalParams|stable'
+  - >-
+    @azure/arm-network.PublicIPAddressesGetCloudServicePublicIPAddressOptionalParams|stable
+  - '@azure/arm-network.PublicIPAddressesGetOptionalParams|stable'
+  - >-
+    @azure/arm-network.PublicIPAddressesGetVirtualMachineScaleSetPublicIPAddressOptionalParams|stable
+  - '@azure/arm-network.PublicIPAddressesListAllNextOptionalParams|stable'
+  - '@azure/arm-network.PublicIPAddressesListAllOptionalParams|stable'
+  - >-
+    @azure/arm-network.PublicIPAddressesListCloudServicePublicIPAddressesNextOptionalParams|stable
+  - >-
+    @azure/arm-network.PublicIPAddressesListCloudServicePublicIPAddressesOptionalParams|stable
+  - >-
+    @azure/arm-network.PublicIPAddressesListCloudServiceRoleInstancePublicIPAddressesNextOptionalParams|stable
+  - >-
+    @azure/arm-network.PublicIPAddressesListCloudServiceRoleInstancePublicIPAddressesOptionalParams|stable
+  - '@azure/arm-network.PublicIPAddressesListNextOptionalParams|stable'
+  - '@azure/arm-network.PublicIPAddressesListOptionalParams|stable'
+  - >-
+    @azure/arm-network.PublicIPAddressesListVirtualMachineScaleSetPublicIPAddressesNextOptionalParams|stable
+  - >-
+    @azure/arm-network.PublicIPAddressesListVirtualMachineScaleSetPublicIPAddressesOptionalParams|stable
+  - >-
+    @azure/arm-network.PublicIPAddressesListVirtualMachineScaleSetVMPublicIPAddressesNextOptionalParams|stable
+  - >-
+    @azure/arm-network.PublicIPAddressesListVirtualMachineScaleSetVMPublicIPAddressesOptionalParams|stable
+  - '@azure/arm-network.PublicIPAddressesUpdateTagsOptionalParams|stable'
+  - '@azure/arm-network.PublicIPPrefixListResult|stable'
+  - '@azure/arm-network.PublicIPPrefixSku|stable'
+  - '@azure/arm-network.PublicIPPrefixes|stable'
+  - '@azure/arm-network.PublicIPPrefixesCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.PublicIPPrefixesDeleteOptionalParams|stable'
+  - '@azure/arm-network.PublicIPPrefixesGetOptionalParams|stable'
+  - '@azure/arm-network.PublicIPPrefixesListAllNextOptionalParams|stable'
+  - '@azure/arm-network.PublicIPPrefixesListAllOptionalParams|stable'
+  - '@azure/arm-network.PublicIPPrefixesListNextOptionalParams|stable'
+  - '@azure/arm-network.PublicIPPrefixesListOptionalParams|stable'
+  - '@azure/arm-network.PublicIPPrefixesUpdateTagsOptionalParams|stable'
+  - '@azure/arm-network.PutBastionShareableLinkNextOptionalParams|stable'
+  - '@azure/arm-network.PutBastionShareableLinkOptionalParams|stable'
+  - '@azure/arm-network.QosDefinition|stable'
+  - '@azure/arm-network.QosIpRange|stable'
+  - '@azure/arm-network.QosPortRange|stable'
+  - '@azure/arm-network.QueryInboundNatRulePortMappingRequest|stable'
+  - '@azure/arm-network.QueryResults|stable'
+  - '@azure/arm-network.QueryTroubleshootingParameters|stable'
+  - '@azure/arm-network.RadiusServer|stable'
+  - '@azure/arm-network.RecordSet|stable'
+  - '@azure/arm-network.ReferencedPublicIpAddress|stable'
+  - '@azure/arm-network.Resource|stable'
+  - '@azure/arm-network.ResourceNavigationLinks|stable'
+  - '@azure/arm-network.ResourceNavigationLinksListOptionalParams|stable'
+  - '@azure/arm-network.ResourceNavigationLinksListResult|stable'
+  - '@azure/arm-network.ResourceSet|stable'
+  - '@azure/arm-network.RetentionPolicyParameters|stable'
+  - '@azure/arm-network.RouteFilterListResult|stable'
+  - '@azure/arm-network.RouteFilterRuleListResult|stable'
+  - '@azure/arm-network.RouteFilterRules|stable'
+  - '@azure/arm-network.RouteFilterRulesCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.RouteFilterRulesDeleteOptionalParams|stable'
+  - '@azure/arm-network.RouteFilterRulesGetOptionalParams|stable'
+  - >-
+    @azure/arm-network.RouteFilterRulesListByRouteFilterNextOptionalParams|stable
+  - '@azure/arm-network.RouteFilterRulesListByRouteFilterOptionalParams|stable'
+  - '@azure/arm-network.RouteFilters|stable'
+  - '@azure/arm-network.RouteFiltersCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.RouteFiltersDeleteOptionalParams|stable'
+  - '@azure/arm-network.RouteFiltersGetOptionalParams|stable'
+  - '@azure/arm-network.RouteFiltersListByResourceGroupNextOptionalParams|stable'
+  - '@azure/arm-network.RouteFiltersListByResourceGroupOptionalParams|stable'
+  - '@azure/arm-network.RouteFiltersListNextOptionalParams|stable'
+  - '@azure/arm-network.RouteFiltersListOptionalParams|stable'
+  - '@azure/arm-network.RouteFiltersUpdateTagsOptionalParams|stable'
+  - '@azure/arm-network.RouteListResult|stable'
+  - '@azure/arm-network.RouteTableListResult|stable'
+  - '@azure/arm-network.RouteTables|stable'
+  - '@azure/arm-network.RouteTablesCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.RouteTablesDeleteOptionalParams|stable'
+  - '@azure/arm-network.RouteTablesGetOptionalParams|stable'
+  - '@azure/arm-network.RouteTablesListAllNextOptionalParams|stable'
+  - '@azure/arm-network.RouteTablesListAllOptionalParams|stable'
+  - '@azure/arm-network.RouteTablesListNextOptionalParams|stable'
+  - '@azure/arm-network.RouteTablesListOptionalParams|stable'
+  - '@azure/arm-network.RouteTablesUpdateTagsOptionalParams|stable'
+  - '@azure/arm-network.Routes|stable'
+  - '@azure/arm-network.RoutesCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.RoutesDeleteOptionalParams|stable'
+  - '@azure/arm-network.RoutesGetOptionalParams|stable'
+  - '@azure/arm-network.RoutesListNextOptionalParams|stable'
+  - '@azure/arm-network.RoutesListOptionalParams|stable'
+  - '@azure/arm-network.RoutingConfiguration|stable'
+  - '@azure/arm-network.RoutingIntentCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.RoutingIntentDeleteOptionalParams|stable'
+  - '@azure/arm-network.RoutingIntentGetOptionalParams|stable'
+  - '@azure/arm-network.RoutingIntentListNextOptionalParams|stable'
+  - '@azure/arm-network.RoutingIntentListOptionalParams|stable'
+  - '@azure/arm-network.RoutingIntentOperations|stable'
+  - '@azure/arm-network.RoutingPolicy|stable'
+  - '@azure/arm-network.SecurityGroupNetworkInterface|stable'
+  - '@azure/arm-network.SecurityGroupViewParameters|stable'
+  - '@azure/arm-network.SecurityGroupViewResult|stable'
+  - '@azure/arm-network.SecurityPartnerProviderListResult|stable'
+  - '@azure/arm-network.SecurityPartnerProviders|stable'
+  - >-
+    @azure/arm-network.SecurityPartnerProvidersCreateOrUpdateOptionalParams|stable
+  - '@azure/arm-network.SecurityPartnerProvidersDeleteOptionalParams|stable'
+  - '@azure/arm-network.SecurityPartnerProvidersGetOptionalParams|stable'
+  - >-
+    @azure/arm-network.SecurityPartnerProvidersListByResourceGroupNextOptionalParams|stable
+  - >-
+    @azure/arm-network.SecurityPartnerProvidersListByResourceGroupOptionalParams|stable
+  - '@azure/arm-network.SecurityPartnerProvidersListNextOptionalParams|stable'
+  - '@azure/arm-network.SecurityPartnerProvidersListOptionalParams|stable'
+  - '@azure/arm-network.SecurityPartnerProvidersUpdateTagsOptionalParams|stable'
+  - '@azure/arm-network.SecurityRuleAssociations|stable'
+  - '@azure/arm-network.SecurityRuleListResult|stable'
+  - '@azure/arm-network.SecurityRules|stable'
+  - '@azure/arm-network.SecurityRulesCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.SecurityRulesDeleteOptionalParams|stable'
+  - '@azure/arm-network.SecurityRulesGetOptionalParams|stable'
+  - '@azure/arm-network.SecurityRulesListNextOptionalParams|stable'
+  - '@azure/arm-network.SecurityRulesListOptionalParams|stable'
+  - '@azure/arm-network.ServiceAssociationLinks|stable'
+  - '@azure/arm-network.ServiceAssociationLinksListOptionalParams|stable'
+  - '@azure/arm-network.ServiceAssociationLinksListResult|stable'
+  - '@azure/arm-network.ServiceEndpointPolicies|stable'
+  - >-
+    @azure/arm-network.ServiceEndpointPoliciesCreateOrUpdateOptionalParams|stable
+  - '@azure/arm-network.ServiceEndpointPoliciesDeleteOptionalParams|stable'
+  - '@azure/arm-network.ServiceEndpointPoliciesGetOptionalParams|stable'
+  - >-
+    @azure/arm-network.ServiceEndpointPoliciesListByResourceGroupNextOptionalParams|stable
+  - >-
+    @azure/arm-network.ServiceEndpointPoliciesListByResourceGroupOptionalParams|stable
+  - '@azure/arm-network.ServiceEndpointPoliciesListNextOptionalParams|stable'
+  - '@azure/arm-network.ServiceEndpointPoliciesListOptionalParams|stable'
+  - '@azure/arm-network.ServiceEndpointPoliciesUpdateTagsOptionalParams|stable'
+  - '@azure/arm-network.ServiceEndpointPolicyDefinitionListResult|stable'
+  - '@azure/arm-network.ServiceEndpointPolicyDefinitions|stable'
+  - >-
+    @azure/arm-network.ServiceEndpointPolicyDefinitionsCreateOrUpdateOptionalParams|stable
+  - >-
+    @azure/arm-network.ServiceEndpointPolicyDefinitionsDeleteOptionalParams|stable
+  - '@azure/arm-network.ServiceEndpointPolicyDefinitionsGetOptionalParams|stable'
+  - >-
+    @azure/arm-network.ServiceEndpointPolicyDefinitionsListByResourceGroupNextOptionalParams|stable
+  - >-
+    @azure/arm-network.ServiceEndpointPolicyDefinitionsListByResourceGroupOptionalParams|stable
+  - '@azure/arm-network.ServiceEndpointPolicyListResult|stable'
+  - '@azure/arm-network.ServiceEndpointPropertiesFormat|stable'
+  - '@azure/arm-network.ServiceTagInformation|stable'
+  - '@azure/arm-network.ServiceTagInformationListNextOptionalParams|stable'
+  - '@azure/arm-network.ServiceTagInformationListOptionalParams|stable'
+  - '@azure/arm-network.ServiceTagInformationListResult|stable'
+  - '@azure/arm-network.ServiceTagInformationOperations|stable'
+  - '@azure/arm-network.ServiceTagInformationPropertiesFormat|stable'
+  - '@azure/arm-network.ServiceTags|stable'
+  - '@azure/arm-network.ServiceTagsListOptionalParams|stable'
+  - '@azure/arm-network.ServiceTagsListResult|stable'
+  - '@azure/arm-network.SessionIds|stable'
+  - '@azure/arm-network.SignatureOverridesFilterValuesQuery|stable'
+  - '@azure/arm-network.SignatureOverridesFilterValuesResponse|stable'
+  - '@azure/arm-network.SignaturesOverrides|stable'
+  - '@azure/arm-network.SignaturesOverridesList|stable'
+  - '@azure/arm-network.SignaturesOverridesProperties|stable'
+  - '@azure/arm-network.SingleQueryResult|stable'
+  - '@azure/arm-network.Sku|stable'
+  - '@azure/arm-network.StaticRoute|stable'
+  - '@azure/arm-network.SubResource|stable'
+  - '@azure/arm-network.SubnetAssociation|stable'
+  - '@azure/arm-network.SubnetListResult|stable'
+  - '@azure/arm-network.Subnets|stable'
+  - '@azure/arm-network.SubnetsCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.SubnetsDeleteOptionalParams|stable'
+  - '@azure/arm-network.SubnetsGetOptionalParams|stable'
+  - '@azure/arm-network.SubnetsListNextOptionalParams|stable'
+  - '@azure/arm-network.SubnetsListOptionalParams|stable'
+  - '@azure/arm-network.SubnetsPrepareNetworkPoliciesOptionalParams|stable'
+  - '@azure/arm-network.SubnetsUnprepareNetworkPoliciesOptionalParams|stable'
+  - '@azure/arm-network.SupportedSecurityProvidersOptionalParams|stable'
+  - '@azure/arm-network.TagsObject|stable'
+  - '@azure/arm-network.Topology|stable'
+  - '@azure/arm-network.TopologyAssociation|stable'
+  - '@azure/arm-network.TopologyParameters|stable'
+  - '@azure/arm-network.TopologyResource|stable'
+  - '@azure/arm-network.TrafficAnalyticsConfigurationProperties|stable'
+  - '@azure/arm-network.TrafficAnalyticsProperties|stable'
+  - '@azure/arm-network.TrafficSelectorPolicy|stable'
+  - '@azure/arm-network.TroubleshootingDetails|stable'
+  - '@azure/arm-network.TroubleshootingParameters|stable'
+  - '@azure/arm-network.TroubleshootingRecommendedActions|stable'
+  - '@azure/arm-network.TroubleshootingResult|stable'
+  - '@azure/arm-network.TunnelConnectionHealth|stable'
+  - '@azure/arm-network.UnprepareNetworkPoliciesRequest|stable'
+  - '@azure/arm-network.Usage|stable'
+  - '@azure/arm-network.UsageName|stable'
+  - '@azure/arm-network.Usages|stable'
+  - '@azure/arm-network.UsagesListNextOptionalParams|stable'
+  - '@azure/arm-network.UsagesListOptionalParams|stable'
+  - '@azure/arm-network.UsagesListResult|stable'
+  - '@azure/arm-network.VerificationIPFlowParameters|stable'
+  - '@azure/arm-network.VerificationIPFlowResult|stable'
+  - '@azure/arm-network.VirtualApplianceNicProperties|stable'
+  - '@azure/arm-network.VirtualApplianceSites|stable'
+  - '@azure/arm-network.VirtualApplianceSitesCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.VirtualApplianceSitesDeleteOptionalParams|stable'
+  - '@azure/arm-network.VirtualApplianceSitesGetOptionalParams|stable'
+  - '@azure/arm-network.VirtualApplianceSitesListNextOptionalParams|stable'
+  - '@azure/arm-network.VirtualApplianceSitesListOptionalParams|stable'
+  - '@azure/arm-network.VirtualApplianceSkuProperties|stable'
+  - '@azure/arm-network.VirtualApplianceSkus|stable'
+  - '@azure/arm-network.VirtualApplianceSkusGetOptionalParams|stable'
+  - '@azure/arm-network.VirtualApplianceSkusListNextOptionalParams|stable'
+  - '@azure/arm-network.VirtualApplianceSkusListOptionalParams|stable'
+  - '@azure/arm-network.VirtualHubBgpConnection|stable'
+  - >-
+    @azure/arm-network.VirtualHubBgpConnectionCreateOrUpdateOptionalParams|stable
+  - '@azure/arm-network.VirtualHubBgpConnectionDeleteOptionalParams|stable'
+  - '@azure/arm-network.VirtualHubBgpConnectionGetOptionalParams|stable'
+  - '@azure/arm-network.VirtualHubBgpConnections|stable'
+  - >-
+    @azure/arm-network.VirtualHubBgpConnectionsListAdvertisedRoutesOptionalParams|stable
+  - >-
+    @azure/arm-network.VirtualHubBgpConnectionsListLearnedRoutesOptionalParams|stable
+  - '@azure/arm-network.VirtualHubBgpConnectionsListNextOptionalParams|stable'
+  - '@azure/arm-network.VirtualHubBgpConnectionsListOptionalParams|stable'
+  - '@azure/arm-network.VirtualHubEffectiveRoute|stable'
+  - '@azure/arm-network.VirtualHubEffectiveRouteList|stable'
+  - '@azure/arm-network.VirtualHubId|stable'
+  - '@azure/arm-network.VirtualHubIpConfiguration|stable'
+  - >-
+    @azure/arm-network.VirtualHubIpConfigurationCreateOrUpdateOptionalParams|stable
+  - '@azure/arm-network.VirtualHubIpConfigurationDeleteOptionalParams|stable'
+  - '@azure/arm-network.VirtualHubIpConfigurationGetOptionalParams|stable'
+  - '@azure/arm-network.VirtualHubIpConfigurationListNextOptionalParams|stable'
+  - '@azure/arm-network.VirtualHubIpConfigurationListOptionalParams|stable'
+  - '@azure/arm-network.VirtualHubRoute|stable'
+  - '@azure/arm-network.VirtualHubRouteTable|stable'
+  - '@azure/arm-network.VirtualHubRouteTableV2S|stable'
+  - >-
+    @azure/arm-network.VirtualHubRouteTableV2SCreateOrUpdateOptionalParams|stable
+  - '@azure/arm-network.VirtualHubRouteTableV2SDeleteOptionalParams|stable'
+  - '@azure/arm-network.VirtualHubRouteTableV2SGetOptionalParams|stable'
+  - '@azure/arm-network.VirtualHubRouteTableV2SListNextOptionalParams|stable'
+  - '@azure/arm-network.VirtualHubRouteTableV2SListOptionalParams|stable'
+  - '@azure/arm-network.VirtualHubRouteV2|stable'
+  - '@azure/arm-network.VirtualHubs|stable'
+  - '@azure/arm-network.VirtualHubsCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.VirtualHubsDeleteOptionalParams|stable'
+  - >-
+    @azure/arm-network.VirtualHubsGetEffectiveVirtualHubRoutesOptionalParams|stable
+  - '@azure/arm-network.VirtualHubsGetOptionalParams|stable'
+  - '@azure/arm-network.VirtualHubsListByResourceGroupNextOptionalParams|stable'
+  - '@azure/arm-network.VirtualHubsListByResourceGroupOptionalParams|stable'
+  - '@azure/arm-network.VirtualHubsListNextOptionalParams|stable'
+  - '@azure/arm-network.VirtualHubsListOptionalParams|stable'
+  - '@azure/arm-network.VirtualHubsUpdateTagsOptionalParams|stable'
+  - '@azure/arm-network.VirtualNetworkBgpCommunities|stable'
+  - '@azure/arm-network.VirtualNetworkConnectionGatewayReference|stable'
+  - '@azure/arm-network.VirtualNetworkEncryption|stable'
+  - '@azure/arm-network.VirtualNetworkGatewayConnectionListResult|stable'
+  - '@azure/arm-network.VirtualNetworkGatewayConnections|stable'
+  - >-
+    @azure/arm-network.VirtualNetworkGatewayConnectionsCreateOrUpdateOptionalParams|stable
+  - >-
+    @azure/arm-network.VirtualNetworkGatewayConnectionsDeleteOptionalParams|stable
+  - >-
+    @azure/arm-network.VirtualNetworkGatewayConnectionsGetIkeSasOptionalParams|stable
+  - '@azure/arm-network.VirtualNetworkGatewayConnectionsGetOptionalParams|stable'
+  - >-
+    @azure/arm-network.VirtualNetworkGatewayConnectionsGetSharedKeyOptionalParams|stable
+  - >-
+    @azure/arm-network.VirtualNetworkGatewayConnectionsListNextOptionalParams|stable
+  - '@azure/arm-network.VirtualNetworkGatewayConnectionsListOptionalParams|stable'
+  - >-
+    @azure/arm-network.VirtualNetworkGatewayConnectionsResetConnectionOptionalParams|stable
+  - >-
+    @azure/arm-network.VirtualNetworkGatewayConnectionsResetSharedKeyOptionalParams|stable
+  - >-
+    @azure/arm-network.VirtualNetworkGatewayConnectionsSetSharedKeyOptionalParams|stable
+  - >-
+    @azure/arm-network.VirtualNetworkGatewayConnectionsStartPacketCaptureOptionalParams|stable
+  - >-
+    @azure/arm-network.VirtualNetworkGatewayConnectionsStopPacketCaptureOptionalParams|stable
+  - >-
+    @azure/arm-network.VirtualNetworkGatewayConnectionsUpdateTagsOptionalParams|stable
+  - '@azure/arm-network.VirtualNetworkGatewayListConnectionsResult|stable'
+  - '@azure/arm-network.VirtualNetworkGatewayListResult|stable'
+  - '@azure/arm-network.VirtualNetworkGatewayNatRules|stable'
+  - >-
+    @azure/arm-network.VirtualNetworkGatewayNatRulesCreateOrUpdateOptionalParams|stable
+  - '@azure/arm-network.VirtualNetworkGatewayNatRulesDeleteOptionalParams|stable'
+  - '@azure/arm-network.VirtualNetworkGatewayNatRulesGetOptionalParams|stable'
+  - >-
+    @azure/arm-network.VirtualNetworkGatewayNatRulesListByVirtualNetworkGatewayNextOptionalParams|stable
+  - >-
+    @azure/arm-network.VirtualNetworkGatewayNatRulesListByVirtualNetworkGatewayOptionalParams|stable
+  - '@azure/arm-network.VirtualNetworkGatewaySku|stable'
+  - '@azure/arm-network.VirtualNetworkGateways|stable'
+  - '@azure/arm-network.VirtualNetworkGatewaysCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.VirtualNetworkGatewaysDeleteOptionalParams|stable'
+  - >-
+    @azure/arm-network.VirtualNetworkGatewaysDisconnectVirtualNetworkGatewayVpnConnectionsOptionalParams|stable
+  - >-
+    @azure/arm-network.VirtualNetworkGatewaysGenerateVpnProfileOptionalParams|stable
+  - >-
+    @azure/arm-network.VirtualNetworkGatewaysGeneratevpnclientpackageOptionalParams|stable
+  - >-
+    @azure/arm-network.VirtualNetworkGatewaysGetAdvertisedRoutesOptionalParams|stable
+  - >-
+    @azure/arm-network.VirtualNetworkGatewaysGetBgpPeerStatusOptionalParams|stable
+  - >-
+    @azure/arm-network.VirtualNetworkGatewaysGetLearnedRoutesOptionalParams|stable
+  - '@azure/arm-network.VirtualNetworkGatewaysGetOptionalParams|stable'
+  - >-
+    @azure/arm-network.VirtualNetworkGatewaysGetVpnProfilePackageUrlOptionalParams|stable
+  - >-
+    @azure/arm-network.VirtualNetworkGatewaysGetVpnclientConnectionHealthOptionalParams|stable
+  - >-
+    @azure/arm-network.VirtualNetworkGatewaysGetVpnclientIpsecParametersOptionalParams|stable
+  - >-
+    @azure/arm-network.VirtualNetworkGatewaysListConnectionsNextOptionalParams|stable
+  - >-
+    @azure/arm-network.VirtualNetworkGatewaysListConnectionsOptionalParams|stable
+  - '@azure/arm-network.VirtualNetworkGatewaysListNextOptionalParams|stable'
+  - '@azure/arm-network.VirtualNetworkGatewaysListOptionalParams|stable'
+  - '@azure/arm-network.VirtualNetworkGatewaysResetOptionalParams|stable'
+  - >-
+    @azure/arm-network.VirtualNetworkGatewaysResetVpnClientSharedKeyOptionalParams|stable
+  - >-
+    @azure/arm-network.VirtualNetworkGatewaysSetVpnclientIpsecParametersOptionalParams|stable
+  - >-
+    @azure/arm-network.VirtualNetworkGatewaysStartPacketCaptureOptionalParams|stable
+  - >-
+    @azure/arm-network.VirtualNetworkGatewaysStopPacketCaptureOptionalParams|stable
+  - >-
+    @azure/arm-network.VirtualNetworkGatewaysSupportedVpnDevicesOptionalParams|stable
+  - '@azure/arm-network.VirtualNetworkGatewaysUpdateTagsOptionalParams|stable'
+  - >-
+    @azure/arm-network.VirtualNetworkGatewaysVpnDeviceConfigurationScriptOptionalParams|stable
+  - '@azure/arm-network.VirtualNetworkListResult|stable'
+  - '@azure/arm-network.VirtualNetworkListUsageResult|stable'
+  - '@azure/arm-network.VirtualNetworkPeeringListResult|stable'
+  - '@azure/arm-network.VirtualNetworkPeerings|stable'
+  - '@azure/arm-network.VirtualNetworkPeeringsCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.VirtualNetworkPeeringsDeleteOptionalParams|stable'
+  - '@azure/arm-network.VirtualNetworkPeeringsGetOptionalParams|stable'
+  - '@azure/arm-network.VirtualNetworkPeeringsListNextOptionalParams|stable'
+  - '@azure/arm-network.VirtualNetworkPeeringsListOptionalParams|stable'
+  - '@azure/arm-network.VirtualNetworkTapListResult|stable'
+  - '@azure/arm-network.VirtualNetworkTaps|stable'
+  - '@azure/arm-network.VirtualNetworkTapsCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.VirtualNetworkTapsDeleteOptionalParams|stable'
+  - '@azure/arm-network.VirtualNetworkTapsGetOptionalParams|stable'
+  - '@azure/arm-network.VirtualNetworkTapsListAllNextOptionalParams|stable'
+  - '@azure/arm-network.VirtualNetworkTapsListAllOptionalParams|stable'
+  - >-
+    @azure/arm-network.VirtualNetworkTapsListByResourceGroupNextOptionalParams|stable
+  - >-
+    @azure/arm-network.VirtualNetworkTapsListByResourceGroupOptionalParams|stable
+  - '@azure/arm-network.VirtualNetworkTapsUpdateTagsOptionalParams|stable'
+  - '@azure/arm-network.VirtualNetworkUsage|stable'
+  - '@azure/arm-network.VirtualNetworkUsageName|stable'
+  - '@azure/arm-network.VirtualNetworks|stable'
+  - >-
+    @azure/arm-network.VirtualNetworksCheckIPAddressAvailabilityOptionalParams|stable
+  - '@azure/arm-network.VirtualNetworksCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.VirtualNetworksDeleteOptionalParams|stable'
+  - '@azure/arm-network.VirtualNetworksGetOptionalParams|stable'
+  - '@azure/arm-network.VirtualNetworksListAllNextOptionalParams|stable'
+  - '@azure/arm-network.VirtualNetworksListAllOptionalParams|stable'
+  - '@azure/arm-network.VirtualNetworksListNextOptionalParams|stable'
+  - '@azure/arm-network.VirtualNetworksListOptionalParams|stable'
+  - '@azure/arm-network.VirtualNetworksListUsageNextOptionalParams|stable'
+  - '@azure/arm-network.VirtualNetworksListUsageOptionalParams|stable'
+  - '@azure/arm-network.VirtualNetworksUpdateTagsOptionalParams|stable'
+  - '@azure/arm-network.VirtualRouterListResult|stable'
+  - '@azure/arm-network.VirtualRouterPeeringListResult|stable'
+  - '@azure/arm-network.VirtualRouterPeerings|stable'
+  - '@azure/arm-network.VirtualRouterPeeringsCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.VirtualRouterPeeringsDeleteOptionalParams|stable'
+  - '@azure/arm-network.VirtualRouterPeeringsGetOptionalParams|stable'
+  - '@azure/arm-network.VirtualRouterPeeringsListNextOptionalParams|stable'
+  - '@azure/arm-network.VirtualRouterPeeringsListOptionalParams|stable'
+  - '@azure/arm-network.VirtualRouters|stable'
+  - '@azure/arm-network.VirtualRoutersCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.VirtualRoutersDeleteOptionalParams|stable'
+  - '@azure/arm-network.VirtualRoutersGetOptionalParams|stable'
+  - >-
+    @azure/arm-network.VirtualRoutersListByResourceGroupNextOptionalParams|stable
+  - '@azure/arm-network.VirtualRoutersListByResourceGroupOptionalParams|stable'
+  - '@azure/arm-network.VirtualRoutersListNextOptionalParams|stable'
+  - '@azure/arm-network.VirtualRoutersListOptionalParams|stable'
+  - '@azure/arm-network.VirtualWanSecurityProvider|stable'
+  - '@azure/arm-network.VirtualWanSecurityProviders|stable'
+  - '@azure/arm-network.VirtualWanVpnProfileParameters|stable'
+  - '@azure/arm-network.VirtualWans|stable'
+  - '@azure/arm-network.VirtualWansCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.VirtualWansDeleteOptionalParams|stable'
+  - '@azure/arm-network.VirtualWansGetOptionalParams|stable'
+  - '@azure/arm-network.VirtualWansListByResourceGroupNextOptionalParams|stable'
+  - '@azure/arm-network.VirtualWansListByResourceGroupOptionalParams|stable'
+  - '@azure/arm-network.VirtualWansListNextOptionalParams|stable'
+  - '@azure/arm-network.VirtualWansListOptionalParams|stable'
+  - '@azure/arm-network.VirtualWansUpdateTagsOptionalParams|stable'
+  - '@azure/arm-network.VnetRoute|stable'
+  - '@azure/arm-network.VpnClientConfiguration|stable'
+  - '@azure/arm-network.VpnClientConnectionHealth|stable'
+  - '@azure/arm-network.VpnClientConnectionHealthDetail|stable'
+  - '@azure/arm-network.VpnClientConnectionHealthDetailListResult|stable'
+  - '@azure/arm-network.VpnClientIPsecParameters|stable'
+  - '@azure/arm-network.VpnClientParameters|stable'
+  - '@azure/arm-network.VpnConnectionPacketCaptureStartParameters|stable'
+  - '@azure/arm-network.VpnConnectionPacketCaptureStopParameters|stable'
+  - '@azure/arm-network.VpnConnections|stable'
+  - '@azure/arm-network.VpnConnectionsCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.VpnConnectionsDeleteOptionalParams|stable'
+  - '@azure/arm-network.VpnConnectionsGetOptionalParams|stable'
+  - '@azure/arm-network.VpnConnectionsListByVpnGatewayNextOptionalParams|stable'
+  - '@azure/arm-network.VpnConnectionsListByVpnGatewayOptionalParams|stable'
+  - '@azure/arm-network.VpnConnectionsStartPacketCaptureOptionalParams|stable'
+  - '@azure/arm-network.VpnConnectionsStopPacketCaptureOptionalParams|stable'
+  - '@azure/arm-network.VpnDeviceScriptParameters|stable'
+  - '@azure/arm-network.VpnGatewayIpConfiguration|stable'
+  - '@azure/arm-network.VpnGatewayPacketCaptureStartParameters|stable'
+  - '@azure/arm-network.VpnGatewayPacketCaptureStopParameters|stable'
+  - '@azure/arm-network.VpnGateways|stable'
+  - '@azure/arm-network.VpnGatewaysCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.VpnGatewaysDeleteOptionalParams|stable'
+  - '@azure/arm-network.VpnGatewaysGetOptionalParams|stable'
+  - '@azure/arm-network.VpnGatewaysListByResourceGroupNextOptionalParams|stable'
+  - '@azure/arm-network.VpnGatewaysListByResourceGroupOptionalParams|stable'
+  - '@azure/arm-network.VpnGatewaysListNextOptionalParams|stable'
+  - '@azure/arm-network.VpnGatewaysListOptionalParams|stable'
+  - '@azure/arm-network.VpnGatewaysResetOptionalParams|stable'
+  - '@azure/arm-network.VpnGatewaysStartPacketCaptureOptionalParams|stable'
+  - '@azure/arm-network.VpnGatewaysStopPacketCaptureOptionalParams|stable'
+  - '@azure/arm-network.VpnGatewaysUpdateTagsOptionalParams|stable'
+  - '@azure/arm-network.VpnLinkBgpSettings|stable'
+  - '@azure/arm-network.VpnLinkConnections|stable'
+  - '@azure/arm-network.VpnLinkConnectionsGetIkeSasOptionalParams|stable'
+  - >-
+    @azure/arm-network.VpnLinkConnectionsListByVpnConnectionNextOptionalParams|stable
+  - >-
+    @azure/arm-network.VpnLinkConnectionsListByVpnConnectionOptionalParams|stable
+  - '@azure/arm-network.VpnLinkConnectionsResetConnectionOptionalParams|stable'
+  - '@azure/arm-network.VpnLinkProviderProperties|stable'
+  - '@azure/arm-network.VpnNatRuleMapping|stable'
+  - '@azure/arm-network.VpnPacketCaptureStartParameters|stable'
+  - '@azure/arm-network.VpnPacketCaptureStopParameters|stable'
+  - '@azure/arm-network.VpnProfileResponse|stable'
+  - '@azure/arm-network.VpnServerConfigRadiusClientRootCertificate|stable'
+  - '@azure/arm-network.VpnServerConfigRadiusServerRootCertificate|stable'
+  - '@azure/arm-network.VpnServerConfigVpnClientRevokedCertificate|stable'
+  - '@azure/arm-network.VpnServerConfigVpnClientRootCertificate|stable'
+  - '@azure/arm-network.VpnServerConfigurations|stable'
+  - '@azure/arm-network.VpnServerConfigurationsAssociatedWithVirtualWan|stable'
+  - >-
+    @azure/arm-network.VpnServerConfigurationsAssociatedWithVirtualWanListOptionalParams|stable
+  - >-
+    @azure/arm-network.VpnServerConfigurationsCreateOrUpdateOptionalParams|stable
+  - '@azure/arm-network.VpnServerConfigurationsDeleteOptionalParams|stable'
+  - '@azure/arm-network.VpnServerConfigurationsGetOptionalParams|stable'
+  - >-
+    @azure/arm-network.VpnServerConfigurationsListByResourceGroupNextOptionalParams|stable
+  - >-
+    @azure/arm-network.VpnServerConfigurationsListByResourceGroupOptionalParams|stable
+  - '@azure/arm-network.VpnServerConfigurationsListNextOptionalParams|stable'
+  - '@azure/arm-network.VpnServerConfigurationsListOptionalParams|stable'
+  - '@azure/arm-network.VpnServerConfigurationsResponse|stable'
+  - '@azure/arm-network.VpnServerConfigurationsUpdateTagsOptionalParams|stable'
+  - '@azure/arm-network.VpnSiteId|stable'
+  - '@azure/arm-network.VpnSiteLinkConnections|stable'
+  - '@azure/arm-network.VpnSiteLinkConnectionsGetOptionalParams|stable'
+  - '@azure/arm-network.VpnSiteLinks|stable'
+  - '@azure/arm-network.VpnSiteLinksGetOptionalParams|stable'
+  - '@azure/arm-network.VpnSiteLinksListByVpnSiteNextOptionalParams|stable'
+  - '@azure/arm-network.VpnSiteLinksListByVpnSiteOptionalParams|stable'
+  - '@azure/arm-network.VpnSites|stable'
+  - '@azure/arm-network.VpnSitesConfiguration|stable'
+  - '@azure/arm-network.VpnSitesConfigurationDownloadOptionalParams|stable'
+  - '@azure/arm-network.VpnSitesCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-network.VpnSitesDeleteOptionalParams|stable'
+  - '@azure/arm-network.VpnSitesGetOptionalParams|stable'
+  - '@azure/arm-network.VpnSitesListByResourceGroupNextOptionalParams|stable'
+  - '@azure/arm-network.VpnSitesListByResourceGroupOptionalParams|stable'
+  - '@azure/arm-network.VpnSitesListNextOptionalParams|stable'
+  - '@azure/arm-network.VpnSitesListOptionalParams|stable'
+  - '@azure/arm-network.VpnSitesUpdateTagsOptionalParams|stable'
+  - '@azure/arm-network.WebApplicationFirewallCustomRule|stable'
+  - '@azure/arm-network.WebApplicationFirewallPolicies|stable'
+  - >-
+    @azure/arm-network.WebApplicationFirewallPoliciesCreateOrUpdateOptionalParams|stable
+  - '@azure/arm-network.WebApplicationFirewallPoliciesDeleteOptionalParams|stable'
+  - '@azure/arm-network.WebApplicationFirewallPoliciesGetOptionalParams|stable'
+  - >-
+    @azure/arm-network.WebApplicationFirewallPoliciesListAllNextOptionalParams|stable
+  - >-
+    @azure/arm-network.WebApplicationFirewallPoliciesListAllOptionalParams|stable
+  - >-
+    @azure/arm-network.WebApplicationFirewallPoliciesListNextOptionalParams|stable
+  - '@azure/arm-network.WebApplicationFirewallPoliciesListOptionalParams|stable'
+  - '@azure/arm-network.WebApplicationFirewallPolicyListResult|stable'
+  - '@azure/arm-network.WebCategories|stable'
+  - '@azure/arm-network.WebCategoriesGetOptionalParams|stable'
+  - '@azure/arm-network.WebCategoriesListBySubscriptionNextOptionalParams|stable'
+  - '@azure/arm-network.WebCategoriesListBySubscriptionOptionalParams|stable'
+typeAliases:
+  - '@azure/arm-network.Access|stable'
+  - '@azure/arm-network.ApplicationGateway|stable'
+  - '@azure/arm-network.ApplicationGatewayAuthenticationCertificate|stable'
+  - '@azure/arm-network.ApplicationGatewayAvailableSslOptions|stable'
+  - '@azure/arm-network.ApplicationGatewayBackendAddressPool|stable'
+  - '@azure/arm-network.ApplicationGatewayBackendHealthServerHealth|stable'
+  - '@azure/arm-network.ApplicationGatewayBackendHttpSettings|stable'
+  - '@azure/arm-network.ApplicationGatewayCookieBasedAffinity|stable'
+  - '@azure/arm-network.ApplicationGatewayCustomErrorStatusCode|stable'
+  - '@azure/arm-network.ApplicationGatewayFirewallMode|stable'
+  - '@azure/arm-network.ApplicationGatewayFirewallRuleSet|stable'
+  - '@azure/arm-network.ApplicationGatewayFrontendIPConfiguration|stable'
+  - '@azure/arm-network.ApplicationGatewayFrontendPort|stable'
+  - '@azure/arm-network.ApplicationGatewayHttpListener|stable'
+  - '@azure/arm-network.ApplicationGatewayIPConfiguration|stable'
+  - '@azure/arm-network.ApplicationGatewayLoadDistributionAlgorithm|stable'
+  - '@azure/arm-network.ApplicationGatewayLoadDistributionPolicy|stable'
+  - '@azure/arm-network.ApplicationGatewayLoadDistributionTarget|stable'
+  - '@azure/arm-network.ApplicationGatewayOperationalState|stable'
+  - '@azure/arm-network.ApplicationGatewayPathRule|stable'
+  - '@azure/arm-network.ApplicationGatewayPrivateEndpointConnection|stable'
+  - >-
+    @azure/arm-network.ApplicationGatewayPrivateEndpointConnectionsGetResponse|stable
+  - >-
+    @azure/arm-network.ApplicationGatewayPrivateEndpointConnectionsListNextResponse|stable
+  - >-
+    @azure/arm-network.ApplicationGatewayPrivateEndpointConnectionsListResponse|stable
+  - >-
+    @azure/arm-network.ApplicationGatewayPrivateEndpointConnectionsUpdateResponse|stable
+  - '@azure/arm-network.ApplicationGatewayPrivateLinkConfiguration|stable'
+  - '@azure/arm-network.ApplicationGatewayPrivateLinkIpConfiguration|stable'
+  - '@azure/arm-network.ApplicationGatewayPrivateLinkResource|stable'
+  - >-
+    @azure/arm-network.ApplicationGatewayPrivateLinkResourcesListNextResponse|stable
+  - '@azure/arm-network.ApplicationGatewayPrivateLinkResourcesListResponse|stable'
+  - '@azure/arm-network.ApplicationGatewayProbe|stable'
+  - '@azure/arm-network.ApplicationGatewayProtocol|stable'
+  - '@azure/arm-network.ApplicationGatewayRedirectConfiguration|stable'
+  - '@azure/arm-network.ApplicationGatewayRedirectType|stable'
+  - '@azure/arm-network.ApplicationGatewayRequestRoutingRule|stable'
+  - '@azure/arm-network.ApplicationGatewayRequestRoutingRuleType|stable'
+  - '@azure/arm-network.ApplicationGatewayRewriteRuleSet|stable'
+  - '@azure/arm-network.ApplicationGatewaySkuName|stable'
+  - '@azure/arm-network.ApplicationGatewaySslCertificate|stable'
+  - '@azure/arm-network.ApplicationGatewaySslCipherSuite|stable'
+  - '@azure/arm-network.ApplicationGatewaySslPolicyName|stable'
+  - '@azure/arm-network.ApplicationGatewaySslPolicyType|stable'
+  - '@azure/arm-network.ApplicationGatewaySslPredefinedPolicy|stable'
+  - '@azure/arm-network.ApplicationGatewaySslProfile|stable'
+  - '@azure/arm-network.ApplicationGatewaySslProtocol|stable'
+  - '@azure/arm-network.ApplicationGatewayTier|stable'
+  - '@azure/arm-network.ApplicationGatewayTrustedClientCertificate|stable'
+  - '@azure/arm-network.ApplicationGatewayTrustedRootCertificate|stable'
+  - '@azure/arm-network.ApplicationGatewayUrlPathMap|stable'
+  - '@azure/arm-network.ApplicationGatewaysBackendHealthOnDemandResponse|stable'
+  - '@azure/arm-network.ApplicationGatewaysBackendHealthResponse|stable'
+  - '@azure/arm-network.ApplicationGatewaysCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.ApplicationGatewaysGetResponse|stable'
+  - '@azure/arm-network.ApplicationGatewaysGetSslPredefinedPolicyResponse|stable'
+  - '@azure/arm-network.ApplicationGatewaysListAllNextResponse|stable'
+  - '@azure/arm-network.ApplicationGatewaysListAllResponse|stable'
+  - >-
+    @azure/arm-network.ApplicationGatewaysListAvailableRequestHeadersResponse|stable
+  - >-
+    @azure/arm-network.ApplicationGatewaysListAvailableResponseHeadersResponse|stable
+  - >-
+    @azure/arm-network.ApplicationGatewaysListAvailableServerVariablesResponse|stable
+  - '@azure/arm-network.ApplicationGatewaysListAvailableSslOptionsResponse|stable'
+  - >-
+    @azure/arm-network.ApplicationGatewaysListAvailableSslPredefinedPoliciesNextResponse|stable
+  - >-
+    @azure/arm-network.ApplicationGatewaysListAvailableSslPredefinedPoliciesResponse|stable
+  - >-
+    @azure/arm-network.ApplicationGatewaysListAvailableWafRuleSetsResponse|stable
+  - '@azure/arm-network.ApplicationGatewaysListNextResponse|stable'
+  - '@azure/arm-network.ApplicationGatewaysListResponse|stable'
+  - '@azure/arm-network.ApplicationGatewaysUpdateTagsResponse|stable'
+  - '@azure/arm-network.ApplicationRule|stable'
+  - '@azure/arm-network.ApplicationSecurityGroup|stable'
+  - '@azure/arm-network.ApplicationSecurityGroupsCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.ApplicationSecurityGroupsGetResponse|stable'
+  - '@azure/arm-network.ApplicationSecurityGroupsListAllNextResponse|stable'
+  - '@azure/arm-network.ApplicationSecurityGroupsListAllResponse|stable'
+  - '@azure/arm-network.ApplicationSecurityGroupsListNextResponse|stable'
+  - '@azure/arm-network.ApplicationSecurityGroupsListResponse|stable'
+  - '@azure/arm-network.ApplicationSecurityGroupsUpdateTagsResponse|stable'
+  - '@azure/arm-network.AssociationType|stable'
+  - '@azure/arm-network.AuthenticationMethod|stable'
+  - '@azure/arm-network.AuthorizationUseStatus|stable'
+  - '@azure/arm-network.AvailableDelegationsListNextResponse|stable'
+  - '@azure/arm-network.AvailableDelegationsListResponse|stable'
+  - '@azure/arm-network.AvailableEndpointServicesListNextResponse|stable'
+  - '@azure/arm-network.AvailableEndpointServicesListResponse|stable'
+  - >-
+    @azure/arm-network.AvailablePrivateEndpointTypesListByResourceGroupNextResponse|stable
+  - >-
+    @azure/arm-network.AvailablePrivateEndpointTypesListByResourceGroupResponse|stable
+  - '@azure/arm-network.AvailablePrivateEndpointTypesListNextResponse|stable'
+  - '@azure/arm-network.AvailablePrivateEndpointTypesListResponse|stable'
+  - '@azure/arm-network.AvailableResourceGroupDelegationsListNextResponse|stable'
+  - '@azure/arm-network.AvailableResourceGroupDelegationsListResponse|stable'
+  - >-
+    @azure/arm-network.AvailableServiceAliasesListByResourceGroupNextResponse|stable
+  - '@azure/arm-network.AvailableServiceAliasesListByResourceGroupResponse|stable'
+  - '@azure/arm-network.AvailableServiceAliasesListNextResponse|stable'
+  - '@azure/arm-network.AvailableServiceAliasesListResponse|stable'
+  - '@azure/arm-network.AzureFirewall|stable'
+  - '@azure/arm-network.AzureFirewallApplicationRuleCollection|stable'
+  - '@azure/arm-network.AzureFirewallApplicationRuleProtocolType|stable'
+  - '@azure/arm-network.AzureFirewallFqdnTag|stable'
+  - '@azure/arm-network.AzureFirewallFqdnTagsListAllNextResponse|stable'
+  - '@azure/arm-network.AzureFirewallFqdnTagsListAllResponse|stable'
+  - '@azure/arm-network.AzureFirewallIPConfiguration|stable'
+  - '@azure/arm-network.AzureFirewallNatRCActionType|stable'
+  - '@azure/arm-network.AzureFirewallNatRuleCollection|stable'
+  - '@azure/arm-network.AzureFirewallNetworkRuleCollection|stable'
+  - '@azure/arm-network.AzureFirewallNetworkRuleProtocol|stable'
+  - '@azure/arm-network.AzureFirewallRCActionType|stable'
+  - '@azure/arm-network.AzureFirewallSkuName|stable'
+  - '@azure/arm-network.AzureFirewallSkuTier|stable'
+  - '@azure/arm-network.AzureFirewallThreatIntelMode|stable'
+  - '@azure/arm-network.AzureFirewallsCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.AzureFirewallsGetResponse|stable'
+  - '@azure/arm-network.AzureFirewallsListAllNextResponse|stable'
+  - '@azure/arm-network.AzureFirewallsListAllResponse|stable'
+  - '@azure/arm-network.AzureFirewallsListNextResponse|stable'
+  - '@azure/arm-network.AzureFirewallsListResponse|stable'
+  - '@azure/arm-network.AzureFirewallsUpdateTagsResponse|stable'
+  - '@azure/arm-network.BackendAddressPool|stable'
+  - '@azure/arm-network.BastionConnectProtocol|stable'
+  - '@azure/arm-network.BastionHost|stable'
+  - '@azure/arm-network.BastionHostIPConfiguration|stable'
+  - '@azure/arm-network.BastionHostSkuName|stable'
+  - '@azure/arm-network.BastionHostsCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.BastionHostsGetResponse|stable'
+  - '@azure/arm-network.BastionHostsListByResourceGroupNextResponse|stable'
+  - '@azure/arm-network.BastionHostsListByResourceGroupResponse|stable'
+  - '@azure/arm-network.BastionHostsListNextResponse|stable'
+  - '@azure/arm-network.BastionHostsListResponse|stable'
+  - '@azure/arm-network.BastionHostsUpdateTagsResponse|stable'
+  - '@azure/arm-network.BgpConnection|stable'
+  - '@azure/arm-network.BgpPeerState|stable'
+  - '@azure/arm-network.BgpServiceCommunitiesListNextResponse|stable'
+  - '@azure/arm-network.BgpServiceCommunitiesListResponse|stable'
+  - '@azure/arm-network.BgpServiceCommunity|stable'
+  - '@azure/arm-network.CheckDnsNameAvailabilityResponse|stable'
+  - '@azure/arm-network.CircuitConnectionStatus|stable'
+  - '@azure/arm-network.CommissionedState|stable'
+  - '@azure/arm-network.ConnectionMonitorEndpointFilterItemType|stable'
+  - '@azure/arm-network.ConnectionMonitorEndpointFilterType|stable'
+  - '@azure/arm-network.ConnectionMonitorResultProperties|stable'
+  - '@azure/arm-network.ConnectionMonitorSourceStatus|stable'
+  - '@azure/arm-network.ConnectionMonitorTestConfigurationProtocol|stable'
+  - '@azure/arm-network.ConnectionMonitorType|stable'
+  - '@azure/arm-network.ConnectionMonitorsCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.ConnectionMonitorsGetResponse|stable'
+  - '@azure/arm-network.ConnectionMonitorsListResponse|stable'
+  - '@azure/arm-network.ConnectionMonitorsQueryResponse|stable'
+  - '@azure/arm-network.ConnectionMonitorsUpdateTagsResponse|stable'
+  - '@azure/arm-network.ConnectionSharedKey|stable'
+  - '@azure/arm-network.ConnectionState|stable'
+  - '@azure/arm-network.ConnectionStatus|stable'
+  - '@azure/arm-network.Container|stable'
+  - '@azure/arm-network.ContainerNetworkInterface|stable'
+  - '@azure/arm-network.ContainerNetworkInterfaceConfiguration|stable'
+  - '@azure/arm-network.CoverageLevel|stable'
+  - '@azure/arm-network.CustomIPPrefixesCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.CustomIPPrefixesGetResponse|stable'
+  - '@azure/arm-network.CustomIPPrefixesListAllNextResponse|stable'
+  - '@azure/arm-network.CustomIPPrefixesListAllResponse|stable'
+  - '@azure/arm-network.CustomIPPrefixesListNextResponse|stable'
+  - '@azure/arm-network.CustomIPPrefixesListResponse|stable'
+  - '@azure/arm-network.CustomIPPrefixesUpdateTagsResponse|stable'
+  - '@azure/arm-network.CustomIpPrefix|stable'
+  - '@azure/arm-network.DdosCustomPoliciesCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.DdosCustomPoliciesGetResponse|stable'
+  - '@azure/arm-network.DdosCustomPoliciesUpdateTagsResponse|stable'
+  - '@azure/arm-network.DdosCustomPolicy|stable'
+  - '@azure/arm-network.DdosCustomPolicyProtocol|stable'
+  - '@azure/arm-network.DdosCustomPolicyTriggerSensitivityOverride|stable'
+  - '@azure/arm-network.DdosProtectionPlansCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.DdosProtectionPlansGetResponse|stable'
+  - '@azure/arm-network.DdosProtectionPlansListByResourceGroupNextResponse|stable'
+  - '@azure/arm-network.DdosProtectionPlansListByResourceGroupResponse|stable'
+  - '@azure/arm-network.DdosProtectionPlansListNextResponse|stable'
+  - '@azure/arm-network.DdosProtectionPlansListResponse|stable'
+  - '@azure/arm-network.DdosProtectionPlansUpdateTagsResponse|stable'
+  - '@azure/arm-network.DdosSettingsProtectionCoverage|stable'
+  - '@azure/arm-network.DefaultSecurityRulesGetResponse|stable'
+  - '@azure/arm-network.DefaultSecurityRulesListNextResponse|stable'
+  - '@azure/arm-network.DefaultSecurityRulesListResponse|stable'
+  - '@azure/arm-network.Delegation|stable'
+  - '@azure/arm-network.DeleteOptions|stable'
+  - '@azure/arm-network.DestinationPortBehavior|stable'
+  - '@azure/arm-network.DhGroup|stable'
+  - '@azure/arm-network.Direction|stable'
+  - '@azure/arm-network.DisconnectActiveSessionsNextResponse|stable'
+  - '@azure/arm-network.DisconnectActiveSessionsResponse|stable'
+  - '@azure/arm-network.DscpConfiguration|stable'
+  - '@azure/arm-network.DscpConfigurationCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.DscpConfigurationGetResponse|stable'
+  - '@azure/arm-network.DscpConfigurationListAllNextResponse|stable'
+  - '@azure/arm-network.DscpConfigurationListAllResponse|stable'
+  - '@azure/arm-network.DscpConfigurationListNextResponse|stable'
+  - '@azure/arm-network.DscpConfigurationListResponse|stable'
+  - '@azure/arm-network.EffectiveRouteSource|stable'
+  - '@azure/arm-network.EffectiveRouteState|stable'
+  - '@azure/arm-network.EffectiveSecurityRuleProtocol|stable'
+  - '@azure/arm-network.EndpointServiceResult|stable'
+  - '@azure/arm-network.EndpointType|stable'
+  - '@azure/arm-network.Enum69|stable'
+  - '@azure/arm-network.Enum70|stable'
+  - '@azure/arm-network.Enum71|stable'
+  - '@azure/arm-network.EvaluationState|stable'
+  - '@azure/arm-network.ExpressRouteCircuit|stable'
+  - '@azure/arm-network.ExpressRouteCircuitAuthorization|stable'
+  - >-
+    @azure/arm-network.ExpressRouteCircuitAuthorizationsCreateOrUpdateResponse|stable
+  - '@azure/arm-network.ExpressRouteCircuitAuthorizationsGetResponse|stable'
+  - '@azure/arm-network.ExpressRouteCircuitAuthorizationsListNextResponse|stable'
+  - '@azure/arm-network.ExpressRouteCircuitAuthorizationsListResponse|stable'
+  - '@azure/arm-network.ExpressRouteCircuitConnection|stable'
+  - >-
+    @azure/arm-network.ExpressRouteCircuitConnectionsCreateOrUpdateResponse|stable
+  - '@azure/arm-network.ExpressRouteCircuitConnectionsGetResponse|stable'
+  - '@azure/arm-network.ExpressRouteCircuitConnectionsListNextResponse|stable'
+  - '@azure/arm-network.ExpressRouteCircuitConnectionsListResponse|stable'
+  - '@azure/arm-network.ExpressRouteCircuitPeering|stable'
+  - >-
+    @azure/arm-network.ExpressRouteCircuitPeeringAdvertisedPublicPrefixState|stable
+  - '@azure/arm-network.ExpressRouteCircuitPeeringState|stable'
+  - '@azure/arm-network.ExpressRouteCircuitPeeringsCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.ExpressRouteCircuitPeeringsGetResponse|stable'
+  - '@azure/arm-network.ExpressRouteCircuitPeeringsListNextResponse|stable'
+  - '@azure/arm-network.ExpressRouteCircuitPeeringsListResponse|stable'
+  - '@azure/arm-network.ExpressRouteCircuitSkuFamily|stable'
+  - '@azure/arm-network.ExpressRouteCircuitSkuTier|stable'
+  - '@azure/arm-network.ExpressRouteCircuitsCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.ExpressRouteCircuitsGetPeeringStatsResponse|stable'
+  - '@azure/arm-network.ExpressRouteCircuitsGetResponse|stable'
+  - '@azure/arm-network.ExpressRouteCircuitsGetStatsResponse|stable'
+  - '@azure/arm-network.ExpressRouteCircuitsListAllNextResponse|stable'
+  - '@azure/arm-network.ExpressRouteCircuitsListAllResponse|stable'
+  - '@azure/arm-network.ExpressRouteCircuitsListArpTableResponse|stable'
+  - '@azure/arm-network.ExpressRouteCircuitsListNextResponse|stable'
+  - '@azure/arm-network.ExpressRouteCircuitsListResponse|stable'
+  - '@azure/arm-network.ExpressRouteCircuitsListRoutesTableResponse|stable'
+  - '@azure/arm-network.ExpressRouteCircuitsListRoutesTableSummaryResponse|stable'
+  - '@azure/arm-network.ExpressRouteCircuitsUpdateTagsResponse|stable'
+  - '@azure/arm-network.ExpressRouteConnection|stable'
+  - '@azure/arm-network.ExpressRouteConnectionsCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.ExpressRouteConnectionsGetResponse|stable'
+  - '@azure/arm-network.ExpressRouteConnectionsListResponse|stable'
+  - '@azure/arm-network.ExpressRouteCrossConnection|stable'
+  - '@azure/arm-network.ExpressRouteCrossConnectionPeering|stable'
+  - >-
+    @azure/arm-network.ExpressRouteCrossConnectionPeeringsCreateOrUpdateResponse|stable
+  - '@azure/arm-network.ExpressRouteCrossConnectionPeeringsGetResponse|stable'
+  - >-
+    @azure/arm-network.ExpressRouteCrossConnectionPeeringsListNextResponse|stable
+  - '@azure/arm-network.ExpressRouteCrossConnectionPeeringsListResponse|stable'
+  - '@azure/arm-network.ExpressRouteCrossConnectionsCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.ExpressRouteCrossConnectionsGetResponse|stable'
+  - '@azure/arm-network.ExpressRouteCrossConnectionsListArpTableResponse|stable'
+  - >-
+    @azure/arm-network.ExpressRouteCrossConnectionsListByResourceGroupNextResponse|stable
+  - >-
+    @azure/arm-network.ExpressRouteCrossConnectionsListByResourceGroupResponse|stable
+  - '@azure/arm-network.ExpressRouteCrossConnectionsListNextResponse|stable'
+  - '@azure/arm-network.ExpressRouteCrossConnectionsListResponse|stable'
+  - >-
+    @azure/arm-network.ExpressRouteCrossConnectionsListRoutesTableResponse|stable
+  - >-
+    @azure/arm-network.ExpressRouteCrossConnectionsListRoutesTableSummaryResponse|stable
+  - '@azure/arm-network.ExpressRouteCrossConnectionsUpdateTagsResponse|stable'
+  - '@azure/arm-network.ExpressRouteGateway|stable'
+  - '@azure/arm-network.ExpressRouteGatewaysCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.ExpressRouteGatewaysGetResponse|stable'
+  - '@azure/arm-network.ExpressRouteGatewaysListByResourceGroupResponse|stable'
+  - '@azure/arm-network.ExpressRouteGatewaysListBySubscriptionResponse|stable'
+  - '@azure/arm-network.ExpressRouteGatewaysUpdateTagsResponse|stable'
+  - '@azure/arm-network.ExpressRouteLink|stable'
+  - '@azure/arm-network.ExpressRouteLinkAdminState|stable'
+  - '@azure/arm-network.ExpressRouteLinkConnectorType|stable'
+  - '@azure/arm-network.ExpressRouteLinkMacSecCipher|stable'
+  - '@azure/arm-network.ExpressRouteLinkMacSecSciState|stable'
+  - '@azure/arm-network.ExpressRouteLinksGetResponse|stable'
+  - '@azure/arm-network.ExpressRouteLinksListNextResponse|stable'
+  - '@azure/arm-network.ExpressRouteLinksListResponse|stable'
+  - '@azure/arm-network.ExpressRoutePeeringState|stable'
+  - '@azure/arm-network.ExpressRoutePeeringType|stable'
+  - '@azure/arm-network.ExpressRoutePort|stable'
+  - '@azure/arm-network.ExpressRoutePortsCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.ExpressRoutePortsEncapsulation|stable'
+  - '@azure/arm-network.ExpressRoutePortsGenerateLOAResponse|stable'
+  - '@azure/arm-network.ExpressRoutePortsGetResponse|stable'
+  - '@azure/arm-network.ExpressRoutePortsListByResourceGroupNextResponse|stable'
+  - '@azure/arm-network.ExpressRoutePortsListByResourceGroupResponse|stable'
+  - '@azure/arm-network.ExpressRoutePortsListNextResponse|stable'
+  - '@azure/arm-network.ExpressRoutePortsListResponse|stable'
+  - '@azure/arm-network.ExpressRoutePortsLocation|stable'
+  - '@azure/arm-network.ExpressRoutePortsLocationsGetResponse|stable'
+  - '@azure/arm-network.ExpressRoutePortsLocationsListNextResponse|stable'
+  - '@azure/arm-network.ExpressRoutePortsLocationsListResponse|stable'
+  - '@azure/arm-network.ExpressRoutePortsUpdateTagsResponse|stable'
+  - '@azure/arm-network.ExpressRouteServiceProvider|stable'
+  - '@azure/arm-network.ExpressRouteServiceProvidersListNextResponse|stable'
+  - '@azure/arm-network.ExpressRouteServiceProvidersListResponse|stable'
+  - '@azure/arm-network.ExtendedLocationTypes|stable'
+  - '@azure/arm-network.FirewallPoliciesCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.FirewallPoliciesGetResponse|stable'
+  - '@azure/arm-network.FirewallPoliciesListAllNextResponse|stable'
+  - '@azure/arm-network.FirewallPoliciesListAllResponse|stable'
+  - '@azure/arm-network.FirewallPoliciesListNextResponse|stable'
+  - '@azure/arm-network.FirewallPoliciesListResponse|stable'
+  - '@azure/arm-network.FirewallPolicy|stable'
+  - '@azure/arm-network.FirewallPolicyFilterRuleCollection|stable'
+  - '@azure/arm-network.FirewallPolicyFilterRuleCollectionActionType|stable'
+  - >-
+    @azure/arm-network.FirewallPolicyIdpsSignaturesFilterValuesListResponse|stable
+  - '@azure/arm-network.FirewallPolicyIdpsSignaturesListResponse|stable'
+  - '@azure/arm-network.FirewallPolicyIdpsSignaturesOverridesGetResponse|stable'
+  - '@azure/arm-network.FirewallPolicyIdpsSignaturesOverridesListResponse|stable'
+  - '@azure/arm-network.FirewallPolicyIdpsSignaturesOverridesPatchResponse|stable'
+  - '@azure/arm-network.FirewallPolicyIdpsSignaturesOverridesPutResponse|stable'
+  - '@azure/arm-network.FirewallPolicyIntrusionDetectionProtocol|stable'
+  - '@azure/arm-network.FirewallPolicyIntrusionDetectionStateType|stable'
+  - '@azure/arm-network.FirewallPolicyNatRuleCollection|stable'
+  - '@azure/arm-network.FirewallPolicyNatRuleCollectionActionType|stable'
+  - '@azure/arm-network.FirewallPolicyRuleApplicationProtocolType|stable'
+  - '@azure/arm-network.FirewallPolicyRuleCollectionGroup|stable'
+  - >-
+    @azure/arm-network.FirewallPolicyRuleCollectionGroupsCreateOrUpdateResponse|stable
+  - '@azure/arm-network.FirewallPolicyRuleCollectionGroupsGetResponse|stable'
+  - '@azure/arm-network.FirewallPolicyRuleCollectionGroupsListNextResponse|stable'
+  - '@azure/arm-network.FirewallPolicyRuleCollectionGroupsListResponse|stable'
+  - '@azure/arm-network.FirewallPolicyRuleCollectionType|stable'
+  - '@azure/arm-network.FirewallPolicyRuleCollectionUnion|stable'
+  - '@azure/arm-network.FirewallPolicyRuleNetworkProtocol|stable'
+  - '@azure/arm-network.FirewallPolicyRuleType|stable'
+  - '@azure/arm-network.FirewallPolicyRuleUnion|stable'
+  - '@azure/arm-network.FirewallPolicySkuTier|stable'
+  - '@azure/arm-network.FlowLog|stable'
+  - '@azure/arm-network.FlowLogFormatType|stable'
+  - '@azure/arm-network.FlowLogsCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.FlowLogsGetResponse|stable'
+  - '@azure/arm-network.FlowLogsListNextResponse|stable'
+  - '@azure/arm-network.FlowLogsListResponse|stable'
+  - '@azure/arm-network.FlowLogsUpdateTagsResponse|stable'
+  - '@azure/arm-network.FrontendIPConfiguration|stable'
+  - '@azure/arm-network.GatewayLoadBalancerTunnelInterfaceType|stable'
+  - '@azure/arm-network.GatewayLoadBalancerTunnelProtocol|stable'
+  - >-
+    @azure/arm-network.GeneratevirtualwanvpnserverconfigurationvpnprofileResponse|stable
+  - '@azure/arm-network.GetActiveSessionsNextResponse|stable'
+  - '@azure/arm-network.GetActiveSessionsResponse|stable'
+  - '@azure/arm-network.GetBastionShareableLinkNextResponse|stable'
+  - '@azure/arm-network.GetBastionShareableLinkResponse|stable'
+  - '@azure/arm-network.HttpConfigurationMethod|stable'
+  - '@azure/arm-network.HttpMethod|stable'
+  - '@azure/arm-network.HubBgpConnectionStatus|stable'
+  - '@azure/arm-network.HubIpConfiguration|stable'
+  - '@azure/arm-network.HubRouteTable|stable'
+  - '@azure/arm-network.HubRouteTablesCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.HubRouteTablesGetResponse|stable'
+  - '@azure/arm-network.HubRouteTablesListNextResponse|stable'
+  - '@azure/arm-network.HubRouteTablesListResponse|stable'
+  - '@azure/arm-network.HubVirtualNetworkConnection|stable'
+  - '@azure/arm-network.HubVirtualNetworkConnectionStatus|stable'
+  - '@azure/arm-network.HubVirtualNetworkConnectionsCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.HubVirtualNetworkConnectionsGetResponse|stable'
+  - '@azure/arm-network.HubVirtualNetworkConnectionsListNextResponse|stable'
+  - '@azure/arm-network.HubVirtualNetworkConnectionsListResponse|stable'
+  - '@azure/arm-network.IPAllocationMethod|stable'
+  - '@azure/arm-network.IPConfiguration|stable'
+  - '@azure/arm-network.IPConfigurationProfile|stable'
+  - '@azure/arm-network.IPVersion|stable'
+  - '@azure/arm-network.IkeEncryption|stable'
+  - '@azure/arm-network.IkeIntegrity|stable'
+  - '@azure/arm-network.InboundNatPool|stable'
+  - '@azure/arm-network.InboundNatRule|stable'
+  - '@azure/arm-network.InboundNatRulesCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.InboundNatRulesGetResponse|stable'
+  - '@azure/arm-network.InboundNatRulesListNextResponse|stable'
+  - '@azure/arm-network.InboundNatRulesListResponse|stable'
+  - '@azure/arm-network.InboundSecurityRule|stable'
+  - '@azure/arm-network.InboundSecurityRuleCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.InboundSecurityRulesProtocol|stable'
+  - '@azure/arm-network.IpAllocation|stable'
+  - '@azure/arm-network.IpAllocationType|stable'
+  - '@azure/arm-network.IpAllocationsCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.IpAllocationsGetResponse|stable'
+  - '@azure/arm-network.IpAllocationsListByResourceGroupNextResponse|stable'
+  - '@azure/arm-network.IpAllocationsListByResourceGroupResponse|stable'
+  - '@azure/arm-network.IpAllocationsListNextResponse|stable'
+  - '@azure/arm-network.IpAllocationsListResponse|stable'
+  - '@azure/arm-network.IpAllocationsUpdateTagsResponse|stable'
+  - '@azure/arm-network.IpFlowProtocol|stable'
+  - '@azure/arm-network.IpGroup|stable'
+  - '@azure/arm-network.IpGroupsCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.IpGroupsGetResponse|stable'
+  - '@azure/arm-network.IpGroupsListByResourceGroupNextResponse|stable'
+  - '@azure/arm-network.IpGroupsListByResourceGroupResponse|stable'
+  - '@azure/arm-network.IpGroupsListNextResponse|stable'
+  - '@azure/arm-network.IpGroupsListResponse|stable'
+  - '@azure/arm-network.IpGroupsUpdateGroupsResponse|stable'
+  - '@azure/arm-network.IpsecEncryption|stable'
+  - '@azure/arm-network.IpsecIntegrity|stable'
+  - '@azure/arm-network.IssueType|stable'
+  - '@azure/arm-network.LoadBalancer|stable'
+  - >-
+    @azure/arm-network.LoadBalancerBackendAddressPoolsCreateOrUpdateResponse|stable
+  - '@azure/arm-network.LoadBalancerBackendAddressPoolsGetResponse|stable'
+  - '@azure/arm-network.LoadBalancerBackendAddressPoolsListNextResponse|stable'
+  - '@azure/arm-network.LoadBalancerBackendAddressPoolsListResponse|stable'
+  - '@azure/arm-network.LoadBalancerFrontendIPConfigurationsGetResponse|stable'
+  - >-
+    @azure/arm-network.LoadBalancerFrontendIPConfigurationsListNextResponse|stable
+  - '@azure/arm-network.LoadBalancerFrontendIPConfigurationsListResponse|stable'
+  - '@azure/arm-network.LoadBalancerLoadBalancingRulesGetResponse|stable'
+  - '@azure/arm-network.LoadBalancerLoadBalancingRulesListNextResponse|stable'
+  - '@azure/arm-network.LoadBalancerLoadBalancingRulesListResponse|stable'
+  - '@azure/arm-network.LoadBalancerNetworkInterfacesListNextResponse|stable'
+  - '@azure/arm-network.LoadBalancerNetworkInterfacesListResponse|stable'
+  - '@azure/arm-network.LoadBalancerOutboundRuleProtocol|stable'
+  - '@azure/arm-network.LoadBalancerOutboundRulesGetResponse|stable'
+  - '@azure/arm-network.LoadBalancerOutboundRulesListNextResponse|stable'
+  - '@azure/arm-network.LoadBalancerOutboundRulesListResponse|stable'
+  - '@azure/arm-network.LoadBalancerProbesGetResponse|stable'
+  - '@azure/arm-network.LoadBalancerProbesListNextResponse|stable'
+  - '@azure/arm-network.LoadBalancerProbesListResponse|stable'
+  - '@azure/arm-network.LoadBalancerSkuName|stable'
+  - '@azure/arm-network.LoadBalancerSkuTier|stable'
+  - '@azure/arm-network.LoadBalancersCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.LoadBalancersGetResponse|stable'
+  - '@azure/arm-network.LoadBalancersListAllNextResponse|stable'
+  - '@azure/arm-network.LoadBalancersListAllResponse|stable'
+  - >-
+    @azure/arm-network.LoadBalancersListInboundNatRulePortMappingsResponse|stable
+  - '@azure/arm-network.LoadBalancersListNextResponse|stable'
+  - '@azure/arm-network.LoadBalancersListResponse|stable'
+  - '@azure/arm-network.LoadBalancersUpdateTagsResponse|stable'
+  - '@azure/arm-network.LoadBalancingRule|stable'
+  - '@azure/arm-network.LoadDistribution|stable'
+  - '@azure/arm-network.LocalNetworkGateway|stable'
+  - '@azure/arm-network.LocalNetworkGatewaysCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.LocalNetworkGatewaysGetResponse|stable'
+  - '@azure/arm-network.LocalNetworkGatewaysListNextResponse|stable'
+  - '@azure/arm-network.LocalNetworkGatewaysListResponse|stable'
+  - '@azure/arm-network.LocalNetworkGatewaysUpdateTagsResponse|stable'
+  - '@azure/arm-network.ManagedRuleEnabledState|stable'
+  - '@azure/arm-network.NatGateway|stable'
+  - '@azure/arm-network.NatGatewaySkuName|stable'
+  - '@azure/arm-network.NatGatewaysCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.NatGatewaysGetResponse|stable'
+  - '@azure/arm-network.NatGatewaysListAllNextResponse|stable'
+  - '@azure/arm-network.NatGatewaysListAllResponse|stable'
+  - '@azure/arm-network.NatGatewaysListNextResponse|stable'
+  - '@azure/arm-network.NatGatewaysListResponse|stable'
+  - '@azure/arm-network.NatGatewaysUpdateTagsResponse|stable'
+  - '@azure/arm-network.NatRule|stable'
+  - '@azure/arm-network.NatRulesCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.NatRulesGetResponse|stable'
+  - '@azure/arm-network.NatRulesListByVpnGatewayNextResponse|stable'
+  - '@azure/arm-network.NatRulesListByVpnGatewayResponse|stable'
+  - '@azure/arm-network.NetworkIntentPolicy|stable'
+  - '@azure/arm-network.NetworkInterface|stable'
+  - '@azure/arm-network.NetworkInterfaceIPConfiguration|stable'
+  - '@azure/arm-network.NetworkInterfaceIPConfigurationsGetResponse|stable'
+  - '@azure/arm-network.NetworkInterfaceIPConfigurationsListNextResponse|stable'
+  - '@azure/arm-network.NetworkInterfaceIPConfigurationsListResponse|stable'
+  - '@azure/arm-network.NetworkInterfaceLoadBalancersListNextResponse|stable'
+  - '@azure/arm-network.NetworkInterfaceLoadBalancersListResponse|stable'
+  - '@azure/arm-network.NetworkInterfaceMigrationPhase|stable'
+  - '@azure/arm-network.NetworkInterfaceNicType|stable'
+  - '@azure/arm-network.NetworkInterfaceTapConfiguration|stable'
+  - >-
+    @azure/arm-network.NetworkInterfaceTapConfigurationsCreateOrUpdateResponse|stable
+  - '@azure/arm-network.NetworkInterfaceTapConfigurationsGetResponse|stable'
+  - '@azure/arm-network.NetworkInterfaceTapConfigurationsListNextResponse|stable'
+  - '@azure/arm-network.NetworkInterfaceTapConfigurationsListResponse|stable'
+  - '@azure/arm-network.NetworkInterfacesCreateOrUpdateResponse|stable'
+  - >-
+    @azure/arm-network.NetworkInterfacesGetCloudServiceNetworkInterfaceResponse|stable
+  - '@azure/arm-network.NetworkInterfacesGetEffectiveRouteTableResponse|stable'
+  - '@azure/arm-network.NetworkInterfacesGetResponse|stable'
+  - >-
+    @azure/arm-network.NetworkInterfacesGetVirtualMachineScaleSetIpConfigurationResponse|stable
+  - >-
+    @azure/arm-network.NetworkInterfacesGetVirtualMachineScaleSetNetworkInterfaceResponse|stable
+  - '@azure/arm-network.NetworkInterfacesListAllNextResponse|stable'
+  - '@azure/arm-network.NetworkInterfacesListAllResponse|stable'
+  - >-
+    @azure/arm-network.NetworkInterfacesListCloudServiceNetworkInterfacesNextResponse|stable
+  - >-
+    @azure/arm-network.NetworkInterfacesListCloudServiceNetworkInterfacesResponse|stable
+  - >-
+    @azure/arm-network.NetworkInterfacesListCloudServiceRoleInstanceNetworkInterfacesNextResponse|stable
+  - >-
+    @azure/arm-network.NetworkInterfacesListCloudServiceRoleInstanceNetworkInterfacesResponse|stable
+  - >-
+    @azure/arm-network.NetworkInterfacesListEffectiveNetworkSecurityGroupsResponse|stable
+  - '@azure/arm-network.NetworkInterfacesListNextResponse|stable'
+  - '@azure/arm-network.NetworkInterfacesListResponse|stable'
+  - >-
+    @azure/arm-network.NetworkInterfacesListVirtualMachineScaleSetIpConfigurationsNextResponse|stable
+  - >-
+    @azure/arm-network.NetworkInterfacesListVirtualMachineScaleSetIpConfigurationsResponse|stable
+  - >-
+    @azure/arm-network.NetworkInterfacesListVirtualMachineScaleSetNetworkInterfacesNextResponse|stable
+  - >-
+    @azure/arm-network.NetworkInterfacesListVirtualMachineScaleSetNetworkInterfacesResponse|stable
+  - >-
+    @azure/arm-network.NetworkInterfacesListVirtualMachineScaleSetVMNetworkInterfacesNextResponse|stable
+  - >-
+    @azure/arm-network.NetworkInterfacesListVirtualMachineScaleSetVMNetworkInterfacesResponse|stable
+  - '@azure/arm-network.NetworkInterfacesUpdateTagsResponse|stable'
+  - '@azure/arm-network.NetworkOperationStatus|stable'
+  - '@azure/arm-network.NetworkProfile|stable'
+  - '@azure/arm-network.NetworkProfilesCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.NetworkProfilesGetResponse|stable'
+  - '@azure/arm-network.NetworkProfilesListAllNextResponse|stable'
+  - '@azure/arm-network.NetworkProfilesListAllResponse|stable'
+  - '@azure/arm-network.NetworkProfilesListNextResponse|stable'
+  - '@azure/arm-network.NetworkProfilesListResponse|stable'
+  - '@azure/arm-network.NetworkProfilesUpdateTagsResponse|stable'
+  - '@azure/arm-network.NetworkRule|stable'
+  - '@azure/arm-network.NetworkSecurityGroup|stable'
+  - '@azure/arm-network.NetworkSecurityGroupsCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.NetworkSecurityGroupsGetResponse|stable'
+  - '@azure/arm-network.NetworkSecurityGroupsListAllNextResponse|stable'
+  - '@azure/arm-network.NetworkSecurityGroupsListAllResponse|stable'
+  - '@azure/arm-network.NetworkSecurityGroupsListNextResponse|stable'
+  - '@azure/arm-network.NetworkSecurityGroupsListResponse|stable'
+  - '@azure/arm-network.NetworkSecurityGroupsUpdateTagsResponse|stable'
+  - '@azure/arm-network.NetworkVirtualAppliance|stable'
+  - '@azure/arm-network.NetworkVirtualApplianceSku|stable'
+  - '@azure/arm-network.NetworkVirtualAppliancesCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.NetworkVirtualAppliancesGetResponse|stable'
+  - >-
+    @azure/arm-network.NetworkVirtualAppliancesListByResourceGroupNextResponse|stable
+  - >-
+    @azure/arm-network.NetworkVirtualAppliancesListByResourceGroupResponse|stable
+  - '@azure/arm-network.NetworkVirtualAppliancesListNextResponse|stable'
+  - '@azure/arm-network.NetworkVirtualAppliancesListResponse|stable'
+  - '@azure/arm-network.NetworkVirtualAppliancesUpdateTagsResponse|stable'
+  - '@azure/arm-network.NetworkWatcher|stable'
+  - '@azure/arm-network.NetworkWatchersCheckConnectivityResponse|stable'
+  - '@azure/arm-network.NetworkWatchersCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.NetworkWatchersGetAzureReachabilityReportResponse|stable'
+  - '@azure/arm-network.NetworkWatchersGetFlowLogStatusResponse|stable'
+  - >-
+    @azure/arm-network.NetworkWatchersGetNetworkConfigurationDiagnosticResponse|stable
+  - '@azure/arm-network.NetworkWatchersGetNextHopResponse|stable'
+  - '@azure/arm-network.NetworkWatchersGetResponse|stable'
+  - '@azure/arm-network.NetworkWatchersGetTopologyResponse|stable'
+  - '@azure/arm-network.NetworkWatchersGetTroubleshootingResponse|stable'
+  - '@azure/arm-network.NetworkWatchersGetTroubleshootingResultResponse|stable'
+  - '@azure/arm-network.NetworkWatchersGetVMSecurityRulesResponse|stable'
+  - '@azure/arm-network.NetworkWatchersListAllResponse|stable'
+  - '@azure/arm-network.NetworkWatchersListAvailableProvidersResponse|stable'
+  - '@azure/arm-network.NetworkWatchersListResponse|stable'
+  - '@azure/arm-network.NetworkWatchersSetFlowLogConfigurationResponse|stable'
+  - '@azure/arm-network.NetworkWatchersUpdateTagsResponse|stable'
+  - '@azure/arm-network.NetworkWatchersVerifyIPFlowResponse|stable'
+  - '@azure/arm-network.NextHopType|stable'
+  - '@azure/arm-network.OfficeTrafficCategory|stable'
+  - '@azure/arm-network.OperationsListNextResponse|stable'
+  - '@azure/arm-network.OperationsListResponse|stable'
+  - '@azure/arm-network.OrderByOrder|stable'
+  - '@azure/arm-network.Origin|stable'
+  - '@azure/arm-network.OutboundRule|stable'
+  - '@azure/arm-network.OutputType|stable'
+  - '@azure/arm-network.OwaspCrsExclusionEntryMatchVariable|stable'
+  - '@azure/arm-network.OwaspCrsExclusionEntrySelectorMatchOperator|stable'
+  - '@azure/arm-network.P2SConnectionConfiguration|stable'
+  - '@azure/arm-network.P2SVpnGateway|stable'
+  - '@azure/arm-network.P2SVpnGatewaysCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.P2SVpnGatewaysGenerateVpnProfileResponse|stable'
+  - >-
+    @azure/arm-network.P2SVpnGatewaysGetP2SVpnConnectionHealthDetailedResponse|stable
+  - '@azure/arm-network.P2SVpnGatewaysGetP2SVpnConnectionHealthResponse|stable'
+  - '@azure/arm-network.P2SVpnGatewaysGetResponse|stable'
+  - '@azure/arm-network.P2SVpnGatewaysListByResourceGroupNextResponse|stable'
+  - '@azure/arm-network.P2SVpnGatewaysListByResourceGroupResponse|stable'
+  - '@azure/arm-network.P2SVpnGatewaysListNextResponse|stable'
+  - '@azure/arm-network.P2SVpnGatewaysListResponse|stable'
+  - '@azure/arm-network.P2SVpnGatewaysResetResponse|stable'
+  - '@azure/arm-network.P2SVpnGatewaysUpdateTagsResponse|stable'
+  - '@azure/arm-network.PacketCaptureResultProperties|stable'
+  - '@azure/arm-network.PacketCapturesCreateResponse|stable'
+  - '@azure/arm-network.PacketCapturesGetResponse|stable'
+  - '@azure/arm-network.PacketCapturesGetStatusResponse|stable'
+  - '@azure/arm-network.PacketCapturesListResponse|stable'
+  - '@azure/arm-network.PatchRouteFilter|stable'
+  - '@azure/arm-network.PatchRouteFilterRule|stable'
+  - '@azure/arm-network.PcError|stable'
+  - '@azure/arm-network.PcProtocol|stable'
+  - '@azure/arm-network.PcStatus|stable'
+  - '@azure/arm-network.PeerExpressRouteCircuitConnection|stable'
+  - '@azure/arm-network.PeerExpressRouteCircuitConnectionsGetResponse|stable'
+  - '@azure/arm-network.PeerExpressRouteCircuitConnectionsListNextResponse|stable'
+  - '@azure/arm-network.PeerExpressRouteCircuitConnectionsListResponse|stable'
+  - '@azure/arm-network.PfsGroup|stable'
+  - '@azure/arm-network.PreferredIPVersion|stable'
+  - '@azure/arm-network.PreferredRoutingGateway|stable'
+  - '@azure/arm-network.PrivateDnsZoneGroup|stable'
+  - '@azure/arm-network.PrivateDnsZoneGroupsCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.PrivateDnsZoneGroupsGetResponse|stable'
+  - '@azure/arm-network.PrivateDnsZoneGroupsListNextResponse|stable'
+  - '@azure/arm-network.PrivateDnsZoneGroupsListResponse|stable'
+  - '@azure/arm-network.PrivateEndpoint|stable'
+  - '@azure/arm-network.PrivateEndpointConnection|stable'
+  - '@azure/arm-network.PrivateEndpointsCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.PrivateEndpointsGetResponse|stable'
+  - '@azure/arm-network.PrivateEndpointsListBySubscriptionNextResponse|stable'
+  - '@azure/arm-network.PrivateEndpointsListBySubscriptionResponse|stable'
+  - '@azure/arm-network.PrivateEndpointsListNextResponse|stable'
+  - '@azure/arm-network.PrivateEndpointsListResponse|stable'
+  - '@azure/arm-network.PrivateLinkService|stable'
+  - '@azure/arm-network.PrivateLinkServiceConnection|stable'
+  - '@azure/arm-network.PrivateLinkServiceIpConfiguration|stable'
+  - '@azure/arm-network.PrivateLinkServicePropertiesAutoApproval|stable'
+  - '@azure/arm-network.PrivateLinkServicePropertiesVisibility|stable'
+  - >-
+    @azure/arm-network.PrivateLinkServicesCheckPrivateLinkServiceVisibilityByResourceGroupResponse|stable
+  - >-
+    @azure/arm-network.PrivateLinkServicesCheckPrivateLinkServiceVisibilityResponse|stable
+  - '@azure/arm-network.PrivateLinkServicesCreateOrUpdateResponse|stable'
+  - >-
+    @azure/arm-network.PrivateLinkServicesGetPrivateEndpointConnectionResponse|stable
+  - '@azure/arm-network.PrivateLinkServicesGetResponse|stable'
+  - >-
+    @azure/arm-network.PrivateLinkServicesListAutoApprovedPrivateLinkServicesByResourceGroupNextResponse|stable
+  - >-
+    @azure/arm-network.PrivateLinkServicesListAutoApprovedPrivateLinkServicesByResourceGroupResponse|stable
+  - >-
+    @azure/arm-network.PrivateLinkServicesListAutoApprovedPrivateLinkServicesNextResponse|stable
+  - >-
+    @azure/arm-network.PrivateLinkServicesListAutoApprovedPrivateLinkServicesResponse|stable
+  - '@azure/arm-network.PrivateLinkServicesListBySubscriptionNextResponse|stable'
+  - '@azure/arm-network.PrivateLinkServicesListBySubscriptionResponse|stable'
+  - '@azure/arm-network.PrivateLinkServicesListNextResponse|stable'
+  - >-
+    @azure/arm-network.PrivateLinkServicesListPrivateEndpointConnectionsNextResponse|stable
+  - >-
+    @azure/arm-network.PrivateLinkServicesListPrivateEndpointConnectionsResponse|stable
+  - '@azure/arm-network.PrivateLinkServicesListResponse|stable'
+  - >-
+    @azure/arm-network.PrivateLinkServicesUpdatePrivateEndpointConnectionResponse|stable
+  - '@azure/arm-network.Probe|stable'
+  - '@azure/arm-network.ProbeProtocol|stable'
+  - '@azure/arm-network.ProcessorArchitecture|stable'
+  - '@azure/arm-network.Protocol|stable'
+  - '@azure/arm-network.ProtocolType|stable'
+  - '@azure/arm-network.ProvisioningState|stable'
+  - '@azure/arm-network.PublicIPAddress|stable'
+  - '@azure/arm-network.PublicIPAddressMigrationPhase|stable'
+  - '@azure/arm-network.PublicIPAddressSkuName|stable'
+  - '@azure/arm-network.PublicIPAddressSkuTier|stable'
+  - '@azure/arm-network.PublicIPAddressesCreateOrUpdateResponse|stable'
+  - >-
+    @azure/arm-network.PublicIPAddressesGetCloudServicePublicIPAddressResponse|stable
+  - '@azure/arm-network.PublicIPAddressesGetResponse|stable'
+  - >-
+    @azure/arm-network.PublicIPAddressesGetVirtualMachineScaleSetPublicIPAddressResponse|stable
+  - '@azure/arm-network.PublicIPAddressesListAllNextResponse|stable'
+  - '@azure/arm-network.PublicIPAddressesListAllResponse|stable'
+  - >-
+    @azure/arm-network.PublicIPAddressesListCloudServicePublicIPAddressesNextResponse|stable
+  - >-
+    @azure/arm-network.PublicIPAddressesListCloudServicePublicIPAddressesResponse|stable
+  - >-
+    @azure/arm-network.PublicIPAddressesListCloudServiceRoleInstancePublicIPAddressesNextResponse|stable
+  - >-
+    @azure/arm-network.PublicIPAddressesListCloudServiceRoleInstancePublicIPAddressesResponse|stable
+  - '@azure/arm-network.PublicIPAddressesListNextResponse|stable'
+  - '@azure/arm-network.PublicIPAddressesListResponse|stable'
+  - >-
+    @azure/arm-network.PublicIPAddressesListVirtualMachineScaleSetPublicIPAddressesNextResponse|stable
+  - >-
+    @azure/arm-network.PublicIPAddressesListVirtualMachineScaleSetPublicIPAddressesResponse|stable
+  - >-
+    @azure/arm-network.PublicIPAddressesListVirtualMachineScaleSetVMPublicIPAddressesNextResponse|stable
+  - >-
+    @azure/arm-network.PublicIPAddressesListVirtualMachineScaleSetVMPublicIPAddressesResponse|stable
+  - '@azure/arm-network.PublicIPAddressesUpdateTagsResponse|stable'
+  - '@azure/arm-network.PublicIPPrefix|stable'
+  - '@azure/arm-network.PublicIPPrefixSkuName|stable'
+  - '@azure/arm-network.PublicIPPrefixSkuTier|stable'
+  - '@azure/arm-network.PublicIPPrefixesCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.PublicIPPrefixesGetResponse|stable'
+  - '@azure/arm-network.PublicIPPrefixesListAllNextResponse|stable'
+  - '@azure/arm-network.PublicIPPrefixesListAllResponse|stable'
+  - '@azure/arm-network.PublicIPPrefixesListNextResponse|stable'
+  - '@azure/arm-network.PublicIPPrefixesListResponse|stable'
+  - '@azure/arm-network.PublicIPPrefixesUpdateTagsResponse|stable'
+  - '@azure/arm-network.PutBastionShareableLinkNextResponse|stable'
+  - '@azure/arm-network.PutBastionShareableLinkResponse|stable'
+  - '@azure/arm-network.ResourceIdentityType|stable'
+  - '@azure/arm-network.ResourceNavigationLink|stable'
+  - '@azure/arm-network.ResourceNavigationLinksListResponse|stable'
+  - '@azure/arm-network.Route|stable'
+  - '@azure/arm-network.RouteFilter|stable'
+  - '@azure/arm-network.RouteFilterRule|stable'
+  - '@azure/arm-network.RouteFilterRuleType|stable'
+  - '@azure/arm-network.RouteFilterRulesCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.RouteFilterRulesGetResponse|stable'
+  - '@azure/arm-network.RouteFilterRulesListByRouteFilterNextResponse|stable'
+  - '@azure/arm-network.RouteFilterRulesListByRouteFilterResponse|stable'
+  - '@azure/arm-network.RouteFiltersCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.RouteFiltersGetResponse|stable'
+  - '@azure/arm-network.RouteFiltersListByResourceGroupNextResponse|stable'
+  - '@azure/arm-network.RouteFiltersListByResourceGroupResponse|stable'
+  - '@azure/arm-network.RouteFiltersListNextResponse|stable'
+  - '@azure/arm-network.RouteFiltersListResponse|stable'
+  - '@azure/arm-network.RouteFiltersUpdateTagsResponse|stable'
+  - '@azure/arm-network.RouteNextHopType|stable'
+  - '@azure/arm-network.RouteTable|stable'
+  - '@azure/arm-network.RouteTablesCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.RouteTablesGetResponse|stable'
+  - '@azure/arm-network.RouteTablesListAllNextResponse|stable'
+  - '@azure/arm-network.RouteTablesListAllResponse|stable'
+  - '@azure/arm-network.RouteTablesListNextResponse|stable'
+  - '@azure/arm-network.RouteTablesListResponse|stable'
+  - '@azure/arm-network.RouteTablesUpdateTagsResponse|stable'
+  - '@azure/arm-network.RoutesCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.RoutesGetResponse|stable'
+  - '@azure/arm-network.RoutesListNextResponse|stable'
+  - '@azure/arm-network.RoutesListResponse|stable'
+  - '@azure/arm-network.RoutingIntent|stable'
+  - '@azure/arm-network.RoutingIntentCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.RoutingIntentGetResponse|stable'
+  - '@azure/arm-network.RoutingIntentListNextResponse|stable'
+  - '@azure/arm-network.RoutingIntentListResponse|stable'
+  - '@azure/arm-network.RoutingState|stable'
+  - '@azure/arm-network.SecurityPartnerProvider|stable'
+  - '@azure/arm-network.SecurityPartnerProviderConnectionStatus|stable'
+  - '@azure/arm-network.SecurityPartnerProvidersCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.SecurityPartnerProvidersGetResponse|stable'
+  - >-
+    @azure/arm-network.SecurityPartnerProvidersListByResourceGroupNextResponse|stable
+  - >-
+    @azure/arm-network.SecurityPartnerProvidersListByResourceGroupResponse|stable
+  - '@azure/arm-network.SecurityPartnerProvidersListNextResponse|stable'
+  - '@azure/arm-network.SecurityPartnerProvidersListResponse|stable'
+  - '@azure/arm-network.SecurityPartnerProvidersUpdateTagsResponse|stable'
+  - '@azure/arm-network.SecurityProviderName|stable'
+  - '@azure/arm-network.SecurityRule|stable'
+  - '@azure/arm-network.SecurityRuleAccess|stable'
+  - '@azure/arm-network.SecurityRuleDirection|stable'
+  - '@azure/arm-network.SecurityRuleProtocol|stable'
+  - '@azure/arm-network.SecurityRulesCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.SecurityRulesGetResponse|stable'
+  - '@azure/arm-network.SecurityRulesListNextResponse|stable'
+  - '@azure/arm-network.SecurityRulesListResponse|stable'
+  - '@azure/arm-network.ServiceAssociationLink|stable'
+  - '@azure/arm-network.ServiceAssociationLinksListResponse|stable'
+  - '@azure/arm-network.ServiceEndpointPoliciesCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.ServiceEndpointPoliciesGetResponse|stable'
+  - >-
+    @azure/arm-network.ServiceEndpointPoliciesListByResourceGroupNextResponse|stable
+  - '@azure/arm-network.ServiceEndpointPoliciesListByResourceGroupResponse|stable'
+  - '@azure/arm-network.ServiceEndpointPoliciesListNextResponse|stable'
+  - '@azure/arm-network.ServiceEndpointPoliciesListResponse|stable'
+  - '@azure/arm-network.ServiceEndpointPoliciesUpdateTagsResponse|stable'
+  - '@azure/arm-network.ServiceEndpointPolicy|stable'
+  - '@azure/arm-network.ServiceEndpointPolicyDefinition|stable'
+  - >-
+    @azure/arm-network.ServiceEndpointPolicyDefinitionsCreateOrUpdateResponse|stable
+  - '@azure/arm-network.ServiceEndpointPolicyDefinitionsGetResponse|stable'
+  - >-
+    @azure/arm-network.ServiceEndpointPolicyDefinitionsListByResourceGroupNextResponse|stable
+  - >-
+    @azure/arm-network.ServiceEndpointPolicyDefinitionsListByResourceGroupResponse|stable
+  - '@azure/arm-network.ServiceProviderProvisioningState|stable'
+  - '@azure/arm-network.ServiceTagInformationListNextResponse|stable'
+  - '@azure/arm-network.ServiceTagInformationListResponse|stable'
+  - '@azure/arm-network.ServiceTagsListResponse|stable'
+  - '@azure/arm-network.Severity|stable'
+  - '@azure/arm-network.Subnet|stable'
+  - '@azure/arm-network.SubnetsCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.SubnetsGetResponse|stable'
+  - '@azure/arm-network.SubnetsListNextResponse|stable'
+  - '@azure/arm-network.SubnetsListResponse|stable'
+  - '@azure/arm-network.SupportedSecurityProvidersResponse|stable'
+  - '@azure/arm-network.SyncRemoteAddressSpace|stable'
+  - '@azure/arm-network.TransportProtocol|stable'
+  - '@azure/arm-network.TunnelConnectionStatus|stable'
+  - '@azure/arm-network.UsageUnit|stable'
+  - '@azure/arm-network.UsagesListNextResponse|stable'
+  - '@azure/arm-network.UsagesListResponse|stable'
+  - '@azure/arm-network.VerbosityLevel|stable'
+  - '@azure/arm-network.VirtualApplianceSite|stable'
+  - '@azure/arm-network.VirtualApplianceSitesCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.VirtualApplianceSitesGetResponse|stable'
+  - '@azure/arm-network.VirtualApplianceSitesListNextResponse|stable'
+  - '@azure/arm-network.VirtualApplianceSitesListResponse|stable'
+  - '@azure/arm-network.VirtualApplianceSkusGetResponse|stable'
+  - '@azure/arm-network.VirtualApplianceSkusListNextResponse|stable'
+  - '@azure/arm-network.VirtualApplianceSkusListResponse|stable'
+  - '@azure/arm-network.VirtualHub|stable'
+  - '@azure/arm-network.VirtualHubBgpConnectionCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.VirtualHubBgpConnectionGetResponse|stable'
+  - >-
+    @azure/arm-network.VirtualHubBgpConnectionsListAdvertisedRoutesResponse|stable
+  - '@azure/arm-network.VirtualHubBgpConnectionsListLearnedRoutesResponse|stable'
+  - '@azure/arm-network.VirtualHubBgpConnectionsListNextResponse|stable'
+  - '@azure/arm-network.VirtualHubBgpConnectionsListResponse|stable'
+  - '@azure/arm-network.VirtualHubIpConfigurationCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.VirtualHubIpConfigurationGetResponse|stable'
+  - '@azure/arm-network.VirtualHubIpConfigurationListNextResponse|stable'
+  - '@azure/arm-network.VirtualHubIpConfigurationListResponse|stable'
+  - '@azure/arm-network.VirtualHubRouteTableV2|stable'
+  - '@azure/arm-network.VirtualHubRouteTableV2SCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.VirtualHubRouteTableV2SGetResponse|stable'
+  - '@azure/arm-network.VirtualHubRouteTableV2SListNextResponse|stable'
+  - '@azure/arm-network.VirtualHubRouteTableV2SListResponse|stable'
+  - '@azure/arm-network.VirtualHubsCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.VirtualHubsGetResponse|stable'
+  - '@azure/arm-network.VirtualHubsListByResourceGroupNextResponse|stable'
+  - '@azure/arm-network.VirtualHubsListByResourceGroupResponse|stable'
+  - '@azure/arm-network.VirtualHubsListNextResponse|stable'
+  - '@azure/arm-network.VirtualHubsListResponse|stable'
+  - '@azure/arm-network.VirtualHubsUpdateTagsResponse|stable'
+  - '@azure/arm-network.VirtualNetwork|stable'
+  - '@azure/arm-network.VirtualNetworkEncryptionEnforcement|stable'
+  - '@azure/arm-network.VirtualNetworkGateway|stable'
+  - '@azure/arm-network.VirtualNetworkGatewayConnection|stable'
+  - '@azure/arm-network.VirtualNetworkGatewayConnectionListEntity|stable'
+  - '@azure/arm-network.VirtualNetworkGatewayConnectionMode|stable'
+  - '@azure/arm-network.VirtualNetworkGatewayConnectionProtocol|stable'
+  - '@azure/arm-network.VirtualNetworkGatewayConnectionStatus|stable'
+  - '@azure/arm-network.VirtualNetworkGatewayConnectionType|stable'
+  - >-
+    @azure/arm-network.VirtualNetworkGatewayConnectionsCreateOrUpdateResponse|stable
+  - '@azure/arm-network.VirtualNetworkGatewayConnectionsGetIkeSasResponse|stable'
+  - '@azure/arm-network.VirtualNetworkGatewayConnectionsGetResponse|stable'
+  - >-
+    @azure/arm-network.VirtualNetworkGatewayConnectionsGetSharedKeyResponse|stable
+  - '@azure/arm-network.VirtualNetworkGatewayConnectionsListNextResponse|stable'
+  - '@azure/arm-network.VirtualNetworkGatewayConnectionsListResponse|stable'
+  - >-
+    @azure/arm-network.VirtualNetworkGatewayConnectionsResetSharedKeyResponse|stable
+  - >-
+    @azure/arm-network.VirtualNetworkGatewayConnectionsSetSharedKeyResponse|stable
+  - >-
+    @azure/arm-network.VirtualNetworkGatewayConnectionsStartPacketCaptureResponse|stable
+  - >-
+    @azure/arm-network.VirtualNetworkGatewayConnectionsStopPacketCaptureResponse|stable
+  - '@azure/arm-network.VirtualNetworkGatewayConnectionsUpdateTagsResponse|stable'
+  - '@azure/arm-network.VirtualNetworkGatewayIPConfiguration|stable'
+  - '@azure/arm-network.VirtualNetworkGatewayNatRule|stable'
+  - >-
+    @azure/arm-network.VirtualNetworkGatewayNatRulesCreateOrUpdateResponse|stable
+  - '@azure/arm-network.VirtualNetworkGatewayNatRulesGetResponse|stable'
+  - >-
+    @azure/arm-network.VirtualNetworkGatewayNatRulesListByVirtualNetworkGatewayNextResponse|stable
+  - >-
+    @azure/arm-network.VirtualNetworkGatewayNatRulesListByVirtualNetworkGatewayResponse|stable
+  - '@azure/arm-network.VirtualNetworkGatewaySkuName|stable'
+  - '@azure/arm-network.VirtualNetworkGatewaySkuTier|stable'
+  - '@azure/arm-network.VirtualNetworkGatewayType|stable'
+  - '@azure/arm-network.VirtualNetworkGatewaysCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.VirtualNetworkGatewaysGenerateVpnProfileResponse|stable'
+  - >-
+    @azure/arm-network.VirtualNetworkGatewaysGeneratevpnclientpackageResponse|stable
+  - '@azure/arm-network.VirtualNetworkGatewaysGetAdvertisedRoutesResponse|stable'
+  - '@azure/arm-network.VirtualNetworkGatewaysGetBgpPeerStatusResponse|stable'
+  - '@azure/arm-network.VirtualNetworkGatewaysGetLearnedRoutesResponse|stable'
+  - '@azure/arm-network.VirtualNetworkGatewaysGetResponse|stable'
+  - >-
+    @azure/arm-network.VirtualNetworkGatewaysGetVpnProfilePackageUrlResponse|stable
+  - >-
+    @azure/arm-network.VirtualNetworkGatewaysGetVpnclientConnectionHealthResponse|stable
+  - >-
+    @azure/arm-network.VirtualNetworkGatewaysGetVpnclientIpsecParametersResponse|stable
+  - '@azure/arm-network.VirtualNetworkGatewaysListConnectionsNextResponse|stable'
+  - '@azure/arm-network.VirtualNetworkGatewaysListConnectionsResponse|stable'
+  - '@azure/arm-network.VirtualNetworkGatewaysListNextResponse|stable'
+  - '@azure/arm-network.VirtualNetworkGatewaysListResponse|stable'
+  - '@azure/arm-network.VirtualNetworkGatewaysResetResponse|stable'
+  - >-
+    @azure/arm-network.VirtualNetworkGatewaysSetVpnclientIpsecParametersResponse|stable
+  - '@azure/arm-network.VirtualNetworkGatewaysStartPacketCaptureResponse|stable'
+  - '@azure/arm-network.VirtualNetworkGatewaysStopPacketCaptureResponse|stable'
+  - '@azure/arm-network.VirtualNetworkGatewaysSupportedVpnDevicesResponse|stable'
+  - '@azure/arm-network.VirtualNetworkGatewaysUpdateTagsResponse|stable'
+  - >-
+    @azure/arm-network.VirtualNetworkGatewaysVpnDeviceConfigurationScriptResponse|stable
+  - '@azure/arm-network.VirtualNetworkPeering|stable'
+  - '@azure/arm-network.VirtualNetworkPeeringLevel|stable'
+  - '@azure/arm-network.VirtualNetworkPeeringState|stable'
+  - '@azure/arm-network.VirtualNetworkPeeringsCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.VirtualNetworkPeeringsGetResponse|stable'
+  - '@azure/arm-network.VirtualNetworkPeeringsListNextResponse|stable'
+  - '@azure/arm-network.VirtualNetworkPeeringsListResponse|stable'
+  - '@azure/arm-network.VirtualNetworkPrivateEndpointNetworkPolicies|stable'
+  - '@azure/arm-network.VirtualNetworkPrivateLinkServiceNetworkPolicies|stable'
+  - '@azure/arm-network.VirtualNetworkTap|stable'
+  - '@azure/arm-network.VirtualNetworkTapsCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.VirtualNetworkTapsGetResponse|stable'
+  - '@azure/arm-network.VirtualNetworkTapsListAllNextResponse|stable'
+  - '@azure/arm-network.VirtualNetworkTapsListAllResponse|stable'
+  - '@azure/arm-network.VirtualNetworkTapsListByResourceGroupNextResponse|stable'
+  - '@azure/arm-network.VirtualNetworkTapsListByResourceGroupResponse|stable'
+  - '@azure/arm-network.VirtualNetworkTapsUpdateTagsResponse|stable'
+  - '@azure/arm-network.VirtualNetworksCheckIPAddressAvailabilityResponse|stable'
+  - '@azure/arm-network.VirtualNetworksCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.VirtualNetworksGetResponse|stable'
+  - '@azure/arm-network.VirtualNetworksListAllNextResponse|stable'
+  - '@azure/arm-network.VirtualNetworksListAllResponse|stable'
+  - '@azure/arm-network.VirtualNetworksListNextResponse|stable'
+  - '@azure/arm-network.VirtualNetworksListResponse|stable'
+  - '@azure/arm-network.VirtualNetworksListUsageNextResponse|stable'
+  - '@azure/arm-network.VirtualNetworksListUsageResponse|stable'
+  - '@azure/arm-network.VirtualNetworksUpdateTagsResponse|stable'
+  - '@azure/arm-network.VirtualRouter|stable'
+  - '@azure/arm-network.VirtualRouterPeering|stable'
+  - '@azure/arm-network.VirtualRouterPeeringsCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.VirtualRouterPeeringsGetResponse|stable'
+  - '@azure/arm-network.VirtualRouterPeeringsListNextResponse|stable'
+  - '@azure/arm-network.VirtualRouterPeeringsListResponse|stable'
+  - '@azure/arm-network.VirtualRoutersCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.VirtualRoutersGetResponse|stable'
+  - '@azure/arm-network.VirtualRoutersListByResourceGroupNextResponse|stable'
+  - '@azure/arm-network.VirtualRoutersListByResourceGroupResponse|stable'
+  - '@azure/arm-network.VirtualRoutersListNextResponse|stable'
+  - '@azure/arm-network.VirtualRoutersListResponse|stable'
+  - '@azure/arm-network.VirtualWAN|stable'
+  - '@azure/arm-network.VirtualWanSecurityProviderType|stable'
+  - '@azure/arm-network.VirtualWansCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.VirtualWansGetResponse|stable'
+  - '@azure/arm-network.VirtualWansListByResourceGroupNextResponse|stable'
+  - '@azure/arm-network.VirtualWansListByResourceGroupResponse|stable'
+  - '@azure/arm-network.VirtualWansListNextResponse|stable'
+  - '@azure/arm-network.VirtualWansListResponse|stable'
+  - '@azure/arm-network.VirtualWansUpdateTagsResponse|stable'
+  - '@azure/arm-network.Vm|stable'
+  - '@azure/arm-network.VpnAuthenticationType|stable'
+  - '@azure/arm-network.VpnClientProtocol|stable'
+  - '@azure/arm-network.VpnClientRevokedCertificate|stable'
+  - '@azure/arm-network.VpnClientRootCertificate|stable'
+  - '@azure/arm-network.VpnConnection|stable'
+  - '@azure/arm-network.VpnConnectionStatus|stable'
+  - '@azure/arm-network.VpnConnectionsCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.VpnConnectionsGetResponse|stable'
+  - '@azure/arm-network.VpnConnectionsListByVpnGatewayNextResponse|stable'
+  - '@azure/arm-network.VpnConnectionsListByVpnGatewayResponse|stable'
+  - '@azure/arm-network.VpnConnectionsStartPacketCaptureResponse|stable'
+  - '@azure/arm-network.VpnConnectionsStopPacketCaptureResponse|stable'
+  - '@azure/arm-network.VpnGateway|stable'
+  - '@azure/arm-network.VpnGatewayGeneration|stable'
+  - '@azure/arm-network.VpnGatewayNatRule|stable'
+  - '@azure/arm-network.VpnGatewayTunnelingProtocol|stable'
+  - '@azure/arm-network.VpnGatewaysCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.VpnGatewaysGetResponse|stable'
+  - '@azure/arm-network.VpnGatewaysListByResourceGroupNextResponse|stable'
+  - '@azure/arm-network.VpnGatewaysListByResourceGroupResponse|stable'
+  - '@azure/arm-network.VpnGatewaysListNextResponse|stable'
+  - '@azure/arm-network.VpnGatewaysListResponse|stable'
+  - '@azure/arm-network.VpnGatewaysResetResponse|stable'
+  - '@azure/arm-network.VpnGatewaysStartPacketCaptureResponse|stable'
+  - '@azure/arm-network.VpnGatewaysStopPacketCaptureResponse|stable'
+  - '@azure/arm-network.VpnGatewaysUpdateTagsResponse|stable'
+  - '@azure/arm-network.VpnLinkConnectionMode|stable'
+  - '@azure/arm-network.VpnLinkConnectionsGetIkeSasResponse|stable'
+  - '@azure/arm-network.VpnLinkConnectionsListByVpnConnectionNextResponse|stable'
+  - '@azure/arm-network.VpnLinkConnectionsListByVpnConnectionResponse|stable'
+  - '@azure/arm-network.VpnNatRuleMode|stable'
+  - '@azure/arm-network.VpnNatRuleType|stable'
+  - '@azure/arm-network.VpnServerConfiguration|stable'
+  - >-
+    @azure/arm-network.VpnServerConfigurationsAssociatedWithVirtualWanListResponse|stable
+  - '@azure/arm-network.VpnServerConfigurationsCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.VpnServerConfigurationsGetResponse|stable'
+  - >-
+    @azure/arm-network.VpnServerConfigurationsListByResourceGroupNextResponse|stable
+  - '@azure/arm-network.VpnServerConfigurationsListByResourceGroupResponse|stable'
+  - '@azure/arm-network.VpnServerConfigurationsListNextResponse|stable'
+  - '@azure/arm-network.VpnServerConfigurationsListResponse|stable'
+  - '@azure/arm-network.VpnServerConfigurationsUpdateTagsResponse|stable'
+  - '@azure/arm-network.VpnSite|stable'
+  - '@azure/arm-network.VpnSiteLink|stable'
+  - '@azure/arm-network.VpnSiteLinkConnection|stable'
+  - '@azure/arm-network.VpnSiteLinkConnectionsGetResponse|stable'
+  - '@azure/arm-network.VpnSiteLinksGetResponse|stable'
+  - '@azure/arm-network.VpnSiteLinksListByVpnSiteNextResponse|stable'
+  - '@azure/arm-network.VpnSiteLinksListByVpnSiteResponse|stable'
+  - '@azure/arm-network.VpnSitesCreateOrUpdateResponse|stable'
+  - '@azure/arm-network.VpnSitesGetResponse|stable'
+  - '@azure/arm-network.VpnSitesListByResourceGroupNextResponse|stable'
+  - '@azure/arm-network.VpnSitesListByResourceGroupResponse|stable'
+  - '@azure/arm-network.VpnSitesListNextResponse|stable'
+  - '@azure/arm-network.VpnSitesListResponse|stable'
+  - '@azure/arm-network.VpnSitesUpdateTagsResponse|stable'
+  - '@azure/arm-network.VpnType|stable'
+  - '@azure/arm-network.WebApplicationFirewallAction|stable'
+  - '@azure/arm-network.WebApplicationFirewallEnabledState|stable'
+  - '@azure/arm-network.WebApplicationFirewallMatchVariable|stable'
+  - '@azure/arm-network.WebApplicationFirewallMode|stable'
+  - '@azure/arm-network.WebApplicationFirewallOperator|stable'
+  - >-
+    @azure/arm-network.WebApplicationFirewallPoliciesCreateOrUpdateResponse|stable
+  - '@azure/arm-network.WebApplicationFirewallPoliciesGetResponse|stable'
+  - '@azure/arm-network.WebApplicationFirewallPoliciesListAllNextResponse|stable'
+  - '@azure/arm-network.WebApplicationFirewallPoliciesListAllResponse|stable'
+  - '@azure/arm-network.WebApplicationFirewallPoliciesListNextResponse|stable'
+  - '@azure/arm-network.WebApplicationFirewallPoliciesListResponse|stable'
+  - '@azure/arm-network.WebApplicationFirewallPolicy|stable'
+  - '@azure/arm-network.WebApplicationFirewallPolicyResourceState|stable'
+  - '@azure/arm-network.WebApplicationFirewallRuleType|stable'
+  - '@azure/arm-network.WebApplicationFirewallTransform|stable'
+  - '@azure/arm-network.WebCategoriesGetResponse|stable'
+  - '@azure/arm-network.WebCategoriesListBySubscriptionNextResponse|stable'
+  - '@azure/arm-network.WebCategoriesListBySubscriptionResponse|stable'

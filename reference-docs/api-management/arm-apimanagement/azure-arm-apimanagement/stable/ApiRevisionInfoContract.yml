@@ -1,0 +1,68 @@
+### YamlMime:TSType
+name: ApiRevisionInfoContract
+uid: '@azure/arm-apimanagement.ApiRevisionInfoContract|stable'
+package: '@azure/arm-apimanagement|stable'
+summary: >-
+  Object used to create an API Revision or Version based on an existing API
+  Revision
+fullName: ApiRevisionInfoContract
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: apiRevisionDescription
+    uid: >-
+      @azure/arm-apimanagement.ApiRevisionInfoContract.apiRevisionDescription|stable
+    package: '@azure/arm-apimanagement|stable'
+    summary: Description of new API Revision.
+    fullName: apiRevisionDescription
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'apiRevisionDescription?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: apiVersionName
+    uid: '@azure/arm-apimanagement.ApiRevisionInfoContract.apiVersionName|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: Version identifier for the new API Version.
+    fullName: apiVersionName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'apiVersionName?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: apiVersionSet
+    uid: '@azure/arm-apimanagement.ApiRevisionInfoContract.apiVersionSet|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: Version set details
+    fullName: apiVersionSet
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'apiVersionSet?: ApiVersionSetContractDetails'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-apimanagement.ApiVersionSetContractDetails|stable" />
+  - name: sourceApiId
+    uid: '@azure/arm-apimanagement.ApiRevisionInfoContract.sourceApiId|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: Resource identifier of API to be used to create the revision from.
+    fullName: sourceApiId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sourceApiId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

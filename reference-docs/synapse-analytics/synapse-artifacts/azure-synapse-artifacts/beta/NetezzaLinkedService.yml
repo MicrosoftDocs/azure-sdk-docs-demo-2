@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: NetezzaLinkedService
+uid: '@azure/synapse-artifacts.NetezzaLinkedService|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: Netezza linked service.
+fullName: NetezzaLinkedService
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type NetezzaLinkedService = LinkedService & { connectionString?: any,
+  encryptedCredential?: any, pwd?: AzureKeyVaultSecretReference, type: "Netezza"
+  }

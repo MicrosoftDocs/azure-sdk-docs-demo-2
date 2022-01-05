@@ -1,0 +1,102 @@
+### YamlMime:TSType
+name: Activity
+uid: '@azure/synapse-artifacts.Activity|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: A pipeline activity.
+fullName: Activity
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: dependsOn
+    uid: '@azure/synapse-artifacts.Activity.dependsOn|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Activity depends on condition.
+    fullName: dependsOn
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dependsOn?: ActivityDependency[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/synapse-artifacts.ActivityDependency|beta" />[]
+  - name: description
+    uid: '@azure/synapse-artifacts.Activity.description|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Activity description.
+    fullName: description
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'description?: string'
+      return:
+        description: ''
+        type: string
+  - name: name
+    uid: '@azure/synapse-artifacts.Activity.name|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Activity name.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: string'
+      return:
+        description: ''
+        type: string
+  - name: type
+    uid: '@azure/synapse-artifacts.Activity.type|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: >-
+      Polymorphic discriminator, which specifies the different types this object
+      can be
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        type: "Container" | "Execution" | "Copy" | "HDInsightHive" |
+        "HDInsightPig" | "HDInsightMapReduce" | "HDInsightStreaming" |
+        "HDInsightSpark" | "ExecuteSSISPackage" | "Custom" |
+        "SqlServerStoredProcedure" | "ExecutePipeline" | "Delete" |
+        "AzureDataExplorerCommand" | "Lookup" | "WebActivity" | "GetMetadata" |
+        "IfCondition" | "Switch" | "ForEach" | "AzureMLBatchExecution" |
+        "AzureMLUpdateResource" | "AzureMLExecutePipeline" |
+        "DataLakeAnalyticsU-SQL" | "Wait" | "Until" | "Validation" | "Filter" |
+        "DatabricksNotebook" | "DatabricksSparkJar" | "DatabricksSparkPython" |
+        "SetVariable" | "AppendVariable" | "AzureFunctionActivity" | "WebHook" |
+        "ExecuteDataFlow" | "SynapseNotebook" | "SparkJob" |
+        "SqlPoolStoredProcedure"
+      return:
+        description: ''
+        type: >-
+          "Container" | "Execution" | "Copy" | "HDInsightHive" | "HDInsightPig"
+          | "HDInsightMapReduce" | "HDInsightStreaming" | "HDInsightSpark" |
+          "ExecuteSSISPackage" | "Custom" | "SqlServerStoredProcedure" |
+          "ExecutePipeline" | "Delete" | "AzureDataExplorerCommand" | "Lookup" |
+          "WebActivity" | "GetMetadata" | "IfCondition" | "Switch" | "ForEach" |
+          "AzureMLBatchExecution" | "AzureMLUpdateResource" |
+          "AzureMLExecutePipeline" | "DataLakeAnalyticsU-SQL" | "Wait" | "Until"
+          | "Validation" | "Filter" | "DatabricksNotebook" |
+          "DatabricksSparkJar" | "DatabricksSparkPython" | "SetVariable" |
+          "AppendVariable" | "AzureFunctionActivity" | "WebHook" |
+          "ExecuteDataFlow" | "SynapseNotebook" | "SparkJob" |
+          "SqlPoolStoredProcedure"
+  - name: userProperties
+    uid: '@azure/synapse-artifacts.Activity.userProperties|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Activity user properties.
+    fullName: userProperties
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'userProperties?: UserProperty[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/synapse-artifacts.UserProperty|beta" />[]

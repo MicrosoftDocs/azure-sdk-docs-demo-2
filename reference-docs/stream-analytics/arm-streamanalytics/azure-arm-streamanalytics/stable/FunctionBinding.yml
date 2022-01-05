@@ -1,0 +1,32 @@
+### YamlMime:TSType
+name: FunctionBinding
+uid: '@azure/arm-streamanalytics.FunctionBinding|stable'
+package: '@azure/arm-streamanalytics|stable'
+summary: >-
+  The physical binding of the function. For example, in the Azure Machine
+  Learning web service’s case, this describes the endpoint.
+fullName: FunctionBinding
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: type
+    uid: '@azure/arm-streamanalytics.FunctionBinding.type|stable'
+    package: '@azure/arm-streamanalytics|stable'
+    summary: >-
+      Polymorphic discriminator, which specifies the different types this object
+      can be
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        type: "Microsoft.MachineLearning/WebService" |
+        "Microsoft.StreamAnalytics/JavascriptUdf"
+      return:
+        description: ''
+        type: >-
+          "<xref uid="Microsoft.MachineLearning/WebService|stable" />" | "<xref
+          uid="Microsoft.StreamAnalytics/JavascriptUdf|stable" />"

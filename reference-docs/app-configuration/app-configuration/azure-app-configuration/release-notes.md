@@ -2,7 +2,7 @@
 title: Azure SDK for JavaScript - App Configuration Release Notes
 description: 
 ms.topic: reference
-ms.date: 12/14/2021
+ms.date: 01/05/2022
 ms.service: app-configuration
 ms.role: developer
 ms.devlang: javascript
@@ -12,11 +12,17 @@ ROBOTS: NOINDEX
 ---
 # Release History
 
-## 1.3.1 (Unreleased)
+## 1.3.2 (Unreleased)
 
 ### Features Added
 
 ### Breaking Changes
+
+### Bugs Fixed
+
+### Other Changes
+
+## 1.3.1 (2021-12-14)
 
 ### Bugs Fixed
 

@@ -64,13 +64,13 @@ properties:
       return:
         description: ''
         type: undefined | string
-methods:
+inheritedMethods:
   - name: >-
       sendOperationRequest(OperationArguments, OperationSpec,
       ServiceCallback<any>)
     uid: >-
-      @azure/cognitiveservices-newssearch.NewsSearchClientContext.sendOperationRequest|stable
-    package: '@azure/cognitiveservices-newssearch|stable'
+      @azure/cognitiveservices-newssearch.NewsSearchClientContext.sendOperationRequest
+    package: '@azure/cognitiveservices-newssearch'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
     isPreview: false
@@ -97,9 +97,8 @@ methods:
         description: ''
         type: Promise&lt;RestResponse&gt;
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
-    uid: >-
-      @azure/cognitiveservices-newssearch.NewsSearchClientContext.sendRequest|stable
-    package: '@azure/cognitiveservices-newssearch|stable'
+    uid: '@azure/cognitiveservices-newssearch.NewsSearchClientContext.sendRequest'
+    package: '@azure/cognitiveservices-newssearch'
     summary: Send the provided httpRequest.
     remarks: ''
     isPreview: false

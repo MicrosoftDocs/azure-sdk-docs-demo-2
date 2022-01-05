@@ -1,0 +1,41 @@
+### YamlMime:TSType
+name: NetworkInterfaceAssociation
+uid: '@azure/arm-network.NetworkInterfaceAssociation|stable'
+package: '@azure/arm-network|stable'
+summary: Network interface and its custom security rules.
+fullName: NetworkInterfaceAssociation
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: id
+    uid: '@azure/arm-network.NetworkInterfaceAssociation.id|stable'
+    package: '@azure/arm-network|stable'
+    summary: >-
+      Network interface ID.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: securityRules
+    uid: '@azure/arm-network.NetworkInterfaceAssociation.securityRules|stable'
+    package: '@azure/arm-network|stable'
+    summary: Collection of custom security rules.
+    fullName: securityRules
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'securityRules?: SecurityRule[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.SecurityRule|stable" />[]

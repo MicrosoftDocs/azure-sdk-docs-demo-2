@@ -2,7 +2,7 @@
 title: Azure SDK for JavaScript - Cognitive Services packages
 description: 
 ms.topic: reference
-ms.date: 12/14/2021
+ms.date: 01/05/2022
 ms.service: cognitive-services
 ms.role: developer
 ms.devlang: javascript
@@ -36,7 +36,7 @@ ms.author: daberry
 | Video Search | @azure/cognitiveservices-videosearch | 3.0.1 | [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/cognitiveservices-videosearch/azure-cognitiveservices-videosearch/stable)  | npm [3.0.1](https://www.npmjs.com/package/%40azure%2Fcognitiveservices-videosearch) |
 | Visual Search | @azure/cognitiveservices-visualsearch | 3.0.1 | [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/cognitiveservices-visualsearch/azure-cognitiveservices-visualsearch/stable)  | npm [3.0.1](https://www.npmjs.com/package/%40azure%2Fcognitiveservices-visualsearch) |
 | Text Analytics | @azure/ai-text-analytics | 5.1.0 | [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/ai-text-analytics/azure-ai-text-analytics/stable)  | npm [5.1.0](https://www.npmjs.com/package/%40azure%2Fai-text-analytics) |
-| Cognitive Services - Resource Management | @azure/arm-cognitiveservices | 6.1.0 | [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/arm-cognitiveservices/azure-arm-cognitiveservices/stable)  | npm [6.1.0](https://www.npmjs.com/package/%40azure%2Farm-cognitiveservices) |
+| Cognitive Services - Resource Management | @azure/arm-cognitiveservices | 7.0.0 | [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/arm-cognitiveservices/azure-arm-cognitiveservices/stable)  | npm [7.0.0](https://www.npmjs.com/package/%40azure%2Farm-cognitiveservices) |
  
 
 ## Beta packages

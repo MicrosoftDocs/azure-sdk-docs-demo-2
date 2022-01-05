@@ -1,0 +1,193 @@
+### YamlMime:TSType
+name: ResponseMessageEnvelopeRemotePrivateEndpointConnection
+uid: >-
+  @azure/arm-appservice.ResponseMessageEnvelopeRemotePrivateEndpointConnection|stable
+package: '@azure/arm-appservice|stable'
+summary: >-
+  Message envelope that contains the common Azure resource manager properties
+  and the resource provider specific content.
+fullName: ResponseMessageEnvelopeRemotePrivateEndpointConnection
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: error
+    uid: >-
+      @azure/arm-appservice.ResponseMessageEnvelopeRemotePrivateEndpointConnection.error|stable
+    package: '@azure/arm-appservice|stable'
+    summary: Azure-AsyncOperation Error info.
+    fullName: error
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'error?: ErrorEntity'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.ErrorEntity|stable" />
+  - name: id
+    uid: >-
+      @azure/arm-appservice.ResponseMessageEnvelopeRemotePrivateEndpointConnection.id|stable
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Resource Id. Typically ID is populated only for responses to GET requests.
+      Caller is responsible for passing in this
+
+      value for GET requests only.
+
+      For example:
+      /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupId}/providers/Microsoft.Web/sites/{sitename}
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: identity
+    uid: >-
+      @azure/arm-appservice.ResponseMessageEnvelopeRemotePrivateEndpointConnection.identity|stable
+    package: '@azure/arm-appservice|stable'
+    summary: MSI resource
+    fullName: identity
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'identity?: ManagedServiceIdentity'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.ManagedServiceIdentity|stable" />
+  - name: location
+    uid: >-
+      @azure/arm-appservice.ResponseMessageEnvelopeRemotePrivateEndpointConnection.location|stable
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Geographical region resource belongs to e.g. SouthCentralUS,
+      SouthEastAsia.
+    fullName: location
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'location?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: name
+    uid: >-
+      @azure/arm-appservice.ResponseMessageEnvelopeRemotePrivateEndpointConnection.name|stable
+    package: '@azure/arm-appservice|stable'
+    summary: Name of resource.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: plan
+    uid: >-
+      @azure/arm-appservice.ResponseMessageEnvelopeRemotePrivateEndpointConnection.plan|stable
+    package: '@azure/arm-appservice|stable'
+    summary: Azure resource manager plan.
+    fullName: plan
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'plan?: ArmPlan'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.ArmPlan|stable" />
+  - name: properties
+    uid: >-
+      @azure/arm-appservice.ResponseMessageEnvelopeRemotePrivateEndpointConnection.properties|stable
+    package: '@azure/arm-appservice|stable'
+    summary: Resource specific properties.
+    fullName: properties
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'properties?: RemotePrivateEndpointConnection'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-appservice.RemotePrivateEndpointConnection|stable" />
+  - name: sku
+    uid: >-
+      @azure/arm-appservice.ResponseMessageEnvelopeRemotePrivateEndpointConnection.sku|stable
+    package: '@azure/arm-appservice|stable'
+    summary: SKU description of the resource.
+    fullName: sku
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sku?: SkuDescription'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.SkuDescription|stable" />
+  - name: status
+    uid: >-
+      @azure/arm-appservice.ResponseMessageEnvelopeRemotePrivateEndpointConnection.status|stable
+    package: '@azure/arm-appservice|stable'
+    summary: Azure-AsyncOperation Status info.
+    fullName: status
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'status?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: tags
+    uid: >-
+      @azure/arm-appservice.ResponseMessageEnvelopeRemotePrivateEndpointConnection.tags|stable
+    package: '@azure/arm-appservice|stable'
+    summary: Tags associated with resource.
+    fullName: tags
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tags?: undefined | [key: string]: string'
+      return:
+        description: ''
+        type: 'undefined | [key: string]: string'
+  - name: type
+    uid: >-
+      @azure/arm-appservice.ResponseMessageEnvelopeRemotePrivateEndpointConnection.type|stable
+    package: '@azure/arm-appservice|stable'
+    summary: Type of resource e.g "Microsoft.Web/sites".
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: zones
+    uid: >-
+      @azure/arm-appservice.ResponseMessageEnvelopeRemotePrivateEndpointConnection.zones|stable
+    package: '@azure/arm-appservice|stable'
+    summary: Logical Availability Zones the service is hosted in
+    fullName: zones
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'zones?: string[]'
+      return:
+        description: ''
+        type: string[]

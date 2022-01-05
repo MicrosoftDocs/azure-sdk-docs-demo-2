@@ -50,10 +50,10 @@ properties:
       return:
         description: ''
         type: string
-methods:
+inheritedMethods:
   - name: at(number)
-    uid: azure-keyvault.DeletedCertificateListResult.at|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.at
+    package: azure-keyvault
     summary: |-
       Takes an integer value and returns the item at that index,
       allowing for positive and negative integers.
@@ -73,8 +73,8 @@ methods:
           <xref uid="azure-keyvault.DeletedCertificateItem|legacy" /> |
           undefined
   - name: concat(ConcatArray<DeletedCertificateItem>[])
-    uid: azure-keyvault.DeletedCertificateListResult.concat|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.concat
+    package: azure-keyvault
     summary: Combines two or more arrays.
     remarks: ''
     isPreview: false
@@ -94,8 +94,8 @@ methods:
         description: ''
         type: <xref uid="azure-keyvault.DeletedCertificateItem|legacy" />[]
   - name: concat(T | ConcatArray<T>[])
-    uid: azure-keyvault.DeletedCertificateListResult.concat_1|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.concat_1
+    package: azure-keyvault
     summary: Combines two or more arrays.
     remarks: ''
     isPreview: false
@@ -111,8 +111,8 @@ methods:
         description: ''
         type: <xref uid="azure-keyvault.DeletedCertificateItem|legacy" />[]
   - name: copyWithin(number, number, number)
-    uid: azure-keyvault.DeletedCertificateListResult.copyWithin|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.copyWithin
+    package: azure-keyvault
     summary: >-
       Returns the this object after copying a section of the array identified by
       start and end
@@ -147,8 +147,8 @@ methods:
         description: ''
         type: this
   - name: entries()
-    uid: azure-keyvault.DeletedCertificateListResult.entries|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.entries
+    package: azure-keyvault
     summary: Returns an iterable of key, value pairs for every entry in the array
     remarks: ''
     isPreview: false
@@ -161,8 +161,8 @@ methods:
   - name: >-
       every((value: DeletedCertificateItem, index: number, array:
       DeletedCertificateItem[]) => unknown, any)
-    uid: azure-keyvault.DeletedCertificateListResult.every|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.every
+    package: azure-keyvault
     summary: Determines whether all the members of an array satisfy the specified test.
     remarks: ''
     isPreview: false
@@ -191,8 +191,8 @@ methods:
         description: ''
         type: boolean
   - name: fill(DeletedCertificateItem, number, number)
-    uid: azure-keyvault.DeletedCertificateListResult.fill|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.fill
+    package: azure-keyvault
     summary: >-
       Returns the this object after filling the section identified by start and
       end with value
@@ -227,8 +227,8 @@ methods:
   - name: >-
       filter((value: DeletedCertificateItem, index: number, array:
       DeletedCertificateItem[]) => unknown, any)
-    uid: azure-keyvault.DeletedCertificateListResult.filter_1|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.filter_1
+    package: azure-keyvault
     summary: >-
       Returns the elements of an array that meet the condition specified in a
       callback function.
@@ -261,8 +261,8 @@ methods:
   - name: >-
       filter<S>((value: DeletedCertificateItem, index: number, array:
       DeletedCertificateItem[]) => boolean, any)
-    uid: azure-keyvault.DeletedCertificateListResult.filter|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.filter
+    package: azure-keyvault
     summary: >-
       Returns the elements of an array that meet the condition specified in a
       callback function.
@@ -294,8 +294,8 @@ methods:
   - name: >-
       find((value: DeletedCertificateItem, index: number, obj:
       DeletedCertificateItem[]) => unknown, any)
-    uid: azure-keyvault.DeletedCertificateListResult.find_1|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.find_1
+    package: azure-keyvault
     summary: ''
     remarks: ''
     isPreview: false
@@ -322,8 +322,8 @@ methods:
   - name: >-
       find<S>((this: void, value: DeletedCertificateItem, index: number, obj:
       DeletedCertificateItem[]) => boolean, any)
-    uid: azure-keyvault.DeletedCertificateListResult.find|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.find
+    package: azure-keyvault
     summary: >-
       Returns the value of the first element in the array where predicate is
       true, and undefined
@@ -364,8 +364,8 @@ methods:
   - name: >-
       findIndex((value: DeletedCertificateItem, index: number, obj:
       DeletedCertificateItem[]) => unknown, any)
-    uid: azure-keyvault.DeletedCertificateListResult.findIndex|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.findIndex
+    package: azure-keyvault
     summary: >-
       Returns the index of the first element in the array where predicate is
       true, and -1
@@ -404,8 +404,8 @@ methods:
         description: ''
         type: number
   - name: flat<U>(number)
-    uid: azure-keyvault.DeletedCertificateListResult.flat_8|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.flat_8
+    package: azure-keyvault
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -426,8 +426,8 @@ methods:
         description: ''
         type: any[]
   - name: flat<U>(U[], 0)
-    uid: azure-keyvault.DeletedCertificateListResult.flat_7|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.flat_7
+    package: azure-keyvault
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -450,8 +450,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][], 1)
-    uid: azure-keyvault.DeletedCertificateListResult.flat_6|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.flat_6
+    package: azure-keyvault
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -474,8 +474,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][], 2)
-    uid: azure-keyvault.DeletedCertificateListResult.flat_5|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.flat_5
+    package: azure-keyvault
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -498,8 +498,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][][], 3)
-    uid: azure-keyvault.DeletedCertificateListResult.flat_4|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.flat_4
+    package: azure-keyvault
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -522,8 +522,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][][][], 4)
-    uid: azure-keyvault.DeletedCertificateListResult.flat_3|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.flat_3
+    package: azure-keyvault
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -546,8 +546,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][][][][], 5)
-    uid: azure-keyvault.DeletedCertificateListResult.flat_2|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.flat_2
+    package: azure-keyvault
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -570,8 +570,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][][][][][], 6)
-    uid: azure-keyvault.DeletedCertificateListResult.flat_1|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.flat_1
+    package: azure-keyvault
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -594,8 +594,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][][][][][][], 7)
-    uid: azure-keyvault.DeletedCertificateListResult.flat|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.flat
+    package: azure-keyvault
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -620,8 +620,8 @@ methods:
   - name: >-
       flatMap<U, This>((this: This, value: DeletedCertificateItem, index:
       number, array: DeletedCertificateItem[]) => U | ReadonlyArray<U>, This)
-    uid: azure-keyvault.DeletedCertificateListResult.flatMap|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.flatMap
+    package: azure-keyvault
     summary: >-
       Calls a defined callback function on each element of an array. Then,
       flattens the result into
@@ -660,8 +660,8 @@ methods:
   - name: >-
       forEach((value: DeletedCertificateItem, index: number, array:
       DeletedCertificateItem[]) => void, any)
-    uid: azure-keyvault.DeletedCertificateListResult.forEach|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.forEach
+    package: azure-keyvault
     summary: Performs the specified action for each element in an array.
     remarks: ''
     isPreview: false
@@ -685,8 +685,8 @@ methods:
             function. If thisArg is omitted, undefined is used as the this
             value.
   - name: includes(DeletedCertificateItem, number)
-    uid: azure-keyvault.DeletedCertificateListResult.includes|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.includes
+    package: azure-keyvault
     summary: >-
       Determines whether an array includes a certain element, returning true or
       false as appropriate.
@@ -710,8 +710,8 @@ methods:
         description: ''
         type: boolean
   - name: indexOf(DeletedCertificateItem, number)
-    uid: azure-keyvault.DeletedCertificateListResult.indexOf|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.indexOf
+    package: azure-keyvault
     summary: Returns the index of the first occurrence of a value in an array.
     remarks: ''
     isPreview: false
@@ -733,8 +733,8 @@ methods:
         description: ''
         type: number
   - name: join(string)
-    uid: azure-keyvault.DeletedCertificateListResult.join|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.join
+    package: azure-keyvault
     summary: >-
       Adds all the elements of an array separated by the specified separator
       string.
@@ -754,8 +754,8 @@ methods:
         description: ''
         type: string
   - name: keys()
-    uid: azure-keyvault.DeletedCertificateListResult.keys|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.keys
+    package: azure-keyvault
     summary: Returns an iterable of keys in the array
     remarks: ''
     isPreview: false
@@ -766,8 +766,8 @@ methods:
         description: ''
         type: IterableIterator&lt;number&gt;
   - name: lastIndexOf(DeletedCertificateItem, number)
-    uid: azure-keyvault.DeletedCertificateListResult.lastIndexOf|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.lastIndexOf
+    package: azure-keyvault
     summary: Returns the index of the last occurrence of a specified value in an array.
     remarks: ''
     isPreview: false
@@ -791,8 +791,8 @@ methods:
   - name: >-
       map<U>((value: DeletedCertificateItem, index: number, array:
       DeletedCertificateItem[]) => U, any)
-    uid: azure-keyvault.DeletedCertificateListResult.map|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.map
+    package: azure-keyvault
     summary: >-
       Calls a defined callback function on each element of an array, and returns
       an array that contains the results.
@@ -821,8 +821,8 @@ methods:
         description: ''
         type: U[]
   - name: pop()
-    uid: azure-keyvault.DeletedCertificateListResult.pop|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.pop
+    package: azure-keyvault
     summary: Removes the last element from an array and returns it.
     remarks: ''
     isPreview: false
@@ -835,8 +835,8 @@ methods:
           <xref uid="azure-keyvault.DeletedCertificateItem|legacy" /> |
           undefined
   - name: push(DeletedCertificateItem[])
-    uid: azure-keyvault.DeletedCertificateListResult.push|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.push
+    package: azure-keyvault
     summary: Appends new elements to an array, and returns the new length of the array.
     remarks: ''
     isPreview: false
@@ -855,8 +855,8 @@ methods:
       reduce((previousValue: DeletedCertificateItem, currentValue:
       DeletedCertificateItem, currentIndex: number, array:
       DeletedCertificateItem[]) => DeletedCertificateItem)
-    uid: azure-keyvault.DeletedCertificateListResult.reduce|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.reduce
+    package: azure-keyvault
     summary: >-
       Calls the specified callback function for all the elements in an array.
       The return value of the callback function is the accumulated result, and
@@ -888,8 +888,8 @@ methods:
       DeletedCertificateItem, currentIndex: number, array:
       DeletedCertificateItem[]) => DeletedCertificateItem,
       DeletedCertificateItem)
-    uid: azure-keyvault.DeletedCertificateListResult.reduce_1|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.reduce_1
+    package: azure-keyvault
     summary: ''
     remarks: ''
     isPreview: false
@@ -916,8 +916,8 @@ methods:
   - name: >-
       reduce<U>((previousValue: U, currentValue: DeletedCertificateItem,
       currentIndex: number, array: DeletedCertificateItem[]) => U, U)
-    uid: azure-keyvault.DeletedCertificateListResult.reduce_2|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.reduce_2
+    package: azure-keyvault
     summary: >-
       Calls the specified callback function for all the elements in an array.
       The return value of the callback function is the accumulated result, and
@@ -952,8 +952,8 @@ methods:
       reduceRight((previousValue: DeletedCertificateItem, currentValue:
       DeletedCertificateItem, currentIndex: number, array:
       DeletedCertificateItem[]) => DeletedCertificateItem)
-    uid: azure-keyvault.DeletedCertificateListResult.reduceRight|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.reduceRight
+    package: azure-keyvault
     summary: >-
       Calls the specified callback function for all the elements in an array, in
       descending order. The return value of the callback function is the
@@ -986,8 +986,8 @@ methods:
       DeletedCertificateItem, currentIndex: number, array:
       DeletedCertificateItem[]) => DeletedCertificateItem,
       DeletedCertificateItem)
-    uid: azure-keyvault.DeletedCertificateListResult.reduceRight_1|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.reduceRight_1
+    package: azure-keyvault
     summary: ''
     remarks: ''
     isPreview: false
@@ -1014,8 +1014,8 @@ methods:
   - name: >-
       reduceRight<U>((previousValue: U, currentValue: DeletedCertificateItem,
       currentIndex: number, array: DeletedCertificateItem[]) => U, U)
-    uid: azure-keyvault.DeletedCertificateListResult.reduceRight_2|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.reduceRight_2
+    package: azure-keyvault
     summary: >-
       Calls the specified callback function for all the elements in an array, in
       descending order. The return value of the callback function is the
@@ -1048,8 +1048,8 @@ methods:
         description: ''
         type: U
   - name: reverse()
-    uid: azure-keyvault.DeletedCertificateListResult.reverse|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.reverse
+    package: azure-keyvault
     summary: Reverses the elements in an Array.
     remarks: ''
     isPreview: false
@@ -1060,8 +1060,8 @@ methods:
         description: ''
         type: <xref uid="azure-keyvault.DeletedCertificateItem|legacy" />[]
   - name: shift()
-    uid: azure-keyvault.DeletedCertificateListResult.shift|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.shift
+    package: azure-keyvault
     summary: Removes the first element from an array and returns it.
     remarks: ''
     isPreview: false
@@ -1074,8 +1074,8 @@ methods:
           <xref uid="azure-keyvault.DeletedCertificateItem|legacy" /> |
           undefined
   - name: slice(number, number)
-    uid: azure-keyvault.DeletedCertificateListResult.slice|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.slice
+    package: azure-keyvault
     summary: Returns a section of an array.
     remarks: ''
     isPreview: false
@@ -1096,8 +1096,8 @@ methods:
   - name: >-
       some((value: DeletedCertificateItem, index: number, array:
       DeletedCertificateItem[]) => unknown, any)
-    uid: azure-keyvault.DeletedCertificateListResult.some|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.some
+    package: azure-keyvault
     summary: >-
       Determines whether the specified callback function returns true for any
       element of an array.
@@ -1127,8 +1127,8 @@ methods:
         description: ''
         type: boolean
   - name: 'sort((a: DeletedCertificateItem, b: DeletedCertificateItem) => number)'
-    uid: azure-keyvault.DeletedCertificateListResult.sort|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.sort
+    package: azure-keyvault
     summary: Sorts an array.
     remarks: ''
     isPreview: false
@@ -1148,8 +1148,8 @@ methods:
         description: ''
         type: this
   - name: splice(number, number)
-    uid: azure-keyvault.DeletedCertificateListResult.splice|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.splice
+    package: azure-keyvault
     summary: >-
       Removes elements from an array and, if necessary, inserts new elements in
       their place, returning the deleted elements.
@@ -1174,8 +1174,8 @@ methods:
         description: ''
         type: <xref uid="azure-keyvault.DeletedCertificateItem|legacy" />[]
   - name: splice(number, number, DeletedCertificateItem[])
-    uid: azure-keyvault.DeletedCertificateListResult.splice_1|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.splice_1
+    package: azure-keyvault
     summary: >-
       Removes elements from an array and, if necessary, inserts new elements in
       their place, returning the deleted elements.
@@ -1203,8 +1203,8 @@ methods:
         description: ''
         type: <xref uid="azure-keyvault.DeletedCertificateItem|legacy" />[]
   - name: toLocaleString()
-    uid: azure-keyvault.DeletedCertificateListResult.toLocaleString|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.toLocaleString
+    package: azure-keyvault
     summary: >-
       Returns a string representation of an array. The elements are converted to
       string using their toLocalString methods.
@@ -1217,8 +1217,8 @@ methods:
         description: ''
         type: string
   - name: toString()
-    uid: azure-keyvault.DeletedCertificateListResult.toString|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.toString
+    package: azure-keyvault
     summary: Returns a string representation of an array.
     remarks: ''
     isPreview: false
@@ -1229,8 +1229,8 @@ methods:
         description: ''
         type: string
   - name: unshift(DeletedCertificateItem[])
-    uid: azure-keyvault.DeletedCertificateListResult.unshift|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.unshift
+    package: azure-keyvault
     summary: Inserts new elements at the start of an array.
     remarks: ''
     isPreview: false
@@ -1246,8 +1246,8 @@ methods:
         description: ''
         type: number
   - name: values()
-    uid: azure-keyvault.DeletedCertificateListResult.values|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedCertificateListResult.values
+    package: azure-keyvault
     summary: Returns an iterable of values in the array
     remarks: ''
     isPreview: false

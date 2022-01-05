@@ -1,0 +1,245 @@
+### YamlMime:TSType
+name: SparkBatchJob
+uid: '@azure/synapse-spark.SparkBatchJob|beta'
+package: '@azure/synapse-spark|beta'
+summary: ''
+fullName: SparkBatchJob
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: appId
+    uid: '@azure/synapse-spark.SparkBatchJob.appId|beta'
+    package: '@azure/synapse-spark|beta'
+    summary: The application id of this session
+    fullName: appId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'appId?: string'
+      return:
+        description: ''
+        type: string
+  - name: appInfo
+    uid: '@azure/synapse-spark.SparkBatchJob.appInfo|beta'
+    package: '@azure/synapse-spark|beta'
+    summary: The detailed application info.
+    fullName: appInfo
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'appInfo?: [key: string]: string'
+      return:
+        description: ''
+        type: '[key: string]\: string'
+  - name: artifactId
+    uid: '@azure/synapse-spark.SparkBatchJob.artifactId|beta'
+    package: '@azure/synapse-spark|beta'
+    summary: The artifact identifier.
+    fullName: artifactId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'artifactId?: string'
+      return:
+        description: ''
+        type: string
+  - name: errors
+    uid: '@azure/synapse-spark.SparkBatchJob.errors|beta'
+    package: '@azure/synapse-spark|beta'
+    summary: The error information.
+    fullName: errors
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'errors?: SparkServiceError[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/synapse-spark.SparkServiceError|beta" />[]
+  - name: id
+    uid: '@azure/synapse-spark.SparkBatchJob.id|beta'
+    package: '@azure/synapse-spark|beta'
+    summary: The session Id.
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id: number'
+      return:
+        description: ''
+        type: number
+  - name: jobType
+    uid: '@azure/synapse-spark.SparkBatchJob.jobType|beta'
+    package: '@azure/synapse-spark|beta'
+    summary: The job type.
+    fullName: jobType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'jobType?: SparkJobType'
+      return:
+        description: ''
+        type: <xref uid="@azure/synapse-spark.SparkJobType|beta" />
+  - name: livyInfo
+    uid: '@azure/synapse-spark.SparkBatchJob.livyInfo|beta'
+    package: '@azure/synapse-spark|beta'
+    summary: ''
+    fullName: livyInfo
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'livyInfo?: SparkBatchJobState'
+      return:
+        description: ''
+        type: <xref uid="@azure/synapse-spark.SparkBatchJobState|beta" />
+  - name: logLines
+    uid: '@azure/synapse-spark.SparkBatchJob.logLines|beta'
+    package: '@azure/synapse-spark|beta'
+    summary: The log lines.
+    fullName: logLines
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'logLines?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: name
+    uid: '@azure/synapse-spark.SparkBatchJob.name|beta'
+    package: '@azure/synapse-spark|beta'
+    summary: The batch name.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: string'
+      return:
+        description: ''
+        type: string
+  - name: plugin
+    uid: '@azure/synapse-spark.SparkBatchJob.plugin|beta'
+    package: '@azure/synapse-spark|beta'
+    summary: The plugin information.
+    fullName: plugin
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'plugin?: SparkServicePlugin'
+      return:
+        description: ''
+        type: <xref uid="@azure/synapse-spark.SparkServicePlugin|beta" />
+  - name: result
+    uid: '@azure/synapse-spark.SparkBatchJob.result|beta'
+    package: '@azure/synapse-spark|beta'
+    summary: The Spark batch job result.
+    fullName: result
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'result?: SparkBatchJobResultType'
+      return:
+        description: ''
+        type: <xref uid="@azure/synapse-spark.SparkBatchJobResultType|beta" />
+  - name: scheduler
+    uid: '@azure/synapse-spark.SparkBatchJob.scheduler|beta'
+    package: '@azure/synapse-spark|beta'
+    summary: The scheduler information.
+    fullName: scheduler
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'scheduler?: SparkScheduler'
+      return:
+        description: ''
+        type: <xref uid="@azure/synapse-spark.SparkScheduler|beta" />
+  - name: sparkPoolName
+    uid: '@azure/synapse-spark.SparkBatchJob.sparkPoolName|beta'
+    package: '@azure/synapse-spark|beta'
+    summary: The Spark pool name.
+    fullName: sparkPoolName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sparkPoolName?: string'
+      return:
+        description: ''
+        type: string
+  - name: state
+    uid: '@azure/synapse-spark.SparkBatchJob.state|beta'
+    package: '@azure/synapse-spark|beta'
+    summary: The batch state
+    fullName: state
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'state?: LivyStates'
+      return:
+        description: ''
+        type: <xref uid="@azure/synapse-spark.LivyStates|beta" />
+  - name: submitterId
+    uid: '@azure/synapse-spark.SparkBatchJob.submitterId|beta'
+    package: '@azure/synapse-spark|beta'
+    summary: The submitter identifier.
+    fullName: submitterId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'submitterId?: string'
+      return:
+        description: ''
+        type: string
+  - name: submitterName
+    uid: '@azure/synapse-spark.SparkBatchJob.submitterName|beta'
+    package: '@azure/synapse-spark|beta'
+    summary: The submitter name.
+    fullName: submitterName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'submitterName?: string'
+      return:
+        description: ''
+        type: string
+  - name: tags
+    uid: '@azure/synapse-spark.SparkBatchJob.tags|beta'
+    package: '@azure/synapse-spark|beta'
+    summary: The tags.
+    fullName: tags
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        description: ''
+        type: '[key: string]\: string'
+  - name: workspaceName
+    uid: '@azure/synapse-spark.SparkBatchJob.workspaceName|beta'
+    package: '@azure/synapse-spark|beta'
+    summary: The workspace name.
+    fullName: workspaceName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'workspaceName?: string'
+      return:
+        description: ''
+        type: string

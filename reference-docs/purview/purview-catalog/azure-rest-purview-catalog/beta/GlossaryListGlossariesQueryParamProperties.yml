@@ -1,0 +1,67 @@
+### YamlMime:TSType
+name: GlossaryListGlossariesQueryParamProperties
+uid: '@azure-rest/purview-catalog.GlossaryListGlossariesQueryParamProperties|beta'
+package: '@azure-rest/purview-catalog|beta'
+summary: ''
+fullName: GlossaryListGlossariesQueryParamProperties
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: ignoreTermsAndCategories
+    uid: >-
+      @azure-rest/purview-catalog.GlossaryListGlossariesQueryParamProperties.ignoreTermsAndCategories|beta
+    package: '@azure-rest/purview-catalog|beta'
+    summary: Whether ignore terms and categories
+    fullName: ignoreTermsAndCategories
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ignoreTermsAndCategories?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: limit
+    uid: >-
+      @azure-rest/purview-catalog.GlossaryListGlossariesQueryParamProperties.limit|beta
+    package: '@azure-rest/purview-catalog|beta'
+    summary: The page size - by default there is no paging.
+    fullName: limit
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'limit?: number'
+      return:
+        description: ''
+        type: number
+  - name: offset
+    uid: >-
+      @azure-rest/purview-catalog.GlossaryListGlossariesQueryParamProperties.offset|beta
+    package: '@azure-rest/purview-catalog|beta'
+    summary: The offset for pagination purpose.
+    fullName: offset
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'offset?: number'
+      return:
+        description: ''
+        type: number
+  - name: sort
+    uid: >-
+      @azure-rest/purview-catalog.GlossaryListGlossariesQueryParamProperties.sort|beta
+    package: '@azure-rest/purview-catalog|beta'
+    summary: The sort order, ASC (default) or DESC.
+    fullName: sort
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sort?: string'
+      return:
+        description: ''
+        type: string

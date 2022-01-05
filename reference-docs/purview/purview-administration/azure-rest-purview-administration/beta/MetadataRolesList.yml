@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: MetadataRolesList
+uid: '@azure-rest/purview-administration.MetadataRolesList|beta'
+package: '@azure-rest/purview-administration|beta'
+summary: ''
+fullName: MetadataRolesList
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: get(MetadataRolesListParameters)
+    uid: '@azure-rest/purview-administration.MetadataRolesList.get|beta'
+    package: '@azure-rest/purview-administration|beta'
+    summary: Lists roles for Purview Account
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(options?: MetadataRolesListParameters):
+        Promise<MetadataRolesList200Response | MetadataRolesListdefaultResponse>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure-rest/purview-administration.MetadataRolesListParameters|beta"
+            />
+          description: ''
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure-rest/purview-administration.MetadataRolesList200Response|beta"
+          /> | <xref
+          uid="@azure-rest/purview-administration.MetadataRolesListdefaultResponse|beta"
+          />&gt;

@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: EdifactAgreementContent
+uid: '@azure/arm-logic.EdifactAgreementContent|stable'
+package: '@azure/arm-logic|stable'
+summary: The Edifact agreement content.
+fullName: EdifactAgreementContent
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: receiveAgreement
+    uid: '@azure/arm-logic.EdifactAgreementContent.receiveAgreement|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The EDIFACT one-way receive agreement.
+    fullName: receiveAgreement
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'receiveAgreement: EdifactOneWayAgreement'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-logic.EdifactOneWayAgreement|stable" />
+  - name: sendAgreement
+    uid: '@azure/arm-logic.EdifactAgreementContent.sendAgreement|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The EDIFACT one-way send agreement.
+    fullName: sendAgreement
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sendAgreement: EdifactOneWayAgreement'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-logic.EdifactOneWayAgreement|stable" />

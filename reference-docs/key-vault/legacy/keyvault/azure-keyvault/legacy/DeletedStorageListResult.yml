@@ -50,10 +50,10 @@ properties:
       return:
         description: ''
         type: string
-methods:
+inheritedMethods:
   - name: at(number)
-    uid: azure-keyvault.DeletedStorageListResult.at|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.at
+    package: azure-keyvault
     summary: |-
       Takes an integer value and returns the item at that index,
       allowing for positive and negative integers.
@@ -73,8 +73,8 @@ methods:
           <xref uid="azure-keyvault.DeletedStorageAccountItem|legacy" /> |
           undefined
   - name: concat(ConcatArray<DeletedStorageAccountItem>[])
-    uid: azure-keyvault.DeletedStorageListResult.concat|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.concat
+    package: azure-keyvault
     summary: Combines two or more arrays.
     remarks: ''
     isPreview: false
@@ -94,8 +94,8 @@ methods:
         description: ''
         type: <xref uid="azure-keyvault.DeletedStorageAccountItem|legacy" />[]
   - name: concat(T | ConcatArray<T>[])
-    uid: azure-keyvault.DeletedStorageListResult.concat_1|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.concat_1
+    package: azure-keyvault
     summary: Combines two or more arrays.
     remarks: ''
     isPreview: false
@@ -113,8 +113,8 @@ methods:
         description: ''
         type: <xref uid="azure-keyvault.DeletedStorageAccountItem|legacy" />[]
   - name: copyWithin(number, number, number)
-    uid: azure-keyvault.DeletedStorageListResult.copyWithin|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.copyWithin
+    package: azure-keyvault
     summary: >-
       Returns the this object after copying a section of the array identified by
       start and end
@@ -149,8 +149,8 @@ methods:
         description: ''
         type: this
   - name: entries()
-    uid: azure-keyvault.DeletedStorageListResult.entries|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.entries
+    package: azure-keyvault
     summary: Returns an iterable of key, value pairs for every entry in the array
     remarks: ''
     isPreview: false
@@ -165,8 +165,8 @@ methods:
   - name: >-
       every((value: DeletedStorageAccountItem, index: number, array:
       DeletedStorageAccountItem[]) => unknown, any)
-    uid: azure-keyvault.DeletedStorageListResult.every|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.every
+    package: azure-keyvault
     summary: Determines whether all the members of an array satisfy the specified test.
     remarks: ''
     isPreview: false
@@ -195,8 +195,8 @@ methods:
         description: ''
         type: boolean
   - name: fill(DeletedStorageAccountItem, number, number)
-    uid: azure-keyvault.DeletedStorageListResult.fill|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.fill
+    package: azure-keyvault
     summary: >-
       Returns the this object after filling the section identified by start and
       end with value
@@ -231,8 +231,8 @@ methods:
   - name: >-
       filter((value: DeletedStorageAccountItem, index: number, array:
       DeletedStorageAccountItem[]) => unknown, any)
-    uid: azure-keyvault.DeletedStorageListResult.filter_1|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.filter_1
+    package: azure-keyvault
     summary: >-
       Returns the elements of an array that meet the condition specified in a
       callback function.
@@ -265,8 +265,8 @@ methods:
   - name: >-
       filter<S>((value: DeletedStorageAccountItem, index: number, array:
       DeletedStorageAccountItem[]) => boolean, any)
-    uid: azure-keyvault.DeletedStorageListResult.filter|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.filter
+    package: azure-keyvault
     summary: >-
       Returns the elements of an array that meet the condition specified in a
       callback function.
@@ -299,8 +299,8 @@ methods:
   - name: >-
       find((value: DeletedStorageAccountItem, index: number, obj:
       DeletedStorageAccountItem[]) => unknown, any)
-    uid: azure-keyvault.DeletedStorageListResult.find_1|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.find_1
+    package: azure-keyvault
     summary: ''
     remarks: ''
     isPreview: false
@@ -327,8 +327,8 @@ methods:
   - name: >-
       find<S>((this: void, value: DeletedStorageAccountItem, index: number, obj:
       DeletedStorageAccountItem[]) => boolean, any)
-    uid: azure-keyvault.DeletedStorageListResult.find|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.find
+    package: azure-keyvault
     summary: >-
       Returns the value of the first element in the array where predicate is
       true, and undefined
@@ -369,8 +369,8 @@ methods:
   - name: >-
       findIndex((value: DeletedStorageAccountItem, index: number, obj:
       DeletedStorageAccountItem[]) => unknown, any)
-    uid: azure-keyvault.DeletedStorageListResult.findIndex|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.findIndex
+    package: azure-keyvault
     summary: >-
       Returns the index of the first element in the array where predicate is
       true, and -1
@@ -409,8 +409,8 @@ methods:
         description: ''
         type: number
   - name: flat<U>(number)
-    uid: azure-keyvault.DeletedStorageListResult.flat_8|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.flat_8
+    package: azure-keyvault
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -431,8 +431,8 @@ methods:
         description: ''
         type: any[]
   - name: flat<U>(U[], 0)
-    uid: azure-keyvault.DeletedStorageListResult.flat_7|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.flat_7
+    package: azure-keyvault
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -455,8 +455,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][], 1)
-    uid: azure-keyvault.DeletedStorageListResult.flat_6|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.flat_6
+    package: azure-keyvault
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -479,8 +479,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][], 2)
-    uid: azure-keyvault.DeletedStorageListResult.flat_5|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.flat_5
+    package: azure-keyvault
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -503,8 +503,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][][], 3)
-    uid: azure-keyvault.DeletedStorageListResult.flat_4|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.flat_4
+    package: azure-keyvault
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -527,8 +527,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][][][], 4)
-    uid: azure-keyvault.DeletedStorageListResult.flat_3|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.flat_3
+    package: azure-keyvault
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -551,8 +551,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][][][][], 5)
-    uid: azure-keyvault.DeletedStorageListResult.flat_2|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.flat_2
+    package: azure-keyvault
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -575,8 +575,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][][][][][], 6)
-    uid: azure-keyvault.DeletedStorageListResult.flat_1|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.flat_1
+    package: azure-keyvault
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -599,8 +599,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][][][][][][], 7)
-    uid: azure-keyvault.DeletedStorageListResult.flat|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.flat
+    package: azure-keyvault
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -625,8 +625,8 @@ methods:
   - name: >-
       flatMap<U, This>((this: This, value: DeletedStorageAccountItem, index:
       number, array: DeletedStorageAccountItem[]) => U | ReadonlyArray<U>, This)
-    uid: azure-keyvault.DeletedStorageListResult.flatMap|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.flatMap
+    package: azure-keyvault
     summary: >-
       Calls a defined callback function on each element of an array. Then,
       flattens the result into
@@ -666,8 +666,8 @@ methods:
   - name: >-
       forEach((value: DeletedStorageAccountItem, index: number, array:
       DeletedStorageAccountItem[]) => void, any)
-    uid: azure-keyvault.DeletedStorageListResult.forEach|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.forEach
+    package: azure-keyvault
     summary: Performs the specified action for each element in an array.
     remarks: ''
     isPreview: false
@@ -691,8 +691,8 @@ methods:
             function. If thisArg is omitted, undefined is used as the this
             value.
   - name: includes(DeletedStorageAccountItem, number)
-    uid: azure-keyvault.DeletedStorageListResult.includes|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.includes
+    package: azure-keyvault
     summary: >-
       Determines whether an array includes a certain element, returning true or
       false as appropriate.
@@ -716,8 +716,8 @@ methods:
         description: ''
         type: boolean
   - name: indexOf(DeletedStorageAccountItem, number)
-    uid: azure-keyvault.DeletedStorageListResult.indexOf|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.indexOf
+    package: azure-keyvault
     summary: Returns the index of the first occurrence of a value in an array.
     remarks: ''
     isPreview: false
@@ -739,8 +739,8 @@ methods:
         description: ''
         type: number
   - name: join(string)
-    uid: azure-keyvault.DeletedStorageListResult.join|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.join
+    package: azure-keyvault
     summary: >-
       Adds all the elements of an array separated by the specified separator
       string.
@@ -760,8 +760,8 @@ methods:
         description: ''
         type: string
   - name: keys()
-    uid: azure-keyvault.DeletedStorageListResult.keys|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.keys
+    package: azure-keyvault
     summary: Returns an iterable of keys in the array
     remarks: ''
     isPreview: false
@@ -772,8 +772,8 @@ methods:
         description: ''
         type: IterableIterator&lt;number&gt;
   - name: lastIndexOf(DeletedStorageAccountItem, number)
-    uid: azure-keyvault.DeletedStorageListResult.lastIndexOf|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.lastIndexOf
+    package: azure-keyvault
     summary: Returns the index of the last occurrence of a specified value in an array.
     remarks: ''
     isPreview: false
@@ -797,8 +797,8 @@ methods:
   - name: >-
       map<U>((value: DeletedStorageAccountItem, index: number, array:
       DeletedStorageAccountItem[]) => U, any)
-    uid: azure-keyvault.DeletedStorageListResult.map|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.map
+    package: azure-keyvault
     summary: >-
       Calls a defined callback function on each element of an array, and returns
       an array that contains the results.
@@ -827,8 +827,8 @@ methods:
         description: ''
         type: U[]
   - name: pop()
-    uid: azure-keyvault.DeletedStorageListResult.pop|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.pop
+    package: azure-keyvault
     summary: Removes the last element from an array and returns it.
     remarks: ''
     isPreview: false
@@ -841,8 +841,8 @@ methods:
           <xref uid="azure-keyvault.DeletedStorageAccountItem|legacy" /> |
           undefined
   - name: push(DeletedStorageAccountItem[])
-    uid: azure-keyvault.DeletedStorageListResult.push|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.push
+    package: azure-keyvault
     summary: Appends new elements to an array, and returns the new length of the array.
     remarks: ''
     isPreview: false
@@ -861,8 +861,8 @@ methods:
       reduce((previousValue: DeletedStorageAccountItem, currentValue:
       DeletedStorageAccountItem, currentIndex: number, array:
       DeletedStorageAccountItem[]) => DeletedStorageAccountItem)
-    uid: azure-keyvault.DeletedStorageListResult.reduce|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.reduce
+    package: azure-keyvault
     summary: >-
       Calls the specified callback function for all the elements in an array.
       The return value of the callback function is the accumulated result, and
@@ -894,8 +894,8 @@ methods:
       DeletedStorageAccountItem, currentIndex: number, array:
       DeletedStorageAccountItem[]) => DeletedStorageAccountItem,
       DeletedStorageAccountItem)
-    uid: azure-keyvault.DeletedStorageListResult.reduce_1|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.reduce_1
+    package: azure-keyvault
     summary: ''
     remarks: ''
     isPreview: false
@@ -922,8 +922,8 @@ methods:
   - name: >-
       reduce<U>((previousValue: U, currentValue: DeletedStorageAccountItem,
       currentIndex: number, array: DeletedStorageAccountItem[]) => U, U)
-    uid: azure-keyvault.DeletedStorageListResult.reduce_2|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.reduce_2
+    package: azure-keyvault
     summary: >-
       Calls the specified callback function for all the elements in an array.
       The return value of the callback function is the accumulated result, and
@@ -958,8 +958,8 @@ methods:
       reduceRight((previousValue: DeletedStorageAccountItem, currentValue:
       DeletedStorageAccountItem, currentIndex: number, array:
       DeletedStorageAccountItem[]) => DeletedStorageAccountItem)
-    uid: azure-keyvault.DeletedStorageListResult.reduceRight|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.reduceRight
+    package: azure-keyvault
     summary: >-
       Calls the specified callback function for all the elements in an array, in
       descending order. The return value of the callback function is the
@@ -992,8 +992,8 @@ methods:
       DeletedStorageAccountItem, currentIndex: number, array:
       DeletedStorageAccountItem[]) => DeletedStorageAccountItem,
       DeletedStorageAccountItem)
-    uid: azure-keyvault.DeletedStorageListResult.reduceRight_1|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.reduceRight_1
+    package: azure-keyvault
     summary: ''
     remarks: ''
     isPreview: false
@@ -1021,8 +1021,8 @@ methods:
   - name: >-
       reduceRight<U>((previousValue: U, currentValue: DeletedStorageAccountItem,
       currentIndex: number, array: DeletedStorageAccountItem[]) => U, U)
-    uid: azure-keyvault.DeletedStorageListResult.reduceRight_2|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.reduceRight_2
+    package: azure-keyvault
     summary: >-
       Calls the specified callback function for all the elements in an array, in
       descending order. The return value of the callback function is the
@@ -1055,8 +1055,8 @@ methods:
         description: ''
         type: U
   - name: reverse()
-    uid: azure-keyvault.DeletedStorageListResult.reverse|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.reverse
+    package: azure-keyvault
     summary: Reverses the elements in an Array.
     remarks: ''
     isPreview: false
@@ -1067,8 +1067,8 @@ methods:
         description: ''
         type: <xref uid="azure-keyvault.DeletedStorageAccountItem|legacy" />[]
   - name: shift()
-    uid: azure-keyvault.DeletedStorageListResult.shift|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.shift
+    package: azure-keyvault
     summary: Removes the first element from an array and returns it.
     remarks: ''
     isPreview: false
@@ -1081,8 +1081,8 @@ methods:
           <xref uid="azure-keyvault.DeletedStorageAccountItem|legacy" /> |
           undefined
   - name: slice(number, number)
-    uid: azure-keyvault.DeletedStorageListResult.slice|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.slice
+    package: azure-keyvault
     summary: Returns a section of an array.
     remarks: ''
     isPreview: false
@@ -1105,8 +1105,8 @@ methods:
   - name: >-
       some((value: DeletedStorageAccountItem, index: number, array:
       DeletedStorageAccountItem[]) => unknown, any)
-    uid: azure-keyvault.DeletedStorageListResult.some|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.some
+    package: azure-keyvault
     summary: >-
       Determines whether the specified callback function returns true for any
       element of an array.
@@ -1139,8 +1139,8 @@ methods:
   - name: >-
       sort((a: DeletedStorageAccountItem, b: DeletedStorageAccountItem) =>
       number)
-    uid: azure-keyvault.DeletedStorageListResult.sort|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.sort
+    package: azure-keyvault
     summary: Sorts an array.
     remarks: ''
     isPreview: false
@@ -1162,8 +1162,8 @@ methods:
         description: ''
         type: this
   - name: splice(number, number)
-    uid: azure-keyvault.DeletedStorageListResult.splice|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.splice
+    package: azure-keyvault
     summary: >-
       Removes elements from an array and, if necessary, inserts new elements in
       their place, returning the deleted elements.
@@ -1188,8 +1188,8 @@ methods:
         description: ''
         type: <xref uid="azure-keyvault.DeletedStorageAccountItem|legacy" />[]
   - name: splice(number, number, DeletedStorageAccountItem[])
-    uid: azure-keyvault.DeletedStorageListResult.splice_1|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.splice_1
+    package: azure-keyvault
     summary: >-
       Removes elements from an array and, if necessary, inserts new elements in
       their place, returning the deleted elements.
@@ -1217,8 +1217,8 @@ methods:
         description: ''
         type: <xref uid="azure-keyvault.DeletedStorageAccountItem|legacy" />[]
   - name: toLocaleString()
-    uid: azure-keyvault.DeletedStorageListResult.toLocaleString|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.toLocaleString
+    package: azure-keyvault
     summary: >-
       Returns a string representation of an array. The elements are converted to
       string using their toLocalString methods.
@@ -1231,8 +1231,8 @@ methods:
         description: ''
         type: string
   - name: toString()
-    uid: azure-keyvault.DeletedStorageListResult.toString|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.toString
+    package: azure-keyvault
     summary: Returns a string representation of an array.
     remarks: ''
     isPreview: false
@@ -1243,8 +1243,8 @@ methods:
         description: ''
         type: string
   - name: unshift(DeletedStorageAccountItem[])
-    uid: azure-keyvault.DeletedStorageListResult.unshift|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.unshift
+    package: azure-keyvault
     summary: Inserts new elements at the start of an array.
     remarks: ''
     isPreview: false
@@ -1260,8 +1260,8 @@ methods:
         description: ''
         type: number
   - name: values()
-    uid: azure-keyvault.DeletedStorageListResult.values|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.DeletedStorageListResult.values
+    package: azure-keyvault
     summary: Returns an iterable of values in the array
     remarks: ''
     isPreview: false

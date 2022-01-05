@@ -1,0 +1,81 @@
+### YamlMime:TSType
+name: QueryStringMatchConditionParameters
+uid: '@azure/arm-cdn.QueryStringMatchConditionParameters|stable'
+package: '@azure/arm-cdn|stable'
+summary: Defines the parameters for QueryString match conditions
+fullName: QueryStringMatchConditionParameters
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: matchValues
+    uid: '@azure/arm-cdn.QueryStringMatchConditionParameters.matchValues|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: The match value for the condition of the delivery rule
+    fullName: matchValues
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'matchValues?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: negateCondition
+    uid: '@azure/arm-cdn.QueryStringMatchConditionParameters.negateCondition|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: Describes if this is negate condition or not
+    fullName: negateCondition
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'negateCondition?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true
+  - name: odataType
+    uid: '@azure/arm-cdn.QueryStringMatchConditionParameters.odataType|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: ''
+    fullName: odataType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        odataType:
+        "#Microsoft.Azure.Cdn.Models.DeliveryRuleQueryStringConditionParameters"
+      return:
+        description: ''
+        type: >-
+          "#<xref
+          uid="Microsoft.Azure.Cdn.Models.DeliveryRuleQueryStringConditionParameters|stable"
+          />"
+  - name: operator
+    uid: '@azure/arm-cdn.QueryStringMatchConditionParameters.operator|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: Describes operator to be matched
+    fullName: operator
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'operator: QueryStringOperator'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-cdn.QueryStringOperator|stable" />
+  - name: transforms
+    uid: '@azure/arm-cdn.QueryStringMatchConditionParameters.transforms|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: List of transforms
+    fullName: transforms
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'transforms?: Transform[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-cdn.Transform|stable" />[]

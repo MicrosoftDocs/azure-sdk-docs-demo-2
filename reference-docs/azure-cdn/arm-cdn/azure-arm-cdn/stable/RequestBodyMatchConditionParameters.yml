@@ -1,0 +1,81 @@
+### YamlMime:TSType
+name: RequestBodyMatchConditionParameters
+uid: '@azure/arm-cdn.RequestBodyMatchConditionParameters|stable'
+package: '@azure/arm-cdn|stable'
+summary: Defines the parameters for RequestBody match conditions
+fullName: RequestBodyMatchConditionParameters
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: matchValues
+    uid: '@azure/arm-cdn.RequestBodyMatchConditionParameters.matchValues|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: The match value for the condition of the delivery rule
+    fullName: matchValues
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'matchValues?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: negateCondition
+    uid: '@azure/arm-cdn.RequestBodyMatchConditionParameters.negateCondition|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: Describes if this is negate condition or not
+    fullName: negateCondition
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'negateCondition?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true
+  - name: odataType
+    uid: '@azure/arm-cdn.RequestBodyMatchConditionParameters.odataType|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: ''
+    fullName: odataType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        odataType:
+        "#Microsoft.Azure.Cdn.Models.DeliveryRuleRequestBodyConditionParameters"
+      return:
+        description: ''
+        type: >-
+          "#<xref
+          uid="Microsoft.Azure.Cdn.Models.DeliveryRuleRequestBodyConditionParameters|stable"
+          />"
+  - name: operator
+    uid: '@azure/arm-cdn.RequestBodyMatchConditionParameters.operator|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: Describes operator to be matched
+    fullName: operator
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'operator: RequestBodyOperator'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-cdn.RequestBodyOperator|stable" />
+  - name: transforms
+    uid: '@azure/arm-cdn.RequestBodyMatchConditionParameters.transforms|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: List of transforms
+    fullName: transforms
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'transforms?: Transform[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-cdn.Transform|stable" />[]

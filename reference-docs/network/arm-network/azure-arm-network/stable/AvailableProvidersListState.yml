@@ -1,0 +1,50 @@
+### YamlMime:TSType
+name: AvailableProvidersListState
+uid: '@azure/arm-network.AvailableProvidersListState|stable'
+package: '@azure/arm-network|stable'
+summary: State details.
+fullName: AvailableProvidersListState
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: cities
+    uid: '@azure/arm-network.AvailableProvidersListState.cities|stable'
+    package: '@azure/arm-network|stable'
+    summary: List of available cities or towns in the state.
+    fullName: cities
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'cities?: AvailableProvidersListCity[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.AvailableProvidersListCity|stable" />[]
+  - name: providers
+    uid: '@azure/arm-network.AvailableProvidersListState.providers|stable'
+    package: '@azure/arm-network|stable'
+    summary: A list of Internet service providers.
+    fullName: providers
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'providers?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: stateName
+    uid: '@azure/arm-network.AvailableProvidersListState.stateName|stable'
+    package: '@azure/arm-network|stable'
+    summary: The state name.
+    fullName: stateName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'stateName?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

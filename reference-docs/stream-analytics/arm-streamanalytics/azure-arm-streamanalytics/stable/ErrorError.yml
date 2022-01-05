@@ -1,0 +1,63 @@
+### YamlMime:TSType
+name: ErrorError
+uid: '@azure/arm-streamanalytics.ErrorError|stable'
+package: '@azure/arm-streamanalytics|stable'
+summary: Error definition properties.
+fullName: ErrorError
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: code
+    uid: '@azure/arm-streamanalytics.ErrorError.code|stable'
+    package: '@azure/arm-streamanalytics|stable'
+    summary: Error code.
+    fullName: code
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'code?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: details
+    uid: '@azure/arm-streamanalytics.ErrorError.details|stable'
+    package: '@azure/arm-streamanalytics|stable'
+    summary: Error details.
+    fullName: details
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'details?: ErrorDetails[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-streamanalytics.ErrorDetails|stable" />[]
+  - name: message
+    uid: '@azure/arm-streamanalytics.ErrorError.message|stable'
+    package: '@azure/arm-streamanalytics|stable'
+    summary: Error message.
+    fullName: message
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'message?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: target
+    uid: '@azure/arm-streamanalytics.ErrorError.target|stable'
+    package: '@azure/arm-streamanalytics|stable'
+    summary: Error target.
+    fullName: target
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'target?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

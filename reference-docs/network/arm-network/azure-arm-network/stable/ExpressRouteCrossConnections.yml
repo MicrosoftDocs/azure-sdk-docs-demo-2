@@ -1,0 +1,503 @@
+### YamlMime:TSType
+name: ExpressRouteCrossConnections
+uid: '@azure/arm-network.ExpressRouteCrossConnections|stable'
+package: '@azure/arm-network|stable'
+summary: Interface representing a ExpressRouteCrossConnections.
+fullName: ExpressRouteCrossConnections
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      beginCreateOrUpdate(string, string, ExpressRouteCrossConnection,
+      ExpressRouteCrossConnectionsCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-network.ExpressRouteCrossConnections.beginCreateOrUpdate|stable'
+    package: '@azure/arm-network|stable'
+    summary: Update the specified ExpressRouteCrossConnection.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string,
+        crossConnectionName: string, parameters: ExpressRouteCrossConnection,
+        options?: ExpressRouteCrossConnectionsCreateOrUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<ExpressRouteCrossConnectionsCreateOrUpdateResponse>,
+        ExpressRouteCrossConnectionsCreateOrUpdateResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: crossConnectionName
+          type: string
+          description: The name of the ExpressRouteCrossConnection.
+        - id: parameters
+          type: <xref uid="@azure/arm-network.ExpressRouteCrossConnection|stable" />
+          description: >-
+            Parameters supplied to the update express route crossConnection
+            operation.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ExpressRouteCrossConnectionsCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-network.ExpressRouteCrossConnectionsCreateOrUpdateResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-network.ExpressRouteCrossConnectionsCreateOrUpdateResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginCreateOrUpdateAndWait(string, string, ExpressRouteCrossConnection,
+      ExpressRouteCrossConnectionsCreateOrUpdateOptionalParams)
+    uid: >-
+      @azure/arm-network.ExpressRouteCrossConnections.beginCreateOrUpdateAndWait|stable
+    package: '@azure/arm-network|stable'
+    summary: Update the specified ExpressRouteCrossConnection.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdateAndWait(resourceGroupName: string,
+        crossConnectionName: string, parameters: ExpressRouteCrossConnection,
+        options?: ExpressRouteCrossConnectionsCreateOrUpdateOptionalParams):
+        Promise<ExpressRouteCrossConnectionsCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: crossConnectionName
+          type: string
+          description: The name of the ExpressRouteCrossConnection.
+        - id: parameters
+          type: <xref uid="@azure/arm-network.ExpressRouteCrossConnection|stable" />
+          description: >-
+            Parameters supplied to the update express route crossConnection
+            operation.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ExpressRouteCrossConnectionsCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.ExpressRouteCrossConnectionsCreateOrUpdateResponse|stable"
+          />&gt;
+  - name: >-
+      beginListArpTable(string, string, string, string,
+      ExpressRouteCrossConnectionsListArpTableOptionalParams)
+    uid: '@azure/arm-network.ExpressRouteCrossConnections.beginListArpTable|stable'
+    package: '@azure/arm-network|stable'
+    summary: >-
+      Gets the currently advertised ARP table associated with the express route
+      cross connection in a
+
+      resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginListArpTable(resourceGroupName: string,
+        crossConnectionName: string, peeringName: string, devicePath: string,
+        options?: ExpressRouteCrossConnectionsListArpTableOptionalParams):
+        Promise<PollerLike<PollOperationState<ExpressRouteCrossConnectionsListArpTableResponse>,
+        ExpressRouteCrossConnectionsListArpTableResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: crossConnectionName
+          type: string
+          description: The name of the ExpressRouteCrossConnection.
+        - id: peeringName
+          type: string
+          description: The name of the peering.
+        - id: devicePath
+          type: string
+          description: The path of the device.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ExpressRouteCrossConnectionsListArpTableOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-network.ExpressRouteCrossConnectionsListArpTableResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-network.ExpressRouteCrossConnectionsListArpTableResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginListArpTableAndWait(string, string, string, string,
+      ExpressRouteCrossConnectionsListArpTableOptionalParams)
+    uid: >-
+      @azure/arm-network.ExpressRouteCrossConnections.beginListArpTableAndWait|stable
+    package: '@azure/arm-network|stable'
+    summary: >-
+      Gets the currently advertised ARP table associated with the express route
+      cross connection in a
+
+      resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginListArpTableAndWait(resourceGroupName: string,
+        crossConnectionName: string, peeringName: string, devicePath: string,
+        options?: ExpressRouteCrossConnectionsListArpTableOptionalParams):
+        Promise<ExpressRouteCrossConnectionsListArpTableResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: crossConnectionName
+          type: string
+          description: The name of the ExpressRouteCrossConnection.
+        - id: peeringName
+          type: string
+          description: The name of the peering.
+        - id: devicePath
+          type: string
+          description: The path of the device.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ExpressRouteCrossConnectionsListArpTableOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.ExpressRouteCrossConnectionsListArpTableResponse|stable"
+          />&gt;
+  - name: >-
+      beginListRoutesTable(string, string, string, string,
+      ExpressRouteCrossConnectionsListRoutesTableOptionalParams)
+    uid: >-
+      @azure/arm-network.ExpressRouteCrossConnections.beginListRoutesTable|stable
+    package: '@azure/arm-network|stable'
+    summary: >-
+      Gets the currently advertised routes table associated with the express
+      route cross connection in a
+
+      resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginListRoutesTable(resourceGroupName: string,
+        crossConnectionName: string, peeringName: string, devicePath: string,
+        options?: ExpressRouteCrossConnectionsListRoutesTableOptionalParams):
+        Promise<PollerLike<PollOperationState<ExpressRouteCrossConnectionsListRoutesTableResponse>,
+        ExpressRouteCrossConnectionsListRoutesTableResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: crossConnectionName
+          type: string
+          description: The name of the ExpressRouteCrossConnection.
+        - id: peeringName
+          type: string
+          description: The name of the peering.
+        - id: devicePath
+          type: string
+          description: The path of the device.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ExpressRouteCrossConnectionsListRoutesTableOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-network.ExpressRouteCrossConnectionsListRoutesTableResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-network.ExpressRouteCrossConnectionsListRoutesTableResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginListRoutesTableAndWait(string, string, string, string,
+      ExpressRouteCrossConnectionsListRoutesTableOptionalParams)
+    uid: >-
+      @azure/arm-network.ExpressRouteCrossConnections.beginListRoutesTableAndWait|stable
+    package: '@azure/arm-network|stable'
+    summary: >-
+      Gets the currently advertised routes table associated with the express
+      route cross connection in a
+
+      resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginListRoutesTableAndWait(resourceGroupName: string,
+        crossConnectionName: string, peeringName: string, devicePath: string,
+        options?: ExpressRouteCrossConnectionsListRoutesTableOptionalParams):
+        Promise<ExpressRouteCrossConnectionsListRoutesTableResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: crossConnectionName
+          type: string
+          description: The name of the ExpressRouteCrossConnection.
+        - id: peeringName
+          type: string
+          description: The name of the peering.
+        - id: devicePath
+          type: string
+          description: The path of the device.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ExpressRouteCrossConnectionsListRoutesTableOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.ExpressRouteCrossConnectionsListRoutesTableResponse|stable"
+          />&gt;
+  - name: >-
+      beginListRoutesTableSummary(string, string, string, string,
+      ExpressRouteCrossConnectionsListRoutesTableSummaryOptionalParams)
+    uid: >-
+      @azure/arm-network.ExpressRouteCrossConnections.beginListRoutesTableSummary|stable
+    package: '@azure/arm-network|stable'
+    summary: >-
+      Gets the route table summary associated with the express route cross
+      connection in a resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginListRoutesTableSummary(resourceGroupName: string,
+        crossConnectionName: string, peeringName: string, devicePath: string,
+        options?:
+        ExpressRouteCrossConnectionsListRoutesTableSummaryOptionalParams):
+        Promise<PollerLike<PollOperationState<ExpressRouteCrossConnectionsListRoutesTableSummaryResponse>,
+        ExpressRouteCrossConnectionsListRoutesTableSummaryResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: crossConnectionName
+          type: string
+          description: The name of the ExpressRouteCrossConnection.
+        - id: peeringName
+          type: string
+          description: The name of the peering.
+        - id: devicePath
+          type: string
+          description: The path of the device.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ExpressRouteCrossConnectionsListRoutesTableSummaryOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-network.ExpressRouteCrossConnectionsListRoutesTableSummaryResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-network.ExpressRouteCrossConnectionsListRoutesTableSummaryResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginListRoutesTableSummaryAndWait(string, string, string, string,
+      ExpressRouteCrossConnectionsListRoutesTableSummaryOptionalParams)
+    uid: >-
+      @azure/arm-network.ExpressRouteCrossConnections.beginListRoutesTableSummaryAndWait|stable
+    package: '@azure/arm-network|stable'
+    summary: >-
+      Gets the route table summary associated with the express route cross
+      connection in a resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginListRoutesTableSummaryAndWait(resourceGroupName: string,
+        crossConnectionName: string, peeringName: string, devicePath: string,
+        options?:
+        ExpressRouteCrossConnectionsListRoutesTableSummaryOptionalParams):
+        Promise<ExpressRouteCrossConnectionsListRoutesTableSummaryResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: crossConnectionName
+          type: string
+          description: The name of the ExpressRouteCrossConnection.
+        - id: peeringName
+          type: string
+          description: The name of the peering.
+        - id: devicePath
+          type: string
+          description: The path of the device.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ExpressRouteCrossConnectionsListRoutesTableSummaryOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.ExpressRouteCrossConnectionsListRoutesTableSummaryResponse|stable"
+          />&gt;
+  - name: get(string, string, ExpressRouteCrossConnectionsGetOptionalParams)
+    uid: '@azure/arm-network.ExpressRouteCrossConnections.get|stable'
+    package: '@azure/arm-network|stable'
+    summary: Gets details about the specified ExpressRouteCrossConnection.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, crossConnectionName: string,
+        options?: ExpressRouteCrossConnectionsGetOptionalParams):
+        Promise<ExpressRouteCrossConnectionsGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group (peering location of the circuit).
+        - id: crossConnectionName
+          type: string
+          description: >-
+            The name of the ExpressRouteCrossConnection (service key of the
+            circuit).
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ExpressRouteCrossConnectionsGetOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.ExpressRouteCrossConnectionsGetResponse|stable"
+          />&gt;
+  - name: list(ExpressRouteCrossConnectionsListOptionalParams)
+    uid: '@azure/arm-network.ExpressRouteCrossConnections.list|stable'
+    package: '@azure/arm-network|stable'
+    summary: Retrieves all the ExpressRouteCrossConnections in a subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(options?: ExpressRouteCrossConnectionsListOptionalParams):
+        PagedAsyncIterableIterator<ExpressRouteCrossConnection>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ExpressRouteCrossConnectionsListOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-network.ExpressRouteCrossConnection|stable" />&gt;
+  - name: >-
+      listByResourceGroup(string,
+      ExpressRouteCrossConnectionsListByResourceGroupOptionalParams)
+    uid: '@azure/arm-network.ExpressRouteCrossConnections.listByResourceGroup|stable'
+    package: '@azure/arm-network|stable'
+    summary: Retrieves all the ExpressRouteCrossConnections in a resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string, options?:
+        ExpressRouteCrossConnectionsListByResourceGroupOptionalParams):
+        PagedAsyncIterableIterator<ExpressRouteCrossConnection>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ExpressRouteCrossConnectionsListByResourceGroupOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-network.ExpressRouteCrossConnection|stable" />&gt;
+  - name: >-
+      updateTags(string, string, TagsObject,
+      ExpressRouteCrossConnectionsUpdateTagsOptionalParams)
+    uid: '@azure/arm-network.ExpressRouteCrossConnections.updateTags|stable'
+    package: '@azure/arm-network|stable'
+    summary: Updates an express route cross connection tags.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string, crossConnectionName:
+        string, crossConnectionParameters: TagsObject, options?:
+        ExpressRouteCrossConnectionsUpdateTagsOptionalParams):
+        Promise<ExpressRouteCrossConnectionsUpdateTagsResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: crossConnectionName
+          type: string
+          description: The name of the cross connection.
+        - id: crossConnectionParameters
+          type: <xref uid="@azure/arm-network.TagsObject|stable" />
+          description: Parameters supplied to update express route cross connection tags.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ExpressRouteCrossConnectionsUpdateTagsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.ExpressRouteCrossConnectionsUpdateTagsResponse|stable"
+          />&gt;

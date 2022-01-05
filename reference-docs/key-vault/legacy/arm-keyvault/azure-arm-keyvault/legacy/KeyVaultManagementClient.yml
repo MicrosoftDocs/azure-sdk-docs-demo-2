@@ -146,10 +146,10 @@ properties:
       return:
         description: ''
         type: <xref uid="azure-arm-keyvault.Vaults|legacy" />
-methods:
+inheritedMethods:
   - name: addUserAgentInfo(any)
-    uid: azure-arm-keyvault.KeyVaultManagementClient.addUserAgentInfo|legacy
-    package: azure-arm-keyvault|legacy
+    uid: azure-arm-keyvault.KeyVaultManagementClient.addUserAgentInfo
+    package: azure-arm-keyvault
     summary: Adds custom information to user agent header
     remarks: ''
     isPreview: false
@@ -165,8 +165,8 @@ methods:
       getLongRunningOperationResult<TResult>(HttpOperationResponse<TResult>,
       RequestOptions)
     uid: >-
-      azure-arm-keyvault.KeyVaultManagementClient.getLongRunningOperationResult_2|legacy
-    package: azure-arm-keyvault|legacy
+      azure-arm-keyvault.KeyVaultManagementClient.getLongRunningOperationResult_2
+    package: azure-arm-keyvault
     summary: ''
     remarks: ''
     isPreview: false
@@ -189,9 +189,8 @@ methods:
   - name: >-
       getLongRunningOperationResult<TResult>(HttpOperationResponse<TResult>,
       RequestOptions, ServiceCallback<TResult>)
-    uid: >-
-      azure-arm-keyvault.KeyVaultManagementClient.getLongRunningOperationResult|legacy
-    package: azure-arm-keyvault|legacy
+    uid: azure-arm-keyvault.KeyVaultManagementClient.getLongRunningOperationResult
+    package: azure-arm-keyvault
     summary: ''
     remarks: ''
     isPreview: false
@@ -215,8 +214,8 @@ methods:
       getLongRunningOperationResult<TResult>(HttpOperationResponse<TResult>,
       ServiceCallback<TResult>)
     uid: >-
-      azure-arm-keyvault.KeyVaultManagementClient.getLongRunningOperationResult_1|legacy
-    package: azure-arm-keyvault|legacy
+      azure-arm-keyvault.KeyVaultManagementClient.getLongRunningOperationResult_1
+    package: azure-arm-keyvault
     summary: ''
     remarks: ''
     isPreview: false
@@ -233,8 +232,8 @@ methods:
           type: ServiceCallback&lt;TResult&gt;
           description: ''
   - name: getPackageJsonInfo(string)
-    uid: azure-arm-keyvault.KeyVaultManagementClient.getPackageJsonInfo|legacy
-    package: azure-arm-keyvault|legacy
+    uid: azure-arm-keyvault.KeyVaultManagementClient.getPackageJsonInfo
+    package: azure-arm-keyvault
     summary: >-
       Attempts to find package.json for the given azure nodejs package.
 
@@ -259,9 +258,8 @@ methods:
   - name: >-
       sendLongRunningRequest<TResult>(LongRunningUrlBasedRequestPrepareOptions |
       LongRunningPathTemplateBasedRequestPrepareOptions)
-    uid: >-
-      azure-arm-keyvault.KeyVaultManagementClient.sendLongRunningRequest_1|legacy
-    package: azure-arm-keyvault|legacy
+    uid: azure-arm-keyvault.KeyVaultManagementClient.sendLongRunningRequest_1
+    package: azure-arm-keyvault
     summary: ''
     remarks: ''
     isPreview: false
@@ -284,8 +282,8 @@ methods:
       sendLongRunningRequest<TResult>(LongRunningUrlBasedRequestPrepareOptions |
       LongRunningPathTemplateBasedRequestPrepareOptions,
       ServiceCallback<TResult>)
-    uid: azure-arm-keyvault.KeyVaultManagementClient.sendLongRunningRequest|legacy
-    package: azure-arm-keyvault|legacy
+    uid: azure-arm-keyvault.KeyVaultManagementClient.sendLongRunningRequest
+    package: azure-arm-keyvault
     summary: ''
     remarks: ''
     isPreview: false
@@ -309,8 +307,8 @@ methods:
       sendLongRunningRequestWithHttpOperationResponse<TResult>(LongRunningUrlBasedRequestPrepareOptions
       | LongRunningPathTemplateBasedRequestPrepareOptions)
     uid: >-
-      azure-arm-keyvault.KeyVaultManagementClient.sendLongRunningRequestWithHttpOperationResponse|legacy
-    package: azure-arm-keyvault|legacy
+      azure-arm-keyvault.KeyVaultManagementClient.sendLongRunningRequestWithHttpOperationResponse
+    package: azure-arm-keyvault
     summary: ''
     remarks: ''
     isPreview: false
@@ -334,8 +332,8 @@ methods:
   - name: >-
       sendRequest<TResult>(PathTemplateBasedRequestPrepareOptions |
       UrlBasedRequestPrepareOptions)
-    uid: azure-arm-keyvault.KeyVaultManagementClient.sendRequest_1|legacy
-    package: azure-arm-keyvault|legacy
+    uid: azure-arm-keyvault.KeyVaultManagementClient.sendRequest_1
+    package: azure-arm-keyvault
     summary: ''
     remarks: ''
     isPreview: false
@@ -357,8 +355,8 @@ methods:
   - name: >-
       sendRequest<TResult>(PathTemplateBasedRequestPrepareOptions |
       UrlBasedRequestPrepareOptions, ServiceCallback<TResult>)
-    uid: azure-arm-keyvault.KeyVaultManagementClient.sendRequest|legacy
-    package: azure-arm-keyvault|legacy
+    uid: azure-arm-keyvault.KeyVaultManagementClient.sendRequest
+    package: azure-arm-keyvault
     summary: ''
     remarks: ''
     isPreview: false
@@ -381,8 +379,8 @@ methods:
       sendRequestWithHttpOperationResponse<TResult>(PathTemplateBasedRequestPrepareOptions
       | UrlBasedRequestPrepareOptions)
     uid: >-
-      azure-arm-keyvault.KeyVaultManagementClient.sendRequestWithHttpOperationResponse|legacy
-    package: azure-arm-keyvault|legacy
+      azure-arm-keyvault.KeyVaultManagementClient.sendRequestWithHttpOperationResponse
+    package: azure-arm-keyvault
     summary: ''
     remarks: ''
     isPreview: false

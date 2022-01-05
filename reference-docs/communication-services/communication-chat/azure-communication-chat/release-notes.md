@@ -2,7 +2,7 @@
 title: Azure SDK for JavaScript - Communication Services Release Notes
 description: 
 ms.topic: reference
-ms.date: 12/14/2021
+ms.date: 01/05/2022
 ms.service: communication-services
 ms.role: developer
 ms.devlang: javascript
@@ -17,6 +17,11 @@ ROBOTS: NOINDEX
 ### Breaking Changes
 
 - Prohibit sending the typing notification request within 8 seconds of the previous request.
+
+### Features Added
+
+- Updated to @azure/communication-signaling@1.0.0-beta.12.
+- Added two new events realTimeNotificationConnected and realTimeNotificationDisconnected that allow the developer to know when the connection to the call server is active
 
 ## 1.1.1 (2021-10-19)
 

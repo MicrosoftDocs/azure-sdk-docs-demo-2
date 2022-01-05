@@ -58,12 +58,12 @@ properties:
       return:
         description: ''
         type: string
-methods:
+inheritedMethods:
   - name: >-
       sendOperationRequest(OperationArguments, OperationSpec,
       ServiceCallback<any>)
-    uid: '@azure/storage-queue.StorageClientContext.sendOperationRequest|beta'
-    package: '@azure/storage-queue|beta'
+    uid: '@azure/storage-queue.StorageClientContext.sendOperationRequest'
+    package: '@azure/storage-queue'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
     isPreview: false
@@ -90,8 +90,8 @@ methods:
         description: ''
         type: Promise&lt;RestResponse&gt;
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
-    uid: '@azure/storage-queue.StorageClientContext.sendRequest|beta'
-    package: '@azure/storage-queue|beta'
+    uid: '@azure/storage-queue.StorageClientContext.sendRequest'
+    package: '@azure/storage-queue'
     summary: Send the provided httpRequest.
     remarks: ''
     isPreview: false

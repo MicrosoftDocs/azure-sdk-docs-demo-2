@@ -79,13 +79,13 @@ properties:
           <xref
           uid="@azure/cognitiveservices-entitysearch.EntitiesOperations|stable"
           />
-methods:
+inheritedMethods:
   - name: >-
       sendOperationRequest(OperationArguments, OperationSpec,
       ServiceCallback<any>)
     uid: >-
-      @azure/cognitiveservices-entitysearch.EntitySearchClient.sendOperationRequest|stable
-    package: '@azure/cognitiveservices-entitysearch|stable'
+      @azure/cognitiveservices-entitysearch.EntitySearchClient.sendOperationRequest
+    package: '@azure/cognitiveservices-entitysearch'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
     isPreview: false
@@ -112,9 +112,8 @@ methods:
         description: ''
         type: Promise&lt;RestResponse&gt;
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
-    uid: >-
-      @azure/cognitiveservices-entitysearch.EntitySearchClient.sendRequest|stable
-    package: '@azure/cognitiveservices-entitysearch|stable'
+    uid: '@azure/cognitiveservices-entitysearch.EntitySearchClient.sendRequest'
+    package: '@azure/cognitiveservices-entitysearch'
     summary: Send the provided httpRequest.
     remarks: ''
     isPreview: false

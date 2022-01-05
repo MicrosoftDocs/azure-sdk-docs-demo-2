@@ -1,0 +1,149 @@
+### YamlMime:TSType
+name: ErrorDetail
+uid: '@azure/arm-analysisservices.ErrorDetail|stable'
+package: '@azure/arm-analysisservices|stable'
+summary: The error detail.
+fullName: ErrorDetail
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: additionalInfo
+    uid: '@azure/arm-analysisservices.ErrorDetail.additionalInfo|stable'
+    package: '@azure/arm-analysisservices|stable'
+    summary: >-
+      The error additional info.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: additionalInfo
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'additionalInfo?: ErrorAdditionalInfo[]'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/arm-analysisservices.ErrorAdditionalInfo|stable"
+          />[]
+  - name: code
+    uid: '@azure/arm-analysisservices.ErrorDetail.code|stable'
+    package: '@azure/arm-analysisservices|stable'
+    summary: >-
+      The error code.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: code
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'code?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: details
+    uid: '@azure/arm-analysisservices.ErrorDetail.details|stable'
+    package: '@azure/arm-analysisservices|stable'
+    summary: >-
+      The error details.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: details
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'details?: ErrorDetail[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-analysisservices.ErrorDetail|stable" />[]
+  - name: httpStatusCode
+    uid: '@azure/arm-analysisservices.ErrorDetail.httpStatusCode|stable'
+    package: '@azure/arm-analysisservices|stable'
+    summary: >-
+      The http status code
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: httpStatusCode
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'httpStatusCode?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: message
+    uid: '@azure/arm-analysisservices.ErrorDetail.message|stable'
+    package: '@azure/arm-analysisservices|stable'
+    summary: >-
+      The error message.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: message
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'message?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: subCode
+    uid: '@azure/arm-analysisservices.ErrorDetail.subCode|stable'
+    package: '@azure/arm-analysisservices|stable'
+    summary: >-
+      The error sub code
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: subCode
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'subCode?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: target
+    uid: '@azure/arm-analysisservices.ErrorDetail.target|stable'
+    package: '@azure/arm-analysisservices|stable'
+    summary: >-
+      The error target.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: target
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'target?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: timeStamp
+    uid: '@azure/arm-analysisservices.ErrorDetail.timeStamp|stable'
+    package: '@azure/arm-analysisservices|stable'
+    summary: >-
+      the timestamp for the error.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: timeStamp
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'timeStamp?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

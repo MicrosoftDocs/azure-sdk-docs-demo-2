@@ -50,10 +50,10 @@ properties:
       return:
         description: ''
         type: string
-methods:
+inheritedMethods:
   - name: at(number)
-    uid: azure-keyvault.StorageListResult.at|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.at
+    package: azure-keyvault
     summary: |-
       Takes an integer value and returns the item at that index,
       allowing for positive and negative integers.
@@ -71,8 +71,8 @@ methods:
         description: ''
         type: <xref uid="azure-keyvault.StorageAccountItem|legacy" /> | undefined
   - name: concat(ConcatArray<StorageAccountItem>[])
-    uid: azure-keyvault.StorageListResult.concat|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.concat
+    package: azure-keyvault
     summary: Combines two or more arrays.
     remarks: ''
     isPreview: false
@@ -92,8 +92,8 @@ methods:
         description: ''
         type: <xref uid="azure-keyvault.StorageAccountItem|legacy" />[]
   - name: concat(T | ConcatArray<T>[])
-    uid: azure-keyvault.StorageListResult.concat_1|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.concat_1
+    package: azure-keyvault
     summary: Combines two or more arrays.
     remarks: ''
     isPreview: false
@@ -109,8 +109,8 @@ methods:
         description: ''
         type: <xref uid="azure-keyvault.StorageAccountItem|legacy" />[]
   - name: copyWithin(number, number, number)
-    uid: azure-keyvault.StorageListResult.copyWithin|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.copyWithin
+    package: azure-keyvault
     summary: >-
       Returns the this object after copying a section of the array identified by
       start and end
@@ -145,8 +145,8 @@ methods:
         description: ''
         type: this
   - name: entries()
-    uid: azure-keyvault.StorageListResult.entries|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.entries
+    package: azure-keyvault
     summary: Returns an iterable of key, value pairs for every entry in the array
     remarks: ''
     isPreview: false
@@ -159,8 +159,8 @@ methods:
   - name: >-
       every((value: StorageAccountItem, index: number, array:
       StorageAccountItem[]) => unknown, any)
-    uid: azure-keyvault.StorageListResult.every|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.every
+    package: azure-keyvault
     summary: Determines whether all the members of an array satisfy the specified test.
     remarks: ''
     isPreview: false
@@ -188,8 +188,8 @@ methods:
         description: ''
         type: boolean
   - name: fill(StorageAccountItem, number, number)
-    uid: azure-keyvault.StorageListResult.fill|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.fill
+    package: azure-keyvault
     summary: >-
       Returns the this object after filling the section identified by start and
       end with value
@@ -224,8 +224,8 @@ methods:
   - name: >-
       filter((value: StorageAccountItem, index: number, array:
       StorageAccountItem[]) => unknown, any)
-    uid: azure-keyvault.StorageListResult.filter_1|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.filter_1
+    package: azure-keyvault
     summary: >-
       Returns the elements of an array that meet the condition specified in a
       callback function.
@@ -258,8 +258,8 @@ methods:
   - name: >-
       filter<S>((value: StorageAccountItem, index: number, array:
       StorageAccountItem[]) => boolean, any)
-    uid: azure-keyvault.StorageListResult.filter|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.filter
+    package: azure-keyvault
     summary: >-
       Returns the elements of an array that meet the condition specified in a
       callback function.
@@ -291,8 +291,8 @@ methods:
   - name: >-
       find((value: StorageAccountItem, index: number, obj: StorageAccountItem[])
       => unknown, any)
-    uid: azure-keyvault.StorageListResult.find_1|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.find_1
+    package: azure-keyvault
     summary: ''
     remarks: ''
     isPreview: false
@@ -317,8 +317,8 @@ methods:
   - name: >-
       find<S>((this: void, value: StorageAccountItem, index: number, obj:
       StorageAccountItem[]) => boolean, any)
-    uid: azure-keyvault.StorageListResult.find|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.find
+    package: azure-keyvault
     summary: >-
       Returns the value of the first element in the array where predicate is
       true, and undefined
@@ -359,8 +359,8 @@ methods:
   - name: >-
       findIndex((value: StorageAccountItem, index: number, obj:
       StorageAccountItem[]) => unknown, any)
-    uid: azure-keyvault.StorageListResult.findIndex|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.findIndex
+    package: azure-keyvault
     summary: >-
       Returns the index of the first element in the array where predicate is
       true, and -1
@@ -398,8 +398,8 @@ methods:
         description: ''
         type: number
   - name: flat<U>(number)
-    uid: azure-keyvault.StorageListResult.flat_8|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.flat_8
+    package: azure-keyvault
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -420,8 +420,8 @@ methods:
         description: ''
         type: any[]
   - name: flat<U>(U[], 0)
-    uid: azure-keyvault.StorageListResult.flat_7|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.flat_7
+    package: azure-keyvault
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -444,8 +444,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][], 1)
-    uid: azure-keyvault.StorageListResult.flat_6|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.flat_6
+    package: azure-keyvault
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -468,8 +468,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][], 2)
-    uid: azure-keyvault.StorageListResult.flat_5|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.flat_5
+    package: azure-keyvault
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -492,8 +492,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][][], 3)
-    uid: azure-keyvault.StorageListResult.flat_4|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.flat_4
+    package: azure-keyvault
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -516,8 +516,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][][][], 4)
-    uid: azure-keyvault.StorageListResult.flat_3|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.flat_3
+    package: azure-keyvault
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -540,8 +540,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][][][][], 5)
-    uid: azure-keyvault.StorageListResult.flat_2|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.flat_2
+    package: azure-keyvault
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -564,8 +564,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][][][][][], 6)
-    uid: azure-keyvault.StorageListResult.flat_1|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.flat_1
+    package: azure-keyvault
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -588,8 +588,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][][][][][][], 7)
-    uid: azure-keyvault.StorageListResult.flat|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.flat
+    package: azure-keyvault
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -614,8 +614,8 @@ methods:
   - name: >-
       flatMap<U, This>((this: This, value: StorageAccountItem, index: number,
       array: StorageAccountItem[]) => U | ReadonlyArray<U>, This)
-    uid: azure-keyvault.StorageListResult.flatMap|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.flatMap
+    package: azure-keyvault
     summary: >-
       Calls a defined callback function on each element of an array. Then,
       flattens the result into
@@ -654,8 +654,8 @@ methods:
   - name: >-
       forEach((value: StorageAccountItem, index: number, array:
       StorageAccountItem[]) => void, any)
-    uid: azure-keyvault.StorageListResult.forEach|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.forEach
+    package: azure-keyvault
     summary: Performs the specified action for each element in an array.
     remarks: ''
     isPreview: false
@@ -679,8 +679,8 @@ methods:
             function. If thisArg is omitted, undefined is used as the this
             value.
   - name: includes(StorageAccountItem, number)
-    uid: azure-keyvault.StorageListResult.includes|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.includes
+    package: azure-keyvault
     summary: >-
       Determines whether an array includes a certain element, returning true or
       false as appropriate.
@@ -704,8 +704,8 @@ methods:
         description: ''
         type: boolean
   - name: indexOf(StorageAccountItem, number)
-    uid: azure-keyvault.StorageListResult.indexOf|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.indexOf
+    package: azure-keyvault
     summary: Returns the index of the first occurrence of a value in an array.
     remarks: ''
     isPreview: false
@@ -727,8 +727,8 @@ methods:
         description: ''
         type: number
   - name: join(string)
-    uid: azure-keyvault.StorageListResult.join|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.join
+    package: azure-keyvault
     summary: >-
       Adds all the elements of an array separated by the specified separator
       string.
@@ -748,8 +748,8 @@ methods:
         description: ''
         type: string
   - name: keys()
-    uid: azure-keyvault.StorageListResult.keys|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.keys
+    package: azure-keyvault
     summary: Returns an iterable of keys in the array
     remarks: ''
     isPreview: false
@@ -760,8 +760,8 @@ methods:
         description: ''
         type: IterableIterator&lt;number&gt;
   - name: lastIndexOf(StorageAccountItem, number)
-    uid: azure-keyvault.StorageListResult.lastIndexOf|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.lastIndexOf
+    package: azure-keyvault
     summary: Returns the index of the last occurrence of a specified value in an array.
     remarks: ''
     isPreview: false
@@ -785,8 +785,8 @@ methods:
   - name: >-
       map<U>((value: StorageAccountItem, index: number, array:
       StorageAccountItem[]) => U, any)
-    uid: azure-keyvault.StorageListResult.map|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.map
+    package: azure-keyvault
     summary: >-
       Calls a defined callback function on each element of an array, and returns
       an array that contains the results.
@@ -815,8 +815,8 @@ methods:
         description: ''
         type: U[]
   - name: pop()
-    uid: azure-keyvault.StorageListResult.pop|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.pop
+    package: azure-keyvault
     summary: Removes the last element from an array and returns it.
     remarks: ''
     isPreview: false
@@ -827,8 +827,8 @@ methods:
         description: ''
         type: <xref uid="azure-keyvault.StorageAccountItem|legacy" /> | undefined
   - name: push(StorageAccountItem[])
-    uid: azure-keyvault.StorageListResult.push|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.push
+    package: azure-keyvault
     summary: Appends new elements to an array, and returns the new length of the array.
     remarks: ''
     isPreview: false
@@ -847,8 +847,8 @@ methods:
       reduce((previousValue: StorageAccountItem, currentValue:
       StorageAccountItem, currentIndex: number, array: StorageAccountItem[]) =>
       StorageAccountItem)
-    uid: azure-keyvault.StorageListResult.reduce|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.reduce
+    package: azure-keyvault
     summary: >-
       Calls the specified callback function for all the elements in an array.
       The return value of the callback function is the accumulated result, and
@@ -878,8 +878,8 @@ methods:
       reduce((previousValue: StorageAccountItem, currentValue:
       StorageAccountItem, currentIndex: number, array: StorageAccountItem[]) =>
       StorageAccountItem, StorageAccountItem)
-    uid: azure-keyvault.StorageListResult.reduce_1|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.reduce_1
+    package: azure-keyvault
     summary: ''
     remarks: ''
     isPreview: false
@@ -906,8 +906,8 @@ methods:
   - name: >-
       reduce<U>((previousValue: U, currentValue: StorageAccountItem,
       currentIndex: number, array: StorageAccountItem[]) => U, U)
-    uid: azure-keyvault.StorageListResult.reduce_2|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.reduce_2
+    package: azure-keyvault
     summary: >-
       Calls the specified callback function for all the elements in an array.
       The return value of the callback function is the accumulated result, and
@@ -942,8 +942,8 @@ methods:
       reduceRight((previousValue: StorageAccountItem, currentValue:
       StorageAccountItem, currentIndex: number, array: StorageAccountItem[]) =>
       StorageAccountItem)
-    uid: azure-keyvault.StorageListResult.reduceRight|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.reduceRight
+    package: azure-keyvault
     summary: >-
       Calls the specified callback function for all the elements in an array, in
       descending order. The return value of the callback function is the
@@ -974,8 +974,8 @@ methods:
       reduceRight((previousValue: StorageAccountItem, currentValue:
       StorageAccountItem, currentIndex: number, array: StorageAccountItem[]) =>
       StorageAccountItem, StorageAccountItem)
-    uid: azure-keyvault.StorageListResult.reduceRight_1|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.reduceRight_1
+    package: azure-keyvault
     summary: ''
     remarks: ''
     isPreview: false
@@ -1002,8 +1002,8 @@ methods:
   - name: >-
       reduceRight<U>((previousValue: U, currentValue: StorageAccountItem,
       currentIndex: number, array: StorageAccountItem[]) => U, U)
-    uid: azure-keyvault.StorageListResult.reduceRight_2|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.reduceRight_2
+    package: azure-keyvault
     summary: >-
       Calls the specified callback function for all the elements in an array, in
       descending order. The return value of the callback function is the
@@ -1036,8 +1036,8 @@ methods:
         description: ''
         type: U
   - name: reverse()
-    uid: azure-keyvault.StorageListResult.reverse|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.reverse
+    package: azure-keyvault
     summary: Reverses the elements in an Array.
     remarks: ''
     isPreview: false
@@ -1048,8 +1048,8 @@ methods:
         description: ''
         type: <xref uid="azure-keyvault.StorageAccountItem|legacy" />[]
   - name: shift()
-    uid: azure-keyvault.StorageListResult.shift|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.shift
+    package: azure-keyvault
     summary: Removes the first element from an array and returns it.
     remarks: ''
     isPreview: false
@@ -1060,8 +1060,8 @@ methods:
         description: ''
         type: <xref uid="azure-keyvault.StorageAccountItem|legacy" /> | undefined
   - name: slice(number, number)
-    uid: azure-keyvault.StorageListResult.slice|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.slice
+    package: azure-keyvault
     summary: Returns a section of an array.
     remarks: ''
     isPreview: false
@@ -1082,8 +1082,8 @@ methods:
   - name: >-
       some((value: StorageAccountItem, index: number, array:
       StorageAccountItem[]) => unknown, any)
-    uid: azure-keyvault.StorageListResult.some|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.some
+    package: azure-keyvault
     summary: >-
       Determines whether the specified callback function returns true for any
       element of an array.
@@ -1113,8 +1113,8 @@ methods:
         description: ''
         type: boolean
   - name: 'sort((a: StorageAccountItem, b: StorageAccountItem) => number)'
-    uid: azure-keyvault.StorageListResult.sort|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.sort
+    package: azure-keyvault
     summary: Sorts an array.
     remarks: ''
     isPreview: false
@@ -1134,8 +1134,8 @@ methods:
         description: ''
         type: this
   - name: splice(number, number)
-    uid: azure-keyvault.StorageListResult.splice|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.splice
+    package: azure-keyvault
     summary: >-
       Removes elements from an array and, if necessary, inserts new elements in
       their place, returning the deleted elements.
@@ -1160,8 +1160,8 @@ methods:
         description: ''
         type: <xref uid="azure-keyvault.StorageAccountItem|legacy" />[]
   - name: splice(number, number, StorageAccountItem[])
-    uid: azure-keyvault.StorageListResult.splice_1|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.splice_1
+    package: azure-keyvault
     summary: >-
       Removes elements from an array and, if necessary, inserts new elements in
       their place, returning the deleted elements.
@@ -1189,8 +1189,8 @@ methods:
         description: ''
         type: <xref uid="azure-keyvault.StorageAccountItem|legacy" />[]
   - name: toLocaleString()
-    uid: azure-keyvault.StorageListResult.toLocaleString|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.toLocaleString
+    package: azure-keyvault
     summary: >-
       Returns a string representation of an array. The elements are converted to
       string using their toLocalString methods.
@@ -1203,8 +1203,8 @@ methods:
         description: ''
         type: string
   - name: toString()
-    uid: azure-keyvault.StorageListResult.toString|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.toString
+    package: azure-keyvault
     summary: Returns a string representation of an array.
     remarks: ''
     isPreview: false
@@ -1215,8 +1215,8 @@ methods:
         description: ''
         type: string
   - name: unshift(StorageAccountItem[])
-    uid: azure-keyvault.StorageListResult.unshift|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.unshift
+    package: azure-keyvault
     summary: Inserts new elements at the start of an array.
     remarks: ''
     isPreview: false
@@ -1232,8 +1232,8 @@ methods:
         description: ''
         type: number
   - name: values()
-    uid: azure-keyvault.StorageListResult.values|legacy
-    package: azure-keyvault|legacy
+    uid: azure-keyvault.StorageListResult.values
+    package: azure-keyvault
     summary: Returns an iterable of values in the array
     remarks: ''
     isPreview: false

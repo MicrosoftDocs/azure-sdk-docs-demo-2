@@ -81,13 +81,13 @@ properties:
       return:
         description: ''
         type: undefined | string
-methods:
+inheritedMethods:
   - name: >-
       sendOperationRequest(OperationArguments, OperationSpec,
       ServiceCallback<any>)
     uid: >-
-      @azure/cognitiveservices-customimagesearch.CustomImageSearchClient.sendOperationRequest|stable
-    package: '@azure/cognitiveservices-customimagesearch|stable'
+      @azure/cognitiveservices-customimagesearch.CustomImageSearchClient.sendOperationRequest
+    package: '@azure/cognitiveservices-customimagesearch'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
     isPreview: false
@@ -115,8 +115,8 @@ methods:
         type: Promise&lt;RestResponse&gt;
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
     uid: >-
-      @azure/cognitiveservices-customimagesearch.CustomImageSearchClient.sendRequest|stable
-    package: '@azure/cognitiveservices-customimagesearch|stable'
+      @azure/cognitiveservices-customimagesearch.CustomImageSearchClient.sendRequest
+    package: '@azure/cognitiveservices-customimagesearch'
     summary: Send the provided httpRequest.
     remarks: ''
     isPreview: false

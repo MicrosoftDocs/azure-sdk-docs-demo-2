@@ -1,0 +1,38 @@
+### YamlMime:TSType
+name: ScansListByDataSource
+uid: '@azure-rest/purview-scanning.ScansListByDataSource|beta'
+package: '@azure-rest/purview-scanning|beta'
+summary: ''
+fullName: ScansListByDataSource
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: get(ScansListByDataSourceParameters)
+    uid: '@azure-rest/purview-scanning.ScansListByDataSource.get|beta'
+    package: '@azure-rest/purview-scanning|beta'
+    summary: List scans in data source
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(options?: ScansListByDataSourceParameters):
+        Promise<ScansListByDataSource200Response |
+        ScansListByDataSourcedefaultResponse>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure-rest/purview-scanning.ScansListByDataSourceParameters|beta"
+            />
+          description: ''
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure-rest/purview-scanning.ScansListByDataSource200Response|beta"
+          /> | <xref
+          uid="@azure-rest/purview-scanning.ScansListByDataSourcedefaultResponse|beta"
+          />&gt;

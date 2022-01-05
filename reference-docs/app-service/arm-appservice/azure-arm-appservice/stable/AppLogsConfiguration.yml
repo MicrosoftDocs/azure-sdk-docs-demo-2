@@ -1,0 +1,38 @@
+### YamlMime:TSType
+name: AppLogsConfiguration
+uid: '@azure/arm-appservice.AppLogsConfiguration|stable'
+package: '@azure/arm-appservice|stable'
+summary: ''
+fullName: AppLogsConfiguration
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: destination
+    uid: '@azure/arm-appservice.AppLogsConfiguration.destination|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: ''
+    fullName: destination
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'destination?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: logAnalyticsConfiguration
+    uid: >-
+      @azure/arm-appservice.AppLogsConfiguration.logAnalyticsConfiguration|stable
+    package: '@azure/arm-appservice|stable'
+    summary: ''
+    fullName: logAnalyticsConfiguration
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'logAnalyticsConfiguration?: LogAnalyticsConfiguration'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.LogAnalyticsConfiguration|stable" />

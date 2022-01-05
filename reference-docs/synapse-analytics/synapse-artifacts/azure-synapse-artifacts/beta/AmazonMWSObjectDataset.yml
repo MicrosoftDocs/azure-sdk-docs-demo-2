@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: AmazonMWSObjectDataset
+uid: '@azure/synapse-artifacts.AmazonMWSObjectDataset|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: Amazon Marketplace Web Service dataset.
+fullName: AmazonMWSObjectDataset
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type AmazonMWSObjectDataset = Dataset & { tableName?: any, type:
+  "AmazonMWSObject" }

@@ -65,13 +65,13 @@ properties:
       return:
         description: ''
         type: string
-methods:
+inheritedMethods:
   - name: >-
       sendOperationRequest(OperationArguments, OperationSpec,
       ServiceCallback<any>)
     uid: >-
-      @azure/cognitiveservices-customvision-prediction.PredictionAPIClientContext.sendOperationRequest|stable
-    package: '@azure/cognitiveservices-customvision-prediction|stable'
+      @azure/cognitiveservices-customvision-prediction.PredictionAPIClientContext.sendOperationRequest
+    package: '@azure/cognitiveservices-customvision-prediction'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
     isPreview: false
@@ -99,8 +99,8 @@ methods:
         type: Promise&lt;RestResponse&gt;
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
     uid: >-
-      @azure/cognitiveservices-customvision-prediction.PredictionAPIClientContext.sendRequest|stable
-    package: '@azure/cognitiveservices-customvision-prediction|stable'
+      @azure/cognitiveservices-customvision-prediction.PredictionAPIClientContext.sendRequest
+    package: '@azure/cognitiveservices-customvision-prediction'
     summary: Send the provided httpRequest.
     remarks: ''
     isPreview: false

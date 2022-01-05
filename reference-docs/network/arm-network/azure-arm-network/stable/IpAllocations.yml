@@ -1,0 +1,269 @@
+### YamlMime:TSType
+name: IpAllocations
+uid: '@azure/arm-network.IpAllocations|stable'
+package: '@azure/arm-network|stable'
+summary: Interface representing a IpAllocations.
+fullName: IpAllocations
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      beginCreateOrUpdate(string, string, IpAllocation,
+      IpAllocationsCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-network.IpAllocations.beginCreateOrUpdate|stable'
+    package: '@azure/arm-network|stable'
+    summary: Creates or updates an IpAllocation in the specified resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string,
+        ipAllocationName: string, parameters: IpAllocation, options?:
+        IpAllocationsCreateOrUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<IpAllocationsCreateOrUpdateResponse>,
+        IpAllocationsCreateOrUpdateResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: ipAllocationName
+          type: string
+          description: The name of the IpAllocation.
+        - id: parameters
+          type: <xref uid="@azure/arm-network.IpAllocation|stable" />
+          description: >-
+            Parameters supplied to the create or update virtual network
+            operation.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.IpAllocationsCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-network.IpAllocationsCreateOrUpdateResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-network.IpAllocationsCreateOrUpdateResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginCreateOrUpdateAndWait(string, string, IpAllocation,
+      IpAllocationsCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-network.IpAllocations.beginCreateOrUpdateAndWait|stable'
+    package: '@azure/arm-network|stable'
+    summary: Creates or updates an IpAllocation in the specified resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdateAndWait(resourceGroupName: string,
+        ipAllocationName: string, parameters: IpAllocation, options?:
+        IpAllocationsCreateOrUpdateOptionalParams):
+        Promise<IpAllocationsCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: ipAllocationName
+          type: string
+          description: The name of the IpAllocation.
+        - id: parameters
+          type: <xref uid="@azure/arm-network.IpAllocation|stable" />
+          description: >-
+            Parameters supplied to the create or update virtual network
+            operation.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.IpAllocationsCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.IpAllocationsCreateOrUpdateResponse|stable"
+          />&gt;
+  - name: beginDelete(string, string, IpAllocationsDeleteOptionalParams)
+    uid: '@azure/arm-network.IpAllocations.beginDelete|stable'
+    package: '@azure/arm-network|stable'
+    summary: Deletes the specified IpAllocation.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDelete(resourceGroupName: string, ipAllocationName:
+        string, options?: IpAllocationsDeleteOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: ipAllocationName
+          type: string
+          description: The name of the IpAllocation.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.IpAllocationsDeleteOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: beginDeleteAndWait(string, string, IpAllocationsDeleteOptionalParams)
+    uid: '@azure/arm-network.IpAllocations.beginDeleteAndWait|stable'
+    package: '@azure/arm-network|stable'
+    summary: Deletes the specified IpAllocation.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteAndWait(resourceGroupName: string, ipAllocationName:
+        string, options?: IpAllocationsDeleteOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: ipAllocationName
+          type: string
+          description: The name of the IpAllocation.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.IpAllocationsDeleteOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: get(string, string, IpAllocationsGetOptionalParams)
+    uid: '@azure/arm-network.IpAllocations.get|stable'
+    package: '@azure/arm-network|stable'
+    summary: Gets the specified IpAllocation by resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, ipAllocationName: string,
+        options?: IpAllocationsGetOptionalParams):
+        Promise<IpAllocationsGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: ipAllocationName
+          type: string
+          description: The name of the IpAllocation.
+        - id: options
+          type: >-
+            <xref uid="@azure/arm-network.IpAllocationsGetOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.IpAllocationsGetResponse|stable" />&gt;
+  - name: list(IpAllocationsListOptionalParams)
+    uid: '@azure/arm-network.IpAllocations.list|stable'
+    package: '@azure/arm-network|stable'
+    summary: Gets all IpAllocations in a subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(options?: IpAllocationsListOptionalParams):
+        PagedAsyncIterableIterator<IpAllocation>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.IpAllocationsListOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-network.IpAllocation|stable" />&gt;
+  - name: >-
+      listByResourceGroup(string,
+      IpAllocationsListByResourceGroupOptionalParams)
+    uid: '@azure/arm-network.IpAllocations.listByResourceGroup|stable'
+    package: '@azure/arm-network|stable'
+    summary: Gets all IpAllocations in a resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string, options?:
+        IpAllocationsListByResourceGroupOptionalParams):
+        PagedAsyncIterableIterator<IpAllocation>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.IpAllocationsListByResourceGroupOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-network.IpAllocation|stable" />&gt;
+  - name: >-
+      updateTags(string, string, TagsObject,
+      IpAllocationsUpdateTagsOptionalParams)
+    uid: '@azure/arm-network.IpAllocations.updateTags|stable'
+    package: '@azure/arm-network|stable'
+    summary: Updates a IpAllocation tags.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string, ipAllocationName: string,
+        parameters: TagsObject, options?:
+        IpAllocationsUpdateTagsOptionalParams):
+        Promise<IpAllocationsUpdateTagsResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: ipAllocationName
+          type: string
+          description: The name of the IpAllocation.
+        - id: parameters
+          type: <xref uid="@azure/arm-network.TagsObject|stable" />
+          description: Parameters supplied to update IpAllocation tags.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.IpAllocationsUpdateTagsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.IpAllocationsUpdateTagsResponse|stable" />&gt;

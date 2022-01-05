@@ -1,0 +1,63 @@
+### YamlMime:TSType
+name: StatusCodesRangeBasedTrigger
+uid: '@azure/arm-appservice.StatusCodesRangeBasedTrigger|stable'
+package: '@azure/arm-appservice|stable'
+summary: Trigger based on range of status codes.
+fullName: StatusCodesRangeBasedTrigger
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: count
+    uid: '@azure/arm-appservice.StatusCodesRangeBasedTrigger.count|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Request Count.
+    fullName: count
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'count?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: path
+    uid: '@azure/arm-appservice.StatusCodesRangeBasedTrigger.path|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: ''
+    fullName: path
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'path?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: statusCodes
+    uid: '@azure/arm-appservice.StatusCodesRangeBasedTrigger.statusCodes|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: HTTP status code.
+    fullName: statusCodes
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'statusCodes?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: timeInterval
+    uid: '@azure/arm-appservice.StatusCodesRangeBasedTrigger.timeInterval|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Time interval.
+    fullName: timeInterval
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'timeInterval?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

@@ -1,0 +1,487 @@
+### YamlMime:TSType
+name: MonitorClient
+uid: '@azure/arm-monitor.MonitorClient|stable'
+package: '@azure/arm-monitor|stable'
+summary: ''
+fullName: MonitorClient
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: MonitorClient(TokenCredential, string, MonitorClientOptionalParams)
+    uid: '@azure/arm-monitor.MonitorClient.constructor|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: Initializes a new instance of the MonitorClient class.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        new MonitorClient(credentials: TokenCredential, subscriptionId: string,
+        options?: MonitorClientOptionalParams)
+      parameters:
+        - id: credentials
+          type: TokenCredential
+          description: >-
+            Subscription credentials which uniquely identify client
+            subscription.
+        - id: subscriptionId
+          type: string
+          description: The ID of the target subscription.
+        - id: options
+          type: <xref uid="@azure/arm-monitor.MonitorClientOptionalParams|stable" />
+          description: |
+            The parameter options
+properties:
+  - name: $host
+    uid: '@azure/arm-monitor.MonitorClient.$host|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: ''
+    fullName: $host
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$host: string'
+      return:
+        description: ''
+        type: string
+  - name: actionGroups
+    uid: '@azure/arm-monitor.MonitorClient.actionGroups|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: ''
+    fullName: actionGroups
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'actionGroups: ActionGroups'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-monitor.ActionGroups|stable" />
+  - name: activityLogAlerts
+    uid: '@azure/arm-monitor.MonitorClient.activityLogAlerts|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: ''
+    fullName: activityLogAlerts
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'activityLogAlerts: ActivityLogAlerts'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-monitor.ActivityLogAlerts|stable" />
+  - name: activityLogs
+    uid: '@azure/arm-monitor.MonitorClient.activityLogs|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: ''
+    fullName: activityLogs
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'activityLogs: ActivityLogs'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-monitor.ActivityLogs|stable" />
+  - name: alertRuleIncidents
+    uid: '@azure/arm-monitor.MonitorClient.alertRuleIncidents|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: ''
+    fullName: alertRuleIncidents
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'alertRuleIncidents: AlertRuleIncidents'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-monitor.AlertRuleIncidents|stable" />
+  - name: alertRules
+    uid: '@azure/arm-monitor.MonitorClient.alertRules|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: ''
+    fullName: alertRules
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'alertRules: AlertRules'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-monitor.AlertRules|stable" />
+  - name: autoscaleSettings
+    uid: '@azure/arm-monitor.MonitorClient.autoscaleSettings|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: ''
+    fullName: autoscaleSettings
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'autoscaleSettings: AutoscaleSettings'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-monitor.AutoscaleSettings|stable" />
+  - name: baselines
+    uid: '@azure/arm-monitor.MonitorClient.baselines|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: ''
+    fullName: baselines
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'baselines: Baselines'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-monitor.Baselines|stable" />
+  - name: dataCollectionEndpoints
+    uid: '@azure/arm-monitor.MonitorClient.dataCollectionEndpoints|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: ''
+    fullName: dataCollectionEndpoints
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dataCollectionEndpoints: DataCollectionEndpoints'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-monitor.DataCollectionEndpoints|stable" />
+  - name: dataCollectionRuleAssociations
+    uid: '@azure/arm-monitor.MonitorClient.dataCollectionRuleAssociations|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: ''
+    fullName: dataCollectionRuleAssociations
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dataCollectionRuleAssociations: DataCollectionRuleAssociations'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/arm-monitor.DataCollectionRuleAssociations|stable"
+          />
+  - name: dataCollectionRules
+    uid: '@azure/arm-monitor.MonitorClient.dataCollectionRules|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: ''
+    fullName: dataCollectionRules
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dataCollectionRules: DataCollectionRules'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-monitor.DataCollectionRules|stable" />
+  - name: diagnosticSettings
+    uid: '@azure/arm-monitor.MonitorClient.diagnosticSettings|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: ''
+    fullName: diagnosticSettings
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'diagnosticSettings: DiagnosticSettings'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-monitor.DiagnosticSettings|stable" />
+  - name: diagnosticSettingsCategory
+    uid: '@azure/arm-monitor.MonitorClient.diagnosticSettingsCategory|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: ''
+    fullName: diagnosticSettingsCategory
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'diagnosticSettingsCategory: DiagnosticSettingsCategory'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-monitor.DiagnosticSettingsCategory|stable" />
+  - name: eventCategories
+    uid: '@azure/arm-monitor.MonitorClient.eventCategories|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: ''
+    fullName: eventCategories
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'eventCategories: EventCategories'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-monitor.EventCategories|stable" />
+  - name: logProfiles
+    uid: '@azure/arm-monitor.MonitorClient.logProfiles|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: ''
+    fullName: logProfiles
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'logProfiles: LogProfiles'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-monitor.LogProfiles|stable" />
+  - name: metricAlerts
+    uid: '@azure/arm-monitor.MonitorClient.metricAlerts|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: ''
+    fullName: metricAlerts
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'metricAlerts: MetricAlerts'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-monitor.MetricAlerts|stable" />
+  - name: metricAlertsStatus
+    uid: '@azure/arm-monitor.MonitorClient.metricAlertsStatus|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: ''
+    fullName: metricAlertsStatus
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'metricAlertsStatus: MetricAlertsStatus'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-monitor.MetricAlertsStatus|stable" />
+  - name: metricDefinitions
+    uid: '@azure/arm-monitor.MonitorClient.metricDefinitions|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: ''
+    fullName: metricDefinitions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'metricDefinitions: MetricDefinitions'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-monitor.MetricDefinitions|stable" />
+  - name: metricNamespaces
+    uid: '@azure/arm-monitor.MonitorClient.metricNamespaces|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: ''
+    fullName: metricNamespaces
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'metricNamespaces: MetricNamespaces'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-monitor.MetricNamespaces|stable" />
+  - name: metrics
+    uid: '@azure/arm-monitor.MonitorClient.metrics|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: ''
+    fullName: metrics
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'metrics: Metrics'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-monitor.Metrics|stable" />
+  - name: operations
+    uid: '@azure/arm-monitor.MonitorClient.operations|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: ''
+    fullName: operations
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'operations: Operations'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-monitor.Operations|stable" />
+  - name: pipeline
+    uid: '@azure/arm-monitor.MonitorClient.pipeline|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: The pipeline used by this client to make requests
+    fullName: pipeline
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'pipeline: Pipeline'
+      return:
+        description: ''
+        type: Pipeline
+  - name: privateEndpointConnections
+    uid: '@azure/arm-monitor.MonitorClient.privateEndpointConnections|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: ''
+    fullName: privateEndpointConnections
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'privateEndpointConnections: PrivateEndpointConnections'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-monitor.PrivateEndpointConnections|stable" />
+  - name: privateLinkResources
+    uid: '@azure/arm-monitor.MonitorClient.privateLinkResources|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: ''
+    fullName: privateLinkResources
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'privateLinkResources: PrivateLinkResources'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-monitor.PrivateLinkResources|stable" />
+  - name: privateLinkScopedResources
+    uid: '@azure/arm-monitor.MonitorClient.privateLinkScopedResources|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: ''
+    fullName: privateLinkScopedResources
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'privateLinkScopedResources: PrivateLinkScopedResources'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-monitor.PrivateLinkScopedResources|stable" />
+  - name: privateLinkScopeOperationStatus
+    uid: '@azure/arm-monitor.MonitorClient.privateLinkScopeOperationStatus|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: ''
+    fullName: privateLinkScopeOperationStatus
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'privateLinkScopeOperationStatus: PrivateLinkScopeOperationStatus'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/arm-monitor.PrivateLinkScopeOperationStatus|stable"
+          />
+  - name: privateLinkScopes
+    uid: '@azure/arm-monitor.MonitorClient.privateLinkScopes|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: ''
+    fullName: privateLinkScopes
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'privateLinkScopes: PrivateLinkScopes'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-monitor.PrivateLinkScopes|stable" />
+  - name: scheduledQueryRules
+    uid: '@azure/arm-monitor.MonitorClient.scheduledQueryRules|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: ''
+    fullName: scheduledQueryRules
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'scheduledQueryRules: ScheduledQueryRules'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-monitor.ScheduledQueryRules|stable" />
+  - name: subscriptionId
+    uid: '@azure/arm-monitor.MonitorClient.subscriptionId|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: ''
+    fullName: subscriptionId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'subscriptionId: string'
+      return:
+        description: ''
+        type: string
+  - name: tenantActivityLogs
+    uid: '@azure/arm-monitor.MonitorClient.tenantActivityLogs|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: ''
+    fullName: tenantActivityLogs
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tenantActivityLogs: TenantActivityLogs'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-monitor.TenantActivityLogs|stable" />
+  - name: vMInsights
+    uid: '@azure/arm-monitor.MonitorClient.vMInsights|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: ''
+    fullName: vMInsights
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'vMInsights: VMInsights'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-monitor.VMInsights|stable" />
+inheritedMethods:
+  - name: sendOperationRequest<T>(OperationArguments, OperationSpec)
+    uid: '@azure/arm-monitor.MonitorClient.sendOperationRequest'
+    package: '@azure/arm-monitor'
+    summary: Send an HTTP request that is populated using the provided OperationSpec.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function sendOperationRequest<T>(operationArguments: OperationArguments,
+        operationSpec: OperationSpec): Promise<T>
+      parameters:
+        - id: operationArguments
+          type: OperationArguments
+          description: >-
+            The arguments that the HTTP request's templated values will be
+            populated from.
+        - id: operationSpec
+          type: OperationSpec
+          description: |
+            The OperationSpec to use to populate the httpRequest.
+      return:
+        description: ''
+        type: Promise&lt;T&gt;
+  - name: sendRequest(PipelineRequest)
+    uid: '@azure/arm-monitor.MonitorClient.sendRequest'
+    package: '@azure/arm-monitor'
+    summary: Send the provided httpRequest.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function sendRequest(request: PipelineRequest):
+        Promise<PipelineResponse>
+      parameters:
+        - id: request
+          type: PipelineRequest
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;PipelineResponse&gt;
+extends: ServiceClient

@@ -1,0 +1,155 @@
+### YamlMime:TSType
+name: PrivateEndpointConnections
+uid: '@azure/arm-mediaservices.PrivateEndpointConnections|stable'
+package: '@azure/arm-mediaservices|stable'
+summary: Interface representing a PrivateEndpointConnections.
+fullName: PrivateEndpointConnections
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      createOrUpdate(string, string, string, PrivateEndpointConnection,
+      PrivateEndpointConnectionsCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-mediaservices.PrivateEndpointConnections.createOrUpdate|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: Update private endpoint connection.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, accountName: string,
+        name: string, parameters: PrivateEndpointConnection, options?:
+        PrivateEndpointConnectionsCreateOrUpdateOptionalParams):
+        Promise<PrivateEndpointConnectionsCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the Azure subscription.
+        - id: accountName
+          type: string
+          description: The Media Services account name.
+        - id: name
+          type: string
+          description: ''
+        - id: parameters
+          type: >-
+            <xref
+            uid="@azure/arm-mediaservices.PrivateEndpointConnection|stable" />
+          description: The request parameters
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mediaservices.PrivateEndpointConnectionsCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-mediaservices.PrivateEndpointConnectionsCreateOrUpdateResponse|stable"
+          />&gt;
+  - name: >-
+      delete(string, string, string,
+      PrivateEndpointConnectionsDeleteOptionalParams)
+    uid: '@azure/arm-mediaservices.PrivateEndpointConnections.delete|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: Delete private endpoint connection.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function delete(resourceGroupName: string, accountName: string, name:
+        string, options?: PrivateEndpointConnectionsDeleteOptionalParams):
+        Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the Azure subscription.
+        - id: accountName
+          type: string
+          description: The Media Services account name.
+        - id: name
+          type: string
+          description: ''
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mediaservices.PrivateEndpointConnectionsDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: get(string, string, string, PrivateEndpointConnectionsGetOptionalParams)
+    uid: '@azure/arm-mediaservices.PrivateEndpointConnections.get|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: Get private endpoint connection.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, accountName: string, name:
+        string, options?: PrivateEndpointConnectionsGetOptionalParams):
+        Promise<PrivateEndpointConnectionsGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the Azure subscription.
+        - id: accountName
+          type: string
+          description: The Media Services account name.
+        - id: name
+          type: string
+          description: ''
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mediaservices.PrivateEndpointConnectionsGetOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-mediaservices.PrivateEndpointConnectionsGetResponse|stable"
+          />&gt;
+  - name: list(string, string, PrivateEndpointConnectionsListOptionalParams)
+    uid: '@azure/arm-mediaservices.PrivateEndpointConnections.list|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: Get all private endpoint connections.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, accountName: string, options?:
+        PrivateEndpointConnectionsListOptionalParams):
+        Promise<PrivateEndpointConnectionsListResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the Azure subscription.
+        - id: accountName
+          type: string
+          description: The Media Services account name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mediaservices.PrivateEndpointConnectionsListOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-mediaservices.PrivateEndpointConnectionsListResponse|stable"
+          />&gt;

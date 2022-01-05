@@ -1,0 +1,259 @@
+### YamlMime:TSType
+name: RouteTables
+uid: '@azure/arm-network.RouteTables|stable'
+package: '@azure/arm-network|stable'
+summary: Interface representing a RouteTables.
+fullName: RouteTables
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      beginCreateOrUpdate(string, string, RouteTable,
+      RouteTablesCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-network.RouteTables.beginCreateOrUpdate|stable'
+    package: '@azure/arm-network|stable'
+    summary: Create or updates a route table in a specified resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string, routeTableName:
+        string, parameters: RouteTable, options?:
+        RouteTablesCreateOrUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<RouteTablesCreateOrUpdateResponse>,
+        RouteTablesCreateOrUpdateResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: routeTableName
+          type: string
+          description: The name of the route table.
+        - id: parameters
+          type: <xref uid="@azure/arm-network.RouteTable|stable" />
+          description: Parameters supplied to the create or update route table operation.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.RouteTablesCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-network.RouteTablesCreateOrUpdateResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-network.RouteTablesCreateOrUpdateResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginCreateOrUpdateAndWait(string, string, RouteTable,
+      RouteTablesCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-network.RouteTables.beginCreateOrUpdateAndWait|stable'
+    package: '@azure/arm-network|stable'
+    summary: Create or updates a route table in a specified resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdateAndWait(resourceGroupName: string,
+        routeTableName: string, parameters: RouteTable, options?:
+        RouteTablesCreateOrUpdateOptionalParams):
+        Promise<RouteTablesCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: routeTableName
+          type: string
+          description: The name of the route table.
+        - id: parameters
+          type: <xref uid="@azure/arm-network.RouteTable|stable" />
+          description: Parameters supplied to the create or update route table operation.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.RouteTablesCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.RouteTablesCreateOrUpdateResponse|stable"
+          />&gt;
+  - name: beginDelete(string, string, RouteTablesDeleteOptionalParams)
+    uid: '@azure/arm-network.RouteTables.beginDelete|stable'
+    package: '@azure/arm-network|stable'
+    summary: Deletes the specified route table.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDelete(resourceGroupName: string, routeTableName: string,
+        options?: RouteTablesDeleteOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: routeTableName
+          type: string
+          description: The name of the route table.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.RouteTablesDeleteOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: beginDeleteAndWait(string, string, RouteTablesDeleteOptionalParams)
+    uid: '@azure/arm-network.RouteTables.beginDeleteAndWait|stable'
+    package: '@azure/arm-network|stable'
+    summary: Deletes the specified route table.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteAndWait(resourceGroupName: string, routeTableName:
+        string, options?: RouteTablesDeleteOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: routeTableName
+          type: string
+          description: The name of the route table.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.RouteTablesDeleteOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: get(string, string, RouteTablesGetOptionalParams)
+    uid: '@azure/arm-network.RouteTables.get|stable'
+    package: '@azure/arm-network|stable'
+    summary: Gets the specified route table.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, routeTableName: string,
+        options?: RouteTablesGetOptionalParams): Promise<RouteTablesGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: routeTableName
+          type: string
+          description: The name of the route table.
+        - id: options
+          type: >-
+            <xref uid="@azure/arm-network.RouteTablesGetOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.RouteTablesGetResponse|stable" />&gt;
+  - name: list(string, RouteTablesListOptionalParams)
+    uid: '@azure/arm-network.RouteTables.list|stable'
+    package: '@azure/arm-network|stable'
+    summary: Gets all route tables in a resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, options?:
+        RouteTablesListOptionalParams): PagedAsyncIterableIterator<RouteTable>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: options
+          type: >-
+            <xref uid="@azure/arm-network.RouteTablesListOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-network.RouteTable|stable" />&gt;
+  - name: listAll(RouteTablesListAllOptionalParams)
+    uid: '@azure/arm-network.RouteTables.listAll|stable'
+    package: '@azure/arm-network|stable'
+    summary: Gets all route tables in a subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listAll(options?: RouteTablesListAllOptionalParams):
+        PagedAsyncIterableIterator<RouteTable>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.RouteTablesListAllOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-network.RouteTable|stable" />&gt;
+  - name: >-
+      updateTags(string, string, TagsObject,
+      RouteTablesUpdateTagsOptionalParams)
+    uid: '@azure/arm-network.RouteTables.updateTags|stable'
+    package: '@azure/arm-network|stable'
+    summary: Updates a route table tags.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string, routeTableName: string,
+        parameters: TagsObject, options?: RouteTablesUpdateTagsOptionalParams):
+        Promise<RouteTablesUpdateTagsResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: routeTableName
+          type: string
+          description: The name of the route table.
+        - id: parameters
+          type: <xref uid="@azure/arm-network.TagsObject|stable" />
+          description: Parameters supplied to update route table tags.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.RouteTablesUpdateTagsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.RouteTablesUpdateTagsResponse|stable" />&gt;

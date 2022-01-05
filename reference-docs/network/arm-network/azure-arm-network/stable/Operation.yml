@@ -1,0 +1,66 @@
+### YamlMime:TSType
+name: Operation
+uid: '@azure/arm-network.Operation|stable'
+package: '@azure/arm-network|stable'
+summary: Network REST API operation definition.
+fullName: Operation
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: display
+    uid: '@azure/arm-network.Operation.display|stable'
+    package: '@azure/arm-network|stable'
+    summary: Display metadata associated with the operation.
+    fullName: display
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'display?: OperationDisplay'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.OperationDisplay|stable" />
+  - name: name
+    uid: '@azure/arm-network.Operation.name|stable'
+    package: '@azure/arm-network|stable'
+    summary: 'Operation name: {provider}/{resource}/{operation}.'
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: origin
+    uid: '@azure/arm-network.Operation.origin|stable'
+    package: '@azure/arm-network|stable'
+    summary: Origin of the operation.
+    fullName: origin
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'origin?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: serviceSpecification
+    uid: '@azure/arm-network.Operation.serviceSpecification|stable'
+    package: '@azure/arm-network|stable'
+    summary: Specification of the service.
+    fullName: serviceSpecification
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'serviceSpecification?: OperationPropertiesFormatServiceSpecification'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-network.OperationPropertiesFormatServiceSpecification|stable"
+          />

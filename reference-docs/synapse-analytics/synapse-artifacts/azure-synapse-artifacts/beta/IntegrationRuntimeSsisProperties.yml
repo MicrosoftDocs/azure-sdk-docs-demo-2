@@ -1,0 +1,107 @@
+### YamlMime:TSType
+name: IntegrationRuntimeSsisProperties
+uid: '@azure/synapse-artifacts.IntegrationRuntimeSsisProperties|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: SSIS properties for managed integration runtime.
+fullName: IntegrationRuntimeSsisProperties
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: catalogInfo
+    uid: '@azure/synapse-artifacts.IntegrationRuntimeSsisProperties.catalogInfo|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Catalog information for managed dedicated integration runtime.
+    fullName: catalogInfo
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'catalogInfo?: IntegrationRuntimeSsisCatalogInfo'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/synapse-artifacts.IntegrationRuntimeSsisCatalogInfo|beta"
+          />
+  - name: customSetupScriptProperties
+    uid: >-
+      @azure/synapse-artifacts.IntegrationRuntimeSsisProperties.customSetupScriptProperties|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: >-
+      Custom setup script properties for a managed dedicated integration
+      runtime.
+    fullName: customSetupScriptProperties
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        customSetupScriptProperties?:
+        IntegrationRuntimeCustomSetupScriptProperties
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/synapse-artifacts.IntegrationRuntimeCustomSetupScriptProperties|beta"
+          />
+  - name: dataProxyProperties
+    uid: >-
+      @azure/synapse-artifacts.IntegrationRuntimeSsisProperties.dataProxyProperties|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: Data proxy properties for a managed dedicated integration runtime.
+    fullName: dataProxyProperties
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dataProxyProperties?: IntegrationRuntimeDataProxyProperties'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/synapse-artifacts.IntegrationRuntimeDataProxyProperties|beta"
+          />
+  - name: edition
+    uid: '@azure/synapse-artifacts.IntegrationRuntimeSsisProperties.edition|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: The edition for the SSIS Integration Runtime
+    fullName: edition
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'edition?: IntegrationRuntimeEdition'
+      return:
+        description: ''
+        type: <xref uid="@azure/synapse-artifacts.IntegrationRuntimeEdition|beta" />
+  - name: expressCustomSetupProperties
+    uid: >-
+      @azure/synapse-artifacts.IntegrationRuntimeSsisProperties.expressCustomSetupProperties|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: Custom setup without script properties for a SSIS integration runtime.
+    fullName: expressCustomSetupProperties
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'expressCustomSetupProperties?: CustomSetupBase[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/synapse-artifacts.CustomSetupBase|beta" />[]
+  - name: licenseType
+    uid: '@azure/synapse-artifacts.IntegrationRuntimeSsisProperties.licenseType|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: License type for bringing your own license scenario.
+    fullName: licenseType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'licenseType?: IntegrationRuntimeLicenseType'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/synapse-artifacts.IntegrationRuntimeLicenseType|beta" />

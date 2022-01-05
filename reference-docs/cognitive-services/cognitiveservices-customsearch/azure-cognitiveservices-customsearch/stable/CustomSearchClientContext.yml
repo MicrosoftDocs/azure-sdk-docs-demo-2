@@ -64,13 +64,13 @@ properties:
       return:
         description: ''
         type: undefined | string
-methods:
+inheritedMethods:
   - name: >-
       sendOperationRequest(OperationArguments, OperationSpec,
       ServiceCallback<any>)
     uid: >-
-      @azure/cognitiveservices-customsearch.CustomSearchClientContext.sendOperationRequest|stable
-    package: '@azure/cognitiveservices-customsearch|stable'
+      @azure/cognitiveservices-customsearch.CustomSearchClientContext.sendOperationRequest
+    package: '@azure/cognitiveservices-customsearch'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
     isPreview: false
@@ -98,8 +98,8 @@ methods:
         type: Promise&lt;RestResponse&gt;
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
     uid: >-
-      @azure/cognitiveservices-customsearch.CustomSearchClientContext.sendRequest|stable
-    package: '@azure/cognitiveservices-customsearch|stable'
+      @azure/cognitiveservices-customsearch.CustomSearchClientContext.sendRequest
+    package: '@azure/cognitiveservices-customsearch'
     summary: Send the provided httpRequest.
     remarks: ''
     isPreview: false

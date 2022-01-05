@@ -1,0 +1,828 @@
+### YamlMime:TSType
+name: WebSiteManagementClient
+uid: '@azure/arm-appservice.WebSiteManagementClient|stable'
+package: '@azure/arm-appservice|stable'
+summary: ''
+fullName: WebSiteManagementClient
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: >-
+      WebSiteManagementClient(TokenCredential, string,
+      WebSiteManagementClientOptionalParams)
+    uid: '@azure/arm-appservice.WebSiteManagementClient.constructor|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Initializes a new instance of the WebSiteManagementClient class.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        new WebSiteManagementClient(credentials: TokenCredential,
+        subscriptionId: string, options?: WebSiteManagementClientOptionalParams)
+      parameters:
+        - id: credentials
+          type: TokenCredential
+          description: >-
+            Subscription credentials which uniquely identify client
+            subscription.
+        - id: subscriptionId
+          type: string
+          description: |-
+            Your Azure subscription ID. This is a GUID-formatted string (e.g.
+                                  00000000-0000-0000-0000-000000000000).
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.WebSiteManagementClientOptionalParams|stable"
+            />
+          description: |
+            The parameter options
+properties:
+  - name: $host
+    uid: '@azure/arm-appservice.WebSiteManagementClient.$host|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: ''
+    fullName: $host
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$host: string'
+      return:
+        description: ''
+        type: string
+  - name: apiVersion
+    uid: '@azure/arm-appservice.WebSiteManagementClient.apiVersion|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: ''
+    fullName: apiVersion
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'apiVersion: string'
+      return:
+        description: ''
+        type: string
+  - name: appServiceCertificateOrders
+    uid: >-
+      @azure/arm-appservice.WebSiteManagementClient.appServiceCertificateOrders|stable
+    package: '@azure/arm-appservice|stable'
+    summary: ''
+    fullName: appServiceCertificateOrders
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'appServiceCertificateOrders: AppServiceCertificateOrders'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/arm-appservice.AppServiceCertificateOrders|stable"
+          />
+  - name: appServiceEnvironments
+    uid: >-
+      @azure/arm-appservice.WebSiteManagementClient.appServiceEnvironments|stable
+    package: '@azure/arm-appservice|stable'
+    summary: ''
+    fullName: appServiceEnvironments
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'appServiceEnvironments: AppServiceEnvironments'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.AppServiceEnvironments|stable" />
+  - name: appServicePlans
+    uid: '@azure/arm-appservice.WebSiteManagementClient.appServicePlans|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: ''
+    fullName: appServicePlans
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'appServicePlans: AppServicePlans'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.AppServicePlans|stable" />
+  - name: certificateOrdersDiagnostics
+    uid: >-
+      @azure/arm-appservice.WebSiteManagementClient.certificateOrdersDiagnostics|stable
+    package: '@azure/arm-appservice|stable'
+    summary: ''
+    fullName: certificateOrdersDiagnostics
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'certificateOrdersDiagnostics: CertificateOrdersDiagnostics'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/arm-appservice.CertificateOrdersDiagnostics|stable"
+          />
+  - name: certificateRegistrationProvider
+    uid: >-
+      @azure/arm-appservice.WebSiteManagementClient.certificateRegistrationProvider|stable
+    package: '@azure/arm-appservice|stable'
+    summary: ''
+    fullName: certificateRegistrationProvider
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'certificateRegistrationProvider: CertificateRegistrationProvider'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-appservice.CertificateRegistrationProvider|stable" />
+  - name: certificates
+    uid: '@azure/arm-appservice.WebSiteManagementClient.certificates|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: ''
+    fullName: certificates
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'certificates: Certificates'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.Certificates|stable" />
+  - name: deletedWebApps
+    uid: '@azure/arm-appservice.WebSiteManagementClient.deletedWebApps|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: ''
+    fullName: deletedWebApps
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'deletedWebApps: DeletedWebApps'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.DeletedWebApps|stable" />
+  - name: diagnostics
+    uid: '@azure/arm-appservice.WebSiteManagementClient.diagnostics|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: ''
+    fullName: diagnostics
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'diagnostics: Diagnostics'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.Diagnostics|stable" />
+  - name: domainRegistrationProvider
+    uid: >-
+      @azure/arm-appservice.WebSiteManagementClient.domainRegistrationProvider|stable
+    package: '@azure/arm-appservice|stable'
+    summary: ''
+    fullName: domainRegistrationProvider
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'domainRegistrationProvider: DomainRegistrationProvider'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.DomainRegistrationProvider|stable" />
+  - name: domains
+    uid: '@azure/arm-appservice.WebSiteManagementClient.domains|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: ''
+    fullName: domains
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'domains: Domains'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.Domains|stable" />
+  - name: global
+    uid: '@azure/arm-appservice.WebSiteManagementClient.global|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: ''
+    fullName: global
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'global: Global'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.Global|stable" />
+  - name: kubeEnvironments
+    uid: '@azure/arm-appservice.WebSiteManagementClient.kubeEnvironments|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: ''
+    fullName: kubeEnvironments
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'kubeEnvironments: KubeEnvironments'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.KubeEnvironments|stable" />
+  - name: pipeline
+    uid: '@azure/arm-appservice.WebSiteManagementClient.pipeline|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: The pipeline used by this client to make requests
+    fullName: pipeline
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'pipeline: Pipeline'
+      return:
+        description: ''
+        type: Pipeline
+  - name: provider
+    uid: '@azure/arm-appservice.WebSiteManagementClient.provider|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: ''
+    fullName: provider
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'provider: Provider'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.Provider|stable" />
+  - name: recommendations
+    uid: '@azure/arm-appservice.WebSiteManagementClient.recommendations|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: ''
+    fullName: recommendations
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'recommendations: Recommendations'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.Recommendations|stable" />
+  - name: resourceHealthMetadataOperations
+    uid: >-
+      @azure/arm-appservice.WebSiteManagementClient.resourceHealthMetadataOperations|stable
+    package: '@azure/arm-appservice|stable'
+    summary: ''
+    fullName: resourceHealthMetadataOperations
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'resourceHealthMetadataOperations: ResourceHealthMetadataOperations'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-appservice.ResourceHealthMetadataOperations|stable" />
+  - name: staticSites
+    uid: '@azure/arm-appservice.WebSiteManagementClient.staticSites|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: ''
+    fullName: staticSites
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'staticSites: StaticSites'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.StaticSites|stable" />
+  - name: subscriptionId
+    uid: '@azure/arm-appservice.WebSiteManagementClient.subscriptionId|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: ''
+    fullName: subscriptionId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'subscriptionId: string'
+      return:
+        description: ''
+        type: string
+  - name: topLevelDomains
+    uid: '@azure/arm-appservice.WebSiteManagementClient.topLevelDomains|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: ''
+    fullName: topLevelDomains
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'topLevelDomains: TopLevelDomains'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.TopLevelDomains|stable" />
+  - name: webApps
+    uid: '@azure/arm-appservice.WebSiteManagementClient.webApps|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: ''
+    fullName: webApps
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'webApps: WebApps'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.WebApps|stable" />
+inheritedMethods:
+  - name: sendOperationRequest<T>(OperationArguments, OperationSpec)
+    uid: '@azure/arm-appservice.WebSiteManagementClient.sendOperationRequest'
+    package: '@azure/arm-appservice'
+    summary: Send an HTTP request that is populated using the provided OperationSpec.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function sendOperationRequest<T>(operationArguments: OperationArguments,
+        operationSpec: OperationSpec): Promise<T>
+      parameters:
+        - id: operationArguments
+          type: OperationArguments
+          description: >-
+            The arguments that the HTTP request's templated values will be
+            populated from.
+        - id: operationSpec
+          type: OperationSpec
+          description: |
+            The OperationSpec to use to populate the httpRequest.
+      return:
+        description: ''
+        type: Promise&lt;T&gt;
+  - name: sendRequest(PipelineRequest)
+    uid: '@azure/arm-appservice.WebSiteManagementClient.sendRequest'
+    package: '@azure/arm-appservice'
+    summary: Send the provided httpRequest.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function sendRequest(request: PipelineRequest):
+        Promise<PipelineResponse>
+      parameters:
+        - id: request
+          type: PipelineRequest
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;PipelineResponse&gt;
+methods:
+  - name: >-
+      checkNameAvailability(string, CheckNameResourceTypes,
+      CheckNameAvailabilityOptionalParams)
+    uid: '@azure/arm-appservice.WebSiteManagementClient.checkNameAvailability|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Check if a resource name is available.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function checkNameAvailability(name: string, typeParam:
+        CheckNameResourceTypes, options?: CheckNameAvailabilityOptionalParams):
+        Promise<CheckNameAvailabilityResponse>
+      parameters:
+        - id: name
+          type: string
+          description: Resource name to verify.
+        - id: typeParam
+          type: <xref uid="@azure/arm-appservice.CheckNameResourceTypes|stable" />
+          description: Resource type used for verification.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.CheckNameAvailabilityOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.CheckNameAvailabilityResponse|stable"
+          />&gt;
+  - name: getPublishingUser(GetPublishingUserOptionalParams)
+    uid: '@azure/arm-appservice.WebSiteManagementClient.getPublishingUser|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Gets publishing user
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getPublishingUser(options?: GetPublishingUserOptionalParams):
+        Promise<GetPublishingUserResponse>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.GetPublishingUserOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.GetPublishingUserResponse|stable" />&gt;
+  - name: getSourceControl(string, GetSourceControlOptionalParams)
+    uid: '@azure/arm-appservice.WebSiteManagementClient.getSourceControl|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Gets source control token
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getSourceControl(sourceControlType: string, options?:
+        GetSourceControlOptionalParams): Promise<GetSourceControlResponse>
+      parameters:
+        - id: sourceControlType
+          type: string
+          description: Type of source control
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.GetSourceControlOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.GetSourceControlResponse|stable" />&gt;
+  - name: >-
+      getSubscriptionDeploymentLocations(GetSubscriptionDeploymentLocationsOptionalParams)
+    uid: >-
+      @azure/arm-appservice.WebSiteManagementClient.getSubscriptionDeploymentLocations|stable
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Gets list of available geo regions plus ministamps
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getSubscriptionDeploymentLocations(options?:
+        GetSubscriptionDeploymentLocationsOptionalParams):
+        Promise<GetSubscriptionDeploymentLocationsResponse>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.GetSubscriptionDeploymentLocationsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.GetSubscriptionDeploymentLocationsResponse|stable"
+          />&gt;
+  - name: listBillingMeters(ListBillingMetersOptionalParams)
+    uid: '@azure/arm-appservice.WebSiteManagementClient.listBillingMeters|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Gets a list of meters for a given location.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listBillingMeters(options?: ListBillingMetersOptionalParams):
+        PagedAsyncIterableIterator<BillingMeter>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.ListBillingMetersOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.BillingMeter|stable" />&gt;
+  - name: listGeoRegions(ListGeoRegionsOptionalParams)
+    uid: '@azure/arm-appservice.WebSiteManagementClient.listGeoRegions|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Get a list of available geographical regions.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listGeoRegions(options?: ListGeoRegionsOptionalParams):
+        PagedAsyncIterableIterator<GeoRegion>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.ListGeoRegionsOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.GeoRegion|stable" />&gt;
+  - name: listPremierAddOnOffers(ListPremierAddOnOffersOptionalParams)
+    uid: >-
+      @azure/arm-appservice.WebSiteManagementClient.listPremierAddOnOffers|stable
+    package: '@azure/arm-appservice|stable'
+    summary: Description for List all premier add-on offers.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listPremierAddOnOffers(options?:
+        ListPremierAddOnOffersOptionalParams):
+        PagedAsyncIterableIterator<PremierAddOnOffer>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.ListPremierAddOnOffersOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.PremierAddOnOffer|stable" />&gt;
+  - name: >-
+      listSiteIdentifiersAssignedToHostName(NameIdentifier,
+      ListSiteIdentifiersAssignedToHostNameOptionalParams)
+    uid: >-
+      @azure/arm-appservice.WebSiteManagementClient.listSiteIdentifiersAssignedToHostName|stable
+    package: '@azure/arm-appservice|stable'
+    summary: Description for List all apps that are assigned to a hostname.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listSiteIdentifiersAssignedToHostName(nameIdentifier:
+        NameIdentifier, options?:
+        ListSiteIdentifiersAssignedToHostNameOptionalParams):
+        PagedAsyncIterableIterator<Identifier>
+      parameters:
+        - id: nameIdentifier
+          type: <xref uid="@azure/arm-appservice.NameIdentifier|stable" />
+          description: Hostname information.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.ListSiteIdentifiersAssignedToHostNameOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.Identifier|stable" />&gt;
+  - name: listSkus(ListSkusOptionalParams)
+    uid: '@azure/arm-appservice.WebSiteManagementClient.listSkus|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for List all SKUs.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listSkus(options?: ListSkusOptionalParams):
+        Promise<ListSkusResponse>
+      parameters:
+        - id: options
+          type: <xref uid="@azure/arm-appservice.ListSkusOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref uid="@azure/arm-appservice.ListSkusResponse|stable"
+          />&gt;
+  - name: listSourceControls(ListSourceControlsOptionalParams)
+    uid: '@azure/arm-appservice.WebSiteManagementClient.listSourceControls|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Gets the source controls available for Azure websites.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listSourceControls(options?: ListSourceControlsOptionalParams):
+        PagedAsyncIterableIterator<SourceControl>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.ListSourceControlsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.SourceControl|stable" />&gt;
+  - name: move(string, CsmMoveResourceEnvelope, MoveOptionalParams)
+    uid: '@azure/arm-appservice.WebSiteManagementClient.move|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Move resources between resource groups.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function move(resourceGroupName: string, moveResourceEnvelope:
+        CsmMoveResourceEnvelope, options?: MoveOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: moveResourceEnvelope
+          type: <xref uid="@azure/arm-appservice.CsmMoveResourceEnvelope|stable" />
+          description: Object that represents the resource to move.
+        - id: options
+          type: <xref uid="@azure/arm-appservice.MoveOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: updatePublishingUser(User, UpdatePublishingUserOptionalParams)
+    uid: '@azure/arm-appservice.WebSiteManagementClient.updatePublishingUser|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Updates publishing user
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function updatePublishingUser(userDetails: User, options?:
+        UpdatePublishingUserOptionalParams):
+        Promise<UpdatePublishingUserResponse>
+      parameters:
+        - id: userDetails
+          type: <xref uid="@azure/arm-appservice.User|stable" />
+          description: Details of publishing user
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.UpdatePublishingUserOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.UpdatePublishingUserResponse|stable" />&gt;
+  - name: >-
+      updateSourceControl(string, SourceControl,
+      UpdateSourceControlOptionalParams)
+    uid: '@azure/arm-appservice.WebSiteManagementClient.updateSourceControl|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Updates source control token
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function updateSourceControl(sourceControlType: string, requestMessage:
+        SourceControl, options?: UpdateSourceControlOptionalParams):
+        Promise<UpdateSourceControlResponse>
+      parameters:
+        - id: sourceControlType
+          type: string
+          description: Type of source control
+        - id: requestMessage
+          type: <xref uid="@azure/arm-appservice.SourceControl|stable" />
+          description: Source control token information
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.UpdateSourceControlOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.UpdateSourceControlResponse|stable" />&gt;
+  - name: validate(string, ValidateRequest, ValidateOptionalParams)
+    uid: '@azure/arm-appservice.WebSiteManagementClient.validate|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Validate if a resource can be created.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function validate(resourceGroupName: string, validateRequest:
+        ValidateRequest, options?: ValidateOptionalParams):
+        Promise<ValidateOperationResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: validateRequest
+          type: <xref uid="@azure/arm-appservice.ValidateRequest|stable" />
+          description: Request with the resources to validate.
+        - id: options
+          type: <xref uid="@azure/arm-appservice.ValidateOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.ValidateOperationResponse|stable" />&gt;
+  - name: validateMove(string, CsmMoveResourceEnvelope, ValidateMoveOptionalParams)
+    uid: '@azure/arm-appservice.WebSiteManagementClient.validateMove|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Validate whether a resource can be moved.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function validateMove(resourceGroupName: string, moveResourceEnvelope:
+        CsmMoveResourceEnvelope, options?: ValidateMoveOptionalParams):
+        Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: moveResourceEnvelope
+          type: <xref uid="@azure/arm-appservice.CsmMoveResourceEnvelope|stable" />
+          description: Object that represents the resource to move.
+        - id: options
+          type: >-
+            <xref uid="@azure/arm-appservice.ValidateMoveOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      verifyHostingEnvironmentVnet(VnetParameters,
+      VerifyHostingEnvironmentVnetOptionalParams)
+    uid: >-
+      @azure/arm-appservice.WebSiteManagementClient.verifyHostingEnvironmentVnet|stable
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Description for Verifies if this VNET is compatible with an App Service
+      Environment by analyzing the
+
+      Network Security Group rules.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function verifyHostingEnvironmentVnet(parameters: VnetParameters,
+        options?: VerifyHostingEnvironmentVnetOptionalParams):
+        Promise<VerifyHostingEnvironmentVnetResponse>
+      parameters:
+        - id: parameters
+          type: <xref uid="@azure/arm-appservice.VnetParameters|stable" />
+          description: VNET information
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.VerifyHostingEnvironmentVnetOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.VerifyHostingEnvironmentVnetResponse|stable"
+          />&gt;
+extends: ServiceClient

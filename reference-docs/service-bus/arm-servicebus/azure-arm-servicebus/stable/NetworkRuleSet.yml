@@ -1,4 +1,4 @@
-### YamlMime:TSType
+### YamlMime:TSTypeAlias
 name: NetworkRuleSet
 uid: '@azure/arm-servicebus.NetworkRuleSet|stable'
 package: '@azure/arm-servicebus|stable'
@@ -7,100 +7,8 @@ fullName: NetworkRuleSet
 remarks: ''
 isPreview: false
 isDeprecated: false
-type: interface
-properties:
-  - name: defaultAction
-    uid: '@azure/arm-servicebus.NetworkRuleSet.defaultAction|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: >-
-      Default Action for Network Rule Set. Possible values include: 'Allow',
-      'Deny'
-    fullName: defaultAction
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'defaultAction?: DefaultAction'
-      return:
-        description: ''
-        type: <xref uid="@azure/arm-servicebus.DefaultAction|stable" />
-  - name: id
-    uid: '@azure/arm-servicebus.NetworkRuleSet.id|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: >-
-      Resource Id
-
-      **NOTE: This property will not be serialized. It can only be populated by
-      the server.**
-    fullName: id
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'id?: undefined | string'
-      return:
-        description: ''
-        type: undefined | string
-  - name: ipRules
-    uid: '@azure/arm-servicebus.NetworkRuleSet.ipRules|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: List of IpRules
-    fullName: ipRules
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'ipRules?: NWRuleSetIpRules[]'
-      return:
-        description: ''
-        type: <xref uid="@azure/arm-servicebus.NWRuleSetIpRules|stable" />[]
-  - name: name
-    uid: '@azure/arm-servicebus.NetworkRuleSet.name|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: >-
-      Resource name
-
-      **NOTE: This property will not be serialized. It can only be populated by
-      the server.**
-    fullName: name
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'name?: undefined | string'
-      return:
-        description: ''
-        type: undefined | string
-  - name: type
-    uid: '@azure/arm-servicebus.NetworkRuleSet.type|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: >-
-      Resource type
-
-      **NOTE: This property will not be serialized. It can only be populated by
-      the server.**
-    fullName: type
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'type?: undefined | string'
-      return:
-        description: ''
-        type: undefined | string
-  - name: virtualNetworkRules
-    uid: '@azure/arm-servicebus.NetworkRuleSet.virtualNetworkRules|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: List VirtualNetwork Rules
-    fullName: virtualNetworkRules
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'virtualNetworkRules?: NWRuleSetVirtualNetworkRules[]'
-      return:
-        description: ''
-        type: >-
-          <xref uid="@azure/arm-servicebus.NWRuleSetVirtualNetworkRules|stable"
-          />[]
-extends: <xref uid="@azure/arm-servicebus.Resource|stable" />
+syntax: >-
+  type NetworkRuleSet = Resource & { defaultAction?: DefaultAction, ipRules?:
+  NWRuleSetIpRules[], publicNetworkAccess?: PublicNetworkAccessFlag,
+  systemData?: SystemData, trustedServiceAccessEnabled?: undefined | false |
+  true, virtualNetworkRules?: NWRuleSetVirtualNetworkRules[] }

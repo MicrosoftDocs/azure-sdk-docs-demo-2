@@ -1,0 +1,39 @@
+### YamlMime:TSType
+name: ListVpnGatewaysResult
+uid: '@azure/arm-network.ListVpnGatewaysResult|stable'
+package: '@azure/arm-network|stable'
+summary: >-
+  Result of the request to list VpnGateways. It contains a list of VpnGateways
+  and a URL nextLink to get the next set of results.
+fullName: ListVpnGatewaysResult
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: nextLink
+    uid: '@azure/arm-network.ListVpnGatewaysResult.nextLink|stable'
+    package: '@azure/arm-network|stable'
+    summary: URL to get the next set of operation list results if there are any.
+    fullName: nextLink
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nextLink?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: value
+    uid: '@azure/arm-network.ListVpnGatewaysResult.value|stable'
+    package: '@azure/arm-network|stable'
+    summary: List of VpnGateways.
+    fullName: value
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: VpnGateway[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.VpnGateway|stable" />[]

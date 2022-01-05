@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: SynapseNotebookActivity
+uid: '@azure/synapse-artifacts.SynapseNotebookActivity|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: Execute Synapse notebook activity.
+fullName: SynapseNotebookActivity
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type SynapseNotebookActivity = ExecutionActivity & { notebook:
+  SynapseNotebookReference, parameters?: [key: string]: any, type:
+  "SynapseNotebook" }

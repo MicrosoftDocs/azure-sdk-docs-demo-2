@@ -1,0 +1,14 @@
+### YamlMime:TSTypeAlias
+name: AzureMLBatchExecutionActivity
+uid: '@azure/synapse-artifacts.AzureMLBatchExecutionActivity|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: Azure ML Batch Execution activity.
+fullName: AzureMLBatchExecutionActivity
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type AzureMLBatchExecutionActivity = ExecutionActivity & { globalParameters?:
+  [key: string]: any, type: "AzureMLBatchExecution", webServiceInputs?: [key:
+  string]: AzureMLWebServiceFile, webServiceOutputs?: [key: string]:
+  AzureMLWebServiceFile }

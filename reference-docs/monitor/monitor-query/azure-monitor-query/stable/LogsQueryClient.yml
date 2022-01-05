@@ -1,0 +1,91 @@
+### YamlMime:TSType
+name: LogsQueryClient
+uid: '@azure/monitor-query.LogsQueryClient|stable'
+package: '@azure/monitor-query|stable'
+summary: Client for Azure Log Analytics
+fullName: LogsQueryClient
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: LogsQueryClient(TokenCredential, LogsQueryClientOptions)
+    uid: '@azure/monitor-query.LogsQueryClient.constructor|stable'
+    package: '@azure/monitor-query|stable'
+    summary: >-
+      Construct a LogsClient that can be used to query logs using the Log
+      Analytics Query language.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        new LogsQueryClient(tokenCredential: TokenCredential, options?:
+        LogsQueryClientOptions)
+      parameters:
+        - id: tokenCredential
+          type: TokenCredential
+          description: A token credential.
+        - id: options
+          type: <xref uid="@azure/monitor-query.LogsQueryClientOptions|stable" />
+          description: |
+            Options for the LogsClient.
+methods:
+  - name: queryBatch(QueryBatch[], LogsQueryBatchOptions)
+    uid: '@azure/monitor-query.LogsQueryClient.queryBatch|stable'
+    package: '@azure/monitor-query|stable'
+    summary: Query Logs with multiple queries, in a batch.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function queryBatch(batch: QueryBatch[], options?:
+        LogsQueryBatchOptions): Promise<LogsQueryBatchResult>
+      parameters:
+        - id: batch
+          type: <xref uid="@azure/monitor-query.QueryBatch|stable" />[]
+          description: >-
+            A batch of Kusto queries to execute. Each query can be configured to
+            run against separate workspaces.
+        - id: options
+          type: <xref uid="@azure/monitor-query.LogsQueryBatchOptions|stable" />
+          description: Options for querying logs in a batch.
+      return:
+        description: The Logs query results for all the queries.
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/monitor-query.LogsQueryBatchResult|stable" />&gt;
+  - name: queryWorkspace(string, string, QueryTimeInterval, LogsQueryOptions)
+    uid: '@azure/monitor-query.LogsQueryClient.queryWorkspace|stable'
+    package: '@azure/monitor-query|stable'
+    summary: Queries logs in a Log Analytics Workspace.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function queryWorkspace(workspaceId: string, query: string, timespan:
+        QueryTimeInterval, options?: LogsQueryOptions): Promise<LogsQueryResult>
+      parameters:
+        - id: workspaceId
+          type: string
+          description: The 'Workspace Id' for the Log Analytics Workspace
+        - id: query
+          type: string
+          description: A Kusto query.
+        - id: timespan
+          type: <xref uid="@azure/monitor-query.QueryTimeInterval|stable" />
+          description: >-
+            The timespan over which to query data. This is an ISO8601 time
+            period value. This timespan is applied in addition to any that are
+            specified in the query expression.
+             Some common durations can be found in the `Durations` object.
+        - id: options
+          type: <xref uid="@azure/monitor-query.LogsQueryOptions|stable" />
+          description: Options to adjust various aspects of the request.
+      return:
+        description: The result of the query.
+        type: >-
+          Promise&lt;<xref uid="@azure/monitor-query.LogsQueryResult|stable"
+          />&gt;

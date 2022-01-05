@@ -2,34 +2,16 @@
 name: Webhooks
 uid: '@azure/arm-containerregistry.Webhooks|stable'
 package: '@azure/arm-containerregistry|stable'
-summary: Class representing a Webhooks.
+summary: Interface representing a Webhooks.
 fullName: Webhooks
 remarks: ''
 isPreview: false
 isDeprecated: false
-type: class
-constructors:
-  - name: Webhooks(ContainerRegistryManagementClientContext)
-    uid: '@azure/arm-containerregistry.Webhooks.constructor|stable'
-    package: '@azure/arm-containerregistry|stable'
-    summary: Create a Webhooks.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'new Webhooks(client: ContainerRegistryManagementClientContext)'
-      parameters:
-        - id: client
-          type: >-
-            <xref
-            uid="@azure/arm-containerregistry.ContainerRegistryManagementClientContext|stable"
-            />
-          description: |
-            Reference to the service client.
+type: interface
 methods:
   - name: >-
       beginCreate(string, string, string, WebhookCreateParameters,
-      msRest.RequestOptionsBase)
+      WebhooksCreateOptionalParams)
     uid: '@azure/arm-containerregistry.Webhooks.beginCreate|stable'
     package: '@azure/arm-containerregistry|stable'
     summary: Creates a webhook for a container registry with the specified parameters.
@@ -40,7 +22,9 @@ methods:
       content: >-
         function beginCreate(resourceGroupName: string, registryName: string,
         webhookName: string, webhookCreateParameters: WebhookCreateParameters,
-        options?: msRest.RequestOptionsBase): Promise<LROPoller>
+        options?: WebhooksCreateOptionalParams):
+        Promise<PollerLike<PollOperationState<WebhooksCreateResponse>,
+        WebhooksCreateResponse>>
       parameters:
         - id: resourceGroupName
           type: string
@@ -59,13 +43,67 @@ methods:
             uid="@azure/arm-containerregistry.WebhookCreateParameters|stable" />
           description: The parameters for creating a webhook.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.WebhooksCreateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<msRestAzure.LROPoller>
-        type: Promise&lt;LROPoller&gt;
-  - name: beginDeleteMethod(string, string, string, msRest.RequestOptionsBase)
-    uid: '@azure/arm-containerregistry.Webhooks.beginDeleteMethod|stable'
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-containerregistry.WebhooksCreateResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-containerregistry.WebhooksCreateResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginCreateAndWait(string, string, string, WebhookCreateParameters,
+      WebhooksCreateOptionalParams)
+    uid: '@azure/arm-containerregistry.Webhooks.beginCreateAndWait|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: Creates a webhook for a container registry with the specified parameters.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateAndWait(resourceGroupName: string, registryName:
+        string, webhookName: string, webhookCreateParameters:
+        WebhookCreateParameters, options?: WebhooksCreateOptionalParams):
+        Promise<WebhooksCreateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: webhookName
+          type: string
+          description: The name of the webhook.
+        - id: webhookCreateParameters
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.WebhookCreateParameters|stable" />
+          description: The parameters for creating a webhook.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.WebhooksCreateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-containerregistry.WebhooksCreateResponse|stable"
+          />&gt;
+  - name: beginDelete(string, string, string, WebhooksDeleteOptionalParams)
+    uid: '@azure/arm-containerregistry.Webhooks.beginDelete|stable'
     package: '@azure/arm-containerregistry|stable'
     summary: Deletes a webhook from a container registry.
     remarks: ''
@@ -73,9 +111,9 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function beginDeleteMethod(resourceGroupName: string, registryName:
-        string, webhookName: string, options?: msRest.RequestOptionsBase):
-        Promise<LROPoller>
+        function beginDelete(resourceGroupName: string, registryName: string,
+        webhookName: string, options?: WebhooksDeleteOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
       parameters:
         - id: resourceGroupName
           type: string
@@ -89,14 +127,52 @@ methods:
           type: string
           description: The name of the webhook.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.WebhooksDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<msRestAzure.LROPoller>
-        type: Promise&lt;LROPoller&gt;
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: beginDeleteAndWait(string, string, string, WebhooksDeleteOptionalParams)
+    uid: '@azure/arm-containerregistry.Webhooks.beginDeleteAndWait|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: Deletes a webhook from a container registry.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteAndWait(resourceGroupName: string, registryName:
+        string, webhookName: string, options?: WebhooksDeleteOptionalParams):
+        Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: webhookName
+          type: string
+          description: The name of the webhook.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.WebhooksDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
   - name: >-
       beginUpdate(string, string, string, WebhookUpdateParameters,
-      msRest.RequestOptionsBase)
+      WebhooksUpdateOptionalParams)
     uid: '@azure/arm-containerregistry.Webhooks.beginUpdate|stable'
     package: '@azure/arm-containerregistry|stable'
     summary: Updates a webhook with the specified parameters.
@@ -107,7 +183,9 @@ methods:
       content: >-
         function beginUpdate(resourceGroupName: string, registryName: string,
         webhookName: string, webhookUpdateParameters: WebhookUpdateParameters,
-        options?: msRest.RequestOptionsBase): Promise<LROPoller>
+        options?: WebhooksUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<WebhooksUpdateResponse>,
+        WebhooksUpdateResponse>>
       parameters:
         - id: resourceGroupName
           type: string
@@ -126,64 +204,35 @@ methods:
             uid="@azure/arm-containerregistry.WebhookUpdateParameters|stable" />
           description: The parameters for updating a webhook.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
-      return:
-        description: Promise<msRestAzure.LROPoller>
-        type: Promise&lt;LROPoller&gt;
-  - name: >-
-      create(string, string, string, WebhookCreateParameters,
-      msRest.RequestOptionsBase)
-    uid: '@azure/arm-containerregistry.Webhooks.create|stable'
-    package: '@azure/arm-containerregistry|stable'
-    summary: Creates a webhook for a container registry with the specified parameters.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function create(resourceGroupName: string, registryName: string,
-        webhookName: string, webhookCreateParameters: WebhookCreateParameters,
-        options?: msRest.RequestOptionsBase):
-        Promise<Models.WebhooksCreateResponse>
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group to which the container registry
-            belongs.
-        - id: registryName
-          type: string
-          description: The name of the container registry.
-        - id: webhookName
-          type: string
-          description: The name of the webhook.
-        - id: webhookCreateParameters
           type: >-
             <xref
-            uid="@azure/arm-containerregistry.WebhookCreateParameters|stable" />
-          description: The parameters for creating a webhook.
-        - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+            uid="@azure/arm-containerregistry.WebhooksUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.WebhooksCreateResponse>
+        description: ''
         type: >-
-          Promise&lt;<xref
-          uid="@azure/arm-containerregistry.WebhooksCreateResponse|stable"
-          />&gt;
-  - name: deleteMethod(string, string, string, msRest.RequestOptionsBase)
-    uid: '@azure/arm-containerregistry.Webhooks.deleteMethod|stable'
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-containerregistry.WebhooksUpdateResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-containerregistry.WebhooksUpdateResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginUpdateAndWait(string, string, string, WebhookUpdateParameters,
+      WebhooksUpdateOptionalParams)
+    uid: '@azure/arm-containerregistry.Webhooks.beginUpdateAndWait|stable'
     package: '@azure/arm-containerregistry|stable'
-    summary: Deletes a webhook from a container registry.
+    summary: Updates a webhook with the specified parameters.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        function deleteMethod(resourceGroupName: string, registryName: string,
-        webhookName: string, options?: msRest.RequestOptionsBase):
-        Promise<RestResponse>
+        function beginUpdateAndWait(resourceGroupName: string, registryName:
+        string, webhookName: string, webhookUpdateParameters:
+        WebhookUpdateParameters, options?: WebhooksUpdateOptionalParams):
+        Promise<WebhooksUpdateResponse>
       parameters:
         - id: resourceGroupName
           type: string
@@ -196,13 +245,25 @@ methods:
         - id: webhookName
           type: string
           description: The name of the webhook.
+        - id: webhookUpdateParameters
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.WebhookUpdateParameters|stable" />
+          description: The parameters for updating a webhook.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.WebhooksUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<msRest.RestResponse>
-        type: Promise&lt;RestResponse&gt;
-  - name: get(string, string, string, msRest.RequestOptionsBase)
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-containerregistry.WebhooksUpdateResponse|stable"
+          />&gt;
+  - name: get(string, string, string, WebhooksGetOptionalParams)
     uid: '@azure/arm-containerregistry.Webhooks.get|stable'
     package: '@azure/arm-containerregistry|stable'
     summary: Gets the properties of the specified webhook.
@@ -212,8 +273,8 @@ methods:
     syntax:
       content: >-
         function get(resourceGroupName: string, registryName: string,
-        webhookName: string, options?: msRest.RequestOptionsBase):
-        Promise<Models.WebhooksGetResponse>
+        webhookName: string, options?: WebhooksGetOptionalParams):
+        Promise<WebhooksGetResponse>
       parameters:
         - id: resourceGroupName
           type: string
@@ -227,76 +288,20 @@ methods:
           type: string
           description: The name of the webhook.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.WebhooksGetOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.WebhooksGetResponse>
+        description: ''
         type: >-
           Promise&lt;<xref
           uid="@azure/arm-containerregistry.WebhooksGetResponse|stable" />&gt;
-  - name: get(string, string, string, RequestOptionsBase, ServiceCallback<Webhook>)
-    uid: '@azure/arm-containerregistry.Webhooks.get_2|stable'
-    package: '@azure/arm-containerregistry|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function get(resourceGroupName: string, registryName: string,
-        webhookName: string, options: RequestOptionsBase, callback:
-        ServiceCallback<Webhook>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group to which the container registry
-            belongs.
-        - id: registryName
-          type: string
-          description: The name of the container registry.
-        - id: webhookName
-          type: string
-          description: The name of the webhook.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-containerregistry.Webhook|stable" />&gt;
-          description: |
-            The callback
-  - name: get(string, string, string, ServiceCallback<Webhook>)
-    uid: '@azure/arm-containerregistry.Webhooks.get_1|stable'
-    package: '@azure/arm-containerregistry|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function get(resourceGroupName: string, registryName: string,
-        webhookName: string, callback: ServiceCallback<Webhook>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group to which the container registry
-            belongs.
-        - id: registryName
-          type: string
-          description: The name of the container registry.
-        - id: webhookName
-          type: string
-          description: The name of the webhook.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-containerregistry.Webhook|stable" />&gt;
-          description: |
-            The callback
-  - name: getCallbackConfig(string, string, string, msRest.RequestOptionsBase)
+  - name: >-
+      getCallbackConfig(string, string, string,
+      WebhooksGetCallbackConfigOptionalParams)
     uid: '@azure/arm-containerregistry.Webhooks.getCallbackConfig|stable'
     package: '@azure/arm-containerregistry|stable'
     summary: Gets the configuration of service URI and custom headers for the webhook.
@@ -306,8 +311,9 @@ methods:
     syntax:
       content: >-
         function getCallbackConfig(resourceGroupName: string, registryName:
-        string, webhookName: string, options?: msRest.RequestOptionsBase):
-        Promise<Models.WebhooksGetCallbackConfigResponse>
+        string, webhookName: string, options?:
+        WebhooksGetCallbackConfigOptionalParams):
+        Promise<WebhooksGetCallbackConfigResponse>
       parameters:
         - id: resourceGroupName
           type: string
@@ -321,79 +327,19 @@ methods:
           type: string
           description: The name of the webhook.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.WebhooksGetCallbackConfigOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.WebhooksGetCallbackConfigResponse>
+        description: ''
         type: >-
           Promise&lt;<xref
           uid="@azure/arm-containerregistry.WebhooksGetCallbackConfigResponse|stable"
           />&gt;
-  - name: >-
-      getCallbackConfig(string, string, string, RequestOptionsBase,
-      ServiceCallback<CallbackConfig>)
-    uid: '@azure/arm-containerregistry.Webhooks.getCallbackConfig_2|stable'
-    package: '@azure/arm-containerregistry|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function getCallbackConfig(resourceGroupName: string, registryName:
-        string, webhookName: string, options: RequestOptionsBase, callback:
-        ServiceCallback<CallbackConfig>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group to which the container registry
-            belongs.
-        - id: registryName
-          type: string
-          description: The name of the container registry.
-        - id: webhookName
-          type: string
-          description: The name of the webhook.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-containerregistry.CallbackConfig|stable" />&gt;
-          description: |
-            The callback
-  - name: getCallbackConfig(string, string, string, ServiceCallback<CallbackConfig>)
-    uid: '@azure/arm-containerregistry.Webhooks.getCallbackConfig_1|stable'
-    package: '@azure/arm-containerregistry|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function getCallbackConfig(resourceGroupName: string, registryName:
-        string, webhookName: string, callback: ServiceCallback<CallbackConfig>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group to which the container registry
-            belongs.
-        - id: registryName
-          type: string
-          description: The name of the container registry.
-        - id: webhookName
-          type: string
-          description: The name of the webhook.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-containerregistry.CallbackConfig|stable" />&gt;
-          description: |
-            The callback
-  - name: list(string, string, msRest.RequestOptionsBase)
+  - name: list(string, string, WebhooksListOptionalParams)
     uid: '@azure/arm-containerregistry.Webhooks.list|stable'
     package: '@azure/arm-containerregistry|stable'
     summary: Lists all the webhooks for the specified container registry.
@@ -403,7 +349,7 @@ methods:
     syntax:
       content: >-
         function list(resourceGroupName: string, registryName: string, options?:
-        msRest.RequestOptionsBase): Promise<Models.WebhooksListResponse>
+        WebhooksListOptionalParams): PagedAsyncIterableIterator<Webhook>
       parameters:
         - id: resourceGroupName
           type: string
@@ -414,71 +360,18 @@ methods:
           type: string
           description: The name of the container registry.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.WebhooksListOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.WebhooksListResponse>
+        description: ''
         type: >-
-          Promise&lt;<xref
-          uid="@azure/arm-containerregistry.WebhooksListResponse|stable" />&gt;
-  - name: >-
-      list(string, string, RequestOptionsBase,
-      ServiceCallback<WebhookListResult>)
-    uid: '@azure/arm-containerregistry.Webhooks.list_2|stable'
-    package: '@azure/arm-containerregistry|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function list(resourceGroupName: string, registryName: string, options:
-        RequestOptionsBase, callback: ServiceCallback<WebhookListResult>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group to which the container registry
-            belongs.
-        - id: registryName
-          type: string
-          description: The name of the container registry.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-containerregistry.WebhookListResult|stable" />&gt;
-          description: |
-            The callback
-  - name: list(string, string, ServiceCallback<WebhookListResult>)
-    uid: '@azure/arm-containerregistry.Webhooks.list_1|stable'
-    package: '@azure/arm-containerregistry|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function list(resourceGroupName: string, registryName: string, callback:
-        ServiceCallback<WebhookListResult>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group to which the container registry
-            belongs.
-        - id: registryName
-          type: string
-          description: The name of the container registry.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-containerregistry.WebhookListResult|stable" />&gt;
-          description: |
-            The callback
-  - name: listEvents(string, string, string, msRest.RequestOptionsBase)
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-containerregistry.Webhook|stable" />&gt;
+  - name: listEvents(string, string, string, WebhooksListEventsOptionalParams)
     uid: '@azure/arm-containerregistry.Webhooks.listEvents|stable'
     package: '@azure/arm-containerregistry|stable'
     summary: Lists recent events for the specified webhook.
@@ -488,8 +381,8 @@ methods:
     syntax:
       content: >-
         function listEvents(resourceGroupName: string, registryName: string,
-        webhookName: string, options?: msRest.RequestOptionsBase):
-        Promise<Models.WebhooksListEventsResponse>
+        webhookName: string, options?: WebhooksListEventsOptionalParams):
+        PagedAsyncIterableIterator<Event_2>
       parameters:
         - id: resourceGroupName
           type: string
@@ -503,220 +396,18 @@ methods:
           type: string
           description: The name of the webhook.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.WebhooksListEventsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.WebhooksListEventsResponse>
+        description: ''
         type: >-
-          Promise&lt;<xref
-          uid="@azure/arm-containerregistry.WebhooksListEventsResponse|stable"
-          />&gt;
-  - name: >-
-      listEvents(string, string, string, RequestOptionsBase,
-      ServiceCallback<EventListResult>)
-    uid: '@azure/arm-containerregistry.Webhooks.listEvents_2|stable'
-    package: '@azure/arm-containerregistry|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listEvents(resourceGroupName: string, registryName: string,
-        webhookName: string, options: RequestOptionsBase, callback:
-        ServiceCallback<EventListResult>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group to which the container registry
-            belongs.
-        - id: registryName
-          type: string
-          description: The name of the container registry.
-        - id: webhookName
-          type: string
-          description: The name of the webhook.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-containerregistry.EventListResult|stable" />&gt;
-          description: |
-            The callback
-  - name: listEvents(string, string, string, ServiceCallback<EventListResult>)
-    uid: '@azure/arm-containerregistry.Webhooks.listEvents_1|stable'
-    package: '@azure/arm-containerregistry|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listEvents(resourceGroupName: string, registryName: string,
-        webhookName: string, callback: ServiceCallback<EventListResult>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group to which the container registry
-            belongs.
-        - id: registryName
-          type: string
-          description: The name of the container registry.
-        - id: webhookName
-          type: string
-          description: The name of the webhook.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-containerregistry.EventListResult|stable" />&gt;
-          description: |
-            The callback
-  - name: listEventsNext(string, msRest.RequestOptionsBase)
-    uid: '@azure/arm-containerregistry.Webhooks.listEventsNext|stable'
-    package: '@azure/arm-containerregistry|stable'
-    summary: Lists recent events for the specified webhook.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listEventsNext(nextPageLink: string, options?:
-        msRest.RequestOptionsBase):
-        Promise<Models.WebhooksListEventsNextResponse>
-      parameters:
-        - id: nextPageLink
-          type: string
-          description: The NextLink from the previous successful call to List operation.
-        - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
-      return:
-        description: Promise<Models.WebhooksListEventsNextResponse>
-        type: >-
-          Promise&lt;<xref
-          uid="@azure/arm-containerregistry.WebhooksListEventsNextResponse|stable"
-          />&gt;
-  - name: >-
-      listEventsNext(string, RequestOptionsBase,
-      ServiceCallback<EventListResult>)
-    uid: '@azure/arm-containerregistry.Webhooks.listEventsNext_2|stable'
-    package: '@azure/arm-containerregistry|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listEventsNext(nextPageLink: string, options:
-        RequestOptionsBase, callback: ServiceCallback<EventListResult>)
-      parameters:
-        - id: nextPageLink
-          type: string
-          description: The NextLink from the previous successful call to List operation.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-containerregistry.EventListResult|stable" />&gt;
-          description: |
-            The callback
-  - name: listEventsNext(string, ServiceCallback<EventListResult>)
-    uid: '@azure/arm-containerregistry.Webhooks.listEventsNext_1|stable'
-    package: '@azure/arm-containerregistry|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listEventsNext(nextPageLink: string, callback:
-        ServiceCallback<EventListResult>)
-      parameters:
-        - id: nextPageLink
-          type: string
-          description: The NextLink from the previous successful call to List operation.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-containerregistry.EventListResult|stable" />&gt;
-          description: |
-            The callback
-  - name: listNext(string, msRest.RequestOptionsBase)
-    uid: '@azure/arm-containerregistry.Webhooks.listNext|stable'
-    package: '@azure/arm-containerregistry|stable'
-    summary: Lists all the webhooks for the specified container registry.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listNext(nextPageLink: string, options?:
-        msRest.RequestOptionsBase): Promise<Models.WebhooksListNextResponse>
-      parameters:
-        - id: nextPageLink
-          type: string
-          description: The NextLink from the previous successful call to List operation.
-        - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
-      return:
-        description: Promise<Models.WebhooksListNextResponse>
-        type: >-
-          Promise&lt;<xref
-          uid="@azure/arm-containerregistry.WebhooksListNextResponse|stable"
-          />&gt;
-  - name: listNext(string, RequestOptionsBase, ServiceCallback<WebhookListResult>)
-    uid: '@azure/arm-containerregistry.Webhooks.listNext_2|stable'
-    package: '@azure/arm-containerregistry|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listNext(nextPageLink: string, options: RequestOptionsBase,
-        callback: ServiceCallback<WebhookListResult>)
-      parameters:
-        - id: nextPageLink
-          type: string
-          description: The NextLink from the previous successful call to List operation.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-containerregistry.WebhookListResult|stable" />&gt;
-          description: |
-            The callback
-  - name: listNext(string, ServiceCallback<WebhookListResult>)
-    uid: '@azure/arm-containerregistry.Webhooks.listNext_1|stable'
-    package: '@azure/arm-containerregistry|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listNext(nextPageLink: string, callback:
-        ServiceCallback<WebhookListResult>)
-      parameters:
-        - id: nextPageLink
-          type: string
-          description: The NextLink from the previous successful call to List operation.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-containerregistry.WebhookListResult|stable" />&gt;
-          description: |
-            The callback
-  - name: ping(string, string, string, msRest.RequestOptionsBase)
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-containerregistry.Event_2|stable" />&gt;
+  - name: ping(string, string, string, WebhooksPingOptionalParams)
     uid: '@azure/arm-containerregistry.Webhooks.ping|stable'
     package: '@azure/arm-containerregistry|stable'
     summary: Triggers a ping event to be sent to the webhook.
@@ -726,8 +417,8 @@ methods:
     syntax:
       content: >-
         function ping(resourceGroupName: string, registryName: string,
-        webhookName: string, options?: msRest.RequestOptionsBase):
-        Promise<Models.WebhooksPingResponse>
+        webhookName: string, options?: WebhooksPingOptionalParams):
+        Promise<WebhooksPingResponse>
       parameters:
         - id: resourceGroupName
           type: string
@@ -741,115 +432,14 @@ methods:
           type: string
           description: The name of the webhook.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.WebhooksPingOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.WebhooksPingResponse>
+        description: ''
         type: >-
           Promise&lt;<xref
           uid="@azure/arm-containerregistry.WebhooksPingResponse|stable" />&gt;
-  - name: >-
-      ping(string, string, string, RequestOptionsBase,
-      ServiceCallback<EventInfo>)
-    uid: '@azure/arm-containerregistry.Webhooks.ping_2|stable'
-    package: '@azure/arm-containerregistry|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function ping(resourceGroupName: string, registryName: string,
-        webhookName: string, options: RequestOptionsBase, callback:
-        ServiceCallback<EventInfo>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group to which the container registry
-            belongs.
-        - id: registryName
-          type: string
-          description: The name of the container registry.
-        - id: webhookName
-          type: string
-          description: The name of the webhook.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-containerregistry.EventInfo|stable" />&gt;
-          description: |
-            The callback
-  - name: ping(string, string, string, ServiceCallback<EventInfo>)
-    uid: '@azure/arm-containerregistry.Webhooks.ping_1|stable'
-    package: '@azure/arm-containerregistry|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function ping(resourceGroupName: string, registryName: string,
-        webhookName: string, callback: ServiceCallback<EventInfo>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group to which the container registry
-            belongs.
-        - id: registryName
-          type: string
-          description: The name of the container registry.
-        - id: webhookName
-          type: string
-          description: The name of the webhook.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-containerregistry.EventInfo|stable" />&gt;
-          description: |
-            The callback
-  - name: >-
-      update(string, string, string, WebhookUpdateParameters,
-      msRest.RequestOptionsBase)
-    uid: '@azure/arm-containerregistry.Webhooks.update|stable'
-    package: '@azure/arm-containerregistry|stable'
-    summary: Updates a webhook with the specified parameters.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function update(resourceGroupName: string, registryName: string,
-        webhookName: string, webhookUpdateParameters: WebhookUpdateParameters,
-        options?: msRest.RequestOptionsBase):
-        Promise<Models.WebhooksUpdateResponse>
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group to which the container registry
-            belongs.
-        - id: registryName
-          type: string
-          description: The name of the container registry.
-        - id: webhookName
-          type: string
-          description: The name of the webhook.
-        - id: webhookUpdateParameters
-          type: >-
-            <xref
-            uid="@azure/arm-containerregistry.WebhookUpdateParameters|stable" />
-          description: The parameters for updating a webhook.
-        - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
-      return:
-        description: Promise<Models.WebhooksUpdateResponse>
-        type: >-
-          Promise&lt;<xref
-          uid="@azure/arm-containerregistry.WebhooksUpdateResponse|stable"
-          />&gt;

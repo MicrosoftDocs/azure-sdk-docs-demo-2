@@ -64,13 +64,13 @@ properties:
       return:
         description: ''
         type: undefined | string
-methods:
+inheritedMethods:
   - name: >-
       sendOperationRequest(OperationArguments, OperationSpec,
       ServiceCallback<any>)
     uid: >-
-      @azure/cognitiveservices-autosuggest.AutoSuggestClientContext.sendOperationRequest|stable
-    package: '@azure/cognitiveservices-autosuggest|stable'
+      @azure/cognitiveservices-autosuggest.AutoSuggestClientContext.sendOperationRequest
+    package: '@azure/cognitiveservices-autosuggest'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
     isPreview: false
@@ -97,9 +97,8 @@ methods:
         description: ''
         type: Promise&lt;RestResponse&gt;
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
-    uid: >-
-      @azure/cognitiveservices-autosuggest.AutoSuggestClientContext.sendRequest|stable
-    package: '@azure/cognitiveservices-autosuggest|stable'
+    uid: '@azure/cognitiveservices-autosuggest.AutoSuggestClientContext.sendRequest'
+    package: '@azure/cognitiveservices-autosuggest'
     summary: Send the provided httpRequest.
     remarks: ''
     isPreview: false

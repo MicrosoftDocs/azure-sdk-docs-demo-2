@@ -1,0 +1,80 @@
+### YamlMime:TSType
+name: AzureSqlDatabaseDataSource
+uid: '@azure-rest/purview-scanning.AzureSqlDatabaseDataSource|beta'
+package: '@azure-rest/purview-scanning|beta'
+summary: ''
+fullName: AzureSqlDatabaseDataSource
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: id
+    uid: '@azure-rest/purview-scanning.AzureSqlDatabaseDataSource.id|beta'
+    package: '@azure-rest/purview-scanning|beta'
+    summary: ''
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: string'
+      return:
+        description: ''
+        type: string
+  - name: kind
+    uid: '@azure-rest/purview-scanning.AzureSqlDatabaseDataSource.kind|beta'
+    package: '@azure-rest/purview-scanning|beta'
+    summary: ''
+    fullName: kind
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'kind: "AzureSqlDatabase"'
+      return:
+        description: ''
+        type: '"AzureSqlDatabase"'
+  - name: name
+    uid: '@azure-rest/purview-scanning.AzureSqlDatabaseDataSource.name|beta'
+    package: '@azure-rest/purview-scanning|beta'
+    summary: ''
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: string'
+      return:
+        description: ''
+        type: string
+  - name: properties
+    uid: '@azure-rest/purview-scanning.AzureSqlDatabaseDataSource.properties|beta'
+    package: '@azure-rest/purview-scanning|beta'
+    summary: ''
+    fullName: properties
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'properties?: AzureSqlDatabaseDataSourceProperties'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure-rest/purview-scanning.AzureSqlDatabaseDataSourceProperties|beta"
+          />
+  - name: scans
+    uid: '@azure-rest/purview-scanning.AzureSqlDatabaseDataSource.scans|beta'
+    package: '@azure-rest/purview-scanning|beta'
+    summary: ''
+    fullName: scans
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'scans?: Array<Scan>'
+      return:
+        description: ''
+        type: Array&lt;<xref uid="@azure-rest/purview-scanning.Scan|beta" />&gt;
+extends: <xref uid="@azure-rest/purview-scanning.DataSourceBase|beta" />

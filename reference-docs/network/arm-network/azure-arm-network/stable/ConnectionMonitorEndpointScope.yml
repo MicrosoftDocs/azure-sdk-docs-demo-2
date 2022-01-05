@@ -1,0 +1,43 @@
+### YamlMime:TSType
+name: ConnectionMonitorEndpointScope
+uid: '@azure/arm-network.ConnectionMonitorEndpointScope|stable'
+package: '@azure/arm-network|stable'
+summary: Describes the connection monitor endpoint scope.
+fullName: ConnectionMonitorEndpointScope
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: exclude
+    uid: '@azure/arm-network.ConnectionMonitorEndpointScope.exclude|stable'
+    package: '@azure/arm-network|stable'
+    summary: List of items which needs to be excluded from the endpoint scope.
+    fullName: exclude
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'exclude?: ConnectionMonitorEndpointScopeItem[]'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-network.ConnectionMonitorEndpointScopeItem|stable"
+          />[]
+  - name: include
+    uid: '@azure/arm-network.ConnectionMonitorEndpointScope.include|stable'
+    package: '@azure/arm-network|stable'
+    summary: List of items which needs to be included to the endpoint scope.
+    fullName: include
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'include?: ConnectionMonitorEndpointScopeItem[]'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-network.ConnectionMonitorEndpointScopeItem|stable"
+          />[]

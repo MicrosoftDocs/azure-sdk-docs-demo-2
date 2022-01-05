@@ -1,0 +1,168 @@
+### YamlMime:TSType
+name: PathPatternExtractorConfig
+uid: '@azure-rest/purview-account.PathPatternExtractorConfig|beta'
+package: '@azure-rest/purview-account|beta'
+summary: ''
+fullName: PathPatternExtractorConfig
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: acceptedPatterns
+    uid: >-
+      @azure-rest/purview-account.PathPatternExtractorConfig.acceptedPatterns|beta
+    package: '@azure-rest/purview-account|beta'
+    summary: ''
+    fullName: acceptedPatterns
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'acceptedPatterns?: Array<Filter>'
+      return:
+        description: ''
+        type: Array&lt;<xref uid="@azure-rest/purview-account.Filter|beta" />&gt;
+  - name: complexReplacers
+    uid: >-
+      @azure-rest/purview-account.PathPatternExtractorConfig.complexReplacers|beta
+    package: '@azure-rest/purview-account|beta'
+    summary: ''
+    fullName: complexReplacers
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'complexReplacers?: Array<ComplexReplacerConfig>'
+      return:
+        description: ''
+        type: >-
+          Array&lt;<xref
+          uid="@azure-rest/purview-account.ComplexReplacerConfig|beta" />&gt;
+  - name: createdBy
+    uid: '@azure-rest/purview-account.PathPatternExtractorConfig.createdBy|beta'
+    package: '@azure-rest/purview-account|beta'
+    summary: ''
+    fullName: createdBy
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'createdBy: string'
+      return:
+        description: ''
+        type: string
+  - name: enableDefaultPatterns
+    uid: >-
+      @azure-rest/purview-account.PathPatternExtractorConfig.enableDefaultPatterns|beta
+    package: '@azure-rest/purview-account|beta'
+    summary: ''
+    fullName: enableDefaultPatterns
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'enableDefaultPatterns: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: lastUpdatedTimestamp
+    uid: >-
+      @azure-rest/purview-account.PathPatternExtractorConfig.lastUpdatedTimestamp|beta
+    package: '@azure-rest/purview-account|beta'
+    summary: ''
+    fullName: lastUpdatedTimestamp
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lastUpdatedTimestamp?: number'
+      return:
+        description: ''
+        type: number
+  - name: modifiedBy
+    uid: '@azure-rest/purview-account.PathPatternExtractorConfig.modifiedBy|beta'
+    package: '@azure-rest/purview-account|beta'
+    summary: ''
+    fullName: modifiedBy
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'modifiedBy?: string'
+      return:
+        description: ''
+        type: string
+  - name: normalizationRules
+    uid: >-
+      @azure-rest/purview-account.PathPatternExtractorConfig.normalizationRules|beta
+    package: '@azure-rest/purview-account|beta'
+    summary: ''
+    fullName: normalizationRules
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'normalizationRules?: Array<NormalizationRule>'
+      return:
+        description: ''
+        type: >-
+          Array&lt;<xref
+          uid="@azure-rest/purview-account.NormalizationRule|beta" />&gt;
+  - name: regexReplacers
+    uid: '@azure-rest/purview-account.PathPatternExtractorConfig.regexReplacers|beta'
+    package: '@azure-rest/purview-account|beta'
+    summary: ''
+    fullName: regexReplacers
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'regexReplacers?: Array<RegexReplacer>'
+      return:
+        description: ''
+        type: >-
+          Array&lt;<xref uid="@azure-rest/purview-account.RegexReplacer|beta"
+          />&gt;
+  - name: rejectedPatterns
+    uid: >-
+      @azure-rest/purview-account.PathPatternExtractorConfig.rejectedPatterns|beta
+    package: '@azure-rest/purview-account|beta'
+    summary: ''
+    fullName: rejectedPatterns
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rejectedPatterns?: Array<Filter>'
+      return:
+        description: ''
+        type: Array&lt;<xref uid="@azure-rest/purview-account.Filter|beta" />&gt;
+  - name: scopedRules
+    uid: '@azure-rest/purview-account.PathPatternExtractorConfig.scopedRules|beta'
+    package: '@azure-rest/purview-account|beta'
+    summary: ''
+    fullName: scopedRules
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'scopedRules?: Array<ScopedRule>'
+      return:
+        description: ''
+        type: >-
+          Array&lt;<xref uid="@azure-rest/purview-account.ScopedRule|beta"
+          />&gt;
+  - name: version
+    uid: '@azure-rest/purview-account.PathPatternExtractorConfig.version|beta'
+    package: '@azure-rest/purview-account|beta'
+    summary: ''
+    fullName: version
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'version?: number'
+      return:
+        description: ''
+        type: number

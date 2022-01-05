@@ -1,0 +1,39 @@
+### YamlMime:TSType
+name: DestinationsSpec
+uid: '@azure/arm-monitor.DestinationsSpec|stable'
+package: '@azure/arm-monitor|stable'
+summary: Specification of destinations that can be used in data flows.
+fullName: DestinationsSpec
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: azureMonitorMetrics
+    uid: '@azure/arm-monitor.DestinationsSpec.azureMonitorMetrics|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: Azure Monitor Metrics destination.
+    fullName: azureMonitorMetrics
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'azureMonitorMetrics?: DestinationsSpecAzureMonitorMetrics'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-monitor.DestinationsSpecAzureMonitorMetrics|stable" />
+  - name: logAnalytics
+    uid: '@azure/arm-monitor.DestinationsSpec.logAnalytics|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: List of Log Analytics destinations.
+    fullName: logAnalytics
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'logAnalytics?: LogAnalyticsDestination[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-monitor.LogAnalyticsDestination|stable" />[]

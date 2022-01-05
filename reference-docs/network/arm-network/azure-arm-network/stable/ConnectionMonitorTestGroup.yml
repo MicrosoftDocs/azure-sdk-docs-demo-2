@@ -1,0 +1,76 @@
+### YamlMime:TSType
+name: ConnectionMonitorTestGroup
+uid: '@azure/arm-network.ConnectionMonitorTestGroup|stable'
+package: '@azure/arm-network|stable'
+summary: Describes the connection monitor test group.
+fullName: ConnectionMonitorTestGroup
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: destinations
+    uid: '@azure/arm-network.ConnectionMonitorTestGroup.destinations|stable'
+    package: '@azure/arm-network|stable'
+    summary: List of destination endpoint names.
+    fullName: destinations
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'destinations: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: disable
+    uid: '@azure/arm-network.ConnectionMonitorTestGroup.disable|stable'
+    package: '@azure/arm-network|stable'
+    summary: Value indicating whether test group is disabled.
+    fullName: disable
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'disable?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true
+  - name: name
+    uid: '@azure/arm-network.ConnectionMonitorTestGroup.name|stable'
+    package: '@azure/arm-network|stable'
+    summary: The name of the connection monitor test group.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: string'
+      return:
+        description: ''
+        type: string
+  - name: sources
+    uid: '@azure/arm-network.ConnectionMonitorTestGroup.sources|stable'
+    package: '@azure/arm-network|stable'
+    summary: List of source endpoint names.
+    fullName: sources
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sources: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: testConfigurations
+    uid: '@azure/arm-network.ConnectionMonitorTestGroup.testConfigurations|stable'
+    package: '@azure/arm-network|stable'
+    summary: List of test configuration names.
+    fullName: testConfigurations
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'testConfigurations: string[]'
+      return:
+        description: ''
+        type: string[]

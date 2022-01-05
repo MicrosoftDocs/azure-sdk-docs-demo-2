@@ -1,0 +1,27 @@
+### YamlMime:TSType
+name: GatewayHostnameConfigurationGetHeaders
+uid: '@azure/arm-apimanagement.GatewayHostnameConfigurationGetHeaders|stable'
+package: '@azure/arm-apimanagement|stable'
+summary: Defines headers for GatewayHostnameConfiguration_get operation.
+fullName: GatewayHostnameConfigurationGetHeaders
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: eTag
+    uid: >-
+      @azure/arm-apimanagement.GatewayHostnameConfigurationGetHeaders.eTag|stable
+    package: '@azure/arm-apimanagement|stable'
+    summary: >-
+      Current entity state version. Should be treated as opaque and used to make
+      conditional HTTP requests.
+    fullName: eTag
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'eTag?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

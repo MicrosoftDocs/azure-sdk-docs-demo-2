@@ -1,0 +1,89 @@
+### YamlMime:TSType
+name: Operation
+uid: '@azure/arm-mediaservices.Operation|stable'
+package: '@azure/arm-mediaservices|stable'
+summary: An operation.
+fullName: Operation
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: actionType
+    uid: '@azure/arm-mediaservices.Operation.actionType|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: Indicates the action type.
+    fullName: actionType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'actionType?: ActionType'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mediaservices.ActionType|stable" />
+  - name: display
+    uid: '@azure/arm-mediaservices.Operation.display|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: The operation display name.
+    fullName: display
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'display?: OperationDisplay'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mediaservices.OperationDisplay|stable" />
+  - name: isDataAction
+    uid: '@azure/arm-mediaservices.Operation.isDataAction|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: Whether the operation applies to data-plane.
+    fullName: isDataAction
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isDataAction?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true
+  - name: name
+    uid: '@azure/arm-mediaservices.Operation.name|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: The operation name.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: string'
+      return:
+        description: ''
+        type: string
+  - name: origin
+    uid: '@azure/arm-mediaservices.Operation.origin|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: Origin of the operation.
+    fullName: origin
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'origin?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: properties
+    uid: '@azure/arm-mediaservices.Operation.properties|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: Operation properties format.
+    fullName: properties
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'properties?: Properties'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mediaservices.Properties|stable" />

@@ -1,0 +1,248 @@
+### YamlMime:TSType
+name: DataFlowDebugSession
+uid: '@azure/synapse-artifacts.DataFlowDebugSession|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: Interface representing a DataFlowDebugSession.
+fullName: DataFlowDebugSession
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      addDataFlow(DataFlowDebugPackage,
+      DataFlowDebugSessionAddDataFlowOptionalParams)
+    uid: '@azure/synapse-artifacts.DataFlowDebugSession.addDataFlow|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Add a data flow into debug session.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function addDataFlow(request: DataFlowDebugPackage, options?:
+        DataFlowDebugSessionAddDataFlowOptionalParams):
+        Promise<DataFlowDebugSessionAddDataFlowResponse>
+      parameters:
+        - id: request
+          type: <xref uid="@azure/synapse-artifacts.DataFlowDebugPackage|beta" />
+          description: Data flow debug session definition with debug content.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-artifacts.DataFlowDebugSessionAddDataFlowOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/synapse-artifacts.DataFlowDebugSessionAddDataFlowResponse|beta"
+          />&gt;
+  - name: >-
+      beginCreateDataFlowDebugSession(CreateDataFlowDebugSessionRequest,
+      DataFlowDebugSessionCreateDataFlowDebugSessionOptionalParams)
+    uid: >-
+      @azure/synapse-artifacts.DataFlowDebugSession.beginCreateDataFlowDebugSession|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: Creates a data flow debug session.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateDataFlowDebugSession(request:
+        CreateDataFlowDebugSessionRequest, options?:
+        DataFlowDebugSessionCreateDataFlowDebugSessionOptionalParams):
+        Promise<PollerLike<PollOperationState<DataFlowDebugSessionCreateDataFlowDebugSessionResponse>,
+        DataFlowDebugSessionCreateDataFlowDebugSessionResponse>>
+      parameters:
+        - id: request
+          type: >-
+            <xref
+            uid="@azure/synapse-artifacts.CreateDataFlowDebugSessionRequest|beta"
+            />
+          description: Data flow debug session definition
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-artifacts.DataFlowDebugSessionCreateDataFlowDebugSessionOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/synapse-artifacts.DataFlowDebugSessionCreateDataFlowDebugSessionResponse|beta"
+          />&gt;, <xref
+          uid="@azure/synapse-artifacts.DataFlowDebugSessionCreateDataFlowDebugSessionResponse|beta"
+          />&gt;&gt;
+  - name: >-
+      beginCreateDataFlowDebugSessionAndWait(CreateDataFlowDebugSessionRequest,
+      DataFlowDebugSessionCreateDataFlowDebugSessionOptionalParams)
+    uid: >-
+      @azure/synapse-artifacts.DataFlowDebugSession.beginCreateDataFlowDebugSessionAndWait|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: Creates a data flow debug session.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateDataFlowDebugSessionAndWait(request:
+        CreateDataFlowDebugSessionRequest, options?:
+        DataFlowDebugSessionCreateDataFlowDebugSessionOptionalParams):
+        Promise<DataFlowDebugSessionCreateDataFlowDebugSessionResponse>
+      parameters:
+        - id: request
+          type: >-
+            <xref
+            uid="@azure/synapse-artifacts.CreateDataFlowDebugSessionRequest|beta"
+            />
+          description: Data flow debug session definition
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-artifacts.DataFlowDebugSessionCreateDataFlowDebugSessionOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/synapse-artifacts.DataFlowDebugSessionCreateDataFlowDebugSessionResponse|beta"
+          />&gt;
+  - name: >-
+      beginExecuteCommand(DataFlowDebugCommandRequest,
+      DataFlowDebugSessionExecuteCommandOptionalParams)
+    uid: '@azure/synapse-artifacts.DataFlowDebugSession.beginExecuteCommand|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Execute a data flow debug command.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginExecuteCommand(request: DataFlowDebugCommandRequest,
+        options?: DataFlowDebugSessionExecuteCommandOptionalParams):
+        Promise<PollerLike<PollOperationState<DataFlowDebugSessionExecuteCommandResponse>,
+        DataFlowDebugSessionExecuteCommandResponse>>
+      parameters:
+        - id: request
+          type: >-
+            <xref
+            uid="@azure/synapse-artifacts.DataFlowDebugCommandRequest|beta" />
+          description: Data flow debug command definition.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-artifacts.DataFlowDebugSessionExecuteCommandOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/synapse-artifacts.DataFlowDebugSessionExecuteCommandResponse|beta"
+          />&gt;, <xref
+          uid="@azure/synapse-artifacts.DataFlowDebugSessionExecuteCommandResponse|beta"
+          />&gt;&gt;
+  - name: >-
+      beginExecuteCommandAndWait(DataFlowDebugCommandRequest,
+      DataFlowDebugSessionExecuteCommandOptionalParams)
+    uid: >-
+      @azure/synapse-artifacts.DataFlowDebugSession.beginExecuteCommandAndWait|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: Execute a data flow debug command.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginExecuteCommandAndWait(request:
+        DataFlowDebugCommandRequest, options?:
+        DataFlowDebugSessionExecuteCommandOptionalParams):
+        Promise<DataFlowDebugSessionExecuteCommandResponse>
+      parameters:
+        - id: request
+          type: >-
+            <xref
+            uid="@azure/synapse-artifacts.DataFlowDebugCommandRequest|beta" />
+          description: Data flow debug command definition.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-artifacts.DataFlowDebugSessionExecuteCommandOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/synapse-artifacts.DataFlowDebugSessionExecuteCommandResponse|beta"
+          />&gt;
+  - name: >-
+      deleteDataFlowDebugSession(DeleteDataFlowDebugSessionRequest,
+      DataFlowDebugSessionDeleteDataFlowDebugSessionOptionalParams)
+    uid: >-
+      @azure/synapse-artifacts.DataFlowDebugSession.deleteDataFlowDebugSession|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: Deletes a data flow debug session.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function deleteDataFlowDebugSession(request:
+        DeleteDataFlowDebugSessionRequest, options?:
+        DataFlowDebugSessionDeleteDataFlowDebugSessionOptionalParams):
+        Promise<void>
+      parameters:
+        - id: request
+          type: >-
+            <xref
+            uid="@azure/synapse-artifacts.DeleteDataFlowDebugSessionRequest|beta"
+            />
+          description: Data flow debug session definition for deletion
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-artifacts.DataFlowDebugSessionDeleteDataFlowDebugSessionOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      listQueryDataFlowDebugSessionsByWorkspace(DataFlowDebugSessionQueryDataFlowDebugSessionsByWorkspaceOptionalParams)
+    uid: >-
+      @azure/synapse-artifacts.DataFlowDebugSession.listQueryDataFlowDebugSessionsByWorkspace|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: Query all active data flow debug sessions.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listQueryDataFlowDebugSessionsByWorkspace(options?:
+        DataFlowDebugSessionQueryDataFlowDebugSessionsByWorkspaceOptionalParams):
+        PagedAsyncIterableIterator<DataFlowDebugSessionInfo>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-artifacts.DataFlowDebugSessionQueryDataFlowDebugSessionsByWorkspaceOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/synapse-artifacts.DataFlowDebugSessionInfo|beta" />&gt;

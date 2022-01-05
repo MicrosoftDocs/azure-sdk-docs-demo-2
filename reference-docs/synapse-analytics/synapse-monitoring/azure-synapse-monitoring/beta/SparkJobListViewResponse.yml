@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: SparkJobListViewResponse
+uid: '@azure/synapse-monitoring.SparkJobListViewResponse|beta'
+package: '@azure/synapse-monitoring|beta'
+summary: ''
+fullName: SparkJobListViewResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: nJobs
+    uid: '@azure/synapse-monitoring.SparkJobListViewResponse.nJobs|beta'
+    package: '@azure/synapse-monitoring|beta'
+    summary: ''
+    fullName: nJobs
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nJobs?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: sparkJobs
+    uid: '@azure/synapse-monitoring.SparkJobListViewResponse.sparkJobs|beta'
+    package: '@azure/synapse-monitoring|beta'
+    summary: ''
+    fullName: sparkJobs
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sparkJobs?: SparkJob[] | null'
+      return:
+        description: ''
+        type: <xref uid="@azure/synapse-monitoring.SparkJob|beta" />[] | null

@@ -2,34 +2,16 @@
 name: Rules
 uid: '@azure/arm-servicebus.Rules|stable'
 package: '@azure/arm-servicebus|stable'
-summary: Class representing a Rules.
+summary: Interface representing a Rules.
 fullName: Rules
 remarks: ''
 isPreview: false
 isDeprecated: false
-type: class
-constructors:
-  - name: Rules(ServiceBusManagementClientContext)
-    uid: '@azure/arm-servicebus.Rules.constructor|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: Create a Rules.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'new Rules(client: ServiceBusManagementClientContext)'
-      parameters:
-        - id: client
-          type: >-
-            <xref
-            uid="@azure/arm-servicebus.ServiceBusManagementClientContext|stable"
-            />
-          description: |
-            Reference to the service client.
+type: interface
 methods:
   - name: >-
       createOrUpdate(string, string, string, string, string, Rule,
-      msRest.RequestOptionsBase)
+      RulesCreateOrUpdateOptionalParams)
     uid: '@azure/arm-servicebus.Rules.createOrUpdate|stable'
     package: '@azure/arm-servicebus|stable'
     summary: Creates a new rule and updates an existing rule
@@ -40,8 +22,8 @@ methods:
       content: >-
         function createOrUpdate(resourceGroupName: string, namespaceName:
         string, topicName: string, subscriptionName: string, ruleName: string,
-        parameters: Rule, options?: msRest.RequestOptionsBase):
-        Promise<Models.RulesCreateOrUpdateResponse>
+        parameters: Rule, options?: RulesCreateOrUpdateOptionalParams):
+        Promise<RulesCreateOrUpdateResponse>
       parameters:
         - id: resourceGroupName
           type: string
@@ -62,99 +44,19 @@ methods:
           type: <xref uid="@azure/arm-servicebus.Rule|stable" />
           description: Parameters supplied to create a rule.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.RulesCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.RulesCreateOrUpdateResponse>
+        description: ''
         type: >-
           Promise&lt;<xref
           uid="@azure/arm-servicebus.RulesCreateOrUpdateResponse|stable" />&gt;
-  - name: >-
-      createOrUpdate(string, string, string, string, string, Rule,
-      RequestOptionsBase, ServiceCallback<Rule>)
-    uid: '@azure/arm-servicebus.Rules.createOrUpdate_2|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function createOrUpdate(resourceGroupName: string, namespaceName:
-        string, topicName: string, subscriptionName: string, ruleName: string,
-        parameters: Rule, options: RequestOptionsBase, callback:
-        ServiceCallback<Rule>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: Name of the Resource group within the Azure subscription.
-        - id: namespaceName
-          type: string
-          description: The namespace name
-        - id: topicName
-          type: string
-          description: The topic name.
-        - id: subscriptionName
-          type: string
-          description: The subscription name.
-        - id: ruleName
-          type: string
-          description: The rule name.
-        - id: parameters
-          type: <xref uid="@azure/arm-servicebus.Rule|stable" />
-          description: Parameters supplied to create a rule.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref uid="@azure/arm-servicebus.Rule|stable"
-            />&gt;
-          description: |
-            The callback
-  - name: >-
-      createOrUpdate(string, string, string, string, string, Rule,
-      ServiceCallback<Rule>)
-    uid: '@azure/arm-servicebus.Rules.createOrUpdate_1|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function createOrUpdate(resourceGroupName: string, namespaceName:
-        string, topicName: string, subscriptionName: string, ruleName: string,
-        parameters: Rule, callback: ServiceCallback<Rule>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: Name of the Resource group within the Azure subscription.
-        - id: namespaceName
-          type: string
-          description: The namespace name
-        - id: topicName
-          type: string
-          description: The topic name.
-        - id: subscriptionName
-          type: string
-          description: The subscription name.
-        - id: ruleName
-          type: string
-          description: The rule name.
-        - id: parameters
-          type: <xref uid="@azure/arm-servicebus.Rule|stable" />
-          description: Parameters supplied to create a rule.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref uid="@azure/arm-servicebus.Rule|stable"
-            />&gt;
-          description: |
-            The callback
-  - name: >-
-      deleteMethod(string, string, string, string, string,
-      msRest.RequestOptionsBase)
-    uid: '@azure/arm-servicebus.Rules.deleteMethod|stable'
+  - name: delete(string, string, string, string, string, RulesDeleteOptionalParams)
+    uid: '@azure/arm-servicebus.Rules.delete|stable'
     package: '@azure/arm-servicebus|stable'
     summary: Deletes an existing rule.
     remarks: ''
@@ -162,9 +64,9 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function deleteMethod(resourceGroupName: string, namespaceName: string,
+        function delete(resourceGroupName: string, namespaceName: string,
         topicName: string, subscriptionName: string, ruleName: string, options?:
-        msRest.RequestOptionsBase): Promise<RestResponse>
+        RulesDeleteOptionalParams): Promise<void>
       parameters:
         - id: resourceGroupName
           type: string
@@ -182,83 +84,15 @@ methods:
           type: string
           description: The rule name.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref uid="@azure/arm-servicebus.RulesDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<msRest.RestResponse>
-        type: Promise&lt;RestResponse&gt;
-  - name: >-
-      deleteMethod(string, string, string, string, string, RequestOptionsBase,
-      ServiceCallback<void>)
-    uid: '@azure/arm-servicebus.Rules.deleteMethod_2|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function deleteMethod(resourceGroupName: string, namespaceName: string,
-        topicName: string, subscriptionName: string, ruleName: string, options:
-        RequestOptionsBase, callback: ServiceCallback<void>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: Name of the Resource group within the Azure subscription.
-        - id: namespaceName
-          type: string
-          description: The namespace name
-        - id: topicName
-          type: string
-          description: The topic name.
-        - id: subscriptionName
-          type: string
-          description: The subscription name.
-        - id: ruleName
-          type: string
-          description: The rule name.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: ServiceCallback&lt;void&gt;
-          description: |
-            The callback
-  - name: >-
-      deleteMethod(string, string, string, string, string,
-      ServiceCallback<void>)
-    uid: '@azure/arm-servicebus.Rules.deleteMethod_1|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function deleteMethod(resourceGroupName: string, namespaceName: string,
-        topicName: string, subscriptionName: string, ruleName: string, callback:
-        ServiceCallback<void>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: Name of the Resource group within the Azure subscription.
-        - id: namespaceName
-          type: string
-          description: The namespace name
-        - id: topicName
-          type: string
-          description: The topic name.
-        - id: subscriptionName
-          type: string
-          description: The subscription name.
-        - id: ruleName
-          type: string
-          description: The rule name.
-        - id: callback
-          type: ServiceCallback&lt;void&gt;
-          description: |
-            The callback
-  - name: get(string, string, string, string, string, msRest.RequestOptionsBase)
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: get(string, string, string, string, string, RulesGetOptionalParams)
     uid: '@azure/arm-servicebus.Rules.get|stable'
     package: '@azure/arm-servicebus|stable'
     summary: Retrieves the description for the specified rule.
@@ -269,7 +103,7 @@ methods:
       content: >-
         function get(resourceGroupName: string, namespaceName: string,
         topicName: string, subscriptionName: string, ruleName: string, options?:
-        msRest.RequestOptionsBase): Promise<Models.RulesGetResponse>
+        RulesGetOptionalParams): Promise<RulesGetResponse>
       parameters:
         - id: resourceGroupName
           type: string
@@ -287,89 +121,17 @@ methods:
           type: string
           description: The rule name.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: <xref uid="@azure/arm-servicebus.RulesGetOptionalParams|stable" />
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.RulesGetResponse>
+        description: ''
         type: >-
           Promise&lt;<xref uid="@azure/arm-servicebus.RulesGetResponse|stable"
           />&gt;
   - name: >-
-      get(string, string, string, string, string, RequestOptionsBase,
-      ServiceCallback<Rule>)
-    uid: '@azure/arm-servicebus.Rules.get_2|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function get(resourceGroupName: string, namespaceName: string,
-        topicName: string, subscriptionName: string, ruleName: string, options:
-        RequestOptionsBase, callback: ServiceCallback<Rule>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: Name of the Resource group within the Azure subscription.
-        - id: namespaceName
-          type: string
-          description: The namespace name
-        - id: topicName
-          type: string
-          description: The topic name.
-        - id: subscriptionName
-          type: string
-          description: The subscription name.
-        - id: ruleName
-          type: string
-          description: The rule name.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref uid="@azure/arm-servicebus.Rule|stable"
-            />&gt;
-          description: |
-            The callback
-  - name: get(string, string, string, string, string, ServiceCallback<Rule>)
-    uid: '@azure/arm-servicebus.Rules.get_1|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function get(resourceGroupName: string, namespaceName: string,
-        topicName: string, subscriptionName: string, ruleName: string, callback:
-        ServiceCallback<Rule>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: Name of the Resource group within the Azure subscription.
-        - id: namespaceName
-          type: string
-          description: The namespace name
-        - id: topicName
-          type: string
-          description: The topic name.
-        - id: subscriptionName
-          type: string
-          description: The subscription name.
-        - id: ruleName
-          type: string
-          description: The rule name.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref uid="@azure/arm-servicebus.Rule|stable"
-            />&gt;
-          description: |
-            The callback
-  - name: >-
       listBySubscriptions(string, string, string, string,
-      Models.RulesListBySubscriptionsOptionalParams)
+      RulesListBySubscriptionsOptionalParams)
     uid: '@azure/arm-servicebus.Rules.listBySubscriptions|stable'
     package: '@azure/arm-servicebus|stable'
     summary: List all the rules within given topic-subscription
@@ -380,8 +142,8 @@ methods:
       content: >-
         function listBySubscriptions(resourceGroupName: string, namespaceName:
         string, topicName: string, subscriptionName: string, options?:
-        Models.RulesListBySubscriptionsOptionalParams):
-        Promise<Models.RulesListBySubscriptionsResponse>
+        RulesListBySubscriptionsOptionalParams):
+        PagedAsyncIterableIterator<Rule>
       parameters:
         - id: resourceGroupName
           type: string
@@ -400,155 +162,10 @@ methods:
             <xref
             uid="@azure/arm-servicebus.RulesListBySubscriptionsOptionalParams|stable"
             />
-          description: ''
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.RulesListBySubscriptionsResponse>
+        description: ''
         type: >-
-          Promise&lt;<xref
-          uid="@azure/arm-servicebus.RulesListBySubscriptionsResponse|stable"
-          />&gt;
-  - name: >-
-      listBySubscriptions(string, string, string, string,
-      RulesListBySubscriptionsOptionalParams, ServiceCallback<RuleListResult>)
-    uid: '@azure/arm-servicebus.Rules.listBySubscriptions_2|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listBySubscriptions(resourceGroupName: string, namespaceName:
-        string, topicName: string, subscriptionName: string, options:
-        RulesListBySubscriptionsOptionalParams, callback:
-        ServiceCallback<RuleListResult>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: Name of the Resource group within the Azure subscription.
-        - id: namespaceName
-          type: string
-          description: The namespace name
-        - id: topicName
-          type: string
-          description: The topic name.
-        - id: subscriptionName
-          type: string
-          description: The subscription name.
-        - id: options
-          type: >-
-            <xref
-            uid="@azure/arm-servicebus.RulesListBySubscriptionsOptionalParams|stable"
-            />
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-servicebus.RuleListResult|stable" />&gt;
-          description: |
-            The callback
-  - name: >-
-      listBySubscriptions(string, string, string, string,
-      ServiceCallback<RuleListResult>)
-    uid: '@azure/arm-servicebus.Rules.listBySubscriptions_1|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listBySubscriptions(resourceGroupName: string, namespaceName:
-        string, topicName: string, subscriptionName: string, callback:
-        ServiceCallback<RuleListResult>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: Name of the Resource group within the Azure subscription.
-        - id: namespaceName
-          type: string
-          description: The namespace name
-        - id: topicName
-          type: string
-          description: The topic name.
-        - id: subscriptionName
-          type: string
-          description: The subscription name.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-servicebus.RuleListResult|stable" />&gt;
-          description: |
-            The callback
-  - name: listBySubscriptionsNext(string, msRest.RequestOptionsBase)
-    uid: '@azure/arm-servicebus.Rules.listBySubscriptionsNext|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: List all the rules within given topic-subscription
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listBySubscriptionsNext(nextPageLink: string, options?:
-        msRest.RequestOptionsBase):
-        Promise<Models.RulesListBySubscriptionsNextResponse>
-      parameters:
-        - id: nextPageLink
-          type: string
-          description: The NextLink from the previous successful call to List operation.
-        - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
-      return:
-        description: Promise<Models.RulesListBySubscriptionsNextResponse>
-        type: >-
-          Promise&lt;<xref
-          uid="@azure/arm-servicebus.RulesListBySubscriptionsNextResponse|stable"
-          />&gt;
-  - name: >-
-      listBySubscriptionsNext(string, RequestOptionsBase,
-      ServiceCallback<RuleListResult>)
-    uid: '@azure/arm-servicebus.Rules.listBySubscriptionsNext_2|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listBySubscriptionsNext(nextPageLink: string, options:
-        RequestOptionsBase, callback: ServiceCallback<RuleListResult>)
-      parameters:
-        - id: nextPageLink
-          type: string
-          description: The NextLink from the previous successful call to List operation.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-servicebus.RuleListResult|stable" />&gt;
-          description: |
-            The callback
-  - name: listBySubscriptionsNext(string, ServiceCallback<RuleListResult>)
-    uid: '@azure/arm-servicebus.Rules.listBySubscriptionsNext_1|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listBySubscriptionsNext(nextPageLink: string, callback:
-        ServiceCallback<RuleListResult>)
-      parameters:
-        - id: nextPageLink
-          type: string
-          description: The NextLink from the previous successful call to List operation.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-servicebus.RuleListResult|stable" />&gt;
-          description: |
-            The callback
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-servicebus.Rule|stable" />&gt;

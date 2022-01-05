@@ -1,0 +1,53 @@
+### YamlMime:TSType
+name: NetworkConfiguration
+uid: '@azure/arm-logic.NetworkConfiguration|stable'
+package: '@azure/arm-logic|stable'
+summary: The network configuration.
+fullName: NetworkConfiguration
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: accessEndpoint
+    uid: '@azure/arm-logic.NetworkConfiguration.accessEndpoint|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The access endpoint.
+    fullName: accessEndpoint
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'accessEndpoint?: IntegrationServiceEnvironmentAccessEndpoint'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-logic.IntegrationServiceEnvironmentAccessEndpoint|stable"
+          />
+  - name: subnets
+    uid: '@azure/arm-logic.NetworkConfiguration.subnets|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The subnets.
+    fullName: subnets
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'subnets?: ResourceReference[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-logic.ResourceReference|stable" />[]
+  - name: virtualNetworkAddressSpace
+    uid: '@azure/arm-logic.NetworkConfiguration.virtualNetworkAddressSpace|stable'
+    package: '@azure/arm-logic|stable'
+    summary: Gets the virtual network address space.
+    fullName: virtualNetworkAddressSpace
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'virtualNetworkAddressSpace?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

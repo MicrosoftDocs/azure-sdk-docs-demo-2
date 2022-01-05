@@ -1,0 +1,87 @@
+### YamlMime:TSType
+name: NamedValueUpdateParameters
+uid: '@azure/arm-apimanagement.NamedValueUpdateParameters|stable'
+package: '@azure/arm-apimanagement|stable'
+summary: NamedValue update Parameters.
+fullName: NamedValueUpdateParameters
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: displayName
+    uid: '@azure/arm-apimanagement.NamedValueUpdateParameters.displayName|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: >-
+      Unique name of NamedValue. It may contain only letters, digits, period,
+      dash, and underscore characters.
+    fullName: displayName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'displayName?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: keyVault
+    uid: '@azure/arm-apimanagement.NamedValueUpdateParameters.keyVault|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: KeyVault location details of the namedValue.
+    fullName: keyVault
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'keyVault?: KeyVaultContractCreateProperties'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-apimanagement.KeyVaultContractCreateProperties|stable"
+          />
+  - name: secret
+    uid: '@azure/arm-apimanagement.NamedValueUpdateParameters.secret|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: >-
+      Determines whether the value is a secret and should be encrypted or not.
+      Default value is false.
+    fullName: secret
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'secret?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true
+  - name: tags
+    uid: '@azure/arm-apimanagement.NamedValueUpdateParameters.tags|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: >-
+      Optional tags that when provided can be used to filter the NamedValue
+      list.
+    fullName: tags
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tags?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: value
+    uid: '@azure/arm-apimanagement.NamedValueUpdateParameters.value|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: >-
+      Value of the NamedValue. Can contain policy expressions. It may not be
+      empty or consist only of whitespace.
+    fullName: value
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

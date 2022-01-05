@@ -1,0 +1,63 @@
+### YamlMime:TSType
+name: ExpressRouteCircuitArpTable
+uid: '@azure/arm-network.ExpressRouteCircuitArpTable|stable'
+package: '@azure/arm-network|stable'
+summary: The ARP table associated with the ExpressRouteCircuit.
+fullName: ExpressRouteCircuitArpTable
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: age
+    uid: '@azure/arm-network.ExpressRouteCircuitArpTable.age|stable'
+    package: '@azure/arm-network|stable'
+    summary: Entry age in minutes.
+    fullName: age
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'age?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: interface
+    uid: '@azure/arm-network.ExpressRouteCircuitArpTable.interface|stable'
+    package: '@azure/arm-network|stable'
+    summary: Interface address.
+    fullName: interface
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'interface?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: ipAddress
+    uid: '@azure/arm-network.ExpressRouteCircuitArpTable.ipAddress|stable'
+    package: '@azure/arm-network|stable'
+    summary: The IP address.
+    fullName: ipAddress
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ipAddress?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: macAddress
+    uid: '@azure/arm-network.ExpressRouteCircuitArpTable.macAddress|stable'
+    package: '@azure/arm-network|stable'
+    summary: The MAC address.
+    fullName: macAddress
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'macAddress?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

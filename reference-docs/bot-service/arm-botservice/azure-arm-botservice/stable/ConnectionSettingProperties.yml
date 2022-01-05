@@ -1,0 +1,109 @@
+### YamlMime:TSType
+name: ConnectionSettingProperties
+uid: '@azure/arm-botservice.ConnectionSettingProperties|stable'
+package: '@azure/arm-botservice|stable'
+summary: Properties for a Connection Setting Item
+fullName: ConnectionSettingProperties
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: clientId
+    uid: '@azure/arm-botservice.ConnectionSettingProperties.clientId|stable'
+    package: '@azure/arm-botservice|stable'
+    summary: Client Id associated with the Connection Setting.
+    fullName: clientId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clientId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: clientSecret
+    uid: '@azure/arm-botservice.ConnectionSettingProperties.clientSecret|stable'
+    package: '@azure/arm-botservice|stable'
+    summary: Client Secret associated with the Connection Setting
+    fullName: clientSecret
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clientSecret?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: parameters
+    uid: '@azure/arm-botservice.ConnectionSettingProperties.parameters|stable'
+    package: '@azure/arm-botservice|stable'
+    summary: Service Provider Parameters associated with the Connection Setting
+    fullName: parameters
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'parameters?: ConnectionSettingParameter[]'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/arm-botservice.ConnectionSettingParameter|stable"
+          />[]
+  - name: scopes
+    uid: '@azure/arm-botservice.ConnectionSettingProperties.scopes|stable'
+    package: '@azure/arm-botservice|stable'
+    summary: Scopes associated with the Connection Setting
+    fullName: scopes
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'scopes?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: serviceProviderDisplayName
+    uid: >-
+      @azure/arm-botservice.ConnectionSettingProperties.serviceProviderDisplayName|stable
+    package: '@azure/arm-botservice|stable'
+    summary: Service Provider Display Name associated with the Connection Setting
+    fullName: serviceProviderDisplayName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'serviceProviderDisplayName?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: serviceProviderId
+    uid: '@azure/arm-botservice.ConnectionSettingProperties.serviceProviderId|stable'
+    package: '@azure/arm-botservice|stable'
+    summary: Service Provider Id associated with the Connection Setting
+    fullName: serviceProviderId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'serviceProviderId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: settingId
+    uid: '@azure/arm-botservice.ConnectionSettingProperties.settingId|stable'
+    package: '@azure/arm-botservice|stable'
+    summary: >-
+      Setting Id set by the service for the Connection Setting.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: settingId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'settingId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

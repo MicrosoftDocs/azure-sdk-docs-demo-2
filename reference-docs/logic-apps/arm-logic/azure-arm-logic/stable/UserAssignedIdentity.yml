@@ -1,0 +1,45 @@
+### YamlMime:TSType
+name: UserAssignedIdentity
+uid: '@azure/arm-logic.UserAssignedIdentity|stable'
+package: '@azure/arm-logic|stable'
+summary: User Assigned identity properties.
+fullName: UserAssignedIdentity
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: clientId
+    uid: '@azure/arm-logic.UserAssignedIdentity.clientId|stable'
+    package: '@azure/arm-logic|stable'
+    summary: >-
+      Client Id of user assigned identity
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: clientId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clientId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: principalId
+    uid: '@azure/arm-logic.UserAssignedIdentity.principalId|stable'
+    package: '@azure/arm-logic|stable'
+    summary: >-
+      Principal Id of user assigned identity
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: principalId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'principalId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

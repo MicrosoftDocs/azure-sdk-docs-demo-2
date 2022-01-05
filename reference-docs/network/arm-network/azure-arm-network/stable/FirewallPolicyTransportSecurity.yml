@@ -1,0 +1,27 @@
+### YamlMime:TSType
+name: FirewallPolicyTransportSecurity
+uid: '@azure/arm-network.FirewallPolicyTransportSecurity|stable'
+package: '@azure/arm-network|stable'
+summary: Configuration needed to perform TLS termination & initiation.
+fullName: FirewallPolicyTransportSecurity
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: certificateAuthority
+    uid: >-
+      @azure/arm-network.FirewallPolicyTransportSecurity.certificateAuthority|stable
+    package: '@azure/arm-network|stable'
+    summary: The CA used for intermediate CA generation.
+    fullName: certificateAuthority
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'certificateAuthority?: FirewallPolicyCertificateAuthority'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-network.FirewallPolicyCertificateAuthority|stable" />

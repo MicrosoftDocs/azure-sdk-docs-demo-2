@@ -1,0 +1,41 @@
+### YamlMime:TSType
+name: PolicyCertificatesModificationResult
+uid: '@azure/attestation.PolicyCertificatesModificationResult|stable'
+package: '@azure/attestation|stable'
+summary: The result of a policy certificate modification
+fullName: PolicyCertificatesModificationResult
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: certificateResolution
+    uid: >-
+      @azure/attestation.PolicyCertificatesModificationResult.certificateResolution|stable
+    package: '@azure/attestation|stable'
+    summary: The result of the operation
+    fullName: certificateResolution
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'certificateResolution: CertificateModification'
+      return:
+        description: ''
+        type: <xref uid="@azure/attestation.CertificateModification|stable" />
+  - name: certificateThumbprint
+    uid: >-
+      @azure/attestation.PolicyCertificatesModificationResult.certificateThumbprint|stable
+    package: '@azure/attestation|stable'
+    summary: >-
+      Hex encoded SHA1 Hash of the binary representation certificate which was
+      added or removed
+    fullName: certificateThumbprint
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'certificateThumbprint: string'
+      return:
+        description: ''
+        type: string

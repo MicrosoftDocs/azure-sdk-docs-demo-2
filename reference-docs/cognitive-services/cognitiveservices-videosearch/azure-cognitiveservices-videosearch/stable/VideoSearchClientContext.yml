@@ -64,13 +64,13 @@ properties:
       return:
         description: ''
         type: undefined | string
-methods:
+inheritedMethods:
   - name: >-
       sendOperationRequest(OperationArguments, OperationSpec,
       ServiceCallback<any>)
     uid: >-
-      @azure/cognitiveservices-videosearch.VideoSearchClientContext.sendOperationRequest|stable
-    package: '@azure/cognitiveservices-videosearch|stable'
+      @azure/cognitiveservices-videosearch.VideoSearchClientContext.sendOperationRequest
+    package: '@azure/cognitiveservices-videosearch'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
     isPreview: false
@@ -97,9 +97,8 @@ methods:
         description: ''
         type: Promise&lt;RestResponse&gt;
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
-    uid: >-
-      @azure/cognitiveservices-videosearch.VideoSearchClientContext.sendRequest|stable
-    package: '@azure/cognitiveservices-videosearch|stable'
+    uid: '@azure/cognitiveservices-videosearch.VideoSearchClientContext.sendRequest'
+    package: '@azure/cognitiveservices-videosearch'
     summary: Send the provided httpRequest.
     remarks: ''
     isPreview: false

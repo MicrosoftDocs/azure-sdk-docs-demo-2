@@ -176,12 +176,12 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/cognitiveservices-face.SnapshotOperations|stable" />
-methods:
+inheritedMethods:
   - name: >-
       sendOperationRequest(OperationArguments, OperationSpec,
       ServiceCallback<any>)
-    uid: '@azure/cognitiveservices-face.FaceClient.sendOperationRequest|stable'
-    package: '@azure/cognitiveservices-face|stable'
+    uid: '@azure/cognitiveservices-face.FaceClient.sendOperationRequest'
+    package: '@azure/cognitiveservices-face'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
     isPreview: false
@@ -208,8 +208,8 @@ methods:
         description: ''
         type: Promise&lt;RestResponse&gt;
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
-    uid: '@azure/cognitiveservices-face.FaceClient.sendRequest|stable'
-    package: '@azure/cognitiveservices-face|stable'
+    uid: '@azure/cognitiveservices-face.FaceClient.sendRequest'
+    package: '@azure/cognitiveservices-face'
     summary: Send the provided httpRequest.
     remarks: ''
     isPreview: false

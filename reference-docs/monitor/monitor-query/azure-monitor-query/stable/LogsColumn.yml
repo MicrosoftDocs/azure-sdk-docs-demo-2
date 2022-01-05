@@ -1,0 +1,52 @@
+### YamlMime:TSType
+name: LogsColumn
+uid: '@azure/monitor-query.LogsColumn|stable'
+package: '@azure/monitor-query|stable'
+summary: A column in a table.
+fullName: LogsColumn
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: name
+    uid: '@azure/monitor-query.LogsColumn.name|stable'
+    package: '@azure/monitor-query|stable'
+    summary: The name of this column.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: string'
+      return:
+        description: ''
+        type: string
+  - name: type
+    uid: '@azure/monitor-query.LogsColumn.type|stable'
+    package: '@azure/monitor-query|stable'
+    summary: |-
+      The data type of this column.
+      Defines values for LogsColumnType.
+      KnownLogsColumnType can be used interchangeably with LogsColumnType,
+       this enum contains the known values that the service supports.
+      ### Known values supported by the service
+      **bool**
+      **datetime**
+      **dynamic**
+      **int**
+      **long**
+      **real**
+      **string**
+      **guid**
+      **decimal**
+      **timespan**
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: LogsColumnType'
+      return:
+        description: ''
+        type: <xref uid="@azure/monitor-query.LogsColumnType|stable" />

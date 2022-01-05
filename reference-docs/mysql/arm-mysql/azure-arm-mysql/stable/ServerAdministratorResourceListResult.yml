@@ -1,0 +1,24 @@
+### YamlMime:TSType
+name: ServerAdministratorResourceListResult
+uid: '@azure/arm-mysql.ServerAdministratorResourceListResult|stable'
+package: '@azure/arm-mysql|stable'
+summary: The response to a list Active Directory Administrators request.
+fullName: ServerAdministratorResourceListResult
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: value
+    uid: '@azure/arm-mysql.ServerAdministratorResourceListResult.value|stable'
+    package: '@azure/arm-mysql|stable'
+    summary: The list of server Active Directory Administrators for the server.
+    fullName: value
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: ServerAdministratorResource[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mysql.ServerAdministratorResource|stable" />[]

@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: AzureFirewallSku
+uid: '@azure/arm-network.AzureFirewallSku|stable'
+package: '@azure/arm-network|stable'
+summary: SKU of an Azure Firewall.
+fullName: AzureFirewallSku
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: name
+    uid: '@azure/arm-network.AzureFirewallSku.name|stable'
+    package: '@azure/arm-network|stable'
+    summary: Name of an Azure Firewall SKU.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: AzureFirewallSkuName'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.AzureFirewallSkuName|stable" />
+  - name: tier
+    uid: '@azure/arm-network.AzureFirewallSku.tier|stable'
+    package: '@azure/arm-network|stable'
+    summary: Tier of an Azure Firewall.
+    fullName: tier
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tier?: AzureFirewallSkuTier'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.AzureFirewallSkuTier|stable" />

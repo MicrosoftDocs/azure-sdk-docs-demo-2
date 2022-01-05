@@ -2,7 +2,7 @@
 title: Azure SDK for JavaScript - Core Release Notes
 description: 
 ms.topic: reference
-ms.date: 12/14/2021
+ms.date: 01/05/2022
 ms.service: core
 ms.role: developer
 ms.devlang: javascript
@@ -23,6 +23,8 @@ ROBOTS: NOINDEX
 - Fix `HttpHeaders.rawHeaders()` to preserve header name case. As a result HttpClient now sends requests with their original header names. `HttpHeaders.toJson()` now has an option to preserve header key casing.
 
 ### Other Changes
+
+- Update dependency `node-fetch` version to `2.6.6` to address advisory [CVE-2020-15168](https://github.com/advisories/GHSA-w7rc-rwvf-8q5r)
 
 ## 2.2.2 (2021-11-03)
 

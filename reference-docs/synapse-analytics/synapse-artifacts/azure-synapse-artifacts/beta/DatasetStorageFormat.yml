@@ -1,0 +1,56 @@
+### YamlMime:TSType
+name: DatasetStorageFormat
+uid: '@azure/synapse-artifacts.DatasetStorageFormat|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: The format definition of a storage.
+fullName: DatasetStorageFormat
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: deserializer
+    uid: '@azure/synapse-artifacts.DatasetStorageFormat.deserializer|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: 'Deserializer. Type: string (or Expression with resultType string).'
+    fullName: deserializer
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'deserializer?: any'
+      return:
+        description: ''
+        type: any
+  - name: serializer
+    uid: '@azure/synapse-artifacts.DatasetStorageFormat.serializer|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: 'Serializer. Type: string (or Expression with resultType string).'
+    fullName: serializer
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'serializer?: any'
+      return:
+        description: ''
+        type: any
+  - name: type
+    uid: '@azure/synapse-artifacts.DatasetStorageFormat.type|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: >-
+      Polymorphic discriminator, which specifies the different types this object
+      can be
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        type: "TextFormat" | "JsonFormat" | "AvroFormat" | "OrcFormat" |
+        "ParquetFormat"
+      return:
+        description: ''
+        type: >-
+          "TextFormat" | "JsonFormat" | "AvroFormat" | "OrcFormat" |
+          "ParquetFormat"

@@ -1,0 +1,150 @@
+### YamlMime:TSType
+name: PipelineCreatePipelineRunOptionalParams
+uid: '@azure/synapse-artifacts.PipelineCreatePipelineRunOptionalParams|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: Optional parameters.
+fullName: PipelineCreatePipelineRunOptionalParams
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: abortSignal
+    uid: >-
+      @azure/synapse-artifacts.PipelineCreatePipelineRunOptionalParams.abortSignal|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: The signal which can be used to abort requests.
+    fullName: abortSignal
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'abortSignal?: AbortSignalLike'
+      return:
+        description: ''
+        type: AbortSignalLike
+  - name: isRecovery
+    uid: >-
+      @azure/synapse-artifacts.PipelineCreatePipelineRunOptionalParams.isRecovery|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: >-
+      Recovery mode flag. If recovery mode is set to true, the specified
+      referenced pipeline run and the new run will be grouped under the same
+      groupId.
+    fullName: isRecovery
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isRecovery?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: onResponse
+    uid: >-
+      @azure/synapse-artifacts.PipelineCreatePipelineRunOptionalParams.onResponse|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: |-
+      A function to be called each time a response is received from the server
+      while performing the requested operation.
+      May be called multiple times.
+    fullName: onResponse
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onResponse?: RawResponseCallback'
+      return:
+        description: ''
+        type: RawResponseCallback
+  - name: parameters
+    uid: >-
+      @azure/synapse-artifacts.PipelineCreatePipelineRunOptionalParams.parameters|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: >-
+      Parameters of the pipeline run. These parameters will be used only if the
+      runId is not specified.
+    fullName: parameters
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'parameters?: [key: string]: any'
+      return:
+        description: ''
+        type: '[key: string]\: any'
+  - name: referencePipelineRunId
+    uid: >-
+      @azure/synapse-artifacts.PipelineCreatePipelineRunOptionalParams.referencePipelineRunId|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: >-
+      The pipeline run identifier. If run ID is specified the parameters of the
+      specified run will be used to create a new run.
+    fullName: referencePipelineRunId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'referencePipelineRunId?: string'
+      return:
+        description: ''
+        type: string
+  - name: requestOptions
+    uid: >-
+      @azure/synapse-artifacts.PipelineCreatePipelineRunOptionalParams.requestOptions|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: Options used when creating and sending HTTP requests for this operation.
+    fullName: requestOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'requestOptions?: OperationRequestOptions'
+      return:
+        description: ''
+        type: OperationRequestOptions
+  - name: serializerOptions
+    uid: >-
+      @azure/synapse-artifacts.PipelineCreatePipelineRunOptionalParams.serializerOptions|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: Options to override serialization/de-serialization behavior.
+    fullName: serializerOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'serializerOptions?: SerializerOptions'
+      return:
+        description: ''
+        type: SerializerOptions
+  - name: startActivityName
+    uid: >-
+      @azure/synapse-artifacts.PipelineCreatePipelineRunOptionalParams.startActivityName|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: >-
+      In recovery mode, the rerun will start from this activity. If not
+      specified, all activities will run.
+    fullName: startActivityName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'startActivityName?: string'
+      return:
+        description: ''
+        type: string
+  - name: tracingOptions
+    uid: >-
+      @azure/synapse-artifacts.PipelineCreatePipelineRunOptionalParams.tracingOptions|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: Options used when tracing is enabled.
+    fullName: tracingOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tracingOptions?: OperationTracingOptions'
+      return:
+        description: ''
+        type: OperationTracingOptions
+extends: OperationOptions

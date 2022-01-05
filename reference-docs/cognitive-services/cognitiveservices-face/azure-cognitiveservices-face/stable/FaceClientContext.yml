@@ -65,13 +65,12 @@ properties:
       return:
         description: ''
         type: string
-methods:
+inheritedMethods:
   - name: >-
       sendOperationRequest(OperationArguments, OperationSpec,
       ServiceCallback<any>)
-    uid: >-
-      @azure/cognitiveservices-face.FaceClientContext.sendOperationRequest|stable
-    package: '@azure/cognitiveservices-face|stable'
+    uid: '@azure/cognitiveservices-face.FaceClientContext.sendOperationRequest'
+    package: '@azure/cognitiveservices-face'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
     isPreview: false
@@ -98,8 +97,8 @@ methods:
         description: ''
         type: Promise&lt;RestResponse&gt;
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
-    uid: '@azure/cognitiveservices-face.FaceClientContext.sendRequest|stable'
-    package: '@azure/cognitiveservices-face|stable'
+    uid: '@azure/cognitiveservices-face.FaceClientContext.sendRequest'
+    package: '@azure/cognitiveservices-face'
     summary: Send the provided httpRequest.
     remarks: ''
     isPreview: false

@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: BackendContractProperties
+uid: '@azure/arm-apimanagement.BackendContractProperties|stable'
+package: '@azure/arm-apimanagement|stable'
+summary: Parameters supplied to the Create Backend operation.
+fullName: BackendContractProperties
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type BackendContractProperties = BackendBaseParameters & { protocol:
+  BackendProtocol, url: string }

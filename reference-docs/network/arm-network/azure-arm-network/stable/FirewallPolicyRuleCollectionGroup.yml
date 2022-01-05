@@ -1,0 +1,14 @@
+### YamlMime:TSTypeAlias
+name: FirewallPolicyRuleCollectionGroup
+uid: '@azure/arm-network.FirewallPolicyRuleCollectionGroup|stable'
+package: '@azure/arm-network|stable'
+summary: Rule Collection Group resource.
+fullName: FirewallPolicyRuleCollectionGroup
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type FirewallPolicyRuleCollectionGroup = SubResource & { etag?: undefined |
+  string, name?: undefined | string, priority?: undefined | number,
+  provisioningState?: ProvisioningState, ruleCollections?:
+  FirewallPolicyRuleCollectionUnion[], type?: undefined | string }

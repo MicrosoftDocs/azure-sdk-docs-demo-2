@@ -1,0 +1,76 @@
+### YamlMime:TSType
+name: PerfMonSet
+uid: '@azure/arm-appservice.PerfMonSet|stable'
+package: '@azure/arm-appservice|stable'
+summary: Metric information.
+fullName: PerfMonSet
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: endTime
+    uid: '@azure/arm-appservice.PerfMonSet.endTime|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: End time of the period.
+    fullName: endTime
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'endTime?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: name
+    uid: '@azure/arm-appservice.PerfMonSet.name|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Unique key name of the counter.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: startTime
+    uid: '@azure/arm-appservice.PerfMonSet.startTime|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Start time of the period.
+    fullName: startTime
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'startTime?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: timeGrain
+    uid: '@azure/arm-appservice.PerfMonSet.timeGrain|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Presented time grain.
+    fullName: timeGrain
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'timeGrain?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: values
+    uid: '@azure/arm-appservice.PerfMonSet.values|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Collection of workers that are active during this time.
+    fullName: values
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'values?: PerfMonSample[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.PerfMonSample|stable" />[]

@@ -1,0 +1,38 @@
+### YamlMime:TSEnum
+name: KnownRotation
+uid: '@azure/arm-mediaservices.KnownRotation|stable'
+package: '@azure/arm-mediaservices|stable'
+summary: >-
+  Known values of <xref:@azure/arm-mediaservices.KnownRotation|stable> that the
+  service accepts.
+fullName: KnownRotation
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: Auto
+    uid: '@azure/arm-mediaservices.KnownRotation.Auto|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: Automatically detect and rotate as needed.
+  - name: None
+    uid: '@azure/arm-mediaservices.KnownRotation.None|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: >-
+      Do not rotate the video.  If the output format supports it, any metadata
+      about rotation is kept intact.
+  - name: Rotate0
+    uid: '@azure/arm-mediaservices.KnownRotation.Rotate0|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: Do not rotate the video but remove any metadata about the rotation.
+  - name: Rotate180
+    uid: '@azure/arm-mediaservices.KnownRotation.Rotate180|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: Rotate 180 degrees clockwise.
+  - name: Rotate270
+    uid: '@azure/arm-mediaservices.KnownRotation.Rotate270|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: Rotate 270 degrees clockwise.
+  - name: Rotate90
+    uid: '@azure/arm-mediaservices.KnownRotation.Rotate90|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: Rotate 90 degrees clockwise.

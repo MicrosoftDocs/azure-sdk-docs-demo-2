@@ -1,0 +1,213 @@
+### YamlMime:TSType
+name: Channels
+uid: '@azure/arm-botservice.Channels|beta'
+package: '@azure/arm-botservice|beta'
+summary: Interface representing a Channels.
+fullName: Channels
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      create(string, string, ChannelName, BotChannel,
+      ChannelsCreateOptionalParams)
+    uid: '@azure/arm-botservice.Channels.create|beta'
+    package: '@azure/arm-botservice|beta'
+    summary: Creates a Channel registration for a Bot Service
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function create(resourceGroupName: string, resourceName: string,
+        channelName: ChannelName, parameters: BotChannel, options?:
+        ChannelsCreateOptionalParams): Promise<ChannelsCreateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the Bot resource group in the user subscription.
+        - id: resourceName
+          type: string
+          description: The name of the Bot resource.
+        - id: channelName
+          type: <xref uid="@azure/arm-botservice.ChannelName|beta" />
+          description: The name of the Channel resource.
+        - id: parameters
+          type: <xref uid="@azure/arm-botservice.BotChannel|beta" />
+          description: The parameters to provide for the created bot.
+        - id: options
+          type: >-
+            <xref uid="@azure/arm-botservice.ChannelsCreateOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-botservice.ChannelsCreateResponse|beta" />&gt;
+  - name: delete(string, string, string, ChannelsDeleteOptionalParams)
+    uid: '@azure/arm-botservice.Channels.delete|beta'
+    package: '@azure/arm-botservice|beta'
+    summary: Deletes a Channel registration from a Bot Service
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function delete(resourceGroupName: string, resourceName: string,
+        channelName: string, options?: ChannelsDeleteOptionalParams):
+        Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the Bot resource group in the user subscription.
+        - id: resourceName
+          type: string
+          description: The name of the Bot resource.
+        - id: channelName
+          type: string
+          description: The name of the Bot resource.
+        - id: options
+          type: >-
+            <xref uid="@azure/arm-botservice.ChannelsDeleteOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: get(string, string, string, ChannelsGetOptionalParams)
+    uid: '@azure/arm-botservice.Channels.get|beta'
+    package: '@azure/arm-botservice|beta'
+    summary: Returns a BotService Channel registration specified by the parameters.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, resourceName: string,
+        channelName: string, options?: ChannelsGetOptionalParams):
+        Promise<ChannelsGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the Bot resource group in the user subscription.
+        - id: resourceName
+          type: string
+          description: The name of the Bot resource.
+        - id: channelName
+          type: string
+          description: The name of the Bot resource.
+        - id: options
+          type: <xref uid="@azure/arm-botservice.ChannelsGetOptionalParams|beta" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref uid="@azure/arm-botservice.ChannelsGetResponse|beta"
+          />&gt;
+  - name: >-
+      listByResourceGroup(string, string,
+      ChannelsListByResourceGroupOptionalParams)
+    uid: '@azure/arm-botservice.Channels.listByResourceGroup|beta'
+    package: '@azure/arm-botservice|beta'
+    summary: Returns all the Channel registrations of a particular BotService resource
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string, resourceName:
+        string, options?: ChannelsListByResourceGroupOptionalParams):
+        PagedAsyncIterableIterator<BotChannel>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the Bot resource group in the user subscription.
+        - id: resourceName
+          type: string
+          description: The name of the Bot resource.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-botservice.ChannelsListByResourceGroupOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-botservice.BotChannel|beta" />&gt;
+  - name: >-
+      listWithKeys(string, string, ChannelName,
+      ChannelsListWithKeysOptionalParams)
+    uid: '@azure/arm-botservice.Channels.listWithKeys|beta'
+    package: '@azure/arm-botservice|beta'
+    summary: Lists a Channel registration for a Bot Service including secrets
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listWithKeys(resourceGroupName: string, resourceName: string,
+        channelName: ChannelName, options?: ChannelsListWithKeysOptionalParams):
+        Promise<ChannelsListWithKeysResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the Bot resource group in the user subscription.
+        - id: resourceName
+          type: string
+          description: The name of the Bot resource.
+        - id: channelName
+          type: <xref uid="@azure/arm-botservice.ChannelName|beta" />
+          description: The name of the Channel resource.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-botservice.ChannelsListWithKeysOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-botservice.ChannelsListWithKeysResponse|beta" />&gt;
+  - name: update(string, string, ChannelName, ChannelsUpdateOptionalParams)
+    uid: '@azure/arm-botservice.Channels.update|beta'
+    package: '@azure/arm-botservice|beta'
+    summary: Updates a Channel registration for a Bot Service
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function update(resourceGroupName: string, resourceName: string,
+        channelName: ChannelName, options?: ChannelsUpdateOptionalParams):
+        Promise<ChannelsUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the Bot resource group in the user subscription.
+        - id: resourceName
+          type: string
+          description: The name of the Bot resource.
+        - id: channelName
+          type: <xref uid="@azure/arm-botservice.ChannelName|beta" />
+          description: The name of the Channel resource.
+        - id: options
+          type: >-
+            <xref uid="@azure/arm-botservice.ChannelsUpdateOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-botservice.ChannelsUpdateResponse|beta" />&gt;

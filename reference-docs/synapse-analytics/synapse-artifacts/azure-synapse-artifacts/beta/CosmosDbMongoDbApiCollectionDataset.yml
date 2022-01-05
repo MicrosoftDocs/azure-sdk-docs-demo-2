@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: CosmosDbMongoDbApiCollectionDataset
+uid: '@azure/synapse-artifacts.CosmosDbMongoDbApiCollectionDataset|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: The CosmosDB (MongoDB API) database dataset.
+fullName: CosmosDbMongoDbApiCollectionDataset
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type CosmosDbMongoDbApiCollectionDataset = Dataset & { collection: any, type:
+  "CosmosDbMongoDbApiCollection" }

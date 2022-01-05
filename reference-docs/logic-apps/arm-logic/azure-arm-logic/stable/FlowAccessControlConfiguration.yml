@@ -1,0 +1,71 @@
+### YamlMime:TSType
+name: FlowAccessControlConfiguration
+uid: '@azure/arm-logic.FlowAccessControlConfiguration|stable'
+package: '@azure/arm-logic|stable'
+summary: The access control configuration.
+fullName: FlowAccessControlConfiguration
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: actions
+    uid: '@azure/arm-logic.FlowAccessControlConfiguration.actions|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The access control configuration for workflow actions.
+    fullName: actions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'actions?: FlowAccessControlConfigurationPolicy'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-logic.FlowAccessControlConfigurationPolicy|stable" />
+  - name: contents
+    uid: '@azure/arm-logic.FlowAccessControlConfiguration.contents|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The access control configuration for accessing workflow run contents.
+    fullName: contents
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'contents?: FlowAccessControlConfigurationPolicy'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-logic.FlowAccessControlConfigurationPolicy|stable" />
+  - name: triggers
+    uid: '@azure/arm-logic.FlowAccessControlConfiguration.triggers|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The access control configuration for invoking workflow triggers.
+    fullName: triggers
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'triggers?: FlowAccessControlConfigurationPolicy'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-logic.FlowAccessControlConfigurationPolicy|stable" />
+  - name: workflowManagement
+    uid: '@azure/arm-logic.FlowAccessControlConfiguration.workflowManagement|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The access control configuration for workflow management.
+    fullName: workflowManagement
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'workflowManagement?: FlowAccessControlConfigurationPolicy'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-logic.FlowAccessControlConfigurationPolicy|stable" />

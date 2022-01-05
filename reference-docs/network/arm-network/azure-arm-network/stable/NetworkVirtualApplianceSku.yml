@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: NetworkVirtualApplianceSku
+uid: '@azure/arm-network.NetworkVirtualApplianceSku|stable'
+package: '@azure/arm-network|stable'
+summary: Definition of the NetworkVirtualApplianceSkus resource.
+fullName: NetworkVirtualApplianceSku
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type NetworkVirtualApplianceSku = Resource & { availableScaleUnits?:
+  NetworkVirtualApplianceSkuInstances[], availableVersions?: string[], etag?:
+  undefined | string, vendor?: undefined | string }

@@ -1,0 +1,758 @@
+### YamlMime:TSType
+name: ApplicationGateways
+uid: '@azure/arm-network.ApplicationGateways|stable'
+package: '@azure/arm-network|stable'
+summary: Interface representing a ApplicationGateways.
+fullName: ApplicationGateways
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      beginBackendHealth(string, string,
+      ApplicationGatewaysBackendHealthOptionalParams)
+    uid: '@azure/arm-network.ApplicationGateways.beginBackendHealth|stable'
+    package: '@azure/arm-network|stable'
+    summary: >-
+      Gets the backend health of the specified application gateway in a resource
+      group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginBackendHealth(resourceGroupName: string,
+        applicationGatewayName: string, options?:
+        ApplicationGatewaysBackendHealthOptionalParams):
+        Promise<PollerLike<PollOperationState<ApplicationGatewaysBackendHealthResponse>,
+        ApplicationGatewaysBackendHealthResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: applicationGatewayName
+          type: string
+          description: The name of the application gateway.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ApplicationGatewaysBackendHealthOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-network.ApplicationGatewaysBackendHealthResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-network.ApplicationGatewaysBackendHealthResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginBackendHealthAndWait(string, string,
+      ApplicationGatewaysBackendHealthOptionalParams)
+    uid: '@azure/arm-network.ApplicationGateways.beginBackendHealthAndWait|stable'
+    package: '@azure/arm-network|stable'
+    summary: >-
+      Gets the backend health of the specified application gateway in a resource
+      group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginBackendHealthAndWait(resourceGroupName: string,
+        applicationGatewayName: string, options?:
+        ApplicationGatewaysBackendHealthOptionalParams):
+        Promise<ApplicationGatewaysBackendHealthResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: applicationGatewayName
+          type: string
+          description: The name of the application gateway.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ApplicationGatewaysBackendHealthOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.ApplicationGatewaysBackendHealthResponse|stable"
+          />&gt;
+  - name: >-
+      beginBackendHealthOnDemand(string, string,
+      ApplicationGatewayOnDemandProbe,
+      ApplicationGatewaysBackendHealthOnDemandOptionalParams)
+    uid: '@azure/arm-network.ApplicationGateways.beginBackendHealthOnDemand|stable'
+    package: '@azure/arm-network|stable'
+    summary: >-
+      Gets the backend health for given combination of backend pool and http
+      setting of the specified
+
+      application gateway in a resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginBackendHealthOnDemand(resourceGroupName: string,
+        applicationGatewayName: string, probeRequest:
+        ApplicationGatewayOnDemandProbe, options?:
+        ApplicationGatewaysBackendHealthOnDemandOptionalParams):
+        Promise<PollerLike<PollOperationState<ApplicationGatewaysBackendHealthOnDemandResponse>,
+        ApplicationGatewaysBackendHealthOnDemandResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: applicationGatewayName
+          type: string
+          description: The name of the application gateway.
+        - id: probeRequest
+          type: >-
+            <xref
+            uid="@azure/arm-network.ApplicationGatewayOnDemandProbe|stable" />
+          description: Request body for on-demand test probe operation.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ApplicationGatewaysBackendHealthOnDemandOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-network.ApplicationGatewaysBackendHealthOnDemandResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-network.ApplicationGatewaysBackendHealthOnDemandResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginBackendHealthOnDemandAndWait(string, string,
+      ApplicationGatewayOnDemandProbe,
+      ApplicationGatewaysBackendHealthOnDemandOptionalParams)
+    uid: >-
+      @azure/arm-network.ApplicationGateways.beginBackendHealthOnDemandAndWait|stable
+    package: '@azure/arm-network|stable'
+    summary: >-
+      Gets the backend health for given combination of backend pool and http
+      setting of the specified
+
+      application gateway in a resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginBackendHealthOnDemandAndWait(resourceGroupName: string,
+        applicationGatewayName: string, probeRequest:
+        ApplicationGatewayOnDemandProbe, options?:
+        ApplicationGatewaysBackendHealthOnDemandOptionalParams):
+        Promise<ApplicationGatewaysBackendHealthOnDemandResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: applicationGatewayName
+          type: string
+          description: The name of the application gateway.
+        - id: probeRequest
+          type: >-
+            <xref
+            uid="@azure/arm-network.ApplicationGatewayOnDemandProbe|stable" />
+          description: Request body for on-demand test probe operation.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ApplicationGatewaysBackendHealthOnDemandOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.ApplicationGatewaysBackendHealthOnDemandResponse|stable"
+          />&gt;
+  - name: >-
+      beginCreateOrUpdate(string, string, ApplicationGateway,
+      ApplicationGatewaysCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-network.ApplicationGateways.beginCreateOrUpdate|stable'
+    package: '@azure/arm-network|stable'
+    summary: Creates or updates the specified application gateway.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string,
+        applicationGatewayName: string, parameters: ApplicationGateway,
+        options?: ApplicationGatewaysCreateOrUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<ApplicationGatewaysCreateOrUpdateResponse>,
+        ApplicationGatewaysCreateOrUpdateResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: applicationGatewayName
+          type: string
+          description: The name of the application gateway.
+        - id: parameters
+          type: <xref uid="@azure/arm-network.ApplicationGateway|stable" />
+          description: >-
+            Parameters supplied to the create or update application gateway
+            operation.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ApplicationGatewaysCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-network.ApplicationGatewaysCreateOrUpdateResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-network.ApplicationGatewaysCreateOrUpdateResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginCreateOrUpdateAndWait(string, string, ApplicationGateway,
+      ApplicationGatewaysCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-network.ApplicationGateways.beginCreateOrUpdateAndWait|stable'
+    package: '@azure/arm-network|stable'
+    summary: Creates or updates the specified application gateway.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdateAndWait(resourceGroupName: string,
+        applicationGatewayName: string, parameters: ApplicationGateway,
+        options?: ApplicationGatewaysCreateOrUpdateOptionalParams):
+        Promise<ApplicationGatewaysCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: applicationGatewayName
+          type: string
+          description: The name of the application gateway.
+        - id: parameters
+          type: <xref uid="@azure/arm-network.ApplicationGateway|stable" />
+          description: >-
+            Parameters supplied to the create or update application gateway
+            operation.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ApplicationGatewaysCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.ApplicationGatewaysCreateOrUpdateResponse|stable"
+          />&gt;
+  - name: beginDelete(string, string, ApplicationGatewaysDeleteOptionalParams)
+    uid: '@azure/arm-network.ApplicationGateways.beginDelete|stable'
+    package: '@azure/arm-network|stable'
+    summary: Deletes the specified application gateway.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDelete(resourceGroupName: string, applicationGatewayName:
+        string, options?: ApplicationGatewaysDeleteOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: applicationGatewayName
+          type: string
+          description: The name of the application gateway.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ApplicationGatewaysDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: >-
+      beginDeleteAndWait(string, string,
+      ApplicationGatewaysDeleteOptionalParams)
+    uid: '@azure/arm-network.ApplicationGateways.beginDeleteAndWait|stable'
+    package: '@azure/arm-network|stable'
+    summary: Deletes the specified application gateway.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteAndWait(resourceGroupName: string,
+        applicationGatewayName: string, options?:
+        ApplicationGatewaysDeleteOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: applicationGatewayName
+          type: string
+          description: The name of the application gateway.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ApplicationGatewaysDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: beginStart(string, string, ApplicationGatewaysStartOptionalParams)
+    uid: '@azure/arm-network.ApplicationGateways.beginStart|stable'
+    package: '@azure/arm-network|stable'
+    summary: Starts the specified application gateway.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginStart(resourceGroupName: string, applicationGatewayName:
+        string, options?: ApplicationGatewaysStartOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: applicationGatewayName
+          type: string
+          description: The name of the application gateway.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ApplicationGatewaysStartOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: beginStartAndWait(string, string, ApplicationGatewaysStartOptionalParams)
+    uid: '@azure/arm-network.ApplicationGateways.beginStartAndWait|stable'
+    package: '@azure/arm-network|stable'
+    summary: Starts the specified application gateway.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginStartAndWait(resourceGroupName: string,
+        applicationGatewayName: string, options?:
+        ApplicationGatewaysStartOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: applicationGatewayName
+          type: string
+          description: The name of the application gateway.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ApplicationGatewaysStartOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: beginStop(string, string, ApplicationGatewaysStopOptionalParams)
+    uid: '@azure/arm-network.ApplicationGateways.beginStop|stable'
+    package: '@azure/arm-network|stable'
+    summary: Stops the specified application gateway in a resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginStop(resourceGroupName: string, applicationGatewayName:
+        string, options?: ApplicationGatewaysStopOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: applicationGatewayName
+          type: string
+          description: The name of the application gateway.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ApplicationGatewaysStopOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: beginStopAndWait(string, string, ApplicationGatewaysStopOptionalParams)
+    uid: '@azure/arm-network.ApplicationGateways.beginStopAndWait|stable'
+    package: '@azure/arm-network|stable'
+    summary: Stops the specified application gateway in a resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginStopAndWait(resourceGroupName: string,
+        applicationGatewayName: string, options?:
+        ApplicationGatewaysStopOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: applicationGatewayName
+          type: string
+          description: The name of the application gateway.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ApplicationGatewaysStopOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: get(string, string, ApplicationGatewaysGetOptionalParams)
+    uid: '@azure/arm-network.ApplicationGateways.get|stable'
+    package: '@azure/arm-network|stable'
+    summary: Gets the specified application gateway.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, applicationGatewayName: string,
+        options?: ApplicationGatewaysGetOptionalParams):
+        Promise<ApplicationGatewaysGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: applicationGatewayName
+          type: string
+          description: The name of the application gateway.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ApplicationGatewaysGetOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.ApplicationGatewaysGetResponse|stable" />&gt;
+  - name: >-
+      getSslPredefinedPolicy(string,
+      ApplicationGatewaysGetSslPredefinedPolicyOptionalParams)
+    uid: '@azure/arm-network.ApplicationGateways.getSslPredefinedPolicy|stable'
+    package: '@azure/arm-network|stable'
+    summary: Gets Ssl predefined policy with the specified policy name.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getSslPredefinedPolicy(predefinedPolicyName: string, options?:
+        ApplicationGatewaysGetSslPredefinedPolicyOptionalParams):
+        Promise<ApplicationGatewaysGetSslPredefinedPolicyResponse>
+      parameters:
+        - id: predefinedPolicyName
+          type: string
+          description: Name of Ssl predefined policy.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ApplicationGatewaysGetSslPredefinedPolicyOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.ApplicationGatewaysGetSslPredefinedPolicyResponse|stable"
+          />&gt;
+  - name: list(string, ApplicationGatewaysListOptionalParams)
+    uid: '@azure/arm-network.ApplicationGateways.list|stable'
+    package: '@azure/arm-network|stable'
+    summary: Lists all application gateways in a resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, options?:
+        ApplicationGatewaysListOptionalParams):
+        PagedAsyncIterableIterator<ApplicationGateway>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ApplicationGatewaysListOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-network.ApplicationGateway|stable" />&gt;
+  - name: listAll(ApplicationGatewaysListAllOptionalParams)
+    uid: '@azure/arm-network.ApplicationGateways.listAll|stable'
+    package: '@azure/arm-network|stable'
+    summary: Gets all the application gateways in a subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listAll(options?: ApplicationGatewaysListAllOptionalParams):
+        PagedAsyncIterableIterator<ApplicationGateway>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ApplicationGatewaysListAllOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-network.ApplicationGateway|stable" />&gt;
+  - name: >-
+      listAvailableRequestHeaders(ApplicationGatewaysListAvailableRequestHeadersOptionalParams)
+    uid: '@azure/arm-network.ApplicationGateways.listAvailableRequestHeaders|stable'
+    package: '@azure/arm-network|stable'
+    summary: Lists all available request headers.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listAvailableRequestHeaders(options?:
+        ApplicationGatewaysListAvailableRequestHeadersOptionalParams):
+        Promise<ApplicationGatewaysListAvailableRequestHeadersResponse>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ApplicationGatewaysListAvailableRequestHeadersOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.ApplicationGatewaysListAvailableRequestHeadersResponse|stable"
+          />&gt;
+  - name: >-
+      listAvailableResponseHeaders(ApplicationGatewaysListAvailableResponseHeadersOptionalParams)
+    uid: '@azure/arm-network.ApplicationGateways.listAvailableResponseHeaders|stable'
+    package: '@azure/arm-network|stable'
+    summary: Lists all available response headers.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listAvailableResponseHeaders(options?:
+        ApplicationGatewaysListAvailableResponseHeadersOptionalParams):
+        Promise<ApplicationGatewaysListAvailableResponseHeadersResponse>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ApplicationGatewaysListAvailableResponseHeadersOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.ApplicationGatewaysListAvailableResponseHeadersResponse|stable"
+          />&gt;
+  - name: >-
+      listAvailableServerVariables(ApplicationGatewaysListAvailableServerVariablesOptionalParams)
+    uid: '@azure/arm-network.ApplicationGateways.listAvailableServerVariables|stable'
+    package: '@azure/arm-network|stable'
+    summary: Lists all available server variables.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listAvailableServerVariables(options?:
+        ApplicationGatewaysListAvailableServerVariablesOptionalParams):
+        Promise<ApplicationGatewaysListAvailableServerVariablesResponse>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ApplicationGatewaysListAvailableServerVariablesOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.ApplicationGatewaysListAvailableServerVariablesResponse|stable"
+          />&gt;
+  - name: >-
+      listAvailableSslOptions(ApplicationGatewaysListAvailableSslOptionsOptionalParams)
+    uid: '@azure/arm-network.ApplicationGateways.listAvailableSslOptions|stable'
+    package: '@azure/arm-network|stable'
+    summary: Lists available Ssl options for configuring Ssl policy.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listAvailableSslOptions(options?:
+        ApplicationGatewaysListAvailableSslOptionsOptionalParams):
+        Promise<ApplicationGatewaysListAvailableSslOptionsResponse>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ApplicationGatewaysListAvailableSslOptionsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.ApplicationGatewaysListAvailableSslOptionsResponse|stable"
+          />&gt;
+  - name: >-
+      listAvailableSslPredefinedPolicies(ApplicationGatewaysListAvailableSslPredefinedPoliciesOptionalParams)
+    uid: >-
+      @azure/arm-network.ApplicationGateways.listAvailableSslPredefinedPolicies|stable
+    package: '@azure/arm-network|stable'
+    summary: Lists all SSL predefined policies for configuring Ssl policy.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listAvailableSslPredefinedPolicies(options?:
+        ApplicationGatewaysListAvailableSslPredefinedPoliciesOptionalParams):
+        PagedAsyncIterableIterator<ApplicationGatewaySslPredefinedPolicy>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ApplicationGatewaysListAvailableSslPredefinedPoliciesOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-network.ApplicationGatewaySslPredefinedPolicy|stable"
+          />&gt;
+  - name: >-
+      listAvailableWafRuleSets(ApplicationGatewaysListAvailableWafRuleSetsOptionalParams)
+    uid: '@azure/arm-network.ApplicationGateways.listAvailableWafRuleSets|stable'
+    package: '@azure/arm-network|stable'
+    summary: Lists all available web application firewall rule sets.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listAvailableWafRuleSets(options?:
+        ApplicationGatewaysListAvailableWafRuleSetsOptionalParams):
+        Promise<ApplicationGatewaysListAvailableWafRuleSetsResponse>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ApplicationGatewaysListAvailableWafRuleSetsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.ApplicationGatewaysListAvailableWafRuleSetsResponse|stable"
+          />&gt;
+  - name: >-
+      updateTags(string, string, TagsObject,
+      ApplicationGatewaysUpdateTagsOptionalParams)
+    uid: '@azure/arm-network.ApplicationGateways.updateTags|stable'
+    package: '@azure/arm-network|stable'
+    summary: Updates the specified application gateway tags.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string, applicationGatewayName:
+        string, parameters: TagsObject, options?:
+        ApplicationGatewaysUpdateTagsOptionalParams):
+        Promise<ApplicationGatewaysUpdateTagsResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: applicationGatewayName
+          type: string
+          description: The name of the application gateway.
+        - id: parameters
+          type: <xref uid="@azure/arm-network.TagsObject|stable" />
+          description: Parameters supplied to update application gateway tags.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ApplicationGatewaysUpdateTagsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.ApplicationGatewaysUpdateTagsResponse|stable"
+          />&gt;

@@ -149,6 +149,560 @@ properties:
       return:
         description: ''
         type: string
+inheritedMethods:
+  - name: delete(boolean, PathDeleteOptions)
+    uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.delete'
+    package: '@azure/storage-file-datalake'
+    summary: >-
+      Delete current path (directory or file).
+
+
+      See
+      https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/delete
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function delete(recursive?: boolean, options?: PathDeleteOptions):
+        Promise<PathDeleteResponse>
+      parameters:
+        - id: recursive
+          type: boolean
+          description: >-
+            Required and valid only when the resource is a directory. If "true",
+            all paths beneath the directory will be deleted.
+        - id: options
+          type: <xref uid="@azure/storage-file-datalake.PathDeleteOptions|stable" />
+          description: |
+            Optional. Options when deleting path.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/storage-file-datalake.PathDeleteResponse|stable" />&gt;
+  - name: deleteIfExists(boolean, PathDeleteOptions)
+    uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.deleteIfExists'
+    package: '@azure/storage-file-datalake'
+    summary: >-
+      Delete current path (directory or file) if it exists.
+
+
+      See
+      https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/delete
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function deleteIfExists(recursive?: boolean, options?:
+        PathDeleteOptions): Promise<PathDeleteIfExistsResponse>
+      parameters:
+        - id: recursive
+          type: boolean
+          description: >-
+            Required and valid only when the resource is a directory. If "true",
+            all paths beneath the directory will be deleted.
+        - id: options
+          type: <xref uid="@azure/storage-file-datalake.PathDeleteOptions|stable" />
+          description: |
+            -
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/storage-file-datalake.PathDeleteIfExistsResponse|stable"
+          />&gt;
+  - name: exists(PathExistsOptions)
+    uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.exists'
+    package: '@azure/storage-file-datalake'
+    summary: >
+      Returns true if the Data Lake file represented by this client exists;
+      false otherwise.
+
+      NOTE: use this function with care since an existing file might be deleted
+      by other clients or
+
+      applications. Vice versa new files might be added by other clients or
+      applications after this
+
+      function completes.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function exists(options?: PathExistsOptions): Promise<boolean>'
+      parameters:
+        - id: options
+          type: <xref uid="@azure/storage-file-datalake.PathExistsOptions|stable" />
+          description: |
+            options to Exists operation.
+      return:
+        description: ''
+        type: Promise&lt;boolean&gt;
+  - name: getAccessControl(PathGetAccessControlOptions)
+    uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.getAccessControl'
+    package: '@azure/storage-file-datalake'
+    summary: >-
+      Returns the access control data for a path (directory of file).
+
+
+      See
+      https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/getproperties
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getAccessControl(options?: PathGetAccessControlOptions):
+        Promise<PathGetAccessControlResponse>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/storage-file-datalake.PathGetAccessControlOptions|stable"
+            />
+          description: |
+            Optional. Options when getting file access control.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/storage-file-datalake.PathGetAccessControlResponse|stable"
+          />&gt;
+  - name: getDataLakeLeaseClient(string)
+    uid: >-
+      @azure/storage-file-datalake.DataLakeDirectoryClient.getDataLakeLeaseClient
+    package: '@azure/storage-file-datalake'
+    summary: >-
+      Get a
+      <xref:@azure/storage-file-datalake.DataLakeDirectoryClient.getDataLakeLeaseClient|stable>
+      that manages leases on the path (directory or file).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getDataLakeLeaseClient(proposeLeaseId?: string):
+        DataLakeLeaseClient
+      parameters:
+        - id: proposeLeaseId
+          type: string
+          description: |
+            Optional. Initial proposed lease Id.
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-file-datalake.DataLakeLeaseClient|stable" />
+  - name: getProperties(PathGetPropertiesOptions)
+    uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.getProperties'
+    package: '@azure/storage-file-datalake'
+    summary: >-
+      Returns all user-defined metadata, standard HTTP properties, and system
+      properties
+
+      for the path (directory or file).
+
+      WARNING: The `metadata` object returned in the response will have its keys
+      in lowercase, even if
+
+      they originally contained uppercase characters. This differs from the
+      metadata keys returned by
+
+      the methods of
+      <xref:@azure/storage-file-datalake.DataLakeFileSystemClient|stable> that
+      list paths using the `includeMetadata` option, which
+
+      will retain their original casing.
+
+
+
+      See
+      https://docs.microsoft.com/en-us/rest/api/storageservices/get-blob-properties
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getProperties(options?: PathGetPropertiesOptions):
+        Promise<PathGetPropertiesResponse>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/storage-file-datalake.PathGetPropertiesOptions|stable"
+            />
+          description: |
+            Optional. Options when getting path properties.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/storage-file-datalake.PathGetPropertiesResponse|stable"
+          />&gt;
+  - name: move(string, PathMoveOptions)
+    uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.move'
+    package: '@azure/storage-file-datalake'
+    summary: >-
+      Move directory or file within same file system.
+
+
+      See
+      https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/create
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function move(destinationPath: string, options?: PathMoveOptions):
+        Promise<PathMoveResponse>
+      parameters:
+        - id: destinationPath
+          type: string
+          description: >-
+            Destination directory path like "directory" or file path
+            "directory/file".
+                                            If the destinationPath is authenticated with SAS, add the SAS to the destination path like "directory/file?sasToken".
+        - id: options
+          type: <xref uid="@azure/storage-file-datalake.PathMoveOptions|stable" />
+          description: |
+            Optional. Options when moving directory or file.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/storage-file-datalake.PathMoveResponse|stable" />&gt;
+  - name: move(string, string, PathMoveOptions)
+    uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.move_1'
+    package: '@azure/storage-file-datalake'
+    summary: >-
+      Move directory or file to another file system.
+
+
+      See
+      https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/create
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function move(destinationFileSystem: string, destinationPath: string,
+        options?: PathMoveOptions): Promise<PathMoveResponse>
+      parameters:
+        - id: destinationFileSystem
+          type: string
+          description: Destination file system like "filesystem".
+        - id: destinationPath
+          type: string
+          description: >-
+            Destination directory path like "directory" or file path
+            "directory/file"
+                                            If the destinationPath is authenticated with SAS, add the SAS to the destination path like "directory/file?sasToken".
+        - id: options
+          type: <xref uid="@azure/storage-file-datalake.PathMoveOptions|stable" />
+          description: |
+            Optional. Options when moving directory or file.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/storage-file-datalake.PathMoveResponse|stable" />&gt;
+  - name: >-
+      removeAccessControlRecursive(RemovePathAccessControlItem[],
+      PathChangeAccessControlRecursiveOptions)
+    uid: >-
+      @azure/storage-file-datalake.DataLakeDirectoryClient.removeAccessControlRecursive
+    package: '@azure/storage-file-datalake'
+    summary: >-
+      Removes the Access Control on a path and sub paths.
+
+
+      See
+      https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/update
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function removeAccessControlRecursive(acl:
+        RemovePathAccessControlItem[], options?:
+        PathChangeAccessControlRecursiveOptions):
+        Promise<PathChangeAccessControlRecursiveResponse>
+      parameters:
+        - id: acl
+          type: >-
+            <xref
+            uid="@azure/storage-file-datalake.RemovePathAccessControlItem|stable"
+            />[]
+          description: The POSIX access control list for the file or directory.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/storage-file-datalake.PathChangeAccessControlRecursiveOptions|stable"
+            />
+          description: |
+            Optional. Options
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/storage-file-datalake.PathChangeAccessControlRecursiveResponse|stable"
+          />&gt;
+  - name: setAccessControl(PathAccessControlItem[], PathSetAccessControlOptions)
+    uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.setAccessControl'
+    package: '@azure/storage-file-datalake'
+    summary: >-
+      Set the access control data for a path (directory of file).
+
+
+      See
+      https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/update
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function setAccessControl(acl: PathAccessControlItem[], options?:
+        PathSetAccessControlOptions): Promise<PathSetAccessControlResponse>
+      parameters:
+        - id: acl
+          type: >-
+            <xref
+            uid="@azure/storage-file-datalake.PathAccessControlItem|stable" />[]
+          description: The POSIX access control list for the file or directory.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/storage-file-datalake.PathSetAccessControlOptions|stable"
+            />
+          description: |
+            Optional. Options when setting path access control.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/storage-file-datalake.PathSetAccessControlResponse|stable"
+          />&gt;
+  - name: >-
+      setAccessControlRecursive(PathAccessControlItem[],
+      PathChangeAccessControlRecursiveOptions)
+    uid: >-
+      @azure/storage-file-datalake.DataLakeDirectoryClient.setAccessControlRecursive
+    package: '@azure/storage-file-datalake'
+    summary: >-
+      Sets the Access Control on a path and sub paths.
+
+
+      See
+      https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/update
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function setAccessControlRecursive(acl: PathAccessControlItem[],
+        options?: PathChangeAccessControlRecursiveOptions):
+        Promise<PathChangeAccessControlRecursiveResponse>
+      parameters:
+        - id: acl
+          type: >-
+            <xref
+            uid="@azure/storage-file-datalake.PathAccessControlItem|stable" />[]
+          description: The POSIX access control list for the file or directory.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/storage-file-datalake.PathChangeAccessControlRecursiveOptions|stable"
+            />
+          description: |
+            Optional. Options
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/storage-file-datalake.PathChangeAccessControlRecursiveResponse|stable"
+          />&gt;
+  - name: setHttpHeaders(PathHttpHeaders, PathSetHttpHeadersOptions)
+    uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.setHttpHeaders'
+    package: '@azure/storage-file-datalake'
+    summary: >-
+      Sets system properties on the path (directory or file).
+
+      If no value provided, or no value provided for the specified blob HTTP
+      headers,
+
+      these blob HTTP headers without a value will be cleared.
+
+
+      See
+      https://docs.microsoft.com/en-us/rest/api/storageservices/set-blob-properties
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function setHttpHeaders(httpHeaders: PathHttpHeaders, options?:
+        PathSetHttpHeadersOptions): Promise<PathSetHttpHeadersResponse>
+      parameters:
+        - id: httpHeaders
+          type: <xref uid="@azure/storage-file-datalake.PathHttpHeaders|stable" />
+          description: '-'
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/storage-file-datalake.PathSetHttpHeadersOptions|stable"
+            />
+          description: |
+            -
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/storage-file-datalake.PathSetHttpHeadersResponse|stable"
+          />&gt;
+  - name: setMetadata(Metadata, PathSetMetadataOptions)
+    uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.setMetadata'
+    package: '@azure/storage-file-datalake'
+    summary: >-
+      Sets user-defined metadata for the specified path (directory of file) as
+      one or more name-value pairs.
+
+      If no option provided, or no metadata defined in the parameter, the path
+
+      metadata will be removed.
+
+
+
+      See
+      https://docs.microsoft.com/en-us/rest/api/storageservices/set-blob-metadata
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function setMetadata(metadata?: Metadata, options?:
+        PathSetMetadataOptions): Promise<PathSetMetadataResponse>
+      parameters:
+        - id: metadata
+          type: <xref uid="@azure/storage-file-datalake.Metadata|stable" />
+          description: |-
+            Optional. Replace existing metadata with this value.
+                                         If no value provided the existing metadata will be removed.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/storage-file-datalake.PathSetMetadataOptions|stable" />
+          description: |
+            Optional. Options when setting path metadata.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/storage-file-datalake.PathSetMetadataResponse|stable"
+          />&gt;
+  - name: setPermissions(PathPermissions, PathSetPermissionsOptions)
+    uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.setPermissions'
+    package: '@azure/storage-file-datalake'
+    summary: >-
+      Sets the file permissions on a path.
+
+
+      See
+      https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/update
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function setPermissions(permissions: PathPermissions, options?:
+        PathSetPermissionsOptions): Promise<PathSetAccessControlResponse>
+      parameters:
+        - id: permissions
+          type: <xref uid="@azure/storage-file-datalake.PathPermissions|stable" />
+          description: >-
+            The POSIX access permissions for the file owner, the file owning
+            group, and others.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/storage-file-datalake.PathSetPermissionsOptions|stable"
+            />
+          description: |
+            Optional. Options when setting path permissions.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/storage-file-datalake.PathSetAccessControlResponse|stable"
+          />&gt;
+  - name: toDirectoryClient()
+    uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.toDirectoryClient'
+    package: '@azure/storage-file-datalake'
+    summary: >-
+      Convert current DataLakePathClient to DataLakeDirectoryClient if current
+      path is a directory.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function toDirectoryClient(): DataLakeDirectoryClient'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/storage-file-datalake.DataLakeDirectoryClient|stable" />
+  - name: toFileClient()
+    uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.toFileClient'
+    package: '@azure/storage-file-datalake'
+    summary: >-
+      Convert current DataLakePathClient to DataLakeFileClient if current path
+      is a file.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function toFileClient(): DataLakeFileClient'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-file-datalake.DataLakeFileClient|stable" />
+  - name: >-
+      updateAccessControlRecursive(PathAccessControlItem[],
+      PathChangeAccessControlRecursiveOptions)
+    uid: >-
+      @azure/storage-file-datalake.DataLakeDirectoryClient.updateAccessControlRecursive
+    package: '@azure/storage-file-datalake'
+    summary: >-
+      Modifies the Access Control on a path and sub paths.
+
+
+      See
+      https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/update
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function updateAccessControlRecursive(acl: PathAccessControlItem[],
+        options?: PathChangeAccessControlRecursiveOptions):
+        Promise<PathChangeAccessControlRecursiveResponse>
+      parameters:
+        - id: acl
+          type: >-
+            <xref
+            uid="@azure/storage-file-datalake.PathAccessControlItem|stable" />[]
+          description: The POSIX access control list for the file or directory.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/storage-file-datalake.PathChangeAccessControlRecursiveOptions|stable"
+            />
+          description: |
+            Optional. Options
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/storage-file-datalake.PathChangeAccessControlRecursiveResponse|stable"
+          />&gt;
 methods:
   - name: create(DirectoryCreateOptions)
     uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.create_1|stable'
@@ -278,96 +832,6 @@ methods:
           Promise&lt;<xref
           uid="@azure/storage-file-datalake.PathCreateIfNotExistsResponse|stable"
           />&gt;
-  - name: delete(boolean, PathDeleteOptions)
-    uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.delete|stable'
-    package: '@azure/storage-file-datalake|stable'
-    summary: >-
-      Delete current path (directory or file).
-
-
-      See
-      https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/delete
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function delete(recursive?: boolean, options?: PathDeleteOptions):
-        Promise<PathDeleteResponse>
-      parameters:
-        - id: recursive
-          type: boolean
-          description: >-
-            Required and valid only when the resource is a directory. If "true",
-            all paths beneath the directory will be deleted.
-        - id: options
-          type: <xref uid="@azure/storage-file-datalake.PathDeleteOptions|stable" />
-          description: |
-            Optional. Options when deleting path.
-      return:
-        description: ''
-        type: >-
-          Promise&lt;<xref
-          uid="@azure/storage-file-datalake.PathDeleteResponse|stable" />&gt;
-  - name: deleteIfExists(boolean, PathDeleteOptions)
-    uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.deleteIfExists|stable'
-    package: '@azure/storage-file-datalake|stable'
-    summary: >-
-      Delete current path (directory or file) if it exists.
-
-
-      See
-      https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/delete
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function deleteIfExists(recursive?: boolean, options?:
-        PathDeleteOptions): Promise<PathDeleteIfExistsResponse>
-      parameters:
-        - id: recursive
-          type: boolean
-          description: >-
-            Required and valid only when the resource is a directory. If "true",
-            all paths beneath the directory will be deleted.
-        - id: options
-          type: <xref uid="@azure/storage-file-datalake.PathDeleteOptions|stable" />
-          description: |
-            -
-      return:
-        description: ''
-        type: >-
-          Promise&lt;<xref
-          uid="@azure/storage-file-datalake.PathDeleteIfExistsResponse|stable"
-          />&gt;
-  - name: exists(PathExistsOptions)
-    uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.exists|stable'
-    package: '@azure/storage-file-datalake|stable'
-    summary: >
-      Returns true if the Data Lake file represented by this client exists;
-      false otherwise.
-
-      NOTE: use this function with care since an existing file might be deleted
-      by other clients or
-
-      applications. Vice versa new files might be added by other clients or
-      applications after this
-
-      function completes.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function exists(options?: PathExistsOptions): Promise<boolean>'
-      parameters:
-        - id: options
-          type: <xref uid="@azure/storage-file-datalake.PathExistsOptions|stable" />
-          description: |
-            options to Exists operation.
-      return:
-        description: ''
-        type: Promise&lt;boolean&gt;
   - name: generateSasUrl(DirectoryGenerateSasUrlOptions)
     uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.generateSasUrl|stable'
     package: '@azure/storage-file-datalake|stable'
@@ -403,60 +867,6 @@ methods:
           The SAS URI consisting of the URI to the resource represented by this
           client, followed by the generated SAS token.
         type: Promise&lt;string&gt;
-  - name: getAccessControl(PathGetAccessControlOptions)
-    uid: >-
-      @azure/storage-file-datalake.DataLakeDirectoryClient.getAccessControl|stable
-    package: '@azure/storage-file-datalake|stable'
-    summary: >-
-      Returns the access control data for a path (directory of file).
-
-
-      See
-      https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/getproperties
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function getAccessControl(options?: PathGetAccessControlOptions):
-        Promise<PathGetAccessControlResponse>
-      parameters:
-        - id: options
-          type: >-
-            <xref
-            uid="@azure/storage-file-datalake.PathGetAccessControlOptions|stable"
-            />
-          description: |
-            Optional. Options when getting file access control.
-      return:
-        description: ''
-        type: >-
-          Promise&lt;<xref
-          uid="@azure/storage-file-datalake.PathGetAccessControlResponse|stable"
-          />&gt;
-  - name: getDataLakeLeaseClient(string)
-    uid: >-
-      @azure/storage-file-datalake.DataLakeDirectoryClient.getDataLakeLeaseClient|stable
-    package: '@azure/storage-file-datalake|stable'
-    summary: >-
-      Get a
-      <xref:@azure/storage-file-datalake.DataLakeDirectoryClient.getDataLakeLeaseClient|stable>
-      that manages leases on the path (directory or file).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function getDataLakeLeaseClient(proposeLeaseId?: string):
-        DataLakeLeaseClient
-      parameters:
-        - id: proposeLeaseId
-          type: string
-          description: |
-            Optional. Initial proposed lease Id.
-      return:
-        description: ''
-        type: <xref uid="@azure/storage-file-datalake.DataLakeLeaseClient|stable" />
   - name: getFileClient(string)
     uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.getFileClient|stable'
     package: '@azure/storage-file-datalake|stable'
@@ -476,52 +886,6 @@ methods:
       return:
         description: ''
         type: <xref uid="@azure/storage-file-datalake.DataLakeFileClient|stable" />
-  - name: getProperties(PathGetPropertiesOptions)
-    uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.getProperties|stable'
-    package: '@azure/storage-file-datalake|stable'
-    summary: >-
-      Returns all user-defined metadata, standard HTTP properties, and system
-      properties
-
-      for the path (directory or file).
-
-      WARNING: The `metadata` object returned in the response will have its keys
-      in lowercase, even if
-
-      they originally contained uppercase characters. This differs from the
-      metadata keys returned by
-
-      the methods of
-      <xref:@azure/storage-file-datalake.DataLakeFileSystemClient|stable> that
-      list paths using the `includeMetadata` option, which
-
-      will retain their original casing.
-
-
-
-      See
-      https://docs.microsoft.com/en-us/rest/api/storageservices/get-blob-properties
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function getProperties(options?: PathGetPropertiesOptions):
-        Promise<PathGetPropertiesResponse>
-      parameters:
-        - id: options
-          type: >-
-            <xref
-            uid="@azure/storage-file-datalake.PathGetPropertiesOptions|stable"
-            />
-          description: |
-            Optional. Options when getting path properties.
-      return:
-        description: ''
-        type: >-
-          Promise&lt;<xref
-          uid="@azure/storage-file-datalake.PathGetPropertiesResponse|stable"
-          />&gt;
   - name: getSubdirectoryClient(string)
     uid: >-
       @azure/storage-file-datalake.DataLakeDirectoryClient.getSubdirectoryClient|stable
@@ -547,370 +911,4 @@ methods:
         type: >-
           <xref
           uid="@azure/storage-file-datalake.DataLakeDirectoryClient|stable" />
-  - name: move(string, PathMoveOptions)
-    uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.move|stable'
-    package: '@azure/storage-file-datalake|stable'
-    summary: >-
-      Move directory or file within same file system.
-
-
-      See
-      https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/create
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function move(destinationPath: string, options?: PathMoveOptions):
-        Promise<PathMoveResponse>
-      parameters:
-        - id: destinationPath
-          type: string
-          description: >-
-            Destination directory path like "directory" or file path
-            "directory/file".
-                                            If the destinationPath is authenticated with SAS, add the SAS to the destination path like "directory/file?sasToken".
-        - id: options
-          type: <xref uid="@azure/storage-file-datalake.PathMoveOptions|stable" />
-          description: |
-            Optional. Options when moving directory or file.
-      return:
-        description: ''
-        type: >-
-          Promise&lt;<xref
-          uid="@azure/storage-file-datalake.PathMoveResponse|stable" />&gt;
-  - name: move(string, string, PathMoveOptions)
-    uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.move_1|stable'
-    package: '@azure/storage-file-datalake|stable'
-    summary: >-
-      Move directory or file to another file system.
-
-
-      See
-      https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/create
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function move(destinationFileSystem: string, destinationPath: string,
-        options?: PathMoveOptions): Promise<PathMoveResponse>
-      parameters:
-        - id: destinationFileSystem
-          type: string
-          description: Destination file system like "filesystem".
-        - id: destinationPath
-          type: string
-          description: >-
-            Destination directory path like "directory" or file path
-            "directory/file"
-                                            If the destinationPath is authenticated with SAS, add the SAS to the destination path like "directory/file?sasToken".
-        - id: options
-          type: <xref uid="@azure/storage-file-datalake.PathMoveOptions|stable" />
-          description: |
-            Optional. Options when moving directory or file.
-      return:
-        description: ''
-        type: >-
-          Promise&lt;<xref
-          uid="@azure/storage-file-datalake.PathMoveResponse|stable" />&gt;
-  - name: >-
-      removeAccessControlRecursive(RemovePathAccessControlItem[],
-      PathChangeAccessControlRecursiveOptions)
-    uid: >-
-      @azure/storage-file-datalake.DataLakeDirectoryClient.removeAccessControlRecursive|stable
-    package: '@azure/storage-file-datalake|stable'
-    summary: >-
-      Removes the Access Control on a path and sub paths.
-
-
-      See
-      https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/update
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function removeAccessControlRecursive(acl:
-        RemovePathAccessControlItem[], options?:
-        PathChangeAccessControlRecursiveOptions):
-        Promise<PathChangeAccessControlRecursiveResponse>
-      parameters:
-        - id: acl
-          type: >-
-            <xref
-            uid="@azure/storage-file-datalake.RemovePathAccessControlItem|stable"
-            />[]
-          description: The POSIX access control list for the file or directory.
-        - id: options
-          type: >-
-            <xref
-            uid="@azure/storage-file-datalake.PathChangeAccessControlRecursiveOptions|stable"
-            />
-          description: |
-            Optional. Options
-      return:
-        description: ''
-        type: >-
-          Promise&lt;<xref
-          uid="@azure/storage-file-datalake.PathChangeAccessControlRecursiveResponse|stable"
-          />&gt;
-  - name: setAccessControl(PathAccessControlItem[], PathSetAccessControlOptions)
-    uid: >-
-      @azure/storage-file-datalake.DataLakeDirectoryClient.setAccessControl|stable
-    package: '@azure/storage-file-datalake|stable'
-    summary: >-
-      Set the access control data for a path (directory of file).
-
-
-      See
-      https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/update
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function setAccessControl(acl: PathAccessControlItem[], options?:
-        PathSetAccessControlOptions): Promise<PathSetAccessControlResponse>
-      parameters:
-        - id: acl
-          type: >-
-            <xref
-            uid="@azure/storage-file-datalake.PathAccessControlItem|stable" />[]
-          description: The POSIX access control list for the file or directory.
-        - id: options
-          type: >-
-            <xref
-            uid="@azure/storage-file-datalake.PathSetAccessControlOptions|stable"
-            />
-          description: |
-            Optional. Options when setting path access control.
-      return:
-        description: ''
-        type: >-
-          Promise&lt;<xref
-          uid="@azure/storage-file-datalake.PathSetAccessControlResponse|stable"
-          />&gt;
-  - name: >-
-      setAccessControlRecursive(PathAccessControlItem[],
-      PathChangeAccessControlRecursiveOptions)
-    uid: >-
-      @azure/storage-file-datalake.DataLakeDirectoryClient.setAccessControlRecursive|stable
-    package: '@azure/storage-file-datalake|stable'
-    summary: >-
-      Sets the Access Control on a path and sub paths.
-
-
-      See
-      https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/update
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function setAccessControlRecursive(acl: PathAccessControlItem[],
-        options?: PathChangeAccessControlRecursiveOptions):
-        Promise<PathChangeAccessControlRecursiveResponse>
-      parameters:
-        - id: acl
-          type: >-
-            <xref
-            uid="@azure/storage-file-datalake.PathAccessControlItem|stable" />[]
-          description: The POSIX access control list for the file or directory.
-        - id: options
-          type: >-
-            <xref
-            uid="@azure/storage-file-datalake.PathChangeAccessControlRecursiveOptions|stable"
-            />
-          description: |
-            Optional. Options
-      return:
-        description: ''
-        type: >-
-          Promise&lt;<xref
-          uid="@azure/storage-file-datalake.PathChangeAccessControlRecursiveResponse|stable"
-          />&gt;
-  - name: setHttpHeaders(PathHttpHeaders, PathSetHttpHeadersOptions)
-    uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.setHttpHeaders|stable'
-    package: '@azure/storage-file-datalake|stable'
-    summary: >-
-      Sets system properties on the path (directory or file).
-
-      If no value provided, or no value provided for the specified blob HTTP
-      headers,
-
-      these blob HTTP headers without a value will be cleared.
-
-
-      See
-      https://docs.microsoft.com/en-us/rest/api/storageservices/set-blob-properties
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function setHttpHeaders(httpHeaders: PathHttpHeaders, options?:
-        PathSetHttpHeadersOptions): Promise<PathSetHttpHeadersResponse>
-      parameters:
-        - id: httpHeaders
-          type: <xref uid="@azure/storage-file-datalake.PathHttpHeaders|stable" />
-          description: '-'
-        - id: options
-          type: >-
-            <xref
-            uid="@azure/storage-file-datalake.PathSetHttpHeadersOptions|stable"
-            />
-          description: |
-            -
-      return:
-        description: ''
-        type: >-
-          Promise&lt;<xref
-          uid="@azure/storage-file-datalake.PathSetHttpHeadersResponse|stable"
-          />&gt;
-  - name: setMetadata(Metadata, PathSetMetadataOptions)
-    uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.setMetadata|stable'
-    package: '@azure/storage-file-datalake|stable'
-    summary: >-
-      Sets user-defined metadata for the specified path (directory of file) as
-      one or more name-value pairs.
-
-      If no option provided, or no metadata defined in the parameter, the path
-
-      metadata will be removed.
-
-
-
-      See
-      https://docs.microsoft.com/en-us/rest/api/storageservices/set-blob-metadata
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function setMetadata(metadata?: Metadata, options?:
-        PathSetMetadataOptions): Promise<PathSetMetadataResponse>
-      parameters:
-        - id: metadata
-          type: <xref uid="@azure/storage-file-datalake.Metadata|stable" />
-          description: |-
-            Optional. Replace existing metadata with this value.
-                                         If no value provided the existing metadata will be removed.
-        - id: options
-          type: >-
-            <xref
-            uid="@azure/storage-file-datalake.PathSetMetadataOptions|stable" />
-          description: |
-            Optional. Options when setting path metadata.
-      return:
-        description: ''
-        type: >-
-          Promise&lt;<xref
-          uid="@azure/storage-file-datalake.PathSetMetadataResponse|stable"
-          />&gt;
-  - name: setPermissions(PathPermissions, PathSetPermissionsOptions)
-    uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.setPermissions|stable'
-    package: '@azure/storage-file-datalake|stable'
-    summary: >-
-      Sets the file permissions on a path.
-
-
-      See
-      https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/update
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function setPermissions(permissions: PathPermissions, options?:
-        PathSetPermissionsOptions): Promise<PathSetAccessControlResponse>
-      parameters:
-        - id: permissions
-          type: <xref uid="@azure/storage-file-datalake.PathPermissions|stable" />
-          description: >-
-            The POSIX access permissions for the file owner, the file owning
-            group, and others.
-        - id: options
-          type: >-
-            <xref
-            uid="@azure/storage-file-datalake.PathSetPermissionsOptions|stable"
-            />
-          description: |
-            Optional. Options when setting path permissions.
-      return:
-        description: ''
-        type: >-
-          Promise&lt;<xref
-          uid="@azure/storage-file-datalake.PathSetAccessControlResponse|stable"
-          />&gt;
-  - name: toDirectoryClient()
-    uid: >-
-      @azure/storage-file-datalake.DataLakeDirectoryClient.toDirectoryClient|stable
-    package: '@azure/storage-file-datalake|stable'
-    summary: >-
-      Convert current DataLakePathClient to DataLakeDirectoryClient if current
-      path is a directory.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function toDirectoryClient(): DataLakeDirectoryClient'
-      return:
-        description: ''
-        type: >-
-          <xref
-          uid="@azure/storage-file-datalake.DataLakeDirectoryClient|stable" />
-  - name: toFileClient()
-    uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.toFileClient|stable'
-    package: '@azure/storage-file-datalake|stable'
-    summary: >-
-      Convert current DataLakePathClient to DataLakeFileClient if current path
-      is a file.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function toFileClient(): DataLakeFileClient'
-      return:
-        description: ''
-        type: <xref uid="@azure/storage-file-datalake.DataLakeFileClient|stable" />
-  - name: >-
-      updateAccessControlRecursive(PathAccessControlItem[],
-      PathChangeAccessControlRecursiveOptions)
-    uid: >-
-      @azure/storage-file-datalake.DataLakeDirectoryClient.updateAccessControlRecursive|stable
-    package: '@azure/storage-file-datalake|stable'
-    summary: >-
-      Modifies the Access Control on a path and sub paths.
-
-
-      See
-      https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/update
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function updateAccessControlRecursive(acl: PathAccessControlItem[],
-        options?: PathChangeAccessControlRecursiveOptions):
-        Promise<PathChangeAccessControlRecursiveResponse>
-      parameters:
-        - id: acl
-          type: >-
-            <xref
-            uid="@azure/storage-file-datalake.PathAccessControlItem|stable" />[]
-          description: The POSIX access control list for the file or directory.
-        - id: options
-          type: >-
-            <xref
-            uid="@azure/storage-file-datalake.PathChangeAccessControlRecursiveOptions|stable"
-            />
-          description: |
-            Optional. Options
-      return:
-        description: ''
-        type: >-
-          Promise&lt;<xref
-          uid="@azure/storage-file-datalake.PathChangeAccessControlRecursiveResponse|stable"
-          />&gt;
 extends: <xref uid="@azure/storage-file-datalake.DataLakePathClient|stable" />

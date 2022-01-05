@@ -1,0 +1,107 @@
+### YamlMime:TSType
+name: ServerPropertiesForCreate
+uid: '@azure/arm-postgresql.ServerPropertiesForCreate|stable'
+package: '@azure/arm-postgresql|stable'
+summary: The properties used to create a new server.
+fullName: ServerPropertiesForCreate
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: createMode
+    uid: '@azure/arm-postgresql.ServerPropertiesForCreate.createMode|stable'
+    package: '@azure/arm-postgresql|stable'
+    summary: >-
+      Polymorphic discriminator, which specifies the different types this object
+      can be
+    fullName: createMode
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'createMode: "Default" | "PointInTimeRestore" | "GeoRestore" | "Replica"'
+      return:
+        description: ''
+        type: '"Default" | "PointInTimeRestore" | "GeoRestore" | "Replica"'
+  - name: infrastructureEncryption
+    uid: >-
+      @azure/arm-postgresql.ServerPropertiesForCreate.infrastructureEncryption|stable
+    package: '@azure/arm-postgresql|stable'
+    summary: Status showing whether the server enabled infrastructure encryption.
+    fullName: infrastructureEncryption
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'infrastructureEncryption?: InfrastructureEncryption'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-postgresql.InfrastructureEncryption|stable" />
+  - name: minimalTlsVersion
+    uid: '@azure/arm-postgresql.ServerPropertiesForCreate.minimalTlsVersion|stable'
+    package: '@azure/arm-postgresql|stable'
+    summary: Enforce a minimal Tls version for the server.
+    fullName: minimalTlsVersion
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'minimalTlsVersion?: MinimalTlsVersionEnum'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-postgresql.MinimalTlsVersionEnum|stable" />
+  - name: publicNetworkAccess
+    uid: '@azure/arm-postgresql.ServerPropertiesForCreate.publicNetworkAccess|stable'
+    package: '@azure/arm-postgresql|stable'
+    summary: >-
+      Whether or not public network access is allowed for this server. Value is
+      optional but if passed in, must be 'Enabled' or 'Disabled'
+    fullName: publicNetworkAccess
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'publicNetworkAccess?: PublicNetworkAccessEnum'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-postgresql.PublicNetworkAccessEnum|stable" />
+  - name: sslEnforcement
+    uid: '@azure/arm-postgresql.ServerPropertiesForCreate.sslEnforcement|stable'
+    package: '@azure/arm-postgresql|stable'
+    summary: Enable ssl enforcement or not when connect to server.
+    fullName: sslEnforcement
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sslEnforcement?: SslEnforcementEnum'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-postgresql.SslEnforcementEnum|stable" />
+  - name: storageProfile
+    uid: '@azure/arm-postgresql.ServerPropertiesForCreate.storageProfile|stable'
+    package: '@azure/arm-postgresql|stable'
+    summary: Storage profile of a server.
+    fullName: storageProfile
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'storageProfile?: StorageProfile'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-postgresql.StorageProfile|stable" />
+  - name: version
+    uid: '@azure/arm-postgresql.ServerPropertiesForCreate.version|stable'
+    package: '@azure/arm-postgresql|stable'
+    summary: Server version.
+    fullName: version
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'version?: ServerVersion'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-postgresql.ServerVersion|stable" />

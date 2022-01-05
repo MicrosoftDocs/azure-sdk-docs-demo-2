@@ -1,0 +1,81 @@
+### YamlMime:TSType
+name: LogsQueryPartialResult
+uid: '@azure/monitor-query.LogsQueryPartialResult|stable'
+package: '@azure/monitor-query|stable'
+summary: >-
+  Result type for Partial Failure Scenario for logs queryWorkspace and
+  queryBatch operations.
+fullName: LogsQueryPartialResult
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: partialError
+    uid: '@azure/monitor-query.LogsQueryPartialResult.partialError|stable'
+    package: '@azure/monitor-query|stable'
+    summary: error information for partial errors or failed queries
+    fullName: partialError
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'partialError: LogsErrorInfo'
+      return:
+        description: ''
+        type: <xref uid="@azure/monitor-query.LogsErrorInfo|stable" />
+  - name: partialTables
+    uid: '@azure/monitor-query.LogsQueryPartialResult.partialTables|stable'
+    package: '@azure/monitor-query|stable'
+    summary: Populated results from the query.
+    fullName: partialTables
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'partialTables: LogsTable[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/monitor-query.LogsTable|stable" />[]
+  - name: statistics
+    uid: '@azure/monitor-query.LogsQueryPartialResult.statistics|stable'
+    package: '@azure/monitor-query|stable'
+    summary: Statistics represented in JSON format.
+    fullName: statistics
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'statistics?: Record<string, unknown>'
+      return:
+        description: ''
+        type: Record&lt;string, unknown&gt;
+  - name: status
+    uid: '@azure/monitor-query.LogsQueryPartialResult.status|stable'
+    package: '@azure/monitor-query|stable'
+    summary: Indicates that the query partially failed.
+    fullName: status
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'status: PartialFailure'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/monitor-query.LogsQueryResultStatus.PartialFailure|stable"
+          />
+  - name: visualization
+    uid: '@azure/monitor-query.LogsQueryPartialResult.visualization|stable'
+    package: '@azure/monitor-query|stable'
+    summary: Visualization data in JSON format.
+    fullName: visualization
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'visualization?: Record<string, unknown>'
+      return:
+        description: ''
+        type: Record&lt;string, unknown&gt;

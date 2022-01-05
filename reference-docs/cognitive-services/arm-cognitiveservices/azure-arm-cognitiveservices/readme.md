@@ -2,7 +2,7 @@
 title: Azure SDK for JavaScript - Cognitive Services User Guide
 description: 
 ms.topic: reference
-ms.date: 12/14/2021
+ms.date: 01/05/2022
 ms.service: cognitive-services
 ms.role: developer
 ms.devlang: javascript
@@ -18,7 +18,7 @@ Cognitive Services Management Client
 
 [Source code](https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/cognitiveservices/arm-cognitiveservices) |
 [Package (NPM)](https://www.npmjs.com/package/@azure/arm-cognitiveservices) |
-[API reference documentation](https://docs.microsoft.com/javascript/api/@azure/arm-cognitiveservices?view=azure-node-preview) |
+[API reference documentation](https://docs.microsoft.com/javascript/api/@azure/arm-cognitiveservices) |
 [Samples](https://github.com/Azure-Samples/azure-samples-js-management)
 
 ## Getting started

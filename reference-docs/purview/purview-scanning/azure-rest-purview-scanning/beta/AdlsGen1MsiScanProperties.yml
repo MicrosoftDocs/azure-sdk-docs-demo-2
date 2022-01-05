@@ -1,0 +1,109 @@
+### YamlMime:TSType
+name: AdlsGen1MsiScanProperties
+uid: '@azure-rest/purview-scanning.AdlsGen1MsiScanProperties|beta'
+package: '@azure-rest/purview-scanning|beta'
+summary: ''
+fullName: AdlsGen1MsiScanProperties
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: collection
+    uid: '@azure-rest/purview-scanning.AdlsGen1MsiScanProperties.collection|beta'
+    package: '@azure-rest/purview-scanning|beta'
+    summary: ''
+    fullName: collection
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'collection?: ScanPropertiesCollection'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure-rest/purview-scanning.ScanPropertiesCollection|beta"
+          />
+  - name: connectedVia
+    uid: '@azure-rest/purview-scanning.AdlsGen1MsiScanProperties.connectedVia|beta'
+    package: '@azure-rest/purview-scanning|beta'
+    summary: ''
+    fullName: connectedVia
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'connectedVia?: ScanPropertiesConnectedVia'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure-rest/purview-scanning.ScanPropertiesConnectedVia|beta" />
+  - name: createdAt
+    uid: '@azure-rest/purview-scanning.AdlsGen1MsiScanProperties.createdAt|beta'
+    package: '@azure-rest/purview-scanning|beta'
+    summary: ''
+    fullName: createdAt
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'createdAt?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: lastModifiedAt
+    uid: '@azure-rest/purview-scanning.AdlsGen1MsiScanProperties.lastModifiedAt|beta'
+    package: '@azure-rest/purview-scanning|beta'
+    summary: ''
+    fullName: lastModifiedAt
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lastModifiedAt?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: scanRulesetName
+    uid: >-
+      @azure-rest/purview-scanning.AdlsGen1MsiScanProperties.scanRulesetName|beta
+    package: '@azure-rest/purview-scanning|beta'
+    summary: ''
+    fullName: scanRulesetName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'scanRulesetName?: string'
+      return:
+        description: ''
+        type: string
+  - name: scanRulesetType
+    uid: >-
+      @azure-rest/purview-scanning.AdlsGen1MsiScanProperties.scanRulesetType|beta
+    package: '@azure-rest/purview-scanning|beta'
+    summary: ''
+    fullName: scanRulesetType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'scanRulesetType?: "Custom" | "System"'
+      return:
+        description: ''
+        type: '"Custom" | "System"'
+  - name: workers
+    uid: '@azure-rest/purview-scanning.AdlsGen1MsiScanProperties.workers|beta'
+    package: '@azure-rest/purview-scanning|beta'
+    summary: ''
+    fullName: workers
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'workers?: number'
+      return:
+        description: ''
+        type: number
+extends: <xref uid="@azure-rest/purview-scanning.ScanProperties|beta" />

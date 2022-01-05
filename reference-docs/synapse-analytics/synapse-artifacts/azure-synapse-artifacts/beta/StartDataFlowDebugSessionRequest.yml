@@ -1,0 +1,118 @@
+### YamlMime:TSType
+name: StartDataFlowDebugSessionRequest
+uid: '@azure/synapse-artifacts.StartDataFlowDebugSessionRequest|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: Request body structure for starting data flow debug session.
+fullName: StartDataFlowDebugSessionRequest
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: dataFlow
+    uid: '@azure/synapse-artifacts.StartDataFlowDebugSessionRequest.dataFlow|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Data flow instance.
+    fullName: dataFlow
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dataFlow?: DataFlowResource'
+      return:
+        description: ''
+        type: <xref uid="@azure/synapse-artifacts.DataFlowResource|beta" />
+  - name: dataFlows
+    uid: '@azure/synapse-artifacts.StartDataFlowDebugSessionRequest.dataFlows|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: List of Data flows
+    fullName: dataFlows
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dataFlows?: DataFlowResource[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/synapse-artifacts.DataFlowResource|beta" />[]
+  - name: datasets
+    uid: '@azure/synapse-artifacts.StartDataFlowDebugSessionRequest.datasets|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: List of datasets.
+    fullName: datasets
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'datasets?: DatasetResource[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/synapse-artifacts.DatasetResource|beta" />[]
+  - name: debugSettings
+    uid: >-
+      @azure/synapse-artifacts.StartDataFlowDebugSessionRequest.debugSettings|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: Data flow debug settings.
+    fullName: debugSettings
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'debugSettings?: any'
+      return:
+        description: ''
+        type: any
+  - name: incrementalDebug
+    uid: >-
+      @azure/synapse-artifacts.StartDataFlowDebugSessionRequest.incrementalDebug|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: The type of new Databricks cluster.
+    fullName: incrementalDebug
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'incrementalDebug?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: linkedServices
+    uid: >-
+      @azure/synapse-artifacts.StartDataFlowDebugSessionRequest.linkedServices|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: List of linked services.
+    fullName: linkedServices
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'linkedServices?: LinkedServiceResource[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/synapse-artifacts.LinkedServiceResource|beta" />[]
+  - name: sessionId
+    uid: '@azure/synapse-artifacts.StartDataFlowDebugSessionRequest.sessionId|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: The ID of data flow debug session.
+    fullName: sessionId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sessionId?: string'
+      return:
+        description: ''
+        type: string
+  - name: staging
+    uid: '@azure/synapse-artifacts.StartDataFlowDebugSessionRequest.staging|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Staging info for debug session.
+    fullName: staging
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'staging?: any'
+      return:
+        description: ''
+        type: any

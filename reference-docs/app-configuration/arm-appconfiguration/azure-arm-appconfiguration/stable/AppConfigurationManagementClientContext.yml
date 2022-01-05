@@ -122,13 +122,13 @@ properties:
       return:
         description: ''
         type: string
-methods:
+inheritedMethods:
   - name: >-
       beginLongRunningRequest(RequestPrepareOptions | WebResource,
       RequestOptionsBase)
     uid: >-
-      @azure/arm-appconfiguration.AppConfigurationManagementClientContext.beginLongRunningRequest|stable
-    package: '@azure/arm-appconfiguration|stable'
+      @azure/arm-appconfiguration.AppConfigurationManagementClientContext.beginLongRunningRequest
+    package: '@azure/arm-appconfiguration'
     summary: >-
       Send the initial request of a LRO (long running operation) and get back an
 
@@ -157,8 +157,8 @@ methods:
         type: Promise&lt;LROPoller&gt;
   - name: restoreLROPoller(LROPollState)
     uid: >-
-      @azure/arm-appconfiguration.AppConfigurationManagementClientContext.restoreLROPoller|stable
-    package: '@azure/arm-appconfiguration|stable'
+      @azure/arm-appconfiguration.AppConfigurationManagementClientContext.restoreLROPoller
+    package: '@azure/arm-appconfiguration'
     summary: >-
       Restore an LROPoller from the provided LROPollState. This method can be
       used to recreate an
@@ -180,8 +180,8 @@ methods:
       sendLongRunningRequest(RequestPrepareOptions | WebResource,
       RequestOptionsBase)
     uid: >-
-      @azure/arm-appconfiguration.AppConfigurationManagementClientContext.sendLongRunningRequest|stable
-    package: '@azure/arm-appconfiguration|stable'
+      @azure/arm-appconfiguration.AppConfigurationManagementClientContext.sendLongRunningRequest
+    package: '@azure/arm-appconfiguration'
     summary: >-
       Provides a mechanism to make a request that will poll and provide the
       final result.
@@ -207,8 +207,8 @@ methods:
         type: Promise&lt;HttpOperationResponse&gt;
   - name: sendLRORequest(OperationArguments, OperationSpec, RequestOptionsBase)
     uid: >-
-      @azure/arm-appconfiguration.AppConfigurationManagementClientContext.sendLRORequest|stable
-    package: '@azure/arm-appconfiguration|stable'
+      @azure/arm-appconfiguration.AppConfigurationManagementClientContext.sendLRORequest
+    package: '@azure/arm-appconfiguration'
     summary: >-
       Send the initial request of a LRO (long running operation) and get back an
 
@@ -241,8 +241,8 @@ methods:
       sendOperationRequest(OperationArguments, OperationSpec,
       ServiceCallback<any>)
     uid: >-
-      @azure/arm-appconfiguration.AppConfigurationManagementClientContext.sendOperationRequest|stable
-    package: '@azure/arm-appconfiguration|stable'
+      @azure/arm-appconfiguration.AppConfigurationManagementClientContext.sendOperationRequest
+    package: '@azure/arm-appconfiguration'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
     isPreview: false
@@ -270,8 +270,8 @@ methods:
         type: Promise&lt;RestResponse&gt;
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
     uid: >-
-      @azure/arm-appconfiguration.AppConfigurationManagementClientContext.sendRequest|stable
-    package: '@azure/arm-appconfiguration|stable'
+      @azure/arm-appconfiguration.AppConfigurationManagementClientContext.sendRequest
+    package: '@azure/arm-appconfiguration'
     summary: Send the provided httpRequest.
     remarks: ''
     isPreview: false

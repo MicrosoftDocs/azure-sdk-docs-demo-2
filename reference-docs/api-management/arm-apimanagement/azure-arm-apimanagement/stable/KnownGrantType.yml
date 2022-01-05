@@ -1,0 +1,36 @@
+### YamlMime:TSEnum
+name: KnownGrantType
+uid: '@azure/arm-apimanagement.KnownGrantType|stable'
+package: '@azure/arm-apimanagement|stable'
+summary: >-
+  Known values of <xref:@azure/arm-apimanagement.KnownGrantType|stable> that the
+  service accepts.
+fullName: KnownGrantType
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: AuthorizationCode
+    uid: '@azure/arm-apimanagement.KnownGrantType.AuthorizationCode|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: >-
+      Authorization Code Grant flow as described
+      https://tools.ietf.org/html/rfc6749#section-4.1.
+  - name: ClientCredentials
+    uid: '@azure/arm-apimanagement.KnownGrantType.ClientCredentials|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: >-
+      Client Credentials Grant flow as described
+      https://tools.ietf.org/html/rfc6749#section-4.4.
+  - name: Implicit
+    uid: '@azure/arm-apimanagement.KnownGrantType.Implicit|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: >-
+      Implicit Code Grant flow as described
+      https://tools.ietf.org/html/rfc6749#section-4.2.
+  - name: ResourceOwnerPassword
+    uid: '@azure/arm-apimanagement.KnownGrantType.ResourceOwnerPassword|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: >-
+      Resource Owner Password Grant flow as described
+      https://tools.ietf.org/html/rfc6749#section-4.3.

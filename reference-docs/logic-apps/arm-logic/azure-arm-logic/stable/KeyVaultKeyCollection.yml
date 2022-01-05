@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: KeyVaultKeyCollection
+uid: '@azure/arm-logic.KeyVaultKeyCollection|stable'
+package: '@azure/arm-logic|stable'
+summary: Collection of key vault keys.
+fullName: KeyVaultKeyCollection
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: skipToken
+    uid: '@azure/arm-logic.KeyVaultKeyCollection.skipToken|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The skip token.
+    fullName: skipToken
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'skipToken?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: value
+    uid: '@azure/arm-logic.KeyVaultKeyCollection.value|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The key vault keys.
+    fullName: value
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: KeyVaultKey[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-logic.KeyVaultKey|stable" />[]

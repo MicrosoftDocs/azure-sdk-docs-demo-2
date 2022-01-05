@@ -1,0 +1,80 @@
+### YamlMime:TSType
+name: Usage
+uid: '@azure/arm-network.Usage|stable'
+package: '@azure/arm-network|stable'
+summary: The network resource usage.
+fullName: Usage
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: currentValue
+    uid: '@azure/arm-network.Usage.currentValue|stable'
+    package: '@azure/arm-network|stable'
+    summary: The current value of the usage.
+    fullName: currentValue
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'currentValue: number'
+      return:
+        description: ''
+        type: number
+  - name: id
+    uid: '@azure/arm-network.Usage.id|stable'
+    package: '@azure/arm-network|stable'
+    summary: >-
+      Resource identifier.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: limit
+    uid: '@azure/arm-network.Usage.limit|stable'
+    package: '@azure/arm-network|stable'
+    summary: The limit of usage.
+    fullName: limit
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'limit: number'
+      return:
+        description: ''
+        type: number
+  - name: name
+    uid: '@azure/arm-network.Usage.name|stable'
+    package: '@azure/arm-network|stable'
+    summary: The name of the type of usage.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: UsageName'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.UsageName|stable" />
+  - name: unit
+    uid: '@azure/arm-network.Usage.unit|stable'
+    package: '@azure/arm-network|stable'
+    summary: An enum describing the unit of measurement.
+    fullName: unit
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'unit: UsageUnit'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.UsageUnit|stable" />

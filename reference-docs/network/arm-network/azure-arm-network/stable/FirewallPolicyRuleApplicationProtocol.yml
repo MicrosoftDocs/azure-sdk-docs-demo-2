@@ -1,0 +1,41 @@
+### YamlMime:TSType
+name: FirewallPolicyRuleApplicationProtocol
+uid: '@azure/arm-network.FirewallPolicyRuleApplicationProtocol|stable'
+package: '@azure/arm-network|stable'
+summary: Properties of the application rule protocol.
+fullName: FirewallPolicyRuleApplicationProtocol
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: port
+    uid: '@azure/arm-network.FirewallPolicyRuleApplicationProtocol.port|stable'
+    package: '@azure/arm-network|stable'
+    summary: Port number for the protocol, cannot be greater than 64000.
+    fullName: port
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'port?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: protocolType
+    uid: >-
+      @azure/arm-network.FirewallPolicyRuleApplicationProtocol.protocolType|stable
+    package: '@azure/arm-network|stable'
+    summary: Protocol type.
+    fullName: protocolType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protocolType?: FirewallPolicyRuleApplicationProtocolType'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-network.FirewallPolicyRuleApplicationProtocolType|stable"
+          />

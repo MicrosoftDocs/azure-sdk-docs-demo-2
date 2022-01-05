@@ -1,0 +1,32 @@
+### YamlMime:TSEnum
+name: KnownUserState
+uid: '@azure/arm-apimanagement.KnownUserState|stable'
+package: '@azure/arm-apimanagement|stable'
+summary: >-
+  Known values of <xref:@azure/arm-apimanagement.KnownUserState|stable> that the
+  service accepts.
+fullName: KnownUserState
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: Active
+    uid: '@azure/arm-apimanagement.KnownUserState.Active|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: User state is active.
+  - name: Blocked
+    uid: '@azure/arm-apimanagement.KnownUserState.Blocked|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: >-
+      User is blocked. Blocked users cannot authenticate at developer portal or
+      call API.
+  - name: Deleted
+    uid: '@azure/arm-apimanagement.KnownUserState.Deleted|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: User account is closed. All identities and related entities are removed.
+  - name: Pending
+    uid: '@azure/arm-apimanagement.KnownUserState.Pending|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: >-
+      User account is pending. Requires identity confirmation before it can be
+      made active.

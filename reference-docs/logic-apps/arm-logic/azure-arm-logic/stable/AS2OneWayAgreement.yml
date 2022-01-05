@@ -1,0 +1,50 @@
+### YamlMime:TSType
+name: AS2OneWayAgreement
+uid: '@azure/arm-logic.AS2OneWayAgreement|stable'
+package: '@azure/arm-logic|stable'
+summary: The integration account AS2 one-way agreement.
+fullName: AS2OneWayAgreement
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: protocolSettings
+    uid: '@azure/arm-logic.AS2OneWayAgreement.protocolSettings|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The AS2 protocol settings.
+    fullName: protocolSettings
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protocolSettings: AS2ProtocolSettings'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-logic.AS2ProtocolSettings|stable" />
+  - name: receiverBusinessIdentity
+    uid: '@azure/arm-logic.AS2OneWayAgreement.receiverBusinessIdentity|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The receiver business identity
+    fullName: receiverBusinessIdentity
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'receiverBusinessIdentity: BusinessIdentity'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-logic.BusinessIdentity|stable" />
+  - name: senderBusinessIdentity
+    uid: '@azure/arm-logic.AS2OneWayAgreement.senderBusinessIdentity|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The sender business identity
+    fullName: senderBusinessIdentity
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'senderBusinessIdentity: BusinessIdentity'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-logic.BusinessIdentity|stable" />

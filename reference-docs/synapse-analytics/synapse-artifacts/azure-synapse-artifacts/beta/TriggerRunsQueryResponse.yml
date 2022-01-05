@@ -1,0 +1,39 @@
+### YamlMime:TSType
+name: TriggerRunsQueryResponse
+uid: '@azure/synapse-artifacts.TriggerRunsQueryResponse|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: A list of trigger runs.
+fullName: TriggerRunsQueryResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: continuationToken
+    uid: '@azure/synapse-artifacts.TriggerRunsQueryResponse.continuationToken|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: >-
+      The continuation token for getting the next page of results, if any
+      remaining results exist, null otherwise.
+    fullName: continuationToken
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'continuationToken?: string'
+      return:
+        description: ''
+        type: string
+  - name: value
+    uid: '@azure/synapse-artifacts.TriggerRunsQueryResponse.value|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: List of trigger runs.
+    fullName: value
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value: TriggerRun[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/synapse-artifacts.TriggerRun|beta" />[]

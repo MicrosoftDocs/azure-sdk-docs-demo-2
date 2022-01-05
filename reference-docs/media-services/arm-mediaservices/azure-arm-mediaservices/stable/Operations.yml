@@ -1,0 +1,35 @@
+### YamlMime:TSType
+name: Operations
+uid: '@azure/arm-mediaservices.Operations|stable'
+package: '@azure/arm-mediaservices|stable'
+summary: Interface representing a Operations.
+fullName: Operations
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: list(OperationsListOptionalParams)
+    uid: '@azure/arm-mediaservices.Operations.list|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: Lists all the Media Services operations.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(options?: OperationsListOptionalParams):
+        Promise<OperationsListResponse>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mediaservices.OperationsListOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-mediaservices.OperationsListResponse|stable" />&gt;

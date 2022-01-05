@@ -1,0 +1,38 @@
+### YamlMime:TSType
+name: GlossaryCreateGlossaryTerms
+uid: '@azure-rest/purview-catalog.GlossaryCreateGlossaryTerms|beta'
+package: '@azure-rest/purview-catalog|beta'
+summary: ''
+fullName: GlossaryCreateGlossaryTerms
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: post(GlossaryCreateGlossaryTermsParameters)
+    uid: '@azure-rest/purview-catalog.GlossaryCreateGlossaryTerms.post|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: Create glossary terms in bulk.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function post(options: GlossaryCreateGlossaryTermsParameters):
+        Promise<GlossaryCreateGlossaryTerms200Response |
+        GlossaryCreateGlossaryTermsdefaultResponse>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure-rest/purview-catalog.GlossaryCreateGlossaryTermsParameters|beta"
+            />
+          description: ''
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure-rest/purview-catalog.GlossaryCreateGlossaryTerms200Response|beta"
+          /> | <xref
+          uid="@azure-rest/purview-catalog.GlossaryCreateGlossaryTermsdefaultResponse|beta"
+          />&gt;

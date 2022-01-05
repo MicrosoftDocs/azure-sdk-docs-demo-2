@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: PrivateEndpoint
+uid: '@azure/arm-streamanalytics.PrivateEndpoint|stable'
+package: '@azure/arm-streamanalytics|stable'
+summary: Complete information about the private endpoint.
+fullName: PrivateEndpoint
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type PrivateEndpoint = ProxyResource & { createdDate?: undefined | string,
+  etag?: undefined | string, manualPrivateLinkServiceConnections?:
+  PrivateLinkServiceConnection[] }

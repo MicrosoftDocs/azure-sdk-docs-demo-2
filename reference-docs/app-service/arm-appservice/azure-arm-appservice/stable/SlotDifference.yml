@@ -1,0 +1,14 @@
+### YamlMime:TSTypeAlias
+name: SlotDifference
+uid: '@azure/arm-appservice.SlotDifference|stable'
+package: '@azure/arm-appservice|stable'
+summary: A setting difference between two deployment slots of an app.
+fullName: SlotDifference
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type SlotDifference = ProxyOnlyResource & { description?: undefined | string,
+  diffRule?: undefined | string, level?: undefined | string, settingName?:
+  undefined | string, settingType?: undefined | string, valueInCurrentSlot?:
+  undefined | string, valueInTargetSlot?: undefined | string }

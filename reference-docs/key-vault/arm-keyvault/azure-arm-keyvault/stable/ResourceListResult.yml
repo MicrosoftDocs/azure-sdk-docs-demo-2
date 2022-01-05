@@ -50,10 +50,10 @@ properties:
       return:
         description: ''
         type: undefined | string
-methods:
+inheritedMethods:
   - name: at(number)
-    uid: '@azure/arm-keyvault.ResourceListResult.at|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.at'
+    package: '@azure/arm-keyvault'
     summary: |-
       Takes an integer value and returns the item at that index,
       allowing for positive and negative integers.
@@ -71,8 +71,8 @@ methods:
         description: ''
         type: <xref uid="@azure/arm-keyvault.Resource|stable" /> | undefined
   - name: concat(ConcatArray<Resource>[])
-    uid: '@azure/arm-keyvault.ResourceListResult.concat|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.concat'
+    package: '@azure/arm-keyvault'
     summary: Combines two or more arrays.
     remarks: ''
     isPreview: false
@@ -90,8 +90,8 @@ methods:
         description: ''
         type: <xref uid="@azure/arm-keyvault.Resource|stable" />[]
   - name: concat(T | ConcatArray<T>[])
-    uid: '@azure/arm-keyvault.ResourceListResult.concat_1|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.concat_1'
+    package: '@azure/arm-keyvault'
     summary: Combines two or more arrays.
     remarks: ''
     isPreview: false
@@ -107,8 +107,8 @@ methods:
         description: ''
         type: <xref uid="@azure/arm-keyvault.Resource|stable" />[]
   - name: copyWithin(number, number, undefined | number)
-    uid: '@azure/arm-keyvault.ResourceListResult.copyWithin|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.copyWithin'
+    package: '@azure/arm-keyvault'
     summary: >-
       Returns the this object after copying a section of the array identified by
       start and end
@@ -145,8 +145,8 @@ methods:
         description: ''
         type: this
   - name: entries()
-    uid: '@azure/arm-keyvault.ResourceListResult.entries|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.entries'
+    package: '@azure/arm-keyvault'
     summary: Returns an iterable of key, value pairs for every entry in the array
     remarks: ''
     isPreview: false
@@ -157,8 +157,8 @@ methods:
         description: ''
         type: IterableIterator&lt;[number, Resource]&gt;
   - name: 'every((value: Resource, index: number, array: Resource[]) => unknown, any)'
-    uid: '@azure/arm-keyvault.ResourceListResult.every|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.every'
+    package: '@azure/arm-keyvault'
     summary: Determines whether all the members of an array satisfy the specified test.
     remarks: ''
     isPreview: false
@@ -184,8 +184,8 @@ methods:
         description: ''
         type: boolean
   - name: fill(Resource, undefined | number, undefined | number)
-    uid: '@azure/arm-keyvault.ResourceListResult.fill|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.fill'
+    package: '@azure/arm-keyvault'
     summary: >-
       Returns the this object after filling the section identified by start and
       end with value
@@ -220,8 +220,8 @@ methods:
   - name: >-
       filter((value: Resource, index: number, array: Resource[]) => unknown,
       any)
-    uid: '@azure/arm-keyvault.ResourceListResult.filter_1|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.filter_1'
+    package: '@azure/arm-keyvault'
     summary: >-
       Returns the elements of an array that meet the condition specified in a
       callback function.
@@ -251,8 +251,8 @@ methods:
   - name: >-
       filter<S>((value: Resource, index: number, array: Resource[]) => boolean,
       any)
-    uid: '@azure/arm-keyvault.ResourceListResult.filter|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.filter'
+    package: '@azure/arm-keyvault'
     summary: >-
       Returns the elements of an array that meet the condition specified in a
       callback function.
@@ -280,8 +280,8 @@ methods:
         description: ''
         type: S[]
   - name: 'find((value: Resource, index: number, obj: Resource[]) => unknown, any)'
-    uid: '@azure/arm-keyvault.ResourceListResult.find_1|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.find_1'
+    package: '@azure/arm-keyvault'
     summary: ''
     remarks: ''
     isPreview: false
@@ -303,8 +303,8 @@ methods:
   - name: >-
       find<S>((this: void, value: Resource, index: number, obj: Resource[]) =>
       boolean, any)
-    uid: '@azure/arm-keyvault.ResourceListResult.find|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.find'
+    package: '@azure/arm-keyvault'
     summary: >-
       Returns the value of the first element in the array where predicate is
       true, and undefined
@@ -344,8 +344,8 @@ methods:
   - name: >-
       findIndex((value: Resource, index: number, obj: Resource[]) => unknown,
       any)
-    uid: '@azure/arm-keyvault.ResourceListResult.findIndex|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.findIndex'
+    package: '@azure/arm-keyvault'
     summary: >-
       Returns the index of the first element in the array where predicate is
       true, and -1
@@ -381,8 +381,8 @@ methods:
         description: ''
         type: number
   - name: flat<U>(undefined | number)
-    uid: '@azure/arm-keyvault.ResourceListResult.flat_8|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.flat_8'
+    package: '@azure/arm-keyvault'
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -403,8 +403,8 @@ methods:
         description: ''
         type: any[]
   - name: flat<U>(U[], 0)
-    uid: '@azure/arm-keyvault.ResourceListResult.flat_7|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.flat_7'
+    package: '@azure/arm-keyvault'
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -427,8 +427,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][], undefined | 1)
-    uid: '@azure/arm-keyvault.ResourceListResult.flat_6|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.flat_6'
+    package: '@azure/arm-keyvault'
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -451,8 +451,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][], 2)
-    uid: '@azure/arm-keyvault.ResourceListResult.flat_5|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.flat_5'
+    package: '@azure/arm-keyvault'
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -475,8 +475,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][][], 3)
-    uid: '@azure/arm-keyvault.ResourceListResult.flat_4|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.flat_4'
+    package: '@azure/arm-keyvault'
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -499,8 +499,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][][][], 4)
-    uid: '@azure/arm-keyvault.ResourceListResult.flat_3|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.flat_3'
+    package: '@azure/arm-keyvault'
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -523,8 +523,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][][][][], 5)
-    uid: '@azure/arm-keyvault.ResourceListResult.flat_2|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.flat_2'
+    package: '@azure/arm-keyvault'
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -547,8 +547,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][][][][][], 6)
-    uid: '@azure/arm-keyvault.ResourceListResult.flat_1|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.flat_1'
+    package: '@azure/arm-keyvault'
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -571,8 +571,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][][][][][][], 7)
-    uid: '@azure/arm-keyvault.ResourceListResult.flat|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.flat'
+    package: '@azure/arm-keyvault'
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -597,8 +597,8 @@ methods:
   - name: >-
       flatMap<U, This>((this: This, value: Resource, index: number, array:
       Resource[]) => U | ReadonlyArray<U>, This)
-    uid: '@azure/arm-keyvault.ResourceListResult.flatMap|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.flatMap'
+    package: '@azure/arm-keyvault'
     summary: >-
       Calls a defined callback function on each element of an array. Then,
       flattens the result into
@@ -634,8 +634,8 @@ methods:
         description: ''
         type: U[]
   - name: 'forEach((value: Resource, index: number, array: Resource[]) => void, any)'
-    uid: '@azure/arm-keyvault.ResourceListResult.forEach|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.forEach'
+    package: '@azure/arm-keyvault'
     summary: Performs the specified action for each element in an array.
     remarks: ''
     isPreview: false
@@ -657,8 +657,8 @@ methods:
             function. If thisArg is omitted, undefined is used as the this
             value.
   - name: includes(Resource, undefined | number)
-    uid: '@azure/arm-keyvault.ResourceListResult.includes|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.includes'
+    package: '@azure/arm-keyvault'
     summary: >-
       Determines whether an array includes a certain element, returning true or
       false as appropriate.
@@ -682,8 +682,8 @@ methods:
         description: ''
         type: boolean
   - name: indexOf(Resource, undefined | number)
-    uid: '@azure/arm-keyvault.ResourceListResult.indexOf|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.indexOf'
+    package: '@azure/arm-keyvault'
     summary: Returns the index of the first occurrence of a value in an array.
     remarks: ''
     isPreview: false
@@ -705,8 +705,8 @@ methods:
         description: ''
         type: number
   - name: join(undefined | string)
-    uid: '@azure/arm-keyvault.ResourceListResult.join|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.join'
+    package: '@azure/arm-keyvault'
     summary: >-
       Adds all the elements of an array separated by the specified separator
       string.
@@ -726,8 +726,8 @@ methods:
         description: ''
         type: string
   - name: keys()
-    uid: '@azure/arm-keyvault.ResourceListResult.keys|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.keys'
+    package: '@azure/arm-keyvault'
     summary: Returns an iterable of keys in the array
     remarks: ''
     isPreview: false
@@ -738,8 +738,8 @@ methods:
         description: ''
         type: IterableIterator&lt;number&gt;
   - name: lastIndexOf(Resource, undefined | number)
-    uid: '@azure/arm-keyvault.ResourceListResult.lastIndexOf|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.lastIndexOf'
+    package: '@azure/arm-keyvault'
     summary: Returns the index of the last occurrence of a specified value in an array.
     remarks: ''
     isPreview: false
@@ -761,8 +761,8 @@ methods:
         description: ''
         type: number
   - name: 'map<U>((value: Resource, index: number, array: Resource[]) => U, any)'
-    uid: '@azure/arm-keyvault.ResourceListResult.map|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.map'
+    package: '@azure/arm-keyvault'
     summary: >-
       Calls a defined callback function on each element of an array, and returns
       an array that contains the results.
@@ -789,8 +789,8 @@ methods:
         description: ''
         type: U[]
   - name: pop()
-    uid: '@azure/arm-keyvault.ResourceListResult.pop|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.pop'
+    package: '@azure/arm-keyvault'
     summary: Removes the last element from an array and returns it.
     remarks: ''
     isPreview: false
@@ -801,8 +801,8 @@ methods:
         description: ''
         type: <xref uid="@azure/arm-keyvault.Resource|stable" /> | undefined
   - name: push(Resource[])
-    uid: '@azure/arm-keyvault.ResourceListResult.push|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.push'
+    package: '@azure/arm-keyvault'
     summary: Appends new elements to an array, and returns the new length of the array.
     remarks: ''
     isPreview: false
@@ -820,8 +820,8 @@ methods:
   - name: >-
       reduce((previousValue: Resource, currentValue: Resource, currentIndex:
       number, array: Resource[]) => Resource)
-    uid: '@azure/arm-keyvault.ResourceListResult.reduce|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.reduce'
+    package: '@azure/arm-keyvault'
     summary: >-
       Calls the specified callback function for all the elements in an array.
       The return value of the callback function is the accumulated result, and
@@ -849,8 +849,8 @@ methods:
   - name: >-
       reduce((previousValue: Resource, currentValue: Resource, currentIndex:
       number, array: Resource[]) => Resource, Resource)
-    uid: '@azure/arm-keyvault.ResourceListResult.reduce_1|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.reduce_1'
+    package: '@azure/arm-keyvault'
     summary: ''
     remarks: ''
     isPreview: false
@@ -875,8 +875,8 @@ methods:
   - name: >-
       reduce<U>((previousValue: U, currentValue: Resource, currentIndex: number,
       array: Resource[]) => U, U)
-    uid: '@azure/arm-keyvault.ResourceListResult.reduce_2|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.reduce_2'
+    package: '@azure/arm-keyvault'
     summary: >-
       Calls the specified callback function for all the elements in an array.
       The return value of the callback function is the accumulated result, and
@@ -910,8 +910,8 @@ methods:
   - name: >-
       reduceRight((previousValue: Resource, currentValue: Resource,
       currentIndex: number, array: Resource[]) => Resource)
-    uid: '@azure/arm-keyvault.ResourceListResult.reduceRight|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.reduceRight'
+    package: '@azure/arm-keyvault'
     summary: >-
       Calls the specified callback function for all the elements in an array, in
       descending order. The return value of the callback function is the
@@ -940,8 +940,8 @@ methods:
   - name: >-
       reduceRight((previousValue: Resource, currentValue: Resource,
       currentIndex: number, array: Resource[]) => Resource, Resource)
-    uid: '@azure/arm-keyvault.ResourceListResult.reduceRight_1|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.reduceRight_1'
+    package: '@azure/arm-keyvault'
     summary: ''
     remarks: ''
     isPreview: false
@@ -966,8 +966,8 @@ methods:
   - name: >-
       reduceRight<U>((previousValue: U, currentValue: Resource, currentIndex:
       number, array: Resource[]) => U, U)
-    uid: '@azure/arm-keyvault.ResourceListResult.reduceRight_2|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.reduceRight_2'
+    package: '@azure/arm-keyvault'
     summary: >-
       Calls the specified callback function for all the elements in an array, in
       descending order. The return value of the callback function is the
@@ -1000,8 +1000,8 @@ methods:
         description: ''
         type: U
   - name: reverse()
-    uid: '@azure/arm-keyvault.ResourceListResult.reverse|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.reverse'
+    package: '@azure/arm-keyvault'
     summary: Reverses the elements in an Array.
     remarks: ''
     isPreview: false
@@ -1012,8 +1012,8 @@ methods:
         description: ''
         type: <xref uid="@azure/arm-keyvault.Resource|stable" />[]
   - name: shift()
-    uid: '@azure/arm-keyvault.ResourceListResult.shift|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.shift'
+    package: '@azure/arm-keyvault'
     summary: Removes the first element from an array and returns it.
     remarks: ''
     isPreview: false
@@ -1024,8 +1024,8 @@ methods:
         description: ''
         type: <xref uid="@azure/arm-keyvault.Resource|stable" /> | undefined
   - name: slice(undefined | number, undefined | number)
-    uid: '@azure/arm-keyvault.ResourceListResult.slice|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.slice'
+    package: '@azure/arm-keyvault'
     summary: Returns a section of an array.
     remarks: ''
     isPreview: false
@@ -1046,8 +1046,8 @@ methods:
         description: ''
         type: <xref uid="@azure/arm-keyvault.Resource|stable" />[]
   - name: 'some((value: Resource, index: number, array: Resource[]) => unknown, any)'
-    uid: '@azure/arm-keyvault.ResourceListResult.some|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.some'
+    package: '@azure/arm-keyvault'
     summary: >-
       Determines whether the specified callback function returns true for any
       element of an array.
@@ -1075,8 +1075,8 @@ methods:
         description: ''
         type: boolean
   - name: 'sort(undefined | (a: Resource, b: Resource) => number)'
-    uid: '@azure/arm-keyvault.ResourceListResult.sort|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.sort'
+    package: '@azure/arm-keyvault'
     summary: Sorts an array.
     remarks: ''
     isPreview: false
@@ -1096,8 +1096,8 @@ methods:
         description: ''
         type: this
   - name: splice(number, number, Resource[])
-    uid: '@azure/arm-keyvault.ResourceListResult.splice_1|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.splice_1'
+    package: '@azure/arm-keyvault'
     summary: >-
       Removes elements from an array and, if necessary, inserts new elements in
       their place, returning the deleted elements.
@@ -1125,8 +1125,8 @@ methods:
         description: ''
         type: <xref uid="@azure/arm-keyvault.Resource|stable" />[]
   - name: splice(number, undefined | number)
-    uid: '@azure/arm-keyvault.ResourceListResult.splice|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.splice'
+    package: '@azure/arm-keyvault'
     summary: >-
       Removes elements from an array and, if necessary, inserts new elements in
       their place, returning the deleted elements.
@@ -1151,8 +1151,8 @@ methods:
         description: ''
         type: <xref uid="@azure/arm-keyvault.Resource|stable" />[]
   - name: toLocaleString()
-    uid: '@azure/arm-keyvault.ResourceListResult.toLocaleString|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.toLocaleString'
+    package: '@azure/arm-keyvault'
     summary: >-
       Returns a string representation of an array. The elements are converted to
       string using their toLocalString methods.
@@ -1165,8 +1165,8 @@ methods:
         description: ''
         type: string
   - name: toString()
-    uid: '@azure/arm-keyvault.ResourceListResult.toString|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.toString'
+    package: '@azure/arm-keyvault'
     summary: Returns a string representation of an array.
     remarks: ''
     isPreview: false
@@ -1177,8 +1177,8 @@ methods:
         description: ''
         type: string
   - name: unshift(Resource[])
-    uid: '@azure/arm-keyvault.ResourceListResult.unshift|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.unshift'
+    package: '@azure/arm-keyvault'
     summary: Inserts new elements at the start of an array.
     remarks: ''
     isPreview: false
@@ -1194,8 +1194,8 @@ methods:
         description: ''
         type: number
   - name: values()
-    uid: '@azure/arm-keyvault.ResourceListResult.values|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.ResourceListResult.values'
+    package: '@azure/arm-keyvault'
     summary: Returns an iterable of values in the array
     remarks: ''
     isPreview: false

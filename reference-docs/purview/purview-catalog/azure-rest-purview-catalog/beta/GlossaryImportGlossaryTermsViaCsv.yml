@@ -1,0 +1,38 @@
+### YamlMime:TSType
+name: GlossaryImportGlossaryTermsViaCsv
+uid: '@azure-rest/purview-catalog.GlossaryImportGlossaryTermsViaCsv|beta'
+package: '@azure-rest/purview-catalog|beta'
+summary: ''
+fullName: GlossaryImportGlossaryTermsViaCsv
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: post(GlossaryImportGlossaryTermsViaCsvParameters)
+    uid: '@azure-rest/purview-catalog.GlossaryImportGlossaryTermsViaCsv.post|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: Import Glossary Terms from local csv file
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function post(options: GlossaryImportGlossaryTermsViaCsvParameters):
+        Promise<GlossaryImportGlossaryTermsViaCsv202Response |
+        GlossaryImportGlossaryTermsViaCsvdefaultResponse>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure-rest/purview-catalog.GlossaryImportGlossaryTermsViaCsvParameters|beta"
+            />
+          description: ''
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure-rest/purview-catalog.GlossaryImportGlossaryTermsViaCsv202Response|beta"
+          /> | <xref
+          uid="@azure-rest/purview-catalog.GlossaryImportGlossaryTermsViaCsvdefaultResponse|beta"
+          />&gt;

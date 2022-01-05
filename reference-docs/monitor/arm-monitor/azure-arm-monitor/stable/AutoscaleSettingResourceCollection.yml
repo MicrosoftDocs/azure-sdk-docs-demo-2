@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: AutoscaleSettingResourceCollection
+uid: '@azure/arm-monitor.AutoscaleSettingResourceCollection|stable'
+package: '@azure/arm-monitor|stable'
+summary: Represents a collection of autoscale setting resources.
+fullName: AutoscaleSettingResourceCollection
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: nextLink
+    uid: '@azure/arm-monitor.AutoscaleSettingResourceCollection.nextLink|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: URL to get the next set of results.
+    fullName: nextLink
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nextLink?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: value
+    uid: '@azure/arm-monitor.AutoscaleSettingResourceCollection.value|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: the values for the autoscale setting resources.
+    fullName: value
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value: AutoscaleSettingResource[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-monitor.AutoscaleSettingResource|stable" />[]

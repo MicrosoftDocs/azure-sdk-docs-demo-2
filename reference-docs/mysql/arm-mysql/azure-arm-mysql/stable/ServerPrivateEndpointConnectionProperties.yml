@@ -1,0 +1,64 @@
+### YamlMime:TSType
+name: ServerPrivateEndpointConnectionProperties
+uid: '@azure/arm-mysql.ServerPrivateEndpointConnectionProperties|stable'
+package: '@azure/arm-mysql|stable'
+summary: Properties of a private endpoint connection.
+fullName: ServerPrivateEndpointConnectionProperties
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: privateEndpoint
+    uid: >-
+      @azure/arm-mysql.ServerPrivateEndpointConnectionProperties.privateEndpoint|stable
+    package: '@azure/arm-mysql|stable'
+    summary: Private endpoint which the connection belongs to.
+    fullName: privateEndpoint
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'privateEndpoint?: PrivateEndpointProperty'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mysql.PrivateEndpointProperty|stable" />
+  - name: privateLinkServiceConnectionState
+    uid: >-
+      @azure/arm-mysql.ServerPrivateEndpointConnectionProperties.privateLinkServiceConnectionState|stable
+    package: '@azure/arm-mysql|stable'
+    summary: Connection state of the private endpoint connection.
+    fullName: privateLinkServiceConnectionState
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        privateLinkServiceConnectionState?:
+        ServerPrivateLinkServiceConnectionStateProperty
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-mysql.ServerPrivateLinkServiceConnectionStateProperty|stable"
+          />
+  - name: provisioningState
+    uid: >-
+      @azure/arm-mysql.ServerPrivateEndpointConnectionProperties.provisioningState|stable
+    package: '@azure/arm-mysql|stable'
+    summary: >-
+      State of the private endpoint connection.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: provisioningState
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'provisioningState?: PrivateEndpointProvisioningState'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/arm-mysql.PrivateEndpointProvisioningState|stable"
+          />

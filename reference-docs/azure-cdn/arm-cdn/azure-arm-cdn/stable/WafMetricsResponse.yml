@@ -1,0 +1,63 @@
+### YamlMime:TSType
+name: WafMetricsResponse
+uid: '@azure/arm-cdn.WafMetricsResponse|stable'
+package: '@azure/arm-cdn|stable'
+summary: Waf Metrics Response
+fullName: WafMetricsResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: dateTimeBegin
+    uid: '@azure/arm-cdn.WafMetricsResponse.dateTimeBegin|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: ''
+    fullName: dateTimeBegin
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dateTimeBegin?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: dateTimeEnd
+    uid: '@azure/arm-cdn.WafMetricsResponse.dateTimeEnd|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: ''
+    fullName: dateTimeEnd
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dateTimeEnd?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: granularity
+    uid: '@azure/arm-cdn.WafMetricsResponse.granularity|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: ''
+    fullName: granularity
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'granularity?: WafMetricsResponseGranularity'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-cdn.WafMetricsResponseGranularity|stable" />
+  - name: series
+    uid: '@azure/arm-cdn.WafMetricsResponse.series|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: ''
+    fullName: series
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'series?: WafMetricsResponseSeriesItem[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-cdn.WafMetricsResponseSeriesItem|stable" />[]

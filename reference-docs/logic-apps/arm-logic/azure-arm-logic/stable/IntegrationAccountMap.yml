@@ -1,0 +1,14 @@
+### YamlMime:TSTypeAlias
+name: IntegrationAccountMap
+uid: '@azure/arm-logic.IntegrationAccountMap|stable'
+package: '@azure/arm-logic|stable'
+summary: The integration account map.
+fullName: IntegrationAccountMap
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type IntegrationAccountMap = Resource & { changedTime?: Date, content?:
+  undefined | string, contentLink?: ContentLink, contentType?: undefined |
+  string, createdTime?: Date, mapType: MapType, metadata?: Record<string,
+  unknown>, parametersSchema?: IntegrationAccountMapPropertiesParametersSchema }

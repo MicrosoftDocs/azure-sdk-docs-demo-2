@@ -37,10 +37,10 @@ properties:
       return:
         description: ''
         type: number
-methods:
+inheritedMethods:
   - name: at(number)
-    uid: '@azure/ai-form-recognizer.FormPageArray.at|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.at'
+    package: '@azure/ai-form-recognizer'
     summary: |-
       Takes an integer value and returns the item at that index,
       allowing for positive and negative integers.
@@ -58,8 +58,8 @@ methods:
         description: ''
         type: <xref uid="@azure/ai-form-recognizer.FormPage|stable" /> | undefined
   - name: concat(ConcatArray<FormPage>[])
-    uid: '@azure/ai-form-recognizer.FormPageArray.concat|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.concat'
+    package: '@azure/ai-form-recognizer'
     summary: Combines two or more arrays.
     remarks: ''
     isPreview: false
@@ -77,8 +77,8 @@ methods:
         description: ''
         type: <xref uid="@azure/ai-form-recognizer.FormPage|stable" />[]
   - name: concat(T | ConcatArray<T>[])
-    uid: '@azure/ai-form-recognizer.FormPageArray.concat_1|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.concat_1'
+    package: '@azure/ai-form-recognizer'
     summary: Combines two or more arrays.
     remarks: ''
     isPreview: false
@@ -94,8 +94,8 @@ methods:
         description: ''
         type: <xref uid="@azure/ai-form-recognizer.FormPage|stable" />[]
   - name: copyWithin(number, number, number)
-    uid: '@azure/ai-form-recognizer.FormPageArray.copyWithin|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.copyWithin'
+    package: '@azure/ai-form-recognizer'
     summary: >-
       Returns the this object after copying a section of the array identified by
       start and end
@@ -130,8 +130,8 @@ methods:
         description: ''
         type: this
   - name: entries()
-    uid: '@azure/ai-form-recognizer.FormPageArray.entries|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.entries'
+    package: '@azure/ai-form-recognizer'
     summary: Returns an iterable of key, value pairs for every entry in the array
     remarks: ''
     isPreview: false
@@ -142,8 +142,8 @@ methods:
         description: ''
         type: IterableIterator&lt;[number, FormPage]&gt;
   - name: 'every((value: FormPage, index: number, array: FormPage[]) => unknown, any)'
-    uid: '@azure/ai-form-recognizer.FormPageArray.every|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.every'
+    package: '@azure/ai-form-recognizer'
     summary: Determines whether all the members of an array satisfy the specified test.
     remarks: ''
     isPreview: false
@@ -169,8 +169,8 @@ methods:
         description: ''
         type: boolean
   - name: fill(FormPage, number, number)
-    uid: '@azure/ai-form-recognizer.FormPageArray.fill|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.fill'
+    package: '@azure/ai-form-recognizer'
     summary: >-
       Returns the this object after filling the section identified by start and
       end with value
@@ -203,8 +203,8 @@ methods:
   - name: >-
       filter((value: FormPage, index: number, array: FormPage[]) => unknown,
       any)
-    uid: '@azure/ai-form-recognizer.FormPageArray.filter_1|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.filter_1'
+    package: '@azure/ai-form-recognizer'
     summary: >-
       Returns the elements of an array that meet the condition specified in a
       callback function.
@@ -234,8 +234,8 @@ methods:
   - name: >-
       filter<S>((value: FormPage, index: number, array: FormPage[]) => boolean,
       any)
-    uid: '@azure/ai-form-recognizer.FormPageArray.filter|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.filter'
+    package: '@azure/ai-form-recognizer'
     summary: >-
       Returns the elements of an array that meet the condition specified in a
       callback function.
@@ -263,8 +263,8 @@ methods:
         description: ''
         type: S[]
   - name: 'find((value: FormPage, index: number, obj: FormPage[]) => unknown, any)'
-    uid: '@azure/ai-form-recognizer.FormPageArray.find_1|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.find_1'
+    package: '@azure/ai-form-recognizer'
     summary: ''
     remarks: ''
     isPreview: false
@@ -286,8 +286,8 @@ methods:
   - name: >-
       find<S>((this: void, value: FormPage, index: number, obj: FormPage[]) =>
       boolean, any)
-    uid: '@azure/ai-form-recognizer.FormPageArray.find|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.find'
+    package: '@azure/ai-form-recognizer'
     summary: >-
       Returns the value of the first element in the array where predicate is
       true, and undefined
@@ -327,8 +327,8 @@ methods:
   - name: >-
       findIndex((value: FormPage, index: number, obj: FormPage[]) => unknown,
       any)
-    uid: '@azure/ai-form-recognizer.FormPageArray.findIndex|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.findIndex'
+    package: '@azure/ai-form-recognizer'
     summary: >-
       Returns the index of the first element in the array where predicate is
       true, and -1
@@ -364,8 +364,8 @@ methods:
         description: ''
         type: number
   - name: flat<U>(number)
-    uid: '@azure/ai-form-recognizer.FormPageArray.flat_8|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.flat_8'
+    package: '@azure/ai-form-recognizer'
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -386,8 +386,8 @@ methods:
         description: ''
         type: any[]
   - name: flat<U>(U[], 0)
-    uid: '@azure/ai-form-recognizer.FormPageArray.flat_7|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.flat_7'
+    package: '@azure/ai-form-recognizer'
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -410,8 +410,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][], 1)
-    uid: '@azure/ai-form-recognizer.FormPageArray.flat_6|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.flat_6'
+    package: '@azure/ai-form-recognizer'
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -434,8 +434,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][], 2)
-    uid: '@azure/ai-form-recognizer.FormPageArray.flat_5|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.flat_5'
+    package: '@azure/ai-form-recognizer'
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -458,8 +458,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][][], 3)
-    uid: '@azure/ai-form-recognizer.FormPageArray.flat_4|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.flat_4'
+    package: '@azure/ai-form-recognizer'
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -482,8 +482,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][][][], 4)
-    uid: '@azure/ai-form-recognizer.FormPageArray.flat_3|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.flat_3'
+    package: '@azure/ai-form-recognizer'
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -506,8 +506,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][][][][], 5)
-    uid: '@azure/ai-form-recognizer.FormPageArray.flat_2|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.flat_2'
+    package: '@azure/ai-form-recognizer'
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -530,8 +530,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][][][][][], 6)
-    uid: '@azure/ai-form-recognizer.FormPageArray.flat_1|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.flat_1'
+    package: '@azure/ai-form-recognizer'
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -554,8 +554,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][][][][][][], 7)
-    uid: '@azure/ai-form-recognizer.FormPageArray.flat|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.flat'
+    package: '@azure/ai-form-recognizer'
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -580,8 +580,8 @@ methods:
   - name: >-
       flatMap<U, This>((this: This, value: FormPage, index: number, array:
       FormPage[]) => U | ReadonlyArray<U>, This)
-    uid: '@azure/ai-form-recognizer.FormPageArray.flatMap|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.flatMap'
+    package: '@azure/ai-form-recognizer'
     summary: >-
       Calls a defined callback function on each element of an array. Then,
       flattens the result into
@@ -617,8 +617,8 @@ methods:
         description: ''
         type: U[]
   - name: 'forEach((value: FormPage, index: number, array: FormPage[]) => void, any)'
-    uid: '@azure/ai-form-recognizer.FormPageArray.forEach|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.forEach'
+    package: '@azure/ai-form-recognizer'
     summary: Performs the specified action for each element in an array.
     remarks: ''
     isPreview: false
@@ -640,8 +640,8 @@ methods:
             function. If thisArg is omitted, undefined is used as the this
             value.
   - name: includes(FormPage, number)
-    uid: '@azure/ai-form-recognizer.FormPageArray.includes|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.includes'
+    package: '@azure/ai-form-recognizer'
     summary: >-
       Determines whether an array includes a certain element, returning true or
       false as appropriate.
@@ -663,8 +663,8 @@ methods:
         description: ''
         type: boolean
   - name: indexOf(FormPage, number)
-    uid: '@azure/ai-form-recognizer.FormPageArray.indexOf|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.indexOf'
+    package: '@azure/ai-form-recognizer'
     summary: Returns the index of the first occurrence of a value in an array.
     remarks: ''
     isPreview: false
@@ -684,8 +684,8 @@ methods:
         description: ''
         type: number
   - name: join(string)
-    uid: '@azure/ai-form-recognizer.FormPageArray.join|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.join'
+    package: '@azure/ai-form-recognizer'
     summary: >-
       Adds all the elements of an array separated by the specified separator
       string.
@@ -705,8 +705,8 @@ methods:
         description: ''
         type: string
   - name: keys()
-    uid: '@azure/ai-form-recognizer.FormPageArray.keys|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.keys'
+    package: '@azure/ai-form-recognizer'
     summary: Returns an iterable of keys in the array
     remarks: ''
     isPreview: false
@@ -717,8 +717,8 @@ methods:
         description: ''
         type: IterableIterator&lt;number&gt;
   - name: lastIndexOf(FormPage, number)
-    uid: '@azure/ai-form-recognizer.FormPageArray.lastIndexOf|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.lastIndexOf'
+    package: '@azure/ai-form-recognizer'
     summary: Returns the index of the last occurrence of a specified value in an array.
     remarks: ''
     isPreview: false
@@ -740,8 +740,8 @@ methods:
         description: ''
         type: number
   - name: 'map<U>((value: FormPage, index: number, array: FormPage[]) => U, any)'
-    uid: '@azure/ai-form-recognizer.FormPageArray.map|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.map'
+    package: '@azure/ai-form-recognizer'
     summary: >-
       Calls a defined callback function on each element of an array, and returns
       an array that contains the results.
@@ -768,8 +768,8 @@ methods:
         description: ''
         type: U[]
   - name: pop()
-    uid: '@azure/ai-form-recognizer.FormPageArray.pop|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.pop'
+    package: '@azure/ai-form-recognizer'
     summary: Removes the last element from an array and returns it.
     remarks: ''
     isPreview: false
@@ -780,8 +780,8 @@ methods:
         description: ''
         type: <xref uid="@azure/ai-form-recognizer.FormPage|stable" /> | undefined
   - name: push(FormPage[])
-    uid: '@azure/ai-form-recognizer.FormPageArray.push|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.push'
+    package: '@azure/ai-form-recognizer'
     summary: Appends new elements to an array, and returns the new length of the array.
     remarks: ''
     isPreview: false
@@ -799,8 +799,8 @@ methods:
   - name: >-
       reduce((previousValue: FormPage, currentValue: FormPage, currentIndex:
       number, array: FormPage[]) => FormPage)
-    uid: '@azure/ai-form-recognizer.FormPageArray.reduce|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.reduce'
+    package: '@azure/ai-form-recognizer'
     summary: >-
       Calls the specified callback function for all the elements in an array.
       The return value of the callback function is the accumulated result, and
@@ -828,8 +828,8 @@ methods:
   - name: >-
       reduce((previousValue: FormPage, currentValue: FormPage, currentIndex:
       number, array: FormPage[]) => FormPage, FormPage)
-    uid: '@azure/ai-form-recognizer.FormPageArray.reduce_1|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.reduce_1'
+    package: '@azure/ai-form-recognizer'
     summary: ''
     remarks: ''
     isPreview: false
@@ -854,8 +854,8 @@ methods:
   - name: >-
       reduce<U>((previousValue: U, currentValue: FormPage, currentIndex: number,
       array: FormPage[]) => U, U)
-    uid: '@azure/ai-form-recognizer.FormPageArray.reduce_2|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.reduce_2'
+    package: '@azure/ai-form-recognizer'
     summary: >-
       Calls the specified callback function for all the elements in an array.
       The return value of the callback function is the accumulated result, and
@@ -889,8 +889,8 @@ methods:
   - name: >-
       reduceRight((previousValue: FormPage, currentValue: FormPage,
       currentIndex: number, array: FormPage[]) => FormPage)
-    uid: '@azure/ai-form-recognizer.FormPageArray.reduceRight|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.reduceRight'
+    package: '@azure/ai-form-recognizer'
     summary: >-
       Calls the specified callback function for all the elements in an array, in
       descending order. The return value of the callback function is the
@@ -919,8 +919,8 @@ methods:
   - name: >-
       reduceRight((previousValue: FormPage, currentValue: FormPage,
       currentIndex: number, array: FormPage[]) => FormPage, FormPage)
-    uid: '@azure/ai-form-recognizer.FormPageArray.reduceRight_1|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.reduceRight_1'
+    package: '@azure/ai-form-recognizer'
     summary: ''
     remarks: ''
     isPreview: false
@@ -945,8 +945,8 @@ methods:
   - name: >-
       reduceRight<U>((previousValue: U, currentValue: FormPage, currentIndex:
       number, array: FormPage[]) => U, U)
-    uid: '@azure/ai-form-recognizer.FormPageArray.reduceRight_2|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.reduceRight_2'
+    package: '@azure/ai-form-recognizer'
     summary: >-
       Calls the specified callback function for all the elements in an array, in
       descending order. The return value of the callback function is the
@@ -979,8 +979,8 @@ methods:
         description: ''
         type: U
   - name: reverse()
-    uid: '@azure/ai-form-recognizer.FormPageArray.reverse|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.reverse'
+    package: '@azure/ai-form-recognizer'
     summary: Reverses the elements in an Array.
     remarks: ''
     isPreview: false
@@ -991,8 +991,8 @@ methods:
         description: ''
         type: <xref uid="@azure/ai-form-recognizer.FormPage|stable" />[]
   - name: shift()
-    uid: '@azure/ai-form-recognizer.FormPageArray.shift|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.shift'
+    package: '@azure/ai-form-recognizer'
     summary: Removes the first element from an array and returns it.
     remarks: ''
     isPreview: false
@@ -1003,8 +1003,8 @@ methods:
         description: ''
         type: <xref uid="@azure/ai-form-recognizer.FormPage|stable" /> | undefined
   - name: slice(number, number)
-    uid: '@azure/ai-form-recognizer.FormPageArray.slice|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.slice'
+    package: '@azure/ai-form-recognizer'
     summary: Returns a section of an array.
     remarks: ''
     isPreview: false
@@ -1023,8 +1023,8 @@ methods:
         description: ''
         type: <xref uid="@azure/ai-form-recognizer.FormPage|stable" />[]
   - name: 'some((value: FormPage, index: number, array: FormPage[]) => unknown, any)'
-    uid: '@azure/ai-form-recognizer.FormPageArray.some|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.some'
+    package: '@azure/ai-form-recognizer'
     summary: >-
       Determines whether the specified callback function returns true for any
       element of an array.
@@ -1052,8 +1052,8 @@ methods:
         description: ''
         type: boolean
   - name: 'sort((a: FormPage, b: FormPage) => number)'
-    uid: '@azure/ai-form-recognizer.FormPageArray.sort|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.sort'
+    package: '@azure/ai-form-recognizer'
     summary: Sorts an array.
     remarks: ''
     isPreview: false
@@ -1071,8 +1071,8 @@ methods:
         description: ''
         type: this
   - name: splice(number, number)
-    uid: '@azure/ai-form-recognizer.FormPageArray.splice|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.splice'
+    package: '@azure/ai-form-recognizer'
     summary: >-
       Removes elements from an array and, if necessary, inserts new elements in
       their place, returning the deleted elements.
@@ -1095,8 +1095,8 @@ methods:
         description: ''
         type: <xref uid="@azure/ai-form-recognizer.FormPage|stable" />[]
   - name: splice(number, number, FormPage[])
-    uid: '@azure/ai-form-recognizer.FormPageArray.splice_1|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.splice_1'
+    package: '@azure/ai-form-recognizer'
     summary: >-
       Removes elements from an array and, if necessary, inserts new elements in
       their place, returning the deleted elements.
@@ -1124,8 +1124,8 @@ methods:
         description: ''
         type: <xref uid="@azure/ai-form-recognizer.FormPage|stable" />[]
   - name: toLocaleString()
-    uid: '@azure/ai-form-recognizer.FormPageArray.toLocaleString|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.toLocaleString'
+    package: '@azure/ai-form-recognizer'
     summary: >-
       Returns a string representation of an array. The elements are converted to
       string using their toLocalString methods.
@@ -1138,8 +1138,8 @@ methods:
         description: ''
         type: string
   - name: toString()
-    uid: '@azure/ai-form-recognizer.FormPageArray.toString|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.toString'
+    package: '@azure/ai-form-recognizer'
     summary: Returns a string representation of an array.
     remarks: ''
     isPreview: false
@@ -1150,8 +1150,8 @@ methods:
         description: ''
         type: string
   - name: unshift(FormPage[])
-    uid: '@azure/ai-form-recognizer.FormPageArray.unshift|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.unshift'
+    package: '@azure/ai-form-recognizer'
     summary: Inserts new elements at the start of an array.
     remarks: ''
     isPreview: false
@@ -1167,8 +1167,8 @@ methods:
         description: ''
         type: number
   - name: values()
-    uid: '@azure/ai-form-recognizer.FormPageArray.values|stable'
-    package: '@azure/ai-form-recognizer|stable'
+    uid: '@azure/ai-form-recognizer.FormPageArray.values'
+    package: '@azure/ai-form-recognizer'
     summary: Returns an iterable of values in the array
     remarks: ''
     isPreview: false

@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: ApplicationGatewayListResult
+uid: '@azure/arm-network.ApplicationGatewayListResult|stable'
+package: '@azure/arm-network|stable'
+summary: Response for ListApplicationGateways API service call.
+fullName: ApplicationGatewayListResult
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: nextLink
+    uid: '@azure/arm-network.ApplicationGatewayListResult.nextLink|stable'
+    package: '@azure/arm-network|stable'
+    summary: URL to get the next set of results.
+    fullName: nextLink
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nextLink?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: value
+    uid: '@azure/arm-network.ApplicationGatewayListResult.value|stable'
+    package: '@azure/arm-network|stable'
+    summary: List of an application gateways in a resource group.
+    fullName: value
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: ApplicationGateway[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.ApplicationGateway|stable" />[]

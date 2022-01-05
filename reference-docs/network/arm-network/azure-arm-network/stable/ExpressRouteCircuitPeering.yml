@@ -1,0 +1,24 @@
+### YamlMime:TSTypeAlias
+name: ExpressRouteCircuitPeering
+uid: '@azure/arm-network.ExpressRouteCircuitPeering|stable'
+package: '@azure/arm-network|stable'
+summary: Peering in an ExpressRouteCircuit resource.
+fullName: ExpressRouteCircuitPeering
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type ExpressRouteCircuitPeering = SubResource & { azureASN?: undefined |
+  number, connections?: ExpressRouteCircuitConnection[], etag?: undefined |
+  string, expressRouteConnection?: ExpressRouteConnectionId,
+  gatewayManagerEtag?: undefined | string, ipv6PeeringConfig?:
+  Ipv6ExpressRouteCircuitPeeringConfig, lastModifiedBy?: undefined | string,
+  microsoftPeeringConfig?: ExpressRouteCircuitPeeringConfig, name?: undefined |
+  string, peerASN?: undefined | number, peeredConnections?:
+  PeerExpressRouteCircuitConnection[], peeringType?: ExpressRoutePeeringType,
+  primaryAzurePort?: undefined | string, primaryPeerAddressPrefix?: undefined |
+  string, provisioningState?: ProvisioningState, routeFilter?: SubResource,
+  secondaryAzurePort?: undefined | string, secondaryPeerAddressPrefix?:
+  undefined | string, sharedKey?: undefined | string, state?:
+  ExpressRoutePeeringState, stats?: ExpressRouteCircuitStats, type?: undefined |
+  string, vlanId?: undefined | number }

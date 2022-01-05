@@ -1,0 +1,93 @@
+### YamlMime:TSType
+name: SwaggerCustomDynamicList
+uid: '@azure/arm-logic.SwaggerCustomDynamicList|stable'
+package: '@azure/arm-logic|stable'
+summary: The swagger custom dynamic list.
+fullName: SwaggerCustomDynamicList
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: builtInOperation
+    uid: '@azure/arm-logic.SwaggerCustomDynamicList.builtInOperation|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The built in operation.
+    fullName: builtInOperation
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'builtInOperation?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: itemsPath
+    uid: '@azure/arm-logic.SwaggerCustomDynamicList.itemsPath|stable'
+    package: '@azure/arm-logic|stable'
+    summary: >-
+      The path to a response property (relative to the response object, not the
+      response body) which contains an array of dynamic value items.
+    fullName: itemsPath
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'itemsPath?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: itemTitlePath
+    uid: '@azure/arm-logic.SwaggerCustomDynamicList.itemTitlePath|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The path to an item property which defines the display name of the item.
+    fullName: itemTitlePath
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'itemTitlePath?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: itemValuePath
+    uid: '@azure/arm-logic.SwaggerCustomDynamicList.itemValuePath|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The path to a property which defines the value which should be used.
+    fullName: itemValuePath
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'itemValuePath?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: operationId
+    uid: '@azure/arm-logic.SwaggerCustomDynamicList.operationId|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The operation id to fetch dynamic schema.
+    fullName: operationId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'operationId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: parameters
+    uid: '@azure/arm-logic.SwaggerCustomDynamicList.parameters|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The parameters.
+    fullName: parameters
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'parameters?: undefined | [key: string]: SwaggerCustomDynamicProperties'
+      return:
+        description: ''
+        type: >-
+          undefined | [key: string]: <xref
+          uid="@azure/arm-logic.SwaggerCustomDynamicProperties|stable" />

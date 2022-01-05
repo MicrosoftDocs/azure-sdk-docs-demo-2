@@ -1,0 +1,453 @@
+### YamlMime:TSType
+name: TriggerOperations
+uid: '@azure/synapse-artifacts.TriggerOperations|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: Interface representing a TriggerOperations.
+fullName: TriggerOperations
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      beginCreateOrUpdateTrigger(string, TriggerResource,
+      TriggerCreateOrUpdateTriggerOptionalParams)
+    uid: '@azure/synapse-artifacts.TriggerOperations.beginCreateOrUpdateTrigger|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Creates or updates a trigger.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdateTrigger(triggerName: string, trigger:
+        TriggerResource, options?: TriggerCreateOrUpdateTriggerOptionalParams):
+        Promise<PollerLike<PollOperationState<TriggerCreateOrUpdateTriggerResponse>,
+        TriggerCreateOrUpdateTriggerResponse>>
+      parameters:
+        - id: triggerName
+          type: string
+          description: The trigger name.
+        - id: trigger
+          type: <xref uid="@azure/synapse-artifacts.TriggerResource|beta" />
+          description: Trigger resource definition.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-artifacts.TriggerCreateOrUpdateTriggerOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/synapse-artifacts.TriggerCreateOrUpdateTriggerResponse|beta"
+          />&gt;, <xref
+          uid="@azure/synapse-artifacts.TriggerCreateOrUpdateTriggerResponse|beta"
+          />&gt;&gt;
+  - name: >-
+      beginCreateOrUpdateTriggerAndWait(string, TriggerResource,
+      TriggerCreateOrUpdateTriggerOptionalParams)
+    uid: >-
+      @azure/synapse-artifacts.TriggerOperations.beginCreateOrUpdateTriggerAndWait|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: Creates or updates a trigger.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdateTriggerAndWait(triggerName: string, trigger:
+        TriggerResource, options?: TriggerCreateOrUpdateTriggerOptionalParams):
+        Promise<TriggerCreateOrUpdateTriggerResponse>
+      parameters:
+        - id: triggerName
+          type: string
+          description: The trigger name.
+        - id: trigger
+          type: <xref uid="@azure/synapse-artifacts.TriggerResource|beta" />
+          description: Trigger resource definition.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-artifacts.TriggerCreateOrUpdateTriggerOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/synapse-artifacts.TriggerCreateOrUpdateTriggerResponse|beta"
+          />&gt;
+  - name: beginDeleteTrigger(string, TriggerDeleteTriggerOptionalParams)
+    uid: '@azure/synapse-artifacts.TriggerOperations.beginDeleteTrigger|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Deletes a trigger.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteTrigger(triggerName: string, options?:
+        TriggerDeleteTriggerOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: triggerName
+          type: string
+          description: The trigger name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-artifacts.TriggerDeleteTriggerOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: beginDeleteTriggerAndWait(string, TriggerDeleteTriggerOptionalParams)
+    uid: '@azure/synapse-artifacts.TriggerOperations.beginDeleteTriggerAndWait|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Deletes a trigger.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteTriggerAndWait(triggerName: string, options?:
+        TriggerDeleteTriggerOptionalParams): Promise<void>
+      parameters:
+        - id: triggerName
+          type: string
+          description: The trigger name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-artifacts.TriggerDeleteTriggerOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: beginStartTrigger(string, TriggerStartTriggerOptionalParams)
+    uid: '@azure/synapse-artifacts.TriggerOperations.beginStartTrigger|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Starts a trigger.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginStartTrigger(triggerName: string, options?:
+        TriggerStartTriggerOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: triggerName
+          type: string
+          description: The trigger name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-artifacts.TriggerStartTriggerOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: beginStartTriggerAndWait(string, TriggerStartTriggerOptionalParams)
+    uid: '@azure/synapse-artifacts.TriggerOperations.beginStartTriggerAndWait|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Starts a trigger.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginStartTriggerAndWait(triggerName: string, options?:
+        TriggerStartTriggerOptionalParams): Promise<void>
+      parameters:
+        - id: triggerName
+          type: string
+          description: The trigger name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-artifacts.TriggerStartTriggerOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: beginStopTrigger(string, TriggerStopTriggerOptionalParams)
+    uid: '@azure/synapse-artifacts.TriggerOperations.beginStopTrigger|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Stops a trigger.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginStopTrigger(triggerName: string, options?:
+        TriggerStopTriggerOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: triggerName
+          type: string
+          description: The trigger name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-artifacts.TriggerStopTriggerOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: beginStopTriggerAndWait(string, TriggerStopTriggerOptionalParams)
+    uid: '@azure/synapse-artifacts.TriggerOperations.beginStopTriggerAndWait|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Stops a trigger.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginStopTriggerAndWait(triggerName: string, options?:
+        TriggerStopTriggerOptionalParams): Promise<void>
+      parameters:
+        - id: triggerName
+          type: string
+          description: The trigger name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-artifacts.TriggerStopTriggerOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      beginSubscribeTriggerToEvents(string,
+      TriggerSubscribeTriggerToEventsOptionalParams)
+    uid: >-
+      @azure/synapse-artifacts.TriggerOperations.beginSubscribeTriggerToEvents|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: Subscribe event trigger to events.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginSubscribeTriggerToEvents(triggerName: string, options?:
+        TriggerSubscribeTriggerToEventsOptionalParams):
+        Promise<PollerLike<PollOperationState<TriggerSubscribeTriggerToEventsResponse>,
+        TriggerSubscribeTriggerToEventsResponse>>
+      parameters:
+        - id: triggerName
+          type: string
+          description: The trigger name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-artifacts.TriggerSubscribeTriggerToEventsOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/synapse-artifacts.TriggerSubscribeTriggerToEventsResponse|beta"
+          />&gt;, <xref
+          uid="@azure/synapse-artifacts.TriggerSubscribeTriggerToEventsResponse|beta"
+          />&gt;&gt;
+  - name: >-
+      beginSubscribeTriggerToEventsAndWait(string,
+      TriggerSubscribeTriggerToEventsOptionalParams)
+    uid: >-
+      @azure/synapse-artifacts.TriggerOperations.beginSubscribeTriggerToEventsAndWait|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: Subscribe event trigger to events.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginSubscribeTriggerToEventsAndWait(triggerName: string,
+        options?: TriggerSubscribeTriggerToEventsOptionalParams):
+        Promise<TriggerSubscribeTriggerToEventsResponse>
+      parameters:
+        - id: triggerName
+          type: string
+          description: The trigger name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-artifacts.TriggerSubscribeTriggerToEventsOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/synapse-artifacts.TriggerSubscribeTriggerToEventsResponse|beta"
+          />&gt;
+  - name: >-
+      beginUnsubscribeTriggerFromEvents(string,
+      TriggerUnsubscribeTriggerFromEventsOptionalParams)
+    uid: >-
+      @azure/synapse-artifacts.TriggerOperations.beginUnsubscribeTriggerFromEvents|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: Unsubscribe event trigger from events.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginUnsubscribeTriggerFromEvents(triggerName: string,
+        options?: TriggerUnsubscribeTriggerFromEventsOptionalParams):
+        Promise<PollerLike<PollOperationState<TriggerUnsubscribeTriggerFromEventsResponse>,
+        TriggerUnsubscribeTriggerFromEventsResponse>>
+      parameters:
+        - id: triggerName
+          type: string
+          description: The trigger name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-artifacts.TriggerUnsubscribeTriggerFromEventsOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/synapse-artifacts.TriggerUnsubscribeTriggerFromEventsResponse|beta"
+          />&gt;, <xref
+          uid="@azure/synapse-artifacts.TriggerUnsubscribeTriggerFromEventsResponse|beta"
+          />&gt;&gt;
+  - name: >-
+      beginUnsubscribeTriggerFromEventsAndWait(string,
+      TriggerUnsubscribeTriggerFromEventsOptionalParams)
+    uid: >-
+      @azure/synapse-artifacts.TriggerOperations.beginUnsubscribeTriggerFromEventsAndWait|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: Unsubscribe event trigger from events.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginUnsubscribeTriggerFromEventsAndWait(triggerName: string,
+        options?: TriggerUnsubscribeTriggerFromEventsOptionalParams):
+        Promise<TriggerUnsubscribeTriggerFromEventsResponse>
+      parameters:
+        - id: triggerName
+          type: string
+          description: The trigger name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-artifacts.TriggerUnsubscribeTriggerFromEventsOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/synapse-artifacts.TriggerUnsubscribeTriggerFromEventsResponse|beta"
+          />&gt;
+  - name: >-
+      getEventSubscriptionStatus(string,
+      TriggerGetEventSubscriptionStatusOptionalParams)
+    uid: '@azure/synapse-artifacts.TriggerOperations.getEventSubscriptionStatus|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Get a trigger's event subscription status.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getEventSubscriptionStatus(triggerName: string, options?:
+        TriggerGetEventSubscriptionStatusOptionalParams):
+        Promise<TriggerGetEventSubscriptionStatusResponse>
+      parameters:
+        - id: triggerName
+          type: string
+          description: The trigger name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-artifacts.TriggerGetEventSubscriptionStatusOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/synapse-artifacts.TriggerGetEventSubscriptionStatusResponse|beta"
+          />&gt;
+  - name: getTrigger(string, TriggerGetTriggerOptionalParams)
+    uid: '@azure/synapse-artifacts.TriggerOperations.getTrigger|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Gets a trigger.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getTrigger(triggerName: string, options?:
+        TriggerGetTriggerOptionalParams): Promise<TriggerGetTriggerResponse>
+      parameters:
+        - id: triggerName
+          type: string
+          description: The trigger name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-artifacts.TriggerGetTriggerOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/synapse-artifacts.TriggerGetTriggerResponse|beta" />&gt;
+  - name: listTriggersByWorkspace(TriggerGetTriggersByWorkspaceOptionalParams)
+    uid: '@azure/synapse-artifacts.TriggerOperations.listTriggersByWorkspace|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Lists triggers.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listTriggersByWorkspace(options?:
+        TriggerGetTriggersByWorkspaceOptionalParams):
+        PagedAsyncIterableIterator<TriggerResource>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-artifacts.TriggerGetTriggersByWorkspaceOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/synapse-artifacts.TriggerResource|beta" />&gt;

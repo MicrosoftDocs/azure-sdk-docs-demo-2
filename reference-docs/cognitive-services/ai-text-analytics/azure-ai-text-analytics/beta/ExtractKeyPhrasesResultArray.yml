@@ -77,10 +77,10 @@ properties:
         type: >-
           <xref uid="@azure/ai-text-analytics.TextDocumentBatchStatistics|beta"
           />
-methods:
+inheritedMethods:
   - name: at(number)
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.at|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.at'
+    package: '@azure/ai-text-analytics'
     summary: |-
       Takes an integer value and returns the item at that index,
       allowing for positive and negative integers.
@@ -100,8 +100,8 @@ methods:
           <xref uid="@azure/ai-text-analytics.ExtractKeyPhrasesResult|beta" /> |
           undefined
   - name: concat(ConcatArray<ExtractKeyPhrasesResult>[])
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.concat|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.concat'
+    package: '@azure/ai-text-analytics'
     summary: Combines two or more arrays.
     remarks: ''
     isPreview: false
@@ -121,8 +121,8 @@ methods:
         description: ''
         type: <xref uid="@azure/ai-text-analytics.ExtractKeyPhrasesResult|beta" />[]
   - name: concat(T | ConcatArray<T>[])
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.concat_1|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.concat_1'
+    package: '@azure/ai-text-analytics'
     summary: Combines two or more arrays.
     remarks: ''
     isPreview: false
@@ -138,8 +138,8 @@ methods:
         description: ''
         type: <xref uid="@azure/ai-text-analytics.ExtractKeyPhrasesResult|beta" />[]
   - name: copyWithin(number, number, number)
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.copyWithin|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.copyWithin'
+    package: '@azure/ai-text-analytics'
     summary: >-
       Returns the this object after copying a section of the array identified by
       start and end
@@ -174,8 +174,8 @@ methods:
         description: ''
         type: this
   - name: entries()
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.entries|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.entries'
+    package: '@azure/ai-text-analytics'
     summary: Returns an iterable of key, value pairs for every entry in the array
     remarks: ''
     isPreview: false
@@ -188,8 +188,8 @@ methods:
   - name: >-
       every((value: ExtractKeyPhrasesResult, index: number, array:
       ExtractKeyPhrasesResult[]) => unknown, any)
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.every|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.every'
+    package: '@azure/ai-text-analytics'
     summary: Determines whether all the members of an array satisfy the specified test.
     remarks: ''
     isPreview: false
@@ -218,8 +218,8 @@ methods:
         description: ''
         type: boolean
   - name: fill(ExtractKeyPhrasesResult, number, number)
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.fill|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.fill'
+    package: '@azure/ai-text-analytics'
     summary: >-
       Returns the this object after filling the section identified by start and
       end with value
@@ -254,8 +254,8 @@ methods:
   - name: >-
       filter((value: ExtractKeyPhrasesResult, index: number, array:
       ExtractKeyPhrasesResult[]) => unknown, any)
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.filter_1|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.filter_1'
+    package: '@azure/ai-text-analytics'
     summary: >-
       Returns the elements of an array that meet the condition specified in a
       callback function.
@@ -288,8 +288,8 @@ methods:
   - name: >-
       filter<S>((value: ExtractKeyPhrasesResult, index: number, array:
       ExtractKeyPhrasesResult[]) => boolean, any)
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.filter|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.filter'
+    package: '@azure/ai-text-analytics'
     summary: >-
       Returns the elements of an array that meet the condition specified in a
       callback function.
@@ -322,8 +322,8 @@ methods:
   - name: >-
       find((value: ExtractKeyPhrasesResult, index: number, obj:
       ExtractKeyPhrasesResult[]) => unknown, any)
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.find_1|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.find_1'
+    package: '@azure/ai-text-analytics'
     summary: ''
     remarks: ''
     isPreview: false
@@ -350,8 +350,8 @@ methods:
   - name: >-
       find<S>((this: void, value: ExtractKeyPhrasesResult, index: number, obj:
       ExtractKeyPhrasesResult[]) => boolean, any)
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.find|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.find'
+    package: '@azure/ai-text-analytics'
     summary: >-
       Returns the value of the first element in the array where predicate is
       true, and undefined
@@ -392,8 +392,8 @@ methods:
   - name: >-
       findIndex((value: ExtractKeyPhrasesResult, index: number, obj:
       ExtractKeyPhrasesResult[]) => unknown, any)
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.findIndex|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.findIndex'
+    package: '@azure/ai-text-analytics'
     summary: >-
       Returns the index of the first element in the array where predicate is
       true, and -1
@@ -432,8 +432,8 @@ methods:
         description: ''
         type: number
   - name: flat<U>(number)
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.flat_8|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.flat_8'
+    package: '@azure/ai-text-analytics'
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -454,8 +454,8 @@ methods:
         description: ''
         type: any[]
   - name: flat<U>(U[], 0)
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.flat_7|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.flat_7'
+    package: '@azure/ai-text-analytics'
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -478,8 +478,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][], 1)
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.flat_6|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.flat_6'
+    package: '@azure/ai-text-analytics'
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -502,8 +502,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][], 2)
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.flat_5|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.flat_5'
+    package: '@azure/ai-text-analytics'
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -526,8 +526,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][][], 3)
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.flat_4|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.flat_4'
+    package: '@azure/ai-text-analytics'
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -550,8 +550,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][][][], 4)
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.flat_3|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.flat_3'
+    package: '@azure/ai-text-analytics'
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -574,8 +574,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][][][][], 5)
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.flat_2|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.flat_2'
+    package: '@azure/ai-text-analytics'
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -598,8 +598,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][][][][][], 6)
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.flat_1|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.flat_1'
+    package: '@azure/ai-text-analytics'
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -622,8 +622,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][][][][][][], 7)
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.flat|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.flat'
+    package: '@azure/ai-text-analytics'
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -648,8 +648,8 @@ methods:
   - name: >-
       flatMap<U, This>((this: This, value: ExtractKeyPhrasesResult, index:
       number, array: ExtractKeyPhrasesResult[]) => U | ReadonlyArray<U>, This)
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.flatMap|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.flatMap'
+    package: '@azure/ai-text-analytics'
     summary: >-
       Calls a defined callback function on each element of an array. Then,
       flattens the result into
@@ -688,8 +688,8 @@ methods:
   - name: >-
       forEach((value: ExtractKeyPhrasesResult, index: number, array:
       ExtractKeyPhrasesResult[]) => void, any)
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.forEach|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.forEach'
+    package: '@azure/ai-text-analytics'
     summary: Performs the specified action for each element in an array.
     remarks: ''
     isPreview: false
@@ -713,8 +713,8 @@ methods:
             function. If thisArg is omitted, undefined is used as the this
             value.
   - name: includes(ExtractKeyPhrasesResult, number)
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.includes|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.includes'
+    package: '@azure/ai-text-analytics'
     summary: >-
       Determines whether an array includes a certain element, returning true or
       false as appropriate.
@@ -738,8 +738,8 @@ methods:
         description: ''
         type: boolean
   - name: indexOf(ExtractKeyPhrasesResult, number)
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.indexOf|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.indexOf'
+    package: '@azure/ai-text-analytics'
     summary: Returns the index of the first occurrence of a value in an array.
     remarks: ''
     isPreview: false
@@ -761,8 +761,8 @@ methods:
         description: ''
         type: number
   - name: join(string)
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.join|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.join'
+    package: '@azure/ai-text-analytics'
     summary: >-
       Adds all the elements of an array separated by the specified separator
       string.
@@ -782,8 +782,8 @@ methods:
         description: ''
         type: string
   - name: keys()
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.keys|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.keys'
+    package: '@azure/ai-text-analytics'
     summary: Returns an iterable of keys in the array
     remarks: ''
     isPreview: false
@@ -794,8 +794,8 @@ methods:
         description: ''
         type: IterableIterator&lt;number&gt;
   - name: lastIndexOf(ExtractKeyPhrasesResult, number)
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.lastIndexOf|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.lastIndexOf'
+    package: '@azure/ai-text-analytics'
     summary: Returns the index of the last occurrence of a specified value in an array.
     remarks: ''
     isPreview: false
@@ -819,8 +819,8 @@ methods:
   - name: >-
       map<U>((value: ExtractKeyPhrasesResult, index: number, array:
       ExtractKeyPhrasesResult[]) => U, any)
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.map|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.map'
+    package: '@azure/ai-text-analytics'
     summary: >-
       Calls a defined callback function on each element of an array, and returns
       an array that contains the results.
@@ -849,8 +849,8 @@ methods:
         description: ''
         type: U[]
   - name: pop()
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.pop|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.pop'
+    package: '@azure/ai-text-analytics'
     summary: Removes the last element from an array and returns it.
     remarks: ''
     isPreview: false
@@ -863,8 +863,8 @@ methods:
           <xref uid="@azure/ai-text-analytics.ExtractKeyPhrasesResult|beta" /> |
           undefined
   - name: push(ExtractKeyPhrasesResult[])
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.push|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.push'
+    package: '@azure/ai-text-analytics'
     summary: Appends new elements to an array, and returns the new length of the array.
     remarks: ''
     isPreview: false
@@ -885,8 +885,8 @@ methods:
       reduce((previousValue: ExtractKeyPhrasesResult, currentValue:
       ExtractKeyPhrasesResult, currentIndex: number, array:
       ExtractKeyPhrasesResult[]) => ExtractKeyPhrasesResult)
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.reduce|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.reduce'
+    package: '@azure/ai-text-analytics'
     summary: >-
       Calls the specified callback function for all the elements in an array.
       The return value of the callback function is the accumulated result, and
@@ -918,8 +918,8 @@ methods:
       ExtractKeyPhrasesResult, currentIndex: number, array:
       ExtractKeyPhrasesResult[]) => ExtractKeyPhrasesResult,
       ExtractKeyPhrasesResult)
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.reduce_1|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.reduce_1'
+    package: '@azure/ai-text-analytics'
     summary: ''
     remarks: ''
     isPreview: false
@@ -946,8 +946,8 @@ methods:
   - name: >-
       reduce<U>((previousValue: U, currentValue: ExtractKeyPhrasesResult,
       currentIndex: number, array: ExtractKeyPhrasesResult[]) => U, U)
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.reduce_2|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.reduce_2'
+    package: '@azure/ai-text-analytics'
     summary: >-
       Calls the specified callback function for all the elements in an array.
       The return value of the callback function is the accumulated result, and
@@ -982,8 +982,8 @@ methods:
       reduceRight((previousValue: ExtractKeyPhrasesResult, currentValue:
       ExtractKeyPhrasesResult, currentIndex: number, array:
       ExtractKeyPhrasesResult[]) => ExtractKeyPhrasesResult)
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.reduceRight|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.reduceRight'
+    package: '@azure/ai-text-analytics'
     summary: >-
       Calls the specified callback function for all the elements in an array, in
       descending order. The return value of the callback function is the
@@ -1016,8 +1016,8 @@ methods:
       ExtractKeyPhrasesResult, currentIndex: number, array:
       ExtractKeyPhrasesResult[]) => ExtractKeyPhrasesResult,
       ExtractKeyPhrasesResult)
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.reduceRight_1|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.reduceRight_1'
+    package: '@azure/ai-text-analytics'
     summary: ''
     remarks: ''
     isPreview: false
@@ -1045,8 +1045,8 @@ methods:
   - name: >-
       reduceRight<U>((previousValue: U, currentValue: ExtractKeyPhrasesResult,
       currentIndex: number, array: ExtractKeyPhrasesResult[]) => U, U)
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.reduceRight_2|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.reduceRight_2'
+    package: '@azure/ai-text-analytics'
     summary: >-
       Calls the specified callback function for all the elements in an array, in
       descending order. The return value of the callback function is the
@@ -1079,8 +1079,8 @@ methods:
         description: ''
         type: U
   - name: reverse()
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.reverse|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.reverse'
+    package: '@azure/ai-text-analytics'
     summary: Reverses the elements in an Array.
     remarks: ''
     isPreview: false
@@ -1091,8 +1091,8 @@ methods:
         description: ''
         type: <xref uid="@azure/ai-text-analytics.ExtractKeyPhrasesResult|beta" />[]
   - name: shift()
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.shift|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.shift'
+    package: '@azure/ai-text-analytics'
     summary: Removes the first element from an array and returns it.
     remarks: ''
     isPreview: false
@@ -1105,8 +1105,8 @@ methods:
           <xref uid="@azure/ai-text-analytics.ExtractKeyPhrasesResult|beta" /> |
           undefined
   - name: slice(number, number)
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.slice|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.slice'
+    package: '@azure/ai-text-analytics'
     summary: Returns a section of an array.
     remarks: ''
     isPreview: false
@@ -1127,8 +1127,8 @@ methods:
   - name: >-
       some((value: ExtractKeyPhrasesResult, index: number, array:
       ExtractKeyPhrasesResult[]) => unknown, any)
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.some|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.some'
+    package: '@azure/ai-text-analytics'
     summary: >-
       Determines whether the specified callback function returns true for any
       element of an array.
@@ -1159,8 +1159,8 @@ methods:
         description: ''
         type: boolean
   - name: 'sort((a: ExtractKeyPhrasesResult, b: ExtractKeyPhrasesResult) => number)'
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.sort|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.sort'
+    package: '@azure/ai-text-analytics'
     summary: Sorts an array.
     remarks: ''
     isPreview: false
@@ -1182,8 +1182,8 @@ methods:
         description: ''
         type: this
   - name: splice(number, number)
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.splice|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.splice'
+    package: '@azure/ai-text-analytics'
     summary: >-
       Removes elements from an array and, if necessary, inserts new elements in
       their place, returning the deleted elements.
@@ -1208,8 +1208,8 @@ methods:
         description: ''
         type: <xref uid="@azure/ai-text-analytics.ExtractKeyPhrasesResult|beta" />[]
   - name: splice(number, number, ExtractKeyPhrasesResult[])
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.splice_1|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.splice_1'
+    package: '@azure/ai-text-analytics'
     summary: >-
       Removes elements from an array and, if necessary, inserts new elements in
       their place, returning the deleted elements.
@@ -1239,8 +1239,8 @@ methods:
         description: ''
         type: <xref uid="@azure/ai-text-analytics.ExtractKeyPhrasesResult|beta" />[]
   - name: toLocaleString()
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.toLocaleString|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.toLocaleString'
+    package: '@azure/ai-text-analytics'
     summary: >-
       Returns a string representation of an array. The elements are converted to
       string using their toLocalString methods.
@@ -1253,8 +1253,8 @@ methods:
         description: ''
         type: string
   - name: toString()
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.toString|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.toString'
+    package: '@azure/ai-text-analytics'
     summary: Returns a string representation of an array.
     remarks: ''
     isPreview: false
@@ -1265,8 +1265,8 @@ methods:
         description: ''
         type: string
   - name: unshift(ExtractKeyPhrasesResult[])
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.unshift|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.unshift'
+    package: '@azure/ai-text-analytics'
     summary: Inserts new elements at the start of an array.
     remarks: ''
     isPreview: false
@@ -1284,8 +1284,8 @@ methods:
         description: ''
         type: number
   - name: values()
-    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.values|beta'
-    package: '@azure/ai-text-analytics|beta'
+    uid: '@azure/ai-text-analytics.ExtractKeyPhrasesResultArray.values'
+    package: '@azure/ai-text-analytics'
     summary: Returns an iterable of values in the array
     remarks: ''
     isPreview: false

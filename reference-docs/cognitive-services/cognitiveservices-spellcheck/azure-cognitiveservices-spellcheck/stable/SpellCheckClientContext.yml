@@ -64,13 +64,13 @@ properties:
       return:
         description: ''
         type: undefined | string
-methods:
+inheritedMethods:
   - name: >-
       sendOperationRequest(OperationArguments, OperationSpec,
       ServiceCallback<any>)
     uid: >-
-      @azure/cognitiveservices-spellcheck.SpellCheckClientContext.sendOperationRequest|stable
-    package: '@azure/cognitiveservices-spellcheck|stable'
+      @azure/cognitiveservices-spellcheck.SpellCheckClientContext.sendOperationRequest
+    package: '@azure/cognitiveservices-spellcheck'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
     isPreview: false
@@ -97,9 +97,8 @@ methods:
         description: ''
         type: Promise&lt;RestResponse&gt;
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
-    uid: >-
-      @azure/cognitiveservices-spellcheck.SpellCheckClientContext.sendRequest|stable
-    package: '@azure/cognitiveservices-spellcheck|stable'
+    uid: '@azure/cognitiveservices-spellcheck.SpellCheckClientContext.sendRequest'
+    package: '@azure/cognitiveservices-spellcheck'
     summary: Send the provided httpRequest.
     remarks: ''
     isPreview: false

@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: UsagesListResult
+uid: '@azure/arm-network.UsagesListResult|stable'
+package: '@azure/arm-network|stable'
+summary: The list usages operation response.
+fullName: UsagesListResult
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: nextLink
+    uid: '@azure/arm-network.UsagesListResult.nextLink|stable'
+    package: '@azure/arm-network|stable'
+    summary: URL to get the next set of results.
+    fullName: nextLink
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nextLink?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: value
+    uid: '@azure/arm-network.UsagesListResult.value|stable'
+    package: '@azure/arm-network|stable'
+    summary: The list network resource usages.
+    fullName: value
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: Usage[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.Usage|stable" />[]

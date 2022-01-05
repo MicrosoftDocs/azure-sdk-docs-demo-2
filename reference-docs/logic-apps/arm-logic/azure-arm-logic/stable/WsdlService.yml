@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: WsdlService
+uid: '@azure/arm-logic.WsdlService|stable'
+package: '@azure/arm-logic|stable'
+summary: The WSDL service.
+fullName: WsdlService
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: endpointQualifiedNames
+    uid: '@azure/arm-logic.WsdlService.endpointQualifiedNames|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The list of endpoints' qualified names.
+    fullName: endpointQualifiedNames
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'endpointQualifiedNames?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: qualifiedName
+    uid: '@azure/arm-logic.WsdlService.qualifiedName|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The qualified name.
+    fullName: qualifiedName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'qualifiedName?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

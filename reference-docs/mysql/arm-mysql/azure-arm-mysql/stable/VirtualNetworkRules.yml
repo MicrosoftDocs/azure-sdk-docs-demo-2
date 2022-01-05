@@ -1,0 +1,234 @@
+### YamlMime:TSType
+name: VirtualNetworkRules
+uid: '@azure/arm-mysql.VirtualNetworkRules|stable'
+package: '@azure/arm-mysql|stable'
+summary: Interface representing a VirtualNetworkRules.
+fullName: VirtualNetworkRules
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      beginCreateOrUpdate(string, string, string, VirtualNetworkRule,
+      VirtualNetworkRulesCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-mysql.VirtualNetworkRules.beginCreateOrUpdate|stable'
+    package: '@azure/arm-mysql|stable'
+    summary: Creates or updates an existing virtual network rule.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string, serverName:
+        string, virtualNetworkRuleName: string, parameters: VirtualNetworkRule,
+        options?: VirtualNetworkRulesCreateOrUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<VirtualNetworkRulesCreateOrUpdateResponse>,
+        VirtualNetworkRulesCreateOrUpdateResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: serverName
+          type: string
+          description: The name of the server.
+        - id: virtualNetworkRuleName
+          type: string
+          description: The name of the virtual network rule.
+        - id: parameters
+          type: <xref uid="@azure/arm-mysql.VirtualNetworkRule|stable" />
+          description: The requested virtual Network Rule Resource state.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mysql.VirtualNetworkRulesCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-mysql.VirtualNetworkRulesCreateOrUpdateResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-mysql.VirtualNetworkRulesCreateOrUpdateResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginCreateOrUpdateAndWait(string, string, string, VirtualNetworkRule,
+      VirtualNetworkRulesCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-mysql.VirtualNetworkRules.beginCreateOrUpdateAndWait|stable'
+    package: '@azure/arm-mysql|stable'
+    summary: Creates or updates an existing virtual network rule.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdateAndWait(resourceGroupName: string,
+        serverName: string, virtualNetworkRuleName: string, parameters:
+        VirtualNetworkRule, options?:
+        VirtualNetworkRulesCreateOrUpdateOptionalParams):
+        Promise<VirtualNetworkRulesCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: serverName
+          type: string
+          description: The name of the server.
+        - id: virtualNetworkRuleName
+          type: string
+          description: The name of the virtual network rule.
+        - id: parameters
+          type: <xref uid="@azure/arm-mysql.VirtualNetworkRule|stable" />
+          description: The requested virtual Network Rule Resource state.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mysql.VirtualNetworkRulesCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-mysql.VirtualNetworkRulesCreateOrUpdateResponse|stable"
+          />&gt;
+  - name: >-
+      beginDelete(string, string, string,
+      VirtualNetworkRulesDeleteOptionalParams)
+    uid: '@azure/arm-mysql.VirtualNetworkRules.beginDelete|stable'
+    package: '@azure/arm-mysql|stable'
+    summary: Deletes the virtual network rule with the given name.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDelete(resourceGroupName: string, serverName: string,
+        virtualNetworkRuleName: string, options?:
+        VirtualNetworkRulesDeleteOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: serverName
+          type: string
+          description: The name of the server.
+        - id: virtualNetworkRuleName
+          type: string
+          description: The name of the virtual network rule.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mysql.VirtualNetworkRulesDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: >-
+      beginDeleteAndWait(string, string, string,
+      VirtualNetworkRulesDeleteOptionalParams)
+    uid: '@azure/arm-mysql.VirtualNetworkRules.beginDeleteAndWait|stable'
+    package: '@azure/arm-mysql|stable'
+    summary: Deletes the virtual network rule with the given name.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteAndWait(resourceGroupName: string, serverName:
+        string, virtualNetworkRuleName: string, options?:
+        VirtualNetworkRulesDeleteOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: serverName
+          type: string
+          description: The name of the server.
+        - id: virtualNetworkRuleName
+          type: string
+          description: The name of the virtual network rule.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mysql.VirtualNetworkRulesDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: get(string, string, string, VirtualNetworkRulesGetOptionalParams)
+    uid: '@azure/arm-mysql.VirtualNetworkRules.get|stable'
+    package: '@azure/arm-mysql|stable'
+    summary: Gets a virtual network rule.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, serverName: string,
+        virtualNetworkRuleName: string, options?:
+        VirtualNetworkRulesGetOptionalParams):
+        Promise<VirtualNetworkRulesGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: serverName
+          type: string
+          description: The name of the server.
+        - id: virtualNetworkRuleName
+          type: string
+          description: The name of the virtual network rule.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mysql.VirtualNetworkRulesGetOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-mysql.VirtualNetworkRulesGetResponse|stable" />&gt;
+  - name: >-
+      listByServer(string, string,
+      VirtualNetworkRulesListByServerOptionalParams)
+    uid: '@azure/arm-mysql.VirtualNetworkRules.listByServer|stable'
+    package: '@azure/arm-mysql|stable'
+    summary: Gets a list of virtual network rules in a server.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByServer(resourceGroupName: string, serverName: string,
+        options?: VirtualNetworkRulesListByServerOptionalParams):
+        PagedAsyncIterableIterator<VirtualNetworkRule>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: serverName
+          type: string
+          description: The name of the server.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mysql.VirtualNetworkRulesListByServerOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-mysql.VirtualNetworkRule|stable" />&gt;

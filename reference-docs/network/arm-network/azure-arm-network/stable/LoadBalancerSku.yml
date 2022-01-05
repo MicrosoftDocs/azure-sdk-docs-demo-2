@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: LoadBalancerSku
+uid: '@azure/arm-network.LoadBalancerSku|stable'
+package: '@azure/arm-network|stable'
+summary: SKU of a load balancer.
+fullName: LoadBalancerSku
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: name
+    uid: '@azure/arm-network.LoadBalancerSku.name|stable'
+    package: '@azure/arm-network|stable'
+    summary: Name of a load balancer SKU.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: LoadBalancerSkuName'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.LoadBalancerSkuName|stable" />
+  - name: tier
+    uid: '@azure/arm-network.LoadBalancerSku.tier|stable'
+    package: '@azure/arm-network|stable'
+    summary: Tier of a load balancer SKU.
+    fullName: tier
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tier?: LoadBalancerSkuTier'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.LoadBalancerSkuTier|stable" />

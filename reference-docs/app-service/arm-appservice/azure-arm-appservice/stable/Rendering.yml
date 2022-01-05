@@ -1,0 +1,50 @@
+### YamlMime:TSType
+name: Rendering
+uid: '@azure/arm-appservice.Rendering|stable'
+package: '@azure/arm-appservice|stable'
+summary: Instructions for rendering the data
+fullName: Rendering
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: description
+    uid: '@azure/arm-appservice.Rendering.description|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description of the data that will help it be interpreted
+    fullName: description
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'description?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: title
+    uid: '@azure/arm-appservice.Rendering.title|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Title of data
+    fullName: title
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'title?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: type
+    uid: '@azure/arm-appservice.Rendering.type|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Rendering Type
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: RenderingType'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.RenderingType|stable" />

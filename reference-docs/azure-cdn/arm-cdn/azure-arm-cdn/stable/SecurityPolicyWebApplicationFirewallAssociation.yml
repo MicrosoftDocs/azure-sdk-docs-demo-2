@@ -1,0 +1,39 @@
+### YamlMime:TSType
+name: SecurityPolicyWebApplicationFirewallAssociation
+uid: '@azure/arm-cdn.SecurityPolicyWebApplicationFirewallAssociation|stable'
+package: '@azure/arm-cdn|stable'
+summary: settings for security policy patterns to match
+fullName: SecurityPolicyWebApplicationFirewallAssociation
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: domains
+    uid: >-
+      @azure/arm-cdn.SecurityPolicyWebApplicationFirewallAssociation.domains|stable
+    package: '@azure/arm-cdn|stable'
+    summary: List of domains.
+    fullName: domains
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'domains?: ResourceReference[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-cdn.ResourceReference|stable" />[]
+  - name: patternsToMatch
+    uid: >-
+      @azure/arm-cdn.SecurityPolicyWebApplicationFirewallAssociation.patternsToMatch|stable
+    package: '@azure/arm-cdn|stable'
+    summary: List of paths
+    fullName: patternsToMatch
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'patternsToMatch?: string[]'
+      return:
+        description: ''
+        type: string[]

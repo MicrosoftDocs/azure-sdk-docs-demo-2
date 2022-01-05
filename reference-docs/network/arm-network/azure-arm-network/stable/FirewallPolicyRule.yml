@@ -1,0 +1,52 @@
+### YamlMime:TSType
+name: FirewallPolicyRule
+uid: '@azure/arm-network.FirewallPolicyRule|stable'
+package: '@azure/arm-network|stable'
+summary: Properties of a rule.
+fullName: FirewallPolicyRule
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: description
+    uid: '@azure/arm-network.FirewallPolicyRule.description|stable'
+    package: '@azure/arm-network|stable'
+    summary: Description of the rule.
+    fullName: description
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'description?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: name
+    uid: '@azure/arm-network.FirewallPolicyRule.name|stable'
+    package: '@azure/arm-network|stable'
+    summary: Name of the rule.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: ruleType
+    uid: '@azure/arm-network.FirewallPolicyRule.ruleType|stable'
+    package: '@azure/arm-network|stable'
+    summary: >-
+      Polymorphic discriminator, which specifies the different types this object
+      can be
+    fullName: ruleType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ruleType: "ApplicationRule" | "NatRule" | "NetworkRule"'
+      return:
+        description: ''
+        type: '"ApplicationRule" | "NatRule" | "NetworkRule"'

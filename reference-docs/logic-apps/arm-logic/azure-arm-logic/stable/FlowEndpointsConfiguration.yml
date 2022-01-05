@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: FlowEndpointsConfiguration
+uid: '@azure/arm-logic.FlowEndpointsConfiguration|stable'
+package: '@azure/arm-logic|stable'
+summary: The endpoints configuration.
+fullName: FlowEndpointsConfiguration
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: connector
+    uid: '@azure/arm-logic.FlowEndpointsConfiguration.connector|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The connector endpoints.
+    fullName: connector
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'connector?: FlowEndpoints'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-logic.FlowEndpoints|stable" />
+  - name: workflow
+    uid: '@azure/arm-logic.FlowEndpointsConfiguration.workflow|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The workflow endpoints.
+    fullName: workflow
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'workflow?: FlowEndpoints'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-logic.FlowEndpoints|stable" />

@@ -1,0 +1,41 @@
+### YamlMime:TSType
+name: FirewallPolicyLogAnalyticsResources
+uid: '@azure/arm-network.FirewallPolicyLogAnalyticsResources|stable'
+package: '@azure/arm-network|stable'
+summary: Log Analytics Resources for Firewall Policy Insights.
+fullName: FirewallPolicyLogAnalyticsResources
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: defaultWorkspaceId
+    uid: >-
+      @azure/arm-network.FirewallPolicyLogAnalyticsResources.defaultWorkspaceId|stable
+    package: '@azure/arm-network|stable'
+    summary: The default workspace Id for Firewall Policy Insights.
+    fullName: defaultWorkspaceId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'defaultWorkspaceId?: SubResource'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.SubResource|stable" />
+  - name: workspaces
+    uid: '@azure/arm-network.FirewallPolicyLogAnalyticsResources.workspaces|stable'
+    package: '@azure/arm-network|stable'
+    summary: List of workspaces for Firewall Policy Insights.
+    fullName: workspaces
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'workspaces?: FirewallPolicyLogAnalyticsWorkspace[]'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-network.FirewallPolicyLogAnalyticsWorkspace|stable"
+          />[]

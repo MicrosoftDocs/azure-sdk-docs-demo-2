@@ -1,0 +1,89 @@
+### YamlMime:TSType
+name: TimeZoneOutput
+uid: '@azure-rest/purview-catalog.TimeZoneOutput|beta'
+package: '@azure-rest/purview-catalog|beta'
+summary: ''
+fullName: TimeZoneOutput
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: availableIds
+    uid: '@azure-rest/purview-catalog.TimeZoneOutput.availableIds|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: An array of available IDs.
+    fullName: availableIds
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'availableIds?: Array<string>'
+      return:
+        description: ''
+        type: Array&lt;string&gt;
+  - name: default
+    uid: '@azure-rest/purview-catalog.TimeZoneOutput.default|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: The timezone information.
+    fullName: default
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'default?: TimeZoneOutput'
+      return:
+        description: ''
+        type: <xref uid="@azure-rest/purview-catalog.TimeZoneOutput|beta" />
+  - name: displayName
+    uid: '@azure-rest/purview-catalog.TimeZoneOutput.displayName|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: The display name of the timezone.
+    fullName: displayName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'displayName?: string'
+      return:
+        description: ''
+        type: string
+  - name: dstSavings
+    uid: '@azure-rest/purview-catalog.TimeZoneOutput.dstSavings|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: The value of the daylight saving time.
+    fullName: dstSavings
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dstSavings?: number'
+      return:
+        description: ''
+        type: number
+  - name: id
+    uid: '@azure-rest/purview-catalog.TimeZoneOutput.id|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: The ID of the timezone.
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: string'
+      return:
+        description: ''
+        type: string
+  - name: rawOffset
+    uid: '@azure-rest/purview-catalog.TimeZoneOutput.rawOffset|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: The raw offset of the timezone.
+    fullName: rawOffset
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rawOffset?: number'
+      return:
+        description: ''
+        type: number

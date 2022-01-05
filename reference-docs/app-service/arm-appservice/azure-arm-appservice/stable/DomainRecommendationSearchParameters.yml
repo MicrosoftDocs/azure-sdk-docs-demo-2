@@ -1,0 +1,38 @@
+### YamlMime:TSType
+name: DomainRecommendationSearchParameters
+uid: '@azure/arm-appservice.DomainRecommendationSearchParameters|stable'
+package: '@azure/arm-appservice|stable'
+summary: Domain recommendation search parameters.
+fullName: DomainRecommendationSearchParameters
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: keywords
+    uid: '@azure/arm-appservice.DomainRecommendationSearchParameters.keywords|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Keywords to be used for generating domain recommendations.
+    fullName: keywords
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'keywords?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: maxDomainRecommendations
+    uid: >-
+      @azure/arm-appservice.DomainRecommendationSearchParameters.maxDomainRecommendations|stable
+    package: '@azure/arm-appservice|stable'
+    summary: Maximum number of recommendations.
+    fullName: maxDomainRecommendations
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'maxDomainRecommendations?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number

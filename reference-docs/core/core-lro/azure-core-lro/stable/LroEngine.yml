@@ -33,10 +33,10 @@ constructors:
             <xref uid="@azure/core-lro.LroEngineOptions|stable" />&lt;TResult,
             TState&gt;
           description: ''
-methods:
+inheritedMethods:
   - name: 'cancelOperation({ abortSignal?: AbortSignalLike })'
-    uid: '@azure/core-lro.LroEngine.cancelOperation|stable'
-    package: '@azure/core-lro|stable'
+    uid: '@azure/core-lro.LroEngine.cancelOperation'
+    package: '@azure/core-lro'
     summary: >
       Attempts to cancel the underlying operation.
 
@@ -60,23 +60,9 @@ methods:
       return:
         description: ''
         type: Promise&lt;void&gt;
-  - name: delay()
-    uid: '@azure/core-lro.LroEngine.delay|stable'
-    package: '@azure/core-lro|stable'
-    summary: >-
-      The method used by the poller to wait before attempting to update its
-      operation.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function delay(): Promise<void>'
-      return:
-        description: ''
-        type: Promise&lt;void&gt;
   - name: getOperationState()
-    uid: '@azure/core-lro.LroEngine.getOperationState|stable'
-    package: '@azure/core-lro|stable'
+    uid: '@azure/core-lro.LroEngine.getOperationState'
+    package: '@azure/core-lro'
     summary: >
       Returns the state of the operation.
 
@@ -154,8 +140,8 @@ methods:
         description: ''
         type: TState
   - name: getResult()
-    uid: '@azure/core-lro.LroEngine.getResult|stable'
-    package: '@azure/core-lro|stable'
+    uid: '@azure/core-lro.LroEngine.getResult'
+    package: '@azure/core-lro'
     summary: |-
       Returns the result value of the operation,
       regardless of the state of the poller.
@@ -170,8 +156,8 @@ methods:
         description: ''
         type: TResult | undefined
   - name: isDone()
-    uid: '@azure/core-lro.LroEngine.isDone|stable'
-    package: '@azure/core-lro|stable'
+    uid: '@azure/core-lro.LroEngine.isDone'
+    package: '@azure/core-lro'
     summary: Returns true if the poller has finished polling.
     remarks: ''
     isPreview: false
@@ -182,8 +168,8 @@ methods:
         description: ''
         type: boolean
   - name: isStopped()
-    uid: '@azure/core-lro.LroEngine.isStopped|stable'
-    package: '@azure/core-lro|stable'
+    uid: '@azure/core-lro.LroEngine.isStopped'
+    package: '@azure/core-lro'
     summary: Returns true if the poller is stopped.
     remarks: ''
     isPreview: false
@@ -194,8 +180,8 @@ methods:
         description: ''
         type: boolean
   - name: 'onProgress((state: TState) => void)'
-    uid: '@azure/core-lro.LroEngine.onProgress|stable'
-    package: '@azure/core-lro|stable'
+    uid: '@azure/core-lro.LroEngine.onProgress'
+    package: '@azure/core-lro'
     summary: >
       Invokes the provided callback after each polling is completed,
 
@@ -216,8 +202,8 @@ methods:
         description: ''
         type: <xref uid="@azure/core-lro.CancelOnProgress|stable" />
   - name: 'poll({ abortSignal?: AbortSignalLike })'
-    uid: '@azure/core-lro.LroEngine.poll|stable'
-    package: '@azure/core-lro|stable'
+    uid: '@azure/core-lro.LroEngine.poll'
+    package: '@azure/core-lro'
     summary: >
       Returns a promise that will resolve once a single polling request
       finishes.
@@ -242,8 +228,8 @@ methods:
         description: ''
         type: Promise&lt;void&gt;
   - name: pollUntilDone()
-    uid: '@azure/core-lro.LroEngine.pollUntilDone|stable'
-    package: '@azure/core-lro|stable'
+    uid: '@azure/core-lro.LroEngine.pollUntilDone'
+    package: '@azure/core-lro'
     summary: >-
       Returns a promise that will resolve once the underlying operation is
       completed.
@@ -256,8 +242,8 @@ methods:
         description: ''
         type: Promise&lt;TResult&gt;
   - name: stopPolling()
-    uid: '@azure/core-lro.LroEngine.stopPolling|stable'
-    package: '@azure/core-lro|stable'
+    uid: '@azure/core-lro.LroEngine.stopPolling'
+    package: '@azure/core-lro'
     summary: Stops the poller from continuing to poll.
     remarks: ''
     isPreview: false
@@ -265,8 +251,8 @@ methods:
     syntax:
       content: function stopPolling()
   - name: toString()
-    uid: '@azure/core-lro.LroEngine.toString|stable'
-    package: '@azure/core-lro|stable'
+    uid: '@azure/core-lro.LroEngine.toString'
+    package: '@azure/core-lro'
     summary: |-
       Returns a serialized version of the poller's operation
       by invoking the operation's toString method.
@@ -278,4 +264,19 @@ methods:
       return:
         description: ''
         type: string
+methods:
+  - name: delay()
+    uid: '@azure/core-lro.LroEngine.delay|stable'
+    package: '@azure/core-lro|stable'
+    summary: >-
+      The method used by the poller to wait before attempting to update its
+      operation.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function delay(): Promise<void>'
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
 extends: <xref uid="@azure/core-lro.Poller|stable" />&lt;TState, TResult&gt;

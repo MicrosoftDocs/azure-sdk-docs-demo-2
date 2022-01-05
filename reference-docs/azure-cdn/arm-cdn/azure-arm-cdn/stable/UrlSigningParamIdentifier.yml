@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: UrlSigningParamIdentifier
+uid: '@azure/arm-cdn.UrlSigningParamIdentifier|stable'
+package: '@azure/arm-cdn|stable'
+summary: Defines how to identify a parameter for a specific purpose e.g. expires
+fullName: UrlSigningParamIdentifier
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: paramIndicator
+    uid: '@azure/arm-cdn.UrlSigningParamIdentifier.paramIndicator|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: Indicates the purpose of the parameter
+    fullName: paramIndicator
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'paramIndicator: ParamIndicator'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-cdn.ParamIndicator|stable" />
+  - name: paramName
+    uid: '@azure/arm-cdn.UrlSigningParamIdentifier.paramName|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: Parameter name
+    fullName: paramName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'paramName: string'
+      return:
+        description: ''
+        type: string

@@ -2,32 +2,14 @@
 name: Tasks
 uid: '@azure/arm-containerregistry.Tasks|stable'
 package: '@azure/arm-containerregistry|stable'
-summary: Class representing a Tasks.
+summary: Interface representing a Tasks.
 fullName: Tasks
 remarks: ''
 isPreview: false
 isDeprecated: false
-type: class
-constructors:
-  - name: Tasks(ContainerRegistryManagementClientContext)
-    uid: '@azure/arm-containerregistry.Tasks.constructor|stable'
-    package: '@azure/arm-containerregistry|stable'
-    summary: Create a Tasks.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'new Tasks(client: ContainerRegistryManagementClientContext)'
-      parameters:
-        - id: client
-          type: >-
-            <xref
-            uid="@azure/arm-containerregistry.ContainerRegistryManagementClientContext|stable"
-            />
-          description: |
-            Reference to the service client.
+type: interface
 methods:
-  - name: beginCreate(string, string, string, Task, msRest.RequestOptionsBase)
+  - name: beginCreate(string, string, string, Task, TasksCreateOptionalParams)
     uid: '@azure/arm-containerregistry.Tasks.beginCreate|stable'
     package: '@azure/arm-containerregistry|stable'
     summary: Creates a task for a container registry with the specified parameters.
@@ -38,7 +20,9 @@ methods:
       content: >-
         function beginCreate(resourceGroupName: string, registryName: string,
         taskName: string, taskCreateParameters: Task, options?:
-        msRest.RequestOptionsBase): Promise<LROPoller>
+        TasksCreateOptionalParams):
+        Promise<PollerLike<PollOperationState<TasksCreateResponse>,
+        TasksCreateResponse>>
       parameters:
         - id: resourceGroupName
           type: string
@@ -55,13 +39,62 @@ methods:
           type: <xref uid="@azure/arm-containerregistry.Task|stable" />
           description: The parameters for creating a task.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.TasksCreateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<msRestAzure.LROPoller>
-        type: Promise&lt;LROPoller&gt;
-  - name: beginDeleteMethod(string, string, string, msRest.RequestOptionsBase)
-    uid: '@azure/arm-containerregistry.Tasks.beginDeleteMethod|stable'
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-containerregistry.TasksCreateResponse|stable" />&gt;,
+          <xref uid="@azure/arm-containerregistry.TasksCreateResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginCreateAndWait(string, string, string, Task,
+      TasksCreateOptionalParams)
+    uid: '@azure/arm-containerregistry.Tasks.beginCreateAndWait|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: Creates a task for a container registry with the specified parameters.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateAndWait(resourceGroupName: string, registryName:
+        string, taskName: string, taskCreateParameters: Task, options?:
+        TasksCreateOptionalParams): Promise<TasksCreateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: taskName
+          type: string
+          description: The name of the container registry task.
+        - id: taskCreateParameters
+          type: <xref uid="@azure/arm-containerregistry.Task|stable" />
+          description: The parameters for creating a task.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.TasksCreateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-containerregistry.TasksCreateResponse|stable" />&gt;
+  - name: beginDelete(string, string, string, TasksDeleteOptionalParams)
+    uid: '@azure/arm-containerregistry.Tasks.beginDelete|stable'
     package: '@azure/arm-containerregistry|stable'
     summary: Deletes a specified task.
     remarks: ''
@@ -69,9 +102,9 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function beginDeleteMethod(resourceGroupName: string, registryName:
-        string, taskName: string, options?: msRest.RequestOptionsBase):
-        Promise<LROPoller>
+        function beginDelete(resourceGroupName: string, registryName: string,
+        taskName: string, options?: TasksDeleteOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
       parameters:
         - id: resourceGroupName
           type: string
@@ -85,14 +118,52 @@ methods:
           type: string
           description: The name of the container registry task.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.TasksDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<msRestAzure.LROPoller>
-        type: Promise&lt;LROPoller&gt;
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: beginDeleteAndWait(string, string, string, TasksDeleteOptionalParams)
+    uid: '@azure/arm-containerregistry.Tasks.beginDeleteAndWait|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: Deletes a specified task.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteAndWait(resourceGroupName: string, registryName:
+        string, taskName: string, options?: TasksDeleteOptionalParams):
+        Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: taskName
+          type: string
+          description: The name of the container registry task.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.TasksDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
   - name: >-
       beginUpdate(string, string, string, TaskUpdateParameters,
-      msRest.RequestOptionsBase)
+      TasksUpdateOptionalParams)
     uid: '@azure/arm-containerregistry.Tasks.beginUpdate|stable'
     package: '@azure/arm-containerregistry|stable'
     summary: Updates a task with the specified parameters.
@@ -103,7 +174,9 @@ methods:
       content: >-
         function beginUpdate(resourceGroupName: string, registryName: string,
         taskName: string, taskUpdateParameters: TaskUpdateParameters, options?:
-        msRest.RequestOptionsBase): Promise<LROPoller>
+        TasksUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<TasksUpdateResponse>,
+        TasksUpdateResponse>>
       parameters:
         - id: resourceGroupName
           type: string
@@ -122,23 +195,33 @@ methods:
             />
           description: The parameters for updating a task.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.TasksUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<msRestAzure.LROPoller>
-        type: Promise&lt;LROPoller&gt;
-  - name: create(string, string, string, Task, msRest.RequestOptionsBase)
-    uid: '@azure/arm-containerregistry.Tasks.create|stable'
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-containerregistry.TasksUpdateResponse|stable" />&gt;,
+          <xref uid="@azure/arm-containerregistry.TasksUpdateResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginUpdateAndWait(string, string, string, TaskUpdateParameters,
+      TasksUpdateOptionalParams)
+    uid: '@azure/arm-containerregistry.Tasks.beginUpdateAndWait|stable'
     package: '@azure/arm-containerregistry|stable'
-    summary: Creates a task for a container registry with the specified parameters.
+    summary: Updates a task with the specified parameters.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        function create(resourceGroupName: string, registryName: string,
-        taskName: string, taskCreateParameters: Task, options?:
-        msRest.RequestOptionsBase): Promise<Models.TasksCreateResponse>
+        function beginUpdateAndWait(resourceGroupName: string, registryName:
+        string, taskName: string, taskUpdateParameters: TaskUpdateParameters,
+        options?: TasksUpdateOptionalParams): Promise<TasksUpdateResponse>
       parameters:
         - id: resourceGroupName
           type: string
@@ -151,48 +234,24 @@ methods:
         - id: taskName
           type: string
           description: The name of the container registry task.
-        - id: taskCreateParameters
-          type: <xref uid="@azure/arm-containerregistry.Task|stable" />
-          description: The parameters for creating a task.
+        - id: taskUpdateParameters
+          type: >-
+            <xref uid="@azure/arm-containerregistry.TaskUpdateParameters|stable"
+            />
+          description: The parameters for updating a task.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.TasksUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.TasksCreateResponse>
+        description: ''
         type: >-
           Promise&lt;<xref
-          uid="@azure/arm-containerregistry.TasksCreateResponse|stable" />&gt;
-  - name: deleteMethod(string, string, string, msRest.RequestOptionsBase)
-    uid: '@azure/arm-containerregistry.Tasks.deleteMethod|stable'
-    package: '@azure/arm-containerregistry|stable'
-    summary: Deletes a specified task.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function deleteMethod(resourceGroupName: string, registryName: string,
-        taskName: string, options?: msRest.RequestOptionsBase):
-        Promise<RestResponse>
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group to which the container registry
-            belongs.
-        - id: registryName
-          type: string
-          description: The name of the container registry.
-        - id: taskName
-          type: string
-          description: The name of the container registry task.
-        - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
-      return:
-        description: Promise<msRest.RestResponse>
-        type: Promise&lt;RestResponse&gt;
-  - name: get(string, string, string, msRest.RequestOptionsBase)
+          uid="@azure/arm-containerregistry.TasksUpdateResponse|stable" />&gt;
+  - name: get(string, string, string, TasksGetOptionalParams)
     uid: '@azure/arm-containerregistry.Tasks.get|stable'
     package: '@azure/arm-containerregistry|stable'
     summary: Get the properties of a specified task.
@@ -202,8 +261,7 @@ methods:
     syntax:
       content: >-
         function get(resourceGroupName: string, registryName: string, taskName:
-        string, options?: msRest.RequestOptionsBase):
-        Promise<Models.TasksGetResponse>
+        string, options?: TasksGetOptionalParams): Promise<TasksGetResponse>
       parameters:
         - id: resourceGroupName
           type: string
@@ -217,75 +275,17 @@ methods:
           type: string
           description: The name of the container registry task.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.TasksGetOptionalParams|stable" />
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.TasksGetResponse>
+        description: ''
         type: >-
           Promise&lt;<xref
           uid="@azure/arm-containerregistry.TasksGetResponse|stable" />&gt;
-  - name: get(string, string, string, RequestOptionsBase, ServiceCallback<Task>)
-    uid: '@azure/arm-containerregistry.Tasks.get_2|stable'
-    package: '@azure/arm-containerregistry|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function get(resourceGroupName: string, registryName: string, taskName:
-        string, options: RequestOptionsBase, callback: ServiceCallback<Task>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group to which the container registry
-            belongs.
-        - id: registryName
-          type: string
-          description: The name of the container registry.
-        - id: taskName
-          type: string
-          description: The name of the container registry task.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-containerregistry.Task|stable" />&gt;
-          description: |
-            The callback
-  - name: get(string, string, string, ServiceCallback<Task>)
-    uid: '@azure/arm-containerregistry.Tasks.get_1|stable'
-    package: '@azure/arm-containerregistry|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function get(resourceGroupName: string, registryName: string, taskName:
-        string, callback: ServiceCallback<Task>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group to which the container registry
-            belongs.
-        - id: registryName
-          type: string
-          description: The name of the container registry.
-        - id: taskName
-          type: string
-          description: The name of the container registry task.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-containerregistry.Task|stable" />&gt;
-          description: |
-            The callback
-  - name: getDetails(string, string, string, msRest.RequestOptionsBase)
+  - name: getDetails(string, string, string, TasksGetDetailsOptionalParams)
     uid: '@azure/arm-containerregistry.Tasks.getDetails|stable'
     package: '@azure/arm-containerregistry|stable'
     summary: Returns a task with extended information that includes all secrets.
@@ -295,8 +295,8 @@ methods:
     syntax:
       content: >-
         function getDetails(resourceGroupName: string, registryName: string,
-        taskName: string, options?: msRest.RequestOptionsBase):
-        Promise<Models.TasksGetDetailsResponse>
+        taskName: string, options?: TasksGetDetailsOptionalParams):
+        Promise<TasksGetDetailsResponse>
       parameters:
         - id: resourceGroupName
           type: string
@@ -310,79 +310,19 @@ methods:
           type: string
           description: The name of the container registry task.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.TasksGetDetailsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.TasksGetDetailsResponse>
+        description: ''
         type: >-
           Promise&lt;<xref
           uid="@azure/arm-containerregistry.TasksGetDetailsResponse|stable"
           />&gt;
-  - name: >-
-      getDetails(string, string, string, RequestOptionsBase,
-      ServiceCallback<Task>)
-    uid: '@azure/arm-containerregistry.Tasks.getDetails_2|stable'
-    package: '@azure/arm-containerregistry|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function getDetails(resourceGroupName: string, registryName: string,
-        taskName: string, options: RequestOptionsBase, callback:
-        ServiceCallback<Task>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group to which the container registry
-            belongs.
-        - id: registryName
-          type: string
-          description: The name of the container registry.
-        - id: taskName
-          type: string
-          description: The name of the container registry task.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-containerregistry.Task|stable" />&gt;
-          description: |
-            The callback
-  - name: getDetails(string, string, string, ServiceCallback<Task>)
-    uid: '@azure/arm-containerregistry.Tasks.getDetails_1|stable'
-    package: '@azure/arm-containerregistry|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function getDetails(resourceGroupName: string, registryName: string,
-        taskName: string, callback: ServiceCallback<Task>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group to which the container registry
-            belongs.
-        - id: registryName
-          type: string
-          description: The name of the container registry.
-        - id: taskName
-          type: string
-          description: The name of the container registry task.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-containerregistry.Task|stable" />&gt;
-          description: |
-            The callback
-  - name: list(string, string, msRest.RequestOptionsBase)
+  - name: list(string, string, TasksListOptionalParams)
     uid: '@azure/arm-containerregistry.Tasks.list|stable'
     package: '@azure/arm-containerregistry|stable'
     summary: Lists all the tasks for a specified container registry.
@@ -392,7 +332,7 @@ methods:
     syntax:
       content: >-
         function list(resourceGroupName: string, registryName: string, options?:
-        msRest.RequestOptionsBase): Promise<Models.TasksListResponse>
+        TasksListOptionalParams): PagedAsyncIterableIterator<Task>
       parameters:
         - id: resourceGroupName
           type: string
@@ -403,172 +343,13 @@ methods:
           type: string
           description: The name of the container registry.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.TasksListOptionalParams|stable" />
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.TasksListResponse>
+        description: ''
         type: >-
-          Promise&lt;<xref
-          uid="@azure/arm-containerregistry.TasksListResponse|stable" />&gt;
-  - name: list(string, string, RequestOptionsBase, ServiceCallback<TaskListResult>)
-    uid: '@azure/arm-containerregistry.Tasks.list_2|stable'
-    package: '@azure/arm-containerregistry|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function list(resourceGroupName: string, registryName: string, options:
-        RequestOptionsBase, callback: ServiceCallback<TaskListResult>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group to which the container registry
-            belongs.
-        - id: registryName
-          type: string
-          description: The name of the container registry.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-containerregistry.TaskListResult|stable" />&gt;
-          description: |
-            The callback
-  - name: list(string, string, ServiceCallback<TaskListResult>)
-    uid: '@azure/arm-containerregistry.Tasks.list_1|stable'
-    package: '@azure/arm-containerregistry|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function list(resourceGroupName: string, registryName: string, callback:
-        ServiceCallback<TaskListResult>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group to which the container registry
-            belongs.
-        - id: registryName
-          type: string
-          description: The name of the container registry.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-containerregistry.TaskListResult|stable" />&gt;
-          description: |
-            The callback
-  - name: listNext(string, msRest.RequestOptionsBase)
-    uid: '@azure/arm-containerregistry.Tasks.listNext|stable'
-    package: '@azure/arm-containerregistry|stable'
-    summary: Lists all the tasks for a specified container registry.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listNext(nextPageLink: string, options?:
-        msRest.RequestOptionsBase): Promise<Models.TasksListNextResponse>
-      parameters:
-        - id: nextPageLink
-          type: string
-          description: The NextLink from the previous successful call to List operation.
-        - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
-      return:
-        description: Promise<Models.TasksListNextResponse>
-        type: >-
-          Promise&lt;<xref
-          uid="@azure/arm-containerregistry.TasksListNextResponse|stable" />&gt;
-  - name: listNext(string, RequestOptionsBase, ServiceCallback<TaskListResult>)
-    uid: '@azure/arm-containerregistry.Tasks.listNext_2|stable'
-    package: '@azure/arm-containerregistry|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listNext(nextPageLink: string, options: RequestOptionsBase,
-        callback: ServiceCallback<TaskListResult>)
-      parameters:
-        - id: nextPageLink
-          type: string
-          description: The NextLink from the previous successful call to List operation.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-containerregistry.TaskListResult|stable" />&gt;
-          description: |
-            The callback
-  - name: listNext(string, ServiceCallback<TaskListResult>)
-    uid: '@azure/arm-containerregistry.Tasks.listNext_1|stable'
-    package: '@azure/arm-containerregistry|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listNext(nextPageLink: string, callback:
-        ServiceCallback<TaskListResult>)
-      parameters:
-        - id: nextPageLink
-          type: string
-          description: The NextLink from the previous successful call to List operation.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-containerregistry.TaskListResult|stable" />&gt;
-          description: |
-            The callback
-  - name: >-
-      update(string, string, string, TaskUpdateParameters,
-      msRest.RequestOptionsBase)
-    uid: '@azure/arm-containerregistry.Tasks.update|stable'
-    package: '@azure/arm-containerregistry|stable'
-    summary: Updates a task with the specified parameters.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function update(resourceGroupName: string, registryName: string,
-        taskName: string, taskUpdateParameters: TaskUpdateParameters, options?:
-        msRest.RequestOptionsBase): Promise<Models.TasksUpdateResponse>
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: >-
-            The name of the resource group to which the container registry
-            belongs.
-        - id: registryName
-          type: string
-          description: The name of the container registry.
-        - id: taskName
-          type: string
-          description: The name of the container registry task.
-        - id: taskUpdateParameters
-          type: >-
-            <xref uid="@azure/arm-containerregistry.TaskUpdateParameters|stable"
-            />
-          description: The parameters for updating a task.
-        - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
-      return:
-        description: Promise<Models.TasksUpdateResponse>
-        type: >-
-          Promise&lt;<xref
-          uid="@azure/arm-containerregistry.TasksUpdateResponse|stable" />&gt;
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-containerregistry.Task|stable" />&gt;

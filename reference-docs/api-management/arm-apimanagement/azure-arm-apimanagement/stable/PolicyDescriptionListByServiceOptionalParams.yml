@@ -1,0 +1,99 @@
+### YamlMime:TSType
+name: PolicyDescriptionListByServiceOptionalParams
+uid: '@azure/arm-apimanagement.PolicyDescriptionListByServiceOptionalParams|stable'
+package: '@azure/arm-apimanagement|stable'
+summary: Optional parameters.
+fullName: PolicyDescriptionListByServiceOptionalParams
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: abortSignal
+    uid: >-
+      @azure/arm-apimanagement.PolicyDescriptionListByServiceOptionalParams.abortSignal|stable
+    package: '@azure/arm-apimanagement|stable'
+    summary: The signal which can be used to abort requests.
+    fullName: abortSignal
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'abortSignal?: AbortSignalLike'
+      return:
+        description: ''
+        type: AbortSignalLike
+  - name: onResponse
+    uid: >-
+      @azure/arm-apimanagement.PolicyDescriptionListByServiceOptionalParams.onResponse|stable
+    package: '@azure/arm-apimanagement|stable'
+    summary: |-
+      A function to be called each time a response is received from the server
+      while performing the requested operation.
+      May be called multiple times.
+    fullName: onResponse
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onResponse?: RawResponseCallback'
+      return:
+        description: ''
+        type: RawResponseCallback
+  - name: requestOptions
+    uid: >-
+      @azure/arm-apimanagement.PolicyDescriptionListByServiceOptionalParams.requestOptions|stable
+    package: '@azure/arm-apimanagement|stable'
+    summary: Options used when creating and sending HTTP requests for this operation.
+    fullName: requestOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'requestOptions?: OperationRequestOptions'
+      return:
+        description: ''
+        type: OperationRequestOptions
+  - name: scope
+    uid: >-
+      @azure/arm-apimanagement.PolicyDescriptionListByServiceOptionalParams.scope|stable
+    package: '@azure/arm-apimanagement|stable'
+    summary: Policy scope.
+    fullName: scope
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'scope?: PolicyScopeContract'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-apimanagement.PolicyScopeContract|stable" />
+  - name: serializerOptions
+    uid: >-
+      @azure/arm-apimanagement.PolicyDescriptionListByServiceOptionalParams.serializerOptions|stable
+    package: '@azure/arm-apimanagement|stable'
+    summary: Options to override serialization/de-serialization behavior.
+    fullName: serializerOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'serializerOptions?: SerializerOptions'
+      return:
+        description: ''
+        type: SerializerOptions
+  - name: tracingOptions
+    uid: >-
+      @azure/arm-apimanagement.PolicyDescriptionListByServiceOptionalParams.tracingOptions|stable
+    package: '@azure/arm-apimanagement|stable'
+    summary: Options used when tracing is enabled.
+    fullName: tracingOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tracingOptions?: OperationTracingOptions'
+      return:
+        description: ''
+        type: OperationTracingOptions
+extends: OperationOptions

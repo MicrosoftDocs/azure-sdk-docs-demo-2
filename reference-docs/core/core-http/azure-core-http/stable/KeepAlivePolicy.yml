@@ -33,10 +33,10 @@ constructors:
           type: <xref uid="@azure/core-http.KeepAliveOptions|stable" />
           description: |
             -
-methods:
+inheritedMethods:
   - name: log(HttpPipelineLogLevel, string)
-    uid: '@azure/core-http.KeepAlivePolicy.log|stable'
-    package: '@azure/core-http|stable'
+    uid: '@azure/core-http.KeepAlivePolicy.log'
+    package: '@azure/core-http'
     summary: >-
       Attempt to log the provided message to the provided logger. If no logger
       was provided or if
@@ -56,6 +56,23 @@ methods:
           type: string
           description: |
             The message of this log.
+  - name: shouldLog(HttpPipelineLogLevel)
+    uid: '@azure/core-http.KeepAlivePolicy.shouldLog'
+    package: '@azure/core-http'
+    summary: Get whether or not a log with the provided log level should be logged.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function shouldLog(logLevel: HttpPipelineLogLevel): boolean'
+      parameters:
+        - id: logLevel
+          type: <xref uid="@azure/core-http.HttpPipelineLogLevel|stable" />
+          description: The log level of the log that will be logged.
+      return:
+        description: Whether or not a log with the provided log level should be logged.
+        type: boolean
+methods:
   - name: sendRequest(WebResourceLike)
     uid: '@azure/core-http.KeepAlivePolicy.sendRequest|stable'
     package: '@azure/core-http|stable'
@@ -76,20 +93,4 @@ methods:
         type: >-
           Promise&lt;<xref uid="@azure/core-http.HttpOperationResponse|stable"
           />&gt;
-  - name: shouldLog(HttpPipelineLogLevel)
-    uid: '@azure/core-http.KeepAlivePolicy.shouldLog|stable'
-    package: '@azure/core-http|stable'
-    summary: Get whether or not a log with the provided log level should be logged.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function shouldLog(logLevel: HttpPipelineLogLevel): boolean'
-      parameters:
-        - id: logLevel
-          type: <xref uid="@azure/core-http.HttpPipelineLogLevel|stable" />
-          description: The log level of the log that will be logged.
-      return:
-        description: Whether or not a log with the provided log level should be logged.
-        type: boolean
 extends: <xref uid="@azure/core-http.BaseRequestPolicy|stable" />

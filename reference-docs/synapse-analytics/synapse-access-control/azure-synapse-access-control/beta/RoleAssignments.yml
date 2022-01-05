@@ -1,0 +1,177 @@
+### YamlMime:TSType
+name: RoleAssignments
+uid: '@azure/synapse-access-control.RoleAssignments|beta'
+package: '@azure/synapse-access-control|beta'
+summary: Interface representing a RoleAssignments.
+fullName: RoleAssignments
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      checkPrincipalAccess(SubjectInfo, RequiredAction[], string,
+      RoleAssignmentsCheckPrincipalAccessOptionalParams)
+    uid: '@azure/synapse-access-control.RoleAssignments.checkPrincipalAccess|beta'
+    package: '@azure/synapse-access-control|beta'
+    summary: >-
+      Check if the given principalId has access to perform list of actions at a
+      given scope.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function checkPrincipalAccess(subject: SubjectInfo, actions:
+        RequiredAction[], scope: string, options?:
+        RoleAssignmentsCheckPrincipalAccessOptionalParams):
+        Promise<RoleAssignmentsCheckPrincipalAccessResponse>
+      parameters:
+        - id: subject
+          type: <xref uid="@azure/synapse-access-control.SubjectInfo|beta" />
+          description: Subject details
+        - id: actions
+          type: <xref uid="@azure/synapse-access-control.RequiredAction|beta" />[]
+          description: List of actions.
+        - id: scope
+          type: string
+          description: Scope at which the check access is done.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-access-control.RoleAssignmentsCheckPrincipalAccessOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/synapse-access-control.RoleAssignmentsCheckPrincipalAccessResponse|beta"
+          />&gt;
+  - name: >-
+      createRoleAssignment(string, string, string, string,
+      RoleAssignmentsCreateRoleAssignmentOptionalParams)
+    uid: '@azure/synapse-access-control.RoleAssignments.createRoleAssignment|beta'
+    package: '@azure/synapse-access-control|beta'
+    summary: Create role assignment.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createRoleAssignment(roleAssignmentId: string, roleId: string,
+        principalId: string, scope: string, options?:
+        RoleAssignmentsCreateRoleAssignmentOptionalParams):
+        Promise<RoleAssignmentsCreateRoleAssignmentResponse>
+      parameters:
+        - id: roleAssignmentId
+          type: string
+          description: The ID of the role assignment.
+        - id: roleId
+          type: string
+          description: Role ID of the Synapse Built-In Role
+        - id: principalId
+          type: string
+          description: Object ID of the AAD principal or security-group
+        - id: scope
+          type: string
+          description: Scope at which the role assignment is created
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-access-control.RoleAssignmentsCreateRoleAssignmentOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/synapse-access-control.RoleAssignmentsCreateRoleAssignmentResponse|beta"
+          />&gt;
+  - name: >-
+      deleteRoleAssignmentById(string,
+      RoleAssignmentsDeleteRoleAssignmentByIdOptionalParams)
+    uid: >-
+      @azure/synapse-access-control.RoleAssignments.deleteRoleAssignmentById|beta
+    package: '@azure/synapse-access-control|beta'
+    summary: Delete role assignment by role assignment Id.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function deleteRoleAssignmentById(roleAssignmentId: string, options?:
+        RoleAssignmentsDeleteRoleAssignmentByIdOptionalParams): Promise<void>
+      parameters:
+        - id: roleAssignmentId
+          type: string
+          description: The ID of the role assignment.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-access-control.RoleAssignmentsDeleteRoleAssignmentByIdOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      getRoleAssignmentById(string,
+      RoleAssignmentsGetRoleAssignmentByIdOptionalParams)
+    uid: '@azure/synapse-access-control.RoleAssignments.getRoleAssignmentById|beta'
+    package: '@azure/synapse-access-control|beta'
+    summary: Get role assignment by role assignment Id.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getRoleAssignmentById(roleAssignmentId: string, options?:
+        RoleAssignmentsGetRoleAssignmentByIdOptionalParams):
+        Promise<RoleAssignmentsGetRoleAssignmentByIdResponse>
+      parameters:
+        - id: roleAssignmentId
+          type: string
+          description: The ID of the role assignment.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-access-control.RoleAssignmentsGetRoleAssignmentByIdOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/synapse-access-control.RoleAssignmentsGetRoleAssignmentByIdResponse|beta"
+          />&gt;
+  - name: listRoleAssignments(RoleAssignmentsListRoleAssignmentsOptionalParams)
+    uid: '@azure/synapse-access-control.RoleAssignments.listRoleAssignments|beta'
+    package: '@azure/synapse-access-control|beta'
+    summary: List role assignments.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listRoleAssignments(options?:
+        RoleAssignmentsListRoleAssignmentsOptionalParams):
+        Promise<RoleAssignmentsListRoleAssignmentsResponse>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-access-control.RoleAssignmentsListRoleAssignmentsOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/synapse-access-control.RoleAssignmentsListRoleAssignmentsResponse|beta"
+          />&gt;

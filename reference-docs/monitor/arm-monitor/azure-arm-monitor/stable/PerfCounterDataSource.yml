@@ -1,0 +1,83 @@
+### YamlMime:TSType
+name: PerfCounterDataSource
+uid: '@azure/arm-monitor.PerfCounterDataSource|stable'
+package: '@azure/arm-monitor|stable'
+summary: >-
+  Definition of which performance counters will be collected and how they will
+  be collected by this data collection rule.
+
+  Collected from both Windows and Linux machines where the counter is present.
+fullName: PerfCounterDataSource
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: counterSpecifiers
+    uid: '@azure/arm-monitor.PerfCounterDataSource.counterSpecifiers|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: >-
+      A list of specifier names of the performance counters you want to collect.
+
+      Use a wildcard (*) to collect a counter for all instances.
+
+      To get a list of performance counters on Windows, run the command
+      'typeperf'.
+    fullName: counterSpecifiers
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'counterSpecifiers?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: name
+    uid: '@azure/arm-monitor.PerfCounterDataSource.name|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: >-
+      A friendly name for the data source.
+
+      This name should be unique across all data sources (regardless of type)
+      within the data collection rule.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: samplingFrequencyInSeconds
+    uid: '@azure/arm-monitor.PerfCounterDataSource.samplingFrequencyInSeconds|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: The number of seconds between consecutive counter measurements (samples).
+    fullName: samplingFrequencyInSeconds
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'samplingFrequencyInSeconds?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: streams
+    uid: '@azure/arm-monitor.PerfCounterDataSource.streams|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: >-
+      List of streams that this data source will be sent to.
+
+      A stream indicates what schema will be used for this data and usually what
+      table in Log Analytics the data will be sent to.
+    fullName: streams
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'streams?: KnownPerfCounterDataSourceStreams[]'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-monitor.KnownPerfCounterDataSourceStreams|stable" />[]

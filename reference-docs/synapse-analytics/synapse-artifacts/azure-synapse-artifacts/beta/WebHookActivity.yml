@@ -1,0 +1,14 @@
+### YamlMime:TSTypeAlias
+name: WebHookActivity
+uid: '@azure/synapse-artifacts.WebHookActivity|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: WebHook activity.
+fullName: WebHookActivity
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type WebHookActivity = ControlActivity & { authentication?:
+  WebActivityAuthentication, body?: any, headers?: any, method:
+  WebHookActivityMethod, reportStatusOnCallBack?: any, timeout?: string, type:
+  "WebHook", url: any }

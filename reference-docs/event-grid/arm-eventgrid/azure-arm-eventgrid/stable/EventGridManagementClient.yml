@@ -241,10 +241,10 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-eventgrid.TopicTypes|stable" />
-methods:
+inheritedMethods:
   - name: sendOperationRequest<T>(OperationArguments, OperationSpec)
-    uid: '@azure/arm-eventgrid.EventGridManagementClient.sendOperationRequest|stable'
-    package: '@azure/arm-eventgrid|stable'
+    uid: '@azure/arm-eventgrid.EventGridManagementClient.sendOperationRequest'
+    package: '@azure/arm-eventgrid'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
     isPreview: false
@@ -267,8 +267,8 @@ methods:
         description: ''
         type: Promise&lt;T&gt;
   - name: sendRequest(PipelineRequest)
-    uid: '@azure/arm-eventgrid.EventGridManagementClient.sendRequest|stable'
-    package: '@azure/arm-eventgrid|stable'
+    uid: '@azure/arm-eventgrid.EventGridManagementClient.sendRequest'
+    package: '@azure/arm-eventgrid'
     summary: Send the provided httpRequest.
     remarks: ''
     isPreview: false

@@ -1,0 +1,255 @@
+### YamlMime:TSType
+name: LocalNetworkGateways
+uid: '@azure/arm-network.LocalNetworkGateways|stable'
+package: '@azure/arm-network|stable'
+summary: Interface representing a LocalNetworkGateways.
+fullName: LocalNetworkGateways
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      beginCreateOrUpdate(string, string, LocalNetworkGateway,
+      LocalNetworkGatewaysCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-network.LocalNetworkGateways.beginCreateOrUpdate|stable'
+    package: '@azure/arm-network|stable'
+    summary: >-
+      Creates or updates a local network gateway in the specified resource
+      group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string,
+        localNetworkGatewayName: string, parameters: LocalNetworkGateway,
+        options?: LocalNetworkGatewaysCreateOrUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<LocalNetworkGatewaysCreateOrUpdateResponse>,
+        LocalNetworkGatewaysCreateOrUpdateResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: localNetworkGatewayName
+          type: string
+          description: The name of the local network gateway.
+        - id: parameters
+          type: <xref uid="@azure/arm-network.LocalNetworkGateway|stable" />
+          description: >-
+            Parameters supplied to the create or update local network gateway
+            operation.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.LocalNetworkGatewaysCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-network.LocalNetworkGatewaysCreateOrUpdateResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-network.LocalNetworkGatewaysCreateOrUpdateResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginCreateOrUpdateAndWait(string, string, LocalNetworkGateway,
+      LocalNetworkGatewaysCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-network.LocalNetworkGateways.beginCreateOrUpdateAndWait|stable'
+    package: '@azure/arm-network|stable'
+    summary: >-
+      Creates or updates a local network gateway in the specified resource
+      group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdateAndWait(resourceGroupName: string,
+        localNetworkGatewayName: string, parameters: LocalNetworkGateway,
+        options?: LocalNetworkGatewaysCreateOrUpdateOptionalParams):
+        Promise<LocalNetworkGatewaysCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: localNetworkGatewayName
+          type: string
+          description: The name of the local network gateway.
+        - id: parameters
+          type: <xref uid="@azure/arm-network.LocalNetworkGateway|stable" />
+          description: >-
+            Parameters supplied to the create or update local network gateway
+            operation.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.LocalNetworkGatewaysCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.LocalNetworkGatewaysCreateOrUpdateResponse|stable"
+          />&gt;
+  - name: beginDelete(string, string, LocalNetworkGatewaysDeleteOptionalParams)
+    uid: '@azure/arm-network.LocalNetworkGateways.beginDelete|stable'
+    package: '@azure/arm-network|stable'
+    summary: Deletes the specified local network gateway.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDelete(resourceGroupName: string, localNetworkGatewayName:
+        string, options?: LocalNetworkGatewaysDeleteOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: localNetworkGatewayName
+          type: string
+          description: The name of the local network gateway.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.LocalNetworkGatewaysDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: >-
+      beginDeleteAndWait(string, string,
+      LocalNetworkGatewaysDeleteOptionalParams)
+    uid: '@azure/arm-network.LocalNetworkGateways.beginDeleteAndWait|stable'
+    package: '@azure/arm-network|stable'
+    summary: Deletes the specified local network gateway.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteAndWait(resourceGroupName: string,
+        localNetworkGatewayName: string, options?:
+        LocalNetworkGatewaysDeleteOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: localNetworkGatewayName
+          type: string
+          description: The name of the local network gateway.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.LocalNetworkGatewaysDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: get(string, string, LocalNetworkGatewaysGetOptionalParams)
+    uid: '@azure/arm-network.LocalNetworkGateways.get|stable'
+    package: '@azure/arm-network|stable'
+    summary: Gets the specified local network gateway in a resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, localNetworkGatewayName: string,
+        options?: LocalNetworkGatewaysGetOptionalParams):
+        Promise<LocalNetworkGatewaysGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: localNetworkGatewayName
+          type: string
+          description: The name of the local network gateway.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.LocalNetworkGatewaysGetOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.LocalNetworkGatewaysGetResponse|stable" />&gt;
+  - name: list(string, LocalNetworkGatewaysListOptionalParams)
+    uid: '@azure/arm-network.LocalNetworkGateways.list|stable'
+    package: '@azure/arm-network|stable'
+    summary: Gets all the local network gateways in a resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, options?:
+        LocalNetworkGatewaysListOptionalParams):
+        PagedAsyncIterableIterator<LocalNetworkGateway>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.LocalNetworkGatewaysListOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-network.LocalNetworkGateway|stable" />&gt;
+  - name: >-
+      updateTags(string, string, TagsObject,
+      LocalNetworkGatewaysUpdateTagsOptionalParams)
+    uid: '@azure/arm-network.LocalNetworkGateways.updateTags|stable'
+    package: '@azure/arm-network|stable'
+    summary: Updates a local network gateway tags.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string, localNetworkGatewayName:
+        string, parameters: TagsObject, options?:
+        LocalNetworkGatewaysUpdateTagsOptionalParams):
+        Promise<LocalNetworkGatewaysUpdateTagsResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: localNetworkGatewayName
+          type: string
+          description: The name of the local network gateway.
+        - id: parameters
+          type: <xref uid="@azure/arm-network.TagsObject|stable" />
+          description: Parameters supplied to update local network gateway tags.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.LocalNetworkGatewaysUpdateTagsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.LocalNetworkGatewaysUpdateTagsResponse|stable"
+          />&gt;

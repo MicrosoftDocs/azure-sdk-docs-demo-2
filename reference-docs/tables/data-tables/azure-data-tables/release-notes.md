@@ -2,7 +2,7 @@
 title: Azure SDK for JavaScript - Tables Release Notes
 description: 
 ms.topic: reference
-ms.date: 12/14/2021
+ms.date: 01/05/2022
 ms.service: tables
 ms.role: developer
 ms.devlang: javascript

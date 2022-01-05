@@ -1,0 +1,82 @@
+### YamlMime:TSType
+name: SyslogDataSource
+uid: '@azure/arm-monitor.SyslogDataSource|stable'
+package: '@azure/arm-monitor|stable'
+summary: >-
+  Definition of which syslog data will be collected and how it will be
+  collected.
+
+  Only collected from Linux machines.
+fullName: SyslogDataSource
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: facilityNames
+    uid: '@azure/arm-monitor.SyslogDataSource.facilityNames|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: The list of facility names.
+    fullName: facilityNames
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'facilityNames?: KnownSyslogDataSourceFacilityNames[]'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-monitor.KnownSyslogDataSourceFacilityNames|stable"
+          />[]
+  - name: logLevels
+    uid: '@azure/arm-monitor.SyslogDataSource.logLevels|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: The log levels to collect.
+    fullName: logLevels
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'logLevels?: KnownSyslogDataSourceLogLevels[]'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/arm-monitor.KnownSyslogDataSourceLogLevels|stable"
+          />[]
+  - name: name
+    uid: '@azure/arm-monitor.SyslogDataSource.name|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: >-
+      A friendly name for the data source.
+
+      This name should be unique across all data sources (regardless of type)
+      within the data collection rule.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: streams
+    uid: '@azure/arm-monitor.SyslogDataSource.streams|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: >-
+      List of streams that this data source will be sent to.
+
+      A stream indicates what schema will be used for this data and usually what
+      table in Log Analytics the data will be sent to.
+    fullName: streams
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'streams?: KnownSyslogDataSourceStreams[]'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/arm-monitor.KnownSyslogDataSourceStreams|stable"
+          />[]

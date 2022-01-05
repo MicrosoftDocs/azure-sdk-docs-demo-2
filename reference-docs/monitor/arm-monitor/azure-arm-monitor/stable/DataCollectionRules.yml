@@ -1,0 +1,190 @@
+### YamlMime:TSType
+name: DataCollectionRules
+uid: '@azure/arm-monitor.DataCollectionRules|stable'
+package: '@azure/arm-monitor|stable'
+summary: Interface representing a DataCollectionRules.
+fullName: DataCollectionRules
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: create(string, string, DataCollectionRulesCreateOptionalParams)
+    uid: '@azure/arm-monitor.DataCollectionRules.create|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: Creates or updates a data collection rule.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function create(resourceGroupName: string, dataCollectionRuleName:
+        string, options?: DataCollectionRulesCreateOptionalParams):
+        Promise<DataCollectionRulesCreateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: dataCollectionRuleName
+          type: string
+          description: The name of the data collection rule. The name is case insensitive.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-monitor.DataCollectionRulesCreateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-monitor.DataCollectionRulesCreateResponse|stable"
+          />&gt;
+  - name: delete(string, string, DataCollectionRulesDeleteOptionalParams)
+    uid: '@azure/arm-monitor.DataCollectionRules.delete|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: Deletes a data collection rule.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function delete(resourceGroupName: string, dataCollectionRuleName:
+        string, options?: DataCollectionRulesDeleteOptionalParams):
+        Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: dataCollectionRuleName
+          type: string
+          description: The name of the data collection rule. The name is case insensitive.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-monitor.DataCollectionRulesDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: get(string, string, DataCollectionRulesGetOptionalParams)
+    uid: '@azure/arm-monitor.DataCollectionRules.get|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: Returns the specified data collection rule.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, dataCollectionRuleName: string,
+        options?: DataCollectionRulesGetOptionalParams):
+        Promise<DataCollectionRulesGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: dataCollectionRuleName
+          type: string
+          description: The name of the data collection rule. The name is case insensitive.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-monitor.DataCollectionRulesGetOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-monitor.DataCollectionRulesGetResponse|stable" />&gt;
+  - name: >-
+      listByResourceGroup(string,
+      DataCollectionRulesListByResourceGroupOptionalParams)
+    uid: '@azure/arm-monitor.DataCollectionRules.listByResourceGroup|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: Lists all data collection rules in the specified resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string, options?:
+        DataCollectionRulesListByResourceGroupOptionalParams):
+        PagedAsyncIterableIterator<DataCollectionRuleResource>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-monitor.DataCollectionRulesListByResourceGroupOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-monitor.DataCollectionRuleResource|stable" />&gt;
+  - name: listBySubscription(DataCollectionRulesListBySubscriptionOptionalParams)
+    uid: '@azure/arm-monitor.DataCollectionRules.listBySubscription|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: Lists all data collection rules in the specified subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listBySubscription(options?:
+        DataCollectionRulesListBySubscriptionOptionalParams):
+        PagedAsyncIterableIterator<DataCollectionRuleResource>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-monitor.DataCollectionRulesListBySubscriptionOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-monitor.DataCollectionRuleResource|stable" />&gt;
+  - name: update(string, string, DataCollectionRulesUpdateOptionalParams)
+    uid: '@azure/arm-monitor.DataCollectionRules.update|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: Updates part of a data collection rule.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function update(resourceGroupName: string, dataCollectionRuleName:
+        string, options?: DataCollectionRulesUpdateOptionalParams):
+        Promise<DataCollectionRulesUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: dataCollectionRuleName
+          type: string
+          description: The name of the data collection rule. The name is case insensitive.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-monitor.DataCollectionRulesUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-monitor.DataCollectionRulesUpdateResponse|stable"
+          />&gt;

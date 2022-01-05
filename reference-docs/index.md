@@ -2,7 +2,7 @@
 title: Azure SDK for JavaScript - Package list
 description: The full list of all packages that comprise the Azure SDK for JavaScript, including package versions and links to the reference documentation for the package.
 ms.topic: reference
-ms.date: 12/14/2021
+ms.date: 01/05/2022
 ms.prod: azure
 ms.role: developer
 ms.devlang: javascript
@@ -14,14 +14,70 @@ ROBOTS: NOINDEX
 # Azure SDK for JavaScript - Package list
 
 
+## Advisor
+
+#### Stable packages
+
+| Name                  | Package               | Version          | Docs                                      | Package Manager                |
+|-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
+| Advisor - Resource Management  | @azure/arm-advisor | 3.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/advisor/arm-advisor/azure-arm-advisor/stable)  | npm [3.0.0](https://www.npmjs.com/package/%40azure%2Farm-advisor) |
+ 
+
+ 
+
+ 
+
+
+## Analysis Services
+
+#### Stable packages
+
+| Name                  | Package               | Version          | Docs                                      | Package Manager                |
+|-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
+| Analysis Services - Resource Management  | @azure/arm-analysisservices | 4.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/analysis-services/arm-analysisservices/azure-arm-analysisservices/stable)  | npm [4.0.0](https://www.npmjs.com/package/%40azure%2Farm-analysisservices) |
+ 
+
+ 
+
+ 
+
+
+## API Management
+
+#### Stable packages
+
+| Name                  | Package               | Version          | Docs                                      | Package Manager                |
+|-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
+| API Management - Resource Management  | @azure/arm-apimanagement | 8.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/api-management/arm-apimanagement/azure-arm-apimanagement/stable)  | npm [8.0.0](https://www.npmjs.com/package/%40azure%2Farm-apimanagement) |
+ 
+
+ 
+
+ 
+
+
 ## App Configuration
 
 #### Stable packages
 
 | Name                  | Package               | Version          | Docs                                      | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
-| App Configuration  | @azure/app-configuration | 1.3.0 |  [docs](/azure/javascript/sdk/sdk-demo2/app-configuration/app-configuration/azure-app-configuration/stable)  | npm [1.3.0](https://www.npmjs.com/package/%40azure%2Fapp-configuration) |
+| App Configuration  | @azure/app-configuration | 1.3.1 |  [docs](/azure/javascript/sdk/sdk-demo2/app-configuration/app-configuration/azure-app-configuration/stable)  | npm [1.3.1](https://www.npmjs.com/package/%40azure%2Fapp-configuration) |
 | App Configuration - Resource Management  | @azure/arm-appconfiguration | 2.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/app-configuration/arm-appconfiguration/azure-arm-appconfiguration/stable)  | npm [2.0.0](https://www.npmjs.com/package/%40azure%2Farm-appconfiguration) |
+ 
+
+ 
+
+ 
+
+
+## App Service
+
+#### Stable packages
+
+| Name                  | Package               | Version          | Docs                                      | Package Manager                |
+|-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
+| App Service - Resource Management  | @azure/arm-appservice | 10.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/app-service/arm-appservice/azure-arm-appservice/stable)  | npm [10.0.0](https://www.npmjs.com/package/%40azure%2Farm-appservice) |
  
 
  
@@ -38,6 +94,25 @@ ROBOTS: NOINDEX
 | Attestation  | @azure/attestation | 1.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/attestation/attestation/azure-attestation/stable)  | npm [1.0.0](https://www.npmjs.com/package/%40azure%2Fattestation) |
  
 
+ 
+
+ 
+
+
+## Bot Service
+
+#### Stable packages
+
+| Name                  | Package               | Version          | Docs                                      | Package Manager                |
+|-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
+| Bot Service - Resource Management  | @azure/arm-botservice | 3.1.0 |  [docs](/azure/javascript/sdk/sdk-demo2/bot-service/arm-botservice/azure-arm-botservice/stable)  | npm [3.1.0](https://www.npmjs.com/package/%40azure%2Farm-botservice) |
+ 
+
+#### Beta packages
+
+| Name                  | Package               | Version          | Docs                                      | Package Manager                |
+|-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
+| Bot Service - Resource Management  | @azure/arm-botservice | 4.0.0-beta.2 |  [docs](/azure/javascript/sdk/sdk-demo2/bot-service/arm-botservice/azure-arm-botservice/beta)  | npm [4.0.0-beta.2](https://www.npmjs.com/package/%40azure%2Farm-botservice%404.0.0-beta.2) |
  
 
  
@@ -69,7 +144,7 @@ ROBOTS: NOINDEX
 | Video Search  | @azure/cognitiveservices-videosearch | 3.0.1 |  [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/cognitiveservices-videosearch/azure-cognitiveservices-videosearch/stable)  | npm [3.0.1](https://www.npmjs.com/package/%40azure%2Fcognitiveservices-videosearch) |
 | Visual Search  | @azure/cognitiveservices-visualsearch | 3.0.1 |  [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/cognitiveservices-visualsearch/azure-cognitiveservices-visualsearch/stable)  | npm [3.0.1](https://www.npmjs.com/package/%40azure%2Fcognitiveservices-visualsearch) |
 | Text Analytics  | @azure/ai-text-analytics | 5.1.0 |  [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/ai-text-analytics/azure-ai-text-analytics/stable)  | npm [5.1.0](https://www.npmjs.com/package/%40azure%2Fai-text-analytics) |
-| Cognitive Services - Resource Management  | @azure/arm-cognitiveservices | 6.1.0 |  [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/arm-cognitiveservices/azure-arm-cognitiveservices/stable)  | npm [6.1.0](https://www.npmjs.com/package/%40azure%2Farm-cognitiveservices) |
+| Cognitive Services - Resource Management  | @azure/arm-cognitiveservices | 7.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/arm-cognitiveservices/azure-arm-cognitiveservices/stable)  | npm [7.0.0](https://www.npmjs.com/package/%40azure%2Farm-cognitiveservices) |
  
 
 #### Beta packages
@@ -121,7 +196,7 @@ ROBOTS: NOINDEX
 
 | Name                  | Package               | Version          | Docs                                      | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
-| Container Registry - Resource Management  | @azure/arm-containerregistry | 9.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/container-registry/arm-containerregistry/azure-arm-containerregistry/stable)  | npm [9.0.0](https://www.npmjs.com/package/%40azure%2Farm-containerregistry) |
+| Container Registry - Resource Management  | @azure/arm-containerregistry | 10.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/container-registry/arm-containerregistry/azure-arm-containerregistry/stable)  | npm [10.0.0](https://www.npmjs.com/package/%40azure%2Farm-containerregistry) |
  
 
 #### Beta packages
@@ -129,7 +204,20 @@ ROBOTS: NOINDEX
 | Name                  | Package               | Version          | Docs                                      | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
 | Container Registry  | @azure/container-registry | 1.0.0-beta.6 |  [docs](/azure/javascript/sdk/sdk-demo2/container-registry/container-registry/azure-container-registry/beta)  | npm [1.0.0-beta.6](https://www.npmjs.com/package/%40azure%2Fcontainer-registry%401.0.0-beta.6) |
-| Container Registry - Resource Management  | @azure/arm-containerregistry | 10.0.0-beta.1 |  [docs](/azure/javascript/sdk/sdk-demo2/container-registry/arm-containerregistry/azure-arm-containerregistry/beta)  | npm [10.0.0-beta.1](https://www.npmjs.com/package/%40azure%2Farm-containerregistry%4010.0.0-beta.1) |
+ 
+
+ 
+
+
+## Content Delivery network
+
+#### Stable packages
+
+| Name                  | Package               | Version          | Docs                                      | Package Manager                |
+|-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
+| CDN - Resource Management  | @azure/arm-cdn | 6.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/azure-cdn/arm-cdn/azure-arm-cdn/stable)  | npm [6.0.0](https://www.npmjs.com/package/%40azure%2Farm-cdn) |
+ 
+
  
 
  
@@ -202,6 +290,7 @@ ROBOTS: NOINDEX
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
 | Event Hubs  | @azure/event-hubs | 5.6.0 |  [docs](/azure/javascript/sdk/sdk-demo2/event-hubs/event-hubs/azure-event-hubs/stable)  | npm [5.6.0](https://www.npmjs.com/package/%40azure%2Fevent-hubs) |
 | Event Hubs - Azure Blob Storage Checkpoint Store  | @azure/eventhubs-checkpointstore-blob | 1.0.1 |  [docs](/azure/javascript/sdk/sdk-demo2/event-hubs/eventhubs-checkpointstore-blob/azure-eventhubs-checkpointstore-blob/stable)  | npm [1.0.1](https://www.npmjs.com/package/%40azure%2Feventhubs-checkpointstore-blob) |
+| Schema Registry  | @azure/schema-registry | 1.0.1 |  [docs](/azure/javascript/sdk/sdk-demo2/event-hubs/schema-registry/azure-schema-registry/stable)  | npm [1.0.1](https://www.npmjs.com/package/%40azure%2Fschema-registry) |
 | Event Hubs - Resource Management  | @azure/arm-eventhub | 5.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/event-hubs/arm-eventhub/azure-arm-eventhub/stable)  | npm [5.0.0](https://www.npmjs.com/package/%40azure%2Farm-eventhub) |
  
 
@@ -210,6 +299,7 @@ ROBOTS: NOINDEX
 | Name                  | Package               | Version          | Docs                                      | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
 | Event Hubs  | @azure/event-hubs | 5.7.0-beta.1 |  [docs](/azure/javascript/sdk/sdk-demo2/event-hubs/event-hubs/azure-event-hubs/beta)  | npm [5.7.0-beta.1](https://www.npmjs.com/package/%40azure%2Fevent-hubs%405.7.0-beta.1) |
+| Schema Registry - Avro  | @azure/schema-registry-avro | 1.0.0-beta.5 |  [docs](/azure/javascript/sdk/sdk-demo2/event-hubs/schema-registry-avro/azure-schema-registry-avro/beta)  | npm [1.0.0-beta.5](https://www.npmjs.com/package/%40azure%2Fschema-registry-avro%401.0.0-beta.5) |
  
 
  
@@ -262,6 +352,151 @@ ROBOTS: NOINDEX
  
 
 
+## Logic Apps
+
+#### Stable packages
+
+| Name                  | Package               | Version          | Docs                                      | Package Manager                |
+|-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
+| Logic Apps - Resource Management  | @azure/arm-logic | 8.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/logic-apps/arm-logic/azure-arm-logic/stable)  | npm [8.0.0](https://www.npmjs.com/package/%40azure%2Farm-logic) |
+ 
+
+ 
+
+ 
+
+
+## Media Services
+
+#### Stable packages
+
+| Name                  | Package               | Version          | Docs                                      | Package Manager                |
+|-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
+| Media Services - Resource Management  | @azure/arm-mediaservices | 10.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/media-services/arm-mediaservices/azure-arm-mediaservices/stable)  | npm [10.0.0](https://www.npmjs.com/package/%40azure%2Farm-mediaservices) |
+ 
+
+ 
+
+ 
+
+
+## Mixed Reality
+
+#### Stable packages
+
+| Name                  | Package               | Version          | Docs                                      | Package Manager                |
+|-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
+| Mixed Reality - Resource Management  | @azure/arm-mixedreality | 3.1.1 |  [docs](/azure/javascript/sdk/sdk-demo2/mixed-reality/arm-mixedreality/azure-arm-mixedreality/stable)  | npm [3.1.1](https://www.npmjs.com/package/%40azure%2Farm-mixedreality) |
+ 
+
+#### Beta packages
+
+| Name                  | Package               | Version          | Docs                                      | Package Manager                |
+|-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
+| Mixed Reality - Authentication  | @azure/mixed-reality-authentication | 1.0.0-beta.1 |  [docs](/azure/javascript/sdk/sdk-demo2/mixed-reality/mixed-reality-authentication/azure-mixed-reality-authentication/beta)  | npm [1.0.0-beta.1](https://www.npmjs.com/package/%40azure%2Fmixed-reality-authentication%401.0.0-beta.1) |
+ 
+
+ 
+
+
+## Monitor
+
+#### Stable packages
+
+| Name                  | Package               | Version          | Docs                                      | Package Manager                |
+|-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
+| Monitor - Query  | @azure/monitor-query | 1.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/monitor/monitor-query/azure-monitor-query/stable)  | npm [1.0.0](https://www.npmjs.com/package/%40azure%2Fmonitor-query) |
+| Monitor - Resource Management  | @azure/arm-monitor | 7.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/monitor/arm-monitor/azure-arm-monitor/stable)  | npm [7.0.0](https://www.npmjs.com/package/%40azure%2Farm-monitor) |
+ 
+
+#### Beta packages
+
+| Name                  | Package               | Version          | Docs                                      | Package Manager                |
+|-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
+| Monitor - Open Telemetry Exporter  | @azure/monitor-opentelemetry-exporter | 1.0.0-beta.3 |  [docs](/azure/javascript/sdk/sdk-demo2/monitor/monitor-opentelemetry-exporter/azure-monitor-opentelemetry-exporter/beta)  | npm [1.0.0-beta.3](https://www.npmjs.com/package/%40azure%2Fmonitor-opentelemetry-exporter%401.0.0-beta.3) |
+ 
+
+ 
+
+
+## MySQL
+
+#### Stable packages
+
+| Name                  | Package               | Version          | Docs                                      | Package Manager                |
+|-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
+| MySQL - Resource Management  | @azure/arm-mysql | 5.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/mysql/arm-mysql/azure-arm-mysql/stable)  | npm [5.0.0](https://www.npmjs.com/package/%40azure%2Farm-mysql) |
+ 
+
+ 
+
+ 
+
+
+## Network
+
+#### Stable packages
+
+| Name                  | Package               | Version          | Docs                                      | Package Manager                |
+|-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
+| Network - Resource Management  | @azure/arm-network | 26.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/network/arm-network/azure-arm-network/stable)  | npm [26.0.0](https://www.npmjs.com/package/%40azure%2Farm-network) |
+ 
+
+ 
+
+ 
+
+
+## Notification Hubs
+
+#### Stable packages
+
+| Name                  | Package               | Version          | Docs                                      | Package Manager                |
+|-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
+| Notification Hubs - Resource Management  | @azure/arm-notificationhubs | 2.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/notification-hubs/arm-notificationhubs/azure-arm-notificationhubs/stable)  | npm [2.0.0](https://www.npmjs.com/package/%40azure%2Farm-notificationhubs) |
+ 
+
+ 
+
+ 
+
+
+## PostgreSQL
+
+#### Stable packages
+
+| Name                  | Package               | Version          | Docs                                      | Package Manager                |
+|-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
+| PostgreSQL - Resource Management  | @azure/arm-postgresql | 6.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/postgresql/arm-postgresql/azure-arm-postgresql/stable)  | npm [6.0.0](https://www.npmjs.com/package/%40azure%2Farm-postgresql) |
+ 
+
+ 
+
+ 
+
+
+## Purview
+
+#### Stable packages
+
+| Name                  | Package               | Version          | Docs                                      | Package Manager                |
+|-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
+| Purview - Resource Management  | @azure/arm-purview | 1.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/purview/arm-purview/azure-arm-purview/stable)  | npm [1.0.0](https://www.npmjs.com/package/%40azure%2Farm-purview) |
+ 
+
+#### Beta packages
+
+| Name                  | Package               | Version          | Docs                                      | Package Manager                |
+|-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
+| Purview - Account  | @azure-rest/purview-account | 1.0.0-beta.1 |  [docs](/azure/javascript/sdk/sdk-demo2/purview/purview-account/azure-rest-purview-account/beta)  | npm [1.0.0-beta.1](https://www.npmjs.com/package/%40azure-rest%2Fpurview-account%401.0.0-beta.1) |
+| Purview - Administration  | @azure-rest/purview-administration | 1.0.0-beta.1 |  [docs](/azure/javascript/sdk/sdk-demo2/purview/purview-administration/azure-rest-purview-administration/beta)  | npm [1.0.0-beta.1](https://www.npmjs.com/package/%40azure-rest%2Fpurview-administration%401.0.0-beta.1) |
+| Purview - Catalog  | @azure-rest/purview-catalog | 1.0.0-beta.3 |  [docs](/azure/javascript/sdk/sdk-demo2/purview/purview-catalog/azure-rest-purview-catalog/beta)  | npm [1.0.0-beta.3](https://www.npmjs.com/package/%40azure-rest%2Fpurview-catalog%401.0.0-beta.3) |
+| Purview - Scanning  | @azure-rest/purview-scanning | 1.0.0-beta.2 |  [docs](/azure/javascript/sdk/sdk-demo2/purview/purview-scanning/azure-rest-purview-scanning/beta)  | npm [1.0.0-beta.2](https://www.npmjs.com/package/%40azure-rest%2Fpurview-scanning%401.0.0-beta.2) |
+ 
+
+ 
+
+
 ## Service Bus
 
 #### Stable packages
@@ -269,14 +504,9 @@ ROBOTS: NOINDEX
 | Name                  | Package               | Version          | Docs                                      | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
 | Service Bus  | @azure/service-bus | 7.4.0 |  [docs](/azure/javascript/sdk/sdk-demo2/service-bus/service-bus/azure-service-bus/stable)  | npm [7.4.0](https://www.npmjs.com/package/%40azure%2Fservice-bus) |
-| Service Bus - Resource Management  | @azure/arm-servicebus | 4.1.1 |  [docs](/azure/javascript/sdk/sdk-demo2/service-bus/arm-servicebus/azure-arm-servicebus/stable)  | npm [4.1.1](https://www.npmjs.com/package/%40azure%2Farm-servicebus) |
+| Service Bus - Resource Management  | @azure/arm-servicebus | 5.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/service-bus/arm-servicebus/azure-arm-servicebus/stable)  | npm [5.0.0](https://www.npmjs.com/package/%40azure%2Farm-servicebus) |
  
 
-#### Beta packages
-
-| Name                  | Package               | Version          | Docs                                      | Package Manager                |
-|-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
-| Service Bus - Resource Management  | @azure/arm-servicebus | 5.0.0-beta.1 |  [docs](/azure/javascript/sdk/sdk-demo2/service-bus/arm-servicebus/azure-arm-servicebus/beta)  | npm [5.0.0-beta.1](https://www.npmjs.com/package/%40azure%2Farm-servicebus%405.0.0-beta.1) |
  
 
  
@@ -303,6 +533,38 @@ ROBOTS: NOINDEX
 | Storage - Queues  | @azure/storage-queue | 12.8.0-beta.1 |  [docs](/azure/javascript/sdk/sdk-demo2/storage/storage-queue/azure-storage-queue/beta)  | npm [12.8.0-beta.1](https://www.npmjs.com/package/%40azure%2Fstorage-queue%4012.8.0-beta.1) |
 | Storage - File Share  | @azure/storage-file-share | 12.9.0-beta.2 |  [docs](/azure/javascript/sdk/sdk-demo2/storage/storage-file-share/azure-storage-file-share/beta)  | npm [12.9.0-beta.2](https://www.npmjs.com/package/%40azure%2Fstorage-file-share%4012.9.0-beta.2) |
 | Storage - File Data Lake  | @azure/storage-file-datalake | 12.8.0-beta.1 |  [docs](/azure/javascript/sdk/sdk-demo2/storage/storage-file-datalake/azure-storage-file-datalake/beta)  | npm [12.8.0-beta.1](https://www.npmjs.com/package/%40azure%2Fstorage-file-datalake%4012.8.0-beta.1) |
+ 
+
+ 
+
+
+## Stream Analytics
+
+#### Stable packages
+
+| Name                  | Package               | Version          | Docs                                      | Package Manager                |
+|-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
+| Stream Analytics - Resource Management  | @azure/arm-streamanalytics | 4.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/stream-analytics/arm-streamanalytics/azure-arm-streamanalytics/stable)  | npm [4.0.0](https://www.npmjs.com/package/%40azure%2Farm-streamanalytics) |
+ 
+
+ 
+
+ 
+
+
+## Synapse Analytics
+
+ 
+
+#### Beta packages
+
+| Name                  | Package               | Version          | Docs                                      | Package Manager                |
+|-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
+| Synapse - Access Control  | @azure/synapse-access-control | 1.0.0-beta.3 |  [docs](/azure/javascript/sdk/sdk-demo2/synapse-analytics/synapse-access-control/azure-synapse-access-control/beta)  | npm [1.0.0-beta.3](https://www.npmjs.com/package/%40azure%2Fsynapse-access-control%401.0.0-beta.3) |
+| Synapse - Artifacts  | @azure/synapse-artifacts | 1.0.0-beta.7 |  [docs](/azure/javascript/sdk/sdk-demo2/synapse-analytics/synapse-artifacts/azure-synapse-artifacts/beta)  | npm [1.0.0-beta.7](https://www.npmjs.com/package/%40azure%2Fsynapse-artifacts%401.0.0-beta.7) |
+| Synapse - Managed Private Endpoints  | @azure/synapse-managed-private-endpoints | 1.0.0-beta.4 |  [docs](/azure/javascript/sdk/sdk-demo2/synapse-analytics/synapse-managed-private-endpoints/azure-synapse-managed-private-endpoints/beta)  | npm [1.0.0-beta.4](https://www.npmjs.com/package/%40azure%2Fsynapse-managed-private-endpoints%401.0.0-beta.4) |
+| Synapse - Monitoring  | @azure/synapse-monitoring | 1.0.0-beta.2 |  [docs](/azure/javascript/sdk/sdk-demo2/synapse-analytics/synapse-monitoring/azure-synapse-monitoring/beta)  | npm [1.0.0-beta.2](https://www.npmjs.com/package/%40azure%2Fsynapse-monitoring%401.0.0-beta.2) |
+| Synapse - Spark  | @azure/synapse-spark | 1.0.0-beta.4 |  [docs](/azure/javascript/sdk/sdk-demo2/synapse-analytics/synapse-spark/azure-synapse-spark/beta)  | npm [1.0.0-beta.4](https://www.npmjs.com/package/%40azure%2Fsynapse-spark%401.0.0-beta.4) |
  
 
  

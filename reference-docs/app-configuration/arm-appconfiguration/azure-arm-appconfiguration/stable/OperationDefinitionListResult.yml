@@ -50,10 +50,10 @@ properties:
       return:
         description: ''
         type: undefined | string
-methods:
+inheritedMethods:
   - name: at(number)
-    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.at|stable'
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.at'
+    package: '@azure/arm-appconfiguration'
     summary: |-
       Takes an integer value and returns the item at that index,
       allowing for positive and negative integers.
@@ -73,8 +73,8 @@ methods:
           <xref uid="@azure/arm-appconfiguration.OperationDefinition|stable" />
           | undefined
   - name: concat(ConcatArray<OperationDefinition>[])
-    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.concat|stable'
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.concat'
+    package: '@azure/arm-appconfiguration'
     summary: Combines two or more arrays.
     remarks: ''
     isPreview: false
@@ -97,8 +97,8 @@ methods:
           <xref uid="@azure/arm-appconfiguration.OperationDefinition|stable"
           />[]
   - name: concat(T | ConcatArray<T>[])
-    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.concat_1|stable'
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.concat_1'
+    package: '@azure/arm-appconfiguration'
     summary: Combines two or more arrays.
     remarks: ''
     isPreview: false
@@ -116,9 +116,8 @@ methods:
           <xref uid="@azure/arm-appconfiguration.OperationDefinition|stable"
           />[]
   - name: copyWithin(number, number, undefined | number)
-    uid: >-
-      @azure/arm-appconfiguration.OperationDefinitionListResult.copyWithin|stable
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.copyWithin'
+    package: '@azure/arm-appconfiguration'
     summary: >-
       Returns the this object after copying a section of the array identified by
       start and end
@@ -155,8 +154,8 @@ methods:
         description: ''
         type: this
   - name: entries()
-    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.entries|stable'
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.entries'
+    package: '@azure/arm-appconfiguration'
     summary: Returns an iterable of key, value pairs for every entry in the array
     remarks: ''
     isPreview: false
@@ -169,8 +168,8 @@ methods:
   - name: >-
       every((value: OperationDefinition, index: number, array:
       OperationDefinition[]) => unknown, any)
-    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.every|stable'
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.every'
+    package: '@azure/arm-appconfiguration'
     summary: Determines whether all the members of an array satisfy the specified test.
     remarks: ''
     isPreview: false
@@ -198,8 +197,8 @@ methods:
         description: ''
         type: boolean
   - name: fill(OperationDefinition, undefined | number, undefined | number)
-    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.fill|stable'
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.fill'
+    package: '@azure/arm-appconfiguration'
     summary: >-
       Returns the this object after filling the section identified by start and
       end with value
@@ -236,8 +235,8 @@ methods:
   - name: >-
       filter((value: OperationDefinition, index: number, array:
       OperationDefinition[]) => unknown, any)
-    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.filter_1|stable'
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.filter_1'
+    package: '@azure/arm-appconfiguration'
     summary: >-
       Returns the elements of an array that meet the condition specified in a
       callback function.
@@ -272,8 +271,8 @@ methods:
   - name: >-
       filter<S>((value: OperationDefinition, index: number, array:
       OperationDefinition[]) => boolean, any)
-    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.filter|stable'
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.filter'
+    package: '@azure/arm-appconfiguration'
     summary: >-
       Returns the elements of an array that meet the condition specified in a
       callback function.
@@ -305,8 +304,8 @@ methods:
   - name: >-
       find((value: OperationDefinition, index: number, obj:
       OperationDefinition[]) => unknown, any)
-    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.find_1|stable'
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.find_1'
+    package: '@azure/arm-appconfiguration'
     summary: ''
     remarks: ''
     isPreview: false
@@ -333,8 +332,8 @@ methods:
   - name: >-
       find<S>((this: void, value: OperationDefinition, index: number, obj:
       OperationDefinition[]) => boolean, any)
-    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.find|stable'
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.find'
+    package: '@azure/arm-appconfiguration'
     summary: >-
       Returns the value of the first element in the array where predicate is
       true, and undefined
@@ -375,8 +374,8 @@ methods:
   - name: >-
       findIndex((value: OperationDefinition, index: number, obj:
       OperationDefinition[]) => unknown, any)
-    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.findIndex|stable'
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.findIndex'
+    package: '@azure/arm-appconfiguration'
     summary: >-
       Returns the index of the first element in the array where predicate is
       true, and -1
@@ -414,8 +413,8 @@ methods:
         description: ''
         type: number
   - name: flat<U>(undefined | number)
-    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.flat_8|stable'
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.flat_8'
+    package: '@azure/arm-appconfiguration'
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -436,8 +435,8 @@ methods:
         description: ''
         type: any[]
   - name: flat<U>(U[], 0)
-    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.flat_7|stable'
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.flat_7'
+    package: '@azure/arm-appconfiguration'
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -460,8 +459,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][], undefined | 1)
-    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.flat_6|stable'
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.flat_6'
+    package: '@azure/arm-appconfiguration'
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -484,8 +483,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][], 2)
-    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.flat_5|stable'
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.flat_5'
+    package: '@azure/arm-appconfiguration'
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -508,8 +507,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][][], 3)
-    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.flat_4|stable'
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.flat_4'
+    package: '@azure/arm-appconfiguration'
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -532,8 +531,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][][][], 4)
-    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.flat_3|stable'
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.flat_3'
+    package: '@azure/arm-appconfiguration'
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -556,8 +555,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][][][][], 5)
-    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.flat_2|stable'
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.flat_2'
+    package: '@azure/arm-appconfiguration'
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -580,8 +579,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][][][][][], 6)
-    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.flat_1|stable'
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.flat_1'
+    package: '@azure/arm-appconfiguration'
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -604,8 +603,8 @@ methods:
         description: ''
         type: U[]
   - name: flat<U>(U[][][][][][][][], 7)
-    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.flat|stable'
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.flat'
+    package: '@azure/arm-appconfiguration'
     summary: >-
       Returns a new array with all sub-array elements concatenated into it
       recursively up to the
@@ -630,8 +629,8 @@ methods:
   - name: >-
       flatMap<U, This>((this: This, value: OperationDefinition, index: number,
       array: OperationDefinition[]) => U | ReadonlyArray<U>, This)
-    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.flatMap|stable'
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.flatMap'
+    package: '@azure/arm-appconfiguration'
     summary: >-
       Calls a defined callback function on each element of an array. Then,
       flattens the result into
@@ -670,8 +669,8 @@ methods:
   - name: >-
       forEach((value: OperationDefinition, index: number, array:
       OperationDefinition[]) => void, any)
-    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.forEach|stable'
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.forEach'
+    package: '@azure/arm-appconfiguration'
     summary: Performs the specified action for each element in an array.
     remarks: ''
     isPreview: false
@@ -695,8 +694,8 @@ methods:
             function. If thisArg is omitted, undefined is used as the this
             value.
   - name: includes(OperationDefinition, undefined | number)
-    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.includes|stable'
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.includes'
+    package: '@azure/arm-appconfiguration'
     summary: >-
       Determines whether an array includes a certain element, returning true or
       false as appropriate.
@@ -722,8 +721,8 @@ methods:
         description: ''
         type: boolean
   - name: indexOf(OperationDefinition, undefined | number)
-    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.indexOf|stable'
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.indexOf'
+    package: '@azure/arm-appconfiguration'
     summary: Returns the index of the first occurrence of a value in an array.
     remarks: ''
     isPreview: false
@@ -747,8 +746,8 @@ methods:
         description: ''
         type: number
   - name: join(undefined | string)
-    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.join|stable'
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.join'
+    package: '@azure/arm-appconfiguration'
     summary: >-
       Adds all the elements of an array separated by the specified separator
       string.
@@ -768,8 +767,8 @@ methods:
         description: ''
         type: string
   - name: keys()
-    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.keys|stable'
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.keys'
+    package: '@azure/arm-appconfiguration'
     summary: Returns an iterable of keys in the array
     remarks: ''
     isPreview: false
@@ -780,9 +779,8 @@ methods:
         description: ''
         type: IterableIterator&lt;number&gt;
   - name: lastIndexOf(OperationDefinition, undefined | number)
-    uid: >-
-      @azure/arm-appconfiguration.OperationDefinitionListResult.lastIndexOf|stable
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.lastIndexOf'
+    package: '@azure/arm-appconfiguration'
     summary: Returns the index of the last occurrence of a specified value in an array.
     remarks: ''
     isPreview: false
@@ -808,8 +806,8 @@ methods:
   - name: >-
       map<U>((value: OperationDefinition, index: number, array:
       OperationDefinition[]) => U, any)
-    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.map|stable'
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.map'
+    package: '@azure/arm-appconfiguration'
     summary: >-
       Calls a defined callback function on each element of an array, and returns
       an array that contains the results.
@@ -838,8 +836,8 @@ methods:
         description: ''
         type: U[]
   - name: pop()
-    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.pop|stable'
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.pop'
+    package: '@azure/arm-appconfiguration'
     summary: Removes the last element from an array and returns it.
     remarks: ''
     isPreview: false
@@ -852,8 +850,8 @@ methods:
           <xref uid="@azure/arm-appconfiguration.OperationDefinition|stable" />
           | undefined
   - name: push(OperationDefinition[])
-    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.push|stable'
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.push'
+    package: '@azure/arm-appconfiguration'
     summary: Appends new elements to an array, and returns the new length of the array.
     remarks: ''
     isPreview: false
@@ -874,8 +872,8 @@ methods:
       reduce((previousValue: OperationDefinition, currentValue:
       OperationDefinition, currentIndex: number, array: OperationDefinition[])
       => OperationDefinition)
-    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.reduce|stable'
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.reduce'
+    package: '@azure/arm-appconfiguration'
     summary: >-
       Calls the specified callback function for all the elements in an array.
       The return value of the callback function is the accumulated result, and
@@ -905,8 +903,8 @@ methods:
       reduce((previousValue: OperationDefinition, currentValue:
       OperationDefinition, currentIndex: number, array: OperationDefinition[])
       => OperationDefinition, OperationDefinition)
-    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.reduce_1|stable'
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.reduce_1'
+    package: '@azure/arm-appconfiguration'
     summary: ''
     remarks: ''
     isPreview: false
@@ -935,8 +933,8 @@ methods:
   - name: >-
       reduce<U>((previousValue: U, currentValue: OperationDefinition,
       currentIndex: number, array: OperationDefinition[]) => U, U)
-    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.reduce_2|stable'
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.reduce_2'
+    package: '@azure/arm-appconfiguration'
     summary: >-
       Calls the specified callback function for all the elements in an array.
       The return value of the callback function is the accumulated result, and
@@ -971,9 +969,8 @@ methods:
       reduceRight((previousValue: OperationDefinition, currentValue:
       OperationDefinition, currentIndex: number, array: OperationDefinition[])
       => OperationDefinition)
-    uid: >-
-      @azure/arm-appconfiguration.OperationDefinitionListResult.reduceRight|stable
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.reduceRight'
+    package: '@azure/arm-appconfiguration'
     summary: >-
       Calls the specified callback function for all the elements in an array, in
       descending order. The return value of the callback function is the
@@ -1004,9 +1001,8 @@ methods:
       reduceRight((previousValue: OperationDefinition, currentValue:
       OperationDefinition, currentIndex: number, array: OperationDefinition[])
       => OperationDefinition, OperationDefinition)
-    uid: >-
-      @azure/arm-appconfiguration.OperationDefinitionListResult.reduceRight_1|stable
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.reduceRight_1'
+    package: '@azure/arm-appconfiguration'
     summary: ''
     remarks: ''
     isPreview: false
@@ -1035,9 +1031,8 @@ methods:
   - name: >-
       reduceRight<U>((previousValue: U, currentValue: OperationDefinition,
       currentIndex: number, array: OperationDefinition[]) => U, U)
-    uid: >-
-      @azure/arm-appconfiguration.OperationDefinitionListResult.reduceRight_2|stable
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.reduceRight_2'
+    package: '@azure/arm-appconfiguration'
     summary: >-
       Calls the specified callback function for all the elements in an array, in
       descending order. The return value of the callback function is the
@@ -1070,8 +1065,8 @@ methods:
         description: ''
         type: U
   - name: reverse()
-    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.reverse|stable'
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.reverse'
+    package: '@azure/arm-appconfiguration'
     summary: Reverses the elements in an Array.
     remarks: ''
     isPreview: false
@@ -1084,8 +1079,8 @@ methods:
           <xref uid="@azure/arm-appconfiguration.OperationDefinition|stable"
           />[]
   - name: shift()
-    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.shift|stable'
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.shift'
+    package: '@azure/arm-appconfiguration'
     summary: Removes the first element from an array and returns it.
     remarks: ''
     isPreview: false
@@ -1098,8 +1093,8 @@ methods:
           <xref uid="@azure/arm-appconfiguration.OperationDefinition|stable" />
           | undefined
   - name: slice(undefined | number, undefined | number)
-    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.slice|stable'
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.slice'
+    package: '@azure/arm-appconfiguration'
     summary: Returns a section of an array.
     remarks: ''
     isPreview: false
@@ -1124,8 +1119,8 @@ methods:
   - name: >-
       some((value: OperationDefinition, index: number, array:
       OperationDefinition[]) => unknown, any)
-    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.some|stable'
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.some'
+    package: '@azure/arm-appconfiguration'
     summary: >-
       Determines whether the specified callback function returns true for any
       element of an array.
@@ -1157,8 +1152,8 @@ methods:
   - name: >-
       sort(undefined | (a: OperationDefinition, b: OperationDefinition) =>
       number)
-    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.sort|stable'
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.sort'
+    package: '@azure/arm-appconfiguration'
     summary: Sorts an array.
     remarks: ''
     isPreview: false
@@ -1180,8 +1175,8 @@ methods:
         description: ''
         type: this
   - name: splice(number, number, OperationDefinition[])
-    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.splice_1|stable'
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.splice_1'
+    package: '@azure/arm-appconfiguration'
     summary: >-
       Removes elements from an array and, if necessary, inserts new elements in
       their place, returning the deleted elements.
@@ -1213,8 +1208,8 @@ methods:
           <xref uid="@azure/arm-appconfiguration.OperationDefinition|stable"
           />[]
   - name: splice(number, undefined | number)
-    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.splice|stable'
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.splice'
+    package: '@azure/arm-appconfiguration'
     summary: >-
       Removes elements from an array and, if necessary, inserts new elements in
       their place, returning the deleted elements.
@@ -1241,9 +1236,8 @@ methods:
           <xref uid="@azure/arm-appconfiguration.OperationDefinition|stable"
           />[]
   - name: toLocaleString()
-    uid: >-
-      @azure/arm-appconfiguration.OperationDefinitionListResult.toLocaleString|stable
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.toLocaleString'
+    package: '@azure/arm-appconfiguration'
     summary: >-
       Returns a string representation of an array. The elements are converted to
       string using their toLocalString methods.
@@ -1256,8 +1250,8 @@ methods:
         description: ''
         type: string
   - name: toString()
-    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.toString|stable'
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.toString'
+    package: '@azure/arm-appconfiguration'
     summary: Returns a string representation of an array.
     remarks: ''
     isPreview: false
@@ -1268,8 +1262,8 @@ methods:
         description: ''
         type: string
   - name: unshift(OperationDefinition[])
-    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.unshift|stable'
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.unshift'
+    package: '@azure/arm-appconfiguration'
     summary: Inserts new elements at the start of an array.
     remarks: ''
     isPreview: false
@@ -1287,8 +1281,8 @@ methods:
         description: ''
         type: number
   - name: values()
-    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.values|stable'
-    package: '@azure/arm-appconfiguration|stable'
+    uid: '@azure/arm-appconfiguration.OperationDefinitionListResult.values'
+    package: '@azure/arm-appconfiguration'
     summary: Returns an iterable of values in the array
     remarks: ''
     isPreview: false

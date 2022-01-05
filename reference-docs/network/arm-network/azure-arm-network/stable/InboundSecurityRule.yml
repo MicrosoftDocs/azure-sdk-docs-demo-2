@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: InboundSecurityRule
+uid: '@azure/arm-network.InboundSecurityRule|stable'
+package: '@azure/arm-network|stable'
+summary: NVA Inbound Security Rule resource.
+fullName: InboundSecurityRule
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type InboundSecurityRule = SubResource & { etag?: undefined | string, name?:
+  undefined | string, provisioningState?: ProvisioningState, rules?:
+  InboundSecurityRules[], type?: undefined | string }

@@ -1,0 +1,30 @@
+### YamlMime:TSEnum
+name: KnownComplexity
+uid: '@azure/arm-mediaservices.KnownComplexity|stable'
+package: '@azure/arm-mediaservices|stable'
+summary: >-
+  Known values of <xref:@azure/arm-mediaservices.KnownComplexity|stable> that
+  the service accepts.
+fullName: KnownComplexity
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: Balanced
+    uid: '@azure/arm-mediaservices.KnownComplexity.Balanced|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: >-
+      Configures the encoder to use settings that achieve a balance between
+      speed and quality.
+  - name: Quality
+    uid: '@azure/arm-mediaservices.KnownComplexity.Quality|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: >-
+      Configures the encoder to use settings optimized to produce higher quality
+      output at the expense of slower overall encode time.
+  - name: Speed
+    uid: '@azure/arm-mediaservices.KnownComplexity.Speed|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: >-
+      Configures the encoder to use settings optimized for faster encoding.
+      Quality is sacrificed to decrease encoding time.

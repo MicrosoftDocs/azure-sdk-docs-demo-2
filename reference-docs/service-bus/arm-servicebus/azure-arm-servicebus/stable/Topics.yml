@@ -2,32 +2,16 @@
 name: Topics
 uid: '@azure/arm-servicebus.Topics|stable'
 package: '@azure/arm-servicebus|stable'
-summary: Class representing a Topics.
+summary: Interface representing a Topics.
 fullName: Topics
 remarks: ''
 isPreview: false
 isDeprecated: false
-type: class
-constructors:
-  - name: Topics(ServiceBusManagementClientContext)
-    uid: '@azure/arm-servicebus.Topics.constructor|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: Create a Topics.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'new Topics(client: ServiceBusManagementClientContext)'
-      parameters:
-        - id: client
-          type: >-
-            <xref
-            uid="@azure/arm-servicebus.ServiceBusManagementClientContext|stable"
-            />
-          description: |
-            Reference to the service client.
+type: interface
 methods:
-  - name: createOrUpdate(string, string, string, SBTopic, msRest.RequestOptionsBase)
+  - name: >-
+      createOrUpdate(string, string, string, SBTopic,
+      TopicsCreateOrUpdateOptionalParams)
     uid: '@azure/arm-servicebus.Topics.createOrUpdate|stable'
     package: '@azure/arm-servicebus|stable'
     summary: Creates a topic in the specified namespace.
@@ -38,7 +22,8 @@ methods:
       content: >-
         function createOrUpdate(resourceGroupName: string, namespaceName:
         string, topicName: string, parameters: SBTopic, options?:
-        msRest.RequestOptionsBase): Promise<Models.TopicsCreateOrUpdateResponse>
+        TopicsCreateOrUpdateOptionalParams):
+        Promise<TopicsCreateOrUpdateResponse>
       parameters:
         - id: resourceGroupName
           type: string
@@ -53,83 +38,20 @@ methods:
           type: <xref uid="@azure/arm-servicebus.SBTopic|stable" />
           description: Parameters supplied to create a topic resource.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.TopicsCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.TopicsCreateOrUpdateResponse>
+        description: ''
         type: >-
           Promise&lt;<xref
           uid="@azure/arm-servicebus.TopicsCreateOrUpdateResponse|stable" />&gt;
   - name: >-
-      createOrUpdate(string, string, string, SBTopic, RequestOptionsBase,
-      ServiceCallback<SBTopic>)
-    uid: '@azure/arm-servicebus.Topics.createOrUpdate_2|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function createOrUpdate(resourceGroupName: string, namespaceName:
-        string, topicName: string, parameters: SBTopic, options:
-        RequestOptionsBase, callback: ServiceCallback<SBTopic>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: Name of the Resource group within the Azure subscription.
-        - id: namespaceName
-          type: string
-          description: The namespace name
-        - id: topicName
-          type: string
-          description: The topic name.
-        - id: parameters
-          type: <xref uid="@azure/arm-servicebus.SBTopic|stable" />
-          description: Parameters supplied to create a topic resource.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref uid="@azure/arm-servicebus.SBTopic|stable"
-            />&gt;
-          description: |
-            The callback
-  - name: createOrUpdate(string, string, string, SBTopic, ServiceCallback<SBTopic>)
-    uid: '@azure/arm-servicebus.Topics.createOrUpdate_1|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function createOrUpdate(resourceGroupName: string, namespaceName:
-        string, topicName: string, parameters: SBTopic, callback:
-        ServiceCallback<SBTopic>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: Name of the Resource group within the Azure subscription.
-        - id: namespaceName
-          type: string
-          description: The namespace name
-        - id: topicName
-          type: string
-          description: The topic name.
-        - id: parameters
-          type: <xref uid="@azure/arm-servicebus.SBTopic|stable" />
-          description: Parameters supplied to create a topic resource.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref uid="@azure/arm-servicebus.SBTopic|stable"
-            />&gt;
-          description: |
-            The callback
-  - name: >-
       createOrUpdateAuthorizationRule(string, string, string, string,
-      SBAuthorizationRule, msRest.RequestOptionsBase)
+      SBAuthorizationRule, TopicsCreateOrUpdateAuthorizationRuleOptionalParams)
     uid: '@azure/arm-servicebus.Topics.createOrUpdateAuthorizationRule|stable'
     package: '@azure/arm-servicebus|stable'
     summary: Creates an authorization rule for the specified topic.
@@ -140,8 +62,9 @@ methods:
       content: >-
         function createOrUpdateAuthorizationRule(resourceGroupName: string,
         namespaceName: string, topicName: string, authorizationRuleName: string,
-        parameters: SBAuthorizationRule, options?: msRest.RequestOptionsBase):
-        Promise<Models.TopicsCreateOrUpdateAuthorizationRuleResponse>
+        parameters: SBAuthorizationRule, options?:
+        TopicsCreateOrUpdateAuthorizationRuleOptionalParams):
+        Promise<TopicsCreateOrUpdateAuthorizationRuleResponse>
       parameters:
         - id: resourceGroupName
           type: string
@@ -159,30 +82,29 @@ methods:
           type: <xref uid="@azure/arm-servicebus.SBAuthorizationRule|stable" />
           description: The shared access authorization rule.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.TopicsCreateOrUpdateAuthorizationRuleOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.TopicsCreateOrUpdateAuthorizationRuleResponse>
+        description: ''
         type: >-
           Promise&lt;<xref
           uid="@azure/arm-servicebus.TopicsCreateOrUpdateAuthorizationRuleResponse|stable"
           />&gt;
-  - name: >-
-      createOrUpdateAuthorizationRule(string, string, string, string,
-      SBAuthorizationRule, RequestOptionsBase,
-      ServiceCallback<SBAuthorizationRule>)
-    uid: '@azure/arm-servicebus.Topics.createOrUpdateAuthorizationRule_2|stable'
+  - name: delete(string, string, string, TopicsDeleteOptionalParams)
+    uid: '@azure/arm-servicebus.Topics.delete|stable'
     package: '@azure/arm-servicebus|stable'
-    summary: ''
+    summary: Deletes a topic from the specified namespace and resource group.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        function createOrUpdateAuthorizationRule(resourceGroupName: string,
-        namespaceName: string, topicName: string, authorizationRuleName: string,
-        parameters: SBAuthorizationRule, options: RequestOptionsBase, callback:
-        ServiceCallback<SBAuthorizationRule>)
+        function delete(resourceGroupName: string, namespaceName: string,
+        topicName: string, options?: TopicsDeleteOptionalParams): Promise<void>
       parameters:
         - id: resourceGroupName
           type: string
@@ -193,61 +115,18 @@ methods:
         - id: topicName
           type: string
           description: The topic name.
-        - id: authorizationRuleName
-          type: string
-          description: The authorization rule name.
-        - id: parameters
-          type: <xref uid="@azure/arm-servicebus.SBAuthorizationRule|stable" />
-          description: The shared access authorization rule.
         - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
           type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-servicebus.SBAuthorizationRule|stable" />&gt;
+            <xref uid="@azure/arm-servicebus.TopicsDeleteOptionalParams|stable"
+            />
           description: |
-            The callback
-  - name: >-
-      createOrUpdateAuthorizationRule(string, string, string, string,
-      SBAuthorizationRule, ServiceCallback<SBAuthorizationRule>)
-    uid: '@azure/arm-servicebus.Topics.createOrUpdateAuthorizationRule_1|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function createOrUpdateAuthorizationRule(resourceGroupName: string,
-        namespaceName: string, topicName: string, authorizationRuleName: string,
-        parameters: SBAuthorizationRule, callback:
-        ServiceCallback<SBAuthorizationRule>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: Name of the Resource group within the Azure subscription.
-        - id: namespaceName
-          type: string
-          description: The namespace name
-        - id: topicName
-          type: string
-          description: The topic name.
-        - id: authorizationRuleName
-          type: string
-          description: The authorization rule name.
-        - id: parameters
-          type: <xref uid="@azure/arm-servicebus.SBAuthorizationRule|stable" />
-          description: The shared access authorization rule.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-servicebus.SBAuthorizationRule|stable" />&gt;
-          description: |
-            The callback
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
   - name: >-
       deleteAuthorizationRule(string, string, string, string,
-      msRest.RequestOptionsBase)
+      TopicsDeleteAuthorizationRuleOptionalParams)
     uid: '@azure/arm-servicebus.Topics.deleteAuthorizationRule|stable'
     package: '@azure/arm-servicebus|stable'
     summary: Deletes a topic authorization rule.
@@ -258,7 +137,7 @@ methods:
       content: >-
         function deleteAuthorizationRule(resourceGroupName: string,
         namespaceName: string, topicName: string, authorizationRuleName: string,
-        options?: msRest.RequestOptionsBase): Promise<RestResponse>
+        options?: TopicsDeleteAuthorizationRuleOptionalParams): Promise<void>
       parameters:
         - id: resourceGroupName
           type: string
@@ -273,161 +152,16 @@ methods:
           type: string
           description: The authorization rule name.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.TopicsDeleteAuthorizationRuleOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<msRest.RestResponse>
-        type: Promise&lt;RestResponse&gt;
-  - name: >-
-      deleteAuthorizationRule(string, string, string, string,
-      RequestOptionsBase, ServiceCallback<void>)
-    uid: '@azure/arm-servicebus.Topics.deleteAuthorizationRule_2|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function deleteAuthorizationRule(resourceGroupName: string,
-        namespaceName: string, topicName: string, authorizationRuleName: string,
-        options: RequestOptionsBase, callback: ServiceCallback<void>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: Name of the Resource group within the Azure subscription.
-        - id: namespaceName
-          type: string
-          description: The namespace name
-        - id: topicName
-          type: string
-          description: The topic name.
-        - id: authorizationRuleName
-          type: string
-          description: The authorization rule name.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: ServiceCallback&lt;void&gt;
-          description: |
-            The callback
-  - name: >-
-      deleteAuthorizationRule(string, string, string, string,
-      ServiceCallback<void>)
-    uid: '@azure/arm-servicebus.Topics.deleteAuthorizationRule_1|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function deleteAuthorizationRule(resourceGroupName: string,
-        namespaceName: string, topicName: string, authorizationRuleName: string,
-        callback: ServiceCallback<void>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: Name of the Resource group within the Azure subscription.
-        - id: namespaceName
-          type: string
-          description: The namespace name
-        - id: topicName
-          type: string
-          description: The topic name.
-        - id: authorizationRuleName
-          type: string
-          description: The authorization rule name.
-        - id: callback
-          type: ServiceCallback&lt;void&gt;
-          description: |
-            The callback
-  - name: deleteMethod(string, string, string, msRest.RequestOptionsBase)
-    uid: '@azure/arm-servicebus.Topics.deleteMethod|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: Deletes a topic from the specified namespace and resource group.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function deleteMethod(resourceGroupName: string, namespaceName: string,
-        topicName: string, options?: msRest.RequestOptionsBase):
-        Promise<RestResponse>
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: Name of the Resource group within the Azure subscription.
-        - id: namespaceName
-          type: string
-          description: The namespace name
-        - id: topicName
-          type: string
-          description: The topic name.
-        - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
-      return:
-        description: Promise<msRest.RestResponse>
-        type: Promise&lt;RestResponse&gt;
-  - name: >-
-      deleteMethod(string, string, string, RequestOptionsBase,
-      ServiceCallback<void>)
-    uid: '@azure/arm-servicebus.Topics.deleteMethod_2|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function deleteMethod(resourceGroupName: string, namespaceName: string,
-        topicName: string, options: RequestOptionsBase, callback:
-        ServiceCallback<void>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: Name of the Resource group within the Azure subscription.
-        - id: namespaceName
-          type: string
-          description: The namespace name
-        - id: topicName
-          type: string
-          description: The topic name.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: ServiceCallback&lt;void&gt;
-          description: |
-            The callback
-  - name: deleteMethod(string, string, string, ServiceCallback<void>)
-    uid: '@azure/arm-servicebus.Topics.deleteMethod_1|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function deleteMethod(resourceGroupName: string, namespaceName: string,
-        topicName: string, callback: ServiceCallback<void>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: Name of the Resource group within the Azure subscription.
-        - id: namespaceName
-          type: string
-          description: The namespace name
-        - id: topicName
-          type: string
-          description: The topic name.
-        - id: callback
-          type: ServiceCallback&lt;void&gt;
-          description: |
-            The callback
-  - name: get(string, string, string, msRest.RequestOptionsBase)
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: get(string, string, string, TopicsGetOptionalParams)
     uid: '@azure/arm-servicebus.Topics.get|stable'
     package: '@azure/arm-servicebus|stable'
     summary: Returns a description for the specified topic.
@@ -437,8 +171,8 @@ methods:
     syntax:
       content: >-
         function get(resourceGroupName: string, namespaceName: string,
-        topicName: string, options?: msRest.RequestOptionsBase):
-        Promise<Models.TopicsGetResponse>
+        topicName: string, options?: TopicsGetOptionalParams):
+        Promise<TopicsGetResponse>
       parameters:
         - id: resourceGroupName
           type: string
@@ -450,74 +184,17 @@ methods:
           type: string
           description: The topic name.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: <xref uid="@azure/arm-servicebus.TopicsGetOptionalParams|stable" />
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.TopicsGetResponse>
+        description: ''
         type: >-
           Promise&lt;<xref uid="@azure/arm-servicebus.TopicsGetResponse|stable"
           />&gt;
-  - name: get(string, string, string, RequestOptionsBase, ServiceCallback<SBTopic>)
-    uid: '@azure/arm-servicebus.Topics.get_2|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function get(resourceGroupName: string, namespaceName: string,
-        topicName: string, options: RequestOptionsBase, callback:
-        ServiceCallback<SBTopic>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: Name of the Resource group within the Azure subscription.
-        - id: namespaceName
-          type: string
-          description: The namespace name
-        - id: topicName
-          type: string
-          description: The topic name.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref uid="@azure/arm-servicebus.SBTopic|stable"
-            />&gt;
-          description: |
-            The callback
-  - name: get(string, string, string, ServiceCallback<SBTopic>)
-    uid: '@azure/arm-servicebus.Topics.get_1|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function get(resourceGroupName: string, namespaceName: string,
-        topicName: string, callback: ServiceCallback<SBTopic>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: Name of the Resource group within the Azure subscription.
-        - id: namespaceName
-          type: string
-          description: The namespace name
-        - id: topicName
-          type: string
-          description: The topic name.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref uid="@azure/arm-servicebus.SBTopic|stable"
-            />&gt;
-          description: |
-            The callback
   - name: >-
       getAuthorizationRule(string, string, string, string,
-      msRest.RequestOptionsBase)
+      TopicsGetAuthorizationRuleOptionalParams)
     uid: '@azure/arm-servicebus.Topics.getAuthorizationRule|stable'
     package: '@azure/arm-servicebus|stable'
     summary: Returns the specified authorization rule.
@@ -528,8 +205,8 @@ methods:
       content: >-
         function getAuthorizationRule(resourceGroupName: string, namespaceName:
         string, topicName: string, authorizationRuleName: string, options?:
-        msRest.RequestOptionsBase):
-        Promise<Models.TopicsGetAuthorizationRuleResponse>
+        TopicsGetAuthorizationRuleOptionalParams):
+        Promise<TopicsGetAuthorizationRuleResponse>
       parameters:
         - id: resourceGroupName
           type: string
@@ -544,84 +221,21 @@ methods:
           type: string
           description: The authorization rule name.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.TopicsGetAuthorizationRuleOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.TopicsGetAuthorizationRuleResponse>
+        description: ''
         type: >-
           Promise&lt;<xref
           uid="@azure/arm-servicebus.TopicsGetAuthorizationRuleResponse|stable"
           />&gt;
   - name: >-
-      getAuthorizationRule(string, string, string, string, RequestOptionsBase,
-      ServiceCallback<SBAuthorizationRule>)
-    uid: '@azure/arm-servicebus.Topics.getAuthorizationRule_2|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function getAuthorizationRule(resourceGroupName: string, namespaceName:
-        string, topicName: string, authorizationRuleName: string, options:
-        RequestOptionsBase, callback: ServiceCallback<SBAuthorizationRule>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: Name of the Resource group within the Azure subscription.
-        - id: namespaceName
-          type: string
-          description: The namespace name
-        - id: topicName
-          type: string
-          description: The topic name.
-        - id: authorizationRuleName
-          type: string
-          description: The authorization rule name.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-servicebus.SBAuthorizationRule|stable" />&gt;
-          description: |
-            The callback
-  - name: >-
-      getAuthorizationRule(string, string, string, string,
-      ServiceCallback<SBAuthorizationRule>)
-    uid: '@azure/arm-servicebus.Topics.getAuthorizationRule_1|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function getAuthorizationRule(resourceGroupName: string, namespaceName:
-        string, topicName: string, authorizationRuleName: string, callback:
-        ServiceCallback<SBAuthorizationRule>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: Name of the Resource group within the Azure subscription.
-        - id: namespaceName
-          type: string
-          description: The namespace name
-        - id: topicName
-          type: string
-          description: The topic name.
-        - id: authorizationRuleName
-          type: string
-          description: The authorization rule name.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-servicebus.SBAuthorizationRule|stable" />&gt;
-          description: |
-            The callback
-  - name: listAuthorizationRules(string, string, string, msRest.RequestOptionsBase)
+      listAuthorizationRules(string, string, string,
+      TopicsListAuthorizationRulesOptionalParams)
     uid: '@azure/arm-servicebus.Topics.listAuthorizationRules|stable'
     package: '@azure/arm-servicebus|stable'
     summary: Gets authorization rules for a topic.
@@ -632,8 +246,8 @@ methods:
       content: >-
         function listAuthorizationRules(resourceGroupName: string,
         namespaceName: string, topicName: string, options?:
-        msRest.RequestOptionsBase):
-        Promise<Models.TopicsListAuthorizationRulesResponse>
+        TopicsListAuthorizationRulesOptionalParams):
+        PagedAsyncIterableIterator<SBAuthorizationRule>
       parameters:
         - id: resourceGroupName
           type: string
@@ -645,159 +259,18 @@ methods:
           type: string
           description: The topic name.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.TopicsListAuthorizationRulesOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.TopicsListAuthorizationRulesResponse>
+        description: ''
         type: >-
-          Promise&lt;<xref
-          uid="@azure/arm-servicebus.TopicsListAuthorizationRulesResponse|stable"
-          />&gt;
-  - name: >-
-      listAuthorizationRules(string, string, string, RequestOptionsBase,
-      ServiceCallback<SBAuthorizationRuleListResult>)
-    uid: '@azure/arm-servicebus.Topics.listAuthorizationRules_2|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listAuthorizationRules(resourceGroupName: string,
-        namespaceName: string, topicName: string, options: RequestOptionsBase,
-        callback: ServiceCallback<SBAuthorizationRuleListResult>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: Name of the Resource group within the Azure subscription.
-        - id: namespaceName
-          type: string
-          description: The namespace name
-        - id: topicName
-          type: string
-          description: The topic name.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-servicebus.SBAuthorizationRuleListResult|stable"
-            />&gt;
-          description: |
-            The callback
-  - name: >-
-      listAuthorizationRules(string, string, string,
-      ServiceCallback<SBAuthorizationRuleListResult>)
-    uid: '@azure/arm-servicebus.Topics.listAuthorizationRules_1|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listAuthorizationRules(resourceGroupName: string,
-        namespaceName: string, topicName: string, callback:
-        ServiceCallback<SBAuthorizationRuleListResult>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: Name of the Resource group within the Azure subscription.
-        - id: namespaceName
-          type: string
-          description: The namespace name
-        - id: topicName
-          type: string
-          description: The topic name.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-servicebus.SBAuthorizationRuleListResult|stable"
-            />&gt;
-          description: |
-            The callback
-  - name: listAuthorizationRulesNext(string, msRest.RequestOptionsBase)
-    uid: '@azure/arm-servicebus.Topics.listAuthorizationRulesNext|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: Gets authorization rules for a topic.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listAuthorizationRulesNext(nextPageLink: string, options?:
-        msRest.RequestOptionsBase):
-        Promise<Models.TopicsListAuthorizationRulesNextResponse>
-      parameters:
-        - id: nextPageLink
-          type: string
-          description: The NextLink from the previous successful call to List operation.
-        - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
-      return:
-        description: Promise<Models.TopicsListAuthorizationRulesNextResponse>
-        type: >-
-          Promise&lt;<xref
-          uid="@azure/arm-servicebus.TopicsListAuthorizationRulesNextResponse|stable"
-          />&gt;
-  - name: >-
-      listAuthorizationRulesNext(string, RequestOptionsBase,
-      ServiceCallback<SBAuthorizationRuleListResult>)
-    uid: '@azure/arm-servicebus.Topics.listAuthorizationRulesNext_2|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listAuthorizationRulesNext(nextPageLink: string, options:
-        RequestOptionsBase, callback:
-        ServiceCallback<SBAuthorizationRuleListResult>)
-      parameters:
-        - id: nextPageLink
-          type: string
-          description: The NextLink from the previous successful call to List operation.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-servicebus.SBAuthorizationRuleListResult|stable"
-            />&gt;
-          description: |
-            The callback
-  - name: >-
-      listAuthorizationRulesNext(string,
-      ServiceCallback<SBAuthorizationRuleListResult>)
-    uid: '@azure/arm-servicebus.Topics.listAuthorizationRulesNext_1|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listAuthorizationRulesNext(nextPageLink: string, callback:
-        ServiceCallback<SBAuthorizationRuleListResult>)
-      parameters:
-        - id: nextPageLink
-          type: string
-          description: The NextLink from the previous successful call to List operation.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-servicebus.SBAuthorizationRuleListResult|stable"
-            />&gt;
-          description: |
-            The callback
-  - name: >-
-      listByNamespace(string, string,
-      Models.TopicsListByNamespaceOptionalParams)
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-servicebus.SBAuthorizationRule|stable" />&gt;
+  - name: listByNamespace(string, string, TopicsListByNamespaceOptionalParams)
     uid: '@azure/arm-servicebus.Topics.listByNamespace|stable'
     package: '@azure/arm-servicebus|stable'
     summary: Gets all the topics in a namespace.
@@ -807,8 +280,8 @@ methods:
     syntax:
       content: >-
         function listByNamespace(resourceGroupName: string, namespaceName:
-        string, options?: Models.TopicsListByNamespaceOptionalParams):
-        Promise<Models.TopicsListByNamespaceResponse>
+        string, options?: TopicsListByNamespaceOptionalParams):
+        PagedAsyncIterableIterator<SBTopic>
       parameters:
         - id: resourceGroupName
           type: string
@@ -821,143 +294,14 @@ methods:
             <xref
             uid="@azure/arm-servicebus.TopicsListByNamespaceOptionalParams|stable"
             />
-          description: ''
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.TopicsListByNamespaceResponse>
+        description: ''
         type: >-
-          Promise&lt;<xref
-          uid="@azure/arm-servicebus.TopicsListByNamespaceResponse|stable"
-          />&gt;
-  - name: listByNamespace(string, string, ServiceCallback<SBTopicListResult>)
-    uid: '@azure/arm-servicebus.Topics.listByNamespace_1|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listByNamespace(resourceGroupName: string, namespaceName:
-        string, callback: ServiceCallback<SBTopicListResult>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: Name of the Resource group within the Azure subscription.
-        - id: namespaceName
-          type: string
-          description: The namespace name
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-servicebus.SBTopicListResult|stable" />&gt;
-          description: |
-            The callback
-  - name: >-
-      listByNamespace(string, string, TopicsListByNamespaceOptionalParams,
-      ServiceCallback<SBTopicListResult>)
-    uid: '@azure/arm-servicebus.Topics.listByNamespace_2|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listByNamespace(resourceGroupName: string, namespaceName:
-        string, options: TopicsListByNamespaceOptionalParams, callback:
-        ServiceCallback<SBTopicListResult>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: Name of the Resource group within the Azure subscription.
-        - id: namespaceName
-          type: string
-          description: The namespace name
-        - id: options
-          type: >-
-            <xref
-            uid="@azure/arm-servicebus.TopicsListByNamespaceOptionalParams|stable"
-            />
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-servicebus.SBTopicListResult|stable" />&gt;
-          description: |
-            The callback
-  - name: listByNamespaceNext(string, msRest.RequestOptionsBase)
-    uid: '@azure/arm-servicebus.Topics.listByNamespaceNext|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: Gets all the topics in a namespace.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listByNamespaceNext(nextPageLink: string, options?:
-        msRest.RequestOptionsBase):
-        Promise<Models.TopicsListByNamespaceNextResponse>
-      parameters:
-        - id: nextPageLink
-          type: string
-          description: The NextLink from the previous successful call to List operation.
-        - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
-      return:
-        description: Promise<Models.TopicsListByNamespaceNextResponse>
-        type: >-
-          Promise&lt;<xref
-          uid="@azure/arm-servicebus.TopicsListByNamespaceNextResponse|stable"
-          />&gt;
-  - name: >-
-      listByNamespaceNext(string, RequestOptionsBase,
-      ServiceCallback<SBTopicListResult>)
-    uid: '@azure/arm-servicebus.Topics.listByNamespaceNext_2|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listByNamespaceNext(nextPageLink: string, options:
-        RequestOptionsBase, callback: ServiceCallback<SBTopicListResult>)
-      parameters:
-        - id: nextPageLink
-          type: string
-          description: The NextLink from the previous successful call to List operation.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-servicebus.SBTopicListResult|stable" />&gt;
-          description: |
-            The callback
-  - name: listByNamespaceNext(string, ServiceCallback<SBTopicListResult>)
-    uid: '@azure/arm-servicebus.Topics.listByNamespaceNext_1|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listByNamespaceNext(nextPageLink: string, callback:
-        ServiceCallback<SBTopicListResult>)
-      parameters:
-        - id: nextPageLink
-          type: string
-          description: The NextLink from the previous successful call to List operation.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-servicebus.SBTopicListResult|stable" />&gt;
-          description: |
-            The callback
-  - name: listKeys(string, string, string, string, msRest.RequestOptionsBase)
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-servicebus.SBTopic|stable" />&gt;
+  - name: listKeys(string, string, string, string, TopicsListKeysOptionalParams)
     uid: '@azure/arm-servicebus.Topics.listKeys|stable'
     package: '@azure/arm-servicebus|stable'
     summary: Gets the primary and secondary connection strings for the topic.
@@ -968,7 +312,7 @@ methods:
       content: >-
         function listKeys(resourceGroupName: string, namespaceName: string,
         topicName: string, authorizationRuleName: string, options?:
-        msRest.RequestOptionsBase): Promise<Models.TopicsListKeysResponse>
+        TopicsListKeysOptionalParams): Promise<TopicsListKeysResponse>
       parameters:
         - id: resourceGroupName
           type: string
@@ -983,83 +327,19 @@ methods:
           type: string
           description: The authorization rule name.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.TopicsListKeysOptionalParams|stable" />
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.TopicsListKeysResponse>
+        description: ''
         type: >-
           Promise&lt;<xref
           uid="@azure/arm-servicebus.TopicsListKeysResponse|stable" />&gt;
   - name: >-
-      listKeys(string, string, string, string, RequestOptionsBase,
-      ServiceCallback<AccessKeys>)
-    uid: '@azure/arm-servicebus.Topics.listKeys_2|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listKeys(resourceGroupName: string, namespaceName: string,
-        topicName: string, authorizationRuleName: string, options:
-        RequestOptionsBase, callback: ServiceCallback<AccessKeys>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: Name of the Resource group within the Azure subscription.
-        - id: namespaceName
-          type: string
-          description: The namespace name
-        - id: topicName
-          type: string
-          description: The topic name.
-        - id: authorizationRuleName
-          type: string
-          description: The authorization rule name.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-servicebus.AccessKeys|stable" />&gt;
-          description: |
-            The callback
-  - name: listKeys(string, string, string, string, ServiceCallback<AccessKeys>)
-    uid: '@azure/arm-servicebus.Topics.listKeys_1|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listKeys(resourceGroupName: string, namespaceName: string,
-        topicName: string, authorizationRuleName: string, callback:
-        ServiceCallback<AccessKeys>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: Name of the Resource group within the Azure subscription.
-        - id: namespaceName
-          type: string
-          description: The namespace name
-        - id: topicName
-          type: string
-          description: The topic name.
-        - id: authorizationRuleName
-          type: string
-          description: The authorization rule name.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-servicebus.AccessKeys|stable" />&gt;
-          description: |
-            The callback
-  - name: >-
       regenerateKeys(string, string, string, string,
-      RegenerateAccessKeyParameters, msRest.RequestOptionsBase)
+      RegenerateAccessKeyParameters, TopicsRegenerateKeysOptionalParams)
     uid: '@azure/arm-servicebus.Topics.regenerateKeys|stable'
     package: '@azure/arm-servicebus|stable'
     summary: Regenerates primary or secondary connection strings for the topic.
@@ -1070,8 +350,9 @@ methods:
       content: >-
         function regenerateKeys(resourceGroupName: string, namespaceName:
         string, topicName: string, authorizationRuleName: string, parameters:
-        RegenerateAccessKeyParameters, options?: msRest.RequestOptionsBase):
-        Promise<Models.TopicsRegenerateKeysResponse>
+        RegenerateAccessKeyParameters, options?:
+        TopicsRegenerateKeysOptionalParams):
+        Promise<TopicsRegenerateKeysResponse>
       parameters:
         - id: resourceGroupName
           type: string
@@ -1091,91 +372,14 @@ methods:
             uid="@azure/arm-servicebus.RegenerateAccessKeyParameters|stable" />
           description: Parameters supplied to regenerate the authorization rule.
         - id: options
-          type: msRest.RequestOptionsBase
-          description: ''
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.TopicsRegenerateKeysOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
       return:
-        description: Promise<Models.TopicsRegenerateKeysResponse>
+        description: ''
         type: >-
           Promise&lt;<xref
           uid="@azure/arm-servicebus.TopicsRegenerateKeysResponse|stable" />&gt;
-  - name: >-
-      regenerateKeys(string, string, string, string,
-      RegenerateAccessKeyParameters, RequestOptionsBase,
-      ServiceCallback<AccessKeys>)
-    uid: '@azure/arm-servicebus.Topics.regenerateKeys_2|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function regenerateKeys(resourceGroupName: string, namespaceName:
-        string, topicName: string, authorizationRuleName: string, parameters:
-        RegenerateAccessKeyParameters, options: RequestOptionsBase, callback:
-        ServiceCallback<AccessKeys>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: Name of the Resource group within the Azure subscription.
-        - id: namespaceName
-          type: string
-          description: The namespace name
-        - id: topicName
-          type: string
-          description: The topic name.
-        - id: authorizationRuleName
-          type: string
-          description: The authorization rule name.
-        - id: parameters
-          type: >-
-            <xref
-            uid="@azure/arm-servicebus.RegenerateAccessKeyParameters|stable" />
-          description: Parameters supplied to regenerate the authorization rule.
-        - id: options
-          type: RequestOptionsBase
-          description: The optional parameters
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-servicebus.AccessKeys|stable" />&gt;
-          description: |
-            The callback
-  - name: >-
-      regenerateKeys(string, string, string, string,
-      RegenerateAccessKeyParameters, ServiceCallback<AccessKeys>)
-    uid: '@azure/arm-servicebus.Topics.regenerateKeys_1|stable'
-    package: '@azure/arm-servicebus|stable'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function regenerateKeys(resourceGroupName: string, namespaceName:
-        string, topicName: string, authorizationRuleName: string, parameters:
-        RegenerateAccessKeyParameters, callback: ServiceCallback<AccessKeys>)
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: Name of the Resource group within the Azure subscription.
-        - id: namespaceName
-          type: string
-          description: The namespace name
-        - id: topicName
-          type: string
-          description: The topic name.
-        - id: authorizationRuleName
-          type: string
-          description: The authorization rule name.
-        - id: parameters
-          type: >-
-            <xref
-            uid="@azure/arm-servicebus.RegenerateAccessKeyParameters|stable" />
-          description: Parameters supplied to regenerate the authorization rule.
-        - id: callback
-          type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/arm-servicebus.AccessKeys|stable" />&gt;
-          description: |
-            The callback

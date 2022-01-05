@@ -2,7 +2,7 @@
 title: Azure SDK for JavaScript - Core Release Notes
 description: 
 ms.topic: reference
-ms.date: 12/14/2021
+ms.date: 01/05/2022
 ms.service: core
 ms.role: developer
 ms.devlang: javascript
@@ -19,6 +19,8 @@ ROBOTS: NOINDEX
 ### Breaking Changes
 
 ### Bugs Fixed
+
+- Fix an issue where we treat Retry-After value as milliseconds. It is actually in seconds.
 
 ### Other Changes
 

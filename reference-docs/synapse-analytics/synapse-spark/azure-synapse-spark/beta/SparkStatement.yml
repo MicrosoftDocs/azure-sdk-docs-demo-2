@@ -1,0 +1,63 @@
+### YamlMime:TSType
+name: SparkStatement
+uid: '@azure/synapse-spark.SparkStatement|beta'
+package: '@azure/synapse-spark|beta'
+summary: ''
+fullName: SparkStatement
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: code
+    uid: '@azure/synapse-spark.SparkStatement.code|beta'
+    package: '@azure/synapse-spark|beta'
+    summary: ''
+    fullName: code
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'code?: string'
+      return:
+        description: ''
+        type: string
+  - name: id
+    uid: '@azure/synapse-spark.SparkStatement.id|beta'
+    package: '@azure/synapse-spark|beta'
+    summary: ''
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id: number'
+      return:
+        description: ''
+        type: number
+  - name: output
+    uid: '@azure/synapse-spark.SparkStatement.output|beta'
+    package: '@azure/synapse-spark|beta'
+    summary: ''
+    fullName: output
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'output?: SparkStatementOutput'
+      return:
+        description: ''
+        type: <xref uid="@azure/synapse-spark.SparkStatementOutput|beta" />
+  - name: state
+    uid: '@azure/synapse-spark.SparkStatement.state|beta'
+    package: '@azure/synapse-spark|beta'
+    summary: ''
+    fullName: state
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'state?: LivyStatementStates'
+      return:
+        description: ''
+        type: <xref uid="@azure/synapse-spark.LivyStatementStates|beta" />

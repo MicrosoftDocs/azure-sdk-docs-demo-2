@@ -1,0 +1,248 @@
+### YamlMime:TSType
+name: AppServiceEnvironment
+uid: '@azure/arm-appservice.AppServiceEnvironment|stable'
+package: '@azure/arm-appservice|stable'
+summary: Description of an App Service Environment.
+fullName: AppServiceEnvironment
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: clusterSettings
+    uid: '@azure/arm-appservice.AppServiceEnvironment.clusterSettings|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Custom settings for changing the behavior of the App Service Environment.
+    fullName: clusterSettings
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clusterSettings?: NameValuePair[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.NameValuePair|stable" />[]
+  - name: dedicatedHostCount
+    uid: '@azure/arm-appservice.AppServiceEnvironment.dedicatedHostCount|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Dedicated Host Count
+    fullName: dedicatedHostCount
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dedicatedHostCount?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: dnsSuffix
+    uid: '@azure/arm-appservice.AppServiceEnvironment.dnsSuffix|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: DNS suffix of the App Service Environment.
+    fullName: dnsSuffix
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dnsSuffix?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: frontEndScaleFactor
+    uid: '@azure/arm-appservice.AppServiceEnvironment.frontEndScaleFactor|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Scale factor for front-ends.
+    fullName: frontEndScaleFactor
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'frontEndScaleFactor?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: hasLinuxWorkers
+    uid: '@azure/arm-appservice.AppServiceEnvironment.hasLinuxWorkers|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Flag that displays whether an ASE has linux workers or not
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: hasLinuxWorkers
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hasLinuxWorkers?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true
+  - name: internalLoadBalancingMode
+    uid: >-
+      @azure/arm-appservice.AppServiceEnvironment.internalLoadBalancingMode|stable
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Specifies which endpoints to serve internally in the Virtual Network for
+      the App Service Environment.
+    fullName: internalLoadBalancingMode
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'internalLoadBalancingMode?: LoadBalancingMode'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.LoadBalancingMode|stable" />
+  - name: ipsslAddressCount
+    uid: '@azure/arm-appservice.AppServiceEnvironment.ipsslAddressCount|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Number of IP SSL addresses reserved for the App Service Environment.
+    fullName: ipsslAddressCount
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ipsslAddressCount?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: maximumNumberOfMachines
+    uid: '@azure/arm-appservice.AppServiceEnvironment.maximumNumberOfMachines|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Maximum number of VMs in the App Service Environment.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: maximumNumberOfMachines
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'maximumNumberOfMachines?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: multiRoleCount
+    uid: '@azure/arm-appservice.AppServiceEnvironment.multiRoleCount|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Number of front-end instances.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: multiRoleCount
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'multiRoleCount?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: multiSize
+    uid: '@azure/arm-appservice.AppServiceEnvironment.multiSize|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Front-end VM size, e.g. "Medium", "Large".
+    fullName: multiSize
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'multiSize?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: provisioningState
+    uid: '@azure/arm-appservice.AppServiceEnvironment.provisioningState|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Provisioning state of the App Service Environment.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: provisioningState
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'provisioningState?: ProvisioningState'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.ProvisioningState|stable" />
+  - name: status
+    uid: '@azure/arm-appservice.AppServiceEnvironment.status|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Current status of the App Service Environment.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: status
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'status?: HostingEnvironmentStatus'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.HostingEnvironmentStatus|stable" />
+  - name: suspended
+    uid: '@azure/arm-appservice.AppServiceEnvironment.suspended|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      <code>true</code> if the App Service Environment is suspended; otherwise,
+      <code>false</code>. The environment can be suspended, e.g. when the
+      management endpoint is no longer available
+       (most likely because NSG blocked the incoming traffic).
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: suspended
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'suspended?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true
+  - name: userWhitelistedIpRanges
+    uid: '@azure/arm-appservice.AppServiceEnvironment.userWhitelistedIpRanges|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: User added ip ranges to whitelist on ASE db
+    fullName: userWhitelistedIpRanges
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'userWhitelistedIpRanges?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: virtualNetwork
+    uid: '@azure/arm-appservice.AppServiceEnvironment.virtualNetwork|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description of the Virtual Network.
+    fullName: virtualNetwork
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'virtualNetwork: VirtualNetworkProfile'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.VirtualNetworkProfile|stable" />
+  - name: zoneRedundant
+    uid: '@azure/arm-appservice.AppServiceEnvironment.zoneRedundant|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Whether or not this App Service Environment is zone-redundant.
+    fullName: zoneRedundant
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'zoneRedundant?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true

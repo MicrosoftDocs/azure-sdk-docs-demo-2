@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: ValidateResponse
+uid: '@azure/arm-appservice.ValidateResponse|stable'
+package: '@azure/arm-appservice|stable'
+summary: Describes the result of resource validation.
+fullName: ValidateResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: error
+    uid: '@azure/arm-appservice.ValidateResponse.error|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Error details for the case when validation fails.
+    fullName: error
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'error?: ValidateResponseError'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.ValidateResponseError|stable" />
+  - name: status
+    uid: '@azure/arm-appservice.ValidateResponse.status|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Result of validation.
+    fullName: status
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'status?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

@@ -1,0 +1,39 @@
+### YamlMime:TSType
+name: CsmSlotEntity
+uid: '@azure/arm-appservice.CsmSlotEntity|stable'
+package: '@azure/arm-appservice|stable'
+summary: Deployment slot parameters.
+fullName: CsmSlotEntity
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: preserveVnet
+    uid: '@azure/arm-appservice.CsmSlotEntity.preserveVnet|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      <code>true</code> to preserve Virtual Network to the slot during swap;
+      otherwise, <code>false</code>.
+    fullName: preserveVnet
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'preserveVnet: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: targetSlot
+    uid: '@azure/arm-appservice.CsmSlotEntity.targetSlot|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Destination deployment slot during swap operation.
+    fullName: targetSlot
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'targetSlot: string'
+      return:
+        description: ''
+        type: string

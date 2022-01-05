@@ -1,0 +1,742 @@
+### YamlMime:TSPackage
+uid: '@azure-rest/purview-catalog|beta'
+name: '@azure-rest/purview-catalog (1.0.0-beta.3 - Beta)'
+summary: ''
+type: package
+interfaces:
+  - '@azure-rest/purview-catalog.AtlasAttributeDef|beta'
+  - '@azure-rest/purview-catalog.AtlasAttributeDefOutput|beta'
+  - '@azure-rest/purview-catalog.AtlasBaseModelObject|beta'
+  - '@azure-rest/purview-catalog.AtlasBaseModelObjectOutput|beta'
+  - '@azure-rest/purview-catalog.AtlasBaseTypeDef|beta'
+  - '@azure-rest/purview-catalog.AtlasBaseTypeDefOutput|beta'
+  - '@azure-rest/purview-catalog.AtlasClassification|beta'
+  - '@azure-rest/purview-catalog.AtlasClassificationDef|beta'
+  - '@azure-rest/purview-catalog.AtlasClassificationDefOutput|beta'
+  - '@azure-rest/purview-catalog.AtlasClassificationOutput|beta'
+  - '@azure-rest/purview-catalog.AtlasClassificationsOutput|beta'
+  - '@azure-rest/purview-catalog.AtlasConstraintDef|beta'
+  - '@azure-rest/purview-catalog.AtlasConstraintDefOutput|beta'
+  - '@azure-rest/purview-catalog.AtlasEntitiesWithExtInfo|beta'
+  - '@azure-rest/purview-catalog.AtlasEntitiesWithExtInfoOutput|beta'
+  - '@azure-rest/purview-catalog.AtlasEntity|beta'
+  - '@azure-rest/purview-catalog.AtlasEntityDef|beta'
+  - '@azure-rest/purview-catalog.AtlasEntityDefOutput|beta'
+  - '@azure-rest/purview-catalog.AtlasEntityExtInfo|beta'
+  - '@azure-rest/purview-catalog.AtlasEntityExtInfoOutput|beta'
+  - '@azure-rest/purview-catalog.AtlasEntityHeader|beta'
+  - '@azure-rest/purview-catalog.AtlasEntityHeaderOutput|beta'
+  - '@azure-rest/purview-catalog.AtlasEntityHeaders|beta'
+  - '@azure-rest/purview-catalog.AtlasEntityOutput|beta'
+  - '@azure-rest/purview-catalog.AtlasEntityWithExtInfo|beta'
+  - '@azure-rest/purview-catalog.AtlasEntityWithExtInfoOutput|beta'
+  - '@azure-rest/purview-catalog.AtlasEnumDef|beta'
+  - '@azure-rest/purview-catalog.AtlasEnumDefOutput|beta'
+  - '@azure-rest/purview-catalog.AtlasEnumElementDef|beta'
+  - '@azure-rest/purview-catalog.AtlasEnumElementDefOutput|beta'
+  - '@azure-rest/purview-catalog.AtlasExtraTypeDef|beta'
+  - '@azure-rest/purview-catalog.AtlasExtraTypeDefOutput|beta'
+  - '@azure-rest/purview-catalog.AtlasGlossary|beta'
+  - '@azure-rest/purview-catalog.AtlasGlossaryBaseObject|beta'
+  - '@azure-rest/purview-catalog.AtlasGlossaryBaseObjectOutput|beta'
+  - '@azure-rest/purview-catalog.AtlasGlossaryCategory|beta'
+  - '@azure-rest/purview-catalog.AtlasGlossaryCategoryOutput|beta'
+  - '@azure-rest/purview-catalog.AtlasGlossaryExtInfo|beta'
+  - '@azure-rest/purview-catalog.AtlasGlossaryExtInfoOutput|beta'
+  - '@azure-rest/purview-catalog.AtlasGlossaryHeader|beta'
+  - '@azure-rest/purview-catalog.AtlasGlossaryHeaderOutput|beta'
+  - '@azure-rest/purview-catalog.AtlasGlossaryOutput|beta'
+  - '@azure-rest/purview-catalog.AtlasGlossaryTerm|beta'
+  - '@azure-rest/purview-catalog.AtlasGlossaryTermOutput|beta'
+  - '@azure-rest/purview-catalog.AtlasLineageInfoOutput|beta'
+  - '@azure-rest/purview-catalog.AtlasObjectId|beta'
+  - '@azure-rest/purview-catalog.AtlasObjectIdOutput|beta'
+  - '@azure-rest/purview-catalog.AtlasRelatedCategoryHeader|beta'
+  - '@azure-rest/purview-catalog.AtlasRelatedCategoryHeaderOutput|beta'
+  - '@azure-rest/purview-catalog.AtlasRelatedObjectId|beta'
+  - '@azure-rest/purview-catalog.AtlasRelatedObjectIdOutput|beta'
+  - '@azure-rest/purview-catalog.AtlasRelatedTermHeader|beta'
+  - '@azure-rest/purview-catalog.AtlasRelatedTermHeaderOutput|beta'
+  - '@azure-rest/purview-catalog.AtlasRelationship|beta'
+  - '@azure-rest/purview-catalog.AtlasRelationshipAttributeDef|beta'
+  - '@azure-rest/purview-catalog.AtlasRelationshipAttributeDefOutput|beta'
+  - '@azure-rest/purview-catalog.AtlasRelationshipDef|beta'
+  - '@azure-rest/purview-catalog.AtlasRelationshipDefOutput|beta'
+  - '@azure-rest/purview-catalog.AtlasRelationshipEndDef|beta'
+  - '@azure-rest/purview-catalog.AtlasRelationshipEndDefOutput|beta'
+  - '@azure-rest/purview-catalog.AtlasRelationshipOutput|beta'
+  - '@azure-rest/purview-catalog.AtlasRelationshipWithExtInfoOutput|beta'
+  - '@azure-rest/purview-catalog.AtlasStruct|beta'
+  - '@azure-rest/purview-catalog.AtlasStructDef|beta'
+  - '@azure-rest/purview-catalog.AtlasStructDefOutput|beta'
+  - '@azure-rest/purview-catalog.AtlasStructOutput|beta'
+  - '@azure-rest/purview-catalog.AtlasTermAssignmentHeader|beta'
+  - '@azure-rest/purview-catalog.AtlasTermAssignmentHeaderOutput|beta'
+  - '@azure-rest/purview-catalog.AtlasTermCategorizationHeader|beta'
+  - '@azure-rest/purview-catalog.AtlasTermCategorizationHeaderOutput|beta'
+  - '@azure-rest/purview-catalog.AtlasTypeDef|beta'
+  - '@azure-rest/purview-catalog.AtlasTypeDefHeaderOutput|beta'
+  - '@azure-rest/purview-catalog.AtlasTypeDefOutput|beta'
+  - '@azure-rest/purview-catalog.AtlasTypesDef|beta'
+  - '@azure-rest/purview-catalog.AtlasTypesDefOutput|beta'
+  - '@azure-rest/purview-catalog.AutoCompleteRequest|beta'
+  - '@azure-rest/purview-catalog.AutoCompleteResultOutput|beta'
+  - '@azure-rest/purview-catalog.AutoCompleteResultValueOutput|beta'
+  - '@azure-rest/purview-catalog.BrowseRequest|beta'
+  - '@azure-rest/purview-catalog.BrowseResultOutput|beta'
+  - '@azure-rest/purview-catalog.BrowseResultOwnerOutput|beta'
+  - '@azure-rest/purview-catalog.BrowseResultValueOutput|beta'
+  - '@azure-rest/purview-catalog.ClassificationAssociateRequest|beta'
+  - '@azure-rest/purview-catalog.CollectionCreateOrUpdate|beta'
+  - '@azure-rest/purview-catalog.CollectionCreateOrUpdate200Response|beta'
+  - '@azure-rest/purview-catalog.CollectionCreateOrUpdateBodyParam|beta'
+  - '@azure-rest/purview-catalog.CollectionCreateOrUpdateBulk|beta'
+  - '@azure-rest/purview-catalog.CollectionCreateOrUpdateBulk200Response|beta'
+  - '@azure-rest/purview-catalog.CollectionCreateOrUpdateBulkBodyParam|beta'
+  - '@azure-rest/purview-catalog.CollectionCreateOrUpdateBulkdefaultResponse|beta'
+  - '@azure-rest/purview-catalog.CollectionCreateOrUpdatedefaultResponse|beta'
+  - '@azure-rest/purview-catalog.CollectionMoveEntitiesToCollection|beta'
+  - >-
+    @azure-rest/purview-catalog.CollectionMoveEntitiesToCollection200Response|beta
+  - '@azure-rest/purview-catalog.CollectionMoveEntitiesToCollectionBodyParam|beta'
+  - >-
+    @azure-rest/purview-catalog.CollectionMoveEntitiesToCollectiondefaultResponse|beta
+  - '@azure-rest/purview-catalog.ContactBasic|beta'
+  - '@azure-rest/purview-catalog.ContactBasicOutput|beta'
+  - '@azure-rest/purview-catalog.ContactSearchResultValueOutput|beta'
+  - '@azure-rest/purview-catalog.DateFormat|beta'
+  - '@azure-rest/purview-catalog.DateFormatOutput|beta'
+  - '@azure-rest/purview-catalog.DiscoveryAutoComplete|beta'
+  - '@azure-rest/purview-catalog.DiscoveryAutoComplete200Response|beta'
+  - '@azure-rest/purview-catalog.DiscoveryAutoCompleteBodyParam|beta'
+  - '@azure-rest/purview-catalog.DiscoveryAutoCompletedefaultResponse|beta'
+  - '@azure-rest/purview-catalog.DiscoveryBrowse|beta'
+  - '@azure-rest/purview-catalog.DiscoveryBrowse200Response|beta'
+  - '@azure-rest/purview-catalog.DiscoveryBrowseBodyParam|beta'
+  - '@azure-rest/purview-catalog.DiscoveryBrowsedefaultResponse|beta'
+  - '@azure-rest/purview-catalog.DiscoveryQuery|beta'
+  - '@azure-rest/purview-catalog.DiscoveryQuery200Response|beta'
+  - '@azure-rest/purview-catalog.DiscoveryQueryBodyParam|beta'
+  - '@azure-rest/purview-catalog.DiscoveryQuerydefaultResponse|beta'
+  - '@azure-rest/purview-catalog.DiscoverySuggest|beta'
+  - '@azure-rest/purview-catalog.DiscoverySuggest200Response|beta'
+  - '@azure-rest/purview-catalog.DiscoverySuggestBodyParam|beta'
+  - '@azure-rest/purview-catalog.DiscoverySuggestdefaultResponse|beta'
+  - '@azure-rest/purview-catalog.EntityAddClassification|beta'
+  - '@azure-rest/purview-catalog.EntityAddClassification204Response|beta'
+  - '@azure-rest/purview-catalog.EntityAddClassificationBodyParam|beta'
+  - '@azure-rest/purview-catalog.EntityAddClassificationdefaultResponse|beta'
+  - '@azure-rest/purview-catalog.EntityAddClassifications204Response|beta'
+  - '@azure-rest/purview-catalog.EntityAddClassificationsBodyParam|beta'
+  - '@azure-rest/purview-catalog.EntityAddClassificationsByUniqueAttribute|beta'
+  - >-
+    @azure-rest/purview-catalog.EntityAddClassificationsByUniqueAttribute204Response|beta
+  - >-
+    @azure-rest/purview-catalog.EntityAddClassificationsByUniqueAttributeBodyParam|beta
+  - >-
+    @azure-rest/purview-catalog.EntityAddClassificationsByUniqueAttributeQueryParam|beta
+  - >-
+    @azure-rest/purview-catalog.EntityAddClassificationsByUniqueAttributeQueryParamProperties|beta
+  - >-
+    @azure-rest/purview-catalog.EntityAddClassificationsByUniqueAttributedefaultResponse|beta
+  - '@azure-rest/purview-catalog.EntityAddClassificationsdefaultResponse|beta'
+  - '@azure-rest/purview-catalog.EntityCreateOrUpdate|beta'
+  - '@azure-rest/purview-catalog.EntityCreateOrUpdate200Response|beta'
+  - '@azure-rest/purview-catalog.EntityCreateOrUpdateBodyParam|beta'
+  - '@azure-rest/purview-catalog.EntityCreateOrUpdateEntities200Response|beta'
+  - '@azure-rest/purview-catalog.EntityCreateOrUpdateEntitiesBodyParam|beta'
+  - '@azure-rest/purview-catalog.EntityCreateOrUpdateEntitiesdefaultResponse|beta'
+  - '@azure-rest/purview-catalog.EntityCreateOrUpdatedefaultResponse|beta'
+  - '@azure-rest/purview-catalog.EntityDeleteByGuid200Response|beta'
+  - '@azure-rest/purview-catalog.EntityDeleteByGuiddefaultResponse|beta'
+  - '@azure-rest/purview-catalog.EntityDeleteByGuids200Response|beta'
+  - '@azure-rest/purview-catalog.EntityDeleteByGuidsQueryParam|beta'
+  - '@azure-rest/purview-catalog.EntityDeleteByGuidsQueryParamProperties|beta'
+  - '@azure-rest/purview-catalog.EntityDeleteByGuidsdefaultResponse|beta'
+  - '@azure-rest/purview-catalog.EntityDeleteByUniqueAttribute200Response|beta'
+  - '@azure-rest/purview-catalog.EntityDeleteByUniqueAttributeQueryParam|beta'
+  - >-
+    @azure-rest/purview-catalog.EntityDeleteByUniqueAttributeQueryParamProperties|beta
+  - >-
+    @azure-rest/purview-catalog.EntityDeleteByUniqueAttributedefaultResponse|beta
+  - '@azure-rest/purview-catalog.EntityDeleteClassification204Response|beta'
+  - '@azure-rest/purview-catalog.EntityDeleteClassificationByUniqueAttribute|beta'
+  - >-
+    @azure-rest/purview-catalog.EntityDeleteClassificationByUniqueAttribute204Response|beta
+  - >-
+    @azure-rest/purview-catalog.EntityDeleteClassificationByUniqueAttributeQueryParam|beta
+  - >-
+    @azure-rest/purview-catalog.EntityDeleteClassificationByUniqueAttributeQueryParamProperties|beta
+  - >-
+    @azure-rest/purview-catalog.EntityDeleteClassificationByUniqueAttributedefaultResponse|beta
+  - '@azure-rest/purview-catalog.EntityDeleteClassificationdefaultResponse|beta'
+  - '@azure-rest/purview-catalog.EntityGetByGuid|beta'
+  - '@azure-rest/purview-catalog.EntityGetByGuid200Response|beta'
+  - '@azure-rest/purview-catalog.EntityGetByGuidQueryParam|beta'
+  - '@azure-rest/purview-catalog.EntityGetByGuidQueryParamProperties|beta'
+  - '@azure-rest/purview-catalog.EntityGetByGuiddefaultResponse|beta'
+  - '@azure-rest/purview-catalog.EntityGetByUniqueAttributes|beta'
+  - '@azure-rest/purview-catalog.EntityGetByUniqueAttributes200Response|beta'
+  - '@azure-rest/purview-catalog.EntityGetByUniqueAttributesQueryParam|beta'
+  - >-
+    @azure-rest/purview-catalog.EntityGetByUniqueAttributesQueryParamProperties|beta
+  - '@azure-rest/purview-catalog.EntityGetByUniqueAttributesdefaultResponse|beta'
+  - '@azure-rest/purview-catalog.EntityGetClassification|beta'
+  - '@azure-rest/purview-catalog.EntityGetClassification200Response|beta'
+  - '@azure-rest/purview-catalog.EntityGetClassificationdefaultResponse|beta'
+  - '@azure-rest/purview-catalog.EntityGetClassifications|beta'
+  - '@azure-rest/purview-catalog.EntityGetClassifications200Response|beta'
+  - '@azure-rest/purview-catalog.EntityGetClassificationsdefaultResponse|beta'
+  - '@azure-rest/purview-catalog.EntityGetEntitiesByUniqueAttributes|beta'
+  - >-
+    @azure-rest/purview-catalog.EntityGetEntitiesByUniqueAttributes200Response|beta
+  - >-
+    @azure-rest/purview-catalog.EntityGetEntitiesByUniqueAttributesQueryParam|beta
+  - >-
+    @azure-rest/purview-catalog.EntityGetEntitiesByUniqueAttributesQueryParamProperties|beta
+  - >-
+    @azure-rest/purview-catalog.EntityGetEntitiesByUniqueAttributesdefaultResponse|beta
+  - '@azure-rest/purview-catalog.EntityGetHeader|beta'
+  - '@azure-rest/purview-catalog.EntityGetHeader200Response|beta'
+  - '@azure-rest/purview-catalog.EntityGetHeaderdefaultResponse|beta'
+  - '@azure-rest/purview-catalog.EntityListByGuids|beta'
+  - '@azure-rest/purview-catalog.EntityListByGuids200Response|beta'
+  - '@azure-rest/purview-catalog.EntityListByGuidsQueryParam|beta'
+  - '@azure-rest/purview-catalog.EntityListByGuidsQueryParamProperties|beta'
+  - '@azure-rest/purview-catalog.EntityListByGuidsdefaultResponse|beta'
+  - '@azure-rest/purview-catalog.EntityMutationResponseOutput|beta'
+  - >-
+    @azure-rest/purview-catalog.EntityPartialUpdateEntityAttributeByGuid200Response|beta
+  - >-
+    @azure-rest/purview-catalog.EntityPartialUpdateEntityAttributeByGuidBodyParam|beta
+  - >-
+    @azure-rest/purview-catalog.EntityPartialUpdateEntityAttributeByGuidQueryParam|beta
+  - >-
+    @azure-rest/purview-catalog.EntityPartialUpdateEntityAttributeByGuidQueryParamProperties|beta
+  - >-
+    @azure-rest/purview-catalog.EntityPartialUpdateEntityAttributeByGuiddefaultResponse|beta
+  - >-
+    @azure-rest/purview-catalog.EntityPartialUpdateEntityByUniqueAttributes200Response|beta
+  - >-
+    @azure-rest/purview-catalog.EntityPartialUpdateEntityByUniqueAttributesBodyParam|beta
+  - >-
+    @azure-rest/purview-catalog.EntityPartialUpdateEntityByUniqueAttributesQueryParam|beta
+  - >-
+    @azure-rest/purview-catalog.EntityPartialUpdateEntityByUniqueAttributesQueryParamProperties|beta
+  - >-
+    @azure-rest/purview-catalog.EntityPartialUpdateEntityByUniqueAttributesdefaultResponse|beta
+  - '@azure-rest/purview-catalog.EntitySetClassifications|beta'
+  - '@azure-rest/purview-catalog.EntitySetClassifications200Response|beta'
+  - '@azure-rest/purview-catalog.EntitySetClassificationsBodyParam|beta'
+  - '@azure-rest/purview-catalog.EntitySetClassificationsdefaultResponse|beta'
+  - '@azure-rest/purview-catalog.EntityUpdateClassifications204Response|beta'
+  - '@azure-rest/purview-catalog.EntityUpdateClassificationsBodyParam|beta'
+  - >-
+    @azure-rest/purview-catalog.EntityUpdateClassificationsByUniqueAttribute204Response|beta
+  - >-
+    @azure-rest/purview-catalog.EntityUpdateClassificationsByUniqueAttributeBodyParam|beta
+  - >-
+    @azure-rest/purview-catalog.EntityUpdateClassificationsByUniqueAttributeQueryParam|beta
+  - >-
+    @azure-rest/purview-catalog.EntityUpdateClassificationsByUniqueAttributeQueryParamProperties|beta
+  - >-
+    @azure-rest/purview-catalog.EntityUpdateClassificationsByUniqueAttributedefaultResponse|beta
+  - '@azure-rest/purview-catalog.EntityUpdateClassificationsdefaultResponse|beta'
+  - '@azure-rest/purview-catalog.ErrorResponseOutput|beta'
+  - '@azure-rest/purview-catalog.GlossaryAssignTermToEntities204Response|beta'
+  - '@azure-rest/purview-catalog.GlossaryAssignTermToEntitiesBodyParam|beta'
+  - '@azure-rest/purview-catalog.GlossaryAssignTermToEntitiesdefaultResponse|beta'
+  - '@azure-rest/purview-catalog.GlossaryCreateGlossary200Response|beta'
+  - '@azure-rest/purview-catalog.GlossaryCreateGlossaryBodyParam|beta'
+  - '@azure-rest/purview-catalog.GlossaryCreateGlossaryCategories|beta'
+  - '@azure-rest/purview-catalog.GlossaryCreateGlossaryCategories200Response|beta'
+  - '@azure-rest/purview-catalog.GlossaryCreateGlossaryCategoriesBodyParam|beta'
+  - >-
+    @azure-rest/purview-catalog.GlossaryCreateGlossaryCategoriesdefaultResponse|beta
+  - '@azure-rest/purview-catalog.GlossaryCreateGlossaryCategory|beta'
+  - '@azure-rest/purview-catalog.GlossaryCreateGlossaryCategory200Response|beta'
+  - '@azure-rest/purview-catalog.GlossaryCreateGlossaryCategoryBodyParam|beta'
+  - >-
+    @azure-rest/purview-catalog.GlossaryCreateGlossaryCategorydefaultResponse|beta
+  - '@azure-rest/purview-catalog.GlossaryCreateGlossaryTerm|beta'
+  - '@azure-rest/purview-catalog.GlossaryCreateGlossaryTerm200Response|beta'
+  - '@azure-rest/purview-catalog.GlossaryCreateGlossaryTermBodyParam|beta'
+  - '@azure-rest/purview-catalog.GlossaryCreateGlossaryTermQueryParam|beta'
+  - >-
+    @azure-rest/purview-catalog.GlossaryCreateGlossaryTermQueryParamProperties|beta
+  - '@azure-rest/purview-catalog.GlossaryCreateGlossaryTermdefaultResponse|beta'
+  - '@azure-rest/purview-catalog.GlossaryCreateGlossaryTerms|beta'
+  - '@azure-rest/purview-catalog.GlossaryCreateGlossaryTerms200Response|beta'
+  - '@azure-rest/purview-catalog.GlossaryCreateGlossaryTermsBodyParam|beta'
+  - '@azure-rest/purview-catalog.GlossaryCreateGlossaryTermsQueryParam|beta'
+  - >-
+    @azure-rest/purview-catalog.GlossaryCreateGlossaryTermsQueryParamProperties|beta
+  - '@azure-rest/purview-catalog.GlossaryCreateGlossaryTermsdefaultResponse|beta'
+  - '@azure-rest/purview-catalog.GlossaryCreateGlossarydefaultResponse|beta'
+  - '@azure-rest/purview-catalog.GlossaryDeleteGlossary204Response|beta'
+  - '@azure-rest/purview-catalog.GlossaryDeleteGlossaryCategory204Response|beta'
+  - >-
+    @azure-rest/purview-catalog.GlossaryDeleteGlossaryCategorydefaultResponse|beta
+  - '@azure-rest/purview-catalog.GlossaryDeleteGlossaryTerm204Response|beta'
+  - '@azure-rest/purview-catalog.GlossaryDeleteGlossaryTermdefaultResponse|beta'
+  - '@azure-rest/purview-catalog.GlossaryDeleteGlossarydefaultResponse|beta'
+  - >-
+    @azure-rest/purview-catalog.GlossaryDeleteTermAssignmentFromEntities204Response|beta
+  - >-
+    @azure-rest/purview-catalog.GlossaryDeleteTermAssignmentFromEntitiesBodyParam|beta
+  - >-
+    @azure-rest/purview-catalog.GlossaryDeleteTermAssignmentFromEntitiesdefaultResponse|beta
+  - '@azure-rest/purview-catalog.GlossaryExportGlossaryTermsAsCsv|beta'
+  - '@azure-rest/purview-catalog.GlossaryExportGlossaryTermsAsCsv200Response|beta'
+  - '@azure-rest/purview-catalog.GlossaryExportGlossaryTermsAsCsvBodyParam|beta'
+  - '@azure-rest/purview-catalog.GlossaryExportGlossaryTermsAsCsvQueryParam|beta'
+  - >-
+    @azure-rest/purview-catalog.GlossaryExportGlossaryTermsAsCsvQueryParamProperties|beta
+  - >-
+    @azure-rest/purview-catalog.GlossaryExportGlossaryTermsAsCsvdefaultResponse|beta
+  - '@azure-rest/purview-catalog.GlossaryGetDetailedGlossary|beta'
+  - '@azure-rest/purview-catalog.GlossaryGetDetailedGlossary200Response|beta'
+  - '@azure-rest/purview-catalog.GlossaryGetDetailedGlossaryQueryParam|beta'
+  - >-
+    @azure-rest/purview-catalog.GlossaryGetDetailedGlossaryQueryParamProperties|beta
+  - '@azure-rest/purview-catalog.GlossaryGetDetailedGlossarydefaultResponse|beta'
+  - '@azure-rest/purview-catalog.GlossaryGetEntitiesAssignedWithTerm|beta'
+  - >-
+    @azure-rest/purview-catalog.GlossaryGetEntitiesAssignedWithTerm200Response|beta
+  - >-
+    @azure-rest/purview-catalog.GlossaryGetEntitiesAssignedWithTermQueryParam|beta
+  - >-
+    @azure-rest/purview-catalog.GlossaryGetEntitiesAssignedWithTermQueryParamProperties|beta
+  - >-
+    @azure-rest/purview-catalog.GlossaryGetEntitiesAssignedWithTermdefaultResponse|beta
+  - '@azure-rest/purview-catalog.GlossaryGetGlossary|beta'
+  - '@azure-rest/purview-catalog.GlossaryGetGlossary200Response|beta'
+  - '@azure-rest/purview-catalog.GlossaryGetGlossaryCategory|beta'
+  - '@azure-rest/purview-catalog.GlossaryGetGlossaryCategory200Response|beta'
+  - '@azure-rest/purview-catalog.GlossaryGetGlossaryCategorydefaultResponse|beta'
+  - '@azure-rest/purview-catalog.GlossaryGetGlossaryTerm|beta'
+  - '@azure-rest/purview-catalog.GlossaryGetGlossaryTerm200Response|beta'
+  - '@azure-rest/purview-catalog.GlossaryGetGlossaryTermQueryParam|beta'
+  - '@azure-rest/purview-catalog.GlossaryGetGlossaryTermQueryParamProperties|beta'
+  - '@azure-rest/purview-catalog.GlossaryGetGlossaryTermdefaultResponse|beta'
+  - '@azure-rest/purview-catalog.GlossaryGetGlossarydefaultResponse|beta'
+  - '@azure-rest/purview-catalog.GlossaryGetImportCsvOperationStatus|beta'
+  - >-
+    @azure-rest/purview-catalog.GlossaryGetImportCsvOperationStatus200Response|beta
+  - >-
+    @azure-rest/purview-catalog.GlossaryGetImportCsvOperationStatusdefaultResponse|beta
+  - '@azure-rest/purview-catalog.GlossaryImportGlossaryTermsViaCsv|beta'
+  - >-
+    @azure-rest/purview-catalog.GlossaryImportGlossaryTermsViaCsv202Response|beta
+  - '@azure-rest/purview-catalog.GlossaryImportGlossaryTermsViaCsvBodyParam|beta'
+  - >-
+    @azure-rest/purview-catalog.GlossaryImportGlossaryTermsViaCsvByGlossaryName|beta
+  - >-
+    @azure-rest/purview-catalog.GlossaryImportGlossaryTermsViaCsvByGlossaryName202Response|beta
+  - >-
+    @azure-rest/purview-catalog.GlossaryImportGlossaryTermsViaCsvByGlossaryNameBodyParam|beta
+  - >-
+    @azure-rest/purview-catalog.GlossaryImportGlossaryTermsViaCsvByGlossaryNameQueryParam|beta
+  - >-
+    @azure-rest/purview-catalog.GlossaryImportGlossaryTermsViaCsvByGlossaryNameQueryParamProperties|beta
+  - >-
+    @azure-rest/purview-catalog.GlossaryImportGlossaryTermsViaCsvByGlossaryNamedefaultResponse|beta
+  - '@azure-rest/purview-catalog.GlossaryImportGlossaryTermsViaCsvQueryParam|beta'
+  - >-
+    @azure-rest/purview-catalog.GlossaryImportGlossaryTermsViaCsvQueryParamProperties|beta
+  - >-
+    @azure-rest/purview-catalog.GlossaryImportGlossaryTermsViaCsvdefaultResponse|beta
+  - '@azure-rest/purview-catalog.GlossaryListCategoryTerms|beta'
+  - '@azure-rest/purview-catalog.GlossaryListCategoryTerms200Response|beta'
+  - '@azure-rest/purview-catalog.GlossaryListCategoryTermsQueryParam|beta'
+  - >-
+    @azure-rest/purview-catalog.GlossaryListCategoryTermsQueryParamProperties|beta
+  - '@azure-rest/purview-catalog.GlossaryListCategoryTermsdefaultResponse|beta'
+  - '@azure-rest/purview-catalog.GlossaryListGlossaries|beta'
+  - '@azure-rest/purview-catalog.GlossaryListGlossaries200Response|beta'
+  - '@azure-rest/purview-catalog.GlossaryListGlossariesQueryParam|beta'
+  - '@azure-rest/purview-catalog.GlossaryListGlossariesQueryParamProperties|beta'
+  - '@azure-rest/purview-catalog.GlossaryListGlossariesdefaultResponse|beta'
+  - '@azure-rest/purview-catalog.GlossaryListGlossaryCategories|beta'
+  - '@azure-rest/purview-catalog.GlossaryListGlossaryCategories200Response|beta'
+  - '@azure-rest/purview-catalog.GlossaryListGlossaryCategoriesHeaders|beta'
+  - >-
+    @azure-rest/purview-catalog.GlossaryListGlossaryCategoriesHeaders200Response|beta
+  - >-
+    @azure-rest/purview-catalog.GlossaryListGlossaryCategoriesHeadersQueryParam|beta
+  - >-
+    @azure-rest/purview-catalog.GlossaryListGlossaryCategoriesHeadersQueryParamProperties|beta
+  - >-
+    @azure-rest/purview-catalog.GlossaryListGlossaryCategoriesHeadersdefaultResponse|beta
+  - '@azure-rest/purview-catalog.GlossaryListGlossaryCategoriesQueryParam|beta'
+  - >-
+    @azure-rest/purview-catalog.GlossaryListGlossaryCategoriesQueryParamProperties|beta
+  - >-
+    @azure-rest/purview-catalog.GlossaryListGlossaryCategoriesdefaultResponse|beta
+  - '@azure-rest/purview-catalog.GlossaryListGlossaryTermHeaders|beta'
+  - '@azure-rest/purview-catalog.GlossaryListGlossaryTermHeaders200Response|beta'
+  - '@azure-rest/purview-catalog.GlossaryListGlossaryTermHeadersQueryParam|beta'
+  - >-
+    @azure-rest/purview-catalog.GlossaryListGlossaryTermHeadersQueryParamProperties|beta
+  - >-
+    @azure-rest/purview-catalog.GlossaryListGlossaryTermHeadersdefaultResponse|beta
+  - '@azure-rest/purview-catalog.GlossaryListGlossaryTerms|beta'
+  - '@azure-rest/purview-catalog.GlossaryListGlossaryTerms200Response|beta'
+  - '@azure-rest/purview-catalog.GlossaryListGlossaryTermsQueryParam|beta'
+  - >-
+    @azure-rest/purview-catalog.GlossaryListGlossaryTermsQueryParamProperties|beta
+  - '@azure-rest/purview-catalog.GlossaryListGlossaryTermsdefaultResponse|beta'
+  - '@azure-rest/purview-catalog.GlossaryListRelatedCategories|beta'
+  - '@azure-rest/purview-catalog.GlossaryListRelatedCategories200Response|beta'
+  - '@azure-rest/purview-catalog.GlossaryListRelatedCategoriesQueryParam|beta'
+  - >-
+    @azure-rest/purview-catalog.GlossaryListRelatedCategoriesQueryParamProperties|beta
+  - >-
+    @azure-rest/purview-catalog.GlossaryListRelatedCategoriesdefaultResponse|beta
+  - '@azure-rest/purview-catalog.GlossaryListRelatedTerms|beta'
+  - '@azure-rest/purview-catalog.GlossaryListRelatedTerms200Response|beta'
+  - '@azure-rest/purview-catalog.GlossaryListRelatedTermsQueryParam|beta'
+  - >-
+    @azure-rest/purview-catalog.GlossaryListRelatedTermsQueryParamProperties|beta
+  - '@azure-rest/purview-catalog.GlossaryListRelatedTermsdefaultResponse|beta'
+  - '@azure-rest/purview-catalog.GlossaryListTermsByGlossaryName|beta'
+  - '@azure-rest/purview-catalog.GlossaryListTermsByGlossaryName200Response|beta'
+  - '@azure-rest/purview-catalog.GlossaryListTermsByGlossaryNameQueryParam|beta'
+  - >-
+    @azure-rest/purview-catalog.GlossaryListTermsByGlossaryNameQueryParamProperties|beta
+  - >-
+    @azure-rest/purview-catalog.GlossaryListTermsByGlossaryNamedefaultResponse|beta
+  - '@azure-rest/purview-catalog.GlossaryPartialUpdateGlossary|beta'
+  - '@azure-rest/purview-catalog.GlossaryPartialUpdateGlossary200Response|beta'
+  - '@azure-rest/purview-catalog.GlossaryPartialUpdateGlossaryBodyParam|beta'
+  - '@azure-rest/purview-catalog.GlossaryPartialUpdateGlossaryCategory|beta'
+  - >-
+    @azure-rest/purview-catalog.GlossaryPartialUpdateGlossaryCategory200Response|beta
+  - >-
+    @azure-rest/purview-catalog.GlossaryPartialUpdateGlossaryCategoryBodyParam|beta
+  - >-
+    @azure-rest/purview-catalog.GlossaryPartialUpdateGlossaryCategorydefaultResponse|beta
+  - '@azure-rest/purview-catalog.GlossaryPartialUpdateGlossaryQueryParam|beta'
+  - >-
+    @azure-rest/purview-catalog.GlossaryPartialUpdateGlossaryQueryParamProperties|beta
+  - '@azure-rest/purview-catalog.GlossaryPartialUpdateGlossaryTerm|beta'
+  - >-
+    @azure-rest/purview-catalog.GlossaryPartialUpdateGlossaryTerm200Response|beta
+  - '@azure-rest/purview-catalog.GlossaryPartialUpdateGlossaryTermBodyParam|beta'
+  - '@azure-rest/purview-catalog.GlossaryPartialUpdateGlossaryTermQueryParam|beta'
+  - >-
+    @azure-rest/purview-catalog.GlossaryPartialUpdateGlossaryTermQueryParamProperties|beta
+  - >-
+    @azure-rest/purview-catalog.GlossaryPartialUpdateGlossaryTermdefaultResponse|beta
+  - >-
+    @azure-rest/purview-catalog.GlossaryPartialUpdateGlossarydefaultResponse|beta
+  - >-
+    @azure-rest/purview-catalog.GlossaryRemoveTermAssignmentFromEntities204Response|beta
+  - >-
+    @azure-rest/purview-catalog.GlossaryRemoveTermAssignmentFromEntitiesBodyParam|beta
+  - >-
+    @azure-rest/purview-catalog.GlossaryRemoveTermAssignmentFromEntitiesdefaultResponse|beta
+  - '@azure-rest/purview-catalog.GlossaryUpdateGlossary200Response|beta'
+  - '@azure-rest/purview-catalog.GlossaryUpdateGlossaryBodyParam|beta'
+  - '@azure-rest/purview-catalog.GlossaryUpdateGlossaryCategory200Response|beta'
+  - '@azure-rest/purview-catalog.GlossaryUpdateGlossaryCategoryBodyParam|beta'
+  - >-
+    @azure-rest/purview-catalog.GlossaryUpdateGlossaryCategorydefaultResponse|beta
+  - '@azure-rest/purview-catalog.GlossaryUpdateGlossaryTerm200Response|beta'
+  - '@azure-rest/purview-catalog.GlossaryUpdateGlossaryTermBodyParam|beta'
+  - '@azure-rest/purview-catalog.GlossaryUpdateGlossaryTermdefaultResponse|beta'
+  - '@azure-rest/purview-catalog.GlossaryUpdateGlossarydefaultResponse|beta'
+  - '@azure-rest/purview-catalog.ImportCSVOperationErrorOutput|beta'
+  - '@azure-rest/purview-catalog.ImportCSVOperationOutput|beta'
+  - '@azure-rest/purview-catalog.ImportCSVOperationPropertiesOutput|beta'
+  - '@azure-rest/purview-catalog.LineageGetLineageGraph|beta'
+  - '@azure-rest/purview-catalog.LineageGetLineageGraph200Response|beta'
+  - '@azure-rest/purview-catalog.LineageGetLineageGraphQueryParam|beta'
+  - '@azure-rest/purview-catalog.LineageGetLineageGraphQueryParamProperties|beta'
+  - '@azure-rest/purview-catalog.LineageGetLineageGraphdefaultResponse|beta'
+  - '@azure-rest/purview-catalog.LineageNextPageLineage|beta'
+  - '@azure-rest/purview-catalog.LineageNextPageLineage200Response|beta'
+  - '@azure-rest/purview-catalog.LineageNextPageLineageQueryParam|beta'
+  - '@azure-rest/purview-catalog.LineageNextPageLineageQueryParamProperties|beta'
+  - '@azure-rest/purview-catalog.LineageNextPageLineagedefaultResponse|beta'
+  - '@azure-rest/purview-catalog.LineageRelationOutput|beta'
+  - '@azure-rest/purview-catalog.MoveEntitiesRequest|beta'
+  - '@azure-rest/purview-catalog.NumberFormat|beta'
+  - '@azure-rest/purview-catalog.NumberFormatOutput|beta'
+  - '@azure-rest/purview-catalog.PListOutput|beta'
+  - '@azure-rest/purview-catalog.ParentRelationOutput|beta'
+  - '@azure-rest/purview-catalog.RelationshipCreate|beta'
+  - '@azure-rest/purview-catalog.RelationshipCreate200Response|beta'
+  - '@azure-rest/purview-catalog.RelationshipCreateBodyParam|beta'
+  - '@azure-rest/purview-catalog.RelationshipCreatedefaultResponse|beta'
+  - '@azure-rest/purview-catalog.RelationshipDelete204Response|beta'
+  - '@azure-rest/purview-catalog.RelationshipDeletedefaultResponse|beta'
+  - '@azure-rest/purview-catalog.RelationshipGet|beta'
+  - '@azure-rest/purview-catalog.RelationshipGet200Response|beta'
+  - '@azure-rest/purview-catalog.RelationshipGetQueryParam|beta'
+  - '@azure-rest/purview-catalog.RelationshipGetQueryParamProperties|beta'
+  - '@azure-rest/purview-catalog.RelationshipGetdefaultResponse|beta'
+  - '@azure-rest/purview-catalog.RelationshipUpdate200Response|beta'
+  - '@azure-rest/purview-catalog.RelationshipUpdateBodyParam|beta'
+  - '@azure-rest/purview-catalog.RelationshipUpdatedefaultResponse|beta'
+  - '@azure-rest/purview-catalog.ResourceLink|beta'
+  - '@azure-rest/purview-catalog.ResourceLinkOutput|beta'
+  - '@azure-rest/purview-catalog.Routes|beta'
+  - '@azure-rest/purview-catalog.SearchFacetItem|beta'
+  - '@azure-rest/purview-catalog.SearchFacetItemValueOutput|beta'
+  - '@azure-rest/purview-catalog.SearchFacetResultValueOutput|beta'
+  - '@azure-rest/purview-catalog.SearchHighlightsOutput|beta'
+  - '@azure-rest/purview-catalog.SearchRequest|beta'
+  - '@azure-rest/purview-catalog.SearchRequestTaxonomySetting|beta'
+  - '@azure-rest/purview-catalog.SearchResultOutput|beta'
+  - '@azure-rest/purview-catalog.SearchResultValueOutput|beta'
+  - '@azure-rest/purview-catalog.SuggestRequest|beta'
+  - '@azure-rest/purview-catalog.SuggestResultOutput|beta'
+  - '@azure-rest/purview-catalog.SuggestResultValueOutput|beta'
+  - '@azure-rest/purview-catalog.TermSearchResultValueOutput|beta'
+  - '@azure-rest/purview-catalog.TermTemplateDef|beta'
+  - '@azure-rest/purview-catalog.TermTemplateDefOutput|beta'
+  - '@azure-rest/purview-catalog.TimeBoundary|beta'
+  - '@azure-rest/purview-catalog.TimeBoundaryOutput|beta'
+  - '@azure-rest/purview-catalog.TimeZone|beta'
+  - '@azure-rest/purview-catalog.TimeZoneOutput|beta'
+  - '@azure-rest/purview-catalog.TypesCreateTypeDefinitions200Response|beta'
+  - '@azure-rest/purview-catalog.TypesCreateTypeDefinitionsBodyParam|beta'
+  - '@azure-rest/purview-catalog.TypesCreateTypeDefinitionsdefaultResponse|beta'
+  - '@azure-rest/purview-catalog.TypesDeleteTypeByName204Response|beta'
+  - '@azure-rest/purview-catalog.TypesDeleteTypeByNamedefaultResponse|beta'
+  - '@azure-rest/purview-catalog.TypesDeleteTypeDefinitions204Response|beta'
+  - '@azure-rest/purview-catalog.TypesDeleteTypeDefinitionsBodyParam|beta'
+  - '@azure-rest/purview-catalog.TypesDeleteTypeDefinitionsdefaultResponse|beta'
+  - '@azure-rest/purview-catalog.TypesGetAllTypeDefinitions|beta'
+  - '@azure-rest/purview-catalog.TypesGetAllTypeDefinitions200Response|beta'
+  - '@azure-rest/purview-catalog.TypesGetAllTypeDefinitionsQueryParam|beta'
+  - >-
+    @azure-rest/purview-catalog.TypesGetAllTypeDefinitionsQueryParamProperties|beta
+  - '@azure-rest/purview-catalog.TypesGetAllTypeDefinitionsdefaultResponse|beta'
+  - '@azure-rest/purview-catalog.TypesGetClassificationDefByGuid|beta'
+  - '@azure-rest/purview-catalog.TypesGetClassificationDefByGuid200Response|beta'
+  - >-
+    @azure-rest/purview-catalog.TypesGetClassificationDefByGuiddefaultResponse|beta
+  - '@azure-rest/purview-catalog.TypesGetClassificationDefByName|beta'
+  - '@azure-rest/purview-catalog.TypesGetClassificationDefByName200Response|beta'
+  - >-
+    @azure-rest/purview-catalog.TypesGetClassificationDefByNamedefaultResponse|beta
+  - '@azure-rest/purview-catalog.TypesGetEntityDefinitionByGuid|beta'
+  - '@azure-rest/purview-catalog.TypesGetEntityDefinitionByGuid200Response|beta'
+  - >-
+    @azure-rest/purview-catalog.TypesGetEntityDefinitionByGuiddefaultResponse|beta
+  - '@azure-rest/purview-catalog.TypesGetEntityDefinitionByName|beta'
+  - '@azure-rest/purview-catalog.TypesGetEntityDefinitionByName200Response|beta'
+  - >-
+    @azure-rest/purview-catalog.TypesGetEntityDefinitionByNamedefaultResponse|beta
+  - '@azure-rest/purview-catalog.TypesGetEnumDefByGuid|beta'
+  - '@azure-rest/purview-catalog.TypesGetEnumDefByGuid200Response|beta'
+  - '@azure-rest/purview-catalog.TypesGetEnumDefByGuiddefaultResponse|beta'
+  - '@azure-rest/purview-catalog.TypesGetEnumDefByName|beta'
+  - '@azure-rest/purview-catalog.TypesGetEnumDefByName200Response|beta'
+  - '@azure-rest/purview-catalog.TypesGetEnumDefByNamedefaultResponse|beta'
+  - '@azure-rest/purview-catalog.TypesGetRelationshipDefByGuid|beta'
+  - '@azure-rest/purview-catalog.TypesGetRelationshipDefByGuid200Response|beta'
+  - >-
+    @azure-rest/purview-catalog.TypesGetRelationshipDefByGuiddefaultResponse|beta
+  - '@azure-rest/purview-catalog.TypesGetRelationshipDefByName|beta'
+  - '@azure-rest/purview-catalog.TypesGetRelationshipDefByName200Response|beta'
+  - >-
+    @azure-rest/purview-catalog.TypesGetRelationshipDefByNamedefaultResponse|beta
+  - '@azure-rest/purview-catalog.TypesGetStructDefByGuid|beta'
+  - '@azure-rest/purview-catalog.TypesGetStructDefByGuid200Response|beta'
+  - '@azure-rest/purview-catalog.TypesGetStructDefByGuiddefaultResponse|beta'
+  - '@azure-rest/purview-catalog.TypesGetStructDefByName|beta'
+  - '@azure-rest/purview-catalog.TypesGetStructDefByName200Response|beta'
+  - '@azure-rest/purview-catalog.TypesGetStructDefByNamedefaultResponse|beta'
+  - '@azure-rest/purview-catalog.TypesGetTermTemplateDefByGuid|beta'
+  - '@azure-rest/purview-catalog.TypesGetTermTemplateDefByGuid200Response|beta'
+  - >-
+    @azure-rest/purview-catalog.TypesGetTermTemplateDefByGuiddefaultResponse|beta
+  - '@azure-rest/purview-catalog.TypesGetTermTemplateDefByName|beta'
+  - '@azure-rest/purview-catalog.TypesGetTermTemplateDefByName200Response|beta'
+  - >-
+    @azure-rest/purview-catalog.TypesGetTermTemplateDefByNamedefaultResponse|beta
+  - '@azure-rest/purview-catalog.TypesGetTypeDefinitionByGuid|beta'
+  - '@azure-rest/purview-catalog.TypesGetTypeDefinitionByGuid200Response|beta'
+  - '@azure-rest/purview-catalog.TypesGetTypeDefinitionByGuiddefaultResponse|beta'
+  - '@azure-rest/purview-catalog.TypesGetTypeDefinitionByName|beta'
+  - '@azure-rest/purview-catalog.TypesGetTypeDefinitionByName200Response|beta'
+  - '@azure-rest/purview-catalog.TypesGetTypeDefinitionByNamedefaultResponse|beta'
+  - '@azure-rest/purview-catalog.TypesListTypeDefinitionHeaders|beta'
+  - '@azure-rest/purview-catalog.TypesListTypeDefinitionHeaders200Response|beta'
+  - '@azure-rest/purview-catalog.TypesListTypeDefinitionHeadersQueryParam|beta'
+  - >-
+    @azure-rest/purview-catalog.TypesListTypeDefinitionHeadersQueryParamProperties|beta
+  - >-
+    @azure-rest/purview-catalog.TypesListTypeDefinitionHeadersdefaultResponse|beta
+  - '@azure-rest/purview-catalog.TypesUpdateAtlasTypeDefinitions200Response|beta'
+  - '@azure-rest/purview-catalog.TypesUpdateAtlasTypeDefinitionsBodyParam|beta'
+  - >-
+    @azure-rest/purview-catalog.TypesUpdateAtlasTypeDefinitionsdefaultResponse|beta
+typeAliases:
+  - '@azure-rest/purview-catalog.CollectionCreateOrUpdateBulkParameters|beta'
+  - '@azure-rest/purview-catalog.CollectionCreateOrUpdateParameters|beta'
+  - >-
+    @azure-rest/purview-catalog.CollectionMoveEntitiesToCollectionParameters|beta
+  - '@azure-rest/purview-catalog.DiscoveryAutoCompleteParameters|beta'
+  - '@azure-rest/purview-catalog.DiscoveryBrowseParameters|beta'
+  - '@azure-rest/purview-catalog.DiscoveryQueryParameters|beta'
+  - '@azure-rest/purview-catalog.DiscoverySuggestParameters|beta'
+  - '@azure-rest/purview-catalog.EntityAddClassificationParameters|beta'
+  - >-
+    @azure-rest/purview-catalog.EntityAddClassificationsByUniqueAttributeParameters|beta
+  - '@azure-rest/purview-catalog.EntityAddClassificationsParameters|beta'
+  - '@azure-rest/purview-catalog.EntityCreateOrUpdateEntitiesParameters|beta'
+  - '@azure-rest/purview-catalog.EntityCreateOrUpdateParameters|beta'
+  - '@azure-rest/purview-catalog.EntityDeleteByGuidParameters|beta'
+  - '@azure-rest/purview-catalog.EntityDeleteByGuidsParameters|beta'
+  - '@azure-rest/purview-catalog.EntityDeleteByUniqueAttributeParameters|beta'
+  - >-
+    @azure-rest/purview-catalog.EntityDeleteClassificationByUniqueAttributeParameters|beta
+  - '@azure-rest/purview-catalog.EntityDeleteClassificationParameters|beta'
+  - '@azure-rest/purview-catalog.EntityGetByGuidParameters|beta'
+  - '@azure-rest/purview-catalog.EntityGetByUniqueAttributesParameters|beta'
+  - '@azure-rest/purview-catalog.EntityGetClassificationParameters|beta'
+  - '@azure-rest/purview-catalog.EntityGetClassificationsParameters|beta'
+  - >-
+    @azure-rest/purview-catalog.EntityGetEntitiesByUniqueAttributesParameters|beta
+  - '@azure-rest/purview-catalog.EntityGetHeaderParameters|beta'
+  - '@azure-rest/purview-catalog.EntityListByGuidsParameters|beta'
+  - >-
+    @azure-rest/purview-catalog.EntityPartialUpdateEntityAttributeByGuidParameters|beta
+  - >-
+    @azure-rest/purview-catalog.EntityPartialUpdateEntityByUniqueAttributesParameters|beta
+  - '@azure-rest/purview-catalog.EntitySetClassificationsParameters|beta'
+  - >-
+    @azure-rest/purview-catalog.EntityUpdateClassificationsByUniqueAttributeParameters|beta
+  - '@azure-rest/purview-catalog.EntityUpdateClassificationsParameters|beta'
+  - '@azure-rest/purview-catalog.GlossaryAssignTermToEntitiesParameters|beta'
+  - '@azure-rest/purview-catalog.GlossaryCreateGlossaryCategoriesParameters|beta'
+  - '@azure-rest/purview-catalog.GlossaryCreateGlossaryCategoryParameters|beta'
+  - '@azure-rest/purview-catalog.GlossaryCreateGlossaryParameters|beta'
+  - '@azure-rest/purview-catalog.GlossaryCreateGlossaryTermParameters|beta'
+  - '@azure-rest/purview-catalog.GlossaryCreateGlossaryTermsParameters|beta'
+  - '@azure-rest/purview-catalog.GlossaryDeleteGlossaryCategoryParameters|beta'
+  - '@azure-rest/purview-catalog.GlossaryDeleteGlossaryParameters|beta'
+  - '@azure-rest/purview-catalog.GlossaryDeleteGlossaryTermParameters|beta'
+  - >-
+    @azure-rest/purview-catalog.GlossaryDeleteTermAssignmentFromEntitiesParameters|beta
+  - '@azure-rest/purview-catalog.GlossaryExportGlossaryTermsAsCsvParameters|beta'
+  - '@azure-rest/purview-catalog.GlossaryGetDetailedGlossaryParameters|beta'
+  - >-
+    @azure-rest/purview-catalog.GlossaryGetEntitiesAssignedWithTermParameters|beta
+  - '@azure-rest/purview-catalog.GlossaryGetGlossaryCategoryParameters|beta'
+  - '@azure-rest/purview-catalog.GlossaryGetGlossaryParameters|beta'
+  - '@azure-rest/purview-catalog.GlossaryGetGlossaryTermParameters|beta'
+  - >-
+    @azure-rest/purview-catalog.GlossaryGetImportCsvOperationStatusParameters|beta
+  - >-
+    @azure-rest/purview-catalog.GlossaryImportGlossaryTermsViaCsvByGlossaryNameParameters|beta
+  - '@azure-rest/purview-catalog.GlossaryImportGlossaryTermsViaCsvParameters|beta'
+  - '@azure-rest/purview-catalog.GlossaryListCategoryTermsParameters|beta'
+  - '@azure-rest/purview-catalog.GlossaryListGlossariesParameters|beta'
+  - >-
+    @azure-rest/purview-catalog.GlossaryListGlossaryCategoriesHeadersParameters|beta
+  - '@azure-rest/purview-catalog.GlossaryListGlossaryCategoriesParameters|beta'
+  - '@azure-rest/purview-catalog.GlossaryListGlossaryTermHeadersParameters|beta'
+  - '@azure-rest/purview-catalog.GlossaryListGlossaryTermsParameters|beta'
+  - '@azure-rest/purview-catalog.GlossaryListRelatedCategoriesParameters|beta'
+  - '@azure-rest/purview-catalog.GlossaryListRelatedTermsParameters|beta'
+  - '@azure-rest/purview-catalog.GlossaryListTermsByGlossaryNameParameters|beta'
+  - >-
+    @azure-rest/purview-catalog.GlossaryPartialUpdateGlossaryCategoryParameters|beta
+  - '@azure-rest/purview-catalog.GlossaryPartialUpdateGlossaryParameters|beta'
+  - '@azure-rest/purview-catalog.GlossaryPartialUpdateGlossaryTermParameters|beta'
+  - >-
+    @azure-rest/purview-catalog.GlossaryRemoveTermAssignmentFromEntitiesParameters|beta
+  - '@azure-rest/purview-catalog.GlossaryUpdateGlossaryCategoryParameters|beta'
+  - '@azure-rest/purview-catalog.GlossaryUpdateGlossaryParameters|beta'
+  - '@azure-rest/purview-catalog.GlossaryUpdateGlossaryTermParameters|beta'
+  - '@azure-rest/purview-catalog.LineageGetLineageGraphParameters|beta'
+  - '@azure-rest/purview-catalog.LineageNextPageLineageParameters|beta'
+  - '@azure-rest/purview-catalog.PurviewCatalogRestClient|beta'
+  - '@azure-rest/purview-catalog.RelationshipCreateParameters|beta'
+  - '@azure-rest/purview-catalog.RelationshipDeleteParameters|beta'
+  - '@azure-rest/purview-catalog.RelationshipGetParameters|beta'
+  - '@azure-rest/purview-catalog.RelationshipUpdateParameters|beta'
+  - '@azure-rest/purview-catalog.TypesCreateTypeDefinitionsParameters|beta'
+  - '@azure-rest/purview-catalog.TypesDeleteTypeByNameParameters|beta'
+  - '@azure-rest/purview-catalog.TypesDeleteTypeDefinitionsParameters|beta'
+  - '@azure-rest/purview-catalog.TypesGetAllTypeDefinitionsParameters|beta'
+  - '@azure-rest/purview-catalog.TypesGetClassificationDefByGuidParameters|beta'
+  - '@azure-rest/purview-catalog.TypesGetClassificationDefByNameParameters|beta'
+  - '@azure-rest/purview-catalog.TypesGetEntityDefinitionByGuidParameters|beta'
+  - '@azure-rest/purview-catalog.TypesGetEntityDefinitionByNameParameters|beta'
+  - '@azure-rest/purview-catalog.TypesGetEnumDefByGuidParameters|beta'
+  - '@azure-rest/purview-catalog.TypesGetEnumDefByNameParameters|beta'
+  - '@azure-rest/purview-catalog.TypesGetRelationshipDefByGuidParameters|beta'
+  - '@azure-rest/purview-catalog.TypesGetRelationshipDefByNameParameters|beta'
+  - '@azure-rest/purview-catalog.TypesGetStructDefByGuidParameters|beta'
+  - '@azure-rest/purview-catalog.TypesGetStructDefByNameParameters|beta'
+  - '@azure-rest/purview-catalog.TypesGetTermTemplateDefByGuidParameters|beta'
+  - '@azure-rest/purview-catalog.TypesGetTermTemplateDefByNameParameters|beta'
+  - '@azure-rest/purview-catalog.TypesGetTypeDefinitionByGuidParameters|beta'
+  - '@azure-rest/purview-catalog.TypesGetTypeDefinitionByNameParameters|beta'
+  - '@azure-rest/purview-catalog.TypesListTypeDefinitionHeadersParameters|beta'
+  - '@azure-rest/purview-catalog.TypesUpdateAtlasTypeDefinitionsParameters|beta'
+functions:
+  - name: PurviewCatalog(string, TokenCredential, ClientOptions)
+    uid: '@azure-rest/purview-catalog.PurviewCatalog|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function PurviewCatalog(Endpoint: string, credentials: TokenCredential,
+        options?: ClientOptions): PurviewCatalogRestClient
+      parameters:
+        - id: Endpoint
+          type: string
+          description: ''
+        - id: credentials
+          type: TokenCredential
+          description: ''
+        - id: options
+          type: ClientOptions
+          description: ''
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure-rest/purview-catalog.PurviewCatalogRestClient|beta"
+          />
+  - name: >-
+      getLongRunningPoller<TResult>(Client, TResult, LroEngineOptions<TResult,
+      PollOperationState<TResult>>)
+    uid: '@azure-rest/purview-catalog.getLongRunningPoller|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: >-
+      Helper function that builds a Poller object to help polling a long running
+      operation.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getLongRunningPoller<TResult>(client: Client, initialResponse:
+        TResult, options?: LroEngineOptions<TResult,
+        PollOperationState<TResult>>): PollerLike<PollOperationState<TResult>,
+        TResult>
+      parameters:
+        - id: client
+          type: Client
+          description: Client to use for sending the request to get additional pages.
+        - id: initialResponse
+          type: TResult
+          description: The initial response.
+        - id: options
+          type: LroEngineOptions&lt;TResult, PollOperationState&lt;TResult&gt;&gt;
+          description: Options to set a resume state or custom polling interval.
+      return:
+        description: >-
+          - A poller object to poll for operation state updates and eventually
+          get the final response.
+        type: PollerLike&lt;PollOperationState&lt;TResult&gt;, TResult&gt;

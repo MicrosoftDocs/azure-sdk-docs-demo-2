@@ -1,0 +1,63 @@
+### YamlMime:TSType
+name: OperationEntity
+uid: '@azure/arm-botservice.OperationEntity|beta'
+package: '@azure/arm-botservice|beta'
+summary: The operations supported by Bot Service Management.
+fullName: OperationEntity
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: display
+    uid: '@azure/arm-botservice.OperationEntity.display|beta'
+    package: '@azure/arm-botservice|beta'
+    summary: The operation supported by Bot Service Management.
+    fullName: display
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'display?: OperationDisplayInfo'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-botservice.OperationDisplayInfo|beta" />
+  - name: name
+    uid: '@azure/arm-botservice.OperationEntity.name|beta'
+    package: '@azure/arm-botservice|beta'
+    summary: 'Operation name: {provider}/{resource}/{operation}.'
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: origin
+    uid: '@azure/arm-botservice.OperationEntity.origin|beta'
+    package: '@azure/arm-botservice|beta'
+    summary: The origin of the operation.
+    fullName: origin
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'origin?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: properties
+    uid: '@azure/arm-botservice.OperationEntity.properties|beta'
+    package: '@azure/arm-botservice|beta'
+    summary: Additional properties.
+    fullName: properties
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'properties?: Record<string, unknown>'
+      return:
+        description: ''
+        type: Record&lt;string, unknown&gt;

@@ -1,0 +1,59 @@
+### YamlMime:TSType
+name: NetworkConfigurationDiagnosticParameters
+uid: '@azure/arm-network.NetworkConfigurationDiagnosticParameters|stable'
+package: '@azure/arm-network|stable'
+summary: Parameters to get network configuration diagnostic.
+fullName: NetworkConfigurationDiagnosticParameters
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: profiles
+    uid: >-
+      @azure/arm-network.NetworkConfigurationDiagnosticParameters.profiles|stable
+    package: '@azure/arm-network|stable'
+    summary: List of network configuration diagnostic profiles.
+    fullName: profiles
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'profiles: NetworkConfigurationDiagnosticProfile[]'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-network.NetworkConfigurationDiagnosticProfile|stable"
+          />[]
+  - name: targetResourceId
+    uid: >-
+      @azure/arm-network.NetworkConfigurationDiagnosticParameters.targetResourceId|stable
+    package: '@azure/arm-network|stable'
+    summary: >-
+      The ID of the target resource to perform network configuration diagnostic.
+      Valid options are VM, NetworkInterface, VMSS/NetworkInterface and
+      Application Gateway.
+    fullName: targetResourceId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'targetResourceId: string'
+      return:
+        description: ''
+        type: string
+  - name: verbosityLevel
+    uid: >-
+      @azure/arm-network.NetworkConfigurationDiagnosticParameters.verbosityLevel|stable
+    package: '@azure/arm-network|stable'
+    summary: Verbosity level.
+    fullName: verbosityLevel
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'verbosityLevel?: VerbosityLevel'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.VerbosityLevel|stable" />

@@ -1,0 +1,272 @@
+### YamlMime:TSType
+name: CustomIPPrefixes
+uid: '@azure/arm-network.CustomIPPrefixes|stable'
+package: '@azure/arm-network|stable'
+summary: Interface representing a CustomIPPrefixes.
+fullName: CustomIPPrefixes
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      beginCreateOrUpdate(string, string, CustomIpPrefix,
+      CustomIPPrefixesCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-network.CustomIPPrefixes.beginCreateOrUpdate|stable'
+    package: '@azure/arm-network|stable'
+    summary: Creates or updates a custom IP prefix.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string,
+        customIpPrefixName: string, parameters: CustomIpPrefix, options?:
+        CustomIPPrefixesCreateOrUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<CustomIPPrefixesCreateOrUpdateResponse>,
+        CustomIPPrefixesCreateOrUpdateResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: customIpPrefixName
+          type: string
+          description: The name of the custom IP prefix.
+        - id: parameters
+          type: <xref uid="@azure/arm-network.CustomIpPrefix|stable" />
+          description: >-
+            Parameters supplied to the create or update custom IP prefix
+            operation.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.CustomIPPrefixesCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-network.CustomIPPrefixesCreateOrUpdateResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-network.CustomIPPrefixesCreateOrUpdateResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginCreateOrUpdateAndWait(string, string, CustomIpPrefix,
+      CustomIPPrefixesCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-network.CustomIPPrefixes.beginCreateOrUpdateAndWait|stable'
+    package: '@azure/arm-network|stable'
+    summary: Creates or updates a custom IP prefix.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdateAndWait(resourceGroupName: string,
+        customIpPrefixName: string, parameters: CustomIpPrefix, options?:
+        CustomIPPrefixesCreateOrUpdateOptionalParams):
+        Promise<CustomIPPrefixesCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: customIpPrefixName
+          type: string
+          description: The name of the custom IP prefix.
+        - id: parameters
+          type: <xref uid="@azure/arm-network.CustomIpPrefix|stable" />
+          description: >-
+            Parameters supplied to the create or update custom IP prefix
+            operation.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.CustomIPPrefixesCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.CustomIPPrefixesCreateOrUpdateResponse|stable"
+          />&gt;
+  - name: beginDelete(string, string, CustomIPPrefixesDeleteOptionalParams)
+    uid: '@azure/arm-network.CustomIPPrefixes.beginDelete|stable'
+    package: '@azure/arm-network|stable'
+    summary: Deletes the specified custom IP prefix.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDelete(resourceGroupName: string, customIpPrefixName:
+        string, options?: CustomIPPrefixesDeleteOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: customIpPrefixName
+          type: string
+          description: The name of the CustomIpPrefix.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.CustomIPPrefixesDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: beginDeleteAndWait(string, string, CustomIPPrefixesDeleteOptionalParams)
+    uid: '@azure/arm-network.CustomIPPrefixes.beginDeleteAndWait|stable'
+    package: '@azure/arm-network|stable'
+    summary: Deletes the specified custom IP prefix.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteAndWait(resourceGroupName: string,
+        customIpPrefixName: string, options?:
+        CustomIPPrefixesDeleteOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: customIpPrefixName
+          type: string
+          description: The name of the CustomIpPrefix.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.CustomIPPrefixesDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: get(string, string, CustomIPPrefixesGetOptionalParams)
+    uid: '@azure/arm-network.CustomIPPrefixes.get|stable'
+    package: '@azure/arm-network|stable'
+    summary: Gets the specified custom IP prefix in a specified resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, customIpPrefixName: string,
+        options?: CustomIPPrefixesGetOptionalParams):
+        Promise<CustomIPPrefixesGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: customIpPrefixName
+          type: string
+          description: The name of the custom IP prefix.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.CustomIPPrefixesGetOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.CustomIPPrefixesGetResponse|stable" />&gt;
+  - name: list(string, CustomIPPrefixesListOptionalParams)
+    uid: '@azure/arm-network.CustomIPPrefixes.list|stable'
+    package: '@azure/arm-network|stable'
+    summary: Gets all custom IP prefixes in a resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, options?:
+        CustomIPPrefixesListOptionalParams):
+        PagedAsyncIterableIterator<CustomIpPrefix>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.CustomIPPrefixesListOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-network.CustomIpPrefix|stable" />&gt;
+  - name: listAll(CustomIPPrefixesListAllOptionalParams)
+    uid: '@azure/arm-network.CustomIPPrefixes.listAll|stable'
+    package: '@azure/arm-network|stable'
+    summary: Gets all the custom IP prefixes in a subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listAll(options?: CustomIPPrefixesListAllOptionalParams):
+        PagedAsyncIterableIterator<CustomIpPrefix>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.CustomIPPrefixesListAllOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-network.CustomIpPrefix|stable" />&gt;
+  - name: >-
+      updateTags(string, string, TagsObject,
+      CustomIPPrefixesUpdateTagsOptionalParams)
+    uid: '@azure/arm-network.CustomIPPrefixes.updateTags|stable'
+    package: '@azure/arm-network|stable'
+    summary: Updates custom IP prefix tags.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string, customIpPrefixName:
+        string, parameters: TagsObject, options?:
+        CustomIPPrefixesUpdateTagsOptionalParams):
+        Promise<CustomIPPrefixesUpdateTagsResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: customIpPrefixName
+          type: string
+          description: The name of the custom IP prefix.
+        - id: parameters
+          type: <xref uid="@azure/arm-network.TagsObject|stable" />
+          description: Parameters supplied to update custom IP prefix tags.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.CustomIPPrefixesUpdateTagsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.CustomIPPrefixesUpdateTagsResponse|stable"
+          />&gt;

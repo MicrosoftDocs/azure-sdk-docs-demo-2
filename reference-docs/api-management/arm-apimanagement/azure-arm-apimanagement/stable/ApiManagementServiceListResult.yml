@@ -1,0 +1,42 @@
+### YamlMime:TSType
+name: ApiManagementServiceListResult
+uid: '@azure/arm-apimanagement.ApiManagementServiceListResult|stable'
+package: '@azure/arm-apimanagement|stable'
+summary: The response of the List API Management services operation.
+fullName: ApiManagementServiceListResult
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: nextLink
+    uid: '@azure/arm-apimanagement.ApiManagementServiceListResult.nextLink|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: >-
+      Link to the next set of results. Not empty if Value contains incomplete
+      list of API Management services.
+    fullName: nextLink
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nextLink?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: value
+    uid: '@azure/arm-apimanagement.ApiManagementServiceListResult.value|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: Result of the List API Management services operation.
+    fullName: value
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value: ApiManagementServiceResource[]'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-apimanagement.ApiManagementServiceResource|stable"
+          />[]

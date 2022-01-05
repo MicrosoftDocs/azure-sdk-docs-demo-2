@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: ParquetSource
+uid: '@azure/synapse-artifacts.ParquetSource|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: A copy activity Parquet source.
+fullName: ParquetSource
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type ParquetSource = CopySource & { additionalColumns?: any, storeSettings?:
+  StoreReadSettingsUnion, type: "ParquetSource" }

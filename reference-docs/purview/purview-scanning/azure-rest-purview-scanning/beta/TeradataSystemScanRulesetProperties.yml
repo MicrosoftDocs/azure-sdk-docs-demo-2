@@ -1,0 +1,82 @@
+### YamlMime:TSType
+name: TeradataSystemScanRulesetProperties
+uid: '@azure-rest/purview-scanning.TeradataSystemScanRulesetProperties|beta'
+package: '@azure-rest/purview-scanning|beta'
+summary: ''
+fullName: TeradataSystemScanRulesetProperties
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: createdAt
+    uid: >-
+      @azure-rest/purview-scanning.TeradataSystemScanRulesetProperties.createdAt|beta
+    package: '@azure-rest/purview-scanning|beta'
+    summary: ''
+    fullName: createdAt
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'createdAt?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: description
+    uid: >-
+      @azure-rest/purview-scanning.TeradataSystemScanRulesetProperties.description|beta
+    package: '@azure-rest/purview-scanning|beta'
+    summary: ''
+    fullName: description
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'description?: string'
+      return:
+        description: ''
+        type: string
+  - name: excludedSystemClassifications
+    uid: >-
+      @azure-rest/purview-scanning.TeradataSystemScanRulesetProperties.excludedSystemClassifications|beta
+    package: '@azure-rest/purview-scanning|beta'
+    summary: ''
+    fullName: excludedSystemClassifications
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'excludedSystemClassifications?: Array<string>'
+      return:
+        description: ''
+        type: Array&lt;string&gt;
+  - name: includedCustomClassificationRuleNames
+    uid: >-
+      @azure-rest/purview-scanning.TeradataSystemScanRulesetProperties.includedCustomClassificationRuleNames|beta
+    package: '@azure-rest/purview-scanning|beta'
+    summary: ''
+    fullName: includedCustomClassificationRuleNames
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'includedCustomClassificationRuleNames?: Array<string>'
+      return:
+        description: ''
+        type: Array&lt;string&gt;
+  - name: lastModifiedAt
+    uid: >-
+      @azure-rest/purview-scanning.TeradataSystemScanRulesetProperties.lastModifiedAt|beta
+    package: '@azure-rest/purview-scanning|beta'
+    summary: ''
+    fullName: lastModifiedAt
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lastModifiedAt?: Date'
+      return:
+        description: ''
+        type: Date
+extends: <xref uid="@azure-rest/purview-scanning.TeradataScanRulesetProperties|beta" />

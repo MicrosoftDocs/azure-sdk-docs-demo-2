@@ -1,0 +1,63 @@
+### YamlMime:TSType
+name: Operation
+uid: '@azure/arm-apimanagement.Operation|stable'
+package: '@azure/arm-apimanagement|stable'
+summary: REST API operation
+fullName: Operation
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: display
+    uid: '@azure/arm-apimanagement.Operation.display|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: The object that describes the operation.
+    fullName: display
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'display?: OperationDisplay'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-apimanagement.OperationDisplay|stable" />
+  - name: name
+    uid: '@azure/arm-apimanagement.Operation.name|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: 'Operation name: {provider}/{resource}/{operation}'
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: origin
+    uid: '@azure/arm-apimanagement.Operation.origin|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: The operation origin.
+    fullName: origin
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'origin?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: properties
+    uid: '@azure/arm-apimanagement.Operation.properties|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: The operation properties.
+    fullName: properties
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'properties?: Record<string, unknown>'
+      return:
+        description: ''
+        type: Record&lt;string, unknown&gt;

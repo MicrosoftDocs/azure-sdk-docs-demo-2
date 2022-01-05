@@ -1,0 +1,204 @@
+### YamlMime:TSType
+name: AutoscaleSettings
+uid: '@azure/arm-monitor.AutoscaleSettings|stable'
+package: '@azure/arm-monitor|stable'
+summary: Interface representing a AutoscaleSettings.
+fullName: AutoscaleSettings
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      createOrUpdate(string, string, AutoscaleSettingResource,
+      AutoscaleSettingsCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-monitor.AutoscaleSettings.createOrUpdate|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: Creates or updates an autoscale setting.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, autoscaleSettingName:
+        string, parameters: AutoscaleSettingResource, options?:
+        AutoscaleSettingsCreateOrUpdateOptionalParams):
+        Promise<AutoscaleSettingsCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: autoscaleSettingName
+          type: string
+          description: The autoscale setting name.
+        - id: parameters
+          type: <xref uid="@azure/arm-monitor.AutoscaleSettingResource|stable" />
+          description: Parameters supplied to the operation.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-monitor.AutoscaleSettingsCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-monitor.AutoscaleSettingsCreateOrUpdateResponse|stable"
+          />&gt;
+  - name: delete(string, string, AutoscaleSettingsDeleteOptionalParams)
+    uid: '@azure/arm-monitor.AutoscaleSettings.delete|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: Deletes and autoscale setting
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function delete(resourceGroupName: string, autoscaleSettingName: string,
+        options?: AutoscaleSettingsDeleteOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: autoscaleSettingName
+          type: string
+          description: The autoscale setting name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-monitor.AutoscaleSettingsDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: get(string, string, AutoscaleSettingsGetOptionalParams)
+    uid: '@azure/arm-monitor.AutoscaleSettings.get|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: Gets an autoscale setting
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, autoscaleSettingName: string,
+        options?: AutoscaleSettingsGetOptionalParams):
+        Promise<AutoscaleSettingsGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: autoscaleSettingName
+          type: string
+          description: The autoscale setting name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-monitor.AutoscaleSettingsGetOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-monitor.AutoscaleSettingsGetResponse|stable" />&gt;
+  - name: >-
+      listByResourceGroup(string,
+      AutoscaleSettingsListByResourceGroupOptionalParams)
+    uid: '@azure/arm-monitor.AutoscaleSettings.listByResourceGroup|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: Lists the autoscale settings for a resource group
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string, options?:
+        AutoscaleSettingsListByResourceGroupOptionalParams):
+        PagedAsyncIterableIterator<AutoscaleSettingResource>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-monitor.AutoscaleSettingsListByResourceGroupOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-monitor.AutoscaleSettingResource|stable" />&gt;
+  - name: listBySubscription(AutoscaleSettingsListBySubscriptionOptionalParams)
+    uid: '@azure/arm-monitor.AutoscaleSettings.listBySubscription|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: Lists the autoscale settings for a subscription
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listBySubscription(options?:
+        AutoscaleSettingsListBySubscriptionOptionalParams):
+        PagedAsyncIterableIterator<AutoscaleSettingResource>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-monitor.AutoscaleSettingsListBySubscriptionOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-monitor.AutoscaleSettingResource|stable" />&gt;
+  - name: >-
+      update(string, string, AutoscaleSettingResourcePatch,
+      AutoscaleSettingsUpdateOptionalParams)
+    uid: '@azure/arm-monitor.AutoscaleSettings.update|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: >-
+      Updates an existing AutoscaleSettingsResource. To update other fields use
+      the CreateOrUpdate method.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function update(resourceGroupName: string, autoscaleSettingName: string,
+        autoscaleSettingResource: AutoscaleSettingResourcePatch, options?:
+        AutoscaleSettingsUpdateOptionalParams):
+        Promise<AutoscaleSettingsUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: autoscaleSettingName
+          type: string
+          description: The autoscale setting name.
+        - id: autoscaleSettingResource
+          type: >-
+            <xref uid="@azure/arm-monitor.AutoscaleSettingResourcePatch|stable"
+            />
+          description: Parameters supplied to the operation.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-monitor.AutoscaleSettingsUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-monitor.AutoscaleSettingsUpdateResponse|stable" />&gt;

@@ -1,0 +1,91 @@
+### YamlMime:TSType
+name: AutoHealTriggers
+uid: '@azure/arm-appservice.AutoHealTriggers|stable'
+package: '@azure/arm-appservice|stable'
+summary: Triggers for auto-heal.
+fullName: AutoHealTriggers
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: privateBytesInKB
+    uid: '@azure/arm-appservice.AutoHealTriggers.privateBytesInKB|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: A rule based on private bytes.
+    fullName: privateBytesInKB
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'privateBytesInKB?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: requests
+    uid: '@azure/arm-appservice.AutoHealTriggers.requests|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: A rule based on total requests.
+    fullName: requests
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'requests?: RequestsBasedTrigger'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.RequestsBasedTrigger|stable" />
+  - name: slowRequests
+    uid: '@azure/arm-appservice.AutoHealTriggers.slowRequests|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: A rule based on request execution time.
+    fullName: slowRequests
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'slowRequests?: SlowRequestsBasedTrigger'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.SlowRequestsBasedTrigger|stable" />
+  - name: slowRequestsWithPath
+    uid: '@azure/arm-appservice.AutoHealTriggers.slowRequestsWithPath|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: A rule based on multiple Slow Requests Rule with path
+    fullName: slowRequestsWithPath
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'slowRequestsWithPath?: SlowRequestsBasedTrigger[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.SlowRequestsBasedTrigger|stable" />[]
+  - name: statusCodes
+    uid: '@azure/arm-appservice.AutoHealTriggers.statusCodes|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: A rule based on status codes.
+    fullName: statusCodes
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'statusCodes?: StatusCodesBasedTrigger[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.StatusCodesBasedTrigger|stable" />[]
+  - name: statusCodesRange
+    uid: '@azure/arm-appservice.AutoHealTriggers.statusCodesRange|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: A rule based on status codes ranges.
+    fullName: statusCodesRange
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'statusCodesRange?: StatusCodesRangeBasedTrigger[]'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/arm-appservice.StatusCodesRangeBasedTrigger|stable"
+          />[]

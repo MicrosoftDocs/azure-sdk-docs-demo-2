@@ -1,0 +1,39 @@
+### YamlMime:TSType
+name: HttpLogsConfig
+uid: '@azure/arm-appservice.HttpLogsConfig|stable'
+package: '@azure/arm-appservice|stable'
+summary: Http logs configuration.
+fullName: HttpLogsConfig
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: azureBlobStorage
+    uid: '@azure/arm-appservice.HttpLogsConfig.azureBlobStorage|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Http logs to azure blob storage configuration.
+    fullName: azureBlobStorage
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'azureBlobStorage?: AzureBlobStorageHttpLogsConfig'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-appservice.AzureBlobStorageHttpLogsConfig|stable" />
+  - name: fileSystem
+    uid: '@azure/arm-appservice.HttpLogsConfig.fileSystem|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Http logs to file system configuration.
+    fullName: fileSystem
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'fileSystem?: FileSystemHttpLogsConfig'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.FileSystemHttpLogsConfig|stable" />

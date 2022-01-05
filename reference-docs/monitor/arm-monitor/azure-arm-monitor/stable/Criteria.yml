@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: Criteria
+uid: '@azure/arm-monitor.Criteria|stable'
+package: '@azure/arm-monitor|stable'
+summary: Specifies the criteria for converting log to metric.
+fullName: Criteria
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: dimensions
+    uid: '@azure/arm-monitor.Criteria.dimensions|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: List of Dimensions for creating metric
+    fullName: dimensions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dimensions?: Dimension[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-monitor.Dimension|stable" />[]
+  - name: metricName
+    uid: '@azure/arm-monitor.Criteria.metricName|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: Name of the metric
+    fullName: metricName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'metricName: string'
+      return:
+        description: ''
+        type: string

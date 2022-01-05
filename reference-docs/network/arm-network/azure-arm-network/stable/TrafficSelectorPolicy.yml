@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: TrafficSelectorPolicy
+uid: '@azure/arm-network.TrafficSelectorPolicy|stable'
+package: '@azure/arm-network|stable'
+summary: An traffic selector policy for a virtual network gateway connection.
+fullName: TrafficSelectorPolicy
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: localAddressRanges
+    uid: '@azure/arm-network.TrafficSelectorPolicy.localAddressRanges|stable'
+    package: '@azure/arm-network|stable'
+    summary: A collection of local address spaces in CIDR format.
+    fullName: localAddressRanges
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'localAddressRanges: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: remoteAddressRanges
+    uid: '@azure/arm-network.TrafficSelectorPolicy.remoteAddressRanges|stable'
+    package: '@azure/arm-network|stable'
+    summary: A collection of remote address spaces in CIDR format.
+    fullName: remoteAddressRanges
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'remoteAddressRanges: string[]'
+      return:
+        description: ''
+        type: string[]

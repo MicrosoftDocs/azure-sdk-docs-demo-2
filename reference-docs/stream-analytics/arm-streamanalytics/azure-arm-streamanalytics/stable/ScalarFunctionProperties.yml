@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: ScalarFunctionProperties
+uid: '@azure/arm-streamanalytics.ScalarFunctionProperties|stable'
+package: '@azure/arm-streamanalytics|stable'
+summary: The properties that are associated with a scalar function.
+fullName: ScalarFunctionProperties
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type ScalarFunctionProperties = FunctionProperties & { binding?:
+  FunctionBindingUnion, inputs?: FunctionInput[], output?: FunctionOutput, type:
+  "Scalar" }

@@ -1,0 +1,62 @@
+### YamlMime:TSType
+name: ValidateProbeOutput
+uid: '@azure/arm-cdn.ValidateProbeOutput|stable'
+package: '@azure/arm-cdn|stable'
+summary: Output of the validate probe API.
+fullName: ValidateProbeOutput
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: errorCode
+    uid: '@azure/arm-cdn.ValidateProbeOutput.errorCode|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: >-
+      Specifies the error code when the probe url is not accepted.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: errorCode
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'errorCode?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: isValid
+    uid: '@azure/arm-cdn.ValidateProbeOutput.isValid|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: >-
+      Indicates whether the probe URL is accepted or not.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: isValid
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isValid?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true
+  - name: message
+    uid: '@azure/arm-cdn.ValidateProbeOutput.message|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: >-
+      The detailed error message describing why the probe URL is not accepted.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: message
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'message?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

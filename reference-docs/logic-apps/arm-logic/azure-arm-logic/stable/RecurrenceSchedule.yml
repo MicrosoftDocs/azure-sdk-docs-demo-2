@@ -1,0 +1,76 @@
+### YamlMime:TSType
+name: RecurrenceSchedule
+uid: '@azure/arm-logic.RecurrenceSchedule|stable'
+package: '@azure/arm-logic|stable'
+summary: The recurrence schedule.
+fullName: RecurrenceSchedule
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: hours
+    uid: '@azure/arm-logic.RecurrenceSchedule.hours|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The hours.
+    fullName: hours
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hours?: number[]'
+      return:
+        description: ''
+        type: number[]
+  - name: minutes
+    uid: '@azure/arm-logic.RecurrenceSchedule.minutes|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The minutes.
+    fullName: minutes
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'minutes?: number[]'
+      return:
+        description: ''
+        type: number[]
+  - name: monthDays
+    uid: '@azure/arm-logic.RecurrenceSchedule.monthDays|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The month days.
+    fullName: monthDays
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'monthDays?: number[]'
+      return:
+        description: ''
+        type: number[]
+  - name: monthlyOccurrences
+    uid: '@azure/arm-logic.RecurrenceSchedule.monthlyOccurrences|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The monthly occurrences.
+    fullName: monthlyOccurrences
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'monthlyOccurrences?: RecurrenceScheduleOccurrence[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-logic.RecurrenceScheduleOccurrence|stable" />[]
+  - name: weekDays
+    uid: '@azure/arm-logic.RecurrenceSchedule.weekDays|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The days of the week.
+    fullName: weekDays
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'weekDays?: DaysOfWeek[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-logic.DaysOfWeek|stable" />[]

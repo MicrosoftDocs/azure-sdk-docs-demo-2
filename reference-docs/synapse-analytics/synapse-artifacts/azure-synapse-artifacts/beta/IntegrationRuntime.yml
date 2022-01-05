@@ -1,0 +1,39 @@
+### YamlMime:TSType
+name: IntegrationRuntime
+uid: '@azure/synapse-artifacts.IntegrationRuntime|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: Azure Synapse nested object which serves as a compute resource for activities.
+fullName: IntegrationRuntime
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: description
+    uid: '@azure/synapse-artifacts.IntegrationRuntime.description|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Integration runtime description.
+    fullName: description
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'description?: string'
+      return:
+        description: ''
+        type: string
+  - name: type
+    uid: '@azure/synapse-artifacts.IntegrationRuntime.type|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: >-
+      Polymorphic discriminator, which specifies the different types this object
+      can be
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: "Managed" | "SelfHosted"'
+      return:
+        description: ''
+        type: '"Managed" | "SelfHosted"'

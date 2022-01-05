@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: ApplicationGatewayAuthenticationCertificate
+uid: '@azure/arm-network.ApplicationGatewayAuthenticationCertificate|stable'
+package: '@azure/arm-network|stable'
+summary: Authentication certificates of an application gateway.
+fullName: ApplicationGatewayAuthenticationCertificate
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type ApplicationGatewayAuthenticationCertificate = SubResource & { data?:
+  undefined | string, etag?: undefined | string, name?: undefined | string,
+  provisioningState?: ProvisioningState, type?: undefined | string }

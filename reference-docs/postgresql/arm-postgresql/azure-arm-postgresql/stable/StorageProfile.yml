@@ -1,0 +1,63 @@
+### YamlMime:TSType
+name: StorageProfile
+uid: '@azure/arm-postgresql.StorageProfile|stable'
+package: '@azure/arm-postgresql|stable'
+summary: Storage Profile properties of a server
+fullName: StorageProfile
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: backupRetentionDays
+    uid: '@azure/arm-postgresql.StorageProfile.backupRetentionDays|stable'
+    package: '@azure/arm-postgresql|stable'
+    summary: Backup retention days for the server.
+    fullName: backupRetentionDays
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'backupRetentionDays?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: geoRedundantBackup
+    uid: '@azure/arm-postgresql.StorageProfile.geoRedundantBackup|stable'
+    package: '@azure/arm-postgresql|stable'
+    summary: Enable Geo-redundant or not for server backup.
+    fullName: geoRedundantBackup
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'geoRedundantBackup?: GeoRedundantBackup'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-postgresql.GeoRedundantBackup|stable" />
+  - name: storageAutogrow
+    uid: '@azure/arm-postgresql.StorageProfile.storageAutogrow|stable'
+    package: '@azure/arm-postgresql|stable'
+    summary: Enable Storage Auto Grow.
+    fullName: storageAutogrow
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'storageAutogrow?: StorageAutogrow'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-postgresql.StorageAutogrow|stable" />
+  - name: storageMB
+    uid: '@azure/arm-postgresql.StorageProfile.storageMB|stable'
+    package: '@azure/arm-postgresql|stable'
+    summary: Max storage allowed for a server.
+    fullName: storageMB
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'storageMB?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number

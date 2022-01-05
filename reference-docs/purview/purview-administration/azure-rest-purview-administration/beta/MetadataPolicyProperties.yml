@@ -1,0 +1,87 @@
+### YamlMime:TSType
+name: MetadataPolicyProperties
+uid: '@azure-rest/purview-administration.MetadataPolicyProperties|beta'
+package: '@azure-rest/purview-administration|beta'
+summary: ''
+fullName: MetadataPolicyProperties
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: attributeRules
+    uid: >-
+      @azure-rest/purview-administration.MetadataPolicyProperties.attributeRules|beta
+    package: '@azure-rest/purview-administration|beta'
+    summary: The AttributeRules of policy
+    fullName: attributeRules
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'attributeRules?: Array<AttributeRule>'
+      return:
+        description: ''
+        type: >-
+          Array&lt;<xref
+          uid="@azure-rest/purview-administration.AttributeRule|beta" />&gt;
+  - name: collection
+    uid: >-
+      @azure-rest/purview-administration.MetadataPolicyProperties.collection|beta
+    package: '@azure-rest/purview-administration|beta'
+    summary: The collection reference for a policy
+    fullName: collection
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'collection?: CollectionReference_2'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure-rest/purview-administration.CollectionReference_2|beta" />
+  - name: decisionRules
+    uid: >-
+      @azure-rest/purview-administration.MetadataPolicyProperties.decisionRules|beta
+    package: '@azure-rest/purview-administration|beta'
+    summary: The DecisionRules of policy
+    fullName: decisionRules
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'decisionRules?: Array<DecisionRule>'
+      return:
+        description: ''
+        type: >-
+          Array&lt;<xref
+          uid="@azure-rest/purview-administration.DecisionRule|beta" />&gt;
+  - name: description
+    uid: >-
+      @azure-rest/purview-administration.MetadataPolicyProperties.description|beta
+    package: '@azure-rest/purview-administration|beta'
+    summary: The description of policy
+    fullName: description
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'description?: string'
+      return:
+        description: ''
+        type: string
+  - name: parentCollectionName
+    uid: >-
+      @azure-rest/purview-administration.MetadataPolicyProperties.parentCollectionName|beta
+    package: '@azure-rest/purview-administration|beta'
+    summary: The parent collection of the policy
+    fullName: parentCollectionName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'parentCollectionName?: string'
+      return:
+        description: ''
+        type: string

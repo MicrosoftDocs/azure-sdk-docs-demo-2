@@ -1,0 +1,63 @@
+### YamlMime:TSType
+name: LogMetricTrigger
+uid: '@azure/arm-monitor.LogMetricTrigger|stable'
+package: '@azure/arm-monitor|stable'
+summary: A log metrics trigger descriptor.
+fullName: LogMetricTrigger
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: metricColumn
+    uid: '@azure/arm-monitor.LogMetricTrigger.metricColumn|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: Evaluation of metric on a particular column
+    fullName: metricColumn
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'metricColumn?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: metricTriggerType
+    uid: '@azure/arm-monitor.LogMetricTrigger.metricTriggerType|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: Metric Trigger Type - 'Consecutive' or 'Total'
+    fullName: metricTriggerType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'metricTriggerType?: MetricTriggerType'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-monitor.MetricTriggerType|stable" />
+  - name: threshold
+    uid: '@azure/arm-monitor.LogMetricTrigger.threshold|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: The threshold of the metric trigger.
+    fullName: threshold
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'threshold?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: thresholdOperator
+    uid: '@azure/arm-monitor.LogMetricTrigger.thresholdOperator|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: Evaluation operation for Metric -'GreaterThan' or 'LessThan' or 'Equal'.
+    fullName: thresholdOperator
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'thresholdOperator?: ConditionalOperator'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-monitor.ConditionalOperator|stable" />

@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: NameAvailabilityRequest
+uid: '@azure/arm-postgresql.NameAvailabilityRequest|stable'
+package: '@azure/arm-postgresql|stable'
+summary: Request from client to check resource name availability.
+fullName: NameAvailabilityRequest
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: name
+    uid: '@azure/arm-postgresql.NameAvailabilityRequest.name|stable'
+    package: '@azure/arm-postgresql|stable'
+    summary: Resource name to verify.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: string'
+      return:
+        description: ''
+        type: string
+  - name: type
+    uid: '@azure/arm-postgresql.NameAvailabilityRequest.type|stable'
+    package: '@azure/arm-postgresql|stable'
+    summary: Resource type used for verification.
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

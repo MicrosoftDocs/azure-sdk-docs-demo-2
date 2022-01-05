@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: AvroSource
+uid: '@azure/synapse-artifacts.AvroSource|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: A copy activity Avro source.
+fullName: AvroSource
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type AvroSource = CopySource & { additionalColumns?: any, storeSettings?:
+  StoreReadSettingsUnion, type: "AvroSource" }

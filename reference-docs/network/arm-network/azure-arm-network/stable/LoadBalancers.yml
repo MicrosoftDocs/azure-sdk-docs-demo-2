@@ -1,0 +1,423 @@
+### YamlMime:TSType
+name: LoadBalancers
+uid: '@azure/arm-network.LoadBalancers|stable'
+package: '@azure/arm-network|stable'
+summary: Interface representing a LoadBalancers.
+fullName: LoadBalancers
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      beginCreateOrUpdate(string, string, LoadBalancer,
+      LoadBalancersCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-network.LoadBalancers.beginCreateOrUpdate|stable'
+    package: '@azure/arm-network|stable'
+    summary: Creates or updates a load balancer.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string,
+        loadBalancerName: string, parameters: LoadBalancer, options?:
+        LoadBalancersCreateOrUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<LoadBalancersCreateOrUpdateResponse>,
+        LoadBalancersCreateOrUpdateResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: loadBalancerName
+          type: string
+          description: The name of the load balancer.
+        - id: parameters
+          type: <xref uid="@azure/arm-network.LoadBalancer|stable" />
+          description: Parameters supplied to the create or update load balancer operation.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.LoadBalancersCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-network.LoadBalancersCreateOrUpdateResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-network.LoadBalancersCreateOrUpdateResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginCreateOrUpdateAndWait(string, string, LoadBalancer,
+      LoadBalancersCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-network.LoadBalancers.beginCreateOrUpdateAndWait|stable'
+    package: '@azure/arm-network|stable'
+    summary: Creates or updates a load balancer.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdateAndWait(resourceGroupName: string,
+        loadBalancerName: string, parameters: LoadBalancer, options?:
+        LoadBalancersCreateOrUpdateOptionalParams):
+        Promise<LoadBalancersCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: loadBalancerName
+          type: string
+          description: The name of the load balancer.
+        - id: parameters
+          type: <xref uid="@azure/arm-network.LoadBalancer|stable" />
+          description: Parameters supplied to the create or update load balancer operation.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.LoadBalancersCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.LoadBalancersCreateOrUpdateResponse|stable"
+          />&gt;
+  - name: beginDelete(string, string, LoadBalancersDeleteOptionalParams)
+    uid: '@azure/arm-network.LoadBalancers.beginDelete|stable'
+    package: '@azure/arm-network|stable'
+    summary: Deletes the specified load balancer.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDelete(resourceGroupName: string, loadBalancerName:
+        string, options?: LoadBalancersDeleteOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: loadBalancerName
+          type: string
+          description: The name of the load balancer.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.LoadBalancersDeleteOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: beginDeleteAndWait(string, string, LoadBalancersDeleteOptionalParams)
+    uid: '@azure/arm-network.LoadBalancers.beginDeleteAndWait|stable'
+    package: '@azure/arm-network|stable'
+    summary: Deletes the specified load balancer.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteAndWait(resourceGroupName: string, loadBalancerName:
+        string, options?: LoadBalancersDeleteOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: loadBalancerName
+          type: string
+          description: The name of the load balancer.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.LoadBalancersDeleteOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      beginListInboundNatRulePortMappings(string, string, string,
+      QueryInboundNatRulePortMappingRequest,
+      LoadBalancersListInboundNatRulePortMappingsOptionalParams)
+    uid: >-
+      @azure/arm-network.LoadBalancers.beginListInboundNatRulePortMappings|stable
+    package: '@azure/arm-network|stable'
+    summary: List of inbound NAT rule port mappings.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginListInboundNatRulePortMappings(groupName: string,
+        loadBalancerName: string, backendPoolName: string, parameters:
+        QueryInboundNatRulePortMappingRequest, options?:
+        LoadBalancersListInboundNatRulePortMappingsOptionalParams):
+        Promise<PollerLike<PollOperationState<LoadBalancersListInboundNatRulePortMappingsResponse>,
+        LoadBalancersListInboundNatRulePortMappingsResponse>>
+      parameters:
+        - id: groupName
+          type: string
+          description: The name of the resource group.
+        - id: loadBalancerName
+          type: string
+          description: The name of the load balancer.
+        - id: backendPoolName
+          type: string
+          description: The name of the load balancer backend address pool.
+        - id: parameters
+          type: >-
+            <xref
+            uid="@azure/arm-network.QueryInboundNatRulePortMappingRequest|stable"
+            />
+          description: Query inbound NAT rule port mapping request.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.LoadBalancersListInboundNatRulePortMappingsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-network.LoadBalancersListInboundNatRulePortMappingsResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-network.LoadBalancersListInboundNatRulePortMappingsResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginListInboundNatRulePortMappingsAndWait(string, string, string,
+      QueryInboundNatRulePortMappingRequest,
+      LoadBalancersListInboundNatRulePortMappingsOptionalParams)
+    uid: >-
+      @azure/arm-network.LoadBalancers.beginListInboundNatRulePortMappingsAndWait|stable
+    package: '@azure/arm-network|stable'
+    summary: List of inbound NAT rule port mappings.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginListInboundNatRulePortMappingsAndWait(groupName: string,
+        loadBalancerName: string, backendPoolName: string, parameters:
+        QueryInboundNatRulePortMappingRequest, options?:
+        LoadBalancersListInboundNatRulePortMappingsOptionalParams):
+        Promise<LoadBalancersListInboundNatRulePortMappingsResponse>
+      parameters:
+        - id: groupName
+          type: string
+          description: The name of the resource group.
+        - id: loadBalancerName
+          type: string
+          description: The name of the load balancer.
+        - id: backendPoolName
+          type: string
+          description: The name of the load balancer backend address pool.
+        - id: parameters
+          type: >-
+            <xref
+            uid="@azure/arm-network.QueryInboundNatRulePortMappingRequest|stable"
+            />
+          description: Query inbound NAT rule port mapping request.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.LoadBalancersListInboundNatRulePortMappingsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.LoadBalancersListInboundNatRulePortMappingsResponse|stable"
+          />&gt;
+  - name: >-
+      beginSwapPublicIpAddresses(string, LoadBalancerVipSwapRequest,
+      LoadBalancersSwapPublicIpAddressesOptionalParams)
+    uid: '@azure/arm-network.LoadBalancers.beginSwapPublicIpAddresses|stable'
+    package: '@azure/arm-network|stable'
+    summary: Swaps VIPs between two load balancers.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginSwapPublicIpAddresses(location: string, parameters:
+        LoadBalancerVipSwapRequest, options?:
+        LoadBalancersSwapPublicIpAddressesOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: location
+          type: string
+          description: The region where load balancers are located at.
+        - id: parameters
+          type: <xref uid="@azure/arm-network.LoadBalancerVipSwapRequest|stable" />
+          description: Parameters that define which VIPs should be swapped.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.LoadBalancersSwapPublicIpAddressesOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: >-
+      beginSwapPublicIpAddressesAndWait(string, LoadBalancerVipSwapRequest,
+      LoadBalancersSwapPublicIpAddressesOptionalParams)
+    uid: '@azure/arm-network.LoadBalancers.beginSwapPublicIpAddressesAndWait|stable'
+    package: '@azure/arm-network|stable'
+    summary: Swaps VIPs between two load balancers.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginSwapPublicIpAddressesAndWait(location: string, parameters:
+        LoadBalancerVipSwapRequest, options?:
+        LoadBalancersSwapPublicIpAddressesOptionalParams): Promise<void>
+      parameters:
+        - id: location
+          type: string
+          description: The region where load balancers are located at.
+        - id: parameters
+          type: <xref uid="@azure/arm-network.LoadBalancerVipSwapRequest|stable" />
+          description: Parameters that define which VIPs should be swapped.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.LoadBalancersSwapPublicIpAddressesOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: get(string, string, LoadBalancersGetOptionalParams)
+    uid: '@azure/arm-network.LoadBalancers.get|stable'
+    package: '@azure/arm-network|stable'
+    summary: Gets the specified load balancer.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, loadBalancerName: string,
+        options?: LoadBalancersGetOptionalParams):
+        Promise<LoadBalancersGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: loadBalancerName
+          type: string
+          description: The name of the load balancer.
+        - id: options
+          type: >-
+            <xref uid="@azure/arm-network.LoadBalancersGetOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.LoadBalancersGetResponse|stable" />&gt;
+  - name: list(string, LoadBalancersListOptionalParams)
+    uid: '@azure/arm-network.LoadBalancers.list|stable'
+    package: '@azure/arm-network|stable'
+    summary: Gets all the load balancers in a resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, options?:
+        LoadBalancersListOptionalParams):
+        PagedAsyncIterableIterator<LoadBalancer>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.LoadBalancersListOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-network.LoadBalancer|stable" />&gt;
+  - name: listAll(LoadBalancersListAllOptionalParams)
+    uid: '@azure/arm-network.LoadBalancers.listAll|stable'
+    package: '@azure/arm-network|stable'
+    summary: Gets all the load balancers in a subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listAll(options?: LoadBalancersListAllOptionalParams):
+        PagedAsyncIterableIterator<LoadBalancer>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.LoadBalancersListAllOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-network.LoadBalancer|stable" />&gt;
+  - name: >-
+      updateTags(string, string, TagsObject,
+      LoadBalancersUpdateTagsOptionalParams)
+    uid: '@azure/arm-network.LoadBalancers.updateTags|stable'
+    package: '@azure/arm-network|stable'
+    summary: Updates a load balancer tags.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string, loadBalancerName: string,
+        parameters: TagsObject, options?:
+        LoadBalancersUpdateTagsOptionalParams):
+        Promise<LoadBalancersUpdateTagsResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: loadBalancerName
+          type: string
+          description: The name of the load balancer.
+        - id: parameters
+          type: <xref uid="@azure/arm-network.TagsObject|stable" />
+          description: Parameters supplied to update load balancer tags.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.LoadBalancersUpdateTagsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.LoadBalancersUpdateTagsResponse|stable" />&gt;

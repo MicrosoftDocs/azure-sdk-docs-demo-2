@@ -74,13 +74,12 @@ properties:
       return:
         description: ''
         type: string
-methods:
+inheritedMethods:
   - name: >-
       sendOperationRequest(OperationArguments, OperationSpec,
       ServiceCallback<any>)
-    uid: >-
-      @azure/storage-file-datalake.StorageClientContext.sendOperationRequest|beta
-    package: '@azure/storage-file-datalake|beta'
+    uid: '@azure/storage-file-datalake.StorageClientContext.sendOperationRequest'
+    package: '@azure/storage-file-datalake'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
     isPreview: false
@@ -107,8 +106,8 @@ methods:
         description: ''
         type: Promise&lt;RestResponse&gt;
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
-    uid: '@azure/storage-file-datalake.StorageClientContext.sendRequest|beta'
-    package: '@azure/storage-file-datalake|beta'
+    uid: '@azure/storage-file-datalake.StorageClientContext.sendRequest'
+    package: '@azure/storage-file-datalake'
     summary: Send the provided httpRequest.
     remarks: ''
     isPreview: false

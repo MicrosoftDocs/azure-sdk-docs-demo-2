@@ -1,0 +1,45 @@
+### YamlMime:TSEnum
+name: KnownStreamingEndpointResourceState
+uid: '@azure/arm-mediaservices.KnownStreamingEndpointResourceState|stable'
+package: '@azure/arm-mediaservices|stable'
+summary: >-
+  Known values of
+  <xref:@azure/arm-mediaservices.KnownStreamingEndpointResourceState|stable>
+  that the service accepts.
+fullName: KnownStreamingEndpointResourceState
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: Deleting
+    uid: >-
+      @azure/arm-mediaservices.KnownStreamingEndpointResourceState.Deleting|stable
+    package: '@azure/arm-mediaservices|stable'
+    summary: The streaming endpoint is being deleted.
+  - name: Running
+    uid: >-
+      @azure/arm-mediaservices.KnownStreamingEndpointResourceState.Running|stable
+    package: '@azure/arm-mediaservices|stable'
+    summary: The streaming endpoint is running. It is able to stream content to clients
+  - name: Scaling
+    uid: >-
+      @azure/arm-mediaservices.KnownStreamingEndpointResourceState.Scaling|stable
+    package: '@azure/arm-mediaservices|stable'
+    summary: The streaming endpoint is increasing or decreasing scale units.
+  - name: Starting
+    uid: >-
+      @azure/arm-mediaservices.KnownStreamingEndpointResourceState.Starting|stable
+    package: '@azure/arm-mediaservices|stable'
+    summary: The streaming endpoint is transitioning to the running state.
+  - name: Stopped
+    uid: >-
+      @azure/arm-mediaservices.KnownStreamingEndpointResourceState.Stopped|stable
+    package: '@azure/arm-mediaservices|stable'
+    summary: >-
+      The initial state of a streaming endpoint after creation. Content is not
+      ready to be streamed from this endpoint.
+  - name: Stopping
+    uid: >-
+      @azure/arm-mediaservices.KnownStreamingEndpointResourceState.Stopping|stable
+    package: '@azure/arm-mediaservices|stable'
+    summary: The streaming endpoint is transitioning to the stopped state.

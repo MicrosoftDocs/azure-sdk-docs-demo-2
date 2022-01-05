@@ -1,0 +1,52 @@
+### YamlMime:TSType
+name: TrackPropertyCondition
+uid: '@azure/arm-mediaservices.TrackPropertyCondition|stable'
+package: '@azure/arm-mediaservices|stable'
+summary: Class to specify one track property condition
+fullName: TrackPropertyCondition
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: operation
+    uid: '@azure/arm-mediaservices.TrackPropertyCondition.operation|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: Track property condition operation
+    fullName: operation
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'operation: TrackPropertyCompareOperation'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-mediaservices.TrackPropertyCompareOperation|stable" />
+  - name: property
+    uid: '@azure/arm-mediaservices.TrackPropertyCondition.property|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: Track property type
+    fullName: property
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'property: TrackPropertyType'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mediaservices.TrackPropertyType|stable" />
+  - name: value
+    uid: '@azure/arm-mediaservices.TrackPropertyCondition.value|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: Track property value
+    fullName: value
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

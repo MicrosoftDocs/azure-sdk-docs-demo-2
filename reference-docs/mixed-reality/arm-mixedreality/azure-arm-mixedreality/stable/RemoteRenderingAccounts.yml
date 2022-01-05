@@ -1,0 +1,855 @@
+### YamlMime:TSType
+name: RemoteRenderingAccounts
+uid: '@azure/arm-mixedreality.RemoteRenderingAccounts|stable'
+package: '@azure/arm-mixedreality|stable'
+summary: Class representing a RemoteRenderingAccounts.
+fullName: RemoteRenderingAccounts
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: RemoteRenderingAccounts(MixedRealityClientContext)
+    uid: '@azure/arm-mixedreality.RemoteRenderingAccounts.constructor|stable'
+    package: '@azure/arm-mixedreality|stable'
+    summary: Create a RemoteRenderingAccounts.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'new RemoteRenderingAccounts(client: MixedRealityClientContext)'
+      parameters:
+        - id: client
+          type: >-
+            <xref uid="@azure/arm-mixedreality.MixedRealityClientContext|stable"
+            />
+          description: |
+            Reference to the service client.
+methods:
+  - name: create(string, string, RemoteRenderingAccount, msRest.RequestOptionsBase)
+    uid: '@azure/arm-mixedreality.RemoteRenderingAccounts.create|stable'
+    package: '@azure/arm-mixedreality|stable'
+    summary: Creating or Updating a Remote Rendering Account.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function create(resourceGroupName: string, accountName: string,
+        remoteRenderingAccount: RemoteRenderingAccount, options?:
+        msRest.RequestOptionsBase):
+        Promise<Models.RemoteRenderingAccountsCreateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of an Azure resource group.
+        - id: accountName
+          type: string
+          description: Name of an Mixed Reality Account.
+        - id: remoteRenderingAccount
+          type: <xref uid="@azure/arm-mixedreality.RemoteRenderingAccount|stable" />
+          description: Remote Rendering Account parameter.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.RemoteRenderingAccountsCreateResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-mixedreality.RemoteRenderingAccountsCreateResponse|stable"
+          />&gt;
+  - name: >-
+      create(string, string, RemoteRenderingAccount, RequestOptionsBase,
+      ServiceCallback<RemoteRenderingAccount>)
+    uid: '@azure/arm-mixedreality.RemoteRenderingAccounts.create_2|stable'
+    package: '@azure/arm-mixedreality|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function create(resourceGroupName: string, accountName: string,
+        remoteRenderingAccount: RemoteRenderingAccount, options:
+        RequestOptionsBase, callback: ServiceCallback<RemoteRenderingAccount>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of an Azure resource group.
+        - id: accountName
+          type: string
+          description: Name of an Mixed Reality Account.
+        - id: remoteRenderingAccount
+          type: <xref uid="@azure/arm-mixedreality.RemoteRenderingAccount|stable" />
+          description: Remote Rendering Account parameter.
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-mixedreality.RemoteRenderingAccount|stable" />&gt;
+          description: |
+            The callback
+  - name: >-
+      create(string, string, RemoteRenderingAccount,
+      ServiceCallback<RemoteRenderingAccount>)
+    uid: '@azure/arm-mixedreality.RemoteRenderingAccounts.create_1|stable'
+    package: '@azure/arm-mixedreality|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function create(resourceGroupName: string, accountName: string,
+        remoteRenderingAccount: RemoteRenderingAccount, callback:
+        ServiceCallback<RemoteRenderingAccount>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of an Azure resource group.
+        - id: accountName
+          type: string
+          description: Name of an Mixed Reality Account.
+        - id: remoteRenderingAccount
+          type: <xref uid="@azure/arm-mixedreality.RemoteRenderingAccount|stable" />
+          description: Remote Rendering Account parameter.
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-mixedreality.RemoteRenderingAccount|stable" />&gt;
+          description: |
+            The callback
+  - name: deleteMethod(string, string, msRest.RequestOptionsBase)
+    uid: '@azure/arm-mixedreality.RemoteRenderingAccounts.deleteMethod|stable'
+    package: '@azure/arm-mixedreality|stable'
+    summary: Delete a Remote Rendering Account.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, accountName: string,
+        options?: msRest.RequestOptionsBase): Promise<RestResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of an Azure resource group.
+        - id: accountName
+          type: string
+          description: Name of an Mixed Reality Account.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<msRest.RestResponse>
+        type: Promise&lt;RestResponse&gt;
+  - name: deleteMethod(string, string, RequestOptionsBase, ServiceCallback<void>)
+    uid: '@azure/arm-mixedreality.RemoteRenderingAccounts.deleteMethod_2|stable'
+    package: '@azure/arm-mixedreality|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, accountName: string,
+        options: RequestOptionsBase, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of an Azure resource group.
+        - id: accountName
+          type: string
+          description: Name of an Mixed Reality Account.
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: ServiceCallback&lt;void&gt;
+          description: |
+            The callback
+  - name: deleteMethod(string, string, ServiceCallback<void>)
+    uid: '@azure/arm-mixedreality.RemoteRenderingAccounts.deleteMethod_1|stable'
+    package: '@azure/arm-mixedreality|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, accountName: string,
+        callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of an Azure resource group.
+        - id: accountName
+          type: string
+          description: Name of an Mixed Reality Account.
+        - id: callback
+          type: ServiceCallback&lt;void&gt;
+          description: |
+            The callback
+  - name: get(string, string, msRest.RequestOptionsBase)
+    uid: '@azure/arm-mixedreality.RemoteRenderingAccounts.get|stable'
+    package: '@azure/arm-mixedreality|stable'
+    summary: Retrieve a Remote Rendering Account.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, accountName: string, options?:
+        msRest.RequestOptionsBase):
+        Promise<Models.RemoteRenderingAccountsGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of an Azure resource group.
+        - id: accountName
+          type: string
+          description: Name of an Mixed Reality Account.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.RemoteRenderingAccountsGetResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-mixedreality.RemoteRenderingAccountsGetResponse|stable"
+          />&gt;
+  - name: >-
+      get(string, string, RequestOptionsBase,
+      ServiceCallback<RemoteRenderingAccount>)
+    uid: '@azure/arm-mixedreality.RemoteRenderingAccounts.get_2|stable'
+    package: '@azure/arm-mixedreality|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, accountName: string, options:
+        RequestOptionsBase, callback: ServiceCallback<RemoteRenderingAccount>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of an Azure resource group.
+        - id: accountName
+          type: string
+          description: Name of an Mixed Reality Account.
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-mixedreality.RemoteRenderingAccount|stable" />&gt;
+          description: |
+            The callback
+  - name: get(string, string, ServiceCallback<RemoteRenderingAccount>)
+    uid: '@azure/arm-mixedreality.RemoteRenderingAccounts.get_1|stable'
+    package: '@azure/arm-mixedreality|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, accountName: string, callback:
+        ServiceCallback<RemoteRenderingAccount>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of an Azure resource group.
+        - id: accountName
+          type: string
+          description: Name of an Mixed Reality Account.
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-mixedreality.RemoteRenderingAccount|stable" />&gt;
+          description: |
+            The callback
+  - name: listByResourceGroup(string, msRest.RequestOptionsBase)
+    uid: '@azure/arm-mixedreality.RemoteRenderingAccounts.listByResourceGroup|stable'
+    package: '@azure/arm-mixedreality|stable'
+    summary: List Resources by Resource Group
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string, options?:
+        msRest.RequestOptionsBase):
+        Promise<Models.RemoteRenderingAccountsListByResourceGroupResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of an Azure resource group.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.RemoteRenderingAccountsListByResourceGroupResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-mixedreality.RemoteRenderingAccountsListByResourceGroupResponse|stable"
+          />&gt;
+  - name: >-
+      listByResourceGroup(string, RequestOptionsBase,
+      ServiceCallback<RemoteRenderingAccountPage>)
+    uid: >-
+      @azure/arm-mixedreality.RemoteRenderingAccounts.listByResourceGroup_2|stable
+    package: '@azure/arm-mixedreality|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string, options:
+        RequestOptionsBase, callback:
+        ServiceCallback<RemoteRenderingAccountPage>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of an Azure resource group.
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-mixedreality.RemoteRenderingAccountPage|stable"
+            />&gt;
+          description: |
+            The callback
+  - name: listByResourceGroup(string, ServiceCallback<RemoteRenderingAccountPage>)
+    uid: >-
+      @azure/arm-mixedreality.RemoteRenderingAccounts.listByResourceGroup_1|stable
+    package: '@azure/arm-mixedreality|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string, callback:
+        ServiceCallback<RemoteRenderingAccountPage>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of an Azure resource group.
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-mixedreality.RemoteRenderingAccountPage|stable"
+            />&gt;
+          description: |
+            The callback
+  - name: listByResourceGroupNext(string, msRest.RequestOptionsBase)
+    uid: >-
+      @azure/arm-mixedreality.RemoteRenderingAccounts.listByResourceGroupNext|stable
+    package: '@azure/arm-mixedreality|stable'
+    summary: List Resources by Resource Group
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByResourceGroupNext(nextPageLink: string, options?:
+        msRest.RequestOptionsBase):
+        Promise<Models.RemoteRenderingAccountsListByResourceGroupNextResponse>
+      parameters:
+        - id: nextPageLink
+          type: string
+          description: The NextLink from the previous successful call to List operation.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.RemoteRenderingAccountsListByResourceGroupNextResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-mixedreality.RemoteRenderingAccountsListByResourceGroupNextResponse|stable"
+          />&gt;
+  - name: >-
+      listByResourceGroupNext(string, RequestOptionsBase,
+      ServiceCallback<RemoteRenderingAccountPage>)
+    uid: >-
+      @azure/arm-mixedreality.RemoteRenderingAccounts.listByResourceGroupNext_2|stable
+    package: '@azure/arm-mixedreality|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByResourceGroupNext(nextPageLink: string, options:
+        RequestOptionsBase, callback:
+        ServiceCallback<RemoteRenderingAccountPage>)
+      parameters:
+        - id: nextPageLink
+          type: string
+          description: The NextLink from the previous successful call to List operation.
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-mixedreality.RemoteRenderingAccountPage|stable"
+            />&gt;
+          description: |
+            The callback
+  - name: >-
+      listByResourceGroupNext(string,
+      ServiceCallback<RemoteRenderingAccountPage>)
+    uid: >-
+      @azure/arm-mixedreality.RemoteRenderingAccounts.listByResourceGroupNext_1|stable
+    package: '@azure/arm-mixedreality|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByResourceGroupNext(nextPageLink: string, callback:
+        ServiceCallback<RemoteRenderingAccountPage>)
+      parameters:
+        - id: nextPageLink
+          type: string
+          description: The NextLink from the previous successful call to List operation.
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-mixedreality.RemoteRenderingAccountPage|stable"
+            />&gt;
+          description: |
+            The callback
+  - name: listBySubscription(msRest.RequestOptionsBase)
+    uid: '@azure/arm-mixedreality.RemoteRenderingAccounts.listBySubscription|stable'
+    package: '@azure/arm-mixedreality|stable'
+    summary: List Remote Rendering Accounts by Subscription
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listBySubscription(options?: msRest.RequestOptionsBase):
+        Promise<Models.RemoteRenderingAccountsListBySubscriptionResponse>
+      parameters:
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.RemoteRenderingAccountsListBySubscriptionResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-mixedreality.RemoteRenderingAccountsListBySubscriptionResponse|stable"
+          />&gt;
+  - name: >-
+      listBySubscription(RequestOptionsBase,
+      ServiceCallback<RemoteRenderingAccountPage>)
+    uid: >-
+      @azure/arm-mixedreality.RemoteRenderingAccounts.listBySubscription_2|stable
+    package: '@azure/arm-mixedreality|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listBySubscription(options: RequestOptionsBase, callback:
+        ServiceCallback<RemoteRenderingAccountPage>)
+      parameters:
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-mixedreality.RemoteRenderingAccountPage|stable"
+            />&gt;
+          description: |
+            The callback
+  - name: listBySubscription(ServiceCallback<RemoteRenderingAccountPage>)
+    uid: >-
+      @azure/arm-mixedreality.RemoteRenderingAccounts.listBySubscription_1|stable
+    package: '@azure/arm-mixedreality|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listBySubscription(callback:
+        ServiceCallback<RemoteRenderingAccountPage>)
+      parameters:
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-mixedreality.RemoteRenderingAccountPage|stable"
+            />&gt;
+          description: |
+            The callback
+  - name: listBySubscriptionNext(string, msRest.RequestOptionsBase)
+    uid: >-
+      @azure/arm-mixedreality.RemoteRenderingAccounts.listBySubscriptionNext|stable
+    package: '@azure/arm-mixedreality|stable'
+    summary: List Remote Rendering Accounts by Subscription
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listBySubscriptionNext(nextPageLink: string, options?:
+        msRest.RequestOptionsBase):
+        Promise<Models.RemoteRenderingAccountsListBySubscriptionNextResponse>
+      parameters:
+        - id: nextPageLink
+          type: string
+          description: The NextLink from the previous successful call to List operation.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.RemoteRenderingAccountsListBySubscriptionNextResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-mixedreality.RemoteRenderingAccountsListBySubscriptionNextResponse|stable"
+          />&gt;
+  - name: >-
+      listBySubscriptionNext(string, RequestOptionsBase,
+      ServiceCallback<RemoteRenderingAccountPage>)
+    uid: >-
+      @azure/arm-mixedreality.RemoteRenderingAccounts.listBySubscriptionNext_2|stable
+    package: '@azure/arm-mixedreality|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listBySubscriptionNext(nextPageLink: string, options:
+        RequestOptionsBase, callback:
+        ServiceCallback<RemoteRenderingAccountPage>)
+      parameters:
+        - id: nextPageLink
+          type: string
+          description: The NextLink from the previous successful call to List operation.
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-mixedreality.RemoteRenderingAccountPage|stable"
+            />&gt;
+          description: |
+            The callback
+  - name: >-
+      listBySubscriptionNext(string,
+      ServiceCallback<RemoteRenderingAccountPage>)
+    uid: >-
+      @azure/arm-mixedreality.RemoteRenderingAccounts.listBySubscriptionNext_1|stable
+    package: '@azure/arm-mixedreality|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listBySubscriptionNext(nextPageLink: string, callback:
+        ServiceCallback<RemoteRenderingAccountPage>)
+      parameters:
+        - id: nextPageLink
+          type: string
+          description: The NextLink from the previous successful call to List operation.
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-mixedreality.RemoteRenderingAccountPage|stable"
+            />&gt;
+          description: |
+            The callback
+  - name: listKeys(string, string, msRest.RequestOptionsBase)
+    uid: '@azure/arm-mixedreality.RemoteRenderingAccounts.listKeys|stable'
+    package: '@azure/arm-mixedreality|stable'
+    summary: List Both of the 2 Keys of a Remote Rendering Account
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listKeys(resourceGroupName: string, accountName: string,
+        options?: msRest.RequestOptionsBase):
+        Promise<Models.RemoteRenderingAccountsListKeysResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of an Azure resource group.
+        - id: accountName
+          type: string
+          description: Name of an Mixed Reality Account.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.RemoteRenderingAccountsListKeysResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-mixedreality.RemoteRenderingAccountsListKeysResponse|stable"
+          />&gt;
+  - name: listKeys(string, string, RequestOptionsBase, ServiceCallback<AccountKeys>)
+    uid: '@azure/arm-mixedreality.RemoteRenderingAccounts.listKeys_2|stable'
+    package: '@azure/arm-mixedreality|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listKeys(resourceGroupName: string, accountName: string,
+        options: RequestOptionsBase, callback: ServiceCallback<AccountKeys>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of an Azure resource group.
+        - id: accountName
+          type: string
+          description: Name of an Mixed Reality Account.
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-mixedreality.AccountKeys|stable" />&gt;
+          description: |
+            The callback
+  - name: listKeys(string, string, ServiceCallback<AccountKeys>)
+    uid: '@azure/arm-mixedreality.RemoteRenderingAccounts.listKeys_1|stable'
+    package: '@azure/arm-mixedreality|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listKeys(resourceGroupName: string, accountName: string,
+        callback: ServiceCallback<AccountKeys>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of an Azure resource group.
+        - id: accountName
+          type: string
+          description: Name of an Mixed Reality Account.
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-mixedreality.AccountKeys|stable" />&gt;
+          description: |
+            The callback
+  - name: >-
+      regenerateKeys(string, string, AccountKeyRegenerateRequest,
+      msRest.RequestOptionsBase)
+    uid: '@azure/arm-mixedreality.RemoteRenderingAccounts.regenerateKeys|stable'
+    package: '@azure/arm-mixedreality|stable'
+    summary: Regenerate specified Key of a Remote Rendering Account
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function regenerateKeys(resourceGroupName: string, accountName: string,
+        regenerate: AccountKeyRegenerateRequest, options?:
+        msRest.RequestOptionsBase):
+        Promise<Models.RemoteRenderingAccountsRegenerateKeysResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of an Azure resource group.
+        - id: accountName
+          type: string
+          description: Name of an Mixed Reality Account.
+        - id: regenerate
+          type: >-
+            <xref
+            uid="@azure/arm-mixedreality.AccountKeyRegenerateRequest|stable" />
+          description: Required information for key regeneration.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.RemoteRenderingAccountsRegenerateKeysResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-mixedreality.RemoteRenderingAccountsRegenerateKeysResponse|stable"
+          />&gt;
+  - name: >-
+      regenerateKeys(string, string, AccountKeyRegenerateRequest,
+      RequestOptionsBase, ServiceCallback<AccountKeys>)
+    uid: '@azure/arm-mixedreality.RemoteRenderingAccounts.regenerateKeys_2|stable'
+    package: '@azure/arm-mixedreality|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function regenerateKeys(resourceGroupName: string, accountName: string,
+        regenerate: AccountKeyRegenerateRequest, options: RequestOptionsBase,
+        callback: ServiceCallback<AccountKeys>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of an Azure resource group.
+        - id: accountName
+          type: string
+          description: Name of an Mixed Reality Account.
+        - id: regenerate
+          type: >-
+            <xref
+            uid="@azure/arm-mixedreality.AccountKeyRegenerateRequest|stable" />
+          description: Required information for key regeneration.
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-mixedreality.AccountKeys|stable" />&gt;
+          description: |
+            The callback
+  - name: >-
+      regenerateKeys(string, string, AccountKeyRegenerateRequest,
+      ServiceCallback<AccountKeys>)
+    uid: '@azure/arm-mixedreality.RemoteRenderingAccounts.regenerateKeys_1|stable'
+    package: '@azure/arm-mixedreality|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function regenerateKeys(resourceGroupName: string, accountName: string,
+        regenerate: AccountKeyRegenerateRequest, callback:
+        ServiceCallback<AccountKeys>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of an Azure resource group.
+        - id: accountName
+          type: string
+          description: Name of an Mixed Reality Account.
+        - id: regenerate
+          type: >-
+            <xref
+            uid="@azure/arm-mixedreality.AccountKeyRegenerateRequest|stable" />
+          description: Required information for key regeneration.
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-mixedreality.AccountKeys|stable" />&gt;
+          description: |
+            The callback
+  - name: update(string, string, RemoteRenderingAccount, msRest.RequestOptionsBase)
+    uid: '@azure/arm-mixedreality.RemoteRenderingAccounts.update|stable'
+    package: '@azure/arm-mixedreality|stable'
+    summary: Updating a Remote Rendering Account
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function update(resourceGroupName: string, accountName: string,
+        remoteRenderingAccount: RemoteRenderingAccount, options?:
+        msRest.RequestOptionsBase):
+        Promise<Models.RemoteRenderingAccountsUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of an Azure resource group.
+        - id: accountName
+          type: string
+          description: Name of an Mixed Reality Account.
+        - id: remoteRenderingAccount
+          type: <xref uid="@azure/arm-mixedreality.RemoteRenderingAccount|stable" />
+          description: Remote Rendering Account parameter.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.RemoteRenderingAccountsUpdateResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-mixedreality.RemoteRenderingAccountsUpdateResponse|stable"
+          />&gt;
+  - name: >-
+      update(string, string, RemoteRenderingAccount, RequestOptionsBase,
+      ServiceCallback<RemoteRenderingAccount>)
+    uid: '@azure/arm-mixedreality.RemoteRenderingAccounts.update_2|stable'
+    package: '@azure/arm-mixedreality|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function update(resourceGroupName: string, accountName: string,
+        remoteRenderingAccount: RemoteRenderingAccount, options:
+        RequestOptionsBase, callback: ServiceCallback<RemoteRenderingAccount>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of an Azure resource group.
+        - id: accountName
+          type: string
+          description: Name of an Mixed Reality Account.
+        - id: remoteRenderingAccount
+          type: <xref uid="@azure/arm-mixedreality.RemoteRenderingAccount|stable" />
+          description: Remote Rendering Account parameter.
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-mixedreality.RemoteRenderingAccount|stable" />&gt;
+          description: |
+            The callback
+  - name: >-
+      update(string, string, RemoteRenderingAccount,
+      ServiceCallback<RemoteRenderingAccount>)
+    uid: '@azure/arm-mixedreality.RemoteRenderingAccounts.update_1|stable'
+    package: '@azure/arm-mixedreality|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function update(resourceGroupName: string, accountName: string,
+        remoteRenderingAccount: RemoteRenderingAccount, callback:
+        ServiceCallback<RemoteRenderingAccount>)
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of an Azure resource group.
+        - id: accountName
+          type: string
+          description: Name of an Mixed Reality Account.
+        - id: remoteRenderingAccount
+          type: <xref uid="@azure/arm-mixedreality.RemoteRenderingAccount|stable" />
+          description: Remote Rendering Account parameter.
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-mixedreality.RemoteRenderingAccount|stable" />&gt;
+          description: |
+            The callback

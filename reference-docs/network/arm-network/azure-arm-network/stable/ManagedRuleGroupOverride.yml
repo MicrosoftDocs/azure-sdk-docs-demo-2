@@ -1,0 +1,39 @@
+### YamlMime:TSType
+name: ManagedRuleGroupOverride
+uid: '@azure/arm-network.ManagedRuleGroupOverride|stable'
+package: '@azure/arm-network|stable'
+summary: Defines a managed rule group override setting.
+fullName: ManagedRuleGroupOverride
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: ruleGroupName
+    uid: '@azure/arm-network.ManagedRuleGroupOverride.ruleGroupName|stable'
+    package: '@azure/arm-network|stable'
+    summary: The managed rule group to override.
+    fullName: ruleGroupName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ruleGroupName: string'
+      return:
+        description: ''
+        type: string
+  - name: rules
+    uid: '@azure/arm-network.ManagedRuleGroupOverride.rules|stable'
+    package: '@azure/arm-network|stable'
+    summary: >-
+      List of rules that will be disabled. If none specified, all rules in the
+      group will be disabled.
+    fullName: rules
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rules?: ManagedRuleOverride[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.ManagedRuleOverride|stable" />[]

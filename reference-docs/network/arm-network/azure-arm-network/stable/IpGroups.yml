@@ -1,0 +1,255 @@
+### YamlMime:TSType
+name: IpGroups
+uid: '@azure/arm-network.IpGroups|stable'
+package: '@azure/arm-network|stable'
+summary: Interface representing a IpGroups.
+fullName: IpGroups
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      beginCreateOrUpdate(string, string, IpGroup,
+      IpGroupsCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-network.IpGroups.beginCreateOrUpdate|stable'
+    package: '@azure/arm-network|stable'
+    summary: Creates or updates an ipGroups in a specified resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string, ipGroupsName:
+        string, parameters: IpGroup, options?:
+        IpGroupsCreateOrUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<IpGroupsCreateOrUpdateResponse>,
+        IpGroupsCreateOrUpdateResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: ipGroupsName
+          type: string
+          description: The name of the ipGroups.
+        - id: parameters
+          type: <xref uid="@azure/arm-network.IpGroup|stable" />
+          description: Parameters supplied to the create or update IpGroups operation.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.IpGroupsCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-network.IpGroupsCreateOrUpdateResponse|stable" />&gt;,
+          <xref uid="@azure/arm-network.IpGroupsCreateOrUpdateResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginCreateOrUpdateAndWait(string, string, IpGroup,
+      IpGroupsCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-network.IpGroups.beginCreateOrUpdateAndWait|stable'
+    package: '@azure/arm-network|stable'
+    summary: Creates or updates an ipGroups in a specified resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdateAndWait(resourceGroupName: string,
+        ipGroupsName: string, parameters: IpGroup, options?:
+        IpGroupsCreateOrUpdateOptionalParams):
+        Promise<IpGroupsCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: ipGroupsName
+          type: string
+          description: The name of the ipGroups.
+        - id: parameters
+          type: <xref uid="@azure/arm-network.IpGroup|stable" />
+          description: Parameters supplied to the create or update IpGroups operation.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.IpGroupsCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.IpGroupsCreateOrUpdateResponse|stable" />&gt;
+  - name: beginDelete(string, string, IpGroupsDeleteOptionalParams)
+    uid: '@azure/arm-network.IpGroups.beginDelete|stable'
+    package: '@azure/arm-network|stable'
+    summary: Deletes the specified ipGroups.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDelete(resourceGroupName: string, ipGroupsName: string,
+        options?: IpGroupsDeleteOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: ipGroupsName
+          type: string
+          description: The name of the ipGroups.
+        - id: options
+          type: >-
+            <xref uid="@azure/arm-network.IpGroupsDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: beginDeleteAndWait(string, string, IpGroupsDeleteOptionalParams)
+    uid: '@azure/arm-network.IpGroups.beginDeleteAndWait|stable'
+    package: '@azure/arm-network|stable'
+    summary: Deletes the specified ipGroups.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteAndWait(resourceGroupName: string, ipGroupsName:
+        string, options?: IpGroupsDeleteOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: ipGroupsName
+          type: string
+          description: The name of the ipGroups.
+        - id: options
+          type: >-
+            <xref uid="@azure/arm-network.IpGroupsDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: get(string, string, IpGroupsGetOptionalParams)
+    uid: '@azure/arm-network.IpGroups.get|stable'
+    package: '@azure/arm-network|stable'
+    summary: Gets the specified ipGroups.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, ipGroupsName: string, options?:
+        IpGroupsGetOptionalParams): Promise<IpGroupsGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: ipGroupsName
+          type: string
+          description: The name of the ipGroups.
+        - id: options
+          type: <xref uid="@azure/arm-network.IpGroupsGetOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref uid="@azure/arm-network.IpGroupsGetResponse|stable"
+          />&gt;
+  - name: list(IpGroupsListOptionalParams)
+    uid: '@azure/arm-network.IpGroups.list|stable'
+    package: '@azure/arm-network|stable'
+    summary: Gets all IpGroups in a subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(options?: IpGroupsListOptionalParams):
+        PagedAsyncIterableIterator<IpGroup>
+      parameters:
+        - id: options
+          type: <xref uid="@azure/arm-network.IpGroupsListOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-network.IpGroup|stable" />&gt;
+  - name: listByResourceGroup(string, IpGroupsListByResourceGroupOptionalParams)
+    uid: '@azure/arm-network.IpGroups.listByResourceGroup|stable'
+    package: '@azure/arm-network|stable'
+    summary: Gets all IpGroups in a resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string, options?:
+        IpGroupsListByResourceGroupOptionalParams):
+        PagedAsyncIterableIterator<IpGroup>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.IpGroupsListByResourceGroupOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-network.IpGroup|stable" />&gt;
+  - name: >-
+      updateGroups(string, string, TagsObject,
+      IpGroupsUpdateGroupsOptionalParams)
+    uid: '@azure/arm-network.IpGroups.updateGroups|stable'
+    package: '@azure/arm-network|stable'
+    summary: Updates tags of an IpGroups resource.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function updateGroups(resourceGroupName: string, ipGroupsName: string,
+        parameters: TagsObject, options?: IpGroupsUpdateGroupsOptionalParams):
+        Promise<IpGroupsUpdateGroupsResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: ipGroupsName
+          type: string
+          description: The name of the ipGroups.
+        - id: parameters
+          type: <xref uid="@azure/arm-network.TagsObject|stable" />
+          description: Parameters supplied to the update ipGroups operation.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.IpGroupsUpdateGroupsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.IpGroupsUpdateGroupsResponse|stable" />&gt;

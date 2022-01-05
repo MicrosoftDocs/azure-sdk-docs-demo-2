@@ -120,13 +120,13 @@ properties:
       return:
         description: ''
         type: string
-methods:
+inheritedMethods:
   - name: >-
       beginLongRunningRequest(RequestPrepareOptions | WebResource,
       RequestOptionsBase)
     uid: >-
-      @azure/arm-keyvault.KeyVaultManagementClientContext.beginLongRunningRequest|stable
-    package: '@azure/arm-keyvault|stable'
+      @azure/arm-keyvault.KeyVaultManagementClientContext.beginLongRunningRequest
+    package: '@azure/arm-keyvault'
     summary: >-
       Send the initial request of a LRO (long running operation) and get back an
 
@@ -154,9 +154,8 @@ methods:
           that provides methods for interacting with the LRO.
         type: Promise&lt;LROPoller&gt;
   - name: restoreLROPoller(LROPollState)
-    uid: >-
-      @azure/arm-keyvault.KeyVaultManagementClientContext.restoreLROPoller|stable
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.KeyVaultManagementClientContext.restoreLROPoller'
+    package: '@azure/arm-keyvault'
     summary: >-
       Restore an LROPoller from the provided LROPollState. This method can be
       used to recreate an
@@ -177,9 +176,8 @@ methods:
   - name: >-
       sendLongRunningRequest(RequestPrepareOptions | WebResource,
       RequestOptionsBase)
-    uid: >-
-      @azure/arm-keyvault.KeyVaultManagementClientContext.sendLongRunningRequest|stable
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.KeyVaultManagementClientContext.sendLongRunningRequest'
+    package: '@azure/arm-keyvault'
     summary: >-
       Provides a mechanism to make a request that will poll and provide the
       final result.
@@ -204,8 +202,8 @@ methods:
           response and the responseBody.
         type: Promise&lt;HttpOperationResponse&gt;
   - name: sendLRORequest(OperationArguments, OperationSpec, RequestOptionsBase)
-    uid: '@azure/arm-keyvault.KeyVaultManagementClientContext.sendLRORequest|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.KeyVaultManagementClientContext.sendLRORequest'
+    package: '@azure/arm-keyvault'
     summary: >-
       Send the initial request of a LRO (long running operation) and get back an
 
@@ -237,9 +235,8 @@ methods:
   - name: >-
       sendOperationRequest(OperationArguments, OperationSpec,
       ServiceCallback<any>)
-    uid: >-
-      @azure/arm-keyvault.KeyVaultManagementClientContext.sendOperationRequest|stable
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.KeyVaultManagementClientContext.sendOperationRequest'
+    package: '@azure/arm-keyvault'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
     isPreview: false
@@ -266,8 +263,8 @@ methods:
         description: ''
         type: Promise&lt;RestResponse&gt;
   - name: sendRequest(RequestPrepareOptions | WebResource)
-    uid: '@azure/arm-keyvault.KeyVaultManagementClientContext.sendRequest|stable'
-    package: '@azure/arm-keyvault|stable'
+    uid: '@azure/arm-keyvault.KeyVaultManagementClientContext.sendRequest'
+    package: '@azure/arm-keyvault'
     summary: Send the provided httpRequest.
     remarks: ''
     isPreview: false

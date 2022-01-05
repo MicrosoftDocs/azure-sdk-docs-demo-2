@@ -1,0 +1,219 @@
+### YamlMime:TSType
+name: KqlScriptOperations
+uid: '@azure/synapse-artifacts.KqlScriptOperations|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: Interface representing a KqlScriptOperations.
+fullName: KqlScriptOperations
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      beginCreateOrUpdate(string, KqlScriptResource,
+      KqlScriptCreateOrUpdateOptionalParams)
+    uid: '@azure/synapse-artifacts.KqlScriptOperations.beginCreateOrUpdate|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Creates or updates a KQL Script
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(kqlScriptName: string, kqlScript:
+        KqlScriptResource, options?: KqlScriptCreateOrUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<KqlScriptCreateOrUpdateResponse>,
+        KqlScriptCreateOrUpdateResponse>>
+      parameters:
+        - id: kqlScriptName
+          type: string
+          description: KQL script name
+        - id: kqlScript
+          type: <xref uid="@azure/synapse-artifacts.KqlScriptResource|beta" />
+          description: KQL script
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-artifacts.KqlScriptCreateOrUpdateOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/synapse-artifacts.KqlScriptCreateOrUpdateResponse|beta"
+          />&gt;, <xref
+          uid="@azure/synapse-artifacts.KqlScriptCreateOrUpdateResponse|beta"
+          />&gt;&gt;
+  - name: >-
+      beginCreateOrUpdateAndWait(string, KqlScriptResource,
+      KqlScriptCreateOrUpdateOptionalParams)
+    uid: >-
+      @azure/synapse-artifacts.KqlScriptOperations.beginCreateOrUpdateAndWait|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: Creates or updates a KQL Script
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdateAndWait(kqlScriptName: string, kqlScript:
+        KqlScriptResource, options?: KqlScriptCreateOrUpdateOptionalParams):
+        Promise<KqlScriptCreateOrUpdateResponse>
+      parameters:
+        - id: kqlScriptName
+          type: string
+          description: KQL script name
+        - id: kqlScript
+          type: <xref uid="@azure/synapse-artifacts.KqlScriptResource|beta" />
+          description: KQL script
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-artifacts.KqlScriptCreateOrUpdateOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/synapse-artifacts.KqlScriptCreateOrUpdateResponse|beta"
+          />&gt;
+  - name: beginDeleteByName(string, KqlScriptDeleteByNameOptionalParams)
+    uid: '@azure/synapse-artifacts.KqlScriptOperations.beginDeleteByName|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Delete KQL script by name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteByName(kqlScriptName: string, options?:
+        KqlScriptDeleteByNameOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: kqlScriptName
+          type: string
+          description: KQL script name
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-artifacts.KqlScriptDeleteByNameOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: beginDeleteByNameAndWait(string, KqlScriptDeleteByNameOptionalParams)
+    uid: '@azure/synapse-artifacts.KqlScriptOperations.beginDeleteByNameAndWait|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Delete KQL script by name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteByNameAndWait(kqlScriptName: string, options?:
+        KqlScriptDeleteByNameOptionalParams): Promise<void>
+      parameters:
+        - id: kqlScriptName
+          type: string
+          description: KQL script name
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-artifacts.KqlScriptDeleteByNameOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: beginRename(string, ArtifactRenameRequest, KqlScriptRenameOptionalParams)
+    uid: '@azure/synapse-artifacts.KqlScriptOperations.beginRename|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Rename KQL script
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginRename(kqlScriptName: string, renameRequest:
+        ArtifactRenameRequest, options?: KqlScriptRenameOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: kqlScriptName
+          type: string
+          description: KQL script name
+        - id: renameRequest
+          type: <xref uid="@azure/synapse-artifacts.ArtifactRenameRequest|beta" />
+          description: Rename request
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-artifacts.KqlScriptRenameOptionalParams|beta" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: >-
+      beginRenameAndWait(string, ArtifactRenameRequest,
+      KqlScriptRenameOptionalParams)
+    uid: '@azure/synapse-artifacts.KqlScriptOperations.beginRenameAndWait|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Rename KQL script
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginRenameAndWait(kqlScriptName: string, renameRequest:
+        ArtifactRenameRequest, options?: KqlScriptRenameOptionalParams):
+        Promise<void>
+      parameters:
+        - id: kqlScriptName
+          type: string
+          description: KQL script name
+        - id: renameRequest
+          type: <xref uid="@azure/synapse-artifacts.ArtifactRenameRequest|beta" />
+          description: Rename request
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-artifacts.KqlScriptRenameOptionalParams|beta" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: getByName(string, KqlScriptGetByNameOptionalParams)
+    uid: '@azure/synapse-artifacts.KqlScriptOperations.getByName|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Get KQL script by name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getByName(kqlScriptName: string, options?:
+        KqlScriptGetByNameOptionalParams): Promise<KqlScriptGetByNameResponse>
+      parameters:
+        - id: kqlScriptName
+          type: string
+          description: KQL script name
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-artifacts.KqlScriptGetByNameOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/synapse-artifacts.KqlScriptGetByNameResponse|beta" />&gt;

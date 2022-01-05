@@ -1,0 +1,41 @@
+### YamlMime:TSType
+name: WebChatChannelProperties
+uid: '@azure/arm-botservice.WebChatChannelProperties|beta'
+package: '@azure/arm-botservice|beta'
+summary: The parameters to provide for the Web Chat channel.
+fullName: WebChatChannelProperties
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: sites
+    uid: '@azure/arm-botservice.WebChatChannelProperties.sites|beta'
+    package: '@azure/arm-botservice|beta'
+    summary: The list of Web Chat sites
+    fullName: sites
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sites?: WebChatSite[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-botservice.WebChatSite|beta" />[]
+  - name: webChatEmbedCode
+    uid: '@azure/arm-botservice.WebChatChannelProperties.webChatEmbedCode|beta'
+    package: '@azure/arm-botservice|beta'
+    summary: >-
+      Web chat control embed code
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: webChatEmbedCode
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'webChatEmbedCode?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

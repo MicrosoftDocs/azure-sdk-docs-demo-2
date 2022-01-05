@@ -1,0 +1,50 @@
+### YamlMime:TSType
+name: CheckPrincipalAccessRequest
+uid: '@azure/synapse-access-control.CheckPrincipalAccessRequest|beta'
+package: '@azure/synapse-access-control|beta'
+summary: Check access request details
+fullName: CheckPrincipalAccessRequest
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: actions
+    uid: '@azure/synapse-access-control.CheckPrincipalAccessRequest.actions|beta'
+    package: '@azure/synapse-access-control|beta'
+    summary: List of actions.
+    fullName: actions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'actions: RequiredAction[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/synapse-access-control.RequiredAction|beta" />[]
+  - name: scope
+    uid: '@azure/synapse-access-control.CheckPrincipalAccessRequest.scope|beta'
+    package: '@azure/synapse-access-control|beta'
+    summary: Scope at which the check access is done.
+    fullName: scope
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'scope: string'
+      return:
+        description: ''
+        type: string
+  - name: subject
+    uid: '@azure/synapse-access-control.CheckPrincipalAccessRequest.subject|beta'
+    package: '@azure/synapse-access-control|beta'
+    summary: Subject details
+    fullName: subject
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'subject: SubjectInfo'
+      return:
+        description: ''
+        type: <xref uid="@azure/synapse-access-control.SubjectInfo|beta" />

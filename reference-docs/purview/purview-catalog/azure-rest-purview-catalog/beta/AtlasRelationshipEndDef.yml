@@ -1,0 +1,89 @@
+### YamlMime:TSType
+name: AtlasRelationshipEndDef
+uid: '@azure-rest/purview-catalog.AtlasRelationshipEndDef|beta'
+package: '@azure-rest/purview-catalog|beta'
+summary: ''
+fullName: AtlasRelationshipEndDef
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: cardinality
+    uid: '@azure-rest/purview-catalog.AtlasRelationshipEndDef.cardinality|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: single-valued attribute or multi-valued attribute.
+    fullName: cardinality
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'cardinality?: "SINGLE" | "LIST" | "SET"'
+      return:
+        description: ''
+        type: '"SINGLE" | "LIST" | "SET"'
+  - name: description
+    uid: '@azure-rest/purview-catalog.AtlasRelationshipEndDef.description|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: The description of the relationship end definition.
+    fullName: description
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'description?: string'
+      return:
+        description: ''
+        type: string
+  - name: isContainer
+    uid: '@azure-rest/purview-catalog.AtlasRelationshipEndDef.isContainer|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: Determines if it is container.
+    fullName: isContainer
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isContainer?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: isLegacyAttribute
+    uid: '@azure-rest/purview-catalog.AtlasRelationshipEndDef.isLegacyAttribute|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: Determines if it is a legacy attribute.
+    fullName: isLegacyAttribute
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isLegacyAttribute?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: name
+    uid: '@azure-rest/purview-catalog.AtlasRelationshipEndDef.name|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: The name of the relationship end definition.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: string'
+      return:
+        description: ''
+        type: string
+  - name: type
+    uid: '@azure-rest/purview-catalog.AtlasRelationshipEndDef.type|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: The type of the relationship end.
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: string'
+      return:
+        description: ''
+        type: string

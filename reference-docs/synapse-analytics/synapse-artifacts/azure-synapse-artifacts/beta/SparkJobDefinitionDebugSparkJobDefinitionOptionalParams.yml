@@ -1,0 +1,116 @@
+### YamlMime:TSType
+name: SparkJobDefinitionDebugSparkJobDefinitionOptionalParams
+uid: >-
+  @azure/synapse-artifacts.SparkJobDefinitionDebugSparkJobDefinitionOptionalParams|beta
+package: '@azure/synapse-artifacts|beta'
+summary: Optional parameters.
+fullName: SparkJobDefinitionDebugSparkJobDefinitionOptionalParams
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: abortSignal
+    uid: >-
+      @azure/synapse-artifacts.SparkJobDefinitionDebugSparkJobDefinitionOptionalParams.abortSignal|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: The signal which can be used to abort requests.
+    fullName: abortSignal
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'abortSignal?: AbortSignalLike'
+      return:
+        description: ''
+        type: AbortSignalLike
+  - name: onResponse
+    uid: >-
+      @azure/synapse-artifacts.SparkJobDefinitionDebugSparkJobDefinitionOptionalParams.onResponse|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: |-
+      A function to be called each time a response is received from the server
+      while performing the requested operation.
+      May be called multiple times.
+    fullName: onResponse
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onResponse?: RawResponseCallback'
+      return:
+        description: ''
+        type: RawResponseCallback
+  - name: requestOptions
+    uid: >-
+      @azure/synapse-artifacts.SparkJobDefinitionDebugSparkJobDefinitionOptionalParams.requestOptions|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: Options used when creating and sending HTTP requests for this operation.
+    fullName: requestOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'requestOptions?: OperationRequestOptions'
+      return:
+        description: ''
+        type: OperationRequestOptions
+  - name: resumeFrom
+    uid: >-
+      @azure/synapse-artifacts.SparkJobDefinitionDebugSparkJobDefinitionOptionalParams.resumeFrom|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: >-
+      A serialized poller which can be used to resume an existing paused
+      Long-Running-Operation.
+    fullName: resumeFrom
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'resumeFrom?: string'
+      return:
+        description: ''
+        type: string
+  - name: serializerOptions
+    uid: >-
+      @azure/synapse-artifacts.SparkJobDefinitionDebugSparkJobDefinitionOptionalParams.serializerOptions|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: Options to override serialization/de-serialization behavior.
+    fullName: serializerOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'serializerOptions?: SerializerOptions'
+      return:
+        description: ''
+        type: SerializerOptions
+  - name: tracingOptions
+    uid: >-
+      @azure/synapse-artifacts.SparkJobDefinitionDebugSparkJobDefinitionOptionalParams.tracingOptions|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: Options used when tracing is enabled.
+    fullName: tracingOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tracingOptions?: OperationTracingOptions'
+      return:
+        description: ''
+        type: OperationTracingOptions
+  - name: updateIntervalInMs
+    uid: >-
+      @azure/synapse-artifacts.SparkJobDefinitionDebugSparkJobDefinitionOptionalParams.updateIntervalInMs|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: Delay to wait until next poll, in milliseconds.
+    fullName: updateIntervalInMs
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'updateIntervalInMs?: number'
+      return:
+        description: ''
+        type: number
+extends: OperationOptions

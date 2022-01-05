@@ -1,0 +1,92 @@
+### YamlMime:TSType
+name: KeyVaultSigningKeyParameters
+uid: '@azure/arm-cdn.KeyVaultSigningKeyParameters|stable'
+package: '@azure/arm-cdn|stable'
+summary: Describes the parameters for using a user's KeyVault for URL Signing Key.
+fullName: KeyVaultSigningKeyParameters
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: odataType
+    uid: '@azure/arm-cdn.KeyVaultSigningKeyParameters.odataType|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: ''
+    fullName: odataType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'odataType: "#Microsoft.Azure.Cdn.Models.KeyVaultSigningKeyParameters"'
+      return:
+        description: ''
+        type: >-
+          "#<xref
+          uid="Microsoft.Azure.Cdn.Models.KeyVaultSigningKeyParameters|stable"
+          />"
+  - name: resourceGroupName
+    uid: '@azure/arm-cdn.KeyVaultSigningKeyParameters.resourceGroupName|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: Resource group of the user's Key Vault containing the secret
+    fullName: resourceGroupName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'resourceGroupName: string'
+      return:
+        description: ''
+        type: string
+  - name: secretName
+    uid: '@azure/arm-cdn.KeyVaultSigningKeyParameters.secretName|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: The name of secret in Key Vault.
+    fullName: secretName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'secretName: string'
+      return:
+        description: ''
+        type: string
+  - name: secretVersion
+    uid: '@azure/arm-cdn.KeyVaultSigningKeyParameters.secretVersion|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: The version(GUID) of secret in Key Vault.
+    fullName: secretVersion
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'secretVersion: string'
+      return:
+        description: ''
+        type: string
+  - name: subscriptionId
+    uid: '@azure/arm-cdn.KeyVaultSigningKeyParameters.subscriptionId|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: Subscription Id of the user's Key Vault containing the secret
+    fullName: subscriptionId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'subscriptionId: string'
+      return:
+        description: ''
+        type: string
+  - name: vaultName
+    uid: '@azure/arm-cdn.KeyVaultSigningKeyParameters.vaultName|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: The name of the user's Key Vault containing the secret
+    fullName: vaultName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'vaultName: string'
+      return:
+        description: ''
+        type: string

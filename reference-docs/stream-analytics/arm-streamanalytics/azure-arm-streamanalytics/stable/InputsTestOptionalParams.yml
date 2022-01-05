@@ -1,0 +1,129 @@
+### YamlMime:TSType
+name: InputsTestOptionalParams
+uid: '@azure/arm-streamanalytics.InputsTestOptionalParams|stable'
+package: '@azure/arm-streamanalytics|stable'
+summary: Optional parameters.
+fullName: InputsTestOptionalParams
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: abortSignal
+    uid: '@azure/arm-streamanalytics.InputsTestOptionalParams.abortSignal|stable'
+    package: '@azure/arm-streamanalytics|stable'
+    summary: The signal which can be used to abort requests.
+    fullName: abortSignal
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'abortSignal?: AbortSignalLike'
+      return:
+        description: ''
+        type: AbortSignalLike
+  - name: input
+    uid: '@azure/arm-streamanalytics.InputsTestOptionalParams.input|stable'
+    package: '@azure/arm-streamanalytics|stable'
+    summary: >-
+      If the input specified does not already exist, this parameter must contain
+      the full input definition intended to be tested. If the input specified
+      already exists, this parameter can be left null to test the existing input
+      as is or if specified, the properties specified will overwrite the
+      corresponding properties in the existing input (exactly like a PATCH
+      operation) and the resulting input will be tested.
+    fullName: input
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'input?: Input'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-streamanalytics.Input|stable" />
+  - name: onResponse
+    uid: '@azure/arm-streamanalytics.InputsTestOptionalParams.onResponse|stable'
+    package: '@azure/arm-streamanalytics|stable'
+    summary: |-
+      A function to be called each time a response is received from the server
+      while performing the requested operation.
+      May be called multiple times.
+    fullName: onResponse
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onResponse?: RawResponseCallback'
+      return:
+        description: ''
+        type: RawResponseCallback
+  - name: requestOptions
+    uid: '@azure/arm-streamanalytics.InputsTestOptionalParams.requestOptions|stable'
+    package: '@azure/arm-streamanalytics|stable'
+    summary: Options used when creating and sending HTTP requests for this operation.
+    fullName: requestOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'requestOptions?: OperationRequestOptions'
+      return:
+        description: ''
+        type: OperationRequestOptions
+  - name: resumeFrom
+    uid: '@azure/arm-streamanalytics.InputsTestOptionalParams.resumeFrom|stable'
+    package: '@azure/arm-streamanalytics|stable'
+    summary: >-
+      A serialized poller which can be used to resume an existing paused
+      Long-Running-Operation.
+    fullName: resumeFrom
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'resumeFrom?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: serializerOptions
+    uid: >-
+      @azure/arm-streamanalytics.InputsTestOptionalParams.serializerOptions|stable
+    package: '@azure/arm-streamanalytics|stable'
+    summary: Options to override serialization/de-serialization behavior.
+    fullName: serializerOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'serializerOptions?: SerializerOptions'
+      return:
+        description: ''
+        type: SerializerOptions
+  - name: tracingOptions
+    uid: '@azure/arm-streamanalytics.InputsTestOptionalParams.tracingOptions|stable'
+    package: '@azure/arm-streamanalytics|stable'
+    summary: Options used when tracing is enabled.
+    fullName: tracingOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tracingOptions?: OperationTracingOptions'
+      return:
+        description: ''
+        type: OperationTracingOptions
+  - name: updateIntervalInMs
+    uid: >-
+      @azure/arm-streamanalytics.InputsTestOptionalParams.updateIntervalInMs|stable
+    package: '@azure/arm-streamanalytics|stable'
+    summary: Delay to wait until next poll, in milliseconds.
+    fullName: updateIntervalInMs
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'updateIntervalInMs?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+extends: OperationOptions

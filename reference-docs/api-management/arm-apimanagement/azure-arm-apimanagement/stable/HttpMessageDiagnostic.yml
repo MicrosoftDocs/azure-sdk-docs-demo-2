@@ -1,0 +1,50 @@
+### YamlMime:TSType
+name: HttpMessageDiagnostic
+uid: '@azure/arm-apimanagement.HttpMessageDiagnostic|stable'
+package: '@azure/arm-apimanagement|stable'
+summary: Http message diagnostic settings.
+fullName: HttpMessageDiagnostic
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: body
+    uid: '@azure/arm-apimanagement.HttpMessageDiagnostic.body|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: Body logging settings.
+    fullName: body
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'body?: BodyDiagnosticSettings'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-apimanagement.BodyDiagnosticSettings|stable" />
+  - name: dataMasking
+    uid: '@azure/arm-apimanagement.HttpMessageDiagnostic.dataMasking|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: Data masking settings.
+    fullName: dataMasking
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dataMasking?: DataMasking'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-apimanagement.DataMasking|stable" />
+  - name: headers
+    uid: '@azure/arm-apimanagement.HttpMessageDiagnostic.headers|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: Array of HTTP Headers to log.
+    fullName: headers
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'headers?: string[]'
+      return:
+        description: ''
+        type: string[]

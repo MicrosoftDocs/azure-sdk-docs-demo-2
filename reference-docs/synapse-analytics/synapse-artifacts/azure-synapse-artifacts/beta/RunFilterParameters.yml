@@ -1,0 +1,80 @@
+### YamlMime:TSType
+name: RunFilterParameters
+uid: '@azure/synapse-artifacts.RunFilterParameters|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: Query parameters for listing runs.
+fullName: RunFilterParameters
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: continuationToken
+    uid: '@azure/synapse-artifacts.RunFilterParameters.continuationToken|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: >-
+      The continuation token for getting the next page of results. Null for
+      first page.
+    fullName: continuationToken
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'continuationToken?: string'
+      return:
+        description: ''
+        type: string
+  - name: filters
+    uid: '@azure/synapse-artifacts.RunFilterParameters.filters|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: List of filters.
+    fullName: filters
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'filters?: RunQueryFilter[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/synapse-artifacts.RunQueryFilter|beta" />[]
+  - name: lastUpdatedAfter
+    uid: '@azure/synapse-artifacts.RunFilterParameters.lastUpdatedAfter|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: The time at or after which the run event was updated in 'ISO 8601' format.
+    fullName: lastUpdatedAfter
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lastUpdatedAfter: Date'
+      return:
+        description: ''
+        type: Date
+  - name: lastUpdatedBefore
+    uid: '@azure/synapse-artifacts.RunFilterParameters.lastUpdatedBefore|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: >-
+      The time at or before which the run event was updated in 'ISO 8601'
+      format.
+    fullName: lastUpdatedBefore
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lastUpdatedBefore: Date'
+      return:
+        description: ''
+        type: Date
+  - name: orderBy
+    uid: '@azure/synapse-artifacts.RunFilterParameters.orderBy|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: List of OrderBy option.
+    fullName: orderBy
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'orderBy?: RunQueryOrderBy[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/synapse-artifacts.RunQueryOrderBy|beta" />[]

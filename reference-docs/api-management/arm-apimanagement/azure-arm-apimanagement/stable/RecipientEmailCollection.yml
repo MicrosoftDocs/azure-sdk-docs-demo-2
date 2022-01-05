@@ -1,0 +1,52 @@
+### YamlMime:TSType
+name: RecipientEmailCollection
+uid: '@azure/arm-apimanagement.RecipientEmailCollection|stable'
+package: '@azure/arm-apimanagement|stable'
+summary: Paged Recipient User list representation.
+fullName: RecipientEmailCollection
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: count
+    uid: '@azure/arm-apimanagement.RecipientEmailCollection.count|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: Total record count number across all pages.
+    fullName: count
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'count?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: nextLink
+    uid: '@azure/arm-apimanagement.RecipientEmailCollection.nextLink|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: Next page link if any.
+    fullName: nextLink
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nextLink?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: value
+    uid: '@azure/arm-apimanagement.RecipientEmailCollection.value|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: Page values.
+    fullName: value
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: RecipientEmailContract[]'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/arm-apimanagement.RecipientEmailContract|stable"
+          />[]

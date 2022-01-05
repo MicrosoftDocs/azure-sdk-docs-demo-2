@@ -2,11 +2,19 @@
 name: SourceRegistryLoginMode
 uid: '@azure/arm-containerregistry.SourceRegistryLoginMode|stable'
 package: '@azure/arm-containerregistry|stable'
-summary: |-
-  Defines values for SourceRegistryLoginMode.
-  Possible values include: 'None', 'Default'
+summary: >-
+  Defines values for SourceRegistryLoginMode. \
+
+  <xref:@azure/arm-containerregistry.KnownSourceRegistryLoginMode|stable> can be
+  used interchangeably with SourceRegistryLoginMode,
+   this enum contains the known values that the service supports.
+  ### Known values supported by the service
+
+  **None** \
+
+  **Default**
 fullName: SourceRegistryLoginMode
 remarks: ''
 isPreview: false
 isDeprecated: false
-syntax: type SourceRegistryLoginMode = "None" | "Default"
+syntax: type SourceRegistryLoginMode = string
