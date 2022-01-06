@@ -14,7 +14,7 @@ ms.author: daberry
 
 ## Stable packages
 
-| Name                  | Package              | Version          | Docs                   | Package Manager                |
+| Name                  | Package              | Version          | Reference Docs         | Package Manager                |
 |-----------------------|----------------------|------------------|------------------------|--------------------------------|
 | Advisor - Resource Management | @azure/arm-advisor | 3.0.0 | [docs](/azure/javascript/sdk/sdk-demo2/advisor/arm-advisor/azure-arm-advisor/stable)  | npm [3.0.0](https://www.npmjs.com/package/%40azure%2Farm-advisor) |
  

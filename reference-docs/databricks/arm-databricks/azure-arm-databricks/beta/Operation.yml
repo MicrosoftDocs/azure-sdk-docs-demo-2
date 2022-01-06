@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: Operation
+uid: '@azure/arm-databricks.Operation|beta'
+package: '@azure/arm-databricks|beta'
+summary: REST API operation
+fullName: Operation
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: display
+    uid: '@azure/arm-databricks.Operation.display|beta'
+    package: '@azure/arm-databricks|beta'
+    summary: The object that represents the operation.
+    fullName: display
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'display?: OperationDisplay'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-databricks.OperationDisplay|beta" />
+  - name: name
+    uid: '@azure/arm-databricks.Operation.name|beta'
+    package: '@azure/arm-databricks|beta'
+    summary: 'Operation name: {provider}/{resource}/{operation}'
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

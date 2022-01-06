@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: ParquetSource
+uid: '@azure/arm-datafactory.ParquetSource|stable'
+package: '@azure/arm-datafactory|stable'
+summary: A copy activity Parquet source.
+fullName: ParquetSource
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type ParquetSource = CopySource & { additionalColumns?: Record<string,
+  unknown>, storeSettings?: StoreReadSettingsUnion, type: "ParquetSource" }

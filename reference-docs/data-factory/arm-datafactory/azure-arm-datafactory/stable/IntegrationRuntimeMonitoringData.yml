@@ -1,0 +1,40 @@
+### YamlMime:TSType
+name: IntegrationRuntimeMonitoringData
+uid: '@azure/arm-datafactory.IntegrationRuntimeMonitoringData|stable'
+package: '@azure/arm-datafactory|stable'
+summary: Get monitoring data response.
+fullName: IntegrationRuntimeMonitoringData
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: name
+    uid: '@azure/arm-datafactory.IntegrationRuntimeMonitoringData.name|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: Integration runtime name.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: nodes
+    uid: '@azure/arm-datafactory.IntegrationRuntimeMonitoringData.nodes|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: Integration runtime node monitoring data.
+    fullName: nodes
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nodes?: IntegrationRuntimeNodeMonitoringData[]'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-datafactory.IntegrationRuntimeNodeMonitoringData|stable"
+          />[]

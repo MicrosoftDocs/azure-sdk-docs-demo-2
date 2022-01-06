@@ -1,0 +1,38 @@
+### YamlMime:TSType
+name: ClusterMonitoringResponse
+uid: '@azure/arm-hdinsight.ClusterMonitoringResponse|stable'
+package: '@azure/arm-hdinsight|stable'
+summary: The cluster monitoring status response.
+fullName: ClusterMonitoringResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: clusterMonitoringEnabled
+    uid: >-
+      @azure/arm-hdinsight.ClusterMonitoringResponse.clusterMonitoringEnabled|stable
+    package: '@azure/arm-hdinsight|stable'
+    summary: The status of the monitor on the HDInsight cluster.
+    fullName: clusterMonitoringEnabled
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clusterMonitoringEnabled?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true
+  - name: workspaceId
+    uid: '@azure/arm-hdinsight.ClusterMonitoringResponse.workspaceId|stable'
+    package: '@azure/arm-hdinsight|stable'
+    summary: The workspace ID of the monitor on the HDInsight cluster.
+    fullName: workspaceId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'workspaceId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

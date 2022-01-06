@@ -1,0 +1,39 @@
+### YamlMime:TSType
+name: IntegrationRuntimeListResponse
+uid: '@azure/arm-datafactory.IntegrationRuntimeListResponse|stable'
+package: '@azure/arm-datafactory|stable'
+summary: A list of integration runtime resources.
+fullName: IntegrationRuntimeListResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: nextLink
+    uid: '@azure/arm-datafactory.IntegrationRuntimeListResponse.nextLink|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: The link to the next page of results, if any remaining results exist.
+    fullName: nextLink
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nextLink?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: value
+    uid: '@azure/arm-datafactory.IntegrationRuntimeListResponse.value|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: List of integration runtimes.
+    fullName: value
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value: IntegrationRuntimeResource[]'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/arm-datafactory.IntegrationRuntimeResource|stable"
+          />[]

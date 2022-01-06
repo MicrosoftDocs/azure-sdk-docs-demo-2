@@ -14,7 +14,7 @@ ms.author: daberry
 
 ## Stable packages
 
-| Name                  | Package              | Version          | Docs                   | Package Manager                |
+| Name                  | Package              | Version          | Reference Docs         | Package Manager                |
 |-----------------------|----------------------|------------------|------------------------|--------------------------------|
 | Anomaly Detector | @azure/cognitiveservices-anomalydetector | 2.1.0 | [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/cognitiveservices-anomalydetector/azure-cognitiveservices-anomalydetector/stable)  | npm [2.1.0](https://www.npmjs.com/package/%40azure%2Fcognitiveservices-anomalydetector) |
 | Autosuggest | @azure/cognitiveservices-autosuggest | 2.0.1 | [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/cognitiveservices-autosuggest/azure-cognitiveservices-autosuggest/stable)  | npm [2.0.1](https://www.npmjs.com/package/%40azure%2Fcognitiveservices-autosuggest) |
@@ -41,7 +41,7 @@ ms.author: daberry
 
 ## Beta packages
 
-| Name                  | Package              | Version          | Docs                   | Package Manager                |
+| Name                  | Package              | Version          | Reference Docs         | Package Manager                |
 |-----------------------|----------------------|------------------|------------------------|--------------------------------|
 | Anomaly Detector | @azure/ai-anomaly-detector | 3.0.0-beta.3 | [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/ai-anomaly-detector/azure-ai-anomaly-detector/beta)  | npm [3.0.0-beta.3](https://www.npmjs.com/package/%40azure%2Fai-anomaly-detector%403.0.0-beta.3) |
 | Cognitive Search | @azure/search-documents | 11.3.0-beta.5 | [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/search-documents/azure-search-documents/beta)  | npm [11.3.0-beta.5](https://www.npmjs.com/package/%40azure%2Fsearch-documents%4011.3.0-beta.5) |
@@ -52,7 +52,7 @@ ms.author: daberry
 
 ## Legacy packages
 
-| Name                  | Package              | Version          | Docs                   | Package Manager                |
+| Name                  | Package              | Version          | Reference Docs         | Package Manager                |
 |-----------------------|----------------------|------------------|------------------------|--------------------------------|
 | Form Recognizer | @azure/cognitiveservices-formrecognizer | 2.0.1 | [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/legacy/cognitiveservices-formrecognizer/azure-cognitiveservices-formrecognizer/legacy)  | npm [2.0.1](https://www.npmjs.com/package/%40azure%2Fcognitiveservices-formrecognizer%402.0.1) |
 | Text Analytics | @azure/cognitiveservices-textanalytics | 4.0.0 | [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/legacy/cognitiveservices-textanalytics/azure-cognitiveservices-textanalytics/legacy)  | npm [4.0.0](https://www.npmjs.com/package/%40azure%2Fcognitiveservices-textanalytics%404.0.0) |

@@ -14,7 +14,7 @@ ms.author: daberry
 
 ## Stable packages
 
-| Name                  | Package              | Version          | Docs                   | Package Manager                |
+| Name                  | Package              | Version          | Reference Docs         | Package Manager                |
 |-----------------------|----------------------|------------------|------------------------|--------------------------------|
 | Abort Controller | @azure/abort-controller | 1.0.4 | [docs](/azure/javascript/sdk/sdk-demo2/core/abort-controller/azure-abort-controller/stable)  | npm [1.0.4](https://www.npmjs.com/package/%40azure%2Fabort-controller) |
 | AMPQ | @azure/core-amqp | 3.0.0 | [docs](/azure/javascript/sdk/sdk-demo2/core/core-amqp/azure-core-amqp/stable)  | npm [3.0.0](https://www.npmjs.com/package/%40azure%2Fcore-amqp) |
@@ -27,7 +27,7 @@ ms.author: daberry
 
 ## Beta packages
 
-| Name                  | Package              | Version          | Docs                   | Package Manager                |
+| Name                  | Package              | Version          | Reference Docs         | Package Manager                |
 |-----------------------|----------------------|------------------|------------------------|--------------------------------|
 | AMPQ | @azure/core-amqp | 2.0.0-beta.1 | [docs](/azure/javascript/sdk/sdk-demo2/core/core-amqp/azure-core-amqp/beta)  | npm [2.0.0-beta.1](https://www.npmjs.com/package/%40azure%2Fcore-amqp%402.0.0-beta.1) |
  

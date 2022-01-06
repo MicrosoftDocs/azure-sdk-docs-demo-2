@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: CustomActivityReferenceObject
+uid: '@azure/arm-datafactory.CustomActivityReferenceObject|stable'
+package: '@azure/arm-datafactory|stable'
+summary: Reference objects for custom activity
+fullName: CustomActivityReferenceObject
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: datasets
+    uid: '@azure/arm-datafactory.CustomActivityReferenceObject.datasets|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: Dataset references.
+    fullName: datasets
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'datasets?: DatasetReference[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-datafactory.DatasetReference|stable" />[]
+  - name: linkedServices
+    uid: '@azure/arm-datafactory.CustomActivityReferenceObject.linkedServices|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: Linked service references.
+    fullName: linkedServices
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'linkedServices?: LinkedServiceReference[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-datafactory.LinkedServiceReference|stable" />[]

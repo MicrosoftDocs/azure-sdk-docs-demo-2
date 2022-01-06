@@ -1,0 +1,147 @@
+### YamlMime:TSType
+name: DataFlows
+uid: '@azure/arm-datafactory.DataFlows|stable'
+package: '@azure/arm-datafactory|stable'
+summary: Interface representing a DataFlows.
+fullName: DataFlows
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      createOrUpdate(string, string, string, DataFlowResource,
+      DataFlowsCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-datafactory.DataFlows.createOrUpdate|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: Creates or updates a data flow.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, factoryName: string,
+        dataFlowName: string, dataFlow: DataFlowResource, options?:
+        DataFlowsCreateOrUpdateOptionalParams):
+        Promise<DataFlowsCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The resource group name.
+        - id: factoryName
+          type: string
+          description: The factory name.
+        - id: dataFlowName
+          type: string
+          description: The data flow name.
+        - id: dataFlow
+          type: <xref uid="@azure/arm-datafactory.DataFlowResource|stable" />
+          description: Data flow resource definition.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-datafactory.DataFlowsCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-datafactory.DataFlowsCreateOrUpdateResponse|stable"
+          />&gt;
+  - name: delete(string, string, string, DataFlowsDeleteOptionalParams)
+    uid: '@azure/arm-datafactory.DataFlows.delete|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: Deletes a data flow.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function delete(resourceGroupName: string, factoryName: string,
+        dataFlowName: string, options?: DataFlowsDeleteOptionalParams):
+        Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The resource group name.
+        - id: factoryName
+          type: string
+          description: The factory name.
+        - id: dataFlowName
+          type: string
+          description: The data flow name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-datafactory.DataFlowsDeleteOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: get(string, string, string, DataFlowsGetOptionalParams)
+    uid: '@azure/arm-datafactory.DataFlows.get|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: Gets a data flow.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, factoryName: string,
+        dataFlowName: string, options?: DataFlowsGetOptionalParams):
+        Promise<DataFlowsGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The resource group name.
+        - id: factoryName
+          type: string
+          description: The factory name.
+        - id: dataFlowName
+          type: string
+          description: The data flow name.
+        - id: options
+          type: >-
+            <xref uid="@azure/arm-datafactory.DataFlowsGetOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-datafactory.DataFlowsGetResponse|stable" />&gt;
+  - name: listByFactory(string, string, DataFlowsListByFactoryOptionalParams)
+    uid: '@azure/arm-datafactory.DataFlows.listByFactory|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: Lists data flows.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByFactory(resourceGroupName: string, factoryName: string,
+        options?: DataFlowsListByFactoryOptionalParams):
+        PagedAsyncIterableIterator<DataFlowResource>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The resource group name.
+        - id: factoryName
+          type: string
+          description: The factory name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-datafactory.DataFlowsListByFactoryOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-datafactory.DataFlowResource|stable" />&gt;

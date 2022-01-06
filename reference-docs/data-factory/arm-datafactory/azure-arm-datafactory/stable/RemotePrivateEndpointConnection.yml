@@ -1,0 +1,57 @@
+### YamlMime:TSType
+name: RemotePrivateEndpointConnection
+uid: '@azure/arm-datafactory.RemotePrivateEndpointConnection|stable'
+package: '@azure/arm-datafactory|stable'
+summary: A remote private endpoint connection
+fullName: RemotePrivateEndpointConnection
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: privateEndpoint
+    uid: >-
+      @azure/arm-datafactory.RemotePrivateEndpointConnection.privateEndpoint|stable
+    package: '@azure/arm-datafactory|stable'
+    summary: PrivateEndpoint of a remote private endpoint connection
+    fullName: privateEndpoint
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'privateEndpoint?: ArmIdWrapper'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-datafactory.ArmIdWrapper|stable" />
+  - name: privateLinkServiceConnectionState
+    uid: >-
+      @azure/arm-datafactory.RemotePrivateEndpointConnection.privateLinkServiceConnectionState|stable
+    package: '@azure/arm-datafactory|stable'
+    summary: The state of a private link connection
+    fullName: privateLinkServiceConnectionState
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'privateLinkServiceConnectionState?: PrivateLinkConnectionState'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/arm-datafactory.PrivateLinkConnectionState|stable"
+          />
+  - name: provisioningState
+    uid: >-
+      @azure/arm-datafactory.RemotePrivateEndpointConnection.provisioningState|stable
+    package: '@azure/arm-datafactory|stable'
+    summary: >-
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: provisioningState
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'provisioningState?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

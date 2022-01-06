@@ -14,14 +14,14 @@ ms.author: daberry
 
 ## Stable packages
 
-| Name                  | Package              | Version          | Docs                   | Package Manager                |
+| Name                  | Package              | Version          | Reference Docs         | Package Manager                |
 |-----------------------|----------------------|------------------|------------------------|--------------------------------|
 | Purview - Resource Management | @azure/arm-purview | 1.0.0 | [docs](/azure/javascript/sdk/sdk-demo2/purview/arm-purview/azure-arm-purview/stable)  | npm [1.0.0](https://www.npmjs.com/package/%40azure%2Farm-purview) |
  
 
 ## Beta packages
 
-| Name                  | Package              | Version          | Docs                   | Package Manager                |
+| Name                  | Package              | Version          | Reference Docs         | Package Manager                |
 |-----------------------|----------------------|------------------|------------------------|--------------------------------|
 | Purview - Account | @azure-rest/purview-account | 1.0.0-beta.1 | [docs](/azure/javascript/sdk/sdk-demo2/purview/purview-account/azure-rest-purview-account/beta)  | npm [1.0.0-beta.1](https://www.npmjs.com/package/%40azure-rest%2Fpurview-account%401.0.0-beta.1) |
 | Purview - Administration | @azure-rest/purview-administration | 1.0.0-beta.1 | [docs](/azure/javascript/sdk/sdk-demo2/purview/purview-administration/azure-rest-purview-administration/beta)  | npm [1.0.0-beta.1](https://www.npmjs.com/package/%40azure-rest%2Fpurview-administration%401.0.0-beta.1) |

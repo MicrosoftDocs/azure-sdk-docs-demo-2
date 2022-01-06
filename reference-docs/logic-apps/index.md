@@ -14,7 +14,7 @@ ms.author: daberry
 
 ## Stable packages
 
-| Name                  | Package              | Version          | Docs                   | Package Manager                |
+| Name                  | Package              | Version          | Reference Docs         | Package Manager                |
 |-----------------------|----------------------|------------------|------------------------|--------------------------------|
 | Logic Apps - Resource Management | @azure/arm-logic | 8.0.0 | [docs](/azure/javascript/sdk/sdk-demo2/logic-apps/arm-logic/azure-arm-logic/stable)  | npm [8.0.0](https://www.npmjs.com/package/%40azure%2Farm-logic) |
  

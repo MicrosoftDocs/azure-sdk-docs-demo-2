@@ -14,7 +14,7 @@ ms.author: daberry
 
 ## Stable packages
 
-| Name                  | Package              | Version          | Docs                   | Package Manager                |
+| Name                  | Package              | Version          | Reference Docs         | Package Manager                |
 |-----------------------|----------------------|------------------|------------------------|--------------------------------|
 | Storage - Blobs | @azure/storage-blob | 12.8.0 | [docs](/azure/javascript/sdk/sdk-demo2/storage/storage-blob/azure-storage-blob/stable)  | npm [12.8.0](https://www.npmjs.com/package/%40azure%2Fstorage-blob) |
 | Storage - Queues | @azure/storage-queue | 12.7.0 | [docs](/azure/javascript/sdk/sdk-demo2/storage/storage-queue/azure-storage-queue/stable)  | npm [12.7.0](https://www.npmjs.com/package/%40azure%2Fstorage-queue) |
@@ -25,7 +25,7 @@ ms.author: daberry
 
 ## Beta packages
 
-| Name                  | Package              | Version          | Docs                   | Package Manager                |
+| Name                  | Package              | Version          | Reference Docs         | Package Manager                |
 |-----------------------|----------------------|------------------|------------------------|--------------------------------|
 | Storage - Blobs | @azure/storage-blob | 12.9.0-beta.2 | [docs](/azure/javascript/sdk/sdk-demo2/storage/storage-blob/azure-storage-blob/beta)  | npm [12.9.0-beta.2](https://www.npmjs.com/package/%40azure%2Fstorage-blob%4012.9.0-beta.2) |
 | Storage - Queues | @azure/storage-queue | 12.8.0-beta.1 | [docs](/azure/javascript/sdk/sdk-demo2/storage/storage-queue/azure-storage-queue/beta)  | npm [12.8.0-beta.1](https://www.npmjs.com/package/%40azure%2Fstorage-queue%4012.8.0-beta.1) |

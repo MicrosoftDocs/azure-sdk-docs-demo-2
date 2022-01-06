@@ -14,7 +14,7 @@ ms.author: daberry
 
 ## Stable packages
 
-| Name                  | Package              | Version          | Docs                   | Package Manager                |
+| Name                  | Package              | Version          | Reference Docs         | Package Manager                |
 |-----------------------|----------------------|------------------|------------------------|--------------------------------|
 | Web PubSub | @azure/web-pubsub | 1.0.0 | [docs](/azure/javascript/sdk/sdk-demo2/web-pubsub/web-pubsub/azure-web-pubsub/stable)  | npm [1.0.0](https://www.npmjs.com/package/%40azure%2Fweb-pubsub) |
  

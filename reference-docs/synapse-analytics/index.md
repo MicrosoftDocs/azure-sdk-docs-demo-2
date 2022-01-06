@@ -16,7 +16,7 @@ ms.author: daberry
 
 ## Beta packages
 
-| Name                  | Package              | Version          | Docs                   | Package Manager                |
+| Name                  | Package              | Version          | Reference Docs         | Package Manager                |
 |-----------------------|----------------------|------------------|------------------------|--------------------------------|
 | Synapse - Access Control | @azure/synapse-access-control | 1.0.0-beta.3 | [docs](/azure/javascript/sdk/sdk-demo2/synapse-analytics/synapse-access-control/azure-synapse-access-control/beta)  | npm [1.0.0-beta.3](https://www.npmjs.com/package/%40azure%2Fsynapse-access-control%401.0.0-beta.3) |
 | Synapse - Artifacts | @azure/synapse-artifacts | 1.0.0-beta.7 | [docs](/azure/javascript/sdk/sdk-demo2/synapse-analytics/synapse-artifacts/azure-synapse-artifacts/beta)  | npm [1.0.0-beta.7](https://www.npmjs.com/package/%40azure%2Fsynapse-artifacts%401.0.0-beta.7) |

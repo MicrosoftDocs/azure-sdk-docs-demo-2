@@ -14,7 +14,7 @@ ms.author: daberry
 
 ## Stable packages
 
-| Name                  | Package              | Version          | Docs                   | Package Manager                |
+| Name                  | Package              | Version          | Reference Docs         | Package Manager                |
 |-----------------------|----------------------|------------------|------------------------|--------------------------------|
 | Network - Resource Management | @azure/arm-network | 26.0.0 | [docs](/azure/javascript/sdk/sdk-demo2/network/arm-network/azure-arm-network/stable)  | npm [26.0.0](https://www.npmjs.com/package/%40azure%2Farm-network) |
  

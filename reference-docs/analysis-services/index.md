@@ -14,7 +14,7 @@ ms.author: daberry
 
 ## Stable packages
 
-| Name                  | Package              | Version          | Docs                   | Package Manager                |
+| Name                  | Package              | Version          | Reference Docs         | Package Manager                |
 |-----------------------|----------------------|------------------|------------------------|--------------------------------|
 | Analysis Services - Resource Management | @azure/arm-analysisservices | 4.0.0 | [docs](/azure/javascript/sdk/sdk-demo2/analysis-services/arm-analysisservices/azure-arm-analysisservices/stable)  | npm [4.0.0](https://www.npmjs.com/package/%40azure%2Farm-analysisservices) |
  

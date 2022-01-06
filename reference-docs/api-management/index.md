@@ -14,7 +14,7 @@ ms.author: daberry
 
 ## Stable packages
 
-| Name                  | Package              | Version          | Docs                   | Package Manager                |
+| Name                  | Package              | Version          | Reference Docs         | Package Manager                |
 |-----------------------|----------------------|------------------|------------------------|--------------------------------|
 | API Management - Resource Management | @azure/arm-apimanagement | 8.0.0 | [docs](/azure/javascript/sdk/sdk-demo2/api-management/arm-apimanagement/azure-arm-apimanagement/stable)  | npm [8.0.0](https://www.npmjs.com/package/%40azure%2Farm-apimanagement) |
  

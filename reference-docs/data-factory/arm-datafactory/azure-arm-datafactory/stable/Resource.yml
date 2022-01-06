@@ -1,0 +1,105 @@
+### YamlMime:TSType
+name: Resource
+uid: '@azure/arm-datafactory.Resource|stable'
+package: '@azure/arm-datafactory|stable'
+summary: Azure Data Factory top-level resource.
+fullName: Resource
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: eTag
+    uid: '@azure/arm-datafactory.Resource.eTag|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: >-
+      Etag identifies change in the resource.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: eTag
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'eTag?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: id
+    uid: '@azure/arm-datafactory.Resource.id|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: >-
+      The resource identifier.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: location
+    uid: '@azure/arm-datafactory.Resource.location|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: The resource location.
+    fullName: location
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'location?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: name
+    uid: '@azure/arm-datafactory.Resource.name|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: >-
+      The resource name.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: tags
+    uid: '@azure/arm-datafactory.Resource.tags|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: The resource tags.
+    fullName: tags
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tags?: undefined | [key: string]: string'
+      return:
+        description: ''
+        type: 'undefined | [key: string]: string'
+  - name: type
+    uid: '@azure/arm-datafactory.Resource.type|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: >-
+      The resource type.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

@@ -1,0 +1,39 @@
+### YamlMime:TSType
+name: VirtualNetworkPeeringList
+uid: '@azure/arm-databricks.VirtualNetworkPeeringList|beta'
+package: '@azure/arm-databricks|beta'
+summary: Gets all virtual network peerings under a workspace.
+fullName: VirtualNetworkPeeringList
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: nextLink
+    uid: '@azure/arm-databricks.VirtualNetworkPeeringList.nextLink|beta'
+    package: '@azure/arm-databricks|beta'
+    summary: >-
+      URL to get the next set of virtual network peering list results if there
+      are any.
+    fullName: nextLink
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nextLink?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: value
+    uid: '@azure/arm-databricks.VirtualNetworkPeeringList.value|beta'
+    package: '@azure/arm-databricks|beta'
+    summary: List of virtual network peerings on workspace.
+    fullName: value
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: VirtualNetworkPeering[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-databricks.VirtualNetworkPeering|beta" />[]

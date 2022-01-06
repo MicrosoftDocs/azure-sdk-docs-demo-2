@@ -14,7 +14,7 @@ ms.author: daberry
 
 ## Stable packages
 
-| Name                  | Package              | Version          | Docs                   | Package Manager                |
+| Name                  | Package              | Version          | Reference Docs         | Package Manager                |
 |-----------------------|----------------------|------------------|------------------------|--------------------------------|
 | Communication Chat | @azure/communication-chat | 1.1.1 | [docs](/azure/javascript/sdk/sdk-demo2/communication-services/communication-chat/azure-communication-chat/stable)  | npm [1.1.1](https://www.npmjs.com/package/%40azure%2Fcommunication-chat) |
 | Communication Common | @azure/communication-common | 1.1.0 | [docs](/azure/javascript/sdk/sdk-demo2/communication-services/communication-common/azure-communication-common/stable)  | npm [1.1.0](https://www.npmjs.com/package/%40azure%2Fcommunication-common) |
@@ -25,7 +25,7 @@ ms.author: daberry
 
 ## Beta packages
 
-| Name                  | Package              | Version          | Docs                   | Package Manager                |
+| Name                  | Package              | Version          | Reference Docs         | Package Manager                |
 |-----------------------|----------------------|------------------|------------------------|--------------------------------|
 | Communication Identity | @azure/communication-identity | 1.1.0-beta.1 | [docs](/azure/javascript/sdk/sdk-demo2/communication-services/communication-identity/azure-communication-identity/beta)  | npm [1.1.0-beta.1](https://www.npmjs.com/package/%40azure%2Fcommunication-identity%401.1.0-beta.1) |
 | Communication Network Traversal | @azure/communication-network-traversal | 1.0.0-beta.3 | [docs](/azure/javascript/sdk/sdk-demo2/communication-services/communication-network-traversal/azure-communication-network-traversal/beta)  | npm [1.0.0-beta.3](https://www.npmjs.com/package/%40azure%2Fcommunication-network-traversal%401.0.0-beta.3) |

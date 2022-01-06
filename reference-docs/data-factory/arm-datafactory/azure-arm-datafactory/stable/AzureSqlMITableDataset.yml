@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: AzureSqlMITableDataset
+uid: '@azure/arm-datafactory.AzureSqlMITableDataset|stable'
+package: '@azure/arm-datafactory|stable'
+summary: The Azure SQL Managed Instance dataset.
+fullName: AzureSqlMITableDataset
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type AzureSqlMITableDataset = Dataset & { schemaTypePropertiesSchema?:
+  Record<string, unknown>, table?: Record<string, unknown>, tableName?:
+  Record<string, unknown>, type: "AzureSqlMITable" }

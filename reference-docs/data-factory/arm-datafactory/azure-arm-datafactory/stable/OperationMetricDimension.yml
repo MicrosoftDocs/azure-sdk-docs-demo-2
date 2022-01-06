@@ -1,0 +1,51 @@
+### YamlMime:TSType
+name: OperationMetricDimension
+uid: '@azure/arm-datafactory.OperationMetricDimension|stable'
+package: '@azure/arm-datafactory|stable'
+summary: Defines the metric dimension.
+fullName: OperationMetricDimension
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: displayName
+    uid: '@azure/arm-datafactory.OperationMetricDimension.displayName|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: The display name of the metric dimension.
+    fullName: displayName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'displayName?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: name
+    uid: '@azure/arm-datafactory.OperationMetricDimension.name|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: The name of the dimension for the metric.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: toBeExportedForShoebox
+    uid: >-
+      @azure/arm-datafactory.OperationMetricDimension.toBeExportedForShoebox|stable
+    package: '@azure/arm-datafactory|stable'
+    summary: Whether the dimension should be exported to Azure Monitor.
+    fullName: toBeExportedForShoebox
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toBeExportedForShoebox?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true

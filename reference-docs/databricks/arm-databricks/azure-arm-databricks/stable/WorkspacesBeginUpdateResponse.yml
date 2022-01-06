@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: WorkspacesBeginUpdateResponse
+uid: '@azure/arm-databricks.WorkspacesBeginUpdateResponse|stable'
+package: '@azure/arm-databricks|stable'
+summary: Contains response data for the beginUpdate operation.
+fullName: WorkspacesBeginUpdateResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type WorkspacesBeginUpdateResponse = Workspace & { _response: HttpResponse & {
+  bodyAsText: string, parsedBody: Workspace } }

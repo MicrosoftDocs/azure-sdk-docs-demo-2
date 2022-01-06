@@ -14,7 +14,7 @@ ms.author: daberry
 
 ## Stable packages
 
-| Name                  | Package              | Version          | Docs                   | Package Manager                |
+| Name                  | Package              | Version          | Reference Docs         | Package Manager                |
 |-----------------------|----------------------|------------------|------------------------|--------------------------------|
 | Notification Hubs - Resource Management | @azure/arm-notificationhubs | 2.0.0 | [docs](/azure/javascript/sdk/sdk-demo2/notification-hubs/arm-notificationhubs/azure-arm-notificationhubs/stable)  | npm [2.0.0](https://www.npmjs.com/package/%40azure%2Farm-notificationhubs) |
  

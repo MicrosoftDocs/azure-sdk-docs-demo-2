@@ -1,0 +1,303 @@
+### YamlMime:TSType
+name: Factories
+uid: '@azure/arm-datafactory.Factories|stable'
+package: '@azure/arm-datafactory|stable'
+summary: Interface representing a Factories.
+fullName: Factories
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      configureFactoryRepo(string, FactoryRepoUpdate,
+      FactoriesConfigureFactoryRepoOptionalParams)
+    uid: '@azure/arm-datafactory.Factories.configureFactoryRepo|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: Updates a factory's repo information.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function configureFactoryRepo(locationId: string, factoryRepoUpdate:
+        FactoryRepoUpdate, options?:
+        FactoriesConfigureFactoryRepoOptionalParams):
+        Promise<FactoriesConfigureFactoryRepoResponse>
+      parameters:
+        - id: locationId
+          type: string
+          description: The location identifier.
+        - id: factoryRepoUpdate
+          type: <xref uid="@azure/arm-datafactory.FactoryRepoUpdate|stable" />
+          description: Update factory repo request definition.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-datafactory.FactoriesConfigureFactoryRepoOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-datafactory.FactoriesConfigureFactoryRepoResponse|stable"
+          />&gt;
+  - name: >-
+      createOrUpdate(string, string, Factory,
+      FactoriesCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-datafactory.Factories.createOrUpdate|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: Creates or updates a factory.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, factoryName: string,
+        factory: Factory, options?: FactoriesCreateOrUpdateOptionalParams):
+        Promise<FactoriesCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The resource group name.
+        - id: factoryName
+          type: string
+          description: The factory name.
+        - id: factory
+          type: <xref uid="@azure/arm-datafactory.Factory|stable" />
+          description: Factory resource definition.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-datafactory.FactoriesCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-datafactory.FactoriesCreateOrUpdateResponse|stable"
+          />&gt;
+  - name: delete(string, string, FactoriesDeleteOptionalParams)
+    uid: '@azure/arm-datafactory.Factories.delete|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: Deletes a factory.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function delete(resourceGroupName: string, factoryName: string,
+        options?: FactoriesDeleteOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The resource group name.
+        - id: factoryName
+          type: string
+          description: The factory name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-datafactory.FactoriesDeleteOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: get(string, string, FactoriesGetOptionalParams)
+    uid: '@azure/arm-datafactory.Factories.get|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: Gets a factory.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, factoryName: string, options?:
+        FactoriesGetOptionalParams): Promise<FactoriesGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The resource group name.
+        - id: factoryName
+          type: string
+          description: The factory name.
+        - id: options
+          type: >-
+            <xref uid="@azure/arm-datafactory.FactoriesGetOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-datafactory.FactoriesGetResponse|stable" />&gt;
+  - name: >-
+      getDataPlaneAccess(string, string, UserAccessPolicy,
+      FactoriesGetDataPlaneAccessOptionalParams)
+    uid: '@azure/arm-datafactory.Factories.getDataPlaneAccess|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: Get Data Plane access.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getDataPlaneAccess(resourceGroupName: string, factoryName:
+        string, policy: UserAccessPolicy, options?:
+        FactoriesGetDataPlaneAccessOptionalParams):
+        Promise<FactoriesGetDataPlaneAccessResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The resource group name.
+        - id: factoryName
+          type: string
+          description: The factory name.
+        - id: policy
+          type: <xref uid="@azure/arm-datafactory.UserAccessPolicy|stable" />
+          description: Data Plane user access policy definition.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-datafactory.FactoriesGetDataPlaneAccessOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-datafactory.FactoriesGetDataPlaneAccessResponse|stable"
+          />&gt;
+  - name: >-
+      getGitHubAccessToken(string, string, GitHubAccessTokenRequest,
+      FactoriesGetGitHubAccessTokenOptionalParams)
+    uid: '@azure/arm-datafactory.Factories.getGitHubAccessToken|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: Get GitHub Access Token.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getGitHubAccessToken(resourceGroupName: string, factoryName:
+        string, gitHubAccessTokenRequest: GitHubAccessTokenRequest, options?:
+        FactoriesGetGitHubAccessTokenOptionalParams):
+        Promise<FactoriesGetGitHubAccessTokenResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The resource group name.
+        - id: factoryName
+          type: string
+          description: The factory name.
+        - id: gitHubAccessTokenRequest
+          type: >-
+            <xref uid="@azure/arm-datafactory.GitHubAccessTokenRequest|stable"
+            />
+          description: Get GitHub access token request definition.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-datafactory.FactoriesGetGitHubAccessTokenOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-datafactory.FactoriesGetGitHubAccessTokenResponse|stable"
+          />&gt;
+  - name: list(FactoriesListOptionalParams)
+    uid: '@azure/arm-datafactory.Factories.list|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: Lists factories under the specified subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(options?: FactoriesListOptionalParams):
+        PagedAsyncIterableIterator<Factory>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-datafactory.FactoriesListOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-datafactory.Factory|stable" />&gt;
+  - name: listByResourceGroup(string, FactoriesListByResourceGroupOptionalParams)
+    uid: '@azure/arm-datafactory.Factories.listByResourceGroup|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: Lists factories.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string, options?:
+        FactoriesListByResourceGroupOptionalParams):
+        PagedAsyncIterableIterator<Factory>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The resource group name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-datafactory.FactoriesListByResourceGroupOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-datafactory.Factory|stable" />&gt;
+  - name: >-
+      update(string, string, FactoryUpdateParameters,
+      FactoriesUpdateOptionalParams)
+    uid: '@azure/arm-datafactory.Factories.update|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: Updates a factory.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function update(resourceGroupName: string, factoryName: string,
+        factoryUpdateParameters: FactoryUpdateParameters, options?:
+        FactoriesUpdateOptionalParams): Promise<FactoriesUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The resource group name.
+        - id: factoryName
+          type: string
+          description: The factory name.
+        - id: factoryUpdateParameters
+          type: <xref uid="@azure/arm-datafactory.FactoryUpdateParameters|stable" />
+          description: The parameters for updating a factory.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-datafactory.FactoriesUpdateOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-datafactory.FactoriesUpdateResponse|stable" />&gt;

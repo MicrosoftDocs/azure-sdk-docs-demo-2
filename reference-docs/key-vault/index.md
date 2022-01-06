@@ -14,7 +14,7 @@ ms.author: daberry
 
 ## Stable packages
 
-| Name                  | Package              | Version          | Docs                   | Package Manager                |
+| Name                  | Package              | Version          | Reference Docs         | Package Manager                |
 |-----------------------|----------------------|------------------|------------------------|--------------------------------|
 | Key Vault - Admin | @azure/keyvault-admin | 4.1.0 | [docs](/azure/javascript/sdk/sdk-demo2/key-vault/keyvault-admin/azure-keyvault-admin/stable)  | npm [4.1.0](https://www.npmjs.com/package/%40azure%2Fkeyvault-admin) |
 | Key Vault - Certificates | @azure/keyvault-certificates | 4.3.0 | [docs](/azure/javascript/sdk/sdk-demo2/key-vault/keyvault-certificates/azure-keyvault-certificates/stable)  | npm [4.3.0](https://www.npmjs.com/package/%40azure%2Fkeyvault-certificates) |
@@ -25,7 +25,7 @@ ms.author: daberry
 
 ## Beta packages
 
-| Name                  | Package              | Version          | Docs                   | Package Manager                |
+| Name                  | Package              | Version          | Reference Docs         | Package Manager                |
 |-----------------------|----------------------|------------------|------------------------|--------------------------------|
 | Key Vault - Admin | @azure/keyvault-admin | 4.2.0-beta.2 | [docs](/azure/javascript/sdk/sdk-demo2/key-vault/keyvault-admin/azure-keyvault-admin/beta)  | npm [4.2.0-beta.2](https://www.npmjs.com/package/%40azure%2Fkeyvault-admin%404.2.0-beta.2) |
 | Key Vault - Certificates | @azure/keyvault-certificates | 4.4.0-beta.2 | [docs](/azure/javascript/sdk/sdk-demo2/key-vault/keyvault-certificates/azure-keyvault-certificates/beta)  | npm [4.4.0-beta.2](https://www.npmjs.com/package/%40azure%2Fkeyvault-certificates%404.4.0-beta.2) |
@@ -37,7 +37,7 @@ ms.author: daberry
 
 ## Legacy packages
 
-| Name                  | Package              | Version          | Docs                   | Package Manager                |
+| Name                  | Package              | Version          | Reference Docs         | Package Manager                |
 |-----------------------|----------------------|------------------|------------------------|--------------------------------|
 | Key Vault | azure-keyvault | 3.0.5 | [docs](/azure/javascript/sdk/sdk-demo2/key-vault/legacy/keyvault/azure-keyvault/legacy)  | npm [3.0.5](https://www.npmjs.com/package/azure-keyvault%403.0.5) |
 | Key Vault - Resource Management | azure-arm-keyvault | 1.2.0 | [docs](/azure/javascript/sdk/sdk-demo2/key-vault/legacy/arm-keyvault/azure-arm-keyvault/legacy)  | npm [1.2.0](https://www.npmjs.com/package/azure-arm-keyvault%401.2.0) |
