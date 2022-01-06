@@ -1,0 +1,14 @@
+### YamlMime:TSTypeAlias
+name: ClusterCreateRequestValidationParameters
+uid: '@azure/arm-hdinsight.ClusterCreateRequestValidationParameters'
+package: '@azure/arm-hdinsight'
+summary: The cluster create request specification.
+fullName: ClusterCreateRequestValidationParameters
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type ClusterCreateRequestValidationParameters =
+  ClusterCreateParametersExtended & { fetchAaddsResource?: undefined | false |
+  true, name?: undefined | string, tenantId?: undefined | string, type?:
+  undefined | string }

@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: Application
+uid: '@azure/arm-hdinsight.Application'
+package: '@azure/arm-hdinsight'
+summary: The HDInsight cluster application
+fullName: Application
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type Application = ProxyResource & { etag?: undefined | string, properties?:
+  ApplicationProperties, systemData?: SystemData, tags?: undefined | [key:
+  string]: string }
