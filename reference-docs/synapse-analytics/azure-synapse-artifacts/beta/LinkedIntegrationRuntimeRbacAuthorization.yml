@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: LinkedIntegrationRuntimeRbacAuthorization
+uid: '@azure/synapse-artifacts.LinkedIntegrationRuntimeRbacAuthorization|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: The role based access control (RBAC) authorization type integration runtime.
+fullName: LinkedIntegrationRuntimeRbacAuthorization
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type LinkedIntegrationRuntimeRbacAuthorization = LinkedIntegrationRuntimeType
+  & { authorizationType: "RBAC", resourceId: string }

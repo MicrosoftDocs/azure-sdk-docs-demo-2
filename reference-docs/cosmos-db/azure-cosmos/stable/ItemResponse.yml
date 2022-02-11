@@ -1,0 +1,148 @@
+### YamlMime:TSType
+name: ItemResponse
+uid: '@azure/cosmos.ItemResponse|stable'
+package: '@azure/cosmos|stable'
+summary: ''
+fullName: ItemResponse<T>
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: ItemResponse(T & Resource, CosmosHeaders, number, number, Item)
+    uid: '@azure/cosmos.ItemResponse.constructor|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        new ItemResponse(resource: T & Resource, headers: CosmosHeaders,
+        statusCode: number, subsstatusCode: number, item: Item)
+      parameters:
+        - id: resource
+          type: T & <xref uid="@azure/cosmos.Resource|stable" />
+          description: ''
+        - id: headers
+          type: <xref uid="@azure/cosmos.CosmosHeaders|stable" />
+          description: ''
+        - id: statusCode
+          type: number
+          description: ''
+        - id: subsstatusCode
+          type: number
+          description: ''
+        - id: item
+          type: <xref uid="@azure/cosmos.Item|stable" />
+          description: ''
+properties:
+  - name: activityId
+    uid: '@azure/cosmos.ItemResponse.activityId|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: activityId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: string activityId
+      return:
+        description: ''
+        type: string
+  - name: etag
+    uid: '@azure/cosmos.ItemResponse.etag|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: etag
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: string etag
+      return:
+        description: ''
+        type: string
+  - name: headers
+    uid: '@azure/cosmos.ItemResponse.headers|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: headers
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'headers: CosmosHeaders_2'
+      return:
+        description: ''
+        type: <xref uid="@azure/cosmos.CosmosHeaders_2|stable" />
+  - name: item
+    uid: '@azure/cosmos.ItemResponse.item|stable'
+    package: '@azure/cosmos|stable'
+    summary: >-
+      Reference to the <xref:@azure/cosmos.Item|stable> the response corresponds
+      to.
+    fullName: item
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'item: Item'
+      return:
+        description: ''
+        type: <xref uid="@azure/cosmos.Item|stable" />
+  - name: requestCharge
+    uid: '@azure/cosmos.ItemResponse.requestCharge|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: requestCharge
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: number requestCharge
+      return:
+        description: ''
+        type: number
+  - name: resource
+    uid: '@azure/cosmos.ItemResponse.resource|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: resource
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'resource: (T & Resource) | undefined'
+      return:
+        description: ''
+        type: (T & <xref uid="@azure/cosmos.Resource|stable" />) | undefined
+  - name: statusCode
+    uid: '@azure/cosmos.ItemResponse.statusCode|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: statusCode
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'statusCode: StatusCode'
+      return:
+        description: ''
+        type: StatusCode
+  - name: substatus
+    uid: '@azure/cosmos.ItemResponse.substatus|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: substatus
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'substatus?: SubStatusCode'
+      return:
+        description: ''
+        type: SubStatusCode
+extends: >-
+  <xref uid="@azure/cosmos.ResourceResponse|stable" />&lt;T & <xref
+  uid="@azure/cosmos.Resource|stable" />&gt;

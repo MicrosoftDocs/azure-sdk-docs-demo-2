@@ -1,0 +1,39 @@
+### YamlMime:TSType
+name: NamespaceListResult
+uid: '@azure/arm-notificationhubs.NamespaceListResult|stable'
+package: '@azure/arm-notificationhubs|stable'
+summary: The response of the List Namespace operation.
+fullName: NamespaceListResult
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: nextLink
+    uid: '@azure/arm-notificationhubs.NamespaceListResult.nextLink|stable'
+    package: '@azure/arm-notificationhubs|stable'
+    summary: >-
+      Link to the next set of results. Not empty if Value contains incomplete
+      list of Namespaces
+    fullName: nextLink
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nextLink?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: value
+    uid: '@azure/arm-notificationhubs.NamespaceListResult.value|stable'
+    package: '@azure/arm-notificationhubs|stable'
+    summary: Result of the List Namespace operation.
+    fullName: value
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: NamespaceResource[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-notificationhubs.NamespaceResource|stable" />[]

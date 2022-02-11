@@ -1,0 +1,63 @@
+### YamlMime:TSType
+name: ErrorModel
+uid: '@azure/keyvault-certificates.ErrorModel|beta'
+package: '@azure/keyvault-certificates|beta'
+summary: The key vault server error model.
+fullName: ErrorModel
+remarks: ''
+isPreview: false
+isDeprecated: true
+customDeprecatedMessage: >-
+  - Please use
+  <xref:@azure/keyvault-certificates.CertificateOperationError|beta> instead.
+type: interface
+properties:
+  - name: code
+    uid: '@azure/keyvault-certificates.ErrorModel.code|beta'
+    package: '@azure/keyvault-certificates|beta'
+    summary: >-
+      The error code.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: code
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'code?: string'
+      return:
+        description: ''
+        type: string
+  - name: innerError
+    uid: '@azure/keyvault-certificates.ErrorModel.innerError|beta'
+    package: '@azure/keyvault-certificates|beta'
+    summary: >-
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: innerError
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'innerError?: ErrorModel'
+      return:
+        description: ''
+        type: <xref uid="@azure/keyvault-certificates.ErrorModel|beta" />
+  - name: message
+    uid: '@azure/keyvault-certificates.ErrorModel.message|beta'
+    package: '@azure/keyvault-certificates|beta'
+    summary: >-
+      The error message.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: message
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'message?: string'
+      return:
+        description: ''
+        type: string

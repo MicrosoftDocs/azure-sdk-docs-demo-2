@@ -1,0 +1,91 @@
+### YamlMime:TSType
+name: PacketCaptureQueryStatusResult
+uid: '@azure/arm-network.PacketCaptureQueryStatusResult|stable'
+package: '@azure/arm-network|stable'
+summary: Status of packet capture session.
+fullName: PacketCaptureQueryStatusResult
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: captureStartTime
+    uid: '@azure/arm-network.PacketCaptureQueryStatusResult.captureStartTime|stable'
+    package: '@azure/arm-network|stable'
+    summary: The start time of the packet capture session.
+    fullName: captureStartTime
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'captureStartTime?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: id
+    uid: '@azure/arm-network.PacketCaptureQueryStatusResult.id|stable'
+    package: '@azure/arm-network|stable'
+    summary: The ID of the packet capture resource.
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: name
+    uid: '@azure/arm-network.PacketCaptureQueryStatusResult.name|stable'
+    package: '@azure/arm-network|stable'
+    summary: The name of the packet capture resource.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: packetCaptureError
+    uid: >-
+      @azure/arm-network.PacketCaptureQueryStatusResult.packetCaptureError|stable
+    package: '@azure/arm-network|stable'
+    summary: List of errors of packet capture session.
+    fullName: packetCaptureError
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'packetCaptureError?: PcError[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.PcError|stable" />[]
+  - name: packetCaptureStatus
+    uid: >-
+      @azure/arm-network.PacketCaptureQueryStatusResult.packetCaptureStatus|stable
+    package: '@azure/arm-network|stable'
+    summary: The status of the packet capture session.
+    fullName: packetCaptureStatus
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'packetCaptureStatus?: PcStatus'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.PcStatus|stable" />
+  - name: stopReason
+    uid: '@azure/arm-network.PacketCaptureQueryStatusResult.stopReason|stable'
+    package: '@azure/arm-network|stable'
+    summary: The reason the current packet capture session was stopped.
+    fullName: stopReason
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'stopReason?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

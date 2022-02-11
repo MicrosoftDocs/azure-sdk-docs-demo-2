@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: DatasetDataElement
+uid: '@azure/synapse-artifacts.DatasetDataElement|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: Columns that define the structure of the dataset.
+fullName: DatasetDataElement
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: name
+    uid: '@azure/synapse-artifacts.DatasetDataElement.name|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: 'Name of the column. Type: string (or Expression with resultType string).'
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: any'
+      return:
+        description: ''
+        type: any
+  - name: type
+    uid: '@azure/synapse-artifacts.DatasetDataElement.type|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: 'Type of the column. Type: string (or Expression with resultType string).'
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: any'
+      return:
+        description: ''
+        type: any

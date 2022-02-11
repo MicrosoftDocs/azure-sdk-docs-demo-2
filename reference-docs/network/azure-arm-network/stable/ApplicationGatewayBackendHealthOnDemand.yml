@@ -1,0 +1,45 @@
+### YamlMime:TSType
+name: ApplicationGatewayBackendHealthOnDemand
+uid: '@azure/arm-network.ApplicationGatewayBackendHealthOnDemand|stable'
+package: '@azure/arm-network|stable'
+summary: Result of on demand test probe.
+fullName: ApplicationGatewayBackendHealthOnDemand
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: backendAddressPool
+    uid: >-
+      @azure/arm-network.ApplicationGatewayBackendHealthOnDemand.backendAddressPool|stable
+    package: '@azure/arm-network|stable'
+    summary: Reference to an ApplicationGatewayBackendAddressPool resource.
+    fullName: backendAddressPool
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'backendAddressPool?: ApplicationGatewayBackendAddressPool'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-network.ApplicationGatewayBackendAddressPool|stable"
+          />
+  - name: backendHealthHttpSettings
+    uid: >-
+      @azure/arm-network.ApplicationGatewayBackendHealthOnDemand.backendHealthHttpSettings|stable
+    package: '@azure/arm-network|stable'
+    summary: Application gateway BackendHealthHttp settings.
+    fullName: backendHealthHttpSettings
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'backendHealthHttpSettings?: ApplicationGatewayBackendHealthHttpSettings'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-network.ApplicationGatewayBackendHealthHttpSettings|stable"
+          />

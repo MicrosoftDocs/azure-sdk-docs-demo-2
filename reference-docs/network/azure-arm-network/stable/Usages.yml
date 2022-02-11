@@ -1,0 +1,35 @@
+### YamlMime:TSType
+name: Usages
+uid: '@azure/arm-network.Usages|stable'
+package: '@azure/arm-network|stable'
+summary: Interface representing a Usages.
+fullName: Usages
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: list(string, UsagesListOptionalParams)
+    uid: '@azure/arm-network.Usages.list|stable'
+    package: '@azure/arm-network|stable'
+    summary: List network usages for a subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(location: string, options?: UsagesListOptionalParams):
+        PagedAsyncIterableIterator<Usage>
+      parameters:
+        - id: location
+          type: string
+          description: The location where resource usage is queried.
+        - id: options
+          type: <xref uid="@azure/arm-network.UsagesListOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-network.Usage|stable" />&gt;

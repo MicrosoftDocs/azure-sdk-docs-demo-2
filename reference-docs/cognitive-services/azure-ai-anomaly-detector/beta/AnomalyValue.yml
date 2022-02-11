@@ -1,0 +1,65 @@
+### YamlMime:TSType
+name: AnomalyValue
+uid: '@azure/ai-anomaly-detector.AnomalyValue|beta'
+package: '@azure/ai-anomaly-detector|beta'
+summary: ''
+fullName: AnomalyValue
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: interpretation
+    uid: '@azure/ai-anomaly-detector.AnomalyValue.interpretation|beta'
+    package: '@azure/ai-anomaly-detector|beta'
+    summary: ''
+    fullName: interpretation
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'interpretation?: AnomalyInterpretation[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/ai-anomaly-detector.AnomalyInterpretation|beta" />[]
+  - name: isAnomaly
+    uid: '@azure/ai-anomaly-detector.AnomalyValue.isAnomaly|beta'
+    package: '@azure/ai-anomaly-detector|beta'
+    summary: True if an anomaly is detected at the current timestamp.
+    fullName: isAnomaly
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isAnomaly: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: score
+    uid: '@azure/ai-anomaly-detector.AnomalyValue.score|beta'
+    package: '@azure/ai-anomaly-detector|beta'
+    summary: Raw score from the model.
+    fullName: score
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'score: number'
+      return:
+        description: ''
+        type: number
+  - name: severity
+    uid: '@azure/ai-anomaly-detector.AnomalyValue.severity|beta'
+    package: '@azure/ai-anomaly-detector|beta'
+    summary: >-
+      Indicates the significance of the anomaly. The higher the severity, the
+      more significant the anomaly.
+    fullName: severity
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'severity: number'
+      return:
+        description: ''
+        type: number

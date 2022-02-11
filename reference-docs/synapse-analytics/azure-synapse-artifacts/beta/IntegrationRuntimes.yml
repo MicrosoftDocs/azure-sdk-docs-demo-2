@@ -1,0 +1,65 @@
+### YamlMime:TSType
+name: IntegrationRuntimes
+uid: '@azure/synapse-artifacts.IntegrationRuntimes|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: Interface representing a IntegrationRuntimes.
+fullName: IntegrationRuntimes
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: get(string, IntegrationRuntimesGetOptionalParams)
+    uid: '@azure/synapse-artifacts.IntegrationRuntimes.get|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Get Integration Runtime
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(integrationRuntimeName: string, options?:
+        IntegrationRuntimesGetOptionalParams):
+        Promise<IntegrationRuntimesGetResponse>
+      parameters:
+        - id: integrationRuntimeName
+          type: string
+          description: The Integration Runtime name
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-artifacts.IntegrationRuntimesGetOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/synapse-artifacts.IntegrationRuntimesGetResponse|beta"
+          />&gt;
+  - name: list(IntegrationRuntimesListOptionalParams)
+    uid: '@azure/synapse-artifacts.IntegrationRuntimes.list|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: List Integration Runtimes
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(options?: IntegrationRuntimesListOptionalParams):
+        Promise<IntegrationRuntimesListResponse>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-artifacts.IntegrationRuntimesListOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/synapse-artifacts.IntegrationRuntimesListResponse|beta"
+          />&gt;

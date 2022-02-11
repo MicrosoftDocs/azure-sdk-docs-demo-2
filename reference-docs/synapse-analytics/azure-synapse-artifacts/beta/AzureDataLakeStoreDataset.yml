@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: AzureDataLakeStoreDataset
+uid: '@azure/synapse-artifacts.AzureDataLakeStoreDataset|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: Azure Data Lake Store dataset.
+fullName: AzureDataLakeStoreDataset
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type AzureDataLakeStoreDataset = Dataset & { compression?: DatasetCompression,
+  fileName?: any, folderPath?: any, format?: DatasetStorageFormatUnion, type:
+  "AzureDataLakeStoreFile" }

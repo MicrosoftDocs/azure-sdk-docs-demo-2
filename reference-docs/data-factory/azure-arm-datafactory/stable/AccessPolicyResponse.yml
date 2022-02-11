@@ -1,0 +1,50 @@
+### YamlMime:TSType
+name: AccessPolicyResponse
+uid: '@azure/arm-datafactory.AccessPolicyResponse|stable'
+package: '@azure/arm-datafactory|stable'
+summary: Get Data Plane read only token response definition.
+fullName: AccessPolicyResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: accessToken
+    uid: '@azure/arm-datafactory.AccessPolicyResponse.accessToken|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: Data Plane read only access token.
+    fullName: accessToken
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'accessToken?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: dataPlaneUrl
+    uid: '@azure/arm-datafactory.AccessPolicyResponse.dataPlaneUrl|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: Data Plane service base URL.
+    fullName: dataPlaneUrl
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dataPlaneUrl?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: policy
+    uid: '@azure/arm-datafactory.AccessPolicyResponse.policy|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: The user access policy.
+    fullName: policy
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'policy?: UserAccessPolicy'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-datafactory.UserAccessPolicy|stable" />

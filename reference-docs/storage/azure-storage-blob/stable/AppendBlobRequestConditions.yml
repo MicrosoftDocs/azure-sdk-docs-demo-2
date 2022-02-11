@@ -1,0 +1,136 @@
+### YamlMime:TSType
+name: AppendBlobRequestConditions
+uid: '@azure/storage-blob.AppendBlobRequestConditions|stable'
+package: '@azure/storage-blob|stable'
+summary: Conditions to add to the creation of this append blob.
+fullName: AppendBlobRequestConditions
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: appendPosition
+    uid: '@azure/storage-blob.AppendBlobRequestConditions.appendPosition|stable'
+    package: '@azure/storage-blob|stable'
+    summary: >-
+      Optional conditional header, used only for the Append Block operation. A
+      number indicating the byte offset to compare. Append Block will succeed
+      only if the append position is equal to this number. If it is not, the
+      request will fail with the AppendPositionConditionNotMet error (HTTP
+      status code 412 - Precondition Failed).
+    fullName: appendPosition
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'appendPosition?: number'
+      return:
+        description: ''
+        type: number
+  - name: ifMatch
+    uid: '@azure/storage-blob.AppendBlobRequestConditions.ifMatch|stable'
+    package: '@azure/storage-blob|stable'
+    summary: Specify an ETag value to operate only on blobs with a matching value.
+    fullName: ifMatch
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ifMatch?: string'
+      return:
+        description: ''
+        type: string
+  - name: ifModifiedSince
+    uid: '@azure/storage-blob.AppendBlobRequestConditions.ifModifiedSince|stable'
+    package: '@azure/storage-blob|stable'
+    summary: >-
+      Specify this header value to operate only on a blob if it has been
+      modified since the
+
+      specified date/time.
+    fullName: ifModifiedSince
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ifModifiedSince?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: ifNoneMatch
+    uid: '@azure/storage-blob.AppendBlobRequestConditions.ifNoneMatch|stable'
+    package: '@azure/storage-blob|stable'
+    summary: Specify an ETag value to operate only on blobs without a matching value.
+    fullName: ifNoneMatch
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ifNoneMatch?: string'
+      return:
+        description: ''
+        type: string
+  - name: ifUnmodifiedSince
+    uid: '@azure/storage-blob.AppendBlobRequestConditions.ifUnmodifiedSince|stable'
+    package: '@azure/storage-blob|stable'
+    summary: >-
+      Specify this header value to operate only on a blob if it has not been
+      modified since the
+
+      specified date/time.
+    fullName: ifUnmodifiedSince
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ifUnmodifiedSince?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: leaseId
+    uid: '@azure/storage-blob.AppendBlobRequestConditions.leaseId|stable'
+    package: '@azure/storage-blob|stable'
+    summary: >-
+      If specified, the operation only succeeds if the resource's lease is
+      active and matches this ID.
+    fullName: leaseId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'leaseId?: string'
+      return:
+        description: ''
+        type: string
+  - name: maxSize
+    uid: '@azure/storage-blob.AppendBlobRequestConditions.maxSize|stable'
+    package: '@azure/storage-blob|stable'
+    summary: >-
+      Optional conditional header. The max length in bytes permitted for the
+      append blob. If the Append Block operation would cause the blob to exceed
+      that limit or if the blob size is already greater than the value specified
+      in this header, the request will fail with MaxBlobSizeConditionNotMet
+      error (HTTP status code 412 - Precondition Failed).
+    fullName: maxSize
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'maxSize?: number'
+      return:
+        description: ''
+        type: number
+  - name: tagConditions
+    uid: '@azure/storage-blob.AppendBlobRequestConditions.tagConditions|stable'
+    package: '@azure/storage-blob|stable'
+    summary: Optional SQL statement to apply to the tags of the blob.
+    fullName: tagConditions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tagConditions?: string'
+      return:
+        description: ''
+        type: string
+extends: <xref uid="@azure/storage-blob.BlobRequestConditions|stable" />

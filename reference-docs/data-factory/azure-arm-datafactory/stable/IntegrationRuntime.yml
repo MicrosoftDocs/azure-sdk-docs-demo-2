@@ -1,0 +1,41 @@
+### YamlMime:TSType
+name: IntegrationRuntime
+uid: '@azure/arm-datafactory.IntegrationRuntime|stable'
+package: '@azure/arm-datafactory|stable'
+summary: >-
+  Azure Data Factory nested object which serves as a compute resource for
+  activities.
+fullName: IntegrationRuntime
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: description
+    uid: '@azure/arm-datafactory.IntegrationRuntime.description|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: Integration runtime description.
+    fullName: description
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'description?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: type
+    uid: '@azure/arm-datafactory.IntegrationRuntime.type|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: >-
+      Polymorphic discriminator, which specifies the different types this object
+      can be
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: "Managed" | "SelfHosted"'
+      return:
+        description: ''
+        type: '"Managed" | "SelfHosted"'

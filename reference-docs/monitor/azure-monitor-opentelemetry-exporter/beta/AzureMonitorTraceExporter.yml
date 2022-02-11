@@ -1,0 +1,65 @@
+### YamlMime:TSType
+name: AzureMonitorTraceExporter
+uid: '@azure/monitor-opentelemetry-exporter.AzureMonitorTraceExporter|beta'
+package: '@azure/monitor-opentelemetry-exporter|beta'
+summary: Azure Monitor OpenTelemetry Trace Exporter.
+fullName: AzureMonitorTraceExporter
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: AzureMonitorTraceExporter(AzureExporterConfig)
+    uid: >-
+      @azure/monitor-opentelemetry-exporter.AzureMonitorTraceExporter.constructor|beta
+    package: '@azure/monitor-opentelemetry-exporter|beta'
+    summary: Initializes a new instance of the AzureMonitorTraceExporter class.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'new AzureMonitorTraceExporter(options?: AzureExporterConfig)'
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/monitor-opentelemetry-exporter.AzureExporterConfig|beta"
+            />
+          description: ''
+methods:
+  - name: 'export(ReadableSpan[], (result: ExportResult) => void)'
+    uid: >-
+      @azure/monitor-opentelemetry-exporter.AzureMonitorTraceExporter.export|beta
+    package: '@azure/monitor-opentelemetry-exporter|beta'
+    summary: Export OpenTelemetry spans.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function export(spans: ReadableSpan[], resultCallback: (result:
+        ExportResult) => void): Promise<void>
+      parameters:
+        - id: spans
+          type: ReadableSpan[]
+          description: Spans to export.
+        - id: resultCallback
+          type: '(result: ExportResult) =&gt; void'
+          description: |
+            Result callback.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: shutdown()
+    uid: >-
+      @azure/monitor-opentelemetry-exporter.AzureMonitorTraceExporter.shutdown|beta
+    package: '@azure/monitor-opentelemetry-exporter|beta'
+    summary: Shutdown AzureMonitorTraceExporter.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function shutdown(): Promise<void>'
+      return:
+        description: ''
+        type: Promise&lt;void&gt;

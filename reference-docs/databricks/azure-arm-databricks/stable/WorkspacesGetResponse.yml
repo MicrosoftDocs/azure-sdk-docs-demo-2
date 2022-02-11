@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: WorkspacesGetResponse
+uid: '@azure/arm-databricks.WorkspacesGetResponse|stable'
+package: '@azure/arm-databricks|stable'
+summary: Contains response data for the get operation.
+fullName: WorkspacesGetResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type WorkspacesGetResponse = Workspace & { _response: HttpResponse & {
+  bodyAsText: string, parsedBody: Workspace } }

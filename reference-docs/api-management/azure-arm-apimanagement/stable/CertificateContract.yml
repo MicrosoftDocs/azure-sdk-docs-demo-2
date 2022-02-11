@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: CertificateContract
+uid: '@azure/arm-apimanagement.CertificateContract|stable'
+package: '@azure/arm-apimanagement|stable'
+summary: Certificate details.
+fullName: CertificateContract
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type CertificateContract = Resource & { expirationDate?: Date, keyVault?:
+  KeyVaultContractProperties, subject?: undefined | string, thumbprint?:
+  undefined | string }

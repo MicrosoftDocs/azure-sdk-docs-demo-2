@@ -1,0 +1,14 @@
+### YamlMime:TSTypeAlias
+name: CustomerCertificateParameters
+uid: '@azure/arm-cdn.CustomerCertificateParameters|stable'
+package: '@azure/arm-cdn|stable'
+summary: Customer Certificate used for https
+fullName: CustomerCertificateParameters
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type CustomerCertificateParameters = SecretParameters & {
+  certificateAuthority?: undefined | string, secretSource: ResourceReference,
+  secretVersion?: undefined | string, subjectAlternativeNames?: string[], type:
+  "CustomerCertificate", useLatestVersion?: undefined | false | true }

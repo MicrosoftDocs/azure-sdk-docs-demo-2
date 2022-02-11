@@ -1,0 +1,105 @@
+### YamlMime:TSType
+name: DataCollectionEndpoint
+uid: '@azure/arm-monitor.DataCollectionEndpoint|stable'
+package: '@azure/arm-monitor|stable'
+summary: Definition of data collection endpoint.
+fullName: DataCollectionEndpoint
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: configurationAccess
+    uid: '@azure/arm-monitor.DataCollectionEndpoint.configurationAccess|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: The endpoint used by agents to access their configuration.
+    fullName: configurationAccess
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'configurationAccess?: DataCollectionEndpointConfigurationAccess'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-monitor.DataCollectionEndpointConfigurationAccess|stable"
+          />
+  - name: description
+    uid: '@azure/arm-monitor.DataCollectionEndpoint.description|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: Description of the data collection endpoint.
+    fullName: description
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'description?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: immutableId
+    uid: '@azure/arm-monitor.DataCollectionEndpoint.immutableId|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: >-
+      The immutable ID of this data collection endpoint resource. This property
+      is READ-ONLY.
+    fullName: immutableId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'immutableId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: logsIngestion
+    uid: '@azure/arm-monitor.DataCollectionEndpoint.logsIngestion|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: The endpoint used by clients to ingest logs.
+    fullName: logsIngestion
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'logsIngestion?: DataCollectionEndpointLogsIngestion'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-monitor.DataCollectionEndpointLogsIngestion|stable" />
+  - name: networkAcls
+    uid: '@azure/arm-monitor.DataCollectionEndpoint.networkAcls|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: Network access control rules for the endpoints.
+    fullName: networkAcls
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'networkAcls?: DataCollectionEndpointNetworkAcls'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-monitor.DataCollectionEndpointNetworkAcls|stable" />
+  - name: provisioningState
+    uid: '@azure/arm-monitor.DataCollectionEndpoint.provisioningState|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: >-
+      The resource provisioning state. This property is READ-ONLY.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: provisioningState
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'provisioningState?: KnownDataCollectionEndpointProvisioningState'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-monitor.KnownDataCollectionEndpointProvisioningState|stable"
+          />

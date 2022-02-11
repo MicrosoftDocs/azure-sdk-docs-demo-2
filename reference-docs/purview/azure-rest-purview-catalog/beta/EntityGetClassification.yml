@@ -1,0 +1,67 @@
+### YamlMime:TSType
+name: EntityGetClassification
+uid: '@azure-rest/purview-catalog.EntityGetClassification|beta'
+package: '@azure-rest/purview-catalog|beta'
+summary: ''
+fullName: EntityGetClassification
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: delete(EntityDeleteClassificationParameters)
+    uid: '@azure-rest/purview-catalog.EntityGetClassification.delete|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: >-
+      Delete a given classification from an existing entity represented by a
+      GUID.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function delete(options?: EntityDeleteClassificationParameters):
+        Promise<EntityDeleteClassification204Response |
+        EntityDeleteClassificationdefaultResponse>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure-rest/purview-catalog.EntityDeleteClassificationParameters|beta"
+            />
+          description: ''
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure-rest/purview-catalog.EntityDeleteClassification204Response|beta"
+          /> | <xref
+          uid="@azure-rest/purview-catalog.EntityDeleteClassificationdefaultResponse|beta"
+          />&gt;
+  - name: get(EntityGetClassificationParameters)
+    uid: '@azure-rest/purview-catalog.EntityGetClassification.get|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: List classifications for a given entity represented by a GUID.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(options?: EntityGetClassificationParameters):
+        Promise<EntityGetClassification200Response |
+        EntityGetClassificationdefaultResponse>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure-rest/purview-catalog.EntityGetClassificationParameters|beta"
+            />
+          description: ''
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure-rest/purview-catalog.EntityGetClassification200Response|beta"
+          /> | <xref
+          uid="@azure-rest/purview-catalog.EntityGetClassificationdefaultResponse|beta"
+          />&gt;

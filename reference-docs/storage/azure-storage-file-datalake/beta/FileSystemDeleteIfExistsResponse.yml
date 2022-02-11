@@ -1,0 +1,87 @@
+### YamlMime:TSType
+name: FileSystemDeleteIfExistsResponse
+uid: '@azure/storage-file-datalake.FileSystemDeleteIfExistsResponse|beta'
+package: '@azure/storage-file-datalake|beta'
+summary: >-
+  Contains response data for the
+  <xref:@azure/storage-file-datalake.DataLakeFileSystemClient.deleteIfExists|beta>
+  operation.
+fullName: FileSystemDeleteIfExistsResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: clientRequestId
+    uid: >-
+      @azure/storage-file-datalake.FileSystemDeleteIfExistsResponse.clientRequestId|beta
+    package: '@azure/storage-file-datalake|beta'
+    summary: ''
+    fullName: clientRequestId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clientRequestId?: string'
+      return:
+        description: ''
+        type: string
+  - name: date
+    uid: '@azure/storage-file-datalake.FileSystemDeleteIfExistsResponse.date|beta'
+    package: '@azure/storage-file-datalake|beta'
+    summary: ''
+    fullName: date
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'date?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: requestId
+    uid: >-
+      @azure/storage-file-datalake.FileSystemDeleteIfExistsResponse.requestId|beta
+    package: '@azure/storage-file-datalake|beta'
+    summary: ''
+    fullName: requestId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'requestId?: string'
+      return:
+        description: ''
+        type: string
+  - name: succeeded
+    uid: >-
+      @azure/storage-file-datalake.FileSystemDeleteIfExistsResponse.succeeded|beta
+    package: '@azure/storage-file-datalake|beta'
+    summary: >-
+      Indicate whether the file system is successfully deleted. Is false if the
+      file system doesn't exist in the first place.
+    fullName: succeeded
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'succeeded: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: version
+    uid: '@azure/storage-file-datalake.FileSystemDeleteIfExistsResponse.version|beta'
+    package: '@azure/storage-file-datalake|beta'
+    summary: ''
+    fullName: version
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'version?: string'
+      return:
+        description: ''
+        type: string
+extends: >-
+  <xref uid="@azure/storage-file-datalake.FileSystemDeleteHeaders|beta" /> & {
+  _response: HttpResponse & { parsedHeaders: FileSystemDeleteHeaders } }

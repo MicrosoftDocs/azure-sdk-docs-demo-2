@@ -1,0 +1,2575 @@
+### YamlMime:TSPackage
+uid: '@azure/arm-appservice|stable'
+name: '@azure/arm-appservice (11.0.0 - Stable)'
+summary: ''
+type: package
+enums:
+  - '@azure/arm-appservice.KnownActiveRevisionsMode|stable'
+  - >-
+    @azure/arm-appservice.KnownAppServiceCertificateOrderPatchResourcePropertiesAppServiceCertificateNotRenewableReasonsItem|stable
+  - >-
+    @azure/arm-appservice.KnownAppServiceCertificateOrderPropertiesAppServiceCertificateNotRenewableReasonsItem|stable
+  - '@azure/arm-appservice.KnownBuildStatus|stable'
+  - '@azure/arm-appservice.KnownCheckNameResourceTypes|stable'
+  - '@azure/arm-appservice.KnownContainerAppProvisioningState|stable'
+  - '@azure/arm-appservice.KnownCustomDomainStatus|stable'
+  - '@azure/arm-appservice.KnownDatabaseType|stable'
+  - >-
+    @azure/arm-appservice.KnownDomainPatchResourcePropertiesDomainNotRenewableReasonsItem|stable
+  - >-
+    @azure/arm-appservice.KnownDomainPropertiesDomainNotRenewableReasonsItem|stable
+  - '@azure/arm-appservice.KnownEnterpriseGradeCdnStatus|stable'
+  - '@azure/arm-appservice.KnownEnum15|stable'
+  - '@azure/arm-appservice.KnownEnum16|stable'
+  - '@azure/arm-appservice.KnownEnum17|stable'
+  - '@azure/arm-appservice.KnownEnum18|stable'
+  - '@azure/arm-appservice.KnownEnum19|stable'
+  - '@azure/arm-appservice.KnownEnum20|stable'
+  - '@azure/arm-appservice.KnownFtpsState|stable'
+  - '@azure/arm-appservice.KnownInAvailabilityReasonType|stable'
+  - '@azure/arm-appservice.KnownIngressTransportMethod|stable'
+  - '@azure/arm-appservice.KnownIpFilterTag|stable'
+  - '@azure/arm-appservice.KnownLoadBalancingMode|stable'
+  - '@azure/arm-appservice.KnownPublishingProfileFormat|stable'
+  - '@azure/arm-appservice.KnownResourceScopeType|stable'
+  - '@azure/arm-appservice.KnownRevisionHealthState|stable'
+  - '@azure/arm-appservice.KnownRevisionProvisioningState|stable'
+  - '@azure/arm-appservice.KnownRouteType|stable'
+  - '@azure/arm-appservice.KnownScmType|stable'
+  - '@azure/arm-appservice.KnownSkuName|stable'
+  - '@azure/arm-appservice.KnownSupportedTlsVersions|stable'
+  - '@azure/arm-appservice.KnownTriggerTypes|stable'
+  - '@azure/arm-appservice.KnownValidateResourceTypes|stable'
+classes:
+  - '@azure/arm-appservice.WebSiteManagementClient|stable'
+interfaces:
+  - '@azure/arm-appservice.AbnormalTimePeriod|stable'
+  - '@azure/arm-appservice.Address|stable'
+  - '@azure/arm-appservice.AllowedAudiencesValidation|stable'
+  - '@azure/arm-appservice.AllowedPrincipals|stable'
+  - '@azure/arm-appservice.AnalysisData|stable'
+  - '@azure/arm-appservice.ApiDefinitionInfo|stable'
+  - '@azure/arm-appservice.ApiKVReferenceCollection|stable'
+  - '@azure/arm-appservice.ApiManagementConfig|stable'
+  - '@azure/arm-appservice.AppInsightsWebAppStackSettings|stable'
+  - '@azure/arm-appservice.AppLogsConfiguration|stable'
+  - '@azure/arm-appservice.AppRegistration|stable'
+  - '@azure/arm-appservice.AppServiceCertificate|stable'
+  - '@azure/arm-appservice.AppServiceCertificateCollection|stable'
+  - '@azure/arm-appservice.AppServiceCertificateOrderCollection|stable'
+  - '@azure/arm-appservice.AppServiceCertificateOrders|stable'
+  - >-
+    @azure/arm-appservice.AppServiceCertificateOrdersCreateOrUpdateCertificateOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceCertificateOrdersCreateOrUpdateOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceCertificateOrdersDeleteCertificateOptionalParams|stable
+  - '@azure/arm-appservice.AppServiceCertificateOrdersDeleteOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.AppServiceCertificateOrdersGetCertificateOptionalParams|stable
+  - '@azure/arm-appservice.AppServiceCertificateOrdersGetOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.AppServiceCertificateOrdersListByResourceGroupNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceCertificateOrdersListByResourceGroupOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceCertificateOrdersListCertificatesNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceCertificateOrdersListCertificatesOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceCertificateOrdersListNextOptionalParams|stable
+  - '@azure/arm-appservice.AppServiceCertificateOrdersListOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.AppServiceCertificateOrdersReissueOptionalParams|stable
+  - '@azure/arm-appservice.AppServiceCertificateOrdersRenewOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.AppServiceCertificateOrdersResendEmailOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceCertificateOrdersResendRequestEmailsOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceCertificateOrdersRetrieveCertificateActionsOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceCertificateOrdersRetrieveCertificateEmailHistoryOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceCertificateOrdersRetrieveSiteSealOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceCertificateOrdersUpdateCertificateOptionalParams|stable
+  - '@azure/arm-appservice.AppServiceCertificateOrdersUpdateOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.AppServiceCertificateOrdersValidatePurchaseInformationOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceCertificateOrdersVerifyDomainOwnershipOptionalParams|stable
+  - '@azure/arm-appservice.AppServiceEnvironment|stable'
+  - '@azure/arm-appservice.AppServiceEnvironmentCollection|stable'
+  - '@azure/arm-appservice.AppServiceEnvironments|stable'
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsApproveOrRejectPrivateEndpointConnectionOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsChangeVnetNextOptionalParams|stable
+  - '@azure/arm-appservice.AppServiceEnvironmentsChangeVnetOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsCreateOrUpdateMultiRolePoolOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsCreateOrUpdateOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsCreateOrUpdateWorkerPoolOptionalParams|stable
+  - '@azure/arm-appservice.AppServiceEnvironmentsDeleteOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsDeletePrivateEndpointConnectionOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsGetAseV3NetworkingConfigurationOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsGetDiagnosticsItemOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsGetInboundNetworkDependenciesEndpointsNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsGetInboundNetworkDependenciesEndpointsOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsGetMultiRolePoolOptionalParams|stable
+  - '@azure/arm-appservice.AppServiceEnvironmentsGetOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsGetOutboundNetworkDependenciesEndpointsNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsGetOutboundNetworkDependenciesEndpointsOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsGetPrivateEndpointConnectionListNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsGetPrivateEndpointConnectionListOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsGetPrivateEndpointConnectionOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsGetPrivateLinkResourcesOptionalParams|stable
+  - '@azure/arm-appservice.AppServiceEnvironmentsGetVipInfoOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsGetWorkerPoolOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListAppServicePlansNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListAppServicePlansOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListByResourceGroupNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListByResourceGroupOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListCapacitiesNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListCapacitiesOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListDiagnosticsOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListMultiRoleMetricDefinitionsNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListMultiRoleMetricDefinitionsOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListMultiRolePoolInstanceMetricDefinitionsNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListMultiRolePoolInstanceMetricDefinitionsOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListMultiRolePoolSkusNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListMultiRolePoolSkusOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListMultiRolePoolsNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListMultiRolePoolsOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListMultiRoleUsagesNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListMultiRoleUsagesOptionalParams|stable
+  - '@azure/arm-appservice.AppServiceEnvironmentsListNextOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListOperationsOptionalParams|stable
+  - '@azure/arm-appservice.AppServiceEnvironmentsListOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListUsagesNextOptionalParams|stable
+  - '@azure/arm-appservice.AppServiceEnvironmentsListUsagesOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListWebAppsNextOptionalParams|stable
+  - '@azure/arm-appservice.AppServiceEnvironmentsListWebAppsOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListWebWorkerMetricDefinitionsNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListWebWorkerMetricDefinitionsOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListWebWorkerUsagesNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListWebWorkerUsagesOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListWorkerPoolInstanceMetricDefinitionsNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListWorkerPoolInstanceMetricDefinitionsOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListWorkerPoolSkusNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListWorkerPoolSkusOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListWorkerPoolsNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListWorkerPoolsOptionalParams|stable
+  - '@azure/arm-appservice.AppServiceEnvironmentsRebootOptionalParams|stable'
+  - '@azure/arm-appservice.AppServiceEnvironmentsResumeNextOptionalParams|stable'
+  - '@azure/arm-appservice.AppServiceEnvironmentsResumeOptionalParams|stable'
+  - '@azure/arm-appservice.AppServiceEnvironmentsSuspendNextOptionalParams|stable'
+  - '@azure/arm-appservice.AppServiceEnvironmentsSuspendOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsUpdateAseNetworkingConfigurationOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsUpdateMultiRolePoolOptionalParams|stable
+  - '@azure/arm-appservice.AppServiceEnvironmentsUpdateOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsUpdateWorkerPoolOptionalParams|stable
+  - '@azure/arm-appservice.AppServicePlanCollection|stable'
+  - '@azure/arm-appservice.AppServicePlans|stable'
+  - '@azure/arm-appservice.AppServicePlansCreateOrUpdateOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.AppServicePlansCreateOrUpdateVnetRouteOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServicePlansDeleteHybridConnectionOptionalParams|stable
+  - '@azure/arm-appservice.AppServicePlansDeleteOptionalParams|stable'
+  - '@azure/arm-appservice.AppServicePlansDeleteVnetRouteOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.AppServicePlansGetHybridConnectionOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServicePlansGetHybridConnectionPlanLimitOptionalParams|stable
+  - '@azure/arm-appservice.AppServicePlansGetOptionalParams|stable'
+  - '@azure/arm-appservice.AppServicePlansGetRouteForVnetOptionalParams|stable'
+  - '@azure/arm-appservice.AppServicePlansGetServerFarmSkusOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.AppServicePlansGetVnetFromServerFarmOptionalParams|stable
+  - '@azure/arm-appservice.AppServicePlansGetVnetGatewayOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.AppServicePlansListByResourceGroupNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServicePlansListByResourceGroupOptionalParams|stable
+  - '@azure/arm-appservice.AppServicePlansListCapabilitiesOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.AppServicePlansListHybridConnectionKeysOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServicePlansListHybridConnectionsNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServicePlansListHybridConnectionsOptionalParams|stable
+  - '@azure/arm-appservice.AppServicePlansListNextOptionalParams|stable'
+  - '@azure/arm-appservice.AppServicePlansListOptionalParams|stable'
+  - '@azure/arm-appservice.AppServicePlansListRoutesForVnetOptionalParams|stable'
+  - '@azure/arm-appservice.AppServicePlansListUsagesNextOptionalParams|stable'
+  - '@azure/arm-appservice.AppServicePlansListUsagesOptionalParams|stable'
+  - '@azure/arm-appservice.AppServicePlansListVnetsOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.AppServicePlansListWebAppsByHybridConnectionNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.AppServicePlansListWebAppsByHybridConnectionOptionalParams|stable
+  - '@azure/arm-appservice.AppServicePlansListWebAppsNextOptionalParams|stable'
+  - '@azure/arm-appservice.AppServicePlansListWebAppsOptionalParams|stable'
+  - '@azure/arm-appservice.AppServicePlansRebootWorkerOptionalParams|stable'
+  - '@azure/arm-appservice.AppServicePlansRestartWebAppsOptionalParams|stable'
+  - '@azure/arm-appservice.AppServicePlansUpdateOptionalParams|stable'
+  - '@azure/arm-appservice.AppServicePlansUpdateVnetGatewayOptionalParams|stable'
+  - '@azure/arm-appservice.AppServicePlansUpdateVnetRouteOptionalParams|stable'
+  - '@azure/arm-appservice.Apple|stable'
+  - '@azure/arm-appservice.AppleRegistration|stable'
+  - '@azure/arm-appservice.ApplicationLogsConfig|stable'
+  - '@azure/arm-appservice.ApplicationStack|stable'
+  - '@azure/arm-appservice.ApplicationStackCollection|stable'
+  - '@azure/arm-appservice.AppserviceGithubToken|stable'
+  - '@azure/arm-appservice.AppserviceGithubTokenRequest|stable'
+  - '@azure/arm-appservice.ArcConfiguration|stable'
+  - '@azure/arm-appservice.ArmIdWrapper|stable'
+  - '@azure/arm-appservice.ArmPlan|stable'
+  - '@azure/arm-appservice.AuthPlatform|stable'
+  - '@azure/arm-appservice.AutoHealActions|stable'
+  - '@azure/arm-appservice.AutoHealCustomAction|stable'
+  - '@azure/arm-appservice.AutoHealRules|stable'
+  - '@azure/arm-appservice.AutoHealTriggers|stable'
+  - '@azure/arm-appservice.AzureActiveDirectory|stable'
+  - '@azure/arm-appservice.AzureActiveDirectoryLogin|stable'
+  - '@azure/arm-appservice.AzureActiveDirectoryRegistration|stable'
+  - '@azure/arm-appservice.AzureActiveDirectoryValidation|stable'
+  - '@azure/arm-appservice.AzureBlobStorageApplicationLogsConfig|stable'
+  - '@azure/arm-appservice.AzureBlobStorageHttpLogsConfig|stable'
+  - '@azure/arm-appservice.AzureStaticWebApps|stable'
+  - '@azure/arm-appservice.AzureStaticWebAppsRegistration|stable'
+  - '@azure/arm-appservice.AzureStorageInfoValue|stable'
+  - '@azure/arm-appservice.AzureTableStorageApplicationLogsConfig|stable'
+  - '@azure/arm-appservice.BackupItemCollection|stable'
+  - '@azure/arm-appservice.BackupSchedule|stable'
+  - '@azure/arm-appservice.BillingMeterCollection|stable'
+  - '@azure/arm-appservice.BlobStorageTokenStore|stable'
+  - '@azure/arm-appservice.Capability|stable'
+  - '@azure/arm-appservice.CertificateCollection|stable'
+  - '@azure/arm-appservice.CertificateDetails|stable'
+  - '@azure/arm-appservice.CertificateOrderContact|stable'
+  - '@azure/arm-appservice.CertificateOrdersDiagnostics|stable'
+  - >-
+    @azure/arm-appservice.CertificateOrdersDiagnosticsGetAppServiceCertificateOrderDetectorResponseOptionalParams|stable
+  - >-
+    @azure/arm-appservice.CertificateOrdersDiagnosticsListAppServiceCertificateOrderDetectorResponseNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.CertificateOrdersDiagnosticsListAppServiceCertificateOrderDetectorResponseOptionalParams|stable
+  - '@azure/arm-appservice.CertificateRegistrationProvider|stable'
+  - >-
+    @azure/arm-appservice.CertificateRegistrationProviderListOperationsNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.CertificateRegistrationProviderListOperationsOptionalParams|stable
+  - '@azure/arm-appservice.Certificates|stable'
+  - '@azure/arm-appservice.CertificatesCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-appservice.CertificatesDeleteOptionalParams|stable'
+  - '@azure/arm-appservice.CertificatesGetOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.CertificatesListByResourceGroupNextOptionalParams|stable
+  - '@azure/arm-appservice.CertificatesListByResourceGroupOptionalParams|stable'
+  - '@azure/arm-appservice.CertificatesListNextOptionalParams|stable'
+  - '@azure/arm-appservice.CertificatesListOptionalParams|stable'
+  - '@azure/arm-appservice.CertificatesUpdateOptionalParams|stable'
+  - '@azure/arm-appservice.CheckNameAvailabilityOptionalParams|stable'
+  - '@azure/arm-appservice.ClientRegistration|stable'
+  - '@azure/arm-appservice.CloningInfo|stable'
+  - '@azure/arm-appservice.Configuration|stable'
+  - '@azure/arm-appservice.ConnStringInfo|stable'
+  - '@azure/arm-appservice.ConnStringValueTypePair|stable'
+  - '@azure/arm-appservice.Contact|stable'
+  - '@azure/arm-appservice.Container|stable'
+  - '@azure/arm-appservice.ContainerAppCollection|stable'
+  - '@azure/arm-appservice.ContainerAppSecret|stable'
+  - '@azure/arm-appservice.ContainerApps|stable'
+  - '@azure/arm-appservice.ContainerAppsConfiguration|stable'
+  - '@azure/arm-appservice.ContainerAppsCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-appservice.ContainerAppsDeleteOptionalParams|stable'
+  - '@azure/arm-appservice.ContainerAppsGetOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.ContainerAppsListByResourceGroupNextOptionalParams|stable
+  - '@azure/arm-appservice.ContainerAppsListByResourceGroupOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.ContainerAppsListBySubscriptionNextOptionalParams|stable
+  - '@azure/arm-appservice.ContainerAppsListBySubscriptionOptionalParams|stable'
+  - '@azure/arm-appservice.ContainerAppsListSecretsOptionalParams|stable'
+  - '@azure/arm-appservice.ContainerAppsRevisions|stable'
+  - >-
+    @azure/arm-appservice.ContainerAppsRevisionsActivateRevisionOptionalParams|stable
+  - >-
+    @azure/arm-appservice.ContainerAppsRevisionsDeactivateRevisionOptionalParams|stable
+  - '@azure/arm-appservice.ContainerAppsRevisionsGetRevisionOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.ContainerAppsRevisionsListRevisionsNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.ContainerAppsRevisionsListRevisionsOptionalParams|stable
+  - >-
+    @azure/arm-appservice.ContainerAppsRevisionsRestartRevisionOptionalParams|stable
+  - '@azure/arm-appservice.ContainerCpuStatistics|stable'
+  - '@azure/arm-appservice.ContainerCpuUsage|stable'
+  - '@azure/arm-appservice.ContainerInfo|stable'
+  - '@azure/arm-appservice.ContainerMemoryStatistics|stable'
+  - '@azure/arm-appservice.ContainerNetworkInterfaceStatistics|stable'
+  - '@azure/arm-appservice.ContainerResources|stable'
+  - '@azure/arm-appservice.ContainerThrottlingData|stable'
+  - '@azure/arm-appservice.ContinuousWebJobCollection|stable'
+  - '@azure/arm-appservice.CookieExpiration|stable'
+  - '@azure/arm-appservice.CorsSettings|stable'
+  - '@azure/arm-appservice.CsmMoveResourceEnvelope|stable'
+  - '@azure/arm-appservice.CsmOperationCollection|stable'
+  - '@azure/arm-appservice.CsmOperationDescription|stable'
+  - '@azure/arm-appservice.CsmOperationDescriptionProperties|stable'
+  - '@azure/arm-appservice.CsmOperationDisplay|stable'
+  - '@azure/arm-appservice.CsmPublishingProfileOptions|stable'
+  - '@azure/arm-appservice.CsmSlotEntity|stable'
+  - '@azure/arm-appservice.CsmUsageQuota|stable'
+  - '@azure/arm-appservice.CsmUsageQuotaCollection|stable'
+  - '@azure/arm-appservice.CustomHostnameSitesCollection|stable'
+  - '@azure/arm-appservice.CustomOpenIdConnectProvider|stable'
+  - '@azure/arm-appservice.CustomScaleRule|stable'
+  - '@azure/arm-appservice.Dapr|stable'
+  - '@azure/arm-appservice.DaprComponent|stable'
+  - '@azure/arm-appservice.DaprMetadata|stable'
+  - '@azure/arm-appservice.DataProviderMetadata|stable'
+  - '@azure/arm-appservice.DataSource|stable'
+  - '@azure/arm-appservice.DataTableResponseColumn|stable'
+  - '@azure/arm-appservice.DataTableResponseObject|stable'
+  - '@azure/arm-appservice.DatabaseBackupSetting|stable'
+  - '@azure/arm-appservice.DefaultAuthorizationPolicy|stable'
+  - '@azure/arm-appservice.DefaultErrorResponse|stable'
+  - '@azure/arm-appservice.DefaultErrorResponseError|stable'
+  - '@azure/arm-appservice.DefaultErrorResponseErrorDetailsItem|stable'
+  - '@azure/arm-appservice.DeletedWebAppCollection|stable'
+  - '@azure/arm-appservice.DeletedWebApps|stable'
+  - >-
+    @azure/arm-appservice.DeletedWebAppsGetDeletedWebAppByLocationOptionalParams|stable
+  - '@azure/arm-appservice.DeletedWebAppsListByLocationNextOptionalParams|stable'
+  - '@azure/arm-appservice.DeletedWebAppsListByLocationOptionalParams|stable'
+  - '@azure/arm-appservice.DeletedWebAppsListNextOptionalParams|stable'
+  - '@azure/arm-appservice.DeletedWebAppsListOptionalParams|stable'
+  - '@azure/arm-appservice.DeploymentCollection|stable'
+  - '@azure/arm-appservice.DeploymentLocations|stable'
+  - '@azure/arm-appservice.DetectorAbnormalTimePeriod|stable'
+  - '@azure/arm-appservice.DetectorDefinition|stable'
+  - '@azure/arm-appservice.DetectorInfo|stable'
+  - '@azure/arm-appservice.DetectorResponseCollection|stable'
+  - '@azure/arm-appservice.DiagnosticAnalysisCollection|stable'
+  - '@azure/arm-appservice.DiagnosticCategoryCollection|stable'
+  - '@azure/arm-appservice.DiagnosticData|stable'
+  - '@azure/arm-appservice.DiagnosticDetectorCollection|stable'
+  - '@azure/arm-appservice.DiagnosticMetricSample|stable'
+  - '@azure/arm-appservice.DiagnosticMetricSet|stable'
+  - '@azure/arm-appservice.Diagnostics|stable'
+  - '@azure/arm-appservice.DiagnosticsExecuteSiteAnalysisOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.DiagnosticsExecuteSiteAnalysisSlotOptionalParams|stable
+  - '@azure/arm-appservice.DiagnosticsExecuteSiteDetectorOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.DiagnosticsExecuteSiteDetectorSlotOptionalParams|stable
+  - >-
+    @azure/arm-appservice.DiagnosticsGetHostingEnvironmentDetectorResponseOptionalParams|stable
+  - '@azure/arm-appservice.DiagnosticsGetSiteAnalysisOptionalParams|stable'
+  - '@azure/arm-appservice.DiagnosticsGetSiteAnalysisSlotOptionalParams|stable'
+  - '@azure/arm-appservice.DiagnosticsGetSiteDetectorOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.DiagnosticsGetSiteDetectorResponseOptionalParams|stable
+  - >-
+    @azure/arm-appservice.DiagnosticsGetSiteDetectorResponseSlotOptionalParams|stable
+  - '@azure/arm-appservice.DiagnosticsGetSiteDetectorSlotOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.DiagnosticsGetSiteDiagnosticCategoryOptionalParams|stable
+  - >-
+    @azure/arm-appservice.DiagnosticsGetSiteDiagnosticCategorySlotOptionalParams|stable
+  - >-
+    @azure/arm-appservice.DiagnosticsListHostingEnvironmentDetectorResponsesNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.DiagnosticsListHostingEnvironmentDetectorResponsesOptionalParams|stable
+  - '@azure/arm-appservice.DiagnosticsListSiteAnalysesNextOptionalParams|stable'
+  - '@azure/arm-appservice.DiagnosticsListSiteAnalysesOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.DiagnosticsListSiteAnalysesSlotNextOptionalParams|stable
+  - '@azure/arm-appservice.DiagnosticsListSiteAnalysesSlotOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.DiagnosticsListSiteDetectorResponsesNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.DiagnosticsListSiteDetectorResponsesOptionalParams|stable
+  - >-
+    @azure/arm-appservice.DiagnosticsListSiteDetectorResponsesSlotNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.DiagnosticsListSiteDetectorResponsesSlotOptionalParams|stable
+  - '@azure/arm-appservice.DiagnosticsListSiteDetectorsNextOptionalParams|stable'
+  - '@azure/arm-appservice.DiagnosticsListSiteDetectorsOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.DiagnosticsListSiteDetectorsSlotNextOptionalParams|stable
+  - '@azure/arm-appservice.DiagnosticsListSiteDetectorsSlotOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.DiagnosticsListSiteDiagnosticCategoriesNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.DiagnosticsListSiteDiagnosticCategoriesOptionalParams|stable
+  - >-
+    @azure/arm-appservice.DiagnosticsListSiteDiagnosticCategoriesSlotNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.DiagnosticsListSiteDiagnosticCategoriesSlotOptionalParams|stable
+  - '@azure/arm-appservice.Dimension|stable'
+  - '@azure/arm-appservice.DomainAvailabilityCheckResult|stable'
+  - '@azure/arm-appservice.DomainCollection|stable'
+  - '@azure/arm-appservice.DomainControlCenterSsoRequest|stable'
+  - '@azure/arm-appservice.DomainOwnershipIdentifierCollection|stable'
+  - '@azure/arm-appservice.DomainPurchaseConsent|stable'
+  - '@azure/arm-appservice.DomainRecommendationSearchParameters|stable'
+  - '@azure/arm-appservice.DomainRegistrationProvider|stable'
+  - >-
+    @azure/arm-appservice.DomainRegistrationProviderListOperationsNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.DomainRegistrationProviderListOperationsOptionalParams|stable
+  - '@azure/arm-appservice.Domains|stable'
+  - '@azure/arm-appservice.DomainsCheckAvailabilityOptionalParams|stable'
+  - '@azure/arm-appservice.DomainsCreateOrUpdateOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.DomainsCreateOrUpdateOwnershipIdentifierOptionalParams|stable
+  - '@azure/arm-appservice.DomainsDeleteOptionalParams|stable'
+  - '@azure/arm-appservice.DomainsDeleteOwnershipIdentifierOptionalParams|stable'
+  - '@azure/arm-appservice.DomainsGetControlCenterSsoRequestOptionalParams|stable'
+  - '@azure/arm-appservice.DomainsGetOptionalParams|stable'
+  - '@azure/arm-appservice.DomainsGetOwnershipIdentifierOptionalParams|stable'
+  - '@azure/arm-appservice.DomainsListByResourceGroupNextOptionalParams|stable'
+  - '@azure/arm-appservice.DomainsListByResourceGroupOptionalParams|stable'
+  - '@azure/arm-appservice.DomainsListNextOptionalParams|stable'
+  - '@azure/arm-appservice.DomainsListOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.DomainsListOwnershipIdentifiersNextOptionalParams|stable
+  - '@azure/arm-appservice.DomainsListOwnershipIdentifiersOptionalParams|stable'
+  - '@azure/arm-appservice.DomainsListRecommendationsNextOptionalParams|stable'
+  - '@azure/arm-appservice.DomainsListRecommendationsOptionalParams|stable'
+  - '@azure/arm-appservice.DomainsRenewOptionalParams|stable'
+  - '@azure/arm-appservice.DomainsTransferOutOptionalParams|stable'
+  - '@azure/arm-appservice.DomainsUpdateOptionalParams|stable'
+  - '@azure/arm-appservice.DomainsUpdateOwnershipIdentifierOptionalParams|stable'
+  - '@azure/arm-appservice.EnabledConfig|stable'
+  - '@azure/arm-appservice.EndpointDependency|stable'
+  - '@azure/arm-appservice.EndpointDetail|stable'
+  - '@azure/arm-appservice.EnvironmentVar|stable'
+  - '@azure/arm-appservice.ErrorEntity|stable'
+  - '@azure/arm-appservice.Experiments|stable'
+  - '@azure/arm-appservice.ExtendedLocation|stable'
+  - '@azure/arm-appservice.Facebook|stable'
+  - '@azure/arm-appservice.FileSystemApplicationLogsConfig|stable'
+  - '@azure/arm-appservice.FileSystemHttpLogsConfig|stable'
+  - '@azure/arm-appservice.FileSystemTokenStore|stable'
+  - '@azure/arm-appservice.ForwardProxy|stable'
+  - '@azure/arm-appservice.FrontEndConfiguration|stable'
+  - '@azure/arm-appservice.FunctionAppMajorVersion|stable'
+  - '@azure/arm-appservice.FunctionAppMinorVersion|stable'
+  - '@azure/arm-appservice.FunctionAppRuntimeSettings|stable'
+  - '@azure/arm-appservice.FunctionAppRuntimes|stable'
+  - '@azure/arm-appservice.FunctionAppStackCollection|stable'
+  - '@azure/arm-appservice.FunctionEnvelopeCollection|stable'
+  - '@azure/arm-appservice.FunctionSecrets|stable'
+  - '@azure/arm-appservice.GeoRegionCollection|stable'
+  - '@azure/arm-appservice.GetPublishingUserOptionalParams|stable'
+  - '@azure/arm-appservice.GetSourceControlOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.GetSubscriptionDeploymentLocationsOptionalParams|stable
+  - '@azure/arm-appservice.GitHub|stable'
+  - '@azure/arm-appservice.GitHubActionCodeConfiguration|stable'
+  - '@azure/arm-appservice.GitHubActionConfiguration|stable'
+  - '@azure/arm-appservice.GitHubActionContainerConfiguration|stable'
+  - '@azure/arm-appservice.GitHubActionWebAppStackSettings|stable'
+  - '@azure/arm-appservice.Global|stable'
+  - '@azure/arm-appservice.GlobalCsmSkuDescription|stable'
+  - '@azure/arm-appservice.GlobalGetDeletedWebAppOptionalParams|stable'
+  - '@azure/arm-appservice.GlobalGetDeletedWebAppSnapshotsOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.GlobalGetSubscriptionOperationWithAsyncResponseOptionalParams|stable
+  - '@azure/arm-appservice.GlobalValidation|stable'
+  - '@azure/arm-appservice.Google|stable'
+  - '@azure/arm-appservice.HandlerMapping|stable'
+  - '@azure/arm-appservice.HostKeys|stable'
+  - '@azure/arm-appservice.HostName|stable'
+  - '@azure/arm-appservice.HostNameBindingCollection|stable'
+  - '@azure/arm-appservice.HostNameSslState|stable'
+  - '@azure/arm-appservice.HostingEnvironmentDeploymentInfo|stable'
+  - '@azure/arm-appservice.HostingEnvironmentDiagnostics|stable'
+  - '@azure/arm-appservice.HostingEnvironmentProfile|stable'
+  - '@azure/arm-appservice.HttpLogsConfig|stable'
+  - '@azure/arm-appservice.HttpScaleRule|stable'
+  - '@azure/arm-appservice.HttpSettings|stable'
+  - '@azure/arm-appservice.HttpSettingsRoutes|stable'
+  - '@azure/arm-appservice.HybridConnectionCollection|stable'
+  - '@azure/arm-appservice.IdentifierCollection|stable'
+  - '@azure/arm-appservice.IdentityProviders|stable'
+  - '@azure/arm-appservice.InboundEnvironmentEndpoint|stable'
+  - '@azure/arm-appservice.InboundEnvironmentEndpointCollection|stable'
+  - '@azure/arm-appservice.Ingress|stable'
+  - '@azure/arm-appservice.IpSecurityRestriction|stable'
+  - '@azure/arm-appservice.JwtClaimChecks|stable'
+  - '@azure/arm-appservice.KeyInfo|stable'
+  - '@azure/arm-appservice.KeyValuePairStringObject|stable'
+  - '@azure/arm-appservice.KubeEnvironmentCollection|stable'
+  - '@azure/arm-appservice.KubeEnvironmentProfile|stable'
+  - '@azure/arm-appservice.KubeEnvironments|stable'
+  - '@azure/arm-appservice.KubeEnvironmentsCreateOrUpdateOptionalParams|stable'
+  - '@azure/arm-appservice.KubeEnvironmentsDeleteOptionalParams|stable'
+  - '@azure/arm-appservice.KubeEnvironmentsGetOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.KubeEnvironmentsListByResourceGroupNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.KubeEnvironmentsListByResourceGroupOptionalParams|stable
+  - >-
+    @azure/arm-appservice.KubeEnvironmentsListBySubscriptionNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.KubeEnvironmentsListBySubscriptionOptionalParams|stable
+  - '@azure/arm-appservice.KubeEnvironmentsUpdateOptionalParams|stable'
+  - '@azure/arm-appservice.LegacyMicrosoftAccount|stable'
+  - '@azure/arm-appservice.LinuxJavaContainerSettings|stable'
+  - '@azure/arm-appservice.ListBillingMetersNextOptionalParams|stable'
+  - '@azure/arm-appservice.ListBillingMetersOptionalParams|stable'
+  - '@azure/arm-appservice.ListCustomHostNameSitesNextOptionalParams|stable'
+  - '@azure/arm-appservice.ListCustomHostNameSitesOptionalParams|stable'
+  - '@azure/arm-appservice.ListGeoRegionsNextOptionalParams|stable'
+  - '@azure/arm-appservice.ListGeoRegionsOptionalParams|stable'
+  - '@azure/arm-appservice.ListPremierAddOnOffersNextOptionalParams|stable'
+  - '@azure/arm-appservice.ListPremierAddOnOffersOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.ListSiteIdentifiersAssignedToHostNameNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.ListSiteIdentifiersAssignedToHostNameOptionalParams|stable
+  - '@azure/arm-appservice.ListSkusOptionalParams|stable'
+  - '@azure/arm-appservice.ListSourceControlsNextOptionalParams|stable'
+  - '@azure/arm-appservice.ListSourceControlsOptionalParams|stable'
+  - '@azure/arm-appservice.LocalizableString|stable'
+  - '@azure/arm-appservice.LogAnalyticsConfiguration|stable'
+  - '@azure/arm-appservice.LogSpecification|stable'
+  - '@azure/arm-appservice.Login|stable'
+  - '@azure/arm-appservice.LoginRoutes|stable'
+  - '@azure/arm-appservice.LoginScopes|stable'
+  - '@azure/arm-appservice.MSDeployLogEntry|stable'
+  - '@azure/arm-appservice.ManagedServiceIdentity|stable'
+  - '@azure/arm-appservice.MetricAvailability|stable'
+  - '@azure/arm-appservice.MetricSpecification|stable'
+  - '@azure/arm-appservice.MoveOptionalParams|stable'
+  - '@azure/arm-appservice.NameIdentifier|stable'
+  - '@azure/arm-appservice.NameIdentifierCollection|stable'
+  - '@azure/arm-appservice.NameValuePair|stable'
+  - '@azure/arm-appservice.NetworkTrace|stable'
+  - '@azure/arm-appservice.Nonce|stable'
+  - '@azure/arm-appservice.OpenIdConnectClientCredential|stable'
+  - '@azure/arm-appservice.OpenIdConnectConfig|stable'
+  - '@azure/arm-appservice.OpenIdConnectLogin|stable'
+  - '@azure/arm-appservice.OpenIdConnectRegistration|stable'
+  - '@azure/arm-appservice.Operation|stable'
+  - '@azure/arm-appservice.OutboundEnvironmentEndpoint|stable'
+  - '@azure/arm-appservice.OutboundEnvironmentEndpointCollection|stable'
+  - '@azure/arm-appservice.PerfMonCounterCollection|stable'
+  - '@azure/arm-appservice.PerfMonResponse|stable'
+  - '@azure/arm-appservice.PerfMonSample|stable'
+  - '@azure/arm-appservice.PerfMonSet|stable'
+  - '@azure/arm-appservice.PremierAddOnOfferCollection|stable'
+  - '@azure/arm-appservice.PrivateAccessSubnet|stable'
+  - '@azure/arm-appservice.PrivateAccessVirtualNetwork|stable'
+  - '@azure/arm-appservice.PrivateEndpointConnectionCollection|stable'
+  - '@azure/arm-appservice.PrivateLinkConnectionState|stable'
+  - '@azure/arm-appservice.PrivateLinkResource|stable'
+  - '@azure/arm-appservice.PrivateLinkResourceProperties|stable'
+  - '@azure/arm-appservice.PrivateLinkResourcesWrapper|stable'
+  - '@azure/arm-appservice.ProcessInfoCollection|stable'
+  - '@azure/arm-appservice.ProcessModuleInfoCollection|stable'
+  - '@azure/arm-appservice.ProcessThreadInfoCollection|stable'
+  - '@azure/arm-appservice.Provider|stable'
+  - '@azure/arm-appservice.ProviderGetAvailableStacksNextOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.ProviderGetAvailableStacksOnPremNextOptionalParams|stable
+  - '@azure/arm-appservice.ProviderGetAvailableStacksOnPremOptionalParams|stable'
+  - '@azure/arm-appservice.ProviderGetAvailableStacksOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.ProviderGetFunctionAppStacksForLocationNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.ProviderGetFunctionAppStacksForLocationOptionalParams|stable
+  - '@azure/arm-appservice.ProviderGetFunctionAppStacksNextOptionalParams|stable'
+  - '@azure/arm-appservice.ProviderGetFunctionAppStacksOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.ProviderGetWebAppStacksForLocationNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.ProviderGetWebAppStacksForLocationOptionalParams|stable
+  - '@azure/arm-appservice.ProviderGetWebAppStacksNextOptionalParams|stable'
+  - '@azure/arm-appservice.ProviderGetWebAppStacksOptionalParams|stable'
+  - '@azure/arm-appservice.ProviderListOperationsNextOptionalParams|stable'
+  - '@azure/arm-appservice.ProviderListOperationsOptionalParams|stable'
+  - '@azure/arm-appservice.ProxyOnlyResource|stable'
+  - '@azure/arm-appservice.PublicCertificateCollection|stable'
+  - '@azure/arm-appservice.PublishingCredentialsPoliciesCollection|stable'
+  - '@azure/arm-appservice.QueryUtterancesResult|stable'
+  - '@azure/arm-appservice.QueryUtterancesResults|stable'
+  - '@azure/arm-appservice.QueueScaleRule|stable'
+  - '@azure/arm-appservice.RampUpRule|stable'
+  - '@azure/arm-appservice.RecommendationCollection|stable'
+  - '@azure/arm-appservice.Recommendations|stable'
+  - >-
+    @azure/arm-appservice.RecommendationsDisableAllForHostingEnvironmentOptionalParams|stable
+  - >-
+    @azure/arm-appservice.RecommendationsDisableAllForWebAppOptionalParams|stable
+  - >-
+    @azure/arm-appservice.RecommendationsDisableRecommendationForHostingEnvironmentOptionalParams|stable
+  - >-
+    @azure/arm-appservice.RecommendationsDisableRecommendationForSiteOptionalParams|stable
+  - >-
+    @azure/arm-appservice.RecommendationsDisableRecommendationForSubscriptionOptionalParams|stable
+  - >-
+    @azure/arm-appservice.RecommendationsGetRuleDetailsByHostingEnvironmentOptionalParams|stable
+  - >-
+    @azure/arm-appservice.RecommendationsGetRuleDetailsByWebAppOptionalParams|stable
+  - >-
+    @azure/arm-appservice.RecommendationsListHistoryForHostingEnvironmentNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.RecommendationsListHistoryForHostingEnvironmentOptionalParams|stable
+  - >-
+    @azure/arm-appservice.RecommendationsListHistoryForWebAppNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.RecommendationsListHistoryForWebAppOptionalParams|stable
+  - '@azure/arm-appservice.RecommendationsListNextOptionalParams|stable'
+  - '@azure/arm-appservice.RecommendationsListOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.RecommendationsListRecommendedRulesForHostingEnvironmentNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.RecommendationsListRecommendedRulesForHostingEnvironmentOptionalParams|stable
+  - >-
+    @azure/arm-appservice.RecommendationsListRecommendedRulesForWebAppNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.RecommendationsListRecommendedRulesForWebAppOptionalParams|stable
+  - >-
+    @azure/arm-appservice.RecommendationsResetAllFiltersForHostingEnvironmentOptionalParams|stable
+  - >-
+    @azure/arm-appservice.RecommendationsResetAllFiltersForWebAppOptionalParams|stable
+  - '@azure/arm-appservice.RecommendationsResetAllFiltersOptionalParams|stable'
+  - '@azure/arm-appservice.RegistryCredentials|stable'
+  - '@azure/arm-appservice.Rendering|stable'
+  - '@azure/arm-appservice.RequestsBasedTrigger|stable'
+  - '@azure/arm-appservice.Resource|stable'
+  - '@azure/arm-appservice.ResourceCollection|stable'
+  - '@azure/arm-appservice.ResourceHealthMetadataCollection|stable'
+  - '@azure/arm-appservice.ResourceHealthMetadataGetBySiteOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.ResourceHealthMetadataGetBySiteSlotOptionalParams|stable
+  - >-
+    @azure/arm-appservice.ResourceHealthMetadataListByResourceGroupNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.ResourceHealthMetadataListByResourceGroupOptionalParams|stable
+  - >-
+    @azure/arm-appservice.ResourceHealthMetadataListBySiteNextOptionalParams|stable
+  - '@azure/arm-appservice.ResourceHealthMetadataListBySiteOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.ResourceHealthMetadataListBySiteSlotNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.ResourceHealthMetadataListBySiteSlotOptionalParams|stable
+  - '@azure/arm-appservice.ResourceHealthMetadataListNextOptionalParams|stable'
+  - '@azure/arm-appservice.ResourceHealthMetadataListOptionalParams|stable'
+  - '@azure/arm-appservice.ResourceHealthMetadataOperations|stable'
+  - '@azure/arm-appservice.ResourceMetricAvailability|stable'
+  - '@azure/arm-appservice.ResourceMetricDefinitionCollection|stable'
+  - '@azure/arm-appservice.ResourceNameAvailability|stable'
+  - '@azure/arm-appservice.ResourceNameAvailabilityRequest|stable'
+  - >-
+    @azure/arm-appservice.ResponseMessageEnvelopeRemotePrivateEndpointConnection|stable
+  - '@azure/arm-appservice.ResponseMetaData|stable'
+  - '@azure/arm-appservice.RevisionCollection|stable'
+  - '@azure/arm-appservice.SampleUtterance|stable'
+  - '@azure/arm-appservice.Scale|stable'
+  - '@azure/arm-appservice.ScaleRule|stable'
+  - '@azure/arm-appservice.ScaleRuleAuth|stable'
+  - '@azure/arm-appservice.Secret|stable'
+  - '@azure/arm-appservice.SecretsCollection|stable'
+  - '@azure/arm-appservice.ServiceSpecification|stable'
+  - '@azure/arm-appservice.SiteCloneability|stable'
+  - '@azure/arm-appservice.SiteCloneabilityCriterion|stable'
+  - '@azure/arm-appservice.SiteConfig|stable'
+  - '@azure/arm-appservice.SiteConfigPropertiesDictionary|stable'
+  - '@azure/arm-appservice.SiteConfigResourceCollection|stable'
+  - '@azure/arm-appservice.SiteConfigurationSnapshotInfoCollection|stable'
+  - '@azure/arm-appservice.SiteExtensionInfoCollection|stable'
+  - '@azure/arm-appservice.SiteLimits|stable'
+  - '@azure/arm-appservice.SiteMachineKey|stable'
+  - '@azure/arm-appservice.SiteSeal|stable'
+  - '@azure/arm-appservice.SiteSealRequest|stable'
+  - '@azure/arm-appservice.SkuCapacity|stable'
+  - '@azure/arm-appservice.SkuDescription|stable'
+  - '@azure/arm-appservice.SkuInfo|stable'
+  - '@azure/arm-appservice.SkuInfoCollection|stable'
+  - '@azure/arm-appservice.SkuInfos|stable'
+  - '@azure/arm-appservice.SlotDifferenceCollection|stable'
+  - '@azure/arm-appservice.SlotSwapStatus|stable'
+  - '@azure/arm-appservice.SlowRequestsBasedTrigger|stable'
+  - '@azure/arm-appservice.SnapshotCollection|stable'
+  - '@azure/arm-appservice.SnapshotRecoverySource|stable'
+  - '@azure/arm-appservice.Solution|stable'
+  - '@azure/arm-appservice.SourceControlCollection|stable'
+  - '@azure/arm-appservice.StackMajorVersion|stable'
+  - '@azure/arm-appservice.StackMinorVersion|stable'
+  - '@azure/arm-appservice.StampCapacity|stable'
+  - '@azure/arm-appservice.StampCapacityCollection|stable'
+  - '@azure/arm-appservice.StaticSiteBuildCollection|stable'
+  - '@azure/arm-appservice.StaticSiteBuildProperties|stable'
+  - '@azure/arm-appservice.StaticSiteCollection|stable'
+  - '@azure/arm-appservice.StaticSiteCustomDomainOverviewCollection|stable'
+  - '@azure/arm-appservice.StaticSiteFunctionOverviewCollection|stable'
+  - '@azure/arm-appservice.StaticSiteTemplateOptions|stable'
+  - '@azure/arm-appservice.StaticSiteUserCollection|stable'
+  - '@azure/arm-appservice.StaticSiteUserProvidedFunctionAppsCollection|stable'
+  - '@azure/arm-appservice.StaticSites|stable'
+  - >-
+    @azure/arm-appservice.StaticSitesApproveOrRejectPrivateEndpointConnectionOptionalParams|stable
+  - >-
+    @azure/arm-appservice.StaticSitesCreateOrUpdateStaticSiteAppSettingsOptionalParams|stable
+  - >-
+    @azure/arm-appservice.StaticSitesCreateOrUpdateStaticSiteBuildAppSettingsOptionalParams|stable
+  - >-
+    @azure/arm-appservice.StaticSitesCreateOrUpdateStaticSiteBuildFunctionAppSettingsOptionalParams|stable
+  - >-
+    @azure/arm-appservice.StaticSitesCreateOrUpdateStaticSiteCustomDomainOptionalParams|stable
+  - >-
+    @azure/arm-appservice.StaticSitesCreateOrUpdateStaticSiteFunctionAppSettingsOptionalParams|stable
+  - >-
+    @azure/arm-appservice.StaticSitesCreateOrUpdateStaticSiteOptionalParams|stable
+  - >-
+    @azure/arm-appservice.StaticSitesCreateUserRolesInvitationLinkOptionalParams|stable
+  - >-
+    @azure/arm-appservice.StaticSitesCreateZipDeploymentForStaticSiteBuildOptionalParams|stable
+  - >-
+    @azure/arm-appservice.StaticSitesCreateZipDeploymentForStaticSiteOptionalParams|stable
+  - >-
+    @azure/arm-appservice.StaticSitesDeletePrivateEndpointConnectionOptionalParams|stable
+  - '@azure/arm-appservice.StaticSitesDeleteStaticSiteBuildOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.StaticSitesDeleteStaticSiteCustomDomainOptionalParams|stable
+  - '@azure/arm-appservice.StaticSitesDeleteStaticSiteOptionalParams|stable'
+  - '@azure/arm-appservice.StaticSitesDeleteStaticSiteUserOptionalParams|stable'
+  - '@azure/arm-appservice.StaticSitesDetachStaticSiteOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.StaticSitesDetachUserProvidedFunctionAppFromStaticSiteBuildOptionalParams|stable
+  - >-
+    @azure/arm-appservice.StaticSitesDetachUserProvidedFunctionAppFromStaticSiteOptionalParams|stable
+  - >-
+    @azure/arm-appservice.StaticSitesGetPrivateEndpointConnectionListNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.StaticSitesGetPrivateEndpointConnectionListOptionalParams|stable
+  - >-
+    @azure/arm-appservice.StaticSitesGetPrivateEndpointConnectionOptionalParams|stable
+  - >-
+    @azure/arm-appservice.StaticSitesGetPrivateLinkResourcesOptionalParams|stable
+  - '@azure/arm-appservice.StaticSitesGetStaticSiteBuildOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.StaticSitesGetStaticSiteBuildsNextOptionalParams|stable
+  - '@azure/arm-appservice.StaticSitesGetStaticSiteBuildsOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.StaticSitesGetStaticSiteCustomDomainOptionalParams|stable
+  - '@azure/arm-appservice.StaticSitesGetStaticSiteOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.StaticSitesGetStaticSitesByResourceGroupNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.StaticSitesGetStaticSitesByResourceGroupOptionalParams|stable
+  - >-
+    @azure/arm-appservice.StaticSitesGetUserProvidedFunctionAppForStaticSiteBuildOptionalParams|stable
+  - >-
+    @azure/arm-appservice.StaticSitesGetUserProvidedFunctionAppForStaticSiteOptionalParams|stable
+  - >-
+    @azure/arm-appservice.StaticSitesGetUserProvidedFunctionAppsForStaticSiteBuildNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.StaticSitesGetUserProvidedFunctionAppsForStaticSiteBuildOptionalParams|stable
+  - >-
+    @azure/arm-appservice.StaticSitesGetUserProvidedFunctionAppsForStaticSiteNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.StaticSitesGetUserProvidedFunctionAppsForStaticSiteOptionalParams|stable
+  - '@azure/arm-appservice.StaticSitesListNextOptionalParams|stable'
+  - '@azure/arm-appservice.StaticSitesListOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.StaticSitesListStaticSiteAppSettingsOptionalParams|stable
+  - >-
+    @azure/arm-appservice.StaticSitesListStaticSiteBuildAppSettingsOptionalParams|stable
+  - >-
+    @azure/arm-appservice.StaticSitesListStaticSiteBuildFunctionAppSettingsOptionalParams|stable
+  - >-
+    @azure/arm-appservice.StaticSitesListStaticSiteBuildFunctionsNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.StaticSitesListStaticSiteBuildFunctionsOptionalParams|stable
+  - >-
+    @azure/arm-appservice.StaticSitesListStaticSiteConfiguredRolesOptionalParams|stable
+  - >-
+    @azure/arm-appservice.StaticSitesListStaticSiteCustomDomainsNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.StaticSitesListStaticSiteCustomDomainsOptionalParams|stable
+  - >-
+    @azure/arm-appservice.StaticSitesListStaticSiteFunctionAppSettingsOptionalParams|stable
+  - >-
+    @azure/arm-appservice.StaticSitesListStaticSiteFunctionsNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.StaticSitesListStaticSiteFunctionsOptionalParams|stable
+  - '@azure/arm-appservice.StaticSitesListStaticSiteSecretsOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.StaticSitesListStaticSiteUsersNextOptionalParams|stable
+  - '@azure/arm-appservice.StaticSitesListStaticSiteUsersOptionalParams|stable'
+  - '@azure/arm-appservice.StaticSitesPreviewWorkflowOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.StaticSitesRegisterUserProvidedFunctionAppWithStaticSiteBuildOptionalParams|stable
+  - >-
+    @azure/arm-appservice.StaticSitesRegisterUserProvidedFunctionAppWithStaticSiteOptionalParams|stable
+  - '@azure/arm-appservice.StaticSitesResetStaticSiteApiKeyOptionalParams|stable'
+  - '@azure/arm-appservice.StaticSitesUpdateStaticSiteOptionalParams|stable'
+  - '@azure/arm-appservice.StaticSitesUpdateStaticSiteUserOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.StaticSitesValidateCustomDomainCanBeAddedToStaticSiteOptionalParams|stable
+  - '@azure/arm-appservice.Status|stable'
+  - '@azure/arm-appservice.StatusCodesBasedTrigger|stable'
+  - '@azure/arm-appservice.StatusCodesRangeBasedTrigger|stable'
+  - '@azure/arm-appservice.SupportTopic|stable'
+  - '@azure/arm-appservice.Template|stable'
+  - '@azure/arm-appservice.TldLegalAgreement|stable'
+  - '@azure/arm-appservice.TldLegalAgreementCollection|stable'
+  - '@azure/arm-appservice.TokenStore|stable'
+  - '@azure/arm-appservice.TopLevelDomainAgreementOption|stable'
+  - '@azure/arm-appservice.TopLevelDomainCollection|stable'
+  - '@azure/arm-appservice.TopLevelDomains|stable'
+  - '@azure/arm-appservice.TopLevelDomainsGetOptionalParams|stable'
+  - '@azure/arm-appservice.TopLevelDomainsListAgreementsNextOptionalParams|stable'
+  - '@azure/arm-appservice.TopLevelDomainsListAgreementsOptionalParams|stable'
+  - '@azure/arm-appservice.TopLevelDomainsListNextOptionalParams|stable'
+  - '@azure/arm-appservice.TopLevelDomainsListOptionalParams|stable'
+  - '@azure/arm-appservice.TrafficWeight|stable'
+  - '@azure/arm-appservice.TriggeredJobHistoryCollection|stable'
+  - '@azure/arm-appservice.TriggeredJobRun|stable'
+  - '@azure/arm-appservice.TriggeredWebJobCollection|stable'
+  - '@azure/arm-appservice.Twitter|stable'
+  - '@azure/arm-appservice.TwitterRegistration|stable'
+  - '@azure/arm-appservice.UpdatePublishingUserOptionalParams|stable'
+  - '@azure/arm-appservice.UpdateSourceControlOptionalParams|stable'
+  - '@azure/arm-appservice.UsageCollection|stable'
+  - '@azure/arm-appservice.UserAssignedIdentity|stable'
+  - '@azure/arm-appservice.ValidateMoveOptionalParams|stable'
+  - '@azure/arm-appservice.ValidateOptionalParams|stable'
+  - '@azure/arm-appservice.ValidateRequest|stable'
+  - '@azure/arm-appservice.ValidateResponse|stable'
+  - '@azure/arm-appservice.ValidateResponseError|stable'
+  - '@azure/arm-appservice.VerifyHostingEnvironmentVnetOptionalParams|stable'
+  - '@azure/arm-appservice.VirtualApplication|stable'
+  - '@azure/arm-appservice.VirtualDirectory|stable'
+  - '@azure/arm-appservice.VirtualIPMapping|stable'
+  - '@azure/arm-appservice.VirtualNetworkProfile|stable'
+  - '@azure/arm-appservice.VnetInfo|stable'
+  - '@azure/arm-appservice.WebAppCollection|stable'
+  - '@azure/arm-appservice.WebAppInstanceStatusCollection|stable'
+  - '@azure/arm-appservice.WebAppMajorVersion|stable'
+  - '@azure/arm-appservice.WebAppMinorVersion|stable'
+  - '@azure/arm-appservice.WebAppRuntimeSettings|stable'
+  - '@azure/arm-appservice.WebAppRuntimes|stable'
+  - '@azure/arm-appservice.WebAppStackCollection|stable'
+  - '@azure/arm-appservice.WebApps|stable'
+  - '@azure/arm-appservice.WebAppsAddPremierAddOnOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsAddPremierAddOnSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsAnalyzeCustomHostnameOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsAnalyzeCustomHostnameSlotOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsApplySlotConfigToProductionOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsApplySlotConfigurationSlotOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsApproveOrRejectPrivateEndpointConnectionOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsApproveOrRejectPrivateEndpointConnectionSlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsBackupOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsBackupSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsCreateDeploymentOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsCreateDeploymentSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsCreateFunctionOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsCreateInstanceFunctionSlotOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsCreateInstanceMSDeployOperationOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsCreateInstanceMSDeployOperationSlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsCreateMSDeployOperationOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsCreateMSDeployOperationSlotOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsCreateOrUpdateConfigurationOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsCreateOrUpdateConfigurationSlotOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsCreateOrUpdateDomainOwnershipIdentifierOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsCreateOrUpdateDomainOwnershipIdentifierSlotOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsCreateOrUpdateFunctionSecretOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsCreateOrUpdateFunctionSecretSlotOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsCreateOrUpdateHostNameBindingOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsCreateOrUpdateHostNameBindingSlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsCreateOrUpdateHostSecretOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsCreateOrUpdateHostSecretSlotOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsCreateOrUpdateHybridConnectionOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsCreateOrUpdateHybridConnectionSlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsCreateOrUpdateOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsCreateOrUpdatePublicCertificateOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsCreateOrUpdatePublicCertificateSlotOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsCreateOrUpdateRelayServiceConnectionOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsCreateOrUpdateRelayServiceConnectionSlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsCreateOrUpdateSlotOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsCreateOrUpdateSourceControlOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsCreateOrUpdateSourceControlSlotOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsCreateOrUpdateSwiftVirtualNetworkConnectionWithCheckOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsCreateOrUpdateSwiftVirtualNetworkConnectionWithCheckSlotOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsCreateOrUpdateVnetConnectionGatewayOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsCreateOrUpdateVnetConnectionGatewaySlotOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsCreateOrUpdateVnetConnectionOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsCreateOrUpdateVnetConnectionSlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsDeleteBackupConfigurationOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsDeleteBackupConfigurationSlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsDeleteBackupOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsDeleteBackupSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsDeleteContinuousWebJobOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsDeleteContinuousWebJobSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsDeleteDeploymentOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsDeleteDeploymentSlotOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsDeleteDomainOwnershipIdentifierOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsDeleteDomainOwnershipIdentifierSlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsDeleteFunctionOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsDeleteFunctionSecretOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsDeleteFunctionSecretSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsDeleteHostNameBindingOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsDeleteHostNameBindingSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsDeleteHostSecretOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsDeleteHostSecretSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsDeleteHybridConnectionOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsDeleteHybridConnectionSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsDeleteInstanceFunctionSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsDeleteInstanceProcessOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsDeleteInstanceProcessSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsDeleteOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsDeletePremierAddOnOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsDeletePremierAddOnSlotOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsDeletePrivateEndpointConnectionOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsDeletePrivateEndpointConnectionSlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsDeleteProcessOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsDeleteProcessSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsDeletePublicCertificateOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsDeletePublicCertificateSlotOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsDeleteRelayServiceConnectionOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsDeleteRelayServiceConnectionSlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsDeleteSiteExtensionOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsDeleteSiteExtensionSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsDeleteSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsDeleteSourceControlOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsDeleteSourceControlSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsDeleteSwiftVirtualNetworkOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsDeleteSwiftVirtualNetworkSlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsDeleteTriggeredWebJobOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsDeleteTriggeredWebJobSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsDeleteVnetConnectionOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsDeleteVnetConnectionSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsDiscoverBackupOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsDiscoverBackupSlotOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsGenerateNewSitePublishingPasswordOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsGenerateNewSitePublishingPasswordSlotOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsGetAppSettingKeyVaultReferenceOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsGetAppSettingKeyVaultReferenceSlotOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsGetAppSettingsKeyVaultReferencesNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsGetAppSettingsKeyVaultReferencesOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsGetAppSettingsKeyVaultReferencesSlotNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsGetAppSettingsKeyVaultReferencesSlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsGetAuthSettingsOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetAuthSettingsSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetAuthSettingsV2OptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetAuthSettingsV2SlotOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsGetAuthSettingsV2WithoutSecretsOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsGetBackupConfigurationOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetBackupConfigurationSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetBackupStatusOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetBackupStatusSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetConfigurationOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetConfigurationSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetConfigurationSnapshotOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsGetConfigurationSnapshotSlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsGetContainerLogsZipOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetContainerLogsZipSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetContinuousWebJobOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetContinuousWebJobSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetDeploymentOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetDeploymentSlotOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsGetDiagnosticLogsConfigurationOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsGetDiagnosticLogsConfigurationSlotOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsGetDomainOwnershipIdentifierOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsGetDomainOwnershipIdentifierSlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsGetFtpAllowedOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetFtpAllowedSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetFunctionOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetFunctionsAdminTokenOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetFunctionsAdminTokenSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetHostNameBindingOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetHostNameBindingSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetHybridConnectionOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetHybridConnectionSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetInstanceFunctionSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetInstanceInfoOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetInstanceInfoSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetInstanceMSDeployLogOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetInstanceMSDeployLogSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetInstanceMsDeployStatusOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsGetInstanceMsDeployStatusSlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsGetInstanceProcessDumpOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetInstanceProcessDumpSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetInstanceProcessModuleOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsGetInstanceProcessModuleSlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsGetInstanceProcessOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetInstanceProcessSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetMSDeployLogOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetMSDeployLogSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetMSDeployStatusOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetMSDeployStatusSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetMigrateMySqlStatusOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetMigrateMySqlStatusSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetNetworkTraceOperationOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsGetNetworkTraceOperationSlotOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsGetNetworkTraceOperationSlotV2OptionalParams|stable
+  - '@azure/arm-appservice.WebAppsGetNetworkTraceOperationV2OptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetNetworkTracesOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetNetworkTracesSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetNetworkTracesSlotV2OptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetNetworkTracesV2OptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetPremierAddOnOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetPremierAddOnSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetPrivateAccessOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetPrivateAccessSlotOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsGetPrivateEndpointConnectionListNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsGetPrivateEndpointConnectionListOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsGetPrivateEndpointConnectionListSlotNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsGetPrivateEndpointConnectionListSlotOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsGetPrivateEndpointConnectionOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsGetPrivateEndpointConnectionSlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsGetPrivateLinkResourcesOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsGetPrivateLinkResourcesSlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsGetProcessDumpOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetProcessDumpSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetProcessModuleOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetProcessModuleSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetProcessOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetProcessSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetPublicCertificateOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetPublicCertificateSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetRelayServiceConnectionOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsGetRelayServiceConnectionSlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsGetScmAllowedOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetScmAllowedSlotOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsGetSiteConnectionStringKeyVaultReferenceOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsGetSiteConnectionStringKeyVaultReferenceSlotOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsGetSiteConnectionStringKeyVaultReferencesNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsGetSiteConnectionStringKeyVaultReferencesOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsGetSiteConnectionStringKeyVaultReferencesSlotNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsGetSiteConnectionStringKeyVaultReferencesSlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsGetSiteExtensionOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetSiteExtensionSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetSitePhpErrorLogFlagOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetSitePhpErrorLogFlagSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetSourceControlOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetSourceControlSlotOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsGetSwiftVirtualNetworkConnectionOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsGetSwiftVirtualNetworkConnectionSlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsGetTriggeredWebJobHistoryOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsGetTriggeredWebJobHistorySlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsGetTriggeredWebJobOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetTriggeredWebJobSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetVnetConnectionGatewayOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsGetVnetConnectionGatewaySlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsGetVnetConnectionOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetVnetConnectionSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetWebJobOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetWebJobSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsGetWebSiteContainerLogsOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsGetWebSiteContainerLogsSlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsInstallSiteExtensionOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsInstallSiteExtensionSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsIsCloneableOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsIsCloneableSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListApplicationSettingsOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsListApplicationSettingsSlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsListAzureStorageAccountsOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsListAzureStorageAccountsSlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsListBackupStatusSecretsOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsListBackupStatusSecretsSlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsListBackupsNextOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListBackupsOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListBackupsSlotNextOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListBackupsSlotOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsListBasicPublishingCredentialsPoliciesNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsListBasicPublishingCredentialsPoliciesOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsListBasicPublishingCredentialsPoliciesSlotNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsListBasicPublishingCredentialsPoliciesSlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsListByResourceGroupNextOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListByResourceGroupOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsListConfigurationSnapshotInfoNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsListConfigurationSnapshotInfoOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsListConfigurationSnapshotInfoSlotNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsListConfigurationSnapshotInfoSlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsListConfigurationsNextOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListConfigurationsOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListConfigurationsSlotNextOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListConfigurationsSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListConnectionStringsOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListConnectionStringsSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListContinuousWebJobsNextOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListContinuousWebJobsOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsListContinuousWebJobsSlotNextOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsListContinuousWebJobsSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListDeploymentLogOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListDeploymentLogSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListDeploymentsNextOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListDeploymentsOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListDeploymentsSlotNextOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListDeploymentsSlotOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsListDomainOwnershipIdentifiersNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsListDomainOwnershipIdentifiersOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsListDomainOwnershipIdentifiersSlotNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsListDomainOwnershipIdentifiersSlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsListFunctionKeysOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListFunctionKeysSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListFunctionSecretsOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListFunctionSecretsSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListFunctionsNextOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListFunctionsOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListHostKeysOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListHostKeysSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListHostNameBindingsNextOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListHostNameBindingsOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsListHostNameBindingsSlotNextOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsListHostNameBindingsSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListHybridConnectionsOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListHybridConnectionsSlotOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsListInstanceFunctionsSlotNextOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsListInstanceFunctionsSlotOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsListInstanceIdentifiersNextOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsListInstanceIdentifiersOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsListInstanceIdentifiersSlotNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsListInstanceIdentifiersSlotOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsListInstanceProcessModulesNextOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsListInstanceProcessModulesOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsListInstanceProcessModulesSlotNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsListInstanceProcessModulesSlotOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsListInstanceProcessThreadsNextOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsListInstanceProcessThreadsOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsListInstanceProcessThreadsSlotNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsListInstanceProcessThreadsSlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsListInstanceProcessesNextOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListInstanceProcessesOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsListInstanceProcessesSlotNextOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsListInstanceProcessesSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListMetadataOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListMetadataSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListNetworkFeaturesOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListNetworkFeaturesSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListNextOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListPerfMonCountersNextOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListPerfMonCountersOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsListPerfMonCountersSlotNextOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsListPerfMonCountersSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListPremierAddOnsOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListPremierAddOnsSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListProcessModulesNextOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListProcessModulesOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListProcessModulesSlotNextOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListProcessModulesSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListProcessThreadsNextOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListProcessThreadsOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListProcessThreadsSlotNextOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListProcessThreadsSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListProcessesNextOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListProcessesOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListProcessesSlotNextOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListProcessesSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListPublicCertificatesNextOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListPublicCertificatesOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsListPublicCertificatesSlotNextOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsListPublicCertificatesSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListPublishingCredentialsOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsListPublishingCredentialsSlotOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsListPublishingProfileXmlWithSecretsOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsListPublishingProfileXmlWithSecretsSlotOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsListRelayServiceConnectionsOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsListRelayServiceConnectionsSlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsListSiteBackupsNextOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListSiteBackupsOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListSiteBackupsSlotNextOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListSiteBackupsSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListSiteExtensionsNextOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListSiteExtensionsOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListSiteExtensionsSlotNextOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListSiteExtensionsSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListSitePushSettingsOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListSitePushSettingsSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListSlotConfigurationNamesOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsListSlotDifferencesFromProductionNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsListSlotDifferencesFromProductionOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsListSlotDifferencesSlotNextOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsListSlotDifferencesSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListSlotsNextOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListSlotsOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsListSnapshotsFromDRSecondaryNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsListSnapshotsFromDRSecondaryOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsListSnapshotsFromDRSecondarySlotNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsListSnapshotsFromDRSecondarySlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsListSnapshotsNextOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListSnapshotsOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListSnapshotsSlotNextOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListSnapshotsSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListSyncFunctionTriggersOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsListSyncFunctionTriggersSlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsListSyncStatusOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListSyncStatusSlotOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsListTriggeredWebJobHistoryNextOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsListTriggeredWebJobHistoryOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsListTriggeredWebJobHistorySlotNextOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsListTriggeredWebJobHistorySlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsListTriggeredWebJobsNextOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListTriggeredWebJobsOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsListTriggeredWebJobsSlotNextOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsListTriggeredWebJobsSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListUsagesNextOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListUsagesOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListUsagesSlotNextOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListUsagesSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListVnetConnectionsOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListVnetConnectionsSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListWebJobsNextOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListWebJobsOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListWebJobsSlotNextOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsListWebJobsSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsMigrateMySqlOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsMigrateStorageOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsPutPrivateAccessVnetOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsPutPrivateAccessVnetSlotOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsRecoverSiteConfigurationSnapshotOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsRecoverSiteConfigurationSnapshotSlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsResetProductionSlotConfigOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsResetSlotConfigurationSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsRestartOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsRestartSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsRestoreFromBackupBlobOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsRestoreFromBackupBlobSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsRestoreFromDeletedAppOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsRestoreFromDeletedAppSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsRestoreOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsRestoreSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsRestoreSnapshotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsRestoreSnapshotSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsRunTriggeredWebJobOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsRunTriggeredWebJobSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsStartContinuousWebJobOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsStartContinuousWebJobSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsStartNetworkTraceOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsStartNetworkTraceSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsStartOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsStartSlotOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsStartWebSiteNetworkTraceOperationOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsStartWebSiteNetworkTraceOperationSlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsStartWebSiteNetworkTraceOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsStartWebSiteNetworkTraceSlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsStopContinuousWebJobOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsStopContinuousWebJobSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsStopNetworkTraceOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsStopNetworkTraceSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsStopOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsStopSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsStopWebSiteNetworkTraceOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsStopWebSiteNetworkTraceSlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsSwapSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsSwapSlotWithProductionOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsSyncFunctionTriggersOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsSyncFunctionTriggersSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsSyncFunctionsOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsSyncFunctionsSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsSyncRepositoryOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsSyncRepositorySlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsUpdateApplicationSettingsOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsUpdateApplicationSettingsSlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsUpdateAuthSettingsOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsUpdateAuthSettingsSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsUpdateAuthSettingsV2OptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsUpdateAuthSettingsV2SlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsUpdateAzureStorageAccountsOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsUpdateAzureStorageAccountsSlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsUpdateBackupConfigurationOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsUpdateBackupConfigurationSlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsUpdateConfigurationOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsUpdateConfigurationSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsUpdateConnectionStringsOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsUpdateConnectionStringsSlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsUpdateDiagnosticLogsConfigOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsUpdateDiagnosticLogsConfigSlotOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsUpdateDomainOwnershipIdentifierOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsUpdateDomainOwnershipIdentifierSlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsUpdateFtpAllowedOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsUpdateFtpAllowedSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsUpdateHybridConnectionOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsUpdateHybridConnectionSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsUpdateMetadataOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsUpdateMetadataSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsUpdateOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsUpdatePremierAddOnOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsUpdatePremierAddOnSlotOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsUpdateRelayServiceConnectionOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsUpdateRelayServiceConnectionSlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsUpdateScmAllowedOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsUpdateScmAllowedSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsUpdateSitePushSettingsOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsUpdateSitePushSettingsSlotOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsUpdateSlotConfigurationNamesOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsUpdateSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsUpdateSourceControlOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsUpdateSourceControlSlotOptionalParams|stable'
+  - >-
+    @azure/arm-appservice.WebAppsUpdateSwiftVirtualNetworkConnectionWithCheckOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsUpdateSwiftVirtualNetworkConnectionWithCheckSlotOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsUpdateVnetConnectionGatewayOptionalParams|stable
+  - >-
+    @azure/arm-appservice.WebAppsUpdateVnetConnectionGatewaySlotOptionalParams|stable
+  - '@azure/arm-appservice.WebAppsUpdateVnetConnectionOptionalParams|stable'
+  - '@azure/arm-appservice.WebAppsUpdateVnetConnectionSlotOptionalParams|stable'
+  - '@azure/arm-appservice.WebJobCollection|stable'
+  - '@azure/arm-appservice.WebSiteManagementClientOptionalParams|stable'
+  - '@azure/arm-appservice.WindowsJavaContainerSettings|stable'
+  - '@azure/arm-appservice.WorkerPoolCollection|stable'
+typeAliases:
+  - '@azure/arm-appservice.ActiveRevisionsMode|stable'
+  - '@azure/arm-appservice.AddressResponse|stable'
+  - '@azure/arm-appservice.AnalysisDefinition|stable'
+  - '@azure/arm-appservice.ApiKVReference|stable'
+  - '@azure/arm-appservice.AppServiceCertificateOrder|stable'
+  - '@azure/arm-appservice.AppServiceCertificateOrderPatchResource|stable'
+  - >-
+    @azure/arm-appservice.AppServiceCertificateOrderPatchResourcePropertiesAppServiceCertificateNotRenewableReasonsItem|stable
+  - >-
+    @azure/arm-appservice.AppServiceCertificateOrderPropertiesAppServiceCertificateNotRenewableReasonsItem|stable
+  - >-
+    @azure/arm-appservice.AppServiceCertificateOrdersCreateOrUpdateCertificateResponse|stable
+  - >-
+    @azure/arm-appservice.AppServiceCertificateOrdersCreateOrUpdateResponse|stable
+  - >-
+    @azure/arm-appservice.AppServiceCertificateOrdersGetCertificateResponse|stable
+  - '@azure/arm-appservice.AppServiceCertificateOrdersGetResponse|stable'
+  - >-
+    @azure/arm-appservice.AppServiceCertificateOrdersListByResourceGroupNextResponse|stable
+  - >-
+    @azure/arm-appservice.AppServiceCertificateOrdersListByResourceGroupResponse|stable
+  - >-
+    @azure/arm-appservice.AppServiceCertificateOrdersListCertificatesNextResponse|stable
+  - >-
+    @azure/arm-appservice.AppServiceCertificateOrdersListCertificatesResponse|stable
+  - '@azure/arm-appservice.AppServiceCertificateOrdersListNextResponse|stable'
+  - '@azure/arm-appservice.AppServiceCertificateOrdersListResponse|stable'
+  - >-
+    @azure/arm-appservice.AppServiceCertificateOrdersRetrieveCertificateActionsResponse|stable
+  - >-
+    @azure/arm-appservice.AppServiceCertificateOrdersRetrieveCertificateEmailHistoryResponse|stable
+  - >-
+    @azure/arm-appservice.AppServiceCertificateOrdersRetrieveSiteSealResponse|stable
+  - >-
+    @azure/arm-appservice.AppServiceCertificateOrdersUpdateCertificateResponse|stable
+  - '@azure/arm-appservice.AppServiceCertificateOrdersUpdateResponse|stable'
+  - '@azure/arm-appservice.AppServiceCertificatePatchResource|stable'
+  - '@azure/arm-appservice.AppServiceCertificateResource|stable'
+  - '@azure/arm-appservice.AppServiceEnvironmentPatchResource|stable'
+  - '@azure/arm-appservice.AppServiceEnvironmentResource|stable'
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsApproveOrRejectPrivateEndpointConnectionResponse|stable
+  - '@azure/arm-appservice.AppServiceEnvironmentsChangeVnetNextResponse|stable'
+  - '@azure/arm-appservice.AppServiceEnvironmentsChangeVnetResponse|stable'
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsCreateOrUpdateMultiRolePoolResponse|stable
+  - '@azure/arm-appservice.AppServiceEnvironmentsCreateOrUpdateResponse|stable'
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsCreateOrUpdateWorkerPoolResponse|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsDeletePrivateEndpointConnectionResponse|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsGetAseV3NetworkingConfigurationResponse|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsGetDiagnosticsItemResponse|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsGetInboundNetworkDependenciesEndpointsNextResponse|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsGetInboundNetworkDependenciesEndpointsResponse|stable
+  - '@azure/arm-appservice.AppServiceEnvironmentsGetMultiRolePoolResponse|stable'
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsGetOutboundNetworkDependenciesEndpointsNextResponse|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsGetOutboundNetworkDependenciesEndpointsResponse|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsGetPrivateEndpointConnectionListNextResponse|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsGetPrivateEndpointConnectionListResponse|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsGetPrivateEndpointConnectionResponse|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsGetPrivateLinkResourcesResponse|stable
+  - '@azure/arm-appservice.AppServiceEnvironmentsGetResponse|stable'
+  - '@azure/arm-appservice.AppServiceEnvironmentsGetVipInfoResponse|stable'
+  - '@azure/arm-appservice.AppServiceEnvironmentsGetWorkerPoolResponse|stable'
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListAppServicePlansNextResponse|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListAppServicePlansResponse|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListByResourceGroupNextResponse|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListByResourceGroupResponse|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListCapacitiesNextResponse|stable
+  - '@azure/arm-appservice.AppServiceEnvironmentsListCapacitiesResponse|stable'
+  - '@azure/arm-appservice.AppServiceEnvironmentsListDiagnosticsResponse|stable'
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListMultiRoleMetricDefinitionsNextResponse|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListMultiRoleMetricDefinitionsResponse|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListMultiRolePoolInstanceMetricDefinitionsNextResponse|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListMultiRolePoolInstanceMetricDefinitionsResponse|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListMultiRolePoolSkusNextResponse|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListMultiRolePoolSkusResponse|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListMultiRolePoolsNextResponse|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListMultiRolePoolsResponse|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListMultiRoleUsagesNextResponse|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListMultiRoleUsagesResponse|stable
+  - '@azure/arm-appservice.AppServiceEnvironmentsListNextResponse|stable'
+  - '@azure/arm-appservice.AppServiceEnvironmentsListOperationsResponse|stable'
+  - '@azure/arm-appservice.AppServiceEnvironmentsListResponse|stable'
+  - '@azure/arm-appservice.AppServiceEnvironmentsListUsagesNextResponse|stable'
+  - '@azure/arm-appservice.AppServiceEnvironmentsListUsagesResponse|stable'
+  - '@azure/arm-appservice.AppServiceEnvironmentsListWebAppsNextResponse|stable'
+  - '@azure/arm-appservice.AppServiceEnvironmentsListWebAppsResponse|stable'
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListWebWorkerMetricDefinitionsNextResponse|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListWebWorkerMetricDefinitionsResponse|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListWebWorkerUsagesNextResponse|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListWebWorkerUsagesResponse|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListWorkerPoolInstanceMetricDefinitionsNextResponse|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListWorkerPoolInstanceMetricDefinitionsResponse|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListWorkerPoolSkusNextResponse|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListWorkerPoolSkusResponse|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsListWorkerPoolsNextResponse|stable
+  - '@azure/arm-appservice.AppServiceEnvironmentsListWorkerPoolsResponse|stable'
+  - '@azure/arm-appservice.AppServiceEnvironmentsResumeNextResponse|stable'
+  - '@azure/arm-appservice.AppServiceEnvironmentsResumeResponse|stable'
+  - '@azure/arm-appservice.AppServiceEnvironmentsSuspendNextResponse|stable'
+  - '@azure/arm-appservice.AppServiceEnvironmentsSuspendResponse|stable'
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsUpdateAseNetworkingConfigurationResponse|stable
+  - >-
+    @azure/arm-appservice.AppServiceEnvironmentsUpdateMultiRolePoolResponse|stable
+  - '@azure/arm-appservice.AppServiceEnvironmentsUpdateResponse|stable'
+  - '@azure/arm-appservice.AppServiceEnvironmentsUpdateWorkerPoolResponse|stable'
+  - '@azure/arm-appservice.AppServicePlan|stable'
+  - '@azure/arm-appservice.AppServicePlanPatchResource|stable'
+  - '@azure/arm-appservice.AppServicePlanRestrictions|stable'
+  - '@azure/arm-appservice.AppServicePlansCreateOrUpdateResponse|stable'
+  - '@azure/arm-appservice.AppServicePlansCreateOrUpdateVnetRouteResponse|stable'
+  - >-
+    @azure/arm-appservice.AppServicePlansGetHybridConnectionPlanLimitResponse|stable
+  - '@azure/arm-appservice.AppServicePlansGetHybridConnectionResponse|stable'
+  - '@azure/arm-appservice.AppServicePlansGetResponse|stable'
+  - '@azure/arm-appservice.AppServicePlansGetRouteForVnetResponse|stable'
+  - '@azure/arm-appservice.AppServicePlansGetServerFarmSkusResponse|stable'
+  - '@azure/arm-appservice.AppServicePlansGetVnetFromServerFarmResponse|stable'
+  - '@azure/arm-appservice.AppServicePlansGetVnetGatewayResponse|stable'
+  - '@azure/arm-appservice.AppServicePlansListByResourceGroupNextResponse|stable'
+  - '@azure/arm-appservice.AppServicePlansListByResourceGroupResponse|stable'
+  - '@azure/arm-appservice.AppServicePlansListCapabilitiesResponse|stable'
+  - '@azure/arm-appservice.AppServicePlansListHybridConnectionKeysResponse|stable'
+  - >-
+    @azure/arm-appservice.AppServicePlansListHybridConnectionsNextResponse|stable
+  - '@azure/arm-appservice.AppServicePlansListHybridConnectionsResponse|stable'
+  - '@azure/arm-appservice.AppServicePlansListNextResponse|stable'
+  - '@azure/arm-appservice.AppServicePlansListResponse|stable'
+  - '@azure/arm-appservice.AppServicePlansListRoutesForVnetResponse|stable'
+  - '@azure/arm-appservice.AppServicePlansListUsagesNextResponse|stable'
+  - '@azure/arm-appservice.AppServicePlansListUsagesResponse|stable'
+  - '@azure/arm-appservice.AppServicePlansListVnetsResponse|stable'
+  - >-
+    @azure/arm-appservice.AppServicePlansListWebAppsByHybridConnectionNextResponse|stable
+  - >-
+    @azure/arm-appservice.AppServicePlansListWebAppsByHybridConnectionResponse|stable
+  - '@azure/arm-appservice.AppServicePlansListWebAppsNextResponse|stable'
+  - '@azure/arm-appservice.AppServicePlansListWebAppsResponse|stable'
+  - '@azure/arm-appservice.AppServicePlansUpdateResponse|stable'
+  - '@azure/arm-appservice.AppServicePlansUpdateVnetGatewayResponse|stable'
+  - '@azure/arm-appservice.AppServicePlansUpdateVnetRouteResponse|stable'
+  - '@azure/arm-appservice.ApplicationStackResource|stable'
+  - '@azure/arm-appservice.AseV3NetworkingConfiguration|stable'
+  - '@azure/arm-appservice.AutoHealActionType|stable'
+  - '@azure/arm-appservice.AzureResourceType|stable'
+  - '@azure/arm-appservice.AzureStoragePropertyDictionaryResource|stable'
+  - '@azure/arm-appservice.AzureStorageState|stable'
+  - '@azure/arm-appservice.AzureStorageType|stable'
+  - '@azure/arm-appservice.BackupItem|stable'
+  - '@azure/arm-appservice.BackupItemStatus|stable'
+  - '@azure/arm-appservice.BackupRequest|stable'
+  - '@azure/arm-appservice.BackupRestoreOperationType|stable'
+  - '@azure/arm-appservice.BillingMeter|stable'
+  - '@azure/arm-appservice.BuildStatus|stable'
+  - '@azure/arm-appservice.BuiltInAuthenticationProvider|stable'
+  - '@azure/arm-appservice.Certificate|stable'
+  - '@azure/arm-appservice.CertificateEmail|stable'
+  - '@azure/arm-appservice.CertificateOrderAction|stable'
+  - '@azure/arm-appservice.CertificateOrderActionType|stable'
+  - '@azure/arm-appservice.CertificateOrderStatus|stable'
+  - >-
+    @azure/arm-appservice.CertificateOrdersDiagnosticsGetAppServiceCertificateOrderDetectorResponseResponse|stable
+  - >-
+    @azure/arm-appservice.CertificateOrdersDiagnosticsListAppServiceCertificateOrderDetectorResponseNextResponse|stable
+  - >-
+    @azure/arm-appservice.CertificateOrdersDiagnosticsListAppServiceCertificateOrderDetectorResponseResponse|stable
+  - '@azure/arm-appservice.CertificatePatchResource|stable'
+  - '@azure/arm-appservice.CertificateProductType|stable'
+  - >-
+    @azure/arm-appservice.CertificateRegistrationProviderListOperationsNextResponse|stable
+  - >-
+    @azure/arm-appservice.CertificateRegistrationProviderListOperationsResponse|stable
+  - '@azure/arm-appservice.CertificatesCreateOrUpdateResponse|stable'
+  - '@azure/arm-appservice.CertificatesGetResponse|stable'
+  - '@azure/arm-appservice.CertificatesListByResourceGroupNextResponse|stable'
+  - '@azure/arm-appservice.CertificatesListByResourceGroupResponse|stable'
+  - '@azure/arm-appservice.CertificatesListNextResponse|stable'
+  - '@azure/arm-appservice.CertificatesListResponse|stable'
+  - '@azure/arm-appservice.CertificatesUpdateResponse|stable'
+  - '@azure/arm-appservice.Channels|stable'
+  - '@azure/arm-appservice.CheckNameAvailabilityResponse|stable'
+  - '@azure/arm-appservice.CheckNameResourceTypes|stable'
+  - '@azure/arm-appservice.ClientCertMode|stable'
+  - '@azure/arm-appservice.CloneAbilityResult|stable'
+  - '@azure/arm-appservice.ComputeModeOptions|stable'
+  - '@azure/arm-appservice.ConnectionStringDictionary|stable'
+  - '@azure/arm-appservice.ConnectionStringType|stable'
+  - '@azure/arm-appservice.ContainerApp|stable'
+  - '@azure/arm-appservice.ContainerAppProvisioningState|stable'
+  - '@azure/arm-appservice.ContainerAppsCreateOrUpdateResponse|stable'
+  - '@azure/arm-appservice.ContainerAppsGetResponse|stable'
+  - '@azure/arm-appservice.ContainerAppsListByResourceGroupNextResponse|stable'
+  - '@azure/arm-appservice.ContainerAppsListByResourceGroupResponse|stable'
+  - '@azure/arm-appservice.ContainerAppsListBySubscriptionNextResponse|stable'
+  - '@azure/arm-appservice.ContainerAppsListBySubscriptionResponse|stable'
+  - '@azure/arm-appservice.ContainerAppsListSecretsResponse|stable'
+  - '@azure/arm-appservice.ContainerAppsRevisionsGetRevisionResponse|stable'
+  - '@azure/arm-appservice.ContainerAppsRevisionsListRevisionsNextResponse|stable'
+  - '@azure/arm-appservice.ContainerAppsRevisionsListRevisionsResponse|stable'
+  - '@azure/arm-appservice.ContinuousWebJob|stable'
+  - '@azure/arm-appservice.ContinuousWebJobStatus|stable'
+  - '@azure/arm-appservice.CookieExpirationConvention|stable'
+  - '@azure/arm-appservice.CsmPublishingCredentialsPoliciesEntity|stable'
+  - '@azure/arm-appservice.CustomDomainStatus|stable'
+  - '@azure/arm-appservice.CustomHostNameDnsRecordType|stable'
+  - '@azure/arm-appservice.CustomHostnameAnalysisResult|stable'
+  - '@azure/arm-appservice.CustomHostnameSites|stable'
+  - '@azure/arm-appservice.DatabaseType|stable'
+  - '@azure/arm-appservice.DeletedAppRestoreRequest|stable'
+  - '@azure/arm-appservice.DeletedSite|stable'
+  - >-
+    @azure/arm-appservice.DeletedWebAppsGetDeletedWebAppByLocationResponse|stable
+  - '@azure/arm-appservice.DeletedWebAppsListByLocationNextResponse|stable'
+  - '@azure/arm-appservice.DeletedWebAppsListByLocationResponse|stable'
+  - '@azure/arm-appservice.DeletedWebAppsListNextResponse|stable'
+  - '@azure/arm-appservice.DeletedWebAppsListResponse|stable'
+  - '@azure/arm-appservice.Deployment|stable'
+  - '@azure/arm-appservice.DetectorDefinitionResource|stable'
+  - '@azure/arm-appservice.DetectorResponse|stable'
+  - '@azure/arm-appservice.DetectorType|stable'
+  - '@azure/arm-appservice.DiagnosticAnalysis|stable'
+  - '@azure/arm-appservice.DiagnosticCategory|stable'
+  - '@azure/arm-appservice.DiagnosticDetectorResponse|stable'
+  - '@azure/arm-appservice.DiagnosticsExecuteSiteAnalysisResponse|stable'
+  - '@azure/arm-appservice.DiagnosticsExecuteSiteAnalysisSlotResponse|stable'
+  - '@azure/arm-appservice.DiagnosticsExecuteSiteDetectorResponse|stable'
+  - '@azure/arm-appservice.DiagnosticsExecuteSiteDetectorSlotResponse|stable'
+  - >-
+    @azure/arm-appservice.DiagnosticsGetHostingEnvironmentDetectorResponseResponse|stable
+  - '@azure/arm-appservice.DiagnosticsGetSiteAnalysisResponse|stable'
+  - '@azure/arm-appservice.DiagnosticsGetSiteAnalysisSlotResponse|stable'
+  - '@azure/arm-appservice.DiagnosticsGetSiteDetectorResponse|stable'
+  - '@azure/arm-appservice.DiagnosticsGetSiteDetectorResponseResponse|stable'
+  - '@azure/arm-appservice.DiagnosticsGetSiteDetectorResponseSlotResponse|stable'
+  - '@azure/arm-appservice.DiagnosticsGetSiteDetectorSlotResponse|stable'
+  - '@azure/arm-appservice.DiagnosticsGetSiteDiagnosticCategoryResponse|stable'
+  - >-
+    @azure/arm-appservice.DiagnosticsGetSiteDiagnosticCategorySlotResponse|stable
+  - >-
+    @azure/arm-appservice.DiagnosticsListHostingEnvironmentDetectorResponsesNextResponse|stable
+  - >-
+    @azure/arm-appservice.DiagnosticsListHostingEnvironmentDetectorResponsesResponse|stable
+  - '@azure/arm-appservice.DiagnosticsListSiteAnalysesNextResponse|stable'
+  - '@azure/arm-appservice.DiagnosticsListSiteAnalysesResponse|stable'
+  - '@azure/arm-appservice.DiagnosticsListSiteAnalysesSlotNextResponse|stable'
+  - '@azure/arm-appservice.DiagnosticsListSiteAnalysesSlotResponse|stable'
+  - >-
+    @azure/arm-appservice.DiagnosticsListSiteDetectorResponsesNextResponse|stable
+  - '@azure/arm-appservice.DiagnosticsListSiteDetectorResponsesResponse|stable'
+  - >-
+    @azure/arm-appservice.DiagnosticsListSiteDetectorResponsesSlotNextResponse|stable
+  - >-
+    @azure/arm-appservice.DiagnosticsListSiteDetectorResponsesSlotResponse|stable
+  - '@azure/arm-appservice.DiagnosticsListSiteDetectorsNextResponse|stable'
+  - '@azure/arm-appservice.DiagnosticsListSiteDetectorsResponse|stable'
+  - '@azure/arm-appservice.DiagnosticsListSiteDetectorsSlotNextResponse|stable'
+  - '@azure/arm-appservice.DiagnosticsListSiteDetectorsSlotResponse|stable'
+  - >-
+    @azure/arm-appservice.DiagnosticsListSiteDiagnosticCategoriesNextResponse|stable
+  - '@azure/arm-appservice.DiagnosticsListSiteDiagnosticCategoriesResponse|stable'
+  - >-
+    @azure/arm-appservice.DiagnosticsListSiteDiagnosticCategoriesSlotNextResponse|stable
+  - >-
+    @azure/arm-appservice.DiagnosticsListSiteDiagnosticCategoriesSlotResponse|stable
+  - '@azure/arm-appservice.DnsType|stable'
+  - '@azure/arm-appservice.DnsVerificationTestResult|stable'
+  - '@azure/arm-appservice.Domain|stable'
+  - '@azure/arm-appservice.DomainOwnershipIdentifier|stable'
+  - '@azure/arm-appservice.DomainPatchResource|stable'
+  - >-
+    @azure/arm-appservice.DomainPatchResourcePropertiesDomainNotRenewableReasonsItem|stable
+  - '@azure/arm-appservice.DomainPropertiesDomainNotRenewableReasonsItem|stable'
+  - >-
+    @azure/arm-appservice.DomainRegistrationProviderListOperationsNextResponse|stable
+  - >-
+    @azure/arm-appservice.DomainRegistrationProviderListOperationsResponse|stable
+  - '@azure/arm-appservice.DomainStatus|stable'
+  - '@azure/arm-appservice.DomainType|stable'
+  - '@azure/arm-appservice.DomainsCheckAvailabilityResponse|stable'
+  - >-
+    @azure/arm-appservice.DomainsCreateOrUpdateOwnershipIdentifierResponse|stable
+  - '@azure/arm-appservice.DomainsCreateOrUpdateResponse|stable'
+  - '@azure/arm-appservice.DomainsGetControlCenterSsoRequestResponse|stable'
+  - '@azure/arm-appservice.DomainsGetOwnershipIdentifierResponse|stable'
+  - '@azure/arm-appservice.DomainsGetResponse|stable'
+  - '@azure/arm-appservice.DomainsListByResourceGroupNextResponse|stable'
+  - '@azure/arm-appservice.DomainsListByResourceGroupResponse|stable'
+  - '@azure/arm-appservice.DomainsListNextResponse|stable'
+  - '@azure/arm-appservice.DomainsListOwnershipIdentifiersNextResponse|stable'
+  - '@azure/arm-appservice.DomainsListOwnershipIdentifiersResponse|stable'
+  - '@azure/arm-appservice.DomainsListRecommendationsNextResponse|stable'
+  - '@azure/arm-appservice.DomainsListRecommendationsResponse|stable'
+  - '@azure/arm-appservice.DomainsListResponse|stable'
+  - '@azure/arm-appservice.DomainsTransferOutResponse|stable'
+  - '@azure/arm-appservice.DomainsUpdateOwnershipIdentifierResponse|stable'
+  - '@azure/arm-appservice.DomainsUpdateResponse|stable'
+  - '@azure/arm-appservice.EnterpriseGradeCdnStatus|stable'
+  - '@azure/arm-appservice.Enum15|stable'
+  - '@azure/arm-appservice.Enum16|stable'
+  - '@azure/arm-appservice.Enum17|stable'
+  - '@azure/arm-appservice.Enum18|stable'
+  - '@azure/arm-appservice.Enum19|stable'
+  - '@azure/arm-appservice.Enum20|stable'
+  - '@azure/arm-appservice.ForwardProxyConvention|stable'
+  - '@azure/arm-appservice.FrequencyUnit|stable'
+  - '@azure/arm-appservice.FrontEndServiceType|stable'
+  - '@azure/arm-appservice.FtpsState|stable'
+  - '@azure/arm-appservice.FunctionAppStack|stable'
+  - '@azure/arm-appservice.FunctionEnvelope|stable'
+  - '@azure/arm-appservice.GeoRegion|stable'
+  - '@azure/arm-appservice.GetPublishingUserResponse|stable'
+  - '@azure/arm-appservice.GetSourceControlResponse|stable'
+  - '@azure/arm-appservice.GetSubscriptionDeploymentLocationsResponse|stable'
+  - '@azure/arm-appservice.GlobalGetDeletedWebAppResponse|stable'
+  - '@azure/arm-appservice.GlobalGetDeletedWebAppSnapshotsResponse|stable'
+  - '@azure/arm-appservice.HostNameBinding|stable'
+  - '@azure/arm-appservice.HostNameType|stable'
+  - '@azure/arm-appservice.HostType|stable'
+  - '@azure/arm-appservice.HostingEnvironmentStatus|stable'
+  - '@azure/arm-appservice.HybridConnection|stable'
+  - '@azure/arm-appservice.HybridConnectionKey|stable'
+  - '@azure/arm-appservice.HybridConnectionLimits|stable'
+  - '@azure/arm-appservice.Identifier|stable'
+  - '@azure/arm-appservice.InAvailabilityReasonType|stable'
+  - '@azure/arm-appservice.IngressTransportMethod|stable'
+  - '@azure/arm-appservice.InsightStatus|stable'
+  - '@azure/arm-appservice.IpFilterTag|stable'
+  - '@azure/arm-appservice.IssueType|stable'
+  - '@azure/arm-appservice.KeyVaultSecretStatus|stable'
+  - '@azure/arm-appservice.KubeEnvironment|stable'
+  - '@azure/arm-appservice.KubeEnvironmentPatchResource|stable'
+  - '@azure/arm-appservice.KubeEnvironmentProvisioningState|stable'
+  - '@azure/arm-appservice.KubeEnvironmentsCreateOrUpdateResponse|stable'
+  - '@azure/arm-appservice.KubeEnvironmentsGetResponse|stable'
+  - '@azure/arm-appservice.KubeEnvironmentsListByResourceGroupNextResponse|stable'
+  - '@azure/arm-appservice.KubeEnvironmentsListByResourceGroupResponse|stable'
+  - '@azure/arm-appservice.KubeEnvironmentsListBySubscriptionNextResponse|stable'
+  - '@azure/arm-appservice.KubeEnvironmentsListBySubscriptionResponse|stable'
+  - '@azure/arm-appservice.KubeEnvironmentsUpdateResponse|stable'
+  - '@azure/arm-appservice.ListBillingMetersNextResponse|stable'
+  - '@azure/arm-appservice.ListBillingMetersResponse|stable'
+  - '@azure/arm-appservice.ListCustomHostNameSitesNextResponse|stable'
+  - '@azure/arm-appservice.ListCustomHostNameSitesResponse|stable'
+  - '@azure/arm-appservice.ListGeoRegionsNextResponse|stable'
+  - '@azure/arm-appservice.ListGeoRegionsResponse|stable'
+  - '@azure/arm-appservice.ListPremierAddOnOffersNextResponse|stable'
+  - '@azure/arm-appservice.ListPremierAddOnOffersResponse|stable'
+  - >-
+    @azure/arm-appservice.ListSiteIdentifiersAssignedToHostNameNextResponse|stable
+  - '@azure/arm-appservice.ListSiteIdentifiersAssignedToHostNameResponse|stable'
+  - '@azure/arm-appservice.ListSkusResponse|stable'
+  - '@azure/arm-appservice.ListSourceControlsNextResponse|stable'
+  - '@azure/arm-appservice.ListSourceControlsResponse|stable'
+  - '@azure/arm-appservice.LoadBalancingMode|stable'
+  - '@azure/arm-appservice.LogLevel|stable'
+  - '@azure/arm-appservice.MSDeploy|stable'
+  - '@azure/arm-appservice.MSDeployLog|stable'
+  - '@azure/arm-appservice.MSDeployLogEntryType|stable'
+  - '@azure/arm-appservice.MSDeployProvisioningState|stable'
+  - '@azure/arm-appservice.MSDeployStatus|stable'
+  - '@azure/arm-appservice.ManagedPipelineMode|stable'
+  - '@azure/arm-appservice.ManagedServiceIdentityType|stable'
+  - '@azure/arm-appservice.MigrateMySqlRequest|stable'
+  - '@azure/arm-appservice.MigrateMySqlStatus|stable'
+  - '@azure/arm-appservice.MySqlMigrationType|stable'
+  - '@azure/arm-appservice.NetworkFeatures|stable'
+  - '@azure/arm-appservice.NotificationLevel|stable'
+  - '@azure/arm-appservice.OperationStatus|stable'
+  - '@azure/arm-appservice.PremierAddOn|stable'
+  - '@azure/arm-appservice.PremierAddOnOffer|stable'
+  - '@azure/arm-appservice.PremierAddOnPatchResource|stable'
+  - '@azure/arm-appservice.PrivateAccess|stable'
+  - '@azure/arm-appservice.PrivateLinkConnectionApprovalRequestResource|stable'
+  - '@azure/arm-appservice.ProcessInfo|stable'
+  - '@azure/arm-appservice.ProcessModuleInfo|stable'
+  - '@azure/arm-appservice.ProcessThreadInfo|stable'
+  - '@azure/arm-appservice.ProviderGetAvailableStacksNextResponse|stable'
+  - '@azure/arm-appservice.ProviderGetAvailableStacksOnPremNextResponse|stable'
+  - '@azure/arm-appservice.ProviderGetAvailableStacksOnPremResponse|stable'
+  - '@azure/arm-appservice.ProviderGetAvailableStacksResponse|stable'
+  - >-
+    @azure/arm-appservice.ProviderGetFunctionAppStacksForLocationNextResponse|stable
+  - '@azure/arm-appservice.ProviderGetFunctionAppStacksForLocationResponse|stable'
+  - '@azure/arm-appservice.ProviderGetFunctionAppStacksNextResponse|stable'
+  - '@azure/arm-appservice.ProviderGetFunctionAppStacksResponse|stable'
+  - '@azure/arm-appservice.ProviderGetWebAppStacksForLocationNextResponse|stable'
+  - '@azure/arm-appservice.ProviderGetWebAppStacksForLocationResponse|stable'
+  - '@azure/arm-appservice.ProviderGetWebAppStacksNextResponse|stable'
+  - '@azure/arm-appservice.ProviderGetWebAppStacksResponse|stable'
+  - '@azure/arm-appservice.ProviderListOperationsNextResponse|stable'
+  - '@azure/arm-appservice.ProviderListOperationsResponse|stable'
+  - '@azure/arm-appservice.ProvisioningState|stable'
+  - '@azure/arm-appservice.PublicCertificate|stable'
+  - '@azure/arm-appservice.PublicCertificateLocation|stable'
+  - '@azure/arm-appservice.PublishingProfileFormat|stable'
+  - '@azure/arm-appservice.PushSettings|stable'
+  - '@azure/arm-appservice.Recommendation|stable'
+  - '@azure/arm-appservice.RecommendationRule|stable'
+  - >-
+    @azure/arm-appservice.RecommendationsGetRuleDetailsByHostingEnvironmentResponse|stable
+  - '@azure/arm-appservice.RecommendationsGetRuleDetailsByWebAppResponse|stable'
+  - >-
+    @azure/arm-appservice.RecommendationsListHistoryForHostingEnvironmentNextResponse|stable
+  - >-
+    @azure/arm-appservice.RecommendationsListHistoryForHostingEnvironmentResponse|stable
+  - '@azure/arm-appservice.RecommendationsListHistoryForWebAppNextResponse|stable'
+  - '@azure/arm-appservice.RecommendationsListHistoryForWebAppResponse|stable'
+  - '@azure/arm-appservice.RecommendationsListNextResponse|stable'
+  - >-
+    @azure/arm-appservice.RecommendationsListRecommendedRulesForHostingEnvironmentNextResponse|stable
+  - >-
+    @azure/arm-appservice.RecommendationsListRecommendedRulesForHostingEnvironmentResponse|stable
+  - >-
+    @azure/arm-appservice.RecommendationsListRecommendedRulesForWebAppNextResponse|stable
+  - >-
+    @azure/arm-appservice.RecommendationsListRecommendedRulesForWebAppResponse|stable
+  - '@azure/arm-appservice.RecommendationsListResponse|stable'
+  - '@azure/arm-appservice.RedundancyMode|stable'
+  - '@azure/arm-appservice.ReissueCertificateOrderRequest|stable'
+  - '@azure/arm-appservice.RelayServiceConnectionEntity|stable'
+  - '@azure/arm-appservice.RemotePrivateEndpointConnection|stable'
+  - '@azure/arm-appservice.RemotePrivateEndpointConnectionARMResource|stable'
+  - '@azure/arm-appservice.RenderingType|stable'
+  - '@azure/arm-appservice.RenewCertificateOrderRequest|stable'
+  - '@azure/arm-appservice.ResolveStatus|stable'
+  - '@azure/arm-appservice.ResourceHealthMetadata|stable'
+  - '@azure/arm-appservice.ResourceHealthMetadataGetBySiteResponse|stable'
+  - '@azure/arm-appservice.ResourceHealthMetadataGetBySiteSlotResponse|stable'
+  - >-
+    @azure/arm-appservice.ResourceHealthMetadataListByResourceGroupNextResponse|stable
+  - >-
+    @azure/arm-appservice.ResourceHealthMetadataListByResourceGroupResponse|stable
+  - '@azure/arm-appservice.ResourceHealthMetadataListBySiteNextResponse|stable'
+  - '@azure/arm-appservice.ResourceHealthMetadataListBySiteResponse|stable'
+  - >-
+    @azure/arm-appservice.ResourceHealthMetadataListBySiteSlotNextResponse|stable
+  - '@azure/arm-appservice.ResourceHealthMetadataListBySiteSlotResponse|stable'
+  - '@azure/arm-appservice.ResourceHealthMetadataListNextResponse|stable'
+  - '@azure/arm-appservice.ResourceHealthMetadataListResponse|stable'
+  - '@azure/arm-appservice.ResourceMetricDefinition|stable'
+  - '@azure/arm-appservice.ResourceScopeType|stable'
+  - '@azure/arm-appservice.RestoreRequest|stable'
+  - '@azure/arm-appservice.Revision|stable'
+  - '@azure/arm-appservice.RevisionHealthState|stable'
+  - '@azure/arm-appservice.RevisionProvisioningState|stable'
+  - '@azure/arm-appservice.RouteType|stable'
+  - '@azure/arm-appservice.ScmType|stable'
+  - '@azure/arm-appservice.Site|stable'
+  - '@azure/arm-appservice.SiteAuthSettings|stable'
+  - '@azure/arm-appservice.SiteAuthSettingsV2|stable'
+  - '@azure/arm-appservice.SiteAvailabilityState|stable'
+  - '@azure/arm-appservice.SiteConfigResource|stable'
+  - '@azure/arm-appservice.SiteConfigurationSnapshotInfo|stable'
+  - '@azure/arm-appservice.SiteExtensionInfo|stable'
+  - '@azure/arm-appservice.SiteExtensionType|stable'
+  - '@azure/arm-appservice.SiteLoadBalancing|stable'
+  - '@azure/arm-appservice.SiteLogsConfig|stable'
+  - '@azure/arm-appservice.SitePatchResource|stable'
+  - '@azure/arm-appservice.SitePhpErrorLogFlag|stable'
+  - '@azure/arm-appservice.SiteRuntimeState|stable'
+  - '@azure/arm-appservice.SiteSourceControl|stable'
+  - '@azure/arm-appservice.SkuName|stable'
+  - '@azure/arm-appservice.SlotConfigNamesResource|stable'
+  - '@azure/arm-appservice.SlotDifference|stable'
+  - '@azure/arm-appservice.Snapshot|stable'
+  - '@azure/arm-appservice.SnapshotRestoreRequest|stable'
+  - '@azure/arm-appservice.SolutionType|stable'
+  - '@azure/arm-appservice.SourceControl|stable'
+  - '@azure/arm-appservice.SslState|stable'
+  - '@azure/arm-appservice.StackPreferredOs|stable'
+  - '@azure/arm-appservice.StagingEnvironmentPolicy|stable'
+  - '@azure/arm-appservice.StaticSiteARMResource|stable'
+  - '@azure/arm-appservice.StaticSiteBuildARMResource|stable'
+  - '@azure/arm-appservice.StaticSiteCustomDomainOverviewARMResource|stable'
+  - >-
+    @azure/arm-appservice.StaticSiteCustomDomainRequestPropertiesARMResource|stable
+  - '@azure/arm-appservice.StaticSiteFunctionOverviewARMResource|stable'
+  - '@azure/arm-appservice.StaticSitePatchResource|stable'
+  - '@azure/arm-appservice.StaticSiteResetPropertiesARMResource|stable'
+  - '@azure/arm-appservice.StaticSiteUserARMResource|stable'
+  - '@azure/arm-appservice.StaticSiteUserInvitationRequestResource|stable'
+  - '@azure/arm-appservice.StaticSiteUserInvitationResponseResource|stable'
+  - '@azure/arm-appservice.StaticSiteUserProvidedFunctionApp|stable'
+  - '@azure/arm-appservice.StaticSiteUserProvidedFunctionAppARMResource|stable'
+  - '@azure/arm-appservice.StaticSiteZipDeploymentARMResource|stable'
+  - >-
+    @azure/arm-appservice.StaticSitesApproveOrRejectPrivateEndpointConnectionResponse|stable
+  - >-
+    @azure/arm-appservice.StaticSitesCreateOrUpdateStaticSiteAppSettingsResponse|stable
+  - >-
+    @azure/arm-appservice.StaticSitesCreateOrUpdateStaticSiteBuildAppSettingsResponse|stable
+  - >-
+    @azure/arm-appservice.StaticSitesCreateOrUpdateStaticSiteBuildFunctionAppSettingsResponse|stable
+  - >-
+    @azure/arm-appservice.StaticSitesCreateOrUpdateStaticSiteCustomDomainResponse|stable
+  - >-
+    @azure/arm-appservice.StaticSitesCreateOrUpdateStaticSiteFunctionAppSettingsResponse|stable
+  - '@azure/arm-appservice.StaticSitesCreateOrUpdateStaticSiteResponse|stable'
+  - >-
+    @azure/arm-appservice.StaticSitesCreateUserRolesInvitationLinkResponse|stable
+  - >-
+    @azure/arm-appservice.StaticSitesDeletePrivateEndpointConnectionResponse|stable
+  - >-
+    @azure/arm-appservice.StaticSitesGetPrivateEndpointConnectionListNextResponse|stable
+  - >-
+    @azure/arm-appservice.StaticSitesGetPrivateEndpointConnectionListResponse|stable
+  - '@azure/arm-appservice.StaticSitesGetPrivateEndpointConnectionResponse|stable'
+  - '@azure/arm-appservice.StaticSitesGetPrivateLinkResourcesResponse|stable'
+  - '@azure/arm-appservice.StaticSitesGetStaticSiteBuildResponse|stable'
+  - '@azure/arm-appservice.StaticSitesGetStaticSiteBuildsNextResponse|stable'
+  - '@azure/arm-appservice.StaticSitesGetStaticSiteBuildsResponse|stable'
+  - '@azure/arm-appservice.StaticSitesGetStaticSiteCustomDomainResponse|stable'
+  - '@azure/arm-appservice.StaticSitesGetStaticSiteResponse|stable'
+  - >-
+    @azure/arm-appservice.StaticSitesGetStaticSitesByResourceGroupNextResponse|stable
+  - >-
+    @azure/arm-appservice.StaticSitesGetStaticSitesByResourceGroupResponse|stable
+  - >-
+    @azure/arm-appservice.StaticSitesGetUserProvidedFunctionAppForStaticSiteBuildResponse|stable
+  - >-
+    @azure/arm-appservice.StaticSitesGetUserProvidedFunctionAppForStaticSiteResponse|stable
+  - >-
+    @azure/arm-appservice.StaticSitesGetUserProvidedFunctionAppsForStaticSiteBuildNextResponse|stable
+  - >-
+    @azure/arm-appservice.StaticSitesGetUserProvidedFunctionAppsForStaticSiteBuildResponse|stable
+  - >-
+    @azure/arm-appservice.StaticSitesGetUserProvidedFunctionAppsForStaticSiteNextResponse|stable
+  - >-
+    @azure/arm-appservice.StaticSitesGetUserProvidedFunctionAppsForStaticSiteResponse|stable
+  - '@azure/arm-appservice.StaticSitesListNextResponse|stable'
+  - '@azure/arm-appservice.StaticSitesListResponse|stable'
+  - '@azure/arm-appservice.StaticSitesListStaticSiteAppSettingsResponse|stable'
+  - >-
+    @azure/arm-appservice.StaticSitesListStaticSiteBuildAppSettingsResponse|stable
+  - >-
+    @azure/arm-appservice.StaticSitesListStaticSiteBuildFunctionAppSettingsResponse|stable
+  - >-
+    @azure/arm-appservice.StaticSitesListStaticSiteBuildFunctionsNextResponse|stable
+  - '@azure/arm-appservice.StaticSitesListStaticSiteBuildFunctionsResponse|stable'
+  - >-
+    @azure/arm-appservice.StaticSitesListStaticSiteConfiguredRolesResponse|stable
+  - >-
+    @azure/arm-appservice.StaticSitesListStaticSiteCustomDomainsNextResponse|stable
+  - '@azure/arm-appservice.StaticSitesListStaticSiteCustomDomainsResponse|stable'
+  - >-
+    @azure/arm-appservice.StaticSitesListStaticSiteFunctionAppSettingsResponse|stable
+  - '@azure/arm-appservice.StaticSitesListStaticSiteFunctionsNextResponse|stable'
+  - '@azure/arm-appservice.StaticSitesListStaticSiteFunctionsResponse|stable'
+  - '@azure/arm-appservice.StaticSitesListStaticSiteSecretsResponse|stable'
+  - '@azure/arm-appservice.StaticSitesListStaticSiteUsersNextResponse|stable'
+  - '@azure/arm-appservice.StaticSitesListStaticSiteUsersResponse|stable'
+  - '@azure/arm-appservice.StaticSitesPreviewWorkflowResponse|stable'
+  - >-
+    @azure/arm-appservice.StaticSitesRegisterUserProvidedFunctionAppWithStaticSiteBuildResponse|stable
+  - >-
+    @azure/arm-appservice.StaticSitesRegisterUserProvidedFunctionAppWithStaticSiteResponse|stable
+  - '@azure/arm-appservice.StaticSitesUpdateStaticSiteResponse|stable'
+  - '@azure/arm-appservice.StaticSitesUpdateStaticSiteUserResponse|stable'
+  - '@azure/arm-appservice.StaticSitesWorkflowPreview|stable'
+  - '@azure/arm-appservice.StaticSitesWorkflowPreviewRequest|stable'
+  - '@azure/arm-appservice.StatusOptions|stable'
+  - '@azure/arm-appservice.StorageMigrationOptions|stable'
+  - '@azure/arm-appservice.StorageMigrationResponse|stable'
+  - '@azure/arm-appservice.StorageType|stable'
+  - '@azure/arm-appservice.StringDictionary|stable'
+  - '@azure/arm-appservice.StringList|stable'
+  - '@azure/arm-appservice.SupportedTlsVersions|stable'
+  - '@azure/arm-appservice.SwiftVirtualNetwork|stable'
+  - '@azure/arm-appservice.TopLevelDomain|stable'
+  - '@azure/arm-appservice.TopLevelDomainsGetResponse|stable'
+  - '@azure/arm-appservice.TopLevelDomainsListAgreementsNextResponse|stable'
+  - '@azure/arm-appservice.TopLevelDomainsListAgreementsResponse|stable'
+  - '@azure/arm-appservice.TopLevelDomainsListNextResponse|stable'
+  - '@azure/arm-appservice.TopLevelDomainsListResponse|stable'
+  - '@azure/arm-appservice.TriggerTypes|stable'
+  - '@azure/arm-appservice.TriggeredJobHistory|stable'
+  - '@azure/arm-appservice.TriggeredWebJob|stable'
+  - '@azure/arm-appservice.TriggeredWebJobStatus|stable'
+  - '@azure/arm-appservice.UnauthenticatedClientAction|stable'
+  - '@azure/arm-appservice.UnauthenticatedClientActionV2|stable'
+  - '@azure/arm-appservice.UpdatePublishingUserResponse|stable'
+  - '@azure/arm-appservice.UpdateSourceControlResponse|stable'
+  - '@azure/arm-appservice.Usage|stable'
+  - '@azure/arm-appservice.UsageState|stable'
+  - '@azure/arm-appservice.User|stable'
+  - '@azure/arm-appservice.ValidateOperationResponse|stable'
+  - '@azure/arm-appservice.ValidateResourceTypes|stable'
+  - '@azure/arm-appservice.VerifyHostingEnvironmentVnetResponse|stable'
+  - '@azure/arm-appservice.VnetGateway|stable'
+  - '@azure/arm-appservice.VnetInfoResource|stable'
+  - '@azure/arm-appservice.VnetParameters|stable'
+  - '@azure/arm-appservice.VnetRoute|stable'
+  - '@azure/arm-appservice.VnetValidationFailureDetails|stable'
+  - '@azure/arm-appservice.VnetValidationTestFailure|stable'
+  - '@azure/arm-appservice.WebAppStack|stable'
+  - '@azure/arm-appservice.WebAppsAddPremierAddOnResponse|stable'
+  - '@azure/arm-appservice.WebAppsAddPremierAddOnSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsAnalyzeCustomHostnameResponse|stable'
+  - '@azure/arm-appservice.WebAppsAnalyzeCustomHostnameSlotResponse|stable'
+  - >-
+    @azure/arm-appservice.WebAppsApproveOrRejectPrivateEndpointConnectionResponse|stable
+  - >-
+    @azure/arm-appservice.WebAppsApproveOrRejectPrivateEndpointConnectionSlotResponse|stable
+  - '@azure/arm-appservice.WebAppsBackupResponse|stable'
+  - '@azure/arm-appservice.WebAppsBackupSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsCreateDeploymentResponse|stable'
+  - '@azure/arm-appservice.WebAppsCreateDeploymentSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsCreateFunctionResponse|stable'
+  - '@azure/arm-appservice.WebAppsCreateInstanceFunctionSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsCreateInstanceMSDeployOperationResponse|stable'
+  - >-
+    @azure/arm-appservice.WebAppsCreateInstanceMSDeployOperationSlotResponse|stable
+  - '@azure/arm-appservice.WebAppsCreateMSDeployOperationResponse|stable'
+  - '@azure/arm-appservice.WebAppsCreateMSDeployOperationSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsCreateOrUpdateConfigurationResponse|stable'
+  - '@azure/arm-appservice.WebAppsCreateOrUpdateConfigurationSlotResponse|stable'
+  - >-
+    @azure/arm-appservice.WebAppsCreateOrUpdateDomainOwnershipIdentifierResponse|stable
+  - >-
+    @azure/arm-appservice.WebAppsCreateOrUpdateDomainOwnershipIdentifierSlotResponse|stable
+  - '@azure/arm-appservice.WebAppsCreateOrUpdateFunctionSecretResponse|stable'
+  - '@azure/arm-appservice.WebAppsCreateOrUpdateFunctionSecretSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsCreateOrUpdateHostNameBindingResponse|stable'
+  - >-
+    @azure/arm-appservice.WebAppsCreateOrUpdateHostNameBindingSlotResponse|stable
+  - '@azure/arm-appservice.WebAppsCreateOrUpdateHostSecretResponse|stable'
+  - '@azure/arm-appservice.WebAppsCreateOrUpdateHostSecretSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsCreateOrUpdateHybridConnectionResponse|stable'
+  - >-
+    @azure/arm-appservice.WebAppsCreateOrUpdateHybridConnectionSlotResponse|stable
+  - '@azure/arm-appservice.WebAppsCreateOrUpdatePublicCertificateResponse|stable'
+  - >-
+    @azure/arm-appservice.WebAppsCreateOrUpdatePublicCertificateSlotResponse|stable
+  - >-
+    @azure/arm-appservice.WebAppsCreateOrUpdateRelayServiceConnectionResponse|stable
+  - >-
+    @azure/arm-appservice.WebAppsCreateOrUpdateRelayServiceConnectionSlotResponse|stable
+  - '@azure/arm-appservice.WebAppsCreateOrUpdateResponse|stable'
+  - '@azure/arm-appservice.WebAppsCreateOrUpdateSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsCreateOrUpdateSourceControlResponse|stable'
+  - '@azure/arm-appservice.WebAppsCreateOrUpdateSourceControlSlotResponse|stable'
+  - >-
+    @azure/arm-appservice.WebAppsCreateOrUpdateSwiftVirtualNetworkConnectionWithCheckResponse|stable
+  - >-
+    @azure/arm-appservice.WebAppsCreateOrUpdateSwiftVirtualNetworkConnectionWithCheckSlotResponse|stable
+  - >-
+    @azure/arm-appservice.WebAppsCreateOrUpdateVnetConnectionGatewayResponse|stable
+  - >-
+    @azure/arm-appservice.WebAppsCreateOrUpdateVnetConnectionGatewaySlotResponse|stable
+  - '@azure/arm-appservice.WebAppsCreateOrUpdateVnetConnectionResponse|stable'
+  - '@azure/arm-appservice.WebAppsCreateOrUpdateVnetConnectionSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsDeletePrivateEndpointConnectionResponse|stable'
+  - >-
+    @azure/arm-appservice.WebAppsDeletePrivateEndpointConnectionSlotResponse|stable
+  - '@azure/arm-appservice.WebAppsDiscoverBackupResponse|stable'
+  - '@azure/arm-appservice.WebAppsDiscoverBackupSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetAppSettingKeyVaultReferenceResponse|stable'
+  - >-
+    @azure/arm-appservice.WebAppsGetAppSettingKeyVaultReferenceSlotResponse|stable
+  - >-
+    @azure/arm-appservice.WebAppsGetAppSettingsKeyVaultReferencesNextResponse|stable
+  - '@azure/arm-appservice.WebAppsGetAppSettingsKeyVaultReferencesResponse|stable'
+  - >-
+    @azure/arm-appservice.WebAppsGetAppSettingsKeyVaultReferencesSlotNextResponse|stable
+  - >-
+    @azure/arm-appservice.WebAppsGetAppSettingsKeyVaultReferencesSlotResponse|stable
+  - '@azure/arm-appservice.WebAppsGetAuthSettingsResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetAuthSettingsSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetAuthSettingsV2Response|stable'
+  - '@azure/arm-appservice.WebAppsGetAuthSettingsV2SlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetAuthSettingsV2WithoutSecretsResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetBackupConfigurationResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetBackupConfigurationSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetBackupStatusResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetBackupStatusSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetConfigurationResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetConfigurationSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetConfigurationSnapshotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetConfigurationSnapshotSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetContainerLogsZipResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetContainerLogsZipSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetContinuousWebJobResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetContinuousWebJobSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetDeploymentResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetDeploymentSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetDiagnosticLogsConfigurationResponse|stable'
+  - >-
+    @azure/arm-appservice.WebAppsGetDiagnosticLogsConfigurationSlotResponse|stable
+  - '@azure/arm-appservice.WebAppsGetDomainOwnershipIdentifierResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetDomainOwnershipIdentifierSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetFtpAllowedResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetFtpAllowedSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetFunctionResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetFunctionsAdminTokenResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetFunctionsAdminTokenSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetHostNameBindingResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetHostNameBindingSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetHybridConnectionResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetHybridConnectionSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetInstanceFunctionSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetInstanceInfoResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetInstanceInfoSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetInstanceMSDeployLogResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetInstanceMSDeployLogSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetInstanceMsDeployStatusResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetInstanceMsDeployStatusSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetInstanceProcessDumpResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetInstanceProcessDumpSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetInstanceProcessModuleResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetInstanceProcessModuleSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetInstanceProcessResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetInstanceProcessSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetMSDeployLogResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetMSDeployLogSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetMSDeployStatusResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetMSDeployStatusSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetMigrateMySqlStatusResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetMigrateMySqlStatusSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetNetworkTraceOperationResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetNetworkTraceOperationSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetNetworkTraceOperationSlotV2Response|stable'
+  - '@azure/arm-appservice.WebAppsGetNetworkTraceOperationV2Response|stable'
+  - '@azure/arm-appservice.WebAppsGetNetworkTracesResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetNetworkTracesSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetNetworkTracesSlotV2Response|stable'
+  - '@azure/arm-appservice.WebAppsGetNetworkTracesV2Response|stable'
+  - '@azure/arm-appservice.WebAppsGetPremierAddOnResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetPremierAddOnSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetPrivateAccessResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetPrivateAccessSlotResponse|stable'
+  - >-
+    @azure/arm-appservice.WebAppsGetPrivateEndpointConnectionListNextResponse|stable
+  - '@azure/arm-appservice.WebAppsGetPrivateEndpointConnectionListResponse|stable'
+  - >-
+    @azure/arm-appservice.WebAppsGetPrivateEndpointConnectionListSlotNextResponse|stable
+  - >-
+    @azure/arm-appservice.WebAppsGetPrivateEndpointConnectionListSlotResponse|stable
+  - '@azure/arm-appservice.WebAppsGetPrivateEndpointConnectionResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetPrivateEndpointConnectionSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetPrivateLinkResourcesResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetPrivateLinkResourcesSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetProcessDumpResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetProcessDumpSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetProcessModuleResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetProcessModuleSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetProcessResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetProcessSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetPublicCertificateResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetPublicCertificateSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetRelayServiceConnectionResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetRelayServiceConnectionSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetScmAllowedResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetScmAllowedSlotResponse|stable'
+  - >-
+    @azure/arm-appservice.WebAppsGetSiteConnectionStringKeyVaultReferenceResponse|stable
+  - >-
+    @azure/arm-appservice.WebAppsGetSiteConnectionStringKeyVaultReferenceSlotResponse|stable
+  - >-
+    @azure/arm-appservice.WebAppsGetSiteConnectionStringKeyVaultReferencesNextResponse|stable
+  - >-
+    @azure/arm-appservice.WebAppsGetSiteConnectionStringKeyVaultReferencesResponse|stable
+  - >-
+    @azure/arm-appservice.WebAppsGetSiteConnectionStringKeyVaultReferencesSlotNextResponse|stable
+  - >-
+    @azure/arm-appservice.WebAppsGetSiteConnectionStringKeyVaultReferencesSlotResponse|stable
+  - '@azure/arm-appservice.WebAppsGetSiteExtensionResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetSiteExtensionSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetSitePhpErrorLogFlagResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetSitePhpErrorLogFlagSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetSourceControlResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetSourceControlSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetSwiftVirtualNetworkConnectionResponse|stable'
+  - >-
+    @azure/arm-appservice.WebAppsGetSwiftVirtualNetworkConnectionSlotResponse|stable
+  - '@azure/arm-appservice.WebAppsGetTriggeredWebJobHistoryResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetTriggeredWebJobHistorySlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetTriggeredWebJobResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetTriggeredWebJobSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetVnetConnectionGatewayResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetVnetConnectionGatewaySlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetVnetConnectionResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetVnetConnectionSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetWebJobResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetWebJobSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetWebSiteContainerLogsResponse|stable'
+  - '@azure/arm-appservice.WebAppsGetWebSiteContainerLogsSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsInstallSiteExtensionResponse|stable'
+  - '@azure/arm-appservice.WebAppsInstallSiteExtensionSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsIsCloneableResponse|stable'
+  - '@azure/arm-appservice.WebAppsIsCloneableSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsListApplicationSettingsResponse|stable'
+  - '@azure/arm-appservice.WebAppsListApplicationSettingsSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsListAzureStorageAccountsResponse|stable'
+  - '@azure/arm-appservice.WebAppsListAzureStorageAccountsSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsListBackupStatusSecretsResponse|stable'
+  - '@azure/arm-appservice.WebAppsListBackupStatusSecretsSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsListBackupsNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListBackupsResponse|stable'
+  - '@azure/arm-appservice.WebAppsListBackupsSlotNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListBackupsSlotResponse|stable'
+  - >-
+    @azure/arm-appservice.WebAppsListBasicPublishingCredentialsPoliciesNextResponse|stable
+  - >-
+    @azure/arm-appservice.WebAppsListBasicPublishingCredentialsPoliciesResponse|stable
+  - >-
+    @azure/arm-appservice.WebAppsListBasicPublishingCredentialsPoliciesSlotNextResponse|stable
+  - >-
+    @azure/arm-appservice.WebAppsListBasicPublishingCredentialsPoliciesSlotResponse|stable
+  - '@azure/arm-appservice.WebAppsListByResourceGroupNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListByResourceGroupResponse|stable'
+  - >-
+    @azure/arm-appservice.WebAppsListConfigurationSnapshotInfoNextResponse|stable
+  - '@azure/arm-appservice.WebAppsListConfigurationSnapshotInfoResponse|stable'
+  - >-
+    @azure/arm-appservice.WebAppsListConfigurationSnapshotInfoSlotNextResponse|stable
+  - >-
+    @azure/arm-appservice.WebAppsListConfigurationSnapshotInfoSlotResponse|stable
+  - '@azure/arm-appservice.WebAppsListConfigurationsNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListConfigurationsResponse|stable'
+  - '@azure/arm-appservice.WebAppsListConfigurationsSlotNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListConfigurationsSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsListConnectionStringsResponse|stable'
+  - '@azure/arm-appservice.WebAppsListConnectionStringsSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsListContinuousWebJobsNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListContinuousWebJobsResponse|stable'
+  - '@azure/arm-appservice.WebAppsListContinuousWebJobsSlotNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListContinuousWebJobsSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsListDeploymentLogResponse|stable'
+  - '@azure/arm-appservice.WebAppsListDeploymentLogSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsListDeploymentsNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListDeploymentsResponse|stable'
+  - '@azure/arm-appservice.WebAppsListDeploymentsSlotNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListDeploymentsSlotResponse|stable'
+  - >-
+    @azure/arm-appservice.WebAppsListDomainOwnershipIdentifiersNextResponse|stable
+  - '@azure/arm-appservice.WebAppsListDomainOwnershipIdentifiersResponse|stable'
+  - >-
+    @azure/arm-appservice.WebAppsListDomainOwnershipIdentifiersSlotNextResponse|stable
+  - >-
+    @azure/arm-appservice.WebAppsListDomainOwnershipIdentifiersSlotResponse|stable
+  - '@azure/arm-appservice.WebAppsListFunctionKeysResponse|stable'
+  - '@azure/arm-appservice.WebAppsListFunctionKeysSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsListFunctionSecretsResponse|stable'
+  - '@azure/arm-appservice.WebAppsListFunctionSecretsSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsListFunctionsNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListFunctionsResponse|stable'
+  - '@azure/arm-appservice.WebAppsListHostKeysResponse|stable'
+  - '@azure/arm-appservice.WebAppsListHostKeysSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsListHostNameBindingsNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListHostNameBindingsResponse|stable'
+  - '@azure/arm-appservice.WebAppsListHostNameBindingsSlotNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListHostNameBindingsSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsListHybridConnectionsResponse|stable'
+  - '@azure/arm-appservice.WebAppsListHybridConnectionsSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsListInstanceFunctionsSlotNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListInstanceFunctionsSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsListInstanceIdentifiersNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListInstanceIdentifiersResponse|stable'
+  - '@azure/arm-appservice.WebAppsListInstanceIdentifiersSlotNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListInstanceIdentifiersSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsListInstanceProcessModulesNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListInstanceProcessModulesResponse|stable'
+  - >-
+    @azure/arm-appservice.WebAppsListInstanceProcessModulesSlotNextResponse|stable
+  - '@azure/arm-appservice.WebAppsListInstanceProcessModulesSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsListInstanceProcessThreadsNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListInstanceProcessThreadsResponse|stable'
+  - >-
+    @azure/arm-appservice.WebAppsListInstanceProcessThreadsSlotNextResponse|stable
+  - '@azure/arm-appservice.WebAppsListInstanceProcessThreadsSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsListInstanceProcessesNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListInstanceProcessesResponse|stable'
+  - '@azure/arm-appservice.WebAppsListInstanceProcessesSlotNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListInstanceProcessesSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsListMetadataResponse|stable'
+  - '@azure/arm-appservice.WebAppsListMetadataSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsListNetworkFeaturesResponse|stable'
+  - '@azure/arm-appservice.WebAppsListNetworkFeaturesSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsListNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListPerfMonCountersNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListPerfMonCountersResponse|stable'
+  - '@azure/arm-appservice.WebAppsListPerfMonCountersSlotNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListPerfMonCountersSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsListPremierAddOnsResponse|stable'
+  - '@azure/arm-appservice.WebAppsListPremierAddOnsSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsListProcessModulesNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListProcessModulesResponse|stable'
+  - '@azure/arm-appservice.WebAppsListProcessModulesSlotNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListProcessModulesSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsListProcessThreadsNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListProcessThreadsResponse|stable'
+  - '@azure/arm-appservice.WebAppsListProcessThreadsSlotNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListProcessThreadsSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsListProcessesNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListProcessesResponse|stable'
+  - '@azure/arm-appservice.WebAppsListProcessesSlotNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListProcessesSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsListPublicCertificatesNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListPublicCertificatesResponse|stable'
+  - '@azure/arm-appservice.WebAppsListPublicCertificatesSlotNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListPublicCertificatesSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsListPublishingCredentialsResponse|stable'
+  - '@azure/arm-appservice.WebAppsListPublishingCredentialsSlotResponse|stable'
+  - >-
+    @azure/arm-appservice.WebAppsListPublishingProfileXmlWithSecretsResponse|stable
+  - >-
+    @azure/arm-appservice.WebAppsListPublishingProfileXmlWithSecretsSlotResponse|stable
+  - '@azure/arm-appservice.WebAppsListRelayServiceConnectionsResponse|stable'
+  - '@azure/arm-appservice.WebAppsListRelayServiceConnectionsSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsListResponse|stable'
+  - '@azure/arm-appservice.WebAppsListSiteBackupsNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListSiteBackupsResponse|stable'
+  - '@azure/arm-appservice.WebAppsListSiteBackupsSlotNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListSiteBackupsSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsListSiteExtensionsNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListSiteExtensionsResponse|stable'
+  - '@azure/arm-appservice.WebAppsListSiteExtensionsSlotNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListSiteExtensionsSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsListSitePushSettingsResponse|stable'
+  - '@azure/arm-appservice.WebAppsListSitePushSettingsSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsListSlotConfigurationNamesResponse|stable'
+  - >-
+    @azure/arm-appservice.WebAppsListSlotDifferencesFromProductionNextResponse|stable
+  - >-
+    @azure/arm-appservice.WebAppsListSlotDifferencesFromProductionResponse|stable
+  - '@azure/arm-appservice.WebAppsListSlotDifferencesSlotNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListSlotDifferencesSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsListSlotsNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListSlotsResponse|stable'
+  - '@azure/arm-appservice.WebAppsListSnapshotsFromDRSecondaryNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListSnapshotsFromDRSecondaryResponse|stable'
+  - >-
+    @azure/arm-appservice.WebAppsListSnapshotsFromDRSecondarySlotNextResponse|stable
+  - '@azure/arm-appservice.WebAppsListSnapshotsFromDRSecondarySlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsListSnapshotsNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListSnapshotsResponse|stable'
+  - '@azure/arm-appservice.WebAppsListSnapshotsSlotNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListSnapshotsSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsListSyncFunctionTriggersResponse|stable'
+  - '@azure/arm-appservice.WebAppsListSyncFunctionTriggersSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsListTriggeredWebJobHistoryNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListTriggeredWebJobHistoryResponse|stable'
+  - >-
+    @azure/arm-appservice.WebAppsListTriggeredWebJobHistorySlotNextResponse|stable
+  - '@azure/arm-appservice.WebAppsListTriggeredWebJobHistorySlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsListTriggeredWebJobsNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListTriggeredWebJobsResponse|stable'
+  - '@azure/arm-appservice.WebAppsListTriggeredWebJobsSlotNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListTriggeredWebJobsSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsListUsagesNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListUsagesResponse|stable'
+  - '@azure/arm-appservice.WebAppsListUsagesSlotNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListUsagesSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsListVnetConnectionsResponse|stable'
+  - '@azure/arm-appservice.WebAppsListVnetConnectionsSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsListWebJobsNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListWebJobsResponse|stable'
+  - '@azure/arm-appservice.WebAppsListWebJobsSlotNextResponse|stable'
+  - '@azure/arm-appservice.WebAppsListWebJobsSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsMigrateMySqlResponse|stable'
+  - '@azure/arm-appservice.WebAppsMigrateStorageResponse|stable'
+  - '@azure/arm-appservice.WebAppsPutPrivateAccessVnetResponse|stable'
+  - '@azure/arm-appservice.WebAppsPutPrivateAccessVnetSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsStartNetworkTraceResponse|stable'
+  - '@azure/arm-appservice.WebAppsStartNetworkTraceSlotResponse|stable'
+  - >-
+    @azure/arm-appservice.WebAppsStartWebSiteNetworkTraceOperationResponse|stable
+  - >-
+    @azure/arm-appservice.WebAppsStartWebSiteNetworkTraceOperationSlotResponse|stable
+  - '@azure/arm-appservice.WebAppsStartWebSiteNetworkTraceResponse|stable'
+  - '@azure/arm-appservice.WebAppsStartWebSiteNetworkTraceSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsUpdateApplicationSettingsResponse|stable'
+  - '@azure/arm-appservice.WebAppsUpdateApplicationSettingsSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsUpdateAuthSettingsResponse|stable'
+  - '@azure/arm-appservice.WebAppsUpdateAuthSettingsSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsUpdateAuthSettingsV2Response|stable'
+  - '@azure/arm-appservice.WebAppsUpdateAuthSettingsV2SlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsUpdateAzureStorageAccountsResponse|stable'
+  - '@azure/arm-appservice.WebAppsUpdateAzureStorageAccountsSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsUpdateBackupConfigurationResponse|stable'
+  - '@azure/arm-appservice.WebAppsUpdateBackupConfigurationSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsUpdateConfigurationResponse|stable'
+  - '@azure/arm-appservice.WebAppsUpdateConfigurationSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsUpdateConnectionStringsResponse|stable'
+  - '@azure/arm-appservice.WebAppsUpdateConnectionStringsSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsUpdateDiagnosticLogsConfigResponse|stable'
+  - '@azure/arm-appservice.WebAppsUpdateDiagnosticLogsConfigSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsUpdateDomainOwnershipIdentifierResponse|stable'
+  - >-
+    @azure/arm-appservice.WebAppsUpdateDomainOwnershipIdentifierSlotResponse|stable
+  - '@azure/arm-appservice.WebAppsUpdateFtpAllowedResponse|stable'
+  - '@azure/arm-appservice.WebAppsUpdateFtpAllowedSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsUpdateHybridConnectionResponse|stable'
+  - '@azure/arm-appservice.WebAppsUpdateHybridConnectionSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsUpdateMetadataResponse|stable'
+  - '@azure/arm-appservice.WebAppsUpdateMetadataSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsUpdatePremierAddOnResponse|stable'
+  - '@azure/arm-appservice.WebAppsUpdatePremierAddOnSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsUpdateRelayServiceConnectionResponse|stable'
+  - '@azure/arm-appservice.WebAppsUpdateRelayServiceConnectionSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsUpdateResponse|stable'
+  - '@azure/arm-appservice.WebAppsUpdateScmAllowedResponse|stable'
+  - '@azure/arm-appservice.WebAppsUpdateScmAllowedSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsUpdateSitePushSettingsResponse|stable'
+  - '@azure/arm-appservice.WebAppsUpdateSitePushSettingsSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsUpdateSlotConfigurationNamesResponse|stable'
+  - '@azure/arm-appservice.WebAppsUpdateSlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsUpdateSourceControlResponse|stable'
+  - '@azure/arm-appservice.WebAppsUpdateSourceControlSlotResponse|stable'
+  - >-
+    @azure/arm-appservice.WebAppsUpdateSwiftVirtualNetworkConnectionWithCheckResponse|stable
+  - >-
+    @azure/arm-appservice.WebAppsUpdateSwiftVirtualNetworkConnectionWithCheckSlotResponse|stable
+  - '@azure/arm-appservice.WebAppsUpdateVnetConnectionGatewayResponse|stable'
+  - '@azure/arm-appservice.WebAppsUpdateVnetConnectionGatewaySlotResponse|stable'
+  - '@azure/arm-appservice.WebAppsUpdateVnetConnectionResponse|stable'
+  - '@azure/arm-appservice.WebAppsUpdateVnetConnectionSlotResponse|stable'
+  - '@azure/arm-appservice.WebJob|stable'
+  - '@azure/arm-appservice.WebJobType|stable'
+  - '@azure/arm-appservice.WebSiteInstanceStatus|stable'
+  - '@azure/arm-appservice.WorkerPoolResource|stable'
+  - '@azure/arm-appservice.WorkerSizeOptions|stable'

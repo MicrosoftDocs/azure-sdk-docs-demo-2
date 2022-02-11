@@ -1,0 +1,311 @@
+### YamlMime:TSType
+name: SystemTopics
+uid: '@azure/arm-eventgrid.SystemTopics|stable'
+package: '@azure/arm-eventgrid|stable'
+summary: Interface representing a SystemTopics.
+fullName: SystemTopics
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      beginCreateOrUpdate(string, string, SystemTopic,
+      SystemTopicsCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-eventgrid.SystemTopics.beginCreateOrUpdate|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Asynchronously creates a new system topic with the specified parameters.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string, systemTopicName:
+        string, systemTopicInfo: SystemTopic, options?:
+        SystemTopicsCreateOrUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<SystemTopicsCreateOrUpdateResponse>,
+        SystemTopicsCreateOrUpdateResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: systemTopicName
+          type: string
+          description: Name of the system topic.
+        - id: systemTopicInfo
+          type: <xref uid="@azure/arm-eventgrid.SystemTopic|stable" />
+          description: System Topic information.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.SystemTopicsCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-eventgrid.SystemTopicsCreateOrUpdateResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-eventgrid.SystemTopicsCreateOrUpdateResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginCreateOrUpdateAndWait(string, string, SystemTopic,
+      SystemTopicsCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-eventgrid.SystemTopics.beginCreateOrUpdateAndWait|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Asynchronously creates a new system topic with the specified parameters.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdateAndWait(resourceGroupName: string,
+        systemTopicName: string, systemTopicInfo: SystemTopic, options?:
+        SystemTopicsCreateOrUpdateOptionalParams):
+        Promise<SystemTopicsCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: systemTopicName
+          type: string
+          description: Name of the system topic.
+        - id: systemTopicInfo
+          type: <xref uid="@azure/arm-eventgrid.SystemTopic|stable" />
+          description: System Topic information.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.SystemTopicsCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventgrid.SystemTopicsCreateOrUpdateResponse|stable"
+          />&gt;
+  - name: beginDelete(string, string, SystemTopicsDeleteOptionalParams)
+    uid: '@azure/arm-eventgrid.SystemTopics.beginDelete|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Delete existing system topic.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDelete(resourceGroupName: string, systemTopicName: string,
+        options?: SystemTopicsDeleteOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: systemTopicName
+          type: string
+          description: Name of the system topic.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.SystemTopicsDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: beginDeleteAndWait(string, string, SystemTopicsDeleteOptionalParams)
+    uid: '@azure/arm-eventgrid.SystemTopics.beginDeleteAndWait|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Delete existing system topic.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteAndWait(resourceGroupName: string, systemTopicName:
+        string, options?: SystemTopicsDeleteOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: systemTopicName
+          type: string
+          description: Name of the system topic.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.SystemTopicsDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      beginUpdate(string, string, SystemTopicUpdateParameters,
+      SystemTopicsUpdateOptionalParams)
+    uid: '@azure/arm-eventgrid.SystemTopics.beginUpdate|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Asynchronously updates a system topic with the specified parameters.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginUpdate(resourceGroupName: string, systemTopicName: string,
+        systemTopicUpdateParameters: SystemTopicUpdateParameters, options?:
+        SystemTopicsUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<SystemTopicsUpdateResponse>,
+        SystemTopicsUpdateResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: systemTopicName
+          type: string
+          description: Name of the system topic.
+        - id: systemTopicUpdateParameters
+          type: >-
+            <xref uid="@azure/arm-eventgrid.SystemTopicUpdateParameters|stable"
+            />
+          description: SystemTopic update information.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.SystemTopicsUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-eventgrid.SystemTopicsUpdateResponse|stable" />&gt;,
+          <xref uid="@azure/arm-eventgrid.SystemTopicsUpdateResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginUpdateAndWait(string, string, SystemTopicUpdateParameters,
+      SystemTopicsUpdateOptionalParams)
+    uid: '@azure/arm-eventgrid.SystemTopics.beginUpdateAndWait|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Asynchronously updates a system topic with the specified parameters.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginUpdateAndWait(resourceGroupName: string, systemTopicName:
+        string, systemTopicUpdateParameters: SystemTopicUpdateParameters,
+        options?: SystemTopicsUpdateOptionalParams):
+        Promise<SystemTopicsUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: systemTopicName
+          type: string
+          description: Name of the system topic.
+        - id: systemTopicUpdateParameters
+          type: >-
+            <xref uid="@azure/arm-eventgrid.SystemTopicUpdateParameters|stable"
+            />
+          description: SystemTopic update information.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.SystemTopicsUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventgrid.SystemTopicsUpdateResponse|stable" />&gt;
+  - name: get(string, string, SystemTopicsGetOptionalParams)
+    uid: '@azure/arm-eventgrid.SystemTopics.get|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Get properties of a system topic.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, systemTopicName: string,
+        options?: SystemTopicsGetOptionalParams):
+        Promise<SystemTopicsGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: systemTopicName
+          type: string
+          description: Name of the system topic.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.SystemTopicsGetOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventgrid.SystemTopicsGetResponse|stable" />&gt;
+  - name: listByResourceGroup(string, SystemTopicsListByResourceGroupOptionalParams)
+    uid: '@azure/arm-eventgrid.SystemTopics.listByResourceGroup|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: List all the system topics under a resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string, options?:
+        SystemTopicsListByResourceGroupOptionalParams):
+        PagedAsyncIterableIterator<SystemTopic>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.SystemTopicsListByResourceGroupOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-eventgrid.SystemTopic|stable" />&gt;
+  - name: listBySubscription(SystemTopicsListBySubscriptionOptionalParams)
+    uid: '@azure/arm-eventgrid.SystemTopics.listBySubscription|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: List all the system topics under an Azure subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listBySubscription(options?:
+        SystemTopicsListBySubscriptionOptionalParams):
+        PagedAsyncIterableIterator<SystemTopic>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.SystemTopicsListBySubscriptionOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-eventgrid.SystemTopic|stable" />&gt;

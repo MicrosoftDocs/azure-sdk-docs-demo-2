@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: FileServiceProperties
+uid: '@azure/arm-storage.FileServiceProperties|stable'
+package: '@azure/arm-storage|stable'
+summary: The properties of File services in storage account.
+fullName: FileServiceProperties
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type FileServiceProperties = Resource & { cors?: CorsRules, protocolSettings?:
+  ProtocolSettings, shareDeleteRetentionPolicy?: DeleteRetentionPolicy, sku?:
+  Sku }

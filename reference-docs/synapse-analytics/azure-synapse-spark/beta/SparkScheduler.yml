@@ -1,0 +1,76 @@
+### YamlMime:TSType
+name: SparkScheduler
+uid: '@azure/synapse-spark.SparkScheduler|beta'
+package: '@azure/synapse-spark|beta'
+summary: ''
+fullName: SparkScheduler
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: cancellationRequestedAt
+    uid: '@azure/synapse-spark.SparkScheduler.cancellationRequestedAt|beta'
+    package: '@azure/synapse-spark|beta'
+    summary: ''
+    fullName: cancellationRequestedAt
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'cancellationRequestedAt?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: currentState
+    uid: '@azure/synapse-spark.SparkScheduler.currentState|beta'
+    package: '@azure/synapse-spark|beta'
+    summary: ''
+    fullName: currentState
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'currentState?: SchedulerCurrentState'
+      return:
+        description: ''
+        type: <xref uid="@azure/synapse-spark.SchedulerCurrentState|beta" />
+  - name: endedAt
+    uid: '@azure/synapse-spark.SparkScheduler.endedAt|beta'
+    package: '@azure/synapse-spark|beta'
+    summary: ''
+    fullName: endedAt
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'endedAt?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: scheduledAt
+    uid: '@azure/synapse-spark.SparkScheduler.scheduledAt|beta'
+    package: '@azure/synapse-spark|beta'
+    summary: ''
+    fullName: scheduledAt
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'scheduledAt?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: submittedAt
+    uid: '@azure/synapse-spark.SparkScheduler.submittedAt|beta'
+    package: '@azure/synapse-spark|beta'
+    summary: ''
+    fullName: submittedAt
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'submittedAt?: Date'
+      return:
+        description: ''
+        type: Date

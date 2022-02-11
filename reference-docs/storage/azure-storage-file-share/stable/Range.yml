@@ -1,0 +1,44 @@
+### YamlMime:TSType
+name: Range
+uid: '@azure/storage-file-share.Range|stable'
+package: '@azure/storage-file-share|stable'
+summary: >-
+  Range for Service Operations.
+
+
+  See
+  https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-the-range-header-for-file-service-operations
+fullName: Range
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: count
+    uid: '@azure/storage-file-share.Range.count|stable'
+    package: '@azure/storage-file-share|stable'
+    summary: |-
+      Optional. Count of bytes, larger than 0.
+      If not provided, will return bytes from offset to the end.
+    fullName: count
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'count?: number'
+      return:
+        description: ''
+        type: number
+  - name: offset
+    uid: '@azure/storage-file-share.Range.offset|stable'
+    package: '@azure/storage-file-share|stable'
+    summary: StartByte, larger than or equal 0.
+    fullName: offset
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'offset: number'
+      return:
+        description: ''
+        type: number

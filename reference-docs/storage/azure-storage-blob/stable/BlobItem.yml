@@ -1,0 +1,141 @@
+### YamlMime:TSType
+name: BlobItem
+uid: '@azure/storage-blob.BlobItem|stable'
+package: '@azure/storage-blob|stable'
+summary: An Azure Storage blob
+fullName: BlobItem
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: deleted
+    uid: '@azure/storage-blob.BlobItem.deleted|stable'
+    package: '@azure/storage-blob|stable'
+    summary: ''
+    fullName: deleted
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'deleted: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: hasVersionsOnly
+    uid: '@azure/storage-blob.BlobItem.hasVersionsOnly|stable'
+    package: '@azure/storage-blob|stable'
+    summary: ''
+    fullName: hasVersionsOnly
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hasVersionsOnly?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: isCurrentVersion
+    uid: '@azure/storage-blob.BlobItem.isCurrentVersion|stable'
+    package: '@azure/storage-blob|stable'
+    summary: ''
+    fullName: isCurrentVersion
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isCurrentVersion?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: metadata
+    uid: '@azure/storage-blob.BlobItem.metadata|stable'
+    package: '@azure/storage-blob|stable'
+    summary: ''
+    fullName: metadata
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'metadata?: [key: string]: string'
+      return:
+        description: ''
+        type: '[key: string]\: string'
+  - name: name
+    uid: '@azure/storage-blob.BlobItem.name|stable'
+    package: '@azure/storage-blob|stable'
+    summary: ''
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: string'
+      return:
+        description: ''
+        type: string
+  - name: objectReplicationSourceProperties
+    uid: '@azure/storage-blob.BlobItem.objectReplicationSourceProperties|stable'
+    package: '@azure/storage-blob|stable'
+    summary: ''
+    fullName: objectReplicationSourceProperties
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'objectReplicationSourceProperties?: ObjectReplicationPolicy[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-blob.ObjectReplicationPolicy|stable" />[]
+  - name: properties
+    uid: '@azure/storage-blob.BlobItem.properties|stable'
+    package: '@azure/storage-blob|stable'
+    summary: ''
+    fullName: properties
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'properties: BlobProperties'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-blob.BlobProperties|stable" />
+  - name: snapshot
+    uid: '@azure/storage-blob.BlobItem.snapshot|stable'
+    package: '@azure/storage-blob|stable'
+    summary: ''
+    fullName: snapshot
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'snapshot: string'
+      return:
+        description: ''
+        type: string
+  - name: tags
+    uid: '@azure/storage-blob.BlobItem.tags|stable'
+    package: '@azure/storage-blob|stable'
+    summary: ''
+    fullName: tags
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tags?: Tags'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-blob.Tags|stable" />
+  - name: versionId
+    uid: '@azure/storage-blob.BlobItem.versionId|stable'
+    package: '@azure/storage-blob|stable'
+    summary: ''
+    fullName: versionId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'versionId?: string'
+      return:
+        description: ''
+        type: string

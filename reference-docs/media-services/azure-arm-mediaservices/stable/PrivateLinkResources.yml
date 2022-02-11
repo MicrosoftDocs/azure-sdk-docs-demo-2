@@ -1,0 +1,78 @@
+### YamlMime:TSType
+name: PrivateLinkResources
+uid: '@azure/arm-mediaservices.PrivateLinkResources|stable'
+package: '@azure/arm-mediaservices|stable'
+summary: Interface representing a PrivateLinkResources.
+fullName: PrivateLinkResources
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: get(string, string, string, PrivateLinkResourcesGetOptionalParams)
+    uid: '@azure/arm-mediaservices.PrivateLinkResources.get|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: Get group ID.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, accountName: string, name:
+        string, options?: PrivateLinkResourcesGetOptionalParams):
+        Promise<PrivateLinkResourcesGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the Azure subscription.
+        - id: accountName
+          type: string
+          description: The Media Services account name.
+        - id: name
+          type: string
+          description: ''
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mediaservices.PrivateLinkResourcesGetOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-mediaservices.PrivateLinkResourcesGetResponse|stable"
+          />&gt;
+  - name: list(string, string, PrivateLinkResourcesListOptionalParams)
+    uid: '@azure/arm-mediaservices.PrivateLinkResources.list|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: Get list of group IDs.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, accountName: string, options?:
+        PrivateLinkResourcesListOptionalParams):
+        Promise<PrivateLinkResourcesListResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the Azure subscription.
+        - id: accountName
+          type: string
+          description: The Media Services account name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mediaservices.PrivateLinkResourcesListOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-mediaservices.PrivateLinkResourcesListResponse|stable"
+          />&gt;

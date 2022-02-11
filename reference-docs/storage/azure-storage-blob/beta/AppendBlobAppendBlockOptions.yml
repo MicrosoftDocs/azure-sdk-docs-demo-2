@@ -1,0 +1,151 @@
+### YamlMime:TSType
+name: AppendBlobAppendBlockOptions
+uid: '@azure/storage-blob.AppendBlobAppendBlockOptions|beta'
+package: '@azure/storage-blob|beta'
+summary: >-
+  Options to configure the
+  <xref:@azure/storage-blob.AppendBlobClient.appendBlock|beta> operation.
+fullName: AppendBlobAppendBlockOptions
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: abortSignal
+    uid: '@azure/storage-blob.AppendBlobAppendBlockOptions.abortSignal|beta'
+    package: '@azure/storage-blob|beta'
+    summary: >-
+      An implementation of the `AbortSignalLike` interface to signal the request
+      to cancel the operation.
+
+      For example, use the &commat;azure/abort-controller to create an
+      `AbortSignal`.
+    fullName: abortSignal
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'abortSignal?: AbortSignalLike'
+      return:
+        description: ''
+        type: AbortSignalLike
+  - name: conditions
+    uid: '@azure/storage-blob.AppendBlobAppendBlockOptions.conditions|beta'
+    package: '@azure/storage-blob|beta'
+    summary: Conditions to meet when appending append blob blocks.
+    fullName: conditions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'conditions?: AppendBlobRequestConditions'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-blob.AppendBlobRequestConditions|beta" />
+  - name: customerProvidedKey
+    uid: '@azure/storage-blob.AppendBlobAppendBlockOptions.customerProvidedKey|beta'
+    package: '@azure/storage-blob|beta'
+    summary: Customer Provided Key Info.
+    fullName: customerProvidedKey
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'customerProvidedKey?: CpkInfo'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-blob.CpkInfo|beta" />
+  - name: encryptionScope
+    uid: '@azure/storage-blob.AppendBlobAppendBlockOptions.encryptionScope|beta'
+    package: '@azure/storage-blob|beta'
+    summary: >-
+      Optional. Version 2019-07-07 and later.  Specifies the name of the
+      encryption scope to use to
+
+      encrypt the data provided in the request. If not specified, encryption is
+      performed with the
+
+      default account encryption scope.  For more information, see Encryption at
+      Rest for Azure
+
+      Storage Services.
+    fullName: encryptionScope
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'encryptionScope?: string'
+      return:
+        description: ''
+        type: string
+  - name: onProgress
+    uid: '@azure/storage-blob.AppendBlobAppendBlockOptions.onProgress|beta'
+    package: '@azure/storage-blob|beta'
+    summary: Callback to receive events on the progress of append block operation.
+    fullName: onProgress
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onProgress?: (progress: TransferProgressEvent) => void'
+      return:
+        description: ''
+        type: '(progress: TransferProgressEvent) =&gt; void'
+  - name: tracingOptions
+    uid: '@azure/storage-blob.AppendBlobAppendBlockOptions.tracingOptions|beta'
+    package: '@azure/storage-blob|beta'
+    summary: Options to configure spans created when tracing is enabled.
+    fullName: tracingOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tracingOptions?: OperationTracingOptions'
+      return:
+        description: ''
+        type: OperationTracingOptions
+  - name: transactionalContentCrc64
+    uid: >-
+      @azure/storage-blob.AppendBlobAppendBlockOptions.transactionalContentCrc64|beta
+    package: '@azure/storage-blob|beta'
+    summary: >
+      A CRC64 hash of the append block content. This hash is used to verify the
+      integrity of the append block during transport.
+
+      When this is specified, the storage service compares the hash of the
+      content that has arrived with this value.
+
+      transactionalContentMD5 and transactionalContentCrc64 cannot be set at
+      same time.
+    fullName: transactionalContentCrc64
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'transactionalContentCrc64?: Uint8Array'
+      return:
+        description: ''
+        type: Uint8Array
+  - name: transactionalContentMD5
+    uid: >-
+      @azure/storage-blob.AppendBlobAppendBlockOptions.transactionalContentMD5|beta
+    package: '@azure/storage-blob|beta'
+    summary: >
+      An MD5 hash of the block content. This hash is used to verify the
+      integrity of the block during transport.
+
+      When this is specified, the storage service compares the hash of the
+      content that has arrived with this value.
+
+      transactionalContentMD5 and transactionalContentCrc64 cannot be set at
+      same time.
+    fullName: transactionalContentMD5
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'transactionalContentMD5?: Uint8Array'
+      return:
+        description: ''
+        type: Uint8Array
+extends: <xref uid="@azure/storage-blob.CommonOptions|beta" />

@@ -1,0 +1,200 @@
+### YamlMime:TSType
+name: DataCollectionEndpoints
+uid: '@azure/arm-monitor.DataCollectionEndpoints|stable'
+package: '@azure/arm-monitor|stable'
+summary: Interface representing a DataCollectionEndpoints.
+fullName: DataCollectionEndpoints
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: create(string, string, DataCollectionEndpointsCreateOptionalParams)
+    uid: '@azure/arm-monitor.DataCollectionEndpoints.create|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: Creates or updates a data collection endpoint.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function create(resourceGroupName: string, dataCollectionEndpointName:
+        string, options?: DataCollectionEndpointsCreateOptionalParams):
+        Promise<DataCollectionEndpointsCreateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: dataCollectionEndpointName
+          type: string
+          description: |-
+            The name of the data collection endpoint. The name is case
+                                              insensitive.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-monitor.DataCollectionEndpointsCreateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-monitor.DataCollectionEndpointsCreateResponse|stable"
+          />&gt;
+  - name: delete(string, string, DataCollectionEndpointsDeleteOptionalParams)
+    uid: '@azure/arm-monitor.DataCollectionEndpoints.delete|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: Deletes a data collection endpoint.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function delete(resourceGroupName: string, dataCollectionEndpointName:
+        string, options?: DataCollectionEndpointsDeleteOptionalParams):
+        Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: dataCollectionEndpointName
+          type: string
+          description: |-
+            The name of the data collection endpoint. The name is case
+                                              insensitive.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-monitor.DataCollectionEndpointsDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: get(string, string, DataCollectionEndpointsGetOptionalParams)
+    uid: '@azure/arm-monitor.DataCollectionEndpoints.get|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: Returns the specified data collection endpoint.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, dataCollectionEndpointName:
+        string, options?: DataCollectionEndpointsGetOptionalParams):
+        Promise<DataCollectionEndpointsGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: dataCollectionEndpointName
+          type: string
+          description: |-
+            The name of the data collection endpoint. The name is case
+                                              insensitive.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-monitor.DataCollectionEndpointsGetOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-monitor.DataCollectionEndpointsGetResponse|stable"
+          />&gt;
+  - name: >-
+      listByResourceGroup(string,
+      DataCollectionEndpointsListByResourceGroupOptionalParams)
+    uid: '@azure/arm-monitor.DataCollectionEndpoints.listByResourceGroup|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: Lists all data collection endpoints in the specified resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string, options?:
+        DataCollectionEndpointsListByResourceGroupOptionalParams):
+        PagedAsyncIterableIterator<DataCollectionEndpointResource>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-monitor.DataCollectionEndpointsListByResourceGroupOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-monitor.DataCollectionEndpointResource|stable" />&gt;
+  - name: >-
+      listBySubscription(DataCollectionEndpointsListBySubscriptionOptionalParams)
+    uid: '@azure/arm-monitor.DataCollectionEndpoints.listBySubscription|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: Lists all data collection endpoints in the specified subscription
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listBySubscription(options?:
+        DataCollectionEndpointsListBySubscriptionOptionalParams):
+        PagedAsyncIterableIterator<DataCollectionEndpointResource>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-monitor.DataCollectionEndpointsListBySubscriptionOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-monitor.DataCollectionEndpointResource|stable" />&gt;
+  - name: update(string, string, DataCollectionEndpointsUpdateOptionalParams)
+    uid: '@azure/arm-monitor.DataCollectionEndpoints.update|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: Updates part of a data collection endpoint.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function update(resourceGroupName: string, dataCollectionEndpointName:
+        string, options?: DataCollectionEndpointsUpdateOptionalParams):
+        Promise<DataCollectionEndpointsUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: dataCollectionEndpointName
+          type: string
+          description: |-
+            The name of the data collection endpoint. The name is case
+                                              insensitive.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-monitor.DataCollectionEndpointsUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-monitor.DataCollectionEndpointsUpdateResponse|stable"
+          />&gt;

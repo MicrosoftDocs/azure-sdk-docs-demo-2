@@ -1,0 +1,45 @@
+### YamlMime:TSType
+name: UserAssignedManagedIdentity
+uid: '@azure/arm-mediaservices.UserAssignedManagedIdentity|stable'
+package: '@azure/arm-mediaservices|stable'
+summary: ''
+fullName: UserAssignedManagedIdentity
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: clientId
+    uid: '@azure/arm-mediaservices.UserAssignedManagedIdentity.clientId|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: >-
+      The client ID.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: clientId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clientId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: principalId
+    uid: '@azure/arm-mediaservices.UserAssignedManagedIdentity.principalId|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: >-
+      The principal ID.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: principalId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'principalId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

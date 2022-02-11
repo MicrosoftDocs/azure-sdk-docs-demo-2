@@ -1,0 +1,139 @@
+### YamlMime:TSPackage
+uid: '@azure/arm-appconfiguration|beta'
+name: '@azure/arm-appconfiguration (3.0.0-beta.1 - Beta)'
+summary: ''
+type: package
+enums:
+  - '@azure/arm-appconfiguration.KnownActionsRequired|beta'
+  - '@azure/arm-appconfiguration.KnownConfigurationResourceType|beta'
+  - '@azure/arm-appconfiguration.KnownConnectionStatus|beta'
+  - '@azure/arm-appconfiguration.KnownCreatedByType|beta'
+  - '@azure/arm-appconfiguration.KnownIdentityType|beta'
+  - '@azure/arm-appconfiguration.KnownProvisioningState|beta'
+  - '@azure/arm-appconfiguration.KnownPublicNetworkAccess|beta'
+classes:
+  - '@azure/arm-appconfiguration.AppConfigurationManagementClient|beta'
+interfaces:
+  - '@azure/arm-appconfiguration.ApiKey|beta'
+  - '@azure/arm-appconfiguration.ApiKeyListResult|beta'
+  - >-
+    @azure/arm-appconfiguration.AppConfigurationManagementClientOptionalParams|beta
+  - '@azure/arm-appconfiguration.CheckNameAvailabilityParameters|beta'
+  - '@azure/arm-appconfiguration.ConfigurationStoreListResult|beta'
+  - '@azure/arm-appconfiguration.ConfigurationStoreUpdateParameters|beta'
+  - '@azure/arm-appconfiguration.ConfigurationStores|beta'
+  - '@azure/arm-appconfiguration.ConfigurationStoresCreateOptionalParams|beta'
+  - '@azure/arm-appconfiguration.ConfigurationStoresDeleteOptionalParams|beta'
+  - '@azure/arm-appconfiguration.ConfigurationStoresGetOptionalParams|beta'
+  - >-
+    @azure/arm-appconfiguration.ConfigurationStoresListByResourceGroupNextOptionalParams|beta
+  - >-
+    @azure/arm-appconfiguration.ConfigurationStoresListByResourceGroupOptionalParams|beta
+  - >-
+    @azure/arm-appconfiguration.ConfigurationStoresListKeysNextOptionalParams|beta
+  - '@azure/arm-appconfiguration.ConfigurationStoresListKeysOptionalParams|beta'
+  - '@azure/arm-appconfiguration.ConfigurationStoresListNextOptionalParams|beta'
+  - '@azure/arm-appconfiguration.ConfigurationStoresListOptionalParams|beta'
+  - >-
+    @azure/arm-appconfiguration.ConfigurationStoresRegenerateKeyOptionalParams|beta
+  - '@azure/arm-appconfiguration.ConfigurationStoresUpdateOptionalParams|beta'
+  - '@azure/arm-appconfiguration.EncryptionProperties|beta'
+  - '@azure/arm-appconfiguration.ErrorAdditionalInfo|beta'
+  - '@azure/arm-appconfiguration.ErrorDetails|beta'
+  - '@azure/arm-appconfiguration.ErrorResponse|beta'
+  - '@azure/arm-appconfiguration.KeyValue|beta'
+  - '@azure/arm-appconfiguration.KeyValueListResult|beta'
+  - '@azure/arm-appconfiguration.KeyValues|beta'
+  - '@azure/arm-appconfiguration.KeyValuesCreateOrUpdateOptionalParams|beta'
+  - '@azure/arm-appconfiguration.KeyValuesDeleteOptionalParams|beta'
+  - '@azure/arm-appconfiguration.KeyValuesGetOptionalParams|beta'
+  - >-
+    @azure/arm-appconfiguration.KeyValuesListByConfigurationStoreNextOptionalParams|beta
+  - >-
+    @azure/arm-appconfiguration.KeyValuesListByConfigurationStoreOptionalParams|beta
+  - '@azure/arm-appconfiguration.KeyVaultProperties|beta'
+  - '@azure/arm-appconfiguration.LogSpecification|beta'
+  - '@azure/arm-appconfiguration.MetricDimension|beta'
+  - '@azure/arm-appconfiguration.MetricSpecification|beta'
+  - '@azure/arm-appconfiguration.NameAvailabilityStatus|beta'
+  - '@azure/arm-appconfiguration.OperationDefinition|beta'
+  - '@azure/arm-appconfiguration.OperationDefinitionDisplay|beta'
+  - '@azure/arm-appconfiguration.OperationDefinitionListResult|beta'
+  - '@azure/arm-appconfiguration.OperationProperties|beta'
+  - '@azure/arm-appconfiguration.Operations|beta'
+  - >-
+    @azure/arm-appconfiguration.OperationsCheckNameAvailabilityOptionalParams|beta
+  - '@azure/arm-appconfiguration.OperationsListNextOptionalParams|beta'
+  - '@azure/arm-appconfiguration.OperationsListOptionalParams|beta'
+  - '@azure/arm-appconfiguration.PrivateEndpoint|beta'
+  - '@azure/arm-appconfiguration.PrivateEndpointConnection|beta'
+  - '@azure/arm-appconfiguration.PrivateEndpointConnectionListResult|beta'
+  - '@azure/arm-appconfiguration.PrivateEndpointConnectionReference|beta'
+  - '@azure/arm-appconfiguration.PrivateEndpointConnections|beta'
+  - >-
+    @azure/arm-appconfiguration.PrivateEndpointConnectionsCreateOrUpdateOptionalParams|beta
+  - >-
+    @azure/arm-appconfiguration.PrivateEndpointConnectionsDeleteOptionalParams|beta
+  - '@azure/arm-appconfiguration.PrivateEndpointConnectionsGetOptionalParams|beta'
+  - >-
+    @azure/arm-appconfiguration.PrivateEndpointConnectionsListByConfigurationStoreNextOptionalParams|beta
+  - >-
+    @azure/arm-appconfiguration.PrivateEndpointConnectionsListByConfigurationStoreOptionalParams|beta
+  - '@azure/arm-appconfiguration.PrivateLinkResource|beta'
+  - '@azure/arm-appconfiguration.PrivateLinkResourceListResult|beta'
+  - '@azure/arm-appconfiguration.PrivateLinkResources|beta'
+  - '@azure/arm-appconfiguration.PrivateLinkResourcesGetOptionalParams|beta'
+  - >-
+    @azure/arm-appconfiguration.PrivateLinkResourcesListByConfigurationStoreNextOptionalParams|beta
+  - >-
+    @azure/arm-appconfiguration.PrivateLinkResourcesListByConfigurationStoreOptionalParams|beta
+  - '@azure/arm-appconfiguration.PrivateLinkServiceConnectionState|beta'
+  - '@azure/arm-appconfiguration.RegenerateKeyParameters|beta'
+  - '@azure/arm-appconfiguration.Resource|beta'
+  - '@azure/arm-appconfiguration.ResourceIdentity|beta'
+  - '@azure/arm-appconfiguration.ServiceSpecification|beta'
+  - '@azure/arm-appconfiguration.Sku|beta'
+  - '@azure/arm-appconfiguration.SystemData|beta'
+  - '@azure/arm-appconfiguration.UserIdentity|beta'
+typeAliases:
+  - '@azure/arm-appconfiguration.ActionsRequired|beta'
+  - '@azure/arm-appconfiguration.ConfigurationResourceType|beta'
+  - '@azure/arm-appconfiguration.ConfigurationStore|beta'
+  - '@azure/arm-appconfiguration.ConfigurationStoresCreateResponse|beta'
+  - '@azure/arm-appconfiguration.ConfigurationStoresGetResponse|beta'
+  - >-
+    @azure/arm-appconfiguration.ConfigurationStoresListByResourceGroupNextResponse|beta
+  - >-
+    @azure/arm-appconfiguration.ConfigurationStoresListByResourceGroupResponse|beta
+  - '@azure/arm-appconfiguration.ConfigurationStoresListKeysNextResponse|beta'
+  - '@azure/arm-appconfiguration.ConfigurationStoresListKeysResponse|beta'
+  - '@azure/arm-appconfiguration.ConfigurationStoresListNextResponse|beta'
+  - '@azure/arm-appconfiguration.ConfigurationStoresListResponse|beta'
+  - '@azure/arm-appconfiguration.ConfigurationStoresRegenerateKeyResponse|beta'
+  - '@azure/arm-appconfiguration.ConfigurationStoresUpdateResponse|beta'
+  - '@azure/arm-appconfiguration.ConnectionStatus|beta'
+  - '@azure/arm-appconfiguration.CreatedByType|beta'
+  - '@azure/arm-appconfiguration.IdentityType|beta'
+  - '@azure/arm-appconfiguration.KeyValuesCreateOrUpdateResponse|beta'
+  - '@azure/arm-appconfiguration.KeyValuesGetResponse|beta'
+  - >-
+    @azure/arm-appconfiguration.KeyValuesListByConfigurationStoreNextResponse|beta
+  - '@azure/arm-appconfiguration.KeyValuesListByConfigurationStoreResponse|beta'
+  - '@azure/arm-appconfiguration.OperationsCheckNameAvailabilityResponse|beta'
+  - '@azure/arm-appconfiguration.OperationsListNextResponse|beta'
+  - '@azure/arm-appconfiguration.OperationsListResponse|beta'
+  - >-
+    @azure/arm-appconfiguration.PrivateEndpointConnectionsCreateOrUpdateResponse|beta
+  - '@azure/arm-appconfiguration.PrivateEndpointConnectionsGetResponse|beta'
+  - >-
+    @azure/arm-appconfiguration.PrivateEndpointConnectionsListByConfigurationStoreNextResponse|beta
+  - >-
+    @azure/arm-appconfiguration.PrivateEndpointConnectionsListByConfigurationStoreResponse|beta
+  - '@azure/arm-appconfiguration.PrivateLinkResourcesGetResponse|beta'
+  - >-
+    @azure/arm-appconfiguration.PrivateLinkResourcesListByConfigurationStoreNextResponse|beta
+  - >-
+    @azure/arm-appconfiguration.PrivateLinkResourcesListByConfigurationStoreResponse|beta
+  - '@azure/arm-appconfiguration.ProvisioningState|beta'
+  - '@azure/arm-appconfiguration.PublicNetworkAccess|beta'
+  - '@azure/arm-appconfiguration.TrackedResource|beta'

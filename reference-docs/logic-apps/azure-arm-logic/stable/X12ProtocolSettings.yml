@@ -1,0 +1,167 @@
+### YamlMime:TSType
+name: X12ProtocolSettings
+uid: '@azure/arm-logic.X12ProtocolSettings|stable'
+package: '@azure/arm-logic|stable'
+summary: The X12 agreement protocol settings.
+fullName: X12ProtocolSettings
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: acknowledgementSettings
+    uid: '@azure/arm-logic.X12ProtocolSettings.acknowledgementSettings|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The X12 acknowledgment settings.
+    fullName: acknowledgementSettings
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'acknowledgementSettings: X12AcknowledgementSettings'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-logic.X12AcknowledgementSettings|stable" />
+  - name: envelopeOverrides
+    uid: '@azure/arm-logic.X12ProtocolSettings.envelopeOverrides|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The X12 envelope override settings.
+    fullName: envelopeOverrides
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'envelopeOverrides?: X12EnvelopeOverride[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-logic.X12EnvelopeOverride|stable" />[]
+  - name: envelopeSettings
+    uid: '@azure/arm-logic.X12ProtocolSettings.envelopeSettings|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The X12 envelope settings.
+    fullName: envelopeSettings
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'envelopeSettings: X12EnvelopeSettings'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-logic.X12EnvelopeSettings|stable" />
+  - name: framingSettings
+    uid: '@azure/arm-logic.X12ProtocolSettings.framingSettings|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The X12 framing settings.
+    fullName: framingSettings
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'framingSettings: X12FramingSettings'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-logic.X12FramingSettings|stable" />
+  - name: messageFilter
+    uid: '@azure/arm-logic.X12ProtocolSettings.messageFilter|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The X12 message filter.
+    fullName: messageFilter
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'messageFilter: X12MessageFilter'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-logic.X12MessageFilter|stable" />
+  - name: messageFilterList
+    uid: '@azure/arm-logic.X12ProtocolSettings.messageFilterList|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The X12 message filter list.
+    fullName: messageFilterList
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'messageFilterList?: X12MessageIdentifier[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-logic.X12MessageIdentifier|stable" />[]
+  - name: processingSettings
+    uid: '@azure/arm-logic.X12ProtocolSettings.processingSettings|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The X12 processing settings.
+    fullName: processingSettings
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'processingSettings: X12ProcessingSettings'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-logic.X12ProcessingSettings|stable" />
+  - name: schemaReferences
+    uid: '@azure/arm-logic.X12ProtocolSettings.schemaReferences|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The X12 schema references.
+    fullName: schemaReferences
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'schemaReferences: X12SchemaReference[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-logic.X12SchemaReference|stable" />[]
+  - name: securitySettings
+    uid: '@azure/arm-logic.X12ProtocolSettings.securitySettings|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The X12 security settings.
+    fullName: securitySettings
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'securitySettings: X12SecuritySettings'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-logic.X12SecuritySettings|stable" />
+  - name: validationOverrides
+    uid: '@azure/arm-logic.X12ProtocolSettings.validationOverrides|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The X12 validation override settings.
+    fullName: validationOverrides
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'validationOverrides?: X12ValidationOverride[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-logic.X12ValidationOverride|stable" />[]
+  - name: validationSettings
+    uid: '@azure/arm-logic.X12ProtocolSettings.validationSettings|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The X12 validation settings.
+    fullName: validationSettings
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'validationSettings: X12ValidationSettings'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-logic.X12ValidationSettings|stable" />
+  - name: x12DelimiterOverrides
+    uid: '@azure/arm-logic.X12ProtocolSettings.x12DelimiterOverrides|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The X12 delimiter override settings.
+    fullName: x12DelimiterOverrides
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'x12DelimiterOverrides?: X12DelimiterOverrides[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-logic.X12DelimiterOverrides|stable" />[]

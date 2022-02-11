@@ -1,0 +1,15 @@
+### YamlMime:TSTypeAlias
+name: FileForceCloseHandlesResponse
+uid: '@azure/storage-file-share.FileForceCloseHandlesResponse|stable'
+package: '@azure/storage-file-share|stable'
+summary: >-
+  Response type for
+  <xref:@azure/storage-file-share.ShareFileClient.forceCloseHandle|stable>.
+fullName: FileForceCloseHandlesResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type FileForceCloseHandlesResponse = CloseHandlesInfo &
+  FileCloseHandlesHeaders & { _response: HttpResponse & { parsedHeaders:
+  FileForceCloseHandlesHeaders } }

@@ -1,0 +1,52 @@
+### YamlMime:TSType
+name: UnwrapResult
+uid: '@azure/keyvault-keys.UnwrapResult|beta'
+package: '@azure/keyvault-keys|beta'
+summary: Result of the unwrap operation.
+fullName: UnwrapResult
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: algorithm
+    uid: '@azure/keyvault-keys.UnwrapResult.algorithm|beta'
+    package: '@azure/keyvault-keys|beta'
+    summary: >-
+      The <xref:@azure/keyvault-keys.KeyWrapAlgorithm|beta> used to unwrap the
+      data.
+    fullName: algorithm
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'algorithm: KeyWrapAlgorithm'
+      return:
+        description: ''
+        type: <xref uid="@azure/keyvault-keys.KeyWrapAlgorithm|beta" />
+  - name: keyID
+    uid: '@azure/keyvault-keys.UnwrapResult.keyID|beta'
+    package: '@azure/keyvault-keys|beta'
+    summary: The ID of the Key Vault Key used to unwrap the data.
+    fullName: keyID
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'keyID?: string'
+      return:
+        description: ''
+        type: string
+  - name: result
+    uid: '@azure/keyvault-keys.UnwrapResult.result|beta'
+    package: '@azure/keyvault-keys|beta'
+    summary: Result of the unwrap operation in bytes.
+    fullName: result
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'result: Uint8Array'
+      return:
+        description: ''
+        type: Uint8Array

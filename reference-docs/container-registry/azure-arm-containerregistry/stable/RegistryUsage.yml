@@ -1,0 +1,63 @@
+### YamlMime:TSType
+name: RegistryUsage
+uid: '@azure/arm-containerregistry.RegistryUsage|stable'
+package: '@azure/arm-containerregistry|stable'
+summary: The quota usage for a container registry.
+fullName: RegistryUsage
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: currentValue
+    uid: '@azure/arm-containerregistry.RegistryUsage.currentValue|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: The current value of the usage.
+    fullName: currentValue
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'currentValue?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: limit
+    uid: '@azure/arm-containerregistry.RegistryUsage.limit|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: The limit of the usage.
+    fullName: limit
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'limit?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: name
+    uid: '@azure/arm-containerregistry.RegistryUsage.name|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: The name of the usage.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: unit
+    uid: '@azure/arm-containerregistry.RegistryUsage.unit|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: The unit of measurement.
+    fullName: unit
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'unit?: RegistryUsageUnit'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-containerregistry.RegistryUsageUnit|stable" />

@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: ActivityLogAlertList
+uid: '@azure/arm-monitor.ActivityLogAlertList|stable'
+package: '@azure/arm-monitor|stable'
+summary: A list of activity log alerts.
+fullName: ActivityLogAlertList
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: nextLink
+    uid: '@azure/arm-monitor.ActivityLogAlertList.nextLink|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: Provides the link to retrieve the next set of elements.
+    fullName: nextLink
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nextLink?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: value
+    uid: '@azure/arm-monitor.ActivityLogAlertList.value|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: The list of activity log alerts.
+    fullName: value
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: ActivityLogAlertResource[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-monitor.ActivityLogAlertResource|stable" />[]

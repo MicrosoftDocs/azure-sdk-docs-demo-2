@@ -1,0 +1,50 @@
+### YamlMime:TSType
+name: AzureReachabilityReportLocation
+uid: '@azure/arm-network.AzureReachabilityReportLocation|stable'
+package: '@azure/arm-network|stable'
+summary: Parameters that define a geographic location.
+fullName: AzureReachabilityReportLocation
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: city
+    uid: '@azure/arm-network.AzureReachabilityReportLocation.city|stable'
+    package: '@azure/arm-network|stable'
+    summary: The name of the city or town.
+    fullName: city
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'city?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: country
+    uid: '@azure/arm-network.AzureReachabilityReportLocation.country|stable'
+    package: '@azure/arm-network|stable'
+    summary: The name of the country.
+    fullName: country
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'country: string'
+      return:
+        description: ''
+        type: string
+  - name: state
+    uid: '@azure/arm-network.AzureReachabilityReportLocation.state|stable'
+    package: '@azure/arm-network|stable'
+    summary: The name of the state.
+    fullName: state
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'state?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

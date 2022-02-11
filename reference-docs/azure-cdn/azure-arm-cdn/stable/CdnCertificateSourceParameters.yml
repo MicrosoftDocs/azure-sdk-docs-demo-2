@@ -1,0 +1,42 @@
+### YamlMime:TSType
+name: CdnCertificateSourceParameters
+uid: '@azure/arm-cdn.CdnCertificateSourceParameters|stable'
+package: '@azure/arm-cdn|stable'
+summary: >-
+  Defines the parameters for using CDN managed certificate for securing custom
+  domain.
+fullName: CdnCertificateSourceParameters
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: certificateType
+    uid: '@azure/arm-cdn.CdnCertificateSourceParameters.certificateType|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: Type of certificate used
+    fullName: certificateType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'certificateType: CertificateType'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-cdn.CertificateType|stable" />
+  - name: odataType
+    uid: '@azure/arm-cdn.CdnCertificateSourceParameters.odataType|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: ''
+    fullName: odataType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'odataType: "#Microsoft.Azure.Cdn.Models.CdnCertificateSourceParameters"'
+      return:
+        description: ''
+        type: >-
+          "#<xref
+          uid="Microsoft.Azure.Cdn.Models.CdnCertificateSourceParameters|stable"
+          />"

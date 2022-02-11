@@ -1,0 +1,143 @@
+### YamlMime:TSType
+name: ApiProperties
+uid: '@azure/arm-cognitiveservices.ApiProperties|stable'
+package: '@azure/arm-cognitiveservices|stable'
+summary: The api properties for special APIs.
+fullName: ApiProperties
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: aadClientId
+    uid: '@azure/arm-cognitiveservices.ApiProperties.aadClientId|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: (Metrics Advisor Only) The Azure AD Client Id (Application Id).
+    fullName: aadClientId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'aadClientId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: aadTenantId
+    uid: '@azure/arm-cognitiveservices.ApiProperties.aadTenantId|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: (Metrics Advisor Only) The Azure AD Tenant Id.
+    fullName: aadTenantId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'aadTenantId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: eventHubConnectionString
+    uid: '@azure/arm-cognitiveservices.ApiProperties.eventHubConnectionString|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: (Personalization Only) The flag to enable statistics of Bing Search.
+    fullName: eventHubConnectionString
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'eventHubConnectionString?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: qnaAzureSearchEndpointId
+    uid: '@azure/arm-cognitiveservices.ApiProperties.qnaAzureSearchEndpointId|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: (QnAMaker Only) The Azure Search endpoint id of QnAMaker.
+    fullName: qnaAzureSearchEndpointId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'qnaAzureSearchEndpointId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: qnaAzureSearchEndpointKey
+    uid: >-
+      @azure/arm-cognitiveservices.ApiProperties.qnaAzureSearchEndpointKey|stable
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: (QnAMaker Only) The Azure Search endpoint key of QnAMaker.
+    fullName: qnaAzureSearchEndpointKey
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'qnaAzureSearchEndpointKey?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: qnaRuntimeEndpoint
+    uid: '@azure/arm-cognitiveservices.ApiProperties.qnaRuntimeEndpoint|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: (QnAMaker Only) The runtime endpoint of QnAMaker.
+    fullName: qnaRuntimeEndpoint
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'qnaRuntimeEndpoint?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: statisticsEnabled
+    uid: '@azure/arm-cognitiveservices.ApiProperties.statisticsEnabled|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: (Bing Search Only) The flag to enable statistics of Bing Search.
+    fullName: statisticsEnabled
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'statisticsEnabled?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true
+  - name: storageAccountConnectionString
+    uid: >-
+      @azure/arm-cognitiveservices.ApiProperties.storageAccountConnectionString|stable
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: (Personalization Only) The storage account connection string.
+    fullName: storageAccountConnectionString
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'storageAccountConnectionString?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: superUser
+    uid: '@azure/arm-cognitiveservices.ApiProperties.superUser|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: (Metrics Advisor Only) The super user of Metrics Advisor.
+    fullName: superUser
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'superUser?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: websiteName
+    uid: '@azure/arm-cognitiveservices.ApiProperties.websiteName|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: (Metrics Advisor Only) The website name of Metrics Advisor.
+    fullName: websiteName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'websiteName?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

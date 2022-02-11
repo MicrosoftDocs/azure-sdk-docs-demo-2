@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: PathFlushDataResponse
+uid: '@azure/storage-file-datalake.PathFlushDataResponse|stable'
+package: '@azure/storage-file-datalake|stable'
+summary: Contains response data for the flushData operation.
+fullName: PathFlushDataResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type PathFlushDataResponse = PathFlushDataHeaders & { _response: HttpResponse
+  & { parsedHeaders: PathFlushDataHeaders } }

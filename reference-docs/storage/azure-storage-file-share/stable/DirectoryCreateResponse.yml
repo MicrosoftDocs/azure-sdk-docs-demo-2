@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: DirectoryCreateResponse
+uid: '@azure/storage-file-share.DirectoryCreateResponse|stable'
+package: '@azure/storage-file-share|stable'
+summary: Contains response data for the create operation.
+fullName: DirectoryCreateResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type DirectoryCreateResponse = DirectoryCreateHeaders & { _response:
+  HttpResponse & { parsedHeaders: DirectoryCreateHeaders } }

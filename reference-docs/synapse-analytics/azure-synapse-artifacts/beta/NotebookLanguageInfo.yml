@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: NotebookLanguageInfo
+uid: '@azure/synapse-artifacts.NotebookLanguageInfo|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: Language info.
+fullName: NotebookLanguageInfo
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: codemirrorMode
+    uid: '@azure/synapse-artifacts.NotebookLanguageInfo.codemirrorMode|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: The codemirror mode to use for code in this language.
+    fullName: codemirrorMode
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'codemirrorMode?: string'
+      return:
+        description: ''
+        type: string
+  - name: name
+    uid: '@azure/synapse-artifacts.NotebookLanguageInfo.name|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: The programming language which this kernel runs.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: string'
+      return:
+        description: ''
+        type: string

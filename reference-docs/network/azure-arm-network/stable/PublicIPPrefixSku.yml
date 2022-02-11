@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: PublicIPPrefixSku
+uid: '@azure/arm-network.PublicIPPrefixSku|stable'
+package: '@azure/arm-network|stable'
+summary: SKU of a public IP prefix.
+fullName: PublicIPPrefixSku
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: name
+    uid: '@azure/arm-network.PublicIPPrefixSku.name|stable'
+    package: '@azure/arm-network|stable'
+    summary: Name of a public IP prefix SKU.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: PublicIPPrefixSkuName'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.PublicIPPrefixSkuName|stable" />
+  - name: tier
+    uid: '@azure/arm-network.PublicIPPrefixSku.tier|stable'
+    package: '@azure/arm-network|stable'
+    summary: Tier of a public IP prefix SKU.
+    fullName: tier
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tier?: PublicIPPrefixSkuTier'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.PublicIPPrefixSkuTier|stable" />

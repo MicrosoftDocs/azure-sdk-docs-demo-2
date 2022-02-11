@@ -1,0 +1,41 @@
+### YamlMime:TSType
+name: ClassificationAssociateRequest
+uid: '@azure-rest/purview-catalog.ClassificationAssociateRequest|beta'
+package: '@azure-rest/purview-catalog|beta'
+summary: ''
+fullName: ClassificationAssociateRequest
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: classification
+    uid: >-
+      @azure-rest/purview-catalog.ClassificationAssociateRequest.classification|beta
+    package: '@azure-rest/purview-catalog|beta'
+    summary: >-
+      An instance of a classification; it doesn't have an identity, this object
+      exists only when associated with an entity.
+    fullName: classification
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'classification?: AtlasClassification'
+      return:
+        description: ''
+        type: <xref uid="@azure-rest/purview-catalog.AtlasClassification|beta" />
+  - name: entityGuids
+    uid: >-
+      @azure-rest/purview-catalog.ClassificationAssociateRequest.entityGuids|beta
+    package: '@azure-rest/purview-catalog|beta'
+    summary: The GUID of the entity.
+    fullName: entityGuids
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'entityGuids?: Array<string>'
+      return:
+        description: ''
+        type: Array&lt;string&gt;

@@ -1,0 +1,455 @@
+### YamlMime:TSPackage
+uid: '@azure/storage-file-datalake|stable'
+name: '@azure/storage-file-datalake (12.7.0 - Stable)'
+summary: ''
+type: package
+enums:
+  - '@azure/storage-file-datalake.PathGetPropertiesAction|stable'
+  - '@azure/storage-file-datalake.PathRenameMode|stable'
+  - '@azure/storage-file-datalake.PathResourceType|stable'
+  - '@azure/storage-file-datalake.SASProtocol|stable'
+  - '@azure/storage-file-datalake.StorageRetryPolicyType|stable'
+classes:
+  - '@azure/storage-file-datalake.AccountSASPermissions|stable'
+  - '@azure/storage-file-datalake.AccountSASResourceTypes|stable'
+  - '@azure/storage-file-datalake.AccountSASServices|stable'
+  - '@azure/storage-file-datalake.AnonymousCredential|stable'
+  - '@azure/storage-file-datalake.AnonymousCredentialPolicy|stable'
+  - '@azure/storage-file-datalake.Credential|stable'
+  - '@azure/storage-file-datalake.CredentialPolicy|stable'
+  - '@azure/storage-file-datalake.DataLakeAclChangeFailedError|stable'
+  - '@azure/storage-file-datalake.DataLakeDirectoryClient|stable'
+  - '@azure/storage-file-datalake.DataLakeFileClient|stable'
+  - '@azure/storage-file-datalake.DataLakeFileSystemClient|stable'
+  - '@azure/storage-file-datalake.DataLakeLeaseClient|stable'
+  - '@azure/storage-file-datalake.DataLakePathClient|stable'
+  - '@azure/storage-file-datalake.DataLakeSASPermissions|stable'
+  - '@azure/storage-file-datalake.DataLakeServiceClient|stable'
+  - '@azure/storage-file-datalake.DirectorySASPermissions|stable'
+  - '@azure/storage-file-datalake.FileSystemSASPermissions|stable'
+  - '@azure/storage-file-datalake.Pipeline|stable'
+  - '@azure/storage-file-datalake.SASQueryParameters|stable'
+  - '@azure/storage-file-datalake.StorageBrowserPolicy|stable'
+  - '@azure/storage-file-datalake.StorageBrowserPolicyFactory|stable'
+  - '@azure/storage-file-datalake.StorageClient|stable'
+  - '@azure/storage-file-datalake.StorageClientContext|stable'
+  - '@azure/storage-file-datalake.StorageRetryPolicy|stable'
+  - '@azure/storage-file-datalake.StorageRetryPolicyFactory|stable'
+  - '@azure/storage-file-datalake.StorageSharedKeyCredential|stable'
+  - '@azure/storage-file-datalake.StorageSharedKeyCredentialPolicy|stable'
+interfaces:
+  - '@azure/storage-file-datalake.AccessControlChangeCounters|stable'
+  - '@azure/storage-file-datalake.AccessControlChangeError|stable'
+  - '@azure/storage-file-datalake.AccessControlChanges|stable'
+  - '@azure/storage-file-datalake.AccessPolicy|stable'
+  - '@azure/storage-file-datalake.AccountSASSignatureValues|stable'
+  - '@azure/storage-file-datalake.BlobHierarchyListSegment|stable'
+  - '@azure/storage-file-datalake.BlobItemModel|stable'
+  - '@azure/storage-file-datalake.BlobPrefix|stable'
+  - '@azure/storage-file-datalake.BlobPropertiesModel|stable'
+  - '@azure/storage-file-datalake.CommonGenerateSasUrlOptions|stable'
+  - '@azure/storage-file-datalake.CommonOptions|stable'
+  - '@azure/storage-file-datalake.DataLakeRequestConditions|stable'
+  - '@azure/storage-file-datalake.DataLakeSASSignatureValues|stable'
+  - '@azure/storage-file-datalake.DeletedPath|stable'
+  - '@azure/storage-file-datalake.DeletedPathList|stable'
+  - '@azure/storage-file-datalake.DirectoryCreateIfNotExistsOptions|stable'
+  - '@azure/storage-file-datalake.DirectoryCreateIfNotExistsResponse|stable'
+  - '@azure/storage-file-datalake.DirectoryCreateOptions|stable'
+  - '@azure/storage-file-datalake.DirectoryCreateResponse|stable'
+  - '@azure/storage-file-datalake.DirectoryGenerateSasUrlOptions|stable'
+  - '@azure/storage-file-datalake.FileAppendOptions|stable'
+  - '@azure/storage-file-datalake.FileCreateIfNotExistsOptions|stable'
+  - '@azure/storage-file-datalake.FileCreateIfNotExistsResponse|stable'
+  - '@azure/storage-file-datalake.FileCreateOptions|stable'
+  - '@azure/storage-file-datalake.FileCreateResponse|stable'
+  - '@azure/storage-file-datalake.FileFlushOptions|stable'
+  - '@azure/storage-file-datalake.FileGenerateSasUrlOptions|stable'
+  - '@azure/storage-file-datalake.FileParallelUploadOptions|stable'
+  - '@azure/storage-file-datalake.FileQueryCsvTextConfiguration|stable'
+  - '@azure/storage-file-datalake.FileQueryError|stable'
+  - '@azure/storage-file-datalake.FileQueryJsonTextConfiguration|stable'
+  - '@azure/storage-file-datalake.FileQueryOptions|stable'
+  - '@azure/storage-file-datalake.FileQueryParquetConfiguration|stable'
+  - '@azure/storage-file-datalake.FileReadHeaders|stable'
+  - '@azure/storage-file-datalake.FileReadOptions|stable'
+  - '@azure/storage-file-datalake.FileReadToBufferOptions|stable'
+  - '@azure/storage-file-datalake.FileSetExpiryHeaders|stable'
+  - '@azure/storage-file-datalake.FileSetExpiryOptions|stable'
+  - '@azure/storage-file-datalake.FileSystemCreateHeaders|stable'
+  - '@azure/storage-file-datalake.FileSystemCreateIfNotExistsResponse|stable'
+  - '@azure/storage-file-datalake.FileSystemCreateOptions|stable'
+  - '@azure/storage-file-datalake.FileSystemDeleteHeaders|stable'
+  - '@azure/storage-file-datalake.FileSystemDeleteIfExistsResponse|stable'
+  - '@azure/storage-file-datalake.FileSystemDeleteOptions|stable'
+  - '@azure/storage-file-datalake.FileSystemExistsOptions|stable'
+  - '@azure/storage-file-datalake.FileSystemGenerateSasUrlOptions|stable'
+  - '@azure/storage-file-datalake.FileSystemGetAccessPolicyHeaders|stable'
+  - '@azure/storage-file-datalake.FileSystemGetAccessPolicyOptions|stable'
+  - '@azure/storage-file-datalake.FileSystemGetPropertiesHeaders|stable'
+  - '@azure/storage-file-datalake.FileSystemGetPropertiesOptions|stable'
+  - '@azure/storage-file-datalake.FileSystemItem|stable'
+  - >-
+    @azure/storage-file-datalake.FileSystemListBlobHierarchySegmentHeaders|stable
+  - '@azure/storage-file-datalake.FileSystemListPathsHeaders|stable'
+  - '@azure/storage-file-datalake.FileSystemProperties|stable'
+  - '@azure/storage-file-datalake.FileSystemSetAccessPolicyHeaders|stable'
+  - '@azure/storage-file-datalake.FileSystemSetAccessPolicyOptions|stable'
+  - '@azure/storage-file-datalake.FileSystemSetMetadataHeaders|stable'
+  - '@azure/storage-file-datalake.FileSystemSetMetadataOptions|stable'
+  - '@azure/storage-file-datalake.FileSystemUndeletePathOption|stable'
+  - '@azure/storage-file-datalake.ListBlobsHierarchySegmentResponse|stable'
+  - '@azure/storage-file-datalake.ListDeletedPathsOptions|stable'
+  - '@azure/storage-file-datalake.ListDeletedPathsSegmentOptions|stable'
+  - '@azure/storage-file-datalake.ListFileSystemsSegmentResponse|stable'
+  - '@azure/storage-file-datalake.ListPathsOptions|stable'
+  - '@azure/storage-file-datalake.ListPathsSegmentOptions|stable'
+  - '@azure/storage-file-datalake.Metadata|stable'
+  - '@azure/storage-file-datalake.Path|stable'
+  - '@azure/storage-file-datalake.PathAccessControl|stable'
+  - '@azure/storage-file-datalake.PathAccessControlItem|stable'
+  - '@azure/storage-file-datalake.PathAppendDataHeaders|stable'
+  - '@azure/storage-file-datalake.PathChangeAccessControlRecursiveOptions|stable'
+  - '@azure/storage-file-datalake.PathChangeAccessControlRecursiveResponse|stable'
+  - '@azure/storage-file-datalake.PathCreateHeaders|stable'
+  - '@azure/storage-file-datalake.PathCreateHttpHeaders|stable'
+  - '@azure/storage-file-datalake.PathCreateIfNotExistsOptions|stable'
+  - '@azure/storage-file-datalake.PathCreateIfNotExistsResponse|stable'
+  - '@azure/storage-file-datalake.PathCreateOptions|stable'
+  - '@azure/storage-file-datalake.PathDeleteHeaders|stable'
+  - '@azure/storage-file-datalake.PathDeleteIfExistsResponse|stable'
+  - '@azure/storage-file-datalake.PathDeleteOptions|stable'
+  - '@azure/storage-file-datalake.PathExistsOptions|stable'
+  - '@azure/storage-file-datalake.PathFlushDataHeaders|stable'
+  - '@azure/storage-file-datalake.PathGetAccessControlHeaders|stable'
+  - '@azure/storage-file-datalake.PathGetAccessControlOptions|stable'
+  - '@azure/storage-file-datalake.PathGetPropertiesHeaders|stable'
+  - '@azure/storage-file-datalake.PathGetPropertiesHeadersModel|stable'
+  - '@azure/storage-file-datalake.PathGetPropertiesOptions|stable'
+  - '@azure/storage-file-datalake.PathHttpHeaders|stable'
+  - '@azure/storage-file-datalake.PathList|stable'
+  - '@azure/storage-file-datalake.PathListModel|stable'
+  - '@azure/storage-file-datalake.PathModel|stable'
+  - '@azure/storage-file-datalake.PathMoveOptions|stable'
+  - '@azure/storage-file-datalake.PathPermissions|stable'
+  - '@azure/storage-file-datalake.PathRemoveHeaders|stable'
+  - '@azure/storage-file-datalake.PathSetAccessControlHeaders|stable'
+  - '@azure/storage-file-datalake.PathSetAccessControlOptions|stable'
+  - '@azure/storage-file-datalake.PathSetHttpHeadersHeaders|stable'
+  - '@azure/storage-file-datalake.PathSetHttpHeadersOptions|stable'
+  - '@azure/storage-file-datalake.PathSetMetadataHeaders|stable'
+  - '@azure/storage-file-datalake.PathSetMetadataOptions|stable'
+  - '@azure/storage-file-datalake.PathSetPermissionsOptions|stable'
+  - '@azure/storage-file-datalake.PathUndeleteHeaders|stable'
+  - '@azure/storage-file-datalake.PathUpdateHeaders|stable'
+  - '@azure/storage-file-datalake.PipelineOptions|stable'
+  - '@azure/storage-file-datalake.RawAccessPolicy|stable'
+  - '@azure/storage-file-datalake.RemovePathAccessControlItem|stable'
+  - '@azure/storage-file-datalake.RolePermissions|stable'
+  - '@azure/storage-file-datalake.SASQueryParametersOptions|stable'
+  - '@azure/storage-file-datalake.SasIPRange|stable'
+  - '@azure/storage-file-datalake.ServiceGenerateAccountSasUrlOptions|stable'
+  - '@azure/storage-file-datalake.ServiceGetUserDelegationKeyHeaders|stable'
+  - '@azure/storage-file-datalake.ServiceGetUserDelegationKeyOptions|stable'
+  - '@azure/storage-file-datalake.ServiceListFileSystemsOptions|stable'
+  - '@azure/storage-file-datalake.ServiceListFileSystemsSegmentHeaders|stable'
+  - '@azure/storage-file-datalake.ServiceUndeleteFileSystemOptions|stable'
+  - '@azure/storage-file-datalake.SignedIdentifier|stable'
+  - '@azure/storage-file-datalake.StorageClientOptionalParams|stable'
+  - '@azure/storage-file-datalake.StoragePipelineOptions|stable'
+  - '@azure/storage-file-datalake.StorageRetryOptions|stable'
+  - '@azure/storage-file-datalake.UserDelegationKey|stable'
+typeAliases:
+  - '@azure/storage-file-datalake.AccessControlType|stable'
+  - '@azure/storage-file-datalake.CopyStatusType|stable'
+  - '@azure/storage-file-datalake.CredentialPolicyCreator|stable'
+  - '@azure/storage-file-datalake.FileAppendResponse|stable'
+  - '@azure/storage-file-datalake.FileExpiryMode|stable'
+  - '@azure/storage-file-datalake.FileQueryArrowConfiguration|stable'
+  - '@azure/storage-file-datalake.FileReadResponse|stable'
+  - '@azure/storage-file-datalake.FileSetExpiryResponse|stable'
+  - '@azure/storage-file-datalake.FileSystemCreateResponse|stable'
+  - '@azure/storage-file-datalake.FileSystemDeleteResponse|stable'
+  - '@azure/storage-file-datalake.FileSystemGetAccessPolicyResponse|stable'
+  - '@azure/storage-file-datalake.FileSystemGetPropertiesResponse|stable'
+  - '@azure/storage-file-datalake.FileSystemListDeletedPathsResponse|stable'
+  - '@azure/storage-file-datalake.FileSystemListPathsResponse|stable'
+  - '@azure/storage-file-datalake.FileSystemRenameResponse|stable'
+  - '@azure/storage-file-datalake.FileSystemSetAccessPolicyResponse|stable'
+  - '@azure/storage-file-datalake.FileSystemSetMetadataResponse|stable'
+  - '@azure/storage-file-datalake.FileSystemUndeletePathResponse|stable'
+  - '@azure/storage-file-datalake.FileSystemUndeleteResponse|stable'
+  - '@azure/storage-file-datalake.LeaseDurationType|stable'
+  - '@azure/storage-file-datalake.LeaseStateType|stable'
+  - '@azure/storage-file-datalake.LeaseStatusType|stable'
+  - '@azure/storage-file-datalake.ListPathsSegmentResponse|stable'
+  - '@azure/storage-file-datalake.ModifiedAccessConditions|stable'
+  - '@azure/storage-file-datalake.PathCreateResponse|stable'
+  - '@azure/storage-file-datalake.PathDeleteResponse|stable'
+  - '@azure/storage-file-datalake.PathFlushDataResponse|stable'
+  - '@azure/storage-file-datalake.PathGetAccessControlResponse|stable'
+  - '@azure/storage-file-datalake.PathGetPropertiesActionModel|stable'
+  - '@azure/storage-file-datalake.PathGetPropertiesResponse|stable'
+  - '@azure/storage-file-datalake.PathMoveResponse|stable'
+  - '@azure/storage-file-datalake.PathRenameModeModel|stable'
+  - '@azure/storage-file-datalake.PathResourceTypeModel|stable'
+  - '@azure/storage-file-datalake.PathSetAccessControlResponse|stable'
+  - '@azure/storage-file-datalake.PathSetHttpHeadersResponse|stable'
+  - '@azure/storage-file-datalake.PathSetMetadataResponse|stable'
+  - '@azure/storage-file-datalake.PublicAccessType|stable'
+  - '@azure/storage-file-datalake.ServiceGetUserDelegationKeyResponse|stable'
+  - '@azure/storage-file-datalake.ServiceListFileSystemsSegmentResponse|stable'
+  - '@azure/storage-file-datalake.ServiceRenameFileSystemOptions|stable'
+functions:
+  - name: >-
+      generateAccountSASQueryParameters(AccountSASSignatureValues,
+      StorageSharedKeyCredential)
+    uid: '@azure/storage-file-datalake.generateAccountSASQueryParameters|stable'
+    package: '@azure/storage-file-datalake|stable'
+    summary: >-
+      ONLY AVAILABLE IN NODE.JS RUNTIME.
+
+      Generates a <xref:@azure/storage-file-datalake.SASQueryParameters|stable>
+      object which contains all SAS query parameters needed to make an actual
+
+      REST request.
+
+
+
+      See
+      https://docs.microsoft.com/en-us/rest/api/storageservices/constructing-an-account-sas
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function generateAccountSASQueryParameters(accountSASSignatureValues:
+        AccountSASSignatureValues, sharedKeyCredential:
+        StorageSharedKeyCredential): SASQueryParameters
+      parameters:
+        - id: accountSASSignatureValues
+          type: >-
+            <xref
+            uid="@azure/storage-file-datalake.AccountSASSignatureValues|stable"
+            />
+          description: '-'
+        - id: sharedKeyCredential
+          type: >-
+            <xref
+            uid="@azure/storage-file-datalake.StorageSharedKeyCredential|stable"
+            />
+          description: |
+            -
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-file-datalake.SASQueryParameters|stable" />
+  - name: >-
+      generateDataLakeSASQueryParameters(DataLakeSASSignatureValues,
+      StorageSharedKeyCredential)
+    uid: '@azure/storage-file-datalake.generateDataLakeSASQueryParameters|stable'
+    package: '@azure/storage-file-datalake|stable'
+    summary: >+
+      ONLY AVAILABLE IN NODE.JS RUNTIME.
+
+      Creates an instance of SASQueryParameters.
+
+
+      Only accepts required settings needed to create a SAS. For optional
+      settings please
+
+      set corresponding properties directly, such as permissions, startsOn and
+      identifier.
+
+
+      WARNING: When identifier is not provided, permissions and expiresOn are
+      required.
+
+      You MUST assign value to identifier or expiresOn & permissions manually if
+      you initial with
+
+      this constructor.
+
+
+      Fill in the required details before running the following snippets.
+
+
+      **Example**
+
+
+      ```js
+
+      // Generate service level SAS for a file system
+
+      const containerSAS = generateDataLakeSASQueryParameters({
+          fileSystemName, // Required
+          permissions: ContainerSASPermissions.parse("racwdl"), // Required
+          startsOn: new Date(), // Optional
+          expiresOn: new Date(new Date().valueOf() + 86400), // Required. Date type
+          ipRange: { start: "0.0.0.0", end: "255.255.255.255" }, // Optional
+          protocol: SASProtocol.HttpsAndHttp, // Optional
+          version: "2016-05-31" // Optional
+        },
+        sharedKeyCredential // StorageSharedKeyCredential - `new StorageSharedKeyCredential(account, accountKey)`
+      ).toString();
+
+      ```
+
+
+      // Fill in the required details before running the snippet.
+
+
+
+
+      **Example**
+
+
+      ```js
+
+      // Generate service level SAS for a file
+
+      const fileSAS = generateDataLakeSASQueryParameters({
+          fileSystemName, // Required
+          fileName, // Required
+          permissions: DataLakeSASPermissions.parse("racwd"), // Required
+          startsOn: new Date(), // Optional
+          expiresOn: new Date(new Date().valueOf() + 86400), // Required. Date type
+          cacheControl: "cache-control-override", // Optional
+          contentDisposition: "content-disposition-override", // Optional
+          contentEncoding: "content-encoding-override", // Optional
+          contentLanguage: "content-language-override", // Optional
+          contentType: "content-type-override", // Optional
+          ipRange: { start: "0.0.0.0", end: "255.255.255.255" }, // Optional
+          protocol: SASProtocol.HttpsAndHttp, // Optional
+          version: "2016-05-31" // Optional
+        },
+        sharedKeyCredential // StorageSharedKeyCredential - `new StorageSharedKeyCredential(account, accountKey)`
+      ).toString();
+
+      ```
+
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function generateDataLakeSASQueryParameters(dataLakeSASSignatureValues:
+        DataLakeSASSignatureValues, sharedKeyCredential:
+        StorageSharedKeyCredential): SASQueryParameters
+      parameters:
+        - id: dataLakeSASSignatureValues
+          type: >-
+            <xref
+            uid="@azure/storage-file-datalake.DataLakeSASSignatureValues|stable"
+            />
+          description: '-'
+        - id: sharedKeyCredential
+          type: >-
+            <xref
+            uid="@azure/storage-file-datalake.StorageSharedKeyCredential|stable"
+            />
+          description: |
+            -
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-file-datalake.SASQueryParameters|stable" />
+  - name: >-
+      generateDataLakeSASQueryParameters(DataLakeSASSignatureValues,
+      UserDelegationKey, string)
+    uid: '@azure/storage-file-datalake.generateDataLakeSASQueryParameters_1|stable'
+    package: '@azure/storage-file-datalake|stable'
+    summary: >+
+      ONLY AVAILABLE IN NODE.JS RUNTIME.
+
+      Creates an instance of SASQueryParameters.
+
+      WARNING: identifier will be ignored when generating user delegation SAS,
+      permissions and expiresOn are required.
+
+
+
+      **Example**
+
+
+      ```js
+
+      // Generate user delegation SAS for a file system
+
+      const userDelegationKey = await
+      dataLakeServiceClient.getUserDelegationKey(startsOn, expiresOn);
+
+      const fileSystemSAS = generateDataLakeSASQueryParameters({
+          fileSystemName, // Required
+          permissions: FileSystemSASPermissions.parse("racwdl"), // Required
+          startsOn, // Optional. Date type
+          expiresOn, // Required. Date type
+          ipRange: { start: "0.0.0.0", end: "255.255.255.255" }, // Optional
+          protocol: SASProtocol.HttpsAndHttp, // Optional
+          version: "2018-11-09" // Must greater than or equal to 2018-11-09 to generate user delegation SAS
+        },
+        userDelegationKey, // UserDelegationKey
+        accountName
+      ).toString();
+
+      ```
+
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function generateDataLakeSASQueryParameters(dataLakeSASSignatureValues:
+        DataLakeSASSignatureValues, userDelegationKey: UserDelegationKey,
+        accountName: string): SASQueryParameters
+      parameters:
+        - id: dataLakeSASSignatureValues
+          type: >-
+            <xref
+            uid="@azure/storage-file-datalake.DataLakeSASSignatureValues|stable"
+            />
+          description: '-'
+        - id: userDelegationKey
+          type: <xref uid="@azure/storage-file-datalake.UserDelegationKey|stable" />
+          description: Return value of `blobServiceClient.getUserDelegationKey()`
+        - id: accountName
+          type: string
+          description: |
+            -
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-file-datalake.SASQueryParameters|stable" />
+  - name: >-
+      newPipeline(StorageSharedKeyCredential | AnonymousCredential |
+      TokenCredential, StoragePipelineOptions)
+    uid: '@azure/storage-file-datalake.newPipeline|stable'
+    package: '@azure/storage-file-datalake|stable'
+    summary: Creates a new Pipeline object with Credential provided.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function newPipeline(credential?: StorageSharedKeyCredential |
+        AnonymousCredential | TokenCredential, pipelineOptions?:
+        StoragePipelineOptions): Pipeline
+      parameters:
+        - id: credential
+          type: >-
+            <xref
+            uid="@azure/storage-file-datalake.StorageSharedKeyCredential|stable"
+            /> | <xref
+            uid="@azure/storage-file-datalake.AnonymousCredential|stable" /> |
+            TokenCredential
+          description: >-
+            Such as AnonymousCredential, StorageSharedKeyCredential or any
+            credential from the `@azure/identity` package to authenticate
+            requests to the service. You can also provide an object that
+            implements the TokenCredential interface. If not specified,
+            AnonymousCredential is used.
+        - id: pipelineOptions
+          type: >-
+            <xref
+            uid="@azure/storage-file-datalake.StoragePipelineOptions|stable" />
+          description: Optional. Options.
+      return:
+        description: A new Pipeline object.
+        type: <xref uid="@azure/storage-file-datalake.Pipeline|stable" />

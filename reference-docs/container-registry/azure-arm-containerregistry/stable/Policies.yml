@@ -1,0 +1,63 @@
+### YamlMime:TSType
+name: Policies
+uid: '@azure/arm-containerregistry.Policies|stable'
+package: '@azure/arm-containerregistry|stable'
+summary: The policies for a container registry.
+fullName: Policies
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: exportPolicy
+    uid: '@azure/arm-containerregistry.Policies.exportPolicy|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: The export policy for a container registry.
+    fullName: exportPolicy
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'exportPolicy?: ExportPolicy'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-containerregistry.ExportPolicy|stable" />
+  - name: quarantinePolicy
+    uid: '@azure/arm-containerregistry.Policies.quarantinePolicy|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: The quarantine policy for a container registry.
+    fullName: quarantinePolicy
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'quarantinePolicy?: QuarantinePolicy'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-containerregistry.QuarantinePolicy|stable" />
+  - name: retentionPolicy
+    uid: '@azure/arm-containerregistry.Policies.retentionPolicy|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: The retention policy for a container registry.
+    fullName: retentionPolicy
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'retentionPolicy?: RetentionPolicy'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-containerregistry.RetentionPolicy|stable" />
+  - name: trustPolicy
+    uid: '@azure/arm-containerregistry.Policies.trustPolicy|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: The content trust policy for a container registry.
+    fullName: trustPolicy
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'trustPolicy?: TrustPolicy'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-containerregistry.TrustPolicy|stable" />

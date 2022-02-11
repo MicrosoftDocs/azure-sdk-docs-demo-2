@@ -1,0 +1,60 @@
+### YamlMime:TSType
+name: TriggerUpdateParameters
+uid: '@azure/arm-containerregistry.TriggerUpdateParameters|stable'
+package: '@azure/arm-containerregistry|stable'
+summary: The properties for updating triggers.
+fullName: TriggerUpdateParameters
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: baseImageTrigger
+    uid: >-
+      @azure/arm-containerregistry.TriggerUpdateParameters.baseImageTrigger|stable
+    package: '@azure/arm-containerregistry|stable'
+    summary: The trigger based on base image dependencies.
+    fullName: baseImageTrigger
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'baseImageTrigger?: BaseImageTriggerUpdateParameters'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-containerregistry.BaseImageTriggerUpdateParameters|stable"
+          />
+  - name: sourceTriggers
+    uid: '@azure/arm-containerregistry.TriggerUpdateParameters.sourceTriggers|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: The collection of triggers based on source code repository.
+    fullName: sourceTriggers
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sourceTriggers?: SourceTriggerUpdateParameters[]'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-containerregistry.SourceTriggerUpdateParameters|stable"
+          />[]
+  - name: timerTriggers
+    uid: '@azure/arm-containerregistry.TriggerUpdateParameters.timerTriggers|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: The collection of timer triggers.
+    fullName: timerTriggers
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'timerTriggers?: TimerTriggerUpdateParameters[]'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-containerregistry.TimerTriggerUpdateParameters|stable"
+          />[]

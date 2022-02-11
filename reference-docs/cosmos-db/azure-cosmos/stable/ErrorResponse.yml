@@ -1,0 +1,155 @@
+### YamlMime:TSType
+name: ErrorResponse
+uid: '@azure/cosmos.ErrorResponse|stable'
+package: '@azure/cosmos|stable'
+summary: ''
+fullName: ErrorResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: activityId
+    uid: '@azure/cosmos.ErrorResponse.activityId|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: activityId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'activityId?: string'
+      return:
+        description: ''
+        type: string
+  - name: body
+    uid: '@azure/cosmos.ErrorResponse.body|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: body
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'body?: ErrorBody'
+      return:
+        description: ''
+        type: <xref uid="@azure/cosmos.ErrorBody|stable" />
+  - name: code
+    uid: '@azure/cosmos.ErrorResponse.code|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: code
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'code?: number'
+      return:
+        description: ''
+        type: number
+  - name: Error
+    uid: '@azure/cosmos.ErrorResponse.Error|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: Error
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'Error: ErrorConstructor'
+      return:
+        description: ''
+        type: ErrorConstructor
+  - name: headers
+    uid: '@azure/cosmos.ErrorResponse.headers|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: headers
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'headers?: CosmosHeaders'
+      return:
+        description: ''
+        type: <xref uid="@azure/cosmos.CosmosHeaders|stable" />
+  - name: message
+    uid: '@azure/cosmos.ErrorResponse.message|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: message
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'message: string'
+      return:
+        description: ''
+        type: string
+  - name: name
+    uid: '@azure/cosmos.ErrorResponse.name|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: string'
+      return:
+        description: ''
+        type: string
+  - name: retryAfterInMilliseconds
+    uid: '@azure/cosmos.ErrorResponse.retryAfterInMilliseconds|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: retryAfterInMilliseconds
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'retryAfterInMilliseconds?: number'
+      return:
+        description: ''
+        type: number
+  - name: retryAfterInMs
+    uid: '@azure/cosmos.ErrorResponse.retryAfterInMs|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: retryAfterInMs
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'retryAfterInMs?: number'
+      return:
+        description: ''
+        type: number
+  - name: stack
+    uid: '@azure/cosmos.ErrorResponse.stack|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: stack
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'stack?: string'
+      return:
+        description: ''
+        type: string
+  - name: substatus
+    uid: '@azure/cosmos.ErrorResponse.substatus|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: substatus
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'substatus?: number'
+      return:
+        description: ''
+        type: number
+extends: Error

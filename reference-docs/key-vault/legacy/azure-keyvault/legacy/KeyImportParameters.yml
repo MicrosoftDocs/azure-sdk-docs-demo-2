@@ -1,0 +1,63 @@
+### YamlMime:TSType
+name: KeyImportParameters
+uid: azure-keyvault.KeyImportParameters|legacy
+package: azure-keyvault|legacy
+summary: ''
+fullName: KeyImportParameters
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: hsm
+    uid: azure-keyvault.KeyImportParameters.hsm|legacy
+    package: azure-keyvault|legacy
+    summary: ''
+    fullName: hsm
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hsm?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: key
+    uid: azure-keyvault.KeyImportParameters.key|legacy
+    package: azure-keyvault|legacy
+    summary: ''
+    fullName: key
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'key: JsonWebKey'
+      return:
+        description: ''
+        type: <xref uid="azure-keyvault.JsonWebKey|legacy" />
+  - name: keyAttributes
+    uid: azure-keyvault.KeyImportParameters.keyAttributes|legacy
+    package: azure-keyvault|legacy
+    summary: ''
+    fullName: keyAttributes
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'keyAttributes?: KeyAttributes'
+      return:
+        description: ''
+        type: <xref uid="azure-keyvault.KeyAttributes|legacy" />
+  - name: tags
+    uid: azure-keyvault.KeyImportParameters.tags|legacy
+    package: azure-keyvault|legacy
+    summary: ''
+    fullName: tags
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        description: ''
+        type: '[key: string]\: string'

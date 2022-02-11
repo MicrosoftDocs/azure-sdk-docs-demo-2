@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: ConfigurationStoresBeginCreateResponse
+uid: '@azure/arm-appconfiguration.ConfigurationStoresBeginCreateResponse|stable'
+package: '@azure/arm-appconfiguration|stable'
+summary: Contains response data for the beginCreate operation.
+fullName: ConfigurationStoresBeginCreateResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type ConfigurationStoresBeginCreateResponse = ConfigurationStore & {
+  _response: HttpResponse & { bodyAsText: string, parsedBody: ConfigurationStore
+  } }

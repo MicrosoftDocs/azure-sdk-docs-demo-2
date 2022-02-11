@@ -1,0 +1,298 @@
+### YamlMime:TSType
+name: MigrationConfigs
+uid: '@azure/arm-servicebus.MigrationConfigs|stable'
+package: '@azure/arm-servicebus|stable'
+summary: Interface representing a MigrationConfigs.
+fullName: MigrationConfigs
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      beginCreateAndStartMigration(string, string, MigrationConfigurationName,
+      MigrationConfigProperties,
+      MigrationConfigsCreateAndStartMigrationOptionalParams)
+    uid: '@azure/arm-servicebus.MigrationConfigs.beginCreateAndStartMigration|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: >-
+      Creates Migration configuration and starts migration of entities from
+      Standard to Premium namespace
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateAndStartMigration(resourceGroupName: string,
+        namespaceName: string, configName: MigrationConfigurationName,
+        parameters: MigrationConfigProperties, options?:
+        MigrationConfigsCreateAndStartMigrationOptionalParams):
+        Promise<PollerLike<PollOperationState<MigrationConfigsCreateAndStartMigrationResponse>,
+        MigrationConfigsCreateAndStartMigrationResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: configName
+          type: >-
+            <xref uid="@azure/arm-servicebus.MigrationConfigurationName|stable"
+            />
+          description: The configuration name. Should always be "$default".
+        - id: parameters
+          type: >-
+            <xref uid="@azure/arm-servicebus.MigrationConfigProperties|stable"
+            />
+          description: Parameters required to create Migration Configuration
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.MigrationConfigsCreateAndStartMigrationOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-servicebus.MigrationConfigsCreateAndStartMigrationResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-servicebus.MigrationConfigsCreateAndStartMigrationResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginCreateAndStartMigrationAndWait(string, string,
+      MigrationConfigurationName, MigrationConfigProperties,
+      MigrationConfigsCreateAndStartMigrationOptionalParams)
+    uid: >-
+      @azure/arm-servicebus.MigrationConfigs.beginCreateAndStartMigrationAndWait|stable
+    package: '@azure/arm-servicebus|stable'
+    summary: >-
+      Creates Migration configuration and starts migration of entities from
+      Standard to Premium namespace
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateAndStartMigrationAndWait(resourceGroupName: string,
+        namespaceName: string, configName: MigrationConfigurationName,
+        parameters: MigrationConfigProperties, options?:
+        MigrationConfigsCreateAndStartMigrationOptionalParams):
+        Promise<MigrationConfigsCreateAndStartMigrationResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: configName
+          type: >-
+            <xref uid="@azure/arm-servicebus.MigrationConfigurationName|stable"
+            />
+          description: The configuration name. Should always be "$default".
+        - id: parameters
+          type: >-
+            <xref uid="@azure/arm-servicebus.MigrationConfigProperties|stable"
+            />
+          description: Parameters required to create Migration Configuration
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.MigrationConfigsCreateAndStartMigrationOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-servicebus.MigrationConfigsCreateAndStartMigrationResponse|stable"
+          />&gt;
+  - name: >-
+      completeMigration(string, string, MigrationConfigurationName,
+      MigrationConfigsCompleteMigrationOptionalParams)
+    uid: '@azure/arm-servicebus.MigrationConfigs.completeMigration|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: >-
+      This operation Completes Migration of entities by pointing the connection
+      strings to Premium
+
+      namespace and any entities created after the operation will be under
+      Premium Namespace.
+
+      CompleteMigration operation will fail when entity migration is
+      in-progress.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function completeMigration(resourceGroupName: string, namespaceName:
+        string, configName: MigrationConfigurationName, options?:
+        MigrationConfigsCompleteMigrationOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: configName
+          type: >-
+            <xref uid="@azure/arm-servicebus.MigrationConfigurationName|stable"
+            />
+          description: The configuration name. Should always be "$default".
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.MigrationConfigsCompleteMigrationOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      delete(string, string, MigrationConfigurationName,
+      MigrationConfigsDeleteOptionalParams)
+    uid: '@azure/arm-servicebus.MigrationConfigs.delete|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Deletes a MigrationConfiguration
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function delete(resourceGroupName: string, namespaceName: string,
+        configName: MigrationConfigurationName, options?:
+        MigrationConfigsDeleteOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: configName
+          type: >-
+            <xref uid="@azure/arm-servicebus.MigrationConfigurationName|stable"
+            />
+          description: The configuration name. Should always be "$default".
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.MigrationConfigsDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      get(string, string, MigrationConfigurationName,
+      MigrationConfigsGetOptionalParams)
+    uid: '@azure/arm-servicebus.MigrationConfigs.get|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Retrieves Migration Config
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, namespaceName: string,
+        configName: MigrationConfigurationName, options?:
+        MigrationConfigsGetOptionalParams): Promise<MigrationConfigsGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: configName
+          type: >-
+            <xref uid="@azure/arm-servicebus.MigrationConfigurationName|stable"
+            />
+          description: The configuration name. Should always be "$default".
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.MigrationConfigsGetOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-servicebus.MigrationConfigsGetResponse|stable" />&gt;
+  - name: list(string, string, MigrationConfigsListOptionalParams)
+    uid: '@azure/arm-servicebus.MigrationConfigs.list|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Gets all migrationConfigurations
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, namespaceName: string,
+        options?: MigrationConfigsListOptionalParams):
+        PagedAsyncIterableIterator<MigrationConfigProperties>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.MigrationConfigsListOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-servicebus.MigrationConfigProperties|stable" />&gt;
+  - name: >-
+      revert(string, string, MigrationConfigurationName,
+      MigrationConfigsRevertOptionalParams)
+    uid: '@azure/arm-servicebus.MigrationConfigs.revert|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: This operation reverts Migration
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function revert(resourceGroupName: string, namespaceName: string,
+        configName: MigrationConfigurationName, options?:
+        MigrationConfigsRevertOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: configName
+          type: >-
+            <xref uid="@azure/arm-servicebus.MigrationConfigurationName|stable"
+            />
+          description: The configuration name. Should always be "$default".
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.MigrationConfigsRevertOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;

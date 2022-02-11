@@ -1,0 +1,40 @@
+### YamlMime:TSType
+name: HealthcareEntityRelationRole
+uid: '@azure/ai-text-analytics.HealthcareEntityRelationRole|beta'
+package: '@azure/ai-text-analytics|beta'
+summary: A healthcare entity that plays a specific role in a relation.
+fullName: HealthcareEntityRelationRole
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: entity
+    uid: '@azure/ai-text-analytics.HealthcareEntityRelationRole.entity|beta'
+    package: '@azure/ai-text-analytics|beta'
+    summary: A healthcare entity
+    fullName: entity
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'entity: HealthcareEntity'
+      return:
+        description: ''
+        type: <xref uid="@azure/ai-text-analytics.HealthcareEntity|beta" />
+  - name: name
+    uid: '@azure/ai-text-analytics.HealthcareEntityRelationRole.name|beta'
+    package: '@azure/ai-text-analytics|beta'
+    summary: The role of the healthcare entity in a particular relation.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: HealthcareEntityRelationRoleType'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/ai-text-analytics.HealthcareEntityRelationRoleType|beta"
+          />

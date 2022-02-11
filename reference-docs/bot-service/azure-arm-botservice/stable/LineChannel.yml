@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: LineChannel
+uid: '@azure/arm-botservice.LineChannel|stable'
+package: '@azure/arm-botservice|stable'
+summary: Line channel definition
+fullName: LineChannel
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: channelName
+    uid: '@azure/arm-botservice.LineChannel.channelName|stable'
+    package: '@azure/arm-botservice|stable'
+    summary: Polymorphic Discriminator
+    fullName: channelName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'channelName: "LineChannel"'
+      return:
+        description: ''
+        type: '"LineChannel"'
+  - name: properties
+    uid: '@azure/arm-botservice.LineChannel.properties|stable'
+    package: '@azure/arm-botservice|stable'
+    summary: The set of properties specific to line channel resource
+    fullName: properties
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'properties?: LineChannelProperties'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-botservice.LineChannelProperties|stable" />

@@ -1,0 +1,114 @@
+### YamlMime:TSType
+name: MetricsQueryResult
+uid: '@azure/monitor-query.MetricsQueryResult|stable'
+package: '@azure/monitor-query|stable'
+summary: >-
+  Metrics, including additional information like cost, the resourceRegion,
+  etc...
+fullName: MetricsQueryResult
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: cost
+    uid: '@azure/monitor-query.MetricsQueryResult.cost|stable'
+    package: '@azure/monitor-query|stable'
+    summary: The integer value representing the cost of the query, for data case.
+    fullName: cost
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'cost?: number'
+      return:
+        description: ''
+        type: number
+  - name: granularity
+    uid: '@azure/monitor-query.MetricsQueryResult.granularity|stable'
+    package: '@azure/monitor-query|stable'
+    summary: >-
+      The interval (window size) for which the metric data was returned in. 
+      This may be adjusted in the future and returned back from what was
+      originally requested.  This is not present if a metadata request was made.
+    fullName: granularity
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'granularity?: string'
+      return:
+        description: ''
+        type: string
+  - name: metrics
+    uid: '@azure/monitor-query.MetricsQueryResult.metrics|stable'
+    package: '@azure/monitor-query|stable'
+    summary: the value of the collection.
+    fullName: metrics
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'metrics: Metric[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/monitor-query.Metric|stable" />[]
+  - name: namespace
+    uid: '@azure/monitor-query.MetricsQueryResult.namespace|stable'
+    package: '@azure/monitor-query|stable'
+    summary: The namespace of the metrics been queried
+    fullName: namespace
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'namespace?: string'
+      return:
+        description: ''
+        type: string
+  - name: resourceRegion
+    uid: '@azure/monitor-query.MetricsQueryResult.resourceRegion|stable'
+    package: '@azure/monitor-query|stable'
+    summary: The region of the resource been queried for metrics.
+    fullName: resourceRegion
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'resourceRegion?: string'
+      return:
+        description: ''
+        type: string
+  - name: timespan
+    uid: '@azure/monitor-query.MetricsQueryResult.timespan|stable'
+    package: '@azure/monitor-query|stable'
+    summary: >-
+      The timespan for which the data was retrieved. Its value consists of two
+      datetimes concatenated, separated by '/'.  This may be adjusted in the
+      future and returned back from what was originally requested.
+    fullName: timespan
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'timespan: QueryTimeInterval'
+      return:
+        description: ''
+        type: <xref uid="@azure/monitor-query.QueryTimeInterval|stable" />
+methods:
+  - name: getMetricByName(string)
+    uid: '@azure/monitor-query.MetricsQueryResult.getMetricByName|stable'
+    package: '@azure/monitor-query|stable'
+    summary: convenience method to get metric by metric name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function getMetricByName(metricName: string): Metric | undefined'
+      parameters:
+        - id: metricName
+          type: string
+          description: ''
+      return:
+        description: ''
+        type: <xref uid="@azure/monitor-query.Metric|stable" /> | undefined

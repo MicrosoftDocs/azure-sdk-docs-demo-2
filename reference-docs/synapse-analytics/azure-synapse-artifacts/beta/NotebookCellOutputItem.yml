@@ -1,0 +1,91 @@
+### YamlMime:TSType
+name: NotebookCellOutputItem
+uid: '@azure/synapse-artifacts.NotebookCellOutputItem|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: An item of the notebook cell execution output.
+fullName: NotebookCellOutputItem
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: data
+    uid: '@azure/synapse-artifacts.NotebookCellOutputItem.data|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Output data. Use MIME type as key, and content as value.
+    fullName: data
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'data?: any'
+      return:
+        description: ''
+        type: any
+  - name: executionCount
+    uid: '@azure/synapse-artifacts.NotebookCellOutputItem.executionCount|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Execution sequence number.
+    fullName: executionCount
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'executionCount?: number'
+      return:
+        description: ''
+        type: number
+  - name: metadata
+    uid: '@azure/synapse-artifacts.NotebookCellOutputItem.metadata|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Metadata for the output item.
+    fullName: metadata
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'metadata?: any'
+      return:
+        description: ''
+        type: any
+  - name: name
+    uid: '@azure/synapse-artifacts.NotebookCellOutputItem.name|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: For output_type=stream, determines the name of stream (stdout / stderr).
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: string'
+      return:
+        description: ''
+        type: string
+  - name: outputType
+    uid: '@azure/synapse-artifacts.NotebookCellOutputItem.outputType|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Execution, display, or stream outputs.
+    fullName: outputType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'outputType: CellOutputType'
+      return:
+        description: ''
+        type: <xref uid="@azure/synapse-artifacts.CellOutputType|beta" />
+  - name: text
+    uid: '@azure/synapse-artifacts.NotebookCellOutputItem.text|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: >-
+      For output_type=stream, the stream's text output, represented as a string
+      or an array of strings.
+    fullName: text
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'text?: any'
+      return:
+        description: ''
+        type: any

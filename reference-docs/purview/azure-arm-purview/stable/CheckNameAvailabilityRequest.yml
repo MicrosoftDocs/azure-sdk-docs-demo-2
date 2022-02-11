@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: CheckNameAvailabilityRequest
+uid: '@azure/arm-purview.CheckNameAvailabilityRequest|stable'
+package: '@azure/arm-purview|stable'
+summary: The request payload for CheckNameAvailability API
+fullName: CheckNameAvailabilityRequest
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: name
+    uid: '@azure/arm-purview.CheckNameAvailabilityRequest.name|stable'
+    package: '@azure/arm-purview|stable'
+    summary: Resource name to verify for availability
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: type
+    uid: '@azure/arm-purview.CheckNameAvailabilityRequest.type|stable'
+    package: '@azure/arm-purview|stable'
+    summary: Fully qualified resource type which includes provider namespace
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

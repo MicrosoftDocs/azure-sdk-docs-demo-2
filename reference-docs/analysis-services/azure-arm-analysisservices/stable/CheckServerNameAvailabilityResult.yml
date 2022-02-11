@@ -1,0 +1,53 @@
+### YamlMime:TSType
+name: CheckServerNameAvailabilityResult
+uid: '@azure/arm-analysisservices.CheckServerNameAvailabilityResult|stable'
+package: '@azure/arm-analysisservices|stable'
+summary: The checking result of server name availability.
+fullName: CheckServerNameAvailabilityResult
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: message
+    uid: >-
+      @azure/arm-analysisservices.CheckServerNameAvailabilityResult.message|stable
+    package: '@azure/arm-analysisservices|stable'
+    summary: The detailed message of the request unavailability.
+    fullName: message
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'message?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: nameAvailable
+    uid: >-
+      @azure/arm-analysisservices.CheckServerNameAvailabilityResult.nameAvailable|stable
+    package: '@azure/arm-analysisservices|stable'
+    summary: Indicator of available of the server name.
+    fullName: nameAvailable
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nameAvailable?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true
+  - name: reason
+    uid: >-
+      @azure/arm-analysisservices.CheckServerNameAvailabilityResult.reason|stable
+    package: '@azure/arm-analysisservices|stable'
+    summary: The reason of unavailability.
+    fullName: reason
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'reason?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

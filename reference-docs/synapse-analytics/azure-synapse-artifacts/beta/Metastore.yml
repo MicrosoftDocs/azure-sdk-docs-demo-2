@@ -1,0 +1,129 @@
+### YamlMime:TSType
+name: Metastore
+uid: '@azure/synapse-artifacts.Metastore|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: Interface representing a Metastore.
+fullName: Metastore
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: delete(string, MetastoreDeleteOptionalParams)
+    uid: '@azure/synapse-artifacts.Metastore.delete|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Remove files in Syms
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function delete(id: string, options?: MetastoreDeleteOptionalParams):
+        Promise<void>
+      parameters:
+        - id: id
+          type: string
+          description: ''
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-artifacts.MetastoreDeleteOptionalParams|beta" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      getDatabaseOperations(string,
+      MetastoreGetDatabaseOperationsOptionalParams)
+    uid: '@azure/synapse-artifacts.Metastore.getDatabaseOperations|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Gets status of the database
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getDatabaseOperations(id: string, options?:
+        MetastoreGetDatabaseOperationsOptionalParams):
+        Promise<MetastoreGetDatabaseOperationsResponse>
+      parameters:
+        - id: id
+          type: string
+          description: ''
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-artifacts.MetastoreGetDatabaseOperationsOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/synapse-artifacts.MetastoreGetDatabaseOperationsResponse|beta"
+          />&gt;
+  - name: register(string, MetastoreRegisterObject, MetastoreRegisterOptionalParams)
+    uid: '@azure/synapse-artifacts.Metastore.register|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Register files in Syms
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function register(id: string, registerBody: MetastoreRegisterObject,
+        options?: MetastoreRegisterOptionalParams):
+        Promise<MetastoreRegisterResponse>
+      parameters:
+        - id: id
+          type: string
+          description: >-
+            The name of the database to be created. The name can contain only
+            alphanumeric characters
+                      and should not exceed 24 characters
+        - id: registerBody
+          type: <xref uid="@azure/synapse-artifacts.MetastoreRegisterObject|beta" />
+          description: The body for the register request
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-artifacts.MetastoreRegisterOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/synapse-artifacts.MetastoreRegisterResponse|beta" />&gt;
+  - name: update(string, MetastoreUpdateObject, MetastoreUpdateOptionalParams)
+    uid: '@azure/synapse-artifacts.Metastore.update|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Update files in Syms
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function update(id: string, updateBody: MetastoreUpdateObject, options?:
+        MetastoreUpdateOptionalParams): Promise<MetastoreUpdateResponse>
+      parameters:
+        - id: id
+          type: string
+          description: The name of the database to be updated
+        - id: updateBody
+          type: <xref uid="@azure/synapse-artifacts.MetastoreUpdateObject|beta" />
+          description: The body for the update request
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-artifacts.MetastoreUpdateOptionalParams|beta" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/synapse-artifacts.MetastoreUpdateResponse|beta" />&gt;

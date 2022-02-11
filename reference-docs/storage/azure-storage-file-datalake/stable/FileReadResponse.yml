@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: FileReadResponse
+uid: '@azure/storage-file-datalake.FileReadResponse|stable'
+package: '@azure/storage-file-datalake|stable'
+summary: ''
+fullName: FileReadResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type FileReadResponse = FileReadHeaders & { _response: HttpResponse & {
+  parsedHeaders: FileReadHeaders }, contentAsBlob?: Promise<Blob>,
+  readableStreamBody?: ReadableStream }

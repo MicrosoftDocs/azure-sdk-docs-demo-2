@@ -1,0 +1,207 @@
+### YamlMime:TSPackage
+uid: '@azure/cognitiveservices-customvision-training|stable'
+name: '@azure/cognitiveservices-customvision-training (5.2.0 - Stable)'
+summary: ''
+type: package
+interfaces:
+  - '@azure/cognitiveservices-customvision-training.BoundingBox|stable'
+  - '@azure/cognitiveservices-customvision-training.CreateProjectOptions|stable'
+  - '@azure/cognitiveservices-customvision-training.CustomBaseModelInfo|stable'
+  - '@azure/cognitiveservices-customvision-training.CustomVisionError|stable'
+  - '@azure/cognitiveservices-customvision-training.Domain|stable'
+  - '@azure/cognitiveservices-customvision-training.ExportModel|stable'
+  - '@azure/cognitiveservices-customvision-training.Image|stable'
+  - '@azure/cognitiveservices-customvision-training.ImageCreateResult|stable'
+  - '@azure/cognitiveservices-customvision-training.ImageCreateSummary|stable'
+  - '@azure/cognitiveservices-customvision-training.ImageFileCreateBatch|stable'
+  - '@azure/cognitiveservices-customvision-training.ImageFileCreateEntry|stable'
+  - '@azure/cognitiveservices-customvision-training.ImageIdCreateBatch|stable'
+  - '@azure/cognitiveservices-customvision-training.ImageIdCreateEntry|stable'
+  - >-
+    @azure/cognitiveservices-customvision-training.ImageMetadataUpdateEntry|stable
+  - >-
+    @azure/cognitiveservices-customvision-training.ImageMetadataUpdateSummary|stable
+  - '@azure/cognitiveservices-customvision-training.ImagePerformance|stable'
+  - '@azure/cognitiveservices-customvision-training.ImagePrediction|stable'
+  - >-
+    @azure/cognitiveservices-customvision-training.ImageProcessingSettings|stable
+  - '@azure/cognitiveservices-customvision-training.ImageRegion|stable'
+  - '@azure/cognitiveservices-customvision-training.ImageRegionCreateBatch|stable'
+  - '@azure/cognitiveservices-customvision-training.ImageRegionCreateEntry|stable'
+  - >-
+    @azure/cognitiveservices-customvision-training.ImageRegionCreateResult|stable
+  - >-
+    @azure/cognitiveservices-customvision-training.ImageRegionCreateSummary|stable
+  - '@azure/cognitiveservices-customvision-training.ImageRegionProposal|stable'
+  - '@azure/cognitiveservices-customvision-training.ImageTag|stable'
+  - '@azure/cognitiveservices-customvision-training.ImageTagCreateBatch|stable'
+  - '@azure/cognitiveservices-customvision-training.ImageTagCreateEntry|stable'
+  - '@azure/cognitiveservices-customvision-training.ImageTagCreateSummary|stable'
+  - '@azure/cognitiveservices-customvision-training.ImageUrl|stable'
+  - '@azure/cognitiveservices-customvision-training.ImageUrlCreateBatch|stable'
+  - '@azure/cognitiveservices-customvision-training.ImageUrlCreateEntry|stable'
+  - '@azure/cognitiveservices-customvision-training.Iteration|stable'
+  - '@azure/cognitiveservices-customvision-training.IterationPerformance|stable'
+  - '@azure/cognitiveservices-customvision-training.ModelInformation|stable'
+  - '@azure/cognitiveservices-customvision-training.Prediction|stable'
+  - '@azure/cognitiveservices-customvision-training.PredictionQueryResult|stable'
+  - '@azure/cognitiveservices-customvision-training.PredictionQueryTag|stable'
+  - '@azure/cognitiveservices-customvision-training.PredictionQueryToken|stable'
+  - '@azure/cognitiveservices-customvision-training.Project|stable'
+  - '@azure/cognitiveservices-customvision-training.ProjectExport|stable'
+  - '@azure/cognitiveservices-customvision-training.ProjectSettings|stable'
+  - '@azure/cognitiveservices-customvision-training.Region|stable'
+  - '@azure/cognitiveservices-customvision-training.RegionProposal|stable'
+  - '@azure/cognitiveservices-customvision-training.StoredImagePrediction|stable'
+  - >-
+    @azure/cognitiveservices-customvision-training.StoredSuggestedTagAndRegion|stable
+  - '@azure/cognitiveservices-customvision-training.SuggestedTagAndRegion|stable'
+  - >-
+    @azure/cognitiveservices-customvision-training.SuggestedTagAndRegionQuery|stable
+  - >-
+    @azure/cognitiveservices-customvision-training.SuggestedTagAndRegionQueryToken|stable
+  - '@azure/cognitiveservices-customvision-training.Tag|stable'
+  - '@azure/cognitiveservices-customvision-training.TagFilter|stable'
+  - '@azure/cognitiveservices-customvision-training.TagPerformance|stable'
+  - >-
+    @azure/cognitiveservices-customvision-training.TrainingAPIClientCreateImagesFromDataOptionalParams|stable
+  - >-
+    @azure/cognitiveservices-customvision-training.TrainingAPIClientCreateProjectOptionalParams|stable
+  - >-
+    @azure/cognitiveservices-customvision-training.TrainingAPIClientCreateTagOptionalParams|stable
+  - >-
+    @azure/cognitiveservices-customvision-training.TrainingAPIClientDeleteImagesOptionalParams|stable
+  - >-
+    @azure/cognitiveservices-customvision-training.TrainingAPIClientExportIterationOptionalParams|stable
+  - >-
+    @azure/cognitiveservices-customvision-training.TrainingAPIClientGetImageCountOptionalParams|stable
+  - >-
+    @azure/cognitiveservices-customvision-training.TrainingAPIClientGetImagePerformanceCountOptionalParams|stable
+  - >-
+    @azure/cognitiveservices-customvision-training.TrainingAPIClientGetImagePerformancesOptionalParams|stable
+  - >-
+    @azure/cognitiveservices-customvision-training.TrainingAPIClientGetImagesByIdsOptionalParams|stable
+  - >-
+    @azure/cognitiveservices-customvision-training.TrainingAPIClientGetImagesOptionalParams|stable
+  - >-
+    @azure/cognitiveservices-customvision-training.TrainingAPIClientGetIterationPerformanceOptionalParams|stable
+  - >-
+    @azure/cognitiveservices-customvision-training.TrainingAPIClientGetTagOptionalParams|stable
+  - >-
+    @azure/cognitiveservices-customvision-training.TrainingAPIClientGetTaggedImageCountOptionalParams|stable
+  - >-
+    @azure/cognitiveservices-customvision-training.TrainingAPIClientGetTaggedImagesOptionalParams|stable
+  - >-
+    @azure/cognitiveservices-customvision-training.TrainingAPIClientGetTagsOptionalParams|stable
+  - >-
+    @azure/cognitiveservices-customvision-training.TrainingAPIClientGetUntaggedImageCountOptionalParams|stable
+  - >-
+    @azure/cognitiveservices-customvision-training.TrainingAPIClientGetUntaggedImagesOptionalParams|stable
+  - >-
+    @azure/cognitiveservices-customvision-training.TrainingAPIClientImportProjectOptionalParams|stable
+  - >-
+    @azure/cognitiveservices-customvision-training.TrainingAPIClientPublishIterationOptionalParams|stable
+  - >-
+    @azure/cognitiveservices-customvision-training.TrainingAPIClientQuickTestImageOptionalParams|stable
+  - >-
+    @azure/cognitiveservices-customvision-training.TrainingAPIClientQuickTestImageUrlOptionalParams|stable
+  - >-
+    @azure/cognitiveservices-customvision-training.TrainingAPIClientTrainProjectOptionalParams|stable
+  - '@azure/cognitiveservices-customvision-training.TrainingParameters|stable'
+typeAliases:
+  - '@azure/cognitiveservices-customvision-training.ClassificationType|stable'
+  - '@azure/cognitiveservices-customvision-training.Classifier|stable'
+  - >-
+    @azure/cognitiveservices-customvision-training.CreateImageRegionsResponse|stable
+  - >-
+    @azure/cognitiveservices-customvision-training.CreateImageTagsResponse|stable
+  - >-
+    @azure/cognitiveservices-customvision-training.CreateImagesFromDataResponse|stable
+  - >-
+    @azure/cognitiveservices-customvision-training.CreateImagesFromFilesResponse|stable
+  - >-
+    @azure/cognitiveservices-customvision-training.CreateImagesFromPredictionsResponse|stable
+  - >-
+    @azure/cognitiveservices-customvision-training.CreateImagesFromUrlsResponse|stable
+  - '@azure/cognitiveservices-customvision-training.CreateProjectResponse|stable'
+  - '@azure/cognitiveservices-customvision-training.CreateTagResponse|stable'
+  - '@azure/cognitiveservices-customvision-training.CustomVisionErrorCodes|stable'
+  - '@azure/cognitiveservices-customvision-training.DomainType|stable'
+  - '@azure/cognitiveservices-customvision-training.ExportFlavor|stable'
+  - >-
+    @azure/cognitiveservices-customvision-training.ExportIterationResponse|stable
+  - '@azure/cognitiveservices-customvision-training.ExportPlatform|stable'
+  - '@azure/cognitiveservices-customvision-training.ExportProjectResponse|stable'
+  - '@azure/cognitiveservices-customvision-training.ExportStatus|stable'
+  - '@azure/cognitiveservices-customvision-training.Flavor|stable'
+  - '@azure/cognitiveservices-customvision-training.GetArtifactResponse|stable'
+  - '@azure/cognitiveservices-customvision-training.GetDomainResponse|stable'
+  - '@azure/cognitiveservices-customvision-training.GetDomainsResponse|stable'
+  - '@azure/cognitiveservices-customvision-training.GetExportsResponse|stable'
+  - '@azure/cognitiveservices-customvision-training.GetImageCountResponse|stable'
+  - >-
+    @azure/cognitiveservices-customvision-training.GetImagePerformanceCountResponse|stable
+  - >-
+    @azure/cognitiveservices-customvision-training.GetImagePerformancesResponse|stable
+  - >-
+    @azure/cognitiveservices-customvision-training.GetImageRegionProposalsResponse|stable
+  - '@azure/cognitiveservices-customvision-training.GetImagesByIdsResponse|stable'
+  - '@azure/cognitiveservices-customvision-training.GetImagesResponse|stable'
+  - >-
+    @azure/cognitiveservices-customvision-training.GetIterationPerformanceResponse|stable
+  - '@azure/cognitiveservices-customvision-training.GetIterationResponse|stable'
+  - '@azure/cognitiveservices-customvision-training.GetIterationsResponse|stable'
+  - '@azure/cognitiveservices-customvision-training.GetProjectResponse|stable'
+  - '@azure/cognitiveservices-customvision-training.GetProjectsResponse|stable'
+  - '@azure/cognitiveservices-customvision-training.GetTagResponse|stable'
+  - >-
+    @azure/cognitiveservices-customvision-training.GetTaggedImageCountResponse|stable
+  - >-
+    @azure/cognitiveservices-customvision-training.GetTaggedImagesResponse|stable
+  - '@azure/cognitiveservices-customvision-training.GetTagsResponse|stable'
+  - >-
+    @azure/cognitiveservices-customvision-training.GetUntaggedImageCountResponse|stable
+  - >-
+    @azure/cognitiveservices-customvision-training.GetUntaggedImagesResponse|stable
+  - '@azure/cognitiveservices-customvision-training.ImageCreateStatus|stable'
+  - >-
+    @azure/cognitiveservices-customvision-training.ImageMetadataUpdateStatus|stable
+  - '@azure/cognitiveservices-customvision-training.ImportProjectResponse|stable'
+  - '@azure/cognitiveservices-customvision-training.OrderBy|stable'
+  - '@azure/cognitiveservices-customvision-training.OrderBy1|stable'
+  - '@azure/cognitiveservices-customvision-training.OrderBy2|stable'
+  - '@azure/cognitiveservices-customvision-training.OrderBy3|stable'
+  - '@azure/cognitiveservices-customvision-training.OrderBy4|stable'
+  - '@azure/cognitiveservices-customvision-training.Platform|stable'
+  - '@azure/cognitiveservices-customvision-training.ProjectStatus|stable'
+  - >-
+    @azure/cognitiveservices-customvision-training.PublishIterationResponse|stable
+  - >-
+    @azure/cognitiveservices-customvision-training.QueryPredictionsResponse|stable
+  - >-
+    @azure/cognitiveservices-customvision-training.QuerySuggestedImageCountResponse|stable
+  - >-
+    @azure/cognitiveservices-customvision-training.QuerySuggestedImagesResponse|stable
+  - '@azure/cognitiveservices-customvision-training.QuickTestImageResponse|stable'
+  - >-
+    @azure/cognitiveservices-customvision-training.QuickTestImageUrlResponse|stable
+  - '@azure/cognitiveservices-customvision-training.SortBy|stable'
+  - >-
+    @azure/cognitiveservices-customvision-training.SuggestTagsAndRegionsResponse|stable
+  - '@azure/cognitiveservices-customvision-training.TagType|stable'
+  - '@azure/cognitiveservices-customvision-training.TaggingStatus|stable'
+  - '@azure/cognitiveservices-customvision-training.TaggingStatus1|stable'
+  - '@azure/cognitiveservices-customvision-training.TrainProjectResponse|stable'
+  - '@azure/cognitiveservices-customvision-training.TrainingType|stable'
+  - '@azure/cognitiveservices-customvision-training.TrainingType1|stable'
+  - '@azure/cognitiveservices-customvision-training.Type|stable'
+  - >-
+    @azure/cognitiveservices-customvision-training.UpdateImageMetadataResponse|stable
+  - >-
+    @azure/cognitiveservices-customvision-training.UpdateIterationResponse|stable
+  - '@azure/cognitiveservices-customvision-training.UpdateProjectResponse|stable'
+  - '@azure/cognitiveservices-customvision-training.UpdateTagResponse|stable'
+classes:
+  - '@azure/cognitiveservices-customvision-training.TrainingAPIClient|stable'
+  - >-
+    @azure/cognitiveservices-customvision-training.TrainingAPIClientContext|stable

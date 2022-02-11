@@ -1,0 +1,260 @@
+### YamlMime:TSType
+name: ApiVersionSet
+uid: '@azure/arm-apimanagement.ApiVersionSet|stable'
+package: '@azure/arm-apimanagement|stable'
+summary: Interface representing a ApiVersionSet.
+fullName: ApiVersionSet
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      createOrUpdate(string, string, string, ApiVersionSetContract,
+      ApiVersionSetCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-apimanagement.ApiVersionSet.createOrUpdate|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: Creates or Updates a Api Version Set.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, serviceName: string,
+        versionSetId: string, parameters: ApiVersionSetContract, options?:
+        ApiVersionSetCreateOrUpdateOptionalParams):
+        Promise<ApiVersionSetCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: serviceName
+          type: string
+          description: The name of the API Management service.
+        - id: versionSetId
+          type: string
+          description: >-
+            Api Version Set identifier. Must be unique in the current API
+            Management service
+                                instance.
+        - id: parameters
+          type: <xref uid="@azure/arm-apimanagement.ApiVersionSetContract|stable" />
+          description: Create or update parameters.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-apimanagement.ApiVersionSetCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-apimanagement.ApiVersionSetCreateOrUpdateResponse|stable"
+          />&gt;
+  - name: delete(string, string, string, string, ApiVersionSetDeleteOptionalParams)
+    uid: '@azure/arm-apimanagement.ApiVersionSet.delete|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: Deletes specific Api Version Set.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function delete(resourceGroupName: string, serviceName: string,
+        versionSetId: string, ifMatch: string, options?:
+        ApiVersionSetDeleteOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: serviceName
+          type: string
+          description: The name of the API Management service.
+        - id: versionSetId
+          type: string
+          description: >-
+            Api Version Set identifier. Must be unique in the current API
+            Management service
+                                instance.
+        - id: ifMatch
+          type: string
+          description: >-
+            ETag of the Entity. ETag should match the current entity state from
+            the header
+                           response of the GET request or it should be * for unconditional update.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-apimanagement.ApiVersionSetDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: get(string, string, string, ApiVersionSetGetOptionalParams)
+    uid: '@azure/arm-apimanagement.ApiVersionSet.get|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: Gets the details of the Api Version Set specified by its identifier.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, serviceName: string,
+        versionSetId: string, options?: ApiVersionSetGetOptionalParams):
+        Promise<ApiVersionSetGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: serviceName
+          type: string
+          description: The name of the API Management service.
+        - id: versionSetId
+          type: string
+          description: >-
+            Api Version Set identifier. Must be unique in the current API
+            Management service
+                                instance.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-apimanagement.ApiVersionSetGetOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-apimanagement.ApiVersionSetGetResponse|stable" />&gt;
+  - name: >-
+      getEntityTag(string, string, string,
+      ApiVersionSetGetEntityTagOptionalParams)
+    uid: '@azure/arm-apimanagement.ApiVersionSet.getEntityTag|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: >-
+      Gets the entity state (Etag) version of the Api Version Set specified by
+      its identifier.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getEntityTag(resourceGroupName: string, serviceName: string,
+        versionSetId: string, options?:
+        ApiVersionSetGetEntityTagOptionalParams):
+        Promise<ApiVersionSetGetEntityTagResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: serviceName
+          type: string
+          description: The name of the API Management service.
+        - id: versionSetId
+          type: string
+          description: >-
+            Api Version Set identifier. Must be unique in the current API
+            Management service
+                                instance.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-apimanagement.ApiVersionSetGetEntityTagOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-apimanagement.ApiVersionSetGetEntityTagResponse|stable"
+          />&gt;
+  - name: listByService(string, string, ApiVersionSetListByServiceOptionalParams)
+    uid: '@azure/arm-apimanagement.ApiVersionSet.listByService|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: Lists a collection of API Version Sets in the specified service instance.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByService(resourceGroupName: string, serviceName: string,
+        options?: ApiVersionSetListByServiceOptionalParams):
+        PagedAsyncIterableIterator<ApiVersionSetContract>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: serviceName
+          type: string
+          description: The name of the API Management service.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-apimanagement.ApiVersionSetListByServiceOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-apimanagement.ApiVersionSetContract|stable" />&gt;
+  - name: >-
+      update(string, string, string, string, ApiVersionSetUpdateParameters,
+      ApiVersionSetUpdateOptionalParams)
+    uid: '@azure/arm-apimanagement.ApiVersionSet.update|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: Updates the details of the Api VersionSet specified by its identifier.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function update(resourceGroupName: string, serviceName: string,
+        versionSetId: string, ifMatch: string, parameters:
+        ApiVersionSetUpdateParameters, options?:
+        ApiVersionSetUpdateOptionalParams): Promise<ApiVersionSetUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: serviceName
+          type: string
+          description: The name of the API Management service.
+        - id: versionSetId
+          type: string
+          description: >-
+            Api Version Set identifier. Must be unique in the current API
+            Management service
+                                instance.
+        - id: ifMatch
+          type: string
+          description: >-
+            ETag of the Entity. ETag should match the current entity state from
+            the header
+                           response of the GET request or it should be * for unconditional update.
+        - id: parameters
+          type: >-
+            <xref
+            uid="@azure/arm-apimanagement.ApiVersionSetUpdateParameters|stable"
+            />
+          description: Update parameters.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-apimanagement.ApiVersionSetUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-apimanagement.ApiVersionSetUpdateResponse|stable"
+          />&gt;

@@ -1,0 +1,52 @@
+### YamlMime:TSType
+name: ResourceSetRuleConfigList
+uid: '@azure-rest/purview-account.ResourceSetRuleConfigList|beta'
+package: '@azure-rest/purview-account|beta'
+summary: ''
+fullName: ResourceSetRuleConfigList
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: count
+    uid: '@azure-rest/purview-account.ResourceSetRuleConfigList.count|beta'
+    package: '@azure-rest/purview-account|beta'
+    summary: Total item count.
+    fullName: count
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'count?: number'
+      return:
+        description: ''
+        type: number
+  - name: nextLink
+    uid: '@azure-rest/purview-account.ResourceSetRuleConfigList.nextLink|beta'
+    package: '@azure-rest/purview-account|beta'
+    summary: The Url of next result page.
+    fullName: nextLink
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nextLink?: string'
+      return:
+        description: ''
+        type: string
+  - name: value
+    uid: '@azure-rest/purview-account.ResourceSetRuleConfigList.value|beta'
+    package: '@azure-rest/purview-account|beta'
+    summary: Collection of items of type results.
+    fullName: value
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value: Array<ResourceSetRuleConfig>'
+      return:
+        description: ''
+        type: >-
+          Array&lt;<xref
+          uid="@azure-rest/purview-account.ResourceSetRuleConfig|beta" />&gt;

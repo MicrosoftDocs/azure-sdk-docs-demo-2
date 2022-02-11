@@ -1,0 +1,269 @@
+### YamlMime:TSType
+name: PrivateEndpointConnections
+uid: '@azure/arm-appconfiguration.PrivateEndpointConnections|beta'
+package: '@azure/arm-appconfiguration|beta'
+summary: Interface representing a PrivateEndpointConnections.
+fullName: PrivateEndpointConnections
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      beginCreateOrUpdate(string, string, string, PrivateEndpointConnection,
+      PrivateEndpointConnectionsCreateOrUpdateOptionalParams)
+    uid: >-
+      @azure/arm-appconfiguration.PrivateEndpointConnections.beginCreateOrUpdate|beta
+    package: '@azure/arm-appconfiguration|beta'
+    summary: >-
+      Update the state of the specified private endpoint connection associated
+      with the configuration
+
+      store.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string, configStoreName:
+        string, privateEndpointConnectionName: string,
+        privateEndpointConnection: PrivateEndpointConnection, options?:
+        PrivateEndpointConnectionsCreateOrUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<PrivateEndpointConnectionsCreateOrUpdateResponse>,
+        PrivateEndpointConnectionsCreateOrUpdateResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: configStoreName
+          type: string
+          description: The name of the configuration store.
+        - id: privateEndpointConnectionName
+          type: string
+          description: Private endpoint connection name
+        - id: privateEndpointConnection
+          type: >-
+            <xref
+            uid="@azure/arm-appconfiguration.PrivateEndpointConnection|beta" />
+          description: The private endpoint connection properties.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appconfiguration.PrivateEndpointConnectionsCreateOrUpdateOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-appconfiguration.PrivateEndpointConnectionsCreateOrUpdateResponse|beta"
+          />&gt;, <xref
+          uid="@azure/arm-appconfiguration.PrivateEndpointConnectionsCreateOrUpdateResponse|beta"
+          />&gt;&gt;
+  - name: >-
+      beginCreateOrUpdateAndWait(string, string, string,
+      PrivateEndpointConnection,
+      PrivateEndpointConnectionsCreateOrUpdateOptionalParams)
+    uid: >-
+      @azure/arm-appconfiguration.PrivateEndpointConnections.beginCreateOrUpdateAndWait|beta
+    package: '@azure/arm-appconfiguration|beta'
+    summary: >-
+      Update the state of the specified private endpoint connection associated
+      with the configuration
+
+      store.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdateAndWait(resourceGroupName: string,
+        configStoreName: string, privateEndpointConnectionName: string,
+        privateEndpointConnection: PrivateEndpointConnection, options?:
+        PrivateEndpointConnectionsCreateOrUpdateOptionalParams):
+        Promise<PrivateEndpointConnectionsCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: configStoreName
+          type: string
+          description: The name of the configuration store.
+        - id: privateEndpointConnectionName
+          type: string
+          description: Private endpoint connection name
+        - id: privateEndpointConnection
+          type: >-
+            <xref
+            uid="@azure/arm-appconfiguration.PrivateEndpointConnection|beta" />
+          description: The private endpoint connection properties.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appconfiguration.PrivateEndpointConnectionsCreateOrUpdateOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appconfiguration.PrivateEndpointConnectionsCreateOrUpdateResponse|beta"
+          />&gt;
+  - name: >-
+      beginDelete(string, string, string,
+      PrivateEndpointConnectionsDeleteOptionalParams)
+    uid: '@azure/arm-appconfiguration.PrivateEndpointConnections.beginDelete|beta'
+    package: '@azure/arm-appconfiguration|beta'
+    summary: Deletes a private endpoint connection.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDelete(resourceGroupName: string, configStoreName: string,
+        privateEndpointConnectionName: string, options?:
+        PrivateEndpointConnectionsDeleteOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: configStoreName
+          type: string
+          description: The name of the configuration store.
+        - id: privateEndpointConnectionName
+          type: string
+          description: Private endpoint connection name
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appconfiguration.PrivateEndpointConnectionsDeleteOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: >-
+      beginDeleteAndWait(string, string, string,
+      PrivateEndpointConnectionsDeleteOptionalParams)
+    uid: >-
+      @azure/arm-appconfiguration.PrivateEndpointConnections.beginDeleteAndWait|beta
+    package: '@azure/arm-appconfiguration|beta'
+    summary: Deletes a private endpoint connection.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteAndWait(resourceGroupName: string, configStoreName:
+        string, privateEndpointConnectionName: string, options?:
+        PrivateEndpointConnectionsDeleteOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: configStoreName
+          type: string
+          description: The name of the configuration store.
+        - id: privateEndpointConnectionName
+          type: string
+          description: Private endpoint connection name
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appconfiguration.PrivateEndpointConnectionsDeleteOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: get(string, string, string, PrivateEndpointConnectionsGetOptionalParams)
+    uid: '@azure/arm-appconfiguration.PrivateEndpointConnections.get|beta'
+    package: '@azure/arm-appconfiguration|beta'
+    summary: >-
+      Gets the specified private endpoint connection associated with the
+      configuration store.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, configStoreName: string,
+        privateEndpointConnectionName: string, options?:
+        PrivateEndpointConnectionsGetOptionalParams):
+        Promise<PrivateEndpointConnectionsGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: configStoreName
+          type: string
+          description: The name of the configuration store.
+        - id: privateEndpointConnectionName
+          type: string
+          description: Private endpoint connection name
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appconfiguration.PrivateEndpointConnectionsGetOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appconfiguration.PrivateEndpointConnectionsGetResponse|beta"
+          />&gt;
+  - name: >-
+      listByConfigurationStore(string, string,
+      PrivateEndpointConnectionsListByConfigurationStoreOptionalParams)
+    uid: >-
+      @azure/arm-appconfiguration.PrivateEndpointConnections.listByConfigurationStore|beta
+    package: '@azure/arm-appconfiguration|beta'
+    summary: Lists all private endpoint connections for a configuration store.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByConfigurationStore(resourceGroupName: string,
+        configStoreName: string, options?:
+        PrivateEndpointConnectionsListByConfigurationStoreOptionalParams):
+        PagedAsyncIterableIterator<PrivateEndpointConnection>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: configStoreName
+          type: string
+          description: The name of the configuration store.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appconfiguration.PrivateEndpointConnectionsListByConfigurationStoreOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appconfiguration.PrivateEndpointConnection|beta"
+          />&gt;

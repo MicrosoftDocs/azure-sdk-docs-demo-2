@@ -1,0 +1,67 @@
+### YamlMime:TSType
+name: ErrorResponseBody
+uid: '@azure/arm-containerregistry.ErrorResponseBody|stable'
+package: '@azure/arm-containerregistry|stable'
+summary: An error response from the Azure Container Registry service.
+fullName: ErrorResponseBody
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: code
+    uid: '@azure/arm-containerregistry.ErrorResponseBody.code|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: error code.
+    fullName: code
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'code: string'
+      return:
+        description: ''
+        type: string
+  - name: details
+    uid: '@azure/arm-containerregistry.ErrorResponseBody.details|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: >-
+      an array of additional nested error response info objects, as described by
+      this contract.
+    fullName: details
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'details?: InnerErrorDescription[]'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/arm-containerregistry.InnerErrorDescription|stable"
+          />[]
+  - name: message
+    uid: '@azure/arm-containerregistry.ErrorResponseBody.message|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: error message.
+    fullName: message
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'message: string'
+      return:
+        description: ''
+        type: string
+  - name: target
+    uid: '@azure/arm-containerregistry.ErrorResponseBody.target|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: target of the particular error.
+    fullName: target
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'target?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

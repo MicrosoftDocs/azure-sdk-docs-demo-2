@@ -1,0 +1,66 @@
+### YamlMime:TSType
+name: ContainerRegistryChartDeletedEventData
+uid: azure-eventgrid.ContainerRegistryChartDeletedEventData|legacy
+package: azure-eventgrid|legacy
+summary: ''
+fullName: ContainerRegistryChartDeletedEventData
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: action
+    uid: azure-eventgrid.ContainerRegistryChartDeletedEventData.action|legacy
+    package: azure-eventgrid|legacy
+    summary: ''
+    fullName: action
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'action?: string'
+      return:
+        description: ''
+        type: string
+  - name: id
+    uid: azure-eventgrid.ContainerRegistryChartDeletedEventData.id|legacy
+    package: azure-eventgrid|legacy
+    summary: ''
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: string'
+      return:
+        description: ''
+        type: string
+  - name: target
+    uid: azure-eventgrid.ContainerRegistryChartDeletedEventData.target|legacy
+    package: azure-eventgrid|legacy
+    summary: ''
+    fullName: target
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'target?: ContainerRegistryArtifactEventTarget'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="azure-eventgrid.ContainerRegistryArtifactEventTarget|legacy" />
+  - name: timestamp
+    uid: azure-eventgrid.ContainerRegistryChartDeletedEventData.timestamp|legacy
+    package: azure-eventgrid|legacy
+    summary: ''
+    fullName: timestamp
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'timestamp?: Date'
+      return:
+        description: ''
+        type: Date
+extends: <xref uid="azure-eventgrid.ContainerRegistryArtifactEventData|legacy" />

@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: LargePersonGroupGetResponse
+uid: '@azure/cognitiveservices-face.LargePersonGroupGetResponse|stable'
+package: '@azure/cognitiveservices-face|stable'
+summary: Contains response data for the get operation.
+fullName: LargePersonGroupGetResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type LargePersonGroupGetResponse = LargePersonGroup & { _response:
+  HttpResponse & { bodyAsText: string, parsedBody: LargePersonGroup } }

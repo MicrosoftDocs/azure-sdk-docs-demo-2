@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: X12AgreementContent
+uid: '@azure/arm-logic.X12AgreementContent|stable'
+package: '@azure/arm-logic|stable'
+summary: The X12 agreement content.
+fullName: X12AgreementContent
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: receiveAgreement
+    uid: '@azure/arm-logic.X12AgreementContent.receiveAgreement|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The X12 one-way receive agreement.
+    fullName: receiveAgreement
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'receiveAgreement: X12OneWayAgreement'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-logic.X12OneWayAgreement|stable" />
+  - name: sendAgreement
+    uid: '@azure/arm-logic.X12AgreementContent.sendAgreement|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The X12 one-way send agreement.
+    fullName: sendAgreement
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sendAgreement: X12OneWayAgreement'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-logic.X12OneWayAgreement|stable" />

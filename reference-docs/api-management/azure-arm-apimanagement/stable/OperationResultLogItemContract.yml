@@ -1,0 +1,50 @@
+### YamlMime:TSType
+name: OperationResultLogItemContract
+uid: '@azure/arm-apimanagement.OperationResultLogItemContract|stable'
+package: '@azure/arm-apimanagement|stable'
+summary: Log of the entity being created, updated or deleted.
+fullName: OperationResultLogItemContract
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: action
+    uid: '@azure/arm-apimanagement.OperationResultLogItemContract.action|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: Action like create/update/delete.
+    fullName: action
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'action?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: objectKey
+    uid: '@azure/arm-apimanagement.OperationResultLogItemContract.objectKey|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: Identifier of the entity being created/updated/deleted.
+    fullName: objectKey
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'objectKey?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: objectType
+    uid: '@azure/arm-apimanagement.OperationResultLogItemContract.objectType|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: The type of entity contract.
+    fullName: objectType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'objectType?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

@@ -1,0 +1,29 @@
+### YamlMime:TSEnum
+name: KnownBlobIndexerDataToExtract
+uid: '@azure/search-documents.KnownBlobIndexerDataToExtract|beta'
+package: '@azure/search-documents|beta'
+summary: >-
+  Known values of
+  <xref:@azure/search-documents.KnownBlobIndexerDataToExtract|beta> that the
+  service accepts.
+fullName: KnownBlobIndexerDataToExtract
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: AllMetadata
+    uid: '@azure/search-documents.KnownBlobIndexerDataToExtract.AllMetadata|beta'
+    package: '@azure/search-documents|beta'
+    summary: >-
+      Extracts metadata provided by the Azure blob storage subsystem and the
+      content-type specific metadata (for example, metadata unique to just .png
+      files are indexed).
+  - name: ContentAndMetadata
+    uid: >-
+      @azure/search-documents.KnownBlobIndexerDataToExtract.ContentAndMetadata|beta
+    package: '@azure/search-documents|beta'
+    summary: Extracts all metadata and textual content from each blob.
+  - name: StorageMetadata
+    uid: '@azure/search-documents.KnownBlobIndexerDataToExtract.StorageMetadata|beta'
+    package: '@azure/search-documents|beta'
+    summary: Indexes just the standard blob properties and user-specified metadata.

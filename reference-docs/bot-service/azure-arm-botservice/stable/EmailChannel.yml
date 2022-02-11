@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: EmailChannel
+uid: '@azure/arm-botservice.EmailChannel|stable'
+package: '@azure/arm-botservice|stable'
+summary: Email channel definition
+fullName: EmailChannel
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: channelName
+    uid: '@azure/arm-botservice.EmailChannel.channelName|stable'
+    package: '@azure/arm-botservice|stable'
+    summary: Polymorphic Discriminator
+    fullName: channelName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'channelName: "EmailChannel"'
+      return:
+        description: ''
+        type: '"EmailChannel"'
+  - name: properties
+    uid: '@azure/arm-botservice.EmailChannel.properties|stable'
+    package: '@azure/arm-botservice|stable'
+    summary: The set of properties specific to email channel resource
+    fullName: properties
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'properties?: EmailChannelProperties'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-botservice.EmailChannelProperties|stable" />

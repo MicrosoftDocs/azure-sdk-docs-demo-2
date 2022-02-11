@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: ClassifyImageUrlWithNoStoreResponse
+uid: >-
+  @azure/cognitiveservices-customvision-prediction.ClassifyImageUrlWithNoStoreResponse|stable
+package: '@azure/cognitiveservices-customvision-prediction|stable'
+summary: Contains response data for the classifyImageUrlWithNoStore operation.
+fullName: ClassifyImageUrlWithNoStoreResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type ClassifyImageUrlWithNoStoreResponse = ImagePrediction & { _response:
+  HttpResponse & { bodyAsText: string, parsedBody: ImagePrediction } }

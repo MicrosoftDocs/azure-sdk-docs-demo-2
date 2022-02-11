@@ -1,0 +1,76 @@
+### YamlMime:TSType
+name: X509CertificateProperties
+uid: azure-keyvault.X509CertificateProperties|legacy
+package: azure-keyvault|legacy
+summary: ''
+fullName: X509CertificateProperties
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: ekus
+    uid: azure-keyvault.X509CertificateProperties.ekus|legacy
+    package: azure-keyvault|legacy
+    summary: ''
+    fullName: ekus
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ekus?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: keyUsage
+    uid: azure-keyvault.X509CertificateProperties.keyUsage|legacy
+    package: azure-keyvault|legacy
+    summary: ''
+    fullName: keyUsage
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'keyUsage?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: subject
+    uid: azure-keyvault.X509CertificateProperties.subject|legacy
+    package: azure-keyvault|legacy
+    summary: ''
+    fullName: subject
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'subject?: string'
+      return:
+        description: ''
+        type: string
+  - name: subjectAlternativeNames
+    uid: azure-keyvault.X509CertificateProperties.subjectAlternativeNames|legacy
+    package: azure-keyvault|legacy
+    summary: ''
+    fullName: subjectAlternativeNames
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'subjectAlternativeNames?: SubjectAlternativeNames'
+      return:
+        description: ''
+        type: <xref uid="azure-keyvault.SubjectAlternativeNames|legacy" />
+  - name: validityInMonths
+    uid: azure-keyvault.X509CertificateProperties.validityInMonths|legacy
+    package: azure-keyvault|legacy
+    summary: ''
+    fullName: validityInMonths
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'validityInMonths?: number'
+      return:
+        description: ''
+        type: number

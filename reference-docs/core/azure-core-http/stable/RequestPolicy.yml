@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: RequestPolicy
+uid: '@azure/core-http.RequestPolicy|stable'
+package: '@azure/core-http|stable'
+summary: The underlying structure of a request policy.
+fullName: RequestPolicy
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: sendRequest(WebResourceLike)
+    uid: '@azure/core-http.RequestPolicy.sendRequest|stable'
+    package: '@azure/core-http|stable'
+    summary: >-
+      A method that retrieves an
+      <xref:@azure/core-http.HttpOperationResponse|stable> given a
+      <xref:@azure/core-http.WebResourceLike|stable> describing the request to
+      be made.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function sendRequest(httpRequest: WebResourceLike):
+        Promise<HttpOperationResponse>
+      parameters:
+        - id: httpRequest
+          type: <xref uid="@azure/core-http.WebResourceLike|stable" />
+          description: >
+            <xref:@azure/core-http.WebResourceLike|stable> describing the
+            request to be made.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref uid="@azure/core-http.HttpOperationResponse|stable"
+          />&gt;

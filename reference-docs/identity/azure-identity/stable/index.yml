@@ -1,0 +1,199 @@
+### YamlMime:TSPackage
+uid: '@azure/identity|stable'
+name: '@azure/identity (2.0.2 - Stable)'
+summary: ''
+type: package
+enums:
+  - '@azure/identity.AzureAuthorityHosts|stable'
+classes:
+  - '@azure/identity.AggregateAuthenticationError|stable'
+  - '@azure/identity.AuthenticationError|stable'
+  - '@azure/identity.AuthenticationRequiredError|stable'
+  - '@azure/identity.AuthorizationCodeCredential|stable'
+  - '@azure/identity.AzureCliCredential|stable'
+  - '@azure/identity.AzurePowerShellCredential|stable'
+  - '@azure/identity.ChainedTokenCredential|stable'
+  - '@azure/identity.ClientCertificateCredential|stable'
+  - '@azure/identity.ClientSecretCredential|stable'
+  - '@azure/identity.CredentialUnavailableError|stable'
+  - '@azure/identity.DefaultAzureCredential|stable'
+  - '@azure/identity.DeviceCodeCredential|stable'
+  - '@azure/identity.EnvironmentCredential|stable'
+  - '@azure/identity.InteractiveBrowserCredential|stable'
+  - '@azure/identity.ManagedIdentityCredential|stable'
+  - '@azure/identity.OnBehalfOfCredential|stable'
+  - '@azure/identity.UsernamePasswordCredential|stable'
+  - '@azure/identity.VisualStudioCodeCredential|stable'
+interfaces:
+  - '@azure/identity.AuthenticationRecord|stable'
+  - '@azure/identity.AuthenticationRequiredErrorOptions|stable'
+  - '@azure/identity.AzureCliCredentialOptions|stable'
+  - '@azure/identity.AzurePowerShellCredentialOptions|stable'
+  - '@azure/identity.ClientCertificateCredentialOptions|stable'
+  - '@azure/identity.ClientSecretCredentialOptions|stable'
+  - '@azure/identity.CredentialPersistenceOptions|stable'
+  - '@azure/identity.DefaultAzureCredentialOptions|stable'
+  - '@azure/identity.DeviceCodeCredentialOptions|stable'
+  - '@azure/identity.DeviceCodeInfo|stable'
+  - '@azure/identity.EnvironmentCredentialOptions|stable'
+  - '@azure/identity.ErrorResponse|stable'
+  - '@azure/identity.InteractiveBrowserCredentialInBrowserOptions|stable'
+  - '@azure/identity.InteractiveBrowserCredentialNodeOptions|stable'
+  - '@azure/identity.InteractiveCredentialOptions|stable'
+  - '@azure/identity.OnBehalfOfCredentialCertificateOptions|stable'
+  - '@azure/identity.OnBehalfOfCredentialSecretOptions|stable'
+  - '@azure/identity.TokenCachePersistenceOptions|stable'
+  - '@azure/identity.TokenCredentialOptions|stable'
+  - '@azure/identity.UsernamePasswordCredentialOptions|stable'
+  - '@azure/identity.VisualStudioCodeCredentialOptions|stable'
+typeAliases:
+  - '@azure/identity.BrowserLoginStyle|stable'
+  - '@azure/identity.ClientCertificateCredentialPEMConfiguration|stable'
+  - '@azure/identity.DeviceCodePromptCallback|stable'
+  - '@azure/identity.IdentityPlugin|stable'
+  - '@azure/identity.OnBehalfOfCredentialOptions|stable'
+functions:
+  - name: deserializeAuthenticationRecord(string)
+    uid: '@azure/identity.deserializeAuthenticationRecord|stable'
+    package: '@azure/identity|stable'
+    summary: >
+      Deserializes a previously serialized authentication record from a string
+      into an object.
+
+      The input string must contain the following properties:
+
+
+      - "authority"
+
+      - "homeAccountId"
+
+      - "clientId"
+
+      - "tenantId"
+
+      - "username"
+
+      - "version"
+
+
+      If the version we receive is unsupported, an error will be thrown.
+
+
+      At the moment, the only available version is: "1.0", which is always set
+      when the authentication record is serialized.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function deserializeAuthenticationRecord(serializedRecord: string):
+        AuthenticationRecord
+      parameters:
+        - id: serializedRecord
+          type: string
+          description: Authentication record previously serialized into string.
+      return:
+        description: AuthenticationRecord.
+        type: <xref uid="@azure/identity.AuthenticationRecord|stable" />
+  - name: getDefaultAzureCredential()
+    uid: '@azure/identity.getDefaultAzureCredential|stable'
+    package: '@azure/identity|stable'
+    summary: >-
+      Returns a new instance of the
+      <xref:@azure/identity.DefaultAzureCredential|stable>.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function getDefaultAzureCredential(): TokenCredential'
+      return:
+        description: ''
+        type: TokenCredential
+  - name: serializeAuthenticationRecord(AuthenticationRecord)
+    uid: '@azure/identity.serializeAuthenticationRecord|stable'
+    package: '@azure/identity|stable'
+    summary: >
+      Serializes an `AuthenticationRecord` into a string.
+
+      The output of a serialized authentication record will contain the
+      following properties:
+
+
+      - "authority"
+
+      - "homeAccountId"
+
+      - "clientId"
+
+      - "tenantId"
+
+      - "username"
+
+      - "version"
+
+
+      To later convert this string to a serialized `AuthenticationRecord`,
+      please use the exported function `deserializeAuthenticationRecord()`.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function serializeAuthenticationRecord(record: AuthenticationRecord):
+        string
+      parameters:
+        - id: record
+          type: <xref uid="@azure/identity.AuthenticationRecord|stable" />
+          description: ''
+      return:
+        description: ''
+        type: string
+  - name: useIdentityPlugin(IdentityPlugin)
+    uid: '@azure/identity.useIdentityPlugin|stable'
+    package: '@azure/identity|stable'
+    summary: >
+      Extend Azure Identity with additional functionality. Pass a plugin from
+
+      a plugin package, such as:
+
+      - `@azure/identity-cache-persistence`: provides persistent token caching
+
+      - `@azure/identity-vscode`: provides the dependencies of
+        `VisualStudioCodeCredential` and enables it
+
+      Example:
+
+
+      ```javascript
+
+      import { cachePersistencePlugin } from
+      "@azure/identity-cache-persistence";
+
+
+      import { useIdentityPlugin, DefaultAzureCredential } from
+      "@azure/identity";
+
+      useIdentityPlugin(cachePersistencePlugin);
+
+
+      // The plugin has the capability to extend `DefaultAzureCredential` and to
+
+      // add middleware to the underlying credentials, such as persistence.
+
+      const credential = new DefaultAzureCredential({
+        tokenCachePersistenceOptions: {
+          enabled: true
+        }
+      });
+
+      ```
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function useIdentityPlugin(plugin: IdentityPlugin)'
+      parameters:
+        - id: plugin
+          type: <xref uid="@azure/identity.IdentityPlugin|stable" />
+          description: |
+            the plugin to register

@@ -1,0 +1,14 @@
+### YamlMime:TSTypeAlias
+name: AmazonRedshiftLinkedService
+uid: '@azure/arm-datafactory.AmazonRedshiftLinkedService|stable'
+package: '@azure/arm-datafactory|stable'
+summary: Linked service for Amazon Redshift.
+fullName: AmazonRedshiftLinkedService
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type AmazonRedshiftLinkedService = LinkedService & { database: Record<string,
+  unknown>, encryptedCredential?: Record<string, unknown>, password?:
+  SecretBaseUnion, port?: Record<string, unknown>, server: Record<string,
+  unknown>, type: "AmazonRedshift", username?: Record<string, unknown> }

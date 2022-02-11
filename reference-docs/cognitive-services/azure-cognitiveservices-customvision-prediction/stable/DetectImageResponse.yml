@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: DetectImageResponse
+uid: '@azure/cognitiveservices-customvision-prediction.DetectImageResponse|stable'
+package: '@azure/cognitiveservices-customvision-prediction|stable'
+summary: Contains response data for the detectImage operation.
+fullName: DetectImageResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type DetectImageResponse = ImagePrediction & { _response: HttpResponse & {
+  bodyAsText: string, parsedBody: ImagePrediction } }

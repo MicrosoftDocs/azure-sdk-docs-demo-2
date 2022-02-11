@@ -1,0 +1,56 @@
+### YamlMime:TSType
+name: DatasetStorageFormat
+uid: '@azure/arm-datafactory.DatasetStorageFormat|stable'
+package: '@azure/arm-datafactory|stable'
+summary: The format definition of a storage.
+fullName: DatasetStorageFormat
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: deserializer
+    uid: '@azure/arm-datafactory.DatasetStorageFormat.deserializer|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: 'Deserializer. Type: string (or Expression with resultType string).'
+    fullName: deserializer
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'deserializer?: Record<string, unknown>'
+      return:
+        description: ''
+        type: Record&lt;string, unknown&gt;
+  - name: serializer
+    uid: '@azure/arm-datafactory.DatasetStorageFormat.serializer|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: 'Serializer. Type: string (or Expression with resultType string).'
+    fullName: serializer
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'serializer?: Record<string, unknown>'
+      return:
+        description: ''
+        type: Record&lt;string, unknown&gt;
+  - name: type
+    uid: '@azure/arm-datafactory.DatasetStorageFormat.type|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: >-
+      Polymorphic discriminator, which specifies the different types this object
+      can be
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        type: "TextFormat" | "JsonFormat" | "AvroFormat" | "OrcFormat" |
+        "ParquetFormat"
+      return:
+        description: ''
+        type: >-
+          "TextFormat" | "JsonFormat" | "AvroFormat" | "OrcFormat" |
+          "ParquetFormat"

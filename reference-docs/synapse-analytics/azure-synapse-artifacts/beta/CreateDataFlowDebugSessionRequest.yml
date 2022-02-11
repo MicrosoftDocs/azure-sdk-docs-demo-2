@@ -1,0 +1,71 @@
+### YamlMime:TSType
+name: CreateDataFlowDebugSessionRequest
+uid: '@azure/synapse-artifacts.CreateDataFlowDebugSessionRequest|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: Request body structure for creating data flow debug session.
+fullName: CreateDataFlowDebugSessionRequest
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: computeType
+    uid: >-
+      @azure/synapse-artifacts.CreateDataFlowDebugSessionRequest.computeType|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: >-
+      Compute type of the cluster. The value will be overwritten by the same
+      setting in integration runtime if provided.
+    fullName: computeType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'computeType?: string'
+      return:
+        description: ''
+        type: string
+  - name: coreCount
+    uid: '@azure/synapse-artifacts.CreateDataFlowDebugSessionRequest.coreCount|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: >-
+      Core count of the cluster. The value will be overwritten by the same
+      setting in integration runtime if provided.
+    fullName: coreCount
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'coreCount?: number'
+      return:
+        description: ''
+        type: number
+  - name: integrationRuntime
+    uid: >-
+      @azure/synapse-artifacts.CreateDataFlowDebugSessionRequest.integrationRuntime|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: Set to use integration runtime setting for data flow debug session.
+    fullName: integrationRuntime
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'integrationRuntime?: IntegrationRuntimeDebugResource'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/synapse-artifacts.IntegrationRuntimeDebugResource|beta" />
+  - name: timeToLive
+    uid: '@azure/synapse-artifacts.CreateDataFlowDebugSessionRequest.timeToLive|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Time to live setting of the cluster in minutes.
+    fullName: timeToLive
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'timeToLive?: number'
+      return:
+        description: ''
+        type: number

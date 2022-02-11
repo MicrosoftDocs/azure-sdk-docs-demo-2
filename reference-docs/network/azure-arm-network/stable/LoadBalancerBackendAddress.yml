@@ -1,0 +1,115 @@
+### YamlMime:TSType
+name: LoadBalancerBackendAddress
+uid: '@azure/arm-network.LoadBalancerBackendAddress|stable'
+package: '@azure/arm-network|stable'
+summary: Load balancer backend addresses.
+fullName: LoadBalancerBackendAddress
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: inboundNatRulesPortMapping
+    uid: >-
+      @azure/arm-network.LoadBalancerBackendAddress.inboundNatRulesPortMapping|stable
+    package: '@azure/arm-network|stable'
+    summary: >-
+      Collection of inbound NAT rule port mappings.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: inboundNatRulesPortMapping
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'inboundNatRulesPortMapping?: NatRulePortMapping[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.NatRulePortMapping|stable" />[]
+  - name: ipAddress
+    uid: '@azure/arm-network.LoadBalancerBackendAddress.ipAddress|stable'
+    package: '@azure/arm-network|stable'
+    summary: IP Address belonging to the referenced virtual network.
+    fullName: ipAddress
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ipAddress?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: loadBalancerFrontendIPConfiguration
+    uid: >-
+      @azure/arm-network.LoadBalancerBackendAddress.loadBalancerFrontendIPConfiguration|stable
+    package: '@azure/arm-network|stable'
+    summary: >-
+      Reference to the frontend ip address configuration defined in regional
+      loadbalancer.
+    fullName: loadBalancerFrontendIPConfiguration
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'loadBalancerFrontendIPConfiguration?: SubResource'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.SubResource|stable" />
+  - name: name
+    uid: '@azure/arm-network.LoadBalancerBackendAddress.name|stable'
+    package: '@azure/arm-network|stable'
+    summary: Name of the backend address.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: networkInterfaceIPConfiguration
+    uid: >-
+      @azure/arm-network.LoadBalancerBackendAddress.networkInterfaceIPConfiguration|stable
+    package: '@azure/arm-network|stable'
+    summary: >-
+      Reference to IP address defined in network interfaces.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: networkInterfaceIPConfiguration
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'networkInterfaceIPConfiguration?: SubResource'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.SubResource|stable" />
+  - name: subnet
+    uid: '@azure/arm-network.LoadBalancerBackendAddress.subnet|stable'
+    package: '@azure/arm-network|stable'
+    summary: Reference to an existing subnet.
+    fullName: subnet
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'subnet?: SubResource'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.SubResource|stable" />
+  - name: virtualNetwork
+    uid: '@azure/arm-network.LoadBalancerBackendAddress.virtualNetwork|stable'
+    package: '@azure/arm-network|stable'
+    summary: Reference to an existing virtual network.
+    fullName: virtualNetwork
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'virtualNetwork?: SubResource'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.SubResource|stable" />

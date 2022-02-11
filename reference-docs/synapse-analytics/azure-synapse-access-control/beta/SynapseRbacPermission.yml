@@ -1,0 +1,63 @@
+### YamlMime:TSType
+name: SynapseRbacPermission
+uid: '@azure/synapse-access-control.SynapseRbacPermission|beta'
+package: '@azure/synapse-access-control|beta'
+summary: Synapse role definition details
+fullName: SynapseRbacPermission
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: actions
+    uid: '@azure/synapse-access-control.SynapseRbacPermission.actions|beta'
+    package: '@azure/synapse-access-control|beta'
+    summary: List of actions
+    fullName: actions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'actions?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: dataActions
+    uid: '@azure/synapse-access-control.SynapseRbacPermission.dataActions|beta'
+    package: '@azure/synapse-access-control|beta'
+    summary: List of data actions
+    fullName: dataActions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dataActions?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: notActions
+    uid: '@azure/synapse-access-control.SynapseRbacPermission.notActions|beta'
+    package: '@azure/synapse-access-control|beta'
+    summary: List of Not actions
+    fullName: notActions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'notActions?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: notDataActions
+    uid: '@azure/synapse-access-control.SynapseRbacPermission.notDataActions|beta'
+    package: '@azure/synapse-access-control|beta'
+    summary: List of Not data actions
+    fullName: notDataActions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'notDataActions?: string[]'
+      return:
+        description: ''
+        type: string[]

@@ -1,0 +1,197 @@
+### YamlMime:TSType
+name: ImageAnalysis
+uid: '@azure/cognitiveservices-computervision.ImageAnalysis|stable'
+package: '@azure/cognitiveservices-computervision|stable'
+summary: Result of AnalyzeImage operation.
+fullName: ImageAnalysis
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: adult
+    uid: '@azure/cognitiveservices-computervision.ImageAnalysis.adult|stable'
+    package: '@azure/cognitiveservices-computervision|stable'
+    summary: >-
+      An object describing whether the image contains adult-oriented content
+      and/or is racy.
+    fullName: adult
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'adult?: AdultInfo'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/cognitiveservices-computervision.AdultInfo|stable"
+          />
+  - name: brands
+    uid: '@azure/cognitiveservices-computervision.ImageAnalysis.brands|stable'
+    package: '@azure/cognitiveservices-computervision|stable'
+    summary: Array of brands detected in the image.
+    fullName: brands
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'brands?: DetectedBrand[]'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/cognitiveservices-computervision.DetectedBrand|stable"
+          />[]
+  - name: categories
+    uid: '@azure/cognitiveservices-computervision.ImageAnalysis.categories|stable'
+    package: '@azure/cognitiveservices-computervision|stable'
+    summary: An array indicating identified categories.
+    fullName: categories
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'categories?: Category[]'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/cognitiveservices-computervision.Category|stable"
+          />[]
+  - name: color
+    uid: '@azure/cognitiveservices-computervision.ImageAnalysis.color|stable'
+    package: '@azure/cognitiveservices-computervision|stable'
+    summary: An object providing additional metadata describing color attributes.
+    fullName: color
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'color?: ColorInfo'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/cognitiveservices-computervision.ColorInfo|stable"
+          />
+  - name: description
+    uid: '@azure/cognitiveservices-computervision.ImageAnalysis.description|stable'
+    package: '@azure/cognitiveservices-computervision|stable'
+    summary: >-
+      A collection of content tags, along with a list of captions sorted by
+      confidence level, and
+
+      image metadata.
+    fullName: description
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'description?: ImageDescriptionDetails'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/cognitiveservices-computervision.ImageDescriptionDetails|stable"
+          />
+  - name: faces
+    uid: '@azure/cognitiveservices-computervision.ImageAnalysis.faces|stable'
+    package: '@azure/cognitiveservices-computervision|stable'
+    summary: An array of possible faces within the image.
+    fullName: faces
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'faces?: FaceDescription[]'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/cognitiveservices-computervision.FaceDescription|stable"
+          />[]
+  - name: imageType
+    uid: '@azure/cognitiveservices-computervision.ImageAnalysis.imageType|stable'
+    package: '@azure/cognitiveservices-computervision|stable'
+    summary: An object providing possible image types and matching confidence levels.
+    fullName: imageType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'imageType?: ImageType'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/cognitiveservices-computervision.ImageType|stable"
+          />
+  - name: metadata
+    uid: '@azure/cognitiveservices-computervision.ImageAnalysis.metadata|stable'
+    package: '@azure/cognitiveservices-computervision|stable'
+    summary: ''
+    fullName: metadata
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'metadata?: ImageMetadata'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/cognitiveservices-computervision.ImageMetadata|stable" />
+  - name: modelVersion
+    uid: '@azure/cognitiveservices-computervision.ImageAnalysis.modelVersion|stable'
+    package: '@azure/cognitiveservices-computervision|stable'
+    summary: ''
+    fullName: modelVersion
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'modelVersion?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: objects
+    uid: '@azure/cognitiveservices-computervision.ImageAnalysis.objects|stable'
+    package: '@azure/cognitiveservices-computervision|stable'
+    summary: Array of objects describing what was detected in the image.
+    fullName: objects
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'objects?: DetectedObject[]'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/cognitiveservices-computervision.DetectedObject|stable"
+          />[]
+  - name: requestId
+    uid: '@azure/cognitiveservices-computervision.ImageAnalysis.requestId|stable'
+    package: '@azure/cognitiveservices-computervision|stable'
+    summary: Id of the REST API request.
+    fullName: requestId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'requestId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: tags
+    uid: '@azure/cognitiveservices-computervision.ImageAnalysis.tags|stable'
+    package: '@azure/cognitiveservices-computervision|stable'
+    summary: A list of tags with confidence level.
+    fullName: tags
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tags?: ImageTag[]'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/cognitiveservices-computervision.ImageTag|stable"
+          />[]

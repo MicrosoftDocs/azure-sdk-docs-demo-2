@@ -1,0 +1,63 @@
+### YamlMime:TSType
+name: RequestHistoryProperties
+uid: '@azure/arm-logic.RequestHistoryProperties|stable'
+package: '@azure/arm-logic|stable'
+summary: The request history.
+fullName: RequestHistoryProperties
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: endTime
+    uid: '@azure/arm-logic.RequestHistoryProperties.endTime|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The time the request ended.
+    fullName: endTime
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'endTime?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: request
+    uid: '@azure/arm-logic.RequestHistoryProperties.request|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The request.
+    fullName: request
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'request?: Request_2'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-logic.Request_2|stable" />
+  - name: response
+    uid: '@azure/arm-logic.RequestHistoryProperties.response|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The response.
+    fullName: response
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'response?: Response_2'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-logic.Response_2|stable" />
+  - name: startTime
+    uid: '@azure/arm-logic.RequestHistoryProperties.startTime|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The time the request started.
+    fullName: startTime
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'startTime?: Date'
+      return:
+        description: ''
+        type: Date

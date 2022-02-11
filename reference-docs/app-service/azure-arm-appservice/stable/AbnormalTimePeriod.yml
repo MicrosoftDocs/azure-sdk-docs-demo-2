@@ -1,0 +1,65 @@
+### YamlMime:TSType
+name: AbnormalTimePeriod
+uid: '@azure/arm-appservice.AbnormalTimePeriod|stable'
+package: '@azure/arm-appservice|stable'
+summary: Class representing Abnormal Time Period identified in diagnosis
+fullName: AbnormalTimePeriod
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: endTime
+    uid: '@azure/arm-appservice.AbnormalTimePeriod.endTime|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: End time of the downtime
+    fullName: endTime
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'endTime?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: events
+    uid: '@azure/arm-appservice.AbnormalTimePeriod.events|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: List of Possible Cause of downtime
+    fullName: events
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'events?: DetectorAbnormalTimePeriod[]'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/arm-appservice.DetectorAbnormalTimePeriod|stable"
+          />[]
+  - name: solutions
+    uid: '@azure/arm-appservice.AbnormalTimePeriod.solutions|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: List of proposed solutions
+    fullName: solutions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'solutions?: Solution[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.Solution|stable" />[]
+  - name: startTime
+    uid: '@azure/arm-appservice.AbnormalTimePeriod.startTime|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Start time of the downtime
+    fullName: startTime
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'startTime?: Date'
+      return:
+        description: ''
+        type: Date

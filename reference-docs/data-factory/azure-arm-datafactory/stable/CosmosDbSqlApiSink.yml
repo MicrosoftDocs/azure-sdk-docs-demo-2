@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: CosmosDbSqlApiSink
+uid: '@azure/arm-datafactory.CosmosDbSqlApiSink|stable'
+package: '@azure/arm-datafactory|stable'
+summary: A copy activity Azure CosmosDB (SQL API) Collection sink.
+fullName: CosmosDbSqlApiSink
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type CosmosDbSqlApiSink = CopySink & { type: "CosmosDbSqlApiSink",
+  writeBehavior?: Record<string, unknown> }

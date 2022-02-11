@@ -1,0 +1,199 @@
+### YamlMime:TSType
+name: ClusterCreateProperties
+uid: '@azure/arm-hdinsight.ClusterCreateProperties|stable'
+package: '@azure/arm-hdinsight|stable'
+summary: The cluster create parameters.
+fullName: ClusterCreateProperties
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: clusterDefinition
+    uid: '@azure/arm-hdinsight.ClusterCreateProperties.clusterDefinition|stable'
+    package: '@azure/arm-hdinsight|stable'
+    summary: The cluster definition.
+    fullName: clusterDefinition
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clusterDefinition?: ClusterDefinition'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-hdinsight.ClusterDefinition|stable" />
+  - name: clusterVersion
+    uid: '@azure/arm-hdinsight.ClusterCreateProperties.clusterVersion|stable'
+    package: '@azure/arm-hdinsight|stable'
+    summary: The version of the cluster.
+    fullName: clusterVersion
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clusterVersion?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: computeIsolationProperties
+    uid: >-
+      @azure/arm-hdinsight.ClusterCreateProperties.computeIsolationProperties|stable
+    package: '@azure/arm-hdinsight|stable'
+    summary: The compute isolation properties.
+    fullName: computeIsolationProperties
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'computeIsolationProperties?: ComputeIsolationProperties'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-hdinsight.ComputeIsolationProperties|stable" />
+  - name: computeProfile
+    uid: '@azure/arm-hdinsight.ClusterCreateProperties.computeProfile|stable'
+    package: '@azure/arm-hdinsight|stable'
+    summary: The compute profile.
+    fullName: computeProfile
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'computeProfile?: ComputeProfile'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-hdinsight.ComputeProfile|stable" />
+  - name: diskEncryptionProperties
+    uid: >-
+      @azure/arm-hdinsight.ClusterCreateProperties.diskEncryptionProperties|stable
+    package: '@azure/arm-hdinsight|stable'
+    summary: The disk encryption properties.
+    fullName: diskEncryptionProperties
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'diskEncryptionProperties?: DiskEncryptionProperties'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-hdinsight.DiskEncryptionProperties|stable" />
+  - name: encryptionInTransitProperties
+    uid: >-
+      @azure/arm-hdinsight.ClusterCreateProperties.encryptionInTransitProperties|stable
+    package: '@azure/arm-hdinsight|stable'
+    summary: The encryption-in-transit properties.
+    fullName: encryptionInTransitProperties
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'encryptionInTransitProperties?: EncryptionInTransitProperties'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/arm-hdinsight.EncryptionInTransitProperties|stable"
+          />
+  - name: kafkaRestProperties
+    uid: '@azure/arm-hdinsight.ClusterCreateProperties.kafkaRestProperties|stable'
+    package: '@azure/arm-hdinsight|stable'
+    summary: The cluster kafka rest proxy configuration.
+    fullName: kafkaRestProperties
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'kafkaRestProperties?: KafkaRestProperties'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-hdinsight.KafkaRestProperties|stable" />
+  - name: minSupportedTlsVersion
+    uid: '@azure/arm-hdinsight.ClusterCreateProperties.minSupportedTlsVersion|stable'
+    package: '@azure/arm-hdinsight|stable'
+    summary: The minimal supported tls version.
+    fullName: minSupportedTlsVersion
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'minSupportedTlsVersion?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: networkProperties
+    uid: '@azure/arm-hdinsight.ClusterCreateProperties.networkProperties|stable'
+    package: '@azure/arm-hdinsight|stable'
+    summary: The network properties.
+    fullName: networkProperties
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'networkProperties?: NetworkProperties'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-hdinsight.NetworkProperties|stable" />
+  - name: osType
+    uid: '@azure/arm-hdinsight.ClusterCreateProperties.osType|stable'
+    package: '@azure/arm-hdinsight|stable'
+    summary: The type of operating system.
+    fullName: osType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'osType?: OSType'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-hdinsight.OSType|stable" />
+  - name: privateLinkConfigurations
+    uid: >-
+      @azure/arm-hdinsight.ClusterCreateProperties.privateLinkConfigurations|stable
+    package: '@azure/arm-hdinsight|stable'
+    summary: The private link configurations.
+    fullName: privateLinkConfigurations
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'privateLinkConfigurations?: PrivateLinkConfiguration[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-hdinsight.PrivateLinkConfiguration|stable" />[]
+  - name: securityProfile
+    uid: '@azure/arm-hdinsight.ClusterCreateProperties.securityProfile|stable'
+    package: '@azure/arm-hdinsight|stable'
+    summary: The security profile.
+    fullName: securityProfile
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'securityProfile?: SecurityProfile'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-hdinsight.SecurityProfile|stable" />
+  - name: storageProfile
+    uid: '@azure/arm-hdinsight.ClusterCreateProperties.storageProfile|stable'
+    package: '@azure/arm-hdinsight|stable'
+    summary: The storage profile.
+    fullName: storageProfile
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'storageProfile?: StorageProfile'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-hdinsight.StorageProfile|stable" />
+  - name: tier
+    uid: '@azure/arm-hdinsight.ClusterCreateProperties.tier|stable'
+    package: '@azure/arm-hdinsight|stable'
+    summary: The cluster tier.
+    fullName: tier
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tier?: Tier'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-hdinsight.Tier|stable" />

@@ -1,0 +1,134 @@
+### YamlMime:TSType
+name: IntegrationRuntimeSsisProperties
+uid: '@azure/arm-datafactory.IntegrationRuntimeSsisProperties|stable'
+package: '@azure/arm-datafactory|stable'
+summary: SSIS properties for managed integration runtime.
+fullName: IntegrationRuntimeSsisProperties
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: catalogInfo
+    uid: '@azure/arm-datafactory.IntegrationRuntimeSsisProperties.catalogInfo|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: Catalog information for managed dedicated integration runtime.
+    fullName: catalogInfo
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'catalogInfo?: IntegrationRuntimeSsisCatalogInfo'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-datafactory.IntegrationRuntimeSsisCatalogInfo|stable"
+          />
+  - name: credential
+    uid: '@azure/arm-datafactory.IntegrationRuntimeSsisProperties.credential|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: The credential reference containing authentication information.
+    fullName: credential
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'credential?: CredentialReference'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-datafactory.CredentialReference|stable" />
+  - name: customSetupScriptProperties
+    uid: >-
+      @azure/arm-datafactory.IntegrationRuntimeSsisProperties.customSetupScriptProperties|stable
+    package: '@azure/arm-datafactory|stable'
+    summary: >-
+      Custom setup script properties for a managed dedicated integration
+      runtime.
+    fullName: customSetupScriptProperties
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        customSetupScriptProperties?:
+        IntegrationRuntimeCustomSetupScriptProperties
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-datafactory.IntegrationRuntimeCustomSetupScriptProperties|stable"
+          />
+  - name: dataProxyProperties
+    uid: >-
+      @azure/arm-datafactory.IntegrationRuntimeSsisProperties.dataProxyProperties|stable
+    package: '@azure/arm-datafactory|stable'
+    summary: Data proxy properties for a managed dedicated integration runtime.
+    fullName: dataProxyProperties
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dataProxyProperties?: IntegrationRuntimeDataProxyProperties'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-datafactory.IntegrationRuntimeDataProxyProperties|stable"
+          />
+  - name: edition
+    uid: '@azure/arm-datafactory.IntegrationRuntimeSsisProperties.edition|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: The edition for the SSIS Integration Runtime
+    fullName: edition
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'edition?: IntegrationRuntimeEdition'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-datafactory.IntegrationRuntimeEdition|stable" />
+  - name: expressCustomSetupProperties
+    uid: >-
+      @azure/arm-datafactory.IntegrationRuntimeSsisProperties.expressCustomSetupProperties|stable
+    package: '@azure/arm-datafactory|stable'
+    summary: Custom setup without script properties for a SSIS integration runtime.
+    fullName: expressCustomSetupProperties
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'expressCustomSetupProperties?: CustomSetupBaseUnion[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-datafactory.CustomSetupBaseUnion|stable" />[]
+  - name: licenseType
+    uid: '@azure/arm-datafactory.IntegrationRuntimeSsisProperties.licenseType|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: License type for bringing your own license scenario.
+    fullName: licenseType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'licenseType?: IntegrationRuntimeLicenseType'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-datafactory.IntegrationRuntimeLicenseType|stable" />
+  - name: packageStores
+    uid: >-
+      @azure/arm-datafactory.IntegrationRuntimeSsisProperties.packageStores|stable
+    package: '@azure/arm-datafactory|stable'
+    summary: Package stores for the SSIS Integration Runtime.
+    fullName: packageStores
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'packageStores?: PackageStore[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-datafactory.PackageStore|stable" />[]

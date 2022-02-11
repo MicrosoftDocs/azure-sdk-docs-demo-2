@@ -1,0 +1,158 @@
+### YamlMime:TSType
+name: MetricSpecification
+uid: '@azure/arm-keyvault.MetricSpecification|stable'
+package: '@azure/arm-keyvault|stable'
+summary: Metric specification of operation.
+fullName: MetricSpecification
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: aggregationType
+    uid: '@azure/arm-keyvault.MetricSpecification.aggregationType|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: >-
+      The metric aggregation type. Possible values include: 'Average', 'Count',
+      'Total'.
+    fullName: aggregationType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'aggregationType?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: dimensions
+    uid: '@azure/arm-keyvault.MetricSpecification.dimensions|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: The dimensions of metric
+    fullName: dimensions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dimensions?: DimensionProperties[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-keyvault.DimensionProperties|stable" />[]
+  - name: displayDescription
+    uid: '@azure/arm-keyvault.MetricSpecification.displayDescription|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: Display description of metric specification.
+    fullName: displayDescription
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'displayDescription?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: displayName
+    uid: '@azure/arm-keyvault.MetricSpecification.displayName|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: Display name of metric specification.
+    fullName: displayName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'displayName?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: fillGapWithZero
+    uid: '@azure/arm-keyvault.MetricSpecification.fillGapWithZero|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: Property to specify whether to fill gap with zero.
+    fullName: fillGapWithZero
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'fillGapWithZero?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true
+  - name: internalMetricName
+    uid: '@azure/arm-keyvault.MetricSpecification.internalMetricName|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: The internal metric name.
+    fullName: internalMetricName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'internalMetricName?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: lockAggregationType
+    uid: '@azure/arm-keyvault.MetricSpecification.lockAggregationType|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: The metric lock aggregation type.
+    fullName: lockAggregationType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lockAggregationType?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: name
+    uid: '@azure/arm-keyvault.MetricSpecification.name|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: Name of metric specification.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: supportedAggregationTypes
+    uid: '@azure/arm-keyvault.MetricSpecification.supportedAggregationTypes|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: The supported aggregation types for the metrics.
+    fullName: supportedAggregationTypes
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'supportedAggregationTypes?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: supportedTimeGrainTypes
+    uid: '@azure/arm-keyvault.MetricSpecification.supportedTimeGrainTypes|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: The supported time grain types for the metrics.
+    fullName: supportedTimeGrainTypes
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'supportedTimeGrainTypes?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: unit
+    uid: '@azure/arm-keyvault.MetricSpecification.unit|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: >-
+      The metric unit. Possible values include: 'Bytes', 'Count',
+      'Milliseconds'.
+    fullName: unit
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'unit?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

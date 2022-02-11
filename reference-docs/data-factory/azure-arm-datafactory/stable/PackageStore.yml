@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: PackageStore
+uid: '@azure/arm-datafactory.PackageStore|stable'
+package: '@azure/arm-datafactory|stable'
+summary: Package store for the SSIS integration runtime.
+fullName: PackageStore
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: name
+    uid: '@azure/arm-datafactory.PackageStore.name|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: The name of the package store
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: string'
+      return:
+        description: ''
+        type: string
+  - name: packageStoreLinkedService
+    uid: '@azure/arm-datafactory.PackageStore.packageStoreLinkedService|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: The package store linked service reference.
+    fullName: packageStoreLinkedService
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'packageStoreLinkedService: EntityReference'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-datafactory.EntityReference|stable" />

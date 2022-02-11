@@ -1,0 +1,38 @@
+### YamlMime:TSType
+name: KqlScriptsResourceCollectionResponse
+uid: '@azure/synapse-artifacts.KqlScriptsResourceCollectionResponse|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: ''
+fullName: KqlScriptsResourceCollectionResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: nextLink
+    uid: >-
+      @azure/synapse-artifacts.KqlScriptsResourceCollectionResponse.nextLink|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: ''
+    fullName: nextLink
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nextLink?: string'
+      return:
+        description: ''
+        type: string
+  - name: value
+    uid: '@azure/synapse-artifacts.KqlScriptsResourceCollectionResponse.value|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: ''
+    fullName: value
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: KqlScriptResource[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/synapse-artifacts.KqlScriptResource|beta" />[]

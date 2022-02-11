@@ -1,0 +1,63 @@
+### YamlMime:TSType
+name: DeletedAccounts
+uid: '@azure/arm-storage.DeletedAccounts|stable'
+package: '@azure/arm-storage|stable'
+summary: Interface representing a DeletedAccounts.
+fullName: DeletedAccounts
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: get(string, string, DeletedAccountsGetOptionalParams)
+    uid: '@azure/arm-storage.DeletedAccounts.get|stable'
+    package: '@azure/arm-storage|stable'
+    summary: Get properties of specified deleted account resource.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(deletedAccountName: string, location: string, options?:
+        DeletedAccountsGetOptionalParams): Promise<DeletedAccountsGetResponse>
+      parameters:
+        - id: deletedAccountName
+          type: string
+          description: Name of the deleted storage account.
+        - id: location
+          type: string
+          description: The location of the deleted storage account.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-storage.DeletedAccountsGetOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-storage.DeletedAccountsGetResponse|stable" />&gt;
+  - name: list(DeletedAccountsListOptionalParams)
+    uid: '@azure/arm-storage.DeletedAccounts.list|stable'
+    package: '@azure/arm-storage|stable'
+    summary: Lists deleted accounts under the subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(options?: DeletedAccountsListOptionalParams):
+        PagedAsyncIterableIterator<DeletedAccount>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-storage.DeletedAccountsListOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-storage.DeletedAccount|stable" />&gt;

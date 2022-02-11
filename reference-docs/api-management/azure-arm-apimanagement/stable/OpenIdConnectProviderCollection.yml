@@ -1,0 +1,53 @@
+### YamlMime:TSType
+name: OpenIdConnectProviderCollection
+uid: '@azure/arm-apimanagement.OpenIdConnectProviderCollection|stable'
+package: '@azure/arm-apimanagement|stable'
+summary: Paged OpenIdProviders list representation.
+fullName: OpenIdConnectProviderCollection
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: count
+    uid: '@azure/arm-apimanagement.OpenIdConnectProviderCollection.count|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: Total record count number across all pages.
+    fullName: count
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'count?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: nextLink
+    uid: '@azure/arm-apimanagement.OpenIdConnectProviderCollection.nextLink|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: Next page link if any.
+    fullName: nextLink
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nextLink?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: value
+    uid: '@azure/arm-apimanagement.OpenIdConnectProviderCollection.value|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: Page values.
+    fullName: value
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: OpenidConnectProviderContract[]'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-apimanagement.OpenidConnectProviderContract|stable"
+          />[]

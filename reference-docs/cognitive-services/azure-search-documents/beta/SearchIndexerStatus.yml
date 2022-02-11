@@ -1,0 +1,80 @@
+### YamlMime:TSType
+name: SearchIndexerStatus
+uid: '@azure/search-documents.SearchIndexerStatus|beta'
+package: '@azure/search-documents|beta'
+summary: Represents the current status and execution history of an indexer.
+fullName: SearchIndexerStatus
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: executionHistory
+    uid: '@azure/search-documents.SearchIndexerStatus.executionHistory|beta'
+    package: '@azure/search-documents|beta'
+    summary: >-
+      History of the recent indexer executions, sorted in reverse chronological
+      order.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: executionHistory
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'executionHistory: IndexerExecutionResult[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/search-documents.IndexerExecutionResult|beta" />[]
+  - name: lastResult
+    uid: '@azure/search-documents.SearchIndexerStatus.lastResult|beta'
+    package: '@azure/search-documents|beta'
+    summary: >-
+      The result of the most recent or an in-progress indexer execution.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: lastResult
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lastResult?: IndexerExecutionResult'
+      return:
+        description: ''
+        type: <xref uid="@azure/search-documents.IndexerExecutionResult|beta" />
+  - name: limits
+    uid: '@azure/search-documents.SearchIndexerStatus.limits|beta'
+    package: '@azure/search-documents|beta'
+    summary: >-
+      The execution limits for the indexer.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: limits
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'limits: SearchIndexerLimits'
+      return:
+        description: ''
+        type: <xref uid="@azure/search-documents.SearchIndexerLimits|beta" />
+  - name: status
+    uid: '@azure/search-documents.SearchIndexerStatus.status|beta'
+    package: '@azure/search-documents|beta'
+    summary: >-
+      Overall indexer status.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: status
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'status: IndexerStatus'
+      return:
+        description: ''
+        type: <xref uid="@azure/search-documents.IndexerStatus|beta" />

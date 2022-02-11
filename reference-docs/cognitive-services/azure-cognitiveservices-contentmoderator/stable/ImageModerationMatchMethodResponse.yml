@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: ImageModerationMatchMethodResponse
+uid: >-
+  @azure/cognitiveservices-contentmoderator.ImageModerationMatchMethodResponse|stable
+package: '@azure/cognitiveservices-contentmoderator|stable'
+summary: Contains response data for the matchMethod operation.
+fullName: ImageModerationMatchMethodResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type ImageModerationMatchMethodResponse = MatchResponse & { _response:
+  HttpResponse & { bodyAsText: string, parsedBody: MatchResponse } }

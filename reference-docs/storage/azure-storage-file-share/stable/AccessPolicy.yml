@@ -1,0 +1,50 @@
+### YamlMime:TSType
+name: AccessPolicy
+uid: '@azure/storage-file-share.AccessPolicy|stable'
+package: '@azure/storage-file-share|stable'
+summary: An Access policy.
+fullName: AccessPolicy
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: expiresOn
+    uid: '@azure/storage-file-share.AccessPolicy.expiresOn|stable'
+    package: '@azure/storage-file-share|stable'
+    summary: The date-time the policy expires.
+    fullName: expiresOn
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'expiresOn?: string'
+      return:
+        description: ''
+        type: string
+  - name: permissions
+    uid: '@azure/storage-file-share.AccessPolicy.permissions|stable'
+    package: '@azure/storage-file-share|stable'
+    summary: The permissions for the ACL policy.
+    fullName: permissions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'permissions?: string'
+      return:
+        description: ''
+        type: string
+  - name: startsOn
+    uid: '@azure/storage-file-share.AccessPolicy.startsOn|stable'
+    package: '@azure/storage-file-share|stable'
+    summary: The date-time the policy is active.
+    fullName: startsOn
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'startsOn?: string'
+      return:
+        description: ''
+        type: string

@@ -1,0 +1,59 @@
+### YamlMime:TSType
+name: TrainResult
+uid: '@azure/cognitiveservices-formrecognizer.TrainResult|legacy'
+package: '@azure/cognitiveservices-formrecognizer|legacy'
+summary: Response of the Train API call.
+fullName: TrainResult
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: errors
+    uid: '@azure/cognitiveservices-formrecognizer.TrainResult.errors|legacy'
+    package: '@azure/cognitiveservices-formrecognizer|legacy'
+    summary: Errors returned during the training operation.
+    fullName: errors
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'errors?: FormOperationError[]'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/cognitiveservices-formrecognizer.FormOperationError|legacy"
+          />[]
+  - name: modelId
+    uid: '@azure/cognitiveservices-formrecognizer.TrainResult.modelId|legacy'
+    package: '@azure/cognitiveservices-formrecognizer|legacy'
+    summary: Identifier of the model.
+    fullName: modelId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'modelId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: trainingDocuments
+    uid: >-
+      @azure/cognitiveservices-formrecognizer.TrainResult.trainingDocuments|legacy
+    package: '@azure/cognitiveservices-formrecognizer|legacy'
+    summary: |-
+      List of documents used to train the model and the
+      train operation error reported by each.
+    fullName: trainingDocuments
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'trainingDocuments?: FormDocumentReport[]'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/cognitiveservices-formrecognizer.FormDocumentReport|legacy"
+          />[]

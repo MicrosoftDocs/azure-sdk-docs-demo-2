@@ -1,0 +1,117 @@
+### YamlMime:TSType
+name: ListBlobsHierarchySegmentResponse
+uid: '@azure/storage-blob.ListBlobsHierarchySegmentResponse|stable'
+package: '@azure/storage-blob|stable'
+summary: An enumeration of blobs
+fullName: ListBlobsHierarchySegmentResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: containerName
+    uid: '@azure/storage-blob.ListBlobsHierarchySegmentResponse.containerName|stable'
+    package: '@azure/storage-blob|stable'
+    summary: ''
+    fullName: containerName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'containerName: string'
+      return:
+        description: ''
+        type: string
+  - name: continuationToken
+    uid: >-
+      @azure/storage-blob.ListBlobsHierarchySegmentResponse.continuationToken|stable
+    package: '@azure/storage-blob|stable'
+    summary: ''
+    fullName: continuationToken
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'continuationToken?: string'
+      return:
+        description: ''
+        type: string
+  - name: delimiter
+    uid: '@azure/storage-blob.ListBlobsHierarchySegmentResponse.delimiter|stable'
+    package: '@azure/storage-blob|stable'
+    summary: ''
+    fullName: delimiter
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delimiter?: string'
+      return:
+        description: ''
+        type: string
+  - name: marker
+    uid: '@azure/storage-blob.ListBlobsHierarchySegmentResponse.marker|stable'
+    package: '@azure/storage-blob|stable'
+    summary: ''
+    fullName: marker
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'marker?: string'
+      return:
+        description: ''
+        type: string
+  - name: maxPageSize
+    uid: '@azure/storage-blob.ListBlobsHierarchySegmentResponse.maxPageSize|stable'
+    package: '@azure/storage-blob|stable'
+    summary: ''
+    fullName: maxPageSize
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'maxPageSize?: number'
+      return:
+        description: ''
+        type: number
+  - name: prefix
+    uid: '@azure/storage-blob.ListBlobsHierarchySegmentResponse.prefix|stable'
+    package: '@azure/storage-blob|stable'
+    summary: ''
+    fullName: prefix
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'prefix?: string'
+      return:
+        description: ''
+        type: string
+  - name: segment
+    uid: '@azure/storage-blob.ListBlobsHierarchySegmentResponse.segment|stable'
+    package: '@azure/storage-blob|stable'
+    summary: ''
+    fullName: segment
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'segment: BlobHierarchyListSegment'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-blob.BlobHierarchyListSegment|stable" />
+  - name: serviceEndpoint
+    uid: >-
+      @azure/storage-blob.ListBlobsHierarchySegmentResponse.serviceEndpoint|stable
+    package: '@azure/storage-blob|stable'
+    summary: ''
+    fullName: serviceEndpoint
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'serviceEndpoint: string'
+      return:
+        description: ''
+        type: string

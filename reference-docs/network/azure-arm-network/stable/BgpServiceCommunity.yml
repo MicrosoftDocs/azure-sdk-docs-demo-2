@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: BgpServiceCommunity
+uid: '@azure/arm-network.BgpServiceCommunity|stable'
+package: '@azure/arm-network|stable'
+summary: Service Community Properties.
+fullName: BgpServiceCommunity
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type BgpServiceCommunity = Resource & { bgpCommunities?: BGPCommunity[],
+  serviceName?: undefined | string }

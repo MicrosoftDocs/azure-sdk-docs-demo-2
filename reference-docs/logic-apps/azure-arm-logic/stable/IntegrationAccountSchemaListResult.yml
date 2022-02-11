@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: IntegrationAccountSchemaListResult
+uid: '@azure/arm-logic.IntegrationAccountSchemaListResult|stable'
+package: '@azure/arm-logic|stable'
+summary: The list of integration account schemas.
+fullName: IntegrationAccountSchemaListResult
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: nextLink
+    uid: '@azure/arm-logic.IntegrationAccountSchemaListResult.nextLink|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The URL to get the next set of results.
+    fullName: nextLink
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nextLink?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: value
+    uid: '@azure/arm-logic.IntegrationAccountSchemaListResult.value|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The list of integration account schemas.
+    fullName: value
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: IntegrationAccountSchema[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-logic.IntegrationAccountSchema|stable" />[]

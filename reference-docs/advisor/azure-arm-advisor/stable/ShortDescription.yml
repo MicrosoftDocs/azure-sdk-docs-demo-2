@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: ShortDescription
+uid: '@azure/arm-advisor.ShortDescription|stable'
+package: '@azure/arm-advisor|stable'
+summary: A summary of the recommendation.
+fullName: ShortDescription
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: problem
+    uid: '@azure/arm-advisor.ShortDescription.problem|stable'
+    package: '@azure/arm-advisor|stable'
+    summary: The issue or opportunity identified by the recommendation.
+    fullName: problem
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'problem?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: solution
+    uid: '@azure/arm-advisor.ShortDescription.solution|stable'
+    package: '@azure/arm-advisor|stable'
+    summary: The remediation action suggested by the recommendation.
+    fullName: solution
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'solution?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

@@ -1,0 +1,65 @@
+### YamlMime:TSType
+name: FilterBlobSegment
+uid: '@azure/storage-blob.FilterBlobSegment|beta'
+package: '@azure/storage-blob|beta'
+summary: >-
+  Segment response of
+  <xref:@azure/storage-blob.BlobServiceClient.findBlobsByTags|beta> operation.
+fullName: FilterBlobSegment
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: blobs
+    uid: '@azure/storage-blob.FilterBlobSegment.blobs|beta'
+    package: '@azure/storage-blob|beta'
+    summary: ''
+    fullName: blobs
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'blobs: FilterBlobItem[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-blob.FilterBlobItem|beta" />[]
+  - name: continuationToken
+    uid: '@azure/storage-blob.FilterBlobSegment.continuationToken|beta'
+    package: '@azure/storage-blob|beta'
+    summary: ''
+    fullName: continuationToken
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'continuationToken?: string'
+      return:
+        description: ''
+        type: string
+  - name: serviceEndpoint
+    uid: '@azure/storage-blob.FilterBlobSegment.serviceEndpoint|beta'
+    package: '@azure/storage-blob|beta'
+    summary: ''
+    fullName: serviceEndpoint
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'serviceEndpoint: string'
+      return:
+        description: ''
+        type: string
+  - name: where
+    uid: '@azure/storage-blob.FilterBlobSegment.where|beta'
+    package: '@azure/storage-blob|beta'
+    summary: ''
+    fullName: where
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'where: string'
+      return:
+        description: ''
+        type: string

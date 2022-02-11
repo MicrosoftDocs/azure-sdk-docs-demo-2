@@ -1,0 +1,232 @@
+### YamlMime:TSType
+name: SasTokenProperties
+uid: '@azure/cosmos.SasTokenProperties|stable'
+package: '@azure/cosmos|stable'
+summary: ''
+fullName: SasTokenProperties
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: containerName
+    uid: '@azure/cosmos.SasTokenProperties.containerName|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: containerName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'containerName: string'
+      return:
+        description: ''
+        type: string
+  - name: controlPlaneReaderScope
+    uid: '@azure/cosmos.SasTokenProperties.controlPlaneReaderScope|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: controlPlaneReaderScope
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'controlPlaneReaderScope: number'
+      return:
+        description: ''
+        type: number
+  - name: controlPlaneWriterScope
+    uid: '@azure/cosmos.SasTokenProperties.controlPlaneWriterScope|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: controlPlaneWriterScope
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'controlPlaneWriterScope: number'
+      return:
+        description: ''
+        type: number
+  - name: cosmosContainerChildResourceKind
+    uid: '@azure/cosmos.SasTokenProperties.cosmosContainerChildResourceKind|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: cosmosContainerChildResourceKind
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'cosmosContainerChildResourceKind: CosmosContainerChildResourceKind'
+      return:
+        description: ''
+        type: CosmosContainerChildResourceKind
+  - name: cosmosKeyType
+    uid: '@azure/cosmos.SasTokenProperties.cosmosKeyType|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: cosmosKeyType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'cosmosKeyType: CosmosKeyType'
+      return:
+        description: ''
+        type: CosmosKeyType
+  - name: databaseName
+    uid: '@azure/cosmos.SasTokenProperties.databaseName|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: databaseName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'databaseName: string'
+      return:
+        description: ''
+        type: string
+  - name: dataPlaneReaderScope
+    uid: '@azure/cosmos.SasTokenProperties.dataPlaneReaderScope|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: dataPlaneReaderScope
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dataPlaneReaderScope: number'
+      return:
+        description: ''
+        type: number
+  - name: dataPlaneWriterScope
+    uid: '@azure/cosmos.SasTokenProperties.dataPlaneWriterScope|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: dataPlaneWriterScope
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dataPlaneWriterScope: number'
+      return:
+        description: ''
+        type: number
+  - name: expiryTime
+    uid: '@azure/cosmos.SasTokenProperties.expiryTime|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: expiryTime
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'expiryTime: Date'
+      return:
+        description: ''
+        type: Date
+  - name: keyType
+    uid: '@azure/cosmos.SasTokenProperties.keyType|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: keyType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'keyType: CosmosKeyType | number'
+      return:
+        description: ''
+        type: CosmosKeyType | number
+  - name: partitionKeyValueRanges
+    uid: '@azure/cosmos.SasTokenProperties.partitionKeyValueRanges|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: partitionKeyValueRanges
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'partitionKeyValueRanges: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: resourceKind
+    uid: '@azure/cosmos.SasTokenProperties.resourceKind|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: resourceKind
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'resourceKind: CosmosContainerChildResourceKind'
+      return:
+        description: ''
+        type: CosmosContainerChildResourceKind
+  - name: resourceName
+    uid: '@azure/cosmos.SasTokenProperties.resourceName|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: resourceName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'resourceName: string'
+      return:
+        description: ''
+        type: string
+  - name: resourcePath
+    uid: '@azure/cosmos.SasTokenProperties.resourcePath|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: resourcePath
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'resourcePath: string'
+      return:
+        description: ''
+        type: string
+  - name: startTime
+    uid: '@azure/cosmos.SasTokenProperties.startTime|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: startTime
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'startTime: Date'
+      return:
+        description: ''
+        type: Date
+  - name: user
+    uid: '@azure/cosmos.SasTokenProperties.user|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: user
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'user: string'
+      return:
+        description: ''
+        type: string
+  - name: userTag
+    uid: '@azure/cosmos.SasTokenProperties.userTag|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: userTag
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'userTag: string'
+      return:
+        description: ''
+        type: string

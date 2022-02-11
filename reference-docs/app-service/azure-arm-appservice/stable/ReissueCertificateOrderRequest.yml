@@ -1,0 +1,14 @@
+### YamlMime:TSTypeAlias
+name: ReissueCertificateOrderRequest
+uid: '@azure/arm-appservice.ReissueCertificateOrderRequest|stable'
+package: '@azure/arm-appservice|stable'
+summary: Class representing certificate reissue request.
+fullName: ReissueCertificateOrderRequest
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type ReissueCertificateOrderRequest = ProxyOnlyResource & { csr?: undefined |
+  string, delayExistingRevokeInHours?: undefined | number,
+  isPrivateKeyExternal?: undefined | false | true, keySize?: undefined | number
+  }

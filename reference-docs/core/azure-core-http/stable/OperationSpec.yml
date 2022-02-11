@@ -1,0 +1,231 @@
+### YamlMime:TSType
+name: OperationSpec
+uid: '@azure/core-http.OperationSpec|stable'
+package: '@azure/core-http|stable'
+summary: >-
+  A specification that defines how to perform a particular service operation
+  over HTTP, including how to properly serialize request information into and
+  deserialize response information into an object payload returnable by the
+  <xref:@azure/core-http.ServiceClient|stable>.
+fullName: OperationSpec
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: baseUrl
+    uid: '@azure/core-http.OperationSpec.baseUrl|stable'
+    package: '@azure/core-http|stable'
+    summary: >-
+      The URL that was provided in the service's specification. This will still
+      have all of the URL
+
+      template variables in it. If this is not provided when the OperationSpec
+      is created, then it
+
+      will be populated by a "baseUri" property on the ServiceClient.
+    fullName: baseUrl
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'baseUrl?: string'
+      return:
+        description: ''
+        type: string
+  - name: contentType
+    uid: '@azure/core-http.OperationSpec.contentType|stable'
+    package: '@azure/core-http|stable'
+    summary: >-
+      The content type of the request body. This value will be used as the
+      "Content-Type" header if
+
+      it is provided.
+    fullName: contentType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'contentType?: string'
+      return:
+        description: ''
+        type: string
+  - name: formDataParameters
+    uid: '@azure/core-http.OperationSpec.formDataParameters|stable'
+    package: '@azure/core-http|stable'
+    summary: >-
+      The parameters to the operation method that will be used to create a
+      formdata body for the
+
+      operation's HTTP request.
+    fullName: formDataParameters
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'formDataParameters?: ReadonlyArray<OperationParameter>'
+      return:
+        description: ''
+        type: >-
+          ReadonlyArray&lt;<xref
+          uid="@azure/core-http.OperationParameter|stable" />&gt;
+  - name: headerParameters
+    uid: '@azure/core-http.OperationSpec.headerParameters|stable'
+    package: '@azure/core-http|stable'
+    summary: >-
+      The parameters to the operation method that will be converted to headers
+      on the operation's
+
+      HTTP request.
+    fullName: headerParameters
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'headerParameters?: ReadonlyArray<OperationParameter>'
+      return:
+        description: ''
+        type: >-
+          ReadonlyArray&lt;<xref
+          uid="@azure/core-http.OperationParameter|stable" />&gt;
+  - name: httpMethod
+    uid: '@azure/core-http.OperationSpec.httpMethod|stable'
+    package: '@azure/core-http|stable'
+    summary: The HTTP method that should be used by requests for this operation.
+    fullName: httpMethod
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'httpMethod: HttpMethods'
+      return:
+        description: ''
+        type: <xref uid="@azure/core-http.HttpMethods|stable" />
+  - name: isXML
+    uid: '@azure/core-http.OperationSpec.isXML|stable'
+    package: '@azure/core-http|stable'
+    summary: Whether or not this operation uses XML request and response bodies.
+    fullName: isXML
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isXML?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: mediaType
+    uid: '@azure/core-http.OperationSpec.mediaType|stable'
+    package: '@azure/core-http|stable'
+    summary: |-
+      The media type of the request body.
+      This value can be used to aide in serialization if it is provided.
+    fullName: mediaType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        mediaType?: "json" | "xml" | "form" | "binary" | "multipart" | "text" |
+        "unknown" | string
+      return:
+        description: ''
+        type: >-
+          "json" | "xml" | "form" | "binary" | "multipart" | "text" | "unknown"
+          | string
+  - name: path
+    uid: '@azure/core-http.OperationSpec.path|stable'
+    package: '@azure/core-http|stable'
+    summary: >-
+      The fixed path for this operation's URL. This will still have all of the
+      URL template variables
+
+      in it.
+    fullName: path
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'path?: string'
+      return:
+        description: ''
+        type: string
+  - name: queryParameters
+    uid: '@azure/core-http.OperationSpec.queryParameters|stable'
+    package: '@azure/core-http|stable'
+    summary: >-
+      The parameters to the operation method that will be added to the
+      constructed URL's query.
+    fullName: queryParameters
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'queryParameters?: ReadonlyArray<OperationQueryParameter>'
+      return:
+        description: ''
+        type: >-
+          ReadonlyArray&lt;<xref
+          uid="@azure/core-http.OperationQueryParameter|stable" />&gt;
+  - name: requestBody
+    uid: '@azure/core-http.OperationSpec.requestBody|stable'
+    package: '@azure/core-http|stable'
+    summary: The parameter that will be used to construct the HTTP request's body.
+    fullName: requestBody
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'requestBody?: OperationParameter'
+      return:
+        description: ''
+        type: <xref uid="@azure/core-http.OperationParameter|stable" />
+  - name: responses
+    uid: '@azure/core-http.OperationSpec.responses|stable'
+    package: '@azure/core-http|stable'
+    summary: >-
+      The different types of responses that this operation can return based on
+      what status code is
+
+      returned.
+    fullName: responses
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'responses: [key: string]: OperationResponse'
+      return:
+        description: ''
+        type: >-
+          [key: string]\: <xref uid="@azure/core-http.OperationResponse|stable"
+          />
+  - name: serializer
+    uid: '@azure/core-http.OperationSpec.serializer|stable'
+    package: '@azure/core-http|stable'
+    summary: The serializer to use in this operation.
+    fullName: serializer
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'serializer: Serializer'
+      return:
+        description: ''
+        type: <xref uid="@azure/core-http.Serializer|stable" />
+  - name: urlParameters
+    uid: '@azure/core-http.OperationSpec.urlParameters|stable'
+    package: '@azure/core-http|stable'
+    summary: >-
+      The parameters to the operation method that will be substituted into the
+      constructed URL.
+    fullName: urlParameters
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'urlParameters?: ReadonlyArray<OperationURLParameter>'
+      return:
+        description: ''
+        type: >-
+          ReadonlyArray&lt;<xref
+          uid="@azure/core-http.OperationURLParameter|stable" />&gt;

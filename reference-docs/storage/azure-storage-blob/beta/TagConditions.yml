@@ -1,0 +1,24 @@
+### YamlMime:TSType
+name: TagConditions
+uid: '@azure/storage-blob.TagConditions|beta'
+package: '@azure/storage-blob|beta'
+summary: Specifies HTTP options for conditional requests based on blob tags.
+fullName: TagConditions
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: tagConditions
+    uid: '@azure/storage-blob.TagConditions.tagConditions|beta'
+    package: '@azure/storage-blob|beta'
+    summary: Optional SQL statement to apply to the tags of the blob.
+    fullName: tagConditions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tagConditions?: string'
+      return:
+        description: ''
+        type: string

@@ -1,0 +1,26 @@
+### YamlMime:TSType
+name: DeserializationOptions
+uid: '@azure/core-http.DeserializationOptions|stable'
+package: '@azure/core-http|stable'
+summary: Options to configure API response deserialization.
+fullName: DeserializationOptions
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: expectedContentTypes
+    uid: '@azure/core-http.DeserializationOptions.expectedContentTypes|stable'
+    package: '@azure/core-http|stable'
+    summary: |-
+      Configures the expected content types for the deserialization of
+      JSON and XML response bodies.
+    fullName: expectedContentTypes
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'expectedContentTypes: DeserializationContentTypes'
+      return:
+        description: ''
+        type: <xref uid="@azure/core-http.DeserializationContentTypes|stable" />

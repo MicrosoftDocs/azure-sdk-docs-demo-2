@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: JsonWriteSettings
+uid: '@azure/arm-datafactory.JsonWriteSettings|stable'
+package: '@azure/arm-datafactory|stable'
+summary: Json write settings.
+fullName: JsonWriteSettings
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type JsonWriteSettings = FormatWriteSettings & { filePattern?: Record<string,
+  unknown>, type: "JsonWriteSettings" }

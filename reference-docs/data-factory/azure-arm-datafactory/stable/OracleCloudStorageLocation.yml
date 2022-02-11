@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: OracleCloudStorageLocation
+uid: '@azure/arm-datafactory.OracleCloudStorageLocation|stable'
+package: '@azure/arm-datafactory|stable'
+summary: The location of Oracle Cloud Storage dataset.
+fullName: OracleCloudStorageLocation
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type OracleCloudStorageLocation = DatasetLocation & { bucketName?:
+  Record<string, unknown>, type: "OracleCloudStorageLocation", version?:
+  Record<string, unknown> }

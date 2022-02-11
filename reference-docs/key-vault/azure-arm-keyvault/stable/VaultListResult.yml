@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: VaultListResult
+uid: '@azure/arm-keyvault.VaultListResult|stable'
+package: '@azure/arm-keyvault|stable'
+summary: List of vaults
+fullName: VaultListResult
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: nextLink
+    uid: '@azure/arm-keyvault.VaultListResult.nextLink|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: The URL to get the next set of vaults.
+    fullName: nextLink
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nextLink?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: value
+    uid: '@azure/arm-keyvault.VaultListResult.value|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: The list of vaults.
+    fullName: value
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: Vault[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-keyvault.Vault|stable" />[]

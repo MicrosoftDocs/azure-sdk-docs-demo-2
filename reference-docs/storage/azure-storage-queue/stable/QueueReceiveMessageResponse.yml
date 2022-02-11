@@ -1,0 +1,16 @@
+### YamlMime:TSTypeAlias
+name: QueueReceiveMessageResponse
+uid: '@azure/storage-queue.QueueReceiveMessageResponse|stable'
+package: '@azure/storage-queue|stable'
+summary: >-
+  Contains the response data for the
+  <xref:@azure/storage-queue.QueueClient.receiveMessages|stable> operation.
+fullName: QueueReceiveMessageResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type QueueReceiveMessageResponse = { receivedMessageItems:
+  ReceivedMessageItem[] } & MessagesDequeueHeaders & { _response: HttpResponse &
+  { bodyAsText: string, parsedBody: ReceivedMessageItem[], parsedHeaders:
+  MessagesDequeueHeaders } }

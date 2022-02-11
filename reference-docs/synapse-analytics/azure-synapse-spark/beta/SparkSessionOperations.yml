@@ -1,0 +1,283 @@
+### YamlMime:TSType
+name: SparkSessionOperations
+uid: '@azure/synapse-spark.SparkSessionOperations|beta'
+package: '@azure/synapse-spark|beta'
+summary: Interface representing a SparkSessionOperations.
+fullName: SparkSessionOperations
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: cancelSparkSession(number, SparkSessionCancelSparkSessionOptionalParams)
+    uid: '@azure/synapse-spark.SparkSessionOperations.cancelSparkSession|beta'
+    package: '@azure/synapse-spark|beta'
+    summary: Cancels a running spark session.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function cancelSparkSession(sessionId: number, options?:
+        SparkSessionCancelSparkSessionOptionalParams): Promise<void>
+      parameters:
+        - id: sessionId
+          type: number
+          description: Identifier for the session.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-spark.SparkSessionCancelSparkSessionOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      cancelSparkStatement(number, number,
+      SparkSessionCancelSparkStatementOptionalParams)
+    uid: '@azure/synapse-spark.SparkSessionOperations.cancelSparkStatement|beta'
+    package: '@azure/synapse-spark|beta'
+    summary: Kill a statement within a session.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function cancelSparkStatement(sessionId: number, statementId: number,
+        options?: SparkSessionCancelSparkStatementOptionalParams):
+        Promise<SparkSessionCancelSparkStatementResponse>
+      parameters:
+        - id: sessionId
+          type: number
+          description: Identifier for the session.
+        - id: statementId
+          type: number
+          description: Identifier for the statement.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-spark.SparkSessionCancelSparkStatementOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/synapse-spark.SparkSessionCancelSparkStatementResponse|beta"
+          />&gt;
+  - name: >-
+      createSparkSession(SparkSessionOptions,
+      SparkSessionCreateSparkSessionOptionalParams)
+    uid: '@azure/synapse-spark.SparkSessionOperations.createSparkSession|beta'
+    package: '@azure/synapse-spark|beta'
+    summary: Create new spark session.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createSparkSession(sparkSessionOptions: SparkSessionOptions,
+        options?: SparkSessionCreateSparkSessionOptionalParams):
+        Promise<SparkSessionCreateSparkSessionResponse>
+      parameters:
+        - id: sparkSessionOptions
+          type: <xref uid="@azure/synapse-spark.SparkSessionOptions|beta" />
+          description: Livy compatible batch job request payload.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-spark.SparkSessionCreateSparkSessionOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/synapse-spark.SparkSessionCreateSparkSessionResponse|beta"
+          />&gt;
+  - name: >-
+      createSparkStatement(number, SparkStatementOptions,
+      SparkSessionCreateSparkStatementOptionalParams)
+    uid: '@azure/synapse-spark.SparkSessionOperations.createSparkStatement|beta'
+    package: '@azure/synapse-spark|beta'
+    summary: Create statement within a spark session.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createSparkStatement(sessionId: number, sparkStatementOptions:
+        SparkStatementOptions, options?:
+        SparkSessionCreateSparkStatementOptionalParams):
+        Promise<SparkSessionCreateSparkStatementResponse>
+      parameters:
+        - id: sessionId
+          type: number
+          description: Identifier for the session.
+        - id: sparkStatementOptions
+          type: <xref uid="@azure/synapse-spark.SparkStatementOptions|beta" />
+          description: Livy compatible batch job request payload.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-spark.SparkSessionCreateSparkStatementOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/synapse-spark.SparkSessionCreateSparkStatementResponse|beta"
+          />&gt;
+  - name: getSparkSession(number, SparkSessionGetSparkSessionOptionalParams)
+    uid: '@azure/synapse-spark.SparkSessionOperations.getSparkSession|beta'
+    package: '@azure/synapse-spark|beta'
+    summary: Gets a single spark session.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getSparkSession(sessionId: number, options?:
+        SparkSessionGetSparkSessionOptionalParams):
+        Promise<SparkSessionGetSparkSessionResponse>
+      parameters:
+        - id: sessionId
+          type: number
+          description: Identifier for the session.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-spark.SparkSessionGetSparkSessionOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/synapse-spark.SparkSessionGetSparkSessionResponse|beta"
+          />&gt;
+  - name: getSparkSessions(SparkSessionGetSparkSessionsOptionalParams)
+    uid: '@azure/synapse-spark.SparkSessionOperations.getSparkSessions|beta'
+    package: '@azure/synapse-spark|beta'
+    summary: List all spark sessions which are running under a particular spark pool.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getSparkSessions(options?:
+        SparkSessionGetSparkSessionsOptionalParams):
+        Promise<SparkSessionGetSparkSessionsResponse>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-spark.SparkSessionGetSparkSessionsOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/synapse-spark.SparkSessionGetSparkSessionsResponse|beta"
+          />&gt;
+  - name: >-
+      getSparkStatement(number, number,
+      SparkSessionGetSparkStatementOptionalParams)
+    uid: '@azure/synapse-spark.SparkSessionOperations.getSparkStatement|beta'
+    package: '@azure/synapse-spark|beta'
+    summary: Gets a single statement within a spark session.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getSparkStatement(sessionId: number, statementId: number,
+        options?: SparkSessionGetSparkStatementOptionalParams):
+        Promise<SparkSessionGetSparkStatementResponse>
+      parameters:
+        - id: sessionId
+          type: number
+          description: Identifier for the session.
+        - id: statementId
+          type: number
+          description: Identifier for the statement.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-spark.SparkSessionGetSparkStatementOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/synapse-spark.SparkSessionGetSparkStatementResponse|beta"
+          />&gt;
+  - name: getSparkStatements(number, SparkSessionGetSparkStatementsOptionalParams)
+    uid: '@azure/synapse-spark.SparkSessionOperations.getSparkStatements|beta'
+    package: '@azure/synapse-spark|beta'
+    summary: Gets a list of statements within a spark session.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getSparkStatements(sessionId: number, options?:
+        SparkSessionGetSparkStatementsOptionalParams):
+        Promise<SparkSessionGetSparkStatementsResponse>
+      parameters:
+        - id: sessionId
+          type: number
+          description: Identifier for the session.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-spark.SparkSessionGetSparkStatementsOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/synapse-spark.SparkSessionGetSparkStatementsResponse|beta"
+          />&gt;
+  - name: >-
+      resetSparkSessionTimeout(number,
+      SparkSessionResetSparkSessionTimeoutOptionalParams)
+    uid: '@azure/synapse-spark.SparkSessionOperations.resetSparkSessionTimeout|beta'
+    package: '@azure/synapse-spark|beta'
+    summary: >-
+      Sends a keep alive call to the current session to reset the session
+      timeout.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function resetSparkSessionTimeout(sessionId: number, options?:
+        SparkSessionResetSparkSessionTimeoutOptionalParams): Promise<void>
+      parameters:
+        - id: sessionId
+          type: number
+          description: Identifier for the session.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-spark.SparkSessionResetSparkSessionTimeoutOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;

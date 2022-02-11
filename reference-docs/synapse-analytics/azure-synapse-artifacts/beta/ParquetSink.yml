@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: ParquetSink
+uid: '@azure/synapse-artifacts.ParquetSink|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: A copy activity Parquet sink.
+fullName: ParquetSink
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type ParquetSink = CopySink & { formatSettings?: ParquetWriteSettings,
+  storeSettings?: StoreWriteSettingsUnion, type: "ParquetSink" }

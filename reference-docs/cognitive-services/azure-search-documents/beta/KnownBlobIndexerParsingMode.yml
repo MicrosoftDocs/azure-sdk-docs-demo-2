@@ -1,0 +1,43 @@
+### YamlMime:TSEnum
+name: KnownBlobIndexerParsingMode
+uid: '@azure/search-documents.KnownBlobIndexerParsingMode|beta'
+package: '@azure/search-documents|beta'
+summary: >-
+  Known values of
+  <xref:@azure/search-documents.KnownBlobIndexerParsingMode|beta> that the
+  service accepts.
+fullName: KnownBlobIndexerParsingMode
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: Default
+    uid: '@azure/search-documents.KnownBlobIndexerParsingMode.Default|beta'
+    package: '@azure/search-documents|beta'
+    summary: Set to default for normal file processing.
+  - name: DelimitedText
+    uid: '@azure/search-documents.KnownBlobIndexerParsingMode.DelimitedText|beta'
+    package: '@azure/search-documents|beta'
+    summary: Set to delimitedText when blobs are plain CSV files.
+  - name: Json
+    uid: '@azure/search-documents.KnownBlobIndexerParsingMode.Json|beta'
+    package: '@azure/search-documents|beta'
+    summary: Set to json to extract structured content from JSON files.
+  - name: JsonArray
+    uid: '@azure/search-documents.KnownBlobIndexerParsingMode.JsonArray|beta'
+    package: '@azure/search-documents|beta'
+    summary: >-
+      Set to jsonArray to extract individual elements of a JSON array as
+      separate documents in Azure Cognitive Search.
+  - name: JsonLines
+    uid: '@azure/search-documents.KnownBlobIndexerParsingMode.JsonLines|beta'
+    package: '@azure/search-documents|beta'
+    summary: >-
+      Set to jsonLines to extract individual JSON entities, separated by a new
+      line, as separate documents in Azure Cognitive Search.
+  - name: Text
+    uid: '@azure/search-documents.KnownBlobIndexerParsingMode.Text|beta'
+    package: '@azure/search-documents|beta'
+    summary: >-
+      Set to text to improve indexing performance on plain text files in blob
+      storage.

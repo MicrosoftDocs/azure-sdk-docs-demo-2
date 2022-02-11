@@ -1,0 +1,61 @@
+### YamlMime:TSType
+name: BigDataPools
+uid: '@azure/synapse-artifacts.BigDataPools|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: Interface representing a BigDataPools.
+fullName: BigDataPools
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: get(string, BigDataPoolsGetOptionalParams)
+    uid: '@azure/synapse-artifacts.BigDataPools.get|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Get Big Data Pool
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(bigDataPoolName: string, options?:
+        BigDataPoolsGetOptionalParams): Promise<BigDataPoolsGetResponse>
+      parameters:
+        - id: bigDataPoolName
+          type: string
+          description: The Big Data Pool name
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-artifacts.BigDataPoolsGetOptionalParams|beta" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/synapse-artifacts.BigDataPoolsGetResponse|beta" />&gt;
+  - name: list(BigDataPoolsListOptionalParams)
+    uid: '@azure/synapse-artifacts.BigDataPools.list|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: List Big Data Pools
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(options?: BigDataPoolsListOptionalParams):
+        Promise<BigDataPoolsListResponse>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-artifacts.BigDataPoolsListOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/synapse-artifacts.BigDataPoolsListResponse|beta" />&gt;

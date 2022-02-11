@@ -1,0 +1,205 @@
+### YamlMime:TSType
+name: CommitmentPlans
+uid: '@azure/arm-cognitiveservices.CommitmentPlans|stable'
+package: '@azure/arm-cognitiveservices|stable'
+summary: Interface representing a CommitmentPlans.
+fullName: CommitmentPlans
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: beginDelete(string, string, string, CommitmentPlansDeleteOptionalParams)
+    uid: '@azure/arm-cognitiveservices.CommitmentPlans.beginDelete|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: >-
+      Deletes the specified commitmentPlan associated with the Cognitive
+      Services account.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDelete(resourceGroupName: string, accountName: string,
+        commitmentPlanName: string, options?:
+        CommitmentPlansDeleteOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: accountName
+          type: string
+          description: The name of Cognitive Services account.
+        - id: commitmentPlanName
+          type: string
+          description: >-
+            The name of the commitmentPlan associated with the Cognitive
+            Services
+                                      Account
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-cognitiveservices.CommitmentPlansDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: >-
+      beginDeleteAndWait(string, string, string,
+      CommitmentPlansDeleteOptionalParams)
+    uid: '@azure/arm-cognitiveservices.CommitmentPlans.beginDeleteAndWait|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: >-
+      Deletes the specified commitmentPlan associated with the Cognitive
+      Services account.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteAndWait(resourceGroupName: string, accountName:
+        string, commitmentPlanName: string, options?:
+        CommitmentPlansDeleteOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: accountName
+          type: string
+          description: The name of Cognitive Services account.
+        - id: commitmentPlanName
+          type: string
+          description: >-
+            The name of the commitmentPlan associated with the Cognitive
+            Services
+                                      Account
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-cognitiveservices.CommitmentPlansDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      createOrUpdate(string, string, string, CommitmentPlan,
+      CommitmentPlansCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-cognitiveservices.CommitmentPlans.createOrUpdate|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: >-
+      Update the state of specified commitmentPlans associated with the
+      Cognitive Services account.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, accountName: string,
+        commitmentPlanName: string, commitmentPlan: CommitmentPlan, options?:
+        CommitmentPlansCreateOrUpdateOptionalParams):
+        Promise<CommitmentPlansCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: accountName
+          type: string
+          description: The name of Cognitive Services account.
+        - id: commitmentPlanName
+          type: string
+          description: >-
+            The name of the commitmentPlan associated with the Cognitive
+            Services
+                                      Account
+        - id: commitmentPlan
+          type: <xref uid="@azure/arm-cognitiveservices.CommitmentPlan|stable" />
+          description: The commitmentPlan properties.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-cognitiveservices.CommitmentPlansCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-cognitiveservices.CommitmentPlansCreateOrUpdateResponse|stable"
+          />&gt;
+  - name: get(string, string, string, CommitmentPlansGetOptionalParams)
+    uid: '@azure/arm-cognitiveservices.CommitmentPlans.get|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: >-
+      Gets the specified commitmentPlans associated with the Cognitive Services
+      account.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, accountName: string,
+        commitmentPlanName: string, options?: CommitmentPlansGetOptionalParams):
+        Promise<CommitmentPlansGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: accountName
+          type: string
+          description: The name of Cognitive Services account.
+        - id: commitmentPlanName
+          type: string
+          description: >-
+            The name of the commitmentPlan associated with the Cognitive
+            Services
+                                      Account
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-cognitiveservices.CommitmentPlansGetOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-cognitiveservices.CommitmentPlansGetResponse|stable"
+          />&gt;
+  - name: list(string, string, CommitmentPlansListOptionalParams)
+    uid: '@azure/arm-cognitiveservices.CommitmentPlans.list|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: Gets the commitmentPlans associated with the Cognitive Services account.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, accountName: string, options?:
+        CommitmentPlansListOptionalParams):
+        PagedAsyncIterableIterator<CommitmentPlan>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: accountName
+          type: string
+          description: The name of Cognitive Services account.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-cognitiveservices.CommitmentPlansListOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-cognitiveservices.CommitmentPlan|stable" />&gt;

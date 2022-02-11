@@ -1,0 +1,420 @@
+### YamlMime:TSType
+name: ManagedHsms
+uid: '@azure/arm-keyvault.ManagedHsms|stable'
+package: '@azure/arm-keyvault|stable'
+summary: Interface representing a ManagedHsms.
+fullName: ManagedHsms
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      beginCreateOrUpdate(string, string, ManagedHsm,
+      ManagedHsmsCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-keyvault.ManagedHsms.beginCreateOrUpdate|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: Create or update a managed HSM Pool in the specified subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string, name: string,
+        parameters: ManagedHsm, options?:
+        ManagedHsmsCreateOrUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<ManagedHsmsCreateOrUpdateResponse>,
+        ManagedHsmsCreateOrUpdateResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group that contains the managed HSM pool.
+        - id: name
+          type: string
+          description: Name of the managed HSM Pool
+        - id: parameters
+          type: <xref uid="@azure/arm-keyvault.ManagedHsm|stable" />
+          description: Parameters to create or update the managed HSM Pool
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-keyvault.ManagedHsmsCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-keyvault.ManagedHsmsCreateOrUpdateResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-keyvault.ManagedHsmsCreateOrUpdateResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginCreateOrUpdateAndWait(string, string, ManagedHsm,
+      ManagedHsmsCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-keyvault.ManagedHsms.beginCreateOrUpdateAndWait|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: Create or update a managed HSM Pool in the specified subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdateAndWait(resourceGroupName: string, name:
+        string, parameters: ManagedHsm, options?:
+        ManagedHsmsCreateOrUpdateOptionalParams):
+        Promise<ManagedHsmsCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group that contains the managed HSM pool.
+        - id: name
+          type: string
+          description: Name of the managed HSM Pool
+        - id: parameters
+          type: <xref uid="@azure/arm-keyvault.ManagedHsm|stable" />
+          description: Parameters to create or update the managed HSM Pool
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-keyvault.ManagedHsmsCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-keyvault.ManagedHsmsCreateOrUpdateResponse|stable"
+          />&gt;
+  - name: beginDelete(string, string, ManagedHsmsDeleteOptionalParams)
+    uid: '@azure/arm-keyvault.ManagedHsms.beginDelete|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: Deletes the specified managed HSM Pool.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDelete(resourceGroupName: string, name: string, options?:
+        ManagedHsmsDeleteOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group that contains the managed HSM pool.
+        - id: name
+          type: string
+          description: The name of the managed HSM Pool to delete
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-keyvault.ManagedHsmsDeleteOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: beginDeleteAndWait(string, string, ManagedHsmsDeleteOptionalParams)
+    uid: '@azure/arm-keyvault.ManagedHsms.beginDeleteAndWait|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: Deletes the specified managed HSM Pool.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteAndWait(resourceGroupName: string, name: string,
+        options?: ManagedHsmsDeleteOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group that contains the managed HSM pool.
+        - id: name
+          type: string
+          description: The name of the managed HSM Pool to delete
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-keyvault.ManagedHsmsDeleteOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: beginPurgeDeleted(string, string, ManagedHsmsPurgeDeletedOptionalParams)
+    uid: '@azure/arm-keyvault.ManagedHsms.beginPurgeDeleted|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: Permanently deletes the specified managed HSM.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginPurgeDeleted(name: string, location: string, options?:
+        ManagedHsmsPurgeDeletedOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: name
+          type: string
+          description: The name of the soft-deleted managed HSM.
+        - id: location
+          type: string
+          description: The location of the soft-deleted managed HSM.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-keyvault.ManagedHsmsPurgeDeletedOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: >-
+      beginPurgeDeletedAndWait(string, string,
+      ManagedHsmsPurgeDeletedOptionalParams)
+    uid: '@azure/arm-keyvault.ManagedHsms.beginPurgeDeletedAndWait|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: Permanently deletes the specified managed HSM.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginPurgeDeletedAndWait(name: string, location: string,
+        options?: ManagedHsmsPurgeDeletedOptionalParams): Promise<void>
+      parameters:
+        - id: name
+          type: string
+          description: The name of the soft-deleted managed HSM.
+        - id: location
+          type: string
+          description: The location of the soft-deleted managed HSM.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-keyvault.ManagedHsmsPurgeDeletedOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: beginUpdate(string, string, ManagedHsm, ManagedHsmsUpdateOptionalParams)
+    uid: '@azure/arm-keyvault.ManagedHsms.beginUpdate|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: Update a managed HSM Pool in the specified subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginUpdate(resourceGroupName: string, name: string,
+        parameters: ManagedHsm, options?: ManagedHsmsUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<ManagedHsmsUpdateResponse>,
+        ManagedHsmsUpdateResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group that contains the managed HSM pool.
+        - id: name
+          type: string
+          description: Name of the managed HSM Pool
+        - id: parameters
+          type: <xref uid="@azure/arm-keyvault.ManagedHsm|stable" />
+          description: Parameters to patch the managed HSM Pool
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-keyvault.ManagedHsmsUpdateOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-keyvault.ManagedHsmsUpdateResponse|stable" />&gt;,
+          <xref uid="@azure/arm-keyvault.ManagedHsmsUpdateResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginUpdateAndWait(string, string, ManagedHsm,
+      ManagedHsmsUpdateOptionalParams)
+    uid: '@azure/arm-keyvault.ManagedHsms.beginUpdateAndWait|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: Update a managed HSM Pool in the specified subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginUpdateAndWait(resourceGroupName: string, name: string,
+        parameters: ManagedHsm, options?: ManagedHsmsUpdateOptionalParams):
+        Promise<ManagedHsmsUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group that contains the managed HSM pool.
+        - id: name
+          type: string
+          description: Name of the managed HSM Pool
+        - id: parameters
+          type: <xref uid="@azure/arm-keyvault.ManagedHsm|stable" />
+          description: Parameters to patch the managed HSM Pool
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-keyvault.ManagedHsmsUpdateOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-keyvault.ManagedHsmsUpdateResponse|stable" />&gt;
+  - name: get(string, string, ManagedHsmsGetOptionalParams)
+    uid: '@azure/arm-keyvault.ManagedHsms.get|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: Gets the specified managed HSM Pool.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, name: string, options?:
+        ManagedHsmsGetOptionalParams): Promise<ManagedHsmsGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group that contains the managed HSM pool.
+        - id: name
+          type: string
+          description: The name of the managed HSM Pool.
+        - id: options
+          type: >-
+            <xref uid="@azure/arm-keyvault.ManagedHsmsGetOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-keyvault.ManagedHsmsGetResponse|stable" />&gt;
+  - name: getDeleted(string, string, ManagedHsmsGetDeletedOptionalParams)
+    uid: '@azure/arm-keyvault.ManagedHsms.getDeleted|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: Gets the specified deleted managed HSM.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getDeleted(name: string, location: string, options?:
+        ManagedHsmsGetDeletedOptionalParams):
+        Promise<ManagedHsmsGetDeletedResponse>
+      parameters:
+        - id: name
+          type: string
+          description: The name of the deleted managed HSM.
+        - id: location
+          type: string
+          description: The location of the deleted managed HSM.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-keyvault.ManagedHsmsGetDeletedOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-keyvault.ManagedHsmsGetDeletedResponse|stable" />&gt;
+  - name: listByResourceGroup(string, ManagedHsmsListByResourceGroupOptionalParams)
+    uid: '@azure/arm-keyvault.ManagedHsms.listByResourceGroup|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: >-
+      The List operation gets information about the managed HSM Pools associated
+      with the subscription and
+
+      within the specified resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string, options?:
+        ManagedHsmsListByResourceGroupOptionalParams):
+        PagedAsyncIterableIterator<ManagedHsm>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group that contains the managed HSM pool.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-keyvault.ManagedHsmsListByResourceGroupOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-keyvault.ManagedHsm|stable" />&gt;
+  - name: listBySubscription(ManagedHsmsListBySubscriptionOptionalParams)
+    uid: '@azure/arm-keyvault.ManagedHsms.listBySubscription|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: >-
+      The List operation gets information about the managed HSM Pools associated
+      with the subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listBySubscription(options?:
+        ManagedHsmsListBySubscriptionOptionalParams):
+        PagedAsyncIterableIterator<ManagedHsm>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-keyvault.ManagedHsmsListBySubscriptionOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-keyvault.ManagedHsm|stable" />&gt;
+  - name: listDeleted(ManagedHsmsListDeletedOptionalParams)
+    uid: '@azure/arm-keyvault.ManagedHsms.listDeleted|stable'
+    package: '@azure/arm-keyvault|stable'
+    summary: >-
+      The List operation gets information about the deleted managed HSMs
+      associated with the subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listDeleted(options?: ManagedHsmsListDeletedOptionalParams):
+        PagedAsyncIterableIterator<DeletedManagedHsm>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-keyvault.ManagedHsmsListDeletedOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-keyvault.DeletedManagedHsm|stable" />&gt;

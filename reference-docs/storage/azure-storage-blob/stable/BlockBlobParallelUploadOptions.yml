@@ -1,0 +1,198 @@
+### YamlMime:TSType
+name: BlockBlobParallelUploadOptions
+uid: '@azure/storage-blob.BlockBlobParallelUploadOptions|stable'
+package: '@azure/storage-blob|stable'
+summary: >-
+  Option interface for
+  <xref:@azure/storage-blob.BlockBlobClient.uploadFile|stable> and
+  BlockBlobClient.uploadSeekableStream.
+fullName: BlockBlobParallelUploadOptions
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: abortSignal
+    uid: '@azure/storage-blob.BlockBlobParallelUploadOptions.abortSignal|stable'
+    package: '@azure/storage-blob|stable'
+    summary: >-
+      An implementation of the `AbortSignalLike` interface to signal the request
+      to cancel the operation.
+
+      For example, use the &commat;azure/abort-controller to create an
+      `AbortSignal`.
+    fullName: abortSignal
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'abortSignal?: AbortSignalLike'
+      return:
+        description: ''
+        type: AbortSignalLike
+  - name: blobHTTPHeaders
+    uid: '@azure/storage-blob.BlockBlobParallelUploadOptions.blobHTTPHeaders|stable'
+    package: '@azure/storage-blob|stable'
+    summary: |-
+      Blob HTTP Headers. A common header to set is
+      `blobContentType`, enabling the browser to provide
+      functionality based on file type.
+    fullName: blobHTTPHeaders
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'blobHTTPHeaders?: BlobHTTPHeaders'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-blob.BlobHTTPHeaders|stable" />
+  - name: blockSize
+    uid: '@azure/storage-blob.BlockBlobParallelUploadOptions.blockSize|stable'
+    package: '@azure/storage-blob|stable'
+    summary: Destination block blob size in bytes.
+    fullName: blockSize
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'blockSize?: number'
+      return:
+        description: ''
+        type: number
+  - name: concurrency
+    uid: '@azure/storage-blob.BlockBlobParallelUploadOptions.concurrency|stable'
+    package: '@azure/storage-blob|stable'
+    summary: Concurrency of parallel uploading. Must be greater than or equal to 0.
+    fullName: concurrency
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'concurrency?: number'
+      return:
+        description: ''
+        type: number
+  - name: conditions
+    uid: '@azure/storage-blob.BlockBlobParallelUploadOptions.conditions|stable'
+    package: '@azure/storage-blob|stable'
+    summary: Access conditions headers.
+    fullName: conditions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'conditions?: BlobRequestConditions'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-blob.BlobRequestConditions|stable" />
+  - name: encryptionScope
+    uid: '@azure/storage-blob.BlockBlobParallelUploadOptions.encryptionScope|stable'
+    package: '@azure/storage-blob|stable'
+    summary: >-
+      Optional. Version 2019-07-07 and later.  Specifies the name of the
+      encryption scope to use to
+
+      encrypt the data provided in the request. If not specified, encryption is
+      performed with the
+
+      default account encryption scope.  For more information, see Encryption at
+      Rest for Azure
+
+      Storage Services.
+    fullName: encryptionScope
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'encryptionScope?: string'
+      return:
+        description: ''
+        type: string
+  - name: maxSingleShotSize
+    uid: >-
+      @azure/storage-blob.BlockBlobParallelUploadOptions.maxSingleShotSize|stable
+    package: '@azure/storage-blob|stable'
+    summary: |-
+      Blob size threshold in bytes to start concurrency uploading.
+      Default value is 256MB, blob size less than this option will
+      be uploaded via one I/O operation without concurrency.
+      You can customize a value less equal than the default value.
+    fullName: maxSingleShotSize
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'maxSingleShotSize?: number'
+      return:
+        description: ''
+        type: number
+  - name: metadata
+    uid: '@azure/storage-blob.BlockBlobParallelUploadOptions.metadata|stable'
+    package: '@azure/storage-blob|stable'
+    summary: Metadata of block blob.
+    fullName: metadata
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'metadata?: [key: string]: string'
+      return:
+        description: ''
+        type: '[key: string]\: string'
+  - name: onProgress
+    uid: '@azure/storage-blob.BlockBlobParallelUploadOptions.onProgress|stable'
+    package: '@azure/storage-blob|stable'
+    summary: Progress updater.
+    fullName: onProgress
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onProgress?: (progress: TransferProgressEvent) => void'
+      return:
+        description: ''
+        type: '(progress: TransferProgressEvent) =&gt; void'
+  - name: tags
+    uid: '@azure/storage-blob.BlockBlobParallelUploadOptions.tags|stable'
+    package: '@azure/storage-blob|stable'
+    summary: Blob tags.
+    fullName: tags
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tags?: Tags'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-blob.Tags|stable" />
+  - name: tier
+    uid: '@azure/storage-blob.BlockBlobParallelUploadOptions.tier|stable'
+    package: '@azure/storage-blob|stable'
+    summary: >-
+      Access tier.
+
+      More Details -
+      https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-storage-tiers
+    fullName: tier
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tier?: BlockBlobTier | string'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-blob.BlockBlobTier|stable" /> | string
+  - name: tracingOptions
+    uid: '@azure/storage-blob.BlockBlobParallelUploadOptions.tracingOptions|stable'
+    package: '@azure/storage-blob|stable'
+    summary: Options to configure spans created when tracing is enabled.
+    fullName: tracingOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tracingOptions?: OperationTracingOptions'
+      return:
+        description: ''
+        type: OperationTracingOptions
+extends: <xref uid="@azure/storage-blob.CommonOptions|stable" />

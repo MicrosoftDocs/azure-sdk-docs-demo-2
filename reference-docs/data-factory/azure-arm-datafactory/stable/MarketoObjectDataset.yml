@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: MarketoObjectDataset
+uid: '@azure/arm-datafactory.MarketoObjectDataset|stable'
+package: '@azure/arm-datafactory|stable'
+summary: Marketo server dataset.
+fullName: MarketoObjectDataset
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type MarketoObjectDataset = Dataset & { tableName?: Record<string, unknown>,
+  type: "MarketoObject" }

@@ -1,0 +1,65 @@
+### YamlMime:TSType
+name: KeyVaultRoleAssignment
+uid: '@azure/keyvault-admin.KeyVaultRoleAssignment|stable'
+package: '@azure/keyvault-admin|stable'
+summary: A Key Vault role assignment.
+fullName: KeyVaultRoleAssignment
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: id
+    uid: '@azure/keyvault-admin.KeyVaultRoleAssignment.id|stable'
+    package: '@azure/keyvault-admin|stable'
+    summary: The role assignment ID.
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id: string'
+      return:
+        description: ''
+        type: string
+  - name: kind
+    uid: '@azure/keyvault-admin.KeyVaultRoleAssignment.kind|stable'
+    package: '@azure/keyvault-admin|stable'
+    summary: The role assignment type.
+    fullName: kind
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'kind: string'
+      return:
+        description: ''
+        type: string
+  - name: name
+    uid: '@azure/keyvault-admin.KeyVaultRoleAssignment.name|stable'
+    package: '@azure/keyvault-admin|stable'
+    summary: The role assignment name.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: string'
+      return:
+        description: ''
+        type: string
+  - name: properties
+    uid: '@azure/keyvault-admin.KeyVaultRoleAssignment.properties|stable'
+    package: '@azure/keyvault-admin|stable'
+    summary: Role assignment properties.
+    fullName: properties
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'properties: KeyVaultRoleAssignmentProperties'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/keyvault-admin.KeyVaultRoleAssignmentProperties|stable" />

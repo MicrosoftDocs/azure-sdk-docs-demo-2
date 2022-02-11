@@ -1,0 +1,33 @@
+### YamlMime:TSType
+name: DocumentModel
+uid: '@azure/ai-form-recognizer.DocumentModel|beta'
+package: '@azure/ai-form-recognizer|beta'
+summary: >
+  A well-known model specification that supports extracting structured
+  documents.
+
+  See the `beginAnalyzeDocuments` method of
+  <xref:@azure/ai-form-recognizer.DocumentAnalysisClient|beta>, which supports
+  consuming these
+
+  `DocumentModel` objects instead of model ID strings to provide stronger result
+  types.
+fullName: DocumentModel<Result>
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: modelId
+    uid: '@azure/ai-form-recognizer.DocumentModel.modelId|beta'
+    package: '@azure/ai-form-recognizer|beta'
+    summary: The unique ID of this model.
+    fullName: modelId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'modelId: string'
+      return:
+        description: ''
+        type: string

@@ -1,0 +1,30 @@
+### YamlMime:TSType
+name: AkamaiAccessControl
+uid: '@azure/arm-mediaservices.AkamaiAccessControl|stable'
+package: '@azure/arm-mediaservices|stable'
+summary: Akamai access control
+fullName: AkamaiAccessControl
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: akamaiSignatureHeaderAuthenticationKeyList
+    uid: >-
+      @azure/arm-mediaservices.AkamaiAccessControl.akamaiSignatureHeaderAuthenticationKeyList|stable
+    package: '@azure/arm-mediaservices|stable'
+    summary: authentication key list
+    fullName: akamaiSignatureHeaderAuthenticationKeyList
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        akamaiSignatureHeaderAuthenticationKeyList?:
+        AkamaiSignatureHeaderAuthenticationKey[]
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-mediaservices.AkamaiSignatureHeaderAuthenticationKey|stable"
+          />[]

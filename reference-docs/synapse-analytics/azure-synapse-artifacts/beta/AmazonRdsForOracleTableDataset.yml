@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: AmazonRdsForOracleTableDataset
+uid: '@azure/synapse-artifacts.AmazonRdsForOracleTableDataset|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: The AmazonRdsForOracle database dataset.
+fullName: AmazonRdsForOracleTableDataset
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type AmazonRdsForOracleTableDataset = Dataset & { schemaTypePropertiesSchema?:
+  any, table?: any, type: "AmazonRdsForOracleTable" }

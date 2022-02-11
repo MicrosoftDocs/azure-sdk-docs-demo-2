@@ -1,0 +1,30 @@
+### YamlMime:TSEnum
+name: KnownVerbosity
+uid: '@azure/arm-apimanagement.KnownVerbosity|stable'
+package: '@azure/arm-apimanagement|stable'
+summary: >-
+  Known values of <xref:@azure/arm-apimanagement.KnownVerbosity|stable> that the
+  service accepts.
+fullName: KnownVerbosity
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: Error
+    uid: '@azure/arm-apimanagement.KnownVerbosity.Error|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: >-
+      Only traces with 'severity' set to 'error' will be sent to the logger
+      attached to this diagnostic instance.
+  - name: Information
+    uid: '@azure/arm-apimanagement.KnownVerbosity.Information|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: >-
+      Traces with 'severity' set to 'information' and 'error' will be sent to
+      the logger attached to this diagnostic instance.
+  - name: Verbose
+    uid: '@azure/arm-apimanagement.KnownVerbosity.Verbose|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: >-
+      All the traces emitted by trace policies will be sent to the logger
+      attached to this diagnostic instance.

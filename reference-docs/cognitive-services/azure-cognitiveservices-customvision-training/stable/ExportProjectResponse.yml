@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: ExportProjectResponse
+uid: '@azure/cognitiveservices-customvision-training.ExportProjectResponse|stable'
+package: '@azure/cognitiveservices-customvision-training|stable'
+summary: Contains response data for the exportProject operation.
+fullName: ExportProjectResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type ExportProjectResponse = ProjectExport & { _response: HttpResponse & {
+  bodyAsText: string, parsedBody: ProjectExport } }

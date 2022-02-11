@@ -1,0 +1,63 @@
+### YamlMime:TSType
+name: OperationDisplay
+uid: '@azure/arm-apimanagement.OperationDisplay|stable'
+package: '@azure/arm-apimanagement|stable'
+summary: The object that describes the operation.
+fullName: OperationDisplay
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: description
+    uid: '@azure/arm-apimanagement.OperationDisplay.description|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: Friendly name of the operation
+    fullName: description
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'description?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: operation
+    uid: '@azure/arm-apimanagement.OperationDisplay.operation|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: 'Operation type: read, write, delete, listKeys/action, etc.'
+    fullName: operation
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'operation?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: provider
+    uid: '@azure/arm-apimanagement.OperationDisplay.provider|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: Friendly name of the resource provider
+    fullName: provider
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'provider?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: resource
+    uid: '@azure/arm-apimanagement.OperationDisplay.resource|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: Resource type on which the operation is performed.
+    fullName: resource
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'resource?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

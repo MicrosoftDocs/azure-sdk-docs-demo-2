@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: StaticSitesWorkflowPreviewRequest
+uid: '@azure/arm-appservice.StaticSitesWorkflowPreviewRequest|stable'
+package: '@azure/arm-appservice|stable'
+summary: Request entity for previewing the Static Site workflow
+fullName: StaticSitesWorkflowPreviewRequest
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type StaticSitesWorkflowPreviewRequest = ProxyOnlyResource & { branch?:
+  undefined | string, buildProperties?: StaticSiteBuildProperties,
+  repositoryUrl?: undefined | string }

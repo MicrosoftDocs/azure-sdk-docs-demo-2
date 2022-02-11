@@ -1,0 +1,51 @@
+### YamlMime:TSType
+name: MediaJobCancelingEventData
+uid: azure-eventgrid.MediaJobCancelingEventData|legacy
+package: azure-eventgrid|legacy
+summary: ''
+fullName: MediaJobCancelingEventData
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: correlationData
+    uid: azure-eventgrid.MediaJobCancelingEventData.correlationData|legacy
+    package: azure-eventgrid|legacy
+    summary: ''
+    fullName: correlationData
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'correlationData?: [key: string]: string'
+      return:
+        description: ''
+        type: '[key: string]\: string'
+  - name: previousState
+    uid: azure-eventgrid.MediaJobCancelingEventData.previousState|legacy
+    package: azure-eventgrid|legacy
+    summary: ''
+    fullName: previousState
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'previousState?: string'
+      return:
+        description: ''
+        type: string
+  - name: state
+    uid: azure-eventgrid.MediaJobCancelingEventData.state|legacy
+    package: azure-eventgrid|legacy
+    summary: ''
+    fullName: state
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'state?: string'
+      return:
+        description: ''
+        type: string
+extends: <xref uid="azure-eventgrid.MediaJobStateChangeEventData|legacy" />

@@ -1,0 +1,184 @@
+### YamlMime:TSType
+name: Transforms
+uid: '@azure/arm-mediaservices.Transforms|stable'
+package: '@azure/arm-mediaservices|stable'
+summary: Interface representing a Transforms.
+fullName: Transforms
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      createOrUpdate(string, string, string, Transform,
+      TransformsCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-mediaservices.Transforms.createOrUpdate|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: Creates or updates a new Transform.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, accountName: string,
+        transformName: string, parameters: Transform, options?:
+        TransformsCreateOrUpdateOptionalParams):
+        Promise<TransformsCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the Azure subscription.
+        - id: accountName
+          type: string
+          description: The Media Services account name.
+        - id: transformName
+          type: string
+          description: The Transform name.
+        - id: parameters
+          type: <xref uid="@azure/arm-mediaservices.Transform|stable" />
+          description: The request parameters
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mediaservices.TransformsCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-mediaservices.TransformsCreateOrUpdateResponse|stable"
+          />&gt;
+  - name: delete(string, string, string, TransformsDeleteOptionalParams)
+    uid: '@azure/arm-mediaservices.Transforms.delete|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: Deletes a Transform.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function delete(resourceGroupName: string, accountName: string,
+        transformName: string, options?: TransformsDeleteOptionalParams):
+        Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the Azure subscription.
+        - id: accountName
+          type: string
+          description: The Media Services account name.
+        - id: transformName
+          type: string
+          description: The Transform name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mediaservices.TransformsDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: get(string, string, string, TransformsGetOptionalParams)
+    uid: '@azure/arm-mediaservices.Transforms.get|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: Gets a Transform.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, accountName: string,
+        transformName: string, options?: TransformsGetOptionalParams):
+        Promise<TransformsGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the Azure subscription.
+        - id: accountName
+          type: string
+          description: The Media Services account name.
+        - id: transformName
+          type: string
+          description: The Transform name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mediaservices.TransformsGetOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-mediaservices.TransformsGetResponse|stable" />&gt;
+  - name: list(string, string, TransformsListOptionalParams)
+    uid: '@azure/arm-mediaservices.Transforms.list|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: Lists the Transforms in the account.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, accountName: string, options?:
+        TransformsListOptionalParams): PagedAsyncIterableIterator<Transform>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the Azure subscription.
+        - id: accountName
+          type: string
+          description: The Media Services account name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mediaservices.TransformsListOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-mediaservices.Transform|stable" />&gt;
+  - name: update(string, string, string, Transform, TransformsUpdateOptionalParams)
+    uid: '@azure/arm-mediaservices.Transforms.update|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: Updates a Transform.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function update(resourceGroupName: string, accountName: string,
+        transformName: string, parameters: Transform, options?:
+        TransformsUpdateOptionalParams): Promise<TransformsUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the Azure subscription.
+        - id: accountName
+          type: string
+          description: The Media Services account name.
+        - id: transformName
+          type: string
+          description: The Transform name.
+        - id: parameters
+          type: <xref uid="@azure/arm-mediaservices.Transform|stable" />
+          description: The request parameters
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mediaservices.TransformsUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-mediaservices.TransformsUpdateResponse|stable" />&gt;

@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: AppleRegistration
+uid: '@azure/arm-appservice.AppleRegistration|stable'
+package: '@azure/arm-appservice|stable'
+summary: The configuration settings of the registration for the Apple provider
+fullName: AppleRegistration
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: clientId
+    uid: '@azure/arm-appservice.AppleRegistration.clientId|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: The Client ID of the app used for login.
+    fullName: clientId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clientId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: clientSecretSettingName
+    uid: '@azure/arm-appservice.AppleRegistration.clientSecretSettingName|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: The app setting name that contains the client secret.
+    fullName: clientSecretSettingName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clientSecretSettingName?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

@@ -1,0 +1,205 @@
+### YamlMime:TSType
+name: AssetFilters
+uid: '@azure/arm-mediaservices.AssetFilters|stable'
+package: '@azure/arm-mediaservices|stable'
+summary: Interface representing a AssetFilters.
+fullName: AssetFilters
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      createOrUpdate(string, string, string, string, AssetFilter,
+      AssetFiltersCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-mediaservices.AssetFilters.createOrUpdate|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: Creates or updates an Asset Filter associated with the specified Asset.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, accountName: string,
+        assetName: string, filterName: string, parameters: AssetFilter,
+        options?: AssetFiltersCreateOrUpdateOptionalParams):
+        Promise<AssetFiltersCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the Azure subscription.
+        - id: accountName
+          type: string
+          description: The Media Services account name.
+        - id: assetName
+          type: string
+          description: The Asset name.
+        - id: filterName
+          type: string
+          description: The Asset Filter name
+        - id: parameters
+          type: <xref uid="@azure/arm-mediaservices.AssetFilter|stable" />
+          description: The request parameters
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mediaservices.AssetFiltersCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-mediaservices.AssetFiltersCreateOrUpdateResponse|stable"
+          />&gt;
+  - name: delete(string, string, string, string, AssetFiltersDeleteOptionalParams)
+    uid: '@azure/arm-mediaservices.AssetFilters.delete|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: Deletes an Asset Filter associated with the specified Asset.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function delete(resourceGroupName: string, accountName: string,
+        assetName: string, filterName: string, options?:
+        AssetFiltersDeleteOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the Azure subscription.
+        - id: accountName
+          type: string
+          description: The Media Services account name.
+        - id: assetName
+          type: string
+          description: The Asset name.
+        - id: filterName
+          type: string
+          description: The Asset Filter name
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mediaservices.AssetFiltersDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: get(string, string, string, string, AssetFiltersGetOptionalParams)
+    uid: '@azure/arm-mediaservices.AssetFilters.get|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: Get the details of an Asset Filter associated with the specified Asset.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, accountName: string, assetName:
+        string, filterName: string, options?: AssetFiltersGetOptionalParams):
+        Promise<AssetFiltersGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the Azure subscription.
+        - id: accountName
+          type: string
+          description: The Media Services account name.
+        - id: assetName
+          type: string
+          description: The Asset name.
+        - id: filterName
+          type: string
+          description: The Asset Filter name
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mediaservices.AssetFiltersGetOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-mediaservices.AssetFiltersGetResponse|stable" />&gt;
+  - name: list(string, string, string, AssetFiltersListOptionalParams)
+    uid: '@azure/arm-mediaservices.AssetFilters.list|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: List Asset Filters associated with the specified Asset.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, accountName: string, assetName:
+        string, options?: AssetFiltersListOptionalParams):
+        PagedAsyncIterableIterator<AssetFilter>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the Azure subscription.
+        - id: accountName
+          type: string
+          description: The Media Services account name.
+        - id: assetName
+          type: string
+          description: The Asset name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mediaservices.AssetFiltersListOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-mediaservices.AssetFilter|stable" />&gt;
+  - name: >-
+      update(string, string, string, string, AssetFilter,
+      AssetFiltersUpdateOptionalParams)
+    uid: '@azure/arm-mediaservices.AssetFilters.update|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: Updates an existing Asset Filter associated with the specified Asset.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function update(resourceGroupName: string, accountName: string,
+        assetName: string, filterName: string, parameters: AssetFilter,
+        options?: AssetFiltersUpdateOptionalParams):
+        Promise<AssetFiltersUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the Azure subscription.
+        - id: accountName
+          type: string
+          description: The Media Services account name.
+        - id: assetName
+          type: string
+          description: The Asset name.
+        - id: filterName
+          type: string
+          description: The Asset Filter name
+        - id: parameters
+          type: <xref uid="@azure/arm-mediaservices.AssetFilter|stable" />
+          description: The request parameters
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mediaservices.AssetFiltersUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-mediaservices.AssetFiltersUpdateResponse|stable"
+          />&gt;

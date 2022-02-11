@@ -1,0 +1,89 @@
+### YamlMime:TSType
+name: ScheduleTriggerRecurrence
+uid: '@azure/synapse-artifacts.ScheduleTriggerRecurrence|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: The workflow trigger recurrence.
+fullName: ScheduleTriggerRecurrence
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: endTime
+    uid: '@azure/synapse-artifacts.ScheduleTriggerRecurrence.endTime|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: The end time.
+    fullName: endTime
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'endTime?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: frequency
+    uid: '@azure/synapse-artifacts.ScheduleTriggerRecurrence.frequency|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: The frequency.
+    fullName: frequency
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'frequency?: RecurrenceFrequency'
+      return:
+        description: ''
+        type: <xref uid="@azure/synapse-artifacts.RecurrenceFrequency|beta" />
+  - name: interval
+    uid: '@azure/synapse-artifacts.ScheduleTriggerRecurrence.interval|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: The interval.
+    fullName: interval
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'interval?: number'
+      return:
+        description: ''
+        type: number
+  - name: schedule
+    uid: '@azure/synapse-artifacts.ScheduleTriggerRecurrence.schedule|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: The recurrence schedule.
+    fullName: schedule
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'schedule?: RecurrenceSchedule'
+      return:
+        description: ''
+        type: <xref uid="@azure/synapse-artifacts.RecurrenceSchedule|beta" />
+  - name: startTime
+    uid: '@azure/synapse-artifacts.ScheduleTriggerRecurrence.startTime|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: The start time.
+    fullName: startTime
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'startTime?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: timeZone
+    uid: '@azure/synapse-artifacts.ScheduleTriggerRecurrence.timeZone|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: The time zone.
+    fullName: timeZone
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'timeZone?: string'
+      return:
+        description: ''
+        type: string

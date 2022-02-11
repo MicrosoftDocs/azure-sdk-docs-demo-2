@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: CosmosDbSqlApiCollectionDataset
+uid: '@azure/arm-datafactory.CosmosDbSqlApiCollectionDataset|stable'
+package: '@azure/arm-datafactory|stable'
+summary: Microsoft Azure CosmosDB (SQL API) Collection dataset.
+fullName: CosmosDbSqlApiCollectionDataset
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type CosmosDbSqlApiCollectionDataset = Dataset & { collectionName:
+  Record<string, unknown>, type: "CosmosDbSqlApiCollection" }

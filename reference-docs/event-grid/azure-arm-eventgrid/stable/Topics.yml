@@ -1,0 +1,439 @@
+### YamlMime:TSType
+name: Topics
+uid: '@azure/arm-eventgrid.Topics|stable'
+package: '@azure/arm-eventgrid|stable'
+summary: Interface representing a Topics.
+fullName: Topics
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      beginCreateOrUpdate(string, string, Topic,
+      TopicsCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-eventgrid.Topics.beginCreateOrUpdate|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Asynchronously creates a new topic with the specified parameters.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string, topicName:
+        string, topicInfo: Topic, options?: TopicsCreateOrUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<TopicsCreateOrUpdateResponse>,
+        TopicsCreateOrUpdateResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: topicName
+          type: string
+          description: Name of the topic.
+        - id: topicInfo
+          type: <xref uid="@azure/arm-eventgrid.Topic|stable" />
+          description: Topic information.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.TopicsCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-eventgrid.TopicsCreateOrUpdateResponse|stable" />&gt;,
+          <xref uid="@azure/arm-eventgrid.TopicsCreateOrUpdateResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginCreateOrUpdateAndWait(string, string, Topic,
+      TopicsCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-eventgrid.Topics.beginCreateOrUpdateAndWait|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Asynchronously creates a new topic with the specified parameters.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdateAndWait(resourceGroupName: string,
+        topicName: string, topicInfo: Topic, options?:
+        TopicsCreateOrUpdateOptionalParams):
+        Promise<TopicsCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: topicName
+          type: string
+          description: Name of the topic.
+        - id: topicInfo
+          type: <xref uid="@azure/arm-eventgrid.Topic|stable" />
+          description: Topic information.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.TopicsCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventgrid.TopicsCreateOrUpdateResponse|stable" />&gt;
+  - name: beginDelete(string, string, TopicsDeleteOptionalParams)
+    uid: '@azure/arm-eventgrid.Topics.beginDelete|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Delete existing topic.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDelete(resourceGroupName: string, topicName: string,
+        options?: TopicsDeleteOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: topicName
+          type: string
+          description: Name of the topic.
+        - id: options
+          type: >-
+            <xref uid="@azure/arm-eventgrid.TopicsDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: beginDeleteAndWait(string, string, TopicsDeleteOptionalParams)
+    uid: '@azure/arm-eventgrid.Topics.beginDeleteAndWait|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Delete existing topic.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteAndWait(resourceGroupName: string, topicName:
+        string, options?: TopicsDeleteOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: topicName
+          type: string
+          description: Name of the topic.
+        - id: options
+          type: >-
+            <xref uid="@azure/arm-eventgrid.TopicsDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      beginRegenerateKey(string, string, TopicRegenerateKeyRequest,
+      TopicsRegenerateKeyOptionalParams)
+    uid: '@azure/arm-eventgrid.Topics.beginRegenerateKey|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Regenerate a shared access key for a topic.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginRegenerateKey(resourceGroupName: string, topicName:
+        string, regenerateKeyRequest: TopicRegenerateKeyRequest, options?:
+        TopicsRegenerateKeyOptionalParams):
+        Promise<PollerLike<PollOperationState<TopicsRegenerateKeyResponse>,
+        TopicsRegenerateKeyResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: topicName
+          type: string
+          description: Name of the topic.
+        - id: regenerateKeyRequest
+          type: <xref uid="@azure/arm-eventgrid.TopicRegenerateKeyRequest|stable" />
+          description: Request body to regenerate key.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.TopicsRegenerateKeyOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-eventgrid.TopicsRegenerateKeyResponse|stable" />&gt;,
+          <xref uid="@azure/arm-eventgrid.TopicsRegenerateKeyResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginRegenerateKeyAndWait(string, string, TopicRegenerateKeyRequest,
+      TopicsRegenerateKeyOptionalParams)
+    uid: '@azure/arm-eventgrid.Topics.beginRegenerateKeyAndWait|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Regenerate a shared access key for a topic.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginRegenerateKeyAndWait(resourceGroupName: string, topicName:
+        string, regenerateKeyRequest: TopicRegenerateKeyRequest, options?:
+        TopicsRegenerateKeyOptionalParams): Promise<TopicsRegenerateKeyResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: topicName
+          type: string
+          description: Name of the topic.
+        - id: regenerateKeyRequest
+          type: <xref uid="@azure/arm-eventgrid.TopicRegenerateKeyRequest|stable" />
+          description: Request body to regenerate key.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.TopicsRegenerateKeyOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventgrid.TopicsRegenerateKeyResponse|stable" />&gt;
+  - name: >-
+      beginUpdate(string, string, TopicUpdateParameters,
+      TopicsUpdateOptionalParams)
+    uid: '@azure/arm-eventgrid.Topics.beginUpdate|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Asynchronously updates a topic with the specified parameters.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginUpdate(resourceGroupName: string, topicName: string,
+        topicUpdateParameters: TopicUpdateParameters, options?:
+        TopicsUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: topicName
+          type: string
+          description: Name of the topic.
+        - id: topicUpdateParameters
+          type: <xref uid="@azure/arm-eventgrid.TopicUpdateParameters|stable" />
+          description: Topic update information.
+        - id: options
+          type: >-
+            <xref uid="@azure/arm-eventgrid.TopicsUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: >-
+      beginUpdateAndWait(string, string, TopicUpdateParameters,
+      TopicsUpdateOptionalParams)
+    uid: '@azure/arm-eventgrid.Topics.beginUpdateAndWait|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Asynchronously updates a topic with the specified parameters.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginUpdateAndWait(resourceGroupName: string, topicName:
+        string, topicUpdateParameters: TopicUpdateParameters, options?:
+        TopicsUpdateOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: topicName
+          type: string
+          description: Name of the topic.
+        - id: topicUpdateParameters
+          type: <xref uid="@azure/arm-eventgrid.TopicUpdateParameters|stable" />
+          description: Topic update information.
+        - id: options
+          type: >-
+            <xref uid="@azure/arm-eventgrid.TopicsUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: get(string, string, TopicsGetOptionalParams)
+    uid: '@azure/arm-eventgrid.Topics.get|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Get properties of a topic.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, topicName: string, options?:
+        TopicsGetOptionalParams): Promise<TopicsGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: topicName
+          type: string
+          description: Name of the topic.
+        - id: options
+          type: <xref uid="@azure/arm-eventgrid.TopicsGetOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref uid="@azure/arm-eventgrid.TopicsGetResponse|stable"
+          />&gt;
+  - name: listByResourceGroup(string, TopicsListByResourceGroupOptionalParams)
+    uid: '@azure/arm-eventgrid.Topics.listByResourceGroup|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: List all the topics under a resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string, options?:
+        TopicsListByResourceGroupOptionalParams):
+        PagedAsyncIterableIterator<Topic>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.TopicsListByResourceGroupOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-eventgrid.Topic|stable" />&gt;
+  - name: listBySubscription(TopicsListBySubscriptionOptionalParams)
+    uid: '@azure/arm-eventgrid.Topics.listBySubscription|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: List all the topics under an Azure subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listBySubscription(options?:
+        TopicsListBySubscriptionOptionalParams):
+        PagedAsyncIterableIterator<Topic>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.TopicsListBySubscriptionOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-eventgrid.Topic|stable" />&gt;
+  - name: >-
+      listEventTypes(string, string, string, string,
+      TopicsListEventTypesOptionalParams)
+    uid: '@azure/arm-eventgrid.Topics.listEventTypes|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: List event types for a topic.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listEventTypes(resourceGroupName: string, providerNamespace:
+        string, resourceTypeName: string, resourceName: string, options?:
+        TopicsListEventTypesOptionalParams):
+        PagedAsyncIterableIterator<EventType>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: providerNamespace
+          type: string
+          description: Namespace of the provider of the topic.
+        - id: resourceTypeName
+          type: string
+          description: Name of the topic type.
+        - id: resourceName
+          type: string
+          description: Name of the topic.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.TopicsListEventTypesOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-eventgrid.EventType|stable" />&gt;
+  - name: >-
+      listSharedAccessKeys(string, string,
+      TopicsListSharedAccessKeysOptionalParams)
+    uid: '@azure/arm-eventgrid.Topics.listSharedAccessKeys|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: List the two keys used to publish to a topic.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listSharedAccessKeys(resourceGroupName: string, topicName:
+        string, options?: TopicsListSharedAccessKeysOptionalParams):
+        Promise<TopicsListSharedAccessKeysResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: topicName
+          type: string
+          description: Name of the topic.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.TopicsListSharedAccessKeysOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventgrid.TopicsListSharedAccessKeysResponse|stable"
+          />&gt;

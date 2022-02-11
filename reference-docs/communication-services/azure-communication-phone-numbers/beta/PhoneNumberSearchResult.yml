@@ -1,0 +1,118 @@
+### YamlMime:TSType
+name: PhoneNumberSearchResult
+uid: '@azure/communication-phone-numbers.PhoneNumberSearchResult|beta'
+package: '@azure/communication-phone-numbers|beta'
+summary: The result of a phone number search operation.
+fullName: PhoneNumberSearchResult
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: assignmentType
+    uid: >-
+      @azure/communication-phone-numbers.PhoneNumberSearchResult.assignmentType|beta
+    package: '@azure/communication-phone-numbers|beta'
+    summary: Phone number's assignment type.
+    fullName: assignmentType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'assignmentType: PhoneNumberAssignmentType'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/communication-phone-numbers.PhoneNumberAssignmentType|beta"
+          />
+  - name: capabilities
+    uid: >-
+      @azure/communication-phone-numbers.PhoneNumberSearchResult.capabilities|beta
+    package: '@azure/communication-phone-numbers|beta'
+    summary: Capabilities of a phone number.
+    fullName: capabilities
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'capabilities: PhoneNumberCapabilities'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/communication-phone-numbers.PhoneNumberCapabilities|beta"
+          />
+  - name: cost
+    uid: '@azure/communication-phone-numbers.PhoneNumberSearchResult.cost|beta'
+    package: '@azure/communication-phone-numbers|beta'
+    summary: The incurred cost for a single phone number.
+    fullName: cost
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'cost: PhoneNumberCost'
+      return:
+        description: ''
+        type: <xref uid="@azure/communication-phone-numbers.PhoneNumberCost|beta" />
+  - name: phoneNumbers
+    uid: >-
+      @azure/communication-phone-numbers.PhoneNumberSearchResult.phoneNumbers|beta
+    package: '@azure/communication-phone-numbers|beta'
+    summary: >-
+      The phone numbers that are available. Can be fewer than the desired search
+      quantity.
+    fullName: phoneNumbers
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'phoneNumbers: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: phoneNumberType
+    uid: >-
+      @azure/communication-phone-numbers.PhoneNumberSearchResult.phoneNumberType|beta
+    package: '@azure/communication-phone-numbers|beta'
+    summary: The phone number's type, e.g. geographic, or tollFree.
+    fullName: phoneNumberType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'phoneNumberType: PhoneNumberType'
+      return:
+        description: ''
+        type: <xref uid="@azure/communication-phone-numbers.PhoneNumberType|beta" />
+  - name: searchExpiresBy
+    uid: >-
+      @azure/communication-phone-numbers.PhoneNumberSearchResult.searchExpiresBy|beta
+    package: '@azure/communication-phone-numbers|beta'
+    summary: >-
+      The date that this search result expires and phone numbers are no longer
+      on hold. A search result expires in less than 15min, e.g.
+      2020-11-19T16:31:49.048Z.
+    fullName: searchExpiresBy
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'searchExpiresBy: Date'
+      return:
+        description: ''
+        type: Date
+  - name: searchId
+    uid: '@azure/communication-phone-numbers.PhoneNumberSearchResult.searchId|beta'
+    package: '@azure/communication-phone-numbers|beta'
+    summary: The search id.
+    fullName: searchId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'searchId: string'
+      return:
+        description: ''
+        type: string

@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: MultiplePipelineTriggerUnion
+uid: '@azure/synapse-artifacts.MultiplePipelineTriggerUnion|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: ''
+fullName: MultiplePipelineTriggerUnion
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type MultiplePipelineTriggerUnion = MultiplePipelineTrigger | ScheduleTrigger
+  | BlobTrigger | BlobEventsTrigger | CustomEventsTrigger

@@ -1,0 +1,39 @@
+### YamlMime:TSType
+name: CommunicationUserKind
+uid: '@azure/communication-common.CommunicationUserKind|stable'
+package: '@azure/communication-common|stable'
+summary: IdentifierKind for a CommunicationUserIdentifier.
+fullName: CommunicationUserKind
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: communicationUserId
+    uid: >-
+      @azure/communication-common.CommunicationUserKind.communicationUserId|stable
+    package: '@azure/communication-common|stable'
+    summary: Id of the CommunicationUser as returned from the Communication Service.
+    fullName: communicationUserId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'communicationUserId: string'
+      return:
+        description: ''
+        type: string
+  - name: kind
+    uid: '@azure/communication-common.CommunicationUserKind.kind|stable'
+    package: '@azure/communication-common|stable'
+    summary: The identifier kind.
+    fullName: kind
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'kind: "communicationUser"'
+      return:
+        description: ''
+        type: '"communicationUser"'
+extends: <xref uid="@azure/communication-common.CommunicationUserIdentifier|stable" />

@@ -1,0 +1,41 @@
+### YamlMime:TSType
+name: VirtualWanVpnProfileParameters
+uid: '@azure/arm-network.VirtualWanVpnProfileParameters|stable'
+package: '@azure/arm-network|stable'
+summary: Virtual Wan Vpn profile parameters Vpn profile generation.
+fullName: VirtualWanVpnProfileParameters
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: authenticationMethod
+    uid: >-
+      @azure/arm-network.VirtualWanVpnProfileParameters.authenticationMethod|stable
+    package: '@azure/arm-network|stable'
+    summary: VPN client authentication method.
+    fullName: authenticationMethod
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'authenticationMethod?: AuthenticationMethod'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.AuthenticationMethod|stable" />
+  - name: vpnServerConfigurationResourceId
+    uid: >-
+      @azure/arm-network.VirtualWanVpnProfileParameters.vpnServerConfigurationResourceId|stable
+    package: '@azure/arm-network|stable'
+    summary: >-
+      VpnServerConfiguration partial resource uri with which VirtualWan is
+      associated to.
+    fullName: vpnServerConfigurationResourceId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'vpnServerConfigurationResourceId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

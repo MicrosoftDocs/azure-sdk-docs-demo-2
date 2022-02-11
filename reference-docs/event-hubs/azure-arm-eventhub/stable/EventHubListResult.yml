@@ -1,0 +1,39 @@
+### YamlMime:TSType
+name: EventHubListResult
+uid: '@azure/arm-eventhub.EventHubListResult|stable'
+package: '@azure/arm-eventhub|stable'
+summary: The result of the List EventHubs operation.
+fullName: EventHubListResult
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: nextLink
+    uid: '@azure/arm-eventhub.EventHubListResult.nextLink|stable'
+    package: '@azure/arm-eventhub|stable'
+    summary: >-
+      Link to the next set of results. Not empty if Value contains incomplete
+      list of EventHubs.
+    fullName: nextLink
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nextLink?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: value
+    uid: '@azure/arm-eventhub.EventHubListResult.value|stable'
+    package: '@azure/arm-eventhub|stable'
+    summary: Result of the List EventHubs operation.
+    fullName: value
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: Eventhub[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-eventhub.Eventhub|stable" />[]

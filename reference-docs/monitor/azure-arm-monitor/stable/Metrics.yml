@@ -1,0 +1,35 @@
+### YamlMime:TSType
+name: Metrics
+uid: '@azure/arm-monitor.Metrics|stable'
+package: '@azure/arm-monitor|stable'
+summary: Interface representing a Metrics.
+fullName: Metrics
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: list(string, MetricsListOptionalParams)
+    uid: '@azure/arm-monitor.Metrics.list|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: '**Lists the metric values for a resource**.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(resourceUri: string, options?: MetricsListOptionalParams):
+        Promise<MetricsListResponse>
+      parameters:
+        - id: resourceUri
+          type: string
+          description: The identifier of the resource.
+        - id: options
+          type: <xref uid="@azure/arm-monitor.MetricsListOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref uid="@azure/arm-monitor.MetricsListResponse|stable"
+          />&gt;

@@ -1,0 +1,1838 @@
+### YamlMime:TSType
+name: AppServiceEnvironments
+uid: '@azure/arm-appservice.AppServiceEnvironments|stable'
+package: '@azure/arm-appservice|stable'
+summary: Interface representing a AppServiceEnvironments.
+fullName: AppServiceEnvironments
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      beginApproveOrRejectPrivateEndpointConnection(string, string, string,
+      PrivateLinkConnectionApprovalRequestResource,
+      AppServiceEnvironmentsApproveOrRejectPrivateEndpointConnectionOptionalParams)
+    uid: >-
+      @azure/arm-appservice.AppServiceEnvironments.beginApproveOrRejectPrivateEndpointConnection|stable
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Approves or rejects a private endpoint connection
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function
+        beginApproveOrRejectPrivateEndpointConnection(resourceGroupName: string,
+        name: string, privateEndpointConnectionName: string,
+        privateEndpointWrapper: PrivateLinkConnectionApprovalRequestResource,
+        options?:
+        AppServiceEnvironmentsApproveOrRejectPrivateEndpointConnectionOptionalParams):
+        Promise<PollerLike<PollOperationState<AppServiceEnvironmentsApproveOrRejectPrivateEndpointConnectionResponse>,
+        AppServiceEnvironmentsApproveOrRejectPrivateEndpointConnectionResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: privateEndpointConnectionName
+          type: string
+          description: ''
+        - id: privateEndpointWrapper
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.PrivateLinkConnectionApprovalRequestResource|stable"
+            />
+          description: Private Endpoint Connection Approval ARM resource.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsApproveOrRejectPrivateEndpointConnectionOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-appservice.AppServiceEnvironmentsApproveOrRejectPrivateEndpointConnectionResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-appservice.AppServiceEnvironmentsApproveOrRejectPrivateEndpointConnectionResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginApproveOrRejectPrivateEndpointConnectionAndWait(string, string,
+      string, PrivateLinkConnectionApprovalRequestResource,
+      AppServiceEnvironmentsApproveOrRejectPrivateEndpointConnectionOptionalParams)
+    uid: >-
+      @azure/arm-appservice.AppServiceEnvironments.beginApproveOrRejectPrivateEndpointConnectionAndWait|stable
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Approves or rejects a private endpoint connection
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function
+        beginApproveOrRejectPrivateEndpointConnectionAndWait(resourceGroupName:
+        string, name: string, privateEndpointConnectionName: string,
+        privateEndpointWrapper: PrivateLinkConnectionApprovalRequestResource,
+        options?:
+        AppServiceEnvironmentsApproveOrRejectPrivateEndpointConnectionOptionalParams):
+        Promise<AppServiceEnvironmentsApproveOrRejectPrivateEndpointConnectionResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: privateEndpointConnectionName
+          type: string
+          description: ''
+        - id: privateEndpointWrapper
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.PrivateLinkConnectionApprovalRequestResource|stable"
+            />
+          description: Private Endpoint Connection Approval ARM resource.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsApproveOrRejectPrivateEndpointConnectionOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.AppServiceEnvironmentsApproveOrRejectPrivateEndpointConnectionResponse|stable"
+          />&gt;
+  - name: >-
+      beginCreateOrUpdate(string, string, AppServiceEnvironmentResource,
+      AppServiceEnvironmentsCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-appservice.AppServiceEnvironments.beginCreateOrUpdate|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Create or update an App Service Environment.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string, name: string,
+        hostingEnvironmentEnvelope: AppServiceEnvironmentResource, options?:
+        AppServiceEnvironmentsCreateOrUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<AppServiceEnvironmentsCreateOrUpdateResponse>,
+        AppServiceEnvironmentsCreateOrUpdateResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: hostingEnvironmentEnvelope
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentResource|stable" />
+          description: Configuration details of the App Service Environment.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-appservice.AppServiceEnvironmentsCreateOrUpdateResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-appservice.AppServiceEnvironmentsCreateOrUpdateResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginCreateOrUpdateAndWait(string, string, AppServiceEnvironmentResource,
+      AppServiceEnvironmentsCreateOrUpdateOptionalParams)
+    uid: >-
+      @azure/arm-appservice.AppServiceEnvironments.beginCreateOrUpdateAndWait|stable
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Create or update an App Service Environment.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdateAndWait(resourceGroupName: string, name:
+        string, hostingEnvironmentEnvelope: AppServiceEnvironmentResource,
+        options?: AppServiceEnvironmentsCreateOrUpdateOptionalParams):
+        Promise<AppServiceEnvironmentsCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: hostingEnvironmentEnvelope
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentResource|stable" />
+          description: Configuration details of the App Service Environment.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.AppServiceEnvironmentsCreateOrUpdateResponse|stable"
+          />&gt;
+  - name: >-
+      beginCreateOrUpdateMultiRolePool(string, string, WorkerPoolResource,
+      AppServiceEnvironmentsCreateOrUpdateMultiRolePoolOptionalParams)
+    uid: >-
+      @azure/arm-appservice.AppServiceEnvironments.beginCreateOrUpdateMultiRolePool|stable
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Create or update a multi-role pool.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdateMultiRolePool(resourceGroupName: string,
+        name: string, multiRolePoolEnvelope: WorkerPoolResource, options?:
+        AppServiceEnvironmentsCreateOrUpdateMultiRolePoolOptionalParams):
+        Promise<PollerLike<PollOperationState<AppServiceEnvironmentsCreateOrUpdateMultiRolePoolResponse>,
+        AppServiceEnvironmentsCreateOrUpdateMultiRolePoolResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: multiRolePoolEnvelope
+          type: <xref uid="@azure/arm-appservice.WorkerPoolResource|stable" />
+          description: Properties of the multi-role pool.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsCreateOrUpdateMultiRolePoolOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-appservice.AppServiceEnvironmentsCreateOrUpdateMultiRolePoolResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-appservice.AppServiceEnvironmentsCreateOrUpdateMultiRolePoolResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginCreateOrUpdateMultiRolePoolAndWait(string, string,
+      WorkerPoolResource,
+      AppServiceEnvironmentsCreateOrUpdateMultiRolePoolOptionalParams)
+    uid: >-
+      @azure/arm-appservice.AppServiceEnvironments.beginCreateOrUpdateMultiRolePoolAndWait|stable
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Create or update a multi-role pool.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdateMultiRolePoolAndWait(resourceGroupName:
+        string, name: string, multiRolePoolEnvelope: WorkerPoolResource,
+        options?:
+        AppServiceEnvironmentsCreateOrUpdateMultiRolePoolOptionalParams):
+        Promise<AppServiceEnvironmentsCreateOrUpdateMultiRolePoolResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: multiRolePoolEnvelope
+          type: <xref uid="@azure/arm-appservice.WorkerPoolResource|stable" />
+          description: Properties of the multi-role pool.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsCreateOrUpdateMultiRolePoolOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.AppServiceEnvironmentsCreateOrUpdateMultiRolePoolResponse|stable"
+          />&gt;
+  - name: >-
+      beginCreateOrUpdateWorkerPool(string, string, string, WorkerPoolResource,
+      AppServiceEnvironmentsCreateOrUpdateWorkerPoolOptionalParams)
+    uid: >-
+      @azure/arm-appservice.AppServiceEnvironments.beginCreateOrUpdateWorkerPool|stable
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Create or update a worker pool.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdateWorkerPool(resourceGroupName: string, name:
+        string, workerPoolName: string, workerPoolEnvelope: WorkerPoolResource,
+        options?: AppServiceEnvironmentsCreateOrUpdateWorkerPoolOptionalParams):
+        Promise<PollerLike<PollOperationState<AppServiceEnvironmentsCreateOrUpdateWorkerPoolResponse>,
+        AppServiceEnvironmentsCreateOrUpdateWorkerPoolResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: workerPoolName
+          type: string
+          description: Name of the worker pool.
+        - id: workerPoolEnvelope
+          type: <xref uid="@azure/arm-appservice.WorkerPoolResource|stable" />
+          description: Properties of the worker pool.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsCreateOrUpdateWorkerPoolOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-appservice.AppServiceEnvironmentsCreateOrUpdateWorkerPoolResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-appservice.AppServiceEnvironmentsCreateOrUpdateWorkerPoolResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginCreateOrUpdateWorkerPoolAndWait(string, string, string,
+      WorkerPoolResource,
+      AppServiceEnvironmentsCreateOrUpdateWorkerPoolOptionalParams)
+    uid: >-
+      @azure/arm-appservice.AppServiceEnvironments.beginCreateOrUpdateWorkerPoolAndWait|stable
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Create or update a worker pool.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdateWorkerPoolAndWait(resourceGroupName: string,
+        name: string, workerPoolName: string, workerPoolEnvelope:
+        WorkerPoolResource, options?:
+        AppServiceEnvironmentsCreateOrUpdateWorkerPoolOptionalParams):
+        Promise<AppServiceEnvironmentsCreateOrUpdateWorkerPoolResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: workerPoolName
+          type: string
+          description: Name of the worker pool.
+        - id: workerPoolEnvelope
+          type: <xref uid="@azure/arm-appservice.WorkerPoolResource|stable" />
+          description: Properties of the worker pool.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsCreateOrUpdateWorkerPoolOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.AppServiceEnvironmentsCreateOrUpdateWorkerPoolResponse|stable"
+          />&gt;
+  - name: beginDelete(string, string, AppServiceEnvironmentsDeleteOptionalParams)
+    uid: '@azure/arm-appservice.AppServiceEnvironments.beginDelete|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Delete an App Service Environment.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDelete(resourceGroupName: string, name: string, options?:
+        AppServiceEnvironmentsDeleteOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: >-
+      beginDeleteAndWait(string, string,
+      AppServiceEnvironmentsDeleteOptionalParams)
+    uid: '@azure/arm-appservice.AppServiceEnvironments.beginDeleteAndWait|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Delete an App Service Environment.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteAndWait(resourceGroupName: string, name: string,
+        options?: AppServiceEnvironmentsDeleteOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      beginDeletePrivateEndpointConnection(string, string, string,
+      AppServiceEnvironmentsDeletePrivateEndpointConnectionOptionalParams)
+    uid: >-
+      @azure/arm-appservice.AppServiceEnvironments.beginDeletePrivateEndpointConnection|stable
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Deletes a private endpoint connection
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeletePrivateEndpointConnection(resourceGroupName: string,
+        name: string, privateEndpointConnectionName: string, options?:
+        AppServiceEnvironmentsDeletePrivateEndpointConnectionOptionalParams):
+        Promise<PollerLike<PollOperationState<AppServiceEnvironmentsDeletePrivateEndpointConnectionResponse>,
+        AppServiceEnvironmentsDeletePrivateEndpointConnectionResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: privateEndpointConnectionName
+          type: string
+          description: ''
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsDeletePrivateEndpointConnectionOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-appservice.AppServiceEnvironmentsDeletePrivateEndpointConnectionResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-appservice.AppServiceEnvironmentsDeletePrivateEndpointConnectionResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginDeletePrivateEndpointConnectionAndWait(string, string, string,
+      AppServiceEnvironmentsDeletePrivateEndpointConnectionOptionalParams)
+    uid: >-
+      @azure/arm-appservice.AppServiceEnvironments.beginDeletePrivateEndpointConnectionAndWait|stable
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Deletes a private endpoint connection
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeletePrivateEndpointConnectionAndWait(resourceGroupName:
+        string, name: string, privateEndpointConnectionName: string, options?:
+        AppServiceEnvironmentsDeletePrivateEndpointConnectionOptionalParams):
+        Promise<AppServiceEnvironmentsDeletePrivateEndpointConnectionResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: privateEndpointConnectionName
+          type: string
+          description: ''
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsDeletePrivateEndpointConnectionOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.AppServiceEnvironmentsDeletePrivateEndpointConnectionResponse|stable"
+          />&gt;
+  - name: >-
+      beginListChangeVnetAndWait(string, string, VirtualNetworkProfile,
+      AppServiceEnvironmentsChangeVnetOptionalParams)
+    uid: >-
+      @azure/arm-appservice.AppServiceEnvironments.beginListChangeVnetAndWait|stable
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Move an App Service Environment to a different VNET.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginListChangeVnetAndWait(resourceGroupName: string, name:
+        string, vnetInfo: VirtualNetworkProfile, options?:
+        AppServiceEnvironmentsChangeVnetOptionalParams):
+        PagedAsyncIterableIterator<Site>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: vnetInfo
+          type: <xref uid="@azure/arm-appservice.VirtualNetworkProfile|stable" />
+          description: Details for the new virtual network.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsChangeVnetOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.Site|stable" />&gt;
+  - name: >-
+      beginListResumeAndWait(string, string,
+      AppServiceEnvironmentsResumeOptionalParams)
+    uid: '@azure/arm-appservice.AppServiceEnvironments.beginListResumeAndWait|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Resume an App Service Environment.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginListResumeAndWait(resourceGroupName: string, name: string,
+        options?: AppServiceEnvironmentsResumeOptionalParams):
+        PagedAsyncIterableIterator<Site>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsResumeOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.Site|stable" />&gt;
+  - name: >-
+      beginListSuspendAndWait(string, string,
+      AppServiceEnvironmentsSuspendOptionalParams)
+    uid: >-
+      @azure/arm-appservice.AppServiceEnvironments.beginListSuspendAndWait|stable
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Suspend an App Service Environment.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginListSuspendAndWait(resourceGroupName: string, name:
+        string, options?: AppServiceEnvironmentsSuspendOptionalParams):
+        PagedAsyncIterableIterator<Site>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsSuspendOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.Site|stable" />&gt;
+  - name: get(string, string, AppServiceEnvironmentsGetOptionalParams)
+    uid: '@azure/arm-appservice.AppServiceEnvironments.get|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Get the properties of an App Service Environment.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, name: string, options?:
+        AppServiceEnvironmentsGetOptionalParams):
+        Promise<AppServiceEnvironmentsGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsGetOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.AppServiceEnvironmentsGetResponse|stable"
+          />&gt;
+  - name: >-
+      getAseV3NetworkingConfiguration(string, string,
+      AppServiceEnvironmentsGetAseV3NetworkingConfigurationOptionalParams)
+    uid: >-
+      @azure/arm-appservice.AppServiceEnvironments.getAseV3NetworkingConfiguration|stable
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Get networking configuration of an App Service Environment
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getAseV3NetworkingConfiguration(resourceGroupName: string,
+        name: string, options?:
+        AppServiceEnvironmentsGetAseV3NetworkingConfigurationOptionalParams):
+        Promise<AppServiceEnvironmentsGetAseV3NetworkingConfigurationResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsGetAseV3NetworkingConfigurationOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.AppServiceEnvironmentsGetAseV3NetworkingConfigurationResponse|stable"
+          />&gt;
+  - name: >-
+      getDiagnosticsItem(string, string, string,
+      AppServiceEnvironmentsGetDiagnosticsItemOptionalParams)
+    uid: '@azure/arm-appservice.AppServiceEnvironments.getDiagnosticsItem|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Get a diagnostics item for an App Service Environment.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getDiagnosticsItem(resourceGroupName: string, name: string,
+        diagnosticsName: string, options?:
+        AppServiceEnvironmentsGetDiagnosticsItemOptionalParams):
+        Promise<AppServiceEnvironmentsGetDiagnosticsItemResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: diagnosticsName
+          type: string
+          description: Name of the diagnostics item.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsGetDiagnosticsItemOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.AppServiceEnvironmentsGetDiagnosticsItemResponse|stable"
+          />&gt;
+  - name: >-
+      getMultiRolePool(string, string,
+      AppServiceEnvironmentsGetMultiRolePoolOptionalParams)
+    uid: '@azure/arm-appservice.AppServiceEnvironments.getMultiRolePool|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Get properties of a multi-role pool.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getMultiRolePool(resourceGroupName: string, name: string,
+        options?: AppServiceEnvironmentsGetMultiRolePoolOptionalParams):
+        Promise<AppServiceEnvironmentsGetMultiRolePoolResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsGetMultiRolePoolOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.AppServiceEnvironmentsGetMultiRolePoolResponse|stable"
+          />&gt;
+  - name: >-
+      getPrivateEndpointConnection(string, string, string,
+      AppServiceEnvironmentsGetPrivateEndpointConnectionOptionalParams)
+    uid: >-
+      @azure/arm-appservice.AppServiceEnvironments.getPrivateEndpointConnection|stable
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Gets a private endpoint connection
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getPrivateEndpointConnection(resourceGroupName: string, name:
+        string, privateEndpointConnectionName: string, options?:
+        AppServiceEnvironmentsGetPrivateEndpointConnectionOptionalParams):
+        Promise<AppServiceEnvironmentsGetPrivateEndpointConnectionResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: privateEndpointConnectionName
+          type: string
+          description: Name of the private endpoint connection.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsGetPrivateEndpointConnectionOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.AppServiceEnvironmentsGetPrivateEndpointConnectionResponse|stable"
+          />&gt;
+  - name: >-
+      getPrivateLinkResources(string, string,
+      AppServiceEnvironmentsGetPrivateLinkResourcesOptionalParams)
+    uid: >-
+      @azure/arm-appservice.AppServiceEnvironments.getPrivateLinkResources|stable
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Gets the private link resources
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getPrivateLinkResources(resourceGroupName: string, name:
+        string, options?:
+        AppServiceEnvironmentsGetPrivateLinkResourcesOptionalParams):
+        Promise<AppServiceEnvironmentsGetPrivateLinkResourcesResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsGetPrivateLinkResourcesOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.AppServiceEnvironmentsGetPrivateLinkResourcesResponse|stable"
+          />&gt;
+  - name: getVipInfo(string, string, AppServiceEnvironmentsGetVipInfoOptionalParams)
+    uid: '@azure/arm-appservice.AppServiceEnvironments.getVipInfo|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Get IP addresses assigned to an App Service Environment.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getVipInfo(resourceGroupName: string, name: string, options?:
+        AppServiceEnvironmentsGetVipInfoOptionalParams):
+        Promise<AppServiceEnvironmentsGetVipInfoResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsGetVipInfoOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.AppServiceEnvironmentsGetVipInfoResponse|stable"
+          />&gt;
+  - name: >-
+      getWorkerPool(string, string, string,
+      AppServiceEnvironmentsGetWorkerPoolOptionalParams)
+    uid: '@azure/arm-appservice.AppServiceEnvironments.getWorkerPool|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Get properties of a worker pool.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getWorkerPool(resourceGroupName: string, name: string,
+        workerPoolName: string, options?:
+        AppServiceEnvironmentsGetWorkerPoolOptionalParams):
+        Promise<AppServiceEnvironmentsGetWorkerPoolResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: workerPoolName
+          type: string
+          description: Name of the worker pool.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsGetWorkerPoolOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.AppServiceEnvironmentsGetWorkerPoolResponse|stable"
+          />&gt;
+  - name: list(AppServiceEnvironmentsListOptionalParams)
+    uid: '@azure/arm-appservice.AppServiceEnvironments.list|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Get all App Service Environments for a subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(options?: AppServiceEnvironmentsListOptionalParams):
+        PagedAsyncIterableIterator<AppServiceEnvironmentResource>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsListOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.AppServiceEnvironmentResource|stable"
+          />&gt;
+  - name: >-
+      listAppServicePlans(string, string,
+      AppServiceEnvironmentsListAppServicePlansOptionalParams)
+    uid: '@azure/arm-appservice.AppServiceEnvironments.listAppServicePlans|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Get all App Service plans in an App Service Environment.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listAppServicePlans(resourceGroupName: string, name: string,
+        options?: AppServiceEnvironmentsListAppServicePlansOptionalParams):
+        PagedAsyncIterableIterator<AppServicePlan>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsListAppServicePlansOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.AppServicePlan|stable" />&gt;
+  - name: >-
+      listByResourceGroup(string,
+      AppServiceEnvironmentsListByResourceGroupOptionalParams)
+    uid: '@azure/arm-appservice.AppServiceEnvironments.listByResourceGroup|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Get all App Service Environments in a resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string, options?:
+        AppServiceEnvironmentsListByResourceGroupOptionalParams):
+        PagedAsyncIterableIterator<AppServiceEnvironmentResource>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsListByResourceGroupOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.AppServiceEnvironmentResource|stable"
+          />&gt;
+  - name: >-
+      listCapacities(string, string,
+      AppServiceEnvironmentsListCapacitiesOptionalParams)
+    uid: '@azure/arm-appservice.AppServiceEnvironments.listCapacities|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Description for Get the used, available, and total worker capacity an App
+      Service Environment.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listCapacities(resourceGroupName: string, name: string,
+        options?: AppServiceEnvironmentsListCapacitiesOptionalParams):
+        PagedAsyncIterableIterator<StampCapacity>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsListCapacitiesOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.StampCapacity|stable" />&gt;
+  - name: >-
+      listDiagnostics(string, string,
+      AppServiceEnvironmentsListDiagnosticsOptionalParams)
+    uid: '@azure/arm-appservice.AppServiceEnvironments.listDiagnostics|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Get diagnostic information for an App Service Environment.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listDiagnostics(resourceGroupName: string, name: string,
+        options?: AppServiceEnvironmentsListDiagnosticsOptionalParams):
+        Promise<AppServiceEnvironmentsListDiagnosticsResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsListDiagnosticsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.AppServiceEnvironmentsListDiagnosticsResponse|stable"
+          />&gt;
+  - name: >-
+      listInboundNetworkDependenciesEndpoints(string, string,
+      AppServiceEnvironmentsGetInboundNetworkDependenciesEndpointsOptionalParams)
+    uid: >-
+      @azure/arm-appservice.AppServiceEnvironments.listInboundNetworkDependenciesEndpoints|stable
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Description for Get the network endpoints of all inbound dependencies of
+      an App Service Environment.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listInboundNetworkDependenciesEndpoints(resourceGroupName:
+        string, name: string, options?:
+        AppServiceEnvironmentsGetInboundNetworkDependenciesEndpointsOptionalParams):
+        PagedAsyncIterableIterator<InboundEnvironmentEndpoint>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsGetInboundNetworkDependenciesEndpointsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.InboundEnvironmentEndpoint|stable" />&gt;
+  - name: >-
+      listMultiRoleMetricDefinitions(string, string,
+      AppServiceEnvironmentsListMultiRoleMetricDefinitionsOptionalParams)
+    uid: >-
+      @azure/arm-appservice.AppServiceEnvironments.listMultiRoleMetricDefinitions|stable
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Description for Get metric definitions for a multi-role pool of an App
+      Service Environment.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listMultiRoleMetricDefinitions(resourceGroupName: string, name:
+        string, options?:
+        AppServiceEnvironmentsListMultiRoleMetricDefinitionsOptionalParams):
+        PagedAsyncIterableIterator<ResourceMetricDefinition>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsListMultiRoleMetricDefinitionsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.ResourceMetricDefinition|stable" />&gt;
+  - name: >-
+      listMultiRolePoolInstanceMetricDefinitions(string, string, string,
+      AppServiceEnvironmentsListMultiRolePoolInstanceMetricDefinitionsOptionalParams)
+    uid: >-
+      @azure/arm-appservice.AppServiceEnvironments.listMultiRolePoolInstanceMetricDefinitions|stable
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Description for Get metric definitions for a specific instance of a
+      multi-role pool of an App
+
+      Service Environment.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listMultiRolePoolInstanceMetricDefinitions(resourceGroupName:
+        string, name: string, instance: string, options?:
+        AppServiceEnvironmentsListMultiRolePoolInstanceMetricDefinitionsOptionalParams):
+        PagedAsyncIterableIterator<ResourceMetricDefinition>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: instance
+          type: string
+          description: Name of the instance in the multi-role pool.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsListMultiRolePoolInstanceMetricDefinitionsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.ResourceMetricDefinition|stable" />&gt;
+  - name: >-
+      listMultiRolePools(string, string,
+      AppServiceEnvironmentsListMultiRolePoolsOptionalParams)
+    uid: '@azure/arm-appservice.AppServiceEnvironments.listMultiRolePools|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Get all multi-role pools.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listMultiRolePools(resourceGroupName: string, name: string,
+        options?: AppServiceEnvironmentsListMultiRolePoolsOptionalParams):
+        PagedAsyncIterableIterator<WorkerPoolResource>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsListMultiRolePoolsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.WorkerPoolResource|stable" />&gt;
+  - name: >-
+      listMultiRolePoolSkus(string, string,
+      AppServiceEnvironmentsListMultiRolePoolSkusOptionalParams)
+    uid: '@azure/arm-appservice.AppServiceEnvironments.listMultiRolePoolSkus|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Get available SKUs for scaling a multi-role pool.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listMultiRolePoolSkus(resourceGroupName: string, name: string,
+        options?: AppServiceEnvironmentsListMultiRolePoolSkusOptionalParams):
+        PagedAsyncIterableIterator<SkuInfo>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsListMultiRolePoolSkusOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.SkuInfo|stable" />&gt;
+  - name: >-
+      listMultiRoleUsages(string, string,
+      AppServiceEnvironmentsListMultiRoleUsagesOptionalParams)
+    uid: '@azure/arm-appservice.AppServiceEnvironments.listMultiRoleUsages|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Description for Get usage metrics for a multi-role pool of an App Service
+      Environment.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listMultiRoleUsages(resourceGroupName: string, name: string,
+        options?: AppServiceEnvironmentsListMultiRoleUsagesOptionalParams):
+        PagedAsyncIterableIterator<Usage>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsListMultiRoleUsagesOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.Usage|stable" />&gt;
+  - name: >-
+      listOperations(string, string,
+      AppServiceEnvironmentsListOperationsOptionalParams)
+    uid: '@azure/arm-appservice.AppServiceEnvironments.listOperations|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Description for List all currently running operations on the App Service
+      Environment.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listOperations(resourceGroupName: string, name: string,
+        options?: AppServiceEnvironmentsListOperationsOptionalParams):
+        Promise<AppServiceEnvironmentsListOperationsResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsListOperationsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.AppServiceEnvironmentsListOperationsResponse|stable"
+          />&gt;
+  - name: >-
+      listOutboundNetworkDependenciesEndpoints(string, string,
+      AppServiceEnvironmentsGetOutboundNetworkDependenciesEndpointsOptionalParams)
+    uid: >-
+      @azure/arm-appservice.AppServiceEnvironments.listOutboundNetworkDependenciesEndpoints|stable
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Description for Get the network endpoints of all outbound dependencies of
+      an App Service
+
+      Environment.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listOutboundNetworkDependenciesEndpoints(resourceGroupName:
+        string, name: string, options?:
+        AppServiceEnvironmentsGetOutboundNetworkDependenciesEndpointsOptionalParams):
+        PagedAsyncIterableIterator<OutboundEnvironmentEndpoint>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsGetOutboundNetworkDependenciesEndpointsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.OutboundEnvironmentEndpoint|stable" />&gt;
+  - name: >-
+      listPrivateEndpointConnectionList(string, string,
+      AppServiceEnvironmentsGetPrivateEndpointConnectionListOptionalParams)
+    uid: >-
+      @azure/arm-appservice.AppServiceEnvironments.listPrivateEndpointConnectionList|stable
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Description for Gets the list of private endpoints associated with a
+      hosting environment
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listPrivateEndpointConnectionList(resourceGroupName: string,
+        name: string, options?:
+        AppServiceEnvironmentsGetPrivateEndpointConnectionListOptionalParams):
+        PagedAsyncIterableIterator<RemotePrivateEndpointConnectionARMResource>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsGetPrivateEndpointConnectionListOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.RemotePrivateEndpointConnectionARMResource|stable"
+          />&gt;
+  - name: listUsages(string, string, AppServiceEnvironmentsListUsagesOptionalParams)
+    uid: '@azure/arm-appservice.AppServiceEnvironments.listUsages|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Get global usage metrics of an App Service Environment.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listUsages(resourceGroupName: string, name: string, options?:
+        AppServiceEnvironmentsListUsagesOptionalParams):
+        PagedAsyncIterableIterator<CsmUsageQuota>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsListUsagesOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.CsmUsageQuota|stable" />&gt;
+  - name: >-
+      listWebApps(string, string,
+      AppServiceEnvironmentsListWebAppsOptionalParams)
+    uid: '@azure/arm-appservice.AppServiceEnvironments.listWebApps|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Get all apps in an App Service Environment.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listWebApps(resourceGroupName: string, name: string, options?:
+        AppServiceEnvironmentsListWebAppsOptionalParams):
+        PagedAsyncIterableIterator<Site>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsListWebAppsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.Site|stable" />&gt;
+  - name: >-
+      listWebWorkerMetricDefinitions(string, string, string,
+      AppServiceEnvironmentsListWebWorkerMetricDefinitionsOptionalParams)
+    uid: >-
+      @azure/arm-appservice.AppServiceEnvironments.listWebWorkerMetricDefinitions|stable
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Description for Get metric definitions for a worker pool of an App Service
+      Environment.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listWebWorkerMetricDefinitions(resourceGroupName: string, name:
+        string, workerPoolName: string, options?:
+        AppServiceEnvironmentsListWebWorkerMetricDefinitionsOptionalParams):
+        PagedAsyncIterableIterator<ResourceMetricDefinition>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: workerPoolName
+          type: string
+          description: Name of the worker pool.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsListWebWorkerMetricDefinitionsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.ResourceMetricDefinition|stable" />&gt;
+  - name: >-
+      listWebWorkerUsages(string, string, string,
+      AppServiceEnvironmentsListWebWorkerUsagesOptionalParams)
+    uid: '@azure/arm-appservice.AppServiceEnvironments.listWebWorkerUsages|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Description for Get usage metrics for a worker pool of an App Service
+      Environment.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listWebWorkerUsages(resourceGroupName: string, name: string,
+        workerPoolName: string, options?:
+        AppServiceEnvironmentsListWebWorkerUsagesOptionalParams):
+        PagedAsyncIterableIterator<Usage>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: workerPoolName
+          type: string
+          description: Name of the worker pool.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsListWebWorkerUsagesOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.Usage|stable" />&gt;
+  - name: >-
+      listWorkerPoolInstanceMetricDefinitions(string, string, string, string,
+      AppServiceEnvironmentsListWorkerPoolInstanceMetricDefinitionsOptionalParams)
+    uid: >-
+      @azure/arm-appservice.AppServiceEnvironments.listWorkerPoolInstanceMetricDefinitions|stable
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Description for Get metric definitions for a specific instance of a worker
+      pool of an App Service
+
+      Environment.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listWorkerPoolInstanceMetricDefinitions(resourceGroupName:
+        string, name: string, workerPoolName: string, instance: string,
+        options?:
+        AppServiceEnvironmentsListWorkerPoolInstanceMetricDefinitionsOptionalParams):
+        PagedAsyncIterableIterator<ResourceMetricDefinition>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: workerPoolName
+          type: string
+          description: Name of the worker pool.
+        - id: instance
+          type: string
+          description: Name of the instance in the worker pool.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsListWorkerPoolInstanceMetricDefinitionsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.ResourceMetricDefinition|stable" />&gt;
+  - name: >-
+      listWorkerPools(string, string,
+      AppServiceEnvironmentsListWorkerPoolsOptionalParams)
+    uid: '@azure/arm-appservice.AppServiceEnvironments.listWorkerPools|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Get all worker pools of an App Service Environment.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listWorkerPools(resourceGroupName: string, name: string,
+        options?: AppServiceEnvironmentsListWorkerPoolsOptionalParams):
+        PagedAsyncIterableIterator<WorkerPoolResource>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsListWorkerPoolsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.WorkerPoolResource|stable" />&gt;
+  - name: >-
+      listWorkerPoolSkus(string, string, string,
+      AppServiceEnvironmentsListWorkerPoolSkusOptionalParams)
+    uid: '@azure/arm-appservice.AppServiceEnvironments.listWorkerPoolSkus|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Get available SKUs for scaling a worker pool.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listWorkerPoolSkus(resourceGroupName: string, name: string,
+        workerPoolName: string, options?:
+        AppServiceEnvironmentsListWorkerPoolSkusOptionalParams):
+        PagedAsyncIterableIterator<SkuInfo>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: workerPoolName
+          type: string
+          description: Name of the worker pool.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsListWorkerPoolSkusOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.SkuInfo|stable" />&gt;
+  - name: reboot(string, string, AppServiceEnvironmentsRebootOptionalParams)
+    uid: '@azure/arm-appservice.AppServiceEnvironments.reboot|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Reboot all machines in an App Service Environment.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function reboot(resourceGroupName: string, name: string, options?:
+        AppServiceEnvironmentsRebootOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsRebootOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      update(string, string, AppServiceEnvironmentPatchResource,
+      AppServiceEnvironmentsUpdateOptionalParams)
+    uid: '@azure/arm-appservice.AppServiceEnvironments.update|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Create or update an App Service Environment.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function update(resourceGroupName: string, name: string,
+        hostingEnvironmentEnvelope: AppServiceEnvironmentPatchResource,
+        options?: AppServiceEnvironmentsUpdateOptionalParams):
+        Promise<AppServiceEnvironmentsUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: hostingEnvironmentEnvelope
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentPatchResource|stable"
+            />
+          description: Configuration details of the App Service Environment.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.AppServiceEnvironmentsUpdateResponse|stable"
+          />&gt;
+  - name: >-
+      updateAseNetworkingConfiguration(string, string,
+      AseV3NetworkingConfiguration,
+      AppServiceEnvironmentsUpdateAseNetworkingConfigurationOptionalParams)
+    uid: >-
+      @azure/arm-appservice.AppServiceEnvironments.updateAseNetworkingConfiguration|stable
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Description for Update networking configuration of an App Service
+      Environment
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function updateAseNetworkingConfiguration(resourceGroupName: string,
+        name: string, aseNetworkingConfiguration: AseV3NetworkingConfiguration,
+        options?:
+        AppServiceEnvironmentsUpdateAseNetworkingConfigurationOptionalParams):
+        Promise<AppServiceEnvironmentsUpdateAseNetworkingConfigurationResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: aseNetworkingConfiguration
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AseV3NetworkingConfiguration|stable" />
+          description: Full view of networking configuration for an ASE.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsUpdateAseNetworkingConfigurationOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.AppServiceEnvironmentsUpdateAseNetworkingConfigurationResponse|stable"
+          />&gt;
+  - name: >-
+      updateMultiRolePool(string, string, WorkerPoolResource,
+      AppServiceEnvironmentsUpdateMultiRolePoolOptionalParams)
+    uid: '@azure/arm-appservice.AppServiceEnvironments.updateMultiRolePool|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Create or update a multi-role pool.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function updateMultiRolePool(resourceGroupName: string, name: string,
+        multiRolePoolEnvelope: WorkerPoolResource, options?:
+        AppServiceEnvironmentsUpdateMultiRolePoolOptionalParams):
+        Promise<AppServiceEnvironmentsUpdateMultiRolePoolResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: multiRolePoolEnvelope
+          type: <xref uid="@azure/arm-appservice.WorkerPoolResource|stable" />
+          description: Properties of the multi-role pool.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsUpdateMultiRolePoolOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.AppServiceEnvironmentsUpdateMultiRolePoolResponse|stable"
+          />&gt;
+  - name: >-
+      updateWorkerPool(string, string, string, WorkerPoolResource,
+      AppServiceEnvironmentsUpdateWorkerPoolOptionalParams)
+    uid: '@azure/arm-appservice.AppServiceEnvironments.updateWorkerPool|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Create or update a worker pool.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function updateWorkerPool(resourceGroupName: string, name: string,
+        workerPoolName: string, workerPoolEnvelope: WorkerPoolResource,
+        options?: AppServiceEnvironmentsUpdateWorkerPoolOptionalParams):
+        Promise<AppServiceEnvironmentsUpdateWorkerPoolResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service Environment.
+        - id: workerPoolName
+          type: string
+          description: Name of the worker pool.
+        - id: workerPoolEnvelope
+          type: <xref uid="@azure/arm-appservice.WorkerPoolResource|stable" />
+          description: Properties of the worker pool.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServiceEnvironmentsUpdateWorkerPoolOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.AppServiceEnvironmentsUpdateWorkerPoolResponse|stable"
+          />&gt;

@@ -1,0 +1,99 @@
+### YamlMime:TSPackage
+uid: '@azure/service-bus|stable'
+name: '@azure/service-bus (7.4.0 - Stable)'
+summary: ''
+type: package
+classes:
+  - '@azure/service-bus.ServiceBusAdministrationClient|stable'
+  - '@azure/service-bus.ServiceBusClient|stable'
+  - '@azure/service-bus.ServiceBusError|stable'
+interfaces:
+  - '@azure/service-bus.AuthorizationRule|stable'
+  - '@azure/service-bus.CorrelationRuleFilter|stable'
+  - '@azure/service-bus.CreateMessageBatchOptions|stable'
+  - '@azure/service-bus.CreateQueueOptions|stable'
+  - '@azure/service-bus.CreateSubscriptionOptions|stable'
+  - '@azure/service-bus.CreateTopicOptions|stable'
+  - '@azure/service-bus.DeadLetterOptions|stable'
+  - '@azure/service-bus.GetMessageIteratorOptions|stable'
+  - '@azure/service-bus.MessageHandlers|stable'
+  - '@azure/service-bus.NamespaceProperties|stable'
+  - '@azure/service-bus.PeekMessagesOptions|stable'
+  - '@azure/service-bus.ProcessErrorArgs|stable'
+  - '@azure/service-bus.QueueProperties|stable'
+  - '@azure/service-bus.QueueRuntimeProperties|stable'
+  - '@azure/service-bus.ReceiveMessagesOptions|stable'
+  - '@azure/service-bus.RuleProperties|stable'
+  - '@azure/service-bus.ServiceBusAdministrationClientOptions|stable'
+  - '@azure/service-bus.ServiceBusClientOptions|stable'
+  - '@azure/service-bus.ServiceBusConnectionStringProperties|stable'
+  - '@azure/service-bus.ServiceBusMessage|stable'
+  - '@azure/service-bus.ServiceBusMessageBatch|stable'
+  - '@azure/service-bus.ServiceBusReceivedMessage|stable'
+  - '@azure/service-bus.ServiceBusReceiver|stable'
+  - '@azure/service-bus.ServiceBusReceiverOptions|stable'
+  - '@azure/service-bus.ServiceBusSender|stable'
+  - '@azure/service-bus.ServiceBusSessionReceiver|stable'
+  - '@azure/service-bus.ServiceBusSessionReceiverOptions|stable'
+  - '@azure/service-bus.SqlRuleFilter|stable'
+  - '@azure/service-bus.SubscribeOptions|stable'
+  - '@azure/service-bus.SubscriptionProperties|stable'
+  - '@azure/service-bus.SubscriptionRuntimeProperties|stable'
+  - '@azure/service-bus.TopicProperties|stable'
+  - '@azure/service-bus.TopicRuntimeProperties|stable'
+  - '@azure/service-bus.TryAddOptions|stable'
+typeAliases:
+  - '@azure/service-bus.EntitiesResponse|stable'
+  - '@azure/service-bus.EntityAvailabilityStatus|stable'
+  - '@azure/service-bus.EntityStatus|stable'
+  - '@azure/service-bus.OperationOptionsBase|stable'
+  - '@azure/service-bus.ServiceBusErrorCode|stable'
+  - '@azure/service-bus.SqlRuleAction|stable'
+  - '@azure/service-bus.WithResponse|stable'
+functions:
+  - name: isServiceBusError(unknown)
+    uid: '@azure/service-bus.isServiceBusError|stable'
+    package: '@azure/service-bus|stable'
+    summary: Determines if an error is of type `ServiceBusError`
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function isServiceBusError(err: unknown): boolean'
+      parameters:
+        - id: err
+          type: unknown
+          description: |
+            An error to check to see if it's of type ServiceBusError
+      return:
+        description: ''
+        type: boolean
+  - name: parseServiceBusConnectionString(string)
+    uid: '@azure/service-bus.parseServiceBusConnectionString|stable'
+    package: '@azure/service-bus|stable'
+    summary: >-
+      Parses given connection string into the different properties applicable to
+      Azure Service Bus.
+
+      The properties are useful to then construct a ServiceBusClient.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function parseServiceBusConnectionString(connectionString: string):
+        ServiceBusConnectionStringProperties
+      parameters:
+        - id: connectionString
+          type: string
+          description: >
+            The connection string associated with the Shared Access Policy
+            created
+
+            for the Service Bus namespace, queue or topic.
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/service-bus.ServiceBusConnectionStringProperties|stable"
+          />

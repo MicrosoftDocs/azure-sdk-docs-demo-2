@@ -1,0 +1,68 @@
+### YamlMime:TSType
+name: FormDocumentReport
+uid: '@azure/cognitiveservices-formrecognizer.FormDocumentReport|legacy'
+package: '@azure/cognitiveservices-formrecognizer|legacy'
+summary: An interface representing FormDocumentReport.
+fullName: FormDocumentReport
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: documentName
+    uid: >-
+      @azure/cognitiveservices-formrecognizer.FormDocumentReport.documentName|legacy
+    package: '@azure/cognitiveservices-formrecognizer|legacy'
+    summary: Reference to the data that the report is for.
+    fullName: documentName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'documentName?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: errors
+    uid: '@azure/cognitiveservices-formrecognizer.FormDocumentReport.errors|legacy'
+    package: '@azure/cognitiveservices-formrecognizer|legacy'
+    summary: List of errors per page.
+    fullName: errors
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'errors?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: pages
+    uid: '@azure/cognitiveservices-formrecognizer.FormDocumentReport.pages|legacy'
+    package: '@azure/cognitiveservices-formrecognizer|legacy'
+    summary: Total number of pages trained on.
+    fullName: pages
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'pages?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: status
+    uid: '@azure/cognitiveservices-formrecognizer.FormDocumentReport.status|legacy'
+    package: '@azure/cognitiveservices-formrecognizer|legacy'
+    summary: >-
+      Status of the training operation. Possible values include: 'success',
+      'partialSuccess',
+
+      'failure'
+    fullName: status
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'status?: Status'
+      return:
+        description: ''
+        type: <xref uid="@azure/cognitiveservices-formrecognizer.Status|legacy" />

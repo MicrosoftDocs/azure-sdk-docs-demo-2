@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: ConfigurationStoreListResult
+uid: '@azure/arm-appconfiguration.ConfigurationStoreListResult|beta'
+package: '@azure/arm-appconfiguration|beta'
+summary: The result of a request to list configuration stores.
+fullName: ConfigurationStoreListResult
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: nextLink
+    uid: '@azure/arm-appconfiguration.ConfigurationStoreListResult.nextLink|beta'
+    package: '@azure/arm-appconfiguration|beta'
+    summary: The URI that can be used to request the next set of paged results.
+    fullName: nextLink
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nextLink?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: value
+    uid: '@azure/arm-appconfiguration.ConfigurationStoreListResult.value|beta'
+    package: '@azure/arm-appconfiguration|beta'
+    summary: The collection value.
+    fullName: value
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: ConfigurationStore[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appconfiguration.ConfigurationStore|beta" />[]

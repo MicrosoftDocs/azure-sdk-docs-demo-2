@@ -1,0 +1,272 @@
+### YamlMime:TSType
+name: Operations
+uid: '@azure/arm-appconfiguration.Operations|stable'
+package: '@azure/arm-appconfiguration|stable'
+summary: Class representing a Operations.
+fullName: Operations
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: Operations(AppConfigurationManagementClientContext)
+    uid: '@azure/arm-appconfiguration.Operations.constructor|stable'
+    package: '@azure/arm-appconfiguration|stable'
+    summary: Create a Operations.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'new Operations(client: AppConfigurationManagementClientContext)'
+      parameters:
+        - id: client
+          type: >-
+            <xref
+            uid="@azure/arm-appconfiguration.AppConfigurationManagementClientContext|stable"
+            />
+          description: |
+            Reference to the service client.
+methods:
+  - name: >-
+      checkNameAvailability(CheckNameAvailabilityParameters,
+      msRest.RequestOptionsBase)
+    uid: '@azure/arm-appconfiguration.Operations.checkNameAvailability|stable'
+    package: '@azure/arm-appconfiguration|stable'
+    summary: Checks whether the configuration store name is available for use.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function checkNameAvailability(checkNameAvailabilityParameters:
+        CheckNameAvailabilityParameters, options?: msRest.RequestOptionsBase):
+        Promise<Models.OperationsCheckNameAvailabilityResponse>
+      parameters:
+        - id: checkNameAvailabilityParameters
+          type: >-
+            <xref
+            uid="@azure/arm-appconfiguration.CheckNameAvailabilityParameters|stable"
+            />
+          description: |-
+            The object containing information for the availability
+            request.
+        - id: options
+          type: msRest.RequestOptionsBase
+          description: ''
+      return:
+        description: Promise<Models.OperationsCheckNameAvailabilityResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appconfiguration.OperationsCheckNameAvailabilityResponse|stable"
+          />&gt;
+  - name: >-
+      checkNameAvailability(CheckNameAvailabilityParameters, RequestOptionsBase,
+      ServiceCallback<NameAvailabilityStatus>)
+    uid: '@azure/arm-appconfiguration.Operations.checkNameAvailability_2|stable'
+    package: '@azure/arm-appconfiguration|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function checkNameAvailability(checkNameAvailabilityParameters:
+        CheckNameAvailabilityParameters, options: RequestOptionsBase, callback:
+        ServiceCallback<NameAvailabilityStatus>)
+      parameters:
+        - id: checkNameAvailabilityParameters
+          type: >-
+            <xref
+            uid="@azure/arm-appconfiguration.CheckNameAvailabilityParameters|stable"
+            />
+          description: |-
+            The object containing information for the availability
+            request.
+        - id: options
+          type: RequestOptionsBase
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-appconfiguration.NameAvailabilityStatus|stable"
+            />&gt;
+          description: |
+            The callback
+  - name: >-
+      checkNameAvailability(CheckNameAvailabilityParameters,
+      ServiceCallback<NameAvailabilityStatus>)
+    uid: '@azure/arm-appconfiguration.Operations.checkNameAvailability_1|stable'
+    package: '@azure/arm-appconfiguration|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function checkNameAvailability(checkNameAvailabilityParameters:
+        CheckNameAvailabilityParameters, callback:
+        ServiceCallback<NameAvailabilityStatus>)
+      parameters:
+        - id: checkNameAvailabilityParameters
+          type: >-
+            <xref
+            uid="@azure/arm-appconfiguration.CheckNameAvailabilityParameters|stable"
+            />
+          description: |-
+            The object containing information for the availability
+            request.
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-appconfiguration.NameAvailabilityStatus|stable"
+            />&gt;
+          description: |
+            The callback
+  - name: list(Models.OperationsListOptionalParams)
+    uid: '@azure/arm-appconfiguration.Operations.list|stable'
+    package: '@azure/arm-appconfiguration|stable'
+    summary: Lists the operations available from this provider.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(options?: Models.OperationsListOptionalParams):
+        Promise<Models.OperationsListResponse>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appconfiguration.OperationsListOptionalParams|stable"
+            />
+          description: ''
+      return:
+        description: Promise<Models.OperationsListResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appconfiguration.OperationsListResponse|stable" />&gt;
+  - name: >-
+      list(OperationsListOptionalParams,
+      ServiceCallback<OperationDefinitionListResult>)
+    uid: '@azure/arm-appconfiguration.Operations.list_2|stable'
+    package: '@azure/arm-appconfiguration|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(options: OperationsListOptionalParams, callback:
+        ServiceCallback<OperationDefinitionListResult>)
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appconfiguration.OperationsListOptionalParams|stable"
+            />
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-appconfiguration.OperationDefinitionListResult|stable"
+            />&gt;
+          description: |
+            The callback
+  - name: list(ServiceCallback<OperationDefinitionListResult>)
+    uid: '@azure/arm-appconfiguration.Operations.list_1|stable'
+    package: '@azure/arm-appconfiguration|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function list(callback: ServiceCallback<OperationDefinitionListResult>)'
+      parameters:
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-appconfiguration.OperationDefinitionListResult|stable"
+            />&gt;
+          description: |
+            The callback
+  - name: listNext(string, Models.OperationsListNextOptionalParams)
+    uid: '@azure/arm-appconfiguration.Operations.listNext|stable'
+    package: '@azure/arm-appconfiguration|stable'
+    summary: Lists the operations available from this provider.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, options?:
+        Models.OperationsListNextOptionalParams):
+        Promise<Models.OperationsListNextResponse>
+      parameters:
+        - id: nextPageLink
+          type: string
+          description: The NextLink from the previous successful call to List operation.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appconfiguration.OperationsListNextOptionalParams|stable"
+            />
+          description: ''
+      return:
+        description: Promise<Models.OperationsListNextResponse>
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appconfiguration.OperationsListNextResponse|stable"
+          />&gt;
+  - name: >-
+      listNext(string, OperationsListNextOptionalParams,
+      ServiceCallback<OperationDefinitionListResult>)
+    uid: '@azure/arm-appconfiguration.Operations.listNext_2|stable'
+    package: '@azure/arm-appconfiguration|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, options:
+        OperationsListNextOptionalParams, callback:
+        ServiceCallback<OperationDefinitionListResult>)
+      parameters:
+        - id: nextPageLink
+          type: string
+          description: The NextLink from the previous successful call to List operation.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appconfiguration.OperationsListNextOptionalParams|stable"
+            />
+          description: The optional parameters
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-appconfiguration.OperationDefinitionListResult|stable"
+            />&gt;
+          description: |
+            The callback
+  - name: listNext(string, ServiceCallback<OperationDefinitionListResult>)
+    uid: '@azure/arm-appconfiguration.Operations.listNext_1|stable'
+    package: '@azure/arm-appconfiguration|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, callback:
+        ServiceCallback<OperationDefinitionListResult>)
+      parameters:
+        - id: nextPageLink
+          type: string
+          description: The NextLink from the previous successful call to List operation.
+        - id: callback
+          type: >-
+            ServiceCallback&lt;<xref
+            uid="@azure/arm-appconfiguration.OperationDefinitionListResult|stable"
+            />&gt;
+          description: |
+            The callback

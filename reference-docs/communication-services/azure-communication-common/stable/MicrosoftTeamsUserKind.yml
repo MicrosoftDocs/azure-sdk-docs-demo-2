@@ -1,0 +1,84 @@
+### YamlMime:TSType
+name: MicrosoftTeamsUserKind
+uid: '@azure/communication-common.MicrosoftTeamsUserKind|stable'
+package: '@azure/communication-common|stable'
+summary: IdentifierKind for a MicrosoftTeamsUserIdentifier.
+fullName: MicrosoftTeamsUserKind
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: cloud
+    uid: '@azure/communication-common.MicrosoftTeamsUserKind.cloud|stable'
+    package: '@azure/communication-common|stable'
+    summary: >-
+      The cloud that the Microsoft Teams user belongs to. If missing, the cloud
+      is "public".
+    fullName: cloud
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'cloud?: "public" | "dod" | "gcch"'
+      return:
+        description: ''
+        type: '"public" | "dod" | "gcch"'
+  - name: isAnonymous
+    uid: '@azure/communication-common.MicrosoftTeamsUserKind.isAnonymous|stable'
+    package: '@azure/communication-common|stable'
+    summary: >-
+      True if the user is anonymous, for example when joining a meeting with a
+      share link. If missing, the user is not anonymous.
+    fullName: isAnonymous
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isAnonymous?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: kind
+    uid: '@azure/communication-common.MicrosoftTeamsUserKind.kind|stable'
+    package: '@azure/communication-common|stable'
+    summary: The identifier kind.
+    fullName: kind
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'kind: "microsoftTeamsUser"'
+      return:
+        description: ''
+        type: '"microsoftTeamsUser"'
+  - name: microsoftTeamsUserId
+    uid: >-
+      @azure/communication-common.MicrosoftTeamsUserKind.microsoftTeamsUserId|stable
+    package: '@azure/communication-common|stable'
+    summary: >-
+      Id of the Microsoft Teams user. If the user isn't anonymous, the id is the
+      AAD object id of the user.
+    fullName: microsoftTeamsUserId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'microsoftTeamsUserId: string'
+      return:
+        description: ''
+        type: string
+  - name: rawId
+    uid: '@azure/communication-common.MicrosoftTeamsUserKind.rawId|stable'
+    package: '@azure/communication-common|stable'
+    summary: Optional raw id of the Microsoft Teams user.
+    fullName: rawId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rawId?: string'
+      return:
+        description: ''
+        type: string
+extends: <xref uid="@azure/communication-common.MicrosoftTeamsUserIdentifier|stable" />

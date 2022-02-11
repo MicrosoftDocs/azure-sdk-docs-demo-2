@@ -1,0 +1,22 @@
+### YamlMime:TSEnum
+name: KnownIndexingMode
+uid: '@azure/search-documents.KnownIndexingMode|beta'
+package: '@azure/search-documents|beta'
+summary: >-
+  Known values of <xref:@azure/search-documents.KnownIndexingMode|beta> that the
+  service accepts.
+fullName: KnownIndexingMode
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: IndexingAllDocs
+    uid: '@azure/search-documents.KnownIndexingMode.IndexingAllDocs|beta'
+    package: '@azure/search-documents|beta'
+    summary: The indexer is indexing all documents in the datasource.
+  - name: IndexingResetDocs
+    uid: '@azure/search-documents.KnownIndexingMode.IndexingResetDocs|beta'
+    package: '@azure/search-documents|beta'
+    summary: >-
+      The indexer is indexing selective, reset documents in the datasource. The
+      documents being indexed are defined on indexer status.

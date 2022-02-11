@@ -1,0 +1,14 @@
+### YamlMime:TSTypeAlias
+name: ShareGetStatisticsResponse
+uid: '@azure/storage-file-share.ShareGetStatisticsResponse|beta'
+package: '@azure/storage-file-share|beta'
+summary: >-
+  Response data for the
+  <xref:@azure/storage-file-share.ShareClient.getStatistics|beta> Operation.
+fullName: ShareGetStatisticsResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type ShareGetStatisticsResponse = ShareGetStatisticsResponseModel & {
+  shareUsage: number }

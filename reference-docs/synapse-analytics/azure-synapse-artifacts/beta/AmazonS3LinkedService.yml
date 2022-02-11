@@ -1,0 +1,14 @@
+### YamlMime:TSTypeAlias
+name: AmazonS3LinkedService
+uid: '@azure/synapse-artifacts.AmazonS3LinkedService|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: Linked service for Amazon S3.
+fullName: AmazonS3LinkedService
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type AmazonS3LinkedService = LinkedService & { accessKeyId?: any,
+  authenticationType?: any, encryptedCredential?: any, secretAccessKey?:
+  SecretBaseUnion, serviceUrl?: any, sessionToken?: SecretBaseUnion, type:
+  "AmazonS3" }

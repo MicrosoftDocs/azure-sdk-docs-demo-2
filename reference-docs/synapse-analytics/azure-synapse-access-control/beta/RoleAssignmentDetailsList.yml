@@ -1,0 +1,39 @@
+### YamlMime:TSType
+name: RoleAssignmentDetailsList
+uid: '@azure/synapse-access-control.RoleAssignmentDetailsList|beta'
+package: '@azure/synapse-access-control|beta'
+summary: Role Assignment response details
+fullName: RoleAssignmentDetailsList
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: count
+    uid: '@azure/synapse-access-control.RoleAssignmentDetailsList.count|beta'
+    package: '@azure/synapse-access-control|beta'
+    summary: Number of role assignments
+    fullName: count
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'count?: number'
+      return:
+        description: ''
+        type: number
+  - name: value
+    uid: '@azure/synapse-access-control.RoleAssignmentDetailsList.value|beta'
+    package: '@azure/synapse-access-control|beta'
+    summary: A list of role assignments
+    fullName: value
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: RoleAssignmentDetails[]'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/synapse-access-control.RoleAssignmentDetails|beta"
+          />[]

@@ -1,0 +1,83 @@
+### YamlMime:TSType
+name: SapS4HanaDataSourceProperties
+uid: '@azure-rest/purview-scanning.SapS4HanaDataSourceProperties|beta'
+package: '@azure-rest/purview-scanning|beta'
+summary: ''
+fullName: SapS4HanaDataSourceProperties
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: applicationServer
+    uid: >-
+      @azure-rest/purview-scanning.SapS4HanaDataSourceProperties.applicationServer|beta
+    package: '@azure-rest/purview-scanning|beta'
+    summary: ''
+    fullName: applicationServer
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'applicationServer?: string'
+      return:
+        description: ''
+        type: string
+  - name: collection
+    uid: '@azure-rest/purview-scanning.SapS4HanaDataSourceProperties.collection|beta'
+    package: '@azure-rest/purview-scanning|beta'
+    summary: ''
+    fullName: collection
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'collection?: DataSourcePropertiesCollection'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure-rest/purview-scanning.DataSourcePropertiesCollection|beta"
+          />
+  - name: createdAt
+    uid: '@azure-rest/purview-scanning.SapS4HanaDataSourceProperties.createdAt|beta'
+    package: '@azure-rest/purview-scanning|beta'
+    summary: ''
+    fullName: createdAt
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'createdAt?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: lastModifiedAt
+    uid: >-
+      @azure-rest/purview-scanning.SapS4HanaDataSourceProperties.lastModifiedAt|beta
+    package: '@azure-rest/purview-scanning|beta'
+    summary: ''
+    fullName: lastModifiedAt
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lastModifiedAt?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: systemNumber
+    uid: >-
+      @azure-rest/purview-scanning.SapS4HanaDataSourceProperties.systemNumber|beta
+    package: '@azure-rest/purview-scanning|beta'
+    summary: ''
+    fullName: systemNumber
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'systemNumber?: string'
+      return:
+        description: ''
+        type: string
+extends: <xref uid="@azure-rest/purview-scanning.SapS4HanaProperties|beta" />

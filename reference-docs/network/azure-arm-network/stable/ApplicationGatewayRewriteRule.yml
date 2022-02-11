@@ -1,0 +1,71 @@
+### YamlMime:TSType
+name: ApplicationGatewayRewriteRule
+uid: '@azure/arm-network.ApplicationGatewayRewriteRule|stable'
+package: '@azure/arm-network|stable'
+summary: Rewrite rule of an application gateway.
+fullName: ApplicationGatewayRewriteRule
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: actionSet
+    uid: '@azure/arm-network.ApplicationGatewayRewriteRule.actionSet|stable'
+    package: '@azure/arm-network|stable'
+    summary: Set of actions to be done as part of the rewrite Rule.
+    fullName: actionSet
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'actionSet?: ApplicationGatewayRewriteRuleActionSet'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-network.ApplicationGatewayRewriteRuleActionSet|stable"
+          />
+  - name: conditions
+    uid: '@azure/arm-network.ApplicationGatewayRewriteRule.conditions|stable'
+    package: '@azure/arm-network|stable'
+    summary: Conditions based on which the action set execution will be evaluated.
+    fullName: conditions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'conditions?: ApplicationGatewayRewriteRuleCondition[]'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-network.ApplicationGatewayRewriteRuleCondition|stable"
+          />[]
+  - name: name
+    uid: '@azure/arm-network.ApplicationGatewayRewriteRule.name|stable'
+    package: '@azure/arm-network|stable'
+    summary: Name of the rewrite rule that is unique within an Application Gateway.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: ruleSequence
+    uid: '@azure/arm-network.ApplicationGatewayRewriteRule.ruleSequence|stable'
+    package: '@azure/arm-network|stable'
+    summary: >-
+      Rule Sequence of the rewrite rule that determines the order of execution
+      of a particular rule in a RewriteRuleSet.
+    fullName: ruleSequence
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ruleSequence?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number

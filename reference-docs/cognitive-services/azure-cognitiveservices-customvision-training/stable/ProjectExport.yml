@@ -1,0 +1,128 @@
+### YamlMime:TSType
+name: ProjectExport
+uid: '@azure/cognitiveservices-customvision-training.ProjectExport|stable'
+package: '@azure/cognitiveservices-customvision-training|stable'
+summary: Represents information about a project export.
+fullName: ProjectExport
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: estimatedImportTimeInMS
+    uid: >-
+      @azure/cognitiveservices-customvision-training.ProjectExport.estimatedImportTimeInMS|stable
+    package: '@azure/cognitiveservices-customvision-training|stable'
+    summary: >-
+      Estimated time this project will take to import, can change based on
+      network connectivity and
+
+      load between
+
+      source and destination regions.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: estimatedImportTimeInMS
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'estimatedImportTimeInMS?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: imageCount
+    uid: >-
+      @azure/cognitiveservices-customvision-training.ProjectExport.imageCount|stable
+    package: '@azure/cognitiveservices-customvision-training|stable'
+    summary: >-
+      Count of images that will be exported.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: imageCount
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'imageCount?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: iterationCount
+    uid: >-
+      @azure/cognitiveservices-customvision-training.ProjectExport.iterationCount|stable
+    package: '@azure/cognitiveservices-customvision-training|stable'
+    summary: >-
+      Count of iterations that will be exported.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: iterationCount
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'iterationCount?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: regionCount
+    uid: >-
+      @azure/cognitiveservices-customvision-training.ProjectExport.regionCount|stable
+    package: '@azure/cognitiveservices-customvision-training|stable'
+    summary: >-
+      Count of regions that will be exported.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: regionCount
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'regionCount?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: tagCount
+    uid: >-
+      @azure/cognitiveservices-customvision-training.ProjectExport.tagCount|stable
+    package: '@azure/cognitiveservices-customvision-training|stable'
+    summary: >-
+      Count of tags that will be exported.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: tagCount
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tagCount?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: token
+    uid: '@azure/cognitiveservices-customvision-training.ProjectExport.token|stable'
+    package: '@azure/cognitiveservices-customvision-training|stable'
+    summary: >-
+      Opaque token that should be passed to ImportProject to perform the import.
+      This token grants
+
+      access to import this
+
+      project to all that have the token.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: token
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'token?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

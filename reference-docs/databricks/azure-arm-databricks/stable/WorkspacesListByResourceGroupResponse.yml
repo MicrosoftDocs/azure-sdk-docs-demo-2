@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: WorkspacesListByResourceGroupResponse
+uid: '@azure/arm-databricks.WorkspacesListByResourceGroupResponse|stable'
+package: '@azure/arm-databricks|stable'
+summary: Contains response data for the listByResourceGroup operation.
+fullName: WorkspacesListByResourceGroupResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type WorkspacesListByResourceGroupResponse = WorkspaceListResult & {
+  _response: HttpResponse & { bodyAsText: string, parsedBody:
+  WorkspaceListResult } }

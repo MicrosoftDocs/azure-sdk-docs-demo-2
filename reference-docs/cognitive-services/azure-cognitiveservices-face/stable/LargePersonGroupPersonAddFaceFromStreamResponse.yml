@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: LargePersonGroupPersonAddFaceFromStreamResponse
+uid: >-
+  @azure/cognitiveservices-face.LargePersonGroupPersonAddFaceFromStreamResponse|stable
+package: '@azure/cognitiveservices-face|stable'
+summary: Contains response data for the addFaceFromStream operation.
+fullName: LargePersonGroupPersonAddFaceFromStreamResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type LargePersonGroupPersonAddFaceFromStreamResponse = PersistedFace & {
+  _response: HttpResponse & { bodyAsText: string, parsedBody: PersistedFace } }

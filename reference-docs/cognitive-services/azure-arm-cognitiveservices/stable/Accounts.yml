@@ -1,0 +1,445 @@
+### YamlMime:TSType
+name: Accounts
+uid: '@azure/arm-cognitiveservices.Accounts|stable'
+package: '@azure/arm-cognitiveservices|stable'
+summary: Interface representing a Accounts.
+fullName: Accounts
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: beginCreate(string, string, Account, AccountsCreateOptionalParams)
+    uid: '@azure/arm-cognitiveservices.Accounts.beginCreate|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: >-
+      Create Cognitive Services Account. Accounts is a resource group wide
+      resource type. It holds the
+
+      keys for developer to access intelligent APIs. It's also the resource type
+      for billing.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreate(resourceGroupName: string, accountName: string,
+        account: Account, options?: AccountsCreateOptionalParams):
+        Promise<PollerLike<PollOperationState<AccountsCreateResponse>,
+        AccountsCreateResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: accountName
+          type: string
+          description: The name of Cognitive Services account.
+        - id: account
+          type: <xref uid="@azure/arm-cognitiveservices.Account|stable" />
+          description: The parameters to provide for the created account.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-cognitiveservices.AccountsCreateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-cognitiveservices.AccountsCreateResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-cognitiveservices.AccountsCreateResponse|stable"
+          />&gt;&gt;
+  - name: beginCreateAndWait(string, string, Account, AccountsCreateOptionalParams)
+    uid: '@azure/arm-cognitiveservices.Accounts.beginCreateAndWait|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: >-
+      Create Cognitive Services Account. Accounts is a resource group wide
+      resource type. It holds the
+
+      keys for developer to access intelligent APIs. It's also the resource type
+      for billing.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateAndWait(resourceGroupName: string, accountName:
+        string, account: Account, options?: AccountsCreateOptionalParams):
+        Promise<AccountsCreateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: accountName
+          type: string
+          description: The name of Cognitive Services account.
+        - id: account
+          type: <xref uid="@azure/arm-cognitiveservices.Account|stable" />
+          description: The parameters to provide for the created account.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-cognitiveservices.AccountsCreateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-cognitiveservices.AccountsCreateResponse|stable"
+          />&gt;
+  - name: beginDelete(string, string, AccountsDeleteOptionalParams)
+    uid: '@azure/arm-cognitiveservices.Accounts.beginDelete|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: Deletes a Cognitive Services account from the resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDelete(resourceGroupName: string, accountName: string,
+        options?: AccountsDeleteOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: accountName
+          type: string
+          description: The name of Cognitive Services account.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-cognitiveservices.AccountsDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: beginDeleteAndWait(string, string, AccountsDeleteOptionalParams)
+    uid: '@azure/arm-cognitiveservices.Accounts.beginDeleteAndWait|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: Deletes a Cognitive Services account from the resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteAndWait(resourceGroupName: string, accountName:
+        string, options?: AccountsDeleteOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: accountName
+          type: string
+          description: The name of Cognitive Services account.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-cognitiveservices.AccountsDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: beginUpdate(string, string, Account, AccountsUpdateOptionalParams)
+    uid: '@azure/arm-cognitiveservices.Accounts.beginUpdate|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: Updates a Cognitive Services account
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginUpdate(resourceGroupName: string, accountName: string,
+        account: Account, options?: AccountsUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<AccountsUpdateResponse>,
+        AccountsUpdateResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: accountName
+          type: string
+          description: The name of Cognitive Services account.
+        - id: account
+          type: <xref uid="@azure/arm-cognitiveservices.Account|stable" />
+          description: The parameters to provide for the created account.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-cognitiveservices.AccountsUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-cognitiveservices.AccountsUpdateResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-cognitiveservices.AccountsUpdateResponse|stable"
+          />&gt;&gt;
+  - name: beginUpdateAndWait(string, string, Account, AccountsUpdateOptionalParams)
+    uid: '@azure/arm-cognitiveservices.Accounts.beginUpdateAndWait|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: Updates a Cognitive Services account
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginUpdateAndWait(resourceGroupName: string, accountName:
+        string, account: Account, options?: AccountsUpdateOptionalParams):
+        Promise<AccountsUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: accountName
+          type: string
+          description: The name of Cognitive Services account.
+        - id: account
+          type: <xref uid="@azure/arm-cognitiveservices.Account|stable" />
+          description: The parameters to provide for the created account.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-cognitiveservices.AccountsUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-cognitiveservices.AccountsUpdateResponse|stable"
+          />&gt;
+  - name: get(string, string, AccountsGetOptionalParams)
+    uid: '@azure/arm-cognitiveservices.Accounts.get|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: Returns a Cognitive Services account specified by the parameters.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, accountName: string, options?:
+        AccountsGetOptionalParams): Promise<AccountsGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: accountName
+          type: string
+          description: The name of Cognitive Services account.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-cognitiveservices.AccountsGetOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-cognitiveservices.AccountsGetResponse|stable" />&gt;
+  - name: list(AccountsListOptionalParams)
+    uid: '@azure/arm-cognitiveservices.Accounts.list|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: >-
+      Returns all the resources of a particular type belonging to a
+      subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(options?: AccountsListOptionalParams):
+        PagedAsyncIterableIterator<Account>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-cognitiveservices.AccountsListOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-cognitiveservices.Account|stable" />&gt;
+  - name: listByResourceGroup(string, AccountsListByResourceGroupOptionalParams)
+    uid: '@azure/arm-cognitiveservices.Accounts.listByResourceGroup|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: >-
+      Returns all the resources of a particular type belonging to a resource
+      group
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string, options?:
+        AccountsListByResourceGroupOptionalParams):
+        PagedAsyncIterableIterator<Account>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-cognitiveservices.AccountsListByResourceGroupOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-cognitiveservices.Account|stable" />&gt;
+  - name: listKeys(string, string, AccountsListKeysOptionalParams)
+    uid: '@azure/arm-cognitiveservices.Accounts.listKeys|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: Lists the account keys for the specified Cognitive Services account.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listKeys(resourceGroupName: string, accountName: string,
+        options?: AccountsListKeysOptionalParams):
+        Promise<AccountsListKeysResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: accountName
+          type: string
+          description: The name of Cognitive Services account.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-cognitiveservices.AccountsListKeysOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-cognitiveservices.AccountsListKeysResponse|stable"
+          />&gt;
+  - name: listSkus(string, string, AccountsListSkusOptionalParams)
+    uid: '@azure/arm-cognitiveservices.Accounts.listSkus|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: List available SKUs for the requested Cognitive Services account
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listSkus(resourceGroupName: string, accountName: string,
+        options?: AccountsListSkusOptionalParams):
+        Promise<AccountsListSkusResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: accountName
+          type: string
+          description: The name of Cognitive Services account.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-cognitiveservices.AccountsListSkusOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-cognitiveservices.AccountsListSkusResponse|stable"
+          />&gt;
+  - name: listUsages(string, string, AccountsListUsagesOptionalParams)
+    uid: '@azure/arm-cognitiveservices.Accounts.listUsages|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: Get usages for the requested Cognitive Services account
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listUsages(resourceGroupName: string, accountName: string,
+        options?: AccountsListUsagesOptionalParams):
+        Promise<AccountsListUsagesResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: accountName
+          type: string
+          description: The name of Cognitive Services account.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-cognitiveservices.AccountsListUsagesOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-cognitiveservices.AccountsListUsagesResponse|stable"
+          />&gt;
+  - name: >-
+      regenerateKey(string, string, KeyName,
+      AccountsRegenerateKeyOptionalParams)
+    uid: '@azure/arm-cognitiveservices.Accounts.regenerateKey|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: >-
+      Regenerates the specified account key for the specified Cognitive Services
+      account.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function regenerateKey(resourceGroupName: string, accountName: string,
+        keyName: KeyName, options?: AccountsRegenerateKeyOptionalParams):
+        Promise<AccountsRegenerateKeyResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: accountName
+          type: string
+          description: The name of Cognitive Services account.
+        - id: keyName
+          type: <xref uid="@azure/arm-cognitiveservices.KeyName|stable" />
+          description: key name to generate (Key1|Key2)
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-cognitiveservices.AccountsRegenerateKeyOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-cognitiveservices.AccountsRegenerateKeyResponse|stable"
+          />&gt;

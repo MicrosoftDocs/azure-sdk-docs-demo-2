@@ -1,0 +1,78 @@
+### YamlMime:TSType
+name: ExpressRouteCircuitRoutesTable
+uid: '@azure/arm-network.ExpressRouteCircuitRoutesTable|stable'
+package: '@azure/arm-network|stable'
+summary: The routes table associated with the ExpressRouteCircuit.
+fullName: ExpressRouteCircuitRoutesTable
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: locPrf
+    uid: '@azure/arm-network.ExpressRouteCircuitRoutesTable.locPrf|stable'
+    package: '@azure/arm-network|stable'
+    summary: >-
+      Local preference value as set with the set local-preference route-map
+      configuration command.
+    fullName: locPrf
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'locPrf?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: network
+    uid: '@azure/arm-network.ExpressRouteCircuitRoutesTable.network|stable'
+    package: '@azure/arm-network|stable'
+    summary: IP address of a network entity.
+    fullName: network
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'network?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: nextHop
+    uid: '@azure/arm-network.ExpressRouteCircuitRoutesTable.nextHop|stable'
+    package: '@azure/arm-network|stable'
+    summary: NextHop address.
+    fullName: nextHop
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nextHop?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: path
+    uid: '@azure/arm-network.ExpressRouteCircuitRoutesTable.path|stable'
+    package: '@azure/arm-network|stable'
+    summary: Autonomous system paths to the destination network.
+    fullName: path
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'path?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: weight
+    uid: '@azure/arm-network.ExpressRouteCircuitRoutesTable.weight|stable'
+    package: '@azure/arm-network|stable'
+    summary: Route Weight.
+    fullName: weight
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'weight?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number

@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: ConnectionStringDictionary
+uid: '@azure/arm-appservice.ConnectionStringDictionary|stable'
+package: '@azure/arm-appservice|stable'
+summary: String dictionary resource.
+fullName: ConnectionStringDictionary
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type ConnectionStringDictionary = ProxyOnlyResource & { properties?: undefined
+  | [key: string]: ConnStringValueTypePair }

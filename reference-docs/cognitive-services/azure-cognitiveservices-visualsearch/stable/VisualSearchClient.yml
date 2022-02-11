@@ -1,0 +1,133 @@
+### YamlMime:TSType
+name: VisualSearchClient
+uid: '@azure/cognitiveservices-visualsearch.VisualSearchClient|stable'
+package: '@azure/cognitiveservices-visualsearch|stable'
+summary: ''
+fullName: VisualSearchClient
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: >-
+      VisualSearchClient(ServiceClientCredentials,
+      Models.VisualSearchClientOptions)
+    uid: >-
+      @azure/cognitiveservices-visualsearch.VisualSearchClient.constructor|stable
+    package: '@azure/cognitiveservices-visualsearch|stable'
+    summary: Initializes a new instance of the VisualSearchClient class.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        new VisualSearchClient(credentials: ServiceClientCredentials, options?:
+        Models.VisualSearchClientOptions)
+      parameters:
+        - id: credentials
+          type: ServiceClientCredentials
+          description: >-
+            Subscription credentials which uniquely identify client
+            subscription.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/cognitiveservices-visualsearch.VisualSearchClientOptions|stable"
+            />
+          description: ''
+properties:
+  - name: credentials
+    uid: >-
+      @azure/cognitiveservices-visualsearch.VisualSearchClient.credentials|stable
+    package: '@azure/cognitiveservices-visualsearch|stable'
+    summary: ''
+    fullName: credentials
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'credentials: ServiceClientCredentials'
+      return:
+        description: ''
+        type: ServiceClientCredentials
+  - name: endpoint
+    uid: '@azure/cognitiveservices-visualsearch.VisualSearchClient.endpoint|stable'
+    package: '@azure/cognitiveservices-visualsearch|stable'
+    summary: ''
+    fullName: endpoint
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'endpoint?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: images
+    uid: '@azure/cognitiveservices-visualsearch.VisualSearchClient.images|stable'
+    package: '@azure/cognitiveservices-visualsearch|stable'
+    summary: ''
+    fullName: images
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'images: Images'
+      return:
+        description: ''
+        type: <xref uid="@azure/cognitiveservices-visualsearch.Images|stable" />
+inheritedMethods:
+  - name: >-
+      sendOperationRequest(OperationArguments, OperationSpec,
+      ServiceCallback<any>)
+    uid: >-
+      @azure/cognitiveservices-visualsearch.VisualSearchClient.sendOperationRequest|stable
+    package: '@azure/cognitiveservices-visualsearch|stable'
+    summary: Send an HTTP request that is populated using the provided OperationSpec.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function sendOperationRequest(operationArguments: OperationArguments,
+        operationSpec: OperationSpec, callback?: ServiceCallback<any>):
+        Promise<RestResponse>
+      parameters:
+        - id: operationArguments
+          type: OperationArguments
+          description: >-
+            The arguments that the HTTP request's templated values will be
+            populated from.
+        - id: operationSpec
+          type: OperationSpec
+          description: The OperationSpec to use to populate the httpRequest.
+        - id: callback
+          type: ServiceCallback&lt;any&gt;
+          description: |
+            The callback to call when the response is received.
+      return:
+        description: ''
+        type: Promise&lt;RestResponse&gt;
+  - name: sendRequest(RequestPrepareOptions | WebResourceLike)
+    uid: >-
+      @azure/cognitiveservices-visualsearch.VisualSearchClient.sendRequest|stable
+    package: '@azure/cognitiveservices-visualsearch|stable'
+    summary: Send the provided httpRequest.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function sendRequest(options: RequestPrepareOptions | WebResourceLike):
+        Promise<HttpOperationResponse>
+      parameters:
+        - id: options
+          type: RequestPrepareOptions | WebResourceLike
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;HttpOperationResponse&gt;
+extends: >-
+  <xref
+  uid="@azure/cognitiveservices-visualsearch.VisualSearchClientContext|stable"
+  />

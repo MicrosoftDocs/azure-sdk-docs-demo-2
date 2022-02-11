@@ -1,0 +1,56 @@
+### YamlMime:TSType
+name: CheckNameAvailabilityResult
+uid: '@azure/arm-eventhub.CheckNameAvailabilityResult|stable'
+package: '@azure/arm-eventhub|stable'
+summary: The Result of the CheckNameAvailability operation
+fullName: CheckNameAvailabilityResult
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: message
+    uid: '@azure/arm-eventhub.CheckNameAvailabilityResult.message|stable'
+    package: '@azure/arm-eventhub|stable'
+    summary: >-
+      The detailed info regarding the reason associated with the Namespace.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: message
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'message?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: nameAvailable
+    uid: '@azure/arm-eventhub.CheckNameAvailabilityResult.nameAvailable|stable'
+    package: '@azure/arm-eventhub|stable'
+    summary: >-
+      Value indicating Namespace is availability, true if the Namespace is
+      available; otherwise, false.
+    fullName: nameAvailable
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nameAvailable?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true
+  - name: reason
+    uid: '@azure/arm-eventhub.CheckNameAvailabilityResult.reason|stable'
+    package: '@azure/arm-eventhub|stable'
+    summary: The reason for unavailability of a Namespace.
+    fullName: reason
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'reason?: UnavailableReason'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-eventhub.UnavailableReason|stable" />

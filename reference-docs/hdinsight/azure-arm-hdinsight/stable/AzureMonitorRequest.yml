@@ -1,0 +1,53 @@
+### YamlMime:TSType
+name: AzureMonitorRequest
+uid: '@azure/arm-hdinsight.AzureMonitorRequest|stable'
+package: '@azure/arm-hdinsight|stable'
+summary: The azure monitor parameters.
+fullName: AzureMonitorRequest
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: primaryKey
+    uid: '@azure/arm-hdinsight.AzureMonitorRequest.primaryKey|stable'
+    package: '@azure/arm-hdinsight|stable'
+    summary: The Log Analytics workspace key.
+    fullName: primaryKey
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'primaryKey?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: selectedConfigurations
+    uid: '@azure/arm-hdinsight.AzureMonitorRequest.selectedConfigurations|stable'
+    package: '@azure/arm-hdinsight|stable'
+    summary: The selected configurations.
+    fullName: selectedConfigurations
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'selectedConfigurations?: AzureMonitorSelectedConfigurations'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-hdinsight.AzureMonitorSelectedConfigurations|stable"
+          />
+  - name: workspaceId
+    uid: '@azure/arm-hdinsight.AzureMonitorRequest.workspaceId|stable'
+    package: '@azure/arm-hdinsight|stable'
+    summary: The Log Analytics workspace ID.
+    fullName: workspaceId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'workspaceId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

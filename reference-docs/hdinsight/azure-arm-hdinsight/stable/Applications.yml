@@ -1,0 +1,264 @@
+### YamlMime:TSType
+name: Applications
+uid: '@azure/arm-hdinsight.Applications|stable'
+package: '@azure/arm-hdinsight|stable'
+summary: Interface representing a Applications.
+fullName: Applications
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      beginCreate(string, string, string, Application,
+      ApplicationsCreateOptionalParams)
+    uid: '@azure/arm-hdinsight.Applications.beginCreate|stable'
+    package: '@azure/arm-hdinsight|stable'
+    summary: Creates applications for the HDInsight cluster.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreate(resourceGroupName: string, clusterName: string,
+        applicationName: string, parameters: Application, options?:
+        ApplicationsCreateOptionalParams):
+        Promise<PollerLike<PollOperationState<ApplicationsCreateResponse>,
+        ApplicationsCreateResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: clusterName
+          type: string
+          description: The name of the cluster.
+        - id: applicationName
+          type: string
+          description: The constant value for the application name.
+        - id: parameters
+          type: <xref uid="@azure/arm-hdinsight.Application|stable" />
+          description: The application create request.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-hdinsight.ApplicationsCreateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-hdinsight.ApplicationsCreateResponse|stable" />&gt;,
+          <xref uid="@azure/arm-hdinsight.ApplicationsCreateResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginCreateAndWait(string, string, string, Application,
+      ApplicationsCreateOptionalParams)
+    uid: '@azure/arm-hdinsight.Applications.beginCreateAndWait|stable'
+    package: '@azure/arm-hdinsight|stable'
+    summary: Creates applications for the HDInsight cluster.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateAndWait(resourceGroupName: string, clusterName:
+        string, applicationName: string, parameters: Application, options?:
+        ApplicationsCreateOptionalParams): Promise<ApplicationsCreateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: clusterName
+          type: string
+          description: The name of the cluster.
+        - id: applicationName
+          type: string
+          description: The constant value for the application name.
+        - id: parameters
+          type: <xref uid="@azure/arm-hdinsight.Application|stable" />
+          description: The application create request.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-hdinsight.ApplicationsCreateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-hdinsight.ApplicationsCreateResponse|stable" />&gt;
+  - name: beginDelete(string, string, string, ApplicationsDeleteOptionalParams)
+    uid: '@azure/arm-hdinsight.Applications.beginDelete|stable'
+    package: '@azure/arm-hdinsight|stable'
+    summary: Deletes the specified application on the HDInsight cluster.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDelete(resourceGroupName: string, clusterName: string,
+        applicationName: string, options?: ApplicationsDeleteOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: clusterName
+          type: string
+          description: The name of the cluster.
+        - id: applicationName
+          type: string
+          description: The constant value for the application name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-hdinsight.ApplicationsDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: >-
+      beginDeleteAndWait(string, string, string,
+      ApplicationsDeleteOptionalParams)
+    uid: '@azure/arm-hdinsight.Applications.beginDeleteAndWait|stable'
+    package: '@azure/arm-hdinsight|stable'
+    summary: Deletes the specified application on the HDInsight cluster.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteAndWait(resourceGroupName: string, clusterName:
+        string, applicationName: string, options?:
+        ApplicationsDeleteOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: clusterName
+          type: string
+          description: The name of the cluster.
+        - id: applicationName
+          type: string
+          description: The constant value for the application name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-hdinsight.ApplicationsDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: get(string, string, string, ApplicationsGetOptionalParams)
+    uid: '@azure/arm-hdinsight.Applications.get|stable'
+    package: '@azure/arm-hdinsight|stable'
+    summary: Gets properties of the specified application.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, clusterName: string,
+        applicationName: string, options?: ApplicationsGetOptionalParams):
+        Promise<ApplicationsGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: clusterName
+          type: string
+          description: The name of the cluster.
+        - id: applicationName
+          type: string
+          description: The constant value for the application name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-hdinsight.ApplicationsGetOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-hdinsight.ApplicationsGetResponse|stable" />&gt;
+  - name: >-
+      getAzureAsyncOperationStatus(string, string, string, string,
+      ApplicationsGetAzureAsyncOperationStatusOptionalParams)
+    uid: '@azure/arm-hdinsight.Applications.getAzureAsyncOperationStatus|stable'
+    package: '@azure/arm-hdinsight|stable'
+    summary: Gets the async operation status.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getAzureAsyncOperationStatus(resourceGroupName: string,
+        clusterName: string, applicationName: string, operationId: string,
+        options?: ApplicationsGetAzureAsyncOperationStatusOptionalParams):
+        Promise<ApplicationsGetAzureAsyncOperationStatusResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: clusterName
+          type: string
+          description: The name of the cluster.
+        - id: applicationName
+          type: string
+          description: The constant value for the application name.
+        - id: operationId
+          type: string
+          description: The long running operation id.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-hdinsight.ApplicationsGetAzureAsyncOperationStatusOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-hdinsight.ApplicationsGetAzureAsyncOperationStatusResponse|stable"
+          />&gt;
+  - name: listByCluster(string, string, ApplicationsListByClusterOptionalParams)
+    uid: '@azure/arm-hdinsight.Applications.listByCluster|stable'
+    package: '@azure/arm-hdinsight|stable'
+    summary: Lists all of the applications for the HDInsight cluster.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByCluster(resourceGroupName: string, clusterName: string,
+        options?: ApplicationsListByClusterOptionalParams):
+        PagedAsyncIterableIterator<Application>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: clusterName
+          type: string
+          description: The name of the cluster.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-hdinsight.ApplicationsListByClusterOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-hdinsight.Application|stable" />&gt;

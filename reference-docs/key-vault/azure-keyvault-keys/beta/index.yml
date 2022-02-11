@@ -1,0 +1,117 @@
+### YamlMime:TSPackage
+uid: '@azure/keyvault-keys|beta'
+name: '@azure/keyvault-keys (4.4.0-beta.4 - Beta)'
+summary: ''
+type: package
+enums:
+  - '@azure/keyvault-keys.KnownDeletionRecoveryLevel|beta'
+  - '@azure/keyvault-keys.KnownEncryptionAlgorithms|beta'
+  - '@azure/keyvault-keys.KnownKeyCurveNames|beta'
+  - '@azure/keyvault-keys.KnownKeyExportEncryptionAlgorithm|beta'
+  - '@azure/keyvault-keys.KnownKeyOperations|beta'
+  - '@azure/keyvault-keys.KnownKeyTypes|beta'
+  - '@azure/keyvault-keys.KnownSignatureAlgorithms|beta'
+classes:
+  - '@azure/keyvault-keys.CryptographyClient|beta'
+  - '@azure/keyvault-keys.KeyClient|beta'
+interfaces:
+  - '@azure/keyvault-keys.AesCbcDecryptParameters|beta'
+  - '@azure/keyvault-keys.AesCbcEncryptParameters|beta'
+  - '@azure/keyvault-keys.AesGcmDecryptParameters|beta'
+  - '@azure/keyvault-keys.AesGcmEncryptParameters|beta'
+  - '@azure/keyvault-keys.BackupKeyOptions|beta'
+  - '@azure/keyvault-keys.BeginDeleteKeyOptions|beta'
+  - '@azure/keyvault-keys.BeginRecoverDeletedKeyOptions|beta'
+  - '@azure/keyvault-keys.CreateEcKeyOptions|beta'
+  - '@azure/keyvault-keys.CreateKeyOptions|beta'
+  - '@azure/keyvault-keys.CreateOctKeyOptions|beta'
+  - '@azure/keyvault-keys.CreateRsaKeyOptions|beta'
+  - '@azure/keyvault-keys.CryptographyClientOptions|beta'
+  - '@azure/keyvault-keys.CryptographyOptions|beta'
+  - '@azure/keyvault-keys.DecryptOptions|beta'
+  - '@azure/keyvault-keys.DecryptResult|beta'
+  - '@azure/keyvault-keys.DeletedKey|beta'
+  - '@azure/keyvault-keys.EncryptOptions|beta'
+  - '@azure/keyvault-keys.EncryptResult|beta'
+  - '@azure/keyvault-keys.GetCryptographyClientOptions|beta'
+  - '@azure/keyvault-keys.GetDeletedKeyOptions|beta'
+  - '@azure/keyvault-keys.GetKeyOptions|beta'
+  - '@azure/keyvault-keys.GetKeyRotationPolicyOptions|beta'
+  - '@azure/keyvault-keys.GetRandomBytesOptions|beta'
+  - '@azure/keyvault-keys.ImportKeyOptions|beta'
+  - '@azure/keyvault-keys.JsonWebKey_2|beta'
+  - '@azure/keyvault-keys.KeyClientOptions|beta'
+  - '@azure/keyvault-keys.KeyPollerOptions|beta'
+  - '@azure/keyvault-keys.KeyProperties|beta'
+  - '@azure/keyvault-keys.KeyReleasePolicy|beta'
+  - '@azure/keyvault-keys.KeyRotationLifetimeAction|beta'
+  - '@azure/keyvault-keys.KeyRotationPolicy|beta'
+  - '@azure/keyvault-keys.KeyRotationPolicyProperties|beta'
+  - '@azure/keyvault-keys.KeyVaultKey|beta'
+  - '@azure/keyvault-keys.KeyVaultKeyIdentifier|beta'
+  - '@azure/keyvault-keys.ListDeletedKeysOptions|beta'
+  - '@azure/keyvault-keys.ListPropertiesOfKeyVersionsOptions|beta'
+  - '@azure/keyvault-keys.ListPropertiesOfKeysOptions|beta'
+  - '@azure/keyvault-keys.PurgeDeletedKeyOptions|beta'
+  - '@azure/keyvault-keys.ReleaseKeyOptions|beta'
+  - '@azure/keyvault-keys.ReleaseKeyResult|beta'
+  - '@azure/keyvault-keys.RestoreKeyBackupOptions|beta'
+  - '@azure/keyvault-keys.RotateKeyOptions|beta'
+  - '@azure/keyvault-keys.RsaDecryptParameters|beta'
+  - '@azure/keyvault-keys.RsaEncryptParameters|beta'
+  - '@azure/keyvault-keys.SignOptions|beta'
+  - '@azure/keyvault-keys.SignResult|beta'
+  - '@azure/keyvault-keys.UnwrapKeyOptions|beta'
+  - '@azure/keyvault-keys.UnwrapResult|beta'
+  - '@azure/keyvault-keys.UpdateKeyPropertiesOptions|beta'
+  - '@azure/keyvault-keys.UpdateKeyRotationPolicyOptions|beta'
+  - '@azure/keyvault-keys.VerifyDataOptions|beta'
+  - '@azure/keyvault-keys.VerifyOptions|beta'
+  - '@azure/keyvault-keys.VerifyResult|beta'
+  - '@azure/keyvault-keys.WrapKeyOptions|beta'
+  - '@azure/keyvault-keys.WrapResult|beta'
+typeAliases:
+  - '@azure/keyvault-keys.AesCbcEncryptionAlgorithm|beta'
+  - '@azure/keyvault-keys.AesGcmEncryptionAlgorithm|beta'
+  - '@azure/keyvault-keys.DecryptParameters|beta'
+  - '@azure/keyvault-keys.DeletionRecoveryLevel|beta'
+  - '@azure/keyvault-keys.EncryptParameters|beta'
+  - '@azure/keyvault-keys.EncryptionAlgorithm|beta'
+  - '@azure/keyvault-keys.KeyCurveName|beta'
+  - '@azure/keyvault-keys.KeyExportEncryptionAlgorithm|beta'
+  - '@azure/keyvault-keys.KeyOperation|beta'
+  - '@azure/keyvault-keys.KeyRotationPolicyAction|beta'
+  - '@azure/keyvault-keys.KeyType_2|beta'
+  - '@azure/keyvault-keys.KeyWrapAlgorithm|beta'
+  - '@azure/keyvault-keys.RsaEncryptionAlgorithm|beta'
+  - '@azure/keyvault-keys.SignatureAlgorithm|beta'
+functions:
+  - name: parseKeyVaultKeyIdentifier(string)
+    uid: '@azure/keyvault-keys.parseKeyVaultKeyIdentifier|beta'
+    package: '@azure/keyvault-keys|beta'
+    summary: |-
+      Parses the given Key Vault Key Id. An example is:
+        https://<keyvault-name>.vault.azure.net/keys/<key-name>/<unique-version-id>
+
+      On parsing the above Id, this function returns:
+      ```ts
+        {
+           sourceId: "https://<keyvault-name>.vault.azure.net/keys/<key-name>/<unique-version-id>",
+           vaultUrl: "https://<keyvault-name>.vault.azure.net",
+           version: "<unique-version-id>",
+           name: "<key-name>"
+        }
+      ```
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function parseKeyVaultKeyIdentifier(id: string): KeyVaultKeyIdentifier'
+      parameters:
+        - id: id
+          type: string
+          description: |
+            The Id of the Key Vault Key.
+      return:
+        description: ''
+        type: <xref uid="@azure/keyvault-keys.KeyVaultKeyIdentifier|beta" />

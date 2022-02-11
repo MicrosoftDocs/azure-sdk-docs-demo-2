@@ -1,0 +1,50 @@
+### YamlMime:TSType
+name: ApiOperationAnnotation
+uid: '@azure/arm-logic.ApiOperationAnnotation|stable'
+package: '@azure/arm-logic|stable'
+summary: The Api Operation Annotation.
+fullName: ApiOperationAnnotation
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: family
+    uid: '@azure/arm-logic.ApiOperationAnnotation.family|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The family.
+    fullName: family
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'family?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: revision
+    uid: '@azure/arm-logic.ApiOperationAnnotation.revision|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The revision.
+    fullName: revision
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'revision?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: status
+    uid: '@azure/arm-logic.ApiOperationAnnotation.status|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The status annotation.
+    fullName: status
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'status?: StatusAnnotation'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-logic.StatusAnnotation|stable" />

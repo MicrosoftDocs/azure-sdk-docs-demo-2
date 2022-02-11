@@ -1,0 +1,117 @@
+### YamlMime:TSType
+name: FileSystemCreateIfNotExistsResponse
+uid: '@azure/storage-file-datalake.FileSystemCreateIfNotExistsResponse|stable'
+package: '@azure/storage-file-datalake|stable'
+summary: >-
+  Contains response data for the
+  <xref:@azure/storage-file-datalake.DataLakeFileSystemClient.createIfNotExists|stable>
+  operation.
+fullName: FileSystemCreateIfNotExistsResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: clientRequestId
+    uid: >-
+      @azure/storage-file-datalake.FileSystemCreateIfNotExistsResponse.clientRequestId|stable
+    package: '@azure/storage-file-datalake|stable'
+    summary: ''
+    fullName: clientRequestId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clientRequestId?: string'
+      return:
+        description: ''
+        type: string
+  - name: date
+    uid: >-
+      @azure/storage-file-datalake.FileSystemCreateIfNotExistsResponse.date|stable
+    package: '@azure/storage-file-datalake|stable'
+    summary: ''
+    fullName: date
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'date?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: etag
+    uid: >-
+      @azure/storage-file-datalake.FileSystemCreateIfNotExistsResponse.etag|stable
+    package: '@azure/storage-file-datalake|stable'
+    summary: ''
+    fullName: etag
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'etag?: string'
+      return:
+        description: ''
+        type: string
+  - name: lastModified
+    uid: >-
+      @azure/storage-file-datalake.FileSystemCreateIfNotExistsResponse.lastModified|stable
+    package: '@azure/storage-file-datalake|stable'
+    summary: ''
+    fullName: lastModified
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lastModified?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: requestId
+    uid: >-
+      @azure/storage-file-datalake.FileSystemCreateIfNotExistsResponse.requestId|stable
+    package: '@azure/storage-file-datalake|stable'
+    summary: ''
+    fullName: requestId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'requestId?: string'
+      return:
+        description: ''
+        type: string
+  - name: succeeded
+    uid: >-
+      @azure/storage-file-datalake.FileSystemCreateIfNotExistsResponse.succeeded|stable
+    package: '@azure/storage-file-datalake|stable'
+    summary: >-
+      Indicate whether the file system is successfully created. Is false when
+      the file system is not changed as it already exists.
+    fullName: succeeded
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'succeeded: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: version
+    uid: >-
+      @azure/storage-file-datalake.FileSystemCreateIfNotExistsResponse.version|stable
+    package: '@azure/storage-file-datalake|stable'
+    summary: ''
+    fullName: version
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'version?: string'
+      return:
+        description: ''
+        type: string
+extends: >-
+  <xref uid="@azure/storage-file-datalake.FileSystemCreateHeaders|stable" /> & {
+  _response: HttpResponse & { parsedHeaders: FileSystemCreateHeaders } }

@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: OrcSource
+uid: '@azure/arm-datafactory.OrcSource|stable'
+package: '@azure/arm-datafactory|stable'
+summary: A copy activity ORC source.
+fullName: OrcSource
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type OrcSource = CopySource & { additionalColumns?: Record<string, unknown>,
+  storeSettings?: StoreReadSettingsUnion, type: "OrcSource" }

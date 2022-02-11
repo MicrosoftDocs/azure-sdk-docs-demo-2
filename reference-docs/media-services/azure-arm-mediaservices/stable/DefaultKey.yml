@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: DefaultKey
+uid: '@azure/arm-mediaservices.DefaultKey|stable'
+package: '@azure/arm-mediaservices|stable'
+summary: Class to specify properties of default content key for each encryption scheme
+fullName: DefaultKey
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: label
+    uid: '@azure/arm-mediaservices.DefaultKey.label|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: Label can be used to specify Content Key when creating a Streaming Locator
+    fullName: label
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'label?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: policyName
+    uid: '@azure/arm-mediaservices.DefaultKey.policyName|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: Policy used by Default Key
+    fullName: policyName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'policyName?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

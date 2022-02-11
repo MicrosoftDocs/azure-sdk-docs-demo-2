@@ -1,0 +1,324 @@
+### YamlMime:TSPackage
+uid: '@azure-rest/purview-administration|beta'
+name: '@azure-rest/purview-administration (1.0.0-beta.1 - Beta)'
+summary: ''
+type: package
+interfaces:
+  - '@azure-rest/purview-administration.AccessKeyOptions|beta'
+  - '@azure-rest/purview-administration.AccessKeys|beta'
+  - '@azure-rest/purview-administration.Account|beta'
+  - '@azure-rest/purview-administration.AccountEndpoints|beta'
+  - '@azure-rest/purview-administration.AccountProperties|beta'
+  - '@azure-rest/purview-administration.AccountPropertiesEndpoints|beta'
+  - '@azure-rest/purview-administration.AccountPropertiesManagedResources|beta'
+  - '@azure-rest/purview-administration.AccountSku|beta'
+  - '@azure-rest/purview-administration.AccountSystemData|beta'
+  - '@azure-rest/purview-administration.AccountsGetAccessKeys|beta'
+  - '@azure-rest/purview-administration.AccountsGetAccessKeys200Response|beta'
+  - '@azure-rest/purview-administration.AccountsGetAccessKeysdefaultResponse|beta'
+  - '@azure-rest/purview-administration.AccountsGetAccountProperties|beta'
+  - >-
+    @azure-rest/purview-administration.AccountsGetAccountProperties200Response|beta
+  - >-
+    @azure-rest/purview-administration.AccountsGetAccountPropertiesdefaultResponse|beta
+  - '@azure-rest/purview-administration.AccountsRegenerateAccessKey|beta'
+  - >-
+    @azure-rest/purview-administration.AccountsRegenerateAccessKey200Response|beta
+  - '@azure-rest/purview-administration.AccountsRegenerateAccessKeyBodyParam|beta'
+  - >-
+    @azure-rest/purview-administration.AccountsRegenerateAccessKeydefaultResponse|beta
+  - >-
+    @azure-rest/purview-administration.AccountsUpdateAccountProperties200Response|beta
+  - >-
+    @azure-rest/purview-administration.AccountsUpdateAccountPropertiesBodyParam|beta
+  - >-
+    @azure-rest/purview-administration.AccountsUpdateAccountPropertiesdefaultResponse|beta
+  - '@azure-rest/purview-administration.AdvancedResourceSet|beta'
+  - '@azure-rest/purview-administration.AttributeMatcher|beta'
+  - '@azure-rest/purview-administration.AttributeRule|beta'
+  - '@azure-rest/purview-administration.CloudConnectors|beta'
+  - '@azure-rest/purview-administration.Collection|beta'
+  - '@azure-rest/purview-administration.CollectionList|beta'
+  - '@azure-rest/purview-administration.CollectionNameResponse|beta'
+  - '@azure-rest/purview-administration.CollectionNameResponseList|beta'
+  - '@azure-rest/purview-administration.CollectionPathResponse|beta'
+  - '@azure-rest/purview-administration.CollectionReference|beta'
+  - '@azure-rest/purview-administration.CollectionReference_2|beta'
+  - '@azure-rest/purview-administration.CollectionSystemData|beta'
+  - >-
+    @azure-rest/purview-administration.CollectionsCreateOrUpdateCollection200Response|beta
+  - >-
+    @azure-rest/purview-administration.CollectionsCreateOrUpdateCollectionBodyParam|beta
+  - >-
+    @azure-rest/purview-administration.CollectionsCreateOrUpdateCollectiondefaultResponse|beta
+  - >-
+    @azure-rest/purview-administration.CollectionsDeleteCollection204Response|beta
+  - >-
+    @azure-rest/purview-administration.CollectionsDeleteCollectiondefaultResponse|beta
+  - '@azure-rest/purview-administration.CollectionsGetCollection|beta'
+  - '@azure-rest/purview-administration.CollectionsGetCollection200Response|beta'
+  - '@azure-rest/purview-administration.CollectionsGetCollectionPath|beta'
+  - >-
+    @azure-rest/purview-administration.CollectionsGetCollectionPath200Response|beta
+  - >-
+    @azure-rest/purview-administration.CollectionsGetCollectionPathdefaultResponse|beta
+  - >-
+    @azure-rest/purview-administration.CollectionsGetCollectiondefaultResponse|beta
+  - '@azure-rest/purview-administration.CollectionsListChildCollectionNames|beta'
+  - >-
+    @azure-rest/purview-administration.CollectionsListChildCollectionNames200Response|beta
+  - >-
+    @azure-rest/purview-administration.CollectionsListChildCollectionNamesQueryParam|beta
+  - >-
+    @azure-rest/purview-administration.CollectionsListChildCollectionNamesQueryParamProperties|beta
+  - >-
+    @azure-rest/purview-administration.CollectionsListChildCollectionNamesdefaultResponse|beta
+  - '@azure-rest/purview-administration.CollectionsListCollections|beta'
+  - >-
+    @azure-rest/purview-administration.CollectionsListCollections200Response|beta
+  - '@azure-rest/purview-administration.CollectionsListCollectionsQueryParam|beta'
+  - >-
+    @azure-rest/purview-administration.CollectionsListCollectionsQueryParamProperties|beta
+  - >-
+    @azure-rest/purview-administration.CollectionsListCollectionsdefaultResponse|beta
+  - '@azure-rest/purview-administration.ComplexReplacerConfig|beta'
+  - '@azure-rest/purview-administration.DataPlaneAccountUpdateParameters|beta'
+  - '@azure-rest/purview-administration.DecisionRule|beta'
+  - '@azure-rest/purview-administration.ErrorModel|beta'
+  - '@azure-rest/purview-administration.ErrorModel_2|beta'
+  - '@azure-rest/purview-administration.ErrorResponseModel|beta'
+  - '@azure-rest/purview-administration.ErrorResponseModelError|beta'
+  - '@azure-rest/purview-administration.ErrorResponseModel_2|beta'
+  - '@azure-rest/purview-administration.FastRegex|beta'
+  - '@azure-rest/purview-administration.Filter|beta'
+  - '@azure-rest/purview-administration.Identity|beta'
+  - '@azure-rest/purview-administration.ManagedResources|beta'
+  - '@azure-rest/purview-administration.MetadataPolicy|beta'
+  - '@azure-rest/purview-administration.MetadataPolicyGet200Response|beta'
+  - '@azure-rest/purview-administration.MetadataPolicyGetdefaultHeaders|beta'
+  - '@azure-rest/purview-administration.MetadataPolicyGetdefaultResponse|beta'
+  - '@azure-rest/purview-administration.MetadataPolicyList|beta'
+  - '@azure-rest/purview-administration.MetadataPolicyListAll|beta'
+  - '@azure-rest/purview-administration.MetadataPolicyListAll200Response|beta'
+  - '@azure-rest/purview-administration.MetadataPolicyListAllQueryParam|beta'
+  - >-
+    @azure-rest/purview-administration.MetadataPolicyListAllQueryParamProperties|beta
+  - '@azure-rest/purview-administration.MetadataPolicyListAlldefaultHeaders|beta'
+  - '@azure-rest/purview-administration.MetadataPolicyListAlldefaultResponse|beta'
+  - '@azure-rest/purview-administration.MetadataPolicyProperties|beta'
+  - '@azure-rest/purview-administration.MetadataPolicyUpdate|beta'
+  - '@azure-rest/purview-administration.MetadataPolicyUpdate200Response|beta'
+  - '@azure-rest/purview-administration.MetadataPolicyUpdateBodyParam|beta'
+  - '@azure-rest/purview-administration.MetadataPolicyUpdatedefaultHeaders|beta'
+  - '@azure-rest/purview-administration.MetadataPolicyUpdatedefaultResponse|beta'
+  - '@azure-rest/purview-administration.MetadataRole|beta'
+  - '@azure-rest/purview-administration.MetadataRoleList|beta'
+  - '@azure-rest/purview-administration.MetadataRoleProperties|beta'
+  - '@azure-rest/purview-administration.MetadataRolesList|beta'
+  - '@azure-rest/purview-administration.MetadataRolesList200Response|beta'
+  - '@azure-rest/purview-administration.MetadataRolesListdefaultHeaders|beta'
+  - '@azure-rest/purview-administration.MetadataRolesListdefaultResponse|beta'
+  - '@azure-rest/purview-administration.NormalizationRule|beta'
+  - '@azure-rest/purview-administration.PagingOptions|beta'
+  - '@azure-rest/purview-administration.PagingOptions_2|beta'
+  - '@azure-rest/purview-administration.PathPatternExtractorConfig|beta'
+  - '@azure-rest/purview-administration.PrivateEndpoint|beta'
+  - '@azure-rest/purview-administration.PrivateEndpointConnection|beta'
+  - '@azure-rest/purview-administration.PrivateEndpointConnectionProperties|beta'
+  - '@azure-rest/purview-administration.PrivateLinkServiceConnectionState|beta'
+  - '@azure-rest/purview-administration.RegexReplacer|beta'
+  - '@azure-rest/purview-administration.ResourceSetRuleConfig|beta'
+  - '@azure-rest/purview-administration.ResourceSetRuleConfigList|beta'
+  - >-
+    @azure-rest/purview-administration.ResourceSetRulesCreateOrUpdateResourceSetRule200Response|beta
+  - >-
+    @azure-rest/purview-administration.ResourceSetRulesCreateOrUpdateResourceSetRuleBodyParam|beta
+  - >-
+    @azure-rest/purview-administration.ResourceSetRulesCreateOrUpdateResourceSetRuledefaultResponse|beta
+  - >-
+    @azure-rest/purview-administration.ResourceSetRulesDeleteResourceSetRule200Response|beta
+  - >-
+    @azure-rest/purview-administration.ResourceSetRulesDeleteResourceSetRule204Response|beta
+  - >-
+    @azure-rest/purview-administration.ResourceSetRulesDeleteResourceSetRuledefaultResponse|beta
+  - '@azure-rest/purview-administration.ResourceSetRulesGetResourceSetRule|beta'
+  - >-
+    @azure-rest/purview-administration.ResourceSetRulesGetResourceSetRule200Response|beta
+  - >-
+    @azure-rest/purview-administration.ResourceSetRulesGetResourceSetRuledefaultResponse|beta
+  - '@azure-rest/purview-administration.ResourceSetRulesListResourceSetRules|beta'
+  - >-
+    @azure-rest/purview-administration.ResourceSetRulesListResourceSetRules200Response|beta
+  - >-
+    @azure-rest/purview-administration.ResourceSetRulesListResourceSetRulesQueryParam|beta
+  - >-
+    @azure-rest/purview-administration.ResourceSetRulesListResourceSetRulesQueryParamProperties|beta
+  - >-
+    @azure-rest/purview-administration.ResourceSetRulesListResourceSetRulesdefaultResponse|beta
+  - '@azure-rest/purview-administration.Routes|beta'
+  - '@azure-rest/purview-administration.Routes_2|beta'
+  - '@azure-rest/purview-administration.Rule|beta'
+  - '@azure-rest/purview-administration.ScopedRule|beta'
+  - '@azure-rest/purview-administration.SystemData|beta'
+typeAliases:
+  - '@azure-rest/purview-administration.AccountsGetAccessKeysParameters|beta'
+  - >-
+    @azure-rest/purview-administration.AccountsGetAccountPropertiesParameters|beta
+  - >-
+    @azure-rest/purview-administration.AccountsRegenerateAccessKeyParameters|beta
+  - >-
+    @azure-rest/purview-administration.AccountsUpdateAccountPropertiesParameters|beta
+  - >-
+    @azure-rest/purview-administration.CollectionsCreateOrUpdateCollectionParameters|beta
+  - >-
+    @azure-rest/purview-administration.CollectionsDeleteCollectionParameters|beta
+  - '@azure-rest/purview-administration.CollectionsGetCollectionParameters|beta'
+  - >-
+    @azure-rest/purview-administration.CollectionsGetCollectionPathParameters|beta
+  - >-
+    @azure-rest/purview-administration.CollectionsListChildCollectionNamesParameters|beta
+  - '@azure-rest/purview-administration.CollectionsListCollectionsParameters|beta'
+  - '@azure-rest/purview-administration.GetArrayType|beta'
+  - '@azure-rest/purview-administration.GetArrayType_2|beta'
+  - '@azure-rest/purview-administration.GetPage|beta'
+  - '@azure-rest/purview-administration.GetPage_2|beta'
+  - '@azure-rest/purview-administration.MetadataPolicyGetParameters|beta'
+  - '@azure-rest/purview-administration.MetadataPolicyListAllParameters|beta'
+  - '@azure-rest/purview-administration.MetadataPolicyUpdateParameters|beta'
+  - '@azure-rest/purview-administration.MetadataRolesListParameters|beta'
+  - '@azure-rest/purview-administration.PaginateReturn|beta'
+  - '@azure-rest/purview-administration.PaginateReturn_2|beta'
+  - '@azure-rest/purview-administration.PurviewAccountRestClient|beta'
+  - '@azure-rest/purview-administration.PurviewMetadataPoliciesRestClient|beta'
+  - >-
+    @azure-rest/purview-administration.ResourceSetRulesCreateOrUpdateResourceSetRuleParameters|beta
+  - >-
+    @azure-rest/purview-administration.ResourceSetRulesDeleteResourceSetRuleParameters|beta
+  - >-
+    @azure-rest/purview-administration.ResourceSetRulesGetResourceSetRuleParameters|beta
+  - >-
+    @azure-rest/purview-administration.ResourceSetRulesListResourceSetRulesParameters|beta
+functions:
+  - name: PurviewAccountClient(string, TokenCredential, ClientOptions)
+    uid: '@azure-rest/purview-administration.PurviewAccountClient|beta'
+    package: '@azure-rest/purview-administration|beta'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function PurviewAccountClient(endpoint: string, credentials:
+        TokenCredential, options?: ClientOptions): PurviewAccountRestClient
+      parameters:
+        - id: endpoint
+          type: string
+          description: ''
+        - id: credentials
+          type: TokenCredential
+          description: ''
+        - id: options
+          type: ClientOptions
+          description: ''
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure-rest/purview-administration.PurviewAccountRestClient|beta"
+          />
+  - name: PurviewMetadataPoliciesClient(string, TokenCredential, ClientOptions)
+    uid: '@azure-rest/purview-administration.PurviewMetadataPoliciesClient|beta'
+    package: '@azure-rest/purview-administration|beta'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function PurviewMetadataPoliciesClient(Endpoint: string, credentials:
+        TokenCredential, options?: ClientOptions):
+        PurviewMetadataPoliciesRestClient
+      parameters:
+        - id: Endpoint
+          type: string
+          description: ''
+        - id: credentials
+          type: TokenCredential
+          description: ''
+        - id: options
+          type: ClientOptions
+          description: ''
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure-rest/purview-administration.PurviewMetadataPoliciesRestClient|beta"
+          />
+  - name: paginate<TResponse>(Client, TResponse, PagingOptions<TResponse>)
+    uid: '@azure-rest/purview-administration.paginate|beta'
+    package: '@azure-rest/purview-administration|beta'
+    summary: >-
+      Helper to paginate results from an initial response that follows the
+      specification of Autorest `x-ms-pageable` extension
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function paginate<TResponse>(client: Client, initialResponse: TResponse,
+        options?: PagingOptions<TResponse>):
+        PagedAsyncIterableIterator<PaginateReturn<TResponse>>
+      parameters:
+        - id: client
+          type: Client
+          description: Client to use for sending the next page requests
+        - id: initialResponse
+          type: TResponse
+          description: >-
+            Initial response containing the nextLink and current page of
+            elements
+        - id: options
+          type: >-
+            <xref uid="@azure-rest/purview-administration.PagingOptions|beta"
+            />&lt;TResponse&gt;
+          description: ''
+      return:
+        description: '- PagedAsyncIterableIterator to iterate the elements'
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure-rest/purview-administration.PaginateReturn|beta"
+          />&lt;TResponse&gt;&gt;
+  - name: paginate_2<TResponse>(Client, TResponse, PagingOptions_2<TResponse>)
+    uid: '@azure-rest/purview-administration.paginate_2|beta'
+    package: '@azure-rest/purview-administration|beta'
+    summary: >-
+      Helper to paginate results from an initial response that follows the
+      specification of Autorest `x-ms-pageable` extension
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function paginate_2<TResponse>(client: Client, initialResponse:
+        TResponse, options?: PagingOptions_2<TResponse>):
+        PagedAsyncIterableIterator<PaginateReturn_2<TResponse>>
+      parameters:
+        - id: client
+          type: Client
+          description: Client to use for sending the next page requests
+        - id: initialResponse
+          type: TResponse
+          description: >-
+            Initial response containing the nextLink and current page of
+            elements
+        - id: options
+          type: >-
+            <xref uid="@azure-rest/purview-administration.PagingOptions_2|beta"
+            />&lt;TResponse&gt;
+          description: ''
+      return:
+        description: '- PagedAsyncIterableIterator to iterate the elements'
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure-rest/purview-administration.PaginateReturn_2|beta"
+          />&lt;TResponse&gt;&gt;

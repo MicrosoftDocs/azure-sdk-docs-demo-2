@@ -1,0 +1,43 @@
+### YamlMime:TSType
+name: ObjectReplicationRule
+uid: '@azure/storage-blob.ObjectReplicationRule|beta'
+package: '@azure/storage-blob|beta'
+summary: >-
+  Contains the Object Replication Rule ID and
+  <xref:@azure/storage-blob.ObjectReplicationStatus|beta> of a blob.
+
+  There can be more than one
+  <xref:@azure/storage-blob.ObjectReplicationRule|beta> under a
+  <xref:@azure/storage-blob.ObjectReplicationPolicy|beta>.
+fullName: ObjectReplicationRule
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: replicationStatus
+    uid: '@azure/storage-blob.ObjectReplicationRule.replicationStatus|beta'
+    package: '@azure/storage-blob|beta'
+    summary: The Replication Status
+    fullName: replicationStatus
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'replicationStatus: ObjectReplicationStatus'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-blob.ObjectReplicationStatus|beta" />
+  - name: ruleId
+    uid: '@azure/storage-blob.ObjectReplicationRule.ruleId|beta'
+    package: '@azure/storage-blob|beta'
+    summary: The Object Replication Rule ID.
+    fullName: ruleId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ruleId: string'
+      return:
+        description: ''
+        type: string

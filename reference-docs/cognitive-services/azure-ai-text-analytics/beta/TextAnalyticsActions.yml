@@ -1,0 +1,165 @@
+### YamlMime:TSType
+name: TextAnalyticsActions
+uid: '@azure/ai-text-analytics.TextAnalyticsActions|beta'
+package: '@azure/ai-text-analytics|beta'
+summary: >-
+  Description of collection of actions for the analyze API to perform on input
+  documents.
+fullName: TextAnalyticsActions
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: analyzeSentimentActions
+    uid: '@azure/ai-text-analytics.TextAnalyticsActions.analyzeSentimentActions|beta'
+    package: '@azure/ai-text-analytics|beta'
+    summary: A collection of descriptions of sentiment analysis actions.
+    fullName: analyzeSentimentActions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'analyzeSentimentActions?: AnalyzeSentimentAction[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/ai-text-analytics.AnalyzeSentimentAction|beta" />[]
+  - name: extractKeyPhrasesActions
+    uid: >-
+      @azure/ai-text-analytics.TextAnalyticsActions.extractKeyPhrasesActions|beta
+    package: '@azure/ai-text-analytics|beta'
+    summary: A collection of descriptions of key phrases recognition actions.
+    fullName: extractKeyPhrasesActions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'extractKeyPhrasesActions?: ExtractKeyPhrasesAction[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/ai-text-analytics.ExtractKeyPhrasesAction|beta" />[]
+  - name: extractSummaryActions
+    uid: '@azure/ai-text-analytics.TextAnalyticsActions.extractSummaryActions|beta'
+    package: '@azure/ai-text-analytics|beta'
+    summary: A collection of descriptions of summarization extraction actions.
+    fullName: extractSummaryActions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'extractSummaryActions?: ExtractSummaryAction[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/ai-text-analytics.ExtractSummaryAction|beta" />[]
+  - name: multiCategoryClassifyActions
+    uid: >-
+      @azure/ai-text-analytics.TextAnalyticsActions.multiCategoryClassifyActions|beta
+    package: '@azure/ai-text-analytics|beta'
+    summary: >-
+      A collection of descriptions of custom multi classification actions. For
+      more information, please refer
+
+      to the service documentation:
+      https://aka.ms/azsdk/textanalytics/customfunctionalities
+    fullName: multiCategoryClassifyActions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'multiCategoryClassifyActions?: MultiCategoryClassifyAction[]'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/ai-text-analytics.MultiCategoryClassifyAction|beta"
+          />[]
+  - name: recognizeCustomEntitiesActions
+    uid: >-
+      @azure/ai-text-analytics.TextAnalyticsActions.recognizeCustomEntitiesActions|beta
+    package: '@azure/ai-text-analytics|beta'
+    summary: >-
+      A collection of descriptions of custom entity recognition actions. For
+      more information, please refer
+
+      to the service documentation:
+      https://aka.ms/azsdk/textanalytics/customentityrecognition
+    fullName: recognizeCustomEntitiesActions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'recognizeCustomEntitiesActions?: RecognizeCustomEntitiesAction[]'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/ai-text-analytics.RecognizeCustomEntitiesAction|beta" />[]
+  - name: recognizeEntitiesActions
+    uid: >-
+      @azure/ai-text-analytics.TextAnalyticsActions.recognizeEntitiesActions|beta
+    package: '@azure/ai-text-analytics|beta'
+    summary: A collection of descriptions of entities recognition actions.
+    fullName: recognizeEntitiesActions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'recognizeEntitiesActions?: RecognizeCategorizedEntitiesAction[]'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/ai-text-analytics.RecognizeCategorizedEntitiesAction|beta"
+          />[]
+  - name: recognizeLinkedEntitiesActions
+    uid: >-
+      @azure/ai-text-analytics.TextAnalyticsActions.recognizeLinkedEntitiesActions|beta
+    package: '@azure/ai-text-analytics|beta'
+    summary: A collection of descriptions of entities linking actions.
+    fullName: recognizeLinkedEntitiesActions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'recognizeLinkedEntitiesActions?: RecognizeLinkedEntitiesAction[]'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/ai-text-analytics.RecognizeLinkedEntitiesAction|beta" />[]
+  - name: recognizePiiEntitiesActions
+    uid: >-
+      @azure/ai-text-analytics.TextAnalyticsActions.recognizePiiEntitiesActions|beta
+    package: '@azure/ai-text-analytics|beta'
+    summary: A collection of descriptions of Pii entities recognition actions.
+    fullName: recognizePiiEntitiesActions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'recognizePiiEntitiesActions?: RecognizePiiEntitiesAction[]'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/ai-text-analytics.RecognizePiiEntitiesAction|beta"
+          />[]
+  - name: singleCategoryClassifyActions
+    uid: >-
+      @azure/ai-text-analytics.TextAnalyticsActions.singleCategoryClassifyActions|beta
+    package: '@azure/ai-text-analytics|beta'
+    summary: >-
+      A collection of descriptions of custom single classification actions. For
+      more information, please refer
+
+      to the service documentation:
+      https://aka.ms/azsdk/textanalytics/customfunctionalities
+    fullName: singleCategoryClassifyActions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'singleCategoryClassifyActions?: SingleCategoryClassifyAction[]'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/ai-text-analytics.SingleCategoryClassifyAction|beta"
+          />[]

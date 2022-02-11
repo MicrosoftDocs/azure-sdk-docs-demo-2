@@ -1,0 +1,106 @@
+### YamlMime:TSType
+name: MultiMetricCriteria
+uid: '@azure/arm-monitor.MultiMetricCriteria|stable'
+package: '@azure/arm-monitor|stable'
+summary: The types of conditions for a multi resource alert.
+fullName: MultiMetricCriteria
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: criterionType
+    uid: '@azure/arm-monitor.MultiMetricCriteria.criterionType|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: >-
+      Polymorphic discriminator, which specifies the different types this object
+      can be
+    fullName: criterionType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'criterionType: "StaticThresholdCriterion" | "DynamicThresholdCriterion"'
+      return:
+        description: ''
+        type: '"StaticThresholdCriterion" | "DynamicThresholdCriterion"'
+  - name: dimensions
+    uid: '@azure/arm-monitor.MultiMetricCriteria.dimensions|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: List of dimension conditions.
+    fullName: dimensions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dimensions?: MetricDimension[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-monitor.MetricDimension|stable" />[]
+  - name: metricName
+    uid: '@azure/arm-monitor.MultiMetricCriteria.metricName|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: Name of the metric.
+    fullName: metricName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'metricName: string'
+      return:
+        description: ''
+        type: string
+  - name: metricNamespace
+    uid: '@azure/arm-monitor.MultiMetricCriteria.metricNamespace|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: Namespace of the metric.
+    fullName: metricNamespace
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'metricNamespace?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: name
+    uid: '@azure/arm-monitor.MultiMetricCriteria.name|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: Name of the criteria.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: string'
+      return:
+        description: ''
+        type: string
+  - name: skipMetricValidation
+    uid: '@azure/arm-monitor.MultiMetricCriteria.skipMetricValidation|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: >-
+      Allows creating an alert rule on a custom metric that isn't yet emitted,
+      by causing the metric validation to be skipped.
+    fullName: skipMetricValidation
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'skipMetricValidation?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true
+  - name: timeAggregation
+    uid: '@azure/arm-monitor.MultiMetricCriteria.timeAggregation|stable'
+    package: '@azure/arm-monitor|stable'
+    summary: the criteria time aggregation types.
+    fullName: timeAggregation
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'timeAggregation: AggregationTypeEnum'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-monitor.AggregationTypeEnum|stable" />

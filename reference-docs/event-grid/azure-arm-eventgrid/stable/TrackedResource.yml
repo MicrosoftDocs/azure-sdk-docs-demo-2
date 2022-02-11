@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: TrackedResource
+uid: '@azure/arm-eventgrid.TrackedResource|stable'
+package: '@azure/arm-eventgrid|stable'
+summary: Definition of a Tracked Resource.
+fullName: TrackedResource
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type TrackedResource = Resource & { location: string, tags?: undefined | [key:
+  string]: string }

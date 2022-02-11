@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: GetReadReceiptResultResponse
+uid: '@azure/cognitiveservices-formrecognizer.GetReadReceiptResultResponse|legacy'
+package: '@azure/cognitiveservices-formrecognizer|legacy'
+summary: Contains response data for the getReadReceiptResult operation.
+fullName: GetReadReceiptResultResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type GetReadReceiptResultResponse = ReadReceiptResult & { _response:
+  HttpResponse & { bodyAsText: string, parsedBody: ReadReceiptResult } }

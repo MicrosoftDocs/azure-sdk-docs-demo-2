@@ -1,0 +1,100 @@
+### YamlMime:TSType
+name: FormCountryRegionField
+uid: '@azure/ai-form-recognizer.FormCountryRegionField|stable'
+package: '@azure/ai-form-recognizer|stable'
+summary: |-
+  A form field with a value representing an administrative region or country
+  in the world.
+fullName: FormCountryRegionField
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: confidence
+    uid: '@azure/ai-form-recognizer.FormCountryRegionField.confidence|stable'
+    package: '@azure/ai-form-recognizer|stable'
+    summary: |-
+      The sevice's confidence (expressed as a number between zero and one) in
+      the correctness of the field value.
+    fullName: confidence
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'confidence?: number'
+      return:
+        description: ''
+        type: number
+  - name: labelData
+    uid: '@azure/ai-form-recognizer.FormCountryRegionField.labelData|stable'
+    package: '@azure/ai-form-recognizer|stable'
+    summary: >-
+      Contains the recognized field label's text, bounding box, and field
+      elements.
+    fullName: labelData
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'labelData?: FieldData'
+      return:
+        description: ''
+        type: <xref uid="@azure/ai-form-recognizer.FieldData|stable" />
+  - name: name
+    uid: '@azure/ai-form-recognizer.FormCountryRegionField.name|stable'
+    package: '@azure/ai-form-recognizer|stable'
+    summary: A user-defined label for the field.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: string'
+      return:
+        description: ''
+        type: string
+  - name: value
+    uid: '@azure/ai-form-recognizer.FormCountryRegionField.value|stable'
+    package: '@azure/ai-form-recognizer|stable'
+    summary: |-
+      The recognized country or region, represented by a three-letter (ISO
+      3166-1 alpha-3) code.
+    fullName: value
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: string'
+      return:
+        description: ''
+        type: string
+  - name: valueData
+    uid: '@azure/ai-form-recognizer.FormCountryRegionField.valueData|stable'
+    package: '@azure/ai-form-recognizer|stable'
+    summary: >-
+      Contains the recognized field value's text, bounding box, and field
+      elements.
+    fullName: valueData
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'valueData?: FieldData'
+      return:
+        description: ''
+        type: <xref uid="@azure/ai-form-recognizer.FieldData|stable" />
+  - name: valueType
+    uid: '@azure/ai-form-recognizer.FormCountryRegionField.valueType|stable'
+    package: '@azure/ai-form-recognizer|stable'
+    summary: The type of this field's value - "countryRegion"
+    fullName: valueType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'valueType: "countryRegion"'
+      return:
+        description: ''
+        type: '"countryRegion"'
+extends: <xref uid="@azure/ai-form-recognizer.FormFieldCommon|stable" />

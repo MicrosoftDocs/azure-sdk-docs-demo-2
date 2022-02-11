@@ -1,0 +1,186 @@
+### YamlMime:TSType
+name: FileGenerateSasUrlOptions
+uid: '@azure/storage-file-share.FileGenerateSasUrlOptions|stable'
+package: '@azure/storage-file-share|stable'
+summary: >-
+  Options to configure
+  <xref:@azure/storage-file-share.ShareFileClient.generateSasUrl|stable>
+  operation.
+fullName: FileGenerateSasUrlOptions
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: cacheControl
+    uid: '@azure/storage-file-share.FileGenerateSasUrlOptions.cacheControl|stable'
+    package: '@azure/storage-file-share|stable'
+    summary: Optional. The cache-control header for the SAS.
+    fullName: cacheControl
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'cacheControl?: string'
+      return:
+        description: ''
+        type: string
+  - name: contentDisposition
+    uid: >-
+      @azure/storage-file-share.FileGenerateSasUrlOptions.contentDisposition|stable
+    package: '@azure/storage-file-share|stable'
+    summary: Optional. The content-disposition header for the SAS.
+    fullName: contentDisposition
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'contentDisposition?: string'
+      return:
+        description: ''
+        type: string
+  - name: contentEncoding
+    uid: '@azure/storage-file-share.FileGenerateSasUrlOptions.contentEncoding|stable'
+    package: '@azure/storage-file-share|stable'
+    summary: Optional. The content-encoding header for the SAS.
+    fullName: contentEncoding
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'contentEncoding?: string'
+      return:
+        description: ''
+        type: string
+  - name: contentLanguage
+    uid: '@azure/storage-file-share.FileGenerateSasUrlOptions.contentLanguage|stable'
+    package: '@azure/storage-file-share|stable'
+    summary: Optional. The content-language header for the SAS.
+    fullName: contentLanguage
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'contentLanguage?: string'
+      return:
+        description: ''
+        type: string
+  - name: contentType
+    uid: '@azure/storage-file-share.FileGenerateSasUrlOptions.contentType|stable'
+    package: '@azure/storage-file-share|stable'
+    summary: Optional. The content-type header for the SAS.
+    fullName: contentType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'contentType?: string'
+      return:
+        description: ''
+        type: string
+  - name: expiresOn
+    uid: '@azure/storage-file-share.FileGenerateSasUrlOptions.expiresOn|stable'
+    package: '@azure/storage-file-share|stable'
+    summary: >-
+      Optional only when identifier is provided. The time after which the SAS
+      will no longer work.
+    fullName: expiresOn
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'expiresOn?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: identifier
+    uid: '@azure/storage-file-share.FileGenerateSasUrlOptions.identifier|stable'
+    package: '@azure/storage-file-share|stable'
+    summary: >-
+      Optional. The name of the access policy on the share this SAS references
+      if any.
+
+
+      See
+      https://docs.microsoft.com/en-us/rest/api/storageservices/establishing-a-stored-access-policy
+    fullName: identifier
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'identifier?: string'
+      return:
+        description: ''
+        type: string
+  - name: ipRange
+    uid: '@azure/storage-file-share.FileGenerateSasUrlOptions.ipRange|stable'
+    package: '@azure/storage-file-share|stable'
+    summary: Optional. IP ranges allowed in this SAS.
+    fullName: ipRange
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ipRange?: SasIPRange'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-file-share.SasIPRange|stable" />
+  - name: permissions
+    uid: '@azure/storage-file-share.FileGenerateSasUrlOptions.permissions|stable'
+    package: '@azure/storage-file-share|stable'
+    summary: >-
+      Optional only when identifier is provided. Specifies the list of
+      permissions to be associated with the SAS.
+    fullName: permissions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'permissions?: FileSASPermissions'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-file-share.FileSASPermissions|stable" />
+  - name: protocol
+    uid: '@azure/storage-file-share.FileGenerateSasUrlOptions.protocol|stable'
+    package: '@azure/storage-file-share|stable'
+    summary: Optional. SAS protocols, HTTPS only or HTTPSandHTTP
+    fullName: protocol
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protocol?: SASProtocol'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-file-share.SASProtocol|stable" />
+  - name: startsOn
+    uid: '@azure/storage-file-share.FileGenerateSasUrlOptions.startsOn|stable'
+    package: '@azure/storage-file-share|stable'
+    summary: Optional. When the SAS will take effect.
+    fullName: startsOn
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'startsOn?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: version
+    uid: '@azure/storage-file-share.FileGenerateSasUrlOptions.version|stable'
+    package: '@azure/storage-file-share|stable'
+    summary: >-
+      The version of the service this SAS will target. If not specified, it will
+      default to the version targeted by the
+
+      library.
+    fullName: version
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'version?: string'
+      return:
+        description: ''
+        type: string
+extends: <xref uid="@azure/storage-file-share.CommonGenerateSasUrlOptions|stable" />

@@ -1,0 +1,2502 @@
+### YamlMime:TSType
+name: StaticSites
+uid: '@azure/arm-appservice.StaticSites|stable'
+package: '@azure/arm-appservice|stable'
+summary: Interface representing a StaticSites.
+fullName: StaticSites
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      beginApproveOrRejectPrivateEndpointConnection(string, string, string,
+      PrivateLinkConnectionApprovalRequestResource,
+      StaticSitesApproveOrRejectPrivateEndpointConnectionOptionalParams)
+    uid: >-
+      @azure/arm-appservice.StaticSites.beginApproveOrRejectPrivateEndpointConnection|stable
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Approves or rejects a private endpoint connection
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function
+        beginApproveOrRejectPrivateEndpointConnection(resourceGroupName: string,
+        name: string, privateEndpointConnectionName: string,
+        privateEndpointWrapper: PrivateLinkConnectionApprovalRequestResource,
+        options?:
+        StaticSitesApproveOrRejectPrivateEndpointConnectionOptionalParams):
+        Promise<PollerLike<PollOperationState<StaticSitesApproveOrRejectPrivateEndpointConnectionResponse>,
+        StaticSitesApproveOrRejectPrivateEndpointConnectionResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: privateEndpointConnectionName
+          type: string
+          description: Name of the private endpoint connection.
+        - id: privateEndpointWrapper
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.PrivateLinkConnectionApprovalRequestResource|stable"
+            />
+          description: Request body.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesApproveOrRejectPrivateEndpointConnectionOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-appservice.StaticSitesApproveOrRejectPrivateEndpointConnectionResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-appservice.StaticSitesApproveOrRejectPrivateEndpointConnectionResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginApproveOrRejectPrivateEndpointConnectionAndWait(string, string,
+      string, PrivateLinkConnectionApprovalRequestResource,
+      StaticSitesApproveOrRejectPrivateEndpointConnectionOptionalParams)
+    uid: >-
+      @azure/arm-appservice.StaticSites.beginApproveOrRejectPrivateEndpointConnectionAndWait|stable
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Approves or rejects a private endpoint connection
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function
+        beginApproveOrRejectPrivateEndpointConnectionAndWait(resourceGroupName:
+        string, name: string, privateEndpointConnectionName: string,
+        privateEndpointWrapper: PrivateLinkConnectionApprovalRequestResource,
+        options?:
+        StaticSitesApproveOrRejectPrivateEndpointConnectionOptionalParams):
+        Promise<StaticSitesApproveOrRejectPrivateEndpointConnectionResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: privateEndpointConnectionName
+          type: string
+          description: Name of the private endpoint connection.
+        - id: privateEndpointWrapper
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.PrivateLinkConnectionApprovalRequestResource|stable"
+            />
+          description: Request body.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesApproveOrRejectPrivateEndpointConnectionOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.StaticSitesApproveOrRejectPrivateEndpointConnectionResponse|stable"
+          />&gt;
+  - name: >-
+      beginCreateOrUpdateStaticSite(string, string, StaticSiteARMResource,
+      StaticSitesCreateOrUpdateStaticSiteOptionalParams)
+    uid: '@azure/arm-appservice.StaticSites.beginCreateOrUpdateStaticSite|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Description for Creates a new static site in an existing resource group,
+      or updates an existing
+
+      static site.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdateStaticSite(resourceGroupName: string, name:
+        string, staticSiteEnvelope: StaticSiteARMResource, options?:
+        StaticSitesCreateOrUpdateStaticSiteOptionalParams):
+        Promise<PollerLike<PollOperationState<StaticSitesCreateOrUpdateStaticSiteResponse>,
+        StaticSitesCreateOrUpdateStaticSiteResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site to create or update.
+        - id: staticSiteEnvelope
+          type: <xref uid="@azure/arm-appservice.StaticSiteARMResource|stable" />
+          description: A JSON representation of the staticsite properties. See example.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesCreateOrUpdateStaticSiteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-appservice.StaticSitesCreateOrUpdateStaticSiteResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-appservice.StaticSitesCreateOrUpdateStaticSiteResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginCreateOrUpdateStaticSiteAndWait(string, string,
+      StaticSiteARMResource, StaticSitesCreateOrUpdateStaticSiteOptionalParams)
+    uid: >-
+      @azure/arm-appservice.StaticSites.beginCreateOrUpdateStaticSiteAndWait|stable
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Description for Creates a new static site in an existing resource group,
+      or updates an existing
+
+      static site.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdateStaticSiteAndWait(resourceGroupName: string,
+        name: string, staticSiteEnvelope: StaticSiteARMResource, options?:
+        StaticSitesCreateOrUpdateStaticSiteOptionalParams):
+        Promise<StaticSitesCreateOrUpdateStaticSiteResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site to create or update.
+        - id: staticSiteEnvelope
+          type: <xref uid="@azure/arm-appservice.StaticSiteARMResource|stable" />
+          description: A JSON representation of the staticsite properties. See example.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesCreateOrUpdateStaticSiteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.StaticSitesCreateOrUpdateStaticSiteResponse|stable"
+          />&gt;
+  - name: >-
+      beginCreateOrUpdateStaticSiteCustomDomain(string, string, string,
+      StaticSiteCustomDomainRequestPropertiesARMResource,
+      StaticSitesCreateOrUpdateStaticSiteCustomDomainOptionalParams)
+    uid: >-
+      @azure/arm-appservice.StaticSites.beginCreateOrUpdateStaticSiteCustomDomain|stable
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Description for Creates a new static site custom domain in an existing
+      resource group and static
+
+      site.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdateStaticSiteCustomDomain(resourceGroupName:
+        string, name: string, domainName: string,
+        staticSiteCustomDomainRequestPropertiesEnvelope:
+        StaticSiteCustomDomainRequestPropertiesARMResource, options?:
+        StaticSitesCreateOrUpdateStaticSiteCustomDomainOptionalParams):
+        Promise<PollerLike<PollOperationState<StaticSitesCreateOrUpdateStaticSiteCustomDomainResponse>,
+        StaticSitesCreateOrUpdateStaticSiteCustomDomainResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: domainName
+          type: string
+          description: The custom domain to create.
+        - id: staticSiteCustomDomainRequestPropertiesEnvelope
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSiteCustomDomainRequestPropertiesARMResource|stable"
+            />
+          description: |-
+            A JSON representation of the static site
+                                                                   custom domain request properties. See example.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesCreateOrUpdateStaticSiteCustomDomainOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-appservice.StaticSitesCreateOrUpdateStaticSiteCustomDomainResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-appservice.StaticSitesCreateOrUpdateStaticSiteCustomDomainResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginCreateOrUpdateStaticSiteCustomDomainAndWait(string, string, string,
+      StaticSiteCustomDomainRequestPropertiesARMResource,
+      StaticSitesCreateOrUpdateStaticSiteCustomDomainOptionalParams)
+    uid: >-
+      @azure/arm-appservice.StaticSites.beginCreateOrUpdateStaticSiteCustomDomainAndWait|stable
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Description for Creates a new static site custom domain in an existing
+      resource group and static
+
+      site.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function
+        beginCreateOrUpdateStaticSiteCustomDomainAndWait(resourceGroupName:
+        string, name: string, domainName: string,
+        staticSiteCustomDomainRequestPropertiesEnvelope:
+        StaticSiteCustomDomainRequestPropertiesARMResource, options?:
+        StaticSitesCreateOrUpdateStaticSiteCustomDomainOptionalParams):
+        Promise<StaticSitesCreateOrUpdateStaticSiteCustomDomainResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: domainName
+          type: string
+          description: The custom domain to create.
+        - id: staticSiteCustomDomainRequestPropertiesEnvelope
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSiteCustomDomainRequestPropertiesARMResource|stable"
+            />
+          description: |-
+            A JSON representation of the static site
+                                                                   custom domain request properties. See example.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesCreateOrUpdateStaticSiteCustomDomainOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.StaticSitesCreateOrUpdateStaticSiteCustomDomainResponse|stable"
+          />&gt;
+  - name: >-
+      beginCreateZipDeploymentForStaticSite(string, string,
+      StaticSiteZipDeploymentARMResource,
+      StaticSitesCreateZipDeploymentForStaticSiteOptionalParams)
+    uid: >-
+      @azure/arm-appservice.StaticSites.beginCreateZipDeploymentForStaticSite|stable
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Deploys zipped content to a static site.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateZipDeploymentForStaticSite(resourceGroupName:
+        string, name: string, staticSiteZipDeploymentEnvelope:
+        StaticSiteZipDeploymentARMResource, options?:
+        StaticSitesCreateZipDeploymentForStaticSiteOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: staticSiteZipDeploymentEnvelope
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSiteZipDeploymentARMResource|stable"
+            />
+          description: |-
+            A JSON representation of the StaticSiteZipDeployment
+                                                   properties. See example.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesCreateZipDeploymentForStaticSiteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: >-
+      beginCreateZipDeploymentForStaticSiteAndWait(string, string,
+      StaticSiteZipDeploymentARMResource,
+      StaticSitesCreateZipDeploymentForStaticSiteOptionalParams)
+    uid: >-
+      @azure/arm-appservice.StaticSites.beginCreateZipDeploymentForStaticSiteAndWait|stable
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Deploys zipped content to a static site.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateZipDeploymentForStaticSiteAndWait(resourceGroupName:
+        string, name: string, staticSiteZipDeploymentEnvelope:
+        StaticSiteZipDeploymentARMResource, options?:
+        StaticSitesCreateZipDeploymentForStaticSiteOptionalParams):
+        Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: staticSiteZipDeploymentEnvelope
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSiteZipDeploymentARMResource|stable"
+            />
+          description: |-
+            A JSON representation of the StaticSiteZipDeployment
+                                                   properties. See example.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesCreateZipDeploymentForStaticSiteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      beginCreateZipDeploymentForStaticSiteBuild(string, string, string,
+      StaticSiteZipDeploymentARMResource,
+      StaticSitesCreateZipDeploymentForStaticSiteBuildOptionalParams)
+    uid: >-
+      @azure/arm-appservice.StaticSites.beginCreateZipDeploymentForStaticSiteBuild|stable
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Description for Deploys zipped content to a specific environment of a
+      static site.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateZipDeploymentForStaticSiteBuild(resourceGroupName:
+        string, name: string, environmentName: string,
+        staticSiteZipDeploymentEnvelope: StaticSiteZipDeploymentARMResource,
+        options?:
+        StaticSitesCreateZipDeploymentForStaticSiteBuildOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: environmentName
+          type: string
+          description: Name of the environment.
+        - id: staticSiteZipDeploymentEnvelope
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSiteZipDeploymentARMResource|stable"
+            />
+          description: |-
+            A JSON representation of the StaticSiteZipDeployment
+                                                   properties. See example.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesCreateZipDeploymentForStaticSiteBuildOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: >-
+      beginCreateZipDeploymentForStaticSiteBuildAndWait(string, string, string,
+      StaticSiteZipDeploymentARMResource,
+      StaticSitesCreateZipDeploymentForStaticSiteBuildOptionalParams)
+    uid: >-
+      @azure/arm-appservice.StaticSites.beginCreateZipDeploymentForStaticSiteBuildAndWait|stable
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Description for Deploys zipped content to a specific environment of a
+      static site.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function
+        beginCreateZipDeploymentForStaticSiteBuildAndWait(resourceGroupName:
+        string, name: string, environmentName: string,
+        staticSiteZipDeploymentEnvelope: StaticSiteZipDeploymentARMResource,
+        options?:
+        StaticSitesCreateZipDeploymentForStaticSiteBuildOptionalParams):
+        Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: environmentName
+          type: string
+          description: Name of the environment.
+        - id: staticSiteZipDeploymentEnvelope
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSiteZipDeploymentARMResource|stable"
+            />
+          description: |-
+            A JSON representation of the StaticSiteZipDeployment
+                                                   properties. See example.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesCreateZipDeploymentForStaticSiteBuildOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      beginDeletePrivateEndpointConnection(string, string, string,
+      StaticSitesDeletePrivateEndpointConnectionOptionalParams)
+    uid: >-
+      @azure/arm-appservice.StaticSites.beginDeletePrivateEndpointConnection|stable
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Deletes a private endpoint connection
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeletePrivateEndpointConnection(resourceGroupName: string,
+        name: string, privateEndpointConnectionName: string, options?:
+        StaticSitesDeletePrivateEndpointConnectionOptionalParams):
+        Promise<PollerLike<PollOperationState<StaticSitesDeletePrivateEndpointConnectionResponse>,
+        StaticSitesDeletePrivateEndpointConnectionResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: privateEndpointConnectionName
+          type: string
+          description: Name of the private endpoint connection.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesDeletePrivateEndpointConnectionOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-appservice.StaticSitesDeletePrivateEndpointConnectionResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-appservice.StaticSitesDeletePrivateEndpointConnectionResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginDeletePrivateEndpointConnectionAndWait(string, string, string,
+      StaticSitesDeletePrivateEndpointConnectionOptionalParams)
+    uid: >-
+      @azure/arm-appservice.StaticSites.beginDeletePrivateEndpointConnectionAndWait|stable
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Deletes a private endpoint connection
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeletePrivateEndpointConnectionAndWait(resourceGroupName:
+        string, name: string, privateEndpointConnectionName: string, options?:
+        StaticSitesDeletePrivateEndpointConnectionOptionalParams):
+        Promise<StaticSitesDeletePrivateEndpointConnectionResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: privateEndpointConnectionName
+          type: string
+          description: Name of the private endpoint connection.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesDeletePrivateEndpointConnectionOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.StaticSitesDeletePrivateEndpointConnectionResponse|stable"
+          />&gt;
+  - name: >-
+      beginDeleteStaticSite(string, string,
+      StaticSitesDeleteStaticSiteOptionalParams)
+    uid: '@azure/arm-appservice.StaticSites.beginDeleteStaticSite|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Deletes a static site.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteStaticSite(resourceGroupName: string, name: string,
+        options?: StaticSitesDeleteStaticSiteOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site to delete.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesDeleteStaticSiteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: >-
+      beginDeleteStaticSiteAndWait(string, string,
+      StaticSitesDeleteStaticSiteOptionalParams)
+    uid: '@azure/arm-appservice.StaticSites.beginDeleteStaticSiteAndWait|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Deletes a static site.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteStaticSiteAndWait(resourceGroupName: string, name:
+        string, options?: StaticSitesDeleteStaticSiteOptionalParams):
+        Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site to delete.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesDeleteStaticSiteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      beginDeleteStaticSiteBuild(string, string, string,
+      StaticSitesDeleteStaticSiteBuildOptionalParams)
+    uid: '@azure/arm-appservice.StaticSites.beginDeleteStaticSiteBuild|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Deletes a static site build.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteStaticSiteBuild(resourceGroupName: string, name:
+        string, environmentName: string, options?:
+        StaticSitesDeleteStaticSiteBuildOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: environmentName
+          type: string
+          description: The stage site identifier.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesDeleteStaticSiteBuildOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: >-
+      beginDeleteStaticSiteBuildAndWait(string, string, string,
+      StaticSitesDeleteStaticSiteBuildOptionalParams)
+    uid: '@azure/arm-appservice.StaticSites.beginDeleteStaticSiteBuildAndWait|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Deletes a static site build.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteStaticSiteBuildAndWait(resourceGroupName: string,
+        name: string, environmentName: string, options?:
+        StaticSitesDeleteStaticSiteBuildOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: environmentName
+          type: string
+          description: The stage site identifier.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesDeleteStaticSiteBuildOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      beginDeleteStaticSiteCustomDomain(string, string, string,
+      StaticSitesDeleteStaticSiteCustomDomainOptionalParams)
+    uid: '@azure/arm-appservice.StaticSites.beginDeleteStaticSiteCustomDomain|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Deletes a custom domain.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteStaticSiteCustomDomain(resourceGroupName: string,
+        name: string, domainName: string, options?:
+        StaticSitesDeleteStaticSiteCustomDomainOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: domainName
+          type: string
+          description: The custom domain to delete.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesDeleteStaticSiteCustomDomainOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: >-
+      beginDeleteStaticSiteCustomDomainAndWait(string, string, string,
+      StaticSitesDeleteStaticSiteCustomDomainOptionalParams)
+    uid: >-
+      @azure/arm-appservice.StaticSites.beginDeleteStaticSiteCustomDomainAndWait|stable
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Deletes a custom domain.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteStaticSiteCustomDomainAndWait(resourceGroupName:
+        string, name: string, domainName: string, options?:
+        StaticSitesDeleteStaticSiteCustomDomainOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: domainName
+          type: string
+          description: The custom domain to delete.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesDeleteStaticSiteCustomDomainOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      beginDetachStaticSite(string, string,
+      StaticSitesDetachStaticSiteOptionalParams)
+    uid: '@azure/arm-appservice.StaticSites.beginDetachStaticSite|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Detaches a static site.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDetachStaticSite(resourceGroupName: string, name: string,
+        options?: StaticSitesDetachStaticSiteOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site to detach.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesDetachStaticSiteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: >-
+      beginDetachStaticSiteAndWait(string, string,
+      StaticSitesDetachStaticSiteOptionalParams)
+    uid: '@azure/arm-appservice.StaticSites.beginDetachStaticSiteAndWait|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Detaches a static site.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDetachStaticSiteAndWait(resourceGroupName: string, name:
+        string, options?: StaticSitesDetachStaticSiteOptionalParams):
+        Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site to detach.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesDetachStaticSiteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      beginRegisterUserProvidedFunctionAppWithStaticSite(string, string, string,
+      StaticSiteUserProvidedFunctionAppARMResource,
+      StaticSitesRegisterUserProvidedFunctionAppWithStaticSiteOptionalParams)
+    uid: >-
+      @azure/arm-appservice.StaticSites.beginRegisterUserProvidedFunctionAppWithStaticSite|stable
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Register a user provided function app with a static site
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function
+        beginRegisterUserProvidedFunctionAppWithStaticSite(resourceGroupName:
+        string, name: string, functionAppName: string,
+        staticSiteUserProvidedFunctionEnvelope:
+        StaticSiteUserProvidedFunctionAppARMResource, options?:
+        StaticSitesRegisterUserProvidedFunctionAppWithStaticSiteOptionalParams):
+        Promise<PollerLike<PollOperationState<StaticSitesRegisterUserProvidedFunctionAppWithStaticSiteResponse>,
+        StaticSitesRegisterUserProvidedFunctionAppWithStaticSiteResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: functionAppName
+          type: string
+          description: Name of the function app to register with the static site.
+        - id: staticSiteUserProvidedFunctionEnvelope
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSiteUserProvidedFunctionAppARMResource|stable"
+            />
+          description: |-
+            A JSON representation of the user provided function
+                                                          app properties. See example.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesRegisterUserProvidedFunctionAppWithStaticSiteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-appservice.StaticSitesRegisterUserProvidedFunctionAppWithStaticSiteResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-appservice.StaticSitesRegisterUserProvidedFunctionAppWithStaticSiteResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginRegisterUserProvidedFunctionAppWithStaticSiteAndWait(string, string,
+      string, StaticSiteUserProvidedFunctionAppARMResource,
+      StaticSitesRegisterUserProvidedFunctionAppWithStaticSiteOptionalParams)
+    uid: >-
+      @azure/arm-appservice.StaticSites.beginRegisterUserProvidedFunctionAppWithStaticSiteAndWait|stable
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Register a user provided function app with a static site
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function
+        beginRegisterUserProvidedFunctionAppWithStaticSiteAndWait(resourceGroupName:
+        string, name: string, functionAppName: string,
+        staticSiteUserProvidedFunctionEnvelope:
+        StaticSiteUserProvidedFunctionAppARMResource, options?:
+        StaticSitesRegisterUserProvidedFunctionAppWithStaticSiteOptionalParams):
+        Promise<StaticSitesRegisterUserProvidedFunctionAppWithStaticSiteResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: functionAppName
+          type: string
+          description: Name of the function app to register with the static site.
+        - id: staticSiteUserProvidedFunctionEnvelope
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSiteUserProvidedFunctionAppARMResource|stable"
+            />
+          description: |-
+            A JSON representation of the user provided function
+                                                          app properties. See example.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesRegisterUserProvidedFunctionAppWithStaticSiteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.StaticSitesRegisterUserProvidedFunctionAppWithStaticSiteResponse|stable"
+          />&gt;
+  - name: >-
+      beginRegisterUserProvidedFunctionAppWithStaticSiteBuild(string, string,
+      string, string, StaticSiteUserProvidedFunctionAppARMResource,
+      StaticSitesRegisterUserProvidedFunctionAppWithStaticSiteBuildOptionalParams)
+    uid: >-
+      @azure/arm-appservice.StaticSites.beginRegisterUserProvidedFunctionAppWithStaticSiteBuild|stable
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Description for Register a user provided function app with a static site
+      build
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function
+        beginRegisterUserProvidedFunctionAppWithStaticSiteBuild(resourceGroupName:
+        string, name: string, environmentName: string, functionAppName: string,
+        staticSiteUserProvidedFunctionEnvelope:
+        StaticSiteUserProvidedFunctionAppARMResource, options?:
+        StaticSitesRegisterUserProvidedFunctionAppWithStaticSiteBuildOptionalParams):
+        Promise<PollerLike<PollOperationState<StaticSitesRegisterUserProvidedFunctionAppWithStaticSiteBuildResponse>,
+        StaticSitesRegisterUserProvidedFunctionAppWithStaticSiteBuildResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: environmentName
+          type: string
+          description: The stage site identifier.
+        - id: functionAppName
+          type: string
+          description: Name of the function app to register with the static site build.
+        - id: staticSiteUserProvidedFunctionEnvelope
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSiteUserProvidedFunctionAppARMResource|stable"
+            />
+          description: |-
+            A JSON representation of the user provided function
+                                                          app properties. See example.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesRegisterUserProvidedFunctionAppWithStaticSiteBuildOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-appservice.StaticSitesRegisterUserProvidedFunctionAppWithStaticSiteBuildResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-appservice.StaticSitesRegisterUserProvidedFunctionAppWithStaticSiteBuildResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginRegisterUserProvidedFunctionAppWithStaticSiteBuildAndWait(string,
+      string, string, string, StaticSiteUserProvidedFunctionAppARMResource,
+      StaticSitesRegisterUserProvidedFunctionAppWithStaticSiteBuildOptionalParams)
+    uid: >-
+      @azure/arm-appservice.StaticSites.beginRegisterUserProvidedFunctionAppWithStaticSiteBuildAndWait|stable
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Description for Register a user provided function app with a static site
+      build
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function
+        beginRegisterUserProvidedFunctionAppWithStaticSiteBuildAndWait(resourceGroupName:
+        string, name: string, environmentName: string, functionAppName: string,
+        staticSiteUserProvidedFunctionEnvelope:
+        StaticSiteUserProvidedFunctionAppARMResource, options?:
+        StaticSitesRegisterUserProvidedFunctionAppWithStaticSiteBuildOptionalParams):
+        Promise<StaticSitesRegisterUserProvidedFunctionAppWithStaticSiteBuildResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: environmentName
+          type: string
+          description: The stage site identifier.
+        - id: functionAppName
+          type: string
+          description: Name of the function app to register with the static site build.
+        - id: staticSiteUserProvidedFunctionEnvelope
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSiteUserProvidedFunctionAppARMResource|stable"
+            />
+          description: |-
+            A JSON representation of the user provided function
+                                                          app properties. See example.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesRegisterUserProvidedFunctionAppWithStaticSiteBuildOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.StaticSitesRegisterUserProvidedFunctionAppWithStaticSiteBuildResponse|stable"
+          />&gt;
+  - name: >-
+      beginValidateCustomDomainCanBeAddedToStaticSite(string, string, string,
+      StaticSiteCustomDomainRequestPropertiesARMResource,
+      StaticSitesValidateCustomDomainCanBeAddedToStaticSiteOptionalParams)
+    uid: >-
+      @azure/arm-appservice.StaticSites.beginValidateCustomDomainCanBeAddedToStaticSite|stable
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Description for Validates a particular custom domain can be added to a
+      static site.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function
+        beginValidateCustomDomainCanBeAddedToStaticSite(resourceGroupName:
+        string, name: string, domainName: string,
+        staticSiteCustomDomainRequestPropertiesEnvelope:
+        StaticSiteCustomDomainRequestPropertiesARMResource, options?:
+        StaticSitesValidateCustomDomainCanBeAddedToStaticSiteOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: domainName
+          type: string
+          description: The custom domain to validate.
+        - id: staticSiteCustomDomainRequestPropertiesEnvelope
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSiteCustomDomainRequestPropertiesARMResource|stable"
+            />
+          description: |-
+            A JSON representation of the static site
+                                                                   custom domain request properties. See example.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesValidateCustomDomainCanBeAddedToStaticSiteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: >-
+      beginValidateCustomDomainCanBeAddedToStaticSiteAndWait(string, string,
+      string, StaticSiteCustomDomainRequestPropertiesARMResource,
+      StaticSitesValidateCustomDomainCanBeAddedToStaticSiteOptionalParams)
+    uid: >-
+      @azure/arm-appservice.StaticSites.beginValidateCustomDomainCanBeAddedToStaticSiteAndWait|stable
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Description for Validates a particular custom domain can be added to a
+      static site.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function
+        beginValidateCustomDomainCanBeAddedToStaticSiteAndWait(resourceGroupName:
+        string, name: string, domainName: string,
+        staticSiteCustomDomainRequestPropertiesEnvelope:
+        StaticSiteCustomDomainRequestPropertiesARMResource, options?:
+        StaticSitesValidateCustomDomainCanBeAddedToStaticSiteOptionalParams):
+        Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: domainName
+          type: string
+          description: The custom domain to validate.
+        - id: staticSiteCustomDomainRequestPropertiesEnvelope
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSiteCustomDomainRequestPropertiesARMResource|stable"
+            />
+          description: |-
+            A JSON representation of the static site
+                                                                   custom domain request properties. See example.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesValidateCustomDomainCanBeAddedToStaticSiteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      createOrUpdateStaticSiteAppSettings(string, string, StringDictionary,
+      StaticSitesCreateOrUpdateStaticSiteAppSettingsOptionalParams)
+    uid: >-
+      @azure/arm-appservice.StaticSites.createOrUpdateStaticSiteAppSettings|stable
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Creates or updates the app settings of a static site.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createOrUpdateStaticSiteAppSettings(resourceGroupName: string,
+        name: string, appSettings: StringDictionary, options?:
+        StaticSitesCreateOrUpdateStaticSiteAppSettingsOptionalParams):
+        Promise<StaticSitesCreateOrUpdateStaticSiteAppSettingsResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: appSettings
+          type: <xref uid="@azure/arm-appservice.StringDictionary|stable" />
+          description: The dictionary containing the static site app settings to update.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesCreateOrUpdateStaticSiteAppSettingsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.StaticSitesCreateOrUpdateStaticSiteAppSettingsResponse|stable"
+          />&gt;
+  - name: >-
+      createOrUpdateStaticSiteBuildAppSettings(string, string, string,
+      StringDictionary,
+      StaticSitesCreateOrUpdateStaticSiteBuildAppSettingsOptionalParams)
+    uid: >-
+      @azure/arm-appservice.StaticSites.createOrUpdateStaticSiteBuildAppSettings|stable
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Description for Creates or updates the app settings of a static site
+      build.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createOrUpdateStaticSiteBuildAppSettings(resourceGroupName:
+        string, name: string, environmentName: string, appSettings:
+        StringDictionary, options?:
+        StaticSitesCreateOrUpdateStaticSiteBuildAppSettingsOptionalParams):
+        Promise<StaticSitesCreateOrUpdateStaticSiteBuildAppSettingsResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: environmentName
+          type: string
+          description: The stage site identifier.
+        - id: appSettings
+          type: <xref uid="@azure/arm-appservice.StringDictionary|stable" />
+          description: The dictionary containing the static site app settings to update.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesCreateOrUpdateStaticSiteBuildAppSettingsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.StaticSitesCreateOrUpdateStaticSiteBuildAppSettingsResponse|stable"
+          />&gt;
+  - name: >-
+      createOrUpdateStaticSiteBuildFunctionAppSettings(string, string, string,
+      StringDictionary,
+      StaticSitesCreateOrUpdateStaticSiteBuildFunctionAppSettingsOptionalParams)
+    uid: >-
+      @azure/arm-appservice.StaticSites.createOrUpdateStaticSiteBuildFunctionAppSettings|stable
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Description for Creates or updates the function app settings of a static
+      site build.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function
+        createOrUpdateStaticSiteBuildFunctionAppSettings(resourceGroupName:
+        string, name: string, environmentName: string, appSettings:
+        StringDictionary, options?:
+        StaticSitesCreateOrUpdateStaticSiteBuildFunctionAppSettingsOptionalParams):
+        Promise<StaticSitesCreateOrUpdateStaticSiteBuildFunctionAppSettingsResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: environmentName
+          type: string
+          description: The stage site identifier.
+        - id: appSettings
+          type: <xref uid="@azure/arm-appservice.StringDictionary|stable" />
+          description: >-
+            The dictionary containing the static site function app settings to
+            update.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesCreateOrUpdateStaticSiteBuildFunctionAppSettingsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.StaticSitesCreateOrUpdateStaticSiteBuildFunctionAppSettingsResponse|stable"
+          />&gt;
+  - name: >-
+      createOrUpdateStaticSiteFunctionAppSettings(string, string,
+      StringDictionary,
+      StaticSitesCreateOrUpdateStaticSiteFunctionAppSettingsOptionalParams)
+    uid: >-
+      @azure/arm-appservice.StaticSites.createOrUpdateStaticSiteFunctionAppSettings|stable
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Description for Creates or updates the function app settings of a static
+      site.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createOrUpdateStaticSiteFunctionAppSettings(resourceGroupName:
+        string, name: string, appSettings: StringDictionary, options?:
+        StaticSitesCreateOrUpdateStaticSiteFunctionAppSettingsOptionalParams):
+        Promise<StaticSitesCreateOrUpdateStaticSiteFunctionAppSettingsResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: appSettings
+          type: <xref uid="@azure/arm-appservice.StringDictionary|stable" />
+          description: >-
+            The dictionary containing the static site function app settings to
+            update.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesCreateOrUpdateStaticSiteFunctionAppSettingsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.StaticSitesCreateOrUpdateStaticSiteFunctionAppSettingsResponse|stable"
+          />&gt;
+  - name: >-
+      createUserRolesInvitationLink(string, string,
+      StaticSiteUserInvitationRequestResource,
+      StaticSitesCreateUserRolesInvitationLinkOptionalParams)
+    uid: '@azure/arm-appservice.StaticSites.createUserRolesInvitationLink|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Creates an invitation link for a user with the role
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createUserRolesInvitationLink(resourceGroupName: string, name:
+        string, staticSiteUserRolesInvitationEnvelope:
+        StaticSiteUserInvitationRequestResource, options?:
+        StaticSitesCreateUserRolesInvitationLinkOptionalParams):
+        Promise<StaticSitesCreateUserRolesInvitationLinkResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: staticSiteUserRolesInvitationEnvelope
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSiteUserInvitationRequestResource|stable"
+            />
+          description: Static sites user roles invitation resource.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesCreateUserRolesInvitationLinkOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.StaticSitesCreateUserRolesInvitationLinkResponse|stable"
+          />&gt;
+  - name: >-
+      deleteStaticSiteUser(string, string, string, string,
+      StaticSitesDeleteStaticSiteUserOptionalParams)
+    uid: '@azure/arm-appservice.StaticSites.deleteStaticSiteUser|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Deletes the user entry from the static site.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function deleteStaticSiteUser(resourceGroupName: string, name: string,
+        authprovider: string, userid: string, options?:
+        StaticSitesDeleteStaticSiteUserOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the staticsite.
+        - id: authprovider
+          type: string
+          description: The auth provider for this user.
+        - id: userid
+          type: string
+          description: The user id of the user.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesDeleteStaticSiteUserOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      detachUserProvidedFunctionAppFromStaticSite(string, string, string,
+      StaticSitesDetachUserProvidedFunctionAppFromStaticSiteOptionalParams)
+    uid: >-
+      @azure/arm-appservice.StaticSites.detachUserProvidedFunctionAppFromStaticSite|stable
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Detach the user provided function app from the static site
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function detachUserProvidedFunctionAppFromStaticSite(resourceGroupName:
+        string, name: string, functionAppName: string, options?:
+        StaticSitesDetachUserProvidedFunctionAppFromStaticSiteOptionalParams):
+        Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: functionAppName
+          type: string
+          description: Name of the function app registered with the static site.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesDetachUserProvidedFunctionAppFromStaticSiteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      detachUserProvidedFunctionAppFromStaticSiteBuild(string, string, string,
+      string,
+      StaticSitesDetachUserProvidedFunctionAppFromStaticSiteBuildOptionalParams)
+    uid: >-
+      @azure/arm-appservice.StaticSites.detachUserProvidedFunctionAppFromStaticSiteBuild|stable
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Description for Detach the user provided function app from the static site
+      build
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function
+        detachUserProvidedFunctionAppFromStaticSiteBuild(resourceGroupName:
+        string, name: string, environmentName: string, functionAppName: string,
+        options?:
+        StaticSitesDetachUserProvidedFunctionAppFromStaticSiteBuildOptionalParams):
+        Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: environmentName
+          type: string
+          description: The stage site identifier.
+        - id: functionAppName
+          type: string
+          description: Name of the function app registered with the static site build.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesDetachUserProvidedFunctionAppFromStaticSiteBuildOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      getPrivateEndpointConnection(string, string, string,
+      StaticSitesGetPrivateEndpointConnectionOptionalParams)
+    uid: '@azure/arm-appservice.StaticSites.getPrivateEndpointConnection|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Gets a private endpoint connection
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getPrivateEndpointConnection(resourceGroupName: string, name:
+        string, privateEndpointConnectionName: string, options?:
+        StaticSitesGetPrivateEndpointConnectionOptionalParams):
+        Promise<StaticSitesGetPrivateEndpointConnectionResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: privateEndpointConnectionName
+          type: string
+          description: Name of the private endpoint connection.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesGetPrivateEndpointConnectionOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.StaticSitesGetPrivateEndpointConnectionResponse|stable"
+          />&gt;
+  - name: >-
+      getPrivateLinkResources(string, string,
+      StaticSitesGetPrivateLinkResourcesOptionalParams)
+    uid: '@azure/arm-appservice.StaticSites.getPrivateLinkResources|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Gets the private link resources
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getPrivateLinkResources(resourceGroupName: string, name:
+        string, options?: StaticSitesGetPrivateLinkResourcesOptionalParams):
+        Promise<StaticSitesGetPrivateLinkResourcesResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the site.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesGetPrivateLinkResourcesOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.StaticSitesGetPrivateLinkResourcesResponse|stable"
+          />&gt;
+  - name: getStaticSite(string, string, StaticSitesGetStaticSiteOptionalParams)
+    uid: '@azure/arm-appservice.StaticSites.getStaticSite|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Gets the details of a static site.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getStaticSite(resourceGroupName: string, name: string,
+        options?: StaticSitesGetStaticSiteOptionalParams):
+        Promise<StaticSitesGetStaticSiteResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesGetStaticSiteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.StaticSitesGetStaticSiteResponse|stable"
+          />&gt;
+  - name: >-
+      getStaticSiteBuild(string, string, string,
+      StaticSitesGetStaticSiteBuildOptionalParams)
+    uid: '@azure/arm-appservice.StaticSites.getStaticSiteBuild|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Gets the details of a static site build.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getStaticSiteBuild(resourceGroupName: string, name: string,
+        environmentName: string, options?:
+        StaticSitesGetStaticSiteBuildOptionalParams):
+        Promise<StaticSitesGetStaticSiteBuildResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: environmentName
+          type: string
+          description: The stage site identifier.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesGetStaticSiteBuildOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.StaticSitesGetStaticSiteBuildResponse|stable"
+          />&gt;
+  - name: >-
+      getStaticSiteCustomDomain(string, string, string,
+      StaticSitesGetStaticSiteCustomDomainOptionalParams)
+    uid: '@azure/arm-appservice.StaticSites.getStaticSiteCustomDomain|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Description for Gets an existing custom domain for a particular static
+      site.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getStaticSiteCustomDomain(resourceGroupName: string, name:
+        string, domainName: string, options?:
+        StaticSitesGetStaticSiteCustomDomainOptionalParams):
+        Promise<StaticSitesGetStaticSiteCustomDomainResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site resource to search in.
+        - id: domainName
+          type: string
+          description: The custom domain name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesGetStaticSiteCustomDomainOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.StaticSitesGetStaticSiteCustomDomainResponse|stable"
+          />&gt;
+  - name: >-
+      getUserProvidedFunctionAppForStaticSite(string, string, string,
+      StaticSitesGetUserProvidedFunctionAppForStaticSiteOptionalParams)
+    uid: >-
+      @azure/arm-appservice.StaticSites.getUserProvidedFunctionAppForStaticSite|stable
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Description for Gets the details of the user provided function app
+      registered with a static site
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getUserProvidedFunctionAppForStaticSite(resourceGroupName:
+        string, name: string, functionAppName: string, options?:
+        StaticSitesGetUserProvidedFunctionAppForStaticSiteOptionalParams):
+        Promise<StaticSitesGetUserProvidedFunctionAppForStaticSiteResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: functionAppName
+          type: string
+          description: Name of the function app registered with the static site.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesGetUserProvidedFunctionAppForStaticSiteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.StaticSitesGetUserProvidedFunctionAppForStaticSiteResponse|stable"
+          />&gt;
+  - name: >-
+      getUserProvidedFunctionAppForStaticSiteBuild(string, string, string,
+      string,
+      StaticSitesGetUserProvidedFunctionAppForStaticSiteBuildOptionalParams)
+    uid: >-
+      @azure/arm-appservice.StaticSites.getUserProvidedFunctionAppForStaticSiteBuild|stable
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Description for Gets the details of the user provided function app
+      registered with a static site
+
+      build
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getUserProvidedFunctionAppForStaticSiteBuild(resourceGroupName:
+        string, name: string, environmentName: string, functionAppName: string,
+        options?:
+        StaticSitesGetUserProvidedFunctionAppForStaticSiteBuildOptionalParams):
+        Promise<StaticSitesGetUserProvidedFunctionAppForStaticSiteBuildResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: environmentName
+          type: string
+          description: The stage site identifier.
+        - id: functionAppName
+          type: string
+          description: Name of the function app registered with the static site build.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesGetUserProvidedFunctionAppForStaticSiteBuildOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.StaticSitesGetUserProvidedFunctionAppForStaticSiteBuildResponse|stable"
+          />&gt;
+  - name: list(StaticSitesListOptionalParams)
+    uid: '@azure/arm-appservice.StaticSites.list|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Get all Static Sites for a subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(options?: StaticSitesListOptionalParams):
+        PagedAsyncIterableIterator<StaticSiteARMResource>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesListOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.StaticSiteARMResource|stable" />&gt;
+  - name: >-
+      listPrivateEndpointConnectionList(string, string,
+      StaticSitesGetPrivateEndpointConnectionListOptionalParams)
+    uid: '@azure/arm-appservice.StaticSites.listPrivateEndpointConnectionList|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Description for Gets the list of private endpoint connections associated
+      with a static site
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listPrivateEndpointConnectionList(resourceGroupName: string,
+        name: string, options?:
+        StaticSitesGetPrivateEndpointConnectionListOptionalParams):
+        PagedAsyncIterableIterator<RemotePrivateEndpointConnectionARMResource>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesGetPrivateEndpointConnectionListOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.RemotePrivateEndpointConnectionARMResource|stable"
+          />&gt;
+  - name: >-
+      listStaticSiteAppSettings(string, string,
+      StaticSitesListStaticSiteAppSettingsOptionalParams)
+    uid: '@azure/arm-appservice.StaticSites.listStaticSiteAppSettings|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Gets the application settings of a static site.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listStaticSiteAppSettings(resourceGroupName: string, name:
+        string, options?: StaticSitesListStaticSiteAppSettingsOptionalParams):
+        Promise<StaticSitesListStaticSiteAppSettingsResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesListStaticSiteAppSettingsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.StaticSitesListStaticSiteAppSettingsResponse|stable"
+          />&gt;
+  - name: >-
+      listStaticSiteBuildAppSettings(string, string, string,
+      StaticSitesListStaticSiteBuildAppSettingsOptionalParams)
+    uid: '@azure/arm-appservice.StaticSites.listStaticSiteBuildAppSettings|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Gets the application settings of a static site build.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listStaticSiteBuildAppSettings(resourceGroupName: string, name:
+        string, environmentName: string, options?:
+        StaticSitesListStaticSiteBuildAppSettingsOptionalParams):
+        Promise<StaticSitesListStaticSiteBuildAppSettingsResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: environmentName
+          type: string
+          description: The stage site identifier.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesListStaticSiteBuildAppSettingsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.StaticSitesListStaticSiteBuildAppSettingsResponse|stable"
+          />&gt;
+  - name: >-
+      listStaticSiteBuildFunctionAppSettings(string, string, string,
+      StaticSitesListStaticSiteBuildFunctionAppSettingsOptionalParams)
+    uid: >-
+      @azure/arm-appservice.StaticSites.listStaticSiteBuildFunctionAppSettings|stable
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Gets the application settings of a static site build.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listStaticSiteBuildFunctionAppSettings(resourceGroupName:
+        string, name: string, environmentName: string, options?:
+        StaticSitesListStaticSiteBuildFunctionAppSettingsOptionalParams):
+        Promise<StaticSitesListStaticSiteBuildFunctionAppSettingsResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: environmentName
+          type: string
+          description: The stage site identifier.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesListStaticSiteBuildFunctionAppSettingsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.StaticSitesListStaticSiteBuildFunctionAppSettingsResponse|stable"
+          />&gt;
+  - name: >-
+      listStaticSiteBuildFunctions(string, string, string,
+      StaticSitesListStaticSiteBuildFunctionsOptionalParams)
+    uid: '@azure/arm-appservice.StaticSites.listStaticSiteBuildFunctions|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Gets the functions of a particular static site build.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listStaticSiteBuildFunctions(resourceGroupName: string, name:
+        string, environmentName: string, options?:
+        StaticSitesListStaticSiteBuildFunctionsOptionalParams):
+        PagedAsyncIterableIterator<StaticSiteFunctionOverviewARMResource>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: environmentName
+          type: string
+          description: The stage site identifier.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesListStaticSiteBuildFunctionsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.StaticSiteFunctionOverviewARMResource|stable"
+          />&gt;
+  - name: >-
+      listStaticSiteBuilds(string, string,
+      StaticSitesGetStaticSiteBuildsOptionalParams)
+    uid: '@azure/arm-appservice.StaticSites.listStaticSiteBuilds|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Gets all static site builds for a particular static site.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listStaticSiteBuilds(resourceGroupName: string, name: string,
+        options?: StaticSitesGetStaticSiteBuildsOptionalParams):
+        PagedAsyncIterableIterator<StaticSiteBuildARMResource>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesGetStaticSiteBuildsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.StaticSiteBuildARMResource|stable" />&gt;
+  - name: >-
+      listStaticSiteConfiguredRoles(string, string,
+      StaticSitesListStaticSiteConfiguredRolesOptionalParams)
+    uid: '@azure/arm-appservice.StaticSites.listStaticSiteConfiguredRoles|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Lists the roles configured for the static site.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listStaticSiteConfiguredRoles(resourceGroupName: string, name:
+        string, options?:
+        StaticSitesListStaticSiteConfiguredRolesOptionalParams):
+        Promise<StaticSitesListStaticSiteConfiguredRolesResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesListStaticSiteConfiguredRolesOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.StaticSitesListStaticSiteConfiguredRolesResponse|stable"
+          />&gt;
+  - name: >-
+      listStaticSiteCustomDomains(string, string,
+      StaticSitesListStaticSiteCustomDomainsOptionalParams)
+    uid: '@azure/arm-appservice.StaticSites.listStaticSiteCustomDomains|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Description for Gets all static site custom domains for a particular
+      static site.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listStaticSiteCustomDomains(resourceGroupName: string, name:
+        string, options?: StaticSitesListStaticSiteCustomDomainsOptionalParams):
+        PagedAsyncIterableIterator<StaticSiteCustomDomainOverviewARMResource>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site resource to search in.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesListStaticSiteCustomDomainsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.StaticSiteCustomDomainOverviewARMResource|stable"
+          />&gt;
+  - name: >-
+      listStaticSiteFunctionAppSettings(string, string,
+      StaticSitesListStaticSiteFunctionAppSettingsOptionalParams)
+    uid: '@azure/arm-appservice.StaticSites.listStaticSiteFunctionAppSettings|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Gets the application settings of a static site.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listStaticSiteFunctionAppSettings(resourceGroupName: string,
+        name: string, options?:
+        StaticSitesListStaticSiteFunctionAppSettingsOptionalParams):
+        Promise<StaticSitesListStaticSiteFunctionAppSettingsResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesListStaticSiteFunctionAppSettingsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.StaticSitesListStaticSiteFunctionAppSettingsResponse|stable"
+          />&gt;
+  - name: >-
+      listStaticSiteFunctions(string, string,
+      StaticSitesListStaticSiteFunctionsOptionalParams)
+    uid: '@azure/arm-appservice.StaticSites.listStaticSiteFunctions|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Gets the functions of a static site.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listStaticSiteFunctions(resourceGroupName: string, name:
+        string, options?: StaticSitesListStaticSiteFunctionsOptionalParams):
+        PagedAsyncIterableIterator<StaticSiteFunctionOverviewARMResource>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesListStaticSiteFunctionsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.StaticSiteFunctionOverviewARMResource|stable"
+          />&gt;
+  - name: >-
+      listStaticSitesByResourceGroup(string,
+      StaticSitesGetStaticSitesByResourceGroupOptionalParams)
+    uid: '@azure/arm-appservice.StaticSites.listStaticSitesByResourceGroup|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Gets all static sites in the specified resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listStaticSitesByResourceGroup(resourceGroupName: string,
+        options?: StaticSitesGetStaticSitesByResourceGroupOptionalParams):
+        PagedAsyncIterableIterator<StaticSiteARMResource>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesGetStaticSitesByResourceGroupOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.StaticSiteARMResource|stable" />&gt;
+  - name: >-
+      listStaticSiteSecrets(string, string,
+      StaticSitesListStaticSiteSecretsOptionalParams)
+    uid: '@azure/arm-appservice.StaticSites.listStaticSiteSecrets|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Lists the secrets for an existing static site.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listStaticSiteSecrets(resourceGroupName: string, name: string,
+        options?: StaticSitesListStaticSiteSecretsOptionalParams):
+        Promise<StaticSitesListStaticSiteSecretsResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesListStaticSiteSecretsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.StaticSitesListStaticSiteSecretsResponse|stable"
+          />&gt;
+  - name: >-
+      listStaticSiteUsers(string, string, string,
+      StaticSitesListStaticSiteUsersOptionalParams)
+    uid: '@azure/arm-appservice.StaticSites.listStaticSiteUsers|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Gets the list of users of a static site.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listStaticSiteUsers(resourceGroupName: string, name: string,
+        authprovider: string, options?:
+        StaticSitesListStaticSiteUsersOptionalParams):
+        PagedAsyncIterableIterator<StaticSiteUserARMResource>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: authprovider
+          type: string
+          description: The auth provider for the users.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesListStaticSiteUsersOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.StaticSiteUserARMResource|stable" />&gt;
+  - name: >-
+      listUserProvidedFunctionAppsForStaticSite(string, string,
+      StaticSitesGetUserProvidedFunctionAppsForStaticSiteOptionalParams)
+    uid: >-
+      @azure/arm-appservice.StaticSites.listUserProvidedFunctionAppsForStaticSite|stable
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Description for Gets the details of the user provided function apps
+      registered with a static site
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listUserProvidedFunctionAppsForStaticSite(resourceGroupName:
+        string, name: string, options?:
+        StaticSitesGetUserProvidedFunctionAppsForStaticSiteOptionalParams):
+        PagedAsyncIterableIterator<StaticSiteUserProvidedFunctionAppARMResource>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesGetUserProvidedFunctionAppsForStaticSiteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.StaticSiteUserProvidedFunctionAppARMResource|stable"
+          />&gt;
+  - name: >-
+      listUserProvidedFunctionAppsForStaticSiteBuild(string, string, string,
+      StaticSitesGetUserProvidedFunctionAppsForStaticSiteBuildOptionalParams)
+    uid: >-
+      @azure/arm-appservice.StaticSites.listUserProvidedFunctionAppsForStaticSiteBuild|stable
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Description for Gets the details of the user provided function apps
+      registered with a static site
+
+      build
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function
+        listUserProvidedFunctionAppsForStaticSiteBuild(resourceGroupName:
+        string, name: string, environmentName: string, options?:
+        StaticSitesGetUserProvidedFunctionAppsForStaticSiteBuildOptionalParams):
+        PagedAsyncIterableIterator<StaticSiteUserProvidedFunctionAppARMResource>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: environmentName
+          type: string
+          description: The stage site identifier.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesGetUserProvidedFunctionAppsForStaticSiteBuildOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.StaticSiteUserProvidedFunctionAppARMResource|stable"
+          />&gt;
+  - name: >-
+      previewWorkflow(string, StaticSitesWorkflowPreviewRequest,
+      StaticSitesPreviewWorkflowOptionalParams)
+    uid: '@azure/arm-appservice.StaticSites.previewWorkflow|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Generates a preview workflow file for the static site
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function previewWorkflow(location: string,
+        staticSitesWorkflowPreviewRequest: StaticSitesWorkflowPreviewRequest,
+        options?: StaticSitesPreviewWorkflowOptionalParams):
+        Promise<StaticSitesPreviewWorkflowResponse>
+      parameters:
+        - id: location
+          type: string
+          description: Location where you plan to create the static site.
+        - id: staticSitesWorkflowPreviewRequest
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesWorkflowPreviewRequest|stable"
+            />
+          description: |-
+            A JSON representation of the
+                                                     StaticSitesWorkflowPreviewRequest properties. See example.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesPreviewWorkflowOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.StaticSitesPreviewWorkflowResponse|stable"
+          />&gt;
+  - name: >-
+      resetStaticSiteApiKey(string, string,
+      StaticSiteResetPropertiesARMResource,
+      StaticSitesResetStaticSiteApiKeyOptionalParams)
+    uid: '@azure/arm-appservice.StaticSites.resetStaticSiteApiKey|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Resets the api key for an existing static site.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function resetStaticSiteApiKey(resourceGroupName: string, name: string,
+        resetPropertiesEnvelope: StaticSiteResetPropertiesARMResource, options?:
+        StaticSitesResetStaticSiteApiKeyOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: resetPropertiesEnvelope
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSiteResetPropertiesARMResource|stable"
+            />
+          description: Static Site Reset Properties ARM resource.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesResetStaticSiteApiKeyOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      updateStaticSite(string, string, StaticSitePatchResource,
+      StaticSitesUpdateStaticSiteOptionalParams)
+    uid: '@azure/arm-appservice.StaticSites.updateStaticSite|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Description for Creates a new static site in an existing resource group,
+      or updates an existing
+
+      static site.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function updateStaticSite(resourceGroupName: string, name: string,
+        staticSiteEnvelope: StaticSitePatchResource, options?:
+        StaticSitesUpdateStaticSiteOptionalParams):
+        Promise<StaticSitesUpdateStaticSiteResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site to create or update.
+        - id: staticSiteEnvelope
+          type: <xref uid="@azure/arm-appservice.StaticSitePatchResource|stable" />
+          description: A JSON representation of the staticsite properties. See example.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesUpdateStaticSiteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.StaticSitesUpdateStaticSiteResponse|stable"
+          />&gt;
+  - name: >-
+      updateStaticSiteUser(string, string, string, string,
+      StaticSiteUserARMResource, StaticSitesUpdateStaticSiteUserOptionalParams)
+    uid: '@azure/arm-appservice.StaticSites.updateStaticSiteUser|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Updates a user entry with the listed roles
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function updateStaticSiteUser(resourceGroupName: string, name: string,
+        authprovider: string, userid: string, staticSiteUserEnvelope:
+        StaticSiteUserARMResource, options?:
+        StaticSitesUpdateStaticSiteUserOptionalParams):
+        Promise<StaticSitesUpdateStaticSiteUserResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the static site.
+        - id: authprovider
+          type: string
+          description: The auth provider for this user.
+        - id: userid
+          type: string
+          description: The user id of the user.
+        - id: staticSiteUserEnvelope
+          type: >-
+            <xref uid="@azure/arm-appservice.StaticSiteUserARMResource|stable"
+            />
+          description: A JSON representation of the StaticSiteUser properties. See example.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.StaticSitesUpdateStaticSiteUserOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.StaticSitesUpdateStaticSiteUserResponse|stable"
+          />&gt;

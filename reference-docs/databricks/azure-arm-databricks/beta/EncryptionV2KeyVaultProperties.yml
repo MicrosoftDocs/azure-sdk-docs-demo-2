@@ -1,0 +1,50 @@
+### YamlMime:TSType
+name: EncryptionV2KeyVaultProperties
+uid: '@azure/arm-databricks.EncryptionV2KeyVaultProperties|beta'
+package: '@azure/arm-databricks|beta'
+summary: Key Vault input properties for encryption.
+fullName: EncryptionV2KeyVaultProperties
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: keyName
+    uid: '@azure/arm-databricks.EncryptionV2KeyVaultProperties.keyName|beta'
+    package: '@azure/arm-databricks|beta'
+    summary: The name of KeyVault key.
+    fullName: keyName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'keyName: string'
+      return:
+        description: ''
+        type: string
+  - name: keyVaultUri
+    uid: '@azure/arm-databricks.EncryptionV2KeyVaultProperties.keyVaultUri|beta'
+    package: '@azure/arm-databricks|beta'
+    summary: The Uri of KeyVault.
+    fullName: keyVaultUri
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'keyVaultUri: string'
+      return:
+        description: ''
+        type: string
+  - name: keyVersion
+    uid: '@azure/arm-databricks.EncryptionV2KeyVaultProperties.keyVersion|beta'
+    package: '@azure/arm-databricks|beta'
+    summary: The version of KeyVault key.
+    fullName: keyVersion
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'keyVersion: string'
+      return:
+        description: ''
+        type: string

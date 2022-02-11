@@ -1,0 +1,50 @@
+### YamlMime:TSType
+name: ScopedRule
+uid: '@azure-rest/purview-account.ScopedRule|beta'
+package: '@azure-rest/purview-account|beta'
+summary: ''
+fullName: ScopedRule
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: bindingUrl
+    uid: '@azure-rest/purview-account.ScopedRule.bindingUrl|beta'
+    package: '@azure-rest/purview-account|beta'
+    summary: ''
+    fullName: bindingUrl
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'bindingUrl: string'
+      return:
+        description: ''
+        type: string
+  - name: rules
+    uid: '@azure-rest/purview-account.ScopedRule.rules|beta'
+    package: '@azure-rest/purview-account|beta'
+    summary: ''
+    fullName: rules
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rules?: Array<Rule>'
+      return:
+        description: ''
+        type: Array&lt;<xref uid="@azure-rest/purview-account.Rule|beta" />&gt;
+  - name: storeType
+    uid: '@azure-rest/purview-account.ScopedRule.storeType|beta'
+    package: '@azure-rest/purview-account|beta'
+    summary: ''
+    fullName: storeType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'storeType: string'
+      return:
+        description: ''
+        type: string

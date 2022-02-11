@@ -1,0 +1,71 @@
+### YamlMime:TSType
+name: MetricsResponseSeriesItem
+uid: '@azure/arm-cdn.MetricsResponseSeriesItem|stable'
+package: '@azure/arm-cdn|stable'
+summary: ''
+fullName: MetricsResponseSeriesItem
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: data
+    uid: '@azure/arm-cdn.MetricsResponseSeriesItem.data|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: ''
+    fullName: data
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        data?:
+        Components1Gs0LlpSchemasMetricsresponsePropertiesSeriesItemsPropertiesDataItems[]
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-cdn.Components1Gs0LlpSchemasMetricsresponsePropertiesSeriesItemsPropertiesDataItems|stable"
+          />[]
+  - name: groups
+    uid: '@azure/arm-cdn.MetricsResponseSeriesItem.groups|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: ''
+    fullName: groups
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'groups?: MetricsResponseSeriesPropertiesItemsItem[]'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-cdn.MetricsResponseSeriesPropertiesItemsItem|stable"
+          />[]
+  - name: metric
+    uid: '@azure/arm-cdn.MetricsResponseSeriesItem.metric|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: ''
+    fullName: metric
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'metric?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: unit
+    uid: '@azure/arm-cdn.MetricsResponseSeriesItem.unit|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: ''
+    fullName: unit
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'unit?: MetricsResponseSeriesItemUnit'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-cdn.MetricsResponseSeriesItemUnit|stable" />

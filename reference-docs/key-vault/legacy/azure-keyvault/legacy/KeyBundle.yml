@@ -1,0 +1,63 @@
+### YamlMime:TSType
+name: KeyBundle
+uid: azure-keyvault.KeyBundle|legacy
+package: azure-keyvault|legacy
+summary: ''
+fullName: KeyBundle
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: attributes
+    uid: azure-keyvault.KeyBundle.attributes|legacy
+    package: azure-keyvault|legacy
+    summary: ''
+    fullName: attributes
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'attributes?: KeyAttributes'
+      return:
+        description: ''
+        type: <xref uid="azure-keyvault.KeyAttributes|legacy" />
+  - name: key
+    uid: azure-keyvault.KeyBundle.key|legacy
+    package: azure-keyvault|legacy
+    summary: ''
+    fullName: key
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'key?: JsonWebKey'
+      return:
+        description: ''
+        type: <xref uid="azure-keyvault.JsonWebKey|legacy" />
+  - name: managed
+    uid: azure-keyvault.KeyBundle.managed|legacy
+    package: azure-keyvault|legacy
+    summary: ''
+    fullName: managed
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'managed?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: tags
+    uid: azure-keyvault.KeyBundle.tags|legacy
+    package: azure-keyvault|legacy
+    summary: ''
+    fullName: tags
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        description: ''
+        type: '[key: string]\: string'

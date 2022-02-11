@@ -1,0 +1,41 @@
+### YamlMime:TSType
+name: GlossaryListRelatedTerms
+uid: '@azure-rest/purview-catalog.GlossaryListRelatedTerms|beta'
+package: '@azure-rest/purview-catalog|beta'
+summary: ''
+fullName: GlossaryListRelatedTerms
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: get(GlossaryListRelatedTermsParameters)
+    uid: '@azure-rest/purview-catalog.GlossaryListRelatedTerms.get|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: >-
+      Get all related terms for a specific term by its GUID. Limit, offset, and
+      sort parameters are currently not being enabled and won't work even they
+      are passed.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(options?: GlossaryListRelatedTermsParameters):
+        Promise<GlossaryListRelatedTerms200Response |
+        GlossaryListRelatedTermsdefaultResponse>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure-rest/purview-catalog.GlossaryListRelatedTermsParameters|beta"
+            />
+          description: ''
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure-rest/purview-catalog.GlossaryListRelatedTerms200Response|beta"
+          /> | <xref
+          uid="@azure-rest/purview-catalog.GlossaryListRelatedTermsdefaultResponse|beta"
+          />&gt;

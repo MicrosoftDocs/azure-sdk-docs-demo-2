@@ -1,0 +1,52 @@
+### YamlMime:TSType
+name: SuggestedTagAndRegionQuery
+uid: >-
+  @azure/cognitiveservices-customvision-training.SuggestedTagAndRegionQuery|stable
+package: '@azure/cognitiveservices-customvision-training|stable'
+summary: >-
+  The array of result images and token containing session and continuation Ids
+  for the next query.
+fullName: SuggestedTagAndRegionQuery
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: results
+    uid: >-
+      @azure/cognitiveservices-customvision-training.SuggestedTagAndRegionQuery.results|stable
+    package: '@azure/cognitiveservices-customvision-training|stable'
+    summary: >-
+      Result of a suggested tags and regions request of the untagged image.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: results
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'results?: StoredSuggestedTagAndRegion[]'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/cognitiveservices-customvision-training.StoredSuggestedTagAndRegion|stable"
+          />[]
+  - name: token
+    uid: >-
+      @azure/cognitiveservices-customvision-training.SuggestedTagAndRegionQuery.token|stable
+    package: '@azure/cognitiveservices-customvision-training|stable'
+    summary: Contains properties we need to fetch suggested tags for.
+    fullName: token
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'token?: SuggestedTagAndRegionQueryToken'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/cognitiveservices-customvision-training.SuggestedTagAndRegionQueryToken|stable"
+          />

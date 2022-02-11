@@ -1,0 +1,101 @@
+### YamlMime:TSType
+name: FormObjectField
+uid: '@azure/ai-form-recognizer.FormObjectField|stable'
+package: '@azure/ai-form-recognizer|stable'
+summary: A form field with a key-value map (an "object") as a value.
+fullName: FormObjectField
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: confidence
+    uid: '@azure/ai-form-recognizer.FormObjectField.confidence|stable'
+    package: '@azure/ai-form-recognizer|stable'
+    summary: |-
+      The sevice's confidence (expressed as a number between zero and one) in
+      the correctness of the field value.
+    fullName: confidence
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'confidence?: number'
+      return:
+        description: ''
+        type: number
+  - name: labelData
+    uid: '@azure/ai-form-recognizer.FormObjectField.labelData|stable'
+    package: '@azure/ai-form-recognizer|stable'
+    summary: >-
+      Contains the recognized field label's text, bounding box, and field
+      elements.
+    fullName: labelData
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'labelData?: FieldData'
+      return:
+        description: ''
+        type: <xref uid="@azure/ai-form-recognizer.FieldData|stable" />
+  - name: name
+    uid: '@azure/ai-form-recognizer.FormObjectField.name|stable'
+    package: '@azure/ai-form-recognizer|stable'
+    summary: A user-defined label for the field.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: string'
+      return:
+        description: ''
+        type: string
+  - name: value
+    uid: '@azure/ai-form-recognizer.FormObjectField.value|stable'
+    package: '@azure/ai-form-recognizer|stable'
+    summary: |-
+      The recognized object structure of the field, represented as a JavaScript
+      object with the nested fields' names as properties that store their
+      values.
+    fullName: value
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: Record<string, FormField>'
+      return:
+        description: ''
+        type: >-
+          Record&lt;string, <xref
+          uid="@azure/ai-form-recognizer.FormField|stable" />&gt;
+  - name: valueData
+    uid: '@azure/ai-form-recognizer.FormObjectField.valueData|stable'
+    package: '@azure/ai-form-recognizer|stable'
+    summary: >-
+      Contains the recognized field value's text, bounding box, and field
+      elements.
+    fullName: valueData
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'valueData?: FieldData'
+      return:
+        description: ''
+        type: <xref uid="@azure/ai-form-recognizer.FieldData|stable" />
+  - name: valueType
+    uid: '@azure/ai-form-recognizer.FormObjectField.valueType|stable'
+    package: '@azure/ai-form-recognizer|stable'
+    summary: The type of this field's value - "object"
+    fullName: valueType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'valueType: "object"'
+      return:
+        description: ''
+        type: '"object"'
+extends: <xref uid="@azure/ai-form-recognizer.FormFieldCommon|stable" />

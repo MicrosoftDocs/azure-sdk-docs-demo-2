@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: KnowledgebaseGetDetailsResponse
+uid: '@azure/cognitiveservices-qnamaker.KnowledgebaseGetDetailsResponse|stable'
+package: '@azure/cognitiveservices-qnamaker|stable'
+summary: Contains response data for the getDetails operation.
+fullName: KnowledgebaseGetDetailsResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type KnowledgebaseGetDetailsResponse = KnowledgebaseDTO & { _response:
+  HttpResponse & { bodyAsText: string, parsedBody: KnowledgebaseDTO } }

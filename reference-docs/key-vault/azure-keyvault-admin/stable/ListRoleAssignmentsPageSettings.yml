@@ -1,0 +1,27 @@
+### YamlMime:TSType
+name: ListRoleAssignmentsPageSettings
+uid: '@azure/keyvault-admin.ListRoleAssignmentsPageSettings|stable'
+package: '@azure/keyvault-admin|stable'
+summary: Arguments for retrieving the next page of search results.
+fullName: ListRoleAssignmentsPageSettings
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: continuationToken
+    uid: >-
+      @azure/keyvault-admin.ListRoleAssignmentsPageSettings.continuationToken|stable
+    package: '@azure/keyvault-admin|stable'
+    summary: |-
+      A token used for retrieving the next page of results when the server
+      enforces pagination.
+    fullName: continuationToken
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'continuationToken?: string'
+      return:
+        description: ''
+        type: string

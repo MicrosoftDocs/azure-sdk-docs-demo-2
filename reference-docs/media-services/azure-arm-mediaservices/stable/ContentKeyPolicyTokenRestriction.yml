@@ -1,0 +1,20 @@
+### YamlMime:TSTypeAlias
+name: ContentKeyPolicyTokenRestriction
+uid: '@azure/arm-mediaservices.ContentKeyPolicyTokenRestriction|stable'
+package: '@azure/arm-mediaservices|stable'
+summary: >-
+  Represents a token restriction. Provided token must match these requirements
+  for successful license or key delivery.
+fullName: ContentKeyPolicyTokenRestriction
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type ContentKeyPolicyTokenRestriction = ContentKeyPolicyRestriction & {
+  alternateVerificationKeys?: ContentKeyPolicyRestrictionTokenKeyUnion[],
+  audience: string, issuer: string, odataType:
+  "#Microsoft.Media.ContentKeyPolicyTokenRestriction",
+  openIdConnectDiscoveryDocument?: undefined | string, primaryVerificationKey:
+  ContentKeyPolicyRestrictionTokenKeyUnion, requiredClaims?:
+  ContentKeyPolicyTokenClaim[], restrictionTokenType:
+  ContentKeyPolicyRestrictionTokenType }

@@ -1,0 +1,66 @@
+### YamlMime:TSType
+name: Template
+uid: '@azure/arm-appservice.Template|stable'
+package: '@azure/arm-appservice|stable'
+summary: |-
+  Container App versioned application definition.
+  Defines the desired state of an immutable revision.
+  Any changes to this section Will result in a new revision being created
+fullName: Template
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: containers
+    uid: '@azure/arm-appservice.Template.containers|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: List of container definitions for the Container App.
+    fullName: containers
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'containers?: Container[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.Container|stable" />[]
+  - name: dapr
+    uid: '@azure/arm-appservice.Template.dapr|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Dapr configuration for the Container App.
+    fullName: dapr
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dapr?: Dapr'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.Dapr|stable" />
+  - name: revisionSuffix
+    uid: '@azure/arm-appservice.Template.revisionSuffix|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: User friendly suffix that is appended to the revision name
+    fullName: revisionSuffix
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'revisionSuffix?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: scale
+    uid: '@azure/arm-appservice.Template.scale|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Scaling properties for the Container App.
+    fullName: scale
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'scale?: Scale'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.Scale|stable" />

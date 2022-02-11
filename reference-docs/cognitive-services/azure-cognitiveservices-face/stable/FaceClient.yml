@@ -1,0 +1,228 @@
+### YamlMime:TSType
+name: FaceClient
+uid: '@azure/cognitiveservices-face.FaceClient|stable'
+package: '@azure/cognitiveservices-face|stable'
+summary: ''
+fullName: FaceClient
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: FaceClient(ServiceClientCredentials, string, msRest.ServiceClientOptions)
+    uid: '@azure/cognitiveservices-face.FaceClient.constructor|stable'
+    package: '@azure/cognitiveservices-face|stable'
+    summary: Initializes a new instance of the FaceClient class.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        new FaceClient(credentials: ServiceClientCredentials, endpoint: string,
+        options?: msRest.ServiceClientOptions)
+      parameters:
+        - id: credentials
+          type: ServiceClientCredentials
+          description: >-
+            Subscription credentials which uniquely identify client
+            subscription.
+        - id: endpoint
+          type: string
+          description: >-
+            Supported Cognitive Services endpoints (protocol and hostname, for
+            example:
+
+            https://westus.api.cognitive.microsoft.com).
+        - id: options
+          type: msRest.ServiceClientOptions
+          description: ''
+properties:
+  - name: credentials
+    uid: '@azure/cognitiveservices-face.FaceClient.credentials|stable'
+    package: '@azure/cognitiveservices-face|stable'
+    summary: ''
+    fullName: credentials
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'credentials: ServiceClientCredentials'
+      return:
+        description: ''
+        type: ServiceClientCredentials
+  - name: endpoint
+    uid: '@azure/cognitiveservices-face.FaceClient.endpoint|stable'
+    package: '@azure/cognitiveservices-face|stable'
+    summary: ''
+    fullName: endpoint
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'endpoint: string'
+      return:
+        description: ''
+        type: string
+  - name: face
+    uid: '@azure/cognitiveservices-face.FaceClient.face|stable'
+    package: '@azure/cognitiveservices-face|stable'
+    summary: ''
+    fullName: face
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'face: Face'
+      return:
+        description: ''
+        type: <xref uid="@azure/cognitiveservices-face.Face|stable" />
+  - name: faceList
+    uid: '@azure/cognitiveservices-face.FaceClient.faceList|stable'
+    package: '@azure/cognitiveservices-face|stable'
+    summary: ''
+    fullName: faceList
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'faceList: FaceListOperations'
+      return:
+        description: ''
+        type: <xref uid="@azure/cognitiveservices-face.FaceListOperations|stable" />
+  - name: largeFaceList
+    uid: '@azure/cognitiveservices-face.FaceClient.largeFaceList|stable'
+    package: '@azure/cognitiveservices-face|stable'
+    summary: ''
+    fullName: largeFaceList
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'largeFaceList: LargeFaceListOperations'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/cognitiveservices-face.LargeFaceListOperations|stable" />
+  - name: largePersonGroup
+    uid: '@azure/cognitiveservices-face.FaceClient.largePersonGroup|stable'
+    package: '@azure/cognitiveservices-face|stable'
+    summary: ''
+    fullName: largePersonGroup
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'largePersonGroup: LargePersonGroupOperations'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/cognitiveservices-face.LargePersonGroupOperations|stable"
+          />
+  - name: largePersonGroupPerson
+    uid: '@azure/cognitiveservices-face.FaceClient.largePersonGroupPerson|stable'
+    package: '@azure/cognitiveservices-face|stable'
+    summary: ''
+    fullName: largePersonGroupPerson
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'largePersonGroupPerson: LargePersonGroupPerson'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/cognitiveservices-face.LargePersonGroupPerson|stable" />
+  - name: personGroup
+    uid: '@azure/cognitiveservices-face.FaceClient.personGroup|stable'
+    package: '@azure/cognitiveservices-face|stable'
+    summary: ''
+    fullName: personGroup
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'personGroup: PersonGroupOperations'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/cognitiveservices-face.PersonGroupOperations|stable"
+          />
+  - name: personGroupPerson
+    uid: '@azure/cognitiveservices-face.FaceClient.personGroupPerson|stable'
+    package: '@azure/cognitiveservices-face|stable'
+    summary: ''
+    fullName: personGroupPerson
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'personGroupPerson: PersonGroupPerson'
+      return:
+        description: ''
+        type: <xref uid="@azure/cognitiveservices-face.PersonGroupPerson|stable" />
+  - name: snapshot
+    uid: '@azure/cognitiveservices-face.FaceClient.snapshot|stable'
+    package: '@azure/cognitiveservices-face|stable'
+    summary: ''
+    fullName: snapshot
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'snapshot: SnapshotOperations'
+      return:
+        description: ''
+        type: <xref uid="@azure/cognitiveservices-face.SnapshotOperations|stable" />
+inheritedMethods:
+  - name: >-
+      sendOperationRequest(OperationArguments, OperationSpec,
+      ServiceCallback<any>)
+    uid: '@azure/cognitiveservices-face.FaceClient.sendOperationRequest|stable'
+    package: '@azure/cognitiveservices-face|stable'
+    summary: Send an HTTP request that is populated using the provided OperationSpec.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function sendOperationRequest(operationArguments: OperationArguments,
+        operationSpec: OperationSpec, callback?: ServiceCallback<any>):
+        Promise<RestResponse>
+      parameters:
+        - id: operationArguments
+          type: OperationArguments
+          description: >-
+            The arguments that the HTTP request's templated values will be
+            populated from.
+        - id: operationSpec
+          type: OperationSpec
+          description: The OperationSpec to use to populate the httpRequest.
+        - id: callback
+          type: ServiceCallback&lt;any&gt;
+          description: |
+            The callback to call when the response is received.
+      return:
+        description: ''
+        type: Promise&lt;RestResponse&gt;
+  - name: sendRequest(RequestPrepareOptions | WebResourceLike)
+    uid: '@azure/cognitiveservices-face.FaceClient.sendRequest|stable'
+    package: '@azure/cognitiveservices-face|stable'
+    summary: Send the provided httpRequest.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function sendRequest(options: RequestPrepareOptions | WebResourceLike):
+        Promise<HttpOperationResponse>
+      parameters:
+        - id: options
+          type: RequestPrepareOptions | WebResourceLike
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;HttpOperationResponse&gt;
+extends: <xref uid="@azure/cognitiveservices-face.FaceClientContext|stable" />

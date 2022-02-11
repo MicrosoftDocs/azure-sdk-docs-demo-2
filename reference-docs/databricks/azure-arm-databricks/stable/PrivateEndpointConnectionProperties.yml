@@ -1,0 +1,65 @@
+### YamlMime:TSType
+name: PrivateEndpointConnectionProperties
+uid: '@azure/arm-databricks.PrivateEndpointConnectionProperties|stable'
+package: '@azure/arm-databricks|stable'
+summary: The properties of a private endpoint connection
+fullName: PrivateEndpointConnectionProperties
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: privateEndpoint
+    uid: >-
+      @azure/arm-databricks.PrivateEndpointConnectionProperties.privateEndpoint|stable
+    package: '@azure/arm-databricks|stable'
+    summary: Private endpoint. Private endpoint
+    fullName: privateEndpoint
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'privateEndpoint?: PrivateEndpoint'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-databricks.PrivateEndpoint|stable" />
+  - name: privateLinkServiceConnectionState
+    uid: >-
+      @azure/arm-databricks.PrivateEndpointConnectionProperties.privateLinkServiceConnectionState|stable
+    package: '@azure/arm-databricks|stable'
+    summary: >-
+      Private link service service connection state. Private endpoint connection
+      state
+    fullName: privateLinkServiceConnectionState
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'privateLinkServiceConnectionState: PrivateLinkServiceConnectionState'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-databricks.PrivateLinkServiceConnectionState|stable"
+          />
+  - name: provisioningState
+    uid: >-
+      @azure/arm-databricks.PrivateEndpointConnectionProperties.provisioningState|stable
+    package: '@azure/arm-databricks|stable'
+    summary: >-
+      Provisioning state of the private endpoint connection. Possible values
+      include: 'Succeeded',
+
+      'Creating', 'Updating', 'Deleting', 'Failed'
+    fullName: provisioningState
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'provisioningState?: PrivateEndpointConnectionProvisioningState'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-databricks.PrivateEndpointConnectionProvisioningState|stable"
+          />

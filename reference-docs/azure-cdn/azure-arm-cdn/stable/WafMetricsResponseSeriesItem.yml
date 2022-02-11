@@ -1,0 +1,71 @@
+### YamlMime:TSType
+name: WafMetricsResponseSeriesItem
+uid: '@azure/arm-cdn.WafMetricsResponseSeriesItem|stable'
+package: '@azure/arm-cdn|stable'
+summary: ''
+fullName: WafMetricsResponseSeriesItem
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: data
+    uid: '@azure/arm-cdn.WafMetricsResponseSeriesItem.data|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: ''
+    fullName: data
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        data?:
+        Components18OrqelSchemasWafmetricsresponsePropertiesSeriesItemsPropertiesDataItems[]
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-cdn.Components18OrqelSchemasWafmetricsresponsePropertiesSeriesItemsPropertiesDataItems|stable"
+          />[]
+  - name: groups
+    uid: '@azure/arm-cdn.WafMetricsResponseSeriesItem.groups|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: ''
+    fullName: groups
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'groups?: WafMetricsResponseSeriesPropertiesItemsItem[]'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-cdn.WafMetricsResponseSeriesPropertiesItemsItem|stable"
+          />[]
+  - name: metric
+    uid: '@azure/arm-cdn.WafMetricsResponseSeriesItem.metric|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: ''
+    fullName: metric
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'metric?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: unit
+    uid: '@azure/arm-cdn.WafMetricsResponseSeriesItem.unit|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: ''
+    fullName: unit
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'unit?: undefined | "count"'
+      return:
+        description: ''
+        type: undefined | "count"

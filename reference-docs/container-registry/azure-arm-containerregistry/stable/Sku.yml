@@ -1,0 +1,41 @@
+### YamlMime:TSType
+name: Sku
+uid: '@azure/arm-containerregistry.Sku|stable'
+package: '@azure/arm-containerregistry|stable'
+summary: The SKU of a container registry.
+fullName: Sku
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: name
+    uid: '@azure/arm-containerregistry.Sku.name|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: The SKU name of the container registry. Required for registry creation.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: SkuName'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-containerregistry.SkuName|stable" />
+  - name: tier
+    uid: '@azure/arm-containerregistry.Sku.tier|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: >-
+      The SKU tier based on the SKU name.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: tier
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tier?: SkuTier'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-containerregistry.SkuTier|stable" />

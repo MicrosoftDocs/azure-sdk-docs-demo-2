@@ -1,0 +1,41 @@
+### YamlMime:TSType
+name: Edm
+uid: '@azure/data-tables.Edm|stable'
+package: '@azure/data-tables|stable'
+summary: Entity Data Model representation for an entity property.
+fullName: Edm<T>
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: type
+    uid: '@azure/data-tables.Edm.type|stable'
+    package: '@azure/data-tables|stable'
+    summary: The type of the entity property
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: T'
+      return:
+        description: ''
+        type: T
+  - name: value
+    uid: '@azure/data-tables.Edm.value|stable'
+    package: '@azure/data-tables|stable'
+    summary: The value of the entity property
+    fullName: value
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        value: T extends "Binary" ? string : T extends "Boolean" ? boolean : T
+        extends "Double" ? number : T extends "Int32" ? number : string
+      return:
+        description: ''
+        type: >-
+          T extends "Binary" ? string : T extends "Boolean" ? boolean : T
+          extends "Double" ? number : T extends "Int32" ? number : string

@@ -1,0 +1,625 @@
+### YamlMime:TSType
+name: ExpressRouteCircuits
+uid: '@azure/arm-network.ExpressRouteCircuits|stable'
+package: '@azure/arm-network|stable'
+summary: Interface representing a ExpressRouteCircuits.
+fullName: ExpressRouteCircuits
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      beginCreateOrUpdate(string, string, ExpressRouteCircuit,
+      ExpressRouteCircuitsCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-network.ExpressRouteCircuits.beginCreateOrUpdate|stable'
+    package: '@azure/arm-network|stable'
+    summary: Creates or updates an express route circuit.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string, circuitName:
+        string, parameters: ExpressRouteCircuit, options?:
+        ExpressRouteCircuitsCreateOrUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<ExpressRouteCircuitsCreateOrUpdateResponse>,
+        ExpressRouteCircuitsCreateOrUpdateResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: circuitName
+          type: string
+          description: The name of the circuit.
+        - id: parameters
+          type: <xref uid="@azure/arm-network.ExpressRouteCircuit|stable" />
+          description: >-
+            Parameters supplied to the create or update express route circuit
+            operation.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ExpressRouteCircuitsCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-network.ExpressRouteCircuitsCreateOrUpdateResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-network.ExpressRouteCircuitsCreateOrUpdateResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginCreateOrUpdateAndWait(string, string, ExpressRouteCircuit,
+      ExpressRouteCircuitsCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-network.ExpressRouteCircuits.beginCreateOrUpdateAndWait|stable'
+    package: '@azure/arm-network|stable'
+    summary: Creates or updates an express route circuit.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdateAndWait(resourceGroupName: string,
+        circuitName: string, parameters: ExpressRouteCircuit, options?:
+        ExpressRouteCircuitsCreateOrUpdateOptionalParams):
+        Promise<ExpressRouteCircuitsCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: circuitName
+          type: string
+          description: The name of the circuit.
+        - id: parameters
+          type: <xref uid="@azure/arm-network.ExpressRouteCircuit|stable" />
+          description: >-
+            Parameters supplied to the create or update express route circuit
+            operation.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ExpressRouteCircuitsCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.ExpressRouteCircuitsCreateOrUpdateResponse|stable"
+          />&gt;
+  - name: beginDelete(string, string, ExpressRouteCircuitsDeleteOptionalParams)
+    uid: '@azure/arm-network.ExpressRouteCircuits.beginDelete|stable'
+    package: '@azure/arm-network|stable'
+    summary: Deletes the specified express route circuit.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDelete(resourceGroupName: string, circuitName: string,
+        options?: ExpressRouteCircuitsDeleteOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: circuitName
+          type: string
+          description: The name of the express route circuit.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ExpressRouteCircuitsDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: >-
+      beginDeleteAndWait(string, string,
+      ExpressRouteCircuitsDeleteOptionalParams)
+    uid: '@azure/arm-network.ExpressRouteCircuits.beginDeleteAndWait|stable'
+    package: '@azure/arm-network|stable'
+    summary: Deletes the specified express route circuit.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteAndWait(resourceGroupName: string, circuitName:
+        string, options?: ExpressRouteCircuitsDeleteOptionalParams):
+        Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: circuitName
+          type: string
+          description: The name of the express route circuit.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ExpressRouteCircuitsDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      beginListArpTable(string, string, string, string,
+      ExpressRouteCircuitsListArpTableOptionalParams)
+    uid: '@azure/arm-network.ExpressRouteCircuits.beginListArpTable|stable'
+    package: '@azure/arm-network|stable'
+    summary: >-
+      Gets the currently advertised ARP table associated with the express route
+      circuit in a resource
+
+      group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginListArpTable(resourceGroupName: string, circuitName:
+        string, peeringName: string, devicePath: string, options?:
+        ExpressRouteCircuitsListArpTableOptionalParams):
+        Promise<PollerLike<PollOperationState<ExpressRouteCircuitsListArpTableResponse>,
+        ExpressRouteCircuitsListArpTableResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: circuitName
+          type: string
+          description: The name of the express route circuit.
+        - id: peeringName
+          type: string
+          description: The name of the peering.
+        - id: devicePath
+          type: string
+          description: The path of the device.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ExpressRouteCircuitsListArpTableOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-network.ExpressRouteCircuitsListArpTableResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-network.ExpressRouteCircuitsListArpTableResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginListArpTableAndWait(string, string, string, string,
+      ExpressRouteCircuitsListArpTableOptionalParams)
+    uid: '@azure/arm-network.ExpressRouteCircuits.beginListArpTableAndWait|stable'
+    package: '@azure/arm-network|stable'
+    summary: >-
+      Gets the currently advertised ARP table associated with the express route
+      circuit in a resource
+
+      group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginListArpTableAndWait(resourceGroupName: string,
+        circuitName: string, peeringName: string, devicePath: string, options?:
+        ExpressRouteCircuitsListArpTableOptionalParams):
+        Promise<ExpressRouteCircuitsListArpTableResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: circuitName
+          type: string
+          description: The name of the express route circuit.
+        - id: peeringName
+          type: string
+          description: The name of the peering.
+        - id: devicePath
+          type: string
+          description: The path of the device.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ExpressRouteCircuitsListArpTableOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.ExpressRouteCircuitsListArpTableResponse|stable"
+          />&gt;
+  - name: >-
+      beginListRoutesTable(string, string, string, string,
+      ExpressRouteCircuitsListRoutesTableOptionalParams)
+    uid: '@azure/arm-network.ExpressRouteCircuits.beginListRoutesTable|stable'
+    package: '@azure/arm-network|stable'
+    summary: >-
+      Gets the currently advertised routes table associated with the express
+      route circuit in a resource
+
+      group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginListRoutesTable(resourceGroupName: string, circuitName:
+        string, peeringName: string, devicePath: string, options?:
+        ExpressRouteCircuitsListRoutesTableOptionalParams):
+        Promise<PollerLike<PollOperationState<ExpressRouteCircuitsListRoutesTableResponse>,
+        ExpressRouteCircuitsListRoutesTableResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: circuitName
+          type: string
+          description: The name of the express route circuit.
+        - id: peeringName
+          type: string
+          description: The name of the peering.
+        - id: devicePath
+          type: string
+          description: The path of the device.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ExpressRouteCircuitsListRoutesTableOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-network.ExpressRouteCircuitsListRoutesTableResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-network.ExpressRouteCircuitsListRoutesTableResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginListRoutesTableAndWait(string, string, string, string,
+      ExpressRouteCircuitsListRoutesTableOptionalParams)
+    uid: '@azure/arm-network.ExpressRouteCircuits.beginListRoutesTableAndWait|stable'
+    package: '@azure/arm-network|stable'
+    summary: >-
+      Gets the currently advertised routes table associated with the express
+      route circuit in a resource
+
+      group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginListRoutesTableAndWait(resourceGroupName: string,
+        circuitName: string, peeringName: string, devicePath: string, options?:
+        ExpressRouteCircuitsListRoutesTableOptionalParams):
+        Promise<ExpressRouteCircuitsListRoutesTableResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: circuitName
+          type: string
+          description: The name of the express route circuit.
+        - id: peeringName
+          type: string
+          description: The name of the peering.
+        - id: devicePath
+          type: string
+          description: The path of the device.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ExpressRouteCircuitsListRoutesTableOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.ExpressRouteCircuitsListRoutesTableResponse|stable"
+          />&gt;
+  - name: >-
+      beginListRoutesTableSummary(string, string, string, string,
+      ExpressRouteCircuitsListRoutesTableSummaryOptionalParams)
+    uid: '@azure/arm-network.ExpressRouteCircuits.beginListRoutesTableSummary|stable'
+    package: '@azure/arm-network|stable'
+    summary: >-
+      Gets the currently advertised routes table summary associated with the
+      express route circuit in a
+
+      resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginListRoutesTableSummary(resourceGroupName: string,
+        circuitName: string, peeringName: string, devicePath: string, options?:
+        ExpressRouteCircuitsListRoutesTableSummaryOptionalParams):
+        Promise<PollerLike<PollOperationState<ExpressRouteCircuitsListRoutesTableSummaryResponse>,
+        ExpressRouteCircuitsListRoutesTableSummaryResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: circuitName
+          type: string
+          description: The name of the express route circuit.
+        - id: peeringName
+          type: string
+          description: The name of the peering.
+        - id: devicePath
+          type: string
+          description: The path of the device.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ExpressRouteCircuitsListRoutesTableSummaryOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-network.ExpressRouteCircuitsListRoutesTableSummaryResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-network.ExpressRouteCircuitsListRoutesTableSummaryResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginListRoutesTableSummaryAndWait(string, string, string, string,
+      ExpressRouteCircuitsListRoutesTableSummaryOptionalParams)
+    uid: >-
+      @azure/arm-network.ExpressRouteCircuits.beginListRoutesTableSummaryAndWait|stable
+    package: '@azure/arm-network|stable'
+    summary: >-
+      Gets the currently advertised routes table summary associated with the
+      express route circuit in a
+
+      resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginListRoutesTableSummaryAndWait(resourceGroupName: string,
+        circuitName: string, peeringName: string, devicePath: string, options?:
+        ExpressRouteCircuitsListRoutesTableSummaryOptionalParams):
+        Promise<ExpressRouteCircuitsListRoutesTableSummaryResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: circuitName
+          type: string
+          description: The name of the express route circuit.
+        - id: peeringName
+          type: string
+          description: The name of the peering.
+        - id: devicePath
+          type: string
+          description: The path of the device.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ExpressRouteCircuitsListRoutesTableSummaryOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.ExpressRouteCircuitsListRoutesTableSummaryResponse|stable"
+          />&gt;
+  - name: get(string, string, ExpressRouteCircuitsGetOptionalParams)
+    uid: '@azure/arm-network.ExpressRouteCircuits.get|stable'
+    package: '@azure/arm-network|stable'
+    summary: Gets information about the specified express route circuit.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, circuitName: string, options?:
+        ExpressRouteCircuitsGetOptionalParams):
+        Promise<ExpressRouteCircuitsGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: circuitName
+          type: string
+          description: The name of express route circuit.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ExpressRouteCircuitsGetOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.ExpressRouteCircuitsGetResponse|stable" />&gt;
+  - name: >-
+      getPeeringStats(string, string, string,
+      ExpressRouteCircuitsGetPeeringStatsOptionalParams)
+    uid: '@azure/arm-network.ExpressRouteCircuits.getPeeringStats|stable'
+    package: '@azure/arm-network|stable'
+    summary: Gets all stats from an express route circuit in a resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getPeeringStats(resourceGroupName: string, circuitName: string,
+        peeringName: string, options?:
+        ExpressRouteCircuitsGetPeeringStatsOptionalParams):
+        Promise<ExpressRouteCircuitsGetPeeringStatsResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: circuitName
+          type: string
+          description: The name of the express route circuit.
+        - id: peeringName
+          type: string
+          description: The name of the peering.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ExpressRouteCircuitsGetPeeringStatsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.ExpressRouteCircuitsGetPeeringStatsResponse|stable"
+          />&gt;
+  - name: getStats(string, string, ExpressRouteCircuitsGetStatsOptionalParams)
+    uid: '@azure/arm-network.ExpressRouteCircuits.getStats|stable'
+    package: '@azure/arm-network|stable'
+    summary: Gets all the stats from an express route circuit in a resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getStats(resourceGroupName: string, circuitName: string,
+        options?: ExpressRouteCircuitsGetStatsOptionalParams):
+        Promise<ExpressRouteCircuitsGetStatsResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: circuitName
+          type: string
+          description: The name of the express route circuit.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ExpressRouteCircuitsGetStatsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.ExpressRouteCircuitsGetStatsResponse|stable"
+          />&gt;
+  - name: list(string, ExpressRouteCircuitsListOptionalParams)
+    uid: '@azure/arm-network.ExpressRouteCircuits.list|stable'
+    package: '@azure/arm-network|stable'
+    summary: Gets all the express route circuits in a resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, options?:
+        ExpressRouteCircuitsListOptionalParams):
+        PagedAsyncIterableIterator<ExpressRouteCircuit>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ExpressRouteCircuitsListOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-network.ExpressRouteCircuit|stable" />&gt;
+  - name: listAll(ExpressRouteCircuitsListAllOptionalParams)
+    uid: '@azure/arm-network.ExpressRouteCircuits.listAll|stable'
+    package: '@azure/arm-network|stable'
+    summary: Gets all the express route circuits in a subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listAll(options?: ExpressRouteCircuitsListAllOptionalParams):
+        PagedAsyncIterableIterator<ExpressRouteCircuit>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ExpressRouteCircuitsListAllOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-network.ExpressRouteCircuit|stable" />&gt;
+  - name: >-
+      updateTags(string, string, TagsObject,
+      ExpressRouteCircuitsUpdateTagsOptionalParams)
+    uid: '@azure/arm-network.ExpressRouteCircuits.updateTags|stable'
+    package: '@azure/arm-network|stable'
+    summary: Updates an express route circuit tags.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string, circuitName: string,
+        parameters: TagsObject, options?:
+        ExpressRouteCircuitsUpdateTagsOptionalParams):
+        Promise<ExpressRouteCircuitsUpdateTagsResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: circuitName
+          type: string
+          description: The name of the circuit.
+        - id: parameters
+          type: <xref uid="@azure/arm-network.TagsObject|stable" />
+          description: Parameters supplied to update express route circuit tags.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ExpressRouteCircuitsUpdateTagsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.ExpressRouteCircuitsUpdateTagsResponse|stable"
+          />&gt;

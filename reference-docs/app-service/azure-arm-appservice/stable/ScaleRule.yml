@@ -1,0 +1,63 @@
+### YamlMime:TSType
+name: ScaleRule
+uid: '@azure/arm-appservice.ScaleRule|stable'
+package: '@azure/arm-appservice|stable'
+summary: Container App container scaling rule.
+fullName: ScaleRule
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: azureQueue
+    uid: '@azure/arm-appservice.ScaleRule.azureQueue|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Azure Queue based scaling.
+    fullName: azureQueue
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'azureQueue?: QueueScaleRule'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.QueueScaleRule|stable" />
+  - name: custom
+    uid: '@azure/arm-appservice.ScaleRule.custom|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Custom scale rule.
+    fullName: custom
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'custom?: CustomScaleRule'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.CustomScaleRule|stable" />
+  - name: http
+    uid: '@azure/arm-appservice.ScaleRule.http|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: HTTP requests based scaling.
+    fullName: http
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'http?: HttpScaleRule'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.HttpScaleRule|stable" />
+  - name: name
+    uid: '@azure/arm-appservice.ScaleRule.name|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Scale Rule Name
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

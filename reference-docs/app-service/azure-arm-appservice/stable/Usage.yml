@@ -1,0 +1,14 @@
+### YamlMime:TSTypeAlias
+name: Usage
+uid: '@azure/arm-appservice.Usage|stable'
+package: '@azure/arm-appservice|stable'
+summary: Usage of the quota resource.
+fullName: Usage
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type Usage = ProxyOnlyResource & { computeMode?: ComputeModeOptions,
+  currentValue?: undefined | number, displayName?: undefined | string, limit?:
+  undefined | number, nextResetTime?: Date, resourceName?: undefined | string,
+  siteMode?: undefined | string, unit?: undefined | string }

@@ -1,0 +1,80 @@
+### YamlMime:TSType
+name: SmsChannelProperties
+uid: '@azure/arm-botservice.SmsChannelProperties|beta'
+package: '@azure/arm-botservice|beta'
+summary: The parameters to provide for the Sms channel.
+fullName: SmsChannelProperties
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: accountSID
+    uid: '@azure/arm-botservice.SmsChannelProperties.accountSID|beta'
+    package: '@azure/arm-botservice|beta'
+    summary: >-
+      The Sms account SID. Value only returned through POST to the action
+      Channel List API, otherwise empty.
+    fullName: accountSID
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'accountSID: string'
+      return:
+        description: ''
+        type: string
+  - name: authToken
+    uid: '@azure/arm-botservice.SmsChannelProperties.authToken|beta'
+    package: '@azure/arm-botservice|beta'
+    summary: >-
+      The Sms auth token. Value only returned through POST to the action Channel
+      List API, otherwise empty.
+    fullName: authToken
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'authToken?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: isEnabled
+    uid: '@azure/arm-botservice.SmsChannelProperties.isEnabled|beta'
+    package: '@azure/arm-botservice|beta'
+    summary: Whether this channel is enabled for the bot
+    fullName: isEnabled
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isEnabled: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: isValidated
+    uid: '@azure/arm-botservice.SmsChannelProperties.isValidated|beta'
+    package: '@azure/arm-botservice|beta'
+    summary: Whether this channel is validated for the bot
+    fullName: isValidated
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isValidated?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true
+  - name: phone
+    uid: '@azure/arm-botservice.SmsChannelProperties.phone|beta'
+    package: '@azure/arm-botservice|beta'
+    summary: The Sms phone
+    fullName: phone
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'phone: string'
+      return:
+        description: ''
+        type: string

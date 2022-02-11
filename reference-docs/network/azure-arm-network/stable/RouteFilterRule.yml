@@ -1,0 +1,14 @@
+### YamlMime:TSTypeAlias
+name: RouteFilterRule
+uid: '@azure/arm-network.RouteFilterRule|stable'
+package: '@azure/arm-network|stable'
+summary: Route Filter Rule Resource.
+fullName: RouteFilterRule
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type RouteFilterRule = SubResource & { access?: Access, communities?:
+  string[], etag?: undefined | string, location?: undefined | string, name?:
+  undefined | string, provisioningState?: ProvisioningState,
+  routeFilterRuleType?: RouteFilterRuleType }

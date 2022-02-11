@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: AutoscaleRecurrence
+uid: '@azure/arm-hdinsight.AutoscaleRecurrence|stable'
+package: '@azure/arm-hdinsight|stable'
+summary: Schedule-based autoscale request parameters
+fullName: AutoscaleRecurrence
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: schedule
+    uid: '@azure/arm-hdinsight.AutoscaleRecurrence.schedule|stable'
+    package: '@azure/arm-hdinsight|stable'
+    summary: Array of schedule-based autoscale rules
+    fullName: schedule
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'schedule?: AutoscaleSchedule[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-hdinsight.AutoscaleSchedule|stable" />[]
+  - name: timeZone
+    uid: '@azure/arm-hdinsight.AutoscaleRecurrence.timeZone|stable'
+    package: '@azure/arm-hdinsight|stable'
+    summary: The time zone for the autoscale schedule times
+    fullName: timeZone
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'timeZone?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

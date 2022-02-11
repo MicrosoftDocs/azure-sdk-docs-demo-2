@@ -1,0 +1,97 @@
+### YamlMime:TSType
+name: JobError
+uid: '@azure/arm-mediaservices.JobError|stable'
+package: '@azure/arm-mediaservices|stable'
+summary: Details of JobOutput errors.
+fullName: JobError
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: category
+    uid: '@azure/arm-mediaservices.JobError.category|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: >-
+      Helps with categorization of errors.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: category
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'category?: JobErrorCategory'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mediaservices.JobErrorCategory|stable" />
+  - name: code
+    uid: '@azure/arm-mediaservices.JobError.code|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: >-
+      Error code describing the error.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: code
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'code?: JobErrorCode'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mediaservices.JobErrorCode|stable" />
+  - name: details
+    uid: '@azure/arm-mediaservices.JobError.details|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: >-
+      An array of details about specific errors that led to this reported error.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: details
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'details?: JobErrorDetail[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mediaservices.JobErrorDetail|stable" />[]
+  - name: message
+    uid: '@azure/arm-mediaservices.JobError.message|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: >-
+      A human-readable language-dependent representation of the error.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: message
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'message?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: retry
+    uid: '@azure/arm-mediaservices.JobError.retry|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: >-
+      Indicates that it may be possible to retry the Job. If retry is
+      unsuccessful, please contact Azure support via Azure Portal.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: retry
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'retry?: JobRetry'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mediaservices.JobRetry|stable" />

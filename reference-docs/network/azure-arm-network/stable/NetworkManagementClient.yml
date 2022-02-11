@@ -1,0 +1,2099 @@
+### YamlMime:TSType
+name: NetworkManagementClient
+uid: '@azure/arm-network.NetworkManagementClient|stable'
+package: '@azure/arm-network|stable'
+summary: ''
+fullName: NetworkManagementClient
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: >-
+      NetworkManagementClient(TokenCredential, string,
+      NetworkManagementClientOptionalParams)
+    uid: '@azure/arm-network.NetworkManagementClient.constructor|stable'
+    package: '@azure/arm-network|stable'
+    summary: Initializes a new instance of the NetworkManagementClient class.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        new NetworkManagementClient(credentials: TokenCredential,
+        subscriptionId: string, options?: NetworkManagementClientOptionalParams)
+      parameters:
+        - id: credentials
+          type: TokenCredential
+          description: >-
+            Subscription credentials which uniquely identify client
+            subscription.
+        - id: subscriptionId
+          type: string
+          description: >-
+            The subscription credentials which uniquely identify the Microsoft
+            Azure
+                                  subscription. The subscription ID forms part of the URI for every service call.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.NetworkManagementClientOptionalParams|stable"
+            />
+          description: |
+            The parameter options
+properties:
+  - name: $host
+    uid: '@azure/arm-network.NetworkManagementClient.$host|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: $host
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$host: string'
+      return:
+        description: ''
+        type: string
+  - name: applicationGatewayPrivateEndpointConnections
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.applicationGatewayPrivateEndpointConnections|stable
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: applicationGatewayPrivateEndpointConnections
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        applicationGatewayPrivateEndpointConnections:
+        ApplicationGatewayPrivateEndpointConnections
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-network.ApplicationGatewayPrivateEndpointConnections|stable"
+          />
+  - name: applicationGatewayPrivateLinkResources
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.applicationGatewayPrivateLinkResources|stable
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: applicationGatewayPrivateLinkResources
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        applicationGatewayPrivateLinkResources:
+        ApplicationGatewayPrivateLinkResources
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-network.ApplicationGatewayPrivateLinkResources|stable"
+          />
+  - name: applicationGateways
+    uid: '@azure/arm-network.NetworkManagementClient.applicationGateways|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: applicationGateways
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'applicationGateways: ApplicationGateways'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.ApplicationGateways|stable" />
+  - name: applicationSecurityGroups
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.applicationSecurityGroups|stable
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: applicationSecurityGroups
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'applicationSecurityGroups: ApplicationSecurityGroups'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.ApplicationSecurityGroups|stable" />
+  - name: availableDelegations
+    uid: '@azure/arm-network.NetworkManagementClient.availableDelegations|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: availableDelegations
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'availableDelegations: AvailableDelegations'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.AvailableDelegations|stable" />
+  - name: availableEndpointServices
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.availableEndpointServices|stable
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: availableEndpointServices
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'availableEndpointServices: AvailableEndpointServices'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.AvailableEndpointServices|stable" />
+  - name: availablePrivateEndpointTypes
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.availablePrivateEndpointTypes|stable
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: availablePrivateEndpointTypes
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'availablePrivateEndpointTypes: AvailablePrivateEndpointTypes'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.AvailablePrivateEndpointTypes|stable" />
+  - name: availableResourceGroupDelegations
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.availableResourceGroupDelegations|stable
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: availableResourceGroupDelegations
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'availableResourceGroupDelegations: AvailableResourceGroupDelegations'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-network.AvailableResourceGroupDelegations|stable" />
+  - name: availableServiceAliases
+    uid: '@azure/arm-network.NetworkManagementClient.availableServiceAliases|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: availableServiceAliases
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'availableServiceAliases: AvailableServiceAliases'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.AvailableServiceAliases|stable" />
+  - name: azureFirewallFqdnTags
+    uid: '@azure/arm-network.NetworkManagementClient.azureFirewallFqdnTags|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: azureFirewallFqdnTags
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'azureFirewallFqdnTags: AzureFirewallFqdnTags'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.AzureFirewallFqdnTags|stable" />
+  - name: azureFirewalls
+    uid: '@azure/arm-network.NetworkManagementClient.azureFirewalls|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: azureFirewalls
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'azureFirewalls: AzureFirewalls'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.AzureFirewalls|stable" />
+  - name: bastionHosts
+    uid: '@azure/arm-network.NetworkManagementClient.bastionHosts|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: bastionHosts
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'bastionHosts: BastionHosts'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.BastionHosts|stable" />
+  - name: bgpServiceCommunities
+    uid: '@azure/arm-network.NetworkManagementClient.bgpServiceCommunities|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: bgpServiceCommunities
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'bgpServiceCommunities: BgpServiceCommunities'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.BgpServiceCommunities|stable" />
+  - name: connectionMonitors
+    uid: '@azure/arm-network.NetworkManagementClient.connectionMonitors|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: connectionMonitors
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'connectionMonitors: ConnectionMonitors'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.ConnectionMonitors|stable" />
+  - name: customIPPrefixes
+    uid: '@azure/arm-network.NetworkManagementClient.customIPPrefixes|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: customIPPrefixes
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'customIPPrefixes: CustomIPPrefixes'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.CustomIPPrefixes|stable" />
+  - name: ddosCustomPolicies
+    uid: '@azure/arm-network.NetworkManagementClient.ddosCustomPolicies|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: ddosCustomPolicies
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ddosCustomPolicies: DdosCustomPolicies'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.DdosCustomPolicies|stable" />
+  - name: ddosProtectionPlans
+    uid: '@azure/arm-network.NetworkManagementClient.ddosProtectionPlans|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: ddosProtectionPlans
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ddosProtectionPlans: DdosProtectionPlans'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.DdosProtectionPlans|stable" />
+  - name: defaultSecurityRules
+    uid: '@azure/arm-network.NetworkManagementClient.defaultSecurityRules|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: defaultSecurityRules
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'defaultSecurityRules: DefaultSecurityRules'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.DefaultSecurityRules|stable" />
+  - name: dscpConfigurationOperations
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.dscpConfigurationOperations|stable
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: dscpConfigurationOperations
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dscpConfigurationOperations: DscpConfigurationOperations'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.DscpConfigurationOperations|stable" />
+  - name: expressRouteCircuitAuthorizations
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.expressRouteCircuitAuthorizations|stable
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: expressRouteCircuitAuthorizations
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'expressRouteCircuitAuthorizations: ExpressRouteCircuitAuthorizations'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-network.ExpressRouteCircuitAuthorizations|stable" />
+  - name: expressRouteCircuitConnections
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.expressRouteCircuitConnections|stable
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: expressRouteCircuitConnections
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'expressRouteCircuitConnections: ExpressRouteCircuitConnections'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/arm-network.ExpressRouteCircuitConnections|stable"
+          />
+  - name: expressRouteCircuitPeerings
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.expressRouteCircuitPeerings|stable
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: expressRouteCircuitPeerings
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'expressRouteCircuitPeerings: ExpressRouteCircuitPeerings'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.ExpressRouteCircuitPeerings|stable" />
+  - name: expressRouteCircuits
+    uid: '@azure/arm-network.NetworkManagementClient.expressRouteCircuits|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: expressRouteCircuits
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'expressRouteCircuits: ExpressRouteCircuits'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.ExpressRouteCircuits|stable" />
+  - name: expressRouteConnections
+    uid: '@azure/arm-network.NetworkManagementClient.expressRouteConnections|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: expressRouteConnections
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'expressRouteConnections: ExpressRouteConnections'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.ExpressRouteConnections|stable" />
+  - name: expressRouteCrossConnectionPeerings
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.expressRouteCrossConnectionPeerings|stable
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: expressRouteCrossConnectionPeerings
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'expressRouteCrossConnectionPeerings: ExpressRouteCrossConnectionPeerings'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-network.ExpressRouteCrossConnectionPeerings|stable" />
+  - name: expressRouteCrossConnections
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.expressRouteCrossConnections|stable
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: expressRouteCrossConnections
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'expressRouteCrossConnections: ExpressRouteCrossConnections'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.ExpressRouteCrossConnections|stable" />
+  - name: expressRouteGateways
+    uid: '@azure/arm-network.NetworkManagementClient.expressRouteGateways|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: expressRouteGateways
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'expressRouteGateways: ExpressRouteGateways'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.ExpressRouteGateways|stable" />
+  - name: expressRouteLinks
+    uid: '@azure/arm-network.NetworkManagementClient.expressRouteLinks|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: expressRouteLinks
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'expressRouteLinks: ExpressRouteLinks'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.ExpressRouteLinks|stable" />
+  - name: expressRoutePorts
+    uid: '@azure/arm-network.NetworkManagementClient.expressRoutePorts|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: expressRoutePorts
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'expressRoutePorts: ExpressRoutePorts'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.ExpressRoutePorts|stable" />
+  - name: expressRoutePortsLocations
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.expressRoutePortsLocations|stable
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: expressRoutePortsLocations
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'expressRoutePortsLocations: ExpressRoutePortsLocations'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.ExpressRoutePortsLocations|stable" />
+  - name: expressRouteServiceProviders
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.expressRouteServiceProviders|stable
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: expressRouteServiceProviders
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'expressRouteServiceProviders: ExpressRouteServiceProviders'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.ExpressRouteServiceProviders|stable" />
+  - name: firewallPolicies
+    uid: '@azure/arm-network.NetworkManagementClient.firewallPolicies|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: firewallPolicies
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'firewallPolicies: FirewallPolicies'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.FirewallPolicies|stable" />
+  - name: firewallPolicyIdpsSignatures
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.firewallPolicyIdpsSignatures|stable
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: firewallPolicyIdpsSignatures
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'firewallPolicyIdpsSignatures: FirewallPolicyIdpsSignatures'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.FirewallPolicyIdpsSignatures|stable" />
+  - name: firewallPolicyIdpsSignaturesFilterValues
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.firewallPolicyIdpsSignaturesFilterValues|stable
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: firewallPolicyIdpsSignaturesFilterValues
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        firewallPolicyIdpsSignaturesFilterValues:
+        FirewallPolicyIdpsSignaturesFilterValues
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-network.FirewallPolicyIdpsSignaturesFilterValues|stable"
+          />
+  - name: firewallPolicyIdpsSignaturesOverrides
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.firewallPolicyIdpsSignaturesOverrides|stable
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: firewallPolicyIdpsSignaturesOverrides
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        firewallPolicyIdpsSignaturesOverrides:
+        FirewallPolicyIdpsSignaturesOverrides
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-network.FirewallPolicyIdpsSignaturesOverrides|stable"
+          />
+  - name: firewallPolicyRuleCollectionGroups
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.firewallPolicyRuleCollectionGroups|stable
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: firewallPolicyRuleCollectionGroups
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'firewallPolicyRuleCollectionGroups: FirewallPolicyRuleCollectionGroups'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-network.FirewallPolicyRuleCollectionGroups|stable" />
+  - name: flowLogs
+    uid: '@azure/arm-network.NetworkManagementClient.flowLogs|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: flowLogs
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'flowLogs: FlowLogs'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.FlowLogs|stable" />
+  - name: hubRouteTables
+    uid: '@azure/arm-network.NetworkManagementClient.hubRouteTables|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: hubRouteTables
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hubRouteTables: HubRouteTables'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.HubRouteTables|stable" />
+  - name: hubVirtualNetworkConnections
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.hubVirtualNetworkConnections|stable
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: hubVirtualNetworkConnections
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hubVirtualNetworkConnections: HubVirtualNetworkConnections'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.HubVirtualNetworkConnections|stable" />
+  - name: inboundNatRules
+    uid: '@azure/arm-network.NetworkManagementClient.inboundNatRules|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: inboundNatRules
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'inboundNatRules: InboundNatRules'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.InboundNatRules|stable" />
+  - name: inboundSecurityRuleOperations
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.inboundSecurityRuleOperations|stable
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: inboundSecurityRuleOperations
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'inboundSecurityRuleOperations: InboundSecurityRuleOperations'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.InboundSecurityRuleOperations|stable" />
+  - name: ipAllocations
+    uid: '@azure/arm-network.NetworkManagementClient.ipAllocations|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: ipAllocations
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ipAllocations: IpAllocations'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.IpAllocations|stable" />
+  - name: ipGroups
+    uid: '@azure/arm-network.NetworkManagementClient.ipGroups|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: ipGroups
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ipGroups: IpGroups'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.IpGroups|stable" />
+  - name: loadBalancerBackendAddressPools
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.loadBalancerBackendAddressPools|stable
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: loadBalancerBackendAddressPools
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'loadBalancerBackendAddressPools: LoadBalancerBackendAddressPools'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/arm-network.LoadBalancerBackendAddressPools|stable"
+          />
+  - name: loadBalancerFrontendIPConfigurations
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.loadBalancerFrontendIPConfigurations|stable
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: loadBalancerFrontendIPConfigurations
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        loadBalancerFrontendIPConfigurations:
+        LoadBalancerFrontendIPConfigurations
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-network.LoadBalancerFrontendIPConfigurations|stable"
+          />
+  - name: loadBalancerLoadBalancingRules
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.loadBalancerLoadBalancingRules|stable
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: loadBalancerLoadBalancingRules
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'loadBalancerLoadBalancingRules: LoadBalancerLoadBalancingRules'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/arm-network.LoadBalancerLoadBalancingRules|stable"
+          />
+  - name: loadBalancerNetworkInterfaces
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.loadBalancerNetworkInterfaces|stable
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: loadBalancerNetworkInterfaces
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'loadBalancerNetworkInterfaces: LoadBalancerNetworkInterfaces'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.LoadBalancerNetworkInterfaces|stable" />
+  - name: loadBalancerOutboundRules
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.loadBalancerOutboundRules|stable
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: loadBalancerOutboundRules
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'loadBalancerOutboundRules: LoadBalancerOutboundRules'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.LoadBalancerOutboundRules|stable" />
+  - name: loadBalancerProbes
+    uid: '@azure/arm-network.NetworkManagementClient.loadBalancerProbes|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: loadBalancerProbes
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'loadBalancerProbes: LoadBalancerProbes'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.LoadBalancerProbes|stable" />
+  - name: loadBalancers
+    uid: '@azure/arm-network.NetworkManagementClient.loadBalancers|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: loadBalancers
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'loadBalancers: LoadBalancers'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.LoadBalancers|stable" />
+  - name: localNetworkGateways
+    uid: '@azure/arm-network.NetworkManagementClient.localNetworkGateways|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: localNetworkGateways
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'localNetworkGateways: LocalNetworkGateways'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.LocalNetworkGateways|stable" />
+  - name: natGateways
+    uid: '@azure/arm-network.NetworkManagementClient.natGateways|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: natGateways
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'natGateways: NatGateways'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.NatGateways|stable" />
+  - name: natRules
+    uid: '@azure/arm-network.NetworkManagementClient.natRules|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: natRules
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'natRules: NatRules'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.NatRules|stable" />
+  - name: networkInterfaceIPConfigurations
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.networkInterfaceIPConfigurations|stable
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: networkInterfaceIPConfigurations
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'networkInterfaceIPConfigurations: NetworkInterfaceIPConfigurations'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/arm-network.NetworkInterfaceIPConfigurations|stable"
+          />
+  - name: networkInterfaceLoadBalancers
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.networkInterfaceLoadBalancers|stable
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: networkInterfaceLoadBalancers
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'networkInterfaceLoadBalancers: NetworkInterfaceLoadBalancers'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.NetworkInterfaceLoadBalancers|stable" />
+  - name: networkInterfaces
+    uid: '@azure/arm-network.NetworkManagementClient.networkInterfaces|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: networkInterfaces
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'networkInterfaces: NetworkInterfaces'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.NetworkInterfaces|stable" />
+  - name: networkInterfaceTapConfigurations
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.networkInterfaceTapConfigurations|stable
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: networkInterfaceTapConfigurations
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'networkInterfaceTapConfigurations: NetworkInterfaceTapConfigurations'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-network.NetworkInterfaceTapConfigurations|stable" />
+  - name: networkProfiles
+    uid: '@azure/arm-network.NetworkManagementClient.networkProfiles|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: networkProfiles
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'networkProfiles: NetworkProfiles'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.NetworkProfiles|stable" />
+  - name: networkSecurityGroups
+    uid: '@azure/arm-network.NetworkManagementClient.networkSecurityGroups|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: networkSecurityGroups
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'networkSecurityGroups: NetworkSecurityGroups'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.NetworkSecurityGroups|stable" />
+  - name: networkVirtualAppliances
+    uid: '@azure/arm-network.NetworkManagementClient.networkVirtualAppliances|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: networkVirtualAppliances
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'networkVirtualAppliances: NetworkVirtualAppliances'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.NetworkVirtualAppliances|stable" />
+  - name: networkWatchers
+    uid: '@azure/arm-network.NetworkManagementClient.networkWatchers|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: networkWatchers
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'networkWatchers: NetworkWatchers'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.NetworkWatchers|stable" />
+  - name: operations
+    uid: '@azure/arm-network.NetworkManagementClient.operations|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: operations
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'operations: Operations'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.Operations|stable" />
+  - name: p2SVpnGateways
+    uid: '@azure/arm-network.NetworkManagementClient.p2SVpnGateways|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: p2SVpnGateways
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'p2SVpnGateways: P2SVpnGateways'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.P2SVpnGateways|stable" />
+  - name: packetCaptures
+    uid: '@azure/arm-network.NetworkManagementClient.packetCaptures|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: packetCaptures
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'packetCaptures: PacketCaptures'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.PacketCaptures|stable" />
+  - name: peerExpressRouteCircuitConnections
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.peerExpressRouteCircuitConnections|stable
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: peerExpressRouteCircuitConnections
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'peerExpressRouteCircuitConnections: PeerExpressRouteCircuitConnections'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-network.PeerExpressRouteCircuitConnections|stable" />
+  - name: pipeline
+    uid: '@azure/arm-network.NetworkManagementClient.pipeline|stable'
+    package: '@azure/arm-network|stable'
+    summary: The pipeline used by this client to make requests
+    fullName: pipeline
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'pipeline: Pipeline'
+      return:
+        description: ''
+        type: Pipeline
+  - name: privateDnsZoneGroups
+    uid: '@azure/arm-network.NetworkManagementClient.privateDnsZoneGroups|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: privateDnsZoneGroups
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'privateDnsZoneGroups: PrivateDnsZoneGroups'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.PrivateDnsZoneGroups|stable" />
+  - name: privateEndpoints
+    uid: '@azure/arm-network.NetworkManagementClient.privateEndpoints|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: privateEndpoints
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'privateEndpoints: PrivateEndpoints'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.PrivateEndpoints|stable" />
+  - name: privateLinkServices
+    uid: '@azure/arm-network.NetworkManagementClient.privateLinkServices|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: privateLinkServices
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'privateLinkServices: PrivateLinkServices'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.PrivateLinkServices|stable" />
+  - name: publicIPAddresses
+    uid: '@azure/arm-network.NetworkManagementClient.publicIPAddresses|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: publicIPAddresses
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'publicIPAddresses: PublicIPAddresses'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.PublicIPAddresses|stable" />
+  - name: publicIPPrefixes
+    uid: '@azure/arm-network.NetworkManagementClient.publicIPPrefixes|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: publicIPPrefixes
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'publicIPPrefixes: PublicIPPrefixes'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.PublicIPPrefixes|stable" />
+  - name: resourceNavigationLinks
+    uid: '@azure/arm-network.NetworkManagementClient.resourceNavigationLinks|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: resourceNavigationLinks
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'resourceNavigationLinks: ResourceNavigationLinks'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.ResourceNavigationLinks|stable" />
+  - name: routeFilterRules
+    uid: '@azure/arm-network.NetworkManagementClient.routeFilterRules|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: routeFilterRules
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'routeFilterRules: RouteFilterRules'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.RouteFilterRules|stable" />
+  - name: routeFilters
+    uid: '@azure/arm-network.NetworkManagementClient.routeFilters|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: routeFilters
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'routeFilters: RouteFilters'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.RouteFilters|stable" />
+  - name: routes
+    uid: '@azure/arm-network.NetworkManagementClient.routes|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: routes
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'routes: Routes'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.Routes|stable" />
+  - name: routeTables
+    uid: '@azure/arm-network.NetworkManagementClient.routeTables|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: routeTables
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'routeTables: RouteTables'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.RouteTables|stable" />
+  - name: routingIntentOperations
+    uid: '@azure/arm-network.NetworkManagementClient.routingIntentOperations|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: routingIntentOperations
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'routingIntentOperations: RoutingIntentOperations'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.RoutingIntentOperations|stable" />
+  - name: securityPartnerProviders
+    uid: '@azure/arm-network.NetworkManagementClient.securityPartnerProviders|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: securityPartnerProviders
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'securityPartnerProviders: SecurityPartnerProviders'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.SecurityPartnerProviders|stable" />
+  - name: securityRules
+    uid: '@azure/arm-network.NetworkManagementClient.securityRules|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: securityRules
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'securityRules: SecurityRules'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.SecurityRules|stable" />
+  - name: serviceAssociationLinks
+    uid: '@azure/arm-network.NetworkManagementClient.serviceAssociationLinks|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: serviceAssociationLinks
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'serviceAssociationLinks: ServiceAssociationLinks'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.ServiceAssociationLinks|stable" />
+  - name: serviceEndpointPolicies
+    uid: '@azure/arm-network.NetworkManagementClient.serviceEndpointPolicies|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: serviceEndpointPolicies
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'serviceEndpointPolicies: ServiceEndpointPolicies'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.ServiceEndpointPolicies|stable" />
+  - name: serviceEndpointPolicyDefinitions
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.serviceEndpointPolicyDefinitions|stable
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: serviceEndpointPolicyDefinitions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'serviceEndpointPolicyDefinitions: ServiceEndpointPolicyDefinitions'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/arm-network.ServiceEndpointPolicyDefinitions|stable"
+          />
+  - name: serviceTagInformationOperations
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.serviceTagInformationOperations|stable
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: serviceTagInformationOperations
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'serviceTagInformationOperations: ServiceTagInformationOperations'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/arm-network.ServiceTagInformationOperations|stable"
+          />
+  - name: serviceTags
+    uid: '@azure/arm-network.NetworkManagementClient.serviceTags|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: serviceTags
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'serviceTags: ServiceTags'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.ServiceTags|stable" />
+  - name: subnets
+    uid: '@azure/arm-network.NetworkManagementClient.subnets|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: subnets
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'subnets: Subnets'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.Subnets|stable" />
+  - name: subscriptionId
+    uid: '@azure/arm-network.NetworkManagementClient.subscriptionId|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: subscriptionId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'subscriptionId: string'
+      return:
+        description: ''
+        type: string
+  - name: usages
+    uid: '@azure/arm-network.NetworkManagementClient.usages|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: usages
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'usages: Usages'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.Usages|stable" />
+  - name: virtualApplianceSites
+    uid: '@azure/arm-network.NetworkManagementClient.virtualApplianceSites|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: virtualApplianceSites
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'virtualApplianceSites: VirtualApplianceSites'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.VirtualApplianceSites|stable" />
+  - name: virtualApplianceSkus
+    uid: '@azure/arm-network.NetworkManagementClient.virtualApplianceSkus|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: virtualApplianceSkus
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'virtualApplianceSkus: VirtualApplianceSkus'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.VirtualApplianceSkus|stable" />
+  - name: virtualHubBgpConnection
+    uid: '@azure/arm-network.NetworkManagementClient.virtualHubBgpConnection|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: virtualHubBgpConnection
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'virtualHubBgpConnection: VirtualHubBgpConnection'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.VirtualHubBgpConnection|stable" />
+  - name: virtualHubBgpConnections
+    uid: '@azure/arm-network.NetworkManagementClient.virtualHubBgpConnections|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: virtualHubBgpConnections
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'virtualHubBgpConnections: VirtualHubBgpConnections'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.VirtualHubBgpConnections|stable" />
+  - name: virtualHubIpConfiguration
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.virtualHubIpConfiguration|stable
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: virtualHubIpConfiguration
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'virtualHubIpConfiguration: VirtualHubIpConfiguration'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.VirtualHubIpConfiguration|stable" />
+  - name: virtualHubRouteTableV2S
+    uid: '@azure/arm-network.NetworkManagementClient.virtualHubRouteTableV2S|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: virtualHubRouteTableV2S
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'virtualHubRouteTableV2S: VirtualHubRouteTableV2S'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.VirtualHubRouteTableV2S|stable" />
+  - name: virtualHubs
+    uid: '@azure/arm-network.NetworkManagementClient.virtualHubs|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: virtualHubs
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'virtualHubs: VirtualHubs'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.VirtualHubs|stable" />
+  - name: virtualNetworkGatewayConnections
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.virtualNetworkGatewayConnections|stable
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: virtualNetworkGatewayConnections
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'virtualNetworkGatewayConnections: VirtualNetworkGatewayConnections'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/arm-network.VirtualNetworkGatewayConnections|stable"
+          />
+  - name: virtualNetworkGatewayNatRules
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.virtualNetworkGatewayNatRules|stable
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: virtualNetworkGatewayNatRules
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'virtualNetworkGatewayNatRules: VirtualNetworkGatewayNatRules'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.VirtualNetworkGatewayNatRules|stable" />
+  - name: virtualNetworkGateways
+    uid: '@azure/arm-network.NetworkManagementClient.virtualNetworkGateways|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: virtualNetworkGateways
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'virtualNetworkGateways: VirtualNetworkGateways'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.VirtualNetworkGateways|stable" />
+  - name: virtualNetworkPeerings
+    uid: '@azure/arm-network.NetworkManagementClient.virtualNetworkPeerings|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: virtualNetworkPeerings
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'virtualNetworkPeerings: VirtualNetworkPeerings'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.VirtualNetworkPeerings|stable" />
+  - name: virtualNetworks
+    uid: '@azure/arm-network.NetworkManagementClient.virtualNetworks|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: virtualNetworks
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'virtualNetworks: VirtualNetworks'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.VirtualNetworks|stable" />
+  - name: virtualNetworkTaps
+    uid: '@azure/arm-network.NetworkManagementClient.virtualNetworkTaps|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: virtualNetworkTaps
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'virtualNetworkTaps: VirtualNetworkTaps'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.VirtualNetworkTaps|stable" />
+  - name: virtualRouterPeerings
+    uid: '@azure/arm-network.NetworkManagementClient.virtualRouterPeerings|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: virtualRouterPeerings
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'virtualRouterPeerings: VirtualRouterPeerings'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.VirtualRouterPeerings|stable" />
+  - name: virtualRouters
+    uid: '@azure/arm-network.NetworkManagementClient.virtualRouters|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: virtualRouters
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'virtualRouters: VirtualRouters'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.VirtualRouters|stable" />
+  - name: virtualWans
+    uid: '@azure/arm-network.NetworkManagementClient.virtualWans|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: virtualWans
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'virtualWans: VirtualWans'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.VirtualWans|stable" />
+  - name: vpnConnections
+    uid: '@azure/arm-network.NetworkManagementClient.vpnConnections|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: vpnConnections
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'vpnConnections: VpnConnections'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.VpnConnections|stable" />
+  - name: vpnGateways
+    uid: '@azure/arm-network.NetworkManagementClient.vpnGateways|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: vpnGateways
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'vpnGateways: VpnGateways'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.VpnGateways|stable" />
+  - name: vpnLinkConnections
+    uid: '@azure/arm-network.NetworkManagementClient.vpnLinkConnections|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: vpnLinkConnections
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'vpnLinkConnections: VpnLinkConnections'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.VpnLinkConnections|stable" />
+  - name: vpnServerConfigurations
+    uid: '@azure/arm-network.NetworkManagementClient.vpnServerConfigurations|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: vpnServerConfigurations
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'vpnServerConfigurations: VpnServerConfigurations'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.VpnServerConfigurations|stable" />
+  - name: vpnServerConfigurationsAssociatedWithVirtualWan
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.vpnServerConfigurationsAssociatedWithVirtualWan|stable
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: vpnServerConfigurationsAssociatedWithVirtualWan
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        vpnServerConfigurationsAssociatedWithVirtualWan:
+        VpnServerConfigurationsAssociatedWithVirtualWan
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-network.VpnServerConfigurationsAssociatedWithVirtualWan|stable"
+          />
+  - name: vpnSiteLinkConnections
+    uid: '@azure/arm-network.NetworkManagementClient.vpnSiteLinkConnections|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: vpnSiteLinkConnections
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'vpnSiteLinkConnections: VpnSiteLinkConnections'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.VpnSiteLinkConnections|stable" />
+  - name: vpnSiteLinks
+    uid: '@azure/arm-network.NetworkManagementClient.vpnSiteLinks|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: vpnSiteLinks
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'vpnSiteLinks: VpnSiteLinks'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.VpnSiteLinks|stable" />
+  - name: vpnSites
+    uid: '@azure/arm-network.NetworkManagementClient.vpnSites|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: vpnSites
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'vpnSites: VpnSites'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.VpnSites|stable" />
+  - name: vpnSitesConfiguration
+    uid: '@azure/arm-network.NetworkManagementClient.vpnSitesConfiguration|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: vpnSitesConfiguration
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'vpnSitesConfiguration: VpnSitesConfiguration'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.VpnSitesConfiguration|stable" />
+  - name: webApplicationFirewallPolicies
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.webApplicationFirewallPolicies|stable
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: webApplicationFirewallPolicies
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'webApplicationFirewallPolicies: WebApplicationFirewallPolicies'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/arm-network.WebApplicationFirewallPolicies|stable"
+          />
+  - name: webCategories
+    uid: '@azure/arm-network.NetworkManagementClient.webCategories|stable'
+    package: '@azure/arm-network|stable'
+    summary: ''
+    fullName: webCategories
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'webCategories: WebCategories'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.WebCategories|stable" />
+inheritedMethods:
+  - name: sendOperationRequest<T>(OperationArguments, OperationSpec)
+    uid: '@azure/arm-network.NetworkManagementClient.sendOperationRequest|stable'
+    package: '@azure/arm-network|stable'
+    summary: Send an HTTP request that is populated using the provided OperationSpec.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function sendOperationRequest<T>(operationArguments: OperationArguments,
+        operationSpec: OperationSpec): Promise<T>
+      parameters:
+        - id: operationArguments
+          type: OperationArguments
+          description: >-
+            The arguments that the HTTP request's templated values will be
+            populated from.
+        - id: operationSpec
+          type: OperationSpec
+          description: |
+            The OperationSpec to use to populate the httpRequest.
+      return:
+        description: ''
+        type: Promise&lt;T&gt;
+  - name: sendRequest(PipelineRequest)
+    uid: '@azure/arm-network.NetworkManagementClient.sendRequest|stable'
+    package: '@azure/arm-network|stable'
+    summary: Send the provided httpRequest.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function sendRequest(request: PipelineRequest):
+        Promise<PipelineResponse>
+      parameters:
+        - id: request
+          type: PipelineRequest
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;PipelineResponse&gt;
+methods:
+  - name: >-
+      beginDeleteBastionShareableLink(string, string,
+      BastionShareableLinkListRequest, DeleteBastionShareableLinkOptionalParams)
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.beginDeleteBastionShareableLink|stable
+    package: '@azure/arm-network|stable'
+    summary: >-
+      Deletes the Bastion Shareable Links for all the VMs specified in the
+      request.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteBastionShareableLink(resourceGroupName: string,
+        bastionHostName: string, bslRequest: BastionShareableLinkListRequest,
+        options?: DeleteBastionShareableLinkOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: bastionHostName
+          type: string
+          description: The name of the Bastion Host.
+        - id: bslRequest
+          type: >-
+            <xref
+            uid="@azure/arm-network.BastionShareableLinkListRequest|stable" />
+          description: Post request for all the Bastion Shareable Link endpoints.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.DeleteBastionShareableLinkOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: >-
+      beginDeleteBastionShareableLinkAndWait(string, string,
+      BastionShareableLinkListRequest, DeleteBastionShareableLinkOptionalParams)
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.beginDeleteBastionShareableLinkAndWait|stable
+    package: '@azure/arm-network|stable'
+    summary: >-
+      Deletes the Bastion Shareable Links for all the VMs specified in the
+      request.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteBastionShareableLinkAndWait(resourceGroupName:
+        string, bastionHostName: string, bslRequest:
+        BastionShareableLinkListRequest, options?:
+        DeleteBastionShareableLinkOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: bastionHostName
+          type: string
+          description: The name of the Bastion Host.
+        - id: bslRequest
+          type: >-
+            <xref
+            uid="@azure/arm-network.BastionShareableLinkListRequest|stable" />
+          description: Post request for all the Bastion Shareable Link endpoints.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.DeleteBastionShareableLinkOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      beginGeneratevirtualwanvpnserverconfigurationvpnprofile(string, string,
+      VirtualWanVpnProfileParameters,
+      GeneratevirtualwanvpnserverconfigurationvpnprofileOptionalParams)
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.beginGeneratevirtualwanvpnserverconfigurationvpnprofile|stable
+    package: '@azure/arm-network|stable'
+    summary: >-
+      Generates a unique VPN profile for P2S clients for VirtualWan and
+      associated VpnServerConfiguration
+
+      combination in the specified resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function
+        beginGeneratevirtualwanvpnserverconfigurationvpnprofile(resourceGroupName:
+        string, virtualWANName: string, vpnClientParams:
+        VirtualWanVpnProfileParameters, options?:
+        GeneratevirtualwanvpnserverconfigurationvpnprofileOptionalParams):
+        Promise<PollerLike<PollOperationState<GeneratevirtualwanvpnserverconfigurationvpnprofileResponse>,
+        GeneratevirtualwanvpnserverconfigurationvpnprofileResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The resource group name.
+        - id: virtualWANName
+          type: string
+          description: >-
+            The name of the VirtualWAN whose associated VpnServerConfigurations
+            is needed.
+        - id: vpnClientParams
+          type: >-
+            <xref uid="@azure/arm-network.VirtualWanVpnProfileParameters|stable"
+            />
+          description: >-
+            Parameters supplied to the generate VirtualWan VPN profile
+            generation
+                                   operation.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.GeneratevirtualwanvpnserverconfigurationvpnprofileOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-network.GeneratevirtualwanvpnserverconfigurationvpnprofileResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-network.GeneratevirtualwanvpnserverconfigurationvpnprofileResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginGeneratevirtualwanvpnserverconfigurationvpnprofileAndWait(string,
+      string, VirtualWanVpnProfileParameters,
+      GeneratevirtualwanvpnserverconfigurationvpnprofileOptionalParams)
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.beginGeneratevirtualwanvpnserverconfigurationvpnprofileAndWait|stable
+    package: '@azure/arm-network|stable'
+    summary: >-
+      Generates a unique VPN profile for P2S clients for VirtualWan and
+      associated VpnServerConfiguration
+
+      combination in the specified resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function
+        beginGeneratevirtualwanvpnserverconfigurationvpnprofileAndWait(resourceGroupName:
+        string, virtualWANName: string, vpnClientParams:
+        VirtualWanVpnProfileParameters, options?:
+        GeneratevirtualwanvpnserverconfigurationvpnprofileOptionalParams):
+        Promise<GeneratevirtualwanvpnserverconfigurationvpnprofileResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The resource group name.
+        - id: virtualWANName
+          type: string
+          description: >-
+            The name of the VirtualWAN whose associated VpnServerConfigurations
+            is needed.
+        - id: vpnClientParams
+          type: >-
+            <xref uid="@azure/arm-network.VirtualWanVpnProfileParameters|stable"
+            />
+          description: >-
+            Parameters supplied to the generate VirtualWan VPN profile
+            generation
+                                   operation.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.GeneratevirtualwanvpnserverconfigurationvpnprofileOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.GeneratevirtualwanvpnserverconfigurationvpnprofileResponse|stable"
+          />&gt;
+  - name: >-
+      beginListActiveSessionsAndWait(string, string,
+      GetActiveSessionsOptionalParams)
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.beginListActiveSessionsAndWait|stable
+    package: '@azure/arm-network|stable'
+    summary: Returns the list of currently active sessions on the Bastion.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginListActiveSessionsAndWait(resourceGroupName: string,
+        bastionHostName: string, options?: GetActiveSessionsOptionalParams):
+        PagedAsyncIterableIterator<BastionActiveSession>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: bastionHostName
+          type: string
+          description: The name of the Bastion Host.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.GetActiveSessionsOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-network.BastionActiveSession|stable" />&gt;
+  - name: >-
+      beginListPutBastionShareableLinkAndWait(string, string,
+      BastionShareableLinkListRequest, PutBastionShareableLinkOptionalParams)
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.beginListPutBastionShareableLinkAndWait|stable
+    package: '@azure/arm-network|stable'
+    summary: >-
+      Creates a Bastion Shareable Links for all the VMs specified in the
+      request.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginListPutBastionShareableLinkAndWait(resourceGroupName:
+        string, bastionHostName: string, bslRequest:
+        BastionShareableLinkListRequest, options?:
+        PutBastionShareableLinkOptionalParams):
+        PagedAsyncIterableIterator<BastionShareableLink>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: bastionHostName
+          type: string
+          description: The name of the Bastion Host.
+        - id: bslRequest
+          type: >-
+            <xref
+            uid="@azure/arm-network.BastionShareableLinkListRequest|stable" />
+          description: Post request for all the Bastion Shareable Link endpoints.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.PutBastionShareableLinkOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-network.BastionShareableLink|stable" />&gt;
+  - name: >-
+      checkDnsNameAvailability(string, string,
+      CheckDnsNameAvailabilityOptionalParams)
+    uid: '@azure/arm-network.NetworkManagementClient.checkDnsNameAvailability|stable'
+    package: '@azure/arm-network|stable'
+    summary: >-
+      Checks whether a domain name in the cloudapp.azure.com zone is available
+      for use.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function checkDnsNameAvailability(location: string, domainNameLabel:
+        string, options?: CheckDnsNameAvailabilityOptionalParams):
+        Promise<CheckDnsNameAvailabilityResponse>
+      parameters:
+        - id: location
+          type: string
+          description: The location of the domain name.
+        - id: domainNameLabel
+          type: string
+          description: >-
+            The domain name to be verified. It must conform to the following
+            regular
+                                   expression: ^[a-z][a-z0-9-]{1,61}[a-z0-9]$.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.CheckDnsNameAvailabilityOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.CheckDnsNameAvailabilityResponse|stable"
+          />&gt;
+  - name: >-
+      listBastionShareableLink(string, string, BastionShareableLinkListRequest,
+      GetBastionShareableLinkOptionalParams)
+    uid: '@azure/arm-network.NetworkManagementClient.listBastionShareableLink|stable'
+    package: '@azure/arm-network|stable'
+    summary: >-
+      Return the Bastion Shareable Links for all the VMs specified in the
+      request.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listBastionShareableLink(resourceGroupName: string,
+        bastionHostName: string, bslRequest: BastionShareableLinkListRequest,
+        options?: GetBastionShareableLinkOptionalParams):
+        PagedAsyncIterableIterator<BastionShareableLink>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: bastionHostName
+          type: string
+          description: The name of the Bastion Host.
+        - id: bslRequest
+          type: >-
+            <xref
+            uid="@azure/arm-network.BastionShareableLinkListRequest|stable" />
+          description: Post request for all the Bastion Shareable Link endpoints.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.GetBastionShareableLinkOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-network.BastionShareableLink|stable" />&gt;
+  - name: >-
+      listDisconnectActiveSessions(string, string, SessionIds,
+      DisconnectActiveSessionsOptionalParams)
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.listDisconnectActiveSessions|stable
+    package: '@azure/arm-network|stable'
+    summary: Returns the list of currently active sessions on the Bastion.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listDisconnectActiveSessions(resourceGroupName: string,
+        bastionHostName: string, sessionIds: SessionIds, options?:
+        DisconnectActiveSessionsOptionalParams):
+        PagedAsyncIterableIterator<BastionSessionState>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: bastionHostName
+          type: string
+          description: The name of the Bastion Host.
+        - id: sessionIds
+          type: <xref uid="@azure/arm-network.SessionIds|stable" />
+          description: The list of sessionids to disconnect.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.DisconnectActiveSessionsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-network.BastionSessionState|stable" />&gt;
+  - name: >-
+      supportedSecurityProviders(string, string,
+      SupportedSecurityProvidersOptionalParams)
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.supportedSecurityProviders|stable
+    package: '@azure/arm-network|stable'
+    summary: Gives the supported security providers for the virtual wan.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function supportedSecurityProviders(resourceGroupName: string,
+        virtualWANName: string, options?:
+        SupportedSecurityProvidersOptionalParams):
+        Promise<SupportedSecurityProvidersResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The resource group name.
+        - id: virtualWANName
+          type: string
+          description: >-
+            The name of the VirtualWAN for which supported security providers
+            are needed.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.SupportedSecurityProvidersOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.SupportedSecurityProvidersResponse|stable"
+          />&gt;
+extends: ServiceClient

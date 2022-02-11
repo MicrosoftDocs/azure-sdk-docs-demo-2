@@ -1,0 +1,147 @@
+### YamlMime:TSType
+name: ChangeFeedResponse
+uid: '@azure/cosmos.ChangeFeedResponse|stable'
+package: '@azure/cosmos|stable'
+summary: A single response page from the Azure Cosmos DB Change Feed
+fullName: ChangeFeedResponse<T>
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: activityId
+    uid: '@azure/cosmos.ChangeFeedResponse.activityId|stable'
+    package: '@azure/cosmos|stable'
+    summary: Gets the activity ID for the request from the Azure Cosmos DB service.
+    fullName: activityId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: string activityId
+      return:
+        description: ''
+        type: string
+  - name: continuation
+    uid: '@azure/cosmos.ChangeFeedResponse.continuation|stable'
+    package: '@azure/cosmos|stable'
+    summary: >
+      Gets the continuation token to be used for continuing enumeration of the
+      Azure Cosmos DB service.
+
+      This is equivalent to the `etag` property.
+    fullName: continuation
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: string continuation
+      return:
+        description: ''
+        type: string
+  - name: count
+    uid: '@azure/cosmos.ChangeFeedResponse.count|stable'
+    package: '@azure/cosmos|stable'
+    summary: Gets the number of items returned in the response from Azure Cosmos DB
+    fullName: count
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'count: number'
+      return:
+        description: ''
+        type: number
+  - name: etag
+    uid: '@azure/cosmos.ChangeFeedResponse.etag|stable'
+    package: '@azure/cosmos|stable'
+    summary: >
+      Gets the entity tag associated with last transaction in the Azure Cosmos
+      DB service,
+
+      which can be used as If-Non-Match Access condition for ReadFeed REST
+      request or
+
+      `continuation` property of `ChangeFeedOptions` parameter for
+
+      `Items.changeFeed()`
+
+      to get feed changes since the transaction specified by this entity tag.
+
+      This is equivalent to the `continuation` property.
+    fullName: etag
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: string etag
+      return:
+        description: ''
+        type: string
+  - name: headers
+    uid: '@azure/cosmos.ChangeFeedResponse.headers|stable'
+    package: '@azure/cosmos|stable'
+    summary: Response headers of the response from Azure Cosmos DB
+    fullName: headers
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'headers: CosmosHeaders'
+      return:
+        description: ''
+        type: <xref uid="@azure/cosmos.CosmosHeaders|stable" />
+  - name: requestCharge
+    uid: '@azure/cosmos.ChangeFeedResponse.requestCharge|stable'
+    package: '@azure/cosmos|stable'
+    summary: Gets the request charge for this request from the Azure Cosmos DB service.
+    fullName: requestCharge
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: number requestCharge
+      return:
+        description: ''
+        type: number
+  - name: result
+    uid: '@azure/cosmos.ChangeFeedResponse.result|stable'
+    package: '@azure/cosmos|stable'
+    summary: Gets the items returned in the response from Azure Cosmos DB
+    fullName: result
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'result: T'
+      return:
+        description: ''
+        type: T
+  - name: sessionToken
+    uid: '@azure/cosmos.ChangeFeedResponse.sessionToken|stable'
+    package: '@azure/cosmos|stable'
+    summary: >-
+      Gets the session token for use in session consistency reads from the Azure
+      Cosmos DB service.
+    fullName: sessionToken
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: string sessionToken
+      return:
+        description: ''
+        type: string
+  - name: statusCode
+    uid: '@azure/cosmos.ChangeFeedResponse.statusCode|stable'
+    package: '@azure/cosmos|stable'
+    summary: Gets the status code of the response from Azure Cosmos DB
+    fullName: statusCode
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'statusCode: number'
+      return:
+        description: ''
+        type: number

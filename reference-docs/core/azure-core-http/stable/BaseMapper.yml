@@ -1,0 +1,197 @@
+### YamlMime:TSType
+name: BaseMapper
+uid: '@azure/core-http.BaseMapper|stable'
+package: '@azure/core-http|stable'
+summary: >-
+  The base definition of a mapper. Can be used for XML and plain JavaScript
+  objects.
+fullName: BaseMapper
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: constraints
+    uid: '@azure/core-http.BaseMapper.constraints|stable'
+    package: '@azure/core-http|stable'
+    summary: Constraints to test the current value against
+    fullName: constraints
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'constraints?: MapperConstraints'
+      return:
+        description: ''
+        type: <xref uid="@azure/core-http.MapperConstraints|stable" />
+  - name: defaultValue
+    uid: '@azure/core-http.BaseMapper.defaultValue|stable'
+    package: '@azure/core-http|stable'
+    summary: Default value when one is not explicitly provided
+    fullName: defaultValue
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'defaultValue?: any'
+      return:
+        description: ''
+        type: any
+  - name: isConstant
+    uid: '@azure/core-http.BaseMapper.isConstant|stable'
+    package: '@azure/core-http|stable'
+    summary: Whether or not the current property is a constant
+    fullName: isConstant
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isConstant?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: nullable
+    uid: '@azure/core-http.BaseMapper.nullable|stable'
+    package: '@azure/core-http|stable'
+    summary: Whether or not the current property allows mull as a value
+    fullName: nullable
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nullable?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: readOnly
+    uid: '@azure/core-http.BaseMapper.readOnly|stable'
+    package: '@azure/core-http|stable'
+    summary: Whether or not the current property is readonly
+    fullName: readOnly
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readOnly?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: required
+    uid: '@azure/core-http.BaseMapper.required|stable'
+    package: '@azure/core-http|stable'
+    summary: Whether or not the current property is required
+    fullName: required
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'required?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: serializedName
+    uid: '@azure/core-http.BaseMapper.serializedName|stable'
+    package: '@azure/core-http|stable'
+    summary: The name to use when serializing
+    fullName: serializedName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'serializedName?: string'
+      return:
+        description: ''
+        type: string
+  - name: type
+    uid: '@azure/core-http.BaseMapper.type|stable'
+    package: '@azure/core-http|stable'
+    summary: Type of the mapper
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: MapperType'
+      return:
+        description: ''
+        type: <xref uid="@azure/core-http.MapperType|stable" />
+  - name: xmlElementName
+    uid: '@azure/core-http.BaseMapper.xmlElementName|stable'
+    package: '@azure/core-http|stable'
+    summary: Name for the xml elements when serializing an array
+    fullName: xmlElementName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'xmlElementName?: string'
+      return:
+        description: ''
+        type: string
+  - name: xmlIsAttribute
+    uid: '@azure/core-http.BaseMapper.xmlIsAttribute|stable'
+    package: '@azure/core-http|stable'
+    summary: >-
+      Determines if the current property should be serialized as an attribute of
+      the parent xml element
+    fullName: xmlIsAttribute
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'xmlIsAttribute?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: xmlIsWrapped
+    uid: '@azure/core-http.BaseMapper.xmlIsWrapped|stable'
+    package: '@azure/core-http|stable'
+    summary: Whether or not the current property should have a wrapping XML element
+    fullName: xmlIsWrapped
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'xmlIsWrapped?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: xmlName
+    uid: '@azure/core-http.BaseMapper.xmlName|stable'
+    package: '@azure/core-http|stable'
+    summary: Name for the xml element
+    fullName: xmlName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'xmlName?: string'
+      return:
+        description: ''
+        type: string
+  - name: xmlNamespace
+    uid: '@azure/core-http.BaseMapper.xmlNamespace|stable'
+    package: '@azure/core-http|stable'
+    summary: Xml element namespace
+    fullName: xmlNamespace
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'xmlNamespace?: string'
+      return:
+        description: ''
+        type: string
+  - name: xmlNamespacePrefix
+    uid: '@azure/core-http.BaseMapper.xmlNamespacePrefix|stable'
+    package: '@azure/core-http|stable'
+    summary: Xml element namespace prefix
+    fullName: xmlNamespacePrefix
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'xmlNamespacePrefix?: string'
+      return:
+        description: ''
+        type: string

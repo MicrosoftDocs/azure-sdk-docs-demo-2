@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: OracleLinkedService
+uid: '@azure/arm-datafactory.OracleLinkedService|stable'
+package: '@azure/arm-datafactory|stable'
+summary: Oracle database.
+fullName: OracleLinkedService
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type OracleLinkedService = LinkedService & { connectionString: Record<string,
+  unknown>, encryptedCredential?: Record<string, unknown>, password?:
+  AzureKeyVaultSecretReference, type: "Oracle" }

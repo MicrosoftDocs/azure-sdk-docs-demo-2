@@ -1,0 +1,110 @@
+### YamlMime:TSType
+name: SearchAvailablePhoneNumbersRequest
+uid: '@azure/communication-phone-numbers.SearchAvailablePhoneNumbersRequest|beta'
+package: '@azure/communication-phone-numbers|beta'
+summary: |-
+  Represents a phone number search request to find phone numbers.
+  Found phone numbers are temporarily held for a following purchase.
+fullName: SearchAvailablePhoneNumbersRequest
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: areaCode
+    uid: >-
+      @azure/communication-phone-numbers.SearchAvailablePhoneNumbersRequest.areaCode|beta
+    package: '@azure/communication-phone-numbers|beta'
+    summary: The area code of the desired phone number, e.g. 425.
+    fullName: areaCode
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'areaCode?: string'
+      return:
+        description: ''
+        type: string
+  - name: assignmentType
+    uid: >-
+      @azure/communication-phone-numbers.SearchAvailablePhoneNumbersRequest.assignmentType|beta
+    package: '@azure/communication-phone-numbers|beta'
+    summary: >-
+      The assignment type of the phone numbers to search for. A phone number can
+      be assigned to a person, or to an application.
+    fullName: assignmentType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'assignmentType: PhoneNumberAssignmentType'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/communication-phone-numbers.PhoneNumberAssignmentType|beta"
+          />
+  - name: capabilities
+    uid: >-
+      @azure/communication-phone-numbers.SearchAvailablePhoneNumbersRequest.capabilities|beta
+    package: '@azure/communication-phone-numbers|beta'
+    summary: Capabilities of a phone number.
+    fullName: capabilities
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'capabilities: PhoneNumberCapabilities'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/communication-phone-numbers.PhoneNumberCapabilities|beta"
+          />
+  - name: countryCode
+    uid: >-
+      @azure/communication-phone-numbers.SearchAvailablePhoneNumbersRequest.countryCode|beta
+    package: '@azure/communication-phone-numbers|beta'
+    summary: >-
+      The ISO 3166-2 country code, e.g. US, representing the location of the
+      search.
+    fullName: countryCode
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'countryCode: string'
+      return:
+        description: ''
+        type: string
+  - name: phoneNumberType
+    uid: >-
+      @azure/communication-phone-numbers.SearchAvailablePhoneNumbersRequest.phoneNumberType|beta
+    package: '@azure/communication-phone-numbers|beta'
+    summary: The type of phone numbers to search for, e.g. geographic, or tollFree.
+    fullName: phoneNumberType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'phoneNumberType: PhoneNumberType'
+      return:
+        description: ''
+        type: <xref uid="@azure/communication-phone-numbers.PhoneNumberType|beta" />
+  - name: quantity
+    uid: >-
+      @azure/communication-phone-numbers.SearchAvailablePhoneNumbersRequest.quantity|beta
+    package: '@azure/communication-phone-numbers|beta'
+    summary: The quantity of desired phone numbers. The default value is 1.
+    fullName: quantity
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'quantity?: number'
+      return:
+        description: ''
+        type: number
+extends: >-
+  <xref uid="@azure/communication-phone-numbers.PhoneNumberSearchRequest|beta"
+  />

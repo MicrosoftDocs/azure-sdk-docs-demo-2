@@ -1,0 +1,14 @@
+### YamlMime:TSTypeAlias
+name: AvroWriteSettings
+uid: '@azure/arm-datafactory.AvroWriteSettings|stable'
+package: '@azure/arm-datafactory|stable'
+summary: Avro write settings.
+fullName: AvroWriteSettings
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type AvroWriteSettings = FormatWriteSettings & { fileNamePrefix?:
+  Record<string, unknown>, maxRowsPerFile?: Record<string, unknown>,
+  recordName?: undefined | string, recordNamespace?: undefined | string, type:
+  "AvroWriteSettings" }

@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: QuickTestImageUrlResponse
+uid: >-
+  @azure/cognitiveservices-customvision-training.QuickTestImageUrlResponse|stable
+package: '@azure/cognitiveservices-customvision-training|stable'
+summary: Contains response data for the quickTestImageUrl operation.
+fullName: QuickTestImageUrlResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type QuickTestImageUrlResponse = ImagePrediction & { _response: HttpResponse &
+  { bodyAsText: string, parsedBody: ImagePrediction } }

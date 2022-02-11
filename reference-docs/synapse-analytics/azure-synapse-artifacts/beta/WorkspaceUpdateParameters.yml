@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: WorkspaceUpdateParameters
+uid: '@azure/synapse-artifacts.WorkspaceUpdateParameters|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: Parameters for updating a workspace resource.
+fullName: WorkspaceUpdateParameters
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: identity
+    uid: '@azure/synapse-artifacts.WorkspaceUpdateParameters.identity|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Managed service identity of the workspace.
+    fullName: identity
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'identity?: WorkspaceIdentity'
+      return:
+        description: ''
+        type: <xref uid="@azure/synapse-artifacts.WorkspaceIdentity|beta" />
+  - name: tags
+    uid: '@azure/synapse-artifacts.WorkspaceUpdateParameters.tags|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: The resource tags.
+    fullName: tags
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        description: ''
+        type: '[key: string]\: string'

@@ -1,0 +1,146 @@
+### YamlMime:TSType
+name: CertificateIssuer
+uid: '@azure/keyvault-certificates.CertificateIssuer|beta'
+package: '@azure/keyvault-certificates|beta'
+summary: An interface representing the properties of an issuer.
+fullName: CertificateIssuer
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: accountId
+    uid: '@azure/keyvault-certificates.CertificateIssuer.accountId|beta'
+    package: '@azure/keyvault-certificates|beta'
+    summary: The user name/account name/account id.
+    fullName: accountId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'accountId?: string'
+      return:
+        description: ''
+        type: string
+  - name: administratorContacts
+    uid: '@azure/keyvault-certificates.CertificateIssuer.administratorContacts|beta'
+    package: '@azure/keyvault-certificates|beta'
+    summary: >-
+      Details of the organization's administrator contacts, as provided to the
+      issuer.
+    fullName: administratorContacts
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'administratorContacts?: AdministratorContact[]'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/keyvault-certificates.AdministratorContact|beta"
+          />[]
+  - name: createdOn
+    uid: '@azure/keyvault-certificates.CertificateIssuer.createdOn|beta'
+    package: '@azure/keyvault-certificates|beta'
+    summary: When the issuer was created.
+    fullName: createdOn
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'createdOn?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: enabled
+    uid: '@azure/keyvault-certificates.CertificateIssuer.enabled|beta'
+    package: '@azure/keyvault-certificates|beta'
+    summary: Determines whether the object is enabled.
+    fullName: enabled
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'enabled?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: id
+    uid: '@azure/keyvault-certificates.CertificateIssuer.id|beta'
+    package: '@azure/keyvault-certificates|beta'
+    summary: Certificate Identifier.
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: string'
+      return:
+        description: ''
+        type: string
+  - name: name
+    uid: '@azure/keyvault-certificates.CertificateIssuer.name|beta'
+    package: '@azure/keyvault-certificates|beta'
+    summary: Name of the issuer.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: string'
+      return:
+        description: ''
+        type: string
+  - name: organizationId
+    uid: '@azure/keyvault-certificates.CertificateIssuer.organizationId|beta'
+    package: '@azure/keyvault-certificates|beta'
+    summary: Id of the organization.
+    fullName: organizationId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'organizationId?: string'
+      return:
+        description: ''
+        type: string
+  - name: password
+    uid: '@azure/keyvault-certificates.CertificateIssuer.password|beta'
+    package: '@azure/keyvault-certificates|beta'
+    summary: The password/secret/account key.
+    fullName: password
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'password?: string'
+      return:
+        description: ''
+        type: string
+  - name: provider
+    uid: '@azure/keyvault-certificates.CertificateIssuer.provider|beta'
+    package: '@azure/keyvault-certificates|beta'
+    summary: The issuer provider.
+    fullName: provider
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'provider?: string'
+      return:
+        description: ''
+        type: string
+  - name: updatedOn
+    uid: '@azure/keyvault-certificates.CertificateIssuer.updatedOn|beta'
+    package: '@azure/keyvault-certificates|beta'
+    summary: When the issuer was updated.
+    fullName: updatedOn
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'updatedOn?: Date'
+      return:
+        description: ''
+        type: Date
+extends: <xref uid="@azure/keyvault-certificates.IssuerProperties|beta" />

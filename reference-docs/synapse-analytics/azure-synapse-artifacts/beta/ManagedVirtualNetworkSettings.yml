@@ -1,0 +1,53 @@
+### YamlMime:TSType
+name: ManagedVirtualNetworkSettings
+uid: '@azure/synapse-artifacts.ManagedVirtualNetworkSettings|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: Managed Virtual Network Settings
+fullName: ManagedVirtualNetworkSettings
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: allowedAadTenantIdsForLinking
+    uid: >-
+      @azure/synapse-artifacts.ManagedVirtualNetworkSettings.allowedAadTenantIdsForLinking|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: Allowed Aad Tenant Ids For Linking
+    fullName: allowedAadTenantIdsForLinking
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowedAadTenantIdsForLinking?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: linkedAccessCheckOnTargetResource
+    uid: >-
+      @azure/synapse-artifacts.ManagedVirtualNetworkSettings.linkedAccessCheckOnTargetResource|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: Linked Access Check On Target Resource
+    fullName: linkedAccessCheckOnTargetResource
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'linkedAccessCheckOnTargetResource?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: preventDataExfiltration
+    uid: >-
+      @azure/synapse-artifacts.ManagedVirtualNetworkSettings.preventDataExfiltration|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: Prevent Data Exfiltration
+    fullName: preventDataExfiltration
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'preventDataExfiltration?: boolean'
+      return:
+        description: ''
+        type: boolean

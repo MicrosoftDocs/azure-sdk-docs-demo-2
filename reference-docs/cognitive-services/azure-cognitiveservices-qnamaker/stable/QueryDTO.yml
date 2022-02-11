@@ -1,0 +1,169 @@
+### YamlMime:TSType
+name: QueryDTO
+uid: '@azure/cognitiveservices-qnamaker.QueryDTO|stable'
+package: '@azure/cognitiveservices-qnamaker|stable'
+summary: POST body schema to query the knowledgebase.
+fullName: QueryDTO
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: answerSpanRequest
+    uid: '@azure/cognitiveservices-qnamaker.QueryDTO.answerSpanRequest|stable'
+    package: '@azure/cognitiveservices-qnamaker|stable'
+    summary: To configure Answer span prediction feature.
+    fullName: answerSpanRequest
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'answerSpanRequest?: QueryDTOAnswerSpanRequest'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/cognitiveservices-qnamaker.QueryDTOAnswerSpanRequest|stable"
+          />
+  - name: context
+    uid: '@azure/cognitiveservices-qnamaker.QueryDTO.context|stable'
+    package: '@azure/cognitiveservices-qnamaker|stable'
+    summary: Context object with previous QnA's information.
+    fullName: context
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context?: QueryDTOContext'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/cognitiveservices-qnamaker.QueryDTOContext|stable"
+          />
+  - name: isTest
+    uid: '@azure/cognitiveservices-qnamaker.QueryDTO.isTest|stable'
+    package: '@azure/cognitiveservices-qnamaker|stable'
+    summary: Query against the test index.
+    fullName: isTest
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isTest?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true
+  - name: qnaId
+    uid: '@azure/cognitiveservices-qnamaker.QueryDTO.qnaId|stable'
+    package: '@azure/cognitiveservices-qnamaker|stable'
+    summary: >-
+      Exact qnaId to fetch from the knowledgebase, this field takes priority
+      over question.
+    fullName: qnaId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'qnaId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: question
+    uid: '@azure/cognitiveservices-qnamaker.QueryDTO.question|stable'
+    package: '@azure/cognitiveservices-qnamaker|stable'
+    summary: User question to query against the knowledge base.
+    fullName: question
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'question?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: rankerType
+    uid: '@azure/cognitiveservices-qnamaker.QueryDTO.rankerType|stable'
+    package: '@azure/cognitiveservices-qnamaker|stable'
+    summary: Optional field. Set to 'QuestionOnly' for using a question only Ranker.
+    fullName: rankerType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rankerType?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: scoreThreshold
+    uid: '@azure/cognitiveservices-qnamaker.QueryDTO.scoreThreshold|stable'
+    package: '@azure/cognitiveservices-qnamaker|stable'
+    summary: Minimum threshold score for answers.
+    fullName: scoreThreshold
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'scoreThreshold?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: strictFilters
+    uid: '@azure/cognitiveservices-qnamaker.QueryDTO.strictFilters|stable'
+    package: '@azure/cognitiveservices-qnamaker|stable'
+    summary: Find QnAs that are associated with the given list of metadata.
+    fullName: strictFilters
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'strictFilters?: MetadataDTO[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/cognitiveservices-qnamaker.MetadataDTO|stable" />[]
+  - name: strictFiltersCompoundOperationType
+    uid: >-
+      @azure/cognitiveservices-qnamaker.QueryDTO.strictFiltersCompoundOperationType|stable
+    package: '@azure/cognitiveservices-qnamaker|stable'
+    summary: >-
+      Optional field. Set to 'OR' for using OR operation for strict filters.
+      Possible values
+
+      include: 'AND', 'OR'
+    fullName: strictFiltersCompoundOperationType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'strictFiltersCompoundOperationType?: StrictFiltersCompoundOperationType'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/cognitiveservices-qnamaker.StrictFiltersCompoundOperationType|stable"
+          />
+  - name: top
+    uid: '@azure/cognitiveservices-qnamaker.QueryDTO.top|stable'
+    package: '@azure/cognitiveservices-qnamaker|stable'
+    summary: Max number of answers to be returned for the question.
+    fullName: top
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'top?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: userId
+    uid: '@azure/cognitiveservices-qnamaker.QueryDTO.userId|stable'
+    package: '@azure/cognitiveservices-qnamaker|stable'
+    summary: Unique identifier for the user.
+    fullName: userId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'userId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

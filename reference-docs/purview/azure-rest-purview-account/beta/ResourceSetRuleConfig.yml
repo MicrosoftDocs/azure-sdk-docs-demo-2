@@ -1,0 +1,52 @@
+### YamlMime:TSType
+name: ResourceSetRuleConfig
+uid: '@azure-rest/purview-account.ResourceSetRuleConfig|beta'
+package: '@azure-rest/purview-account|beta'
+summary: ''
+fullName: ResourceSetRuleConfig
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: advancedResourceSet
+    uid: '@azure-rest/purview-account.ResourceSetRuleConfig.advancedResourceSet|beta'
+    package: '@azure-rest/purview-account|beta'
+    summary: Gets or sets the advanced resource set property of the account.
+    fullName: advancedResourceSet
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'advancedResourceSet?: AdvancedResourceSet'
+      return:
+        description: ''
+        type: <xref uid="@azure-rest/purview-account.AdvancedResourceSet|beta" />
+  - name: name
+    uid: '@azure-rest/purview-account.ResourceSetRuleConfig.name|beta'
+    package: '@azure-rest/purview-account|beta'
+    summary: The name of the rule
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: string'
+      return:
+        description: ''
+        type: string
+  - name: pathPatternConfig
+    uid: '@azure-rest/purview-account.ResourceSetRuleConfig.pathPatternConfig|beta'
+    package: '@azure-rest/purview-account|beta'
+    summary: The configuration rules for path pattern extraction.
+    fullName: pathPatternConfig
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'pathPatternConfig?: PathPatternExtractorConfig'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure-rest/purview-account.PathPatternExtractorConfig|beta" />

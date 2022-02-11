@@ -1,0 +1,194 @@
+### YamlMime:TSType
+name: ArtifactsClientOptionalParams
+uid: '@azure/synapse-artifacts.ArtifactsClientOptionalParams|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: Optional parameters.
+fullName: ArtifactsClientOptionalParams
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: additionalPolicies
+    uid: >-
+      @azure/synapse-artifacts.ArtifactsClientOptionalParams.additionalPolicies|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: Additional policies to include in the HTTP pipeline.
+    fullName: additionalPolicies
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'additionalPolicies?: AdditionalPolicyConfig[]'
+      return:
+        description: ''
+        type: AdditionalPolicyConfig[]
+  - name: allowInsecureConnection
+    uid: >-
+      @azure/synapse-artifacts.ArtifactsClientOptionalParams.allowInsecureConnection|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: Set to true if the request is sent over HTTP instead of HTTPS
+    fullName: allowInsecureConnection
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowInsecureConnection?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: baseUri
+    uid: '@azure/synapse-artifacts.ArtifactsClientOptionalParams.baseUri|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: >-
+      If specified, this is the base URI that requests will be made against for
+      this ServiceClient.
+
+      If it is not specified, then all OperationSpecs must contain a baseUrl
+      property.
+    fullName: baseUri
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'baseUri?: string'
+      return:
+        description: ''
+        type: string
+  - name: credential
+    uid: '@azure/synapse-artifacts.ArtifactsClientOptionalParams.credential|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Credential used to authenticate the request.
+    fullName: credential
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'credential?: TokenCredential'
+      return:
+        description: ''
+        type: TokenCredential
+  - name: credentialScopes
+    uid: >-
+      @azure/synapse-artifacts.ArtifactsClientOptionalParams.credentialScopes|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: If specified, will be used to build the BearerTokenAuthenticationPolicy.
+    fullName: credentialScopes
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'credentialScopes?: string | string[]'
+      return:
+        description: ''
+        type: string | string[]
+  - name: endpoint
+    uid: '@azure/synapse-artifacts.ArtifactsClientOptionalParams.endpoint|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Overrides client endpoint.
+    fullName: endpoint
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'endpoint?: string'
+      return:
+        description: ''
+        type: string
+  - name: httpClient
+    uid: '@azure/synapse-artifacts.ArtifactsClientOptionalParams.httpClient|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: The HttpClient that will be used to send HTTP requests.
+    fullName: httpClient
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'httpClient?: HttpClient'
+      return:
+        description: ''
+        type: HttpClient
+  - name: pipeline
+    uid: '@azure/synapse-artifacts.ArtifactsClientOptionalParams.pipeline|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: A customized pipeline to use, otherwise a default one will be created.
+    fullName: pipeline
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'pipeline?: Pipeline'
+      return:
+        description: ''
+        type: Pipeline
+  - name: proxyOptions
+    uid: '@azure/synapse-artifacts.ArtifactsClientOptionalParams.proxyOptions|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Options to configure a proxy for outgoing requests.
+    fullName: proxyOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'proxyOptions?: ProxySettings'
+      return:
+        description: ''
+        type: ProxySettings
+  - name: redirectOptions
+    uid: >-
+      @azure/synapse-artifacts.ArtifactsClientOptionalParams.redirectOptions|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: Options for how redirect responses are handled.
+    fullName: redirectOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'redirectOptions?: RedirectPolicyOptions'
+      return:
+        description: ''
+        type: RedirectPolicyOptions
+  - name: requestContentType
+    uid: >-
+      @azure/synapse-artifacts.ArtifactsClientOptionalParams.requestContentType|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: |-
+      The default request content type for the service.
+      Used if no requestContentType is present on an OperationSpec.
+    fullName: requestContentType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'requestContentType?: string'
+      return:
+        description: ''
+        type: string
+  - name: retryOptions
+    uid: '@azure/synapse-artifacts.ArtifactsClientOptionalParams.retryOptions|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Options that control how to retry failed requests.
+    fullName: retryOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'retryOptions?: PipelineRetryOptions'
+      return:
+        description: ''
+        type: PipelineRetryOptions
+  - name: userAgentOptions
+    uid: >-
+      @azure/synapse-artifacts.ArtifactsClientOptionalParams.userAgentOptions|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: Options for adding user agent details to outgoing requests.
+    fullName: userAgentOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'userAgentOptions?: UserAgentPolicyOptions'
+      return:
+        description: ''
+        type: UserAgentPolicyOptions
+extends: ServiceClientOptions

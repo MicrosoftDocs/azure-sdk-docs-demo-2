@@ -1,0 +1,38 @@
+### YamlMime:TSType
+name: ClassificationRulesListAll
+uid: '@azure-rest/purview-scanning.ClassificationRulesListAll|beta'
+package: '@azure-rest/purview-scanning|beta'
+summary: ''
+fullName: ClassificationRulesListAll
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: get(ClassificationRulesListAllParameters)
+    uid: '@azure-rest/purview-scanning.ClassificationRulesListAll.get|beta'
+    package: '@azure-rest/purview-scanning|beta'
+    summary: List classification rules in Account
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(options?: ClassificationRulesListAllParameters):
+        Promise<ClassificationRulesListAll200Response |
+        ClassificationRulesListAlldefaultResponse>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure-rest/purview-scanning.ClassificationRulesListAllParameters|beta"
+            />
+          description: ''
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure-rest/purview-scanning.ClassificationRulesListAll200Response|beta"
+          /> | <xref
+          uid="@azure-rest/purview-scanning.ClassificationRulesListAlldefaultResponse|beta"
+          />&gt;

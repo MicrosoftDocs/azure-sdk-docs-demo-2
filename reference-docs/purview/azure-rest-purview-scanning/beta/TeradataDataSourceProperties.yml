@@ -1,0 +1,68 @@
+### YamlMime:TSType
+name: TeradataDataSourceProperties
+uid: '@azure-rest/purview-scanning.TeradataDataSourceProperties|beta'
+package: '@azure-rest/purview-scanning|beta'
+summary: ''
+fullName: TeradataDataSourceProperties
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: collection
+    uid: '@azure-rest/purview-scanning.TeradataDataSourceProperties.collection|beta'
+    package: '@azure-rest/purview-scanning|beta'
+    summary: ''
+    fullName: collection
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'collection?: DataSourcePropertiesCollection'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure-rest/purview-scanning.DataSourcePropertiesCollection|beta"
+          />
+  - name: createdAt
+    uid: '@azure-rest/purview-scanning.TeradataDataSourceProperties.createdAt|beta'
+    package: '@azure-rest/purview-scanning|beta'
+    summary: ''
+    fullName: createdAt
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'createdAt?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: host
+    uid: '@azure-rest/purview-scanning.TeradataDataSourceProperties.host|beta'
+    package: '@azure-rest/purview-scanning|beta'
+    summary: ''
+    fullName: host
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'host?: string'
+      return:
+        description: ''
+        type: string
+  - name: lastModifiedAt
+    uid: >-
+      @azure-rest/purview-scanning.TeradataDataSourceProperties.lastModifiedAt|beta
+    package: '@azure-rest/purview-scanning|beta'
+    summary: ''
+    fullName: lastModifiedAt
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lastModifiedAt?: Date'
+      return:
+        description: ''
+        type: Date
+extends: <xref uid="@azure-rest/purview-scanning.TeradataProperties|beta" />

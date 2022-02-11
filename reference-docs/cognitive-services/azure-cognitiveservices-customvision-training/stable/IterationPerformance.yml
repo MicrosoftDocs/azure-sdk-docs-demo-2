@@ -1,0 +1,122 @@
+### YamlMime:TSType
+name: IterationPerformance
+uid: '@azure/cognitiveservices-customvision-training.IterationPerformance|stable'
+package: '@azure/cognitiveservices-customvision-training|stable'
+summary: Represents the detailed performance data for a trained iteration.
+fullName: IterationPerformance
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: averagePrecision
+    uid: >-
+      @azure/cognitiveservices-customvision-training.IterationPerformance.averagePrecision|stable
+    package: '@azure/cognitiveservices-customvision-training|stable'
+    summary: >-
+      Gets the average precision when applicable.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: averagePrecision
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'averagePrecision?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: perTagPerformance
+    uid: >-
+      @azure/cognitiveservices-customvision-training.IterationPerformance.perTagPerformance|stable
+    package: '@azure/cognitiveservices-customvision-training|stable'
+    summary: >-
+      Gets the per-tag performance details for this iteration.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: perTagPerformance
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'perTagPerformance?: TagPerformance[]'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/cognitiveservices-customvision-training.TagPerformance|stable"
+          />[]
+  - name: precision
+    uid: >-
+      @azure/cognitiveservices-customvision-training.IterationPerformance.precision|stable
+    package: '@azure/cognitiveservices-customvision-training|stable'
+    summary: >-
+      Gets the precision.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: precision
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'precision?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: precisionStdDeviation
+    uid: >-
+      @azure/cognitiveservices-customvision-training.IterationPerformance.precisionStdDeviation|stable
+    package: '@azure/cognitiveservices-customvision-training|stable'
+    summary: >-
+      Gets the standard deviation for the precision.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: precisionStdDeviation
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'precisionStdDeviation?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: recall
+    uid: >-
+      @azure/cognitiveservices-customvision-training.IterationPerformance.recall|stable
+    package: '@azure/cognitiveservices-customvision-training|stable'
+    summary: >-
+      Gets the recall.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: recall
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'recall?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: recallStdDeviation
+    uid: >-
+      @azure/cognitiveservices-customvision-training.IterationPerformance.recallStdDeviation|stable
+    package: '@azure/cognitiveservices-customvision-training|stable'
+    summary: >-
+      Gets the standard deviation for the recall.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: recallStdDeviation
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'recallStdDeviation?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number

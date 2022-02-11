@@ -1,0 +1,62 @@
+### YamlMime:TSType
+name: ConnectionStateProperties
+uid: '@azure/arm-datafactory.ConnectionStateProperties|stable'
+package: '@azure/arm-datafactory|stable'
+summary: The connection state of a managed private endpoint
+fullName: ConnectionStateProperties
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: actionsRequired
+    uid: '@azure/arm-datafactory.ConnectionStateProperties.actionsRequired|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: >-
+      The actions required on the managed private endpoint
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: actionsRequired
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'actionsRequired?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: description
+    uid: '@azure/arm-datafactory.ConnectionStateProperties.description|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: >-
+      The managed private endpoint description
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: description
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'description?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: status
+    uid: '@azure/arm-datafactory.ConnectionStateProperties.status|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: >-
+      The approval status
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: status
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'status?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

@@ -1,0 +1,39 @@
+### YamlMime:TSType
+name: SBNamespaceListResult
+uid: '@azure/arm-servicebus.SBNamespaceListResult|stable'
+package: '@azure/arm-servicebus|stable'
+summary: The response of the List Namespace operation.
+fullName: SBNamespaceListResult
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: nextLink
+    uid: '@azure/arm-servicebus.SBNamespaceListResult.nextLink|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: >-
+      Link to the next set of results. Not empty if Value contains incomplete
+      list of Namespaces.
+    fullName: nextLink
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nextLink?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: value
+    uid: '@azure/arm-servicebus.SBNamespaceListResult.value|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Result of the List Namespace operation.
+    fullName: value
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: SBNamespace[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-servicebus.SBNamespace|stable" />[]

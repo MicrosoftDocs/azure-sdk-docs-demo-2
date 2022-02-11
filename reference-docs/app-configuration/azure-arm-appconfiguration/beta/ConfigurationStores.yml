@@ -1,0 +1,412 @@
+### YamlMime:TSType
+name: ConfigurationStores
+uid: '@azure/arm-appconfiguration.ConfigurationStores|beta'
+package: '@azure/arm-appconfiguration|beta'
+summary: Interface representing a ConfigurationStores.
+fullName: ConfigurationStores
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      beginCreate(string, string, ConfigurationStore,
+      ConfigurationStoresCreateOptionalParams)
+    uid: '@azure/arm-appconfiguration.ConfigurationStores.beginCreate|beta'
+    package: '@azure/arm-appconfiguration|beta'
+    summary: Creates a configuration store with the specified parameters.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreate(resourceGroupName: string, configStoreName: string,
+        configStoreCreationParameters: ConfigurationStore, options?:
+        ConfigurationStoresCreateOptionalParams):
+        Promise<PollerLike<PollOperationState<ConfigurationStoresCreateResponse>,
+        ConfigurationStoresCreateResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: configStoreName
+          type: string
+          description: The name of the configuration store.
+        - id: configStoreCreationParameters
+          type: <xref uid="@azure/arm-appconfiguration.ConfigurationStore|beta" />
+          description: The parameters for creating a configuration store.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appconfiguration.ConfigurationStoresCreateOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-appconfiguration.ConfigurationStoresCreateResponse|beta"
+          />&gt;, <xref
+          uid="@azure/arm-appconfiguration.ConfigurationStoresCreateResponse|beta"
+          />&gt;&gt;
+  - name: >-
+      beginCreateAndWait(string, string, ConfigurationStore,
+      ConfigurationStoresCreateOptionalParams)
+    uid: '@azure/arm-appconfiguration.ConfigurationStores.beginCreateAndWait|beta'
+    package: '@azure/arm-appconfiguration|beta'
+    summary: Creates a configuration store with the specified parameters.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateAndWait(resourceGroupName: string, configStoreName:
+        string, configStoreCreationParameters: ConfigurationStore, options?:
+        ConfigurationStoresCreateOptionalParams):
+        Promise<ConfigurationStoresCreateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: configStoreName
+          type: string
+          description: The name of the configuration store.
+        - id: configStoreCreationParameters
+          type: <xref uid="@azure/arm-appconfiguration.ConfigurationStore|beta" />
+          description: The parameters for creating a configuration store.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appconfiguration.ConfigurationStoresCreateOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appconfiguration.ConfigurationStoresCreateResponse|beta"
+          />&gt;
+  - name: beginDelete(string, string, ConfigurationStoresDeleteOptionalParams)
+    uid: '@azure/arm-appconfiguration.ConfigurationStores.beginDelete|beta'
+    package: '@azure/arm-appconfiguration|beta'
+    summary: Deletes a configuration store.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDelete(resourceGroupName: string, configStoreName: string,
+        options?: ConfigurationStoresDeleteOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: configStoreName
+          type: string
+          description: The name of the configuration store.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appconfiguration.ConfigurationStoresDeleteOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: >-
+      beginDeleteAndWait(string, string,
+      ConfigurationStoresDeleteOptionalParams)
+    uid: '@azure/arm-appconfiguration.ConfigurationStores.beginDeleteAndWait|beta'
+    package: '@azure/arm-appconfiguration|beta'
+    summary: Deletes a configuration store.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteAndWait(resourceGroupName: string, configStoreName:
+        string, options?: ConfigurationStoresDeleteOptionalParams):
+        Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: configStoreName
+          type: string
+          description: The name of the configuration store.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appconfiguration.ConfigurationStoresDeleteOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      beginUpdate(string, string, ConfigurationStoreUpdateParameters,
+      ConfigurationStoresUpdateOptionalParams)
+    uid: '@azure/arm-appconfiguration.ConfigurationStores.beginUpdate|beta'
+    package: '@azure/arm-appconfiguration|beta'
+    summary: Updates a configuration store with the specified parameters.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginUpdate(resourceGroupName: string, configStoreName: string,
+        configStoreUpdateParameters: ConfigurationStoreUpdateParameters,
+        options?: ConfigurationStoresUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<ConfigurationStoresUpdateResponse>,
+        ConfigurationStoresUpdateResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: configStoreName
+          type: string
+          description: The name of the configuration store.
+        - id: configStoreUpdateParameters
+          type: >-
+            <xref
+            uid="@azure/arm-appconfiguration.ConfigurationStoreUpdateParameters|beta"
+            />
+          description: The parameters for updating a configuration store.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appconfiguration.ConfigurationStoresUpdateOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-appconfiguration.ConfigurationStoresUpdateResponse|beta"
+          />&gt;, <xref
+          uid="@azure/arm-appconfiguration.ConfigurationStoresUpdateResponse|beta"
+          />&gt;&gt;
+  - name: >-
+      beginUpdateAndWait(string, string, ConfigurationStoreUpdateParameters,
+      ConfigurationStoresUpdateOptionalParams)
+    uid: '@azure/arm-appconfiguration.ConfigurationStores.beginUpdateAndWait|beta'
+    package: '@azure/arm-appconfiguration|beta'
+    summary: Updates a configuration store with the specified parameters.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginUpdateAndWait(resourceGroupName: string, configStoreName:
+        string, configStoreUpdateParameters: ConfigurationStoreUpdateParameters,
+        options?: ConfigurationStoresUpdateOptionalParams):
+        Promise<ConfigurationStoresUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: configStoreName
+          type: string
+          description: The name of the configuration store.
+        - id: configStoreUpdateParameters
+          type: >-
+            <xref
+            uid="@azure/arm-appconfiguration.ConfigurationStoreUpdateParameters|beta"
+            />
+          description: The parameters for updating a configuration store.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appconfiguration.ConfigurationStoresUpdateOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appconfiguration.ConfigurationStoresUpdateResponse|beta"
+          />&gt;
+  - name: get(string, string, ConfigurationStoresGetOptionalParams)
+    uid: '@azure/arm-appconfiguration.ConfigurationStores.get|beta'
+    package: '@azure/arm-appconfiguration|beta'
+    summary: Gets the properties of the specified configuration store.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, configStoreName: string,
+        options?: ConfigurationStoresGetOptionalParams):
+        Promise<ConfigurationStoresGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: configStoreName
+          type: string
+          description: The name of the configuration store.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appconfiguration.ConfigurationStoresGetOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appconfiguration.ConfigurationStoresGetResponse|beta"
+          />&gt;
+  - name: list(ConfigurationStoresListOptionalParams)
+    uid: '@azure/arm-appconfiguration.ConfigurationStores.list|beta'
+    package: '@azure/arm-appconfiguration|beta'
+    summary: Lists the configuration stores for a given subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(options?: ConfigurationStoresListOptionalParams):
+        PagedAsyncIterableIterator<ConfigurationStore>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appconfiguration.ConfigurationStoresListOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appconfiguration.ConfigurationStore|beta" />&gt;
+  - name: >-
+      listByResourceGroup(string,
+      ConfigurationStoresListByResourceGroupOptionalParams)
+    uid: '@azure/arm-appconfiguration.ConfigurationStores.listByResourceGroup|beta'
+    package: '@azure/arm-appconfiguration|beta'
+    summary: Lists the configuration stores for a given resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string, options?:
+        ConfigurationStoresListByResourceGroupOptionalParams):
+        PagedAsyncIterableIterator<ConfigurationStore>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appconfiguration.ConfigurationStoresListByResourceGroupOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appconfiguration.ConfigurationStore|beta" />&gt;
+  - name: listKeys(string, string, ConfigurationStoresListKeysOptionalParams)
+    uid: '@azure/arm-appconfiguration.ConfigurationStores.listKeys|beta'
+    package: '@azure/arm-appconfiguration|beta'
+    summary: Lists the access key for the specified configuration store.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listKeys(resourceGroupName: string, configStoreName: string,
+        options?: ConfigurationStoresListKeysOptionalParams):
+        PagedAsyncIterableIterator<ApiKey>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: configStoreName
+          type: string
+          description: The name of the configuration store.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appconfiguration.ConfigurationStoresListKeysOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appconfiguration.ApiKey|beta" />&gt;
+  - name: >-
+      regenerateKey(string, string, RegenerateKeyParameters,
+      ConfigurationStoresRegenerateKeyOptionalParams)
+    uid: '@azure/arm-appconfiguration.ConfigurationStores.regenerateKey|beta'
+    package: '@azure/arm-appconfiguration|beta'
+    summary: Regenerates an access key for the specified configuration store.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function regenerateKey(resourceGroupName: string, configStoreName:
+        string, regenerateKeyParameters: RegenerateKeyParameters, options?:
+        ConfigurationStoresRegenerateKeyOptionalParams):
+        Promise<ConfigurationStoresRegenerateKeyResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: configStoreName
+          type: string
+          description: The name of the configuration store.
+        - id: regenerateKeyParameters
+          type: >-
+            <xref uid="@azure/arm-appconfiguration.RegenerateKeyParameters|beta"
+            />
+          description: The parameters for regenerating an access key.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appconfiguration.ConfigurationStoresRegenerateKeyOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appconfiguration.ConfigurationStoresRegenerateKeyResponse|beta"
+          />&gt;

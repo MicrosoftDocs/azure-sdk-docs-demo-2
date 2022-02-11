@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: SftpWriteSettings
+uid: '@azure/arm-datafactory.SftpWriteSettings|stable'
+package: '@azure/arm-datafactory|stable'
+summary: Sftp write settings.
+fullName: SftpWriteSettings
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type SftpWriteSettings = StoreWriteSettings & { operationTimeout?:
+  Record<string, unknown>, type: "SftpWriteSettings", useTempFileRename?:
+  Record<string, unknown> }

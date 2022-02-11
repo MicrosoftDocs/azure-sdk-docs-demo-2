@@ -1,0 +1,65 @@
+### YamlMime:TSType
+name: KeyVaultProperties
+uid: '@azure/arm-servicebus.KeyVaultProperties|stable'
+package: '@azure/arm-servicebus|stable'
+summary: Properties to configure keyVault Properties
+fullName: KeyVaultProperties
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: identity
+    uid: '@azure/arm-servicebus.KeyVaultProperties.identity|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: ''
+    fullName: identity
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'identity?: UserAssignedIdentityProperties'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-servicebus.UserAssignedIdentityProperties|stable" />
+  - name: keyName
+    uid: '@azure/arm-servicebus.KeyVaultProperties.keyName|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Name of the Key from KeyVault
+    fullName: keyName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'keyName?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: keyVaultUri
+    uid: '@azure/arm-servicebus.KeyVaultProperties.keyVaultUri|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Uri of KeyVault
+    fullName: keyVaultUri
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'keyVaultUri?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: keyVersion
+    uid: '@azure/arm-servicebus.KeyVaultProperties.keyVersion|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Version of KeyVault
+    fullName: keyVersion
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'keyVersion?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

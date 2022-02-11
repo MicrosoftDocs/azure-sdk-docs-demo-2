@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: HubIPAddresses
+uid: '@azure/arm-network.HubIPAddresses|stable'
+package: '@azure/arm-network|stable'
+summary: IP addresses associated with azure firewall.
+fullName: HubIPAddresses
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: privateIPAddress
+    uid: '@azure/arm-network.HubIPAddresses.privateIPAddress|stable'
+    package: '@azure/arm-network|stable'
+    summary: Private IP Address associated with azure firewall.
+    fullName: privateIPAddress
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'privateIPAddress?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: publicIPs
+    uid: '@azure/arm-network.HubIPAddresses.publicIPs|stable'
+    package: '@azure/arm-network|stable'
+    summary: Public IP addresses associated with azure firewall.
+    fullName: publicIPs
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'publicIPs?: HubPublicIPAddresses'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.HubPublicIPAddresses|stable" />

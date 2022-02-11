@@ -1,0 +1,120 @@
+### YamlMime:TSType
+name: PerformanceTierServiceLevelObjectives
+uid: '@azure/arm-postgresql.PerformanceTierServiceLevelObjectives|stable'
+package: '@azure/arm-postgresql|stable'
+summary: Service level objectives for performance tier.
+fullName: PerformanceTierServiceLevelObjectives
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: edition
+    uid: '@azure/arm-postgresql.PerformanceTierServiceLevelObjectives.edition|stable'
+    package: '@azure/arm-postgresql|stable'
+    summary: Edition of the performance tier.
+    fullName: edition
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'edition?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: hardwareGeneration
+    uid: >-
+      @azure/arm-postgresql.PerformanceTierServiceLevelObjectives.hardwareGeneration|stable
+    package: '@azure/arm-postgresql|stable'
+    summary: Hardware generation associated with the service level objective
+    fullName: hardwareGeneration
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hardwareGeneration?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: id
+    uid: '@azure/arm-postgresql.PerformanceTierServiceLevelObjectives.id|stable'
+    package: '@azure/arm-postgresql|stable'
+    summary: ID for the service level objective.
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: maxBackupRetentionDays
+    uid: >-
+      @azure/arm-postgresql.PerformanceTierServiceLevelObjectives.maxBackupRetentionDays|stable
+    package: '@azure/arm-postgresql|stable'
+    summary: Maximum Backup retention in days for the performance tier edition
+    fullName: maxBackupRetentionDays
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'maxBackupRetentionDays?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: maxStorageMB
+    uid: >-
+      @azure/arm-postgresql.PerformanceTierServiceLevelObjectives.maxStorageMB|stable
+    package: '@azure/arm-postgresql|stable'
+    summary: Max storage allowed for a server.
+    fullName: maxStorageMB
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'maxStorageMB?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: minBackupRetentionDays
+    uid: >-
+      @azure/arm-postgresql.PerformanceTierServiceLevelObjectives.minBackupRetentionDays|stable
+    package: '@azure/arm-postgresql|stable'
+    summary: Minimum Backup retention in days for the performance tier edition
+    fullName: minBackupRetentionDays
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'minBackupRetentionDays?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: minStorageMB
+    uid: >-
+      @azure/arm-postgresql.PerformanceTierServiceLevelObjectives.minStorageMB|stable
+    package: '@azure/arm-postgresql|stable'
+    summary: Max storage allowed for a server.
+    fullName: minStorageMB
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'minStorageMB?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: vCore
+    uid: '@azure/arm-postgresql.PerformanceTierServiceLevelObjectives.vCore|stable'
+    package: '@azure/arm-postgresql|stable'
+    summary: vCore associated with the service level objective
+    fullName: vCore
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'vCore?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number

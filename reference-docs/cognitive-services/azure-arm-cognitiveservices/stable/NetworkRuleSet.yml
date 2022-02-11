@@ -1,0 +1,54 @@
+### YamlMime:TSType
+name: NetworkRuleSet
+uid: '@azure/arm-cognitiveservices.NetworkRuleSet|stable'
+package: '@azure/arm-cognitiveservices|stable'
+summary: A set of rules governing the network accessibility.
+fullName: NetworkRuleSet
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: defaultAction
+    uid: '@azure/arm-cognitiveservices.NetworkRuleSet.defaultAction|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: >-
+      The default action when no rule from ipRules and from virtualNetworkRules
+      match. This is only used after the bypass property has been evaluated.
+    fullName: defaultAction
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'defaultAction?: NetworkRuleAction'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-cognitiveservices.NetworkRuleAction|stable" />
+  - name: ipRules
+    uid: '@azure/arm-cognitiveservices.NetworkRuleSet.ipRules|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: The list of IP address rules.
+    fullName: ipRules
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ipRules?: IpRule[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-cognitiveservices.IpRule|stable" />[]
+  - name: virtualNetworkRules
+    uid: '@azure/arm-cognitiveservices.NetworkRuleSet.virtualNetworkRules|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: The list of virtual network rules.
+    fullName: virtualNetworkRules
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'virtualNetworkRules?: VirtualNetworkRule[]'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/arm-cognitiveservices.VirtualNetworkRule|stable"
+          />[]

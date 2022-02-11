@@ -1,0 +1,52 @@
+### YamlMime:TSType
+name: ServiceSetPropertiesHeaders
+uid: '@azure/storage-file-share.ServiceSetPropertiesHeaders|beta'
+package: '@azure/storage-file-share|beta'
+summary: Defines headers for Service_setProperties operation.
+fullName: ServiceSetPropertiesHeaders
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: errorCode
+    uid: '@azure/storage-file-share.ServiceSetPropertiesHeaders.errorCode|beta'
+    package: '@azure/storage-file-share|beta'
+    summary: Error Code
+    fullName: errorCode
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'errorCode?: string'
+      return:
+        description: ''
+        type: string
+  - name: requestId
+    uid: '@azure/storage-file-share.ServiceSetPropertiesHeaders.requestId|beta'
+    package: '@azure/storage-file-share|beta'
+    summary: >-
+      This header uniquely identifies the request that was made and can be used
+      for troubleshooting the request.
+    fullName: requestId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'requestId?: string'
+      return:
+        description: ''
+        type: string
+  - name: version
+    uid: '@azure/storage-file-share.ServiceSetPropertiesHeaders.version|beta'
+    package: '@azure/storage-file-share|beta'
+    summary: Indicates the version of the File service used to execute the request.
+    fullName: version
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'version?: string'
+      return:
+        description: ''
+        type: string

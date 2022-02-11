@@ -1,0 +1,80 @@
+### YamlMime:TSType
+name: X509CertificateProperties
+uid: '@azure/keyvault-certificates.X509CertificateProperties|beta'
+package: '@azure/keyvault-certificates|beta'
+summary: Properties of the X509 component of a certificate.
+fullName: X509CertificateProperties
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: ekus
+    uid: '@azure/keyvault-certificates.X509CertificateProperties.ekus|beta'
+    package: '@azure/keyvault-certificates|beta'
+    summary: The enhanced key usage.
+    fullName: ekus
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ekus?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: keyUsage
+    uid: '@azure/keyvault-certificates.X509CertificateProperties.keyUsage|beta'
+    package: '@azure/keyvault-certificates|beta'
+    summary: List of key usages.
+    fullName: keyUsage
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'keyUsage?: KeyUsageType[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/keyvault-certificates.KeyUsageType|beta" />[]
+  - name: subject
+    uid: '@azure/keyvault-certificates.X509CertificateProperties.subject|beta'
+    package: '@azure/keyvault-certificates|beta'
+    summary: The subject name. Should be a valid X509 distinguished Name.
+    fullName: subject
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'subject?: string'
+      return:
+        description: ''
+        type: string
+  - name: subjectAlternativeNames
+    uid: >-
+      @azure/keyvault-certificates.X509CertificateProperties.subjectAlternativeNames|beta
+    package: '@azure/keyvault-certificates|beta'
+    summary: The subject alternative names.
+    fullName: subjectAlternativeNames
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'subjectAlternativeNames?: CoreSubjectAlternativeNames'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/keyvault-certificates.CoreSubjectAlternativeNames|beta" />
+  - name: validityInMonths
+    uid: >-
+      @azure/keyvault-certificates.X509CertificateProperties.validityInMonths|beta
+    package: '@azure/keyvault-certificates|beta'
+    summary: The duration that the certificate is valid in months.
+    fullName: validityInMonths
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'validityInMonths?: number'
+      return:
+        description: ''
+        type: number

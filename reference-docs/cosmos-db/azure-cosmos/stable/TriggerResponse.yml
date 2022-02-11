@@ -1,0 +1,152 @@
+### YamlMime:TSType
+name: TriggerResponse
+uid: '@azure/cosmos.TriggerResponse|stable'
+package: '@azure/cosmos|stable'
+summary: ''
+fullName: TriggerResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: >-
+      TriggerResponse(TriggerDefinition & Resource, CosmosHeaders, number,
+      Trigger)
+    uid: '@azure/cosmos.TriggerResponse.constructor|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        new TriggerResponse(resource: TriggerDefinition & Resource, headers:
+        CosmosHeaders, statusCode: number, trigger: Trigger)
+      parameters:
+        - id: resource
+          type: >-
+            <xref uid="@azure/cosmos.TriggerDefinition|stable" /> & <xref
+            uid="@azure/cosmos.Resource|stable" />
+          description: ''
+        - id: headers
+          type: <xref uid="@azure/cosmos.CosmosHeaders|stable" />
+          description: ''
+        - id: statusCode
+          type: number
+          description: ''
+        - id: trigger
+          type: <xref uid="@azure/cosmos.Trigger|stable" />
+          description: ''
+properties:
+  - name: activityId
+    uid: '@azure/cosmos.TriggerResponse.activityId|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: activityId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: string activityId
+      return:
+        description: ''
+        type: string
+  - name: etag
+    uid: '@azure/cosmos.TriggerResponse.etag|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: etag
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: string etag
+      return:
+        description: ''
+        type: string
+  - name: headers
+    uid: '@azure/cosmos.TriggerResponse.headers|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: headers
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'headers: CosmosHeaders_2'
+      return:
+        description: ''
+        type: <xref uid="@azure/cosmos.CosmosHeaders_2|stable" />
+  - name: requestCharge
+    uid: '@azure/cosmos.TriggerResponse.requestCharge|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: requestCharge
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: number requestCharge
+      return:
+        description: ''
+        type: number
+  - name: resource
+    uid: '@azure/cosmos.TriggerResponse.resource|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: resource
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'resource: (TriggerDefinition & Resource) | undefined'
+      return:
+        description: ''
+        type: >-
+          (<xref uid="@azure/cosmos.TriggerDefinition|stable" /> & <xref
+          uid="@azure/cosmos.Resource|stable" />) | undefined
+  - name: statusCode
+    uid: '@azure/cosmos.TriggerResponse.statusCode|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: statusCode
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'statusCode: StatusCode'
+      return:
+        description: ''
+        type: StatusCode
+  - name: substatus
+    uid: '@azure/cosmos.TriggerResponse.substatus|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: substatus
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'substatus?: SubStatusCode'
+      return:
+        description: ''
+        type: SubStatusCode
+  - name: trigger
+    uid: '@azure/cosmos.TriggerResponse.trigger|stable'
+    package: '@azure/cosmos|stable'
+    summary: >-
+      A reference to the <xref:@azure/cosmos.Trigger|stable> corresponding to
+      the returned <xref:@azure/cosmos.TriggerDefinition|stable>.
+    fullName: trigger
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'trigger: Trigger'
+      return:
+        description: ''
+        type: <xref uid="@azure/cosmos.Trigger|stable" />
+extends: >-
+  <xref uid="@azure/cosmos.ResourceResponse|stable" />&lt;<xref
+  uid="@azure/cosmos.TriggerDefinition|stable" /> & <xref
+  uid="@azure/cosmos.Resource|stable" />&gt;

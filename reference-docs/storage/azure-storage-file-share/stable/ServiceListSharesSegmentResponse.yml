@@ -1,0 +1,17 @@
+### YamlMime:TSTypeAlias
+name: ServiceListSharesSegmentResponse
+uid: '@azure/storage-file-share.ServiceListSharesSegmentResponse|stable'
+package: '@azure/storage-file-share|stable'
+summary: >-
+  Contains response data for the
+  <xref:@azure/storage-file-share.ShareServiceClient.listShares|stable>
+  operation.
+fullName: ServiceListSharesSegmentResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type ServiceListSharesSegmentResponse = ListSharesResponse &
+  ServiceListSharesSegmentHeaders & { _response: HttpResponse & { bodyAsText:
+  string, parsedBody: ListSharesResponseModel, parsedHeaders:
+  ServiceListSharesSegmentHeaders } }

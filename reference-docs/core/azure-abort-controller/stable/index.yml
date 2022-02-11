@@ -1,0 +1,33 @@
+### YamlMime:TSPackage
+uid: '@azure/abort-controller|stable'
+name: '@azure/abort-controller (1.0.4 - Stable)'
+summary: ''
+type: package
+classes:
+  - '@azure/abort-controller.AbortController|stable'
+  - '@azure/abort-controller.AbortError|stable'
+  - '@azure/abort-controller.AbortSignal|stable'
+interfaces:
+  - '@azure/abort-controller.AbortSignalLike|stable'
+functions:
+  - name: abortSignal(AbortSignal)
+    uid: '@azure/abort-controller.abortSignal|stable'
+    package: '@azure/abort-controller|stable'
+    summary: >
+      Helper to trigger an abort event immediately, the onabort and all abort
+      event listeners will be triggered.
+
+      Will try to trigger abort event for all linked AbortSignal nodes.
+
+      - If there is a timeout, the timer will be cancelled.
+
+      - If aborted is true, nothing will happen.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function abortSignal(signal: AbortSignal)'
+      parameters:
+        - id: signal
+          type: <xref uid="@azure/abort-controller.AbortSignal|stable" />
+          description: ''

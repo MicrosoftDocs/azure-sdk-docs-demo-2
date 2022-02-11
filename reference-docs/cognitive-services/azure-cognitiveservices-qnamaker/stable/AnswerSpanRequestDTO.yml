@@ -1,0 +1,52 @@
+### YamlMime:TSType
+name: AnswerSpanRequestDTO
+uid: '@azure/cognitiveservices-qnamaker.AnswerSpanRequestDTO|stable'
+package: '@azure/cognitiveservices-qnamaker|stable'
+summary: To configure Answer span prediction feature.
+fullName: AnswerSpanRequestDTO
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: enable
+    uid: '@azure/cognitiveservices-qnamaker.AnswerSpanRequestDTO.enable|stable'
+    package: '@azure/cognitiveservices-qnamaker|stable'
+    summary: Enable or Disable Answer Span prediction.
+    fullName: enable
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'enable?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true
+  - name: scoreThreshold
+    uid: >-
+      @azure/cognitiveservices-qnamaker.AnswerSpanRequestDTO.scoreThreshold|stable
+    package: '@azure/cognitiveservices-qnamaker|stable'
+    summary: Minimum threshold score required to include an answer span.
+    fullName: scoreThreshold
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'scoreThreshold?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: topAnswersWithSpan
+    uid: >-
+      @azure/cognitiveservices-qnamaker.AnswerSpanRequestDTO.topAnswersWithSpan|stable
+    package: '@azure/cognitiveservices-qnamaker|stable'
+    summary: Number of Top answers to be considered for span prediction.
+    fullName: topAnswersWithSpan
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'topAnswersWithSpan?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number

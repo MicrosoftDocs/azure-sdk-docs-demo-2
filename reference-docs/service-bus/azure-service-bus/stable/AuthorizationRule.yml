@@ -1,0 +1,76 @@
+### YamlMime:TSType
+name: AuthorizationRule
+uid: '@azure/service-bus.AuthorizationRule|stable'
+package: '@azure/service-bus|stable'
+summary: Represents type of `AuthorizationRule` in ATOM based management operations.
+fullName: AuthorizationRule
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: accessRights
+    uid: '@azure/service-bus.AuthorizationRule.accessRights|stable'
+    package: '@azure/service-bus|stable'
+    summary: The list of rights("Manage" | "Send" | "Listen").
+    fullName: accessRights
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'accessRights?: "Manage" | "Send" | "Listen"[]'
+      return:
+        description: ''
+        type: '"Manage" | "Send" | "Listen"[]'
+  - name: claimType
+    uid: '@azure/service-bus.AuthorizationRule.claimType|stable'
+    package: '@azure/service-bus|stable'
+    summary: The claim type.
+    fullName: claimType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'claimType: string'
+      return:
+        description: ''
+        type: string
+  - name: keyName
+    uid: '@azure/service-bus.AuthorizationRule.keyName|stable'
+    package: '@azure/service-bus|stable'
+    summary: The authorization rule key name.
+    fullName: keyName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'keyName: string'
+      return:
+        description: ''
+        type: string
+  - name: primaryKey
+    uid: '@azure/service-bus.AuthorizationRule.primaryKey|stable'
+    package: '@azure/service-bus|stable'
+    summary: The primary key for the authorization rule.
+    fullName: primaryKey
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'primaryKey?: string'
+      return:
+        description: ''
+        type: string
+  - name: secondaryKey
+    uid: '@azure/service-bus.AuthorizationRule.secondaryKey|stable'
+    package: '@azure/service-bus|stable'
+    summary: The secondary key for the authorization rule.
+    fullName: secondaryKey
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'secondaryKey?: string'
+      return:
+        description: ''
+        type: string

@@ -1,0 +1,57 @@
+### YamlMime:TSType
+name: IntegrationServiceEnvironmentNetworkEndpoint
+uid: '@azure/arm-logic.IntegrationServiceEnvironmentNetworkEndpoint|stable'
+package: '@azure/arm-logic|stable'
+summary: The network endpoint.
+fullName: IntegrationServiceEnvironmentNetworkEndpoint
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: accessibility
+    uid: >-
+      @azure/arm-logic.IntegrationServiceEnvironmentNetworkEndpoint.accessibility|stable
+    package: '@azure/arm-logic|stable'
+    summary: The accessibility state.
+    fullName: accessibility
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        accessibility?:
+        IntegrationServiceEnvironmentNetworkEndPointAccessibilityState
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-logic.IntegrationServiceEnvironmentNetworkEndPointAccessibilityState|stable"
+          />
+  - name: domainName
+    uid: >-
+      @azure/arm-logic.IntegrationServiceEnvironmentNetworkEndpoint.domainName|stable
+    package: '@azure/arm-logic|stable'
+    summary: The domain name.
+    fullName: domainName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'domainName?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: ports
+    uid: '@azure/arm-logic.IntegrationServiceEnvironmentNetworkEndpoint.ports|stable'
+    package: '@azure/arm-logic|stable'
+    summary: The ports.
+    fullName: ports
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ports?: string[]'
+      return:
+        description: ''
+        type: string[]

@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: KeyVaultRestoreResult
+uid: '@azure/keyvault-admin.KeyVaultRestoreResult|beta'
+package: '@azure/keyvault-admin|beta'
+summary: An interface representing the result of a restore operation.
+fullName: KeyVaultRestoreResult
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: endTime
+    uid: '@azure/keyvault-admin.KeyVaultRestoreResult.endTime|beta'
+    package: '@azure/keyvault-admin|beta'
+    summary: The end time of the restore operation.
+    fullName: endTime
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'endTime?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: startTime
+    uid: '@azure/keyvault-admin.KeyVaultRestoreResult.startTime|beta'
+    package: '@azure/keyvault-admin|beta'
+    summary: The start time of the restore operation.
+    fullName: startTime
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'startTime: Date'
+      return:
+        description: ''
+        type: Date

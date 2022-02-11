@@ -1,0 +1,57 @@
+### YamlMime:TSType
+name: OpenIdConnectRegistration
+uid: '@azure/arm-appservice.OpenIdConnectRegistration|stable'
+package: '@azure/arm-appservice|stable'
+summary: >-
+  The configuration settings of the app registration for the custom Open ID
+  Connect provider.
+fullName: OpenIdConnectRegistration
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: clientCredential
+    uid: '@azure/arm-appservice.OpenIdConnectRegistration.clientCredential|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: The authentication credentials of the custom Open ID Connect provider.
+    fullName: clientCredential
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clientCredential?: OpenIdConnectClientCredential'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/arm-appservice.OpenIdConnectClientCredential|stable"
+          />
+  - name: clientId
+    uid: '@azure/arm-appservice.OpenIdConnectRegistration.clientId|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: The client id of the custom Open ID Connect provider.
+    fullName: clientId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clientId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: openIdConnectConfiguration
+    uid: >-
+      @azure/arm-appservice.OpenIdConnectRegistration.openIdConnectConfiguration|stable
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      The configuration settings of the endpoints used for the custom Open ID
+      Connect provider.
+    fullName: openIdConnectConfiguration
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'openIdConnectConfiguration?: OpenIdConnectConfig'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.OpenIdConnectConfig|stable" />

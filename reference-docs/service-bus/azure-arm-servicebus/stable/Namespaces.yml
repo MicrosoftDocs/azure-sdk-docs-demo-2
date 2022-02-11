@@ -1,0 +1,647 @@
+### YamlMime:TSType
+name: Namespaces
+uid: '@azure/arm-servicebus.Namespaces|stable'
+package: '@azure/arm-servicebus|stable'
+summary: Interface representing a Namespaces.
+fullName: Namespaces
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      beginCreateOrUpdate(string, string, SBNamespace,
+      NamespacesCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-servicebus.Namespaces.beginCreateOrUpdate|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: >-
+      Creates or updates a service namespace. Once created, this namespace's
+      resource manifest is
+
+      immutable. This operation is idempotent.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string, namespaceName:
+        string, parameters: SBNamespace, options?:
+        NamespacesCreateOrUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<NamespacesCreateOrUpdateResponse>,
+        NamespacesCreateOrUpdateResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name.
+        - id: parameters
+          type: <xref uid="@azure/arm-servicebus.SBNamespace|stable" />
+          description: Parameters supplied to create a namespace resource.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.NamespacesCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-servicebus.NamespacesCreateOrUpdateResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-servicebus.NamespacesCreateOrUpdateResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginCreateOrUpdateAndWait(string, string, SBNamespace,
+      NamespacesCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-servicebus.Namespaces.beginCreateOrUpdateAndWait|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: >-
+      Creates or updates a service namespace. Once created, this namespace's
+      resource manifest is
+
+      immutable. This operation is idempotent.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdateAndWait(resourceGroupName: string,
+        namespaceName: string, parameters: SBNamespace, options?:
+        NamespacesCreateOrUpdateOptionalParams):
+        Promise<NamespacesCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name.
+        - id: parameters
+          type: <xref uid="@azure/arm-servicebus.SBNamespace|stable" />
+          description: Parameters supplied to create a namespace resource.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.NamespacesCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-servicebus.NamespacesCreateOrUpdateResponse|stable"
+          />&gt;
+  - name: beginDelete(string, string, NamespacesDeleteOptionalParams)
+    uid: '@azure/arm-servicebus.Namespaces.beginDelete|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: >-
+      Deletes an existing namespace. This operation also removes all associated
+      resources under the
+
+      namespace.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDelete(resourceGroupName: string, namespaceName: string,
+        options?: NamespacesDeleteOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.NamespacesDeleteOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: beginDeleteAndWait(string, string, NamespacesDeleteOptionalParams)
+    uid: '@azure/arm-servicebus.Namespaces.beginDeleteAndWait|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: >-
+      Deletes an existing namespace. This operation also removes all associated
+      resources under the
+
+      namespace.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteAndWait(resourceGroupName: string, namespaceName:
+        string, options?: NamespacesDeleteOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.NamespacesDeleteOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      checkNameAvailability(CheckNameAvailability,
+      NamespacesCheckNameAvailabilityOptionalParams)
+    uid: '@azure/arm-servicebus.Namespaces.checkNameAvailability|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Check the give namespace name availability.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function checkNameAvailability(parameters: CheckNameAvailability,
+        options?: NamespacesCheckNameAvailabilityOptionalParams):
+        Promise<NamespacesCheckNameAvailabilityResponse>
+      parameters:
+        - id: parameters
+          type: <xref uid="@azure/arm-servicebus.CheckNameAvailability|stable" />
+          description: Parameters to check availability of the given namespace name
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.NamespacesCheckNameAvailabilityOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-servicebus.NamespacesCheckNameAvailabilityResponse|stable"
+          />&gt;
+  - name: >-
+      createOrUpdateAuthorizationRule(string, string, string,
+      SBAuthorizationRule,
+      NamespacesCreateOrUpdateAuthorizationRuleOptionalParams)
+    uid: '@azure/arm-servicebus.Namespaces.createOrUpdateAuthorizationRule|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Creates or updates an authorization rule for a namespace.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createOrUpdateAuthorizationRule(resourceGroupName: string,
+        namespaceName: string, authorizationRuleName: string, parameters:
+        SBAuthorizationRule, options?:
+        NamespacesCreateOrUpdateAuthorizationRuleOptionalParams):
+        Promise<NamespacesCreateOrUpdateAuthorizationRuleResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: authorizationRuleName
+          type: string
+          description: The authorization rule name.
+        - id: parameters
+          type: <xref uid="@azure/arm-servicebus.SBAuthorizationRule|stable" />
+          description: The shared access authorization rule.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.NamespacesCreateOrUpdateAuthorizationRuleOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-servicebus.NamespacesCreateOrUpdateAuthorizationRuleResponse|stable"
+          />&gt;
+  - name: >-
+      createOrUpdateNetworkRuleSet(string, string, NetworkRuleSet,
+      NamespacesCreateOrUpdateNetworkRuleSetOptionalParams)
+    uid: '@azure/arm-servicebus.Namespaces.createOrUpdateNetworkRuleSet|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Create or update NetworkRuleSet for a Namespace.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createOrUpdateNetworkRuleSet(resourceGroupName: string,
+        namespaceName: string, parameters: NetworkRuleSet, options?:
+        NamespacesCreateOrUpdateNetworkRuleSetOptionalParams):
+        Promise<NamespacesCreateOrUpdateNetworkRuleSetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: parameters
+          type: <xref uid="@azure/arm-servicebus.NetworkRuleSet|stable" />
+          description: The Namespace IpFilterRule.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.NamespacesCreateOrUpdateNetworkRuleSetOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-servicebus.NamespacesCreateOrUpdateNetworkRuleSetResponse|stable"
+          />&gt;
+  - name: >-
+      deleteAuthorizationRule(string, string, string,
+      NamespacesDeleteAuthorizationRuleOptionalParams)
+    uid: '@azure/arm-servicebus.Namespaces.deleteAuthorizationRule|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Deletes a namespace authorization rule.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function deleteAuthorizationRule(resourceGroupName: string,
+        namespaceName: string, authorizationRuleName: string, options?:
+        NamespacesDeleteAuthorizationRuleOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: authorizationRuleName
+          type: string
+          description: The authorization rule name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.NamespacesDeleteAuthorizationRuleOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: get(string, string, NamespacesGetOptionalParams)
+    uid: '@azure/arm-servicebus.Namespaces.get|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Gets a description for the specified namespace.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, namespaceName: string, options?:
+        NamespacesGetOptionalParams): Promise<NamespacesGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: options
+          type: >-
+            <xref uid="@azure/arm-servicebus.NamespacesGetOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-servicebus.NamespacesGetResponse|stable" />&gt;
+  - name: >-
+      getAuthorizationRule(string, string, string,
+      NamespacesGetAuthorizationRuleOptionalParams)
+    uid: '@azure/arm-servicebus.Namespaces.getAuthorizationRule|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Gets an authorization rule for a namespace by rule name.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getAuthorizationRule(resourceGroupName: string, namespaceName:
+        string, authorizationRuleName: string, options?:
+        NamespacesGetAuthorizationRuleOptionalParams):
+        Promise<NamespacesGetAuthorizationRuleResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: authorizationRuleName
+          type: string
+          description: The authorization rule name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.NamespacesGetAuthorizationRuleOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-servicebus.NamespacesGetAuthorizationRuleResponse|stable"
+          />&gt;
+  - name: >-
+      getNetworkRuleSet(string, string,
+      NamespacesGetNetworkRuleSetOptionalParams)
+    uid: '@azure/arm-servicebus.Namespaces.getNetworkRuleSet|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Gets NetworkRuleSet for a Namespace.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getNetworkRuleSet(resourceGroupName: string, namespaceName:
+        string, options?: NamespacesGetNetworkRuleSetOptionalParams):
+        Promise<NamespacesGetNetworkRuleSetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.NamespacesGetNetworkRuleSetOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-servicebus.NamespacesGetNetworkRuleSetResponse|stable"
+          />&gt;
+  - name: list(NamespacesListOptionalParams)
+    uid: '@azure/arm-servicebus.Namespaces.list|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: >-
+      Gets all the available namespaces within the subscription, irrespective of
+      the resource groups.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(options?: NamespacesListOptionalParams):
+        PagedAsyncIterableIterator<SBNamespace>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.NamespacesListOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-servicebus.SBNamespace|stable" />&gt;
+  - name: >-
+      listAuthorizationRules(string, string,
+      NamespacesListAuthorizationRulesOptionalParams)
+    uid: '@azure/arm-servicebus.Namespaces.listAuthorizationRules|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Gets the authorization rules for a namespace.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listAuthorizationRules(resourceGroupName: string,
+        namespaceName: string, options?:
+        NamespacesListAuthorizationRulesOptionalParams):
+        PagedAsyncIterableIterator<SBAuthorizationRule>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.NamespacesListAuthorizationRulesOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-servicebus.SBAuthorizationRule|stable" />&gt;
+  - name: listByResourceGroup(string, NamespacesListByResourceGroupOptionalParams)
+    uid: '@azure/arm-servicebus.Namespaces.listByResourceGroup|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Gets the available namespaces within a resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string, options?:
+        NamespacesListByResourceGroupOptionalParams):
+        PagedAsyncIterableIterator<SBNamespace>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.NamespacesListByResourceGroupOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-servicebus.SBNamespace|stable" />&gt;
+  - name: listKeys(string, string, string, NamespacesListKeysOptionalParams)
+    uid: '@azure/arm-servicebus.Namespaces.listKeys|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Gets the primary and secondary connection strings for the namespace.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listKeys(resourceGroupName: string, namespaceName: string,
+        authorizationRuleName: string, options?:
+        NamespacesListKeysOptionalParams): Promise<NamespacesListKeysResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: authorizationRuleName
+          type: string
+          description: The authorization rule name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.NamespacesListKeysOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-servicebus.NamespacesListKeysResponse|stable" />&gt;
+  - name: >-
+      listNetworkRuleSets(string, string,
+      NamespacesListNetworkRuleSetsOptionalParams)
+    uid: '@azure/arm-servicebus.Namespaces.listNetworkRuleSets|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Gets list of NetworkRuleSet for a Namespace.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listNetworkRuleSets(resourceGroupName: string, namespaceName:
+        string, options?: NamespacesListNetworkRuleSetsOptionalParams):
+        PagedAsyncIterableIterator<NetworkRuleSet>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.NamespacesListNetworkRuleSetsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-servicebus.NetworkRuleSet|stable" />&gt;
+  - name: >-
+      regenerateKeys(string, string, string, RegenerateAccessKeyParameters,
+      NamespacesRegenerateKeysOptionalParams)
+    uid: '@azure/arm-servicebus.Namespaces.regenerateKeys|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Regenerates the primary or secondary connection strings for the namespace.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function regenerateKeys(resourceGroupName: string, namespaceName:
+        string, authorizationRuleName: string, parameters:
+        RegenerateAccessKeyParameters, options?:
+        NamespacesRegenerateKeysOptionalParams):
+        Promise<NamespacesRegenerateKeysResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: authorizationRuleName
+          type: string
+          description: The authorization rule name.
+        - id: parameters
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.RegenerateAccessKeyParameters|stable" />
+          description: Parameters supplied to regenerate the authorization rule.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.NamespacesRegenerateKeysOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-servicebus.NamespacesRegenerateKeysResponse|stable"
+          />&gt;
+  - name: >-
+      update(string, string, SBNamespaceUpdateParameters,
+      NamespacesUpdateOptionalParams)
+    uid: '@azure/arm-servicebus.Namespaces.update|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: >-
+      Updates a service namespace. Once created, this namespace's resource
+      manifest is immutable. This
+
+      operation is idempotent.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function update(resourceGroupName: string, namespaceName: string,
+        parameters: SBNamespaceUpdateParameters, options?:
+        NamespacesUpdateOptionalParams): Promise<NamespacesUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: parameters
+          type: >-
+            <xref uid="@azure/arm-servicebus.SBNamespaceUpdateParameters|stable"
+            />
+          description: Parameters supplied to update a namespace resource.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.NamespacesUpdateOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-servicebus.NamespacesUpdateResponse|stable" />&gt;

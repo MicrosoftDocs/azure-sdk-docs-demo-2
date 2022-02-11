@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: InboundIpRule
+uid: '@azure/arm-eventgrid.InboundIpRule|stable'
+package: '@azure/arm-eventgrid|stable'
+summary: ''
+fullName: InboundIpRule
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: action
+    uid: '@azure/arm-eventgrid.InboundIpRule.action|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Action to perform based on the match or no match of the IpMask.
+    fullName: action
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'action?: IpActionType'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-eventgrid.IpActionType|stable" />
+  - name: ipMask
+    uid: '@azure/arm-eventgrid.InboundIpRule.ipMask|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: IP Address in CIDR notation e.g., 10.0.0.0/8.
+    fullName: ipMask
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ipMask?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

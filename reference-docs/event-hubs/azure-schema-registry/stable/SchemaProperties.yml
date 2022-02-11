@@ -1,0 +1,39 @@
+### YamlMime:TSType
+name: SchemaProperties
+uid: '@azure/schema-registry.SchemaProperties|stable'
+package: '@azure/schema-registry|stable'
+summary: Properties of a schema.
+fullName: SchemaProperties
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: format
+    uid: '@azure/schema-registry.SchemaProperties.format|stable'
+    package: '@azure/schema-registry|stable'
+    summary: |-
+      Serialization type of schema.
+      Currently only 'avro' is supported, but this is subject to change.
+    fullName: format
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'format: string'
+      return:
+        description: ''
+        type: string
+  - name: id
+    uid: '@azure/schema-registry.SchemaProperties.id|stable'
+    package: '@azure/schema-registry|stable'
+    summary: ID that uniquely identifies a schema in the registry namespace.
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id: string'
+      return:
+        description: ''
+        type: string

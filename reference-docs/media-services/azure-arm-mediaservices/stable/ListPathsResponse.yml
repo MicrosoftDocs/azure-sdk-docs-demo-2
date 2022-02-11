@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: ListPathsResponse
+uid: '@azure/arm-mediaservices.ListPathsResponse|stable'
+package: '@azure/arm-mediaservices|stable'
+summary: Class of response for listPaths action
+fullName: ListPathsResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: downloadPaths
+    uid: '@azure/arm-mediaservices.ListPathsResponse.downloadPaths|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: Download Paths supported by current Streaming Locator
+    fullName: downloadPaths
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'downloadPaths?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: streamingPaths
+    uid: '@azure/arm-mediaservices.ListPathsResponse.streamingPaths|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: Streaming Paths supported by current Streaming Locator
+    fullName: streamingPaths
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'streamingPaths?: StreamingPath[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mediaservices.StreamingPath|stable" />[]

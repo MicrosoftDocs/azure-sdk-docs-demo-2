@@ -1,0 +1,260 @@
+### YamlMime:TSType
+name: ContainerApps
+uid: '@azure/arm-appservice.ContainerApps|stable'
+package: '@azure/arm-appservice|stable'
+summary: Interface representing a ContainerApps.
+fullName: ContainerApps
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      beginCreateOrUpdate(string, string, ContainerApp,
+      ContainerAppsCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-appservice.ContainerApps.beginCreateOrUpdate|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Create or update a Container App.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string, name: string,
+        containerAppEnvelope: ContainerApp, options?:
+        ContainerAppsCreateOrUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<ContainerAppsCreateOrUpdateResponse>,
+        ContainerAppsCreateOrUpdateResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the Container App.
+        - id: containerAppEnvelope
+          type: <xref uid="@azure/arm-appservice.ContainerApp|stable" />
+          description: Container App.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.ContainerAppsCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-appservice.ContainerAppsCreateOrUpdateResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-appservice.ContainerAppsCreateOrUpdateResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginCreateOrUpdateAndWait(string, string, ContainerApp,
+      ContainerAppsCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-appservice.ContainerApps.beginCreateOrUpdateAndWait|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Create or update a Container App.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdateAndWait(resourceGroupName: string, name:
+        string, containerAppEnvelope: ContainerApp, options?:
+        ContainerAppsCreateOrUpdateOptionalParams):
+        Promise<ContainerAppsCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the Container App.
+        - id: containerAppEnvelope
+          type: <xref uid="@azure/arm-appservice.ContainerApp|stable" />
+          description: Container App.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.ContainerAppsCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.ContainerAppsCreateOrUpdateResponse|stable"
+          />&gt;
+  - name: beginDelete(string, string, ContainerAppsDeleteOptionalParams)
+    uid: '@azure/arm-appservice.ContainerApps.beginDelete|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Delete a Container App.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDelete(resourceGroupName: string, name: string, options?:
+        ContainerAppsDeleteOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the Container App.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.ContainerAppsDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: beginDeleteAndWait(string, string, ContainerAppsDeleteOptionalParams)
+    uid: '@azure/arm-appservice.ContainerApps.beginDeleteAndWait|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Delete a Container App.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteAndWait(resourceGroupName: string, name: string,
+        options?: ContainerAppsDeleteOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the Container App.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.ContainerAppsDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: get(string, string, ContainerAppsGetOptionalParams)
+    uid: '@azure/arm-appservice.ContainerApps.get|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Get the properties of a Container App.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, name: string, options?:
+        ContainerAppsGetOptionalParams): Promise<ContainerAppsGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the Container App.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.ContainerAppsGetOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.ContainerAppsGetResponse|stable" />&gt;
+  - name: >-
+      listByResourceGroup(string,
+      ContainerAppsListByResourceGroupOptionalParams)
+    uid: '@azure/arm-appservice.ContainerApps.listByResourceGroup|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Get the Container Apps in a given resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string, options?:
+        ContainerAppsListByResourceGroupOptionalParams):
+        PagedAsyncIterableIterator<ContainerApp>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.ContainerAppsListByResourceGroupOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.ContainerApp|stable" />&gt;
+  - name: listBySubscription(ContainerAppsListBySubscriptionOptionalParams)
+    uid: '@azure/arm-appservice.ContainerApps.listBySubscription|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Get the Container Apps in a given subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listBySubscription(options?:
+        ContainerAppsListBySubscriptionOptionalParams):
+        PagedAsyncIterableIterator<ContainerApp>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.ContainerAppsListBySubscriptionOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.ContainerApp|stable" />&gt;
+  - name: listSecrets(string, ContainerAppsListSecretsOptionalParams)
+    uid: '@azure/arm-appservice.ContainerApps.listSecrets|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: List secrets for a container app
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listSecrets(name: string, options?:
+        ContainerAppsListSecretsOptionalParams):
+        Promise<ContainerAppsListSecretsResponse>
+      parameters:
+        - id: name
+          type: string
+          description: Name of the Container App.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.ContainerAppsListSecretsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.ContainerAppsListSecretsResponse|stable"
+          />&gt;

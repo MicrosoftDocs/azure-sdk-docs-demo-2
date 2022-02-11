@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: ContentKeyPolicyRestrictionTokenKey
+uid: '@azure/arm-mediaservices.ContentKeyPolicyRestrictionTokenKey|stable'
+package: '@azure/arm-mediaservices|stable'
+summary: >-
+  Base class for Content Key Policy key for token validation. A derived class
+  must be used to create a token key.
+fullName: ContentKeyPolicyRestrictionTokenKey
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: odataType
+    uid: >-
+      @azure/arm-mediaservices.ContentKeyPolicyRestrictionTokenKey.odataType|stable
+    package: '@azure/arm-mediaservices|stable'
+    summary: >-
+      Polymorphic discriminator, which specifies the different types this object
+      can be
+    fullName: odataType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        odataType: "#Microsoft.Media.ContentKeyPolicySymmetricTokenKey" |
+        "#Microsoft.Media.ContentKeyPolicyRsaTokenKey" |
+        "#Microsoft.Media.ContentKeyPolicyX509CertificateTokenKey"
+      return:
+        description: ''
+        type: >-
+          "#<xref uid="Microsoft.Media.ContentKeyPolicySymmetricTokenKey|stable"
+          />" | "#<xref uid="Microsoft.Media.ContentKeyPolicyRsaTokenKey|stable"
+          />" | "#<xref
+          uid="Microsoft.Media.ContentKeyPolicyX509CertificateTokenKey|stable"
+          />"

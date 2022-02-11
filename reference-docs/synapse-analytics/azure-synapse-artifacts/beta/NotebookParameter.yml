@@ -1,0 +1,39 @@
+### YamlMime:TSType
+name: NotebookParameter
+uid: '@azure/synapse-artifacts.NotebookParameter|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: Notebook parameter.
+fullName: NotebookParameter
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: type
+    uid: '@azure/synapse-artifacts.NotebookParameter.type|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Notebook parameter type.
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: NotebookParameterType'
+      return:
+        description: ''
+        type: <xref uid="@azure/synapse-artifacts.NotebookParameterType|beta" />
+  - name: value
+    uid: '@azure/synapse-artifacts.NotebookParameter.value|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: >-
+      Notebook parameter value. Type: string (or Expression with resultType
+      string).
+    fullName: value
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: any'
+      return:
+        description: ''
+        type: any

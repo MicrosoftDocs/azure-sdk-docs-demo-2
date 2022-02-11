@@ -1,0 +1,80 @@
+### YamlMime:TSType
+name: AdlsGen1DataSource
+uid: '@azure-rest/purview-scanning.AdlsGen1DataSource|beta'
+package: '@azure-rest/purview-scanning|beta'
+summary: ''
+fullName: AdlsGen1DataSource
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: id
+    uid: '@azure-rest/purview-scanning.AdlsGen1DataSource.id|beta'
+    package: '@azure-rest/purview-scanning|beta'
+    summary: ''
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: string'
+      return:
+        description: ''
+        type: string
+  - name: kind
+    uid: '@azure-rest/purview-scanning.AdlsGen1DataSource.kind|beta'
+    package: '@azure-rest/purview-scanning|beta'
+    summary: ''
+    fullName: kind
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'kind: "AdlsGen1"'
+      return:
+        description: ''
+        type: '"AdlsGen1"'
+  - name: name
+    uid: '@azure-rest/purview-scanning.AdlsGen1DataSource.name|beta'
+    package: '@azure-rest/purview-scanning|beta'
+    summary: ''
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: string'
+      return:
+        description: ''
+        type: string
+  - name: properties
+    uid: '@azure-rest/purview-scanning.AdlsGen1DataSource.properties|beta'
+    package: '@azure-rest/purview-scanning|beta'
+    summary: ''
+    fullName: properties
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'properties?: AdlsGen1DataSourceProperties'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure-rest/purview-scanning.AdlsGen1DataSourceProperties|beta"
+          />
+  - name: scans
+    uid: '@azure-rest/purview-scanning.AdlsGen1DataSource.scans|beta'
+    package: '@azure-rest/purview-scanning|beta'
+    summary: ''
+    fullName: scans
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'scans?: Array<Scan>'
+      return:
+        description: ''
+        type: Array&lt;<xref uid="@azure-rest/purview-scanning.Scan|beta" />&gt;
+extends: <xref uid="@azure-rest/purview-scanning.DataSourceBase|beta" />

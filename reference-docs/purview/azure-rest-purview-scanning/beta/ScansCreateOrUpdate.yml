@@ -1,0 +1,88 @@
+### YamlMime:TSType
+name: ScansCreateOrUpdate
+uid: '@azure-rest/purview-scanning.ScansCreateOrUpdate|beta'
+package: '@azure-rest/purview-scanning|beta'
+summary: ''
+fullName: ScansCreateOrUpdate
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: delete(ScansDeleteParameters)
+    uid: '@azure-rest/purview-scanning.ScansCreateOrUpdate.delete|beta'
+    package: '@azure-rest/purview-scanning|beta'
+    summary: Deletes the scan associated with the data source
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function delete(options?: ScansDeleteParameters):
+        Promise<ScansDelete200Response | ScansDelete204Response |
+        ScansDeletedefaultResponse>
+      parameters:
+        - id: options
+          type: >-
+            <xref uid="@azure-rest/purview-scanning.ScansDeleteParameters|beta"
+            />
+          description: ''
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure-rest/purview-scanning.ScansDelete200Response|beta" /> |
+          <xref uid="@azure-rest/purview-scanning.ScansDelete204Response|beta"
+          /> | <xref
+          uid="@azure-rest/purview-scanning.ScansDeletedefaultResponse|beta"
+          />&gt;
+  - name: get(ScansGetParameters)
+    uid: '@azure-rest/purview-scanning.ScansCreateOrUpdate.get|beta'
+    package: '@azure-rest/purview-scanning|beta'
+    summary: Gets a scan information
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(options?: ScansGetParameters): Promise<ScansGet200Response
+        | ScansGetdefaultResponse>
+      parameters:
+        - id: options
+          type: <xref uid="@azure-rest/purview-scanning.ScansGetParameters|beta" />
+          description: ''
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure-rest/purview-scanning.ScansGet200Response|beta" /> | <xref
+          uid="@azure-rest/purview-scanning.ScansGetdefaultResponse|beta" />&gt;
+  - name: put(ScansCreateOrUpdateParameters)
+    uid: '@azure-rest/purview-scanning.ScansCreateOrUpdate.put|beta'
+    package: '@azure-rest/purview-scanning|beta'
+    summary: Creates an instance of a scan
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function put(options: ScansCreateOrUpdateParameters):
+        Promise<ScansCreateOrUpdate200Response | ScansCreateOrUpdate201Response
+        | ScansCreateOrUpdatedefaultResponse>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure-rest/purview-scanning.ScansCreateOrUpdateParameters|beta"
+            />
+          description: ''
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure-rest/purview-scanning.ScansCreateOrUpdate200Response|beta"
+          /> | <xref
+          uid="@azure-rest/purview-scanning.ScansCreateOrUpdate201Response|beta"
+          /> | <xref
+          uid="@azure-rest/purview-scanning.ScansCreateOrUpdatedefaultResponse|beta"
+          />&gt;

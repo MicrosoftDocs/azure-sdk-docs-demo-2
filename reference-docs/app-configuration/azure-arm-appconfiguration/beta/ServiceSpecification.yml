@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: ServiceSpecification
+uid: '@azure/arm-appconfiguration.ServiceSpecification|beta'
+package: '@azure/arm-appconfiguration|beta'
+summary: Service specification payload
+fullName: ServiceSpecification
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: logSpecifications
+    uid: '@azure/arm-appconfiguration.ServiceSpecification.logSpecifications|beta'
+    package: '@azure/arm-appconfiguration|beta'
+    summary: Specifications of the Log for Azure Monitoring
+    fullName: logSpecifications
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'logSpecifications?: LogSpecification[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appconfiguration.LogSpecification|beta" />[]
+  - name: metricSpecifications
+    uid: '@azure/arm-appconfiguration.ServiceSpecification.metricSpecifications|beta'
+    package: '@azure/arm-appconfiguration|beta'
+    summary: Specifications of the Metrics for Azure Monitoring
+    fullName: metricSpecifications
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'metricSpecifications?: MetricSpecification[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appconfiguration.MetricSpecification|beta" />[]

@@ -1,0 +1,51 @@
+### YamlMime:TSType
+name: MediaJobOutputStateChangeEventData
+uid: azure-eventgrid.MediaJobOutputStateChangeEventData|legacy
+package: azure-eventgrid|legacy
+summary: ''
+fullName: MediaJobOutputStateChangeEventData
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: jobCorrelationData
+    uid: >-
+      azure-eventgrid.MediaJobOutputStateChangeEventData.jobCorrelationData|legacy
+    package: azure-eventgrid|legacy
+    summary: ''
+    fullName: jobCorrelationData
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'jobCorrelationData?: [key: string]: string'
+      return:
+        description: ''
+        type: '[key: string]\: string'
+  - name: output
+    uid: azure-eventgrid.MediaJobOutputStateChangeEventData.output|legacy
+    package: azure-eventgrid|legacy
+    summary: ''
+    fullName: output
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'output?: MediaJobOutput'
+      return:
+        description: ''
+        type: <xref uid="azure-eventgrid.MediaJobOutput|legacy" />
+  - name: previousState
+    uid: azure-eventgrid.MediaJobOutputStateChangeEventData.previousState|legacy
+    package: azure-eventgrid|legacy
+    summary: ''
+    fullName: previousState
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'previousState?: string'
+      return:
+        description: ''
+        type: string

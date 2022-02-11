@@ -1,0 +1,26 @@
+### YamlMime:TSEnum
+name: KnownPriority
+uid: '@azure/arm-mediaservices.KnownPriority|stable'
+package: '@azure/arm-mediaservices|stable'
+summary: >-
+  Known values of <xref:@azure/arm-mediaservices.KnownPriority|stable> that the
+  service accepts.
+fullName: KnownPriority
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: High
+    uid: '@azure/arm-mediaservices.KnownPriority.High|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: Used for TransformOutputs that should take precedence over others.
+  - name: Low
+    uid: '@azure/arm-mediaservices.KnownPriority.Low|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: >-
+      Used for TransformOutputs that can be generated after Normal and High
+      priority TransformOutputs.
+  - name: Normal
+    uid: '@azure/arm-mediaservices.KnownPriority.Normal|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: Used for TransformOutputs that can be generated at Normal priority.

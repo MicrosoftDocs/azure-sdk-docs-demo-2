@@ -1,0 +1,50 @@
+### YamlMime:TSType
+name: SpanContext
+uid: '@azure/core-auth.SpanContext|stable'
+package: '@azure/core-auth|stable'
+summary: A light interface that tries to be structurally compatible with OpenTelemetry.
+fullName: SpanContext
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: spanId
+    uid: '@azure/core-auth.SpanContext.spanId|stable'
+    package: '@azure/core-auth|stable'
+    summary: UUID of a Span.
+    fullName: spanId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'spanId: string'
+      return:
+        description: ''
+        type: string
+  - name: traceFlags
+    uid: '@azure/core-auth.SpanContext.traceFlags|stable'
+    package: '@azure/core-auth|stable'
+    summary: https://www.w3.org/TR/trace-context/#trace-flags
+    fullName: traceFlags
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'traceFlags: number'
+      return:
+        description: ''
+        type: number
+  - name: traceId
+    uid: '@azure/core-auth.SpanContext.traceId|stable'
+    package: '@azure/core-auth|stable'
+    summary: UUID of a trace.
+    fullName: traceId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'traceId: string'
+      return:
+        description: ''
+        type: string

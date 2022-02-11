@@ -1,0 +1,14 @@
+### YamlMime:TSTypeAlias
+name: ShareGetPropertiesResponse
+uid: '@azure/storage-file-share.ShareGetPropertiesResponse|beta'
+package: '@azure/storage-file-share|beta'
+summary: >-
+  Contains response data for the
+  <xref:@azure/storage-file-share.ShareClient.getProperties|beta> operation.
+fullName: ShareGetPropertiesResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type ShareGetPropertiesResponse = ShareGetPropertiesResponseModel & {
+  protocols?: ShareProtocols }

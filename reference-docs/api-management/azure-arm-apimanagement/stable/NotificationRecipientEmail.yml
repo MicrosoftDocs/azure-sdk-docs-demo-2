@@ -1,0 +1,172 @@
+### YamlMime:TSType
+name: NotificationRecipientEmail
+uid: '@azure/arm-apimanagement.NotificationRecipientEmail|stable'
+package: '@azure/arm-apimanagement|stable'
+summary: Interface representing a NotificationRecipientEmail.
+fullName: NotificationRecipientEmail
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      checkEntityExists(string, string, NotificationName, string,
+      NotificationRecipientEmailCheckEntityExistsOptionalParams)
+    uid: >-
+      @azure/arm-apimanagement.NotificationRecipientEmail.checkEntityExists|stable
+    package: '@azure/arm-apimanagement|stable'
+    summary: Determine if Notification Recipient Email subscribed to the notification.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function checkEntityExists(resourceGroupName: string, serviceName:
+        string, notificationName: NotificationName, email: string, options?:
+        NotificationRecipientEmailCheckEntityExistsOptionalParams):
+        Promise<NotificationRecipientEmailCheckEntityExistsResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: serviceName
+          type: string
+          description: The name of the API Management service.
+        - id: notificationName
+          type: <xref uid="@azure/arm-apimanagement.NotificationName|stable" />
+          description: Notification Name Identifier.
+        - id: email
+          type: string
+          description: Email identifier.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-apimanagement.NotificationRecipientEmailCheckEntityExistsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-apimanagement.NotificationRecipientEmailCheckEntityExistsResponse|stable"
+          />&gt;
+  - name: >-
+      createOrUpdate(string, string, NotificationName, string,
+      NotificationRecipientEmailCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-apimanagement.NotificationRecipientEmail.createOrUpdate|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: Adds the Email address to the list of Recipients for the Notification.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, serviceName: string,
+        notificationName: NotificationName, email: string, options?:
+        NotificationRecipientEmailCreateOrUpdateOptionalParams):
+        Promise<NotificationRecipientEmailCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: serviceName
+          type: string
+          description: The name of the API Management service.
+        - id: notificationName
+          type: <xref uid="@azure/arm-apimanagement.NotificationName|stable" />
+          description: Notification Name Identifier.
+        - id: email
+          type: string
+          description: Email identifier.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-apimanagement.NotificationRecipientEmailCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-apimanagement.NotificationRecipientEmailCreateOrUpdateResponse|stable"
+          />&gt;
+  - name: >-
+      delete(string, string, NotificationName, string,
+      NotificationRecipientEmailDeleteOptionalParams)
+    uid: '@azure/arm-apimanagement.NotificationRecipientEmail.delete|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: Removes the email from the list of Notification.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function delete(resourceGroupName: string, serviceName: string,
+        notificationName: NotificationName, email: string, options?:
+        NotificationRecipientEmailDeleteOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: serviceName
+          type: string
+          description: The name of the API Management service.
+        - id: notificationName
+          type: <xref uid="@azure/arm-apimanagement.NotificationName|stable" />
+          description: Notification Name Identifier.
+        - id: email
+          type: string
+          description: Email identifier.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-apimanagement.NotificationRecipientEmailDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      listByNotification(string, string, NotificationName,
+      NotificationRecipientEmailListByNotificationOptionalParams)
+    uid: >-
+      @azure/arm-apimanagement.NotificationRecipientEmail.listByNotification|stable
+    package: '@azure/arm-apimanagement|stable'
+    summary: >-
+      Gets the list of the Notification Recipient Emails subscribed to a
+      notification.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByNotification(resourceGroupName: string, serviceName:
+        string, notificationName: NotificationName, options?:
+        NotificationRecipientEmailListByNotificationOptionalParams):
+        Promise<NotificationRecipientEmailListByNotificationResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: serviceName
+          type: string
+          description: The name of the API Management service.
+        - id: notificationName
+          type: <xref uid="@azure/arm-apimanagement.NotificationName|stable" />
+          description: Notification Name Identifier.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-apimanagement.NotificationRecipientEmailListByNotificationOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-apimanagement.NotificationRecipientEmailListByNotificationResponse|stable"
+          />&gt;

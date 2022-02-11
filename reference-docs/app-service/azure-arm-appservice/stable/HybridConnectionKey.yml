@@ -1,0 +1,14 @@
+### YamlMime:TSTypeAlias
+name: HybridConnectionKey
+uid: '@azure/arm-appservice.HybridConnectionKey|stable'
+package: '@azure/arm-appservice|stable'
+summary: >-
+  Hybrid Connection key contract. This has the send key name and value for a
+  Hybrid Connection.
+fullName: HybridConnectionKey
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type HybridConnectionKey = ProxyOnlyResource & { sendKeyName?: undefined |
+  string, sendKeyValue?: undefined | string }

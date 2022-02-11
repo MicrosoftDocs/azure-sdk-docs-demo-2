@@ -1,0 +1,64 @@
+### YamlMime:TSType
+name: DirectoryListHandlesOptions
+uid: '@azure/storage-file-share.DirectoryListHandlesOptions|stable'
+package: '@azure/storage-file-share|stable'
+summary: >-
+  Options to configure the
+  <xref:@azure/storage-file-share.ShareDirectoryClient.listHandles|stable>
+  operation.
+fullName: DirectoryListHandlesOptions
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: abortSignal
+    uid: '@azure/storage-file-share.DirectoryListHandlesOptions.abortSignal|stable'
+    package: '@azure/storage-file-share|stable'
+    summary: >-
+      An implementation of the `AbortSignalLike` interface to signal the request
+      to cancel the operation.
+
+      For example, use the &commat;azure/abort-controller to create an
+      `AbortSignal`.
+    fullName: abortSignal
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'abortSignal?: AbortSignalLike'
+      return:
+        description: ''
+        type: AbortSignalLike
+  - name: recursive
+    uid: '@azure/storage-file-share.DirectoryListHandlesOptions.recursive|stable'
+    package: '@azure/storage-file-share|stable'
+    summary: >-
+      Specifies whether operation should apply to the directory specified in the
+      URI, its files, its
+
+      subdirectories and their files.
+    fullName: recursive
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'recursive?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: tracingOptions
+    uid: >-
+      @azure/storage-file-share.DirectoryListHandlesOptions.tracingOptions|stable
+    package: '@azure/storage-file-share|stable'
+    summary: ''
+    fullName: tracingOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tracingOptions?: OperationTracingOptions'
+      return:
+        description: ''
+        type: OperationTracingOptions
+extends: <xref uid="@azure/storage-file-share.CommonOptions|stable" />

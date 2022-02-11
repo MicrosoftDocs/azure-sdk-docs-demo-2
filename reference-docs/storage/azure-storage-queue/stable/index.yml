@@ -1,0 +1,235 @@
+### YamlMime:TSPackage
+uid: '@azure/storage-queue|stable'
+name: '@azure/storage-queue (12.7.0 - Stable)'
+summary: ''
+type: package
+enums:
+  - '@azure/storage-queue.SASProtocol|stable'
+  - '@azure/storage-queue.StorageRetryPolicyType|stable'
+classes:
+  - '@azure/storage-queue.AccountSASPermissions|stable'
+  - '@azure/storage-queue.AccountSASResourceTypes|stable'
+  - '@azure/storage-queue.AccountSASServices|stable'
+  - '@azure/storage-queue.AnonymousCredential|stable'
+  - '@azure/storage-queue.AnonymousCredentialPolicy|stable'
+  - '@azure/storage-queue.Credential|stable'
+  - '@azure/storage-queue.CredentialPolicy|stable'
+  - '@azure/storage-queue.Pipeline|stable'
+  - '@azure/storage-queue.QueueClient|stable'
+  - '@azure/storage-queue.QueueSASPermissions|stable'
+  - '@azure/storage-queue.QueueServiceClient|stable'
+  - '@azure/storage-queue.SASQueryParameters|stable'
+  - '@azure/storage-queue.StorageBrowserPolicy|stable'
+  - '@azure/storage-queue.StorageBrowserPolicyFactory|stable'
+  - '@azure/storage-queue.StorageClient|stable'
+  - '@azure/storage-queue.StorageClientContext|stable'
+  - '@azure/storage-queue.StorageRetryPolicy|stable'
+  - '@azure/storage-queue.StorageRetryPolicyFactory|stable'
+  - '@azure/storage-queue.StorageSharedKeyCredential|stable'
+  - '@azure/storage-queue.StorageSharedKeyCredentialPolicy|stable'
+interfaces:
+  - '@azure/storage-queue.AccessPolicy|stable'
+  - '@azure/storage-queue.AccountSASSignatureValues|stable'
+  - '@azure/storage-queue.CommonOptions|stable'
+  - '@azure/storage-queue.CorsRule|stable'
+  - '@azure/storage-queue.DequeuedMessageItem|stable'
+  - '@azure/storage-queue.EnqueuedMessage|stable'
+  - '@azure/storage-queue.GeoReplication|stable'
+  - '@azure/storage-queue.ListQueuesSegmentResponse|stable'
+  - '@azure/storage-queue.Logging|stable'
+  - '@azure/storage-queue.MessageIdDeleteHeaders|stable'
+  - '@azure/storage-queue.MessageIdUpdateHeaders|stable'
+  - '@azure/storage-queue.MessagesClearHeaders|stable'
+  - '@azure/storage-queue.MessagesDequeueHeaders|stable'
+  - '@azure/storage-queue.MessagesDequeueOptionalParams|stable'
+  - '@azure/storage-queue.MessagesEnqueueHeaders|stable'
+  - '@azure/storage-queue.MessagesEnqueueOptionalParams|stable'
+  - '@azure/storage-queue.MessagesPeekHeaders|stable'
+  - '@azure/storage-queue.MessagesPeekOptionalParams|stable'
+  - '@azure/storage-queue.Metadata|stable'
+  - '@azure/storage-queue.Metrics|stable'
+  - '@azure/storage-queue.PeekedMessageItem|stable'
+  - '@azure/storage-queue.PipelineOptions|stable'
+  - '@azure/storage-queue.QueueClearMessagesOptions|stable'
+  - '@azure/storage-queue.QueueCreateHeaders|stable'
+  - '@azure/storage-queue.QueueCreateIfNotExistsResponse|stable'
+  - '@azure/storage-queue.QueueCreateOptions|stable'
+  - '@azure/storage-queue.QueueDeleteHeaders|stable'
+  - '@azure/storage-queue.QueueDeleteIfExistsResponse|stable'
+  - '@azure/storage-queue.QueueDeleteMessageOptions|stable'
+  - '@azure/storage-queue.QueueDeleteOptions|stable'
+  - '@azure/storage-queue.QueueExistsOptions|stable'
+  - '@azure/storage-queue.QueueGenerateSasUrlOptions|stable'
+  - '@azure/storage-queue.QueueGetAccessPolicyHeaders|stable'
+  - '@azure/storage-queue.QueueGetAccessPolicyOptions|stable'
+  - '@azure/storage-queue.QueueGetPropertiesHeaders|stable'
+  - '@azure/storage-queue.QueueGetPropertiesOptions|stable'
+  - '@azure/storage-queue.QueueItem|stable'
+  - '@azure/storage-queue.QueuePeekMessagesOptions|stable'
+  - '@azure/storage-queue.QueueReceiveMessageOptions|stable'
+  - '@azure/storage-queue.QueueSASSignatureValues|stable'
+  - '@azure/storage-queue.QueueSendMessageOptions|stable'
+  - '@azure/storage-queue.QueueServiceProperties|stable'
+  - '@azure/storage-queue.QueueServiceStatistics|stable'
+  - '@azure/storage-queue.QueueSetAccessPolicyHeaders|stable'
+  - '@azure/storage-queue.QueueSetAccessPolicyOptions|stable'
+  - '@azure/storage-queue.QueueSetMetadataHeaders|stable'
+  - '@azure/storage-queue.QueueSetMetadataOptions|stable'
+  - '@azure/storage-queue.QueueUpdateMessageOptions|stable'
+  - '@azure/storage-queue.RetentionPolicy|stable'
+  - '@azure/storage-queue.SasIPRange|stable'
+  - '@azure/storage-queue.ServiceGenerateAccountSasUrlOptions|stable'
+  - '@azure/storage-queue.ServiceGetPropertiesHeaders|stable'
+  - '@azure/storage-queue.ServiceGetPropertiesOptions|stable'
+  - '@azure/storage-queue.ServiceGetStatisticsHeaders|stable'
+  - '@azure/storage-queue.ServiceGetStatisticsOptions|stable'
+  - '@azure/storage-queue.ServiceListQueuesOptions|stable'
+  - '@azure/storage-queue.ServiceListQueuesSegmentHeaders|stable'
+  - '@azure/storage-queue.ServiceSetPropertiesHeaders|stable'
+  - '@azure/storage-queue.ServiceSetPropertiesOptions|stable'
+  - '@azure/storage-queue.SignedIdentifier|stable'
+  - '@azure/storage-queue.SignedIdentifierModel|stable'
+  - '@azure/storage-queue.StorageClientOptionalParams|stable'
+  - '@azure/storage-queue.StoragePipelineOptions|stable'
+  - '@azure/storage-queue.StorageRetryOptions|stable'
+typeAliases:
+  - '@azure/storage-queue.CredentialPolicyCreator|stable'
+  - '@azure/storage-queue.GeoReplicationStatusType|stable'
+  - '@azure/storage-queue.ListQueuesIncludeType|stable'
+  - '@azure/storage-queue.MessageIdDeleteResponse|stable'
+  - '@azure/storage-queue.MessageIdUpdateResponse|stable'
+  - '@azure/storage-queue.MessagesClearResponse|stable'
+  - '@azure/storage-queue.QueueClearMessagesResponse|stable'
+  - '@azure/storage-queue.QueueCreateResponse|stable'
+  - '@azure/storage-queue.QueueDeleteMessageResponse|stable'
+  - '@azure/storage-queue.QueueDeleteResponse|stable'
+  - '@azure/storage-queue.QueueGetAccessPolicyResponse|stable'
+  - '@azure/storage-queue.QueueGetPropertiesResponse|stable'
+  - '@azure/storage-queue.QueuePeekMessagesResponse|stable'
+  - '@azure/storage-queue.QueueReceiveMessageResponse|stable'
+  - '@azure/storage-queue.QueueSendMessageResponse|stable'
+  - '@azure/storage-queue.QueueSetAccessPolicyResponse|stable'
+  - '@azure/storage-queue.QueueSetMetadataResponse|stable'
+  - '@azure/storage-queue.QueueUpdateMessageResponse|stable'
+  - '@azure/storage-queue.ReceivedMessageItem|stable'
+  - '@azure/storage-queue.ServiceGetPropertiesResponse|stable'
+  - '@azure/storage-queue.ServiceGetStatisticsResponse|stable'
+  - '@azure/storage-queue.ServiceListQueuesSegmentResponse|stable'
+  - '@azure/storage-queue.ServiceSetPropertiesResponse|stable'
+functions:
+  - name: >-
+      generateAccountSASQueryParameters(AccountSASSignatureValues,
+      StorageSharedKeyCredential)
+    uid: '@azure/storage-queue.generateAccountSASQueryParameters|stable'
+    package: '@azure/storage-queue|stable'
+    summary: >-
+      ONLY AVAILABLE IN NODE.JS RUNTIME.
+
+      Generates a <xref:@azure/storage-queue.SASQueryParameters|stable> object
+      which contains all SAS query parameters needed to make an actual
+
+      REST request.
+
+
+
+      See
+      https://docs.microsoft.com/en-us/rest/api/storageservices/constructing-an-account-sas
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function generateAccountSASQueryParameters(accountSASSignatureValues:
+        AccountSASSignatureValues, sharedKeyCredential:
+        StorageSharedKeyCredential): SASQueryParameters
+      parameters:
+        - id: accountSASSignatureValues
+          type: <xref uid="@azure/storage-queue.AccountSASSignatureValues|stable" />
+          description: SAS Signature values of the account
+        - id: sharedKeyCredential
+          type: >-
+            <xref uid="@azure/storage-queue.StorageSharedKeyCredential|stable"
+            />
+          description: |
+            Shared key credential.
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-queue.SASQueryParameters|stable" />
+  - name: >-
+      generateQueueSASQueryParameters(QueueSASSignatureValues,
+      StorageSharedKeyCredential)
+    uid: '@azure/storage-queue.generateQueueSASQueryParameters|stable'
+    package: '@azure/storage-queue|stable'
+    summary: >
+      ONLY AVAILABLE IN NODE.JS RUNTIME.
+
+      Creates an instance of SASQueryParameters.
+
+
+      Only accepts required settings needed to create a SAS. For optional
+      settings please
+
+      set corresponding properties directly, such as permissions, startsOn and
+      identifier.
+
+
+      WARNING: When identifier is not provided, permissions and expiresOn are
+      required.
+
+      You MUST assign value to identifier or expiresOn & permissions manually if
+      you initial with
+
+      this constructor.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function generateQueueSASQueryParameters(queueSASSignatureValues:
+        QueueSASSignatureValues, sharedKeyCredential:
+        StorageSharedKeyCredential): SASQueryParameters
+      parameters:
+        - id: queueSASSignatureValues
+          type: <xref uid="@azure/storage-queue.QueueSASSignatureValues|stable" />
+          description: '-'
+        - id: sharedKeyCredential
+          type: >-
+            <xref uid="@azure/storage-queue.StorageSharedKeyCredential|stable"
+            />
+          description: |
+            -
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-queue.SASQueryParameters|stable" />
+  - name: >-
+      newPipeline(StorageSharedKeyCredential | AnonymousCredential |
+      TokenCredential, StoragePipelineOptions)
+    uid: '@azure/storage-queue.newPipeline|stable'
+    package: '@azure/storage-queue|stable'
+    summary: Creates a new Pipeline object with Credential provided.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function newPipeline(credential?: StorageSharedKeyCredential |
+        AnonymousCredential | TokenCredential, pipelineOptions?:
+        StoragePipelineOptions): Pipeline
+      parameters:
+        - id: credential
+          type: >-
+            <xref uid="@azure/storage-queue.StorageSharedKeyCredential|stable"
+            /> | <xref uid="@azure/storage-queue.AnonymousCredential|stable" />
+            | TokenCredential
+          description: >-
+            Such as AnonymousCredential, StorageSharedKeyCredential or any
+            credential from the `@azure/identity` package to authenticate
+            requests to the service. You can also provide an object that
+            implements the TokenCredential interface. If not specified,
+            AnonymousCredential is used.
+        - id: pipelineOptions
+          type: <xref uid="@azure/storage-queue.StoragePipelineOptions|stable" />
+          description: Options.
+      return:
+        description: A new Pipeline object.
+        type: <xref uid="@azure/storage-queue.Pipeline|stable" />

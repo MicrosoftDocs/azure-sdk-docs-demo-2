@@ -1,0 +1,43 @@
+### YamlMime:TSType
+name: OperationMetaServiceSpecification
+uid: '@azure/arm-purview.OperationMetaServiceSpecification|stable'
+package: '@azure/arm-purview|stable'
+summary: The operation meta service specification
+fullName: OperationMetaServiceSpecification
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: logSpecifications
+    uid: >-
+      @azure/arm-purview.OperationMetaServiceSpecification.logSpecifications|stable
+    package: '@azure/arm-purview|stable'
+    summary: log specifications for the operation
+    fullName: logSpecifications
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'logSpecifications?: OperationMetaLogSpecification[]'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/arm-purview.OperationMetaLogSpecification|stable"
+          />[]
+  - name: metricSpecifications
+    uid: >-
+      @azure/arm-purview.OperationMetaServiceSpecification.metricSpecifications|stable
+    package: '@azure/arm-purview|stable'
+    summary: metric specifications for the operation
+    fullName: metricSpecifications
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'metricSpecifications?: OperationMetaMetricSpecification[]'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/arm-purview.OperationMetaMetricSpecification|stable"
+          />[]

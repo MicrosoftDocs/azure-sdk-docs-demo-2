@@ -1,0 +1,55 @@
+### YamlMime:TSType
+name: DomainAvailabilityCheckResult
+uid: '@azure/arm-appservice.DomainAvailabilityCheckResult|stable'
+package: '@azure/arm-appservice|stable'
+summary: Domain availability check result.
+fullName: DomainAvailabilityCheckResult
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: available
+    uid: '@azure/arm-appservice.DomainAvailabilityCheckResult.available|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      <code>true</code> if domain can be purchased using CreateDomain API;
+      otherwise, <code>false</code>.
+    fullName: available
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'available?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true
+  - name: domainType
+    uid: '@azure/arm-appservice.DomainAvailabilityCheckResult.domainType|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Valid values are Regular domain: Azure will charge the full price of
+      domain registration, SoftDeleted: Purchasing this domain will simply
+      restore it and this operation will not cost anything.
+    fullName: domainType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'domainType?: DomainType'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.DomainType|stable" />
+  - name: name
+    uid: '@azure/arm-appservice.DomainAvailabilityCheckResult.name|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Name of the domain.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

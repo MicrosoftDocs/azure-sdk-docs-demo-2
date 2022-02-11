@@ -1,0 +1,50 @@
+### YamlMime:TSType
+name: PolicyCollection
+uid: '@azure/arm-apimanagement.PolicyCollection|stable'
+package: '@azure/arm-apimanagement|stable'
+summary: The response of the list policy operation.
+fullName: PolicyCollection
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: count
+    uid: '@azure/arm-apimanagement.PolicyCollection.count|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: Total record count number.
+    fullName: count
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'count?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: nextLink
+    uid: '@azure/arm-apimanagement.PolicyCollection.nextLink|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: Next page link if any.
+    fullName: nextLink
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nextLink?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: value
+    uid: '@azure/arm-apimanagement.PolicyCollection.value|stable'
+    package: '@azure/arm-apimanagement|stable'
+    summary: Policy Contract value.
+    fullName: value
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: PolicyContract[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-apimanagement.PolicyContract|stable" />[]

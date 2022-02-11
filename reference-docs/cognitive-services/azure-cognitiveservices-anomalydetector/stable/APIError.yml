@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: APIError
+uid: '@azure/cognitiveservices-anomalydetector.APIError|stable'
+package: '@azure/cognitiveservices-anomalydetector|stable'
+summary: Error information returned by the API.
+fullName: APIError
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: code
+    uid: '@azure/cognitiveservices-anomalydetector.APIError.code|stable'
+    package: '@azure/cognitiveservices-anomalydetector|stable'
+    summary: The error code.
+    fullName: code
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'code?: any'
+      return:
+        description: ''
+        type: any
+  - name: message
+    uid: '@azure/cognitiveservices-anomalydetector.APIError.message|stable'
+    package: '@azure/cognitiveservices-anomalydetector|stable'
+    summary: A message explaining the error reported by the service.
+    fullName: message
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'message?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

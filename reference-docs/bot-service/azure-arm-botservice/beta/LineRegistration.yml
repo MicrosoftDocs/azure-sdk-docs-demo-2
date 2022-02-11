@@ -1,0 +1,54 @@
+### YamlMime:TSType
+name: LineRegistration
+uid: '@azure/arm-botservice.LineRegistration|beta'
+package: '@azure/arm-botservice|beta'
+summary: The properties corresponding to a line channel registration
+fullName: LineRegistration
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: channelAccessToken
+    uid: '@azure/arm-botservice.LineRegistration.channelAccessToken|beta'
+    package: '@azure/arm-botservice|beta'
+    summary: Access token for the line channel registration
+    fullName: channelAccessToken
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'channelAccessToken?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: channelSecret
+    uid: '@azure/arm-botservice.LineRegistration.channelSecret|beta'
+    package: '@azure/arm-botservice|beta'
+    summary: Secret for the line channel registration
+    fullName: channelSecret
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'channelSecret?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: generatedId
+    uid: '@azure/arm-botservice.LineRegistration.generatedId|beta'
+    package: '@azure/arm-botservice|beta'
+    summary: >-
+      Id generated for the line channel registration
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: generatedId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'generatedId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

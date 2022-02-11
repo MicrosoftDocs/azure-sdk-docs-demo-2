@@ -1,0 +1,14 @@
+### YamlMime:TSTypeAlias
+name: ServiceGetPropertiesResponse
+uid: '@azure/storage-file-share.ServiceGetPropertiesResponse|stable'
+package: '@azure/storage-file-share|stable'
+summary: Contains response data for the getProperties operation.
+fullName: ServiceGetPropertiesResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type ServiceGetPropertiesResponse = ServiceGetPropertiesHeaders &
+  FileServiceProperties & { _response: HttpResponse & { bodyAsText: string,
+  parsedBody: FileServiceProperties, parsedHeaders: ServiceGetPropertiesHeaders
+  } }

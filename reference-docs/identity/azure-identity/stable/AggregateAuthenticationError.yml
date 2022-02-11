@@ -1,0 +1,103 @@
+### YamlMime:TSType
+name: AggregateAuthenticationError
+uid: '@azure/identity.AggregateAuthenticationError|stable'
+package: '@azure/identity|stable'
+summary: >-
+  Provides an `errors` array containing
+  <xref:@azure/identity.AggregateAuthenticationError|stable> instance
+
+  for authentication failures from credentials in a
+  <xref:@azure/identity.ChainedTokenCredential|stable>.
+fullName: AggregateAuthenticationError
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: AggregateAuthenticationError(any[], string)
+    uid: '@azure/identity.AggregateAuthenticationError.constructor|stable'
+    package: '@azure/identity|stable'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'new AggregateAuthenticationError(errors: any[], errorMessage?: string)'
+      parameters:
+        - id: errors
+          type: any[]
+          description: ''
+        - id: errorMessage
+          type: string
+          description: ''
+properties:
+  - name: Error
+    uid: '@azure/identity.AggregateAuthenticationError.Error|stable'
+    package: '@azure/identity|stable'
+    summary: ''
+    fullName: Error
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static Error: ErrorConstructor'
+      return:
+        description: ''
+        type: ErrorConstructor
+  - name: errors
+    uid: '@azure/identity.AggregateAuthenticationError.errors|stable'
+    package: '@azure/identity|stable'
+    summary: >-
+      The array of error objects that were thrown while trying to authenticate
+
+      with the credentials in a
+      <xref:@azure/identity.ChainedTokenCredential|stable>.
+    fullName: errors
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'errors: any[]'
+      return:
+        description: ''
+        type: any[]
+  - name: message
+    uid: '@azure/identity.AggregateAuthenticationError.message|stable'
+    package: '@azure/identity|stable'
+    summary: ''
+    fullName: message
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'message: string'
+      return:
+        description: ''
+        type: string
+  - name: name
+    uid: '@azure/identity.AggregateAuthenticationError.name|stable'
+    package: '@azure/identity|stable'
+    summary: ''
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: string'
+      return:
+        description: ''
+        type: string
+  - name: stack
+    uid: '@azure/identity.AggregateAuthenticationError.stack|stable'
+    package: '@azure/identity|stable'
+    summary: ''
+    fullName: stack
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'stack?: string'
+      return:
+        description: ''
+        type: string
+extends: Error

@@ -1,0 +1,46 @@
+### YamlMime:TSType
+name: RegionProposal
+uid: '@azure/cognitiveservices-customvision-training.RegionProposal|stable'
+package: '@azure/cognitiveservices-customvision-training|stable'
+summary: An interface representing RegionProposal.
+fullName: RegionProposal
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: boundingBox
+    uid: >-
+      @azure/cognitiveservices-customvision-training.RegionProposal.boundingBox|stable
+    package: '@azure/cognitiveservices-customvision-training|stable'
+    summary: >-
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: boundingBox
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'boundingBox?: BoundingBox'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/cognitiveservices-customvision-training.BoundingBox|stable"
+          />
+  - name: confidence
+    uid: >-
+      @azure/cognitiveservices-customvision-training.RegionProposal.confidence|stable
+    package: '@azure/cognitiveservices-customvision-training|stable'
+    summary: >-
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: confidence
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'confidence?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number

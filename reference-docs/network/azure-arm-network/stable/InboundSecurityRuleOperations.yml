@@ -1,0 +1,110 @@
+### YamlMime:TSType
+name: InboundSecurityRuleOperations
+uid: '@azure/arm-network.InboundSecurityRuleOperations|stable'
+package: '@azure/arm-network|stable'
+summary: Interface representing a InboundSecurityRuleOperations.
+fullName: InboundSecurityRuleOperations
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      beginCreateOrUpdate(string, string, string, InboundSecurityRule,
+      InboundSecurityRuleCreateOrUpdateOptionalParams)
+    uid: >-
+      @azure/arm-network.InboundSecurityRuleOperations.beginCreateOrUpdate|stable
+    package: '@azure/arm-network|stable'
+    summary: >-
+      Creates or updates the specified Network Virtual Appliance Inbound
+      Security Rules.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string,
+        networkVirtualApplianceName: string, ruleCollectionName: string,
+        parameters: InboundSecurityRule, options?:
+        InboundSecurityRuleCreateOrUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<InboundSecurityRuleCreateOrUpdateResponse>,
+        InboundSecurityRuleCreateOrUpdateResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: networkVirtualApplianceName
+          type: string
+          description: The name of the Network Virtual Appliance.
+        - id: ruleCollectionName
+          type: string
+          description: The name of security rule collection.
+        - id: parameters
+          type: <xref uid="@azure/arm-network.InboundSecurityRule|stable" />
+          description: >-
+            Parameters supplied to the create or update Network Virtual
+            Appliance Inbound
+                              Security Rules operation.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.InboundSecurityRuleCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-network.InboundSecurityRuleCreateOrUpdateResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-network.InboundSecurityRuleCreateOrUpdateResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginCreateOrUpdateAndWait(string, string, string, InboundSecurityRule,
+      InboundSecurityRuleCreateOrUpdateOptionalParams)
+    uid: >-
+      @azure/arm-network.InboundSecurityRuleOperations.beginCreateOrUpdateAndWait|stable
+    package: '@azure/arm-network|stable'
+    summary: >-
+      Creates or updates the specified Network Virtual Appliance Inbound
+      Security Rules.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdateAndWait(resourceGroupName: string,
+        networkVirtualApplianceName: string, ruleCollectionName: string,
+        parameters: InboundSecurityRule, options?:
+        InboundSecurityRuleCreateOrUpdateOptionalParams):
+        Promise<InboundSecurityRuleCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: networkVirtualApplianceName
+          type: string
+          description: The name of the Network Virtual Appliance.
+        - id: ruleCollectionName
+          type: string
+          description: The name of security rule collection.
+        - id: parameters
+          type: <xref uid="@azure/arm-network.InboundSecurityRule|stable" />
+          description: >-
+            Parameters supplied to the create or update Network Virtual
+            Appliance Inbound
+                              Security Rules operation.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.InboundSecurityRuleCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.InboundSecurityRuleCreateOrUpdateResponse|stable"
+          />&gt;

@@ -1,0 +1,385 @@
+### YamlMime:TSType
+name: Queues
+uid: '@azure/arm-servicebus.Queues|stable'
+package: '@azure/arm-servicebus|stable'
+summary: Interface representing a Queues.
+fullName: Queues
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      createOrUpdate(string, string, string, SBQueue,
+      QueuesCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-servicebus.Queues.createOrUpdate|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Creates or updates a Service Bus queue. This operation is idempotent.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, namespaceName:
+        string, queueName: string, parameters: SBQueue, options?:
+        QueuesCreateOrUpdateOptionalParams):
+        Promise<QueuesCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: queueName
+          type: string
+          description: The queue name.
+        - id: parameters
+          type: <xref uid="@azure/arm-servicebus.SBQueue|stable" />
+          description: Parameters supplied to create or update a queue resource.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.QueuesCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-servicebus.QueuesCreateOrUpdateResponse|stable" />&gt;
+  - name: >-
+      createOrUpdateAuthorizationRule(string, string, string, string,
+      SBAuthorizationRule, QueuesCreateOrUpdateAuthorizationRuleOptionalParams)
+    uid: '@azure/arm-servicebus.Queues.createOrUpdateAuthorizationRule|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Creates an authorization rule for a queue.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createOrUpdateAuthorizationRule(resourceGroupName: string,
+        namespaceName: string, queueName: string, authorizationRuleName: string,
+        parameters: SBAuthorizationRule, options?:
+        QueuesCreateOrUpdateAuthorizationRuleOptionalParams):
+        Promise<QueuesCreateOrUpdateAuthorizationRuleResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: queueName
+          type: string
+          description: The queue name.
+        - id: authorizationRuleName
+          type: string
+          description: The authorization rule name.
+        - id: parameters
+          type: <xref uid="@azure/arm-servicebus.SBAuthorizationRule|stable" />
+          description: The shared access authorization rule.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.QueuesCreateOrUpdateAuthorizationRuleOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-servicebus.QueuesCreateOrUpdateAuthorizationRuleResponse|stable"
+          />&gt;
+  - name: delete(string, string, string, QueuesDeleteOptionalParams)
+    uid: '@azure/arm-servicebus.Queues.delete|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Deletes a queue from the specified namespace in a resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function delete(resourceGroupName: string, namespaceName: string,
+        queueName: string, options?: QueuesDeleteOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: queueName
+          type: string
+          description: The queue name.
+        - id: options
+          type: >-
+            <xref uid="@azure/arm-servicebus.QueuesDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      deleteAuthorizationRule(string, string, string, string,
+      QueuesDeleteAuthorizationRuleOptionalParams)
+    uid: '@azure/arm-servicebus.Queues.deleteAuthorizationRule|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Deletes a queue authorization rule.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function deleteAuthorizationRule(resourceGroupName: string,
+        namespaceName: string, queueName: string, authorizationRuleName: string,
+        options?: QueuesDeleteAuthorizationRuleOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: queueName
+          type: string
+          description: The queue name.
+        - id: authorizationRuleName
+          type: string
+          description: The authorization rule name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.QueuesDeleteAuthorizationRuleOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: get(string, string, string, QueuesGetOptionalParams)
+    uid: '@azure/arm-servicebus.Queues.get|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Returns a description for the specified queue.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, namespaceName: string,
+        queueName: string, options?: QueuesGetOptionalParams):
+        Promise<QueuesGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: queueName
+          type: string
+          description: The queue name.
+        - id: options
+          type: <xref uid="@azure/arm-servicebus.QueuesGetOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref uid="@azure/arm-servicebus.QueuesGetResponse|stable"
+          />&gt;
+  - name: >-
+      getAuthorizationRule(string, string, string, string,
+      QueuesGetAuthorizationRuleOptionalParams)
+    uid: '@azure/arm-servicebus.Queues.getAuthorizationRule|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Gets an authorization rule for a queue by rule name.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getAuthorizationRule(resourceGroupName: string, namespaceName:
+        string, queueName: string, authorizationRuleName: string, options?:
+        QueuesGetAuthorizationRuleOptionalParams):
+        Promise<QueuesGetAuthorizationRuleResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: queueName
+          type: string
+          description: The queue name.
+        - id: authorizationRuleName
+          type: string
+          description: The authorization rule name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.QueuesGetAuthorizationRuleOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-servicebus.QueuesGetAuthorizationRuleResponse|stable"
+          />&gt;
+  - name: >-
+      listAuthorizationRules(string, string, string,
+      QueuesListAuthorizationRulesOptionalParams)
+    uid: '@azure/arm-servicebus.Queues.listAuthorizationRules|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Gets all authorization rules for a queue.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listAuthorizationRules(resourceGroupName: string,
+        namespaceName: string, queueName: string, options?:
+        QueuesListAuthorizationRulesOptionalParams):
+        PagedAsyncIterableIterator<SBAuthorizationRule>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: queueName
+          type: string
+          description: The queue name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.QueuesListAuthorizationRulesOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-servicebus.SBAuthorizationRule|stable" />&gt;
+  - name: listByNamespace(string, string, QueuesListByNamespaceOptionalParams)
+    uid: '@azure/arm-servicebus.Queues.listByNamespace|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Gets the queues within a namespace.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByNamespace(resourceGroupName: string, namespaceName:
+        string, options?: QueuesListByNamespaceOptionalParams):
+        PagedAsyncIterableIterator<SBQueue>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.QueuesListByNamespaceOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-servicebus.SBQueue|stable" />&gt;
+  - name: listKeys(string, string, string, string, QueuesListKeysOptionalParams)
+    uid: '@azure/arm-servicebus.Queues.listKeys|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Primary and secondary connection strings to the queue.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listKeys(resourceGroupName: string, namespaceName: string,
+        queueName: string, authorizationRuleName: string, options?:
+        QueuesListKeysOptionalParams): Promise<QueuesListKeysResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: queueName
+          type: string
+          description: The queue name.
+        - id: authorizationRuleName
+          type: string
+          description: The authorization rule name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.QueuesListKeysOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-servicebus.QueuesListKeysResponse|stable" />&gt;
+  - name: >-
+      regenerateKeys(string, string, string, string,
+      RegenerateAccessKeyParameters, QueuesRegenerateKeysOptionalParams)
+    uid: '@azure/arm-servicebus.Queues.regenerateKeys|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Regenerates the primary or secondary connection strings to the queue.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function regenerateKeys(resourceGroupName: string, namespaceName:
+        string, queueName: string, authorizationRuleName: string, parameters:
+        RegenerateAccessKeyParameters, options?:
+        QueuesRegenerateKeysOptionalParams):
+        Promise<QueuesRegenerateKeysResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: queueName
+          type: string
+          description: The queue name.
+        - id: authorizationRuleName
+          type: string
+          description: The authorization rule name.
+        - id: parameters
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.RegenerateAccessKeyParameters|stable" />
+          description: Parameters supplied to regenerate the authorization rule.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.QueuesRegenerateKeysOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-servicebus.QueuesRegenerateKeysResponse|stable" />&gt;

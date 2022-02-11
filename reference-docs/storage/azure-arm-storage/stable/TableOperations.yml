@@ -1,0 +1,217 @@
+### YamlMime:TSType
+name: TableOperations
+uid: '@azure/arm-storage.TableOperations|stable'
+package: '@azure/arm-storage|stable'
+summary: Interface representing a TableOperations.
+fullName: TableOperations
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: create(string, string, string, TableCreateOptionalParams)
+    uid: '@azure/arm-storage.TableOperations.create|stable'
+    package: '@azure/arm-storage|stable'
+    summary: >-
+      Creates a new table with the specified table name, under the specified
+      account.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function create(resourceGroupName: string, accountName: string,
+        tableName: string, options?: TableCreateOptionalParams):
+        Promise<TableCreateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group within the user's subscription. The
+            name is
+                                     case insensitive.
+        - id: accountName
+          type: string
+          description: >-
+            The name of the storage account within the specified resource group.
+            Storage
+                               account names must be between 3 and 24 characters in length and use numbers and lower-case letters
+                               only.
+        - id: tableName
+          type: string
+          description: >-
+            A table name must be unique within a storage account and must be
+            between 3 and 63
+                             characters.The name must comprise of only alphanumeric characters and it cannot begin with a numeric
+                             character.
+        - id: options
+          type: <xref uid="@azure/arm-storage.TableCreateOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref uid="@azure/arm-storage.TableCreateResponse|stable"
+          />&gt;
+  - name: delete(string, string, string, TableDeleteOptionalParams)
+    uid: '@azure/arm-storage.TableOperations.delete|stable'
+    package: '@azure/arm-storage|stable'
+    summary: >-
+      Deletes the table with the specified table name, under the specified
+      account if it exists.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function delete(resourceGroupName: string, accountName: string,
+        tableName: string, options?: TableDeleteOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group within the user's subscription. The
+            name is
+                                     case insensitive.
+        - id: accountName
+          type: string
+          description: >-
+            The name of the storage account within the specified resource group.
+            Storage
+                               account names must be between 3 and 24 characters in length and use numbers and lower-case letters
+                               only.
+        - id: tableName
+          type: string
+          description: >-
+            A table name must be unique within a storage account and must be
+            between 3 and 63
+                             characters.The name must comprise of only alphanumeric characters and it cannot begin with a numeric
+                             character.
+        - id: options
+          type: <xref uid="@azure/arm-storage.TableDeleteOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: get(string, string, string, TableGetOptionalParams)
+    uid: '@azure/arm-storage.TableOperations.get|stable'
+    package: '@azure/arm-storage|stable'
+    summary: >-
+      Gets the table with the specified table name, under the specified account
+      if it exists.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, accountName: string, tableName:
+        string, options?: TableGetOptionalParams): Promise<TableGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group within the user's subscription. The
+            name is
+                                     case insensitive.
+        - id: accountName
+          type: string
+          description: >-
+            The name of the storage account within the specified resource group.
+            Storage
+                               account names must be between 3 and 24 characters in length and use numbers and lower-case letters
+                               only.
+        - id: tableName
+          type: string
+          description: >-
+            A table name must be unique within a storage account and must be
+            between 3 and 63
+                             characters.The name must comprise of only alphanumeric characters and it cannot begin with a numeric
+                             character.
+        - id: options
+          type: <xref uid="@azure/arm-storage.TableGetOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref uid="@azure/arm-storage.TableGetResponse|stable"
+          />&gt;
+  - name: list(string, string, TableListOptionalParams)
+    uid: '@azure/arm-storage.TableOperations.list|stable'
+    package: '@azure/arm-storage|stable'
+    summary: Gets a list of all the tables under the specified storage account
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, accountName: string, options?:
+        TableListOptionalParams): PagedAsyncIterableIterator<Table>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group within the user's subscription. The
+            name is
+                                     case insensitive.
+        - id: accountName
+          type: string
+          description: >-
+            The name of the storage account within the specified resource group.
+            Storage
+                               account names must be between 3 and 24 characters in length and use numbers and lower-case letters
+                               only.
+        - id: options
+          type: <xref uid="@azure/arm-storage.TableListOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-storage.Table|stable" />&gt;
+  - name: update(string, string, string, TableUpdateOptionalParams)
+    uid: '@azure/arm-storage.TableOperations.update|stable'
+    package: '@azure/arm-storage|stable'
+    summary: >-
+      Creates a new table with the specified table name, under the specified
+      account.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function update(resourceGroupName: string, accountName: string,
+        tableName: string, options?: TableUpdateOptionalParams):
+        Promise<TableUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group within the user's subscription. The
+            name is
+                                     case insensitive.
+        - id: accountName
+          type: string
+          description: >-
+            The name of the storage account within the specified resource group.
+            Storage
+                               account names must be between 3 and 24 characters in length and use numbers and lower-case letters
+                               only.
+        - id: tableName
+          type: string
+          description: >-
+            A table name must be unique within a storage account and must be
+            between 3 and 63
+                             characters.The name must comprise of only alphanumeric characters and it cannot begin with a numeric
+                             character.
+        - id: options
+          type: <xref uid="@azure/arm-storage.TableUpdateOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref uid="@azure/arm-storage.TableUpdateResponse|stable"
+          />&gt;

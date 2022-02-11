@@ -1,0 +1,385 @@
+### YamlMime:TSType
+name: Topics
+uid: '@azure/arm-servicebus.Topics|stable'
+package: '@azure/arm-servicebus|stable'
+summary: Interface representing a Topics.
+fullName: Topics
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      createOrUpdate(string, string, string, SBTopic,
+      TopicsCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-servicebus.Topics.createOrUpdate|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Creates a topic in the specified namespace.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, namespaceName:
+        string, topicName: string, parameters: SBTopic, options?:
+        TopicsCreateOrUpdateOptionalParams):
+        Promise<TopicsCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: topicName
+          type: string
+          description: The topic name.
+        - id: parameters
+          type: <xref uid="@azure/arm-servicebus.SBTopic|stable" />
+          description: Parameters supplied to create a topic resource.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.TopicsCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-servicebus.TopicsCreateOrUpdateResponse|stable" />&gt;
+  - name: >-
+      createOrUpdateAuthorizationRule(string, string, string, string,
+      SBAuthorizationRule, TopicsCreateOrUpdateAuthorizationRuleOptionalParams)
+    uid: '@azure/arm-servicebus.Topics.createOrUpdateAuthorizationRule|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Creates an authorization rule for the specified topic.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createOrUpdateAuthorizationRule(resourceGroupName: string,
+        namespaceName: string, topicName: string, authorizationRuleName: string,
+        parameters: SBAuthorizationRule, options?:
+        TopicsCreateOrUpdateAuthorizationRuleOptionalParams):
+        Promise<TopicsCreateOrUpdateAuthorizationRuleResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: topicName
+          type: string
+          description: The topic name.
+        - id: authorizationRuleName
+          type: string
+          description: The authorization rule name.
+        - id: parameters
+          type: <xref uid="@azure/arm-servicebus.SBAuthorizationRule|stable" />
+          description: The shared access authorization rule.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.TopicsCreateOrUpdateAuthorizationRuleOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-servicebus.TopicsCreateOrUpdateAuthorizationRuleResponse|stable"
+          />&gt;
+  - name: delete(string, string, string, TopicsDeleteOptionalParams)
+    uid: '@azure/arm-servicebus.Topics.delete|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Deletes a topic from the specified namespace and resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function delete(resourceGroupName: string, namespaceName: string,
+        topicName: string, options?: TopicsDeleteOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: topicName
+          type: string
+          description: The topic name.
+        - id: options
+          type: >-
+            <xref uid="@azure/arm-servicebus.TopicsDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      deleteAuthorizationRule(string, string, string, string,
+      TopicsDeleteAuthorizationRuleOptionalParams)
+    uid: '@azure/arm-servicebus.Topics.deleteAuthorizationRule|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Deletes a topic authorization rule.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function deleteAuthorizationRule(resourceGroupName: string,
+        namespaceName: string, topicName: string, authorizationRuleName: string,
+        options?: TopicsDeleteAuthorizationRuleOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: topicName
+          type: string
+          description: The topic name.
+        - id: authorizationRuleName
+          type: string
+          description: The authorization rule name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.TopicsDeleteAuthorizationRuleOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: get(string, string, string, TopicsGetOptionalParams)
+    uid: '@azure/arm-servicebus.Topics.get|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Returns a description for the specified topic.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, namespaceName: string,
+        topicName: string, options?: TopicsGetOptionalParams):
+        Promise<TopicsGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: topicName
+          type: string
+          description: The topic name.
+        - id: options
+          type: <xref uid="@azure/arm-servicebus.TopicsGetOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref uid="@azure/arm-servicebus.TopicsGetResponse|stable"
+          />&gt;
+  - name: >-
+      getAuthorizationRule(string, string, string, string,
+      TopicsGetAuthorizationRuleOptionalParams)
+    uid: '@azure/arm-servicebus.Topics.getAuthorizationRule|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Returns the specified authorization rule.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getAuthorizationRule(resourceGroupName: string, namespaceName:
+        string, topicName: string, authorizationRuleName: string, options?:
+        TopicsGetAuthorizationRuleOptionalParams):
+        Promise<TopicsGetAuthorizationRuleResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: topicName
+          type: string
+          description: The topic name.
+        - id: authorizationRuleName
+          type: string
+          description: The authorization rule name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.TopicsGetAuthorizationRuleOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-servicebus.TopicsGetAuthorizationRuleResponse|stable"
+          />&gt;
+  - name: >-
+      listAuthorizationRules(string, string, string,
+      TopicsListAuthorizationRulesOptionalParams)
+    uid: '@azure/arm-servicebus.Topics.listAuthorizationRules|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Gets authorization rules for a topic.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listAuthorizationRules(resourceGroupName: string,
+        namespaceName: string, topicName: string, options?:
+        TopicsListAuthorizationRulesOptionalParams):
+        PagedAsyncIterableIterator<SBAuthorizationRule>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: topicName
+          type: string
+          description: The topic name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.TopicsListAuthorizationRulesOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-servicebus.SBAuthorizationRule|stable" />&gt;
+  - name: listByNamespace(string, string, TopicsListByNamespaceOptionalParams)
+    uid: '@azure/arm-servicebus.Topics.listByNamespace|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Gets all the topics in a namespace.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByNamespace(resourceGroupName: string, namespaceName:
+        string, options?: TopicsListByNamespaceOptionalParams):
+        PagedAsyncIterableIterator<SBTopic>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.TopicsListByNamespaceOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-servicebus.SBTopic|stable" />&gt;
+  - name: listKeys(string, string, string, string, TopicsListKeysOptionalParams)
+    uid: '@azure/arm-servicebus.Topics.listKeys|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Gets the primary and secondary connection strings for the topic.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listKeys(resourceGroupName: string, namespaceName: string,
+        topicName: string, authorizationRuleName: string, options?:
+        TopicsListKeysOptionalParams): Promise<TopicsListKeysResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: topicName
+          type: string
+          description: The topic name.
+        - id: authorizationRuleName
+          type: string
+          description: The authorization rule name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.TopicsListKeysOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-servicebus.TopicsListKeysResponse|stable" />&gt;
+  - name: >-
+      regenerateKeys(string, string, string, string,
+      RegenerateAccessKeyParameters, TopicsRegenerateKeysOptionalParams)
+    uid: '@azure/arm-servicebus.Topics.regenerateKeys|stable'
+    package: '@azure/arm-servicebus|stable'
+    summary: Regenerates primary or secondary connection strings for the topic.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function regenerateKeys(resourceGroupName: string, namespaceName:
+        string, topicName: string, authorizationRuleName: string, parameters:
+        RegenerateAccessKeyParameters, options?:
+        TopicsRegenerateKeysOptionalParams):
+        Promise<TopicsRegenerateKeysResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the Resource group within the Azure subscription.
+        - id: namespaceName
+          type: string
+          description: The namespace name
+        - id: topicName
+          type: string
+          description: The topic name.
+        - id: authorizationRuleName
+          type: string
+          description: The authorization rule name.
+        - id: parameters
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.RegenerateAccessKeyParameters|stable" />
+          description: Parameters supplied to regenerate the authorization rule.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-servicebus.TopicsRegenerateKeysOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-servicebus.TopicsRegenerateKeysResponse|stable" />&gt;

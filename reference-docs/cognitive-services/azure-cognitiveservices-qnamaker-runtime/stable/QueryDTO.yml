@@ -1,0 +1,136 @@
+### YamlMime:TSType
+name: QueryDTO
+uid: '@azure/cognitiveservices-qnamaker-runtime.QueryDTO|stable'
+package: '@azure/cognitiveservices-qnamaker-runtime|stable'
+summary: POST body schema to query the knowledgebase.
+fullName: QueryDTO
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: context
+    uid: '@azure/cognitiveservices-qnamaker-runtime.QueryDTO.context|stable'
+    package: '@azure/cognitiveservices-qnamaker-runtime|stable'
+    summary: Context object with previous QnA's information.
+    fullName: context
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context?: QueryDTOContext'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/cognitiveservices-qnamaker-runtime.QueryDTOContext|stable"
+          />
+  - name: isTest
+    uid: '@azure/cognitiveservices-qnamaker-runtime.QueryDTO.isTest|stable'
+    package: '@azure/cognitiveservices-qnamaker-runtime|stable'
+    summary: Query against the test index.
+    fullName: isTest
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isTest?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true
+  - name: qnaId
+    uid: '@azure/cognitiveservices-qnamaker-runtime.QueryDTO.qnaId|stable'
+    package: '@azure/cognitiveservices-qnamaker-runtime|stable'
+    summary: >-
+      Exact qnaId to fetch from the knowledgebase, this field takes priority
+      over question.
+    fullName: qnaId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'qnaId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: question
+    uid: '@azure/cognitiveservices-qnamaker-runtime.QueryDTO.question|stable'
+    package: '@azure/cognitiveservices-qnamaker-runtime|stable'
+    summary: User question to query against the knowledge base.
+    fullName: question
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'question?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: rankerType
+    uid: '@azure/cognitiveservices-qnamaker-runtime.QueryDTO.rankerType|stable'
+    package: '@azure/cognitiveservices-qnamaker-runtime|stable'
+    summary: Optional field. Set to 'QuestionOnly' for using a question only Ranker.
+    fullName: rankerType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rankerType?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: scoreThreshold
+    uid: '@azure/cognitiveservices-qnamaker-runtime.QueryDTO.scoreThreshold|stable'
+    package: '@azure/cognitiveservices-qnamaker-runtime|stable'
+    summary: Threshold for answers returned based on score.
+    fullName: scoreThreshold
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'scoreThreshold?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: strictFilters
+    uid: '@azure/cognitiveservices-qnamaker-runtime.QueryDTO.strictFilters|stable'
+    package: '@azure/cognitiveservices-qnamaker-runtime|stable'
+    summary: Find only answers that contain these metadata.
+    fullName: strictFilters
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'strictFilters?: MetadataDTO[]'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/cognitiveservices-qnamaker-runtime.MetadataDTO|stable"
+          />[]
+  - name: top
+    uid: '@azure/cognitiveservices-qnamaker-runtime.QueryDTO.top|stable'
+    package: '@azure/cognitiveservices-qnamaker-runtime|stable'
+    summary: Max number of answers to be returned for the question.
+    fullName: top
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'top?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: userId
+    uid: '@azure/cognitiveservices-qnamaker-runtime.QueryDTO.userId|stable'
+    package: '@azure/cognitiveservices-qnamaker-runtime|stable'
+    summary: Unique identifier for the user.
+    fullName: userId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'userId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

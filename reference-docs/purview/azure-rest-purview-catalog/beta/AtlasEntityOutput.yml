@@ -1,0 +1,269 @@
+### YamlMime:TSType
+name: AtlasEntityOutput
+uid: '@azure-rest/purview-catalog.AtlasEntityOutput|beta'
+package: '@azure-rest/purview-catalog|beta'
+summary: ''
+fullName: AtlasEntityOutput
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: attributes
+    uid: '@azure-rest/purview-catalog.AtlasEntityOutput.attributes|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: The attributes of the struct.
+    fullName: attributes
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'attributes?: Record<string, Record<string, unknown>>'
+      return:
+        description: ''
+        type: Record&lt;string, Record&lt;string, unknown&gt;&gt;
+  - name: classifications
+    uid: '@azure-rest/purview-catalog.AtlasEntityOutput.classifications|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: An array of classifications.
+    fullName: classifications
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'classifications?: Array<AtlasClassificationOutput>'
+      return:
+        description: ''
+        type: >-
+          Array&lt;<xref
+          uid="@azure-rest/purview-catalog.AtlasClassificationOutput|beta"
+          />&gt;
+  - name: contacts
+    uid: '@azure-rest/purview-catalog.AtlasEntityOutput.contacts|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: The dictionary of contacts for terms. Key could be Expert or Owner.
+    fullName: contacts
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'contacts?: Record<string, Array<ContactBasicOutput>>'
+      return:
+        description: ''
+        type: >-
+          Record&lt;string, Array&lt;<xref
+          uid="@azure-rest/purview-catalog.ContactBasicOutput|beta" />&gt;&gt;
+  - name: createdBy
+    uid: '@azure-rest/purview-catalog.AtlasEntityOutput.createdBy|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: The user who created the record.
+    fullName: createdBy
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'createdBy?: string'
+      return:
+        description: ''
+        type: string
+  - name: createTime
+    uid: '@azure-rest/purview-catalog.AtlasEntityOutput.createTime|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: The created time of the record.
+    fullName: createTime
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'createTime?: number'
+      return:
+        description: ''
+        type: number
+  - name: guid
+    uid: '@azure-rest/purview-catalog.AtlasEntityOutput.guid|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: The GUID of the entity.
+    fullName: guid
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'guid?: string'
+      return:
+        description: ''
+        type: string
+  - name: homeId
+    uid: '@azure-rest/purview-catalog.AtlasEntityOutput.homeId|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: The home ID of the entity.
+    fullName: homeId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'homeId?: string'
+      return:
+        description: ''
+        type: string
+  - name: lastModifiedTS
+    uid: '@azure-rest/purview-catalog.AtlasEntityOutput.lastModifiedTS|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: ETag for concurrency control.
+    fullName: lastModifiedTS
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lastModifiedTS?: string'
+      return:
+        description: ''
+        type: string
+  - name: meanings
+    uid: '@azure-rest/purview-catalog.AtlasEntityOutput.meanings|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: An array of term assignment headers indicating the meanings of the entity.
+    fullName: meanings
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'meanings?: Array<AtlasTermAssignmentHeaderOutput>'
+      return:
+        description: ''
+        type: >-
+          Array&lt;<xref
+          uid="@azure-rest/purview-catalog.AtlasTermAssignmentHeaderOutput|beta"
+          />&gt;
+  - name: provenanceType
+    uid: '@azure-rest/purview-catalog.AtlasEntityOutput.provenanceType|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: Used to record the provenance of an instance of an entity or relationship.
+    fullName: provenanceType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'provenanceType?: number'
+      return:
+        description: ''
+        type: number
+  - name: proxy
+    uid: '@azure-rest/purview-catalog.AtlasEntityOutput.proxy|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: Determines if there's a proxy.
+    fullName: proxy
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'proxy?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: relationshipAttributes
+    uid: '@azure-rest/purview-catalog.AtlasEntityOutput.relationshipAttributes|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: The attributes of relationship.
+    fullName: relationshipAttributes
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'relationshipAttributes?: Record<string, Record<string, unknown>>'
+      return:
+        description: ''
+        type: Record&lt;string, Record&lt;string, unknown&gt;&gt;
+  - name: source
+    uid: '@azure-rest/purview-catalog.AtlasEntityOutput.source|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: indicate the source who create the classification detail
+    fullName: source
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'source?: string'
+      return:
+        description: ''
+        type: string
+  - name: sourceDetails
+    uid: '@azure-rest/purview-catalog.AtlasEntityOutput.sourceDetails|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: more detail on source information
+    fullName: sourceDetails
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sourceDetails?: Record<string, Record<string, unknown>>'
+      return:
+        description: ''
+        type: Record&lt;string, Record&lt;string, unknown&gt;&gt;
+  - name: status
+    uid: '@azure-rest/purview-catalog.AtlasEntityOutput.status|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: >-
+      Status of the entity - can be active or deleted. Deleted entities are not
+      removed from Atlas store.
+    fullName: status
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'status?: "ACTIVE" | "DELETED"'
+      return:
+        description: ''
+        type: '"ACTIVE" | "DELETED"'
+  - name: typeName
+    uid: '@azure-rest/purview-catalog.AtlasEntityOutput.typeName|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: The name of the type.
+    fullName: typeName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'typeName?: string'
+      return:
+        description: ''
+        type: string
+  - name: updatedBy
+    uid: '@azure-rest/purview-catalog.AtlasEntityOutput.updatedBy|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: The user who updated the record.
+    fullName: updatedBy
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'updatedBy?: string'
+      return:
+        description: ''
+        type: string
+  - name: updateTime
+    uid: '@azure-rest/purview-catalog.AtlasEntityOutput.updateTime|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: The update time of the record.
+    fullName: updateTime
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'updateTime?: number'
+      return:
+        description: ''
+        type: number
+  - name: version
+    uid: '@azure-rest/purview-catalog.AtlasEntityOutput.version|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: The version of the entity.
+    fullName: version
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'version?: number'
+      return:
+        description: ''
+        type: number
+extends: <xref uid="@azure-rest/purview-catalog.AtlasStructOutput|beta" />

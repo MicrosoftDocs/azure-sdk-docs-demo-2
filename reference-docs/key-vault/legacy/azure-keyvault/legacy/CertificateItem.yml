@@ -1,0 +1,63 @@
+### YamlMime:TSType
+name: CertificateItem
+uid: azure-keyvault.CertificateItem|legacy
+package: azure-keyvault|legacy
+summary: ''
+fullName: CertificateItem
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: attributes
+    uid: azure-keyvault.CertificateItem.attributes|legacy
+    package: azure-keyvault|legacy
+    summary: ''
+    fullName: attributes
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'attributes?: CertificateAttributes'
+      return:
+        description: ''
+        type: <xref uid="azure-keyvault.CertificateAttributes|legacy" />
+  - name: id
+    uid: azure-keyvault.CertificateItem.id|legacy
+    package: azure-keyvault|legacy
+    summary: ''
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: string'
+      return:
+        description: ''
+        type: string
+  - name: tags
+    uid: azure-keyvault.CertificateItem.tags|legacy
+    package: azure-keyvault|legacy
+    summary: ''
+    fullName: tags
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        description: ''
+        type: '[key: string]\: string'
+  - name: x509Thumbprint
+    uid: azure-keyvault.CertificateItem.x509Thumbprint|legacy
+    package: azure-keyvault|legacy
+    summary: ''
+    fullName: x509Thumbprint
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'x509Thumbprint?: Buffer'
+      return:
+        description: ''
+        type: Buffer

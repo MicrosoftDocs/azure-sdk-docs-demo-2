@@ -1,0 +1,79 @@
+### YamlMime:TSType
+name: Resource
+uid: '@azure/arm-cdn.Resource|stable'
+package: '@azure/arm-cdn|stable'
+summary: The core properties of ARM resources
+fullName: Resource
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: id
+    uid: '@azure/arm-cdn.Resource.id|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: >-
+      Resource ID.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: name
+    uid: '@azure/arm-cdn.Resource.name|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: >-
+      Resource name.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: systemData
+    uid: '@azure/arm-cdn.Resource.systemData|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: >-
+      Read only system data
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: systemData
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'systemData?: SystemData'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-cdn.SystemData|stable" />
+  - name: type
+    uid: '@azure/arm-cdn.Resource.type|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: >-
+      Resource type.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

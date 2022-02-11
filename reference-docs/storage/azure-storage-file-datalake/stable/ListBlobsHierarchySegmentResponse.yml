@@ -1,0 +1,125 @@
+### YamlMime:TSType
+name: ListBlobsHierarchySegmentResponse
+uid: '@azure/storage-file-datalake.ListBlobsHierarchySegmentResponse|stable'
+package: '@azure/storage-file-datalake|stable'
+summary: An enumeration of blobs
+fullName: ListBlobsHierarchySegmentResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: containerName
+    uid: >-
+      @azure/storage-file-datalake.ListBlobsHierarchySegmentResponse.containerName|stable
+    package: '@azure/storage-file-datalake|stable'
+    summary: ''
+    fullName: containerName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'containerName: string'
+      return:
+        description: ''
+        type: string
+  - name: delimiter
+    uid: >-
+      @azure/storage-file-datalake.ListBlobsHierarchySegmentResponse.delimiter|stable
+    package: '@azure/storage-file-datalake|stable'
+    summary: ''
+    fullName: delimiter
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delimiter?: string'
+      return:
+        description: ''
+        type: string
+  - name: marker
+    uid: >-
+      @azure/storage-file-datalake.ListBlobsHierarchySegmentResponse.marker|stable
+    package: '@azure/storage-file-datalake|stable'
+    summary: ''
+    fullName: marker
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'marker?: string'
+      return:
+        description: ''
+        type: string
+  - name: maxResults
+    uid: >-
+      @azure/storage-file-datalake.ListBlobsHierarchySegmentResponse.maxResults|stable
+    package: '@azure/storage-file-datalake|stable'
+    summary: ''
+    fullName: maxResults
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'maxResults?: number'
+      return:
+        description: ''
+        type: number
+  - name: nextMarker
+    uid: >-
+      @azure/storage-file-datalake.ListBlobsHierarchySegmentResponse.nextMarker|stable
+    package: '@azure/storage-file-datalake|stable'
+    summary: ''
+    fullName: nextMarker
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nextMarker?: string'
+      return:
+        description: ''
+        type: string
+  - name: prefix
+    uid: >-
+      @azure/storage-file-datalake.ListBlobsHierarchySegmentResponse.prefix|stable
+    package: '@azure/storage-file-datalake|stable'
+    summary: ''
+    fullName: prefix
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'prefix?: string'
+      return:
+        description: ''
+        type: string
+  - name: segment
+    uid: >-
+      @azure/storage-file-datalake.ListBlobsHierarchySegmentResponse.segment|stable
+    package: '@azure/storage-file-datalake|stable'
+    summary: ''
+    fullName: segment
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'segment: BlobHierarchyListSegment'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/storage-file-datalake.BlobHierarchyListSegment|stable" />
+  - name: serviceEndpoint
+    uid: >-
+      @azure/storage-file-datalake.ListBlobsHierarchySegmentResponse.serviceEndpoint|stable
+    package: '@azure/storage-file-datalake|stable'
+    summary: ''
+    fullName: serviceEndpoint
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'serviceEndpoint: string'
+      return:
+        description: ''
+        type: string

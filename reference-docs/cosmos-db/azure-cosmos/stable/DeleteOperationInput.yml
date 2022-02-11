@@ -1,0 +1,52 @@
+### YamlMime:TSType
+name: DeleteOperationInput
+uid: '@azure/cosmos.DeleteOperationInput|stable'
+package: '@azure/cosmos|stable'
+summary: ''
+fullName: DeleteOperationInput
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: id
+    uid: '@azure/cosmos.DeleteOperationInput.id|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id: string'
+      return:
+        description: ''
+        type: string
+  - name: operationType
+    uid: '@azure/cosmos.DeleteOperationInput.operationType|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: operationType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'operationType: "Delete"'
+      return:
+        description: ''
+        type: '"Delete"'
+  - name: partitionKey
+    uid: '@azure/cosmos.DeleteOperationInput.partitionKey|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: partitionKey
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        partitionKey?: string | number | null | Record<string, unknown> |
+        undefined
+      return:
+        description: ''
+        type: string | number | null | Record&lt;string, unknown&gt; | undefined

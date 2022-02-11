@@ -1,0 +1,1036 @@
+### YamlMime:TSType
+name: AppServicePlans
+uid: '@azure/arm-appservice.AppServicePlans|stable'
+package: '@azure/arm-appservice|stable'
+summary: Interface representing a AppServicePlans.
+fullName: AppServicePlans
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      beginCreateOrUpdate(string, string, AppServicePlan,
+      AppServicePlansCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-appservice.AppServicePlans.beginCreateOrUpdate|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Creates or updates an App Service Plan.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string, name: string,
+        appServicePlan: AppServicePlan, options?:
+        AppServicePlansCreateOrUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<AppServicePlansCreateOrUpdateResponse>,
+        AppServicePlansCreateOrUpdateResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service plan.
+        - id: appServicePlan
+          type: <xref uid="@azure/arm-appservice.AppServicePlan|stable" />
+          description: Details of the App Service plan.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServicePlansCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-appservice.AppServicePlansCreateOrUpdateResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-appservice.AppServicePlansCreateOrUpdateResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginCreateOrUpdateAndWait(string, string, AppServicePlan,
+      AppServicePlansCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-appservice.AppServicePlans.beginCreateOrUpdateAndWait|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Creates or updates an App Service Plan.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdateAndWait(resourceGroupName: string, name:
+        string, appServicePlan: AppServicePlan, options?:
+        AppServicePlansCreateOrUpdateOptionalParams):
+        Promise<AppServicePlansCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service plan.
+        - id: appServicePlan
+          type: <xref uid="@azure/arm-appservice.AppServicePlan|stable" />
+          description: Details of the App Service plan.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServicePlansCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.AppServicePlansCreateOrUpdateResponse|stable"
+          />&gt;
+  - name: >-
+      createOrUpdateVnetRoute(string, string, string, string, VnetRoute,
+      AppServicePlansCreateOrUpdateVnetRouteOptionalParams)
+    uid: '@azure/arm-appservice.AppServicePlans.createOrUpdateVnetRoute|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Description for Create or update a Virtual Network route in an App Service
+      plan.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createOrUpdateVnetRoute(resourceGroupName: string, name:
+        string, vnetName: string, routeName: string, route: VnetRoute, options?:
+        AppServicePlansCreateOrUpdateVnetRouteOptionalParams):
+        Promise<AppServicePlansCreateOrUpdateVnetRouteResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service plan.
+        - id: vnetName
+          type: string
+          description: Name of the Virtual Network.
+        - id: routeName
+          type: string
+          description: Name of the Virtual Network route.
+        - id: route
+          type: <xref uid="@azure/arm-appservice.VnetRoute|stable" />
+          description: Definition of the Virtual Network route.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServicePlansCreateOrUpdateVnetRouteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.AppServicePlansCreateOrUpdateVnetRouteResponse|stable"
+          />&gt;
+  - name: delete(string, string, AppServicePlansDeleteOptionalParams)
+    uid: '@azure/arm-appservice.AppServicePlans.delete|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Delete an App Service plan.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function delete(resourceGroupName: string, name: string, options?:
+        AppServicePlansDeleteOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service plan.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServicePlansDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      deleteHybridConnection(string, string, string, string,
+      AppServicePlansDeleteHybridConnectionOptionalParams)
+    uid: '@azure/arm-appservice.AppServicePlans.deleteHybridConnection|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Delete a Hybrid Connection in use in an App Service plan.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function deleteHybridConnection(resourceGroupName: string, name: string,
+        namespaceName: string, relayName: string, options?:
+        AppServicePlansDeleteHybridConnectionOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service plan.
+        - id: namespaceName
+          type: string
+          description: Name of the Service Bus namespace.
+        - id: relayName
+          type: string
+          description: Name of the Service Bus relay.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServicePlansDeleteHybridConnectionOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      deleteVnetRoute(string, string, string, string,
+      AppServicePlansDeleteVnetRouteOptionalParams)
+    uid: '@azure/arm-appservice.AppServicePlans.deleteVnetRoute|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Delete a Virtual Network route in an App Service plan.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function deleteVnetRoute(resourceGroupName: string, name: string,
+        vnetName: string, routeName: string, options?:
+        AppServicePlansDeleteVnetRouteOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service plan.
+        - id: vnetName
+          type: string
+          description: Name of the Virtual Network.
+        - id: routeName
+          type: string
+          description: Name of the Virtual Network route.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServicePlansDeleteVnetRouteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: get(string, string, AppServicePlansGetOptionalParams)
+    uid: '@azure/arm-appservice.AppServicePlans.get|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Get an App Service plan.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, name: string, options?:
+        AppServicePlansGetOptionalParams): Promise<AppServicePlansGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service plan.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServicePlansGetOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.AppServicePlansGetResponse|stable" />&gt;
+  - name: >-
+      getHybridConnection(string, string, string, string,
+      AppServicePlansGetHybridConnectionOptionalParams)
+    uid: '@azure/arm-appservice.AppServicePlans.getHybridConnection|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Description for Retrieve a Hybrid Connection in use in an App Service
+      plan.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getHybridConnection(resourceGroupName: string, name: string,
+        namespaceName: string, relayName: string, options?:
+        AppServicePlansGetHybridConnectionOptionalParams):
+        Promise<AppServicePlansGetHybridConnectionResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service plan.
+        - id: namespaceName
+          type: string
+          description: Name of the Service Bus namespace.
+        - id: relayName
+          type: string
+          description: Name of the Service Bus relay.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServicePlansGetHybridConnectionOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.AppServicePlansGetHybridConnectionResponse|stable"
+          />&gt;
+  - name: >-
+      getHybridConnectionPlanLimit(string, string,
+      AppServicePlansGetHybridConnectionPlanLimitOptionalParams)
+    uid: '@azure/arm-appservice.AppServicePlans.getHybridConnectionPlanLimit|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Description for Get the maximum number of Hybrid Connections allowed in an
+      App Service plan.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getHybridConnectionPlanLimit(resourceGroupName: string, name:
+        string, options?:
+        AppServicePlansGetHybridConnectionPlanLimitOptionalParams):
+        Promise<AppServicePlansGetHybridConnectionPlanLimitResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service plan.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServicePlansGetHybridConnectionPlanLimitOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.AppServicePlansGetHybridConnectionPlanLimitResponse|stable"
+          />&gt;
+  - name: >-
+      getRouteForVnet(string, string, string, string,
+      AppServicePlansGetRouteForVnetOptionalParams)
+    uid: '@azure/arm-appservice.AppServicePlans.getRouteForVnet|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Get a Virtual Network route in an App Service plan.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getRouteForVnet(resourceGroupName: string, name: string,
+        vnetName: string, routeName: string, options?:
+        AppServicePlansGetRouteForVnetOptionalParams):
+        Promise<AppServicePlansGetRouteForVnetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service plan.
+        - id: vnetName
+          type: string
+          description: Name of the Virtual Network.
+        - id: routeName
+          type: string
+          description: Name of the Virtual Network route.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServicePlansGetRouteForVnetOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.AppServicePlansGetRouteForVnetResponse|stable"
+          />&gt;
+  - name: >-
+      getServerFarmSkus(string, string,
+      AppServicePlansGetServerFarmSkusOptionalParams)
+    uid: '@azure/arm-appservice.AppServicePlans.getServerFarmSkus|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Gets all selectable SKUs for a given App Service Plan
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getServerFarmSkus(resourceGroupName: string, name: string,
+        options?: AppServicePlansGetServerFarmSkusOptionalParams):
+        Promise<AppServicePlansGetServerFarmSkusResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of App Service Plan
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServicePlansGetServerFarmSkusOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.AppServicePlansGetServerFarmSkusResponse|stable"
+          />&gt;
+  - name: >-
+      getVnetFromServerFarm(string, string, string,
+      AppServicePlansGetVnetFromServerFarmOptionalParams)
+    uid: '@azure/arm-appservice.AppServicePlans.getVnetFromServerFarm|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Get a Virtual Network associated with an App Service plan.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getVnetFromServerFarm(resourceGroupName: string, name: string,
+        vnetName: string, options?:
+        AppServicePlansGetVnetFromServerFarmOptionalParams):
+        Promise<AppServicePlansGetVnetFromServerFarmResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service plan.
+        - id: vnetName
+          type: string
+          description: Name of the Virtual Network.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServicePlansGetVnetFromServerFarmOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.AppServicePlansGetVnetFromServerFarmResponse|stable"
+          />&gt;
+  - name: >-
+      getVnetGateway(string, string, string, string,
+      AppServicePlansGetVnetGatewayOptionalParams)
+    uid: '@azure/arm-appservice.AppServicePlans.getVnetGateway|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Get a Virtual Network gateway.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getVnetGateway(resourceGroupName: string, name: string,
+        vnetName: string, gatewayName: string, options?:
+        AppServicePlansGetVnetGatewayOptionalParams):
+        Promise<AppServicePlansGetVnetGatewayResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service plan.
+        - id: vnetName
+          type: string
+          description: Name of the Virtual Network.
+        - id: gatewayName
+          type: string
+          description: Name of the gateway. Only the 'primary' gateway is supported.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServicePlansGetVnetGatewayOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.AppServicePlansGetVnetGatewayResponse|stable"
+          />&gt;
+  - name: list(AppServicePlansListOptionalParams)
+    uid: '@azure/arm-appservice.AppServicePlans.list|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Get all App Service plans for a subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(options?: AppServicePlansListOptionalParams):
+        PagedAsyncIterableIterator<AppServicePlan>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServicePlansListOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.AppServicePlan|stable" />&gt;
+  - name: >-
+      listByResourceGroup(string,
+      AppServicePlansListByResourceGroupOptionalParams)
+    uid: '@azure/arm-appservice.AppServicePlans.listByResourceGroup|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Get all App Service plans in a resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string, options?:
+        AppServicePlansListByResourceGroupOptionalParams):
+        PagedAsyncIterableIterator<AppServicePlan>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServicePlansListByResourceGroupOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.AppServicePlan|stable" />&gt;
+  - name: >-
+      listCapabilities(string, string,
+      AppServicePlansListCapabilitiesOptionalParams)
+    uid: '@azure/arm-appservice.AppServicePlans.listCapabilities|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for List all capabilities of an App Service plan.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listCapabilities(resourceGroupName: string, name: string,
+        options?: AppServicePlansListCapabilitiesOptionalParams):
+        Promise<AppServicePlansListCapabilitiesResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service plan.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServicePlansListCapabilitiesOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.AppServicePlansListCapabilitiesResponse|stable"
+          />&gt;
+  - name: >-
+      listHybridConnectionKeys(string, string, string, string,
+      AppServicePlansListHybridConnectionKeysOptionalParams)
+    uid: '@azure/arm-appservice.AppServicePlans.listHybridConnectionKeys|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Get the send key name and value of a Hybrid Connection.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listHybridConnectionKeys(resourceGroupName: string, name:
+        string, namespaceName: string, relayName: string, options?:
+        AppServicePlansListHybridConnectionKeysOptionalParams):
+        Promise<AppServicePlansListHybridConnectionKeysResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service plan.
+        - id: namespaceName
+          type: string
+          description: The name of the Service Bus namespace.
+        - id: relayName
+          type: string
+          description: The name of the Service Bus relay.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServicePlansListHybridConnectionKeysOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.AppServicePlansListHybridConnectionKeysResponse|stable"
+          />&gt;
+  - name: >-
+      listHybridConnections(string, string,
+      AppServicePlansListHybridConnectionsOptionalParams)
+    uid: '@azure/arm-appservice.AppServicePlans.listHybridConnections|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Description for Retrieve all Hybrid Connections in use in an App Service
+      plan.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listHybridConnections(resourceGroupName: string, name: string,
+        options?: AppServicePlansListHybridConnectionsOptionalParams):
+        PagedAsyncIterableIterator<HybridConnection>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service plan.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServicePlansListHybridConnectionsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.HybridConnection|stable" />&gt;
+  - name: >-
+      listRoutesForVnet(string, string, string,
+      AppServicePlansListRoutesForVnetOptionalParams)
+    uid: '@azure/arm-appservice.AppServicePlans.listRoutesForVnet|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Description for Get all routes that are associated with a Virtual Network
+      in an App Service plan.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listRoutesForVnet(resourceGroupName: string, name: string,
+        vnetName: string, options?:
+        AppServicePlansListRoutesForVnetOptionalParams):
+        Promise<AppServicePlansListRoutesForVnetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service plan.
+        - id: vnetName
+          type: string
+          description: Name of the Virtual Network.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServicePlansListRoutesForVnetOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.AppServicePlansListRoutesForVnetResponse|stable"
+          />&gt;
+  - name: listUsages(string, string, AppServicePlansListUsagesOptionalParams)
+    uid: '@azure/arm-appservice.AppServicePlans.listUsages|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Gets server farm usage information
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listUsages(resourceGroupName: string, name: string, options?:
+        AppServicePlansListUsagesOptionalParams):
+        PagedAsyncIterableIterator<CsmUsageQuota>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of App Service Plan
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServicePlansListUsagesOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.CsmUsageQuota|stable" />&gt;
+  - name: listVnets(string, string, AppServicePlansListVnetsOptionalParams)
+    uid: '@azure/arm-appservice.AppServicePlans.listVnets|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Description for Get all Virtual Networks associated with an App Service
+      plan.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listVnets(resourceGroupName: string, name: string, options?:
+        AppServicePlansListVnetsOptionalParams):
+        Promise<AppServicePlansListVnetsResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service plan.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServicePlansListVnetsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.AppServicePlansListVnetsResponse|stable"
+          />&gt;
+  - name: listWebApps(string, string, AppServicePlansListWebAppsOptionalParams)
+    uid: '@azure/arm-appservice.AppServicePlans.listWebApps|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Get all apps associated with an App Service plan.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listWebApps(resourceGroupName: string, name: string, options?:
+        AppServicePlansListWebAppsOptionalParams):
+        PagedAsyncIterableIterator<Site>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service plan.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServicePlansListWebAppsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appservice.Site|stable" />&gt;
+  - name: >-
+      listWebAppsByHybridConnection(string, string, string, string,
+      AppServicePlansListWebAppsByHybridConnectionOptionalParams)
+    uid: '@azure/arm-appservice.AppServicePlans.listWebAppsByHybridConnection|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Description for Get all apps that use a Hybrid Connection in an App
+      Service Plan.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listWebAppsByHybridConnection(resourceGroupName: string, name:
+        string, namespaceName: string, relayName: string, options?:
+        AppServicePlansListWebAppsByHybridConnectionOptionalParams):
+        PagedAsyncIterableIterator<string>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service plan.
+        - id: namespaceName
+          type: string
+          description: Name of the Hybrid Connection namespace.
+        - id: relayName
+          type: string
+          description: Name of the Hybrid Connection relay.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServicePlansListWebAppsByHybridConnectionOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: PagedAsyncIterableIterator&lt;string&gt;
+  - name: >-
+      rebootWorker(string, string, string,
+      AppServicePlansRebootWorkerOptionalParams)
+    uid: '@azure/arm-appservice.AppServicePlans.rebootWorker|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Reboot a worker machine in an App Service plan.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function rebootWorker(resourceGroupName: string, name: string,
+        workerName: string, options?:
+        AppServicePlansRebootWorkerOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service plan.
+        - id: workerName
+          type: string
+          description: Name of worker machine, which typically starts with RD.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServicePlansRebootWorkerOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      restartWebApps(string, string,
+      AppServicePlansRestartWebAppsOptionalParams)
+    uid: '@azure/arm-appservice.AppServicePlans.restartWebApps|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Restart all apps in an App Service plan.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function restartWebApps(resourceGroupName: string, name: string,
+        options?: AppServicePlansRestartWebAppsOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service plan.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServicePlansRestartWebAppsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      update(string, string, AppServicePlanPatchResource,
+      AppServicePlansUpdateOptionalParams)
+    uid: '@azure/arm-appservice.AppServicePlans.update|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Creates or updates an App Service Plan.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function update(resourceGroupName: string, name: string, appServicePlan:
+        AppServicePlanPatchResource, options?:
+        AppServicePlansUpdateOptionalParams):
+        Promise<AppServicePlansUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service plan.
+        - id: appServicePlan
+          type: >-
+            <xref uid="@azure/arm-appservice.AppServicePlanPatchResource|stable"
+            />
+          description: Details of the App Service plan.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServicePlansUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.AppServicePlansUpdateResponse|stable"
+          />&gt;
+  - name: >-
+      updateVnetGateway(string, string, string, string, VnetGateway,
+      AppServicePlansUpdateVnetGatewayOptionalParams)
+    uid: '@azure/arm-appservice.AppServicePlans.updateVnetGateway|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: Description for Update a Virtual Network gateway.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function updateVnetGateway(resourceGroupName: string, name: string,
+        vnetName: string, gatewayName: string, connectionEnvelope: VnetGateway,
+        options?: AppServicePlansUpdateVnetGatewayOptionalParams):
+        Promise<AppServicePlansUpdateVnetGatewayResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service plan.
+        - id: vnetName
+          type: string
+          description: Name of the Virtual Network.
+        - id: gatewayName
+          type: string
+          description: Name of the gateway. Only the 'primary' gateway is supported.
+        - id: connectionEnvelope
+          type: <xref uid="@azure/arm-appservice.VnetGateway|stable" />
+          description: Definition of the gateway.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServicePlansUpdateVnetGatewayOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.AppServicePlansUpdateVnetGatewayResponse|stable"
+          />&gt;
+  - name: >-
+      updateVnetRoute(string, string, string, string, VnetRoute,
+      AppServicePlansUpdateVnetRouteOptionalParams)
+    uid: '@azure/arm-appservice.AppServicePlans.updateVnetRoute|stable'
+    package: '@azure/arm-appservice|stable'
+    summary: >-
+      Description for Create or update a Virtual Network route in an App Service
+      plan.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function updateVnetRoute(resourceGroupName: string, name: string,
+        vnetName: string, routeName: string, route: VnetRoute, options?:
+        AppServicePlansUpdateVnetRouteOptionalParams):
+        Promise<AppServicePlansUpdateVnetRouteResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: name
+          type: string
+          description: Name of the App Service plan.
+        - id: vnetName
+          type: string
+          description: Name of the Virtual Network.
+        - id: routeName
+          type: string
+          description: Name of the Virtual Network route.
+        - id: route
+          type: <xref uid="@azure/arm-appservice.VnetRoute|stable" />
+          description: Definition of the Virtual Network route.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appservice.AppServicePlansUpdateVnetRouteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appservice.AppServicePlansUpdateVnetRouteResponse|stable"
+          />&gt;

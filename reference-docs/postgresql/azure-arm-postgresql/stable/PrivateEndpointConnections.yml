@@ -1,0 +1,333 @@
+### YamlMime:TSType
+name: PrivateEndpointConnections
+uid: '@azure/arm-postgresql.PrivateEndpointConnections|stable'
+package: '@azure/arm-postgresql|stable'
+summary: Interface representing a PrivateEndpointConnections.
+fullName: PrivateEndpointConnections
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      beginCreateOrUpdate(string, string, string, PrivateEndpointConnection,
+      PrivateEndpointConnectionsCreateOrUpdateOptionalParams)
+    uid: >-
+      @azure/arm-postgresql.PrivateEndpointConnections.beginCreateOrUpdate|stable
+    package: '@azure/arm-postgresql|stable'
+    summary: Approve or reject a private endpoint connection with a given name.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string, serverName:
+        string, privateEndpointConnectionName: string, parameters:
+        PrivateEndpointConnection, options?:
+        PrivateEndpointConnectionsCreateOrUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<PrivateEndpointConnectionsCreateOrUpdateResponse>,
+        PrivateEndpointConnectionsCreateOrUpdateResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: serverName
+          type: string
+          description: The name of the server.
+        - id: privateEndpointConnectionName
+          type: string
+          description: ''
+        - id: parameters
+          type: >-
+            <xref uid="@azure/arm-postgresql.PrivateEndpointConnection|stable"
+            />
+          description: A private endpoint connection
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-postgresql.PrivateEndpointConnectionsCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-postgresql.PrivateEndpointConnectionsCreateOrUpdateResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-postgresql.PrivateEndpointConnectionsCreateOrUpdateResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginCreateOrUpdateAndWait(string, string, string,
+      PrivateEndpointConnection,
+      PrivateEndpointConnectionsCreateOrUpdateOptionalParams)
+    uid: >-
+      @azure/arm-postgresql.PrivateEndpointConnections.beginCreateOrUpdateAndWait|stable
+    package: '@azure/arm-postgresql|stable'
+    summary: Approve or reject a private endpoint connection with a given name.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdateAndWait(resourceGroupName: string,
+        serverName: string, privateEndpointConnectionName: string, parameters:
+        PrivateEndpointConnection, options?:
+        PrivateEndpointConnectionsCreateOrUpdateOptionalParams):
+        Promise<PrivateEndpointConnectionsCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: serverName
+          type: string
+          description: The name of the server.
+        - id: privateEndpointConnectionName
+          type: string
+          description: ''
+        - id: parameters
+          type: >-
+            <xref uid="@azure/arm-postgresql.PrivateEndpointConnection|stable"
+            />
+          description: A private endpoint connection
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-postgresql.PrivateEndpointConnectionsCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-postgresql.PrivateEndpointConnectionsCreateOrUpdateResponse|stable"
+          />&gt;
+  - name: >-
+      beginDelete(string, string, string,
+      PrivateEndpointConnectionsDeleteOptionalParams)
+    uid: '@azure/arm-postgresql.PrivateEndpointConnections.beginDelete|stable'
+    package: '@azure/arm-postgresql|stable'
+    summary: Deletes a private endpoint connection with a given name.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDelete(resourceGroupName: string, serverName: string,
+        privateEndpointConnectionName: string, options?:
+        PrivateEndpointConnectionsDeleteOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: serverName
+          type: string
+          description: The name of the server.
+        - id: privateEndpointConnectionName
+          type: string
+          description: ''
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-postgresql.PrivateEndpointConnectionsDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: >-
+      beginDeleteAndWait(string, string, string,
+      PrivateEndpointConnectionsDeleteOptionalParams)
+    uid: '@azure/arm-postgresql.PrivateEndpointConnections.beginDeleteAndWait|stable'
+    package: '@azure/arm-postgresql|stable'
+    summary: Deletes a private endpoint connection with a given name.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteAndWait(resourceGroupName: string, serverName:
+        string, privateEndpointConnectionName: string, options?:
+        PrivateEndpointConnectionsDeleteOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: serverName
+          type: string
+          description: The name of the server.
+        - id: privateEndpointConnectionName
+          type: string
+          description: ''
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-postgresql.PrivateEndpointConnectionsDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      beginUpdateTags(string, string, string, TagsObject,
+      PrivateEndpointConnectionsUpdateTagsOptionalParams)
+    uid: '@azure/arm-postgresql.PrivateEndpointConnections.beginUpdateTags|stable'
+    package: '@azure/arm-postgresql|stable'
+    summary: Updates private endpoint connection with the specified tags.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginUpdateTags(resourceGroupName: string, serverName: string,
+        privateEndpointConnectionName: string, parameters: TagsObject, options?:
+        PrivateEndpointConnectionsUpdateTagsOptionalParams):
+        Promise<PollerLike<PollOperationState<PrivateEndpointConnectionsUpdateTagsResponse>,
+        PrivateEndpointConnectionsUpdateTagsResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: serverName
+          type: string
+          description: The name of the server.
+        - id: privateEndpointConnectionName
+          type: string
+          description: ''
+        - id: parameters
+          type: <xref uid="@azure/arm-postgresql.TagsObject|stable" />
+          description: >-
+            Parameters supplied to the Update private endpoint connection Tags
+            operation.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-postgresql.PrivateEndpointConnectionsUpdateTagsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-postgresql.PrivateEndpointConnectionsUpdateTagsResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-postgresql.PrivateEndpointConnectionsUpdateTagsResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginUpdateTagsAndWait(string, string, string, TagsObject,
+      PrivateEndpointConnectionsUpdateTagsOptionalParams)
+    uid: >-
+      @azure/arm-postgresql.PrivateEndpointConnections.beginUpdateTagsAndWait|stable
+    package: '@azure/arm-postgresql|stable'
+    summary: Updates private endpoint connection with the specified tags.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginUpdateTagsAndWait(resourceGroupName: string, serverName:
+        string, privateEndpointConnectionName: string, parameters: TagsObject,
+        options?: PrivateEndpointConnectionsUpdateTagsOptionalParams):
+        Promise<PrivateEndpointConnectionsUpdateTagsResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: serverName
+          type: string
+          description: The name of the server.
+        - id: privateEndpointConnectionName
+          type: string
+          description: ''
+        - id: parameters
+          type: <xref uid="@azure/arm-postgresql.TagsObject|stable" />
+          description: >-
+            Parameters supplied to the Update private endpoint connection Tags
+            operation.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-postgresql.PrivateEndpointConnectionsUpdateTagsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-postgresql.PrivateEndpointConnectionsUpdateTagsResponse|stable"
+          />&gt;
+  - name: get(string, string, string, PrivateEndpointConnectionsGetOptionalParams)
+    uid: '@azure/arm-postgresql.PrivateEndpointConnections.get|stable'
+    package: '@azure/arm-postgresql|stable'
+    summary: Gets a private endpoint connection.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, serverName: string,
+        privateEndpointConnectionName: string, options?:
+        PrivateEndpointConnectionsGetOptionalParams):
+        Promise<PrivateEndpointConnectionsGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: serverName
+          type: string
+          description: The name of the server.
+        - id: privateEndpointConnectionName
+          type: string
+          description: The name of the private endpoint connection.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-postgresql.PrivateEndpointConnectionsGetOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-postgresql.PrivateEndpointConnectionsGetResponse|stable"
+          />&gt;
+  - name: >-
+      listByServer(string, string,
+      PrivateEndpointConnectionsListByServerOptionalParams)
+    uid: '@azure/arm-postgresql.PrivateEndpointConnections.listByServer|stable'
+    package: '@azure/arm-postgresql|stable'
+    summary: Gets all private endpoint connections on a server.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByServer(resourceGroupName: string, serverName: string,
+        options?: PrivateEndpointConnectionsListByServerOptionalParams):
+        PagedAsyncIterableIterator<PrivateEndpointConnection>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: serverName
+          type: string
+          description: The name of the server.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-postgresql.PrivateEndpointConnectionsListByServerOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-postgresql.PrivateEndpointConnection|stable" />&gt;

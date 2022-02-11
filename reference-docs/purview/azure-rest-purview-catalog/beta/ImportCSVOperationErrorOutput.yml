@@ -1,0 +1,38 @@
+### YamlMime:TSType
+name: ImportCSVOperationErrorOutput
+uid: '@azure-rest/purview-catalog.ImportCSVOperationErrorOutput|beta'
+package: '@azure-rest/purview-catalog|beta'
+summary: ''
+fullName: ImportCSVOperationErrorOutput
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: errorCode
+    uid: '@azure-rest/purview-catalog.ImportCSVOperationErrorOutput.errorCode|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: Error code from async import job if fail
+    fullName: errorCode
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'errorCode?: number'
+      return:
+        description: ''
+        type: number
+  - name: errorMessage
+    uid: >-
+      @azure-rest/purview-catalog.ImportCSVOperationErrorOutput.errorMessage|beta
+    package: '@azure-rest/purview-catalog|beta'
+    summary: Error message from async import job if fail
+    fullName: errorMessage
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'errorMessage?: string'
+      return:
+        description: ''
+        type: string

@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: CurrencyValue
+uid: '@azure/ai-form-recognizer.CurrencyValue|beta'
+package: '@azure/ai-form-recognizer|beta'
+summary: Currency field value.
+fullName: CurrencyValue
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: amount
+    uid: '@azure/ai-form-recognizer.CurrencyValue.amount|beta'
+    package: '@azure/ai-form-recognizer|beta'
+    summary: Currency amount.
+    fullName: amount
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'amount: number'
+      return:
+        description: ''
+        type: number
+  - name: currencySymbol
+    uid: '@azure/ai-form-recognizer.CurrencyValue.currencySymbol|beta'
+    package: '@azure/ai-form-recognizer|beta'
+    summary: Currency symbol label, if any.
+    fullName: currencySymbol
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'currencySymbol?: string'
+      return:
+        description: ''
+        type: string

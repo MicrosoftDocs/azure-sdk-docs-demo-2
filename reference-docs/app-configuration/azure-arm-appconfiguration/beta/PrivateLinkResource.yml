@@ -1,0 +1,113 @@
+### YamlMime:TSType
+name: PrivateLinkResource
+uid: '@azure/arm-appconfiguration.PrivateLinkResource|beta'
+package: '@azure/arm-appconfiguration|beta'
+summary: A resource that supports private link capabilities.
+fullName: PrivateLinkResource
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: groupId
+    uid: '@azure/arm-appconfiguration.PrivateLinkResource.groupId|beta'
+    package: '@azure/arm-appconfiguration|beta'
+    summary: >-
+      The private link resource group id.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: groupId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'groupId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: id
+    uid: '@azure/arm-appconfiguration.PrivateLinkResource.id|beta'
+    package: '@azure/arm-appconfiguration|beta'
+    summary: >-
+      The resource ID.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: name
+    uid: '@azure/arm-appconfiguration.PrivateLinkResource.name|beta'
+    package: '@azure/arm-appconfiguration|beta'
+    summary: >-
+      The name of the resource.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: requiredMembers
+    uid: '@azure/arm-appconfiguration.PrivateLinkResource.requiredMembers|beta'
+    package: '@azure/arm-appconfiguration|beta'
+    summary: >-
+      The private link resource required member names.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: requiredMembers
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'requiredMembers?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: requiredZoneNames
+    uid: '@azure/arm-appconfiguration.PrivateLinkResource.requiredZoneNames|beta'
+    package: '@azure/arm-appconfiguration|beta'
+    summary: >-
+      The list of required DNS zone names of the private link resource.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: requiredZoneNames
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'requiredZoneNames?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: type
+    uid: '@azure/arm-appconfiguration.PrivateLinkResource.type|beta'
+    package: '@azure/arm-appconfiguration|beta'
+    summary: >-
+      The type of the resource.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

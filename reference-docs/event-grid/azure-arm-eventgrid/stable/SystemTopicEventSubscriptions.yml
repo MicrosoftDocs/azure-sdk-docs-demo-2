@@ -1,0 +1,454 @@
+### YamlMime:TSType
+name: SystemTopicEventSubscriptions
+uid: '@azure/arm-eventgrid.SystemTopicEventSubscriptions|stable'
+package: '@azure/arm-eventgrid|stable'
+summary: Interface representing a SystemTopicEventSubscriptions.
+fullName: SystemTopicEventSubscriptions
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      beginCreateOrUpdate(string, string, string, EventSubscription,
+      SystemTopicEventSubscriptionsCreateOrUpdateOptionalParams)
+    uid: >-
+      @azure/arm-eventgrid.SystemTopicEventSubscriptions.beginCreateOrUpdate|stable
+    package: '@azure/arm-eventgrid|stable'
+    summary: >-
+      Asynchronously creates or updates an event subscription with the specified
+      parameters. Existing
+
+      event subscriptions will be updated with this API.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string, systemTopicName:
+        string, eventSubscriptionName: string, eventSubscriptionInfo:
+        EventSubscription, options?:
+        SystemTopicEventSubscriptionsCreateOrUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<SystemTopicEventSubscriptionsCreateOrUpdateResponse>,
+        SystemTopicEventSubscriptionsCreateOrUpdateResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: systemTopicName
+          type: string
+          description: Name of the system topic.
+        - id: eventSubscriptionName
+          type: string
+          description: >-
+            Name of the event subscription to be created. Event subscription
+            names
+                                         must be between 3 and 100 characters in length and use alphanumeric letters only.
+        - id: eventSubscriptionInfo
+          type: <xref uid="@azure/arm-eventgrid.EventSubscription|stable" />
+          description: |-
+            Event subscription properties containing the destination and filter
+                                         information.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.SystemTopicEventSubscriptionsCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-eventgrid.SystemTopicEventSubscriptionsCreateOrUpdateResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-eventgrid.SystemTopicEventSubscriptionsCreateOrUpdateResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginCreateOrUpdateAndWait(string, string, string, EventSubscription,
+      SystemTopicEventSubscriptionsCreateOrUpdateOptionalParams)
+    uid: >-
+      @azure/arm-eventgrid.SystemTopicEventSubscriptions.beginCreateOrUpdateAndWait|stable
+    package: '@azure/arm-eventgrid|stable'
+    summary: >-
+      Asynchronously creates or updates an event subscription with the specified
+      parameters. Existing
+
+      event subscriptions will be updated with this API.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdateAndWait(resourceGroupName: string,
+        systemTopicName: string, eventSubscriptionName: string,
+        eventSubscriptionInfo: EventSubscription, options?:
+        SystemTopicEventSubscriptionsCreateOrUpdateOptionalParams):
+        Promise<SystemTopicEventSubscriptionsCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: systemTopicName
+          type: string
+          description: Name of the system topic.
+        - id: eventSubscriptionName
+          type: string
+          description: >-
+            Name of the event subscription to be created. Event subscription
+            names
+                                         must be between 3 and 100 characters in length and use alphanumeric letters only.
+        - id: eventSubscriptionInfo
+          type: <xref uid="@azure/arm-eventgrid.EventSubscription|stable" />
+          description: |-
+            Event subscription properties containing the destination and filter
+                                         information.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.SystemTopicEventSubscriptionsCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventgrid.SystemTopicEventSubscriptionsCreateOrUpdateResponse|stable"
+          />&gt;
+  - name: >-
+      beginDelete(string, string, string,
+      SystemTopicEventSubscriptionsDeleteOptionalParams)
+    uid: '@azure/arm-eventgrid.SystemTopicEventSubscriptions.beginDelete|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Delete an event subscription of a system topic.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDelete(resourceGroupName: string, systemTopicName: string,
+        eventSubscriptionName: string, options?:
+        SystemTopicEventSubscriptionsDeleteOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: systemTopicName
+          type: string
+          description: Name of the system topic.
+        - id: eventSubscriptionName
+          type: string
+          description: >-
+            Name of the event subscription to be created. Event subscription
+            names
+                                         must be between 3 and 100 characters in length and use alphanumeric letters only.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.SystemTopicEventSubscriptionsDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: >-
+      beginDeleteAndWait(string, string, string,
+      SystemTopicEventSubscriptionsDeleteOptionalParams)
+    uid: >-
+      @azure/arm-eventgrid.SystemTopicEventSubscriptions.beginDeleteAndWait|stable
+    package: '@azure/arm-eventgrid|stable'
+    summary: Delete an event subscription of a system topic.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteAndWait(resourceGroupName: string, systemTopicName:
+        string, eventSubscriptionName: string, options?:
+        SystemTopicEventSubscriptionsDeleteOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: systemTopicName
+          type: string
+          description: Name of the system topic.
+        - id: eventSubscriptionName
+          type: string
+          description: >-
+            Name of the event subscription to be created. Event subscription
+            names
+                                         must be between 3 and 100 characters in length and use alphanumeric letters only.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.SystemTopicEventSubscriptionsDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      beginUpdate(string, string, string, EventSubscriptionUpdateParameters,
+      SystemTopicEventSubscriptionsUpdateOptionalParams)
+    uid: '@azure/arm-eventgrid.SystemTopicEventSubscriptions.beginUpdate|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Update event subscription of a system topic.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginUpdate(resourceGroupName: string, systemTopicName: string,
+        eventSubscriptionName: string, eventSubscriptionUpdateParameters:
+        EventSubscriptionUpdateParameters, options?:
+        SystemTopicEventSubscriptionsUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<SystemTopicEventSubscriptionsUpdateResponse>,
+        SystemTopicEventSubscriptionsUpdateResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: systemTopicName
+          type: string
+          description: Name of the system topic.
+        - id: eventSubscriptionName
+          type: string
+          description: >-
+            Name of the event subscription to be created. Event subscription
+            names
+                                         must be between 3 and 100 characters in length and use alphanumeric letters only.
+        - id: eventSubscriptionUpdateParameters
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.EventSubscriptionUpdateParameters|stable"
+            />
+          description: Updated event subscription information.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.SystemTopicEventSubscriptionsUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-eventgrid.SystemTopicEventSubscriptionsUpdateResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-eventgrid.SystemTopicEventSubscriptionsUpdateResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginUpdateAndWait(string, string, string,
+      EventSubscriptionUpdateParameters,
+      SystemTopicEventSubscriptionsUpdateOptionalParams)
+    uid: >-
+      @azure/arm-eventgrid.SystemTopicEventSubscriptions.beginUpdateAndWait|stable
+    package: '@azure/arm-eventgrid|stable'
+    summary: Update event subscription of a system topic.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginUpdateAndWait(resourceGroupName: string, systemTopicName:
+        string, eventSubscriptionName: string,
+        eventSubscriptionUpdateParameters: EventSubscriptionUpdateParameters,
+        options?: SystemTopicEventSubscriptionsUpdateOptionalParams):
+        Promise<SystemTopicEventSubscriptionsUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: systemTopicName
+          type: string
+          description: Name of the system topic.
+        - id: eventSubscriptionName
+          type: string
+          description: >-
+            Name of the event subscription to be created. Event subscription
+            names
+                                         must be between 3 and 100 characters in length and use alphanumeric letters only.
+        - id: eventSubscriptionUpdateParameters
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.EventSubscriptionUpdateParameters|stable"
+            />
+          description: Updated event subscription information.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.SystemTopicEventSubscriptionsUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventgrid.SystemTopicEventSubscriptionsUpdateResponse|stable"
+          />&gt;
+  - name: >-
+      get(string, string, string,
+      SystemTopicEventSubscriptionsGetOptionalParams)
+    uid: '@azure/arm-eventgrid.SystemTopicEventSubscriptions.get|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Get an event subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, systemTopicName: string,
+        eventSubscriptionName: string, options?:
+        SystemTopicEventSubscriptionsGetOptionalParams):
+        Promise<SystemTopicEventSubscriptionsGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: systemTopicName
+          type: string
+          description: Name of the system topic.
+        - id: eventSubscriptionName
+          type: string
+          description: >-
+            Name of the event subscription to be created. Event subscription
+            names
+                                         must be between 3 and 100 characters in length and use alphanumeric letters only.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.SystemTopicEventSubscriptionsGetOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventgrid.SystemTopicEventSubscriptionsGetResponse|stable"
+          />&gt;
+  - name: >-
+      getDeliveryAttributes(string, string, string,
+      SystemTopicEventSubscriptionsGetDeliveryAttributesOptionalParams)
+    uid: >-
+      @azure/arm-eventgrid.SystemTopicEventSubscriptions.getDeliveryAttributes|stable
+    package: '@azure/arm-eventgrid|stable'
+    summary: Get all delivery attributes for an event subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getDeliveryAttributes(resourceGroupName: string,
+        systemTopicName: string, eventSubscriptionName: string, options?:
+        SystemTopicEventSubscriptionsGetDeliveryAttributesOptionalParams):
+        Promise<SystemTopicEventSubscriptionsGetDeliveryAttributesResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: systemTopicName
+          type: string
+          description: Name of the system topic.
+        - id: eventSubscriptionName
+          type: string
+          description: >-
+            Name of the event subscription to be created. Event subscription
+            names
+                                         must be between 3 and 100 characters in length and use alphanumeric letters only.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.SystemTopicEventSubscriptionsGetDeliveryAttributesOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventgrid.SystemTopicEventSubscriptionsGetDeliveryAttributesResponse|stable"
+          />&gt;
+  - name: >-
+      getFullUrl(string, string, string,
+      SystemTopicEventSubscriptionsGetFullUrlOptionalParams)
+    uid: '@azure/arm-eventgrid.SystemTopicEventSubscriptions.getFullUrl|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Get the full endpoint URL for an event subscription of a system topic.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getFullUrl(resourceGroupName: string, systemTopicName: string,
+        eventSubscriptionName: string, options?:
+        SystemTopicEventSubscriptionsGetFullUrlOptionalParams):
+        Promise<SystemTopicEventSubscriptionsGetFullUrlResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: systemTopicName
+          type: string
+          description: Name of the system topic.
+        - id: eventSubscriptionName
+          type: string
+          description: >-
+            Name of the event subscription to be created. Event subscription
+            names
+                                         must be between 3 and 100 characters in length and use alphanumeric letters only.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.SystemTopicEventSubscriptionsGetFullUrlOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventgrid.SystemTopicEventSubscriptionsGetFullUrlResponse|stable"
+          />&gt;
+  - name: >-
+      listBySystemTopic(string, string,
+      SystemTopicEventSubscriptionsListBySystemTopicOptionalParams)
+    uid: >-
+      @azure/arm-eventgrid.SystemTopicEventSubscriptions.listBySystemTopic|stable
+    package: '@azure/arm-eventgrid|stable'
+    summary: List event subscriptions that belong to a specific system topic.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listBySystemTopic(resourceGroupName: string, systemTopicName:
+        string, options?:
+        SystemTopicEventSubscriptionsListBySystemTopicOptionalParams):
+        PagedAsyncIterableIterator<EventSubscription>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: systemTopicName
+          type: string
+          description: Name of the system topic.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.SystemTopicEventSubscriptionsListBySystemTopicOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-eventgrid.EventSubscription|stable" />&gt;

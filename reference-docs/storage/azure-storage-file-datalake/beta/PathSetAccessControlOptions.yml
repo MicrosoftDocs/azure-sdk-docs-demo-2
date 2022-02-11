@@ -1,0 +1,80 @@
+### YamlMime:TSType
+name: PathSetAccessControlOptions
+uid: '@azure/storage-file-datalake.PathSetAccessControlOptions|beta'
+package: '@azure/storage-file-datalake|beta'
+summary: ''
+fullName: PathSetAccessControlOptions
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: abortSignal
+    uid: '@azure/storage-file-datalake.PathSetAccessControlOptions.abortSignal|beta'
+    package: '@azure/storage-file-datalake|beta'
+    summary: ''
+    fullName: abortSignal
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'abortSignal?: AbortSignalLike'
+      return:
+        description: ''
+        type: AbortSignalLike
+  - name: conditions
+    uid: '@azure/storage-file-datalake.PathSetAccessControlOptions.conditions|beta'
+    package: '@azure/storage-file-datalake|beta'
+    summary: ''
+    fullName: conditions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'conditions?: DataLakeRequestConditions'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/storage-file-datalake.DataLakeRequestConditions|beta" />
+  - name: group
+    uid: '@azure/storage-file-datalake.PathSetAccessControlOptions.group|beta'
+    package: '@azure/storage-file-datalake|beta'
+    summary: ''
+    fullName: group
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'group?: string'
+      return:
+        description: ''
+        type: string
+  - name: owner
+    uid: '@azure/storage-file-datalake.PathSetAccessControlOptions.owner|beta'
+    package: '@azure/storage-file-datalake|beta'
+    summary: ''
+    fullName: owner
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'owner?: string'
+      return:
+        description: ''
+        type: string
+  - name: tracingOptions
+    uid: >-
+      @azure/storage-file-datalake.PathSetAccessControlOptions.tracingOptions|beta
+    package: '@azure/storage-file-datalake|beta'
+    summary: Options to configure spans created when tracing is enabled.
+    fullName: tracingOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tracingOptions?: OperationTracingOptions'
+      return:
+        description: ''
+        type: OperationTracingOptions
+extends: <xref uid="@azure/storage-file-datalake.CommonOptions|beta" />

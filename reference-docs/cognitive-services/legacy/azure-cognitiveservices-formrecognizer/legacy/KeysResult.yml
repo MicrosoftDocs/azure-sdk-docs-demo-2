@@ -1,0 +1,26 @@
+### YamlMime:TSType
+name: KeysResult
+uid: '@azure/cognitiveservices-formrecognizer.KeysResult|legacy'
+package: '@azure/cognitiveservices-formrecognizer|legacy'
+summary: |-
+  Result of an operation to get
+  the keys extracted by a model.
+fullName: KeysResult
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: clusters
+    uid: '@azure/cognitiveservices-formrecognizer.KeysResult.clusters|legacy'
+    package: '@azure/cognitiveservices-formrecognizer|legacy'
+    summary: Object mapping ClusterIds to Key lists.
+    fullName: clusters
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clusters?: undefined | [key: string]: function'
+      return:
+        description: ''
+        type: 'undefined | [key: string]: function'

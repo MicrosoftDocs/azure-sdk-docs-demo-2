@@ -1,0 +1,75 @@
+### YamlMime:TSType
+name: ResourceSkuRestrictions
+uid: '@azure/arm-cognitiveservices.ResourceSkuRestrictions|stable'
+package: '@azure/arm-cognitiveservices|stable'
+summary: Describes restrictions of a SKU.
+fullName: ResourceSkuRestrictions
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: reasonCode
+    uid: '@azure/arm-cognitiveservices.ResourceSkuRestrictions.reasonCode|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: The reason for restriction.
+    fullName: reasonCode
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'reasonCode?: ResourceSkuRestrictionsReasonCode'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-cognitiveservices.ResourceSkuRestrictionsReasonCode|stable"
+          />
+  - name: restrictionInfo
+    uid: >-
+      @azure/arm-cognitiveservices.ResourceSkuRestrictions.restrictionInfo|stable
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: The information about the restriction where the SKU cannot be used.
+    fullName: restrictionInfo
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'restrictionInfo?: ResourceSkuRestrictionInfo'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-cognitiveservices.ResourceSkuRestrictionInfo|stable"
+          />
+  - name: type
+    uid: '@azure/arm-cognitiveservices.ResourceSkuRestrictions.type|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: The type of restrictions.
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: ResourceSkuRestrictionsType'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-cognitiveservices.ResourceSkuRestrictionsType|stable"
+          />
+  - name: values
+    uid: '@azure/arm-cognitiveservices.ResourceSkuRestrictions.values|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: >-
+      The value of restrictions. If the restriction type is set to location.
+      This would be different locations where the SKU is restricted.
+    fullName: values
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'values?: string[]'
+      return:
+        description: ''
+        type: string[]

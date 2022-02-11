@@ -1,0 +1,160 @@
+### YamlMime:TSType
+name: StoredProcedure
+uid: '@azure/cosmos.StoredProcedure|stable'
+package: '@azure/cosmos|stable'
+summary: >
+  Operations for reading, replacing, deleting, or executing a specific, existing
+  stored procedure by id.
+
+  For operations to create, read all, or query Stored Procedures,
+fullName: StoredProcedure
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: container
+    uid: '@azure/cosmos.StoredProcedure.container|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: container
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'container: Container'
+      return:
+        description: ''
+        type: <xref uid="@azure/cosmos.Container|stable" />
+  - name: id
+    uid: '@azure/cosmos.StoredProcedure.id|stable'
+    package: '@azure/cosmos|stable'
+    summary: ''
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id: string'
+      return:
+        description: ''
+        type: string
+  - name: url
+    uid: '@azure/cosmos.StoredProcedure.url|stable'
+    package: '@azure/cosmos|stable'
+    summary: Returns a reference URL to the resource. Used for linking in Permissions.
+    fullName: url
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: string url
+      return:
+        description: ''
+        type: string
+methods:
+  - name: delete(RequestOptions)
+    uid: '@azure/cosmos.StoredProcedure.delete|stable'
+    package: '@azure/cosmos|stable'
+    summary: Delete the given <xref:@azure/cosmos.StoredProcedure|stable>.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function delete(options?: RequestOptions):
+        Promise<StoredProcedureResponse>
+      parameters:
+        - id: options
+          type: <xref uid="@azure/cosmos.RequestOptions|stable" />
+          description: ''
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref uid="@azure/cosmos.StoredProcedureResponse|stable"
+          />&gt;
+  - name: execute<T>(PartitionKey, any[], RequestOptions)
+    uid: '@azure/cosmos.StoredProcedure.execute|stable'
+    package: '@azure/cosmos|stable'
+    summary: >
+      Execute the given <xref:@azure/cosmos.StoredProcedure|stable>.
+
+      The specified type, T, is not enforced by the client.
+
+      Be sure to validate the response from the stored procedure matches the
+      type, T, you provide.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function execute<T>(partitionKey: PartitionKey, params?: any[],
+        options?: RequestOptions): Promise<ResourceResponse<T>>
+      parameters:
+        - id: partitionKey
+          type: <xref uid="@azure/cosmos.PartitionKey|stable" />
+          description: The partition key to use when executing the stored procedure
+        - id: params
+          type: any[]
+          description: >-
+            Array of parameters to pass as arguments to the given
+            <xref:@azure/cosmos.StoredProcedure|stable>.
+        - id: options
+          type: <xref uid="@azure/cosmos.RequestOptions|stable" />
+          description: >
+            Additional options, such as the partition key to invoke the
+            <xref:@azure/cosmos.StoredProcedure|stable> on.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref uid="@azure/cosmos.ResourceResponse|stable"
+          />&lt;T&gt;&gt;
+  - name: read(RequestOptions)
+    uid: '@azure/cosmos.StoredProcedure.read|stable'
+    package: '@azure/cosmos|stable'
+    summary: >-
+      Read the <xref:@azure/cosmos.StoredProcedureDefinition|stable> for the
+      given <xref:@azure/cosmos.StoredProcedure|stable>.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function read(options?: RequestOptions):
+        Promise<StoredProcedureResponse>
+      parameters:
+        - id: options
+          type: <xref uid="@azure/cosmos.RequestOptions|stable" />
+          description: ''
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref uid="@azure/cosmos.StoredProcedureResponse|stable"
+          />&gt;
+  - name: replace(StoredProcedureDefinition, RequestOptions)
+    uid: '@azure/cosmos.StoredProcedure.replace|stable'
+    package: '@azure/cosmos|stable'
+    summary: >-
+      Replace the given <xref:@azure/cosmos.StoredProcedure|stable> with the
+      specified <xref:@azure/cosmos.StoredProcedureDefinition|stable>.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function replace(body: StoredProcedureDefinition, options?:
+        RequestOptions): Promise<StoredProcedureResponse>
+      parameters:
+        - id: body
+          type: <xref uid="@azure/cosmos.StoredProcedureDefinition|stable" />
+          description: >
+            The specified <xref:@azure/cosmos.StoredProcedureDefinition|stable>
+            to replace the existing definition.
+        - id: options
+          type: <xref uid="@azure/cosmos.RequestOptions|stable" />
+          description: ''
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref uid="@azure/cosmos.StoredProcedureResponse|stable"
+          />&gt;

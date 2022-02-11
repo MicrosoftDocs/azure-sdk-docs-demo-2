@@ -1,0 +1,38 @@
+### YamlMime:TSType
+name: LineageNextPageLineage
+uid: '@azure-rest/purview-catalog.LineageNextPageLineage|beta'
+package: '@azure-rest/purview-catalog|beta'
+summary: ''
+fullName: LineageNextPageLineage
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: get(LineageNextPageLineageParameters)
+    uid: '@azure-rest/purview-catalog.LineageNextPageLineage.get|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: Return immediate next page lineage info about entity with pagination
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(options: LineageNextPageLineageParameters):
+        Promise<LineageNextPageLineage200Response |
+        LineageNextPageLineagedefaultResponse>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure-rest/purview-catalog.LineageNextPageLineageParameters|beta"
+            />
+          description: ''
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure-rest/purview-catalog.LineageNextPageLineage200Response|beta"
+          /> | <xref
+          uid="@azure-rest/purview-catalog.LineageNextPageLineagedefaultResponse|beta"
+          />&gt;

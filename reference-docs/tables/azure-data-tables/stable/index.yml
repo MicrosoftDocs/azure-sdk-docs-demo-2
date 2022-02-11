@@ -1,0 +1,161 @@
+### YamlMime:TSPackage
+uid: '@azure/data-tables|stable'
+name: '@azure/data-tables (13.0.1 - Stable)'
+summary: ''
+type: package
+enums:
+  - '@azure/data-tables.KnownGeoReplicationStatusType|stable'
+classes:
+  - '@azure/data-tables.TableClient|stable'
+  - '@azure/data-tables.TableServiceClient|stable'
+  - '@azure/data-tables.TableTransaction|stable'
+interfaces:
+  - '@azure/data-tables.AccessPolicy|stable'
+  - '@azure/data-tables.AccountSasOptions|stable'
+  - '@azure/data-tables.AccountSasPermissions|stable'
+  - '@azure/data-tables.AccountSasServices|stable'
+  - '@azure/data-tables.CorsRule|stable'
+  - '@azure/data-tables.Edm|stable'
+  - '@azure/data-tables.GeoReplication|stable'
+  - '@azure/data-tables.Logging|stable'
+  - '@azure/data-tables.Metrics|stable'
+  - '@azure/data-tables.RetentionPolicy|stable'
+  - '@azure/data-tables.SasIPRange|stable'
+  - '@azure/data-tables.ServiceGetPropertiesHeaders|stable'
+  - '@azure/data-tables.ServiceGetStatisticsHeaders|stable'
+  - '@azure/data-tables.ServiceProperties|stable'
+  - '@azure/data-tables.ServiceSetPropertiesHeaders|stable'
+  - '@azure/data-tables.SetPropertiesOptions|stable'
+  - '@azure/data-tables.SignedIdentifier|stable'
+  - '@azure/data-tables.TableCreateHeaders|stable'
+  - '@azure/data-tables.TableDeleteEntityHeaders|stable'
+  - '@azure/data-tables.TableDeleteHeaders|stable'
+  - '@azure/data-tables.TableEntityQueryOptions|stable'
+  - '@azure/data-tables.TableGetAccessPolicyHeaders|stable'
+  - '@azure/data-tables.TableInsertEntityHeaders|stable'
+  - '@azure/data-tables.TableItem|stable'
+  - '@azure/data-tables.TableItemResultPage|stable'
+  - '@azure/data-tables.TableMergeEntityHeaders|stable'
+  - '@azure/data-tables.TableQueryOptions|stable'
+  - '@azure/data-tables.TableQueryResponse|stable'
+  - '@azure/data-tables.TableSasPermissions|stable'
+  - '@azure/data-tables.TableSasSignatureValues|stable'
+  - '@azure/data-tables.TableServiceStats|stable'
+  - '@azure/data-tables.TableSetAccessPolicyHeaders|stable'
+  - '@azure/data-tables.TableTransactionEntityResponse|stable'
+  - '@azure/data-tables.TableTransactionResponse|stable'
+  - '@azure/data-tables.TableUpdateEntityHeaders|stable'
+typeAliases:
+  - '@azure/data-tables.CreateDeleteEntityAction|stable'
+  - '@azure/data-tables.CreateTableEntityResponse|stable'
+  - '@azure/data-tables.DeleteTableEntityOptions|stable'
+  - '@azure/data-tables.DeleteTableEntityResponse|stable'
+  - '@azure/data-tables.EdmTypes|stable'
+  - '@azure/data-tables.GeoReplicationStatusType|stable'
+  - '@azure/data-tables.GetAccessPolicyResponse|stable'
+  - '@azure/data-tables.GetPropertiesResponse|stable'
+  - '@azure/data-tables.GetStatisticsResponse|stable'
+  - '@azure/data-tables.GetTableEntityOptions|stable'
+  - '@azure/data-tables.GetTableEntityResponse|stable'
+  - '@azure/data-tables.ListTableEntitiesOptions|stable'
+  - '@azure/data-tables.ListTableItemsOptions|stable'
+  - '@azure/data-tables.SasProtocol|stable'
+  - '@azure/data-tables.SetAccessPolicyResponse|stable'
+  - '@azure/data-tables.SetPropertiesResponse|stable'
+  - '@azure/data-tables.TableEntity|stable'
+  - '@azure/data-tables.TableEntityResult|stable'
+  - '@azure/data-tables.TableEntityResultPage|stable'
+  - '@azure/data-tables.TableServiceClientOptions|stable'
+  - '@azure/data-tables.TransactionAction|stable'
+  - '@azure/data-tables.UpdateEntityAction|stable'
+  - '@azure/data-tables.UpdateEntityResponse|stable'
+  - '@azure/data-tables.UpdateMode|stable'
+  - '@azure/data-tables.UpdateTableEntityOptions|stable'
+  - '@azure/data-tables.UpsertEntityResponse|stable'
+functions:
+  - name: generateAccountSas(NamedKeyCredential, AccountSasOptions)
+    uid: '@azure/data-tables.generateAccountSas|stable'
+    package: '@azure/data-tables|stable'
+    summary: >-
+      Generates a Table Account Shared Access Signature (SAS) URI based on the
+      client properties
+
+      and parameters passed in. The SAS is signed by the shared key credential
+      of the client.
+
+
+      See
+      https://docs.microsoft.com/en-us/rest/api/storageservices/create-account-sas
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function generateAccountSas(credential: NamedKeyCredential, options?:
+        AccountSasOptions): string
+      parameters:
+        - id: credential
+          type: NamedKeyCredential
+          description: ''
+        - id: options
+          type: <xref uid="@azure/data-tables.AccountSasOptions|stable" />
+          description: Optional parameters.
+      return:
+        description: An account SAS token
+        type: string
+  - name: generateTableSas(string, NamedKeyCredential, TableSasSignatureValues)
+    uid: '@azure/data-tables.generateTableSas|stable'
+    package: '@azure/data-tables|stable'
+    summary: >-
+      Generates a Table Service Shared Access Signature (SAS) URI based on the
+      client properties
+
+      and parameters passed in. The SAS is signed by the shared key credential
+      of the client.
+
+
+      See
+      https://docs.microsoft.com/en-us/rest/api/storageservices/constructing-a-service-sas
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function generateTableSas(tableName: string, credential:
+        NamedKeyCredential, options?: TableSasSignatureValues): string
+      parameters:
+        - id: tableName
+          type: string
+          description: ''
+        - id: credential
+          type: NamedKeyCredential
+          description: ''
+        - id: options
+          type: <xref uid="@azure/data-tables.TableSasSignatureValues|stable" />
+          description: Optional parameters.
+      return:
+        description: >-
+          The SAS URI consisting of the URI to the resource represented by this
+          client, followed by the generated SAS token.
+        type: string
+  - name: odata(TemplateStringsArray, unknown[])
+    uid: '@azure/data-tables.odata|stable'
+    package: '@azure/data-tables|stable'
+    summary: >-
+      Escapes an odata filter expression to avoid errors with quoting string
+      literals.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function odata(strings: TemplateStringsArray, values: unknown[]): string'
+      parameters:
+        - id: strings
+          type: TemplateStringsArray
+          description: ''
+        - id: values
+          type: unknown[]
+          description: ''
+      return:
+        description: ''
+        type: string

@@ -1,0 +1,95 @@
+### YamlMime:TSType
+name: DirectoryCreateIfNotExistsOptions
+uid: '@azure/storage-file-datalake.DirectoryCreateIfNotExistsOptions|beta'
+package: '@azure/storage-file-datalake|beta'
+summary: ''
+fullName: DirectoryCreateIfNotExistsOptions
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: abortSignal
+    uid: >-
+      @azure/storage-file-datalake.DirectoryCreateIfNotExistsOptions.abortSignal|beta
+    package: '@azure/storage-file-datalake|beta'
+    summary: ''
+    fullName: abortSignal
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'abortSignal?: AbortSignalLike'
+      return:
+        description: ''
+        type: AbortSignalLike
+  - name: metadata
+    uid: >-
+      @azure/storage-file-datalake.DirectoryCreateIfNotExistsOptions.metadata|beta
+    package: '@azure/storage-file-datalake|beta'
+    summary: ''
+    fullName: metadata
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'metadata?: Metadata'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-file-datalake.Metadata|beta" />
+  - name: pathHttpHeaders
+    uid: >-
+      @azure/storage-file-datalake.DirectoryCreateIfNotExistsOptions.pathHttpHeaders|beta
+    package: '@azure/storage-file-datalake|beta'
+    summary: ''
+    fullName: pathHttpHeaders
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'pathHttpHeaders?: PathCreateHttpHeaders'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-file-datalake.PathCreateHttpHeaders|beta" />
+  - name: permissions
+    uid: >-
+      @azure/storage-file-datalake.DirectoryCreateIfNotExistsOptions.permissions|beta
+    package: '@azure/storage-file-datalake|beta'
+    summary: ''
+    fullName: permissions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'permissions?: string'
+      return:
+        description: ''
+        type: string
+  - name: tracingOptions
+    uid: >-
+      @azure/storage-file-datalake.DirectoryCreateIfNotExistsOptions.tracingOptions|beta
+    package: '@azure/storage-file-datalake|beta'
+    summary: Options to configure spans created when tracing is enabled.
+    fullName: tracingOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tracingOptions?: OperationTracingOptions'
+      return:
+        description: ''
+        type: OperationTracingOptions
+  - name: umask
+    uid: '@azure/storage-file-datalake.DirectoryCreateIfNotExistsOptions.umask|beta'
+    package: '@azure/storage-file-datalake|beta'
+    summary: ''
+    fullName: umask
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'umask?: string'
+      return:
+        description: ''
+        type: string
+extends: <xref uid="@azure/storage-file-datalake.PathCreateIfNotExistsOptions|beta" />

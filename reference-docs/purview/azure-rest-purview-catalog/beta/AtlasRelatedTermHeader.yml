@@ -1,0 +1,115 @@
+### YamlMime:TSType
+name: AtlasRelatedTermHeader
+uid: '@azure-rest/purview-catalog.AtlasRelatedTermHeader|beta'
+package: '@azure-rest/purview-catalog|beta'
+summary: ''
+fullName: AtlasRelatedTermHeader
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: description
+    uid: '@azure-rest/purview-catalog.AtlasRelatedTermHeader.description|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: The description of the related term.
+    fullName: description
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'description?: string'
+      return:
+        description: ''
+        type: string
+  - name: displayText
+    uid: '@azure-rest/purview-catalog.AtlasRelatedTermHeader.displayText|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: The display text.
+    fullName: displayText
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'displayText?: string'
+      return:
+        description: ''
+        type: string
+  - name: expression
+    uid: '@azure-rest/purview-catalog.AtlasRelatedTermHeader.expression|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: The expression of the term.
+    fullName: expression
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'expression?: string'
+      return:
+        description: ''
+        type: string
+  - name: relationGuid
+    uid: '@azure-rest/purview-catalog.AtlasRelatedTermHeader.relationGuid|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: The GUID of the relationship.
+    fullName: relationGuid
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'relationGuid?: string'
+      return:
+        description: ''
+        type: string
+  - name: source
+    uid: '@azure-rest/purview-catalog.AtlasRelatedTermHeader.source|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: The source of the term.
+    fullName: source
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'source?: string'
+      return:
+        description: ''
+        type: string
+  - name: status
+    uid: '@azure-rest/purview-catalog.AtlasRelatedTermHeader.status|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: The status of term relationship.
+    fullName: status
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'status?: "DRAFT" | "ACTIVE" | "DEPRECATED" | "OBSOLETE" | "OTHER"'
+      return:
+        description: ''
+        type: '"DRAFT" | "ACTIVE" | "DEPRECATED" | "OBSOLETE" | "OTHER"'
+  - name: steward
+    uid: '@azure-rest/purview-catalog.AtlasRelatedTermHeader.steward|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: The steward of the term.
+    fullName: steward
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'steward?: string'
+      return:
+        description: ''
+        type: string
+  - name: termGuid
+    uid: '@azure-rest/purview-catalog.AtlasRelatedTermHeader.termGuid|beta'
+    package: '@azure-rest/purview-catalog|beta'
+    summary: The GUID of the term.
+    fullName: termGuid
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'termGuid?: string'
+      return:
+        description: ''
+        type: string

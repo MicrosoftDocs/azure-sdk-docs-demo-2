@@ -1,0 +1,38 @@
+### YamlMime:TSType
+name: NWRuleSetVirtualNetworkRules
+uid: '@azure/arm-eventhub.NWRuleSetVirtualNetworkRules|stable'
+package: '@azure/arm-eventhub|stable'
+summary: The response from the List namespace operation.
+fullName: NWRuleSetVirtualNetworkRules
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: ignoreMissingVnetServiceEndpoint
+    uid: >-
+      @azure/arm-eventhub.NWRuleSetVirtualNetworkRules.ignoreMissingVnetServiceEndpoint|stable
+    package: '@azure/arm-eventhub|stable'
+    summary: Value that indicates whether to ignore missing Vnet Service Endpoint
+    fullName: ignoreMissingVnetServiceEndpoint
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ignoreMissingVnetServiceEndpoint?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true
+  - name: subnet
+    uid: '@azure/arm-eventhub.NWRuleSetVirtualNetworkRules.subnet|stable'
+    package: '@azure/arm-eventhub|stable'
+    summary: Subnet properties
+    fullName: subnet
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'subnet?: Subnet'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-eventhub.Subnet|stable" />

@@ -1,0 +1,106 @@
+### YamlMime:TSType
+name: UpdateMessageOptions
+uid: '@azure/communication-chat.UpdateMessageOptions|stable'
+package: '@azure/communication-chat|stable'
+summary: Options to update a chat message.
+fullName: UpdateMessageOptions
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: abortSignal
+    uid: '@azure/communication-chat.UpdateMessageOptions.abortSignal|stable'
+    package: '@azure/communication-chat|stable'
+    summary: The signal which can be used to abort requests.
+    fullName: abortSignal
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'abortSignal?: AbortSignalLike'
+      return:
+        description: ''
+        type: AbortSignalLike
+  - name: content
+    uid: '@azure/communication-chat.UpdateMessageOptions.content|stable'
+    package: '@azure/communication-chat|stable'
+    summary: Chat message content.
+    fullName: content
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'content?: string'
+      return:
+        description: ''
+        type: string
+  - name: metadata
+    uid: '@azure/communication-chat.UpdateMessageOptions.metadata|stable'
+    package: '@azure/communication-chat|stable'
+    summary: Message metadata.
+    fullName: metadata
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'metadata?: Record<string, string>'
+      return:
+        description: ''
+        type: Record&lt;string, string&gt;
+  - name: onResponse
+    uid: '@azure/communication-chat.UpdateMessageOptions.onResponse|stable'
+    package: '@azure/communication-chat|stable'
+    summary: |-
+      A function to be called each time a response is received from the server
+      while performing the requested operation.
+      May be called multiple times.
+    fullName: onResponse
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onResponse?: RawResponseCallback'
+      return:
+        description: ''
+        type: RawResponseCallback
+  - name: requestOptions
+    uid: '@azure/communication-chat.UpdateMessageOptions.requestOptions|stable'
+    package: '@azure/communication-chat|stable'
+    summary: Options used when creating and sending HTTP requests for this operation.
+    fullName: requestOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'requestOptions?: OperationRequestOptions'
+      return:
+        description: ''
+        type: OperationRequestOptions
+  - name: serializerOptions
+    uid: '@azure/communication-chat.UpdateMessageOptions.serializerOptions|stable'
+    package: '@azure/communication-chat|stable'
+    summary: Options to override serialization/de-serialization behavior.
+    fullName: serializerOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'serializerOptions?: SerializerOptions'
+      return:
+        description: ''
+        type: SerializerOptions
+  - name: tracingOptions
+    uid: '@azure/communication-chat.UpdateMessageOptions.tracingOptions|stable'
+    package: '@azure/communication-chat|stable'
+    summary: Options used when tracing is enabled.
+    fullName: tracingOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tracingOptions?: OperationTracingOptions'
+      return:
+        description: ''
+        type: OperationTracingOptions
+extends: OperationOptions

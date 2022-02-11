@@ -1,0 +1,26 @@
+### YamlMime:TSType
+name: SecurityPolicyParameters
+uid: '@azure/arm-cdn.SecurityPolicyParameters|stable'
+package: '@azure/arm-cdn|stable'
+summary: The json object containing security policy parameters
+fullName: SecurityPolicyParameters
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: type
+    uid: '@azure/arm-cdn.SecurityPolicyParameters.type|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: >-
+      Polymorphic discriminator, which specifies the different types this object
+      can be
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: "WebApplicationFirewall"'
+      return:
+        description: ''
+        type: '"WebApplicationFirewall"'

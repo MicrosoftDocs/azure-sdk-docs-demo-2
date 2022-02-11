@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: FileSystemSource
+uid: '@azure/synapse-artifacts.FileSystemSource|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: A copy activity file system source.
+fullName: FileSystemSource
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type FileSystemSource = CopySource & { additionalColumns?: any, recursive?:
+  any, type: "FileSystemSource" }

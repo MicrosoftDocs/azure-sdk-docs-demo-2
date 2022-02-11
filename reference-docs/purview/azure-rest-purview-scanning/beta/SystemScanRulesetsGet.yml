@@ -1,0 +1,38 @@
+### YamlMime:TSType
+name: SystemScanRulesetsGet
+uid: '@azure-rest/purview-scanning.SystemScanRulesetsGet|beta'
+package: '@azure-rest/purview-scanning|beta'
+summary: ''
+fullName: SystemScanRulesetsGet
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: get(SystemScanRulesetsGetParameters)
+    uid: '@azure-rest/purview-scanning.SystemScanRulesetsGet.get|beta'
+    package: '@azure-rest/purview-scanning|beta'
+    summary: Get a system scan ruleset for a data source
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(options?: SystemScanRulesetsGetParameters):
+        Promise<SystemScanRulesetsGet200Response |
+        SystemScanRulesetsGetdefaultResponse>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure-rest/purview-scanning.SystemScanRulesetsGetParameters|beta"
+            />
+          description: ''
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure-rest/purview-scanning.SystemScanRulesetsGet200Response|beta"
+          /> | <xref
+          uid="@azure-rest/purview-scanning.SystemScanRulesetsGetdefaultResponse|beta"
+          />&gt;

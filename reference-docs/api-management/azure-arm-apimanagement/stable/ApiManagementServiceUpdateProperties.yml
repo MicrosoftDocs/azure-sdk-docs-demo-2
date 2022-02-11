@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: ApiManagementServiceUpdateProperties
+uid: '@azure/arm-apimanagement.ApiManagementServiceUpdateProperties|stable'
+package: '@azure/arm-apimanagement|stable'
+summary: Properties of an API Management service resource description.
+fullName: ApiManagementServiceUpdateProperties
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type ApiManagementServiceUpdateProperties = ApiManagementServiceBaseProperties
+  & { publisherEmail?: undefined | string, publisherName?: undefined | string }

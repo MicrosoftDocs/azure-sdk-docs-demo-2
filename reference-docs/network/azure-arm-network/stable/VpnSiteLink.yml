@@ -1,0 +1,14 @@
+### YamlMime:TSTypeAlias
+name: VpnSiteLink
+uid: '@azure/arm-network.VpnSiteLink|stable'
+package: '@azure/arm-network|stable'
+summary: VpnSiteLink Resource.
+fullName: VpnSiteLink
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type VpnSiteLink = SubResource & { bgpProperties?: VpnLinkBgpSettings, etag?:
+  undefined | string, fqdn?: undefined | string, ipAddress?: undefined | string,
+  linkProperties?: VpnLinkProviderProperties, name?: undefined | string,
+  provisioningState?: ProvisioningState, type?: undefined | string }

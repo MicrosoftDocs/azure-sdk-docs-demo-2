@@ -1,0 +1,65 @@
+### YamlMime:TSType
+name: Operation
+uid: '@azure/arm-datafactory.Operation|stable'
+package: '@azure/arm-datafactory|stable'
+summary: Azure Data Factory API operation definition.
+fullName: Operation
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: display
+    uid: '@azure/arm-datafactory.Operation.display|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: Metadata associated with the operation.
+    fullName: display
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'display?: OperationDisplay'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-datafactory.OperationDisplay|stable" />
+  - name: name
+    uid: '@azure/arm-datafactory.Operation.name|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: 'Operation name: {provider}/{resource}/{operation}'
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: origin
+    uid: '@azure/arm-datafactory.Operation.origin|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: The intended executor of the operation.
+    fullName: origin
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'origin?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: serviceSpecification
+    uid: '@azure/arm-datafactory.Operation.serviceSpecification|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: Details about a service operation.
+    fullName: serviceSpecification
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'serviceSpecification?: OperationServiceSpecification'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-datafactory.OperationServiceSpecification|stable" />

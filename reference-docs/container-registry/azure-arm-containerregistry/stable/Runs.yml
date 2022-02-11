@@ -1,0 +1,271 @@
+### YamlMime:TSType
+name: Runs
+uid: '@azure/arm-containerregistry.Runs|stable'
+package: '@azure/arm-containerregistry|stable'
+summary: Interface representing a Runs.
+fullName: Runs
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: beginCancel(string, string, string, RunsCancelOptionalParams)
+    uid: '@azure/arm-containerregistry.Runs.beginCancel|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: Cancel an existing run.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCancel(resourceGroupName: string, registryName: string,
+        runId: string, options?: RunsCancelOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: runId
+          type: string
+          description: The run ID.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.RunsCancelOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: beginCancelAndWait(string, string, string, RunsCancelOptionalParams)
+    uid: '@azure/arm-containerregistry.Runs.beginCancelAndWait|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: Cancel an existing run.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCancelAndWait(resourceGroupName: string, registryName:
+        string, runId: string, options?: RunsCancelOptionalParams):
+        Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: runId
+          type: string
+          description: The run ID.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.RunsCancelOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      beginUpdate(string, string, string, RunUpdateParameters,
+      RunsUpdateOptionalParams)
+    uid: '@azure/arm-containerregistry.Runs.beginUpdate|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: Patch the run properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginUpdate(resourceGroupName: string, registryName: string,
+        runId: string, runUpdateParameters: RunUpdateParameters, options?:
+        RunsUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<RunsUpdateResponse>,
+        RunsUpdateResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: runId
+          type: string
+          description: The run ID.
+        - id: runUpdateParameters
+          type: >-
+            <xref uid="@azure/arm-containerregistry.RunUpdateParameters|stable"
+            />
+          description: The run update properties.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.RunsUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-containerregistry.RunsUpdateResponse|stable" />&gt;,
+          <xref uid="@azure/arm-containerregistry.RunsUpdateResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginUpdateAndWait(string, string, string, RunUpdateParameters,
+      RunsUpdateOptionalParams)
+    uid: '@azure/arm-containerregistry.Runs.beginUpdateAndWait|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: Patch the run properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginUpdateAndWait(resourceGroupName: string, registryName:
+        string, runId: string, runUpdateParameters: RunUpdateParameters,
+        options?: RunsUpdateOptionalParams): Promise<RunsUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: runId
+          type: string
+          description: The run ID.
+        - id: runUpdateParameters
+          type: >-
+            <xref uid="@azure/arm-containerregistry.RunUpdateParameters|stable"
+            />
+          description: The run update properties.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.RunsUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-containerregistry.RunsUpdateResponse|stable" />&gt;
+  - name: get(string, string, string, RunsGetOptionalParams)
+    uid: '@azure/arm-containerregistry.Runs.get|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: Gets the detailed information for a given run.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, registryName: string, runId:
+        string, options?: RunsGetOptionalParams): Promise<RunsGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: runId
+          type: string
+          description: The run ID.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.RunsGetOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-containerregistry.RunsGetResponse|stable" />&gt;
+  - name: getLogSasUrl(string, string, string, RunsGetLogSasUrlOptionalParams)
+    uid: '@azure/arm-containerregistry.Runs.getLogSasUrl|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: Gets a link to download the run logs.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getLogSasUrl(resourceGroupName: string, registryName: string,
+        runId: string, options?: RunsGetLogSasUrlOptionalParams):
+        Promise<RunsGetLogSasUrlResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: runId
+          type: string
+          description: The run ID.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.RunsGetLogSasUrlOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-containerregistry.RunsGetLogSasUrlResponse|stable"
+          />&gt;
+  - name: list(string, string, RunsListOptionalParams)
+    uid: '@azure/arm-containerregistry.Runs.list|stable'
+    package: '@azure/arm-containerregistry|stable'
+    summary: Gets all the runs for a registry.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, registryName: string, options?:
+        RunsListOptionalParams): PagedAsyncIterableIterator<Run>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group to which the container registry
+            belongs.
+        - id: registryName
+          type: string
+          description: The name of the container registry.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-containerregistry.RunsListOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-containerregistry.Run|stable" />&gt;

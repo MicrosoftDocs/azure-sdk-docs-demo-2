@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: SubjectInfo
+uid: '@azure/synapse-access-control.SubjectInfo|beta'
+package: '@azure/synapse-access-control|beta'
+summary: Subject details
+fullName: SubjectInfo
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: groupIds
+    uid: '@azure/synapse-access-control.SubjectInfo.groupIds|beta'
+    package: '@azure/synapse-access-control|beta'
+    summary: List of group Ids that the principalId is part of.
+    fullName: groupIds
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'groupIds?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: principalId
+    uid: '@azure/synapse-access-control.SubjectInfo.principalId|beta'
+    package: '@azure/synapse-access-control|beta'
+    summary: Principal Id
+    fullName: principalId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'principalId: string'
+      return:
+        description: ''
+        type: string

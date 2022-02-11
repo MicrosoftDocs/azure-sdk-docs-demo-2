@@ -1,0 +1,275 @@
+### YamlMime:TSType
+name: RemoteRenderingAccounts
+uid: '@azure/arm-mixedreality.RemoteRenderingAccounts|stable'
+package: '@azure/arm-mixedreality|stable'
+summary: Interface representing a RemoteRenderingAccounts.
+fullName: RemoteRenderingAccounts
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      create(string, string, RemoteRenderingAccount,
+      RemoteRenderingAccountsCreateOptionalParams)
+    uid: '@azure/arm-mixedreality.RemoteRenderingAccounts.create|stable'
+    package: '@azure/arm-mixedreality|stable'
+    summary: Creating or Updating a Remote Rendering Account.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function create(resourceGroupName: string, accountName: string,
+        remoteRenderingAccount: RemoteRenderingAccount, options?:
+        RemoteRenderingAccountsCreateOptionalParams):
+        Promise<RemoteRenderingAccountsCreateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of an Azure resource group.
+        - id: accountName
+          type: string
+          description: Name of an Mixed Reality Account.
+        - id: remoteRenderingAccount
+          type: <xref uid="@azure/arm-mixedreality.RemoteRenderingAccount|stable" />
+          description: Remote Rendering Account parameter.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mixedreality.RemoteRenderingAccountsCreateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-mixedreality.RemoteRenderingAccountsCreateResponse|stable"
+          />&gt;
+  - name: delete(string, string, RemoteRenderingAccountsDeleteOptionalParams)
+    uid: '@azure/arm-mixedreality.RemoteRenderingAccounts.delete|stable'
+    package: '@azure/arm-mixedreality|stable'
+    summary: Delete a Remote Rendering Account.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function delete(resourceGroupName: string, accountName: string,
+        options?: RemoteRenderingAccountsDeleteOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of an Azure resource group.
+        - id: accountName
+          type: string
+          description: Name of an Mixed Reality Account.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mixedreality.RemoteRenderingAccountsDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: get(string, string, RemoteRenderingAccountsGetOptionalParams)
+    uid: '@azure/arm-mixedreality.RemoteRenderingAccounts.get|stable'
+    package: '@azure/arm-mixedreality|stable'
+    summary: Retrieve a Remote Rendering Account.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, accountName: string, options?:
+        RemoteRenderingAccountsGetOptionalParams):
+        Promise<RemoteRenderingAccountsGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of an Azure resource group.
+        - id: accountName
+          type: string
+          description: Name of an Mixed Reality Account.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mixedreality.RemoteRenderingAccountsGetOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-mixedreality.RemoteRenderingAccountsGetResponse|stable"
+          />&gt;
+  - name: >-
+      listByResourceGroup(string,
+      RemoteRenderingAccountsListByResourceGroupOptionalParams)
+    uid: '@azure/arm-mixedreality.RemoteRenderingAccounts.listByResourceGroup|stable'
+    package: '@azure/arm-mixedreality|stable'
+    summary: List Resources by Resource Group
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string, options?:
+        RemoteRenderingAccountsListByResourceGroupOptionalParams):
+        PagedAsyncIterableIterator<RemoteRenderingAccount>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of an Azure resource group.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mixedreality.RemoteRenderingAccountsListByResourceGroupOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-mixedreality.RemoteRenderingAccount|stable" />&gt;
+  - name: >-
+      listBySubscription(RemoteRenderingAccountsListBySubscriptionOptionalParams)
+    uid: '@azure/arm-mixedreality.RemoteRenderingAccounts.listBySubscription|stable'
+    package: '@azure/arm-mixedreality|stable'
+    summary: List Remote Rendering Accounts by Subscription
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listBySubscription(options?:
+        RemoteRenderingAccountsListBySubscriptionOptionalParams):
+        PagedAsyncIterableIterator<RemoteRenderingAccount>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mixedreality.RemoteRenderingAccountsListBySubscriptionOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-mixedreality.RemoteRenderingAccount|stable" />&gt;
+  - name: listKeys(string, string, RemoteRenderingAccountsListKeysOptionalParams)
+    uid: '@azure/arm-mixedreality.RemoteRenderingAccounts.listKeys|stable'
+    package: '@azure/arm-mixedreality|stable'
+    summary: List Both of the 2 Keys of a Remote Rendering Account
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listKeys(resourceGroupName: string, accountName: string,
+        options?: RemoteRenderingAccountsListKeysOptionalParams):
+        Promise<RemoteRenderingAccountsListKeysResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of an Azure resource group.
+        - id: accountName
+          type: string
+          description: Name of an Mixed Reality Account.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mixedreality.RemoteRenderingAccountsListKeysOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-mixedreality.RemoteRenderingAccountsListKeysResponse|stable"
+          />&gt;
+  - name: >-
+      regenerateKeys(string, string, AccountKeyRegenerateRequest,
+      RemoteRenderingAccountsRegenerateKeysOptionalParams)
+    uid: '@azure/arm-mixedreality.RemoteRenderingAccounts.regenerateKeys|stable'
+    package: '@azure/arm-mixedreality|stable'
+    summary: Regenerate specified Key of a Remote Rendering Account
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function regenerateKeys(resourceGroupName: string, accountName: string,
+        regenerate: AccountKeyRegenerateRequest, options?:
+        RemoteRenderingAccountsRegenerateKeysOptionalParams):
+        Promise<RemoteRenderingAccountsRegenerateKeysResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of an Azure resource group.
+        - id: accountName
+          type: string
+          description: Name of an Mixed Reality Account.
+        - id: regenerate
+          type: >-
+            <xref
+            uid="@azure/arm-mixedreality.AccountKeyRegenerateRequest|stable" />
+          description: Required information for key regeneration.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mixedreality.RemoteRenderingAccountsRegenerateKeysOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-mixedreality.RemoteRenderingAccountsRegenerateKeysResponse|stable"
+          />&gt;
+  - name: >-
+      update(string, string, RemoteRenderingAccount,
+      RemoteRenderingAccountsUpdateOptionalParams)
+    uid: '@azure/arm-mixedreality.RemoteRenderingAccounts.update|stable'
+    package: '@azure/arm-mixedreality|stable'
+    summary: Updating a Remote Rendering Account
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function update(resourceGroupName: string, accountName: string,
+        remoteRenderingAccount: RemoteRenderingAccount, options?:
+        RemoteRenderingAccountsUpdateOptionalParams):
+        Promise<RemoteRenderingAccountsUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of an Azure resource group.
+        - id: accountName
+          type: string
+          description: Name of an Mixed Reality Account.
+        - id: remoteRenderingAccount
+          type: <xref uid="@azure/arm-mixedreality.RemoteRenderingAccount|stable" />
+          description: Remote Rendering Account parameter.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mixedreality.RemoteRenderingAccountsUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-mixedreality.RemoteRenderingAccountsUpdateResponse|stable"
+          />&gt;

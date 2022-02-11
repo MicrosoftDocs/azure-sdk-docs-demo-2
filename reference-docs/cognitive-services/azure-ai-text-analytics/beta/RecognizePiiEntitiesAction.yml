@@ -1,0 +1,112 @@
+### YamlMime:TSType
+name: RecognizePiiEntitiesAction
+uid: '@azure/ai-text-analytics.RecognizePiiEntitiesAction|beta'
+package: '@azure/ai-text-analytics|beta'
+summary: Options for a Pii entities recognition action.
+fullName: RecognizePiiEntitiesAction
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: actionName
+    uid: '@azure/ai-text-analytics.RecognizePiiEntitiesAction.actionName|beta'
+    package: '@azure/ai-text-analytics|beta'
+    summary: The preferred name for this action.
+    fullName: actionName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'actionName?: string'
+      return:
+        description: ''
+        type: string
+  - name: categoriesFilter
+    uid: '@azure/ai-text-analytics.RecognizePiiEntitiesAction.categoriesFilter|beta'
+    package: '@azure/ai-text-analytics|beta'
+    summary: >-
+      Filters entities to ones only included in the specified array of
+      categories
+    fullName: categoriesFilter
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'categoriesFilter?: PiiEntityCategory[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/ai-text-analytics.PiiEntityCategory|beta" />[]
+  - name: disableServiceLogs
+    uid: >-
+      @azure/ai-text-analytics.RecognizePiiEntitiesAction.disableServiceLogs|beta
+    package: '@azure/ai-text-analytics|beta'
+    summary: >-
+      If set to false, you opt-in to have your text input logged for
+      troubleshooting. By default, Text Analytics
+
+      will not log your input text for pii entities recognition. Setting this
+      parameter to false,
+
+      enables input logging.
+    fullName: disableServiceLogs
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'disableServiceLogs?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: domainFilter
+    uid: '@azure/ai-text-analytics.RecognizePiiEntitiesAction.domainFilter|beta'
+    package: '@azure/ai-text-analytics|beta'
+    summary: |-
+      Filters entities to ones only included in the specified domain (e.g., if
+      set to 'PHI', entities in the Protected Healthcare Information domain will
+      only be returned). @see https://aka.ms/tanerpii for more information.
+    fullName: domainFilter
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'domainFilter?: PiiEntityDomain'
+      return:
+        description: ''
+        type: <xref uid="@azure/ai-text-analytics.PiiEntityDomain|beta" />
+  - name: modelVersion
+    uid: '@azure/ai-text-analytics.RecognizePiiEntitiesAction.modelVersion|beta'
+    package: '@azure/ai-text-analytics|beta'
+    summary: |-
+      The version of the text analytics model used by this operation on this
+      batch of input documents.
+    fullName: modelVersion
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'modelVersion?: string'
+      return:
+        description: ''
+        type: string
+  - name: stringIndexType
+    uid: '@azure/ai-text-analytics.RecognizePiiEntitiesAction.stringIndexType|beta'
+    package: '@azure/ai-text-analytics|beta'
+    summary: >-
+      Specifies the measurement unit used to calculate the offset and length
+      properties.
+
+      Possible units are "TextElements_v8", "UnicodeCodePoint", and
+      "Utf16CodeUnit".
+
+      The default is the JavaScript's default which is "Utf16CodeUnit".
+    fullName: stringIndexType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'stringIndexType?: StringIndexType'
+      return:
+        description: ''
+        type: <xref uid="@azure/ai-text-analytics.StringIndexType|beta" />
+extends: <xref uid="@azure/ai-text-analytics.TextAnalyticsAction|beta" />

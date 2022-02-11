@@ -1,0 +1,27 @@
+### YamlMime:TSEnum
+name: KnownAudioAnalysisMode
+uid: '@azure/arm-mediaservices.KnownAudioAnalysisMode|stable'
+package: '@azure/arm-mediaservices|stable'
+summary: >-
+  Known values of <xref:@azure/arm-mediaservices.KnownAudioAnalysisMode|stable>
+  that the service accepts.
+fullName: KnownAudioAnalysisMode
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: Basic
+    uid: '@azure/arm-mediaservices.KnownAudioAnalysisMode.Basic|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: >-
+      This mode performs speech-to-text transcription and generation of a VTT
+      subtitle/caption file. The output of this mode includes an Insights JSON
+      file including only the keywords, transcription,and timing information.
+      Automatic language detection and speaker diarization are not included in
+      this mode.
+  - name: Standard
+    uid: '@azure/arm-mediaservices.KnownAudioAnalysisMode.Standard|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: >-
+      Performs all operations included in the Basic mode, additionally
+      performing language detection and speaker diarization.

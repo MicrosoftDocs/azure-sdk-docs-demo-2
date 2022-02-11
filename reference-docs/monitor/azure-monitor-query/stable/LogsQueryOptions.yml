@@ -1,0 +1,146 @@
+### YamlMime:TSType
+name: LogsQueryOptions
+uid: '@azure/monitor-query.LogsQueryOptions|stable'
+package: '@azure/monitor-query|stable'
+summary: Options for querying logs.
+fullName: LogsQueryOptions
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: abortSignal
+    uid: '@azure/monitor-query.LogsQueryOptions.abortSignal|stable'
+    package: '@azure/monitor-query|stable'
+    summary: The signal which can be used to abort requests.
+    fullName: abortSignal
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'abortSignal?: AbortSignalLike'
+      return:
+        description: ''
+        type: AbortSignalLike
+  - name: additionalWorkspaces
+    uid: '@azure/monitor-query.LogsQueryOptions.additionalWorkspaces|stable'
+    package: '@azure/monitor-query|stable'
+    summary: >-
+      A list of workspaces that are included in the query, except for the one
+      set as the `workspaceId` parameter
+
+      These may consist of the following identifier formats:
+
+      - Qualified workspace names
+
+      - Workspace IDs
+
+      - Azure resource IDs
+    fullName: additionalWorkspaces
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'additionalWorkspaces?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: includeQueryStatistics
+    uid: '@azure/monitor-query.LogsQueryOptions.includeQueryStatistics|stable'
+    package: '@azure/monitor-query|stable'
+    summary: Results will also include statistics about the query.
+    fullName: includeQueryStatistics
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'includeQueryStatistics?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: includeVisualization
+    uid: '@azure/monitor-query.LogsQueryOptions.includeVisualization|stable'
+    package: '@azure/monitor-query|stable'
+    summary: Results will also include visualization information, in JSON format.
+    fullName: includeVisualization
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'includeVisualization?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: onResponse
+    uid: '@azure/monitor-query.LogsQueryOptions.onResponse|stable'
+    package: '@azure/monitor-query|stable'
+    summary: |-
+      A function to be called each time a response is received from the server
+      while performing the requested operation.
+      May be called multiple times.
+    fullName: onResponse
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onResponse?: RawResponseCallback'
+      return:
+        description: ''
+        type: RawResponseCallback
+  - name: requestOptions
+    uid: '@azure/monitor-query.LogsQueryOptions.requestOptions|stable'
+    package: '@azure/monitor-query|stable'
+    summary: Options used when creating and sending HTTP requests for this operation.
+    fullName: requestOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'requestOptions?: OperationRequestOptions'
+      return:
+        description: ''
+        type: OperationRequestOptions
+  - name: serializerOptions
+    uid: '@azure/monitor-query.LogsQueryOptions.serializerOptions|stable'
+    package: '@azure/monitor-query|stable'
+    summary: Options to override serialization/de-serialization behavior.
+    fullName: serializerOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'serializerOptions?: SerializerOptions'
+      return:
+        description: ''
+        type: SerializerOptions
+  - name: serverTimeoutInSeconds
+    uid: '@azure/monitor-query.LogsQueryOptions.serverTimeoutInSeconds|stable'
+    package: '@azure/monitor-query|stable'
+    summary: >-
+      The maximum amount of time the server will spend processing the query.
+
+      Default: 180 seconds (3 minutes), maximum allowed is 600 seconds (10
+      minutes)
+    fullName: serverTimeoutInSeconds
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'serverTimeoutInSeconds?: number'
+      return:
+        description: ''
+        type: number
+  - name: tracingOptions
+    uid: '@azure/monitor-query.LogsQueryOptions.tracingOptions|stable'
+    package: '@azure/monitor-query|stable'
+    summary: Options used when tracing is enabled.
+    fullName: tracingOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tracingOptions?: OperationTracingOptions'
+      return:
+        description: ''
+        type: OperationTracingOptions
+extends: OperationOptions

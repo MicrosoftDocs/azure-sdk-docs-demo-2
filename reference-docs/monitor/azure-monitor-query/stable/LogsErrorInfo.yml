@@ -1,0 +1,77 @@
+### YamlMime:TSType
+name: LogsErrorInfo
+uid: '@azure/monitor-query.LogsErrorInfo|stable'
+package: '@azure/monitor-query|stable'
+summary: The code and message for an error.
+fullName: LogsErrorInfo
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: code
+    uid: '@azure/monitor-query.LogsErrorInfo.code|stable'
+    package: '@azure/monitor-query|stable'
+    summary: A machine readable error code.
+    fullName: code
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'code: string'
+      return:
+        description: ''
+        type: string
+  - name: Error
+    uid: '@azure/monitor-query.LogsErrorInfo.Error|stable'
+    package: '@azure/monitor-query|stable'
+    summary: ''
+    fullName: Error
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'Error: ErrorConstructor'
+      return:
+        description: ''
+        type: ErrorConstructor
+  - name: message
+    uid: '@azure/monitor-query.LogsErrorInfo.message|stable'
+    package: '@azure/monitor-query|stable'
+    summary: ''
+    fullName: message
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'message: string'
+      return:
+        description: ''
+        type: string
+  - name: name
+    uid: '@azure/monitor-query.LogsErrorInfo.name|stable'
+    package: '@azure/monitor-query|stable'
+    summary: ''
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: string'
+      return:
+        description: ''
+        type: string
+  - name: stack
+    uid: '@azure/monitor-query.LogsErrorInfo.stack|stable'
+    package: '@azure/monitor-query|stable'
+    summary: ''
+    fullName: stack
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'stack?: string'
+      return:
+        description: ''
+        type: string
+extends: Error

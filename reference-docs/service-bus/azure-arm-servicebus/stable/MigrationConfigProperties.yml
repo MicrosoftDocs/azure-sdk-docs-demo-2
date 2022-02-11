@@ -1,0 +1,14 @@
+### YamlMime:TSTypeAlias
+name: MigrationConfigProperties
+uid: '@azure/arm-servicebus.MigrationConfigProperties|stable'
+package: '@azure/arm-servicebus|stable'
+summary: Single item in List or Get Migration Config operation
+fullName: MigrationConfigProperties
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type MigrationConfigProperties = Resource & { migrationState?: undefined |
+  string, pendingReplicationOperationsCount?: undefined | number,
+  postMigrationName?: undefined | string, provisioningState?: undefined |
+  string, systemData?: SystemData, targetNamespace?: undefined | string }

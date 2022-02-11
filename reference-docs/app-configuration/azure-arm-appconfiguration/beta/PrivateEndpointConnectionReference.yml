@@ -1,0 +1,113 @@
+### YamlMime:TSType
+name: PrivateEndpointConnectionReference
+uid: '@azure/arm-appconfiguration.PrivateEndpointConnectionReference|beta'
+package: '@azure/arm-appconfiguration|beta'
+summary: A reference to a related private endpoint connection.
+fullName: PrivateEndpointConnectionReference
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: id
+    uid: '@azure/arm-appconfiguration.PrivateEndpointConnectionReference.id|beta'
+    package: '@azure/arm-appconfiguration|beta'
+    summary: >-
+      The resource ID.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: name
+    uid: '@azure/arm-appconfiguration.PrivateEndpointConnectionReference.name|beta'
+    package: '@azure/arm-appconfiguration|beta'
+    summary: >-
+      The name of the resource.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: privateEndpoint
+    uid: >-
+      @azure/arm-appconfiguration.PrivateEndpointConnectionReference.privateEndpoint|beta
+    package: '@azure/arm-appconfiguration|beta'
+    summary: The resource of private endpoint.
+    fullName: privateEndpoint
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'privateEndpoint?: PrivateEndpoint'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appconfiguration.PrivateEndpoint|beta" />
+  - name: privateLinkServiceConnectionState
+    uid: >-
+      @azure/arm-appconfiguration.PrivateEndpointConnectionReference.privateLinkServiceConnectionState|beta
+    package: '@azure/arm-appconfiguration|beta'
+    summary: >-
+      A collection of information about the state of the connection between
+      service consumer and provider.
+    fullName: privateLinkServiceConnectionState
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'privateLinkServiceConnectionState?: PrivateLinkServiceConnectionState'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-appconfiguration.PrivateLinkServiceConnectionState|beta"
+          />
+  - name: provisioningState
+    uid: >-
+      @azure/arm-appconfiguration.PrivateEndpointConnectionReference.provisioningState|beta
+    package: '@azure/arm-appconfiguration|beta'
+    summary: >-
+      The provisioning status of the private endpoint connection.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: provisioningState
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'provisioningState?: ProvisioningState'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appconfiguration.ProvisioningState|beta" />
+  - name: type
+    uid: '@azure/arm-appconfiguration.PrivateEndpointConnectionReference.type|beta'
+    package: '@azure/arm-appconfiguration|beta'
+    summary: >-
+      The type of the resource.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

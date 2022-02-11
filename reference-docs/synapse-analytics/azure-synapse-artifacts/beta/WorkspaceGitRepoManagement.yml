@@ -1,0 +1,46 @@
+### YamlMime:TSType
+name: WorkspaceGitRepoManagement
+uid: '@azure/synapse-artifacts.WorkspaceGitRepoManagement|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: Interface representing a WorkspaceGitRepoManagement.
+fullName: WorkspaceGitRepoManagement
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      getGitHubAccessToken(GitHubAccessTokenRequest,
+      WorkspaceGitRepoManagementGetGitHubAccessTokenOptionalParams)
+    uid: >-
+      @azure/synapse-artifacts.WorkspaceGitRepoManagement.getGitHubAccessToken|beta
+    package: '@azure/synapse-artifacts|beta'
+    summary: Get the GitHub access token.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getGitHubAccessToken(gitHubAccessTokenRequest:
+        GitHubAccessTokenRequest, options?:
+        WorkspaceGitRepoManagementGetGitHubAccessTokenOptionalParams):
+        Promise<WorkspaceGitRepoManagementGetGitHubAccessTokenResponse>
+      parameters:
+        - id: gitHubAccessTokenRequest
+          type: >-
+            <xref uid="@azure/synapse-artifacts.GitHubAccessTokenRequest|beta"
+            />
+          description: ''
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/synapse-artifacts.WorkspaceGitRepoManagementGetGitHubAccessTokenOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/synapse-artifacts.WorkspaceGitRepoManagementGetGitHubAccessTokenResponse|beta"
+          />&gt;

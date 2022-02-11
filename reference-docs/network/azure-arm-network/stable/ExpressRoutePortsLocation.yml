@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: ExpressRoutePortsLocation
+uid: '@azure/arm-network.ExpressRoutePortsLocation|stable'
+package: '@azure/arm-network|stable'
+summary: Definition of the ExpressRoutePorts peering location resource.
+fullName: ExpressRoutePortsLocation
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type ExpressRoutePortsLocation = Resource & { address?: undefined | string,
+  availableBandwidths?: ExpressRoutePortsLocationBandwidths[], contact?:
+  undefined | string, provisioningState?: ProvisioningState }

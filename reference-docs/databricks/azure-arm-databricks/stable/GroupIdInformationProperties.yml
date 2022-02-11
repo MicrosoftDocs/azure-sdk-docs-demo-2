@@ -1,0 +1,51 @@
+### YamlMime:TSType
+name: GroupIdInformationProperties
+uid: '@azure/arm-databricks.GroupIdInformationProperties|stable'
+package: '@azure/arm-databricks|stable'
+summary: The properties for a group information object
+fullName: GroupIdInformationProperties
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: groupId
+    uid: '@azure/arm-databricks.GroupIdInformationProperties.groupId|stable'
+    package: '@azure/arm-databricks|stable'
+    summary: The group id
+    fullName: groupId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'groupId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: requiredMembers
+    uid: '@azure/arm-databricks.GroupIdInformationProperties.requiredMembers|stable'
+    package: '@azure/arm-databricks|stable'
+    summary: The required members for a specific group id
+    fullName: requiredMembers
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'requiredMembers?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: requiredZoneNames
+    uid: >-
+      @azure/arm-databricks.GroupIdInformationProperties.requiredZoneNames|stable
+    package: '@azure/arm-databricks|stable'
+    summary: The required DNS zones for a specific group id
+    fullName: requiredZoneNames
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'requiredZoneNames?: string[]'
+      return:
+        description: ''
+        type: string[]

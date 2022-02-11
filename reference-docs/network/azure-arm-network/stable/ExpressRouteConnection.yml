@@ -1,0 +1,16 @@
+### YamlMime:TSTypeAlias
+name: ExpressRouteConnection
+uid: '@azure/arm-network.ExpressRouteConnection|stable'
+package: '@azure/arm-network|stable'
+summary: ExpressRouteConnection resource.
+fullName: ExpressRouteConnection
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type ExpressRouteConnection = SubResource & { authorizationKey?: undefined |
+  string, enableInternetSecurity?: undefined | false | true,
+  expressRouteCircuitPeering?: ExpressRouteCircuitPeeringId,
+  expressRouteGatewayBypass?: undefined | false | true, name: string,
+  provisioningState?: ProvisioningState, routingConfiguration?:
+  RoutingConfiguration, routingWeight?: undefined | number }

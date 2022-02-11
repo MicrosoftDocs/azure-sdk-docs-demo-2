@@ -1,0 +1,224 @@
+### YamlMime:TSType
+name: ServerAdministrators
+uid: '@azure/arm-mysql.ServerAdministrators|stable'
+package: '@azure/arm-mysql|stable'
+summary: Interface representing a ServerAdministrators.
+fullName: ServerAdministrators
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      beginCreateOrUpdate(string, string, ServerAdministratorResource,
+      ServerAdministratorsCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-mysql.ServerAdministrators.beginCreateOrUpdate|stable'
+    package: '@azure/arm-mysql|stable'
+    summary: >-
+      Creates or update active directory administrator on an existing server.
+      The update action will
+
+      overwrite the existing administrator.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string, serverName:
+        string, properties: ServerAdministratorResource, options?:
+        ServerAdministratorsCreateOrUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<ServerAdministratorsCreateOrUpdateResponse>,
+        ServerAdministratorsCreateOrUpdateResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: serverName
+          type: string
+          description: The name of the server.
+        - id: properties
+          type: <xref uid="@azure/arm-mysql.ServerAdministratorResource|stable" />
+          description: >-
+            The required parameters for creating or updating an AAD server
+            administrator.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mysql.ServerAdministratorsCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-mysql.ServerAdministratorsCreateOrUpdateResponse|stable"
+          />&gt;, <xref
+          uid="@azure/arm-mysql.ServerAdministratorsCreateOrUpdateResponse|stable"
+          />&gt;&gt;
+  - name: >-
+      beginCreateOrUpdateAndWait(string, string, ServerAdministratorResource,
+      ServerAdministratorsCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-mysql.ServerAdministrators.beginCreateOrUpdateAndWait|stable'
+    package: '@azure/arm-mysql|stable'
+    summary: >-
+      Creates or update active directory administrator on an existing server.
+      The update action will
+
+      overwrite the existing administrator.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdateAndWait(resourceGroupName: string,
+        serverName: string, properties: ServerAdministratorResource, options?:
+        ServerAdministratorsCreateOrUpdateOptionalParams):
+        Promise<ServerAdministratorsCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: serverName
+          type: string
+          description: The name of the server.
+        - id: properties
+          type: <xref uid="@azure/arm-mysql.ServerAdministratorResource|stable" />
+          description: >-
+            The required parameters for creating or updating an AAD server
+            administrator.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mysql.ServerAdministratorsCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-mysql.ServerAdministratorsCreateOrUpdateResponse|stable"
+          />&gt;
+  - name: beginDelete(string, string, ServerAdministratorsDeleteOptionalParams)
+    uid: '@azure/arm-mysql.ServerAdministrators.beginDelete|stable'
+    package: '@azure/arm-mysql|stable'
+    summary: Deletes server active directory administrator.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDelete(resourceGroupName: string, serverName: string,
+        options?: ServerAdministratorsDeleteOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: serverName
+          type: string
+          description: The name of the server.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mysql.ServerAdministratorsDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: >-
+      beginDeleteAndWait(string, string,
+      ServerAdministratorsDeleteOptionalParams)
+    uid: '@azure/arm-mysql.ServerAdministrators.beginDeleteAndWait|stable'
+    package: '@azure/arm-mysql|stable'
+    summary: Deletes server active directory administrator.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteAndWait(resourceGroupName: string, serverName:
+        string, options?: ServerAdministratorsDeleteOptionalParams):
+        Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: serverName
+          type: string
+          description: The name of the server.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mysql.ServerAdministratorsDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: get(string, string, ServerAdministratorsGetOptionalParams)
+    uid: '@azure/arm-mysql.ServerAdministrators.get|stable'
+    package: '@azure/arm-mysql|stable'
+    summary: Gets information about a AAD server administrator.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, serverName: string, options?:
+        ServerAdministratorsGetOptionalParams):
+        Promise<ServerAdministratorsGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: serverName
+          type: string
+          description: The name of the server.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mysql.ServerAdministratorsGetOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-mysql.ServerAdministratorsGetResponse|stable" />&gt;
+  - name: list(string, string, ServerAdministratorsListOptionalParams)
+    uid: '@azure/arm-mysql.ServerAdministrators.list|stable'
+    package: '@azure/arm-mysql|stable'
+    summary: Returns a list of server Administrators.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, serverName: string, options?:
+        ServerAdministratorsListOptionalParams):
+        PagedAsyncIterableIterator<ServerAdministratorResource>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: serverName
+          type: string
+          description: The name of the server.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mysql.ServerAdministratorsListOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-mysql.ServerAdministratorResource|stable" />&gt;

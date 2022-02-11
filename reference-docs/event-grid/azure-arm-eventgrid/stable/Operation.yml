@@ -1,0 +1,63 @@
+### YamlMime:TSType
+name: Operation
+uid: '@azure/arm-eventgrid.Operation|stable'
+package: '@azure/arm-eventgrid|stable'
+summary: Represents an operation returned by the GetOperations request
+fullName: Operation
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: display
+    uid: '@azure/arm-eventgrid.Operation.display|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Display name of the operation
+    fullName: display
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'display?: OperationInfo'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-eventgrid.OperationInfo|stable" />
+  - name: name
+    uid: '@azure/arm-eventgrid.Operation.name|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Name of the operation
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: origin
+    uid: '@azure/arm-eventgrid.Operation.origin|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Origin of the operation
+    fullName: origin
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'origin?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: properties
+    uid: '@azure/arm-eventgrid.Operation.properties|stable'
+    package: '@azure/arm-eventgrid|stable'
+    summary: Properties of the operation
+    fullName: properties
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'properties?: Record<string, unknown>'
+      return:
+        description: ''
+        type: Record&lt;string, unknown&gt;

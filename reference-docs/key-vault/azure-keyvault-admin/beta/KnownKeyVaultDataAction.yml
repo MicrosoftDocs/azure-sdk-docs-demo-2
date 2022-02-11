@@ -1,0 +1,152 @@
+### YamlMime:TSEnum
+name: KnownKeyVaultDataAction
+uid: '@azure/keyvault-admin.KnownKeyVaultDataAction|beta'
+package: '@azure/keyvault-admin|beta'
+summary: >-
+  Known values of <xref:@azure/keyvault-admin.KnownKeyVaultDataAction|beta> that
+  the service accepts.
+fullName: KnownKeyVaultDataAction
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: BackupHsmKeys
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.BackupHsmKeys|beta'
+    package: '@azure/keyvault-admin|beta'
+    summary: Backup HSM keys.
+  - name: CreateHsmKey
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.CreateHsmKey|beta'
+    package: '@azure/keyvault-admin|beta'
+    summary: Create an HSM key.
+  - name: DecryptHsmKey
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.DecryptHsmKey|beta'
+    package: '@azure/keyvault-admin|beta'
+    summary: Decrypt using an HSM key.
+  - name: DeleteHsmKey
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.DeleteHsmKey|beta'
+    package: '@azure/keyvault-admin|beta'
+    summary: Delete an HSM key.
+  - name: DeleteRoleAssignment
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.DeleteRoleAssignment|beta'
+    package: '@azure/keyvault-admin|beta'
+    summary: Delete role assignment.
+  - name: DeleteRoleDefinition
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.DeleteRoleDefinition|beta'
+    package: '@azure/keyvault-admin|beta'
+    summary: Delete role definition.
+  - name: DownloadHsmSecurityDomain
+    uid: >-
+      @azure/keyvault-admin.KnownKeyVaultDataAction.DownloadHsmSecurityDomain|beta
+    package: '@azure/keyvault-admin|beta'
+    summary: Download an HSM security domain.
+  - name: DownloadHsmSecurityDomainStatus
+    uid: >-
+      @azure/keyvault-admin.KnownKeyVaultDataAction.DownloadHsmSecurityDomainStatus|beta
+    package: '@azure/keyvault-admin|beta'
+    summary: Check status of HSM security domain download.
+  - name: EncryptHsmKey
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.EncryptHsmKey|beta'
+    package: '@azure/keyvault-admin|beta'
+    summary: Encrypt using an HSM key.
+  - name: ExportHsmKey
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.ExportHsmKey|beta'
+    package: '@azure/keyvault-admin|beta'
+    summary: Export an HSM key.
+  - name: GetRoleAssignment
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.GetRoleAssignment|beta'
+    package: '@azure/keyvault-admin|beta'
+    summary: Get role assignment.
+  - name: ImportHsmKey
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.ImportHsmKey|beta'
+    package: '@azure/keyvault-admin|beta'
+    summary: Import an HSM key.
+  - name: PurgeDeletedHsmKey
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.PurgeDeletedHsmKey|beta'
+    package: '@azure/keyvault-admin|beta'
+    summary: Purge a deleted HSM key.
+  - name: RandomNumbersGenerate
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.RandomNumbersGenerate|beta'
+    package: '@azure/keyvault-admin|beta'
+    summary: Generate random numbers.
+  - name: ReadDeletedHsmKey
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.ReadDeletedHsmKey|beta'
+    package: '@azure/keyvault-admin|beta'
+    summary: Read deleted HSM key.
+  - name: ReadHsmBackupStatus
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.ReadHsmBackupStatus|beta'
+    package: '@azure/keyvault-admin|beta'
+    summary: Read an HSM backup status.
+  - name: ReadHsmKey
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.ReadHsmKey|beta'
+    package: '@azure/keyvault-admin|beta'
+    summary: Read HSM key metadata.
+  - name: ReadHsmRestoreStatus
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.ReadHsmRestoreStatus|beta'
+    package: '@azure/keyvault-admin|beta'
+    summary: Read an HSM restore status.
+  - name: ReadHsmSecurityDomainStatus
+    uid: >-
+      @azure/keyvault-admin.KnownKeyVaultDataAction.ReadHsmSecurityDomainStatus|beta
+    package: '@azure/keyvault-admin|beta'
+    summary: Check the status of the HSM security domain exchange file.
+  - name: ReadHsmSecurityDomainTransferKey
+    uid: >-
+      @azure/keyvault-admin.KnownKeyVaultDataAction.ReadHsmSecurityDomainTransferKey|beta
+    package: '@azure/keyvault-admin|beta'
+    summary: Download an HSM security domain transfer key.
+  - name: ReadRoleDefinition
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.ReadRoleDefinition|beta'
+    package: '@azure/keyvault-admin|beta'
+    summary: Get role definition.
+  - name: RecoverDeletedHsmKey
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.RecoverDeletedHsmKey|beta'
+    package: '@azure/keyvault-admin|beta'
+    summary: Recover deleted HSM key.
+  - name: ReleaseKey
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.ReleaseKey|beta'
+    package: '@azure/keyvault-admin|beta'
+    summary: Release an HSM key using Secure Key Release.
+  - name: RestoreHsmKeys
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.RestoreHsmKeys|beta'
+    package: '@azure/keyvault-admin|beta'
+    summary: Restore HSM keys.
+  - name: SignHsmKey
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.SignHsmKey|beta'
+    package: '@azure/keyvault-admin|beta'
+    summary: Sign using an HSM key.
+  - name: StartHsmBackup
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.StartHsmBackup|beta'
+    package: '@azure/keyvault-admin|beta'
+    summary: Start an HSM backup.
+  - name: StartHsmRestore
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.StartHsmRestore|beta'
+    package: '@azure/keyvault-admin|beta'
+    summary: Start an HSM restore.
+  - name: UnwrapHsmKey
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.UnwrapHsmKey|beta'
+    package: '@azure/keyvault-admin|beta'
+    summary: Unwrap using an HSM key.
+  - name: UploadHsmSecurityDomain
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.UploadHsmSecurityDomain|beta'
+    package: '@azure/keyvault-admin|beta'
+    summary: Upload an HSM security domain.
+  - name: VerifyHsmKey
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.VerifyHsmKey|beta'
+    package: '@azure/keyvault-admin|beta'
+    summary: Verify using an HSM key.
+  - name: WrapHsmKey
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.WrapHsmKey|beta'
+    package: '@azure/keyvault-admin|beta'
+    summary: Wrap using an HSM key.
+  - name: WriteHsmKey
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.WriteHsmKey|beta'
+    package: '@azure/keyvault-admin|beta'
+    summary: Update an HSM key.
+  - name: WriteRoleAssignment
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.WriteRoleAssignment|beta'
+    package: '@azure/keyvault-admin|beta'
+    summary: Create or update role assignment.
+  - name: WriteRoleDefinition
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.WriteRoleDefinition|beta'
+    package: '@azure/keyvault-admin|beta'
+    summary: Create or update role definition.

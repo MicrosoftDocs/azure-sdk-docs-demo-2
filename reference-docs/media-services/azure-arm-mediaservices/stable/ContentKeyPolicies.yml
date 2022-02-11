@@ -1,0 +1,231 @@
+### YamlMime:TSType
+name: ContentKeyPolicies
+uid: '@azure/arm-mediaservices.ContentKeyPolicies|stable'
+package: '@azure/arm-mediaservices|stable'
+summary: Interface representing a ContentKeyPolicies.
+fullName: ContentKeyPolicies
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      createOrUpdate(string, string, string, ContentKeyPolicy,
+      ContentKeyPoliciesCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-mediaservices.ContentKeyPolicies.createOrUpdate|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: Create or update a Content Key Policy in the Media Services account
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, accountName: string,
+        contentKeyPolicyName: string, parameters: ContentKeyPolicy, options?:
+        ContentKeyPoliciesCreateOrUpdateOptionalParams):
+        Promise<ContentKeyPoliciesCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the Azure subscription.
+        - id: accountName
+          type: string
+          description: The Media Services account name.
+        - id: contentKeyPolicyName
+          type: string
+          description: The Content Key Policy name.
+        - id: parameters
+          type: <xref uid="@azure/arm-mediaservices.ContentKeyPolicy|stable" />
+          description: The request parameters
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mediaservices.ContentKeyPoliciesCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-mediaservices.ContentKeyPoliciesCreateOrUpdateResponse|stable"
+          />&gt;
+  - name: delete(string, string, string, ContentKeyPoliciesDeleteOptionalParams)
+    uid: '@azure/arm-mediaservices.ContentKeyPolicies.delete|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: Deletes a Content Key Policy in the Media Services account
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function delete(resourceGroupName: string, accountName: string,
+        contentKeyPolicyName: string, options?:
+        ContentKeyPoliciesDeleteOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the Azure subscription.
+        - id: accountName
+          type: string
+          description: The Media Services account name.
+        - id: contentKeyPolicyName
+          type: string
+          description: The Content Key Policy name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mediaservices.ContentKeyPoliciesDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: get(string, string, string, ContentKeyPoliciesGetOptionalParams)
+    uid: '@azure/arm-mediaservices.ContentKeyPolicies.get|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: Get the details of a Content Key Policy in the Media Services account
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, accountName: string,
+        contentKeyPolicyName: string, options?:
+        ContentKeyPoliciesGetOptionalParams):
+        Promise<ContentKeyPoliciesGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the Azure subscription.
+        - id: accountName
+          type: string
+          description: The Media Services account name.
+        - id: contentKeyPolicyName
+          type: string
+          description: The Content Key Policy name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mediaservices.ContentKeyPoliciesGetOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-mediaservices.ContentKeyPoliciesGetResponse|stable"
+          />&gt;
+  - name: >-
+      getPolicyPropertiesWithSecrets(string, string, string,
+      ContentKeyPoliciesGetPolicyPropertiesWithSecretsOptionalParams)
+    uid: >-
+      @azure/arm-mediaservices.ContentKeyPolicies.getPolicyPropertiesWithSecrets|stable
+    package: '@azure/arm-mediaservices|stable'
+    summary: Get a Content Key Policy including secret values
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getPolicyPropertiesWithSecrets(resourceGroupName: string,
+        accountName: string, contentKeyPolicyName: string, options?:
+        ContentKeyPoliciesGetPolicyPropertiesWithSecretsOptionalParams):
+        Promise<ContentKeyPoliciesGetPolicyPropertiesWithSecretsResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the Azure subscription.
+        - id: accountName
+          type: string
+          description: The Media Services account name.
+        - id: contentKeyPolicyName
+          type: string
+          description: The Content Key Policy name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mediaservices.ContentKeyPoliciesGetPolicyPropertiesWithSecretsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-mediaservices.ContentKeyPoliciesGetPolicyPropertiesWithSecretsResponse|stable"
+          />&gt;
+  - name: list(string, string, ContentKeyPoliciesListOptionalParams)
+    uid: '@azure/arm-mediaservices.ContentKeyPolicies.list|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: Lists the Content Key Policies in the account
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, accountName: string, options?:
+        ContentKeyPoliciesListOptionalParams):
+        PagedAsyncIterableIterator<ContentKeyPolicy>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the Azure subscription.
+        - id: accountName
+          type: string
+          description: The Media Services account name.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mediaservices.ContentKeyPoliciesListOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-mediaservices.ContentKeyPolicy|stable" />&gt;
+  - name: >-
+      update(string, string, string, ContentKeyPolicy,
+      ContentKeyPoliciesUpdateOptionalParams)
+    uid: '@azure/arm-mediaservices.ContentKeyPolicies.update|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: Updates an existing Content Key Policy in the Media Services account
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function update(resourceGroupName: string, accountName: string,
+        contentKeyPolicyName: string, parameters: ContentKeyPolicy, options?:
+        ContentKeyPoliciesUpdateOptionalParams):
+        Promise<ContentKeyPoliciesUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the Azure subscription.
+        - id: accountName
+          type: string
+          description: The Media Services account name.
+        - id: contentKeyPolicyName
+          type: string
+          description: The Content Key Policy name.
+        - id: parameters
+          type: <xref uid="@azure/arm-mediaservices.ContentKeyPolicy|stable" />
+          description: The request parameters
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mediaservices.ContentKeyPoliciesUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-mediaservices.ContentKeyPoliciesUpdateResponse|stable"
+          />&gt;
