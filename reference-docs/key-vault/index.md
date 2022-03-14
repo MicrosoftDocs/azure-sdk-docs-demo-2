@@ -12,6 +12,19 @@ ms.author: daberry
 
 # Azure SDK for JavaScript - Key Vault packages
 
+[Azure Key Vault](https://azure.microsoft.com/services/key-vault/) is a Microsoft-managed service providing cloud keys, secrets, and certificate storage and utility that is highly available, secure, durable, scalable, and redundant.
+
+The current Azure SDK for JavaScript contains four packages for interacting with Azure Key Vault from your application.
+- **Key Vault Admin** - Used to get, set, list, and delete Azure RBAC (Role-Based Access Control) role assignments and definitions within a key vault.
+- **Key Vault Certificates** - Used to get, set, update, and delete certificates in a key vault.
+- **Key Vault Keys** - Used to create, import, update, and delete cryptographic keys in a key vault.
+- **Key Vault Secrets** - Used to get, set, update, and delete application secrets (connection strings, api keys, etc.) in a key vault.
+
+The package `azure-keyvault` is now considered a legacy package. New applications should not be developed using this package.  Current users of this package should migrate to the Key Vault Certificates, Key Vault Keys, and Key Vault Secrets packages as appropriate. The following migration guides are available to aid in this migration.
+- [Guide for migrating to @azure/keyvault-certificates from azure-keyvault](/azure/javascript/sdk/sdk-demo2/key-vault/azure-keyvault-certificates/migration-guide?branch=main)
+- [Guide for migrating to @azure/keyvault-keys from azure-keyvault](/azure/javascript/sdk/sdk-demo2/key-vault/azure-keyvault-keys/migration-guide?branch=main)
+- [Guide for migrating to @azure/keyvault-secrets from azure-keyvault](/azure/javascript/sdk/sdk-demo2/key-vault/azure-keyvault-secrets/migration-guide?branch=main)
+
 ## Stable packages
 
 | Name                  | Package              | Version          | Reference Docs         | Package Manager                |
