@@ -1,0 +1,56 @@
+### YamlMime:TSType
+name: RouteConfigurationOverrideActionParameters
+uid: '@azure/arm-cdn.RouteConfigurationOverrideActionParameters|stable'
+package: '@azure/arm-cdn|stable'
+summary: Defines the parameters for the route configuration override action.
+fullName: RouteConfigurationOverrideActionParameters
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: cacheConfiguration
+    uid: >-
+      @azure/arm-cdn.RouteConfigurationOverrideActionParameters.cacheConfiguration|stable
+    package: '@azure/arm-cdn|stable'
+    summary: >-
+      The caching configuration associated with this rule. To disable caching,
+      do not provide a cacheConfiguration object.
+    fullName: cacheConfiguration
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'cacheConfiguration?: CacheConfiguration'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-cdn.CacheConfiguration|stable" />
+  - name: originGroupOverride
+    uid: >-
+      @azure/arm-cdn.RouteConfigurationOverrideActionParameters.originGroupOverride|stable
+    package: '@azure/arm-cdn|stable'
+    summary: >-
+      A reference to the origin group override configuration. Leave empty to use
+      the default origin group on route.
+    fullName: originGroupOverride
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'originGroupOverride?: OriginGroupOverride'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-cdn.OriginGroupOverride|stable" />
+  - name: typeName
+    uid: '@azure/arm-cdn.RouteConfigurationOverrideActionParameters.typeName|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: ''
+    fullName: typeName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'typeName: "DeliveryRuleRouteConfigurationOverrideActionParameters"'
+      return:
+        description: ''
+        type: '"DeliveryRuleRouteConfigurationOverrideActionParameters"'

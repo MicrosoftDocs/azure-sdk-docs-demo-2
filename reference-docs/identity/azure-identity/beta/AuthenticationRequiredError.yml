@@ -1,0 +1,110 @@
+### YamlMime:TSType
+name: AuthenticationRequiredError
+uid: '@azure/identity.AuthenticationRequiredError|beta'
+package: '@azure/identity|beta'
+summary: >-
+  Error used to enforce authentication after trying to retrieve a token
+  silently.
+fullName: AuthenticationRequiredError
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: AuthenticationRequiredError(AuthenticationRequiredErrorOptions)
+    uid: '@azure/identity.AuthenticationRequiredError.constructor|beta'
+    package: '@azure/identity|beta'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        new AuthenticationRequiredError(options:
+        AuthenticationRequiredErrorOptions)
+      parameters:
+        - id: options
+          type: >-
+            <xref uid="@azure/identity.AuthenticationRequiredErrorOptions|beta"
+            />
+          description: ''
+properties:
+  - name: Error
+    uid: '@azure/identity.AuthenticationRequiredError.Error|beta'
+    package: '@azure/identity|beta'
+    summary: ''
+    fullName: Error
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static Error: ErrorConstructor'
+      return:
+        description: ''
+        type: ErrorConstructor
+  - name: getTokenOptions
+    uid: '@azure/identity.AuthenticationRequiredError.getTokenOptions|beta'
+    package: '@azure/identity|beta'
+    summary: The options passed to the getToken request.
+    fullName: getTokenOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTokenOptions?: GetTokenOptions'
+      return:
+        description: ''
+        type: GetTokenOptions
+  - name: message
+    uid: '@azure/identity.AuthenticationRequiredError.message|beta'
+    package: '@azure/identity|beta'
+    summary: ''
+    fullName: message
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'message: string'
+      return:
+        description: ''
+        type: string
+  - name: name
+    uid: '@azure/identity.AuthenticationRequiredError.name|beta'
+    package: '@azure/identity|beta'
+    summary: ''
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: string'
+      return:
+        description: ''
+        type: string
+  - name: scopes
+    uid: '@azure/identity.AuthenticationRequiredError.scopes|beta'
+    package: '@azure/identity|beta'
+    summary: The list of scopes for which the token will have access.
+    fullName: scopes
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'scopes: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: stack
+    uid: '@azure/identity.AuthenticationRequiredError.stack|beta'
+    package: '@azure/identity|beta'
+    summary: ''
+    fullName: stack
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'stack?: string'
+      return:
+        description: ''
+        type: string
+extends: Error

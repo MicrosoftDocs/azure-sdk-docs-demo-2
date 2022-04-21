@@ -1,6 +1,6 @@
 ### YamlMime:TSPackage
 uid: '@azure/eventgrid|stable'
-name: '@azure/eventgrid (4.7.0 - Stable)'
+name: '@azure/eventgrid (4.9.0 - Stable)'
 summary: ''
 type: package
 enums:
@@ -65,6 +65,9 @@ interfaces:
   - '@azure/eventgrid.EventGridEvent|stable'
   - '@azure/eventgrid.EventHubCaptureFileCreatedEventData|stable'
   - '@azure/eventgrid.GenerateSharedAccessSignatureOptions|stable'
+  - '@azure/eventgrid.HealthcareFhirResourceCreatedEventData|stable'
+  - '@azure/eventgrid.HealthcareFhirResourceDeletedEventData|stable'
+  - '@azure/eventgrid.HealthcareFhirResourceUpdatedEventData|stable'
   - '@azure/eventgrid.InputSchemaToInputTypeMap|stable'
   - '@azure/eventgrid.KeyVaultAccessPolicyChangedEventData|stable'
   - '@azure/eventgrid.KeyVaultCertificateExpiredEventData|stable'
@@ -177,6 +180,7 @@ typeAliases:
   - '@azure/eventgrid.ContainerRegistryImageDeletedEventData|stable'
   - '@azure/eventgrid.ContainerRegistryImagePushedEventData|stable'
   - '@azure/eventgrid.EventGridPublisherClientOptions|stable'
+  - '@azure/eventgrid.HealthcareFhirResourceType|stable'
   - '@azure/eventgrid.InputSchema|stable'
   - '@azure/eventgrid.IotHubDeviceConnectedEventData|stable'
   - '@azure/eventgrid.IotHubDeviceCreatedEventData|stable'

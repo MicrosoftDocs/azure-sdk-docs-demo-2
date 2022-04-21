@@ -2,7 +2,7 @@
 title: Azure SDK for JavaScript - Core User Guide
 description: 
 ms.topic: reference
-ms.date: 02/10/2022
+ms.date: 04/21/2022
 ms.service: core
 ms.role: developer
 ms.devlang: javascript
@@ -20,9 +20,9 @@ in an Azure SDK that accept a parameter of type `AbortSignalLike`.
 
 Key links:
 
- - [Source code](https://github.com/Azure/azure-sdk-for-js/edit/master/sdk/core/abort-controller)
- - [Package (npm)](https://www.npmjs.com/package/@azure/abort-controller)
- - [API Reference Documentation](https://docs.microsoft.com/javascript/api/overview/azure/abort-controller-readme)
+- [Source code](https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/core/abort-controller)
+- [Package (npm)](https://www.npmjs.com/package/@azure/abort-controller)
+- [API Reference Documentation](https://docs.microsoft.com/javascript/api/overview/azure/abort-controller-readme)
 
 ## Getting started
 

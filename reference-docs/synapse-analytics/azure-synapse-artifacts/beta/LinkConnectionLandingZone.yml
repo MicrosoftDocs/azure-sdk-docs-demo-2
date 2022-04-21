@@ -1,0 +1,63 @@
+### YamlMime:TSType
+name: LinkConnectionLandingZone
+uid: '@azure/synapse-artifacts.LinkConnectionLandingZone|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: ''
+fullName: LinkConnectionLandingZone
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: fileSystem
+    uid: '@azure/synapse-artifacts.LinkConnectionLandingZone.fileSystem|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Landing zone's file system name
+    fullName: fileSystem
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'fileSystem?: string'
+      return:
+        description: ''
+        type: string
+  - name: folderPath
+    uid: '@azure/synapse-artifacts.LinkConnectionLandingZone.folderPath|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Landing zone's folder path name
+    fullName: folderPath
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'folderPath?: string'
+      return:
+        description: ''
+        type: string
+  - name: linkedService
+    uid: '@azure/synapse-artifacts.LinkConnectionLandingZone.linkedService|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Linked service reference
+    fullName: linkedService
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'linkedService?: LinkedServiceReference'
+      return:
+        description: ''
+        type: <xref uid="@azure/synapse-artifacts.LinkedServiceReference|beta" />
+  - name: sasToken
+    uid: '@azure/synapse-artifacts.LinkConnectionLandingZone.sasToken|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Landing zone's sas token
+    fullName: sasToken
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sasToken?: SecureString'
+      return:
+        description: ''
+        type: <xref uid="@azure/synapse-artifacts.SecureString|beta" />

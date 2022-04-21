@@ -2,7 +2,7 @@
 title: Azure SDK for JavaScript - Attestation Release Notes
 description: 
 ms.topic: reference
-ms.date: 02/10/2022
+ms.date: 04/21/2022
 ms.service: attestation
 ms.role: developer
 ms.devlang: javascript

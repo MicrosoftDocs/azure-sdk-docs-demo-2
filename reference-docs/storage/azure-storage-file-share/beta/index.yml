@@ -1,6 +1,6 @@
 ### YamlMime:TSPackage
 uid: '@azure/storage-file-share|beta'
-name: '@azure/storage-file-share (12.9.0-beta.2 - Beta)'
+name: '@azure/storage-file-share (12.10.0-beta.1 - Beta)'
 summary: ''
 type: package
 enums:
@@ -62,6 +62,8 @@ interfaces:
   - '@azure/storage-file-share.DirectoryListHandlesOptions|beta'
   - '@azure/storage-file-share.DirectoryListHandlesSegmentOptions|beta'
   - '@azure/storage-file-share.DirectoryProperties|beta'
+  - '@azure/storage-file-share.DirectoryRenameHeaders|beta'
+  - '@azure/storage-file-share.DirectoryRenameOptions|beta'
   - '@azure/storage-file-share.DirectorySetMetadataHeaders|beta'
   - '@azure/storage-file-share.DirectorySetMetadataOptions|beta'
   - '@azure/storage-file-share.DirectorySetPropertiesHeaders|beta'
@@ -96,6 +98,8 @@ interfaces:
   - '@azure/storage-file-share.FileParallelUploadOptions|beta'
   - '@azure/storage-file-share.FileProperties|beta'
   - '@azure/storage-file-share.FileProperty|beta'
+  - '@azure/storage-file-share.FileRenameHeaders|beta'
+  - '@azure/storage-file-share.FileRenameOptions|beta'
   - '@azure/storage-file-share.FileResizeOptions|beta'
   - '@azure/storage-file-share.FileSASSignatureValues|beta'
   - '@azure/storage-file-share.FileServiceProperties|beta'
@@ -191,6 +195,7 @@ typeAliases:
   - >-
     @azure/storage-file-share.DirectoryListFilesAndDirectoriesSegmentResponse|beta
   - '@azure/storage-file-share.DirectoryListHandlesResponse|beta'
+  - '@azure/storage-file-share.DirectoryRenameResponse|beta'
   - '@azure/storage-file-share.DirectorySetMetadataResponse|beta'
   - '@azure/storage-file-share.DirectorySetPropertiesResponse|beta'
   - '@azure/storage-file-share.FileAbortCopyResponse|beta'
@@ -202,9 +207,11 @@ typeAliases:
   - '@azure/storage-file-share.FileGetPropertiesResponse|beta'
   - '@azure/storage-file-share.FileGetRangeListDiffResponse|beta'
   - '@azure/storage-file-share.FileGetRangeListResponse|beta'
+  - '@azure/storage-file-share.FileLastWrittenMode|beta'
   - '@azure/storage-file-share.FileListHandlesResponse|beta'
   - '@azure/storage-file-share.FilePermissionInheritType|beta'
   - '@azure/storage-file-share.FilePermissionPreserveType|beta'
+  - '@azure/storage-file-share.FileRenameResponse|beta'
   - '@azure/storage-file-share.FileSetHTTPHeadersResponse|beta'
   - '@azure/storage-file-share.FileSetMetadataResponse|beta'
   - '@azure/storage-file-share.FileStartCopyResponse|beta'

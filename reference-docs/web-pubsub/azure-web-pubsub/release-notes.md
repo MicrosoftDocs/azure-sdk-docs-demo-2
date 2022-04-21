@@ -2,7 +2,7 @@
 title: Azure SDK for JavaScript - Web PubSub Release Notes
 description: 
 ms.topic: reference
-ms.date: 02/10/2022
+ms.date: 04/21/2022
 ms.service: web-pubsub
 ms.role: developer
 ms.devlang: javascript
@@ -12,7 +12,7 @@ ROBOTS: NOINDEX
 ---
 # Release History
 
-## 1.0.1 (Unreleased)
+## 1.1.0 (Unreleased)
 
 ### Features Added
 
@@ -21,6 +21,10 @@ ROBOTS: NOINDEX
 ### Bugs Fixed
 
 ### Other Changes
+
+- Updated our `@azure/core-tracing` dependency to the latest version (1.0.0).
+  - Notable changes include Removal of `@opentelemetry/api` as a transitive dependency and ensuring that the active context is properly propagated.
+  - Customers who would like to continue using OpenTelemetry driven tracing should visit our [OpenTelemetry Instrumentation](https://www.npmjs.com/package/@azure/opentelemetry-instrumentation-azure-sdk) package for instructions.
 
 ## 1.0.0 (2021-11-11)
 

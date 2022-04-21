@@ -1,0 +1,76 @@
+### YamlMime:TSType
+name: OciBlobDescriptor
+uid: '@azure/container-registry.OciBlobDescriptor|beta'
+package: '@azure/container-registry|beta'
+summary: Docker V2 image layer descriptor including config and layers.
+fullName: OciBlobDescriptor
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: annotations
+    uid: '@azure/container-registry.OciBlobDescriptor.annotations|beta'
+    package: '@azure/container-registry|beta'
+    summary: Additional information provided through arbitrary metadata.
+    fullName: annotations
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'annotations?: OciAnnotations'
+      return:
+        description: ''
+        type: <xref uid="@azure/container-registry.OciAnnotations|beta" />
+  - name: digest
+    uid: '@azure/container-registry.OciBlobDescriptor.digest|beta'
+    package: '@azure/container-registry|beta'
+    summary: Layer digest
+    fullName: digest
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'digest: string'
+      return:
+        description: ''
+        type: string
+  - name: mediaType
+    uid: '@azure/container-registry.OciBlobDescriptor.mediaType|beta'
+    package: '@azure/container-registry|beta'
+    summary: Layer media type
+    fullName: mediaType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'mediaType: string'
+      return:
+        description: ''
+        type: string
+  - name: size
+    uid: '@azure/container-registry.OciBlobDescriptor.size|beta'
+    package: '@azure/container-registry|beta'
+    summary: Layer size
+    fullName: size
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'size: number'
+      return:
+        description: ''
+        type: number
+  - name: urls
+    uid: '@azure/container-registry.OciBlobDescriptor.urls|beta'
+    package: '@azure/container-registry|beta'
+    summary: Specifies a list of URIs from which this object may be downloaded.
+    fullName: urls
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'urls?: string[]'
+      return:
+        description: ''
+        type: string[]

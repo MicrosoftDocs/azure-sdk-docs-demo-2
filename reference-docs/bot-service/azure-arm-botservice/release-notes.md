@@ -2,7 +2,7 @@
 title: Azure SDK for JavaScript - Bot Service Release Notes
 description: 
 ms.topic: reference
-ms.date: 02/10/2022
+ms.date: 04/21/2022
 ms.service: bot-service
 ms.role: developer
 ms.devlang: javascript
@@ -12,7 +12,7 @@ ROBOTS: NOINDEX
 ---
 # Release History
 
-## 4.0.0-beta.3 (Unreleased)
+## 4.0.0-beta.5 (Unreleased)
 
 ### Features Added
 
@@ -22,9 +22,9 @@ ROBOTS: NOINDEX
 
 ### Other Changes
 
-## 4.0.0-beta.2 (2021-12-27)
+## 4.0.0-beta.4 (2022-04-20)
 
-The package of @azure/arm-botservice is using our next generation design principles since version 4.0.0-beta.2, which contains breaking changes.
+The package of @azure/arm-botservice is using our next generation design principles since version 4.0.0-beta.4, which contains breaking changes.
 
 To understand the detail of the change, please refer to [Changelog](https://aka.ms/js-track2-changelog).
 

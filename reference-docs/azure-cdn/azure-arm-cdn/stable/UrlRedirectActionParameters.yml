@@ -84,24 +84,6 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-cdn.DestinationProtocol|stable" />
-  - name: odataType
-    uid: '@azure/arm-cdn.UrlRedirectActionParameters.odataType|stable'
-    package: '@azure/arm-cdn|stable'
-    summary: ''
-    fullName: odataType
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        odataType:
-        "#Microsoft.Azure.Cdn.Models.DeliveryRuleUrlRedirectActionParameters"
-      return:
-        description: ''
-        type: >-
-          "#<xref
-          uid="Microsoft.Azure.Cdn.Models.DeliveryRuleUrlRedirectActionParameters|stable"
-          />"
   - name: redirectType
     uid: '@azure/arm-cdn.UrlRedirectActionParameters.redirectType|stable'
     package: '@azure/arm-cdn|stable'
@@ -115,3 +97,16 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-cdn.RedirectType|stable" />
+  - name: typeName
+    uid: '@azure/arm-cdn.UrlRedirectActionParameters.typeName|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: ''
+    fullName: typeName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'typeName: "DeliveryRuleUrlRedirectActionParameters"'
+      return:
+        description: ''
+        type: '"DeliveryRuleUrlRedirectActionParameters"'

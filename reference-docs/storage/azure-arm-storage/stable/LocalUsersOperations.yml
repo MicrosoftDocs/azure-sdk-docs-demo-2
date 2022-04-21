@@ -1,0 +1,273 @@
+### YamlMime:TSType
+name: LocalUsersOperations
+uid: '@azure/arm-storage.LocalUsersOperations|stable'
+package: '@azure/arm-storage|stable'
+summary: Interface representing a LocalUsersOperations.
+fullName: LocalUsersOperations
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      createOrUpdate(string, string, string, LocalUser,
+      LocalUsersCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-storage.LocalUsersOperations.createOrUpdate|stable'
+    package: '@azure/arm-storage|stable'
+    summary: >-
+      Create or update the properties of a local user associated with the
+      storage account
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, accountName: string,
+        username: string, properties: LocalUser, options?:
+        LocalUsersCreateOrUpdateOptionalParams):
+        Promise<LocalUsersCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group within the user's subscription. The
+            name is
+                                     case insensitive.
+        - id: accountName
+          type: string
+          description: >-
+            The name of the storage account within the specified resource group.
+            Storage
+                               account names must be between 3 and 24 characters in length and use numbers and lower-case letters
+                               only.
+        - id: username
+          type: string
+          description: >-
+            The name of local user. The username must contain lowercase letters
+            and numbers
+                            only. It must be unique only within the storage account.
+        - id: properties
+          type: <xref uid="@azure/arm-storage.LocalUser|stable" />
+          description: The local user associated with a storage account.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-storage.LocalUsersCreateOrUpdateOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-storage.LocalUsersCreateOrUpdateResponse|stable"
+          />&gt;
+  - name: delete(string, string, string, LocalUsersDeleteOptionalParams)
+    uid: '@azure/arm-storage.LocalUsersOperations.delete|stable'
+    package: '@azure/arm-storage|stable'
+    summary: Deletes the local user associated with the specified storage account.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function delete(resourceGroupName: string, accountName: string,
+        username: string, options?: LocalUsersDeleteOptionalParams):
+        Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group within the user's subscription. The
+            name is
+                                     case insensitive.
+        - id: accountName
+          type: string
+          description: >-
+            The name of the storage account within the specified resource group.
+            Storage
+                               account names must be between 3 and 24 characters in length and use numbers and lower-case letters
+                               only.
+        - id: username
+          type: string
+          description: >-
+            The name of local user. The username must contain lowercase letters
+            and numbers
+                            only. It must be unique only within the storage account.
+        - id: options
+          type: >-
+            <xref uid="@azure/arm-storage.LocalUsersDeleteOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: get(string, string, string, LocalUsersGetOptionalParams)
+    uid: '@azure/arm-storage.LocalUsersOperations.get|stable'
+    package: '@azure/arm-storage|stable'
+    summary: Get the local user of the storage account by username.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, accountName: string, username:
+        string, options?: LocalUsersGetOptionalParams):
+        Promise<LocalUsersGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group within the user's subscription. The
+            name is
+                                     case insensitive.
+        - id: accountName
+          type: string
+          description: >-
+            The name of the storage account within the specified resource group.
+            Storage
+                               account names must be between 3 and 24 characters in length and use numbers and lower-case letters
+                               only.
+        - id: username
+          type: string
+          description: >-
+            The name of local user. The username must contain lowercase letters
+            and numbers
+                            only. It must be unique only within the storage account.
+        - id: options
+          type: <xref uid="@azure/arm-storage.LocalUsersGetOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref uid="@azure/arm-storage.LocalUsersGetResponse|stable"
+          />&gt;
+  - name: list(string, string, LocalUsersListOptionalParams)
+    uid: '@azure/arm-storage.LocalUsersOperations.list|stable'
+    package: '@azure/arm-storage|stable'
+    summary: List the local users associated with the storage account.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, accountName: string, options?:
+        LocalUsersListOptionalParams): PagedAsyncIterableIterator<LocalUser>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group within the user's subscription. The
+            name is
+                                     case insensitive.
+        - id: accountName
+          type: string
+          description: >-
+            The name of the storage account within the specified resource group.
+            Storage
+                               account names must be between 3 and 24 characters in length and use numbers and lower-case letters
+                               only.
+        - id: options
+          type: >-
+            <xref uid="@azure/arm-storage.LocalUsersListOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-storage.LocalUser|stable" />&gt;
+  - name: listKeys(string, string, string, LocalUsersListKeysOptionalParams)
+    uid: '@azure/arm-storage.LocalUsersOperations.listKeys|stable'
+    package: '@azure/arm-storage|stable'
+    summary: List SSH authorized keys and shared key of the local user.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listKeys(resourceGroupName: string, accountName: string,
+        username: string, options?: LocalUsersListKeysOptionalParams):
+        Promise<LocalUsersListKeysResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group within the user's subscription. The
+            name is
+                                     case insensitive.
+        - id: accountName
+          type: string
+          description: >-
+            The name of the storage account within the specified resource group.
+            Storage
+                               account names must be between 3 and 24 characters in length and use numbers and lower-case letters
+                               only.
+        - id: username
+          type: string
+          description: >-
+            The name of local user. The username must contain lowercase letters
+            and numbers
+                            only. It must be unique only within the storage account.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-storage.LocalUsersListKeysOptionalParams|stable" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-storage.LocalUsersListKeysResponse|stable" />&gt;
+  - name: >-
+      regeneratePassword(string, string, string,
+      LocalUsersRegeneratePasswordOptionalParams)
+    uid: '@azure/arm-storage.LocalUsersOperations.regeneratePassword|stable'
+    package: '@azure/arm-storage|stable'
+    summary: Regenerate the local user SSH password.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function regeneratePassword(resourceGroupName: string, accountName:
+        string, username: string, options?:
+        LocalUsersRegeneratePasswordOptionalParams):
+        Promise<LocalUsersRegeneratePasswordResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: >-
+            The name of the resource group within the user's subscription. The
+            name is
+                                     case insensitive.
+        - id: accountName
+          type: string
+          description: >-
+            The name of the storage account within the specified resource group.
+            Storage
+                               account names must be between 3 and 24 characters in length and use numbers and lower-case letters
+                               only.
+        - id: username
+          type: string
+          description: >-
+            The name of local user. The username must contain lowercase letters
+            and numbers
+                            only. It must be unique only within the storage account.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-storage.LocalUsersRegeneratePasswordOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-storage.LocalUsersRegeneratePasswordResponse|stable"
+          />&gt;

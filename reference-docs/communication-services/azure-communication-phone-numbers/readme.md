@@ -2,7 +2,7 @@
 title: Azure SDK for JavaScript - Communication Services User Guide
 description: 
 ms.topic: reference
-ms.date: 02/10/2022
+ms.date: 04/21/2022
 ms.service: communication-services
 ms.role: developer
 ms.devlang: javascript
@@ -21,7 +21,7 @@ Purchased phone numbers can come with many capabilities, depending on the countr
 ### Prerequisites
 
 - An [Azure subscription][azure_sub].
-- An existing Communication Services resource. If you need to create the resource, you can use the [Azure Portal][azure_portal], the[Azure PowerShell][azure_powershell], or the [Azure CLI][azure_cli].
+- An existing Communication Services resource. If you need to create the resource, you can use the [Azure Portal][azure_portal], the [Azure PowerShell][azure_powershell], or the [Azure CLI][azure_cli].
 
 ### Installing
 

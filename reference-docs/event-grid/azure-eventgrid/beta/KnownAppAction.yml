@@ -1,0 +1,36 @@
+### YamlMime:TSEnum
+name: KnownAppAction
+uid: '@azure/eventgrid.KnownAppAction|beta'
+package: '@azure/eventgrid|beta'
+summary: >-
+  Known values of <xref:@azure/eventgrid.KnownAppAction|beta> that the service
+  accepts.
+fullName: KnownAppAction
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: ChangedAppSettings
+    uid: '@azure/eventgrid.KnownAppAction.ChangedAppSettings|beta'
+    package: '@azure/eventgrid|beta'
+    summary: There was an operation to change app setting on the web app.
+  - name: Completed
+    uid: '@azure/eventgrid.KnownAppAction.Completed|beta'
+    package: '@azure/eventgrid|beta'
+    summary: The job has completed.
+  - name: Failed
+    uid: '@azure/eventgrid.KnownAppAction.Failed|beta'
+    package: '@azure/eventgrid|beta'
+    summary: The job has failed to complete.
+  - name: Restarted
+    uid: '@azure/eventgrid.KnownAppAction.Restarted|beta'
+    package: '@azure/eventgrid|beta'
+    summary: Web app was restarted.
+  - name: Started
+    uid: '@azure/eventgrid.KnownAppAction.Started|beta'
+    package: '@azure/eventgrid|beta'
+    summary: The job has started.
+  - name: Stopped
+    uid: '@azure/eventgrid.KnownAppAction.Stopped|beta'
+    package: '@azure/eventgrid|beta'
+    summary: Web app was stopped.

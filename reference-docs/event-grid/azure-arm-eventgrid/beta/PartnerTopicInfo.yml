@@ -1,0 +1,95 @@
+### YamlMime:TSType
+name: PartnerTopicInfo
+uid: '@azure/arm-eventgrid.PartnerTopicInfo|beta'
+package: '@azure/arm-eventgrid|beta'
+summary: Properties of the corresponding partner topic of a Channel.
+fullName: PartnerTopicInfo
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: azureSubscriptionId
+    uid: '@azure/arm-eventgrid.PartnerTopicInfo.azureSubscriptionId|beta'
+    package: '@azure/arm-eventgrid|beta'
+    summary: >-
+      Azure subscription ID of the subscriber. The partner topic associated with
+      the channel will be
+
+      created under this Azure subscription.
+    fullName: azureSubscriptionId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'azureSubscriptionId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: eventTypeInfo
+    uid: '@azure/arm-eventgrid.PartnerTopicInfo.eventTypeInfo|beta'
+    package: '@azure/arm-eventgrid|beta'
+    summary: >-
+      Event Type Information for the partner topic. This information is provided
+      by the publisher and can be used by the
+
+      subscriber to view different types of events that are published.
+    fullName: eventTypeInfo
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'eventTypeInfo?: EventTypeInfo'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-eventgrid.EventTypeInfo|beta" />
+  - name: name
+    uid: '@azure/arm-eventgrid.PartnerTopicInfo.name|beta'
+    package: '@azure/arm-eventgrid|beta'
+    summary: Name of the partner topic associated with the channel.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: resourceGroupName
+    uid: '@azure/arm-eventgrid.PartnerTopicInfo.resourceGroupName|beta'
+    package: '@azure/arm-eventgrid|beta'
+    summary: >-
+      Azure Resource Group of the subscriber. The partner topic associated with
+      the channel will be
+
+      created under this resource group.
+    fullName: resourceGroupName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'resourceGroupName?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: source
+    uid: '@azure/arm-eventgrid.PartnerTopicInfo.source|beta'
+    package: '@azure/arm-eventgrid|beta'
+    summary: >-
+      The source information is provided by the publisher to determine the scope
+      or context from which the events
+
+      are originating. This information can be used by the subscriber during the
+      approval process of the
+
+      created partner topic.
+    fullName: source
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'source?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

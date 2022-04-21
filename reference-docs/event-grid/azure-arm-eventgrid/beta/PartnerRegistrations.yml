@@ -1,0 +1,315 @@
+### YamlMime:TSType
+name: PartnerRegistrations
+uid: '@azure/arm-eventgrid.PartnerRegistrations|beta'
+package: '@azure/arm-eventgrid|beta'
+summary: Interface representing a PartnerRegistrations.
+fullName: PartnerRegistrations
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      beginCreateOrUpdate(string, string, PartnerRegistration,
+      PartnerRegistrationsCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-eventgrid.PartnerRegistrations.beginCreateOrUpdate|beta'
+    package: '@azure/arm-eventgrid|beta'
+    summary: Creates a new partner registration with the specified parameters.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string,
+        partnerRegistrationName: string, partnerRegistrationInfo:
+        PartnerRegistration, options?:
+        PartnerRegistrationsCreateOrUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<PartnerRegistrationsCreateOrUpdateResponse>,
+        PartnerRegistrationsCreateOrUpdateResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: partnerRegistrationName
+          type: string
+          description: Name of the partner registration.
+        - id: partnerRegistrationInfo
+          type: <xref uid="@azure/arm-eventgrid.PartnerRegistration|beta" />
+          description: PartnerRegistration information.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.PartnerRegistrationsCreateOrUpdateOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-eventgrid.PartnerRegistrationsCreateOrUpdateResponse|beta"
+          />&gt;, <xref
+          uid="@azure/arm-eventgrid.PartnerRegistrationsCreateOrUpdateResponse|beta"
+          />&gt;&gt;
+  - name: >-
+      beginCreateOrUpdateAndWait(string, string, PartnerRegistration,
+      PartnerRegistrationsCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-eventgrid.PartnerRegistrations.beginCreateOrUpdateAndWait|beta'
+    package: '@azure/arm-eventgrid|beta'
+    summary: Creates a new partner registration with the specified parameters.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdateAndWait(resourceGroupName: string,
+        partnerRegistrationName: string, partnerRegistrationInfo:
+        PartnerRegistration, options?:
+        PartnerRegistrationsCreateOrUpdateOptionalParams):
+        Promise<PartnerRegistrationsCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: partnerRegistrationName
+          type: string
+          description: Name of the partner registration.
+        - id: partnerRegistrationInfo
+          type: <xref uid="@azure/arm-eventgrid.PartnerRegistration|beta" />
+          description: PartnerRegistration information.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.PartnerRegistrationsCreateOrUpdateOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventgrid.PartnerRegistrationsCreateOrUpdateResponse|beta"
+          />&gt;
+  - name: beginDelete(string, string, PartnerRegistrationsDeleteOptionalParams)
+    uid: '@azure/arm-eventgrid.PartnerRegistrations.beginDelete|beta'
+    package: '@azure/arm-eventgrid|beta'
+    summary: Deletes a partner registration with the specified parameters.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDelete(resourceGroupName: string, partnerRegistrationName:
+        string, options?: PartnerRegistrationsDeleteOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: partnerRegistrationName
+          type: string
+          description: Name of the partner registration.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.PartnerRegistrationsDeleteOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: >-
+      beginDeleteAndWait(string, string,
+      PartnerRegistrationsDeleteOptionalParams)
+    uid: '@azure/arm-eventgrid.PartnerRegistrations.beginDeleteAndWait|beta'
+    package: '@azure/arm-eventgrid|beta'
+    summary: Deletes a partner registration with the specified parameters.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteAndWait(resourceGroupName: string,
+        partnerRegistrationName: string, options?:
+        PartnerRegistrationsDeleteOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: partnerRegistrationName
+          type: string
+          description: Name of the partner registration.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.PartnerRegistrationsDeleteOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      beginUpdate(string, string, PartnerRegistrationUpdateParameters,
+      PartnerRegistrationsUpdateOptionalParams)
+    uid: '@azure/arm-eventgrid.PartnerRegistrations.beginUpdate|beta'
+    package: '@azure/arm-eventgrid|beta'
+    summary: Updates a partner registration with the specified parameters.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginUpdate(resourceGroupName: string, partnerRegistrationName:
+        string, partnerRegistrationUpdateParameters:
+        PartnerRegistrationUpdateParameters, options?:
+        PartnerRegistrationsUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: partnerRegistrationName
+          type: string
+          description: Name of the partner registration.
+        - id: partnerRegistrationUpdateParameters
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.PartnerRegistrationUpdateParameters|beta"
+            />
+          description: Partner registration update information.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.PartnerRegistrationsUpdateOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: >-
+      beginUpdateAndWait(string, string, PartnerRegistrationUpdateParameters,
+      PartnerRegistrationsUpdateOptionalParams)
+    uid: '@azure/arm-eventgrid.PartnerRegistrations.beginUpdateAndWait|beta'
+    package: '@azure/arm-eventgrid|beta'
+    summary: Updates a partner registration with the specified parameters.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginUpdateAndWait(resourceGroupName: string,
+        partnerRegistrationName: string, partnerRegistrationUpdateParameters:
+        PartnerRegistrationUpdateParameters, options?:
+        PartnerRegistrationsUpdateOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: partnerRegistrationName
+          type: string
+          description: Name of the partner registration.
+        - id: partnerRegistrationUpdateParameters
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.PartnerRegistrationUpdateParameters|beta"
+            />
+          description: Partner registration update information.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.PartnerRegistrationsUpdateOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: get(string, string, PartnerRegistrationsGetOptionalParams)
+    uid: '@azure/arm-eventgrid.PartnerRegistrations.get|beta'
+    package: '@azure/arm-eventgrid|beta'
+    summary: Gets a partner registration with the specified parameters.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, partnerRegistrationName: string,
+        options?: PartnerRegistrationsGetOptionalParams):
+        Promise<PartnerRegistrationsGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: partnerRegistrationName
+          type: string
+          description: Name of the partner registration.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.PartnerRegistrationsGetOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventgrid.PartnerRegistrationsGetResponse|beta" />&gt;
+  - name: >-
+      listByResourceGroup(string,
+      PartnerRegistrationsListByResourceGroupOptionalParams)
+    uid: '@azure/arm-eventgrid.PartnerRegistrations.listByResourceGroup|beta'
+    package: '@azure/arm-eventgrid|beta'
+    summary: List all the partner registrations under a resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string, options?:
+        PartnerRegistrationsListByResourceGroupOptionalParams):
+        PagedAsyncIterableIterator<PartnerRegistration>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.PartnerRegistrationsListByResourceGroupOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-eventgrid.PartnerRegistration|beta" />&gt;
+  - name: listBySubscription(PartnerRegistrationsListBySubscriptionOptionalParams)
+    uid: '@azure/arm-eventgrid.PartnerRegistrations.listBySubscription|beta'
+    package: '@azure/arm-eventgrid|beta'
+    summary: List all the partner registrations under an Azure subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listBySubscription(options?:
+        PartnerRegistrationsListBySubscriptionOptionalParams):
+        PagedAsyncIterableIterator<PartnerRegistration>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.PartnerRegistrationsListBySubscriptionOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-eventgrid.PartnerRegistration|beta" />&gt;

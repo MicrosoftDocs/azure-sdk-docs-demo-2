@@ -1,0 +1,140 @@
+### YamlMime:TSType
+name: CorrelationRuleFilter
+uid: '@azure/service-bus.CorrelationRuleFilter|beta'
+package: '@azure/service-bus|beta'
+summary: >-
+  Represents the correlation filter expression.
+
+  A CorrelationRuleFilter holds a set of conditions that are matched against
+  user and system properties
+
+  of incoming messages from a Subscription.
+fullName: CorrelationRuleFilter
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: applicationProperties
+    uid: '@azure/service-bus.CorrelationRuleFilter.applicationProperties|beta'
+    package: '@azure/service-bus|beta'
+    summary: Value to be matched with the user properties of the incoming message.
+    fullName: applicationProperties
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'applicationProperties?: [key: string]: function'
+      return:
+        description: ''
+        type: '[key: string]\: function'
+  - name: contentType
+    uid: '@azure/service-bus.CorrelationRuleFilter.contentType|beta'
+    package: '@azure/service-bus|beta'
+    summary: >-
+      Value to be matched with the `contentType` property of the incoming
+      message.
+    fullName: contentType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'contentType?: string'
+      return:
+        description: ''
+        type: string
+  - name: correlationId
+    uid: '@azure/service-bus.CorrelationRuleFilter.correlationId|beta'
+    package: '@azure/service-bus|beta'
+    summary: >-
+      Value to be matched with the `correlationId` property of the incoming
+      message.
+    fullName: correlationId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'correlationId?: string'
+      return:
+        description: ''
+        type: string
+  - name: messageId
+    uid: '@azure/service-bus.CorrelationRuleFilter.messageId|beta'
+    package: '@azure/service-bus|beta'
+    summary: Value to be matched with the `messageId` property of the incoming message.
+    fullName: messageId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'messageId?: string'
+      return:
+        description: ''
+        type: string
+  - name: replyTo
+    uid: '@azure/service-bus.CorrelationRuleFilter.replyTo|beta'
+    package: '@azure/service-bus|beta'
+    summary: Value to be matched with the `replyTo` property of the incoming message.
+    fullName: replyTo
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'replyTo?: string'
+      return:
+        description: ''
+        type: string
+  - name: replyToSessionId
+    uid: '@azure/service-bus.CorrelationRuleFilter.replyToSessionId|beta'
+    package: '@azure/service-bus|beta'
+    summary: >-
+      Value to be matched with the `replyToSessionId` property of the incoming
+      message.
+    fullName: replyToSessionId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'replyToSessionId?: string'
+      return:
+        description: ''
+        type: string
+  - name: sessionId
+    uid: '@azure/service-bus.CorrelationRuleFilter.sessionId|beta'
+    package: '@azure/service-bus|beta'
+    summary: Value to be matched with the `sessionId` property of the incoming message.
+    fullName: sessionId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sessionId?: string'
+      return:
+        description: ''
+        type: string
+  - name: subject
+    uid: '@azure/service-bus.CorrelationRuleFilter.subject|beta'
+    package: '@azure/service-bus|beta'
+    summary: Value to be matched with the `subject` property of the incoming message.
+    fullName: subject
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'subject?: string'
+      return:
+        description: ''
+        type: string
+  - name: to
+    uid: '@azure/service-bus.CorrelationRuleFilter.to|beta'
+    package: '@azure/service-bus|beta'
+    summary: Value to be matched with the `to` property of the incoming message.
+    fullName: to
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'to?: string'
+      return:
+        description: ''
+        type: string

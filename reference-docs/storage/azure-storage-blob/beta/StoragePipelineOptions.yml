@@ -11,6 +11,19 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
+  - name: audience
+    uid: '@azure/storage-blob.StoragePipelineOptions.audience|beta'
+    package: '@azure/storage-blob|beta'
+    summary: The audience used to retrieve an AAD token.
+    fullName: audience
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'audience?: string | string[]'
+      return:
+        description: ''
+        type: string | string[]
   - name: httpClient
     uid: '@azure/storage-blob.StoragePipelineOptions.httpClient|beta'
     package: '@azure/storage-blob|beta'

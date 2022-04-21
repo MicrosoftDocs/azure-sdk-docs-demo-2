@@ -2,7 +2,7 @@
 title: Azure SDK for JavaScript - Cognitive Services User Guide
 description: 
 ms.topic: reference
-ms.date: 02/10/2022
+ms.date: 04/21/2022
 ms.service: cognitive-services
 ms.role: developer
 ms.devlang: javascript
@@ -522,7 +522,7 @@ main();
 Enabling logging may help uncover useful information about failures. In order to see a log of HTTP requests and responses, set the `AZURE_LOG_LEVEL` environment variable to `info`. Alternatively, logging can be enabled at runtime by calling `setLogLevel` in the `@azure/logger`:
 
 ```javascript
-import { setLogLevel } from "@azure/logger";
+const { logger } = require("@azure/logger");
 
 setLogLevel("info");
 ```

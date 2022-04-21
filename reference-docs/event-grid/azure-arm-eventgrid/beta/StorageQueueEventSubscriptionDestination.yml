@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: StorageQueueEventSubscriptionDestination
+uid: '@azure/arm-eventgrid.StorageQueueEventSubscriptionDestination|beta'
+package: '@azure/arm-eventgrid|beta'
+summary: Information about the storage queue destination for an event subscription.
+fullName: StorageQueueEventSubscriptionDestination
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type StorageQueueEventSubscriptionDestination = EventSubscriptionDestination &
+  { endpointType: "StorageQueue", queueMessageTimeToLiveInSeconds?: undefined |
+  number, queueName?: undefined | string, resourceId?: undefined | string }

@@ -2,7 +2,7 @@
 title: Azure SDK for JavaScript - App Configuration packages
 description: 
 ms.topic: reference
-ms.date: 02/10/2022
+ms.date: 04/21/2022
 ms.service: azure-app-configuration
 ms.role: developer
 ms.devlang: javascript
@@ -24,7 +24,7 @@ ms.author: daberry
 
 | Name                  | Package              | Version          | Reference Docs         | Package Manager                |
 |-----------------------|----------------------|------------------|------------------------|--------------------------------|
-| App Configuration - Resource Management | @azure/arm-appconfiguration | 3.0.0-beta.1 | [docs](/azure/javascript/sdk/sdk-demo2/app-configuration/azure-arm-appconfiguration/beta)  | npm [3.0.0-beta.1](https://www.npmjs.com/package/%40azure%2Farm-appconfiguration%403.0.0-beta.1) |
+| App Configuration - Resource Management | @azure/arm-appconfiguration | 3.0.0-beta.4 | [docs](/azure/javascript/sdk/sdk-demo2/app-configuration/azure-arm-appconfiguration/beta)  | npm [3.0.0-beta.4](https://www.npmjs.com/package/%40azure%2Farm-appconfiguration%403.0.0-beta.4) |
  
 
 

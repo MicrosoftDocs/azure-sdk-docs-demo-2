@@ -340,6 +340,37 @@ methods:
           Promise&lt;<xref
           uid="@azure/arm-cognitiveservices.AccountsListKeysResponse|stable"
           />&gt;
+  - name: listModels(string, string, AccountsListModelsOptionalParams)
+    uid: '@azure/arm-cognitiveservices.Accounts.listModels|stable'
+    package: '@azure/arm-cognitiveservices|stable'
+    summary: List available Models for the requested Cognitive Services account
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listModels(resourceGroupName: string, accountName: string,
+        options?: AccountsListModelsOptionalParams):
+        PagedAsyncIterableIterator<AccountModel>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: accountName
+          type: string
+          description: The name of Cognitive Services account.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-cognitiveservices.AccountsListModelsOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-cognitiveservices.AccountModel|stable" />&gt;
   - name: listSkus(string, string, AccountsListSkusOptionalParams)
     uid: '@azure/arm-cognitiveservices.Accounts.listSkus|stable'
     package: '@azure/arm-cognitiveservices|stable'

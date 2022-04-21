@@ -1,0 +1,43 @@
+### YamlMime:TSType
+name: ActiveDirectoryObject
+uid: '@azure/arm-containerregistry.ActiveDirectoryObject|beta'
+package: '@azure/arm-containerregistry|beta'
+summary: >-
+  The Active Directory Object that will be used for authenticating the token of
+  a container registry.
+fullName: ActiveDirectoryObject
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: objectId
+    uid: '@azure/arm-containerregistry.ActiveDirectoryObject.objectId|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: >-
+      The user/group/application object ID for Active Directory Object that will
+      be used for authenticating the token of a container registry.
+    fullName: objectId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'objectId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: tenantId
+    uid: '@azure/arm-containerregistry.ActiveDirectoryObject.tenantId|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: >-
+      The tenant ID of user/group/application object Active Directory Object
+      that will be used for authenticating the token of a container registry.
+    fullName: tenantId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tenantId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

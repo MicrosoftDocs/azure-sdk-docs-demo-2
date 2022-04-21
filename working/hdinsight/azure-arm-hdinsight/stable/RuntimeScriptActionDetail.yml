@@ -1,0 +1,15 @@
+### YamlMime:TSTypeAlias
+name: RuntimeScriptActionDetail
+uid: '@azure/arm-hdinsight.RuntimeScriptActionDetail'
+package: '@azure/arm-hdinsight'
+summary: The execution details of a script action.
+fullName: RuntimeScriptActionDetail
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type RuntimeScriptActionDetail = RuntimeScriptAction & { debugInformation?:
+  undefined | string, endTime?: undefined | string, executionSummary?:
+  ScriptActionExecutionSummary[], operation?: undefined | string,
+  scriptExecutionId?: undefined | number, startTime?: undefined | string,
+  status?: undefined | string }

@@ -1,0 +1,150 @@
+### YamlMime:TSType
+name: PipelineRunResponse
+uid: '@azure/arm-containerregistry.PipelineRunResponse|beta'
+package: '@azure/arm-containerregistry|beta'
+summary: The response properties returned for a pipeline run.
+fullName: PipelineRunResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: catalogDigest
+    uid: '@azure/arm-containerregistry.PipelineRunResponse.catalogDigest|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: The digest of the tar used to transfer the artifacts.
+    fullName: catalogDigest
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'catalogDigest?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: finishTime
+    uid: '@azure/arm-containerregistry.PipelineRunResponse.finishTime|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: The time the pipeline run finished.
+    fullName: finishTime
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'finishTime?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: importedArtifacts
+    uid: '@azure/arm-containerregistry.PipelineRunResponse.importedArtifacts|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: The artifacts imported in the pipeline run.
+    fullName: importedArtifacts
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'importedArtifacts?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: pipelineRunErrorMessage
+    uid: >-
+      @azure/arm-containerregistry.PipelineRunResponse.pipelineRunErrorMessage|beta
+    package: '@azure/arm-containerregistry|beta'
+    summary: The detailed error message for the pipeline run in the case of failure.
+    fullName: pipelineRunErrorMessage
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'pipelineRunErrorMessage?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: progress
+    uid: '@azure/arm-containerregistry.PipelineRunResponse.progress|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: The current progress of the copy operation.
+    fullName: progress
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'progress?: ProgressProperties'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-containerregistry.ProgressProperties|beta" />
+  - name: source
+    uid: '@azure/arm-containerregistry.PipelineRunResponse.source|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: The source of the pipeline run.
+    fullName: source
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'source?: ImportPipelineSourceProperties'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-containerregistry.ImportPipelineSourceProperties|beta"
+          />
+  - name: startTime
+    uid: '@azure/arm-containerregistry.PipelineRunResponse.startTime|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: The time the pipeline run started.
+    fullName: startTime
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'startTime?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: status
+    uid: '@azure/arm-containerregistry.PipelineRunResponse.status|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: The current status of the pipeline run.
+    fullName: status
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'status?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: target
+    uid: '@azure/arm-containerregistry.PipelineRunResponse.target|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: The target of the pipeline run.
+    fullName: target
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'target?: ExportPipelineTargetProperties'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-containerregistry.ExportPipelineTargetProperties|beta"
+          />
+  - name: trigger
+    uid: '@azure/arm-containerregistry.PipelineRunResponse.trigger|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: The trigger that caused the pipeline run.
+    fullName: trigger
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'trigger?: PipelineTriggerDescriptor'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-containerregistry.PipelineTriggerDescriptor|beta" />

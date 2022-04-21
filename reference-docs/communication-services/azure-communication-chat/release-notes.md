@@ -2,7 +2,7 @@
 title: Azure SDK for JavaScript - Communication Services Release Notes
 description: 
 ms.topic: reference
-ms.date: 02/10/2022
+ms.date: 04/21/2022
 ms.service: communication-services
 ms.role: developer
 ms.devlang: javascript
@@ -11,6 +11,23 @@ ms.author: daberry
 ROBOTS: NOINDEX
 ---
 # Release History
+
+## 1.2.1 (Unreleased)
+
+### Features Added
+
+### Breaking Changes
+
+### Bugs Fixed
+
+### Other Changes
+
+## 1.2.0 (2022-04-05)
+
+### Features Added
+
+- Updated to @azure/communication-signaling@1.0.0-beta.13.
+- Updated to @azure/communication-common@2.0.0.
 
 ## 1.1.2 (2022-02-08)
 

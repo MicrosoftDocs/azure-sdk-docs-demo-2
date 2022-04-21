@@ -1,0 +1,273 @@
+### YamlMime:TSType
+name: PartnerDestinations
+uid: '@azure/arm-eventgrid.PartnerDestinations|beta'
+package: '@azure/arm-eventgrid|beta'
+summary: Interface representing a PartnerDestinations.
+fullName: PartnerDestinations
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: activate(string, string, PartnerDestinationsActivateOptionalParams)
+    uid: '@azure/arm-eventgrid.PartnerDestinations.activate|beta'
+    package: '@azure/arm-eventgrid|beta'
+    summary: Activate a newly created partner destination.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function activate(resourceGroupName: string, partnerDestinationName:
+        string, options?: PartnerDestinationsActivateOptionalParams):
+        Promise<PartnerDestinationsActivateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: partnerDestinationName
+          type: string
+          description: Name of the partner destination.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.PartnerDestinationsActivateOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventgrid.PartnerDestinationsActivateResponse|beta"
+          />&gt;
+  - name: beginDelete(string, string, PartnerDestinationsDeleteOptionalParams)
+    uid: '@azure/arm-eventgrid.PartnerDestinations.beginDelete|beta'
+    package: '@azure/arm-eventgrid|beta'
+    summary: Delete existing partner destination.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDelete(resourceGroupName: string, partnerDestinationName:
+        string, options?: PartnerDestinationsDeleteOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: partnerDestinationName
+          type: string
+          description: Name of the partner destination.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.PartnerDestinationsDeleteOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: >-
+      beginDeleteAndWait(string, string,
+      PartnerDestinationsDeleteOptionalParams)
+    uid: '@azure/arm-eventgrid.PartnerDestinations.beginDeleteAndWait|beta'
+    package: '@azure/arm-eventgrid|beta'
+    summary: Delete existing partner destination.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteAndWait(resourceGroupName: string,
+        partnerDestinationName: string, options?:
+        PartnerDestinationsDeleteOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: partnerDestinationName
+          type: string
+          description: Name of the partner destination.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.PartnerDestinationsDeleteOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      createOrUpdate(string, string, PartnerDestination,
+      PartnerDestinationsCreateOrUpdateOptionalParams)
+    uid: '@azure/arm-eventgrid.PartnerDestinations.createOrUpdate|beta'
+    package: '@azure/arm-eventgrid|beta'
+    summary: >-
+      Asynchronously creates a new partner destination with the specified
+      parameters.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string,
+        partnerDestinationName: string, partnerDestination: PartnerDestination,
+        options?: PartnerDestinationsCreateOrUpdateOptionalParams):
+        Promise<PartnerDestinationsCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: partnerDestinationName
+          type: string
+          description: Name of the partner destination.
+        - id: partnerDestination
+          type: <xref uid="@azure/arm-eventgrid.PartnerDestination|beta" />
+          description: Partner destination create information.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.PartnerDestinationsCreateOrUpdateOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventgrid.PartnerDestinationsCreateOrUpdateResponse|beta"
+          />&gt;
+  - name: get(string, string, PartnerDestinationsGetOptionalParams)
+    uid: '@azure/arm-eventgrid.PartnerDestinations.get|beta'
+    package: '@azure/arm-eventgrid|beta'
+    summary: Get properties of a partner destination.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, partnerDestinationName: string,
+        options?: PartnerDestinationsGetOptionalParams):
+        Promise<PartnerDestinationsGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: partnerDestinationName
+          type: string
+          description: Name of the partner destination.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.PartnerDestinationsGetOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventgrid.PartnerDestinationsGetResponse|beta" />&gt;
+  - name: >-
+      listByResourceGroup(string,
+      PartnerDestinationsListByResourceGroupOptionalParams)
+    uid: '@azure/arm-eventgrid.PartnerDestinations.listByResourceGroup|beta'
+    package: '@azure/arm-eventgrid|beta'
+    summary: List all the partner destinations under a resource group.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string, options?:
+        PartnerDestinationsListByResourceGroupOptionalParams):
+        PagedAsyncIterableIterator<PartnerDestination>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.PartnerDestinationsListByResourceGroupOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-eventgrid.PartnerDestination|beta" />&gt;
+  - name: listBySubscription(PartnerDestinationsListBySubscriptionOptionalParams)
+    uid: '@azure/arm-eventgrid.PartnerDestinations.listBySubscription|beta'
+    package: '@azure/arm-eventgrid|beta'
+    summary: List all the partner destinations under an Azure subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listBySubscription(options?:
+        PartnerDestinationsListBySubscriptionOptionalParams):
+        PagedAsyncIterableIterator<PartnerDestination>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.PartnerDestinationsListBySubscriptionOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-eventgrid.PartnerDestination|beta" />&gt;
+  - name: >-
+      update(string, string, PartnerDestinationUpdateParameters,
+      PartnerDestinationsUpdateOptionalParams)
+    uid: '@azure/arm-eventgrid.PartnerDestinations.update|beta'
+    package: '@azure/arm-eventgrid|beta'
+    summary: >-
+      Asynchronously updates a partner destination with the specified
+      parameters.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function update(resourceGroupName: string, partnerDestinationName:
+        string, partnerDestinationUpdateParameters:
+        PartnerDestinationUpdateParameters, options?:
+        PartnerDestinationsUpdateOptionalParams):
+        Promise<PartnerDestinationsUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: partnerDestinationName
+          type: string
+          description: Name of the partner destination.
+        - id: partnerDestinationUpdateParameters
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.PartnerDestinationUpdateParameters|beta"
+            />
+          description: Partner destination update information.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.PartnerDestinationsUpdateOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventgrid.PartnerDestinationsUpdateResponse|beta"
+          />&gt;

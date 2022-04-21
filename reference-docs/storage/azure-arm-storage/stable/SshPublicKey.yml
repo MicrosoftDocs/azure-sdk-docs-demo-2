@@ -1,0 +1,39 @@
+### YamlMime:TSType
+name: SshPublicKey
+uid: '@azure/arm-storage.SshPublicKey|stable'
+package: '@azure/arm-storage|stable'
+summary: ''
+fullName: SshPublicKey
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: description
+    uid: '@azure/arm-storage.SshPublicKey.description|stable'
+    package: '@azure/arm-storage|stable'
+    summary: Optional. It is used to store the function/usage of the key
+    fullName: description
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'description?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: key
+    uid: '@azure/arm-storage.SshPublicKey.key|stable'
+    package: '@azure/arm-storage|stable'
+    summary: >-
+      Ssh public key base64 encoded. The format should be: '<keyType>
+      <keyData>', e.g. ssh-rsa AAAABBBB
+    fullName: key
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'key?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

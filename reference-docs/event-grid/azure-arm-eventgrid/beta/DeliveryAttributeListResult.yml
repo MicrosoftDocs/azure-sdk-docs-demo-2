@@ -1,0 +1,26 @@
+### YamlMime:TSType
+name: DeliveryAttributeListResult
+uid: '@azure/arm-eventgrid.DeliveryAttributeListResult|beta'
+package: '@azure/arm-eventgrid|beta'
+summary: Result of the Get delivery attributes operation.
+fullName: DeliveryAttributeListResult
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: value
+    uid: '@azure/arm-eventgrid.DeliveryAttributeListResult.value|beta'
+    package: '@azure/arm-eventgrid|beta'
+    summary: A collection of DeliveryAttributeMapping
+    fullName: value
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: DeliveryAttributeMappingUnion[]'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/arm-eventgrid.DeliveryAttributeMappingUnion|beta"
+          />[]

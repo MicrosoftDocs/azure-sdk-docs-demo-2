@@ -2,7 +2,7 @@
 title: Azure SDK for JavaScript - Storage Release Notes
 description: 
 ms.topic: reference
-ms.date: 02/10/2022
+ms.date: 04/21/2022
 ms.service: storage
 ms.role: developer
 ms.devlang: javascript
@@ -12,17 +12,49 @@ ROBOTS: NOINDEX
 ---
 # Release History
 
-## 12.9.0-beta.3 (Unreleased)
+## 12.10.0-beta.1 (2022-04-19)
 
 ### Features Added
 
-### Breaking Changes
+- Added support for service version 2021-06-08.
+- Added pageable output of PageBlobClient.listPageRanges() and PageBlobClient.listPageRangesDiff().
+- Added ability to copy source blob tags for BlobClient.syncCopyFromURL().
+
+### Bugs Fixed
+
+- Fix incorrect browser mapping path for BufferScheduler.js
+- Add `react-native` mapping to ESM entrypoint
+
+## 12.9.0 (2022-03-11)
+
+### Features Added
+
+- Includes all features released in 12.9.0-beta.1, 12.9.0-beta.2, 12.9.0-beta.3 and 12.9.0-beta.4.
+
+### Bugs Fixed
+
+- Fixed an issue of always sending x-ms-encryption-algorithm header in request.
+
+## 12.9.0-beta.4 (2022-03-04)
+
+### Features Added
+
+- Added ability to specify Disk Compute AAD Audience in StoragePipelineOptions.
+
+### Bugs Fixed
+
+- Set correct content length in requests for uploading operations to avoid unexpected failure if customized content length is incorrect.
+
+## 12.9.0-beta.3 (2022-02-11)
+
+### Features Added
+
+- Added support for service version 2021-04-10.
+- Added support for finding blobs by tags in a container.
 
 ### Bugs Fixed
 
 - Fixed a bug where customized `ProxyOptions` is overwrited by a default one when initializing `BlobServiceClient`, `BlobClient`, `AppendBlobClient`, `BlockBlobClient`, `PageBlobClient` or `ContainerClient` with connection string.
-
-### Other Changes
 
 ## 12.9.0-beta.2 (2021-12-03)
 

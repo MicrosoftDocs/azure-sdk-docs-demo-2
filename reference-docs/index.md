@@ -1,8 +1,8 @@
 ---
-title: Azure SDK for JavaScript - Package list
+title: Azure SDK for JavaScript - Package index
 description: The full list of all packages that comprise the Azure SDK for JavaScript, including package versions and links to the reference documentation for the package.
 ms.topic: reference
-ms.date: 02/10/2022
+ms.date: 04/21/2022
 ms.prod: azure
 ms.role: developer
 ms.devlang: javascript
@@ -20,7 +20,7 @@ ROBOTS: NOINDEX
 
 | Name                  | Package               | Version          | Reference Docs                            | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
-| Advisor - Resource Management  | @azure/arm-advisor | 3.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/advisor/azure-arm-advisor/stable)  | npm [3.0.0](https://www.npmjs.com/package/%40azure%2Farm-advisor) |
+| Advisor - Resource Management  | @azure/arm-advisor | 3.0.1 |  [docs](/azure/javascript/sdk/sdk-demo2/advisor/azure-arm-advisor/stable)  | npm [3.0.1](https://www.npmjs.com/package/%40azure%2Farm-advisor) |
  
 
  
@@ -48,7 +48,7 @@ ROBOTS: NOINDEX
 
 | Name                  | Package               | Version          | Reference Docs                            | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
-| API Management - Resource Management  | @azure/arm-apimanagement | 8.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/api-management/azure-arm-apimanagement/stable)  | npm [8.0.0](https://www.npmjs.com/package/%40azure%2Farm-apimanagement) |
+| API Management - Resource Management  | @azure/arm-apimanagement | 8.0.1 |  [docs](/azure/javascript/sdk/sdk-demo2/api-management/azure-arm-apimanagement/stable)  | npm [8.0.1](https://www.npmjs.com/package/%40azure%2Farm-apimanagement) |
  
 
  
@@ -70,7 +70,7 @@ ROBOTS: NOINDEX
 
 | Name                  | Package               | Version          | Reference Docs                            | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
-| App Configuration - Resource Management  | @azure/arm-appconfiguration | 3.0.0-beta.1 |  [docs](/azure/javascript/sdk/sdk-demo2/app-configuration/azure-arm-appconfiguration/beta)  | npm [3.0.0-beta.1](https://www.npmjs.com/package/%40azure%2Farm-appconfiguration%403.0.0-beta.1) |
+| App Configuration - Resource Management  | @azure/arm-appconfiguration | 3.0.0-beta.4 |  [docs](/azure/javascript/sdk/sdk-demo2/app-configuration/azure-arm-appconfiguration/beta)  | npm [3.0.0-beta.4](https://www.npmjs.com/package/%40azure%2Farm-appconfiguration%403.0.0-beta.4) |
  
 
  
@@ -82,7 +82,7 @@ ROBOTS: NOINDEX
 
 | Name                  | Package               | Version          | Reference Docs                            | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
-| App Service - Resource Management  | @azure/arm-appservice | 11.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/app-service/azure-arm-appservice/stable)  | npm [11.0.0](https://www.npmjs.com/package/%40azure%2Farm-appservice) |
+| App Service - Resource Management  | @azure/arm-appservice | 12.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/app-service/azure-arm-appservice/stable)  | npm [12.0.0](https://www.npmjs.com/package/%40azure%2Farm-appservice) |
  
 
  
@@ -117,7 +117,7 @@ ROBOTS: NOINDEX
 
 | Name                  | Package               | Version          | Reference Docs                            | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
-| Bot Service - Resource Management  | @azure/arm-botservice | 4.0.0-beta.2 |  [docs](/azure/javascript/sdk/sdk-demo2/bot-service/azure-arm-botservice/beta)  | npm [4.0.0-beta.2](https://www.npmjs.com/package/%40azure%2Farm-botservice%404.0.0-beta.2) |
+| Bot Service - Resource Management  | @azure/arm-botservice | 4.0.0-beta.4 |  [docs](/azure/javascript/sdk/sdk-demo2/bot-service/azure-arm-botservice/beta)  | npm [4.0.0-beta.4](https://www.npmjs.com/package/%40azure%2Farm-botservice%404.0.0-beta.4) |
  
 
  
@@ -132,7 +132,7 @@ ROBOTS: NOINDEX
 | Anomaly Detector  | @azure/cognitiveservices-anomalydetector | 2.1.0 |  [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/azure-cognitiveservices-anomalydetector/stable)  | npm [2.1.0](https://www.npmjs.com/package/%40azure%2Fcognitiveservices-anomalydetector) |
 | Autosuggest  | @azure/cognitiveservices-autosuggest | 2.0.1 |  [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/azure-cognitiveservices-autosuggest/stable)  | npm [2.0.1](https://www.npmjs.com/package/%40azure%2Fcognitiveservices-autosuggest) |
 | Cognitive Search  | @azure/search-documents | 11.2.1 |  [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/azure-search-documents/stable)  | npm [11.2.1](https://www.npmjs.com/package/%40azure%2Fsearch-documents) |
-| Computer Vision  | @azure/cognitiveservices-computervision | 8.1.0 |  [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/azure-cognitiveservices-computervision/stable)  | npm [8.1.0](https://www.npmjs.com/package/%40azure%2Fcognitiveservices-computervision) |
+| Computer Vision  | @azure/cognitiveservices-computervision | 8.2.0 |  [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/azure-cognitiveservices-computervision/stable)  | npm [8.2.0](https://www.npmjs.com/package/%40azure%2Fcognitiveservices-computervision) |
 | Content Moderator  | @azure/cognitiveservices-contentmoderator | 5.0.1 |  [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/azure-cognitiveservices-contentmoderator/stable)  | npm [5.0.1](https://www.npmjs.com/package/%40azure%2Fcognitiveservices-contentmoderator) |
 | Custom Image Search  | @azure/cognitiveservices-customimagesearch | 2.0.1 |  [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/azure-cognitiveservices-customimagesearch/stable)  | npm [2.0.1](https://www.npmjs.com/package/%40azure%2Fcognitiveservices-customimagesearch) |
 | Custom Search  | @azure/cognitiveservices-customsearch | 3.0.1 |  [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/azure-cognitiveservices-customsearch/stable)  | npm [3.0.1](https://www.npmjs.com/package/%40azure%2Fcognitiveservices-customsearch) |
@@ -149,7 +149,7 @@ ROBOTS: NOINDEX
 | Video Search  | @azure/cognitiveservices-videosearch | 3.0.1 |  [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/azure-cognitiveservices-videosearch/stable)  | npm [3.0.1](https://www.npmjs.com/package/%40azure%2Fcognitiveservices-videosearch) |
 | Visual Search  | @azure/cognitiveservices-visualsearch | 3.0.1 |  [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/azure-cognitiveservices-visualsearch/stable)  | npm [3.0.1](https://www.npmjs.com/package/%40azure%2Fcognitiveservices-visualsearch) |
 | Text Analytics  | @azure/ai-text-analytics | 5.1.0 |  [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/azure-ai-text-analytics/stable)  | npm [5.1.0](https://www.npmjs.com/package/%40azure%2Fai-text-analytics) |
-| Cognitive Services - Resource Management  | @azure/arm-cognitiveservices | 7.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/azure-arm-cognitiveservices/stable)  | npm [7.0.0](https://www.npmjs.com/package/%40azure%2Farm-cognitiveservices) |
+| Cognitive Services - Resource Management  | @azure/arm-cognitiveservices | 7.1.0 |  [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/azure-arm-cognitiveservices/stable)  | npm [7.1.0](https://www.npmjs.com/package/%40azure%2Farm-cognitiveservices) |
  
 
 #### Beta packages
@@ -157,7 +157,7 @@ ROBOTS: NOINDEX
 | Name                  | Package               | Version          | Reference Docs                            | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
 | Anomaly Detector  | @azure/ai-anomaly-detector | 3.0.0-beta.5 |  [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/azure-ai-anomaly-detector/beta)  | npm [3.0.0-beta.5](https://www.npmjs.com/package/%40azure%2Fai-anomaly-detector%403.0.0-beta.5) |
-| Cognitive Search  | @azure/search-documents | 11.3.0-beta.6 |  [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/azure-search-documents/beta)  | npm [11.3.0-beta.6](https://www.npmjs.com/package/%40azure%2Fsearch-documents%4011.3.0-beta.6) |
+| Cognitive Search  | @azure/search-documents | 11.3.0-beta.7 |  [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/azure-search-documents/beta)  | npm [11.3.0-beta.7](https://www.npmjs.com/package/%40azure%2Fsearch-documents%4011.3.0-beta.7) |
 | Form Recognizer  | @azure/ai-form-recognizer | 4.0.0-beta.3 |  [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/azure-ai-form-recognizer/beta)  | npm [4.0.0-beta.3](https://www.npmjs.com/package/%40azure%2Fai-form-recognizer%404.0.0-beta.3) |
 | Text Analytics  | @azure/ai-text-analytics | 5.2.0-beta.2 |  [docs](/azure/javascript/sdk/sdk-demo2/cognitive-services/azure-ai-text-analytics/beta)  | npm [5.2.0-beta.2](https://www.npmjs.com/package/%40azure%2Fai-text-analytics%405.2.0-beta.2) |
  
@@ -177,10 +177,9 @@ ROBOTS: NOINDEX
 
 | Name                  | Package               | Version          | Reference Docs                            | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
-| Communication Chat  | @azure/communication-chat | 1.1.2 |  [docs](/azure/javascript/sdk/sdk-demo2/communication-services/azure-communication-chat/stable)  | npm [1.1.2](https://www.npmjs.com/package/%40azure%2Fcommunication-chat) |
-| Communication Common  | @azure/communication-common | 1.1.0 |  [docs](/azure/javascript/sdk/sdk-demo2/communication-services/azure-communication-common/stable)  | npm [1.1.0](https://www.npmjs.com/package/%40azure%2Fcommunication-common) |
+| Communication Chat  | @azure/communication-chat | 1.2.0 |  [docs](/azure/javascript/sdk/sdk-demo2/communication-services/azure-communication-chat/stable)  | npm [1.2.0](https://www.npmjs.com/package/%40azure%2Fcommunication-chat) |
+| Communication Common  | @azure/communication-common | 2.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/communication-services/azure-communication-common/stable)  | npm [2.0.0](https://www.npmjs.com/package/%40azure%2Fcommunication-common) |
 | Communication Identity  | @azure/communication-identity | 1.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/communication-services/azure-communication-identity/stable)  | npm [1.0.0](https://www.npmjs.com/package/%40azure%2Fcommunication-identity) |
-| Communication Network Traversal  | @azure/communication-network-traversal | 1.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/communication-services/azure-communication-network-traversal/stable)  | npm [1.0.0](https://www.npmjs.com/package/%40azure%2Fcommunication-network-traversal) |
 | Communication Phone Numbers  | @azure/communication-phone-numbers | 1.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/communication-services/azure-communication-phone-numbers/stable)  | npm [1.0.0](https://www.npmjs.com/package/%40azure%2Fcommunication-phone-numbers) |
 | Communication Sms  | @azure/communication-sms | 1.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/communication-services/azure-communication-sms/stable)  | npm [1.0.0](https://www.npmjs.com/package/%40azure%2Fcommunication-sms) |
  
@@ -189,8 +188,9 @@ ROBOTS: NOINDEX
 
 | Name                  | Package               | Version          | Reference Docs                            | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
-| Communication Identity  | @azure/communication-identity | 1.1.0-beta.1 |  [docs](/azure/javascript/sdk/sdk-demo2/communication-services/azure-communication-identity/beta)  | npm [1.1.0-beta.1](https://www.npmjs.com/package/%40azure%2Fcommunication-identity%401.1.0-beta.1) |
-| Communication Phone Numbers  | @azure/communication-phone-numbers | 1.2.0-beta.1 |  [docs](/azure/javascript/sdk/sdk-demo2/communication-services/azure-communication-phone-numbers/beta)  | npm [1.2.0-beta.1](https://www.npmjs.com/package/%40azure%2Fcommunication-phone-numbers%401.2.0-beta.1) |
+| Communication Identity  | @azure/communication-identity | 1.1.0-beta.2 |  [docs](/azure/javascript/sdk/sdk-demo2/communication-services/azure-communication-identity/beta)  | npm [1.1.0-beta.2](https://www.npmjs.com/package/%40azure%2Fcommunication-identity%401.1.0-beta.2) |
+| Communication Network Traversal  | @azure/communication-network-traversal | 1.1.0-beta.1 |  [docs](/azure/javascript/sdk/sdk-demo2/communication-services/azure-communication-network-traversal/beta)  | npm [1.1.0-beta.1](https://www.npmjs.com/package/%40azure%2Fcommunication-network-traversal%401.1.0-beta.1) |
+| Communication Phone Numbers  | @azure/communication-phone-numbers | 1.2.0-beta.3 |  [docs](/azure/javascript/sdk/sdk-demo2/communication-services/azure-communication-phone-numbers/beta)  | npm [1.2.0-beta.3](https://www.npmjs.com/package/%40azure%2Fcommunication-phone-numbers%401.2.0-beta.3) |
  
 
  
@@ -206,18 +206,24 @@ ROBOTS: NOINDEX
 | Container Registry - Resource Management  | @azure/arm-containerregistry | 10.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/container-registry/azure-arm-containerregistry/stable)  | npm [10.0.0](https://www.npmjs.com/package/%40azure%2Farm-containerregistry) |
  
 
+#### Beta packages
+
+| Name                  | Package               | Version          | Reference Docs                            | Package Manager                |
+|-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
+| Container Registry  | @azure/container-registry | 1.1.0-beta.1 |  [docs](/azure/javascript/sdk/sdk-demo2/container-registry/azure-container-registry/beta)  | npm [1.1.0-beta.1](https://www.npmjs.com/package/%40azure%2Fcontainer-registry%401.1.0-beta.1) |
+| Container Registry - Resource Management  | @azure/arm-containerregistry | 10.1.0-beta.2 |  [docs](/azure/javascript/sdk/sdk-demo2/container-registry/azure-arm-containerregistry/beta)  | npm [10.1.0-beta.2](https://www.npmjs.com/package/%40azure%2Farm-containerregistry%4010.1.0-beta.2) |
  
 
  
 
 
-## Content Delivery network
+## Content Delivery Network
 
 #### Stable packages
 
 | Name                  | Package               | Version          | Reference Docs                            | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
-| CDN - Resource Management  | @azure/arm-cdn | 6.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/azure-cdn/azure-arm-cdn/stable)  | npm [6.0.0](https://www.npmjs.com/package/%40azure%2Farm-cdn) |
+| CDN - Resource Management  | @azure/arm-cdn | 7.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/azure-cdn/azure-arm-cdn/stable)  | npm [7.0.0](https://www.npmjs.com/package/%40azure%2Farm-cdn) |
  
 
  
@@ -236,7 +242,7 @@ ROBOTS: NOINDEX
 | Auth  | @azure/core-auth | 1.3.2 |  [docs](/azure/javascript/sdk/sdk-demo2/core/azure-core-auth/stable)  | npm [1.3.2](https://www.npmjs.com/package/%40azure%2Fcore-auth) |
 | HTTP  | @azure/core-http | 2.2.4 |  [docs](/azure/javascript/sdk/sdk-demo2/core/azure-core-http/stable)  | npm [2.2.4](https://www.npmjs.com/package/%40azure%2Fcore-http) |
 | Logger  | @azure/logger | 1.0.3 |  [docs](/azure/javascript/sdk/sdk-demo2/core/azure-logger/stable)  | npm [1.0.3](https://www.npmjs.com/package/%40azure%2Flogger) |
-| Long Running Operations (LRO)  | @azure/core-lro | 2.2.3 |  [docs](/azure/javascript/sdk/sdk-demo2/core/azure-core-lro/stable)  | npm [2.2.3](https://www.npmjs.com/package/%40azure%2Fcore-lro) |
+| Long Running Operations (LRO)  | @azure/core-lro | 2.2.4 |  [docs](/azure/javascript/sdk/sdk-demo2/core/azure-core-lro/stable)  | npm [2.2.4](https://www.npmjs.com/package/%40azure%2Fcore-lro) |
 | Paging  | @azure/core-paging | 1.2.1 |  [docs](/azure/javascript/sdk/sdk-demo2/core/azure-core-paging/stable)  | npm [1.2.1](https://www.npmjs.com/package/%40azure%2Fcore-paging) |
  
 
@@ -265,7 +271,7 @@ ROBOTS: NOINDEX
 
 | Name                  | Package               | Version          | Reference Docs                            | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
-| Data Factory - Resource Management  | @azure/arm-datafactory | 10.1.0 |  [docs](/azure/javascript/sdk/sdk-demo2/data-factory/azure-arm-datafactory/stable)  | npm [10.1.0](https://www.npmjs.com/package/%40azure%2Farm-datafactory) |
+| Data Factory - Resource Management  | @azure/arm-datafactory | 10.4.0 |  [docs](/azure/javascript/sdk/sdk-demo2/data-factory/azure-arm-datafactory/stable)  | npm [10.4.0](https://www.npmjs.com/package/%40azure%2Farm-datafactory) |
  
 
  
@@ -286,7 +292,7 @@ ROBOTS: NOINDEX
 
 | Name                  | Package               | Version          | Reference Docs                            | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
-| Databricks - Resource Management  | @azure/arm-databricks | 3.0.0-beta.2 |  [docs](/azure/javascript/sdk/sdk-demo2/databricks/azure-arm-databricks/beta)  | npm [3.0.0-beta.2](https://www.npmjs.com/package/%40azure%2Farm-databricks%403.0.0-beta.2) |
+| Databricks - Resource Management  | @azure/arm-databricks | 3.0.0-beta.3 |  [docs](/azure/javascript/sdk/sdk-demo2/databricks/azure-arm-databricks/beta)  | npm [3.0.0-beta.3](https://www.npmjs.com/package/%40azure%2Farm-databricks%403.0.0-beta.3) |
  
 
  
@@ -298,10 +304,16 @@ ROBOTS: NOINDEX
 
 | Name                  | Package               | Version          | Reference Docs                            | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
-| Event Grid  | @azure/eventgrid | 4.7.0 |  [docs](/azure/javascript/sdk/sdk-demo2/event-grid/azure-eventgrid/stable)  | npm [4.7.0](https://www.npmjs.com/package/%40azure%2Feventgrid) |
+| Event Grid  | @azure/eventgrid | 4.9.0 |  [docs](/azure/javascript/sdk/sdk-demo2/event-grid/azure-eventgrid/stable)  | npm [4.9.0](https://www.npmjs.com/package/%40azure%2Feventgrid) |
 | Event Grid - Resource Management  | @azure/arm-eventgrid | 13.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/event-grid/azure-arm-eventgrid/stable)  | npm [13.0.0](https://www.npmjs.com/package/%40azure%2Farm-eventgrid) |
  
 
+#### Beta packages
+
+| Name                  | Package               | Version          | Reference Docs                            | Package Manager                |
+|-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
+| Event Grid  | @azure/eventgrid | 4.10.0-beta.1 |  [docs](/azure/javascript/sdk/sdk-demo2/event-grid/azure-eventgrid/beta)  | npm [4.10.0-beta.1](https://www.npmjs.com/package/%40azure%2Feventgrid%404.10.0-beta.1) |
+| Event Grid - Resource Management  | @azure/arm-eventgrid | 14.0.0-beta.1 |  [docs](/azure/javascript/sdk/sdk-demo2/event-grid/azure-arm-eventgrid/beta)  | npm [14.0.0-beta.1](https://www.npmjs.com/package/%40azure%2Farm-eventgrid%4014.0.0-beta.1) |
  
 
 #### Legacy packages
@@ -321,15 +333,15 @@ ROBOTS: NOINDEX
 | Event Hubs  | @azure/event-hubs | 5.7.0 |  [docs](/azure/javascript/sdk/sdk-demo2/event-hubs/azure-event-hubs/stable)  | npm [5.7.0](https://www.npmjs.com/package/%40azure%2Fevent-hubs) |
 | Event Hubs - Azure Blob Storage Checkpoint Store  | @azure/eventhubs-checkpointstore-blob | 1.0.1 |  [docs](/azure/javascript/sdk/sdk-demo2/event-hubs/azure-eventhubs-checkpointstore-blob/stable)  | npm [1.0.1](https://www.npmjs.com/package/%40azure%2Feventhubs-checkpointstore-blob) |
 | Schema Registry  | @azure/schema-registry | 1.0.1 |  [docs](/azure/javascript/sdk/sdk-demo2/event-hubs/azure-schema-registry/stable)  | npm [1.0.1](https://www.npmjs.com/package/%40azure%2Fschema-registry) |
-| Event Hubs - Resource Management  | @azure/arm-eventhub | 5.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/event-hubs/azure-arm-eventhub/stable)  | npm [5.0.0](https://www.npmjs.com/package/%40azure%2Farm-eventhub) |
+| Event Hubs - Resource Management  | @azure/arm-eventhub | 5.0.1 |  [docs](/azure/javascript/sdk/sdk-demo2/event-hubs/azure-arm-eventhub/stable)  | npm [5.0.1](https://www.npmjs.com/package/%40azure%2Farm-eventhub) |
  
 
 #### Beta packages
 
 | Name                  | Package               | Version          | Reference Docs                            | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
-| Event Hubs  | @azure/event-hubs | 5.8.0-beta.1 |  [docs](/azure/javascript/sdk/sdk-demo2/event-hubs/azure-event-hubs/beta)  | npm [5.8.0-beta.1](https://www.npmjs.com/package/%40azure%2Fevent-hubs%405.8.0-beta.1) |
-| Schema Registry - Avro  | @azure/schema-registry-avro | 1.0.0-beta.6 |  [docs](/azure/javascript/sdk/sdk-demo2/event-hubs/azure-schema-registry-avro/beta)  | npm [1.0.0-beta.6](https://www.npmjs.com/package/%40azure%2Fschema-registry-avro%401.0.0-beta.6) |
+| Event Hubs  | @azure/event-hubs | 5.8.0-beta.3 |  [docs](/azure/javascript/sdk/sdk-demo2/event-hubs/azure-event-hubs/beta)  | npm [5.8.0-beta.3](https://www.npmjs.com/package/%40azure%2Fevent-hubs%405.8.0-beta.3) |
+| Schema Registry - Avro  | @azure/schema-registry-avro | 1.0.0-beta.8 |  [docs](/azure/javascript/sdk/sdk-demo2/event-hubs/azure-schema-registry-avro/beta)  | npm [1.0.0-beta.8](https://www.npmjs.com/package/%40azure%2Fschema-registry-avro%401.0.0-beta.8) |
  
 
  
@@ -355,9 +367,14 @@ ROBOTS: NOINDEX
 
 | Name                  | Package               | Version          | Reference Docs                            | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
-| Identity  | @azure/identity | 2.0.2 |  [docs](/azure/javascript/sdk/sdk-demo2/identity/azure-identity/stable)  | npm [2.0.2](https://www.npmjs.com/package/%40azure%2Fidentity) |
+| Identity  | @azure/identity | 2.0.4 |  [docs](/azure/javascript/sdk/sdk-demo2/identity/azure-identity/stable)  | npm [2.0.4](https://www.npmjs.com/package/%40azure%2Fidentity) |
  
 
+#### Beta packages
+
+| Name                  | Package               | Version          | Reference Docs                            | Package Manager                |
+|-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
+| Identity  | @azure/identity | 2.1.0-beta.2 |  [docs](/azure/javascript/sdk/sdk-demo2/identity/azure-identity/beta)  | npm [2.1.0-beta.2](https://www.npmjs.com/package/%40azure%2Fidentity%402.1.0-beta.2) |
  
 
  
@@ -369,21 +386,13 @@ ROBOTS: NOINDEX
 
 | Name                  | Package               | Version          | Reference Docs                            | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
-| Key Vault - Admin  | @azure/keyvault-admin | 4.1.0 |  [docs](/azure/javascript/sdk/sdk-demo2/key-vault/azure-keyvault-admin/stable)  | npm [4.1.0](https://www.npmjs.com/package/%40azure%2Fkeyvault-admin) |
-| Key Vault - Certificates  | @azure/keyvault-certificates | 4.3.0 |  [docs](/azure/javascript/sdk/sdk-demo2/key-vault/azure-keyvault-certificates/stable)  | npm [4.3.0](https://www.npmjs.com/package/%40azure%2Fkeyvault-certificates) |
-| Key Vault - Keys  | @azure/keyvault-keys | 4.3.0 |  [docs](/azure/javascript/sdk/sdk-demo2/key-vault/azure-keyvault-keys/stable)  | npm [4.3.0](https://www.npmjs.com/package/%40azure%2Fkeyvault-keys) |
-| Key Vault - Secrets  | @azure/keyvault-secrets | 4.3.0 |  [docs](/azure/javascript/sdk/sdk-demo2/key-vault/azure-keyvault-secrets/stable)  | npm [4.3.0](https://www.npmjs.com/package/%40azure%2Fkeyvault-secrets) |
+| Key Vault - Admin  | @azure/keyvault-admin | 4.2.0 |  [docs](/azure/javascript/sdk/sdk-demo2/key-vault/azure-keyvault-admin/stable)  | npm [4.2.0](https://www.npmjs.com/package/%40azure%2Fkeyvault-admin) |
+| Key Vault - Certificates  | @azure/keyvault-certificates | 4.4.0 |  [docs](/azure/javascript/sdk/sdk-demo2/key-vault/azure-keyvault-certificates/stable)  | npm [4.4.0](https://www.npmjs.com/package/%40azure%2Fkeyvault-certificates) |
+| Key Vault - Keys  | @azure/keyvault-keys | 4.4.0 |  [docs](/azure/javascript/sdk/sdk-demo2/key-vault/azure-keyvault-keys/stable)  | npm [4.4.0](https://www.npmjs.com/package/%40azure%2Fkeyvault-keys) |
+| Key Vault - Secrets  | @azure/keyvault-secrets | 4.4.0 |  [docs](/azure/javascript/sdk/sdk-demo2/key-vault/azure-keyvault-secrets/stable)  | npm [4.4.0](https://www.npmjs.com/package/%40azure%2Fkeyvault-secrets) |
 | Key Vault - Resource Management  | @azure/arm-keyvault | 2.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/key-vault/azure-arm-keyvault/stable)  | npm [2.0.0](https://www.npmjs.com/package/%40azure%2Farm-keyvault) |
  
 
-#### Beta packages
-
-| Name                  | Package               | Version          | Reference Docs                            | Package Manager                |
-|-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
-| Key Vault - Admin  | @azure/keyvault-admin | 4.2.0-beta.2 |  [docs](/azure/javascript/sdk/sdk-demo2/key-vault/azure-keyvault-admin/beta)  | npm [4.2.0-beta.2](https://www.npmjs.com/package/%40azure%2Fkeyvault-admin%404.2.0-beta.2) |
-| Key Vault - Certificates  | @azure/keyvault-certificates | 4.4.0-beta.2 |  [docs](/azure/javascript/sdk/sdk-demo2/key-vault/azure-keyvault-certificates/beta)  | npm [4.4.0-beta.2](https://www.npmjs.com/package/%40azure%2Fkeyvault-certificates%404.4.0-beta.2) |
-| Key Vault - Keys  | @azure/keyvault-keys | 4.4.0-beta.4 |  [docs](/azure/javascript/sdk/sdk-demo2/key-vault/azure-keyvault-keys/beta)  | npm [4.4.0-beta.4](https://www.npmjs.com/package/%40azure%2Fkeyvault-keys%404.4.0-beta.4) |
-| Key Vault - Secrets  | @azure/keyvault-secrets | 4.4.0-beta.2 |  [docs](/azure/javascript/sdk/sdk-demo2/key-vault/azure-keyvault-secrets/beta)  | npm [4.4.0-beta.2](https://www.npmjs.com/package/%40azure%2Fkeyvault-secrets%404.4.0-beta.2) |
  
 
 #### Legacy packages
@@ -415,7 +424,7 @@ ROBOTS: NOINDEX
 
 | Name                  | Package               | Version          | Reference Docs                            | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
-| Media Services - Resource Management  | @azure/arm-mediaservices | 10.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/media-services/azure-arm-mediaservices/stable)  | npm [10.0.0](https://www.npmjs.com/package/%40azure%2Farm-mediaservices) |
+| Media Services - Resource Management  | @azure/arm-mediaservices | 11.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/media-services/azure-arm-mediaservices/stable)  | npm [11.0.0](https://www.npmjs.com/package/%40azure%2Farm-mediaservices) |
  
 
  
@@ -456,7 +465,7 @@ ROBOTS: NOINDEX
 
 | Name                  | Package               | Version          | Reference Docs                            | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
-| Monitor - Open Telemetry Exporter  | @azure/monitor-opentelemetry-exporter | 1.0.0-beta.6 |  [docs](/azure/javascript/sdk/sdk-demo2/monitor/azure-monitor-opentelemetry-exporter/beta)  | npm [1.0.0-beta.6](https://www.npmjs.com/package/%40azure%2Fmonitor-opentelemetry-exporter%401.0.0-beta.6) |
+| Monitor - Open Telemetry Exporter  | @azure/monitor-opentelemetry-exporter | 1.0.0-beta.7 |  [docs](/azure/javascript/sdk/sdk-demo2/monitor/azure-monitor-opentelemetry-exporter/beta)  | npm [1.0.0-beta.7](https://www.npmjs.com/package/%40azure%2Fmonitor-opentelemetry-exporter%401.0.0-beta.7) |
  
 
  
@@ -533,7 +542,7 @@ ROBOTS: NOINDEX
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
 | Purview - Account  | @azure-rest/purview-account | 1.0.0-beta.1 |  [docs](/azure/javascript/sdk/sdk-demo2/purview/azure-rest-purview-account/beta)  | npm [1.0.0-beta.1](https://www.npmjs.com/package/%40azure-rest%2Fpurview-account%401.0.0-beta.1) |
 | Purview - Administration  | @azure-rest/purview-administration | 1.0.0-beta.1 |  [docs](/azure/javascript/sdk/sdk-demo2/purview/azure-rest-purview-administration/beta)  | npm [1.0.0-beta.1](https://www.npmjs.com/package/%40azure-rest%2Fpurview-administration%401.0.0-beta.1) |
-| Purview - Catalog  | @azure-rest/purview-catalog | 1.0.0-beta.3 |  [docs](/azure/javascript/sdk/sdk-demo2/purview/azure-rest-purview-catalog/beta)  | npm [1.0.0-beta.3](https://www.npmjs.com/package/%40azure-rest%2Fpurview-catalog%401.0.0-beta.3) |
+| Purview - Catalog  | @azure-rest/purview-catalog | 1.0.0-beta.4 |  [docs](/azure/javascript/sdk/sdk-demo2/purview/azure-rest-purview-catalog/beta)  | npm [1.0.0-beta.4](https://www.npmjs.com/package/%40azure-rest%2Fpurview-catalog%401.0.0-beta.4) |
 | Purview - Scanning  | @azure-rest/purview-scanning | 1.0.0-beta.2 |  [docs](/azure/javascript/sdk/sdk-demo2/purview/azure-rest-purview-scanning/beta)  | npm [1.0.0-beta.2](https://www.npmjs.com/package/%40azure-rest%2Fpurview-scanning%401.0.0-beta.2) |
  
 
@@ -546,10 +555,15 @@ ROBOTS: NOINDEX
 
 | Name                  | Package               | Version          | Reference Docs                            | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
-| Service Bus  | @azure/service-bus | 7.4.0 |  [docs](/azure/javascript/sdk/sdk-demo2/service-bus/azure-service-bus/stable)  | npm [7.4.0](https://www.npmjs.com/package/%40azure%2Fservice-bus) |
+| Service Bus  | @azure/service-bus | 7.5.1 |  [docs](/azure/javascript/sdk/sdk-demo2/service-bus/azure-service-bus/stable)  | npm [7.5.1](https://www.npmjs.com/package/%40azure%2Fservice-bus) |
 | Service Bus - Resource Management  | @azure/arm-servicebus | 5.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/service-bus/azure-arm-servicebus/stable)  | npm [5.0.0](https://www.npmjs.com/package/%40azure%2Farm-servicebus) |
  
 
+#### Beta packages
+
+| Name                  | Package               | Version          | Reference Docs                            | Package Manager                |
+|-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
+| Service Bus  | @azure/service-bus | 7.6.0-beta.1 |  [docs](/azure/javascript/sdk/sdk-demo2/service-bus/azure-service-bus/beta)  | npm [7.6.0-beta.1](https://www.npmjs.com/package/%40azure%2Fservice-bus%407.6.0-beta.1) |
  
 
  
@@ -561,21 +575,20 @@ ROBOTS: NOINDEX
 
 | Name                  | Package               | Version          | Reference Docs                            | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
-| Storage - Blobs  | @azure/storage-blob | 12.8.0 |  [docs](/azure/javascript/sdk/sdk-demo2/storage/azure-storage-blob/stable)  | npm [12.8.0](https://www.npmjs.com/package/%40azure%2Fstorage-blob) |
-| Storage - Queues  | @azure/storage-queue | 12.7.0 |  [docs](/azure/javascript/sdk/sdk-demo2/storage/azure-storage-queue/stable)  | npm [12.7.0](https://www.npmjs.com/package/%40azure%2Fstorage-queue) |
-| Storage - File Share  | @azure/storage-file-share | 12.8.0 |  [docs](/azure/javascript/sdk/sdk-demo2/storage/azure-storage-file-share/stable)  | npm [12.8.0](https://www.npmjs.com/package/%40azure%2Fstorage-file-share) |
-| Storage - File Data Lake  | @azure/storage-file-datalake | 12.7.0 |  [docs](/azure/javascript/sdk/sdk-demo2/storage/azure-storage-file-datalake/stable)  | npm [12.7.0](https://www.npmjs.com/package/%40azure%2Fstorage-file-datalake) |
-| Storage - Resource Management  | @azure/arm-storage | 17.0.0 |  [docs](/azure/javascript/sdk/sdk-demo2/storage/azure-arm-storage/stable)  | npm [17.0.0](https://www.npmjs.com/package/%40azure%2Farm-storage) |
+| Storage - Blobs  | @azure/storage-blob | 12.9.0 |  [docs](/azure/javascript/sdk/sdk-demo2/storage/azure-storage-blob/stable)  | npm [12.9.0](https://www.npmjs.com/package/%40azure%2Fstorage-blob) |
+| Storage - Queues  | @azure/storage-queue | 12.8.0 |  [docs](/azure/javascript/sdk/sdk-demo2/storage/azure-storage-queue/stable)  | npm [12.8.0](https://www.npmjs.com/package/%40azure%2Fstorage-queue) |
+| Storage - File Share  | @azure/storage-file-share | 12.9.0 |  [docs](/azure/javascript/sdk/sdk-demo2/storage/azure-storage-file-share/stable)  | npm [12.9.0](https://www.npmjs.com/package/%40azure%2Fstorage-file-share) |
+| Storage - File Data Lake  | @azure/storage-file-datalake | 12.8.0 |  [docs](/azure/javascript/sdk/sdk-demo2/storage/azure-storage-file-datalake/stable)  | npm [12.8.0](https://www.npmjs.com/package/%40azure%2Fstorage-file-datalake) |
+| Storage - Resource Management  | @azure/arm-storage | 17.2.0 |  [docs](/azure/javascript/sdk/sdk-demo2/storage/azure-arm-storage/stable)  | npm [17.2.0](https://www.npmjs.com/package/%40azure%2Farm-storage) |
  
 
 #### Beta packages
 
 | Name                  | Package               | Version          | Reference Docs                            | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
-| Storage - Blobs  | @azure/storage-blob | 12.9.0-beta.2 |  [docs](/azure/javascript/sdk/sdk-demo2/storage/azure-storage-blob/beta)  | npm [12.9.0-beta.2](https://www.npmjs.com/package/%40azure%2Fstorage-blob%4012.9.0-beta.2) |
-| Storage - Queues  | @azure/storage-queue | 12.8.0-beta.1 |  [docs](/azure/javascript/sdk/sdk-demo2/storage/azure-storage-queue/beta)  | npm [12.8.0-beta.1](https://www.npmjs.com/package/%40azure%2Fstorage-queue%4012.8.0-beta.1) |
-| Storage - File Share  | @azure/storage-file-share | 12.9.0-beta.2 |  [docs](/azure/javascript/sdk/sdk-demo2/storage/azure-storage-file-share/beta)  | npm [12.9.0-beta.2](https://www.npmjs.com/package/%40azure%2Fstorage-file-share%4012.9.0-beta.2) |
-| Storage - File Data Lake  | @azure/storage-file-datalake | 12.8.0-beta.1 |  [docs](/azure/javascript/sdk/sdk-demo2/storage/azure-storage-file-datalake/beta)  | npm [12.8.0-beta.1](https://www.npmjs.com/package/%40azure%2Fstorage-file-datalake%4012.8.0-beta.1) |
+| Storage - Blobs  | @azure/storage-blob | 12.10.0-beta.1 |  [docs](/azure/javascript/sdk/sdk-demo2/storage/azure-storage-blob/beta)  | npm [12.10.0-beta.1](https://www.npmjs.com/package/%40azure%2Fstorage-blob%4012.10.0-beta.1) |
+| Storage - File Share  | @azure/storage-file-share | 12.10.0-beta.1 |  [docs](/azure/javascript/sdk/sdk-demo2/storage/azure-storage-file-share/beta)  | npm [12.10.0-beta.1](https://www.npmjs.com/package/%40azure%2Fstorage-file-share%4012.10.0-beta.1) |
+| Storage - File Data Lake  | @azure/storage-file-datalake | 12.9.0-beta.1 |  [docs](/azure/javascript/sdk/sdk-demo2/storage/azure-storage-file-datalake/beta)  | npm [12.9.0-beta.1](https://www.npmjs.com/package/%40azure%2Fstorage-file-datalake%4012.9.0-beta.1) |
  
 
  
@@ -604,7 +617,7 @@ ROBOTS: NOINDEX
 | Name                  | Package               | Version          | Reference Docs                            | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
 | Synapse - Access Control  | @azure/synapse-access-control | 1.0.0-beta.3 |  [docs](/azure/javascript/sdk/sdk-demo2/synapse-analytics/azure-synapse-access-control/beta)  | npm [1.0.0-beta.3](https://www.npmjs.com/package/%40azure%2Fsynapse-access-control%401.0.0-beta.3) |
-| Synapse - Artifacts  | @azure/synapse-artifacts | 1.0.0-beta.8 |  [docs](/azure/javascript/sdk/sdk-demo2/synapse-analytics/azure-synapse-artifacts/beta)  | npm [1.0.0-beta.8](https://www.npmjs.com/package/%40azure%2Fsynapse-artifacts%401.0.0-beta.8) |
+| Synapse - Artifacts  | @azure/synapse-artifacts | 1.0.0-beta.10 |  [docs](/azure/javascript/sdk/sdk-demo2/synapse-analytics/azure-synapse-artifacts/beta)  | npm [1.0.0-beta.10](https://www.npmjs.com/package/%40azure%2Fsynapse-artifacts%401.0.0-beta.10) |
 | Synapse - Managed Private Endpoints  | @azure/synapse-managed-private-endpoints | 1.0.0-beta.4 |  [docs](/azure/javascript/sdk/sdk-demo2/synapse-analytics/azure-synapse-managed-private-endpoints/beta)  | npm [1.0.0-beta.4](https://www.npmjs.com/package/%40azure%2Fsynapse-managed-private-endpoints%401.0.0-beta.4) |
 | Synapse - Monitoring  | @azure/synapse-monitoring | 1.0.0-beta.2 |  [docs](/azure/javascript/sdk/sdk-demo2/synapse-analytics/azure-synapse-monitoring/beta)  | npm [1.0.0-beta.2](https://www.npmjs.com/package/%40azure%2Fsynapse-monitoring%401.0.0-beta.2) |
 | Synapse - Spark  | @azure/synapse-spark | 1.0.0-beta.4 |  [docs](/azure/javascript/sdk/sdk-demo2/synapse-analytics/azure-synapse-spark/beta)  | npm [1.0.0-beta.4](https://www.npmjs.com/package/%40azure%2Fsynapse-spark%401.0.0-beta.4) |
@@ -619,7 +632,7 @@ ROBOTS: NOINDEX
 
 | Name                  | Package               | Version          | Reference Docs                            | Package Manager                |
 |-----------------------|-----------------------|------------------|-------------------------------------------|--------------------------------|
-| Data Tables  | @azure/data-tables | 13.0.1 |  [docs](/azure/javascript/sdk/sdk-demo2/tables/azure-data-tables/stable)  | npm [13.0.1](https://www.npmjs.com/package/%40azure%2Fdata-tables) |
+| Data Tables  | @azure/data-tables | 13.1.1 |  [docs](/azure/javascript/sdk/sdk-demo2/tables/azure-data-tables/stable)  | npm [13.1.1](https://www.npmjs.com/package/%40azure%2Fdata-tables) |
  
 
  

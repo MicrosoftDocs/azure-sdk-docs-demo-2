@@ -9,24 +9,6 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: odataType
-    uid: '@azure/arm-cdn.CacheKeyQueryStringActionParameters.odataType|stable'
-    package: '@azure/arm-cdn|stable'
-    summary: ''
-    fullName: odataType
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        odataType:
-        "#Microsoft.Azure.Cdn.Models.DeliveryRuleCacheKeyQueryStringBehaviorActionParameters"
-      return:
-        description: ''
-        type: >-
-          "#<xref
-          uid="Microsoft.Azure.Cdn.Models.DeliveryRuleCacheKeyQueryStringBehaviorActionParameters|stable"
-          />"
   - name: queryParameters
     uid: '@azure/arm-cdn.CacheKeyQueryStringActionParameters.queryParameters|stable'
     package: '@azure/arm-cdn|stable'
@@ -54,3 +36,16 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-cdn.QueryStringBehavior|stable" />
+  - name: typeName
+    uid: '@azure/arm-cdn.CacheKeyQueryStringActionParameters.typeName|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: ''
+    fullName: typeName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'typeName: "DeliveryRuleCacheKeyQueryStringBehaviorActionParameters"'
+      return:
+        description: ''
+        type: '"DeliveryRuleCacheKeyQueryStringBehaviorActionParameters"'

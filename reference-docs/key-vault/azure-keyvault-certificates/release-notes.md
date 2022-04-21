@@ -2,7 +2,7 @@
 title: Azure SDK for JavaScript - Key Vault Release Notes
 description: 
 ms.topic: reference
-ms.date: 02/10/2022
+ms.date: 04/21/2022
 ms.service: key-vault
 ms.role: developer
 ms.devlang: javascript
@@ -12,7 +12,7 @@ ROBOTS: NOINDEX
 ---
 # Release History
 
-## 4.4.0-beta.3 (Unreleased)
+## 4.5.0-beta.1 (Unreleased)
 
 ### Features Added
 
@@ -22,6 +22,12 @@ ROBOTS: NOINDEX
 
 ### Other Changes
 
+## 4.4.0 (2022-03-24)
+
+### Other Changes
+
+- This release updates `CertificateClient` to support service version 7.3 by default.
+
 ## 4.4.0-beta.2 (2021-11-09)
 
 ### Features Added
@@ -30,7 +36,7 @@ ROBOTS: NOINDEX
 
 ### Other Changes
 
-- Updated CertificateClient to use service version 7.3-preview by default.
+- Updated CertificateClient to use service version 7.3 by default.
 
 ## 4.4.0-beta.1 (2021-09-07)
 

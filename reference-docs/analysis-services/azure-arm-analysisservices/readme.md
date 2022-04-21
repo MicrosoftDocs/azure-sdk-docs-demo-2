@@ -2,7 +2,7 @@
 title: Azure SDK for JavaScript - Analysis Services User Guide
 description: 
 ms.topic: reference
-ms.date: 02/10/2022
+ms.date: 04/21/2022
 ms.service: analysis-services
 ms.role: developer
 ms.devlang: javascript

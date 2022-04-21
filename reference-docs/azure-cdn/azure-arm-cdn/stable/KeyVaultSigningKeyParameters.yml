@@ -9,22 +9,6 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: odataType
-    uid: '@azure/arm-cdn.KeyVaultSigningKeyParameters.odataType|stable'
-    package: '@azure/arm-cdn|stable'
-    summary: ''
-    fullName: odataType
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'odataType: "#Microsoft.Azure.Cdn.Models.KeyVaultSigningKeyParameters"'
-      return:
-        description: ''
-        type: >-
-          "#<xref
-          uid="Microsoft.Azure.Cdn.Models.KeyVaultSigningKeyParameters|stable"
-          />"
   - name: resourceGroupName
     uid: '@azure/arm-cdn.KeyVaultSigningKeyParameters.resourceGroupName|stable'
     package: '@azure/arm-cdn|stable'
@@ -77,6 +61,19 @@ properties:
       return:
         description: ''
         type: string
+  - name: typeName
+    uid: '@azure/arm-cdn.KeyVaultSigningKeyParameters.typeName|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: ''
+    fullName: typeName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'typeName: "KeyVaultSigningKeyParameters"'
+      return:
+        description: ''
+        type: '"KeyVaultSigningKeyParameters"'
   - name: vaultName
     uid: '@azure/arm-cdn.KeyVaultSigningKeyParameters.vaultName|stable'
     package: '@azure/arm-cdn|stable'

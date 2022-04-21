@@ -1,12 +1,13 @@
 ### YamlMime:TSPackage
 uid: '@azure/schema-registry-avro|beta'
-name: '@azure/schema-registry-avro (1.0.0-beta.6 - Beta)'
+name: '@azure/schema-registry-avro (1.0.0-beta.8 - Beta)'
 summary: ''
 type: package
 classes:
-  - '@azure/schema-registry-avro.AvroEncoder|beta'
+  - '@azure/schema-registry-avro.AvroError|beta'
+  - '@azure/schema-registry-avro.AvroSerializer|beta'
 interfaces:
-  - '@azure/schema-registry-avro.AvroEncoderOptions|beta'
-  - '@azure/schema-registry-avro.DecodeMessageDataOptions|beta'
+  - '@azure/schema-registry-avro.AvroSerializerOptions|beta'
+  - '@azure/schema-registry-avro.DeserializeOptions|beta'
   - '@azure/schema-registry-avro.MessageAdapter|beta'
-  - '@azure/schema-registry-avro.MessageWithMetadata|beta'
+  - '@azure/schema-registry-avro.MessageContent|beta'

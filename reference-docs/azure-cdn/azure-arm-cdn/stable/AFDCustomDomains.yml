@@ -1,9 +1,9 @@
 ### YamlMime:TSType
-name: AFDCustomDomains
-uid: '@azure/arm-cdn.AFDCustomDomains|stable'
+name: AfdCustomDomains
+uid: '@azure/arm-cdn.AfdCustomDomains|stable'
 package: '@azure/arm-cdn|stable'
-summary: Interface representing a AFDCustomDomains.
-fullName: AFDCustomDomains
+summary: Interface representing a AfdCustomDomains.
+fullName: AfdCustomDomains
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -11,8 +11,8 @@ type: interface
 methods:
   - name: >-
       beginCreate(string, string, string, AFDDomain,
-      AFDCustomDomainsCreateOptionalParams)
-    uid: '@azure/arm-cdn.AFDCustomDomains.beginCreate|stable'
+      AfdCustomDomainsCreateOptionalParams)
+    uid: '@azure/arm-cdn.AfdCustomDomains.beginCreate|stable'
     package: '@azure/arm-cdn|stable'
     summary: Creates a new domain within the specified profile.
     remarks: ''
@@ -22,16 +22,19 @@ methods:
       content: >-
         function beginCreate(resourceGroupName: string, profileName: string,
         customDomainName: string, customDomain: AFDDomain, options?:
-        AFDCustomDomainsCreateOptionalParams):
-        Promise<PollerLike<PollOperationState<AFDCustomDomainsCreateResponse>,
-        AFDCustomDomainsCreateResponse>>
+        AfdCustomDomainsCreateOptionalParams):
+        Promise<PollerLike<PollOperationState<AfdCustomDomainsCreateResponse>,
+        AfdCustomDomainsCreateResponse>>
       parameters:
         - id: resourceGroupName
           type: string
           description: Name of the Resource group within the Azure subscription.
         - id: profileName
           type: string
-          description: Name of the CDN profile which is unique within the resource group.
+          description: >-
+            Name of the Azure Front Door Standard or Azure Front Door Premium
+            profile which
+                               is unique within the resource group.
         - id: customDomainName
           type: string
           description: Name of the domain under the profile which is unique globally
@@ -41,20 +44,20 @@ methods:
         - id: options
           type: >-
             <xref
-            uid="@azure/arm-cdn.AFDCustomDomainsCreateOptionalParams|stable" />
+            uid="@azure/arm-cdn.AfdCustomDomainsCreateOptionalParams|stable" />
           description: |
             The options parameters.
       return:
         description: ''
         type: >-
           Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
-          uid="@azure/arm-cdn.AFDCustomDomainsCreateResponse|stable" />&gt;,
-          <xref uid="@azure/arm-cdn.AFDCustomDomainsCreateResponse|stable"
+          uid="@azure/arm-cdn.AfdCustomDomainsCreateResponse|stable" />&gt;,
+          <xref uid="@azure/arm-cdn.AfdCustomDomainsCreateResponse|stable"
           />&gt;&gt;
   - name: >-
       beginCreateAndWait(string, string, string, AFDDomain,
-      AFDCustomDomainsCreateOptionalParams)
-    uid: '@azure/arm-cdn.AFDCustomDomains.beginCreateAndWait|stable'
+      AfdCustomDomainsCreateOptionalParams)
+    uid: '@azure/arm-cdn.AfdCustomDomains.beginCreateAndWait|stable'
     package: '@azure/arm-cdn|stable'
     summary: Creates a new domain within the specified profile.
     remarks: ''
@@ -64,15 +67,18 @@ methods:
       content: >-
         function beginCreateAndWait(resourceGroupName: string, profileName:
         string, customDomainName: string, customDomain: AFDDomain, options?:
-        AFDCustomDomainsCreateOptionalParams):
-        Promise<AFDCustomDomainsCreateResponse>
+        AfdCustomDomainsCreateOptionalParams):
+        Promise<AfdCustomDomainsCreateResponse>
       parameters:
         - id: resourceGroupName
           type: string
           description: Name of the Resource group within the Azure subscription.
         - id: profileName
           type: string
-          description: Name of the CDN profile which is unique within the resource group.
+          description: >-
+            Name of the Azure Front Door Standard or Azure Front Door Premium
+            profile which
+                               is unique within the resource group.
         - id: customDomainName
           type: string
           description: Name of the domain under the profile which is unique globally
@@ -82,16 +88,16 @@ methods:
         - id: options
           type: >-
             <xref
-            uid="@azure/arm-cdn.AFDCustomDomainsCreateOptionalParams|stable" />
+            uid="@azure/arm-cdn.AfdCustomDomainsCreateOptionalParams|stable" />
           description: |
             The options parameters.
       return:
         description: ''
         type: >-
           Promise&lt;<xref
-          uid="@azure/arm-cdn.AFDCustomDomainsCreateResponse|stable" />&gt;
-  - name: beginDelete(string, string, string, AFDCustomDomainsDeleteOptionalParams)
-    uid: '@azure/arm-cdn.AFDCustomDomains.beginDelete|stable'
+          uid="@azure/arm-cdn.AfdCustomDomainsCreateResponse|stable" />&gt;
+  - name: beginDelete(string, string, string, AfdCustomDomainsDeleteOptionalParams)
+    uid: '@azure/arm-cdn.AfdCustomDomains.beginDelete|stable'
     package: '@azure/arm-cdn|stable'
     summary: >-
       Deletes an existing AzureFrontDoor domain with the specified domain name
@@ -105,7 +111,7 @@ methods:
       content: >-
         function beginDelete(resourceGroupName: string, profileName: string,
         customDomainName: string, options?:
-        AFDCustomDomainsDeleteOptionalParams):
+        AfdCustomDomainsDeleteOptionalParams):
         Promise<PollerLike<PollOperationState<void>, void>>
       parameters:
         - id: resourceGroupName
@@ -113,14 +119,17 @@ methods:
           description: Name of the Resource group within the Azure subscription.
         - id: profileName
           type: string
-          description: Name of the CDN profile which is unique within the resource group.
+          description: >-
+            Name of the Azure Front Door Standard or Azure Front Door Premium
+            profile which
+                               is unique within the resource group.
         - id: customDomainName
           type: string
           description: Name of the domain under the profile which is unique globally.
         - id: options
           type: >-
             <xref
-            uid="@azure/arm-cdn.AFDCustomDomainsDeleteOptionalParams|stable" />
+            uid="@azure/arm-cdn.AfdCustomDomainsDeleteOptionalParams|stable" />
           description: |
             The options parameters.
       return:
@@ -128,8 +137,8 @@ methods:
         type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
   - name: >-
       beginDeleteAndWait(string, string, string,
-      AFDCustomDomainsDeleteOptionalParams)
-    uid: '@azure/arm-cdn.AFDCustomDomains.beginDeleteAndWait|stable'
+      AfdCustomDomainsDeleteOptionalParams)
+    uid: '@azure/arm-cdn.AfdCustomDomains.beginDeleteAndWait|stable'
     package: '@azure/arm-cdn|stable'
     summary: >-
       Deletes an existing AzureFrontDoor domain with the specified domain name
@@ -143,21 +152,24 @@ methods:
       content: >-
         function beginDeleteAndWait(resourceGroupName: string, profileName:
         string, customDomainName: string, options?:
-        AFDCustomDomainsDeleteOptionalParams): Promise<void>
+        AfdCustomDomainsDeleteOptionalParams): Promise<void>
       parameters:
         - id: resourceGroupName
           type: string
           description: Name of the Resource group within the Azure subscription.
         - id: profileName
           type: string
-          description: Name of the CDN profile which is unique within the resource group.
+          description: >-
+            Name of the Azure Front Door Standard or Azure Front Door Premium
+            profile which
+                               is unique within the resource group.
         - id: customDomainName
           type: string
           description: Name of the domain under the profile which is unique globally.
         - id: options
           type: >-
             <xref
-            uid="@azure/arm-cdn.AFDCustomDomainsDeleteOptionalParams|stable" />
+            uid="@azure/arm-cdn.AfdCustomDomainsDeleteOptionalParams|stable" />
           description: |
             The options parameters.
       return:
@@ -165,8 +177,8 @@ methods:
         type: Promise&lt;void&gt;
   - name: >-
       beginRefreshValidationToken(string, string, string,
-      AFDCustomDomainsRefreshValidationTokenOptionalParams)
-    uid: '@azure/arm-cdn.AFDCustomDomains.beginRefreshValidationToken|stable'
+      AfdCustomDomainsRefreshValidationTokenOptionalParams)
+    uid: '@azure/arm-cdn.AfdCustomDomains.beginRefreshValidationToken|stable'
     package: '@azure/arm-cdn|stable'
     summary: Updates the domain validation token.
     remarks: ''
@@ -176,38 +188,35 @@ methods:
       content: >-
         function beginRefreshValidationToken(resourceGroupName: string,
         profileName: string, customDomainName: string, options?:
-        AFDCustomDomainsRefreshValidationTokenOptionalParams):
-        Promise<PollerLike<PollOperationState<AFDCustomDomainsRefreshValidationTokenResponse>,
-        AFDCustomDomainsRefreshValidationTokenResponse>>
+        AfdCustomDomainsRefreshValidationTokenOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
       parameters:
         - id: resourceGroupName
           type: string
           description: Name of the Resource group within the Azure subscription.
         - id: profileName
           type: string
-          description: Name of the CDN profile which is unique within the resource group.
+          description: >-
+            Name of the Azure Front Door Standard or Azure Front Door Premium
+            profile which
+                               is unique within the resource group.
         - id: customDomainName
           type: string
           description: Name of the domain under the profile which is unique globally.
         - id: options
           type: >-
             <xref
-            uid="@azure/arm-cdn.AFDCustomDomainsRefreshValidationTokenOptionalParams|stable"
+            uid="@azure/arm-cdn.AfdCustomDomainsRefreshValidationTokenOptionalParams|stable"
             />
           description: |
             The options parameters.
       return:
         description: ''
-        type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
-          uid="@azure/arm-cdn.AFDCustomDomainsRefreshValidationTokenResponse|stable"
-          />&gt;, <xref
-          uid="@azure/arm-cdn.AFDCustomDomainsRefreshValidationTokenResponse|stable"
-          />&gt;&gt;
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
   - name: >-
       beginRefreshValidationTokenAndWait(string, string, string,
-      AFDCustomDomainsRefreshValidationTokenOptionalParams)
-    uid: '@azure/arm-cdn.AFDCustomDomains.beginRefreshValidationTokenAndWait|stable'
+      AfdCustomDomainsRefreshValidationTokenOptionalParams)
+    uid: '@azure/arm-cdn.AfdCustomDomains.beginRefreshValidationTokenAndWait|stable'
     package: '@azure/arm-cdn|stable'
     summary: Updates the domain validation token.
     remarks: ''
@@ -217,35 +226,34 @@ methods:
       content: >-
         function beginRefreshValidationTokenAndWait(resourceGroupName: string,
         profileName: string, customDomainName: string, options?:
-        AFDCustomDomainsRefreshValidationTokenOptionalParams):
-        Promise<AFDCustomDomainsRefreshValidationTokenResponse>
+        AfdCustomDomainsRefreshValidationTokenOptionalParams): Promise<void>
       parameters:
         - id: resourceGroupName
           type: string
           description: Name of the Resource group within the Azure subscription.
         - id: profileName
           type: string
-          description: Name of the CDN profile which is unique within the resource group.
+          description: >-
+            Name of the Azure Front Door Standard or Azure Front Door Premium
+            profile which
+                               is unique within the resource group.
         - id: customDomainName
           type: string
           description: Name of the domain under the profile which is unique globally.
         - id: options
           type: >-
             <xref
-            uid="@azure/arm-cdn.AFDCustomDomainsRefreshValidationTokenOptionalParams|stable"
+            uid="@azure/arm-cdn.AfdCustomDomainsRefreshValidationTokenOptionalParams|stable"
             />
           description: |
             The options parameters.
       return:
         description: ''
-        type: >-
-          Promise&lt;<xref
-          uid="@azure/arm-cdn.AFDCustomDomainsRefreshValidationTokenResponse|stable"
-          />&gt;
+        type: Promise&lt;void&gt;
   - name: >-
       beginUpdate(string, string, string, AFDDomainUpdateParameters,
-      AFDCustomDomainsUpdateOptionalParams)
-    uid: '@azure/arm-cdn.AFDCustomDomains.beginUpdate|stable'
+      AfdCustomDomainsUpdateOptionalParams)
+    uid: '@azure/arm-cdn.AfdCustomDomains.beginUpdate|stable'
     package: '@azure/arm-cdn|stable'
     summary: Updates an existing domain within a profile.
     remarks: ''
@@ -256,16 +264,19 @@ methods:
         function beginUpdate(resourceGroupName: string, profileName: string,
         customDomainName: string, customDomainUpdateProperties:
         AFDDomainUpdateParameters, options?:
-        AFDCustomDomainsUpdateOptionalParams):
-        Promise<PollerLike<PollOperationState<AFDCustomDomainsUpdateResponse>,
-        AFDCustomDomainsUpdateResponse>>
+        AfdCustomDomainsUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<AfdCustomDomainsUpdateResponse>,
+        AfdCustomDomainsUpdateResponse>>
       parameters:
         - id: resourceGroupName
           type: string
           description: Name of the Resource group within the Azure subscription.
         - id: profileName
           type: string
-          description: Name of the CDN profile which is unique within the resource group.
+          description: >-
+            Name of the Azure Front Door Standard or Azure Front Door Premium
+            profile which
+                               is unique within the resource group.
         - id: customDomainName
           type: string
           description: Name of the domain under the profile which is unique globally
@@ -275,20 +286,20 @@ methods:
         - id: options
           type: >-
             <xref
-            uid="@azure/arm-cdn.AFDCustomDomainsUpdateOptionalParams|stable" />
+            uid="@azure/arm-cdn.AfdCustomDomainsUpdateOptionalParams|stable" />
           description: |
             The options parameters.
       return:
         description: ''
         type: >-
           Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
-          uid="@azure/arm-cdn.AFDCustomDomainsUpdateResponse|stable" />&gt;,
-          <xref uid="@azure/arm-cdn.AFDCustomDomainsUpdateResponse|stable"
+          uid="@azure/arm-cdn.AfdCustomDomainsUpdateResponse|stable" />&gt;,
+          <xref uid="@azure/arm-cdn.AfdCustomDomainsUpdateResponse|stable"
           />&gt;&gt;
   - name: >-
       beginUpdateAndWait(string, string, string, AFDDomainUpdateParameters,
-      AFDCustomDomainsUpdateOptionalParams)
-    uid: '@azure/arm-cdn.AFDCustomDomains.beginUpdateAndWait|stable'
+      AfdCustomDomainsUpdateOptionalParams)
+    uid: '@azure/arm-cdn.AfdCustomDomains.beginUpdateAndWait|stable'
     package: '@azure/arm-cdn|stable'
     summary: Updates an existing domain within a profile.
     remarks: ''
@@ -299,15 +310,18 @@ methods:
         function beginUpdateAndWait(resourceGroupName: string, profileName:
         string, customDomainName: string, customDomainUpdateProperties:
         AFDDomainUpdateParameters, options?:
-        AFDCustomDomainsUpdateOptionalParams):
-        Promise<AFDCustomDomainsUpdateResponse>
+        AfdCustomDomainsUpdateOptionalParams):
+        Promise<AfdCustomDomainsUpdateResponse>
       parameters:
         - id: resourceGroupName
           type: string
           description: Name of the Resource group within the Azure subscription.
         - id: profileName
           type: string
-          description: Name of the CDN profile which is unique within the resource group.
+          description: >-
+            Name of the Azure Front Door Standard or Azure Front Door Premium
+            profile which
+                               is unique within the resource group.
         - id: customDomainName
           type: string
           description: Name of the domain under the profile which is unique globally
@@ -317,16 +331,16 @@ methods:
         - id: options
           type: >-
             <xref
-            uid="@azure/arm-cdn.AFDCustomDomainsUpdateOptionalParams|stable" />
+            uid="@azure/arm-cdn.AfdCustomDomainsUpdateOptionalParams|stable" />
           description: |
             The options parameters.
       return:
         description: ''
         type: >-
           Promise&lt;<xref
-          uid="@azure/arm-cdn.AFDCustomDomainsUpdateResponse|stable" />&gt;
-  - name: get(string, string, string, AFDCustomDomainsGetOptionalParams)
-    uid: '@azure/arm-cdn.AFDCustomDomains.get|stable'
+          uid="@azure/arm-cdn.AfdCustomDomainsUpdateResponse|stable" />&gt;
+  - name: get(string, string, string, AfdCustomDomainsGetOptionalParams)
+    uid: '@azure/arm-cdn.AfdCustomDomains.get|stable'
     package: '@azure/arm-cdn|stable'
     summary: >-
       Gets an existing AzureFrontDoor domain with the specified domain name
@@ -339,21 +353,24 @@ methods:
     syntax:
       content: >-
         function get(resourceGroupName: string, profileName: string,
-        customDomainName: string, options?: AFDCustomDomainsGetOptionalParams):
-        Promise<AFDCustomDomainsGetResponse>
+        customDomainName: string, options?: AfdCustomDomainsGetOptionalParams):
+        Promise<AfdCustomDomainsGetResponse>
       parameters:
         - id: resourceGroupName
           type: string
           description: Name of the Resource group within the Azure subscription.
         - id: profileName
           type: string
-          description: Name of the CDN profile which is unique within the resource group.
+          description: >-
+            Name of the Azure Front Door Standard or Azure Front Door Premium
+            profile which
+                               is unique within the resource group.
         - id: customDomainName
           type: string
           description: Name of the domain under the profile which is unique globally.
         - id: options
           type: >-
-            <xref uid="@azure/arm-cdn.AFDCustomDomainsGetOptionalParams|stable"
+            <xref uid="@azure/arm-cdn.AfdCustomDomainsGetOptionalParams|stable"
             />
           description: |
             The options parameters.
@@ -361,9 +378,9 @@ methods:
         description: ''
         type: >-
           Promise&lt;<xref
-          uid="@azure/arm-cdn.AFDCustomDomainsGetResponse|stable" />&gt;
-  - name: listByProfile(string, string, AFDCustomDomainsListByProfileOptionalParams)
-    uid: '@azure/arm-cdn.AFDCustomDomains.listByProfile|stable'
+          uid="@azure/arm-cdn.AfdCustomDomainsGetResponse|stable" />&gt;
+  - name: listByProfile(string, string, AfdCustomDomainsListByProfileOptionalParams)
+    uid: '@azure/arm-cdn.AfdCustomDomains.listByProfile|stable'
     package: '@azure/arm-cdn|stable'
     summary: Lists existing AzureFrontDoor domains.
     remarks: ''
@@ -372,7 +389,7 @@ methods:
     syntax:
       content: >-
         function listByProfile(resourceGroupName: string, profileName: string,
-        options?: AFDCustomDomainsListByProfileOptionalParams):
+        options?: AfdCustomDomainsListByProfileOptionalParams):
         PagedAsyncIterableIterator<AFDDomain>
       parameters:
         - id: resourceGroupName
@@ -380,11 +397,14 @@ methods:
           description: Name of the Resource group within the Azure subscription.
         - id: profileName
           type: string
-          description: Name of the CDN profile which is unique within the resource group.
+          description: >-
+            Name of the Azure Front Door Standard or Azure Front Door Premium
+            profile or CDN
+                               profile which is unique within the resource group.
         - id: options
           type: >-
             <xref
-            uid="@azure/arm-cdn.AFDCustomDomainsListByProfileOptionalParams|stable"
+            uid="@azure/arm-cdn.AfdCustomDomainsListByProfileOptionalParams|stable"
             />
           description: |
             The options parameters.

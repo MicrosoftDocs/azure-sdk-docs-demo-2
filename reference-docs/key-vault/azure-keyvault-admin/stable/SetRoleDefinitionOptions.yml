@@ -50,6 +50,22 @@ properties:
       return:
         description: ''
         type: string
+  - name: onResponse
+    uid: '@azure/keyvault-admin.SetRoleDefinitionOptions.onResponse|stable'
+    package: '@azure/keyvault-admin|stable'
+    summary: |-
+      A function to be called each time a response is received from the server
+      while performing the requested operation.
+      May be called multiple times.
+    fullName: onResponse
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'onResponse?: RawResponseCallback'
+      return:
+        description: ''
+        type: RawResponseCallback
   - name: permissions
     uid: '@azure/keyvault-admin.SetRoleDefinitionOptions.permissions|stable'
     package: '@azure/keyvault-admin|stable'
@@ -104,6 +120,19 @@ properties:
       return:
         description: ''
         type: string
+  - name: serializerOptions
+    uid: '@azure/keyvault-admin.SetRoleDefinitionOptions.serializerOptions|stable'
+    package: '@azure/keyvault-admin|stable'
+    summary: Options to override serialization/de-serialization behavior.
+    fullName: serializerOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'serializerOptions?: SerializerOptions'
+      return:
+        description: ''
+        type: SerializerOptions
   - name: tracingOptions
     uid: '@azure/keyvault-admin.SetRoleDefinitionOptions.tracingOptions|stable'
     package: '@azure/keyvault-admin|stable'

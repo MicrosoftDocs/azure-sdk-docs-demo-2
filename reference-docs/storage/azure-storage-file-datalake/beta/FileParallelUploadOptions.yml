@@ -84,6 +84,20 @@ properties:
         type: >-
           <xref
           uid="@azure/storage-file-datalake.DataLakeRequestConditions|beta" />
+  - name: customerProvidedKey
+    uid: >-
+      @azure/storage-file-datalake.FileParallelUploadOptions.customerProvidedKey|beta
+    package: '@azure/storage-file-datalake|beta'
+    summary: Customer Provided Key Info.
+    fullName: customerProvidedKey
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'customerProvidedKey?: CpkInfo'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-file-datalake.CpkInfo|beta" />
   - name: maxConcurrency
     uid: '@azure/storage-file-datalake.FileParallelUploadOptions.maxConcurrency|beta'
     package: '@azure/storage-file-datalake|beta'

@@ -1,0 +1,76 @@
+### YamlMime:TSType
+name: SslProtocolMatchConditionParameters
+uid: '@azure/arm-cdn.SslProtocolMatchConditionParameters|stable'
+package: '@azure/arm-cdn|stable'
+summary: Defines the parameters for SslProtocol match conditions
+fullName: SslProtocolMatchConditionParameters
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: matchValues
+    uid: '@azure/arm-cdn.SslProtocolMatchConditionParameters.matchValues|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: The match value for the condition of the delivery rule
+    fullName: matchValues
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'matchValues?: SslProtocol[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-cdn.SslProtocol|stable" />[]
+  - name: negateCondition
+    uid: '@azure/arm-cdn.SslProtocolMatchConditionParameters.negateCondition|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: Describes if this is negate condition or not
+    fullName: negateCondition
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'negateCondition?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true
+  - name: operator
+    uid: '@azure/arm-cdn.SslProtocolMatchConditionParameters.operator|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: Describes operator to be matched
+    fullName: operator
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'operator: SslProtocolOperator'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-cdn.SslProtocolOperator|stable" />
+  - name: transforms
+    uid: '@azure/arm-cdn.SslProtocolMatchConditionParameters.transforms|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: List of transforms
+    fullName: transforms
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'transforms?: Transform[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-cdn.Transform|stable" />[]
+  - name: typeName
+    uid: '@azure/arm-cdn.SslProtocolMatchConditionParameters.typeName|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: ''
+    fullName: typeName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'typeName: "DeliveryRuleSslProtocolConditionParameters"'
+      return:
+        description: ''
+        type: '"DeliveryRuleSslProtocolConditionParameters"'

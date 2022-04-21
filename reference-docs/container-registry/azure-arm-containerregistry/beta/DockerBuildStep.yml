@@ -1,0 +1,14 @@
+### YamlMime:TSTypeAlias
+name: DockerBuildStep
+uid: '@azure/arm-containerregistry.DockerBuildStep|beta'
+package: '@azure/arm-containerregistry|beta'
+summary: The Docker build step.
+fullName: DockerBuildStep
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type DockerBuildStep = TaskStepProperties & { arguments?: Argument[],
+  dockerFilePath: string, imageNames?: string[], isPushEnabled?: undefined |
+  false | true, noCache?: undefined | false | true, target?: undefined | string,
+  type: "Docker" }

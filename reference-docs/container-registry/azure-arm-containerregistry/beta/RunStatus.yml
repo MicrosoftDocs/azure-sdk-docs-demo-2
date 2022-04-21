@@ -1,0 +1,32 @@
+### YamlMime:TSTypeAlias
+name: RunStatus
+uid: '@azure/arm-containerregistry.RunStatus|beta'
+package: '@azure/arm-containerregistry|beta'
+summary: >-
+  Defines values for RunStatus. \
+
+  <xref:@azure/arm-containerregistry.KnownRunStatus|beta> can be used
+  interchangeably with RunStatus,
+   this enum contains the known values that the service supports.
+  ### Known values supported by the service
+
+  **Queued** \
+
+  **Started** \
+
+  **Running** \
+
+  **Succeeded** \
+
+  **Failed** \
+
+  **Canceled** \
+
+  **Error** \
+
+  **Timeout**
+fullName: RunStatus
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: type RunStatus = string

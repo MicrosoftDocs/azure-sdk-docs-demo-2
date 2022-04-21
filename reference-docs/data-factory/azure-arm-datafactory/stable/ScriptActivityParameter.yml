@@ -1,0 +1,83 @@
+### YamlMime:TSType
+name: ScriptActivityParameter
+uid: '@azure/arm-datafactory.ScriptActivityParameter|stable'
+package: '@azure/arm-datafactory|stable'
+summary: Parameters of a script block.
+fullName: ScriptActivityParameter
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: direction
+    uid: '@azure/arm-datafactory.ScriptActivityParameter.direction|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: The direction of the parameter.
+    fullName: direction
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'direction?: ScriptActivityParameterDirection'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-datafactory.ScriptActivityParameterDirection|stable"
+          />
+  - name: name
+    uid: '@azure/arm-datafactory.ScriptActivityParameter.name|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: >-
+      The name of the parameter. Type: string (or Expression with resultType
+      string).
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: Record<string, unknown>'
+      return:
+        description: ''
+        type: Record&lt;string, unknown&gt;
+  - name: size
+    uid: '@azure/arm-datafactory.ScriptActivityParameter.size|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: The size of the output direction parameter.
+    fullName: size
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'size?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+  - name: type
+    uid: '@azure/arm-datafactory.ScriptActivityParameter.type|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: The type of the parameter.
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: ScriptActivityParameterType'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/arm-datafactory.ScriptActivityParameterType|stable"
+          />
+  - name: value
+    uid: '@azure/arm-datafactory.ScriptActivityParameter.value|stable'
+    package: '@azure/arm-datafactory|stable'
+    summary: The value of the parameter.
+    fullName: value
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: Record<string, unknown>'
+      return:
+        description: ''
+        type: Record&lt;string, unknown&gt;

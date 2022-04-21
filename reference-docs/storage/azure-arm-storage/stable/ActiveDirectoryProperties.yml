@@ -9,6 +9,22 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
+  - name: accountType
+    uid: '@azure/arm-storage.ActiveDirectoryProperties.accountType|stable'
+    package: '@azure/arm-storage|stable'
+    summary: Specifies the Active Directory account type for Azure Storage.
+    fullName: accountType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'accountType?: ActiveDirectoryPropertiesAccountType'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-storage.ActiveDirectoryPropertiesAccountType|stable"
+          />
   - name: azureStorageSid
     uid: '@azure/arm-storage.ActiveDirectoryProperties.azureStorageSid|stable'
     package: '@azure/arm-storage|stable'
@@ -87,3 +103,16 @@ properties:
       return:
         description: ''
         type: string
+  - name: samAccountName
+    uid: '@azure/arm-storage.ActiveDirectoryProperties.samAccountName|stable'
+    package: '@azure/arm-storage|stable'
+    summary: Specifies the Active Directory SAMAccountName for Azure Storage.
+    fullName: samAccountName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'samAccountName?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

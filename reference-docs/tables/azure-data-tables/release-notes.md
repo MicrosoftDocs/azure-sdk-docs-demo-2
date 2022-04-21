@@ -2,7 +2,7 @@
 title: Azure SDK for JavaScript - Tables Release Notes
 description: 
 ms.topic: reference
-ms.date: 02/10/2022
+ms.date: 04/21/2022
 ms.service: tables
 ms.role: developer
 ms.devlang: javascript
@@ -12,7 +12,7 @@ ROBOTS: NOINDEX
 ---
 # Release History
 
-## 13.0.2 (Unreleased)
+## 13.1.2 (Unreleased)
 
 ### Features Added
 
@@ -21,6 +21,24 @@ ROBOTS: NOINDEX
 ### Bugs Fixed
 
 ### Other Changes
+
+## 13.1.1 (2022-04-14)
+
+### Bugs Fixed
+- Fixed issue where `deleteTable()` doesn't throw any errors [21408](https://github.com/Azure/azure-sdk-for-js/pull/21408).
+
+## 13.1.0 (2022-04-07)
+
+### Bugs Fixed
+
+- Fix issue when the Service returns an empty nextRowKey. [#20916](https://github.com/Azure/azure-sdk-for-js/pull/20916).
+- Fix issue with `getStatistics()` operation consistently failing and added test. [#20398](https://github.com/Azure/azure-sdk-for-js/pull/20398)
+
+### Other Changes
+
+- Updated our `@azure/core-tracing` dependency to the latest version (1.0.0)
+  - Notable changes include Removal of `@opentelemetry/api` as a transitive dependency and ensuring that the active context is properly propagated.
+  - Customers who would like to continue using OpenTelemetry driven tracing should visit our [OpenTelemetry Instrumentation](https://www.npmjs.com/package/@azure/opentelemetry-instrumentation-azure-sdk) package for instructions.
 
 ## 13.0.1 (2022-01-12)
 

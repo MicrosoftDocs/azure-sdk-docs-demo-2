@@ -1,0 +1,18 @@
+### YamlMime:TSTypeAlias
+name: EventSubscriptionDestinationUnion
+uid: '@azure/arm-eventgrid.EventSubscriptionDestinationUnion|beta'
+package: '@azure/arm-eventgrid|beta'
+summary: ''
+fullName: EventSubscriptionDestinationUnion
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type EventSubscriptionDestinationUnion = EventSubscriptionDestination |
+  WebHookEventSubscriptionDestination | EventHubEventSubscriptionDestination |
+  StorageQueueEventSubscriptionDestination |
+  HybridConnectionEventSubscriptionDestination |
+  ServiceBusQueueEventSubscriptionDestination |
+  ServiceBusTopicEventSubscriptionDestination |
+  AzureFunctionEventSubscriptionDestination |
+  PartnerEventSubscriptionDestination

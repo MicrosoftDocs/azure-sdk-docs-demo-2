@@ -1,0 +1,27 @@
+### YamlMime:TSType
+name: PartnerClientAuthentication
+uid: '@azure/arm-eventgrid.PartnerClientAuthentication|beta'
+package: '@azure/arm-eventgrid|beta'
+summary: Partner client authentication
+fullName: PartnerClientAuthentication
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: clientAuthenticationType
+    uid: >-
+      @azure/arm-eventgrid.PartnerClientAuthentication.clientAuthenticationType|beta
+    package: '@azure/arm-eventgrid|beta'
+    summary: >-
+      Polymorphic discriminator, which specifies the different types this object
+      can be
+    fullName: clientAuthenticationType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clientAuthenticationType: "AzureAD"'
+      return:
+        description: ''
+        type: '"AzureAD"'

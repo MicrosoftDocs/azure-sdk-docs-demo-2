@@ -2,7 +2,7 @@
 title: Azure SDK for JavaScript - Storage Release Notes
 description: 
 ms.topic: reference
-ms.date: 02/10/2022
+ms.date: 04/21/2022
 ms.service: storage
 ms.role: developer
 ms.devlang: javascript
@@ -12,7 +12,7 @@ ROBOTS: NOINDEX
 ---
 # Release History
 
-## 12.8.0-beta.2 (Unreleased)
+## 12.8.1 (Unreleased)
 
 ### Features Added
 
@@ -20,9 +20,19 @@ ROBOTS: NOINDEX
 
 ### Bugs Fixed
 
-- Fixed a bug where customized `ProxyOptions` is overwrited by a default one when initializing `QueueServiceClient` or `QueueClient` with connection string.
+- Add `react-native` mapping to ESM entry point
 
 ### Other Changes
+
+## 12.8.0 (2022-03-11)
+
+### Features Added
+
+- Added support for service version 2021-04-10.
+
+### Bugs Fixed
+
+- Fixed a bug where customized `ProxyOptions` is overwrited by a default one when initializing `QueueServiceClient` or `QueueClient` with connection string.
 
 ## 12.8.0-beta.1 (2021-11-09)
 

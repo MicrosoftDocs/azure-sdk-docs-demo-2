@@ -226,7 +226,11 @@ properties:
   - name: version
     uid: '@azure/keyvault-certificates.CreateCertificateOptions.version|stable'
     package: '@azure/keyvault-certificates|stable'
-    summary: The version of certificate. May be undefined.
+    summary: >-
+      The version of certificate. May be undefined.
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
     fullName: version
     remarks: ''
     isPreview: false

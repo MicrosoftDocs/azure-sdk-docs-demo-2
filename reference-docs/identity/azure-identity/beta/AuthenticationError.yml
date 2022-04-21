@@ -1,0 +1,112 @@
+### YamlMime:TSType
+name: AuthenticationError
+uid: '@azure/identity.AuthenticationError|beta'
+package: '@azure/identity|beta'
+summary: |-
+  Provides details about a failure to authenticate with Azure Active
+  Directory.  The `errorResponse` field contains more details about
+  the specific failure.
+fullName: AuthenticationError
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: AuthenticationError(number, object | string | undefined | null)
+    uid: '@azure/identity.AuthenticationError.constructor|beta'
+    package: '@azure/identity|beta'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        new AuthenticationError(statusCode: number, errorBody: object | string |
+        undefined | null)
+      parameters:
+        - id: statusCode
+          type: number
+          description: ''
+        - id: errorBody
+          type: object | string | undefined | null
+          description: ''
+properties:
+  - name: Error
+    uid: '@azure/identity.AuthenticationError.Error|beta'
+    package: '@azure/identity|beta'
+    summary: ''
+    fullName: Error
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static Error: ErrorConstructor'
+      return:
+        description: ''
+        type: ErrorConstructor
+  - name: errorResponse
+    uid: '@azure/identity.AuthenticationError.errorResponse|beta'
+    package: '@azure/identity|beta'
+    summary: The error response details.
+    fullName: errorResponse
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'errorResponse: ErrorResponse'
+      return:
+        description: ''
+        type: <xref uid="@azure/identity.ErrorResponse|beta" />
+  - name: message
+    uid: '@azure/identity.AuthenticationError.message|beta'
+    package: '@azure/identity|beta'
+    summary: ''
+    fullName: message
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'message: string'
+      return:
+        description: ''
+        type: string
+  - name: name
+    uid: '@azure/identity.AuthenticationError.name|beta'
+    package: '@azure/identity|beta'
+    summary: ''
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: string'
+      return:
+        description: ''
+        type: string
+  - name: stack
+    uid: '@azure/identity.AuthenticationError.stack|beta'
+    package: '@azure/identity|beta'
+    summary: ''
+    fullName: stack
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'stack?: string'
+      return:
+        description: ''
+        type: string
+  - name: statusCode
+    uid: '@azure/identity.AuthenticationError.statusCode|beta'
+    package: '@azure/identity|beta'
+    summary: The HTTP status code returned from the authentication request.
+    fullName: statusCode
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'statusCode: number'
+      return:
+        description: ''
+        type: number
+extends: Error

@@ -1,0 +1,61 @@
+### YamlMime:TSType
+name: AvroSerializerOptions
+uid: '@azure/schema-registry-avro.AvroSerializerOptions|beta'
+package: '@azure/schema-registry-avro|beta'
+summary: Options for Schema
+fullName: AvroSerializerOptions<MessageT>
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: autoRegisterSchemas
+    uid: '@azure/schema-registry-avro.AvroSerializerOptions.autoRegisterSchemas|beta'
+    package: '@azure/schema-registry-avro|beta'
+    summary: |
+      When true, register new schemas passed to serialize. Otherwise, and by
+      default, fail if schema has not already been registered.
+      Automatic schema registration is NOT recommended for production scenarios.
+    fullName: autoRegisterSchemas
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'autoRegisterSchemas?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: groupName
+    uid: '@azure/schema-registry-avro.AvroSerializerOptions.groupName|beta'
+    package: '@azure/schema-registry-avro|beta'
+    summary: >-
+      The group name to be used when registering/looking up a schema. Must be
+      specified
+
+      if `serialize` will be called.
+    fullName: groupName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'groupName?: string'
+      return:
+        description: ''
+        type: string
+  - name: messageAdapter
+    uid: '@azure/schema-registry-avro.AvroSerializerOptions.messageAdapter|beta'
+    package: '@azure/schema-registry-avro|beta'
+    summary: >-
+      Message Adapter enables the serializer to produce and consume custom
+      messages.
+    fullName: messageAdapter
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'messageAdapter?: MessageAdapter<MessageT>'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/schema-registry-avro.MessageAdapter|beta"
+          />&lt;MessageT&gt;

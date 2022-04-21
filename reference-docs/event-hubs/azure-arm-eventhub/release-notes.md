@@ -2,7 +2,7 @@
 title: Azure SDK for JavaScript - Event Hubs Release Notes
 description: 
 ms.topic: reference
-ms.date: 02/10/2022
+ms.date: 04/21/2022
 ms.service: event-hubs
 ms.role: developer
 ms.devlang: javascript
@@ -12,7 +12,7 @@ ROBOTS: NOINDEX
 ---
 # Release History
 
-## 5.0.1 (Unreleased)
+## 5.0.2 (Unreleased)
 
 ### Features Added
 
@@ -21,6 +21,12 @@ ROBOTS: NOINDEX
 ### Bugs Fixed
 
 ### Other Changes
+
+## 5.0.1 (2022-04-18)
+
+**features**
+
+  - Bug fix
 
 ## 5.0.0 (2021-12-09)
 

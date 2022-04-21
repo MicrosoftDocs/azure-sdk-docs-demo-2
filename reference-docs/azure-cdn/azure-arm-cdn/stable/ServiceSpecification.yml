@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: ServiceSpecification
+uid: '@azure/arm-cdn.ServiceSpecification|stable'
+package: '@azure/arm-cdn|stable'
+summary: One property of operation, include log specifications.
+fullName: ServiceSpecification
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: logSpecifications
+    uid: '@azure/arm-cdn.ServiceSpecification.logSpecifications|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: Log specifications of operation.
+    fullName: logSpecifications
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'logSpecifications?: LogSpecification[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-cdn.LogSpecification|stable" />[]
+  - name: metricSpecifications
+    uid: '@azure/arm-cdn.ServiceSpecification.metricSpecifications|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: Metric specifications of operation.
+    fullName: metricSpecifications
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'metricSpecifications?: MetricSpecification[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-cdn.MetricSpecification|stable" />[]

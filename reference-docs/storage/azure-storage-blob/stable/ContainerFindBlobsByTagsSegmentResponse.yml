@@ -1,0 +1,16 @@
+### YamlMime:TSTypeAlias
+name: ContainerFindBlobsByTagsSegmentResponse
+uid: '@azure/storage-blob.ContainerFindBlobsByTagsSegmentResponse|stable'
+package: '@azure/storage-blob|stable'
+summary: >-
+  The response of
+  <xref:@azure/storage-blob.BlobServiceClient.findBlobsByTags|stable> operation.
+fullName: ContainerFindBlobsByTagsSegmentResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type ContainerFindBlobsByTagsSegmentResponse = FilterBlobSegment &
+  ContainerFilterBlobsHeaders & { _response: HttpResponse & { bodyAsText:
+  string, parsedBody: FilterBlobSegmentModel, parsedHeaders:
+  ContainerFilterBlobsHeaders } }

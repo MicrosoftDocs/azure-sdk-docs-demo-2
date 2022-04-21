@@ -2,7 +2,7 @@
 title: Azure SDK for JavaScript - Cognitive Services Release Notes
 description: 
 ms.topic: reference
-ms.date: 02/10/2022
+ms.date: 04/21/2022
 ms.service: cognitive-services
 ms.role: developer
 ms.devlang: javascript
@@ -11,6 +11,16 @@ ms.author: daberry
 ROBOTS: NOINDEX
 ---
 # Release History
+
+## 11.3.0-beta.8 (unreleased)
+
+Added `core-http-compat` dependency
+
+## 11.3.0-beta.7 (2022-03-08)
+
+### Features Added
+
+- Added new APIs `createAlias`, `createOrUpdateAlias`, `deleteAlias`, `getAlias` & `listAliases` operations to the `SearchIndexClient`.
 
 ## 11.3.0-beta.6 (2022-02-08)
 

@@ -2,7 +2,7 @@
 title: Azure SDK for JavaScript - Data Factory Release Notes
 description: 
 ms.topic: reference
-ms.date: 02/10/2022
+ms.date: 04/21/2022
 ms.service: data-factory
 ms.role: developer
 ms.devlang: javascript
@@ -11,17 +11,61 @@ ms.author: daberry
 ROBOTS: NOINDEX
 ---
 # Release History
+    
+## 10.4.0 (2022-04-20)
+    
+**Features**
 
-## 10.1.1 (Unreleased)
+  - Added Type Alias AppFiguresLinkedService
+  - Added Type Alias AsanaLinkedService
+  - Added Type Alias DataworldLinkedService
+  - Added Type Alias TwilioLinkedService
+    
+    
+## 10.3.0 (2022-04-06)
+    
+**Features**
 
-### Features Added
+  - Added Interface ExecutePipelineActivityPolicy
+  - Added Type Alias CredentialReferenceType
+  - Added Type Alias DataFlowReferenceType
+  - Added Type Alias ManagedVirtualNetworkReferenceType
+  - Added Type Alias TriggerReferenceType
+  - Type Alias ExecutePipelineActivity has a new parameter policy
+  - Type Alias SqlServerStoredProcedureActivity has a new parameter storedProcedureParameters
+  - Type Alias WebActivity has a new parameter disableCertValidation
+  - Added Enum KnownCredentialReferenceType
+  - Added Enum KnownDataFlowReferenceType
+  - Added Enum KnownManagedVirtualNetworkReferenceType
+  - Added Enum KnownTriggerReferenceType
+    
+    
+## 10.2.0 (2022-02-22)
+    
+**Features**
 
-### Breaking Changes
-
-### Bugs Fixed
-
-### Other Changes
-
+  - Added Interface ScriptActivityParameter
+  - Added Interface ScriptActivityScriptBlock
+  - Added Interface ScriptActivityTypePropertiesLogSettings
+  - Added Type Alias QuickbaseLinkedService
+  - Added Type Alias ScriptActivity
+  - Added Type Alias ScriptActivityLogDestination
+  - Added Type Alias ScriptActivityParameterDirection
+  - Added Type Alias ScriptActivityParameterType
+  - Added Type Alias ScriptType
+  - Added Type Alias SmartsheetLinkedService
+  - Added Type Alias TeamDeskAuthenticationType
+  - Added Type Alias TeamDeskLinkedService
+  - Added Type Alias ZendeskAuthenticationType
+  - Added Type Alias ZendeskLinkedService
+  - Added Enum KnownScriptActivityLogDestination
+  - Added Enum KnownScriptActivityParameterDirection
+  - Added Enum KnownScriptActivityParameterType
+  - Added Enum KnownScriptType
+  - Added Enum KnownTeamDeskAuthenticationType
+  - Added Enum KnownZendeskAuthenticationType
+    
+    
 ## 10.1.0 (2022-01-10)
     
 **Features**

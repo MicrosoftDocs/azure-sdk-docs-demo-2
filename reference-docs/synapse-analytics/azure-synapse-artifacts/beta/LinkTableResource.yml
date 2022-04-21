@@ -1,0 +1,63 @@
+### YamlMime:TSType
+name: LinkTableResource
+uid: '@azure/synapse-artifacts.LinkTableResource|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: ''
+fullName: LinkTableResource
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: id
+    uid: '@azure/synapse-artifacts.LinkTableResource.id|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Link table id
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: string'
+      return:
+        description: ''
+        type: string
+  - name: name
+    uid: '@azure/synapse-artifacts.LinkTableResource.name|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Link table name
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: string'
+      return:
+        description: ''
+        type: string
+  - name: source
+    uid: '@azure/synapse-artifacts.LinkTableResource.source|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Source table properties for link table request
+    fullName: source
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'source?: LinkTableRequestSource'
+      return:
+        description: ''
+        type: <xref uid="@azure/synapse-artifacts.LinkTableRequestSource|beta" />
+  - name: target
+    uid: '@azure/synapse-artifacts.LinkTableResource.target|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Target table properties for link table request
+    fullName: target
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'target?: LinkTableRequestTarget'
+      return:
+        description: ''
+        type: <xref uid="@azure/synapse-artifacts.LinkTableRequestTarget|beta" />

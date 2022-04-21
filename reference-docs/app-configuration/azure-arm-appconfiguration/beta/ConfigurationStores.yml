@@ -157,6 +157,69 @@ methods:
         description: ''
         type: Promise&lt;void&gt;
   - name: >-
+      beginPurgeDeleted(string, string,
+      ConfigurationStoresPurgeDeletedOptionalParams)
+    uid: '@azure/arm-appconfiguration.ConfigurationStores.beginPurgeDeleted|beta'
+    package: '@azure/arm-appconfiguration|beta'
+    summary: Permanently deletes the specified configuration store.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginPurgeDeleted(location: string, configStoreName: string,
+        options?: ConfigurationStoresPurgeDeletedOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: location
+          type: string
+          description: The location in which uniqueness will be verified.
+        - id: configStoreName
+          type: string
+          description: The name of the configuration store.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appconfiguration.ConfigurationStoresPurgeDeletedOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: >-
+      beginPurgeDeletedAndWait(string, string,
+      ConfigurationStoresPurgeDeletedOptionalParams)
+    uid: >-
+      @azure/arm-appconfiguration.ConfigurationStores.beginPurgeDeletedAndWait|beta
+    package: '@azure/arm-appconfiguration|beta'
+    summary: Permanently deletes the specified configuration store.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginPurgeDeletedAndWait(location: string, configStoreName:
+        string, options?: ConfigurationStoresPurgeDeletedOptionalParams):
+        Promise<void>
+      parameters:
+        - id: location
+          type: string
+          description: The location in which uniqueness will be verified.
+        - id: configStoreName
+          type: string
+          description: The name of the configuration store.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appconfiguration.ConfigurationStoresPurgeDeletedOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
       beginUpdate(string, string, ConfigurationStoreUpdateParameters,
       ConfigurationStoresUpdateOptionalParams)
     uid: '@azure/arm-appconfiguration.ConfigurationStores.beginUpdate|beta'
@@ -279,6 +342,38 @@ methods:
           Promise&lt;<xref
           uid="@azure/arm-appconfiguration.ConfigurationStoresGetResponse|beta"
           />&gt;
+  - name: getDeleted(string, string, ConfigurationStoresGetDeletedOptionalParams)
+    uid: '@azure/arm-appconfiguration.ConfigurationStores.getDeleted|beta'
+    package: '@azure/arm-appconfiguration|beta'
+    summary: Gets a deleted Azure app configuration store.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getDeleted(location: string, configStoreName: string, options?:
+        ConfigurationStoresGetDeletedOptionalParams):
+        Promise<ConfigurationStoresGetDeletedResponse>
+      parameters:
+        - id: location
+          type: string
+          description: The location in which uniqueness will be verified.
+        - id: configStoreName
+          type: string
+          description: The name of the configuration store.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appconfiguration.ConfigurationStoresGetDeletedOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-appconfiguration.ConfigurationStoresGetDeletedResponse|beta"
+          />&gt;
   - name: list(ConfigurationStoresListOptionalParams)
     uid: '@azure/arm-appconfiguration.ConfigurationStores.list|beta'
     package: '@azure/arm-appconfiguration|beta'
@@ -335,6 +430,32 @@ methods:
         type: >-
           PagedAsyncIterableIterator&lt;<xref
           uid="@azure/arm-appconfiguration.ConfigurationStore|beta" />&gt;
+  - name: listDeleted(ConfigurationStoresListDeletedOptionalParams)
+    uid: '@azure/arm-appconfiguration.ConfigurationStores.listDeleted|beta'
+    package: '@azure/arm-appconfiguration|beta'
+    summary: Gets information about the deleted configuration stores in a subscription.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listDeleted(options?:
+        ConfigurationStoresListDeletedOptionalParams):
+        PagedAsyncIterableIterator<DeletedConfigurationStore>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-appconfiguration.ConfigurationStoresListDeletedOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-appconfiguration.DeletedConfigurationStore|beta"
+          />&gt;
   - name: listKeys(string, string, ConfigurationStoresListKeysOptionalParams)
     uid: '@azure/arm-appconfiguration.ConfigurationStores.listKeys|beta'
     package: '@azure/arm-appconfiguration|beta'

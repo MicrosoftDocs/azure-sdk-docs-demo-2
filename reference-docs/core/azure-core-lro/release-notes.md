@@ -2,7 +2,7 @@
 title: Azure SDK for JavaScript - Core Release Notes
 description: 
 ms.topic: reference
-ms.date: 02/10/2022
+ms.date: 04/21/2022
 ms.service: core
 ms.role: developer
 ms.devlang: javascript
@@ -12,7 +12,7 @@ ROBOTS: NOINDEX
 ---
 # Release History
 
-## 2.2.4 (Unreleased)
+## 2.2.5 (Unreleased)
 
 ### Features Added
 
@@ -21,6 +21,14 @@ ROBOTS: NOINDEX
 ### Bugs Fixed
 
 ### Other Changes
+
+- Removed the unused dependency `@azure/core-tracing`.
+
+## 2.2.4 (2022-03-07)
+
+### Bugs Fixed
+
+- Fix polling so that resources created in a different URL will be retrieved once polling is done. [PR #20656](https://github.com/Azure/azure-sdk-for-js/pull/20656)
 
 ## 2.2.3 (2022-01-06)
 

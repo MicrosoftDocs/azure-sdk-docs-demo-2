@@ -1,0 +1,52 @@
+### YamlMime:TSType
+name: Argument
+uid: '@azure/arm-containerregistry.Argument|beta'
+package: '@azure/arm-containerregistry|beta'
+summary: The properties of a run argument.
+fullName: Argument
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: isSecret
+    uid: '@azure/arm-containerregistry.Argument.isSecret|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: >-
+      Flag to indicate whether the argument represents a secret and want to be
+      removed from build logs.
+    fullName: isSecret
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isSecret?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true
+  - name: name
+    uid: '@azure/arm-containerregistry.Argument.name|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: The name of the argument.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: string'
+      return:
+        description: ''
+        type: string
+  - name: value
+    uid: '@azure/arm-containerregistry.Argument.value|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: The value of the argument.
+    fullName: value
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value: string'
+      return:
+        description: ''
+        type: string

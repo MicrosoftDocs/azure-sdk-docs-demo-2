@@ -30,11 +30,20 @@ fields:
     uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.DeleteRoleAssignment|stable'
     package: '@azure/keyvault-admin|stable'
     summary: Delete role assignment.
+  - name: DeleteRoleDefinition
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.DeleteRoleDefinition|stable'
+    package: '@azure/keyvault-admin|stable'
+    summary: Delete role definition.
   - name: DownloadHsmSecurityDomain
     uid: >-
       @azure/keyvault-admin.KnownKeyVaultDataAction.DownloadHsmSecurityDomain|stable
     package: '@azure/keyvault-admin|stable'
     summary: Download an HSM security domain.
+  - name: DownloadHsmSecurityDomainStatus
+    uid: >-
+      @azure/keyvault-admin.KnownKeyVaultDataAction.DownloadHsmSecurityDomainStatus|stable
+    package: '@azure/keyvault-admin|stable'
+    summary: Check status of HSM security domain download.
   - name: EncryptHsmKey
     uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.EncryptHsmKey|stable'
     package: '@azure/keyvault-admin|stable'
@@ -55,6 +64,10 @@ fields:
     uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.PurgeDeletedHsmKey|stable'
     package: '@azure/keyvault-admin|stable'
     summary: Purge a deleted HSM key.
+  - name: RandomNumbersGenerate
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.RandomNumbersGenerate|stable'
+    package: '@azure/keyvault-admin|stable'
+    summary: Generate random numbers.
   - name: ReadDeletedHsmKey
     uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.ReadDeletedHsmKey|stable'
     package: '@azure/keyvault-admin|stable'
@@ -89,6 +102,10 @@ fields:
     uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.RecoverDeletedHsmKey|stable'
     package: '@azure/keyvault-admin|stable'
     summary: Recover deleted HSM key.
+  - name: ReleaseKey
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.ReleaseKey|stable'
+    package: '@azure/keyvault-admin|stable'
+    summary: Release an HSM key using Secure Key Release.
   - name: RestoreHsmKeys
     uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.RestoreHsmKeys|stable'
     package: '@azure/keyvault-admin|stable'
@@ -130,3 +147,7 @@ fields:
     uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.WriteRoleAssignment|stable'
     package: '@azure/keyvault-admin|stable'
     summary: Create or update role assignment.
+  - name: WriteRoleDefinition
+    uid: '@azure/keyvault-admin.KnownKeyVaultDataAction.WriteRoleDefinition|stable'
+    package: '@azure/keyvault-admin|stable'
+    summary: Create or update role definition.

@@ -1,0 +1,52 @@
+### YamlMime:TSType
+name: AuthenticationRequiredErrorOptions
+uid: '@azure/identity.AuthenticationRequiredErrorOptions|beta'
+package: '@azure/identity|beta'
+summary: >-
+  Optional parameters to the
+  <xref:@azure/identity.AuthenticationRequiredError|beta>
+fullName: AuthenticationRequiredErrorOptions
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: getTokenOptions
+    uid: '@azure/identity.AuthenticationRequiredErrorOptions.getTokenOptions|beta'
+    package: '@azure/identity|beta'
+    summary: The options passed to the getToken request.
+    fullName: getTokenOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTokenOptions?: GetTokenOptions'
+      return:
+        description: ''
+        type: GetTokenOptions
+  - name: message
+    uid: '@azure/identity.AuthenticationRequiredErrorOptions.message|beta'
+    package: '@azure/identity|beta'
+    summary: The message of the error.
+    fullName: message
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'message?: string'
+      return:
+        description: ''
+        type: string
+  - name: scopes
+    uid: '@azure/identity.AuthenticationRequiredErrorOptions.scopes|beta'
+    package: '@azure/identity|beta'
+    summary: The list of scopes for which the token will have access.
+    fullName: scopes
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'scopes: string[]'
+      return:
+        description: ''
+        type: string[]

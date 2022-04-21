@@ -1,0 +1,104 @@
+### YamlMime:TSPackage
+uid: '@azure/service-bus|beta'
+name: '@azure/service-bus (7.6.0-beta.1 - Beta)'
+summary: ''
+type: package
+classes:
+  - '@azure/service-bus.ServiceBusAdministrationClient|beta'
+  - '@azure/service-bus.ServiceBusClient|beta'
+  - '@azure/service-bus.ServiceBusError|beta'
+interfaces:
+  - '@azure/service-bus.AuthorizationRule|beta'
+  - '@azure/service-bus.CorrelationRuleFilter|beta'
+  - '@azure/service-bus.CreateMessageBatchOptions|beta'
+  - '@azure/service-bus.CreateQueueOptions|beta'
+  - '@azure/service-bus.CreateSubscriptionOptions|beta'
+  - '@azure/service-bus.CreateTopicOptions|beta'
+  - '@azure/service-bus.DeadLetterOptions|beta'
+  - '@azure/service-bus.GetMessageIteratorOptions|beta'
+  - '@azure/service-bus.HttpHeader|beta'
+  - '@azure/service-bus.HttpHeadersLike|beta'
+  - '@azure/service-bus.HttpResponse|beta'
+  - '@azure/service-bus.MessageHandlers|beta'
+  - '@azure/service-bus.NamespaceProperties|beta'
+  - '@azure/service-bus.PeekMessagesOptions|beta'
+  - '@azure/service-bus.ProcessErrorArgs|beta'
+  - '@azure/service-bus.QueueProperties|beta'
+  - '@azure/service-bus.QueueRuntimeProperties|beta'
+  - '@azure/service-bus.ReceiveMessagesOptions|beta'
+  - '@azure/service-bus.RuleProperties|beta'
+  - '@azure/service-bus.ServiceBusAdministrationClientOptions|beta'
+  - '@azure/service-bus.ServiceBusClientOptions|beta'
+  - '@azure/service-bus.ServiceBusConnectionStringProperties|beta'
+  - '@azure/service-bus.ServiceBusMessage|beta'
+  - '@azure/service-bus.ServiceBusMessageBatch|beta'
+  - '@azure/service-bus.ServiceBusReceivedMessage|beta'
+  - '@azure/service-bus.ServiceBusReceiver|beta'
+  - '@azure/service-bus.ServiceBusReceiverOptions|beta'
+  - '@azure/service-bus.ServiceBusSender|beta'
+  - '@azure/service-bus.ServiceBusSessionReceiver|beta'
+  - '@azure/service-bus.ServiceBusSessionReceiverOptions|beta'
+  - '@azure/service-bus.SqlRuleFilter|beta'
+  - '@azure/service-bus.SubscribeOptions|beta'
+  - '@azure/service-bus.SubscriptionProperties|beta'
+  - '@azure/service-bus.SubscriptionRuntimeProperties|beta'
+  - '@azure/service-bus.TopicProperties|beta'
+  - '@azure/service-bus.TopicRuntimeProperties|beta'
+  - '@azure/service-bus.TryAddOptions|beta'
+  - '@azure/service-bus.WebResourceLike|beta'
+typeAliases:
+  - '@azure/service-bus.EntitiesResponse|beta'
+  - '@azure/service-bus.EntityAvailabilityStatus|beta'
+  - '@azure/service-bus.EntityStatus|beta'
+  - '@azure/service-bus.OperationOptionsBase|beta'
+  - '@azure/service-bus.RawHttpHeaders|beta'
+  - '@azure/service-bus.ServiceBusErrorCode|beta'
+  - '@azure/service-bus.SqlRuleAction|beta'
+  - '@azure/service-bus.TransferProgressEvent|beta'
+  - '@azure/service-bus.WithResponse|beta'
+functions:
+  - name: isServiceBusError(unknown)
+    uid: '@azure/service-bus.isServiceBusError|beta'
+    package: '@azure/service-bus|beta'
+    summary: Determines if an error is of type `ServiceBusError`
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function isServiceBusError(err: unknown): boolean'
+      parameters:
+        - id: err
+          type: unknown
+          description: |
+            An error to check to see if it's of type ServiceBusError
+      return:
+        description: ''
+        type: boolean
+  - name: parseServiceBusConnectionString(string)
+    uid: '@azure/service-bus.parseServiceBusConnectionString|beta'
+    package: '@azure/service-bus|beta'
+    summary: >-
+      Parses given connection string into the different properties applicable to
+      Azure Service Bus.
+
+      The properties are useful to then construct a ServiceBusClient.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function parseServiceBusConnectionString(connectionString: string):
+        ServiceBusConnectionStringProperties
+      parameters:
+        - id: connectionString
+          type: string
+          description: >
+            The connection string associated with the Shared Access Policy
+            created
+
+            for the Service Bus namespace, queue or topic.
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/service-bus.ServiceBusConnectionStringProperties|beta" />

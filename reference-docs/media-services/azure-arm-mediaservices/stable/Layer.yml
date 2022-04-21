@@ -43,31 +43,6 @@ properties:
       return:
         description: ''
         type: undefined | string
-  - name: odataType
-    uid: '@azure/arm-mediaservices.Layer.odataType|stable'
-    package: '@azure/arm-mediaservices|stable'
-    summary: >-
-      Polymorphic discriminator, which specifies the different types this object
-      can be
-    fullName: odataType
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        odataType: "#Microsoft.Media.H265VideoLayer" |
-        "#Microsoft.Media.H265Layer" | "#Microsoft.Media.VideoLayer" |
-        "#Microsoft.Media.H264Layer" | "#Microsoft.Media.JpgLayer" |
-        "#Microsoft.Media.PngLayer"
-      return:
-        description: ''
-        type: >-
-          "#<xref uid="Microsoft.Media.H265VideoLayer|stable" />" | "#<xref
-          uid="Microsoft.Media.H265Layer|stable" />" | "#<xref
-          uid="Microsoft.Media.VideoLayer|stable" />" | "#<xref
-          uid="Microsoft.Media.H264Layer|stable" />" | "#<xref
-          uid="Microsoft.Media.JpgLayer|stable" />" | "#<xref
-          uid="Microsoft.Media.PngLayer|stable" />"
   - name: width
     uid: '@azure/arm-mediaservices.Layer.width|stable'
     package: '@azure/arm-mediaservices|stable'

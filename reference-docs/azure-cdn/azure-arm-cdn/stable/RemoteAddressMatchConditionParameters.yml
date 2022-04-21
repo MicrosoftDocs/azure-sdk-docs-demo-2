@@ -39,24 +39,6 @@ properties:
       return:
         description: ''
         type: undefined | false | true
-  - name: odataType
-    uid: '@azure/arm-cdn.RemoteAddressMatchConditionParameters.odataType|stable'
-    package: '@azure/arm-cdn|stable'
-    summary: ''
-    fullName: odataType
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        odataType:
-        "#Microsoft.Azure.Cdn.Models.DeliveryRuleRemoteAddressConditionParameters"
-      return:
-        description: ''
-        type: >-
-          "#<xref
-          uid="Microsoft.Azure.Cdn.Models.DeliveryRuleRemoteAddressConditionParameters|stable"
-          />"
   - name: operator
     uid: '@azure/arm-cdn.RemoteAddressMatchConditionParameters.operator|stable'
     package: '@azure/arm-cdn|stable'
@@ -83,3 +65,16 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-cdn.Transform|stable" />[]
+  - name: typeName
+    uid: '@azure/arm-cdn.RemoteAddressMatchConditionParameters.typeName|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: ''
+    fullName: typeName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'typeName: "DeliveryRuleRemoteAddressConditionParameters"'
+      return:
+        description: ''
+        type: '"DeliveryRuleRemoteAddressConditionParameters"'

@@ -1,0 +1,67 @@
+### YamlMime:TSType
+name: LinkConnection
+uid: '@azure/synapse-artifacts.LinkConnection|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: ''
+fullName: LinkConnection
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: compute
+    uid: '@azure/synapse-artifacts.LinkConnection.compute|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Properties of link connection's compute
+    fullName: compute
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'compute?: LinkConnectionCompute'
+      return:
+        description: ''
+        type: <xref uid="@azure/synapse-artifacts.LinkConnectionCompute|beta" />
+  - name: landingZone
+    uid: '@azure/synapse-artifacts.LinkConnection.landingZone|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Properties of link connection's landing zone
+    fullName: landingZone
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'landingZone?: LinkConnectionLandingZone'
+      return:
+        description: ''
+        type: <xref uid="@azure/synapse-artifacts.LinkConnectionLandingZone|beta" />
+  - name: sourceDatabase
+    uid: '@azure/synapse-artifacts.LinkConnection.sourceDatabase|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Properties of link connection's source database
+    fullName: sourceDatabase
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sourceDatabase?: LinkConnectionSourceDatabase'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/synapse-artifacts.LinkConnectionSourceDatabase|beta"
+          />
+  - name: targetDatabase
+    uid: '@azure/synapse-artifacts.LinkConnection.targetDatabase|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: Properties of link connection's target database
+    fullName: targetDatabase
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'targetDatabase?: LinkConnectionTargetDatabase'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/synapse-artifacts.LinkConnectionTargetDatabase|beta"
+          />

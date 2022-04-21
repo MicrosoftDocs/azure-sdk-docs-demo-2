@@ -1,6 +1,6 @@
 ### YamlMime:TSPackage
 uid: '@azure/arm-appconfiguration|beta'
-name: '@azure/arm-appconfiguration (3.0.0-beta.1 - Beta)'
+name: '@azure/arm-appconfiguration (3.0.0-beta.4 - Beta)'
 summary: ''
 type: package
 enums:
@@ -24,19 +24,28 @@ interfaces:
   - '@azure/arm-appconfiguration.ConfigurationStores|beta'
   - '@azure/arm-appconfiguration.ConfigurationStoresCreateOptionalParams|beta'
   - '@azure/arm-appconfiguration.ConfigurationStoresDeleteOptionalParams|beta'
+  - '@azure/arm-appconfiguration.ConfigurationStoresGetDeletedOptionalParams|beta'
   - '@azure/arm-appconfiguration.ConfigurationStoresGetOptionalParams|beta'
   - >-
     @azure/arm-appconfiguration.ConfigurationStoresListByResourceGroupNextOptionalParams|beta
   - >-
     @azure/arm-appconfiguration.ConfigurationStoresListByResourceGroupOptionalParams|beta
   - >-
+    @azure/arm-appconfiguration.ConfigurationStoresListDeletedNextOptionalParams|beta
+  - >-
+    @azure/arm-appconfiguration.ConfigurationStoresListDeletedOptionalParams|beta
+  - >-
     @azure/arm-appconfiguration.ConfigurationStoresListKeysNextOptionalParams|beta
   - '@azure/arm-appconfiguration.ConfigurationStoresListKeysOptionalParams|beta'
   - '@azure/arm-appconfiguration.ConfigurationStoresListNextOptionalParams|beta'
   - '@azure/arm-appconfiguration.ConfigurationStoresListOptionalParams|beta'
   - >-
+    @azure/arm-appconfiguration.ConfigurationStoresPurgeDeletedOptionalParams|beta
+  - >-
     @azure/arm-appconfiguration.ConfigurationStoresRegenerateKeyOptionalParams|beta
   - '@azure/arm-appconfiguration.ConfigurationStoresUpdateOptionalParams|beta'
+  - '@azure/arm-appconfiguration.DeletedConfigurationStore|beta'
+  - '@azure/arm-appconfiguration.DeletedConfigurationStoreListResult|beta'
   - '@azure/arm-appconfiguration.EncryptionProperties|beta'
   - '@azure/arm-appconfiguration.ErrorAdditionalInfo|beta'
   - '@azure/arm-appconfiguration.ErrorDetails|beta'
@@ -65,6 +74,8 @@ interfaces:
     @azure/arm-appconfiguration.OperationsCheckNameAvailabilityOptionalParams|beta
   - '@azure/arm-appconfiguration.OperationsListNextOptionalParams|beta'
   - '@azure/arm-appconfiguration.OperationsListOptionalParams|beta'
+  - >-
+    @azure/arm-appconfiguration.OperationsRegionalCheckNameAvailabilityOptionalParams|beta
   - '@azure/arm-appconfiguration.PrivateEndpoint|beta'
   - '@azure/arm-appconfiguration.PrivateEndpointConnection|beta'
   - '@azure/arm-appconfiguration.PrivateEndpointConnectionListResult|beta'
@@ -100,11 +111,14 @@ typeAliases:
   - '@azure/arm-appconfiguration.ConfigurationResourceType|beta'
   - '@azure/arm-appconfiguration.ConfigurationStore|beta'
   - '@azure/arm-appconfiguration.ConfigurationStoresCreateResponse|beta'
+  - '@azure/arm-appconfiguration.ConfigurationStoresGetDeletedResponse|beta'
   - '@azure/arm-appconfiguration.ConfigurationStoresGetResponse|beta'
   - >-
     @azure/arm-appconfiguration.ConfigurationStoresListByResourceGroupNextResponse|beta
   - >-
     @azure/arm-appconfiguration.ConfigurationStoresListByResourceGroupResponse|beta
+  - '@azure/arm-appconfiguration.ConfigurationStoresListDeletedNextResponse|beta'
+  - '@azure/arm-appconfiguration.ConfigurationStoresListDeletedResponse|beta'
   - '@azure/arm-appconfiguration.ConfigurationStoresListKeysNextResponse|beta'
   - '@azure/arm-appconfiguration.ConfigurationStoresListKeysResponse|beta'
   - '@azure/arm-appconfiguration.ConfigurationStoresListNextResponse|beta'
@@ -112,6 +126,7 @@ typeAliases:
   - '@azure/arm-appconfiguration.ConfigurationStoresRegenerateKeyResponse|beta'
   - '@azure/arm-appconfiguration.ConfigurationStoresUpdateResponse|beta'
   - '@azure/arm-appconfiguration.ConnectionStatus|beta'
+  - '@azure/arm-appconfiguration.CreateMode|beta'
   - '@azure/arm-appconfiguration.CreatedByType|beta'
   - '@azure/arm-appconfiguration.IdentityType|beta'
   - '@azure/arm-appconfiguration.KeyValuesCreateOrUpdateResponse|beta'
@@ -122,6 +137,8 @@ typeAliases:
   - '@azure/arm-appconfiguration.OperationsCheckNameAvailabilityResponse|beta'
   - '@azure/arm-appconfiguration.OperationsListNextResponse|beta'
   - '@azure/arm-appconfiguration.OperationsListResponse|beta'
+  - >-
+    @azure/arm-appconfiguration.OperationsRegionalCheckNameAvailabilityResponse|beta
   - >-
     @azure/arm-appconfiguration.PrivateEndpointConnectionsCreateOrUpdateResponse|beta
   - '@azure/arm-appconfiguration.PrivateEndpointConnectionsGetResponse|beta'

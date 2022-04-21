@@ -1,0 +1,27 @@
+### YamlMime:TSType
+name: GlossaryImportGlossaryTermsViaCsvFormBody
+uid: '@azure-rest/purview-catalog.GlossaryImportGlossaryTermsViaCsvFormBody|beta'
+package: '@azure-rest/purview-catalog|beta'
+summary: ''
+fullName: GlossaryImportGlossaryTermsViaCsvFormBody
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: file
+    uid: >-
+      @azure-rest/purview-catalog.GlossaryImportGlossaryTermsViaCsvFormBody.file|beta
+    package: '@azure-rest/purview-catalog|beta'
+    summary: |
+      The csv file to import glossary terms from.
+      Value may contain any sequence of octets
+    fullName: file
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'file: string | Uint8Array'
+      return:
+        description: ''
+        type: string | Uint8Array

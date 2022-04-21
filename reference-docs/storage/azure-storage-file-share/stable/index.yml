@@ -1,6 +1,6 @@
 ### YamlMime:TSPackage
 uid: '@azure/storage-file-share|stable'
-name: '@azure/storage-file-share (12.8.0 - Stable)'
+name: '@azure/storage-file-share (12.9.0 - Stable)'
 summary: ''
 type: package
 enums:
@@ -12,8 +12,8 @@ classes:
   - '@azure/storage-file-share.AccountSASServices|stable'
   - '@azure/storage-file-share.AnonymousCredential|stable'
   - '@azure/storage-file-share.AnonymousCredentialPolicy|stable'
-  - '@azure/storage-file-share.Credential|stable'
   - '@azure/storage-file-share.CredentialPolicy|stable'
+  - '@azure/storage-file-share.Credential_2|stable'
   - '@azure/storage-file-share.FileSASPermissions|stable'
   - '@azure/storage-file-share.FileSystemAttributes|stable'
   - '@azure/storage-file-share.Pipeline|stable'
@@ -62,6 +62,8 @@ interfaces:
   - '@azure/storage-file-share.DirectoryListHandlesOptions|stable'
   - '@azure/storage-file-share.DirectoryListHandlesSegmentOptions|stable'
   - '@azure/storage-file-share.DirectoryProperties|stable'
+  - '@azure/storage-file-share.DirectoryRenameHeaders|stable'
+  - '@azure/storage-file-share.DirectoryRenameOptions|stable'
   - '@azure/storage-file-share.DirectorySetMetadataHeaders|stable'
   - '@azure/storage-file-share.DirectorySetMetadataOptions|stable'
   - '@azure/storage-file-share.DirectorySetPropertiesHeaders|stable'
@@ -96,6 +98,8 @@ interfaces:
   - '@azure/storage-file-share.FileParallelUploadOptions|stable'
   - '@azure/storage-file-share.FileProperties|stable'
   - '@azure/storage-file-share.FileProperty|stable'
+  - '@azure/storage-file-share.FileRenameHeaders|stable'
+  - '@azure/storage-file-share.FileRenameOptions|stable'
   - '@azure/storage-file-share.FileResizeOptions|stable'
   - '@azure/storage-file-share.FileSASSignatureValues|stable'
   - '@azure/storage-file-share.FileServiceProperties|stable'
@@ -124,8 +128,8 @@ interfaces:
   - '@azure/storage-file-share.Metadata|stable'
   - '@azure/storage-file-share.Metrics|stable'
   - '@azure/storage-file-share.PipelineOptions|stable'
-  - '@azure/storage-file-share.Range|stable'
   - '@azure/storage-file-share.RangeModel|stable'
+  - '@azure/storage-file-share.Range_2|stable'
   - '@azure/storage-file-share.RetentionPolicy|stable'
   - '@azure/storage-file-share.SasIPRange|stable'
   - '@azure/storage-file-share.ServiceGenerateAccountSasUrlOptions|stable'
@@ -191,6 +195,7 @@ typeAliases:
   - >-
     @azure/storage-file-share.DirectoryListFilesAndDirectoriesSegmentResponse|stable
   - '@azure/storage-file-share.DirectoryListHandlesResponse|stable'
+  - '@azure/storage-file-share.DirectoryRenameResponse|stable'
   - '@azure/storage-file-share.DirectorySetMetadataResponse|stable'
   - '@azure/storage-file-share.DirectorySetPropertiesResponse|stable'
   - '@azure/storage-file-share.FileAbortCopyResponse|stable'
@@ -205,10 +210,10 @@ typeAliases:
   - '@azure/storage-file-share.FileListHandlesResponse|stable'
   - '@azure/storage-file-share.FilePermissionInheritType|stable'
   - '@azure/storage-file-share.FilePermissionPreserveType|stable'
+  - '@azure/storage-file-share.FileRenameResponse|stable'
   - '@azure/storage-file-share.FileSetHTTPHeadersResponse|stable'
   - '@azure/storage-file-share.FileSetMetadataResponse|stable'
   - '@azure/storage-file-share.FileStartCopyResponse|stable'
-  - '@azure/storage-file-share.FileType|stable'
   - '@azure/storage-file-share.FileUploadRangeFromURLResponse|stable'
   - '@azure/storage-file-share.FileUploadRangeResponse|stable'
   - '@azure/storage-file-share.LeaseDurationType|stable'
@@ -329,7 +334,7 @@ functions:
       return:
         description: ''
         type: <xref uid="@azure/storage-file-share.SASQueryParameters|stable" />
-  - name: newPipeline(Credential, StoragePipelineOptions)
+  - name: newPipeline(Credential_2, StoragePipelineOptions)
     uid: '@azure/storage-file-share.newPipeline|stable'
     package: '@azure/storage-file-share|stable'
     summary: >-
@@ -340,11 +345,11 @@ functions:
     isDeprecated: false
     syntax:
       content: >-
-        function newPipeline(credential?: Credential, pipelineOptions?:
+        function newPipeline(credential?: Credential_2, pipelineOptions?:
         StoragePipelineOptions): Pipeline
       parameters:
         - id: credential
-          type: <xref uid="@azure/storage-file-share.Credential|stable" />
+          type: <xref uid="@azure/storage-file-share.Credential_2|stable" />
           description: Such as AnonymousCredential, StorageSharedKeyCredential.
         - id: pipelineOptions
           type: >-

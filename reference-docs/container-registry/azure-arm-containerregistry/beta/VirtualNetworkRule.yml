@@ -1,0 +1,40 @@
+### YamlMime:TSType
+name: VirtualNetworkRule
+uid: '@azure/arm-containerregistry.VirtualNetworkRule|beta'
+package: '@azure/arm-containerregistry|beta'
+summary: Virtual network rule.
+fullName: VirtualNetworkRule
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: action
+    uid: '@azure/arm-containerregistry.VirtualNetworkRule.action|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: The action of virtual network rule.
+    fullName: action
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'action?: Action'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-containerregistry.Action|beta" />
+  - name: virtualNetworkResourceId
+    uid: >-
+      @azure/arm-containerregistry.VirtualNetworkRule.virtualNetworkResourceId|beta
+    package: '@azure/arm-containerregistry|beta'
+    summary: >-
+      Resource ID of a subnet, for example:
+      /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{vnetName}/subnets/{subnetName}.
+    fullName: virtualNetworkResourceId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'virtualNetworkResourceId: string'
+      return:
+        description: ''
+        type: string

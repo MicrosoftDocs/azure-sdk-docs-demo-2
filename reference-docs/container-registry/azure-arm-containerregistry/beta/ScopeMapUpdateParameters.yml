@@ -1,0 +1,40 @@
+### YamlMime:TSType
+name: ScopeMapUpdateParameters
+uid: '@azure/arm-containerregistry.ScopeMapUpdateParameters|beta'
+package: '@azure/arm-containerregistry|beta'
+summary: The properties for updating the scope map.
+fullName: ScopeMapUpdateParameters
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: actions
+    uid: '@azure/arm-containerregistry.ScopeMapUpdateParameters.actions|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: |-
+      The list of scope permissions for registry artifacts.
+      E.g. repositories/repository-name/pull,
+      repositories/repository-name/delete
+    fullName: actions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'actions?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: description
+    uid: '@azure/arm-containerregistry.ScopeMapUpdateParameters.description|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: The user friendly description of the scope map.
+    fullName: description
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'description?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

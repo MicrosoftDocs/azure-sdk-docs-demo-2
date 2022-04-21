@@ -1,0 +1,103 @@
+### YamlMime:TSType
+name: AggregateAuthenticationError
+uid: '@azure/identity.AggregateAuthenticationError|beta'
+package: '@azure/identity|beta'
+summary: >-
+  Provides an `errors` array containing
+  <xref:@azure/identity.AggregateAuthenticationError|beta> instance
+
+  for authentication failures from credentials in a
+  <xref:@azure/identity.ChainedTokenCredential|beta>.
+fullName: AggregateAuthenticationError
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: AggregateAuthenticationError(any[], string)
+    uid: '@azure/identity.AggregateAuthenticationError.constructor|beta'
+    package: '@azure/identity|beta'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'new AggregateAuthenticationError(errors: any[], errorMessage?: string)'
+      parameters:
+        - id: errors
+          type: any[]
+          description: ''
+        - id: errorMessage
+          type: string
+          description: ''
+properties:
+  - name: Error
+    uid: '@azure/identity.AggregateAuthenticationError.Error|beta'
+    package: '@azure/identity|beta'
+    summary: ''
+    fullName: Error
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static Error: ErrorConstructor'
+      return:
+        description: ''
+        type: ErrorConstructor
+  - name: errors
+    uid: '@azure/identity.AggregateAuthenticationError.errors|beta'
+    package: '@azure/identity|beta'
+    summary: >-
+      The array of error objects that were thrown while trying to authenticate
+
+      with the credentials in a
+      <xref:@azure/identity.ChainedTokenCredential|beta>.
+    fullName: errors
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'errors: any[]'
+      return:
+        description: ''
+        type: any[]
+  - name: message
+    uid: '@azure/identity.AggregateAuthenticationError.message|beta'
+    package: '@azure/identity|beta'
+    summary: ''
+    fullName: message
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'message: string'
+      return:
+        description: ''
+        type: string
+  - name: name
+    uid: '@azure/identity.AggregateAuthenticationError.name|beta'
+    package: '@azure/identity|beta'
+    summary: ''
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: string'
+      return:
+        description: ''
+        type: string
+  - name: stack
+    uid: '@azure/identity.AggregateAuthenticationError.stack|beta'
+    package: '@azure/identity|beta'
+    summary: ''
+    fullName: stack
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'stack?: string'
+      return:
+        description: ''
+        type: string
+extends: Error

@@ -2,7 +2,7 @@
 title: Azure SDK for JavaScript - Notification Hubs packages
 description: 
 ms.topic: reference
-ms.date: 02/10/2022
+ms.date: 04/21/2022
 ms.service: notification-hubs
 ms.role: developer
 ms.devlang: javascript

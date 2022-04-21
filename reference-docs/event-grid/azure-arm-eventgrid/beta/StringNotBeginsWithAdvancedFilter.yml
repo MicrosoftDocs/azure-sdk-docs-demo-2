@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: StringNotBeginsWithAdvancedFilter
+uid: '@azure/arm-eventgrid.StringNotBeginsWithAdvancedFilter|beta'
+package: '@azure/arm-eventgrid|beta'
+summary: StringNotBeginsWith Advanced Filter.
+fullName: StringNotBeginsWithAdvancedFilter
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type StringNotBeginsWithAdvancedFilter = AdvancedFilter & { operatorType:
+  "StringNotBeginsWith", values?: string[] }

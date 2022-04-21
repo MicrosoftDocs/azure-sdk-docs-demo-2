@@ -1,9 +1,9 @@
 ### YamlMime:TSType
-name: AFDOriginGroups
-uid: '@azure/arm-cdn.AFDOriginGroups|stable'
+name: AfdOriginGroups
+uid: '@azure/arm-cdn.AfdOriginGroups|stable'
 package: '@azure/arm-cdn|stable'
-summary: Interface representing a AFDOriginGroups.
-fullName: AFDOriginGroups
+summary: Interface representing a AfdOriginGroups.
+fullName: AfdOriginGroups
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -11,8 +11,8 @@ type: interface
 methods:
   - name: >-
       beginCreate(string, string, string, AFDOriginGroup,
-      AFDOriginGroupsCreateOptionalParams)
-    uid: '@azure/arm-cdn.AFDOriginGroups.beginCreate|stable'
+      AfdOriginGroupsCreateOptionalParams)
+    uid: '@azure/arm-cdn.AfdOriginGroups.beginCreate|stable'
     package: '@azure/arm-cdn|stable'
     summary: Creates a new origin group within the specified profile.
     remarks: ''
@@ -22,16 +22,19 @@ methods:
       content: >-
         function beginCreate(resourceGroupName: string, profileName: string,
         originGroupName: string, originGroup: AFDOriginGroup, options?:
-        AFDOriginGroupsCreateOptionalParams):
-        Promise<PollerLike<PollOperationState<AFDOriginGroupsCreateResponse>,
-        AFDOriginGroupsCreateResponse>>
+        AfdOriginGroupsCreateOptionalParams):
+        Promise<PollerLike<PollOperationState<AfdOriginGroupsCreateResponse>,
+        AfdOriginGroupsCreateResponse>>
       parameters:
         - id: resourceGroupName
           type: string
           description: Name of the Resource group within the Azure subscription.
         - id: profileName
           type: string
-          description: Name of the CDN profile which is unique within the resource group.
+          description: >-
+            Name of the Azure Front Door Standard or Azure Front Door Premium
+            profile which
+                               is unique within the resource group.
         - id: originGroupName
           type: string
           description: Name of the origin group which is unique within the endpoint.
@@ -41,20 +44,20 @@ methods:
         - id: options
           type: >-
             <xref
-            uid="@azure/arm-cdn.AFDOriginGroupsCreateOptionalParams|stable" />
+            uid="@azure/arm-cdn.AfdOriginGroupsCreateOptionalParams|stable" />
           description: |
             The options parameters.
       return:
         description: ''
         type: >-
           Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
-          uid="@azure/arm-cdn.AFDOriginGroupsCreateResponse|stable" />&gt;,
-          <xref uid="@azure/arm-cdn.AFDOriginGroupsCreateResponse|stable"
+          uid="@azure/arm-cdn.AfdOriginGroupsCreateResponse|stable" />&gt;,
+          <xref uid="@azure/arm-cdn.AfdOriginGroupsCreateResponse|stable"
           />&gt;&gt;
   - name: >-
       beginCreateAndWait(string, string, string, AFDOriginGroup,
-      AFDOriginGroupsCreateOptionalParams)
-    uid: '@azure/arm-cdn.AFDOriginGroups.beginCreateAndWait|stable'
+      AfdOriginGroupsCreateOptionalParams)
+    uid: '@azure/arm-cdn.AfdOriginGroups.beginCreateAndWait|stable'
     package: '@azure/arm-cdn|stable'
     summary: Creates a new origin group within the specified profile.
     remarks: ''
@@ -64,15 +67,18 @@ methods:
       content: >-
         function beginCreateAndWait(resourceGroupName: string, profileName:
         string, originGroupName: string, originGroup: AFDOriginGroup, options?:
-        AFDOriginGroupsCreateOptionalParams):
-        Promise<AFDOriginGroupsCreateResponse>
+        AfdOriginGroupsCreateOptionalParams):
+        Promise<AfdOriginGroupsCreateResponse>
       parameters:
         - id: resourceGroupName
           type: string
           description: Name of the Resource group within the Azure subscription.
         - id: profileName
           type: string
-          description: Name of the CDN profile which is unique within the resource group.
+          description: >-
+            Name of the Azure Front Door Standard or Azure Front Door Premium
+            profile which
+                               is unique within the resource group.
         - id: originGroupName
           type: string
           description: Name of the origin group which is unique within the endpoint.
@@ -82,16 +88,16 @@ methods:
         - id: options
           type: >-
             <xref
-            uid="@azure/arm-cdn.AFDOriginGroupsCreateOptionalParams|stable" />
+            uid="@azure/arm-cdn.AfdOriginGroupsCreateOptionalParams|stable" />
           description: |
             The options parameters.
       return:
         description: ''
         type: >-
           Promise&lt;<xref
-          uid="@azure/arm-cdn.AFDOriginGroupsCreateResponse|stable" />&gt;
-  - name: beginDelete(string, string, string, AFDOriginGroupsDeleteOptionalParams)
-    uid: '@azure/arm-cdn.AFDOriginGroups.beginDelete|stable'
+          uid="@azure/arm-cdn.AfdOriginGroupsCreateResponse|stable" />&gt;
+  - name: beginDelete(string, string, string, AfdOriginGroupsDeleteOptionalParams)
+    uid: '@azure/arm-cdn.AfdOriginGroups.beginDelete|stable'
     package: '@azure/arm-cdn|stable'
     summary: Deletes an existing origin group within a profile.
     remarks: ''
@@ -100,7 +106,7 @@ methods:
     syntax:
       content: >-
         function beginDelete(resourceGroupName: string, profileName: string,
-        originGroupName: string, options?: AFDOriginGroupsDeleteOptionalParams):
+        originGroupName: string, options?: AfdOriginGroupsDeleteOptionalParams):
         Promise<PollerLike<PollOperationState<void>, void>>
       parameters:
         - id: resourceGroupName
@@ -108,14 +114,17 @@ methods:
           description: Name of the Resource group within the Azure subscription.
         - id: profileName
           type: string
-          description: Name of the CDN profile which is unique within the resource group.
+          description: >-
+            Name of the Azure Front Door Standard or Azure Front Door Premium
+            profile which
+                               is unique within the resource group.
         - id: originGroupName
           type: string
           description: Name of the origin group which is unique within the profile.
         - id: options
           type: >-
             <xref
-            uid="@azure/arm-cdn.AFDOriginGroupsDeleteOptionalParams|stable" />
+            uid="@azure/arm-cdn.AfdOriginGroupsDeleteOptionalParams|stable" />
           description: |
             The options parameters.
       return:
@@ -123,8 +132,8 @@ methods:
         type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
   - name: >-
       beginDeleteAndWait(string, string, string,
-      AFDOriginGroupsDeleteOptionalParams)
-    uid: '@azure/arm-cdn.AFDOriginGroups.beginDeleteAndWait|stable'
+      AfdOriginGroupsDeleteOptionalParams)
+    uid: '@azure/arm-cdn.AfdOriginGroups.beginDeleteAndWait|stable'
     package: '@azure/arm-cdn|stable'
     summary: Deletes an existing origin group within a profile.
     remarks: ''
@@ -134,21 +143,24 @@ methods:
       content: >-
         function beginDeleteAndWait(resourceGroupName: string, profileName:
         string, originGroupName: string, options?:
-        AFDOriginGroupsDeleteOptionalParams): Promise<void>
+        AfdOriginGroupsDeleteOptionalParams): Promise<void>
       parameters:
         - id: resourceGroupName
           type: string
           description: Name of the Resource group within the Azure subscription.
         - id: profileName
           type: string
-          description: Name of the CDN profile which is unique within the resource group.
+          description: >-
+            Name of the Azure Front Door Standard or Azure Front Door Premium
+            profile which
+                               is unique within the resource group.
         - id: originGroupName
           type: string
           description: Name of the origin group which is unique within the profile.
         - id: options
           type: >-
             <xref
-            uid="@azure/arm-cdn.AFDOriginGroupsDeleteOptionalParams|stable" />
+            uid="@azure/arm-cdn.AfdOriginGroupsDeleteOptionalParams|stable" />
           description: |
             The options parameters.
       return:
@@ -156,8 +168,8 @@ methods:
         type: Promise&lt;void&gt;
   - name: >-
       beginUpdate(string, string, string, AFDOriginGroupUpdateParameters,
-      AFDOriginGroupsUpdateOptionalParams)
-    uid: '@azure/arm-cdn.AFDOriginGroups.beginUpdate|stable'
+      AfdOriginGroupsUpdateOptionalParams)
+    uid: '@azure/arm-cdn.AfdOriginGroups.beginUpdate|stable'
     package: '@azure/arm-cdn|stable'
     summary: Updates an existing origin group within a profile.
     remarks: ''
@@ -168,16 +180,19 @@ methods:
         function beginUpdate(resourceGroupName: string, profileName: string,
         originGroupName: string, originGroupUpdateProperties:
         AFDOriginGroupUpdateParameters, options?:
-        AFDOriginGroupsUpdateOptionalParams):
-        Promise<PollerLike<PollOperationState<AFDOriginGroupsUpdateResponse>,
-        AFDOriginGroupsUpdateResponse>>
+        AfdOriginGroupsUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<AfdOriginGroupsUpdateResponse>,
+        AfdOriginGroupsUpdateResponse>>
       parameters:
         - id: resourceGroupName
           type: string
           description: Name of the Resource group within the Azure subscription.
         - id: profileName
           type: string
-          description: Name of the CDN profile which is unique within the resource group.
+          description: >-
+            Name of the Azure Front Door Standard or Azure Front Door Premium
+            profile which
+                               is unique within the resource group.
         - id: originGroupName
           type: string
           description: Name of the origin group which is unique within the profile.
@@ -187,20 +202,20 @@ methods:
         - id: options
           type: >-
             <xref
-            uid="@azure/arm-cdn.AFDOriginGroupsUpdateOptionalParams|stable" />
+            uid="@azure/arm-cdn.AfdOriginGroupsUpdateOptionalParams|stable" />
           description: |
             The options parameters.
       return:
         description: ''
         type: >-
           Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
-          uid="@azure/arm-cdn.AFDOriginGroupsUpdateResponse|stable" />&gt;,
-          <xref uid="@azure/arm-cdn.AFDOriginGroupsUpdateResponse|stable"
+          uid="@azure/arm-cdn.AfdOriginGroupsUpdateResponse|stable" />&gt;,
+          <xref uid="@azure/arm-cdn.AfdOriginGroupsUpdateResponse|stable"
           />&gt;&gt;
   - name: >-
       beginUpdateAndWait(string, string, string, AFDOriginGroupUpdateParameters,
-      AFDOriginGroupsUpdateOptionalParams)
-    uid: '@azure/arm-cdn.AFDOriginGroups.beginUpdateAndWait|stable'
+      AfdOriginGroupsUpdateOptionalParams)
+    uid: '@azure/arm-cdn.AfdOriginGroups.beginUpdateAndWait|stable'
     package: '@azure/arm-cdn|stable'
     summary: Updates an existing origin group within a profile.
     remarks: ''
@@ -211,15 +226,18 @@ methods:
         function beginUpdateAndWait(resourceGroupName: string, profileName:
         string, originGroupName: string, originGroupUpdateProperties:
         AFDOriginGroupUpdateParameters, options?:
-        AFDOriginGroupsUpdateOptionalParams):
-        Promise<AFDOriginGroupsUpdateResponse>
+        AfdOriginGroupsUpdateOptionalParams):
+        Promise<AfdOriginGroupsUpdateResponse>
       parameters:
         - id: resourceGroupName
           type: string
           description: Name of the Resource group within the Azure subscription.
         - id: profileName
           type: string
-          description: Name of the CDN profile which is unique within the resource group.
+          description: >-
+            Name of the Azure Front Door Standard or Azure Front Door Premium
+            profile which
+                               is unique within the resource group.
         - id: originGroupName
           type: string
           description: Name of the origin group which is unique within the profile.
@@ -229,16 +247,16 @@ methods:
         - id: options
           type: >-
             <xref
-            uid="@azure/arm-cdn.AFDOriginGroupsUpdateOptionalParams|stable" />
+            uid="@azure/arm-cdn.AfdOriginGroupsUpdateOptionalParams|stable" />
           description: |
             The options parameters.
       return:
         description: ''
         type: >-
           Promise&lt;<xref
-          uid="@azure/arm-cdn.AFDOriginGroupsUpdateResponse|stable" />&gt;
-  - name: get(string, string, string, AFDOriginGroupsGetOptionalParams)
-    uid: '@azure/arm-cdn.AFDOriginGroups.get|stable'
+          uid="@azure/arm-cdn.AfdOriginGroupsUpdateResponse|stable" />&gt;
+  - name: get(string, string, string, AfdOriginGroupsGetOptionalParams)
+    uid: '@azure/arm-cdn.AfdOriginGroups.get|stable'
     package: '@azure/arm-cdn|stable'
     summary: Gets an existing origin group within a profile.
     remarks: ''
@@ -247,21 +265,24 @@ methods:
     syntax:
       content: >-
         function get(resourceGroupName: string, profileName: string,
-        originGroupName: string, options?: AFDOriginGroupsGetOptionalParams):
-        Promise<AFDOriginGroupsGetResponse>
+        originGroupName: string, options?: AfdOriginGroupsGetOptionalParams):
+        Promise<AfdOriginGroupsGetResponse>
       parameters:
         - id: resourceGroupName
           type: string
           description: Name of the Resource group within the Azure subscription.
         - id: profileName
           type: string
-          description: Name of the CDN profile which is unique within the resource group.
+          description: >-
+            Name of the Azure Front Door Standard or Azure Front Door Premium
+            profile which
+                               is unique within the resource group.
         - id: originGroupName
           type: string
           description: Name of the origin group which is unique within the endpoint.
         - id: options
           type: >-
-            <xref uid="@azure/arm-cdn.AFDOriginGroupsGetOptionalParams|stable"
+            <xref uid="@azure/arm-cdn.AfdOriginGroupsGetOptionalParams|stable"
             />
           description: |
             The options parameters.
@@ -269,9 +290,9 @@ methods:
         description: ''
         type: >-
           Promise&lt;<xref
-          uid="@azure/arm-cdn.AFDOriginGroupsGetResponse|stable" />&gt;
-  - name: listByProfile(string, string, AFDOriginGroupsListByProfileOptionalParams)
-    uid: '@azure/arm-cdn.AFDOriginGroups.listByProfile|stable'
+          uid="@azure/arm-cdn.AfdOriginGroupsGetResponse|stable" />&gt;
+  - name: listByProfile(string, string, AfdOriginGroupsListByProfileOptionalParams)
+    uid: '@azure/arm-cdn.AfdOriginGroups.listByProfile|stable'
     package: '@azure/arm-cdn|stable'
     summary: Lists all of the existing origin groups within a profile.
     remarks: ''
@@ -280,7 +301,7 @@ methods:
     syntax:
       content: >-
         function listByProfile(resourceGroupName: string, profileName: string,
-        options?: AFDOriginGroupsListByProfileOptionalParams):
+        options?: AfdOriginGroupsListByProfileOptionalParams):
         PagedAsyncIterableIterator<AFDOriginGroup>
       parameters:
         - id: resourceGroupName
@@ -288,11 +309,14 @@ methods:
           description: Name of the Resource group within the Azure subscription.
         - id: profileName
           type: string
-          description: Name of the CDN profile which is unique within the resource group.
+          description: >-
+            Name of the Azure Front Door Standard or Azure Front Door Premium
+            profile which
+                               is unique within the resource group.
         - id: options
           type: >-
             <xref
-            uid="@azure/arm-cdn.AFDOriginGroupsListByProfileOptionalParams|stable"
+            uid="@azure/arm-cdn.AfdOriginGroupsListByProfileOptionalParams|stable"
             />
           description: |
             The options parameters.
@@ -303,8 +327,8 @@ methods:
           uid="@azure/arm-cdn.AFDOriginGroup|stable" />&gt;
   - name: >-
       listResourceUsage(string, string, string,
-      AFDOriginGroupsListResourceUsageOptionalParams)
-    uid: '@azure/arm-cdn.AFDOriginGroups.listResourceUsage|stable'
+      AfdOriginGroupsListResourceUsageOptionalParams)
+    uid: '@azure/arm-cdn.AfdOriginGroups.listResourceUsage|stable'
     package: '@azure/arm-cdn|stable'
     summary: >-
       Checks the quota and actual usage of endpoints under the given CDN
@@ -316,7 +340,7 @@ methods:
       content: >-
         function listResourceUsage(resourceGroupName: string, profileName:
         string, originGroupName: string, options?:
-        AFDOriginGroupsListResourceUsageOptionalParams):
+        AfdOriginGroupsListResourceUsageOptionalParams):
         PagedAsyncIterableIterator<Usage>
       parameters:
         - id: resourceGroupName
@@ -324,14 +348,17 @@ methods:
           description: Name of the Resource group within the Azure subscription.
         - id: profileName
           type: string
-          description: Name of the CDN profile which is unique within the resource group.
+          description: >-
+            Name of the Azure Front Door Standard or Azure Front Door Premium
+            profile which
+                               is unique within the resource group.
         - id: originGroupName
           type: string
           description: Name of the origin group which is unique within the endpoint.
         - id: options
           type: >-
             <xref
-            uid="@azure/arm-cdn.AFDOriginGroupsListResourceUsageOptionalParams|stable"
+            uid="@azure/arm-cdn.AfdOriginGroupsListResourceUsageOptionalParams|stable"
             />
           description: |
             The options parameters.

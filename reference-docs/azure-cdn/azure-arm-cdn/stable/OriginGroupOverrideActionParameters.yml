@@ -9,24 +9,6 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: odataType
-    uid: '@azure/arm-cdn.OriginGroupOverrideActionParameters.odataType|stable'
-    package: '@azure/arm-cdn|stable'
-    summary: ''
-    fullName: odataType
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        odataType:
-        "#Microsoft.Azure.Cdn.Models.DeliveryRuleOriginGroupOverrideActionParameters"
-      return:
-        description: ''
-        type: >-
-          "#<xref
-          uid="Microsoft.Azure.Cdn.Models.DeliveryRuleOriginGroupOverrideActionParameters|stable"
-          />"
   - name: originGroup
     uid: '@azure/arm-cdn.OriginGroupOverrideActionParameters.originGroup|stable'
     package: '@azure/arm-cdn|stable'
@@ -40,3 +22,16 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-cdn.ResourceReference|stable" />
+  - name: typeName
+    uid: '@azure/arm-cdn.OriginGroupOverrideActionParameters.typeName|stable'
+    package: '@azure/arm-cdn|stable'
+    summary: ''
+    fullName: typeName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'typeName: "DeliveryRuleOriginGroupOverrideActionParameters"'
+      return:
+        description: ''
+        type: '"DeliveryRuleOriginGroupOverrideActionParameters"'

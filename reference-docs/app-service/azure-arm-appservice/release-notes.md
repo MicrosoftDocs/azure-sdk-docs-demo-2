@@ -2,7 +2,7 @@
 title: Azure SDK for JavaScript - App Service Release Notes
 description: 
 ms.topic: reference
-ms.date: 02/10/2022
+ms.date: 04/21/2022
 ms.service: app-service
 ms.role: developer
 ms.devlang: javascript
@@ -12,7 +12,7 @@ ROBOTS: NOINDEX
 ---
 # Release History
 
-## 11.0.1 (Unreleased)
+## 12.0.1 (Unreleased)
 
 ### Features Added
 
@@ -22,6 +22,17 @@ ROBOTS: NOINDEX
 
 ### Other Changes
 
+## 12.0.0 (2022-04-07)
+    
+**Features**
+
+  - Added operation group Global_2
+
+**Breaking Changes**
+
+  - Removed operation group Global
+    
+    
 ## 11.0.0 (2022-01-10)
     
 **Features**

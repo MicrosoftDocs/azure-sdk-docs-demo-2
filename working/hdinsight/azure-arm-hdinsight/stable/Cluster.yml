@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: Cluster
+uid: '@azure/arm-hdinsight.Cluster'
+package: '@azure/arm-hdinsight'
+summary: The HDInsight cluster.
+fullName: Cluster
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: >-
+  type Cluster = TrackedResource & { etag?: undefined | string, identity?:
+  ClusterIdentity, properties?: ClusterGetProperties, systemData?: SystemData,
+  zones?: string[] }

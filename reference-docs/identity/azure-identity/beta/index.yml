@@ -1,0 +1,205 @@
+### YamlMime:TSPackage
+uid: '@azure/identity|beta'
+name: '@azure/identity (2.1.0-beta.2 - Beta)'
+summary: ''
+type: package
+enums:
+  - '@azure/identity.AzureAuthorityHosts|beta'
+classes:
+  - '@azure/identity.AggregateAuthenticationError|beta'
+  - '@azure/identity.AuthenticationError|beta'
+  - '@azure/identity.AuthenticationRequiredError|beta'
+  - '@azure/identity.AuthorizationCodeCredential|beta'
+  - '@azure/identity.AzureCliCredential|beta'
+  - '@azure/identity.AzurePowerShellCredential|beta'
+  - '@azure/identity.ChainedTokenCredential|beta'
+  - '@azure/identity.ClientCertificateCredential|beta'
+  - '@azure/identity.ClientSecretCredential|beta'
+  - '@azure/identity.CredentialUnavailableError|beta'
+  - '@azure/identity.DefaultAzureCredential|beta'
+  - '@azure/identity.DeviceCodeCredential|beta'
+  - '@azure/identity.EnvironmentCredential|beta'
+  - '@azure/identity.InteractiveBrowserCredential|beta'
+  - '@azure/identity.ManagedIdentityCredential|beta'
+  - '@azure/identity.OnBehalfOfCredential|beta'
+  - '@azure/identity.UsernamePasswordCredential|beta'
+  - '@azure/identity.VisualStudioCodeCredential|beta'
+interfaces:
+  - '@azure/identity.AuthenticationRecord|beta'
+  - '@azure/identity.AuthenticationRequiredErrorOptions|beta'
+  - '@azure/identity.AzureCliCredentialOptions|beta'
+  - '@azure/identity.AzurePowerShellCredentialOptions|beta'
+  - '@azure/identity.ClientCertificateCredentialOptions|beta'
+  - '@azure/identity.ClientCertificatePEMCertificate|beta'
+  - '@azure/identity.ClientCertificatePEMCertificatePath|beta'
+  - '@azure/identity.ClientSecretCredentialOptions|beta'
+  - '@azure/identity.CredentialPersistenceOptions|beta'
+  - '@azure/identity.DefaultAzureCredentialClientIdOptions|beta'
+  - '@azure/identity.DefaultAzureCredentialOptions|beta'
+  - '@azure/identity.DefaultAzureCredentialResourceIdOptions|beta'
+  - '@azure/identity.DeviceCodeCredentialOptions|beta'
+  - '@azure/identity.DeviceCodeInfo|beta'
+  - '@azure/identity.EnvironmentCredentialOptions|beta'
+  - '@azure/identity.ErrorResponse|beta'
+  - '@azure/identity.InteractiveBrowserCredentialInBrowserOptions|beta'
+  - '@azure/identity.InteractiveBrowserCredentialNodeOptions|beta'
+  - '@azure/identity.InteractiveCredentialOptions|beta'
+  - '@azure/identity.ManagedIdentityCredentialClientIdOptions|beta'
+  - '@azure/identity.ManagedIdentityCredentialResourceIdOptions|beta'
+  - '@azure/identity.OnBehalfOfCredentialCertificateOptions|beta'
+  - '@azure/identity.OnBehalfOfCredentialSecretOptions|beta'
+  - '@azure/identity.TokenCachePersistenceOptions|beta'
+  - '@azure/identity.TokenCredentialOptions|beta'
+  - '@azure/identity.UsernamePasswordCredentialOptions|beta'
+  - '@azure/identity.VisualStudioCodeCredentialOptions|beta'
+typeAliases:
+  - '@azure/identity.BrowserLoginStyle|beta'
+  - '@azure/identity.ClientCertificateCredentialPEMConfiguration|beta'
+  - '@azure/identity.DeviceCodePromptCallback|beta'
+  - '@azure/identity.IdentityPlugin|beta'
+  - '@azure/identity.OnBehalfOfCredentialOptions|beta'
+functions:
+  - name: deserializeAuthenticationRecord(string)
+    uid: '@azure/identity.deserializeAuthenticationRecord|beta'
+    package: '@azure/identity|beta'
+    summary: >
+      Deserializes a previously serialized authentication record from a string
+      into an object.
+
+      The input string must contain the following properties:
+
+
+      - "authority"
+
+      - "homeAccountId"
+
+      - "clientId"
+
+      - "tenantId"
+
+      - "username"
+
+      - "version"
+
+
+      If the version we receive is unsupported, an error will be thrown.
+
+
+      At the moment, the only available version is: "1.0", which is always set
+      when the authentication record is serialized.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function deserializeAuthenticationRecord(serializedRecord: string):
+        AuthenticationRecord
+      parameters:
+        - id: serializedRecord
+          type: string
+          description: Authentication record previously serialized into string.
+      return:
+        description: AuthenticationRecord.
+        type: <xref uid="@azure/identity.AuthenticationRecord|beta" />
+  - name: getDefaultAzureCredential()
+    uid: '@azure/identity.getDefaultAzureCredential|beta'
+    package: '@azure/identity|beta'
+    summary: >-
+      Returns a new instance of the
+      <xref:@azure/identity.DefaultAzureCredential|beta>.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function getDefaultAzureCredential(): TokenCredential'
+      return:
+        description: ''
+        type: TokenCredential
+  - name: serializeAuthenticationRecord(AuthenticationRecord)
+    uid: '@azure/identity.serializeAuthenticationRecord|beta'
+    package: '@azure/identity|beta'
+    summary: >
+      Serializes an `AuthenticationRecord` into a string.
+
+      The output of a serialized authentication record will contain the
+      following properties:
+
+
+      - "authority"
+
+      - "homeAccountId"
+
+      - "clientId"
+
+      - "tenantId"
+
+      - "username"
+
+      - "version"
+
+
+      To later convert this string to a serialized `AuthenticationRecord`,
+      please use the exported function `deserializeAuthenticationRecord()`.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function serializeAuthenticationRecord(record: AuthenticationRecord):
+        string
+      parameters:
+        - id: record
+          type: <xref uid="@azure/identity.AuthenticationRecord|beta" />
+          description: ''
+      return:
+        description: ''
+        type: string
+  - name: useIdentityPlugin(IdentityPlugin)
+    uid: '@azure/identity.useIdentityPlugin|beta'
+    package: '@azure/identity|beta'
+    summary: >
+      Extend Azure Identity with additional functionality. Pass a plugin from
+
+      a plugin package, such as:
+
+      - `@azure/identity-cache-persistence`: provides persistent token caching
+
+      - `@azure/identity-vscode`: provides the dependencies of
+        `VisualStudioCodeCredential` and enables it
+
+      Example:
+
+
+      ```javascript
+
+      import { cachePersistencePlugin } from
+      "@azure/identity-cache-persistence";
+
+
+      import { useIdentityPlugin, DefaultAzureCredential } from
+      "@azure/identity";
+
+      useIdentityPlugin(cachePersistencePlugin);
+
+
+      // The plugin has the capability to extend `DefaultAzureCredential` and to
+
+      // add middleware to the underlying credentials, such as persistence.
+
+      const credential = new DefaultAzureCredential({
+        tokenCachePersistenceOptions: {
+          enabled: true
+        }
+      });
+
+      ```
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function useIdentityPlugin(plugin: IdentityPlugin)'
+      parameters:
+        - id: plugin
+          type: <xref uid="@azure/identity.IdentityPlugin|beta" />
+          description: |
+            the plugin to register

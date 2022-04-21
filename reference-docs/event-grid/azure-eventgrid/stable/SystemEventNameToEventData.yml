@@ -918,6 +918,69 @@ properties:
         type: >-
           <xref
           uid="@azure/eventgrid.EventHubCaptureFileCreatedEventData|stable" />
+  - name: Microsoft.HealthcareApis.FhirDeletedCreated
+    uid: >-
+      @azure/eventgrid.SystemEventNameToEventData.Microsoft.HealthcareApis.FhirDeletedCreated|stable
+    package: '@azure/eventgrid|stable'
+    summary: >-
+      An interface for the event data of a
+      "Microsoft.HealthcareApis.FhirDeletedCreated" event.
+    fullName: Microsoft.HealthcareApis.FhirDeletedCreated
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        Microsoft.HealthcareApis.FhirDeletedCreated:
+        HealthcareFhirResourceDeletedEventData
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/eventgrid.HealthcareFhirResourceDeletedEventData|stable"
+          />
+  - name: Microsoft.HealthcareApis.FhirResourceCreated
+    uid: >-
+      @azure/eventgrid.SystemEventNameToEventData.Microsoft.HealthcareApis.FhirResourceCreated|stable
+    package: '@azure/eventgrid|stable'
+    summary: >-
+      An interface for the event data of a
+      "Microsoft.HealthcareApis.FhirResourceCreated" event.
+    fullName: Microsoft.HealthcareApis.FhirResourceCreated
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        Microsoft.HealthcareApis.FhirResourceCreated:
+        HealthcareFhirResourceCreatedEventData
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/eventgrid.HealthcareFhirResourceCreatedEventData|stable"
+          />
+  - name: Microsoft.HealthcareApis.FhirUpdatedCreated
+    uid: >-
+      @azure/eventgrid.SystemEventNameToEventData.Microsoft.HealthcareApis.FhirUpdatedCreated|stable
+    package: '@azure/eventgrid|stable'
+    summary: >-
+      An interface for the event data of a
+      "Microsoft.HealthcareApis.FhirUpdatedCreated" event.
+    fullName: Microsoft.HealthcareApis.FhirUpdatedCreated
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        Microsoft.HealthcareApis.FhirUpdatedCreated:
+        HealthcareFhirResourceUpdatedEventData
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/eventgrid.HealthcareFhirResourceUpdatedEventData|stable"
+          />
   - name: Microsoft.KeyVault.CertificateExpired
     uid: >-
       @azure/eventgrid.SystemEventNameToEventData.Microsoft.KeyVault.CertificateExpired|stable

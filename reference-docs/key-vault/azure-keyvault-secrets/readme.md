@@ -2,7 +2,7 @@
 title: Azure SDK for JavaScript - Key Vault User Guide
 description: 
 ms.topic: reference
-ms.date: 02/10/2022
+ms.date: 04/21/2022
 ms.service: key-vault
 ms.role: developer
 ms.devlang: javascript
@@ -32,6 +32,7 @@ Use the client library for Azure Key Vault Secrets in your Node.js application t
 > Note: This package cannot be used in the browser due to Azure Key Vault service limitations, please refer to [this document](https://github.com/Azure/azure-sdk-for-js/blob/main/samples/cors/ts/README.md) for guidance.
 
 Key links:
+
 - [Source code](https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/keyvault/keyvault-secrets)
 - [Package (npm)](https://www.npmjs.com/package/@azure/keyvault-secrets)
 - [API Reference Documentation](https://docs.microsoft.com/javascript/api/@azure/keyvault-secrets)
@@ -177,7 +178,7 @@ const url = `https://${vaultName}.vault.azure.net`;
 
 // Change the Azure Key Vault service API version being used via the `serviceVersion` option
 const client = new SecretClient(url, credential, {
-  serviceVersion: "7.0"
+  serviceVersion: "7.0",
 });
 ```
 
@@ -277,7 +278,7 @@ const secretName = "MySecretName";
 
 async function main() {
   const result = await client.setSecret(secretName, "MySecretValue", {
-    enabled: false
+    enabled: false,
   });
 }
 
@@ -528,6 +529,8 @@ main();
 ```
 
 ## Troubleshooting
+
+See our [troubleshooting guide](https://github.com/Azure/azure-sdk-for-js/blob/main/sdk/keyvault/keyvault-secrets/TROUBLESHOOTING.md) for details on how to diagnose various failure scenarios.
 
 Enabling logging may help uncover useful information about failures. In order to see a log of HTTP requests and responses, set the `AZURE_LOG_LEVEL` environment variable to `info`. Alternatively, logging can be enabled at runtime by calling `setLogLevel` in the `@azure/logger`:
 

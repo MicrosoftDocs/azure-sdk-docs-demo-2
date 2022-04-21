@@ -1,0 +1,54 @@
+### YamlMime:TSType
+name: OperationResults
+uid: '@azure/arm-mediaservices.OperationResults|stable'
+package: '@azure/arm-mediaservices|stable'
+summary: Interface representing a OperationResults.
+fullName: OperationResults
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      get(string, string, string, string, string,
+      OperationResultsGetOptionalParams)
+    uid: '@azure/arm-mediaservices.OperationResults.get|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: Get asset track operation result.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, accountName: string, assetName:
+        string, trackName: string, operationId: string, options?:
+        OperationResultsGetOptionalParams): Promise<OperationResultsGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the Azure subscription.
+        - id: accountName
+          type: string
+          description: The Media Services account name.
+        - id: assetName
+          type: string
+          description: The Asset name.
+        - id: trackName
+          type: string
+          description: The Asset Track name.
+        - id: operationId
+          type: string
+          description: Operation Id.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mediaservices.OperationResultsGetOptionalParams|stable"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-mediaservices.OperationResultsGetResponse|stable"
+          />&gt;

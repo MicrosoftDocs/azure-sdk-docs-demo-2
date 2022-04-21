@@ -1,0 +1,71 @@
+### YamlMime:TSType
+name: RunRequest
+uid: '@azure/arm-containerregistry.RunRequest|beta'
+package: '@azure/arm-containerregistry|beta'
+summary: The request parameters for scheduling a run.
+fullName: RunRequest
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: agentPoolName
+    uid: '@azure/arm-containerregistry.RunRequest.agentPoolName|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: The dedicated agent pool for the run.
+    fullName: agentPoolName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'agentPoolName?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: isArchiveEnabled
+    uid: '@azure/arm-containerregistry.RunRequest.isArchiveEnabled|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: The value that indicates whether archiving is enabled for the run or not.
+    fullName: isArchiveEnabled
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isArchiveEnabled?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true
+  - name: logTemplate
+    uid: '@azure/arm-containerregistry.RunRequest.logTemplate|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: >-
+      The template that describes the repository and tag information for run log
+      artifact.
+    fullName: logTemplate
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'logTemplate?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: type
+    uid: '@azure/arm-containerregistry.RunRequest.type|beta'
+    package: '@azure/arm-containerregistry|beta'
+    summary: >-
+      Polymorphic discriminator, which specifies the different types this object
+      can be
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        type: "DockerBuildRequest" | "FileTaskRunRequest" | "TaskRunRequest" |
+        "EncodedTaskRunRequest"
+      return:
+        description: ''
+        type: >-
+          "DockerBuildRequest" | "FileTaskRunRequest" | "TaskRunRequest" |
+          "EncodedTaskRunRequest"

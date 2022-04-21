@@ -24,19 +24,16 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-cdn.CertificateType|stable" />
-  - name: odataType
-    uid: '@azure/arm-cdn.CdnCertificateSourceParameters.odataType|stable'
+  - name: typeName
+    uid: '@azure/arm-cdn.CdnCertificateSourceParameters.typeName|stable'
     package: '@azure/arm-cdn|stable'
     summary: ''
-    fullName: odataType
+    fullName: typeName
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'odataType: "#Microsoft.Azure.Cdn.Models.CdnCertificateSourceParameters"'
+      content: 'typeName: "CdnCertificateSourceParameters"'
       return:
         description: ''
-        type: >-
-          "#<xref
-          uid="Microsoft.Azure.Cdn.Models.CdnCertificateSourceParameters|stable"
-          />"
+        type: '"CdnCertificateSourceParameters"'

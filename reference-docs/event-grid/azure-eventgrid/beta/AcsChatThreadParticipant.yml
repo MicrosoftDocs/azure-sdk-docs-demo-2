@@ -1,0 +1,38 @@
+### YamlMime:TSType
+name: AcsChatThreadParticipant
+uid: '@azure/eventgrid.AcsChatThreadParticipant|beta'
+package: '@azure/eventgrid|beta'
+summary: Schema of the chat thread participant
+fullName: AcsChatThreadParticipant
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: displayName
+    uid: '@azure/eventgrid.AcsChatThreadParticipant.displayName|beta'
+    package: '@azure/eventgrid|beta'
+    summary: The name of the user
+    fullName: displayName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'displayName: string'
+      return:
+        description: ''
+        type: string
+  - name: participantCommunicationIdentifier
+    uid: >-
+      @azure/eventgrid.AcsChatThreadParticipant.participantCommunicationIdentifier|beta
+    package: '@azure/eventgrid|beta'
+    summary: The communication identifier of the user
+    fullName: participantCommunicationIdentifier
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'participantCommunicationIdentifier: CommunicationIdentifierModel'
+      return:
+        description: ''
+        type: <xref uid="@azure/eventgrid.CommunicationIdentifierModel|beta" />

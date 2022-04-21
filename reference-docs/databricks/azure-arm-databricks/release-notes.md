@@ -2,7 +2,7 @@
 title: Azure SDK for JavaScript - Databricks Release Notes
 description: 
 ms.topic: reference
-ms.date: 02/10/2022
+ms.date: 04/21/2022
 ms.service: databricks
 ms.role: developer
 ms.devlang: javascript
@@ -12,7 +12,7 @@ ROBOTS: NOINDEX
 ---
 # Release History
 
-## 3.0.0-beta.3 (Unreleased)
+## 3.0.0-beta.4 (Unreleased)
 
 ### Features Added
 
@@ -22,9 +22,9 @@ ROBOTS: NOINDEX
 
 ### Other Changes
 
-## 3.0.0-beta.2 (2021-12-17)
+## 3.0.0-beta.3 (2022-04-15)
 
-The package of @azure/arm-databricks is using our next generation design principles since version 3.0.0-beta.2, which contains breaking changes.
+The package of @azure/arm-databricks is using our next generation design principles since version 3.0.0-beta.3, which contains breaking changes.
 
 To understand the detail of the change, please refer to [Changelog](https://aka.ms/js-track2-changelog).
 

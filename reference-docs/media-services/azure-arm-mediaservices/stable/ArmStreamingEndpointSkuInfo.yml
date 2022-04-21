@@ -1,0 +1,52 @@
+### YamlMime:TSType
+name: ArmStreamingEndpointSkuInfo
+uid: '@azure/arm-mediaservices.ArmStreamingEndpointSkuInfo|stable'
+package: '@azure/arm-mediaservices|stable'
+summary: ''
+fullName: ArmStreamingEndpointSkuInfo
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: capacity
+    uid: '@azure/arm-mediaservices.ArmStreamingEndpointSkuInfo.capacity|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: The streaming endpoint sku capacity.
+    fullName: capacity
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'capacity?: ArmStreamingEndpointCapacity'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-mediaservices.ArmStreamingEndpointCapacity|stable" />
+  - name: resourceType
+    uid: '@azure/arm-mediaservices.ArmStreamingEndpointSkuInfo.resourceType|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: ''
+    fullName: resourceType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'resourceType?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: sku
+    uid: '@azure/arm-mediaservices.ArmStreamingEndpointSkuInfo.sku|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: The streaming endpoint sku.
+    fullName: sku
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sku?: ArmStreamingEndpointSku'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mediaservices.ArmStreamingEndpointSku|stable" />

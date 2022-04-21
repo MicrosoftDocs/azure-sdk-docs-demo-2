@@ -1,0 +1,29 @@
+### YamlMime:TSEnum
+name: KnownH264RateControlMode
+uid: '@azure/arm-mediaservices.KnownH264RateControlMode|stable'
+package: '@azure/arm-mediaservices|stable'
+summary: >-
+  Known values of
+  <xref:@azure/arm-mediaservices.KnownH264RateControlMode|stable> that the
+  service accepts.
+fullName: KnownH264RateControlMode
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: ABR
+    uid: '@azure/arm-mediaservices.KnownH264RateControlMode.ABR|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: 'Average Bitrate (ABR) mode that hits the target bitrate: Default mode.'
+  - name: CBR
+    uid: '@azure/arm-mediaservices.KnownH264RateControlMode.CBR|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: >-
+      Constant Bitrate (CBR) mode that tightens bitrate variations around target
+      bitrate.
+  - name: CRF
+    uid: '@azure/arm-mediaservices.KnownH264RateControlMode.CRF|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: >-
+      Constant Rate Factor (CRF) mode that targets at constant subjective
+      quality.

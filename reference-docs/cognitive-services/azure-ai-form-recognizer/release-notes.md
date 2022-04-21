@@ -2,7 +2,7 @@
 title: Azure SDK for JavaScript - Cognitive Services Release Notes
 description: 
 ms.topic: reference
-ms.date: 02/10/2022
+ms.date: 04/21/2022
 ms.service: cognitive-services
 ms.role: developer
 ms.devlang: javascript
@@ -11,6 +11,18 @@ ms.author: daberry
 ROBOTS: NOINDEX
 ---
 # Release History
+
+## 4.0.0-beta.4 (Unreleased)
+
+### Features Added
+
+### Breaking Changes
+
+- Renamed the `beginCopyModel` method of `DocumentModelAdministrationClient` to `beginCopyModelTo`. [#20775](https://github.com/Azure/azure-sdk-for-js/pull/20775) 
+
+### Bugs Fixed
+
+### Other Changes
 
 ## 4.0.0-beta.3 (2022-02-10)
 

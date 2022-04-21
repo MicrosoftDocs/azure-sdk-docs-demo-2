@@ -1,0 +1,451 @@
+### YamlMime:TSType
+name: PartnerTopicEventSubscriptions
+uid: '@azure/arm-eventgrid.PartnerTopicEventSubscriptions|beta'
+package: '@azure/arm-eventgrid|beta'
+summary: Interface representing a PartnerTopicEventSubscriptions.
+fullName: PartnerTopicEventSubscriptions
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      beginCreateOrUpdate(string, string, string, EventSubscription,
+      PartnerTopicEventSubscriptionsCreateOrUpdateOptionalParams)
+    uid: >-
+      @azure/arm-eventgrid.PartnerTopicEventSubscriptions.beginCreateOrUpdate|beta
+    package: '@azure/arm-eventgrid|beta'
+    summary: >-
+      Asynchronously creates or updates an event subscription of a partner topic
+      with the specified
+
+      parameters. Existing event subscriptions will be updated with this API.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string,
+        partnerTopicName: string, eventSubscriptionName: string,
+        eventSubscriptionInfo: EventSubscription, options?:
+        PartnerTopicEventSubscriptionsCreateOrUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<PartnerTopicEventSubscriptionsCreateOrUpdateResponse>,
+        PartnerTopicEventSubscriptionsCreateOrUpdateResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: partnerTopicName
+          type: string
+          description: Name of the partner topic.
+        - id: eventSubscriptionName
+          type: string
+          description: >-
+            Name of the event subscription to be created. Event subscription
+            names
+                                         must be between 3 and 100 characters in length and use alphanumeric letters only.
+        - id: eventSubscriptionInfo
+          type: <xref uid="@azure/arm-eventgrid.EventSubscription|beta" />
+          description: |-
+            Event subscription properties containing the destination and filter
+                                         information.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.PartnerTopicEventSubscriptionsCreateOrUpdateOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-eventgrid.PartnerTopicEventSubscriptionsCreateOrUpdateResponse|beta"
+          />&gt;, <xref
+          uid="@azure/arm-eventgrid.PartnerTopicEventSubscriptionsCreateOrUpdateResponse|beta"
+          />&gt;&gt;
+  - name: >-
+      beginCreateOrUpdateAndWait(string, string, string, EventSubscription,
+      PartnerTopicEventSubscriptionsCreateOrUpdateOptionalParams)
+    uid: >-
+      @azure/arm-eventgrid.PartnerTopicEventSubscriptions.beginCreateOrUpdateAndWait|beta
+    package: '@azure/arm-eventgrid|beta'
+    summary: >-
+      Asynchronously creates or updates an event subscription of a partner topic
+      with the specified
+
+      parameters. Existing event subscriptions will be updated with this API.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCreateOrUpdateAndWait(resourceGroupName: string,
+        partnerTopicName: string, eventSubscriptionName: string,
+        eventSubscriptionInfo: EventSubscription, options?:
+        PartnerTopicEventSubscriptionsCreateOrUpdateOptionalParams):
+        Promise<PartnerTopicEventSubscriptionsCreateOrUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: partnerTopicName
+          type: string
+          description: Name of the partner topic.
+        - id: eventSubscriptionName
+          type: string
+          description: >-
+            Name of the event subscription to be created. Event subscription
+            names
+                                         must be between 3 and 100 characters in length and use alphanumeric letters only.
+        - id: eventSubscriptionInfo
+          type: <xref uid="@azure/arm-eventgrid.EventSubscription|beta" />
+          description: |-
+            Event subscription properties containing the destination and filter
+                                         information.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.PartnerTopicEventSubscriptionsCreateOrUpdateOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventgrid.PartnerTopicEventSubscriptionsCreateOrUpdateResponse|beta"
+          />&gt;
+  - name: >-
+      beginDelete(string, string, string,
+      PartnerTopicEventSubscriptionsDeleteOptionalParams)
+    uid: '@azure/arm-eventgrid.PartnerTopicEventSubscriptions.beginDelete|beta'
+    package: '@azure/arm-eventgrid|beta'
+    summary: Delete an existing event subscription of a partner topic.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDelete(resourceGroupName: string, partnerTopicName:
+        string, eventSubscriptionName: string, options?:
+        PartnerTopicEventSubscriptionsDeleteOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: partnerTopicName
+          type: string
+          description: Name of the partner topic.
+        - id: eventSubscriptionName
+          type: string
+          description: >-
+            Name of the event subscription to be created. Event subscription
+            names
+                                         must be between 3 and 100 characters in length and use alphanumeric letters only.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.PartnerTopicEventSubscriptionsDeleteOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: >-
+      beginDeleteAndWait(string, string, string,
+      PartnerTopicEventSubscriptionsDeleteOptionalParams)
+    uid: >-
+      @azure/arm-eventgrid.PartnerTopicEventSubscriptions.beginDeleteAndWait|beta
+    package: '@azure/arm-eventgrid|beta'
+    summary: Delete an existing event subscription of a partner topic.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDeleteAndWait(resourceGroupName: string, partnerTopicName:
+        string, eventSubscriptionName: string, options?:
+        PartnerTopicEventSubscriptionsDeleteOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: partnerTopicName
+          type: string
+          description: Name of the partner topic.
+        - id: eventSubscriptionName
+          type: string
+          description: >-
+            Name of the event subscription to be created. Event subscription
+            names
+                                         must be between 3 and 100 characters in length and use alphanumeric letters only.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.PartnerTopicEventSubscriptionsDeleteOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      beginUpdate(string, string, string, EventSubscriptionUpdateParameters,
+      PartnerTopicEventSubscriptionsUpdateOptionalParams)
+    uid: '@azure/arm-eventgrid.PartnerTopicEventSubscriptions.beginUpdate|beta'
+    package: '@azure/arm-eventgrid|beta'
+    summary: Update an existing event subscription of a partner topic.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginUpdate(resourceGroupName: string, partnerTopicName:
+        string, eventSubscriptionName: string,
+        eventSubscriptionUpdateParameters: EventSubscriptionUpdateParameters,
+        options?: PartnerTopicEventSubscriptionsUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<PartnerTopicEventSubscriptionsUpdateResponse>,
+        PartnerTopicEventSubscriptionsUpdateResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: partnerTopicName
+          type: string
+          description: Name of the partner topic.
+        - id: eventSubscriptionName
+          type: string
+          description: >-
+            Name of the event subscription to be created. Event subscription
+            names
+                                         must be between 3 and 100 characters in length and use alphanumeric letters only.
+        - id: eventSubscriptionUpdateParameters
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.EventSubscriptionUpdateParameters|beta" />
+          description: Updated event subscription information.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.PartnerTopicEventSubscriptionsUpdateOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-eventgrid.PartnerTopicEventSubscriptionsUpdateResponse|beta"
+          />&gt;, <xref
+          uid="@azure/arm-eventgrid.PartnerTopicEventSubscriptionsUpdateResponse|beta"
+          />&gt;&gt;
+  - name: >-
+      beginUpdateAndWait(string, string, string,
+      EventSubscriptionUpdateParameters,
+      PartnerTopicEventSubscriptionsUpdateOptionalParams)
+    uid: >-
+      @azure/arm-eventgrid.PartnerTopicEventSubscriptions.beginUpdateAndWait|beta
+    package: '@azure/arm-eventgrid|beta'
+    summary: Update an existing event subscription of a partner topic.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginUpdateAndWait(resourceGroupName: string, partnerTopicName:
+        string, eventSubscriptionName: string,
+        eventSubscriptionUpdateParameters: EventSubscriptionUpdateParameters,
+        options?: PartnerTopicEventSubscriptionsUpdateOptionalParams):
+        Promise<PartnerTopicEventSubscriptionsUpdateResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: partnerTopicName
+          type: string
+          description: Name of the partner topic.
+        - id: eventSubscriptionName
+          type: string
+          description: >-
+            Name of the event subscription to be created. Event subscription
+            names
+                                         must be between 3 and 100 characters in length and use alphanumeric letters only.
+        - id: eventSubscriptionUpdateParameters
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.EventSubscriptionUpdateParameters|beta" />
+          description: Updated event subscription information.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.PartnerTopicEventSubscriptionsUpdateOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventgrid.PartnerTopicEventSubscriptionsUpdateResponse|beta"
+          />&gt;
+  - name: >-
+      get(string, string, string,
+      PartnerTopicEventSubscriptionsGetOptionalParams)
+    uid: '@azure/arm-eventgrid.PartnerTopicEventSubscriptions.get|beta'
+    package: '@azure/arm-eventgrid|beta'
+    summary: Get properties of an event subscription of a partner topic.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, partnerTopicName: string,
+        eventSubscriptionName: string, options?:
+        PartnerTopicEventSubscriptionsGetOptionalParams):
+        Promise<PartnerTopicEventSubscriptionsGetResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: partnerTopicName
+          type: string
+          description: Name of the partner topic.
+        - id: eventSubscriptionName
+          type: string
+          description: |-
+            Name of the event subscription to be found. Event subscription names
+                                         must be between 3 and 100 characters in length and use alphanumeric letters only.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.PartnerTopicEventSubscriptionsGetOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventgrid.PartnerTopicEventSubscriptionsGetResponse|beta"
+          />&gt;
+  - name: >-
+      getDeliveryAttributes(string, string, string,
+      PartnerTopicEventSubscriptionsGetDeliveryAttributesOptionalParams)
+    uid: >-
+      @azure/arm-eventgrid.PartnerTopicEventSubscriptions.getDeliveryAttributes|beta
+    package: '@azure/arm-eventgrid|beta'
+    summary: Get all delivery attributes for an event subscription of a partner topic.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getDeliveryAttributes(resourceGroupName: string,
+        partnerTopicName: string, eventSubscriptionName: string, options?:
+        PartnerTopicEventSubscriptionsGetDeliveryAttributesOptionalParams):
+        Promise<PartnerTopicEventSubscriptionsGetDeliveryAttributesResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: partnerTopicName
+          type: string
+          description: Name of the partner topic.
+        - id: eventSubscriptionName
+          type: string
+          description: >-
+            Name of the event subscription to be created. Event subscription
+            names
+                                         must be between 3 and 100 characters in length and use alphanumeric letters only.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.PartnerTopicEventSubscriptionsGetDeliveryAttributesOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventgrid.PartnerTopicEventSubscriptionsGetDeliveryAttributesResponse|beta"
+          />&gt;
+  - name: >-
+      getFullUrl(string, string, string,
+      PartnerTopicEventSubscriptionsGetFullUrlOptionalParams)
+    uid: '@azure/arm-eventgrid.PartnerTopicEventSubscriptions.getFullUrl|beta'
+    package: '@azure/arm-eventgrid|beta'
+    summary: Get the full endpoint URL for an event subscription of a partner topic.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getFullUrl(resourceGroupName: string, partnerTopicName: string,
+        eventSubscriptionName: string, options?:
+        PartnerTopicEventSubscriptionsGetFullUrlOptionalParams):
+        Promise<PartnerTopicEventSubscriptionsGetFullUrlResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: partnerTopicName
+          type: string
+          description: Name of the partner topic.
+        - id: eventSubscriptionName
+          type: string
+          description: >-
+            Name of the event subscription to be created. Event subscription
+            names
+                                         must be between 3 and 100 characters in length and use alphanumeric letters only.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.PartnerTopicEventSubscriptionsGetFullUrlOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-eventgrid.PartnerTopicEventSubscriptionsGetFullUrlResponse|beta"
+          />&gt;
+  - name: >-
+      listByPartnerTopic(string, string,
+      PartnerTopicEventSubscriptionsListByPartnerTopicOptionalParams)
+    uid: >-
+      @azure/arm-eventgrid.PartnerTopicEventSubscriptions.listByPartnerTopic|beta
+    package: '@azure/arm-eventgrid|beta'
+    summary: List event subscriptions that belong to a specific partner topic.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listByPartnerTopic(resourceGroupName: string, partnerTopicName:
+        string, options?:
+        PartnerTopicEventSubscriptionsListByPartnerTopicOptionalParams):
+        PagedAsyncIterableIterator<EventSubscription>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the user's subscription.
+        - id: partnerTopicName
+          type: string
+          description: Name of the partner topic.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-eventgrid.PartnerTopicEventSubscriptionsListByPartnerTopicOptionalParams|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-eventgrid.EventSubscription|beta" />&gt;

@@ -1,0 +1,87 @@
+### YamlMime:TSType
+name: KeyRotationPolicy
+uid: '@azure/keyvault-keys.KeyRotationPolicy|stable'
+package: '@azure/keyvault-keys|stable'
+summary: The complete key rotation policy that belongs to a key.
+fullName: KeyRotationPolicy
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: createdOn
+    uid: '@azure/keyvault-keys.KeyRotationPolicy.createdOn|stable'
+    package: '@azure/keyvault-keys|stable'
+    summary: |-
+      The created time in UTC.
+      May be undefined if a policy has not been explicitly set.
+    fullName: createdOn
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'createdOn?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: expiresIn
+    uid: '@azure/keyvault-keys.KeyRotationPolicy.expiresIn|stable'
+    package: '@azure/keyvault-keys|stable'
+    summary: >-
+      Optional key expiration period used to define the duration after which a
+      newly rotated key will expire, defined as an ISO 8601 duration.
+    fullName: expiresIn
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'expiresIn?: string'
+      return:
+        description: ''
+        type: string
+  - name: id
+    uid: '@azure/keyvault-keys.KeyRotationPolicy.id|stable'
+    package: '@azure/keyvault-keys|stable'
+    summary: |-
+      The identifier of the Key Rotation Policy.
+      May be undefined if a policy has not been explicitly set.
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: string'
+      return:
+        description: ''
+        type: string
+  - name: lifetimeActions
+    uid: '@azure/keyvault-keys.KeyRotationPolicy.lifetimeActions|stable'
+    package: '@azure/keyvault-keys|stable'
+    summary: |
+      Actions that will be performed by Key Vault over the lifetime of a key.
+      You may also pass an empty array to restore to its default values.
+    fullName: lifetimeActions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lifetimeActions?: KeyRotationLifetimeAction[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/keyvault-keys.KeyRotationLifetimeAction|stable" />[]
+  - name: updatedOn
+    uid: '@azure/keyvault-keys.KeyRotationPolicy.updatedOn|stable'
+    package: '@azure/keyvault-keys|stable'
+    summary: |-
+      The last updated time in UTC.
+      May be undefined if a policy has not been explicitly set.
+    fullName: updatedOn
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'updatedOn?: Date'
+      return:
+        description: ''
+        type: Date
+extends: <xref uid="@azure/keyvault-keys.KeyRotationPolicyProperties|stable" />

@@ -1,0 +1,76 @@
+### YamlMime:TSType
+name: AuthorizationRule
+uid: '@azure/service-bus.AuthorizationRule|beta'
+package: '@azure/service-bus|beta'
+summary: Represents type of `AuthorizationRule` in ATOM based management operations.
+fullName: AuthorizationRule
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: accessRights
+    uid: '@azure/service-bus.AuthorizationRule.accessRights|beta'
+    package: '@azure/service-bus|beta'
+    summary: The list of rights("Manage" | "Send" | "Listen").
+    fullName: accessRights
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'accessRights?: "Manage" | "Send" | "Listen"[]'
+      return:
+        description: ''
+        type: '"Manage" | "Send" | "Listen"[]'
+  - name: claimType
+    uid: '@azure/service-bus.AuthorizationRule.claimType|beta'
+    package: '@azure/service-bus|beta'
+    summary: The claim type.
+    fullName: claimType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'claimType: string'
+      return:
+        description: ''
+        type: string
+  - name: keyName
+    uid: '@azure/service-bus.AuthorizationRule.keyName|beta'
+    package: '@azure/service-bus|beta'
+    summary: The authorization rule key name.
+    fullName: keyName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'keyName: string'
+      return:
+        description: ''
+        type: string
+  - name: primaryKey
+    uid: '@azure/service-bus.AuthorizationRule.primaryKey|beta'
+    package: '@azure/service-bus|beta'
+    summary: The primary key for the authorization rule.
+    fullName: primaryKey
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'primaryKey?: string'
+      return:
+        description: ''
+        type: string
+  - name: secondaryKey
+    uid: '@azure/service-bus.AuthorizationRule.secondaryKey|beta'
+    package: '@azure/service-bus|beta'
+    summary: The secondary key for the authorization rule.
+    fullName: secondaryKey
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'secondaryKey?: string'
+      return:
+        description: ''
+        type: string

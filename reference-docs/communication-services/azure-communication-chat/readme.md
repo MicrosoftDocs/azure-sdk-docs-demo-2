@@ -2,7 +2,7 @@
 title: Azure SDK for JavaScript - Communication Services User Guide
 description: 
 ms.topic: reference
-ms.date: 02/10/2022
+ms.date: 04/21/2022
 ms.service: communication-services
 ms.role: developer
 ms.devlang: javascript
@@ -205,6 +205,25 @@ Similar to above, you can also remove users from a thread. In order to remove, y
 ```JavaScript
 
 await chatThreadClient.removeParticipant({ communicationUserId: '<MEMBER_ID>' });
+
+```
+
+### Subscribe to connection status of real time notifications
+Subscription to events `realTimeNotificationConnected` and `realTimeNotificationDisconnected` allows you to know when the connection to the call server is active.
+
+```JavaScript
+
+// subscribe to realTimeNotificationConnected event
+chatClient.on('realTimeNotificationConnected', () => {
+  console.log("Real time notification is now connected!");
+  // your code here
+});
+
+// subscribe to realTimeNotificationDisconnected event
+chatClient.on('realTimeNotificationDisconnected', () => {
+  console.log("Real time notification is now disconnected!");
+  // your code here
+});
 
 ```
 

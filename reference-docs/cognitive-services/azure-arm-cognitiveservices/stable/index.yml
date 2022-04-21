@@ -1,6 +1,6 @@
 ### YamlMime:TSPackage
 uid: '@azure/arm-cognitiveservices|stable'
-name: '@azure/arm-cognitiveservices (7.0.0 - Stable)'
+name: '@azure/arm-cognitiveservices (7.1.0 - Stable)'
 summary: ''
 type: package
 enums:
@@ -26,6 +26,7 @@ classes:
   - '@azure/arm-cognitiveservices.CognitiveServicesManagementClient|stable'
 interfaces:
   - '@azure/arm-cognitiveservices.AccountListResult|stable'
+  - '@azure/arm-cognitiveservices.AccountModelListResult|stable'
   - '@azure/arm-cognitiveservices.AccountProperties|stable'
   - '@azure/arm-cognitiveservices.AccountSku|stable'
   - '@azure/arm-cognitiveservices.AccountSkuListResult|stable'
@@ -38,6 +39,8 @@ interfaces:
   - >-
     @azure/arm-cognitiveservices.AccountsListByResourceGroupOptionalParams|stable
   - '@azure/arm-cognitiveservices.AccountsListKeysOptionalParams|stable'
+  - '@azure/arm-cognitiveservices.AccountsListModelsNextOptionalParams|stable'
+  - '@azure/arm-cognitiveservices.AccountsListModelsOptionalParams|stable'
   - '@azure/arm-cognitiveservices.AccountsListNextOptionalParams|stable'
   - '@azure/arm-cognitiveservices.AccountsListOptionalParams|stable'
   - '@azure/arm-cognitiveservices.AccountsListSkusOptionalParams|stable'
@@ -94,6 +97,7 @@ interfaces:
   - '@azure/arm-cognitiveservices.IpRule|stable'
   - '@azure/arm-cognitiveservices.KeyVaultProperties|stable'
   - '@azure/arm-cognitiveservices.MetricName|stable'
+  - '@azure/arm-cognitiveservices.ModelDeprecationInfo|stable'
   - '@azure/arm-cognitiveservices.NetworkRuleSet|stable'
   - '@azure/arm-cognitiveservices.Operation|stable'
   - '@azure/arm-cognitiveservices.OperationDisplay|stable'
@@ -143,11 +147,14 @@ interfaces:
   - '@azure/arm-cognitiveservices.VirtualNetworkRule|stable'
 typeAliases:
   - '@azure/arm-cognitiveservices.Account|stable'
+  - '@azure/arm-cognitiveservices.AccountModel|stable'
   - '@azure/arm-cognitiveservices.AccountsCreateResponse|stable'
   - '@azure/arm-cognitiveservices.AccountsGetResponse|stable'
   - '@azure/arm-cognitiveservices.AccountsListByResourceGroupNextResponse|stable'
   - '@azure/arm-cognitiveservices.AccountsListByResourceGroupResponse|stable'
   - '@azure/arm-cognitiveservices.AccountsListKeysResponse|stable'
+  - '@azure/arm-cognitiveservices.AccountsListModelsNextResponse|stable'
+  - '@azure/arm-cognitiveservices.AccountsListModelsResponse|stable'
   - '@azure/arm-cognitiveservices.AccountsListNextResponse|stable'
   - '@azure/arm-cognitiveservices.AccountsListResponse|stable'
   - '@azure/arm-cognitiveservices.AccountsListSkusResponse|stable'

@@ -1,0 +1,320 @@
+### YamlMime:TSPackage
+uid: '@azure/eventgrid|beta'
+name: '@azure/eventgrid (4.10.0-beta.1 - Beta)'
+summary: ''
+type: package
+enums:
+  - '@azure/eventgrid.KnownAppAction|beta'
+  - '@azure/eventgrid.KnownAppServicePlanAction|beta'
+  - '@azure/eventgrid.KnownAsyncStatus|beta'
+  - '@azure/eventgrid.KnownStampKind|beta'
+classes:
+  - '@azure/eventgrid.EventGridDeserializer|beta'
+  - '@azure/eventgrid.EventGridPublisherClient|beta'
+interfaces:
+  - '@azure/eventgrid.AcsChatEventBase|beta'
+  - '@azure/eventgrid.AcsChatEventInThreadBase|beta'
+  - '@azure/eventgrid.AcsChatThreadParticipant|beta'
+  - '@azure/eventgrid.AcsRecordingChunkInfo|beta'
+  - '@azure/eventgrid.AcsRecordingFileStatusUpdatedEventData|beta'
+  - '@azure/eventgrid.AcsRecordingStorageInfo|beta'
+  - '@azure/eventgrid.AcsSmsDeliveryAttempt|beta'
+  - '@azure/eventgrid.AcsSmsEventBase|beta'
+  - '@azure/eventgrid.AcsUserDisconnectedEventData|beta'
+  - '@azure/eventgrid.ApiManagementApiCreatedEventData|beta'
+  - '@azure/eventgrid.ApiManagementApiDeletedEventData|beta'
+  - '@azure/eventgrid.ApiManagementApiReleaseCreatedEventData|beta'
+  - '@azure/eventgrid.ApiManagementApiReleaseDeletedEventData|beta'
+  - '@azure/eventgrid.ApiManagementApiReleaseUpdatedEventData|beta'
+  - '@azure/eventgrid.ApiManagementApiUpdatedEventData|beta'
+  - '@azure/eventgrid.ApiManagementProductCreatedEventData|beta'
+  - '@azure/eventgrid.ApiManagementProductDeletedEventData|beta'
+  - '@azure/eventgrid.ApiManagementProductUpdatedEventData|beta'
+  - '@azure/eventgrid.ApiManagementSubscriptionCreatedEventData|beta'
+  - '@azure/eventgrid.ApiManagementSubscriptionDeletedEventData|beta'
+  - '@azure/eventgrid.ApiManagementSubscriptionUpdatedEventData|beta'
+  - '@azure/eventgrid.ApiManagementUserCreatedEventData|beta'
+  - '@azure/eventgrid.ApiManagementUserDeletedEventData|beta'
+  - '@azure/eventgrid.ApiManagementUserUpdatedEventData|beta'
+  - '@azure/eventgrid.AppConfigurationKeyValueDeletedEventData|beta'
+  - '@azure/eventgrid.AppConfigurationKeyValueModifiedEventData|beta'
+  - '@azure/eventgrid.AppEventTypeDetail|beta'
+  - '@azure/eventgrid.AppServicePlanEventTypeDetail|beta'
+  - '@azure/eventgrid.CloudEvent|beta'
+  - '@azure/eventgrid.CloudEventSendOptions|beta'
+  - '@azure/eventgrid.CommunicationIdentifierModel|beta'
+  - '@azure/eventgrid.CommunicationUserIdentifierModel|beta'
+  - '@azure/eventgrid.ContainerRegistryArtifactEventData|beta'
+  - '@azure/eventgrid.ContainerRegistryArtifactEventTarget|beta'
+  - '@azure/eventgrid.ContainerRegistryEventActor|beta'
+  - '@azure/eventgrid.ContainerRegistryEventConnectedRegistry|beta'
+  - '@azure/eventgrid.ContainerRegistryEventData|beta'
+  - '@azure/eventgrid.ContainerRegistryEventRequest|beta'
+  - '@azure/eventgrid.ContainerRegistryEventSource|beta'
+  - '@azure/eventgrid.ContainerRegistryEventTarget|beta'
+  - '@azure/eventgrid.ContainerServiceNewKubernetesVersionAvailableEventData|beta'
+  - '@azure/eventgrid.DeviceConnectionStateEvent|beta'
+  - '@azure/eventgrid.DeviceConnectionStateEventInfo|beta'
+  - '@azure/eventgrid.DeviceLifeCycleEvent|beta'
+  - '@azure/eventgrid.DeviceTelemetryEvent|beta'
+  - '@azure/eventgrid.DeviceTwin|beta'
+  - '@azure/eventgrid.DeviceTwinInfo|beta'
+  - '@azure/eventgrid.DeviceTwinInfoProperties|beta'
+  - '@azure/eventgrid.DeviceTwinInfoX509Thumbprint|beta'
+  - '@azure/eventgrid.DeviceTwinMetadata|beta'
+  - '@azure/eventgrid.EventGridEvent|beta'
+  - '@azure/eventgrid.EventHubCaptureFileCreatedEventData|beta'
+  - '@azure/eventgrid.GenerateSharedAccessSignatureOptions|beta'
+  - '@azure/eventgrid.HealthcareFhirResourceCreatedEventData|beta'
+  - '@azure/eventgrid.HealthcareFhirResourceDeletedEventData|beta'
+  - '@azure/eventgrid.HealthcareFhirResourceUpdatedEventData|beta'
+  - '@azure/eventgrid.InputSchemaToInputTypeMap|beta'
+  - '@azure/eventgrid.InputSchemaToOptionsTypeMap|beta'
+  - '@azure/eventgrid.KeyVaultAccessPolicyChangedEventData|beta'
+  - '@azure/eventgrid.KeyVaultCertificateExpiredEventData|beta'
+  - '@azure/eventgrid.KeyVaultCertificateNearExpiryEventData|beta'
+  - '@azure/eventgrid.KeyVaultCertificateNewVersionCreatedEventData|beta'
+  - '@azure/eventgrid.KeyVaultKeyExpiredEventData|beta'
+  - '@azure/eventgrid.KeyVaultKeyNearExpiryEventData|beta'
+  - '@azure/eventgrid.KeyVaultKeyNewVersionCreatedEventData|beta'
+  - '@azure/eventgrid.KeyVaultSecretExpiredEventData|beta'
+  - '@azure/eventgrid.KeyVaultSecretNearExpiryEventData|beta'
+  - '@azure/eventgrid.KeyVaultSecretNewVersionCreatedEventData|beta'
+  - '@azure/eventgrid.MachineLearningServicesDatasetDriftDetectedEventData|beta'
+  - '@azure/eventgrid.MachineLearningServicesModelDeployedEventData|beta'
+  - '@azure/eventgrid.MachineLearningServicesModelRegisteredEventData|beta'
+  - '@azure/eventgrid.MachineLearningServicesRunCompletedEventData|beta'
+  - '@azure/eventgrid.MachineLearningServicesRunStatusChangedEventData|beta'
+  - '@azure/eventgrid.MapsGeofenceEvent|beta'
+  - '@azure/eventgrid.MapsGeofenceGeometry|beta'
+  - '@azure/eventgrid.MediaJobError|beta'
+  - '@azure/eventgrid.MediaJobErrorDetail|beta'
+  - '@azure/eventgrid.MediaJobOutput|beta'
+  - '@azure/eventgrid.MediaJobOutputProgressEventData|beta'
+  - '@azure/eventgrid.MediaJobOutputStateChangeEventData|beta'
+  - '@azure/eventgrid.MediaJobStateChangeEventData|beta'
+  - '@azure/eventgrid.MediaLiveEventChannelArchiveHeartbeatEventData|beta'
+  - '@azure/eventgrid.MediaLiveEventConnectionRejectedEventData|beta'
+  - '@azure/eventgrid.MediaLiveEventEncoderConnectedEventData|beta'
+  - '@azure/eventgrid.MediaLiveEventEncoderDisconnectedEventData|beta'
+  - '@azure/eventgrid.MediaLiveEventIncomingDataChunkDroppedEventData|beta'
+  - '@azure/eventgrid.MediaLiveEventIncomingStreamReceivedEventData|beta'
+  - '@azure/eventgrid.MediaLiveEventIncomingStreamsOutOfSyncEventData|beta'
+  - '@azure/eventgrid.MediaLiveEventIncomingVideoStreamsOutOfSyncEventData|beta'
+  - '@azure/eventgrid.MediaLiveEventIngestHeartbeatEventData|beta'
+  - '@azure/eventgrid.MediaLiveEventTrackDiscontinuityDetectedEventData|beta'
+  - '@azure/eventgrid.MicrosoftTeamsUserIdentifierModel|beta'
+  - '@azure/eventgrid.PhoneNumberIdentifierModel|beta'
+  - '@azure/eventgrid.PolicyInsightsPolicyStateChangedEventData|beta'
+  - '@azure/eventgrid.PolicyInsightsPolicyStateCreatedEventData|beta'
+  - '@azure/eventgrid.PolicyInsightsPolicyStateDeletedEventData|beta'
+  - '@azure/eventgrid.ResourceActionCancelEventData|beta'
+  - '@azure/eventgrid.ResourceActionFailureEventData|beta'
+  - '@azure/eventgrid.ResourceActionSuccessEventData|beta'
+  - '@azure/eventgrid.ResourceAuthorization|beta'
+  - '@azure/eventgrid.ResourceDeleteCancelEventData|beta'
+  - '@azure/eventgrid.ResourceDeleteFailureEventData|beta'
+  - '@azure/eventgrid.ResourceDeleteSuccessEventData|beta'
+  - '@azure/eventgrid.ResourceHttpRequest|beta'
+  - '@azure/eventgrid.ResourceWriteCancelEventData|beta'
+  - '@azure/eventgrid.ResourceWriteFailureEventData|beta'
+  - '@azure/eventgrid.ResourceWriteSuccessEventData|beta'
+  - '@azure/eventgrid.SendCloudEventInput|beta'
+  - '@azure/eventgrid.SendEventGridEventInput|beta'
+  - >-
+    @azure/eventgrid.ServiceBusActiveMessagesAvailableWithNoListenersEventData|beta
+  - >-
+    @azure/eventgrid.ServiceBusDeadletterMessagesAvailableWithNoListenersEventData|beta
+  - '@azure/eventgrid.StorageAsyncOperationInitiatedEventData|beta'
+  - '@azure/eventgrid.StorageBlobCreatedEventData|beta'
+  - '@azure/eventgrid.StorageBlobDeletedEventData|beta'
+  - '@azure/eventgrid.StorageBlobInventoryPolicyCompletedEventData|beta'
+  - '@azure/eventgrid.StorageBlobRenamedEventData|beta'
+  - '@azure/eventgrid.StorageBlobTierChangedEventData|beta'
+  - '@azure/eventgrid.StorageDirectoryCreatedEventData|beta'
+  - '@azure/eventgrid.StorageDirectoryDeletedEventData|beta'
+  - '@azure/eventgrid.StorageDirectoryRenamedEventData|beta'
+  - '@azure/eventgrid.StorageLifecyclePolicyActionSummaryDetail|beta'
+  - '@azure/eventgrid.StorageLifecyclePolicyCompletedEventData|beta'
+  - '@azure/eventgrid.SubscriptionDeletedEventData|beta'
+  - '@azure/eventgrid.SubscriptionValidationEventData|beta'
+  - '@azure/eventgrid.SystemEventNameToEventData|beta'
+  - '@azure/eventgrid.WebAppServicePlanUpdatedEventData|beta'
+  - '@azure/eventgrid.WebAppServicePlanUpdatedEventDataSku|beta'
+  - '@azure/eventgrid.WebAppUpdatedEventData|beta'
+  - '@azure/eventgrid.WebBackupOperationCompletedEventData|beta'
+  - '@azure/eventgrid.WebBackupOperationFailedEventData|beta'
+  - '@azure/eventgrid.WebBackupOperationStartedEventData|beta'
+  - '@azure/eventgrid.WebRestoreOperationCompletedEventData|beta'
+  - '@azure/eventgrid.WebRestoreOperationFailedEventData|beta'
+  - '@azure/eventgrid.WebRestoreOperationStartedEventData|beta'
+  - '@azure/eventgrid.WebSlotSwapCompletedEventData|beta'
+  - '@azure/eventgrid.WebSlotSwapFailedEventData|beta'
+  - '@azure/eventgrid.WebSlotSwapStartedEventData|beta'
+  - '@azure/eventgrid.WebSlotSwapWithPreviewCancelledEventData|beta'
+  - '@azure/eventgrid.WebSlotSwapWithPreviewStartedEventData|beta'
+typeAliases:
+  - '@azure/eventgrid.AcsChatMessageDeletedEventData|beta'
+  - '@azure/eventgrid.AcsChatMessageDeletedInThreadEventData|beta'
+  - '@azure/eventgrid.AcsChatMessageEditedEventData|beta'
+  - '@azure/eventgrid.AcsChatMessageEditedInThreadEventData|beta'
+  - '@azure/eventgrid.AcsChatMessageEventBase|beta'
+  - '@azure/eventgrid.AcsChatMessageEventInThreadBase|beta'
+  - '@azure/eventgrid.AcsChatMessageReceivedEventData|beta'
+  - '@azure/eventgrid.AcsChatMessageReceivedInThreadEventData|beta'
+  - '@azure/eventgrid.AcsChatParticipantAddedToThreadEventData|beta'
+  - '@azure/eventgrid.AcsChatParticipantAddedToThreadWithUserEventData|beta'
+  - '@azure/eventgrid.AcsChatParticipantRemovedFromThreadEventData|beta'
+  - '@azure/eventgrid.AcsChatParticipantRemovedFromThreadWithUserEventData|beta'
+  - '@azure/eventgrid.AcsChatThreadCreatedWithUserEventData|beta'
+  - '@azure/eventgrid.AcsChatThreadEventBase|beta'
+  - '@azure/eventgrid.AcsChatThreadPropertiesUpdatedPerUserEventData|beta'
+  - '@azure/eventgrid.AcsChatThreadWithUserDeletedEventData|beta'
+  - '@azure/eventgrid.AcsSmsDeliveryReportReceivedEventData|beta'
+  - '@azure/eventgrid.AcsSmsReceivedEventData|beta'
+  - '@azure/eventgrid.AppAction|beta'
+  - '@azure/eventgrid.AppServicePlanAction|beta'
+  - '@azure/eventgrid.AsyncStatus|beta'
+  - '@azure/eventgrid.CommunicationCloudEnvironmentModel|beta'
+  - '@azure/eventgrid.ContainerRegistryChartDeletedEventData|beta'
+  - '@azure/eventgrid.ContainerRegistryChartPushedEventData|beta'
+  - '@azure/eventgrid.ContainerRegistryImageDeletedEventData|beta'
+  - '@azure/eventgrid.ContainerRegistryImagePushedEventData|beta'
+  - '@azure/eventgrid.EventGridPublisherClientOptions|beta'
+  - '@azure/eventgrid.HealthcareFhirResourceType|beta'
+  - '@azure/eventgrid.InputSchema|beta'
+  - '@azure/eventgrid.IotHubDeviceConnectedEventData|beta'
+  - '@azure/eventgrid.IotHubDeviceCreatedEventData|beta'
+  - '@azure/eventgrid.IotHubDeviceDeletedEventData|beta'
+  - '@azure/eventgrid.IotHubDeviceDisconnectedEventData|beta'
+  - '@azure/eventgrid.IotHubDeviceTelemetryEventData|beta'
+  - '@azure/eventgrid.KnownSystemEventTypes|beta'
+  - '@azure/eventgrid.MapsGeofenceEnteredEventData|beta'
+  - '@azure/eventgrid.MapsGeofenceExitedEventData|beta'
+  - '@azure/eventgrid.MapsGeofenceResultEventData|beta'
+  - '@azure/eventgrid.MediaJobCanceledEventData|beta'
+  - '@azure/eventgrid.MediaJobCancelingEventData|beta'
+  - '@azure/eventgrid.MediaJobErrorCategory|beta'
+  - '@azure/eventgrid.MediaJobErrorCode|beta'
+  - '@azure/eventgrid.MediaJobErroredEventData|beta'
+  - '@azure/eventgrid.MediaJobFinishedEventData|beta'
+  - '@azure/eventgrid.MediaJobOutputAsset|beta'
+  - '@azure/eventgrid.MediaJobOutputCanceledEventData|beta'
+  - '@azure/eventgrid.MediaJobOutputCancelingEventData|beta'
+  - '@azure/eventgrid.MediaJobOutputErroredEventData|beta'
+  - '@azure/eventgrid.MediaJobOutputFinishedEventData|beta'
+  - '@azure/eventgrid.MediaJobOutputProcessingEventData|beta'
+  - '@azure/eventgrid.MediaJobOutputScheduledEventData|beta'
+  - '@azure/eventgrid.MediaJobOutputUnion|beta'
+  - '@azure/eventgrid.MediaJobProcessingEventData|beta'
+  - '@azure/eventgrid.MediaJobRetry|beta'
+  - '@azure/eventgrid.MediaJobScheduledEventData|beta'
+  - '@azure/eventgrid.MediaJobState|beta'
+  - '@azure/eventgrid.RecordingChannelType|beta'
+  - '@azure/eventgrid.RecordingContentType|beta'
+  - '@azure/eventgrid.RecordingFormatType|beta'
+  - '@azure/eventgrid.SendOptions|beta'
+  - '@azure/eventgrid.StampKind|beta'
+functions:
+  - name: >-
+      generateSharedAccessSignature(string, KeyCredential, Date,
+      GenerateSharedAccessSignatureOptions)
+    uid: '@azure/eventgrid.generateSharedAccessSignature|beta'
+    package: '@azure/eventgrid|beta'
+    summary: >-
+      Generate a shared access signature, which allows a client to send events
+      to an Event Grid Topic or Domain for a limited period of time. This
+
+      function may only be called when the EventGridPublisherClient was
+      constructed with a KeyCredential instance.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function generateSharedAccessSignature(endpointUrl: string, credential:
+        KeyCredential, expiresOnUtc: Date, options?:
+        GenerateSharedAccessSignatureOptions): Promise<string>
+      parameters:
+        - id: endpointUrl
+          type: string
+          description: >-
+            The endpoint for the topic or domain you wish to generate a shared
+            access signature for.
+        - id: credential
+          type: KeyCredential
+          description: The credential to use when generating the shared access signatrue.
+        - id: expiresOnUtc
+          type: Date
+          description: ''
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/eventgrid.GenerateSharedAccessSignatureOptions|beta" />
+          description: |
+            Options to control how the signature is generated.
+      return:
+        description: ''
+        type: Promise&lt;string&gt;
+  - name: isSystemEvent<T>(T, EventGridEvent<unknown>)
+    uid: '@azure/eventgrid.isSystemEvent|beta'
+    package: '@azure/eventgrid|beta'
+    summary: >-
+      iSystemEvent returns "true" when a given event is a system event of a
+      given type. When using
+
+      TypeScript, this function acts as a custom type guard and allows the
+      TypeScript compiler to
+
+      identify the underlying data
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function isSystemEvent<T>(eventType: T, event: EventGridEvent<unknown>):
+        boolean
+      parameters:
+        - id: eventType
+          type: T
+          description: >-
+            The type of system event to check for, e.g.,
+            "Microsoft.AppConfiguration.KeyValueDeleted"
+        - id: event
+          type: <xref uid="@azure/eventgrid.EventGridEvent|beta" />&lt;unknown&gt;
+          description: |
+            The event to test.
+      return:
+        description: ''
+        type: boolean
+  - name: isSystemEvent<T>(T, CloudEvent<unknown>)
+    uid: '@azure/eventgrid.isSystemEvent_1|beta'
+    package: '@azure/eventgrid|beta'
+    summary: >-
+      iSystemEvent returns "true" when a given event is a system event of a
+      given type. When using
+
+      TypeScript, this function acts as a custom type guard and allows the
+      TypeScript compiler to
+
+      identify the underlying data
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function isSystemEvent<T>(eventType: T, event: CloudEvent<unknown>):
+        boolean
+      parameters:
+        - id: eventType
+          type: T
+          description: >-
+            The type of system event to check for, e.g.,
+            "Microsoft.AppConfiguration.KeyValueDeleted"
+        - id: event
+          type: <xref uid="@azure/eventgrid.CloudEvent|beta" />&lt;unknown&gt;
+          description: |
+            The event to test.
+      return:
+        description: ''
+        type: boolean

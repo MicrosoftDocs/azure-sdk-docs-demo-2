@@ -1,9 +1,9 @@
 ### YamlMime:TSType
-name: AFDEndpoints
-uid: '@azure/arm-cdn.AFDEndpoints|stable'
+name: AfdEndpoints
+uid: '@azure/arm-cdn.AfdEndpoints|stable'
 package: '@azure/arm-cdn|stable'
-summary: Interface representing a AFDEndpoints.
-fullName: AFDEndpoints
+summary: Interface representing a AfdEndpoints.
+fullName: AfdEndpoints
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -11,8 +11,8 @@ type: interface
 methods:
   - name: >-
       beginCreate(string, string, string, AFDEndpoint,
-      AFDEndpointsCreateOptionalParams)
-    uid: '@azure/arm-cdn.AFDEndpoints.beginCreate|stable'
+      AfdEndpointsCreateOptionalParams)
+    uid: '@azure/arm-cdn.AfdEndpoints.beginCreate|stable'
     package: '@azure/arm-cdn|stable'
     summary: >-
       Creates a new AzureFrontDoor endpoint with the specified endpoint name
@@ -26,16 +26,19 @@ methods:
       content: >-
         function beginCreate(resourceGroupName: string, profileName: string,
         endpointName: string, endpoint: AFDEndpoint, options?:
-        AFDEndpointsCreateOptionalParams):
-        Promise<PollerLike<PollOperationState<AFDEndpointsCreateResponse>,
-        AFDEndpointsCreateResponse>>
+        AfdEndpointsCreateOptionalParams):
+        Promise<PollerLike<PollOperationState<AfdEndpointsCreateResponse>,
+        AfdEndpointsCreateResponse>>
       parameters:
         - id: resourceGroupName
           type: string
           description: Name of the Resource group within the Azure subscription.
         - id: profileName
           type: string
-          description: Name of the CDN profile which is unique within the resource group.
+          description: >-
+            Name of the Azure Front Door Standard or Azure Front Door Premium
+            profile which
+                               is unique within the resource group.
         - id: endpointName
           type: string
           description: Name of the endpoint under the profile which is unique globally.
@@ -44,7 +47,7 @@ methods:
           description: Endpoint properties
         - id: options
           type: >-
-            <xref uid="@azure/arm-cdn.AFDEndpointsCreateOptionalParams|stable"
+            <xref uid="@azure/arm-cdn.AfdEndpointsCreateOptionalParams|stable"
             />
           description: |
             The options parameters.
@@ -52,12 +55,12 @@ methods:
         description: ''
         type: >-
           Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
-          uid="@azure/arm-cdn.AFDEndpointsCreateResponse|stable" />&gt;, <xref
-          uid="@azure/arm-cdn.AFDEndpointsCreateResponse|stable" />&gt;&gt;
+          uid="@azure/arm-cdn.AfdEndpointsCreateResponse|stable" />&gt;, <xref
+          uid="@azure/arm-cdn.AfdEndpointsCreateResponse|stable" />&gt;&gt;
   - name: >-
       beginCreateAndWait(string, string, string, AFDEndpoint,
-      AFDEndpointsCreateOptionalParams)
-    uid: '@azure/arm-cdn.AFDEndpoints.beginCreateAndWait|stable'
+      AfdEndpointsCreateOptionalParams)
+    uid: '@azure/arm-cdn.AfdEndpoints.beginCreateAndWait|stable'
     package: '@azure/arm-cdn|stable'
     summary: >-
       Creates a new AzureFrontDoor endpoint with the specified endpoint name
@@ -71,14 +74,17 @@ methods:
       content: >-
         function beginCreateAndWait(resourceGroupName: string, profileName:
         string, endpointName: string, endpoint: AFDEndpoint, options?:
-        AFDEndpointsCreateOptionalParams): Promise<AFDEndpointsCreateResponse>
+        AfdEndpointsCreateOptionalParams): Promise<AfdEndpointsCreateResponse>
       parameters:
         - id: resourceGroupName
           type: string
           description: Name of the Resource group within the Azure subscription.
         - id: profileName
           type: string
-          description: Name of the CDN profile which is unique within the resource group.
+          description: >-
+            Name of the Azure Front Door Standard or Azure Front Door Premium
+            profile which
+                               is unique within the resource group.
         - id: endpointName
           type: string
           description: Name of the endpoint under the profile which is unique globally.
@@ -87,7 +93,7 @@ methods:
           description: Endpoint properties
         - id: options
           type: >-
-            <xref uid="@azure/arm-cdn.AFDEndpointsCreateOptionalParams|stable"
+            <xref uid="@azure/arm-cdn.AfdEndpointsCreateOptionalParams|stable"
             />
           description: |
             The options parameters.
@@ -95,9 +101,9 @@ methods:
         description: ''
         type: >-
           Promise&lt;<xref
-          uid="@azure/arm-cdn.AFDEndpointsCreateResponse|stable" />&gt;
-  - name: beginDelete(string, string, string, AFDEndpointsDeleteOptionalParams)
-    uid: '@azure/arm-cdn.AFDEndpoints.beginDelete|stable'
+          uid="@azure/arm-cdn.AfdEndpointsCreateResponse|stable" />&gt;
+  - name: beginDelete(string, string, string, AfdEndpointsDeleteOptionalParams)
+    uid: '@azure/arm-cdn.AfdEndpoints.beginDelete|stable'
     package: '@azure/arm-cdn|stable'
     summary: >-
       Deletes an existing AzureFrontDoor endpoint with the specified endpoint
@@ -110,7 +116,7 @@ methods:
     syntax:
       content: >-
         function beginDelete(resourceGroupName: string, profileName: string,
-        endpointName: string, options?: AFDEndpointsDeleteOptionalParams):
+        endpointName: string, options?: AfdEndpointsDeleteOptionalParams):
         Promise<PollerLike<PollOperationState<void>, void>>
       parameters:
         - id: resourceGroupName
@@ -118,13 +124,16 @@ methods:
           description: Name of the Resource group within the Azure subscription.
         - id: profileName
           type: string
-          description: Name of the CDN profile which is unique within the resource group.
+          description: >-
+            Name of the Azure Front Door Standard or Azure Front Door Premium
+            profile which
+                               is unique within the resource group.
         - id: endpointName
           type: string
           description: Name of the endpoint under the profile which is unique globally.
         - id: options
           type: >-
-            <xref uid="@azure/arm-cdn.AFDEndpointsDeleteOptionalParams|stable"
+            <xref uid="@azure/arm-cdn.AfdEndpointsDeleteOptionalParams|stable"
             />
           description: |
             The options parameters.
@@ -133,8 +142,8 @@ methods:
         type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
   - name: >-
       beginDeleteAndWait(string, string, string,
-      AFDEndpointsDeleteOptionalParams)
-    uid: '@azure/arm-cdn.AFDEndpoints.beginDeleteAndWait|stable'
+      AfdEndpointsDeleteOptionalParams)
+    uid: '@azure/arm-cdn.AfdEndpoints.beginDeleteAndWait|stable'
     package: '@azure/arm-cdn|stable'
     summary: >-
       Deletes an existing AzureFrontDoor endpoint with the specified endpoint
@@ -148,20 +157,23 @@ methods:
       content: >-
         function beginDeleteAndWait(resourceGroupName: string, profileName:
         string, endpointName: string, options?:
-        AFDEndpointsDeleteOptionalParams): Promise<void>
+        AfdEndpointsDeleteOptionalParams): Promise<void>
       parameters:
         - id: resourceGroupName
           type: string
           description: Name of the Resource group within the Azure subscription.
         - id: profileName
           type: string
-          description: Name of the CDN profile which is unique within the resource group.
+          description: >-
+            Name of the Azure Front Door Standard or Azure Front Door Premium
+            profile which
+                               is unique within the resource group.
         - id: endpointName
           type: string
           description: Name of the endpoint under the profile which is unique globally.
         - id: options
           type: >-
-            <xref uid="@azure/arm-cdn.AFDEndpointsDeleteOptionalParams|stable"
+            <xref uid="@azure/arm-cdn.AfdEndpointsDeleteOptionalParams|stable"
             />
           description: |
             The options parameters.
@@ -170,8 +182,8 @@ methods:
         type: Promise&lt;void&gt;
   - name: >-
       beginPurgeContent(string, string, string, AfdPurgeParameters,
-      AFDEndpointsPurgeContentOptionalParams)
-    uid: '@azure/arm-cdn.AFDEndpoints.beginPurgeContent|stable'
+      AfdEndpointsPurgeContentOptionalParams)
+    uid: '@azure/arm-cdn.AfdEndpoints.beginPurgeContent|stable'
     package: '@azure/arm-cdn|stable'
     summary: Removes a content from AzureFrontDoor.
     remarks: ''
@@ -181,7 +193,7 @@ methods:
       content: >-
         function beginPurgeContent(resourceGroupName: string, profileName:
         string, endpointName: string, contents: AfdPurgeParameters, options?:
-        AFDEndpointsPurgeContentOptionalParams):
+        AfdEndpointsPurgeContentOptionalParams):
         Promise<PollerLike<PollOperationState<void>, void>>
       parameters:
         - id: resourceGroupName
@@ -189,7 +201,10 @@ methods:
           description: Name of the Resource group within the Azure subscription.
         - id: profileName
           type: string
-          description: Name of the CDN profile which is unique within the resource group.
+          description: >-
+            Name of the Azure Front Door Standard or Azure Front Door Premium
+            profile which
+                               is unique within the resource group.
         - id: endpointName
           type: string
           description: Name of the endpoint under the profile which is unique globally.
@@ -203,7 +218,7 @@ methods:
         - id: options
           type: >-
             <xref
-            uid="@azure/arm-cdn.AFDEndpointsPurgeContentOptionalParams|stable"
+            uid="@azure/arm-cdn.AfdEndpointsPurgeContentOptionalParams|stable"
             />
           description: |
             The options parameters.
@@ -212,8 +227,8 @@ methods:
         type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
   - name: >-
       beginPurgeContentAndWait(string, string, string, AfdPurgeParameters,
-      AFDEndpointsPurgeContentOptionalParams)
-    uid: '@azure/arm-cdn.AFDEndpoints.beginPurgeContentAndWait|stable'
+      AfdEndpointsPurgeContentOptionalParams)
+    uid: '@azure/arm-cdn.AfdEndpoints.beginPurgeContentAndWait|stable'
     package: '@azure/arm-cdn|stable'
     summary: Removes a content from AzureFrontDoor.
     remarks: ''
@@ -223,14 +238,17 @@ methods:
       content: >-
         function beginPurgeContentAndWait(resourceGroupName: string,
         profileName: string, endpointName: string, contents: AfdPurgeParameters,
-        options?: AFDEndpointsPurgeContentOptionalParams): Promise<void>
+        options?: AfdEndpointsPurgeContentOptionalParams): Promise<void>
       parameters:
         - id: resourceGroupName
           type: string
           description: Name of the Resource group within the Azure subscription.
         - id: profileName
           type: string
-          description: Name of the CDN profile which is unique within the resource group.
+          description: >-
+            Name of the Azure Front Door Standard or Azure Front Door Premium
+            profile which
+                               is unique within the resource group.
         - id: endpointName
           type: string
           description: Name of the endpoint under the profile which is unique globally.
@@ -244,7 +262,7 @@ methods:
         - id: options
           type: >-
             <xref
-            uid="@azure/arm-cdn.AFDEndpointsPurgeContentOptionalParams|stable"
+            uid="@azure/arm-cdn.AfdEndpointsPurgeContentOptionalParams|stable"
             />
           description: |
             The options parameters.
@@ -253,8 +271,8 @@ methods:
         type: Promise&lt;void&gt;
   - name: >-
       beginUpdate(string, string, string, AFDEndpointUpdateParameters,
-      AFDEndpointsUpdateOptionalParams)
-    uid: '@azure/arm-cdn.AFDEndpoints.beginUpdate|stable'
+      AfdEndpointsUpdateOptionalParams)
+    uid: '@azure/arm-cdn.AfdEndpoints.beginUpdate|stable'
     package: '@azure/arm-cdn|stable'
     summary: >-
       Updates an existing AzureFrontDoor endpoint with the specified endpoint
@@ -276,16 +294,19 @@ methods:
         function beginUpdate(resourceGroupName: string, profileName: string,
         endpointName: string, endpointUpdateProperties:
         AFDEndpointUpdateParameters, options?:
-        AFDEndpointsUpdateOptionalParams):
-        Promise<PollerLike<PollOperationState<AFDEndpointsUpdateResponse>,
-        AFDEndpointsUpdateResponse>>
+        AfdEndpointsUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<AfdEndpointsUpdateResponse>,
+        AfdEndpointsUpdateResponse>>
       parameters:
         - id: resourceGroupName
           type: string
           description: Name of the Resource group within the Azure subscription.
         - id: profileName
           type: string
-          description: Name of the CDN profile which is unique within the resource group.
+          description: >-
+            Name of the Azure Front Door Standard or Azure Front Door Premium
+            profile which
+                               is unique within the resource group.
         - id: endpointName
           type: string
           description: Name of the endpoint under the profile which is unique globally.
@@ -294,7 +315,7 @@ methods:
           description: Endpoint update properties
         - id: options
           type: >-
-            <xref uid="@azure/arm-cdn.AFDEndpointsUpdateOptionalParams|stable"
+            <xref uid="@azure/arm-cdn.AfdEndpointsUpdateOptionalParams|stable"
             />
           description: |
             The options parameters.
@@ -302,12 +323,12 @@ methods:
         description: ''
         type: >-
           Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
-          uid="@azure/arm-cdn.AFDEndpointsUpdateResponse|stable" />&gt;, <xref
-          uid="@azure/arm-cdn.AFDEndpointsUpdateResponse|stable" />&gt;&gt;
+          uid="@azure/arm-cdn.AfdEndpointsUpdateResponse|stable" />&gt;, <xref
+          uid="@azure/arm-cdn.AfdEndpointsUpdateResponse|stable" />&gt;&gt;
   - name: >-
       beginUpdateAndWait(string, string, string, AFDEndpointUpdateParameters,
-      AFDEndpointsUpdateOptionalParams)
-    uid: '@azure/arm-cdn.AFDEndpoints.beginUpdateAndWait|stable'
+      AfdEndpointsUpdateOptionalParams)
+    uid: '@azure/arm-cdn.AfdEndpoints.beginUpdateAndWait|stable'
     package: '@azure/arm-cdn|stable'
     summary: >-
       Updates an existing AzureFrontDoor endpoint with the specified endpoint
@@ -329,14 +350,17 @@ methods:
         function beginUpdateAndWait(resourceGroupName: string, profileName:
         string, endpointName: string, endpointUpdateProperties:
         AFDEndpointUpdateParameters, options?:
-        AFDEndpointsUpdateOptionalParams): Promise<AFDEndpointsUpdateResponse>
+        AfdEndpointsUpdateOptionalParams): Promise<AfdEndpointsUpdateResponse>
       parameters:
         - id: resourceGroupName
           type: string
           description: Name of the Resource group within the Azure subscription.
         - id: profileName
           type: string
-          description: Name of the CDN profile which is unique within the resource group.
+          description: >-
+            Name of the Azure Front Door Standard or Azure Front Door Premium
+            profile which
+                               is unique within the resource group.
         - id: endpointName
           type: string
           description: Name of the endpoint under the profile which is unique globally.
@@ -345,7 +369,7 @@ methods:
           description: Endpoint update properties
         - id: options
           type: >-
-            <xref uid="@azure/arm-cdn.AFDEndpointsUpdateOptionalParams|stable"
+            <xref uid="@azure/arm-cdn.AfdEndpointsUpdateOptionalParams|stable"
             />
           description: |
             The options parameters.
@@ -353,9 +377,9 @@ methods:
         description: ''
         type: >-
           Promise&lt;<xref
-          uid="@azure/arm-cdn.AFDEndpointsUpdateResponse|stable" />&gt;
-  - name: get(string, string, string, AFDEndpointsGetOptionalParams)
-    uid: '@azure/arm-cdn.AFDEndpoints.get|stable'
+          uid="@azure/arm-cdn.AfdEndpointsUpdateResponse|stable" />&gt;
+  - name: get(string, string, string, AfdEndpointsGetOptionalParams)
+    uid: '@azure/arm-cdn.AfdEndpoints.get|stable'
     package: '@azure/arm-cdn|stable'
     summary: >-
       Gets an existing AzureFrontDoor endpoint with the specified endpoint name
@@ -368,29 +392,32 @@ methods:
     syntax:
       content: >-
         function get(resourceGroupName: string, profileName: string,
-        endpointName: string, options?: AFDEndpointsGetOptionalParams):
-        Promise<AFDEndpointsGetResponse>
+        endpointName: string, options?: AfdEndpointsGetOptionalParams):
+        Promise<AfdEndpointsGetResponse>
       parameters:
         - id: resourceGroupName
           type: string
           description: Name of the Resource group within the Azure subscription.
         - id: profileName
           type: string
-          description: Name of the CDN profile which is unique within the resource group.
+          description: >-
+            Name of the Azure Front Door Standard or Azure Front Door Premium
+            profile which
+                               is unique within the resource group.
         - id: endpointName
           type: string
           description: Name of the endpoint under the profile which is unique globally.
         - id: options
-          type: <xref uid="@azure/arm-cdn.AFDEndpointsGetOptionalParams|stable" />
+          type: <xref uid="@azure/arm-cdn.AfdEndpointsGetOptionalParams|stable" />
           description: |
             The options parameters.
       return:
         description: ''
         type: >-
-          Promise&lt;<xref uid="@azure/arm-cdn.AFDEndpointsGetResponse|stable"
+          Promise&lt;<xref uid="@azure/arm-cdn.AfdEndpointsGetResponse|stable"
           />&gt;
-  - name: listByProfile(string, string, AFDEndpointsListByProfileOptionalParams)
-    uid: '@azure/arm-cdn.AFDEndpoints.listByProfile|stable'
+  - name: listByProfile(string, string, AfdEndpointsListByProfileOptionalParams)
+    uid: '@azure/arm-cdn.AfdEndpoints.listByProfile|stable'
     package: '@azure/arm-cdn|stable'
     summary: Lists existing AzureFrontDoor endpoints.
     remarks: ''
@@ -399,7 +426,7 @@ methods:
     syntax:
       content: >-
         function listByProfile(resourceGroupName: string, profileName: string,
-        options?: AFDEndpointsListByProfileOptionalParams):
+        options?: AfdEndpointsListByProfileOptionalParams):
         PagedAsyncIterableIterator<AFDEndpoint>
       parameters:
         - id: resourceGroupName
@@ -407,11 +434,14 @@ methods:
           description: Name of the Resource group within the Azure subscription.
         - id: profileName
           type: string
-          description: Name of the CDN profile which is unique within the resource group.
+          description: >-
+            Name of the Azure Front Door Standard or Azure Front Door Premium
+            profile which
+                               is unique within the resource group.
         - id: options
           type: >-
             <xref
-            uid="@azure/arm-cdn.AFDEndpointsListByProfileOptionalParams|stable"
+            uid="@azure/arm-cdn.AfdEndpointsListByProfileOptionalParams|stable"
             />
           description: |
             The options parameters.
@@ -422,8 +452,8 @@ methods:
           uid="@azure/arm-cdn.AFDEndpoint|stable" />&gt;
   - name: >-
       listResourceUsage(string, string, string,
-      AFDEndpointsListResourceUsageOptionalParams)
-    uid: '@azure/arm-cdn.AFDEndpoints.listResourceUsage|stable'
+      AfdEndpointsListResourceUsageOptionalParams)
+    uid: '@azure/arm-cdn.AfdEndpoints.listResourceUsage|stable'
     package: '@azure/arm-cdn|stable'
     summary: >-
       Checks the quota and actual usage of endpoints under the given CDN
@@ -435,7 +465,7 @@ methods:
       content: >-
         function listResourceUsage(resourceGroupName: string, profileName:
         string, endpointName: string, options?:
-        AFDEndpointsListResourceUsageOptionalParams):
+        AfdEndpointsListResourceUsageOptionalParams):
         PagedAsyncIterableIterator<Usage>
       parameters:
         - id: resourceGroupName
@@ -443,14 +473,17 @@ methods:
           description: Name of the Resource group within the Azure subscription.
         - id: profileName
           type: string
-          description: Name of the CDN profile which is unique within the resource group.
+          description: >-
+            Name of the Azure Front Door Standard or Azure Front Door Premium
+            profile which
+                               is unique within the resource group.
         - id: endpointName
           type: string
           description: Name of the endpoint under the profile which is unique globally.
         - id: options
           type: >-
             <xref
-            uid="@azure/arm-cdn.AFDEndpointsListResourceUsageOptionalParams|stable"
+            uid="@azure/arm-cdn.AfdEndpointsListResourceUsageOptionalParams|stable"
             />
           description: |
             The options parameters.
@@ -461,8 +494,8 @@ methods:
           />&gt;
   - name: >-
       validateCustomDomain(string, string, string, ValidateCustomDomainInput,
-      AFDEndpointsValidateCustomDomainOptionalParams)
-    uid: '@azure/arm-cdn.AFDEndpoints.validateCustomDomain|stable'
+      AfdEndpointsValidateCustomDomainOptionalParams)
+    uid: '@azure/arm-cdn.AfdEndpoints.validateCustomDomain|stable'
     package: '@azure/arm-cdn|stable'
     summary: >-
       Validates the custom domain mapping to ensure it maps to the correct CDN
@@ -475,15 +508,18 @@ methods:
         function validateCustomDomain(resourceGroupName: string, profileName:
         string, endpointName: string, customDomainProperties:
         ValidateCustomDomainInput, options?:
-        AFDEndpointsValidateCustomDomainOptionalParams):
-        Promise<AFDEndpointsValidateCustomDomainResponse>
+        AfdEndpointsValidateCustomDomainOptionalParams):
+        Promise<AfdEndpointsValidateCustomDomainResponse>
       parameters:
         - id: resourceGroupName
           type: string
           description: Name of the Resource group within the Azure subscription.
         - id: profileName
           type: string
-          description: Name of the CDN profile which is unique within the resource group.
+          description: >-
+            Name of the Azure Front Door Standard or Azure Front Door Premium
+            profile which
+                               is unique within the resource group.
         - id: endpointName
           type: string
           description: Name of the endpoint under the profile which is unique globally.
@@ -493,7 +529,7 @@ methods:
         - id: options
           type: >-
             <xref
-            uid="@azure/arm-cdn.AFDEndpointsValidateCustomDomainOptionalParams|stable"
+            uid="@azure/arm-cdn.AfdEndpointsValidateCustomDomainOptionalParams|stable"
             />
           description: |
             The options parameters.
@@ -501,5 +537,5 @@ methods:
         description: ''
         type: >-
           Promise&lt;<xref
-          uid="@azure/arm-cdn.AFDEndpointsValidateCustomDomainResponse|stable"
+          uid="@azure/arm-cdn.AfdEndpointsValidateCustomDomainResponse|stable"
           />&gt;

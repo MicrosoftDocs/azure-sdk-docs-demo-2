@@ -1,0 +1,166 @@
+### YamlMime:TSType
+name: DeviceTwinInfo
+uid: '@azure/eventgrid.DeviceTwinInfo|beta'
+package: '@azure/eventgrid|beta'
+summary: >-
+  Information about the device twin, which is the cloud representation of
+  application device metadata.
+fullName: DeviceTwinInfo
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: authenticationType
+    uid: '@azure/eventgrid.DeviceTwinInfo.authenticationType|beta'
+    package: '@azure/eventgrid|beta'
+    summary: >-
+      Authentication type used for this device: either SAS, SelfSigned, or
+      CertificateAuthority.
+    fullName: authenticationType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'authenticationType: string'
+      return:
+        description: ''
+        type: string
+  - name: cloudToDeviceMessageCount
+    uid: '@azure/eventgrid.DeviceTwinInfo.cloudToDeviceMessageCount|beta'
+    package: '@azure/eventgrid|beta'
+    summary: Count of cloud to device messages sent to this device.
+    fullName: cloudToDeviceMessageCount
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'cloudToDeviceMessageCount: number'
+      return:
+        description: ''
+        type: number
+  - name: connectionState
+    uid: '@azure/eventgrid.DeviceTwinInfo.connectionState|beta'
+    package: '@azure/eventgrid|beta'
+    summary: Whether the device is connected or disconnected.
+    fullName: connectionState
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'connectionState: string'
+      return:
+        description: ''
+        type: string
+  - name: deviceId
+    uid: '@azure/eventgrid.DeviceTwinInfo.deviceId|beta'
+    package: '@azure/eventgrid|beta'
+    summary: The unique identifier of the device twin.
+    fullName: deviceId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'deviceId: string'
+      return:
+        description: ''
+        type: string
+  - name: etag
+    uid: '@azure/eventgrid.DeviceTwinInfo.etag|beta'
+    package: '@azure/eventgrid|beta'
+    summary: >-
+      A piece of information that describes the content of the device twin. Each
+      etag is guaranteed to be unique per device twin.
+    fullName: etag
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'etag: string'
+      return:
+        description: ''
+        type: string
+  - name: lastActivityTime
+    uid: '@azure/eventgrid.DeviceTwinInfo.lastActivityTime|beta'
+    package: '@azure/eventgrid|beta'
+    summary: The ISO8601 timestamp of the last activity.
+    fullName: lastActivityTime
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lastActivityTime: string'
+      return:
+        description: ''
+        type: string
+  - name: properties
+    uid: '@azure/eventgrid.DeviceTwinInfo.properties|beta'
+    package: '@azure/eventgrid|beta'
+    summary: Properties JSON element.
+    fullName: properties
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'properties: DeviceTwinInfoProperties'
+      return:
+        description: ''
+        type: <xref uid="@azure/eventgrid.DeviceTwinInfoProperties|beta" />
+  - name: status
+    uid: '@azure/eventgrid.DeviceTwinInfo.status|beta'
+    package: '@azure/eventgrid|beta'
+    summary: Whether the device twin is enabled or disabled.
+    fullName: status
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'status: string'
+      return:
+        description: ''
+        type: string
+  - name: statusUpdateTime
+    uid: '@azure/eventgrid.DeviceTwinInfo.statusUpdateTime|beta'
+    package: '@azure/eventgrid|beta'
+    summary: The ISO8601 timestamp of the last device twin status update.
+    fullName: statusUpdateTime
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'statusUpdateTime: string'
+      return:
+        description: ''
+        type: string
+  - name: version
+    uid: '@azure/eventgrid.DeviceTwinInfo.version|beta'
+    package: '@azure/eventgrid|beta'
+    summary: >-
+      An integer that is incremented by one each time the device twin is
+      updated.
+    fullName: version
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'version: number'
+      return:
+        description: ''
+        type: number
+  - name: x509Thumbprint
+    uid: '@azure/eventgrid.DeviceTwinInfo.x509Thumbprint|beta'
+    package: '@azure/eventgrid|beta'
+    summary: >-
+      The thumbprint is a unique value for the x509 certificate, commonly used
+      to find a particular certificate in a certificate store. The thumbprint is
+      dynamically generated using the SHA1 algorithm, and does not physically
+      exist in the certificate.
+    fullName: x509Thumbprint
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'x509Thumbprint: DeviceTwinInfoX509Thumbprint'
+      return:
+        description: ''
+        type: <xref uid="@azure/eventgrid.DeviceTwinInfoX509Thumbprint|beta" />

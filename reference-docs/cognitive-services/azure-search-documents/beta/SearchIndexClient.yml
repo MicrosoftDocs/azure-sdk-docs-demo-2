@@ -118,6 +118,30 @@ methods:
         type: >-
           Promise&lt;<xref uid="@azure/search-documents.AnalyzeResult|beta"
           />&gt;
+  - name: createAlias(SearchIndexAlias, CreateAliasOptions)
+    uid: '@azure/search-documents.SearchIndexClient.createAlias|beta'
+    package: '@azure/search-documents|beta'
+    summary: Creates a new search alias.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createAlias(alias: SearchIndexAlias, options?:
+        CreateAliasOptions): Promise<SearchIndexAlias>
+      parameters:
+        - id: alias
+          type: <xref uid="@azure/search-documents.SearchIndexAlias|beta" />
+          description: The definition of the alias to create.
+        - id: options
+          type: <xref uid="@azure/search-documents.CreateAliasOptions|beta" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref uid="@azure/search-documents.SearchIndexAlias|beta"
+          />&gt;
   - name: createIndex(SearchIndex, CreateIndexOptions)
     uid: '@azure/search-documents.SearchIndexClient.createIndex|beta'
     package: '@azure/search-documents|beta'
@@ -140,6 +164,32 @@ methods:
       return:
         description: ''
         type: Promise&lt;<xref uid="@azure/search-documents.SearchIndex|beta" />&gt;
+  - name: createOrUpdateAlias(SearchIndexAlias, CreateOrUpdateAliasOptions)
+    uid: '@azure/search-documents.SearchIndexClient.createOrUpdateAlias|beta'
+    package: '@azure/search-documents|beta'
+    summary: Creates a new search alias or updates an alias if it already exists.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createOrUpdateAlias(alias: SearchIndexAlias, options?:
+        CreateOrUpdateAliasOptions): Promise<SearchIndexAlias>
+      parameters:
+        - id: alias
+          type: <xref uid="@azure/search-documents.SearchIndexAlias|beta" />
+          description: The definition of the alias to create or update.
+        - id: options
+          type: >-
+            <xref uid="@azure/search-documents.CreateOrUpdateAliasOptions|beta"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref uid="@azure/search-documents.SearchIndexAlias|beta"
+          />&gt;
   - name: createOrUpdateIndex(SearchIndex, CreateOrUpdateIndexOptions)
     uid: '@azure/search-documents.SearchIndexClient.createOrUpdateIndex|beta'
     package: '@azure/search-documents|beta'
@@ -211,6 +261,34 @@ methods:
       return:
         description: ''
         type: Promise&lt;<xref uid="@azure/search-documents.SynonymMap|beta" />&gt;
+  - name: deleteAlias(string | SearchIndexAlias, DeleteAliasOptions)
+    uid: '@azure/search-documents.SearchIndexClient.deleteAlias|beta'
+    package: '@azure/search-documents|beta'
+    summary: >-
+      Deletes a search alias and its associated mapping to an index. This
+      operation is permanent, with no
+
+      recovery option. The mapped index is untouched by this operation.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function deleteAlias(alias: string | SearchIndexAlias, options?:
+        DeleteAliasOptions): Promise<void>
+      parameters:
+        - id: alias
+          type: >-
+            string | <xref uid="@azure/search-documents.SearchIndexAlias|beta"
+            />
+          description: Alias/Name name of the alias to delete.
+        - id: options
+          type: <xref uid="@azure/search-documents.DeleteAliasOptions|beta" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
   - name: deleteIndex(string | SearchIndex, DeleteIndexOptions)
     uid: '@azure/search-documents.SearchIndexClient.deleteIndex|beta'
     package: '@azure/search-documents|beta'
@@ -255,6 +333,30 @@ methods:
       return:
         description: ''
         type: Promise&lt;void&gt;
+  - name: getAlias(string, GetAliasOptions)
+    uid: '@azure/search-documents.SearchIndexClient.getAlias|beta'
+    package: '@azure/search-documents|beta'
+    summary: Retrieves an alias definition.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getAlias(aliasName: string, options?: GetAliasOptions):
+        Promise<SearchIndexAlias>
+      parameters:
+        - id: aliasName
+          type: string
+          description: The name of the alias to retrieve.
+        - id: options
+          type: <xref uid="@azure/search-documents.GetAliasOptions|beta" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref uid="@azure/search-documents.SearchIndexAlias|beta"
+          />&gt;
   - name: getIndex(string, GetIndexOptions)
     uid: '@azure/search-documents.SearchIndexClient.getIndex|beta'
     package: '@azure/search-documents|beta'
@@ -376,6 +478,23 @@ methods:
       return:
         description: ''
         type: Promise&lt;<xref uid="@azure/search-documents.SynonymMap|beta" />&gt;
+  - name: listAliases(ListAliasesOptions)
+    uid: '@azure/search-documents.SearchIndexClient.listAliases|beta'
+    package: '@azure/search-documents|beta'
+    summary: Lists all aliases available for a search service.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function listAliases(options?: ListAliasesOptions): AliasIterator'
+      parameters:
+        - id: options
+          type: <xref uid="@azure/search-documents.ListAliasesOptions|beta" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: <xref uid="@azure/search-documents.AliasIterator|beta" />
   - name: listIndexes(ListIndexesOptions)
     uid: '@azure/search-documents.SearchIndexClient.listIndexes|beta'
     package: '@azure/search-documents|beta'

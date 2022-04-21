@@ -1,18 +1,18 @@
 ### YamlMime:TSType
-name: AFDProfiles
-uid: '@azure/arm-cdn.AFDProfiles|stable'
+name: AfdProfiles
+uid: '@azure/arm-cdn.AfdProfiles|stable'
 package: '@azure/arm-cdn|stable'
-summary: Interface representing a AFDProfiles.
-fullName: AFDProfiles
+summary: Interface representing a AfdProfiles.
+fullName: AfdProfiles
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
   - name: >-
-      checkHostNameAvailability(string, string, ValidateCustomDomainInput,
-      AFDProfilesCheckHostNameAvailabilityOptionalParams)
-    uid: '@azure/arm-cdn.AFDProfiles.checkHostNameAvailability|stable'
+      checkHostNameAvailability(string, string, CheckHostNameAvailabilityInput,
+      AfdProfilesCheckHostNameAvailabilityOptionalParams)
+    uid: '@azure/arm-cdn.AfdProfiles.checkHostNameAvailability|stable'
     package: '@azure/arm-cdn|stable'
     summary: >-
       Validates the custom domain mapping to ensure it maps to the correct CDN
@@ -24,23 +24,26 @@ methods:
       content: >-
         function checkHostNameAvailability(resourceGroupName: string,
         profileName: string, checkHostNameAvailabilityInput:
-        ValidateCustomDomainInput, options?:
-        AFDProfilesCheckHostNameAvailabilityOptionalParams):
-        Promise<AFDProfilesCheckHostNameAvailabilityResponse>
+        CheckHostNameAvailabilityInput, options?:
+        AfdProfilesCheckHostNameAvailabilityOptionalParams):
+        Promise<AfdProfilesCheckHostNameAvailabilityResponse>
       parameters:
         - id: resourceGroupName
           type: string
           description: Name of the Resource group within the Azure subscription.
         - id: profileName
           type: string
-          description: Name of the CDN profile which is unique within the resource group.
+          description: >-
+            Name of the Azure Front Door Standard or Azure Front Door Premium or
+            CDN profile
+                               which is unique within the resource group.
         - id: checkHostNameAvailabilityInput
-          type: <xref uid="@azure/arm-cdn.ValidateCustomDomainInput|stable" />
+          type: <xref uid="@azure/arm-cdn.CheckHostNameAvailabilityInput|stable" />
           description: Custom domain to be validated.
         - id: options
           type: >-
             <xref
-            uid="@azure/arm-cdn.AFDProfilesCheckHostNameAvailabilityOptionalParams|stable"
+            uid="@azure/arm-cdn.AfdProfilesCheckHostNameAvailabilityOptionalParams|stable"
             />
           description: |
             The options parameters.
@@ -48,12 +51,12 @@ methods:
         description: ''
         type: >-
           Promise&lt;<xref
-          uid="@azure/arm-cdn.AFDProfilesCheckHostNameAvailabilityResponse|stable"
+          uid="@azure/arm-cdn.AfdProfilesCheckHostNameAvailabilityResponse|stable"
           />&gt;
   - name: >-
       listResourceUsage(string, string,
-      AFDProfilesListResourceUsageOptionalParams)
-    uid: '@azure/arm-cdn.AFDProfiles.listResourceUsage|stable'
+      AfdProfilesListResourceUsageOptionalParams)
+    uid: '@azure/arm-cdn.AfdProfiles.listResourceUsage|stable'
     package: '@azure/arm-cdn|stable'
     summary: >-
       Checks the quota and actual usage of endpoints under the given CDN
@@ -64,7 +67,7 @@ methods:
     syntax:
       content: >-
         function listResourceUsage(resourceGroupName: string, profileName:
-        string, options?: AFDProfilesListResourceUsageOptionalParams):
+        string, options?: AfdProfilesListResourceUsageOptionalParams):
         PagedAsyncIterableIterator<Usage>
       parameters:
         - id: resourceGroupName
@@ -72,11 +75,14 @@ methods:
           description: Name of the Resource group within the Azure subscription.
         - id: profileName
           type: string
-          description: Name of the CDN profile which is unique within the resource group.
+          description: >-
+            Name of the Azure Front Door Standard or Azure Front Door Premium or
+            CDN profile
+                               which is unique within the resource group.
         - id: options
           type: >-
             <xref
-            uid="@azure/arm-cdn.AFDProfilesListResourceUsageOptionalParams|stable"
+            uid="@azure/arm-cdn.AfdProfilesListResourceUsageOptionalParams|stable"
             />
           description: |
             The options parameters.

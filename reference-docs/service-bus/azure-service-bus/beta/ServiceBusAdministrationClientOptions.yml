@@ -1,0 +1,125 @@
+### YamlMime:TSType
+name: ServiceBusAdministrationClientOptions
+uid: '@azure/service-bus.ServiceBusAdministrationClientOptions|beta'
+package: '@azure/service-bus|beta'
+summary: Represents the client options of the `ServiceBusAdministrationClient`.
+fullName: ServiceBusAdministrationClientOptions
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: additionalPolicies
+    uid: >-
+      @azure/service-bus.ServiceBusAdministrationClientOptions.additionalPolicies|beta
+    package: '@azure/service-bus|beta'
+    summary: Additional policies to include in the HTTP pipeline.
+    fullName: additionalPolicies
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'additionalPolicies?: AdditionalPolicyConfig[]'
+      return:
+        description: ''
+        type: AdditionalPolicyConfig[]
+  - name: allowInsecureConnection
+    uid: >-
+      @azure/service-bus.ServiceBusAdministrationClientOptions.allowInsecureConnection|beta
+    package: '@azure/service-bus|beta'
+    summary: Set to true if the request is sent over HTTP instead of HTTPS
+    fullName: allowInsecureConnection
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowInsecureConnection?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: httpClient
+    uid: '@azure/service-bus.ServiceBusAdministrationClientOptions.httpClient|beta'
+    package: '@azure/service-bus|beta'
+    summary: The HttpClient that will be used to send HTTP requests.
+    fullName: httpClient
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'httpClient?: HttpClient'
+      return:
+        description: ''
+        type: HttpClient
+  - name: proxyOptions
+    uid: '@azure/service-bus.ServiceBusAdministrationClientOptions.proxyOptions|beta'
+    package: '@azure/service-bus|beta'
+    summary: Options to configure a proxy for outgoing requests.
+    fullName: proxyOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'proxyOptions?: ProxySettings'
+      return:
+        description: ''
+        type: ProxySettings
+  - name: redirectOptions
+    uid: >-
+      @azure/service-bus.ServiceBusAdministrationClientOptions.redirectOptions|beta
+    package: '@azure/service-bus|beta'
+    summary: Options for how redirect responses are handled.
+    fullName: redirectOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'redirectOptions?: RedirectPolicyOptions'
+      return:
+        description: ''
+        type: RedirectPolicyOptions
+  - name: retryOptions
+    uid: '@azure/service-bus.ServiceBusAdministrationClientOptions.retryOptions|beta'
+    package: '@azure/service-bus|beta'
+    summary: Options that control how to retry failed requests.
+    fullName: retryOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'retryOptions?: PipelineRetryOptions'
+      return:
+        description: ''
+        type: PipelineRetryOptions
+  - name: serviceVersion
+    uid: >-
+      @azure/service-bus.ServiceBusAdministrationClientOptions.serviceVersion|beta
+    package: '@azure/service-bus|beta'
+    summary: |
+      Service version of the ATOM API.
+      Currently supported = "2021-05" | "2017-04"
+
+      Defaults to "2021-05".
+    fullName: serviceVersion
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'serviceVersion?: "2021-05" | "2017-04"'
+      return:
+        description: ''
+        type: '"2021-05" | "2017-04"'
+  - name: userAgentOptions
+    uid: >-
+      @azure/service-bus.ServiceBusAdministrationClientOptions.userAgentOptions|beta
+    package: '@azure/service-bus|beta'
+    summary: Options for adding user agent details to outgoing requests.
+    fullName: userAgentOptions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'userAgentOptions?: UserAgentPolicyOptions'
+      return:
+        description: ''
+        type: UserAgentPolicyOptions
+extends: CommonClientOptions

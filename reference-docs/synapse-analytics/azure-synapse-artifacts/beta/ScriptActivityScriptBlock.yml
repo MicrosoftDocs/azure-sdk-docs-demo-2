@@ -1,0 +1,50 @@
+### YamlMime:TSType
+name: ScriptActivityScriptBlock
+uid: '@azure/synapse-artifacts.ScriptActivityScriptBlock|beta'
+package: '@azure/synapse-artifacts|beta'
+summary: Script block of scripts.
+fullName: ScriptActivityScriptBlock
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: parameters
+    uid: '@azure/synapse-artifacts.ScriptActivityScriptBlock.parameters|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: 'Array of script parameters. Type: array.'
+    fullName: parameters
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'parameters?: ScriptActivityParameter[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/synapse-artifacts.ScriptActivityParameter|beta" />[]
+  - name: text
+    uid: '@azure/synapse-artifacts.ScriptActivityScriptBlock.text|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: 'The query text. Type: string (or Expression with resultType string).'
+    fullName: text
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'text: any'
+      return:
+        description: ''
+        type: any
+  - name: type
+    uid: '@azure/synapse-artifacts.ScriptActivityScriptBlock.type|beta'
+    package: '@azure/synapse-artifacts|beta'
+    summary: 'The type of the query. Type: string.'
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: ScriptType'
+      return:
+        description: ''
+        type: <xref uid="@azure/synapse-artifacts.ScriptType|beta" />

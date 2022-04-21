@@ -1,0 +1,53 @@
+### YamlMime:TSType
+name: OperationResultsGetHeaders
+uid: '@azure/arm-mediaservices.OperationResultsGetHeaders|stable'
+package: '@azure/arm-mediaservices|stable'
+summary: Defines headers for OperationResults_get operation.
+fullName: OperationResultsGetHeaders
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: azureAsyncOperation
+    uid: >-
+      @azure/arm-mediaservices.OperationResultsGetHeaders.azureAsyncOperation|stable
+    package: '@azure/arm-mediaservices|stable'
+    summary: The URI to poll for completion status.
+    fullName: azureAsyncOperation
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'azureAsyncOperation?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: location
+    uid: '@azure/arm-mediaservices.OperationResultsGetHeaders.location|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: The URI to poll for completion status.
+    fullName: location
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'location?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: retryAfter
+    uid: '@azure/arm-mediaservices.OperationResultsGetHeaders.retryAfter|stable'
+    package: '@azure/arm-mediaservices|stable'
+    summary: >-
+      The recommended number of seconds to wait before calling the URI specified
+      in Azure-AsyncOperation.
+    fullName: retryAfter
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'retryAfter?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number

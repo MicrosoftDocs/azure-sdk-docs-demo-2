@@ -1,0 +1,32 @@
+### YamlMime:TSType
+name: EventSubscriptionDestination
+uid: '@azure/arm-eventgrid.EventSubscriptionDestination|beta'
+package: '@azure/arm-eventgrid|beta'
+summary: Information about the destination for an event subscription.
+fullName: EventSubscriptionDestination
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: endpointType
+    uid: '@azure/arm-eventgrid.EventSubscriptionDestination.endpointType|beta'
+    package: '@azure/arm-eventgrid|beta'
+    summary: >-
+      Polymorphic discriminator, which specifies the different types this object
+      can be
+    fullName: endpointType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        endpointType: "WebHook" | "EventHub" | "StorageQueue" |
+        "HybridConnection" | "ServiceBusQueue" | "ServiceBusTopic" |
+        "AzureFunction" | "PartnerDestination"
+      return:
+        description: ''
+        type: >-
+          "WebHook" | "EventHub" | "StorageQueue" | "HybridConnection" |
+          "ServiceBusQueue" | "ServiceBusTopic" | "AzureFunction" |
+          "PartnerDestination"
