@@ -11,7 +11,6 @@ summary: >-
   SubscriptionClient
 fullName: SubscriptionClient
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 properties:
@@ -21,7 +20,6 @@ properties:
     summary: The name of the default rule on the subscription.
     fullName: defaultRuleName
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'defaultRuleName: string'
@@ -36,7 +34,6 @@ properties:
       created.
     fullName: entityPath
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'entityPath: string'
@@ -49,7 +46,6 @@ properties:
     summary: A unique identifier for this client.
     fullName: id
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'id: string'
@@ -62,7 +58,6 @@ properties:
     summary: The name of the Service Bus Subscription for which this client is created.
     fullName: subscriptionName
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'subscriptionName: string'
@@ -77,7 +72,6 @@ properties:
       created.
     fullName: topicName
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'topicName: string'
@@ -100,7 +94,6 @@ methods:
 
       the subscription receiving all messages.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -143,7 +136,6 @@ methods:
 
       further operations.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function close(): Promise<void>'
@@ -157,7 +149,6 @@ methods:
       Creates a Receiver for receiving messages from a Subscription which does
       not have sessions enabled.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function createReceiver(receiveMode: ReceiveMode): Receiver'
@@ -198,7 +189,6 @@ methods:
 
       given, a random session among the available sessions is used.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -242,7 +232,6 @@ methods:
     package: '@azure/service-bus'
     summary: Gets all rules associated with the subscription
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getRules(): Promise<RuleDescription[]>'
@@ -267,7 +256,6 @@ methods:
       It cannot be `Completed/Abandoned/Deferred/Deadlettered`. The lock on it
       cannot be renewed.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -295,7 +283,6 @@ methods:
       It cannot be `Completed/Abandoned/Deferred/Deadlettered`. The lock on it
       cannot be renewed.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -322,7 +309,6 @@ methods:
 
       any more messages.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function removeRule(ruleName: string): Promise<void>'

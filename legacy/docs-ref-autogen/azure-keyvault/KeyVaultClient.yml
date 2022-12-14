@@ -5,7 +5,6 @@ package: azure-keyvault
 summary: ''
 fullName: KeyVaultClient
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -14,7 +13,6 @@ constructors:
     package: azure-keyvault
     summary: Initializes a new instance of the KeyVaultClient class.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -35,7 +33,6 @@ properties:
     summary: ''
     fullName: acceptLanguage
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'acceptLanguage: string'
@@ -48,7 +45,6 @@ properties:
     summary: ''
     fullName: apiVersion
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'apiVersion: string'
@@ -61,7 +57,6 @@ properties:
     summary: ''
     fullName: credentials
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'credentials: ServiceClientCredentials'
@@ -74,7 +69,6 @@ properties:
     summary: ''
     fullName: generateClientRequestId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'generateClientRequestId: boolean'
@@ -87,7 +81,6 @@ properties:
     summary: ''
     fullName: longRunningOperationRetryTimeout
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'longRunningOperationRetryTimeout: number'
@@ -100,7 +93,6 @@ inheritedMethods:
     package: azure-keyvault
     summary: Adds custom information to user agent header
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function addUserAgentInfo(additionalUserAgentInfo: any)'
@@ -109,6 +101,7 @@ inheritedMethods:
           type: any
           description: |
             information to be added to user agent header, as string.
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.addUserAgentInfo
   - name: >-
       getLongRunningOperationResult<TResult>(HttpOperationResponse<TResult>,
       RequestOptions)
@@ -116,7 +109,6 @@ inheritedMethods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -133,6 +125,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;TResult&gt;
+    inheritanceDescription: <b>Inherited From</b> AzureServiceClient.getLongRunningOperationResult
   - name: >-
       getLongRunningOperationResult<TResult>(HttpOperationResponse<TResult>,
       RequestOptions, ServiceCallback<TResult>)
@@ -140,7 +133,6 @@ inheritedMethods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -157,6 +149,7 @@ inheritedMethods:
         - id: callback
           type: ServiceCallback&lt;TResult&gt;
           description: ''
+    inheritanceDescription: <b>Inherited From</b> AzureServiceClient.getLongRunningOperationResult
   - name: >-
       getLongRunningOperationResult<TResult>(HttpOperationResponse<TResult>,
       ServiceCallback<TResult>)
@@ -164,7 +157,6 @@ inheritedMethods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -177,6 +169,7 @@ inheritedMethods:
         - id: callback
           type: ServiceCallback&lt;TResult&gt;
           description: ''
+    inheritanceDescription: <b>Inherited From</b> AzureServiceClient.getLongRunningOperationResult
   - name: getPackageJsonInfo(string)
     uid: azure-keyvault.KeyVaultClient.getPackageJsonInfo
     package: azure-keyvault
@@ -188,7 +181,6 @@ inheritedMethods:
 
       If package.json is not found, returns a default value.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -201,6 +193,7 @@ inheritedMethods:
       return:
         description: packageJsonInfo - "name" and "version" of the desired package.
         type: '{ name: string, version: string }'
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.getPackageJsonInfo
   - name: >-
       sendLongRunningRequest<TResult>(LongRunningUrlBasedRequestPrepareOptions |
       LongRunningPathTemplateBasedRequestPrepareOptions)
@@ -208,7 +201,6 @@ inheritedMethods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -224,6 +216,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;TResult&gt;
+    inheritanceDescription: <b>Inherited From</b> AzureServiceClient.sendLongRunningRequest
   - name: >-
       sendLongRunningRequest<TResult>(LongRunningUrlBasedRequestPrepareOptions |
       LongRunningPathTemplateBasedRequestPrepareOptions,
@@ -232,7 +225,6 @@ inheritedMethods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -249,6 +241,7 @@ inheritedMethods:
         - id: callback
           type: ServiceCallback&lt;TResult&gt;
           description: ''
+    inheritanceDescription: <b>Inherited From</b> AzureServiceClient.sendLongRunningRequest
   - name: >-
       sendLongRunningRequestWithHttpOperationResponse<TResult>(LongRunningUrlBasedRequestPrepareOptions
       | LongRunningPathTemplateBasedRequestPrepareOptions)
@@ -257,7 +250,6 @@ inheritedMethods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -275,6 +267,9 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;HttpOperationResponse&lt;TResult&gt;&gt;
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      AzureServiceClient.sendLongRunningRequestWithHttpOperationResponse
   - name: >-
       sendRequest<TResult>(PathTemplateBasedRequestPrepareOptions |
       UrlBasedRequestPrepareOptions)
@@ -282,7 +277,6 @@ inheritedMethods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -298,6 +292,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;TResult&gt;
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendRequest
   - name: >-
       sendRequest<TResult>(PathTemplateBasedRequestPrepareOptions |
       UrlBasedRequestPrepareOptions, ServiceCallback<TResult>)
@@ -305,7 +300,6 @@ inheritedMethods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -321,6 +315,7 @@ inheritedMethods:
         - id: callback
           type: ServiceCallback&lt;TResult&gt;
           description: ''
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendRequest
   - name: >-
       sendRequestWithHttpOperationResponse<TResult>(PathTemplateBasedRequestPrepareOptions
       | UrlBasedRequestPrepareOptions)
@@ -328,7 +323,6 @@ inheritedMethods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -344,6 +338,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;HttpOperationResponse&lt;TResult&gt;&gt;
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendRequestWithHttpOperationResponse
 methods:
   - name: >-
       backupCertificate(string, string,
@@ -352,7 +347,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -377,7 +371,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -413,7 +406,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {BackupCertificateResult} [result]   - The deserialized result object if an error did not occur.
-                               See {@link BackupCertificateResult} for more
+                               See <xref:azure-keyvault.BackupCertificateResult> for more
                                information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
@@ -427,7 +420,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -456,7 +448,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -487,7 +478,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -508,7 +498,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -543,7 +532,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {BackupKeyResult} [result]   - The deserialized result object if an error did not occur.
-                               See {@link BackupKeyResult} for more information.
+                               See <xref:azure-keyvault.BackupKeyResult> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -556,7 +545,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -583,7 +571,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -613,7 +600,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -636,7 +622,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -672,7 +657,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {BackupSecretResult} [result]   - The deserialized result object if an error did not occur.
-                               See {@link BackupSecretResult} for more information.
+                               See <xref:azure-keyvault.BackupSecretResult> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -685,7 +670,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -714,7 +698,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -744,7 +727,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -769,7 +751,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -805,7 +786,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {BackupStorageResult} [result]   - The deserialized result object if an error did not occur.
-                               See {@link BackupStorageResult} for more information.
+                               See <xref:azure-keyvault.BackupStorageResult> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -818,7 +799,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -848,7 +828,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -878,7 +857,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -904,7 +882,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -944,7 +921,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {CertificateOperation} [result]   - The deserialized result object if an error did not occur.
-                               See {@link CertificateOperation} for more information.
+                               See <xref:azure-keyvault.CertificateOperation> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -959,7 +936,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -995,7 +971,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1030,7 +1005,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1057,7 +1031,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1107,7 +1080,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {KeyBundle} [result]   - The deserialized result object if an error did not occur.
-                               See {@link KeyBundle} for more information.
+                               See <xref:azure-keyvault.KeyBundle> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -1122,7 +1095,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1158,7 +1130,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1205,7 +1176,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1240,7 +1210,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1289,7 +1258,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {KeyOperationResult} [result]   - The deserialized result object if an error did not occur.
-                               See {@link KeyOperationResult} for more information.
+                               See <xref:azure-keyvault.KeyOperationResult> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -1302,7 +1271,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1340,7 +1308,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1386,7 +1353,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1411,7 +1377,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1447,7 +1412,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {DeletedCertificateBundle} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DeletedCertificateBundle} for more
+                               See <xref:azure-keyvault.DeletedCertificateBundle> for more
                                information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
@@ -1461,7 +1426,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1488,7 +1452,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1508,7 +1471,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1539,7 +1501,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {Contacts} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Contacts} for more information.
+                               See <xref:azure-keyvault.Contacts> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -1552,7 +1514,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1577,7 +1538,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1604,7 +1564,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1627,7 +1586,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1663,7 +1621,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {IssuerBundle} [result]   - The deserialized result object if an error did not occur.
-                               See {@link IssuerBundle} for more information.
+                               See <xref:azure-keyvault.IssuerBundle> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -1676,7 +1634,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1704,7 +1661,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1736,7 +1692,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1762,7 +1717,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1798,7 +1752,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {CertificateOperation} [result]   - The deserialized result object if an error did not occur.
-                               See {@link CertificateOperation} for more information.
+                               See <xref:azure-keyvault.CertificateOperation> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -1811,7 +1765,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1841,7 +1794,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1874,7 +1826,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1905,7 +1856,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1928,7 +1878,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1963,7 +1912,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {DeletedKeyBundle} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DeletedKeyBundle} for more information.
+                               See <xref:azure-keyvault.DeletedKeyBundle> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -1976,7 +1925,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2005,7 +1953,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2037,7 +1984,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2068,7 +2014,6 @@ methods:
       Deletes a SAS definition from a specified storage account. This operation
       requires the storage/deletesas permission.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2108,7 +2053,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {DeletedSasDefinitionBundle} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DeletedSasDefinitionBundle} for more
+                               See <xref:azure-keyvault.DeletedSasDefinitionBundle> for more
                                information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
@@ -2124,7 +2069,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2159,7 +2103,6 @@ methods:
       Deletes a SAS definition from a specified storage account. This operation
       requires the storage/deletesas permission.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2194,7 +2137,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2217,7 +2159,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2253,7 +2194,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {DeletedSecretBundle} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DeletedSecretBundle} for more information.
+                               See <xref:azure-keyvault.DeletedSecretBundle> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -2266,7 +2207,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2295,7 +2235,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2327,7 +2266,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2354,7 +2292,6 @@ methods:
       Deletes a storage account. This operation requires the storage/delete
       permission.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2390,7 +2327,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {DeletedStorageBundle} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DeletedStorageBundle} for more information.
+                               See <xref:azure-keyvault.DeletedStorageBundle> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -2403,7 +2340,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2435,7 +2371,6 @@ methods:
       Deletes a storage account. This operation requires the storage/delete
       permission.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2467,7 +2402,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2502,7 +2436,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2551,7 +2484,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {KeyOperationResult} [result]   - The deserialized result object if an error did not occur.
-                               See {@link KeyOperationResult} for more information.
+                               See <xref:azure-keyvault.KeyOperationResult> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -2564,7 +2497,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2602,7 +2534,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2646,7 +2577,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2675,7 +2605,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2716,7 +2645,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {CertificateBundle} [result]   - The deserialized result object if an error did not occur.
-                               See {@link CertificateBundle} for more information.
+                               See <xref:azure-keyvault.CertificateBundle> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -2729,7 +2658,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2759,7 +2687,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2777,7 +2704,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2808,7 +2734,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {Contacts} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Contacts} for more information.
+                               See <xref:azure-keyvault.Contacts> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -2821,7 +2747,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2846,7 +2771,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2872,7 +2796,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2895,7 +2818,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2931,7 +2853,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {IssuerBundle} [result]   - The deserialized result object if an error did not occur.
-                               See {@link IssuerBundle} for more information.
+                               See <xref:azure-keyvault.IssuerBundle> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -2944,7 +2866,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2971,7 +2892,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2993,7 +2913,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3025,7 +2944,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {CertificateIssuerListResult} [result]   - The deserialized result object if an error did not occur.
-                               See {@link CertificateIssuerListResult} for more
+                               See <xref:azure-keyvault.CertificateIssuerListResult> for more
                                information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
@@ -3041,7 +2960,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3067,7 +2985,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3089,7 +3006,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3121,7 +3037,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {CertificateIssuerListResult} [result]   - The deserialized result object if an error did not occur.
-                               See {@link CertificateIssuerListResult} for more
+                               See <xref:azure-keyvault.CertificateIssuerListResult> for more
                                information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
@@ -3137,7 +3053,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3164,7 +3079,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3194,7 +3108,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3223,7 +3136,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3255,7 +3167,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3280,7 +3191,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3316,7 +3226,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {CertificateOperation} [result]   - The deserialized result object if an error did not occur.
-                               See {@link CertificateOperation} for more information.
+                               See <xref:azure-keyvault.CertificateOperation> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -3329,7 +3239,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3359,7 +3268,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3389,7 +3297,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3414,7 +3321,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3451,7 +3357,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {CertificatePolicy} [result]   - The deserialized result object if an error did not occur.
-                               See {@link CertificatePolicy} for more information.
+                               See <xref:azure-keyvault.CertificatePolicy> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -3464,7 +3370,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3494,7 +3399,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3525,7 +3429,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3547,7 +3450,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3581,7 +3483,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {CertificateListResult} [result]   - The deserialized result object if an error did not occur.
-                               See {@link CertificateListResult} for more information.
+                               See <xref:azure-keyvault.CertificateListResult> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -3595,7 +3497,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3621,7 +3522,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3641,7 +3541,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3672,7 +3571,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {CertificateListResult} [result]   - The deserialized result object if an error did not occur.
-                               See {@link CertificateListResult} for more information.
+                               See <xref:azure-keyvault.CertificateListResult> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -3685,7 +3584,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3711,7 +3609,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3739,7 +3636,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3770,7 +3666,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3795,7 +3690,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3831,7 +3725,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {CertificateListResult} [result]   - The deserialized result object if an error did not occur.
-                               See {@link CertificateListResult} for more information.
+                               See <xref:azure-keyvault.CertificateListResult> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -3844,7 +3738,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3871,7 +3764,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3893,7 +3785,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3924,7 +3815,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {CertificateListResult} [result]   - The deserialized result object if an error did not occur.
-                               See {@link CertificateListResult} for more information.
+                               See <xref:azure-keyvault.CertificateListResult> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -3937,7 +3828,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3964,7 +3854,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3994,7 +3883,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4027,7 +3915,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4065,7 +3952,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4090,7 +3976,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4126,7 +4011,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {DeletedCertificateBundle} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DeletedCertificateBundle} for more
+                               See <xref:azure-keyvault.DeletedCertificateBundle> for more
                                information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
@@ -4140,7 +4025,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4169,7 +4053,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4191,7 +4074,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4225,7 +4107,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {DeletedCertificateListResult} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DeletedCertificateListResult} for more
+                               See <xref:azure-keyvault.DeletedCertificateListResult> for more
                                information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
@@ -4242,7 +4124,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4271,7 +4152,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4293,7 +4173,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4325,7 +4204,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {DeletedCertificateListResult} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DeletedCertificateListResult} for more
+                               See <xref:azure-keyvault.DeletedCertificateListResult> for more
                                information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
@@ -4341,7 +4220,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4368,7 +4246,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4398,7 +4275,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4430,7 +4306,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4461,7 +4336,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4484,7 +4358,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4519,7 +4392,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {DeletedKeyBundle} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DeletedKeyBundle} for more information.
+                               See <xref:azure-keyvault.DeletedKeyBundle> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -4532,7 +4405,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4559,7 +4431,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4581,7 +4452,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4613,7 +4483,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {DeletedKeyListResult} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DeletedKeyListResult} for more information.
+                               See <xref:azure-keyvault.DeletedKeyListResult> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -4626,7 +4496,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4650,7 +4519,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4670,7 +4538,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4701,7 +4568,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {DeletedKeyListResult} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DeletedKeyListResult} for more information.
+                               See <xref:azure-keyvault.DeletedKeyListResult> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -4714,7 +4581,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4740,7 +4606,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4768,7 +4633,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4796,7 +4660,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4828,7 +4691,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4857,7 +4719,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4898,7 +4759,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {DeletedSasDefinitionBundle} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DeletedSasDefinitionBundle} for more
+                               See <xref:azure-keyvault.DeletedSasDefinitionBundle> for more
                                information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
@@ -4914,7 +4775,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4947,7 +4807,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4973,7 +4832,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -5009,7 +4867,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {DeletedSasDefinitionListResult} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DeletedSasDefinitionListResult} for more
+                               See <xref:azure-keyvault.DeletedSasDefinitionListResult> for more
                                information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
@@ -5026,7 +4884,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -5056,7 +4913,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -5078,7 +4934,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -5110,7 +4965,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {DeletedSasDefinitionListResult} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DeletedSasDefinitionListResult} for more
+                               See <xref:azure-keyvault.DeletedSasDefinitionListResult> for more
                                information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
@@ -5126,7 +4981,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -5153,7 +5007,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -5183,7 +5036,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -5217,7 +5069,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -5252,7 +5103,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -5277,7 +5127,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -5313,7 +5162,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {DeletedSecretBundle} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DeletedSecretBundle} for more information.
+                               See <xref:azure-keyvault.DeletedSecretBundle> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -5326,7 +5175,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -5353,7 +5201,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -5375,7 +5222,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -5407,7 +5253,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {DeletedSecretListResult} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DeletedSecretListResult} for more
+                               See <xref:azure-keyvault.DeletedSecretListResult> for more
                                information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
@@ -5421,7 +5267,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -5445,7 +5290,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -5465,7 +5309,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -5497,7 +5340,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {DeletedSecretListResult} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DeletedSecretListResult} for more
+                               See <xref:azure-keyvault.DeletedSecretListResult> for more
                                information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
@@ -5511,7 +5354,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -5538,7 +5380,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -5566,7 +5407,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -5594,7 +5434,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -5626,7 +5465,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -5652,7 +5490,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -5688,7 +5525,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {DeletedStorageBundle} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DeletedStorageBundle} for more information.
+                               See <xref:azure-keyvault.DeletedStorageBundle> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -5701,7 +5538,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -5730,7 +5566,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -5752,7 +5587,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -5784,7 +5618,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {DeletedStorageListResult} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DeletedStorageListResult} for more
+                               See <xref:azure-keyvault.DeletedStorageListResult> for more
                                information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
@@ -5798,7 +5632,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -5824,7 +5657,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -5846,7 +5678,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -5878,7 +5709,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {DeletedStorageListResult} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DeletedStorageListResult} for more
+                               See <xref:azure-keyvault.DeletedStorageListResult> for more
                                information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
@@ -5892,7 +5723,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -5919,7 +5749,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -5949,7 +5778,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -5979,7 +5807,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -6009,7 +5836,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -6033,7 +5859,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -6074,7 +5899,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {KeyBundle} [result]   - The deserialized result object if an error did not occur.
-                               See {@link KeyBundle} for more information.
+                               See <xref:azure-keyvault.KeyBundle> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -6087,7 +5912,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -6115,7 +5939,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -6135,7 +5958,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -6166,7 +5988,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {KeyListResult} [result]   - The deserialized result object if an error did not occur.
-                               See {@link KeyListResult} for more information.
+                               See <xref:azure-keyvault.KeyListResult> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -6179,7 +6001,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -6201,7 +6022,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -6219,7 +6039,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -6250,7 +6069,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {KeyListResult} [result]   - The deserialized result object if an error did not occur.
-                               See {@link KeyListResult} for more information.
+                               See <xref:azure-keyvault.KeyListResult> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -6263,7 +6082,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -6286,7 +6104,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -6314,7 +6131,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -6340,7 +6156,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -6363,7 +6178,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -6399,7 +6213,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {KeyListResult} [result]   - The deserialized result object if an error did not occur.
-                               See {@link KeyListResult} for more information.
+                               See <xref:azure-keyvault.KeyListResult> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -6412,7 +6226,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -6437,7 +6250,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -6455,7 +6267,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -6486,7 +6297,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {KeyListResult} [result]   - The deserialized result object if an error did not occur.
-                               See {@link KeyListResult} for more information.
+                               See <xref:azure-keyvault.KeyListResult> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -6499,7 +6310,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -6523,7 +6333,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -6551,7 +6360,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -6583,7 +6391,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -6620,7 +6427,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -6651,7 +6457,6 @@ methods:
       Gets information about a SAS definition for the specified storage account.
       This operation requires the storage/getsas permission.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -6691,7 +6496,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {SasDefinitionBundle} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SasDefinitionBundle} for more information.
+                               See <xref:azure-keyvault.SasDefinitionBundle> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -6704,7 +6509,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -6736,7 +6540,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -6763,7 +6566,6 @@ methods:
       List storage SAS definitions for the given storage account. This operation
       requires the storage/listsas permission.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -6799,7 +6601,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {SasDefinitionListResult} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SasDefinitionListResult} for more
+                               See <xref:azure-keyvault.SasDefinitionListResult> for more
                                information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
@@ -6813,7 +6615,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -6840,7 +6641,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -6862,7 +6662,6 @@ methods:
       List storage SAS definitions for the given storage account. This operation
       requires the storage/listsas permission.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -6894,7 +6693,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {SasDefinitionListResult} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SasDefinitionListResult} for more
+                               See <xref:azure-keyvault.SasDefinitionListResult> for more
                                information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
@@ -6908,7 +6707,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -6937,7 +6735,6 @@ methods:
       List storage SAS definitions for the given storage account. This operation
       requires the storage/listsas permission.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -6967,7 +6764,6 @@ methods:
       List storage SAS definitions for the given storage account. This operation
       requires the storage/listsas permission.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -7002,7 +6798,6 @@ methods:
       Gets information about a SAS definition for the specified storage account.
       This operation requires the storage/getsas permission.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -7037,7 +6832,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -7063,7 +6857,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -7103,7 +6896,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {SecretBundle} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SecretBundle} for more information.
+                               See <xref:azure-keyvault.SecretBundle> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -7116,7 +6909,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -7144,7 +6936,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -7166,7 +6957,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -7197,7 +6987,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {SecretListResult} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SecretListResult} for more information.
+                               See <xref:azure-keyvault.SecretListResult> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -7210,7 +7000,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -7234,7 +7023,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -7254,7 +7042,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -7285,7 +7072,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {SecretListResult} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SecretListResult} for more information.
+                               See <xref:azure-keyvault.SecretListResult> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -7298,7 +7085,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -7323,7 +7109,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -7351,7 +7136,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -7377,7 +7161,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -7402,7 +7185,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -7438,7 +7220,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {SecretListResult} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SecretListResult} for more information.
+                               See <xref:azure-keyvault.SecretListResult> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -7451,7 +7233,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -7478,7 +7259,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -7498,7 +7278,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -7529,7 +7308,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {SecretListResult} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SecretListResult} for more information.
+                               See <xref:azure-keyvault.SecretListResult> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -7542,7 +7321,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -7569,7 +7347,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -7597,7 +7374,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -7630,7 +7406,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -7664,7 +7439,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -7691,7 +7465,6 @@ methods:
 
       the storage/get permission.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -7727,7 +7500,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {StorageBundle} [result]   - The deserialized result object if an error did not occur.
-                               See {@link StorageBundle} for more information.
+                               See <xref:azure-keyvault.StorageBundle> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -7740,7 +7513,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -7765,7 +7537,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -7789,7 +7560,6 @@ methods:
       List storage accounts managed by the specified key vault. This operation
       requires the storage/list permission.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -7821,7 +7591,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {StorageListResult} [result]   - The deserialized result object if an error did not occur.
-                               See {@link StorageListResult} for more information.
+                               See <xref:azure-keyvault.StorageListResult> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -7834,7 +7604,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -7858,7 +7627,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -7880,7 +7648,6 @@ methods:
       List storage accounts managed by the specified key vault. This operation
       requires the storage/list permission.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -7911,7 +7678,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {StorageListResult} [result]   - The deserialized result object if an error did not occur.
-                               See {@link StorageListResult} for more information.
+                               See <xref:azure-keyvault.StorageListResult> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -7924,7 +7691,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -7953,7 +7719,6 @@ methods:
       List storage accounts managed by the specified key vault. This operation
       requires the storage/list permission.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -7983,7 +7748,6 @@ methods:
       List storage accounts managed by the specified key vault. This operation
       requires the storage/list permission.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -8015,7 +7779,6 @@ methods:
 
       the storage/get permission.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -8047,7 +7810,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -8078,7 +7840,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -8128,7 +7889,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {CertificateBundle} [result]   - The deserialized result object if an error did not occur.
-                               See {@link CertificateBundle} for more information.
+                               See <xref:azure-keyvault.CertificateBundle> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -8143,7 +7904,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -8183,7 +7943,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -8228,7 +7987,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -8255,7 +8013,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -8298,7 +8055,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {KeyBundle} [result]   - The deserialized result object if an error did not occur.
-                               See {@link KeyBundle} for more information.
+                               See <xref:azure-keyvault.KeyBundle> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -8312,7 +8069,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -8346,7 +8102,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -8385,7 +8140,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -8415,7 +8169,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -8459,7 +8212,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {CertificateBundle} [result]   - The deserialized result object if an error did not occur.
-                               See {@link CertificateBundle} for more information.
+                               See <xref:azure-keyvault.CertificateBundle> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -8473,7 +8226,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -8509,7 +8261,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -8548,7 +8299,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -8571,7 +8321,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -8619,7 +8368,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -8647,7 +8395,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -8675,7 +8422,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -8696,7 +8442,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -8743,7 +8488,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -8770,7 +8514,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -8798,7 +8541,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -8821,7 +8563,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -8868,7 +8609,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -8895,7 +8635,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -8923,7 +8662,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -8946,7 +8684,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -8994,7 +8731,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -9022,7 +8758,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -9053,7 +8788,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -9078,7 +8812,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -9114,7 +8847,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {CertificateBundle} [result]   - The deserialized result object if an error did not occur.
-                               See {@link CertificateBundle} for more information.
+                               See <xref:azure-keyvault.CertificateBundle> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -9127,7 +8860,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -9157,7 +8889,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -9188,7 +8919,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -9211,7 +8941,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -9246,7 +8975,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {KeyBundle} [result]   - The deserialized result object if an error did not occur.
-                               See {@link KeyBundle} for more information.
+                               See <xref:azure-keyvault.KeyBundle> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -9259,7 +8988,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -9286,7 +9014,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -9318,7 +9045,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -9347,7 +9073,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -9387,7 +9112,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {SasDefinitionBundle} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SasDefinitionBundle} for more information.
+                               See <xref:azure-keyvault.SasDefinitionBundle> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -9400,7 +9125,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -9434,7 +9158,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -9470,7 +9193,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -9493,7 +9215,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -9529,7 +9250,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {SecretBundle} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SecretBundle} for more information.
+                               See <xref:azure-keyvault.SecretBundle> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -9542,7 +9263,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -9570,7 +9290,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -9602,7 +9321,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -9625,7 +9343,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -9661,7 +9378,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {StorageBundle} [result]   - The deserialized result object if an error did not occur.
-                               See {@link StorageBundle} for more information.
+                               See <xref:azure-keyvault.StorageBundle> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -9674,7 +9391,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -9702,7 +9418,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -9735,7 +9450,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -9764,7 +9478,6 @@ methods:
       Regenerates the specified key value for the given storage account. This
       operation requires the storage/regeneratekey permission.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -9804,7 +9517,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {StorageBundle} [result]   - The deserialized result object if an error did not occur.
-                               See {@link StorageBundle} for more information.
+                               See <xref:azure-keyvault.StorageBundle> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -9817,7 +9530,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -9850,7 +9562,6 @@ methods:
       Regenerates the specified key value for the given storage account. This
       operation requires the storage/regeneratekey permission.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -9886,7 +9597,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -9912,7 +9622,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -9949,7 +9658,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {CertificateBundle} [result]   - The deserialized result object if an error did not occur.
-                               See {@link CertificateBundle} for more information.
+                               See <xref:azure-keyvault.CertificateBundle> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -9962,7 +9671,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -9991,7 +9699,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -10023,7 +9730,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -10044,7 +9750,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -10080,7 +9785,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {KeyBundle} [result]   - The deserialized result object if an error did not occur.
-                               See {@link KeyBundle} for more information.
+                               See <xref:azure-keyvault.KeyBundle> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -10093,7 +9798,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -10120,7 +9824,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -10151,7 +9854,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -10172,7 +9874,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -10209,7 +9910,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {SecretBundle} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SecretBundle} for more information.
+                               See <xref:azure-keyvault.SecretBundle> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -10222,7 +9923,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -10249,7 +9949,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -10280,7 +9979,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -10303,7 +10001,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -10340,7 +10037,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {StorageBundle} [result]   - The deserialized result object if an error did not occur.
-                               See {@link StorageBundle} for more information.
+                               See <xref:azure-keyvault.StorageBundle> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -10353,7 +10050,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -10381,7 +10077,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -10412,7 +10107,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -10435,7 +10129,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -10471,7 +10164,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {Contacts} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Contacts} for more information.
+                               See <xref:azure-keyvault.Contacts> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -10484,7 +10177,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -10512,7 +10204,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -10544,7 +10235,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -10571,7 +10261,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -10615,7 +10304,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {IssuerBundle} [result]   - The deserialized result object if an error did not occur.
-                               See {@link IssuerBundle} for more information.
+                               See <xref:azure-keyvault.IssuerBundle> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -10630,7 +10319,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -10668,7 +10356,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -10709,7 +10396,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -10750,7 +10436,6 @@ methods:
       Creates or updates a new SAS definition for the specified storage account.
       This operation requires the storage/setsas permission.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -10813,7 +10498,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {SasDefinitionBundle} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SasDefinitionBundle} for more information.
+                               See <xref:azure-keyvault.SasDefinitionBundle> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -10828,7 +10513,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -10877,7 +10561,6 @@ methods:
       Creates or updates a new SAS definition for the specified storage account.
       This operation requires the storage/setsas permission.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -10935,7 +10618,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -10962,7 +10644,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -11005,7 +10686,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {SecretBundle} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SecretBundle} for more information.
+                               See <xref:azure-keyvault.SecretBundle> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -11019,7 +10700,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -11053,7 +10733,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -11093,7 +10772,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -11130,7 +10808,6 @@ methods:
       Creates or updates a new storage account. This operation requires the
       storage/set permission.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -11185,7 +10862,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {StorageBundle} [result]   - The deserialized result object if an error did not occur.
-                               See {@link StorageBundle} for more information.
+                               See <xref:azure-keyvault.StorageBundle> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -11200,7 +10877,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -11246,7 +10922,6 @@ methods:
       Creates or updates a new storage account. This operation requires the
       storage/set permission.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -11297,7 +10972,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -11332,7 +11006,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -11390,7 +11063,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {KeyOperationResult} [result]   - The deserialized result object if an error did not occur.
-                               See {@link KeyOperationResult} for more information.
+                               See <xref:azure-keyvault.KeyOperationResult> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -11403,7 +11076,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -11441,7 +11113,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -11496,7 +11167,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -11531,7 +11201,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -11580,7 +11249,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {KeyOperationResult} [result]   - The deserialized result object if an error did not occur.
-                               See {@link KeyOperationResult} for more information.
+                               See <xref:azure-keyvault.KeyOperationResult> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -11593,7 +11262,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -11631,7 +11299,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -11677,7 +11344,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -11707,7 +11373,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -11753,7 +11418,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {CertificateBundle} [result]   - The deserialized result object if an error did not occur.
-                               See {@link CertificateBundle} for more information.
+                               See <xref:azure-keyvault.CertificateBundle> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -11768,7 +11433,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -11803,7 +11467,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -11827,7 +11490,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -11868,7 +11530,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {IssuerBundle} [result]   - The deserialized result object if an error did not occur.
-                               See {@link IssuerBundle} for more information.
+                               See <xref:azure-keyvault.IssuerBundle> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -11883,7 +11545,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -11918,7 +11579,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -11955,7 +11615,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -11984,7 +11643,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -12025,7 +11683,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {CertificateOperation} [result]   - The deserialized result object if an error did not occur.
-                               See {@link CertificateOperation} for more information.
+                               See <xref:azure-keyvault.CertificateOperation> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -12038,7 +11696,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -12072,7 +11729,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -12111,7 +11767,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -12140,7 +11795,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -12181,7 +11835,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {CertificatePolicy} [result]   - The deserialized result object if an error did not occur.
-                               See {@link CertificatePolicy} for more information.
+                               See <xref:azure-keyvault.CertificatePolicy> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -12195,7 +11849,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -12228,7 +11881,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -12268,7 +11920,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -12308,7 +11959,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -12335,7 +11985,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -12378,7 +12027,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {KeyBundle} [result]   - The deserialized result object if an error did not occur.
-                               See {@link KeyBundle} for more information.
+                               See <xref:azure-keyvault.KeyBundle> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -12392,7 +12041,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -12426,7 +12074,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -12466,7 +12113,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -12499,7 +12145,6 @@ methods:
       Updates the specified attributes associated with the given SAS definition.
       This operation requires the storage/setsas permission.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -12544,7 +12189,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {SasDefinitionBundle} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SasDefinitionBundle} for more information.
+                               See <xref:azure-keyvault.SasDefinitionBundle> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -12559,7 +12204,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -12601,7 +12245,6 @@ methods:
       Updates the specified attributes associated with the given SAS definition.
       This operation requires the storage/setsas permission.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -12641,7 +12284,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -12668,7 +12310,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -12711,7 +12352,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {SecretBundle} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SecretBundle} for more information.
+                               See <xref:azure-keyvault.SecretBundle> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -12726,7 +12367,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -12760,7 +12400,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -12798,7 +12437,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -12827,7 +12465,6 @@ methods:
 
       This operation requires the storage/set/update permission.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -12869,7 +12506,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {StorageBundle} [result]   - The deserialized result object if an error did not occur.
-                               See {@link StorageBundle} for more information.
+                               See <xref:azure-keyvault.StorageBundle> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -12885,7 +12522,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -12925,7 +12561,6 @@ methods:
 
       This operation requires the storage/set/update permission.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -12964,7 +12599,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -13000,7 +12634,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -13060,7 +12693,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {KeyVerifyResult} [result]   - The deserialized result object if an error did not occur.
-                               See {@link KeyVerifyResult} for more information.
+                               See <xref:azure-keyvault.KeyVerifyResult> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -13073,7 +12706,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -13113,7 +12745,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -13170,7 +12801,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -13205,7 +12835,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -13254,7 +12883,7 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {KeyOperationResult} [result]   - The deserialized result object if an error did not occur.
-                               See {@link KeyOperationResult} for more information.
+                               See <xref:azure-keyvault.KeyOperationResult> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
@@ -13267,7 +12896,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -13305,7 +12933,6 @@ methods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

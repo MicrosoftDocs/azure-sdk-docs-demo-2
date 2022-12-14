@@ -5,8 +5,11 @@ package: '@azure/cognitiveservices-anomalydetector'
 summary: Contains response data for the entireDetect operation.
 fullName: EntireDetectResponse2
 remarks: ''
-isPreview: false
 isDeprecated: false
-syntax: >-
-  type EntireDetectResponse2 = EntireDetectResponse & { _response: HttpResponse
-  & { bodyAsText: string, parsedBody: EntireDetectResponse } }
+syntax: |
+  type EntireDetectResponse2 = EntireDetectResponse & {
+    _response: HttpResponse & {
+      bodyAsText: string,
+      parsedBody: EntireDetectResponse,
+    },
+  }

@@ -5,23 +5,24 @@ package: '@azure/service-bus'
 summary: Describes the message received from Service Bus.
 fullName: ReceivedMessage
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
-properties:
+inheritedProperties:
   - name: body
     uid: '@azure/service-bus.ReceivedMessage.body'
     package: '@azure/service-bus'
     summary: The message body that needs to be sent or is received.
     fullName: body
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'body: any'
       return:
         description: ''
         type: any
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [SendableMessageInfo.body](xref:@azure/service-bus.SendableMessageInfo.body)
   - name: contentType
     uid: '@azure/service-bus.ReceivedMessage.contentType'
     package: '@azure/service-bus'
@@ -34,13 +35,15 @@ properties:
       example "application/json".
     fullName: contentType
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'contentType?: undefined | string'
       return:
         description: ''
         type: undefined | string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [SendableMessageInfo.contentType](xref:@azure/service-bus.SendableMessageInfo.contentType)
   - name: correlationId
     uid: '@azure/service-bus.ReceivedMessage.correlationId'
     package: '@azure/service-bus'
@@ -56,13 +59,15 @@ properties:
       Correlation](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messages-payloads?#message-routing-and-correlation).
     fullName: correlationId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'correlationId?: string | number | Buffer'
       return:
         description: ''
         type: string | number | Buffer
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [SendableMessageInfo.correlationId](xref:@azure/service-bus.SendableMessageInfo.correlationId)
   - name: deadLetterSource
     uid: '@azure/service-bus.ReceivedMessage.deadLetterSource'
     package: '@azure/service-bus'
@@ -79,13 +84,15 @@ properties:
       entity in which the message was dead-lettered.
     fullName: deadLetterSource
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'deadLetterSource?: undefined | string'
       return:
         description: ''
         type: undefined | string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [ReceivedMessageInfo.deadLetterSource](xref:@azure/service-bus.ReceivedMessageInfo.deadLetterSource)
   - name: deliveryCount
     uid: '@azure/service-bus.ReceivedMessage.deliveryCount'
     package: '@azure/service-bus'
@@ -99,13 +106,15 @@ properties:
       `abandon()` method on the message.
     fullName: deliveryCount
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'deliveryCount?: undefined | number'
       return:
         description: ''
         type: undefined | number
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [ReceivedMessageInfo.deliveryCount](xref:@azure/service-bus.ReceivedMessageInfo.deliveryCount)
   - name: enqueuedSequenceNumber
     uid: '@azure/service-bus.ReceivedMessage.enqueuedSequenceNumber'
     package: '@azure/service-bus'
@@ -118,13 +127,15 @@ properties:
       first been assigned to the message at its original point of submission.
     fullName: enqueuedSequenceNumber
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'enqueuedSequenceNumber?: undefined | number'
       return:
         description: ''
         type: undefined | number
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [ReceivedMessageInfo.enqueuedSequenceNumber](xref:@azure/service-bus.ReceivedMessageInfo.enqueuedSequenceNumber)
   - name: enqueuedTimeUtc
     uid: '@azure/service-bus.ReceivedMessage.enqueuedTimeUtc'
     package: '@azure/service-bus'
@@ -133,13 +144,15 @@ properties:
       Service Bus.
     fullName: enqueuedTimeUtc
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'enqueuedTimeUtc?: Date'
       return:
         description: ''
         type: Date
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [ReceivedMessageInfo.enqueuedTimeUtc](xref:@azure/service-bus.ReceivedMessageInfo.enqueuedTimeUtc)
   - name: expiresAtUtc
     uid: '@azure/service-bus.ReceivedMessage.expiresAtUtc'
     package: '@azure/service-bus'
@@ -153,13 +166,15 @@ properties:
       on the message: `enqueuedTimeUtc` + `timeToLive`.
     fullName: expiresAtUtc
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'expiresAtUtc?: Date'
       return:
         description: ''
         type: Date
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [ReceivedMessageInfo.expiresAtUtc](xref:@azure/service-bus.ReceivedMessageInfo.expiresAtUtc)
   - name: label
     uid: '@azure/service-bus.ReceivedMessage.label'
     package: '@azure/service-bus'
@@ -172,13 +187,15 @@ properties:
       similar to an email subject line. The mapped AMQP property is "subject".
     fullName: label
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'label?: undefined | string'
       return:
         description: ''
         type: undefined | string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [SendableMessageInfo.label](xref:@azure/service-bus.SendableMessageInfo.label)
   - name: lockedUntilUtc
     uid: '@azure/service-bus.ReceivedMessage.lockedUntilUtc'
     package: '@azure/service-bus'
@@ -197,13 +214,15 @@ properties:
       mode.
     fullName: lockedUntilUtc
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'lockedUntilUtc?: Date'
       return:
         description: ''
         type: Date
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [ReceivedMessageInfo.lockedUntilUtc](xref:@azure/service-bus.ReceivedMessageInfo.lockedUntilUtc)
   - name: lockToken
     uid: '@azure/service-bus.ReceivedMessage.lockToken'
     package: '@azure/service-bus'
@@ -223,13 +242,15 @@ properties:
       mode.
     fullName: lockToken
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'lockToken?: undefined | string'
       return:
         description: ''
         type: undefined | string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [ReceivedMessageInfo.lockToken](xref:@azure/service-bus.ReceivedMessageInfo.lockToken)
   - name: messageId
     uid: '@azure/service-bus.ReceivedMessage.messageId'
     package: '@azure/service-bus'
@@ -243,13 +264,15 @@ properties:
       Note: Numbers that are not whole integers are not allowed.
     fullName: messageId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'messageId?: string | number | Buffer'
       return:
         description: ''
         type: string | number | Buffer
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [SendableMessageInfo.messageId](xref:@azure/service-bus.SendableMessageInfo.messageId)
   - name: partitionKey
     uid: '@azure/service-bus.ReceivedMessage.partitionKey'
     package: '@azure/service-bus'
@@ -273,13 +296,15 @@ properties:
       - For non partitioned entities, partition key will be ignored
     fullName: partitionKey
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'partitionKey?: undefined | string'
       return:
         description: ''
         type: undefined | string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [SendableMessageInfo.partitionKey](xref:@azure/service-bus.SendableMessageInfo.partitionKey)
   - name: replyTo
     uid: '@azure/service-bus.ReceivedMessage.replyTo'
     package: '@azure/service-bus'
@@ -298,13 +323,15 @@ properties:
       Correlation](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messages-payloads?#message-routing-and-correlation).
     fullName: replyTo
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'replyTo?: undefined | string'
       return:
         description: ''
         type: undefined | string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [SendableMessageInfo.replyTo](xref:@azure/service-bus.SendableMessageInfo.replyTo)
   - name: replyToSessionId
     uid: '@azure/service-bus.ReceivedMessage.replyToSessionId'
     package: '@azure/service-bus'
@@ -320,13 +347,15 @@ properties:
       Correlation](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messages-payloads?#message-routing-and-correlation).
     fullName: replyToSessionId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'replyToSessionId?: undefined | string'
       return:
         description: ''
         type: undefined | string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [SendableMessageInfo.replyToSessionId](xref:@azure/service-bus.SendableMessageInfo.replyToSessionId)
   - name: scheduledEnqueueTimeUtc
     uid: '@azure/service-bus.ReceivedMessage.scheduledEnqueueTimeUtc'
     package: '@azure/service-bus'
@@ -348,13 +377,15 @@ properties:
       but the actual sending time depends on the queue's workload and its state.
     fullName: scheduledEnqueueTimeUtc
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'scheduledEnqueueTimeUtc?: Date'
       return:
         description: ''
         type: Date
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [SendableMessageInfo.scheduledEnqueueTimeUtc](xref:@azure/service-bus.SendableMessageInfo.scheduledEnqueueTimeUtc)
   - name: sequenceNumber
     uid: '@azure/service-bus.ReceivedMessage.sequenceNumber'
     package: '@azure/service-bus'
@@ -385,13 +416,15 @@ properties:
       to use the **`Long`** type exported by this library.
     fullName: sequenceNumber
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'sequenceNumber?: Long'
       return:
         description: ''
         type: Long
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [ReceivedMessageInfo.sequenceNumber](xref:@azure/service-bus.ReceivedMessageInfo.sequenceNumber)
   - name: sessionId
     uid: '@azure/service-bus.ReceivedMessage.sessionId'
     package: '@azure/service-bus'
@@ -413,13 +446,15 @@ properties:
       Sessions](https://docs.microsoft.com/azure/service-bus-messaging/message-sessions).
     fullName: sessionId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'sessionId?: undefined | string'
       return:
         description: ''
         type: undefined | string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [SendableMessageInfo.sessionId](xref:@azure/service-bus.SendableMessageInfo.sessionId)
   - name: timeToLive
     uid: '@azure/service-bus.ReceivedMessage.timeToLive'
     package: '@azure/service-bus'
@@ -443,13 +478,15 @@ properties:
       [Expiration](https://docs.microsoft.com/azure/service-bus-messaging/message-expiration).
     fullName: timeToLive
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'timeToLive?: undefined | number'
       return:
         description: ''
         type: undefined | number
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [SendableMessageInfo.timeToLive](xref:@azure/service-bus.SendableMessageInfo.timeToLive)
   - name: to
     uid: '@azure/service-bus.ReceivedMessage.to'
     package: '@azure/service-bus'
@@ -465,13 +502,15 @@ properties:
       scenarios to indicate the intended logical destination of the message.
     fullName: to
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'to?: undefined | string'
       return:
         description: ''
         type: undefined | string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [SendableMessageInfo.to](xref:@azure/service-bus.SendableMessageInfo.to)
   - name: userProperties
     uid: '@azure/service-bus.ReceivedMessage.userProperties'
     package: '@azure/service-bus'
@@ -480,13 +519,15 @@ properties:
       used for custom message metadata.
     fullName: userProperties
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'userProperties?: undefined | [key: string]: any'
       return:
         description: ''
         type: 'undefined | [key: string]: any'
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [SendableMessageInfo.userProperties](xref:@azure/service-bus.SendableMessageInfo.userProperties)
   - name: viaPartitionKey
     uid: '@azure/service-bus.ReceivedMessage.viaPartitionKey'
     package: '@azure/service-bus'
@@ -508,13 +549,15 @@ properties:
       Via](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-transactions#transfers-and-send-via).
     fullName: viaPartitionKey
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'viaPartitionKey?: undefined | string'
       return:
         description: ''
         type: undefined | string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [SendableMessageInfo.viaPartitionKey](xref:@azure/service-bus.SendableMessageInfo.viaPartitionKey)
 methods:
   - name: 'abandon(undefined | [key: string]: any)'
     uid: '@azure/service-bus.ReceivedMessage.abandon'
@@ -525,7 +568,6 @@ methods:
 
       Service Bus for another receive operation.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -545,7 +587,6 @@ methods:
     package: '@azure/service-bus'
     summary: Removes the message from Service Bus.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function complete(): Promise<void>'
@@ -562,7 +603,6 @@ methods:
       QueueClient/SubscriptionClient using the path for the deadletter
       sub-queue.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function deadLetter(options?: DeadLetterOptions): Promise<void>'
@@ -585,7 +625,6 @@ methods:
       receive it message again in the future using the `receiveDeferredMessage`
       method.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

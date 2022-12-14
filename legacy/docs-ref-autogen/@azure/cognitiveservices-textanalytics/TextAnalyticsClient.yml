@@ -5,7 +5,6 @@ package: '@azure/cognitiveservices-textanalytics'
 summary: ''
 fullName: TextAnalyticsClient
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -16,7 +15,6 @@ constructors:
     package: '@azure/cognitiveservices-textanalytics'
     summary: Initializes a new instance of the TextAnalyticsClient class.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -38,33 +36,37 @@ constructors:
         - id: options
           type: <xref uid="msRest.ServiceClientOptions" />
           description: ''
-properties:
+inheritedProperties:
   - name: credentials
     uid: '@azure/cognitiveservices-textanalytics.TextAnalyticsClient.credentials'
     package: '@azure/cognitiveservices-textanalytics'
     summary: ''
     fullName: credentials
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'credentials: ServiceClientCredentials'
       return:
         description: ''
         type: ServiceClientCredentials
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [TextAnalyticsClientContext.credentials](xref:@azure/cognitiveservices-textanalytics.TextAnalyticsClientContext.credentials)
   - name: endpoint
     uid: '@azure/cognitiveservices-textanalytics.TextAnalyticsClient.endpoint'
     package: '@azure/cognitiveservices-textanalytics'
     summary: ''
     fullName: endpoint
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'endpoint: string'
       return:
         description: ''
         type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [TextAnalyticsClientContext.endpoint](xref:@azure/cognitiveservices-textanalytics.TextAnalyticsClientContext.endpoint)
 inheritedMethods:
   - name: >-
       sendOperationRequest(OperationArguments, OperationSpec,
@@ -74,7 +76,6 @@ inheritedMethods:
     package: '@azure/cognitiveservices-textanalytics'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -97,12 +98,12 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;RestResponse&gt;
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendOperationRequest
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
     uid: '@azure/cognitiveservices-textanalytics.TextAnalyticsClient.sendRequest'
     package: '@azure/cognitiveservices-textanalytics'
     summary: Send the provided httpRequest.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -115,6 +116,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;HttpOperationResponse&gt;
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendRequest
 methods:
   - name: detectLanguage(Models.TextAnalyticsClientDetectLanguageOptionalParams)
     uid: '@azure/cognitiveservices-textanalytics.TextAnalyticsClient.detectLanguage'
@@ -125,7 +127,6 @@ methods:
 
       languages are supported.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -147,7 +148,6 @@ methods:
     package: '@azure/cognitiveservices-textanalytics'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function detectLanguage(callback: ServiceCallback<LanguageBatchResult>)'
@@ -167,7 +167,6 @@ methods:
     package: '@azure/cognitiveservices-textanalytics'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -201,7 +200,6 @@ methods:
 
       languages in Text Analytics API</a> for the list of enabled languages.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -220,7 +218,6 @@ methods:
     package: '@azure/cognitiveservices-textanalytics'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function entities(callback: ServiceCallback<EntitiesBatchResult>)'
@@ -239,7 +236,6 @@ methods:
     package: '@azure/cognitiveservices-textanalytics'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -272,7 +268,6 @@ methods:
 
       extraction.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -291,7 +286,6 @@ methods:
     package: '@azure/cognitiveservices-textanalytics'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function keyPhrases(callback: ServiceCallback<KeyPhraseBatchResult>)'
@@ -310,7 +304,6 @@ methods:
     package: '@azure/cognitiveservices-textanalytics'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -348,7 +341,6 @@ methods:
 
       analysis.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -367,7 +359,6 @@ methods:
     package: '@azure/cognitiveservices-textanalytics'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function sentiment(callback: ServiceCallback<any>)'
@@ -383,7 +374,6 @@ methods:
     package: '@azure/cognitiveservices-textanalytics'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

@@ -5,7 +5,6 @@ package: azure-eventgrid
 summary: ''
 fullName: EventGridClient
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -14,7 +13,6 @@ constructors:
     package: azure-eventgrid
     summary: Initializes a new instance of the EventGridClient class.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -35,7 +33,6 @@ properties:
     summary: ''
     fullName: acceptLanguage
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'acceptLanguage: string'
@@ -48,7 +45,6 @@ properties:
     summary: ''
     fullName: apiVersion
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'apiVersion: string'
@@ -61,7 +57,6 @@ properties:
     summary: ''
     fullName: credentials
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'credentials: ServiceClientCredentials'
@@ -74,7 +69,6 @@ properties:
     summary: ''
     fullName: generateClientRequestId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'generateClientRequestId: boolean'
@@ -87,7 +81,6 @@ properties:
     summary: ''
     fullName: longRunningOperationRetryTimeout
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'longRunningOperationRetryTimeout: number'
@@ -100,7 +93,6 @@ inheritedMethods:
     package: azure-eventgrid
     summary: Adds custom information to user agent header
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function addUserAgentInfo(additionalUserAgentInfo: any)'
@@ -109,6 +101,7 @@ inheritedMethods:
           type: any
           description: |
             information to be added to user agent header, as string.
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.addUserAgentInfo
   - name: >-
       getLongRunningOperationResult<TResult>(HttpOperationResponse<TResult>,
       RequestOptions)
@@ -116,7 +109,6 @@ inheritedMethods:
     package: azure-eventgrid
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -133,6 +125,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;TResult&gt;
+    inheritanceDescription: <b>Inherited From</b> AzureServiceClient.getLongRunningOperationResult
   - name: >-
       getLongRunningOperationResult<TResult>(HttpOperationResponse<TResult>,
       RequestOptions, ServiceCallback<TResult>)
@@ -140,7 +133,6 @@ inheritedMethods:
     package: azure-eventgrid
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -157,6 +149,7 @@ inheritedMethods:
         - id: callback
           type: ServiceCallback&lt;TResult&gt;
           description: ''
+    inheritanceDescription: <b>Inherited From</b> AzureServiceClient.getLongRunningOperationResult
   - name: >-
       getLongRunningOperationResult<TResult>(HttpOperationResponse<TResult>,
       ServiceCallback<TResult>)
@@ -164,7 +157,6 @@ inheritedMethods:
     package: azure-eventgrid
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -177,6 +169,7 @@ inheritedMethods:
         - id: callback
           type: ServiceCallback&lt;TResult&gt;
           description: ''
+    inheritanceDescription: <b>Inherited From</b> AzureServiceClient.getLongRunningOperationResult
   - name: getPackageJsonInfo(string)
     uid: azure-eventgrid.EventGridClient.getPackageJsonInfo
     package: azure-eventgrid
@@ -188,7 +181,6 @@ inheritedMethods:
 
       If package.json is not found, returns a default value.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -201,6 +193,7 @@ inheritedMethods:
       return:
         description: packageJsonInfo - "name" and "version" of the desired package.
         type: '{ name: string, version: string }'
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.getPackageJsonInfo
   - name: >-
       sendLongRunningRequest<TResult>(LongRunningUrlBasedRequestPrepareOptions |
       LongRunningPathTemplateBasedRequestPrepareOptions)
@@ -208,7 +201,6 @@ inheritedMethods:
     package: azure-eventgrid
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -224,6 +216,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;TResult&gt;
+    inheritanceDescription: <b>Inherited From</b> AzureServiceClient.sendLongRunningRequest
   - name: >-
       sendLongRunningRequest<TResult>(LongRunningUrlBasedRequestPrepareOptions |
       LongRunningPathTemplateBasedRequestPrepareOptions,
@@ -232,7 +225,6 @@ inheritedMethods:
     package: azure-eventgrid
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -249,6 +241,7 @@ inheritedMethods:
         - id: callback
           type: ServiceCallback&lt;TResult&gt;
           description: ''
+    inheritanceDescription: <b>Inherited From</b> AzureServiceClient.sendLongRunningRequest
   - name: >-
       sendLongRunningRequestWithHttpOperationResponse<TResult>(LongRunningUrlBasedRequestPrepareOptions
       | LongRunningPathTemplateBasedRequestPrepareOptions)
@@ -257,7 +250,6 @@ inheritedMethods:
     package: azure-eventgrid
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -275,6 +267,9 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;HttpOperationResponse&lt;TResult&gt;&gt;
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      AzureServiceClient.sendLongRunningRequestWithHttpOperationResponse
   - name: >-
       sendRequest<TResult>(PathTemplateBasedRequestPrepareOptions |
       UrlBasedRequestPrepareOptions)
@@ -282,7 +277,6 @@ inheritedMethods:
     package: azure-eventgrid
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -298,6 +292,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;TResult&gt;
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendRequest
   - name: >-
       sendRequest<TResult>(PathTemplateBasedRequestPrepareOptions |
       UrlBasedRequestPrepareOptions, ServiceCallback<TResult>)
@@ -305,7 +300,6 @@ inheritedMethods:
     package: azure-eventgrid
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -321,6 +315,7 @@ inheritedMethods:
         - id: callback
           type: ServiceCallback&lt;TResult&gt;
           description: ''
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendRequest
   - name: >-
       sendRequestWithHttpOperationResponse<TResult>(PathTemplateBasedRequestPrepareOptions
       | UrlBasedRequestPrepareOptions)
@@ -328,7 +323,6 @@ inheritedMethods:
     package: azure-eventgrid
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -344,13 +338,13 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;HttpOperationResponse&lt;TResult&gt;&gt;
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendRequestWithHttpOperationResponse
 methods:
   - name: 'publishEvents(string, EventGridEvent[], ServiceCallback<void>)'
     uid: azure-eventgrid.EventGridClient.publishEvents_1
     package: azure-eventgrid
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -373,7 +367,6 @@ methods:
     package: azure-eventgrid
     summary: Publishes a batch of events to an Azure Event Grid topic.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -420,7 +413,6 @@ methods:
     package: azure-eventgrid
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -447,7 +439,6 @@ methods:
     package: azure-eventgrid
     summary: Publishes a batch of events to an Azure Event Grid topic.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

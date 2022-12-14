@@ -5,7 +5,6 @@ package: '@azure/service-bus'
 summary: Describes the message received from Service Bus.
 fullName: ServiceBusMessage
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 properties:
@@ -15,7 +14,6 @@ properties:
     summary: The message body that needs to be sent or is received.
     fullName: body
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'body: any'
@@ -34,7 +32,6 @@ properties:
       example "application/json".
     fullName: contentType
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'contentType?: undefined | string'
@@ -56,7 +53,6 @@ properties:
       Correlation](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messages-payloads?#message-routing-and-correlation).
     fullName: correlationId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'correlationId?: string | number | Buffer'
@@ -78,7 +74,6 @@ properties:
       entity in which the message was dead-lettered.
     fullName: deadLetterSource
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'deadLetterSource?: undefined | string'
@@ -91,7 +86,6 @@ properties:
     summary: The associated delivery of the received message.
     fullName: delivery
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'delivery: Delivery'
@@ -111,7 +105,6 @@ properties:
       `abandon()` method on the message.
     fullName: deliveryCount
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'deliveryCount?: undefined | number'
@@ -130,7 +123,6 @@ properties:
       first been assigned to the message at its original point of submission.
     fullName: enqueuedSequenceNumber
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'enqueuedSequenceNumber?: undefined | number'
@@ -145,7 +137,6 @@ properties:
       Service Bus.
     fullName: enqueuedTimeUtc
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'enqueuedTimeUtc?: Date'
@@ -165,7 +156,6 @@ properties:
       on the message: `enqueuedTimeUtc` + `timeToLive`.
     fullName: expiresAtUtc
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'expiresAtUtc?: Date'
@@ -178,7 +168,6 @@ properties:
     summary: Boolean denoting if the message has already been settled.
     fullName: isSettled
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: boolean isSettled
@@ -197,7 +186,6 @@ properties:
       similar to an email subject line. The mapped AMQP property is "subject".
     fullName: label
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'label?: undefined | string'
@@ -222,7 +210,6 @@ properties:
       mode.
     fullName: lockedUntilUtc
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'lockedUntilUtc?: Date'
@@ -248,7 +235,6 @@ properties:
       mode.
     fullName: lockToken
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'lockToken?: undefined | string'
@@ -276,7 +262,6 @@ properties:
       same MessageId.
     fullName: messageId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'messageId?: string | number | Buffer'
@@ -304,7 +289,6 @@ properties:
       the `sessionId` property overrides this value.
     fullName: partitionKey
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'partitionKey?: undefined | string'
@@ -329,7 +313,6 @@ properties:
       Correlation](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messages-payloads?#message-routing-and-correlation).
     fullName: replyTo
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'replyTo?: undefined | string'
@@ -351,7 +334,6 @@ properties:
       Correlation](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messages-payloads?#message-routing-and-correlation).
     fullName: replyToSessionId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'replyToSessionId?: undefined | string'
@@ -379,7 +361,6 @@ properties:
       but the actual sending time depends on the queue's workload and its state.
     fullName: scheduledEnqueueTimeUtc
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'scheduledEnqueueTimeUtc?: Date'
@@ -404,7 +385,6 @@ properties:
       They roll over to 0 when the 48-64 bit range is exhausted.
     fullName: sequenceNumber
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'sequenceNumber?: Long'
@@ -432,7 +412,6 @@ properties:
       Sessions](https://docs.microsoft.com/azure/service-bus-messaging/message-sessions).
     fullName: sessionId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'sessionId?: undefined | string'
@@ -462,7 +441,6 @@ properties:
       [Expiration](https://docs.microsoft.com/azure/service-bus-messaging/message-expiration).
     fullName: timeToLive
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'timeToLive?: undefined | number'
@@ -484,7 +462,6 @@ properties:
       scenarios to indicate the intended logical destination of the message.
     fullName: to
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'to?: undefined | string'
@@ -497,7 +474,6 @@ properties:
     summary: The application specific properties.
     fullName: userProperties
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'userProperties?: undefined | [key: string]: any'
@@ -525,7 +501,6 @@ properties:
       Via](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-transactions#transfers-and-send-via).
     fullName: viaPartitionKey
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'viaPartitionKey?: undefined | string'
@@ -542,7 +517,6 @@ methods:
 
       Service Bus for another receive operation.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -564,7 +538,6 @@ methods:
       Creates a clone of the current message to allow it to be re-sent to the
       queue
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function clone(): SendableMessageInfo'
@@ -576,7 +549,6 @@ methods:
     package: '@azure/service-bus'
     summary: Removes the message from Service Bus.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function complete(): Promise<void>'
@@ -593,7 +565,6 @@ methods:
       QueueClient/SubscriptionClient using the path for the deadletter
       sub-queue.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -618,7 +589,6 @@ methods:
       receive it message again in the future using the `receiveDeferredMessage`
       method.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

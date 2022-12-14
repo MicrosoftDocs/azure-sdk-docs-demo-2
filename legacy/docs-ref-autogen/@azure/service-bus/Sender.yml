@@ -14,7 +14,6 @@ summary: >-
   The Sender class is an abstraction over the underlying AMQP sender link.
 fullName: Sender
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 properties:
@@ -26,7 +25,6 @@ properties:
       closed
     fullName: isClosed
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: boolean isClosed
@@ -41,7 +39,6 @@ methods:
       Cancels a message that was scheduled to appear on a ServiceBus
       Queue/Subscription.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function cancelScheduledMessage(sequenceNumber: Long): Promise<void>'
@@ -59,7 +56,6 @@ methods:
       Cancels multiple messages that were scheduled to appear on a ServiceBus
       Queue/Subscription.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function cancelScheduledMessages(sequenceNumbers: Long[]): Promise<void>'
@@ -81,7 +77,6 @@ methods:
       Use the `createSender` function on the QueueClient or TopicClient to
       instantiate a new Sender
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function close(): Promise<void>'
@@ -101,7 +96,6 @@ methods:
 
       want to front load the work of setting up the AMQP link to the service.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function open(): Promise<void>'
@@ -129,7 +123,6 @@ methods:
              message.body = dt.encode(message.body);
            ```
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -176,7 +169,6 @@ methods:
              message.body = dt.encode(message.body);
            ```
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -215,7 +207,6 @@ methods:
 
       and/or `partitionKey` properties respectively on the message.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function send(message: SendableMessageInfo): Promise<void>'
@@ -247,7 +238,6 @@ methods:
 
       `partitionKey` (if using partitions).
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function sendBatch(messages: SendableMessageInfo[]): Promise<void>'

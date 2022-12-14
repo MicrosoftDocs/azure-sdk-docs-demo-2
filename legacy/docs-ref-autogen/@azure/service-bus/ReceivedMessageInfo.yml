@@ -7,64 +7,9 @@ summary: >-
   cannot be settled.
 fullName: ReceivedMessageInfo
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: body
-    uid: '@azure/service-bus.ReceivedMessageInfo.body'
-    package: '@azure/service-bus'
-    summary: The message body that needs to be sent or is received.
-    fullName: body
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'body: any'
-      return:
-        description: ''
-        type: any
-  - name: contentType
-    uid: '@azure/service-bus.ReceivedMessageInfo.contentType'
-    package: '@azure/service-bus'
-    summary: >-
-      The content type of the message. Optionally describes
-
-      the payload of the message, with a descriptor following the format of
-      RFC2045, Section 5, for
-
-      example "application/json".
-    fullName: contentType
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'contentType?: undefined | string'
-      return:
-        description: ''
-        type: undefined | string
-  - name: correlationId
-    uid: '@azure/service-bus.ReceivedMessageInfo.correlationId'
-    package: '@azure/service-bus'
-    summary: >-
-      The correlation identifier that allows an
-
-      application to specify a context for the message for the purposes of
-      correlation, for example
-
-      reflecting the MessageId of a message that is being replied to.
-
-      See [Message Routing and
-      Correlation](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messages-payloads?#message-routing-and-correlation).
-    fullName: correlationId
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'correlationId?: string | number | Buffer'
-      return:
-        description: ''
-        type: string | number | Buffer
   - name: deadLetterSource
     uid: '@azure/service-bus.ReceivedMessageInfo.deadLetterSource'
     package: '@azure/service-bus'
@@ -81,7 +26,6 @@ properties:
       entity in which the message was dead-lettered.
     fullName: deadLetterSource
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'deadLetterSource?: undefined | string'
@@ -101,7 +45,6 @@ properties:
       `abandon()` method on the message.
     fullName: deliveryCount
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'deliveryCount?: undefined | number'
@@ -120,7 +63,6 @@ properties:
       first been assigned to the message at its original point of submission.
     fullName: enqueuedSequenceNumber
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'enqueuedSequenceNumber?: undefined | number'
@@ -135,7 +77,6 @@ properties:
       Service Bus.
     fullName: enqueuedTimeUtc
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'enqueuedTimeUtc?: Date'
@@ -155,32 +96,12 @@ properties:
       on the message: `enqueuedTimeUtc` + `timeToLive`.
     fullName: expiresAtUtc
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'expiresAtUtc?: Date'
       return:
         description: ''
         type: Date
-  - name: label
-    uid: '@azure/service-bus.ReceivedMessageInfo.label'
-    package: '@azure/service-bus'
-    summary: >-
-      The application specific label. This property enables the
-
-      application to indicate the purpose of the message to the receiver in a
-      standardized. fashion,
-
-      similar to an email subject line. The mapped AMQP property is "subject".
-    fullName: label
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'label?: undefined | string'
-      return:
-        description: ''
-        type: undefined | string
   - name: lockedUntilUtc
     uid: '@azure/service-bus.ReceivedMessageInfo.lockedUntilUtc'
     package: '@azure/service-bus'
@@ -199,7 +120,6 @@ properties:
       mode.
     fullName: lockedUntilUtc
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'lockedUntilUtc?: Date'
@@ -225,138 +145,12 @@ properties:
       mode.
     fullName: lockToken
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'lockToken?: undefined | string'
       return:
         description: ''
         type: undefined | string
-  - name: messageId
-    uid: '@azure/service-bus.ReceivedMessageInfo.messageId'
-    package: '@azure/service-bus'
-    summary: >-
-      The message identifier is an
-
-      application-defined value that uniquely identifies the message and its
-      payload.
-
-
-      Note: Numbers that are not whole integers are not allowed.
-    fullName: messageId
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'messageId?: string | number | Buffer'
-      return:
-        description: ''
-        type: string | number | Buffer
-  - name: partitionKey
-    uid: '@azure/service-bus.ReceivedMessageInfo.partitionKey'
-    package: '@azure/service-bus'
-    summary: >-
-      The partition key for sending a message to a partitioned entity.
-
-      Maximum length is 128 characters. For [partitioned
-      entities](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-partitioning),
-
-      setting this value enables assigning related messages to the same internal
-      partition,
-
-      so that submission sequence order is correctly recorded. The partition is
-      chosen by a hash
-
-      function over this value and cannot be chosen directly.
-
-      - For session-aware entities, the `sessionId` property overrides this
-      value.
-
-      - For non partitioned entities, partition key will be ignored
-    fullName: partitionKey
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'partitionKey?: undefined | string'
-      return:
-        description: ''
-        type: undefined | string
-  - name: replyTo
-    uid: '@azure/service-bus.ReceivedMessageInfo.replyTo'
-    package: '@azure/service-bus'
-    summary: >-
-      The address of an entity to send replies to. This optional and
-
-      application-defined value is a standard way to express a reply path to the
-      receiver of the
-
-      message. When a sender expects a reply, it sets the value to the absolute
-      or relative path of
-
-      the queue or topic it expects the reply to be sent to. See
-
-      [Message Routing and
-      Correlation](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messages-payloads?#message-routing-and-correlation).
-    fullName: replyTo
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'replyTo?: undefined | string'
-      return:
-        description: ''
-        type: undefined | string
-  - name: replyToSessionId
-    uid: '@azure/service-bus.ReceivedMessageInfo.replyToSessionId'
-    package: '@azure/service-bus'
-    summary: >-
-      The session identifier augmenting the `replyTo` address.
-
-      Maximum length is 128 characters. This value augments the ReplyTo
-      information and specifies
-
-      which SessionId should be set for the reply when sent to the reply entity.
-
-      See [Message Routing and
-      Correlation](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messages-payloads?#message-routing-and-correlation).
-    fullName: replyToSessionId
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'replyToSessionId?: undefined | string'
-      return:
-        description: ''
-        type: undefined | string
-  - name: scheduledEnqueueTimeUtc
-    uid: '@azure/service-bus.ReceivedMessageInfo.scheduledEnqueueTimeUtc'
-    package: '@azure/service-bus'
-    summary: >-
-      The date and time in UTC at which the message will
-
-      be enqueued. This property returns the time in UTC; when setting the
-      property, the
-
-      supplied DateTime value must also be in UTC. This value is for delayed
-      message sending.
-
-      It is utilized to delay messages sending to a specific time in the future.
-      Message enqueuing
-
-      time does not mean that the message will be sent at the same time. It will
-      get enqueued,
-
-      but the actual sending time depends on the queue's workload and its state.
-    fullName: scheduledEnqueueTimeUtc
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'scheduledEnqueueTimeUtc?: Date'
-      return:
-        description: ''
-        type: Date
   - name: sequenceNumber
     uid: '@azure/service-bus.ReceivedMessageInfo.sequenceNumber'
     package: '@azure/service-bus'
@@ -387,13 +181,229 @@ properties:
       to use the **`Long`** type exported by this library.
     fullName: sequenceNumber
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'sequenceNumber?: Long'
       return:
         description: ''
         type: Long
+inheritedProperties:
+  - name: body
+    uid: '@azure/service-bus.ReceivedMessageInfo.body'
+    package: '@azure/service-bus'
+    summary: The message body that needs to be sent or is received.
+    fullName: body
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'body: any'
+      return:
+        description: ''
+        type: any
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [SendableMessageInfo.body](xref:@azure/service-bus.SendableMessageInfo.body)
+  - name: contentType
+    uid: '@azure/service-bus.ReceivedMessageInfo.contentType'
+    package: '@azure/service-bus'
+    summary: >-
+      The content type of the message. Optionally describes
+
+      the payload of the message, with a descriptor following the format of
+      RFC2045, Section 5, for
+
+      example "application/json".
+    fullName: contentType
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'contentType?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [SendableMessageInfo.contentType](xref:@azure/service-bus.SendableMessageInfo.contentType)
+  - name: correlationId
+    uid: '@azure/service-bus.ReceivedMessageInfo.correlationId'
+    package: '@azure/service-bus'
+    summary: >-
+      The correlation identifier that allows an
+
+      application to specify a context for the message for the purposes of
+      correlation, for example
+
+      reflecting the MessageId of a message that is being replied to.
+
+      See [Message Routing and
+      Correlation](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messages-payloads?#message-routing-and-correlation).
+    fullName: correlationId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'correlationId?: string | number | Buffer'
+      return:
+        description: ''
+        type: string | number | Buffer
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [SendableMessageInfo.correlationId](xref:@azure/service-bus.SendableMessageInfo.correlationId)
+  - name: label
+    uid: '@azure/service-bus.ReceivedMessageInfo.label'
+    package: '@azure/service-bus'
+    summary: >-
+      The application specific label. This property enables the
+
+      application to indicate the purpose of the message to the receiver in a
+      standardized. fashion,
+
+      similar to an email subject line. The mapped AMQP property is "subject".
+    fullName: label
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'label?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [SendableMessageInfo.label](xref:@azure/service-bus.SendableMessageInfo.label)
+  - name: messageId
+    uid: '@azure/service-bus.ReceivedMessageInfo.messageId'
+    package: '@azure/service-bus'
+    summary: >-
+      The message identifier is an
+
+      application-defined value that uniquely identifies the message and its
+      payload.
+
+
+      Note: Numbers that are not whole integers are not allowed.
+    fullName: messageId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'messageId?: string | number | Buffer'
+      return:
+        description: ''
+        type: string | number | Buffer
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [SendableMessageInfo.messageId](xref:@azure/service-bus.SendableMessageInfo.messageId)
+  - name: partitionKey
+    uid: '@azure/service-bus.ReceivedMessageInfo.partitionKey'
+    package: '@azure/service-bus'
+    summary: >-
+      The partition key for sending a message to a partitioned entity.
+
+      Maximum length is 128 characters. For [partitioned
+      entities](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-partitioning),
+
+      setting this value enables assigning related messages to the same internal
+      partition,
+
+      so that submission sequence order is correctly recorded. The partition is
+      chosen by a hash
+
+      function over this value and cannot be chosen directly.
+
+      - For session-aware entities, the `sessionId` property overrides this
+      value.
+
+      - For non partitioned entities, partition key will be ignored
+    fullName: partitionKey
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'partitionKey?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [SendableMessageInfo.partitionKey](xref:@azure/service-bus.SendableMessageInfo.partitionKey)
+  - name: replyTo
+    uid: '@azure/service-bus.ReceivedMessageInfo.replyTo'
+    package: '@azure/service-bus'
+    summary: >-
+      The address of an entity to send replies to. This optional and
+
+      application-defined value is a standard way to express a reply path to the
+      receiver of the
+
+      message. When a sender expects a reply, it sets the value to the absolute
+      or relative path of
+
+      the queue or topic it expects the reply to be sent to. See
+
+      [Message Routing and
+      Correlation](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messages-payloads?#message-routing-and-correlation).
+    fullName: replyTo
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'replyTo?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [SendableMessageInfo.replyTo](xref:@azure/service-bus.SendableMessageInfo.replyTo)
+  - name: replyToSessionId
+    uid: '@azure/service-bus.ReceivedMessageInfo.replyToSessionId'
+    package: '@azure/service-bus'
+    summary: >-
+      The session identifier augmenting the `replyTo` address.
+
+      Maximum length is 128 characters. This value augments the ReplyTo
+      information and specifies
+
+      which SessionId should be set for the reply when sent to the reply entity.
+
+      See [Message Routing and
+      Correlation](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messages-payloads?#message-routing-and-correlation).
+    fullName: replyToSessionId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'replyToSessionId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [SendableMessageInfo.replyToSessionId](xref:@azure/service-bus.SendableMessageInfo.replyToSessionId)
+  - name: scheduledEnqueueTimeUtc
+    uid: '@azure/service-bus.ReceivedMessageInfo.scheduledEnqueueTimeUtc'
+    package: '@azure/service-bus'
+    summary: >-
+      The date and time in UTC at which the message will
+
+      be enqueued. This property returns the time in UTC; when setting the
+      property, the
+
+      supplied DateTime value must also be in UTC. This value is for delayed
+      message sending.
+
+      It is utilized to delay messages sending to a specific time in the future.
+      Message enqueuing
+
+      time does not mean that the message will be sent at the same time. It will
+      get enqueued,
+
+      but the actual sending time depends on the queue's workload and its state.
+    fullName: scheduledEnqueueTimeUtc
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'scheduledEnqueueTimeUtc?: Date'
+      return:
+        description: ''
+        type: Date
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [SendableMessageInfo.scheduledEnqueueTimeUtc](xref:@azure/service-bus.SendableMessageInfo.scheduledEnqueueTimeUtc)
   - name: sessionId
     uid: '@azure/service-bus.ReceivedMessageInfo.sessionId'
     package: '@azure/service-bus'
@@ -415,13 +425,15 @@ properties:
       Sessions](https://docs.microsoft.com/azure/service-bus-messaging/message-sessions).
     fullName: sessionId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'sessionId?: undefined | string'
       return:
         description: ''
         type: undefined | string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [SendableMessageInfo.sessionId](xref:@azure/service-bus.SendableMessageInfo.sessionId)
   - name: timeToLive
     uid: '@azure/service-bus.ReceivedMessageInfo.timeToLive'
     package: '@azure/service-bus'
@@ -445,13 +457,15 @@ properties:
       [Expiration](https://docs.microsoft.com/azure/service-bus-messaging/message-expiration).
     fullName: timeToLive
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'timeToLive?: undefined | number'
       return:
         description: ''
         type: undefined | number
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [SendableMessageInfo.timeToLive](xref:@azure/service-bus.SendableMessageInfo.timeToLive)
   - name: to
     uid: '@azure/service-bus.ReceivedMessageInfo.to'
     package: '@azure/service-bus'
@@ -467,13 +481,15 @@ properties:
       scenarios to indicate the intended logical destination of the message.
     fullName: to
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'to?: undefined | string'
       return:
         description: ''
         type: undefined | string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [SendableMessageInfo.to](xref:@azure/service-bus.SendableMessageInfo.to)
   - name: userProperties
     uid: '@azure/service-bus.ReceivedMessageInfo.userProperties'
     package: '@azure/service-bus'
@@ -482,13 +498,15 @@ properties:
       used for custom message metadata.
     fullName: userProperties
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'userProperties?: undefined | [key: string]: any'
       return:
         description: ''
         type: 'undefined | [key: string]: any'
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [SendableMessageInfo.userProperties](xref:@azure/service-bus.SendableMessageInfo.userProperties)
   - name: viaPartitionKey
     uid: '@azure/service-bus.ReceivedMessageInfo.viaPartitionKey'
     package: '@azure/service-bus'
@@ -510,11 +528,13 @@ properties:
       Via](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-transactions#transfers-and-send-via).
     fullName: viaPartitionKey
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'viaPartitionKey?: undefined | string'
       return:
         description: ''
         type: undefined | string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [SendableMessageInfo.viaPartitionKey](xref:@azure/service-bus.SendableMessageInfo.viaPartitionKey)
 extends: <xref uid="@azure/service-bus.SendableMessageInfo" />

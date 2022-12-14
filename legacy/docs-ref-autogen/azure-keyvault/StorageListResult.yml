@@ -5,7 +5,6 @@ package: azure-keyvault
 summary: ''
 fullName: StorageListResult
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -15,13 +14,25 @@ properties:
     summary: ''
     fullName: Array
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'Array: ArrayConstructor'
       return:
         description: ''
         type: ArrayConstructor
+  - name: nextLink
+    uid: azure-keyvault.StorageListResult.nextLink
+    package: azure-keyvault
+    summary: ''
+    fullName: nextLink
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'nextLink?: string'
+      return:
+        description: ''
+        type: string
+inheritedProperties:
   - name: length
     uid: azure-keyvault.StorageListResult.length
     package: azure-keyvault
@@ -30,52 +41,36 @@ properties:
       highest element defined in an array.
     fullName: length
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'length: number'
       return:
         description: ''
         type: number
-  - name: nextLink
-    uid: azure-keyvault.StorageListResult.nextLink
-    package: azure-keyvault
-    summary: ''
-    fullName: nextLink
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'nextLink?: string'
-      return:
-        description: ''
-        type: string
+    inheritanceDescription: <b>Inherited From</b> Array.length
 inheritedMethods:
-  - name: at(number)
-    uid: azure-keyvault.StorageListResult.at
+  - name: 'concat((T | ConcatArray<T>)[])'
+    uid: azure-keyvault.StorageListResult.concat_1
     package: azure-keyvault
-    summary: |-
-      Takes an integer value and returns the item at that index,
-      allowing for positive and negative integers.
-      Negative integers count back from the last item in the array.
+    summary: Combines two or more arrays.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
-      content: 'function at(index: number): StorageAccountItem | undefined'
+      content: 'function concat(items: (T | ConcatArray<T>)[]): StorageAccountItem[]'
       parameters:
-        - id: index
-          type: number
-          description: ''
+        - id: items
+          type: '(T | ConcatArray&lt;T&gt;)[]'
+          description: |
+            Additional items to add to the end of array1.
       return:
         description: ''
-        type: <xref uid="azure-keyvault.StorageAccountItem" /> | undefined
+        type: '<xref uid="azure-keyvault.StorageAccountItem" />[]'
+    inheritanceDescription: <b>Inherited From</b> Array.concat
   - name: 'concat(ConcatArray<StorageAccountItem>[])'
     uid: azure-keyvault.StorageListResult.concat
     package: azure-keyvault
     summary: Combines two or more arrays.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -91,71 +86,7 @@ inheritedMethods:
       return:
         description: ''
         type: '<xref uid="azure-keyvault.StorageAccountItem" />[]'
-  - name: 'concat(T | ConcatArray<T>[])'
-    uid: azure-keyvault.StorageListResult.concat_1
-    package: azure-keyvault
-    summary: Combines two or more arrays.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function concat(items: T | ConcatArray<T>[]): StorageAccountItem[]'
-      parameters:
-        - id: items
-          type: 'T | ConcatArray&lt;T&gt;[]'
-          description: |
-            Additional items to add to the end of array1.
-      return:
-        description: ''
-        type: '<xref uid="azure-keyvault.StorageAccountItem" />[]'
-  - name: 'copyWithin(number, number, number)'
-    uid: azure-keyvault.StorageListResult.copyWithin
-    package: azure-keyvault
-    summary: >-
-      Returns the this object after copying a section of the array identified by
-      start and end
-
-      to the same array starting at position target
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function copyWithin(target: number, start: number, end?: number): this'
-      parameters:
-        - id: target
-          type: number
-          description: >-
-            If target is negative, it is treated as length+target where length
-            is the
-
-            length of the array.
-        - id: start
-          type: number
-          description: >-
-            If start is negative, it is treated as length+start. If end is
-            negative, it
-
-            is treated as length+end.
-        - id: end
-          type: number
-          description: >
-            If not specified, length of the this object is used as its default
-            value.
-      return:
-        description: ''
-        type: this
-  - name: entries()
-    uid: azure-keyvault.StorageListResult.entries
-    package: azure-keyvault
-    summary: 'Returns an iterable of key, value pairs for every entry in the array'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function entries(): IterableIterator<[number, StorageAccountItem]>'
-      return:
-        description: ''
-        type: 'IterableIterator&lt;[number, StorageAccountItem]&gt;'
+    inheritanceDescription: <b>Inherited From</b> Array.concat
   - name: >-
       every((value: StorageAccountItem, index: number, array:
       StorageAccountItem[]) => unknown, any)
@@ -163,7 +94,6 @@ inheritedMethods:
     package: azure-keyvault
     summary: Determines whether all the members of an array satisfy the specified test.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -187,40 +117,7 @@ inheritedMethods:
       return:
         description: ''
         type: boolean
-  - name: 'fill(StorageAccountItem, number, number)'
-    uid: azure-keyvault.StorageListResult.fill
-    package: azure-keyvault
-    summary: >-
-      Returns the this object after filling the section identified by start and
-      end with value
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function fill(value: StorageAccountItem, start?: number, end?: number):
-        this
-      parameters:
-        - id: value
-          type: <xref uid="azure-keyvault.StorageAccountItem" />
-          description: value to fill array section with
-        - id: start
-          type: number
-          description: >-
-            index to start filling the array at. If start is negative, it is
-            treated as
-
-            length+start where length is the length of the array.
-        - id: end
-          type: number
-          description: >
-            index to stop filling the array at. If end is negative, it is
-            treated as
-
-            length+end.
-      return:
-        description: ''
-        type: this
+    inheritanceDescription: <b>Inherited From</b> Array.every
   - name: >-
       filter((value: StorageAccountItem, index: number, array:
       StorageAccountItem[]) => unknown, any)
@@ -230,7 +127,6 @@ inheritedMethods:
       Returns the elements of an array that meet the condition specified in a
       callback function.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -255,6 +151,7 @@ inheritedMethods:
       return:
         description: ''
         type: '<xref uid="azure-keyvault.StorageAccountItem" />[]'
+    inheritanceDescription: <b>Inherited From</b> Array.filter
   - name: >-
       filter<S>((value: StorageAccountItem, index: number, array:
       StorageAccountItem[]) => boolean, any)
@@ -264,7 +161,6 @@ inheritedMethods:
       Returns the elements of an array that meet the condition specified in a
       callback function.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -288,369 +184,7 @@ inheritedMethods:
       return:
         description: ''
         type: 'S[]'
-  - name: >-
-      find((value: StorageAccountItem, index: number, obj: StorageAccountItem[])
-      => unknown, any)
-    uid: azure-keyvault.StorageListResult.find_1
-    package: azure-keyvault
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function find(predicate: (value: StorageAccountItem, index: number, obj:
-        StorageAccountItem[]) => unknown, thisArg?: any): StorageAccountItem |
-        undefined
-      parameters:
-        - id: predicate
-          type: >-
-            (value: StorageAccountItem, index: number, obj:
-            StorageAccountItem[]) =&gt; unknown
-          description: ''
-        - id: thisArg
-          type: any
-          description: ''
-      return:
-        description: ''
-        type: <xref uid="azure-keyvault.StorageAccountItem" /> | undefined
-  - name: >-
-      find<S>((this: void, value: StorageAccountItem, index: number, obj:
-      StorageAccountItem[]) => boolean, any)
-    uid: azure-keyvault.StorageListResult.find
-    package: azure-keyvault
-    summary: >-
-      Returns the value of the first element in the array where predicate is
-      true, and undefined
-
-      otherwise.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function find<S>(predicate: (this: void, value: StorageAccountItem,
-        index: number, obj: StorageAccountItem[]) => boolean, thisArg?: any): S
-        | undefined
-      parameters:
-        - id: predicate
-          type: >-
-            (this: void, value: StorageAccountItem, index: number, obj:
-            StorageAccountItem[]) =&gt; boolean
-          description: >-
-            find calls predicate once for each element of the array, in
-            ascending
-
-            order, until it finds one where predicate returns true. If such an
-            element is found, find
-
-            immediately returns that element value. Otherwise, find returns
-            undefined.
-        - id: thisArg
-          type: any
-          description: >
-            If provided, it will be used as the this value for each invocation
-            of
-
-            predicate. If it is not provided, undefined is used instead.
-      return:
-        description: ''
-        type: S | undefined
-  - name: >-
-      findIndex((value: StorageAccountItem, index: number, obj:
-      StorageAccountItem[]) => unknown, any)
-    uid: azure-keyvault.StorageListResult.findIndex
-    package: azure-keyvault
-    summary: >-
-      Returns the index of the first element in the array where predicate is
-      true, and -1
-
-      otherwise.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function findIndex(predicate: (value: StorageAccountItem, index: number,
-        obj: StorageAccountItem[]) => unknown, thisArg?: any): number
-      parameters:
-        - id: predicate
-          type: >-
-            (value: StorageAccountItem, index: number, obj:
-            StorageAccountItem[]) =&gt; unknown
-          description: >-
-            find calls predicate once for each element of the array, in
-            ascending
-
-            order, until it finds one where predicate returns true. If such an
-            element is found,
-
-            findIndex immediately returns that element index. Otherwise,
-            findIndex returns -1.
-        - id: thisArg
-          type: any
-          description: >
-            If provided, it will be used as the this value for each invocation
-            of
-
-            predicate. If it is not provided, undefined is used instead.
-      return:
-        description: ''
-        type: number
-  - name: flat<U>(number)
-    uid: azure-keyvault.StorageListResult.flat_8
-    package: azure-keyvault
-    summary: >-
-      Returns a new array with all sub-array elements concatenated into it
-      recursively up to the
-
-      specified depth. If no depth is provided, flat method defaults to the
-      depth of 1.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function flat<U>(depth?: number): any[]'
-      parameters:
-        - id: depth
-          type: number
-          description: |
-            The maximum recursion depth
-      return:
-        description: ''
-        type: 'any[]'
-  - name: 'flat<U>(U[], 0)'
-    uid: azure-keyvault.StorageListResult.flat_7
-    package: azure-keyvault
-    summary: >-
-      Returns a new array with all sub-array elements concatenated into it
-      recursively up to the
-
-      specified depth.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function flat<U>(this: U[], depth: 0): U[]'
-      parameters:
-        - id: this
-          type: 'U[]'
-          description: ''
-        - id: depth
-          type: '0'
-          description: |
-            The maximum recursion depth
-      return:
-        description: ''
-        type: 'U[]'
-  - name: 'flat<U>(U[][], 1)'
-    uid: azure-keyvault.StorageListResult.flat_6
-    package: azure-keyvault
-    summary: >-
-      Returns a new array with all sub-array elements concatenated into it
-      recursively up to the
-
-      specified depth.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function flat<U>(this: U[][], depth?: 1): U[]'
-      parameters:
-        - id: this
-          type: 'U[][]'
-          description: ''
-        - id: depth
-          type: '1'
-          description: |
-            The maximum recursion depth
-      return:
-        description: ''
-        type: 'U[]'
-  - name: 'flat<U>(U[][][], 2)'
-    uid: azure-keyvault.StorageListResult.flat_5
-    package: azure-keyvault
-    summary: >-
-      Returns a new array with all sub-array elements concatenated into it
-      recursively up to the
-
-      specified depth.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function flat<U>(this: U[][][], depth: 2): U[]'
-      parameters:
-        - id: this
-          type: 'U[][][]'
-          description: ''
-        - id: depth
-          type: '2'
-          description: |
-            The maximum recursion depth
-      return:
-        description: ''
-        type: 'U[]'
-  - name: 'flat<U>(U[][][][], 3)'
-    uid: azure-keyvault.StorageListResult.flat_4
-    package: azure-keyvault
-    summary: >-
-      Returns a new array with all sub-array elements concatenated into it
-      recursively up to the
-
-      specified depth.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function flat<U>(this: U[][][][], depth: 3): U[]'
-      parameters:
-        - id: this
-          type: 'U[][][][]'
-          description: ''
-        - id: depth
-          type: '3'
-          description: |
-            The maximum recursion depth
-      return:
-        description: ''
-        type: 'U[]'
-  - name: 'flat<U>(U[][][][][], 4)'
-    uid: azure-keyvault.StorageListResult.flat_3
-    package: azure-keyvault
-    summary: >-
-      Returns a new array with all sub-array elements concatenated into it
-      recursively up to the
-
-      specified depth.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function flat<U>(this: U[][][][][], depth: 4): U[]'
-      parameters:
-        - id: this
-          type: 'U[][][][][]'
-          description: ''
-        - id: depth
-          type: '4'
-          description: |
-            The maximum recursion depth
-      return:
-        description: ''
-        type: 'U[]'
-  - name: 'flat<U>(U[][][][][][], 5)'
-    uid: azure-keyvault.StorageListResult.flat_2
-    package: azure-keyvault
-    summary: >-
-      Returns a new array with all sub-array elements concatenated into it
-      recursively up to the
-
-      specified depth.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function flat<U>(this: U[][][][][][], depth: 5): U[]'
-      parameters:
-        - id: this
-          type: 'U[][][][][][]'
-          description: ''
-        - id: depth
-          type: '5'
-          description: |
-            The maximum recursion depth
-      return:
-        description: ''
-        type: 'U[]'
-  - name: 'flat<U>(U[][][][][][][], 6)'
-    uid: azure-keyvault.StorageListResult.flat_1
-    package: azure-keyvault
-    summary: >-
-      Returns a new array with all sub-array elements concatenated into it
-      recursively up to the
-
-      specified depth.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function flat<U>(this: U[][][][][][][], depth: 6): U[]'
-      parameters:
-        - id: this
-          type: 'U[][][][][][][]'
-          description: ''
-        - id: depth
-          type: '6'
-          description: |
-            The maximum recursion depth
-      return:
-        description: ''
-        type: 'U[]'
-  - name: 'flat<U>(U[][][][][][][][], 7)'
-    uid: azure-keyvault.StorageListResult.flat
-    package: azure-keyvault
-    summary: >-
-      Returns a new array with all sub-array elements concatenated into it
-      recursively up to the
-
-      specified depth.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function flat<U>(this: U[][][][][][][][], depth: 7): U[]'
-      parameters:
-        - id: this
-          type: 'U[][][][][][][][]'
-          description: ''
-        - id: depth
-          type: '7'
-          description: |
-            The maximum recursion depth
-      return:
-        description: ''
-        type: 'U[]'
-  - name: >-
-      flatMap<U, This>((this: This, value: StorageAccountItem, index: number,
-      array: StorageAccountItem[]) => U | ReadonlyArray<U>, This)
-    uid: azure-keyvault.StorageListResult.flatMap
-    package: azure-keyvault
-    summary: >-
-      Calls a defined callback function on each element of an array. Then,
-      flattens the result into
-
-      a new array.
-
-      This is identical to a map followed by flat with depth 1.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function flatMap<U, This>(callback: (this: This, value:
-        StorageAccountItem, index: number, array: StorageAccountItem[]) => U |
-        ReadonlyArray<U>, thisArg?: This): U[]
-      parameters:
-        - id: callback
-          type: >-
-            (this: This, value: StorageAccountItem, index: number, array:
-            StorageAccountItem[]) =&gt; U | ReadonlyArray&lt;U&gt;
-          description: >-
-            A function that accepts up to three arguments. The flatMap method
-            calls the
-
-            callback function one time for each element in the array.
-        - id: thisArg
-          type: This
-          description: >
-            An object to which the this keyword can refer in the callback
-            function. If
-
-            thisArg is omitted, undefined is used as the this value.
-      return:
-        description: ''
-        type: 'U[]'
+    inheritanceDescription: <b>Inherited From</b> Array.filter
   - name: >-
       forEach((value: StorageAccountItem, index: number, array:
       StorageAccountItem[]) => void, any)
@@ -658,7 +192,6 @@ inheritedMethods:
     package: azure-keyvault
     summary: Performs the specified action for each element in an array.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -678,37 +211,12 @@ inheritedMethods:
             An object to which the this keyword can refer in the callbackfn
             function. If thisArg is omitted, undefined is used as the this
             value.
-  - name: 'includes(StorageAccountItem, number)'
-    uid: azure-keyvault.StorageListResult.includes
-    package: azure-keyvault
-    summary: >-
-      Determines whether an array includes a certain element, returning true or
-      false as appropriate.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function includes(searchElement: StorageAccountItem, fromIndex?:
-        number): boolean
-      parameters:
-        - id: searchElement
-          type: <xref uid="azure-keyvault.StorageAccountItem" />
-          description: The element to search for.
-        - id: fromIndex
-          type: number
-          description: >
-            The position in this array at which to begin searching for
-            searchElement.
-      return:
-        description: ''
-        type: boolean
+    inheritanceDescription: <b>Inherited From</b> Array.forEach
   - name: 'indexOf(StorageAccountItem, number)'
     uid: azure-keyvault.StorageListResult.indexOf
     package: azure-keyvault
     summary: Returns the index of the first occurrence of a value in an array.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -726,6 +234,7 @@ inheritedMethods:
       return:
         description: ''
         type: number
+    inheritanceDescription: <b>Inherited From</b> Array.indexOf
   - name: join(string)
     uid: azure-keyvault.StorageListResult.join
     package: azure-keyvault
@@ -733,7 +242,6 @@ inheritedMethods:
       Adds all the elements of an array separated by the specified separator
       string.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function join(separator?: string): string'
@@ -747,24 +255,12 @@ inheritedMethods:
       return:
         description: ''
         type: string
-  - name: keys()
-    uid: azure-keyvault.StorageListResult.keys
-    package: azure-keyvault
-    summary: Returns an iterable of keys in the array
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function keys(): IterableIterator<number>'
-      return:
-        description: ''
-        type: IterableIterator&lt;number&gt;
+    inheritanceDescription: <b>Inherited From</b> Array.join
   - name: 'lastIndexOf(StorageAccountItem, number)'
     uid: azure-keyvault.StorageListResult.lastIndexOf
     package: azure-keyvault
     summary: Returns the index of the last occurrence of a specified value in an array.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -782,6 +278,7 @@ inheritedMethods:
       return:
         description: ''
         type: number
+    inheritanceDescription: <b>Inherited From</b> Array.lastIndexOf
   - name: >-
       map<U>((value: StorageAccountItem, index: number, array:
       StorageAccountItem[]) => U, any)
@@ -791,7 +288,6 @@ inheritedMethods:
       Calls a defined callback function on each element of an array, and returns
       an array that contains the results.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -814,24 +310,24 @@ inheritedMethods:
       return:
         description: ''
         type: 'U[]'
+    inheritanceDescription: <b>Inherited From</b> Array.map
   - name: pop()
     uid: azure-keyvault.StorageListResult.pop
     package: azure-keyvault
     summary: Removes the last element from an array and returns it.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function pop(): StorageAccountItem | undefined'
       return:
         description: ''
         type: <xref uid="azure-keyvault.StorageAccountItem" /> | undefined
+    inheritanceDescription: <b>Inherited From</b> Array.pop
   - name: 'push(StorageAccountItem[])'
     uid: azure-keyvault.StorageListResult.push
     package: azure-keyvault
     summary: 'Appends new elements to an array, and returns the new length of the array.'
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function push(items: StorageAccountItem[]): number'
@@ -843,6 +339,7 @@ inheritedMethods:
       return:
         description: ''
         type: number
+    inheritanceDescription: <b>Inherited From</b> Array.push
   - name: >-
       reduce((previousValue: StorageAccountItem, currentValue:
       StorageAccountItem, currentIndex: number, array: StorageAccountItem[]) =>
@@ -854,7 +351,6 @@ inheritedMethods:
       The return value of the callback function is the accumulated result, and
       is provided as an argument in the next call to the callback function.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -874,6 +370,7 @@ inheritedMethods:
       return:
         description: ''
         type: <xref uid="azure-keyvault.StorageAccountItem" />
+    inheritanceDescription: <b>Inherited From</b> Array.reduce
   - name: >-
       reduce((previousValue: StorageAccountItem, currentValue:
       StorageAccountItem, currentIndex: number, array: StorageAccountItem[]) =>
@@ -882,7 +379,6 @@ inheritedMethods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -903,6 +399,7 @@ inheritedMethods:
       return:
         description: ''
         type: <xref uid="azure-keyvault.StorageAccountItem" />
+    inheritanceDescription: <b>Inherited From</b> Array.reduce
   - name: >-
       reduce<U>((previousValue: U, currentValue: StorageAccountItem,
       currentIndex: number, array: StorageAccountItem[]) => U, U)
@@ -913,7 +410,6 @@ inheritedMethods:
       The return value of the callback function is the accumulated result, and
       is provided as an argument in the next call to the callback function.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -938,6 +434,7 @@ inheritedMethods:
       return:
         description: ''
         type: U
+    inheritanceDescription: <b>Inherited From</b> Array.reduce
   - name: >-
       reduceRight((previousValue: StorageAccountItem, currentValue:
       StorageAccountItem, currentIndex: number, array: StorageAccountItem[]) =>
@@ -950,7 +447,6 @@ inheritedMethods:
       accumulated result, and is provided as an argument in the next call to the
       callback function.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -970,6 +466,7 @@ inheritedMethods:
       return:
         description: ''
         type: <xref uid="azure-keyvault.StorageAccountItem" />
+    inheritanceDescription: <b>Inherited From</b> Array.reduceRight
   - name: >-
       reduceRight((previousValue: StorageAccountItem, currentValue:
       StorageAccountItem, currentIndex: number, array: StorageAccountItem[]) =>
@@ -978,7 +475,6 @@ inheritedMethods:
     package: azure-keyvault
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -999,6 +495,7 @@ inheritedMethods:
       return:
         description: ''
         type: <xref uid="azure-keyvault.StorageAccountItem" />
+    inheritanceDescription: <b>Inherited From</b> Array.reduceRight
   - name: >-
       reduceRight<U>((previousValue: U, currentValue: StorageAccountItem,
       currentIndex: number, array: StorageAccountItem[]) => U, U)
@@ -1010,7 +507,6 @@ inheritedMethods:
       accumulated result, and is provided as an argument in the next call to the
       callback function.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1035,36 +531,36 @@ inheritedMethods:
       return:
         description: ''
         type: U
+    inheritanceDescription: <b>Inherited From</b> Array.reduceRight
   - name: reverse()
     uid: azure-keyvault.StorageListResult.reverse
     package: azure-keyvault
     summary: Reverses the elements in an Array.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function reverse(): StorageAccountItem[]'
       return:
         description: ''
         type: '<xref uid="azure-keyvault.StorageAccountItem" />[]'
+    inheritanceDescription: <b>Inherited From</b> Array.reverse
   - name: shift()
     uid: azure-keyvault.StorageListResult.shift
     package: azure-keyvault
     summary: Removes the first element from an array and returns it.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function shift(): StorageAccountItem | undefined'
       return:
         description: ''
         type: <xref uid="azure-keyvault.StorageAccountItem" /> | undefined
+    inheritanceDescription: <b>Inherited From</b> Array.shift
   - name: 'slice(number, number)'
     uid: azure-keyvault.StorageListResult.slice
     package: azure-keyvault
     summary: Returns a section of an array.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function slice(start?: number, end?: number): StorageAccountItem[]'
@@ -1079,6 +575,7 @@ inheritedMethods:
       return:
         description: ''
         type: '<xref uid="azure-keyvault.StorageAccountItem" />[]'
+    inheritanceDescription: <b>Inherited From</b> Array.slice
   - name: >-
       some((value: StorageAccountItem, index: number, array:
       StorageAccountItem[]) => unknown, any)
@@ -1088,7 +585,6 @@ inheritedMethods:
       Determines whether the specified callback function returns true for any
       element of an array.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1112,12 +608,12 @@ inheritedMethods:
       return:
         description: ''
         type: boolean
+    inheritanceDescription: <b>Inherited From</b> Array.some
   - name: 'sort((a: StorageAccountItem, b: StorageAccountItem) => number)'
     uid: azure-keyvault.StorageListResult.sort
     package: azure-keyvault
     summary: Sorts an array.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1133,6 +629,7 @@ inheritedMethods:
       return:
         description: ''
         type: this
+    inheritanceDescription: <b>Inherited From</b> Array.sort
   - name: 'splice(number, number)'
     uid: azure-keyvault.StorageListResult.splice
     package: azure-keyvault
@@ -1140,7 +637,6 @@ inheritedMethods:
       Removes elements from an array and, if necessary, inserts new elements in
       their place, returning the deleted elements.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1159,6 +655,7 @@ inheritedMethods:
       return:
         description: ''
         type: '<xref uid="azure-keyvault.StorageAccountItem" />[]'
+    inheritanceDescription: <b>Inherited From</b> Array.splice
   - name: 'splice(number, number, StorageAccountItem[])'
     uid: azure-keyvault.StorageListResult.splice_1
     package: azure-keyvault
@@ -1166,7 +663,6 @@ inheritedMethods:
       Removes elements from an array and, if necessary, inserts new elements in
       their place, returning the deleted elements.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1188,6 +684,7 @@ inheritedMethods:
       return:
         description: ''
         type: '<xref uid="azure-keyvault.StorageAccountItem" />[]'
+    inheritanceDescription: <b>Inherited From</b> Array.splice
   - name: toLocaleString()
     uid: azure-keyvault.StorageListResult.toLocaleString
     package: azure-keyvault
@@ -1195,31 +692,30 @@ inheritedMethods:
       Returns a string representation of an array. The elements are converted to
       string using their toLocalString methods.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function toLocaleString(): string'
       return:
         description: ''
         type: string
+    inheritanceDescription: <b>Inherited From</b> Array.toLocaleString
   - name: toString()
     uid: azure-keyvault.StorageListResult.toString
     package: azure-keyvault
     summary: Returns a string representation of an array.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function toString(): string'
       return:
         description: ''
         type: string
+    inheritanceDescription: <b>Inherited From</b> Array.toString
   - name: 'unshift(StorageAccountItem[])'
     uid: azure-keyvault.StorageListResult.unshift
     package: azure-keyvault
     summary: Inserts new elements at the start of an array.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function unshift(items: StorageAccountItem[]): number'
@@ -1231,18 +727,5 @@ inheritedMethods:
       return:
         description: ''
         type: number
-  - name: values()
-    uid: azure-keyvault.StorageListResult.values
-    package: azure-keyvault
-    summary: Returns an iterable of values in the array
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function values(): IterableIterator<StorageAccountItem>'
-      return:
-        description: ''
-        type: >-
-          IterableIterator&lt;<xref uid="azure-keyvault.StorageAccountItem"
-          />&gt;
+    inheritanceDescription: <b>Inherited From</b> Array.unshift
 extends: Array&lt;<xref uid="azure-keyvault.StorageAccountItem" />&gt;

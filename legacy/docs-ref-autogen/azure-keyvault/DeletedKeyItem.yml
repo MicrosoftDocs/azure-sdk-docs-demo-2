@@ -5,69 +5,27 @@ package: azure-keyvault
 summary: ''
 fullName: DeletedKeyItem
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: attributes
-    uid: azure-keyvault.DeletedKeyItem.attributes
-    package: azure-keyvault
-    summary: ''
-    fullName: attributes
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'attributes?: KeyAttributes'
-      return:
-        description: ''
-        type: <xref uid="azure-keyvault.KeyAttributes" />
   - name: deletedDate
     uid: azure-keyvault.DeletedKeyItem.deletedDate
     package: azure-keyvault
     summary: ''
     fullName: deletedDate
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'deletedDate?: Date'
       return:
         description: ''
         type: Date
-  - name: kid
-    uid: azure-keyvault.DeletedKeyItem.kid
-    package: azure-keyvault
-    summary: ''
-    fullName: kid
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'kid?: string'
-      return:
-        description: ''
-        type: string
-  - name: managed
-    uid: azure-keyvault.DeletedKeyItem.managed
-    package: azure-keyvault
-    summary: ''
-    fullName: managed
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'managed?: boolean'
-      return:
-        description: ''
-        type: boolean
   - name: recoveryId
     uid: azure-keyvault.DeletedKeyItem.recoveryId
     package: azure-keyvault
     summary: ''
     fullName: recoveryId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'recoveryId?: string'
@@ -80,24 +38,67 @@ properties:
     summary: ''
     fullName: scheduledPurgeDate
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'scheduledPurgeDate?: Date'
       return:
         description: ''
         type: Date
+inheritedProperties:
+  - name: attributes
+    uid: azure-keyvault.DeletedKeyItem.attributes
+    package: azure-keyvault
+    summary: ''
+    fullName: attributes
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'attributes?: KeyAttributes'
+      return:
+        description: ''
+        type: <xref uid="azure-keyvault.KeyAttributes" />
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [KeyItem.attributes](xref:azure-keyvault.KeyItem.attributes)
+  - name: kid
+    uid: azure-keyvault.DeletedKeyItem.kid
+    package: azure-keyvault
+    summary: ''
+    fullName: kid
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'kid?: string'
+      return:
+        description: ''
+        type: string
+    inheritanceDescription: '<b>Inherited From</b> [KeyItem.kid](xref:azure-keyvault.KeyItem.kid)'
+  - name: managed
+    uid: azure-keyvault.DeletedKeyItem.managed
+    package: azure-keyvault
+    summary: ''
+    fullName: managed
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'managed?: boolean'
+      return:
+        description: ''
+        type: boolean
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [KeyItem.managed](xref:azure-keyvault.KeyItem.managed)
   - name: tags
     uid: azure-keyvault.DeletedKeyItem.tags
     package: azure-keyvault
     summary: ''
     fullName: tags
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'tags?: [key: string]: string'
       return:
         description: ''
         type: '[key: string]\: string'
+    inheritanceDescription: '<b>Inherited From</b> [KeyItem.tags](xref:azure-keyvault.KeyItem.tags)'
 extends: <xref uid="azure-keyvault.KeyItem" />

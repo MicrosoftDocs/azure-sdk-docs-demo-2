@@ -11,7 +11,6 @@ summary: >-
   Topics and Subscriptions.
 fullName: ServiceBusClient
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 properties:
@@ -21,7 +20,6 @@ properties:
     summary: The name of the Service Bus Namespace.
     fullName: name
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'name: string'
@@ -49,7 +47,6 @@ methods:
       - this ServiceBusClient cannot be used to create any new
       queues/topics/subscriptions clients.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function close(): Promise<any>'
@@ -69,7 +66,6 @@ methods:
       the TokenCredentials generated using the `@azure/ms-rest-nodeauth`
       library.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -114,7 +110,6 @@ methods:
 
       string.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -148,7 +143,6 @@ methods:
       to be `["https://servicebus.azure.net//user_impersonation"]` to get the
       appropriate token.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -180,7 +174,6 @@ methods:
     package: '@azure/service-bus'
     summary: Creates a QueueClient for an existing Service Bus Queue.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function createQueueClient(queueName: string): QueueClient'
@@ -196,7 +189,6 @@ methods:
     package: '@azure/service-bus'
     summary: Creates a SubscriptionClient for an existing Service Bus Subscription.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -217,7 +209,6 @@ methods:
     package: '@azure/service-bus'
     summary: Creates a TopicClient for an existing Service Bus Topic.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function createTopicClient(topicName: string): TopicClient'

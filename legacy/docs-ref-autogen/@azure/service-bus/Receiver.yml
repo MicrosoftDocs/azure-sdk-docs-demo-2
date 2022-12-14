@@ -12,7 +12,6 @@ summary: >-
   The Receiver class is an abstraction over the underlying AMQP receiver link.
 fullName: Receiver
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 properties:
@@ -26,7 +25,6 @@ properties:
       itself has been closed or the client that created it has been closed.
     fullName: isClosed
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: boolean isClosed
@@ -39,7 +37,6 @@ properties:
     summary: Denotes receiveMode of this receiver.
     fullName: receiveMode
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: ReceiveMode receiveMode
@@ -60,7 +57,6 @@ methods:
 
       a new Receiver
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function close(): Promise<void>'
@@ -85,7 +81,6 @@ methods:
       If the iterator is not able to fetch a new message in over a minute,
       `undefined` will be returned.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getMessageIterator(): AsyncIterableIterator<ServiceBusMessage>'
@@ -103,7 +98,6 @@ methods:
       When this returns true, new `registerMessageHandler()` or
       `receiveMessages()` calls cannot be made.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function isReceivingMessages(): boolean'
@@ -117,7 +111,6 @@ methods:
       Returns a promise that resolves to a deferred message identified by the
       given `sequenceNumber`.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -142,7 +135,6 @@ methods:
       Returns a promise that resolves to an array of deferred messages
       identified by given `sequenceNumbers`.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -177,7 +169,6 @@ methods:
 
       property on the receiver.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -221,7 +212,6 @@ methods:
 
       property on the receiver.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -270,7 +260,6 @@ methods:
 
       receive operation.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

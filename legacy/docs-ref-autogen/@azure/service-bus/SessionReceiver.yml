@@ -17,7 +17,6 @@ summary: >-
   link.
 fullName: SessionReceiver
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 properties:
@@ -31,7 +30,6 @@ properties:
       itself has been closed or the client that created it has been closed.
     fullName: isClosed
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: boolean isClosed
@@ -44,7 +42,6 @@ properties:
     summary: Denotes receiveMode of this receiver.
     fullName: receiveMode
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: ReceiveMode receiveMode
@@ -61,7 +58,6 @@ properties:
       up for the session.
     fullName: sessionId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: string | undefined sessionId
@@ -84,7 +80,6 @@ properties:
       up for the session.
     fullName: sessionLockedUntilUtc
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: Date | undefined sessionLockedUntilUtc
@@ -105,7 +100,6 @@ methods:
 
       a new Receiver
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function close(): Promise<void>'
@@ -130,7 +124,6 @@ methods:
       If the iterator is not able to fetch a new message in over a minute,
       `undefined` will be returned
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getMessageIterator(): AsyncIterableIterator<ServiceBusMessage>'
@@ -148,7 +141,6 @@ methods:
       [Session
       State](https://docs.microsoft.com/en-us/azure/service-bus-messaging/message-sessions#message-session-state)
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getState(): Promise<any>'
@@ -164,7 +156,6 @@ methods:
       When this returns true, new `registerMessageHandler()` or
       `receiveMessages()` calls cannot be made.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function isReceivingMessages(): boolean'
@@ -191,7 +182,6 @@ methods:
       It cannot be `Completed/Abandoned/Deferred/Deadlettered`. The lock on it
       cannot be renewed.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -219,7 +209,6 @@ methods:
       It cannot be `Completed/Abandoned/Deferred/Deadlettered`. The lock on it
       cannot be renewed.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -242,7 +231,6 @@ methods:
       Returns a promise that resolves to a deferred message identified by the
       given `sequenceNumber`.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -267,7 +255,6 @@ methods:
       Returns a promise that resolves to an array of deferred messages
       identified by given `sequenceNumbers`.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -302,7 +289,6 @@ methods:
 
       property on the receiver.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -346,7 +332,6 @@ methods:
 
       property on the receiver.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -395,7 +380,6 @@ methods:
         before the session lock expires, then the message lands back in the Queue/Subscription for the next
         receive operation.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function renewSessionLock(): Promise<Date>'
@@ -411,7 +395,6 @@ methods:
       [Session
       State](https://docs.microsoft.com/en-us/azure/service-bus-messaging/message-sessions#message-session-state)
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function setState(state: any): Promise<void>'
