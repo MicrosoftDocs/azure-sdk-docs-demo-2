@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: ChangePointDetectRequest
-uid: '@azure/cognitiveservices-anomalydetector.ChangePointDetectRequest'
-package: '@azure/cognitiveservices-anomalydetector'
+uid: '@azure/cognitiveservices-anomalydetector - v2.1.0.ChangePointDetectRequest'
+package: '@azure/cognitiveservices-anomalydetector - v2.1.0'
 summary: An interface representing ChangePointDetectRequest.
 fullName: ChangePointDetectRequest
 remarks: ''
@@ -10,8 +10,9 @@ type: interface
 properties:
   - name: customInterval
     uid: >-
-      @azure/cognitiveservices-anomalydetector.ChangePointDetectRequest.customInterval
-    package: '@azure/cognitiveservices-anomalydetector'
+      @azure/cognitiveservices-anomalydetector -
+      v2.1.0.ChangePointDetectRequest.customInterval
+    package: '@azure/cognitiveservices-anomalydetector - v2.1.0'
     summary: >-
       Custom Interval is used to set non-standard time interval, for example, if
       the series is 5
@@ -28,8 +29,9 @@ properties:
         type: undefined | number
   - name: granularity
     uid: >-
-      @azure/cognitiveservices-anomalydetector.ChangePointDetectRequest.granularity
-    package: '@azure/cognitiveservices-anomalydetector'
+      @azure/cognitiveservices-anomalydetector -
+      v2.1.0.ChangePointDetectRequest.granularity
+    package: '@azure/cognitiveservices-anomalydetector - v2.1.0'
     summary: >-
       Can only be one of yearly, monthly, weekly, daily, hourly, minutely or
       secondly. Granularity
@@ -45,10 +47,14 @@ properties:
       content: 'granularity: Granularity'
       return:
         description: ''
-        type: <xref uid="@azure/cognitiveservices-anomalydetector.Granularity" />
+        type: >-
+          @azure/cognitiveservices-anomalydetector - <xref
+          uid="v2.1.0.Granularity" />
   - name: period
-    uid: '@azure/cognitiveservices-anomalydetector.ChangePointDetectRequest.period'
-    package: '@azure/cognitiveservices-anomalydetector'
+    uid: >-
+      @azure/cognitiveservices-anomalydetector -
+      v2.1.0.ChangePointDetectRequest.period
+    package: '@azure/cognitiveservices-anomalydetector - v2.1.0'
     summary: >-
       Optional argument, periodic value of a time series. If the value is null
       or does not present,
@@ -63,8 +69,10 @@ properties:
         description: ''
         type: undefined | number
   - name: series
-    uid: '@azure/cognitiveservices-anomalydetector.ChangePointDetectRequest.series'
-    package: '@azure/cognitiveservices-anomalydetector'
+    uid: >-
+      @azure/cognitiveservices-anomalydetector -
+      v2.1.0.ChangePointDetectRequest.series
+    package: '@azure/cognitiveservices-anomalydetector - v2.1.0'
     summary: >-
       Time series data points. Points should be sorted by timestamp in ascending
       order to match the
@@ -77,11 +85,14 @@ properties:
       content: 'series: Point[]'
       return:
         description: ''
-        type: '<xref uid="@azure/cognitiveservices-anomalydetector.Point" />[]'
+        type: >-
+          @azure/cognitiveservices-anomalydetector - <xref uid="v2.1.0.Point"
+          />[]
   - name: stableTrendWindow
     uid: >-
-      @azure/cognitiveservices-anomalydetector.ChangePointDetectRequest.stableTrendWindow
-    package: '@azure/cognitiveservices-anomalydetector'
+      @azure/cognitiveservices-anomalydetector -
+      v2.1.0.ChangePointDetectRequest.stableTrendWindow
+    package: '@azure/cognitiveservices-anomalydetector - v2.1.0'
     summary: >-
       Optional argument, advanced model parameter, a default stableTrendWindow
       will be used in
@@ -97,8 +108,9 @@ properties:
         type: undefined | number
   - name: threshold
     uid: >-
-      @azure/cognitiveservices-anomalydetector.ChangePointDetectRequest.threshold
-    package: '@azure/cognitiveservices-anomalydetector'
+      @azure/cognitiveservices-anomalydetector -
+      v2.1.0.ChangePointDetectRequest.threshold
+    package: '@azure/cognitiveservices-anomalydetector - v2.1.0'
     summary: >-
       Optional argument, advanced model parameter, between 0.0-1.0, the lower
       the value is, the

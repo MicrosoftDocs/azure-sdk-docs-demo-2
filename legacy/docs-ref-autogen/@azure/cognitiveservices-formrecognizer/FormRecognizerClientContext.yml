@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: FormRecognizerClientContext
-uid: '@azure/cognitiveservices-formrecognizer.FormRecognizerClientContext'
-package: '@azure/cognitiveservices-formrecognizer'
+uid: '@azure/cognitiveservices-formrecognizer - v2.0.1.FormRecognizerClientContext'
+package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
 summary: ''
 fullName: FormRecognizerClientContext
 remarks: ''
@@ -12,8 +12,9 @@ constructors:
       FormRecognizerClientContext(ServiceClientCredentials, string,
       msRest.ServiceClientOptions)
     uid: >-
-      @azure/cognitiveservices-formrecognizer.FormRecognizerClientContext.constructor
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormRecognizerClientContext.constructor
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: Initializes a new instance of the FormRecognizerClientContext class.
     remarks: ''
     isDeprecated: false
@@ -40,8 +41,9 @@ constructors:
 properties:
   - name: credentials
     uid: >-
-      @azure/cognitiveservices-formrecognizer.FormRecognizerClientContext.credentials
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormRecognizerClientContext.credentials
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: ''
     fullName: credentials
     remarks: ''
@@ -53,8 +55,9 @@ properties:
         type: ServiceClientCredentials
   - name: endpoint
     uid: >-
-      @azure/cognitiveservices-formrecognizer.FormRecognizerClientContext.endpoint
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormRecognizerClientContext.endpoint
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: ''
     fullName: endpoint
     remarks: ''
@@ -69,8 +72,9 @@ inheritedMethods:
       sendOperationRequest(OperationArguments, OperationSpec,
       ServiceCallback<any>)
     uid: >-
-      @azure/cognitiveservices-formrecognizer.FormRecognizerClientContext.sendOperationRequest
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormRecognizerClientContext.sendOperationRequest
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
     isDeprecated: false
@@ -95,11 +99,14 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;RestResponse&gt;
-    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendOperationRequest
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [ServiceClient.sendOperationRequest](xref:ServiceClient.sendOperationRequest)
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
     uid: >-
-      @azure/cognitiveservices-formrecognizer.FormRecognizerClientContext.sendRequest
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormRecognizerClientContext.sendRequest
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: Send the provided httpRequest.
     remarks: ''
     isDeprecated: false
@@ -114,5 +121,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;HttpOperationResponse&gt;
-    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendRequest
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [ServiceClient.sendRequest](xref:ServiceClient.sendRequest)
 extends: ServiceClient

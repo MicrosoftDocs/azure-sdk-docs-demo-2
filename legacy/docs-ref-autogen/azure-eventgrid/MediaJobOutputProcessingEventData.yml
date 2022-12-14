@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: MediaJobOutputProcessingEventData
-uid: azure-eventgrid.MediaJobOutputProcessingEventData
-package: azure-eventgrid
+uid: azure-eventgrid - v1.6.0.MediaJobOutputProcessingEventData
+package: azure-eventgrid - v1.6.0
 summary: ''
 fullName: MediaJobOutputProcessingEventData
 remarks: ''
@@ -9,8 +9,10 @@ isDeprecated: false
 type: interface
 inheritedProperties:
   - name: jobCorrelationData
-    uid: azure-eventgrid.MediaJobOutputProcessingEventData.jobCorrelationData
-    package: azure-eventgrid
+    uid: >-
+      azure-eventgrid -
+      v1.6.0.MediaJobOutputProcessingEventData.jobCorrelationData
+    package: azure-eventgrid - v1.6.0
     summary: ''
     fullName: jobCorrelationData
     remarks: ''
@@ -22,10 +24,11 @@ inheritedProperties:
         type: '[key: string]\: string'
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [MediaJobOutputStateChangeEventData.jobCorrelationData](xref:azure-eventgrid.MediaJobOutputStateChangeEventData.jobCorrelationData)
+      [MediaJobOutputStateChangeEventData.jobCorrelationData](xref:azure-eventgrid
+      - v1.6.0.MediaJobOutputStateChangeEventData.jobCorrelationData)
   - name: output
-    uid: azure-eventgrid.MediaJobOutputProcessingEventData.output
-    package: azure-eventgrid
+    uid: azure-eventgrid - v1.6.0.MediaJobOutputProcessingEventData.output
+    package: azure-eventgrid - v1.6.0
     summary: ''
     fullName: output
     remarks: ''
@@ -34,13 +37,14 @@ inheritedProperties:
       content: 'output?: MediaJobOutput'
       return:
         description: ''
-        type: <xref uid="azure-eventgrid.MediaJobOutput" />
+        type: azure-eventgrid - <xref uid="v1.6.0.MediaJobOutput" />
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [MediaJobOutputStateChangeEventData.output](xref:azure-eventgrid.MediaJobOutputStateChangeEventData.output)
+      [MediaJobOutputStateChangeEventData.output](xref:azure-eventgrid -
+      v1.6.0.MediaJobOutputStateChangeEventData.output)
   - name: previousState
-    uid: azure-eventgrid.MediaJobOutputProcessingEventData.previousState
-    package: azure-eventgrid
+    uid: azure-eventgrid - v1.6.0.MediaJobOutputProcessingEventData.previousState
+    package: azure-eventgrid - v1.6.0
     summary: ''
     fullName: previousState
     remarks: ''
@@ -52,5 +56,6 @@ inheritedProperties:
         type: string
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [MediaJobOutputStateChangeEventData.previousState](xref:azure-eventgrid.MediaJobOutputStateChangeEventData.previousState)
-extends: <xref uid="azure-eventgrid.MediaJobOutputStateChangeEventData" />
+      [MediaJobOutputStateChangeEventData.previousState](xref:azure-eventgrid -
+      v1.6.0.MediaJobOutputStateChangeEventData.previousState)
+extends: azure-eventgrid - <xref uid="v1.6.0.MediaJobOutputStateChangeEventData" />

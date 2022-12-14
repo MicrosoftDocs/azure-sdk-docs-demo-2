@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: Client
-uid: '@azure/service-bus.Client'
-package: '@azure/service-bus'
+uid: '@azure/service-bus - v1.1.10.Client'
+package: '@azure/service-bus - v1.1.10'
 summary: Interface for Queue/Topic/Subscription clients
 fullName: Client
 remarks: ''
@@ -9,8 +9,8 @@ isDeprecated: false
 type: interface
 properties:
   - name: entityPath
-    uid: '@azure/service-bus.Client.entityPath'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.Client.entityPath'
+    package: '@azure/service-bus - v1.1.10'
     summary: The path for the Service Bus entity for which this client is created.
     fullName: entityPath
     remarks: ''
@@ -21,8 +21,8 @@ properties:
         description: ''
         type: string
   - name: id
-    uid: '@azure/service-bus.Client.id'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.Client.id'
+    package: '@azure/service-bus - v1.1.10'
     summary: A unique identifier for this client.
     fullName: id
     remarks: ''
@@ -34,8 +34,8 @@ properties:
         type: string
 methods:
   - name: close()
-    uid: '@azure/service-bus.Client.close'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.Client.close'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       Closes the client along with all senders and receivers created using the
       client.

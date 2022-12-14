@@ -1,8 +1,9 @@
 ### YamlMime:TSType
 name: TextAnalyticsClientDetectLanguageOptionalParams
 uid: >-
-  @azure/cognitiveservices-textanalytics.TextAnalyticsClientDetectLanguageOptionalParams
-package: '@azure/cognitiveservices-textanalytics'
+  @azure/cognitiveservices-textanalytics -
+  v4.0.0.TextAnalyticsClientDetectLanguageOptionalParams
+package: '@azure/cognitiveservices-textanalytics - v4.0.0'
 summary: Optional Parameters.
 fullName: TextAnalyticsClientDetectLanguageOptionalParams
 remarks: ''
@@ -11,8 +12,9 @@ type: interface
 properties:
   - name: languageBatchInput
     uid: >-
-      @azure/cognitiveservices-textanalytics.TextAnalyticsClientDetectLanguageOptionalParams.languageBatchInput
-    package: '@azure/cognitiveservices-textanalytics'
+      @azure/cognitiveservices-textanalytics -
+      v4.0.0.TextAnalyticsClientDetectLanguageOptionalParams.languageBatchInput
+    package: '@azure/cognitiveservices-textanalytics - v4.0.0'
     summary: Collection of documents to analyze.
     fullName: languageBatchInput
     remarks: ''
@@ -22,12 +24,13 @@ properties:
       return:
         description: ''
         type: >-
-          <xref uid="@azure/cognitiveservices-textanalytics.LanguageBatchInput"
-          />
+          @azure/cognitiveservices-textanalytics - <xref
+          uid="v4.0.0.LanguageBatchInput" />
   - name: showStats
     uid: >-
-      @azure/cognitiveservices-textanalytics.TextAnalyticsClientDetectLanguageOptionalParams.showStats
-    package: '@azure/cognitiveservices-textanalytics'
+      @azure/cognitiveservices-textanalytics -
+      v4.0.0.TextAnalyticsClientDetectLanguageOptionalParams.showStats
+    package: '@azure/cognitiveservices-textanalytics - v4.0.0'
     summary: >-
       (optional) if set to true, response will contain input and document level
       statistics.
@@ -42,8 +45,9 @@ properties:
 inheritedProperties:
   - name: abortSignal
     uid: >-
-      @azure/cognitiveservices-textanalytics.TextAnalyticsClientDetectLanguageOptionalParams.abortSignal
-    package: '@azure/cognitiveservices-textanalytics'
+      @azure/cognitiveservices-textanalytics -
+      v4.0.0.TextAnalyticsClientDetectLanguageOptionalParams.abortSignal
+    package: '@azure/cognitiveservices-textanalytics - v4.0.0'
     summary: The signal which can be used to abort requests.
     fullName: abortSignal
     remarks: ''
@@ -53,11 +57,14 @@ inheritedProperties:
       return:
         description: ''
         type: AbortSignalLike
-    inheritanceDescription: <b>Inherited From</b> RequestOptionsBase.abortSignal
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [RequestOptionsBase.abortSignal](xref:RequestOptionsBase.abortSignal)
   - name: customHeaders
     uid: >-
-      @azure/cognitiveservices-textanalytics.TextAnalyticsClientDetectLanguageOptionalParams.customHeaders
-    package: '@azure/cognitiveservices-textanalytics'
+      @azure/cognitiveservices-textanalytics -
+      v4.0.0.TextAnalyticsClientDetectLanguageOptionalParams.customHeaders
+    package: '@azure/cognitiveservices-textanalytics - v4.0.0'
     summary: |-
       {object} [customHeaders] User defined custom request headers that
       will be applied before the request is sent.
@@ -69,11 +76,14 @@ inheritedProperties:
       return:
         description: ''
         type: 'undefined | [key: string]: string'
-    inheritanceDescription: <b>Inherited From</b> RequestOptionsBase.customHeaders
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [RequestOptionsBase.customHeaders](xref:RequestOptionsBase.customHeaders)
   - name: onDownloadProgress
     uid: >-
-      @azure/cognitiveservices-textanalytics.TextAnalyticsClientDetectLanguageOptionalParams.onDownloadProgress
-    package: '@azure/cognitiveservices-textanalytics'
+      @azure/cognitiveservices-textanalytics -
+      v4.0.0.TextAnalyticsClientDetectLanguageOptionalParams.onDownloadProgress
+    package: '@azure/cognitiveservices-textanalytics - v4.0.0'
     summary: Callback which fires upon download progress.
     fullName: onDownloadProgress
     remarks: ''
@@ -85,11 +95,14 @@ inheritedProperties:
       return:
         description: ''
         type: 'undefined | (progress: TransferProgressEvent) =&gt; void'
-    inheritanceDescription: <b>Inherited From</b> RequestOptionsBase.onDownloadProgress
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [RequestOptionsBase.onDownloadProgress](xref:RequestOptionsBase.onDownloadProgress)
   - name: onUploadProgress
     uid: >-
-      @azure/cognitiveservices-textanalytics.TextAnalyticsClientDetectLanguageOptionalParams.onUploadProgress
-    package: '@azure/cognitiveservices-textanalytics'
+      @azure/cognitiveservices-textanalytics -
+      v4.0.0.TextAnalyticsClientDetectLanguageOptionalParams.onUploadProgress
+    package: '@azure/cognitiveservices-textanalytics - v4.0.0'
     summary: Callback which fires upon upload progress.
     fullName: onUploadProgress
     remarks: ''
@@ -99,11 +112,14 @@ inheritedProperties:
       return:
         description: ''
         type: 'undefined | (progress: TransferProgressEvent) =&gt; void'
-    inheritanceDescription: <b>Inherited From</b> RequestOptionsBase.onUploadProgress
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [RequestOptionsBase.onUploadProgress](xref:RequestOptionsBase.onUploadProgress)
   - name: timeout
     uid: >-
-      @azure/cognitiveservices-textanalytics.TextAnalyticsClientDetectLanguageOptionalParams.timeout
-    package: '@azure/cognitiveservices-textanalytics'
+      @azure/cognitiveservices-textanalytics -
+      v4.0.0.TextAnalyticsClientDetectLanguageOptionalParams.timeout
+    package: '@azure/cognitiveservices-textanalytics - v4.0.0'
     summary: >-
       The number of milliseconds a request can take before automatically being
       terminated.
@@ -115,5 +131,7 @@ inheritedProperties:
       return:
         description: ''
         type: undefined | number
-    inheritanceDescription: <b>Inherited From</b> RequestOptionsBase.timeout
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [RequestOptionsBase.timeout](xref:RequestOptionsBase.timeout)
 extends: RequestOptionsBase

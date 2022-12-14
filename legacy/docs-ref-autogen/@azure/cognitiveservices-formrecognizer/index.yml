@@ -1,57 +1,70 @@
 ### YamlMime:TSPackage
-uid: '@azure/cognitiveservices-formrecognizer'
-name: '@azure/cognitiveservices-formrecognizer'
+uid: '@azure/cognitiveservices-formrecognizer - v2.0.1'
+name: '@azure/cognitiveservices-formrecognizer - v2.0.1'
 summary: ''
 type: package
 classes:
-  - '@azure/cognitiveservices-formrecognizer.FormRecognizerClient'
-  - '@azure/cognitiveservices-formrecognizer.FormRecognizerClientContext'
+  - '@azure/cognitiveservices-formrecognizer - v2.0.1.FormRecognizerClient'
+  - '@azure/cognitiveservices-formrecognizer - v2.0.1.FormRecognizerClientContext'
 interfaces:
-  - '@azure/cognitiveservices-formrecognizer.AnalyzeResult'
-  - '@azure/cognitiveservices-formrecognizer.BatchReadReceiptHeaders'
-  - '@azure/cognitiveservices-formrecognizer.BatchReadReceiptInStreamHeaders'
-  - '@azure/cognitiveservices-formrecognizer.ComputerVisionError'
-  - '@azure/cognitiveservices-formrecognizer.ElementReference'
-  - '@azure/cognitiveservices-formrecognizer.ErrorInformation'
-  - '@azure/cognitiveservices-formrecognizer.ErrorResponse'
-  - '@azure/cognitiveservices-formrecognizer.ExtractedKeyValuePair'
-  - '@azure/cognitiveservices-formrecognizer.ExtractedPage'
-  - '@azure/cognitiveservices-formrecognizer.ExtractedTable'
-  - '@azure/cognitiveservices-formrecognizer.ExtractedTableColumn'
-  - '@azure/cognitiveservices-formrecognizer.ExtractedToken'
-  - '@azure/cognitiveservices-formrecognizer.FieldValue'
-  - '@azure/cognitiveservices-formrecognizer.FormDocumentReport'
-  - '@azure/cognitiveservices-formrecognizer.FormOperationError'
+  - '@azure/cognitiveservices-formrecognizer - v2.0.1.AnalyzeResult'
+  - '@azure/cognitiveservices-formrecognizer - v2.0.1.BatchReadReceiptHeaders'
   - >-
-    @azure/cognitiveservices-formrecognizer.FormRecognizerClientAnalyzeWithCustomModelOptionalParams
-  - '@azure/cognitiveservices-formrecognizer.ImageUrl'
-  - '@azure/cognitiveservices-formrecognizer.InnerError'
-  - '@azure/cognitiveservices-formrecognizer.KeysResult'
-  - '@azure/cognitiveservices-formrecognizer.Line'
-  - '@azure/cognitiveservices-formrecognizer.ModelResult'
-  - '@azure/cognitiveservices-formrecognizer.ModelsResult'
-  - '@azure/cognitiveservices-formrecognizer.NumberValue'
-  - '@azure/cognitiveservices-formrecognizer.ReadReceiptResult'
-  - '@azure/cognitiveservices-formrecognizer.StringValue'
-  - '@azure/cognitiveservices-formrecognizer.TextRecognitionResult'
-  - '@azure/cognitiveservices-formrecognizer.TrainRequest'
-  - '@azure/cognitiveservices-formrecognizer.TrainResult'
-  - '@azure/cognitiveservices-formrecognizer.TrainSourceFilter'
-  - '@azure/cognitiveservices-formrecognizer.UnderstandingResult'
-  - '@azure/cognitiveservices-formrecognizer.Word'
+    @azure/cognitiveservices-formrecognizer -
+    v2.0.1.BatchReadReceiptInStreamHeaders
+  - '@azure/cognitiveservices-formrecognizer - v2.0.1.ComputerVisionError'
+  - '@azure/cognitiveservices-formrecognizer - v2.0.1.ElementReference'
+  - '@azure/cognitiveservices-formrecognizer - v2.0.1.ErrorInformation'
+  - '@azure/cognitiveservices-formrecognizer - v2.0.1.ErrorResponse'
+  - '@azure/cognitiveservices-formrecognizer - v2.0.1.ExtractedKeyValuePair'
+  - '@azure/cognitiveservices-formrecognizer - v2.0.1.ExtractedPage'
+  - '@azure/cognitiveservices-formrecognizer - v2.0.1.ExtractedTable'
+  - '@azure/cognitiveservices-formrecognizer - v2.0.1.ExtractedTableColumn'
+  - '@azure/cognitiveservices-formrecognizer - v2.0.1.ExtractedToken'
+  - '@azure/cognitiveservices-formrecognizer - v2.0.1.FieldValue'
+  - '@azure/cognitiveservices-formrecognizer - v2.0.1.FormDocumentReport'
+  - '@azure/cognitiveservices-formrecognizer - v2.0.1.FormOperationError'
+  - >-
+    @azure/cognitiveservices-formrecognizer -
+    v2.0.1.FormRecognizerClientAnalyzeWithCustomModelOptionalParams
+  - '@azure/cognitiveservices-formrecognizer - v2.0.1.ImageUrl'
+  - '@azure/cognitiveservices-formrecognizer - v2.0.1.InnerError'
+  - '@azure/cognitiveservices-formrecognizer - v2.0.1.KeysResult'
+  - '@azure/cognitiveservices-formrecognizer - v2.0.1.Line'
+  - '@azure/cognitiveservices-formrecognizer - v2.0.1.ModelResult'
+  - '@azure/cognitiveservices-formrecognizer - v2.0.1.ModelsResult'
+  - '@azure/cognitiveservices-formrecognizer - v2.0.1.NumberValue'
+  - '@azure/cognitiveservices-formrecognizer - v2.0.1.ReadReceiptResult'
+  - '@azure/cognitiveservices-formrecognizer - v2.0.1.StringValue'
+  - '@azure/cognitiveservices-formrecognizer - v2.0.1.TextRecognitionResult'
+  - '@azure/cognitiveservices-formrecognizer - v2.0.1.TrainRequest'
+  - '@azure/cognitiveservices-formrecognizer - v2.0.1.TrainResult'
+  - '@azure/cognitiveservices-formrecognizer - v2.0.1.TrainSourceFilter'
+  - '@azure/cognitiveservices-formrecognizer - v2.0.1.UnderstandingResult'
+  - '@azure/cognitiveservices-formrecognizer - v2.0.1.Word'
 typeAliases:
-  - '@azure/cognitiveservices-formrecognizer.AnalyzeWithCustomModelResponse'
-  - '@azure/cognitiveservices-formrecognizer.BatchReadReceiptInStreamResponse'
-  - '@azure/cognitiveservices-formrecognizer.BatchReadReceiptResponse'
-  - '@azure/cognitiveservices-formrecognizer.FieldValueUnion'
-  - '@azure/cognitiveservices-formrecognizer.GetCustomModelResponse'
-  - '@azure/cognitiveservices-formrecognizer.GetCustomModelsResponse'
-  - '@azure/cognitiveservices-formrecognizer.GetExtractedKeysResponse'
-  - '@azure/cognitiveservices-formrecognizer.GetReadReceiptResultResponse'
-  - '@azure/cognitiveservices-formrecognizer.Status'
-  - '@azure/cognitiveservices-formrecognizer.Status1'
-  - '@azure/cognitiveservices-formrecognizer.Status2'
-  - '@azure/cognitiveservices-formrecognizer.TextOperationStatusCodes'
-  - '@azure/cognitiveservices-formrecognizer.TextRecognitionResultConfidenceClass'
-  - '@azure/cognitiveservices-formrecognizer.TextRecognitionResultDimensionUnit'
-  - '@azure/cognitiveservices-formrecognizer.TrainCustomModelResponse'
+  - >-
+    @azure/cognitiveservices-formrecognizer -
+    v2.0.1.AnalyzeWithCustomModelResponse
+  - >-
+    @azure/cognitiveservices-formrecognizer -
+    v2.0.1.BatchReadReceiptInStreamResponse
+  - '@azure/cognitiveservices-formrecognizer - v2.0.1.BatchReadReceiptResponse'
+  - '@azure/cognitiveservices-formrecognizer - v2.0.1.FieldValueUnion'
+  - '@azure/cognitiveservices-formrecognizer - v2.0.1.GetCustomModelResponse'
+  - '@azure/cognitiveservices-formrecognizer - v2.0.1.GetCustomModelsResponse'
+  - '@azure/cognitiveservices-formrecognizer - v2.0.1.GetExtractedKeysResponse'
+  - >-
+    @azure/cognitiveservices-formrecognizer -
+    v2.0.1.GetReadReceiptResultResponse
+  - '@azure/cognitiveservices-formrecognizer - v2.0.1.Status'
+  - '@azure/cognitiveservices-formrecognizer - v2.0.1.Status1'
+  - '@azure/cognitiveservices-formrecognizer - v2.0.1.Status2'
+  - '@azure/cognitiveservices-formrecognizer - v2.0.1.TextOperationStatusCodes'
+  - >-
+    @azure/cognitiveservices-formrecognizer -
+    v2.0.1.TextRecognitionResultConfidenceClass
+  - >-
+    @azure/cognitiveservices-formrecognizer -
+    v2.0.1.TextRecognitionResultDimensionUnit
+  - '@azure/cognitiveservices-formrecognizer - v2.0.1.TrainCustomModelResponse'

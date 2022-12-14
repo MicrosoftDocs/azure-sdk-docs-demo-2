@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: SubscriptionClient
-uid: '@azure/service-bus.SubscriptionClient'
-package: '@azure/service-bus'
+uid: '@azure/service-bus - v1.1.10.SubscriptionClient'
+package: '@azure/service-bus - v1.1.10'
 summary: >-
   Describes the client that allows interacting with a Service Bus Subscription.
 
@@ -15,8 +15,8 @@ isDeprecated: false
 type: class
 properties:
   - name: defaultRuleName
-    uid: '@azure/service-bus.SubscriptionClient.defaultRuleName'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SubscriptionClient.defaultRuleName'
+    package: '@azure/service-bus - v1.1.10'
     summary: The name of the default rule on the subscription.
     fullName: defaultRuleName
     remarks: ''
@@ -27,8 +27,8 @@ properties:
         description: ''
         type: string
   - name: entityPath
-    uid: '@azure/service-bus.SubscriptionClient.entityPath'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SubscriptionClient.entityPath'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The path for the Service Bus Subscription for which this client is
       created.
@@ -41,8 +41,8 @@ properties:
         description: ''
         type: string
   - name: id
-    uid: '@azure/service-bus.SubscriptionClient.id'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SubscriptionClient.id'
+    package: '@azure/service-bus - v1.1.10'
     summary: A unique identifier for this client.
     fullName: id
     remarks: ''
@@ -53,8 +53,8 @@ properties:
         description: ''
         type: string
   - name: subscriptionName
-    uid: '@azure/service-bus.SubscriptionClient.subscriptionName'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SubscriptionClient.subscriptionName'
+    package: '@azure/service-bus - v1.1.10'
     summary: The name of the Service Bus Subscription for which this client is created.
     fullName: subscriptionName
     remarks: ''
@@ -65,8 +65,8 @@ properties:
         description: ''
         type: string
   - name: topicName
-    uid: '@azure/service-bus.SubscriptionClient.topicName'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SubscriptionClient.topicName'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The name of the Service Bus Topic for whose Subscription, this client is
       created.
@@ -80,8 +80,8 @@ properties:
         type: string
 methods:
   - name: 'addRule(string, boolean | string | CorrelationFilter, undefined | string)'
-    uid: '@azure/service-bus.SubscriptionClient.addRule'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SubscriptionClient.addRule'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       Adds a rule on the subscription as defined by the given rule name, filter
       and action.
@@ -106,8 +106,8 @@ methods:
           description: Name of the rule
         - id: filter
           type: >-
-            boolean | string | <xref uid="@azure/service-bus.CorrelationFilter"
-            />
+            boolean | string | @azure/service-bus - <xref
+            uid="v1.1.10.CorrelationFilter" />
           description: >-
             A Boolean, SQL expression or a Correlation filter. For SQL Filter
             syntax, see
@@ -126,8 +126,8 @@ methods:
         description: ''
         type: Promise&lt;void&gt;
   - name: close()
-    uid: '@azure/service-bus.SubscriptionClient.close'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SubscriptionClient.close'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       Closes the AMQP link for the receivers created by this client.
 
@@ -143,8 +143,8 @@ methods:
         description: ''
         type: Promise&lt;void&gt;
   - name: createReceiver(ReceiveMode)
-    uid: '@azure/service-bus.SubscriptionClient.createReceiver'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SubscriptionClient.createReceiver'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       Creates a Receiver for receiving messages from a Subscription which does
       not have sessions enabled.
@@ -154,7 +154,7 @@ methods:
       content: 'function createReceiver(receiveMode: ReceiveMode): Receiver'
       parameters:
         - id: receiveMode
-          type: <xref uid="@azure/service-bus.ReceiveMode" />
+          type: '@azure/service-bus - <xref uid="v1.1.10.ReceiveMode" />'
           description: >
             An enum indicating the mode in which messages should be received.
             Possible
@@ -179,10 +179,10 @@ methods:
           not have
 
           sessions enabled.
-        type: <xref uid="@azure/service-bus.Receiver" />
+        type: '@azure/service-bus - <xref uid="v1.1.10.Receiver" />'
   - name: 'createReceiver(ReceiveMode, SessionReceiverOptions)'
-    uid: '@azure/service-bus.SubscriptionClient.createReceiver_1'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SubscriptionClient.createReceiver_1'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       Creates a Receiver for receiving messages from a session enabled
       Subscription. When no sessionId is
@@ -196,7 +196,7 @@ methods:
         SessionReceiverOptions): SessionReceiver
       parameters:
         - id: receiveMode
-          type: <xref uid="@azure/service-bus.ReceiveMode" />
+          type: '@azure/service-bus - <xref uid="v1.1.10.ReceiveMode" />'
           description: >-
             An enum indicating the mode in which messages should be received.
             Possible
@@ -216,7 +216,7 @@ methods:
 
             Service Bus.
         - id: sessionOptions
-          type: <xref uid="@azure/service-bus.SessionReceiverOptions" />
+          type: '@azure/service-bus - <xref uid="v1.1.10.SessionReceiverOptions" />'
           description: >
             Options to provide sessionId and duration of automatic lock renewal
             for
@@ -226,10 +226,10 @@ methods:
         description: >-
           SessionReceiver A receiver to receive from a session in the
           Subscription.
-        type: <xref uid="@azure/service-bus.SessionReceiver" />
+        type: '@azure/service-bus - <xref uid="v1.1.10.SessionReceiver" />'
   - name: getRules()
-    uid: '@azure/service-bus.SubscriptionClient.getRules'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SubscriptionClient.getRules'
+    package: '@azure/service-bus - v1.1.10'
     summary: Gets all rules associated with the subscription
     remarks: ''
     isDeprecated: false
@@ -237,10 +237,12 @@ methods:
       content: 'function getRules(): Promise<RuleDescription[]>'
       return:
         description: ''
-        type: 'Promise&lt;<xref uid="@azure/service-bus.RuleDescription" />[]&gt;'
+        type: >-
+          Promise&lt;@azure/service-bus - <xref uid="v1.1.10.RuleDescription"
+          />[]&gt;
   - name: peek(undefined | number)
-    uid: '@azure/service-bus.SubscriptionClient.peek'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SubscriptionClient.peek'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       Fetches the next batch of active messages (including deferred but not
       deadlettered messages).
@@ -267,10 +269,12 @@ methods:
           description: ''
       return:
         description: 'Promise<ReceivedSBMessage[]>'
-        type: 'Promise&lt;<xref uid="@azure/service-bus.ReceivedMessageInfo" />[]&gt;'
+        type: >-
+          Promise&lt;@azure/service-bus - <xref
+          uid="v1.1.10.ReceivedMessageInfo" />[]&gt;
   - name: 'peekBySequenceNumber(Long, undefined | number)'
-    uid: '@azure/service-bus.SubscriptionClient.peekBySequenceNumber'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SubscriptionClient.peekBySequenceNumber'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       Peeks the desired number of active messages (including deferred but not
       deadlettered messages)
@@ -297,10 +301,12 @@ methods:
           description: ''
       return:
         description: 'Promise<ReceivedSBMessage[]>'
-        type: 'Promise&lt;<xref uid="@azure/service-bus.ReceivedMessageInfo" />[]&gt;'
+        type: >-
+          Promise&lt;@azure/service-bus - <xref
+          uid="v1.1.10.ReceivedMessageInfo" />[]&gt;
   - name: removeRule(string)
-    uid: '@azure/service-bus.SubscriptionClient.removeRule'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SubscriptionClient.removeRule'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       Removes the rule on the subscription identified by the given rule name.
 

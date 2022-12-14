@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: TextAnalyticsClientContext
-uid: '@azure/cognitiveservices-textanalytics.TextAnalyticsClientContext'
-package: '@azure/cognitiveservices-textanalytics'
+uid: '@azure/cognitiveservices-textanalytics - v4.0.0.TextAnalyticsClientContext'
+package: '@azure/cognitiveservices-textanalytics - v4.0.0'
 summary: ''
 fullName: TextAnalyticsClientContext
 remarks: ''
@@ -12,8 +12,9 @@ constructors:
       TextAnalyticsClientContext(ServiceClientCredentials, string,
       msRest.ServiceClientOptions)
     uid: >-
-      @azure/cognitiveservices-textanalytics.TextAnalyticsClientContext.constructor
-    package: '@azure/cognitiveservices-textanalytics'
+      @azure/cognitiveservices-textanalytics -
+      v4.0.0.TextAnalyticsClientContext.constructor
+    package: '@azure/cognitiveservices-textanalytics - v4.0.0'
     summary: Initializes a new instance of the TextAnalyticsClientContext class.
     remarks: ''
     isDeprecated: false
@@ -40,8 +41,9 @@ constructors:
 properties:
   - name: credentials
     uid: >-
-      @azure/cognitiveservices-textanalytics.TextAnalyticsClientContext.credentials
-    package: '@azure/cognitiveservices-textanalytics'
+      @azure/cognitiveservices-textanalytics -
+      v4.0.0.TextAnalyticsClientContext.credentials
+    package: '@azure/cognitiveservices-textanalytics - v4.0.0'
     summary: ''
     fullName: credentials
     remarks: ''
@@ -52,8 +54,10 @@ properties:
         description: ''
         type: ServiceClientCredentials
   - name: endpoint
-    uid: '@azure/cognitiveservices-textanalytics.TextAnalyticsClientContext.endpoint'
-    package: '@azure/cognitiveservices-textanalytics'
+    uid: >-
+      @azure/cognitiveservices-textanalytics -
+      v4.0.0.TextAnalyticsClientContext.endpoint
+    package: '@azure/cognitiveservices-textanalytics - v4.0.0'
     summary: ''
     fullName: endpoint
     remarks: ''
@@ -68,8 +72,9 @@ inheritedMethods:
       sendOperationRequest(OperationArguments, OperationSpec,
       ServiceCallback<any>)
     uid: >-
-      @azure/cognitiveservices-textanalytics.TextAnalyticsClientContext.sendOperationRequest
-    package: '@azure/cognitiveservices-textanalytics'
+      @azure/cognitiveservices-textanalytics -
+      v4.0.0.TextAnalyticsClientContext.sendOperationRequest
+    package: '@azure/cognitiveservices-textanalytics - v4.0.0'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
     isDeprecated: false
@@ -94,11 +99,14 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;RestResponse&gt;
-    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendOperationRequest
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [ServiceClient.sendOperationRequest](xref:ServiceClient.sendOperationRequest)
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
     uid: >-
-      @azure/cognitiveservices-textanalytics.TextAnalyticsClientContext.sendRequest
-    package: '@azure/cognitiveservices-textanalytics'
+      @azure/cognitiveservices-textanalytics -
+      v4.0.0.TextAnalyticsClientContext.sendRequest
+    package: '@azure/cognitiveservices-textanalytics - v4.0.0'
     summary: Send the provided httpRequest.
     remarks: ''
     isDeprecated: false
@@ -113,5 +121,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;HttpOperationResponse&gt;
-    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendRequest
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [ServiceClient.sendRequest](xref:ServiceClient.sendRequest)
 extends: ServiceClient

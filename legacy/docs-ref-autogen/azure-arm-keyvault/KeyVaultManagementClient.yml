@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: KeyVaultManagementClient
-uid: azure-arm-keyvault.KeyVaultManagementClient
-package: azure-arm-keyvault
+uid: azure-arm-keyvault - v1.2.0.KeyVaultManagementClient
+package: azure-arm-keyvault - v1.2.0
 summary: ''
 fullName: KeyVaultManagementClient
 remarks: ''
@@ -11,8 +11,8 @@ constructors:
   - name: >-
       KeyVaultManagementClient(ServiceClientCredentials, string, string,
       AzureServiceClientOptions)
-    uid: azure-arm-keyvault.KeyVaultManagementClient.constructor
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.KeyVaultManagementClient.constructor
+    package: azure-arm-keyvault - v1.2.0
     summary: Initializes a new instance of the KeyVaultManagementClient class.
     remarks: ''
     isDeprecated: false
@@ -40,8 +40,8 @@ constructors:
           description: ''
 properties:
   - name: acceptLanguage
-    uid: azure-arm-keyvault.KeyVaultManagementClient.acceptLanguage
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.KeyVaultManagementClient.acceptLanguage
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     fullName: acceptLanguage
     remarks: ''
@@ -52,8 +52,8 @@ properties:
         description: ''
         type: string
   - name: apiVersion
-    uid: azure-arm-keyvault.KeyVaultManagementClient.apiVersion
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.KeyVaultManagementClient.apiVersion
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     fullName: apiVersion
     remarks: ''
@@ -64,8 +64,8 @@ properties:
         description: ''
         type: string
   - name: credentials
-    uid: azure-arm-keyvault.KeyVaultManagementClient.credentials
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.KeyVaultManagementClient.credentials
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     fullName: credentials
     remarks: ''
@@ -76,8 +76,10 @@ properties:
         description: ''
         type: ServiceClientCredentials
   - name: generateClientRequestId
-    uid: azure-arm-keyvault.KeyVaultManagementClient.generateClientRequestId
-    package: azure-arm-keyvault
+    uid: >-
+      azure-arm-keyvault -
+      v1.2.0.KeyVaultManagementClient.generateClientRequestId
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     fullName: generateClientRequestId
     remarks: ''
@@ -89,8 +91,9 @@ properties:
         type: boolean
   - name: longRunningOperationRetryTimeout
     uid: >-
-      azure-arm-keyvault.KeyVaultManagementClient.longRunningOperationRetryTimeout
-    package: azure-arm-keyvault
+      azure-arm-keyvault -
+      v1.2.0.KeyVaultManagementClient.longRunningOperationRetryTimeout
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     fullName: longRunningOperationRetryTimeout
     remarks: ''
@@ -101,8 +104,8 @@ properties:
         description: ''
         type: number
   - name: operations
-    uid: azure-arm-keyvault.KeyVaultManagementClient.operations
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.KeyVaultManagementClient.operations
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     fullName: operations
     remarks: ''
@@ -111,10 +114,10 @@ properties:
       content: 'operations: Operations'
       return:
         description: ''
-        type: <xref uid="azure-arm-keyvault.Operations" />
+        type: azure-arm-keyvault - <xref uid="v1.2.0.Operations" />
   - name: subscriptionId
-    uid: azure-arm-keyvault.KeyVaultManagementClient.subscriptionId
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.KeyVaultManagementClient.subscriptionId
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     fullName: subscriptionId
     remarks: ''
@@ -125,8 +128,8 @@ properties:
         description: ''
         type: string
   - name: vaults
-    uid: azure-arm-keyvault.KeyVaultManagementClient.vaults
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.KeyVaultManagementClient.vaults
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     fullName: vaults
     remarks: ''
@@ -135,11 +138,11 @@ properties:
       content: 'vaults: Vaults'
       return:
         description: ''
-        type: <xref uid="azure-arm-keyvault.Vaults" />
+        type: azure-arm-keyvault - <xref uid="v1.2.0.Vaults" />
 inheritedMethods:
   - name: addUserAgentInfo(any)
-    uid: azure-arm-keyvault.KeyVaultManagementClient.addUserAgentInfo
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.KeyVaultManagementClient.addUserAgentInfo
+    package: azure-arm-keyvault - v1.2.0
     summary: Adds custom information to user agent header
     remarks: ''
     isDeprecated: false
@@ -150,13 +153,16 @@ inheritedMethods:
           type: any
           description: |
             information to be added to user agent header, as string.
-    inheritanceDescription: <b>Inherited From</b> ServiceClient.addUserAgentInfo
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [ServiceClient.addUserAgentInfo](xref:ServiceClient.addUserAgentInfo)
   - name: >-
       getLongRunningOperationResult<TResult>(HttpOperationResponse<TResult>,
       RequestOptions)
     uid: >-
-      azure-arm-keyvault.KeyVaultManagementClient.getLongRunningOperationResult_2
-    package: azure-arm-keyvault
+      azure-arm-keyvault -
+      v1.2.0.KeyVaultManagementClient.getLongRunningOperationResult_2
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -175,12 +181,16 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;TResult&gt;
-    inheritanceDescription: <b>Inherited From</b> AzureServiceClient.getLongRunningOperationResult
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [AzureServiceClient.getLongRunningOperationResult](xref:AzureServiceClient.getLongRunningOperationResult)
   - name: >-
       getLongRunningOperationResult<TResult>(HttpOperationResponse<TResult>,
       RequestOptions, ServiceCallback<TResult>)
-    uid: azure-arm-keyvault.KeyVaultManagementClient.getLongRunningOperationResult
-    package: azure-arm-keyvault
+    uid: >-
+      azure-arm-keyvault -
+      v1.2.0.KeyVaultManagementClient.getLongRunningOperationResult
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -199,13 +209,16 @@ inheritedMethods:
         - id: callback
           type: ServiceCallback&lt;TResult&gt;
           description: ''
-    inheritanceDescription: <b>Inherited From</b> AzureServiceClient.getLongRunningOperationResult
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [AzureServiceClient.getLongRunningOperationResult](xref:AzureServiceClient.getLongRunningOperationResult)
   - name: >-
       getLongRunningOperationResult<TResult>(HttpOperationResponse<TResult>,
       ServiceCallback<TResult>)
     uid: >-
-      azure-arm-keyvault.KeyVaultManagementClient.getLongRunningOperationResult_1
-    package: azure-arm-keyvault
+      azure-arm-keyvault -
+      v1.2.0.KeyVaultManagementClient.getLongRunningOperationResult_1
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -220,10 +233,12 @@ inheritedMethods:
         - id: callback
           type: ServiceCallback&lt;TResult&gt;
           description: ''
-    inheritanceDescription: <b>Inherited From</b> AzureServiceClient.getLongRunningOperationResult
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [AzureServiceClient.getLongRunningOperationResult](xref:AzureServiceClient.getLongRunningOperationResult)
   - name: getPackageJsonInfo(string)
-    uid: azure-arm-keyvault.KeyVaultManagementClient.getPackageJsonInfo
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.KeyVaultManagementClient.getPackageJsonInfo
+    package: azure-arm-keyvault - v1.2.0
     summary: >-
       Attempts to find package.json for the given azure nodejs package.
 
@@ -244,12 +259,16 @@ inheritedMethods:
       return:
         description: packageJsonInfo - "name" and "version" of the desired package.
         type: '{ name: string, version: string }'
-    inheritanceDescription: <b>Inherited From</b> ServiceClient.getPackageJsonInfo
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [ServiceClient.getPackageJsonInfo](xref:ServiceClient.getPackageJsonInfo)
   - name: >-
       sendLongRunningRequest<TResult>(LongRunningUrlBasedRequestPrepareOptions |
       LongRunningPathTemplateBasedRequestPrepareOptions)
-    uid: azure-arm-keyvault.KeyVaultManagementClient.sendLongRunningRequest_1
-    package: azure-arm-keyvault
+    uid: >-
+      azure-arm-keyvault -
+      v1.2.0.KeyVaultManagementClient.sendLongRunningRequest_1
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -267,13 +286,17 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;TResult&gt;
-    inheritanceDescription: <b>Inherited From</b> AzureServiceClient.sendLongRunningRequest
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [AzureServiceClient.sendLongRunningRequest](xref:AzureServiceClient.sendLongRunningRequest)
   - name: >-
       sendLongRunningRequest<TResult>(LongRunningUrlBasedRequestPrepareOptions |
       LongRunningPathTemplateBasedRequestPrepareOptions,
       ServiceCallback<TResult>)
-    uid: azure-arm-keyvault.KeyVaultManagementClient.sendLongRunningRequest
-    package: azure-arm-keyvault
+    uid: >-
+      azure-arm-keyvault -
+      v1.2.0.KeyVaultManagementClient.sendLongRunningRequest
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -292,13 +315,16 @@ inheritedMethods:
         - id: callback
           type: ServiceCallback&lt;TResult&gt;
           description: ''
-    inheritanceDescription: <b>Inherited From</b> AzureServiceClient.sendLongRunningRequest
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [AzureServiceClient.sendLongRunningRequest](xref:AzureServiceClient.sendLongRunningRequest)
   - name: >-
       sendLongRunningRequestWithHttpOperationResponse<TResult>(LongRunningUrlBasedRequestPrepareOptions
       | LongRunningPathTemplateBasedRequestPrepareOptions)
     uid: >-
-      azure-arm-keyvault.KeyVaultManagementClient.sendLongRunningRequestWithHttpOperationResponse
-    package: azure-arm-keyvault
+      azure-arm-keyvault -
+      v1.2.0.KeyVaultManagementClient.sendLongRunningRequestWithHttpOperationResponse
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -320,12 +346,12 @@ inheritedMethods:
         type: Promise&lt;HttpOperationResponse&lt;TResult&gt;&gt;
     inheritanceDescription: >-
       <b>Inherited From</b>
-      AzureServiceClient.sendLongRunningRequestWithHttpOperationResponse
+      [AzureServiceClient.sendLongRunningRequestWithHttpOperationResponse](xref:AzureServiceClient.sendLongRunningRequestWithHttpOperationResponse)
   - name: >-
       sendRequest<TResult>(PathTemplateBasedRequestPrepareOptions |
       UrlBasedRequestPrepareOptions)
-    uid: azure-arm-keyvault.KeyVaultManagementClient.sendRequest_1
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.KeyVaultManagementClient.sendRequest_1
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -343,12 +369,14 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;TResult&gt;
-    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendRequest
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [ServiceClient.sendRequest](xref:ServiceClient.sendRequest)
   - name: >-
       sendRequest<TResult>(PathTemplateBasedRequestPrepareOptions |
       UrlBasedRequestPrepareOptions, ServiceCallback<TResult>)
-    uid: azure-arm-keyvault.KeyVaultManagementClient.sendRequest
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.KeyVaultManagementClient.sendRequest
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -366,13 +394,16 @@ inheritedMethods:
         - id: callback
           type: ServiceCallback&lt;TResult&gt;
           description: ''
-    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendRequest
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [ServiceClient.sendRequest](xref:ServiceClient.sendRequest)
   - name: >-
       sendRequestWithHttpOperationResponse<TResult>(PathTemplateBasedRequestPrepareOptions
       | UrlBasedRequestPrepareOptions)
     uid: >-
-      azure-arm-keyvault.KeyVaultManagementClient.sendRequestWithHttpOperationResponse
-    package: azure-arm-keyvault
+      azure-arm-keyvault -
+      v1.2.0.KeyVaultManagementClient.sendRequestWithHttpOperationResponse
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -390,5 +421,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;HttpOperationResponse&lt;TResult&gt;&gt;
-    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendRequestWithHttpOperationResponse
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [ServiceClient.sendRequestWithHttpOperationResponse](xref:ServiceClient.sendRequestWithHttpOperationResponse)
 extends: AzureServiceClient

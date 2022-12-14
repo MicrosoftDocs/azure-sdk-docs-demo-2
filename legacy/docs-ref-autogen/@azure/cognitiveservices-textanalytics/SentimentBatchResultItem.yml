@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: SentimentBatchResultItem
-uid: '@azure/cognitiveservices-textanalytics.SentimentBatchResultItem'
-package: '@azure/cognitiveservices-textanalytics'
+uid: '@azure/cognitiveservices-textanalytics - v4.0.0.SentimentBatchResultItem'
+package: '@azure/cognitiveservices-textanalytics - v4.0.0'
 summary: An interface representing SentimentBatchResultItem.
 fullName: SentimentBatchResultItem
 remarks: ''
@@ -9,8 +9,10 @@ isDeprecated: false
 type: interface
 properties:
   - name: id
-    uid: '@azure/cognitiveservices-textanalytics.SentimentBatchResultItem.id'
-    package: '@azure/cognitiveservices-textanalytics'
+    uid: >-
+      @azure/cognitiveservices-textanalytics -
+      v4.0.0.SentimentBatchResultItem.id
+    package: '@azure/cognitiveservices-textanalytics - v4.0.0'
     summary: 'Unique, non-empty document identifier.'
     fullName: id
     remarks: ''
@@ -21,8 +23,10 @@ properties:
         description: ''
         type: undefined | string
   - name: score
-    uid: '@azure/cognitiveservices-textanalytics.SentimentBatchResultItem.score'
-    package: '@azure/cognitiveservices-textanalytics'
+    uid: >-
+      @azure/cognitiveservices-textanalytics -
+      v4.0.0.SentimentBatchResultItem.score
+    package: '@azure/cognitiveservices-textanalytics - v4.0.0'
     summary: >-
       A decimal number between 0 and 1 denoting the sentiment of the document. A
       score above 0.7
@@ -40,8 +44,10 @@ properties:
         description: ''
         type: undefined | number
   - name: statistics
-    uid: '@azure/cognitiveservices-textanalytics.SentimentBatchResultItem.statistics'
-    package: '@azure/cognitiveservices-textanalytics'
+    uid: >-
+      @azure/cognitiveservices-textanalytics -
+      v4.0.0.SentimentBatchResultItem.statistics
+    package: '@azure/cognitiveservices-textanalytics - v4.0.0'
     summary: >-
       (Optional) if showStats=true was specified in the request this field will
       contain information
@@ -55,5 +61,5 @@ properties:
       return:
         description: ''
         type: >-
-          <xref uid="@azure/cognitiveservices-textanalytics.DocumentStatistics"
-          />
+          @azure/cognitiveservices-textanalytics - <xref
+          uid="v4.0.0.DocumentStatistics" />

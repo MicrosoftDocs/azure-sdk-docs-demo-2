@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: SessionReceiver
-uid: '@azure/service-bus.SessionReceiver'
-package: '@azure/service-bus'
+uid: '@azure/service-bus - v1.1.10.SessionReceiver'
+package: '@azure/service-bus - v1.1.10'
 summary: >-
   The SessionReceiver class can be used to receive messages from a session
   enabled Queue or
@@ -21,8 +21,8 @@ isDeprecated: false
 type: class
 properties:
   - name: isClosed
-    uid: '@azure/service-bus.SessionReceiver.isClosed'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SessionReceiver.isClosed'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       Returns `true` if the receiver is closed. This can happen either because
       the receiver
@@ -37,8 +37,8 @@ properties:
         description: ''
         type: boolean
   - name: receiveMode
-    uid: '@azure/service-bus.SessionReceiver.receiveMode'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SessionReceiver.receiveMode'
+    package: '@azure/service-bus - v1.1.10'
     summary: Denotes receiveMode of this receiver.
     fullName: receiveMode
     remarks: ''
@@ -47,10 +47,10 @@ properties:
       content: ReceiveMode receiveMode
       return:
         description: ''
-        type: <xref uid="@azure/service-bus.ReceiveMode" />
+        type: '@azure/service-bus - <xref uid="v1.1.10.ReceiveMode" />'
   - name: sessionId
-    uid: '@azure/service-bus.SessionReceiver.sessionId'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SessionReceiver.sessionId'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The id of the session from which this receiver will receive messages.
 
@@ -65,8 +65,8 @@ properties:
         description: ''
         type: string | undefined
   - name: sessionLockedUntilUtc
-    uid: '@azure/service-bus.SessionReceiver.sessionLockedUntilUtc'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SessionReceiver.sessionLockedUntilUtc'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The time in UTC until which the session is locked.
 
@@ -88,8 +88,8 @@ properties:
         type: Date | undefined
 methods:
   - name: close()
-    uid: '@azure/service-bus.SessionReceiver.close'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SessionReceiver.close'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       Closes the underlying AMQP receiver link.
 
@@ -107,8 +107,8 @@ methods:
         description: ''
         type: Promise&lt;void&gt;
   - name: getMessageIterator()
-    uid: '@azure/service-bus.SessionReceiver.getMessageIterator'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SessionReceiver.getMessageIterator'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       Gets an async iterator over messages from the receiver.
 
@@ -130,11 +130,11 @@ methods:
       return:
         description: ''
         type: >-
-          AsyncIterableIterator&lt;<xref
-          uid="@azure/service-bus.ServiceBusMessage" />&gt;
+          AsyncIterableIterator&lt;@azure/service-bus - <xref
+          uid="v1.1.10.ServiceBusMessage" />&gt;
   - name: getState()
-    uid: '@azure/service-bus.SessionReceiver.getState'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SessionReceiver.getState'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       Gets the state of the Session. For more on session states, see
 
@@ -148,8 +148,8 @@ methods:
         description: Promise<any> The state of that session
         type: Promise&lt;any&gt;
   - name: isReceivingMessages()
-    uid: '@azure/service-bus.SessionReceiver.isReceivingMessages'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SessionReceiver.isReceivingMessages'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       Indicates whether the receiver is currently receiving messages or not.
 
@@ -163,8 +163,8 @@ methods:
         description: ''
         type: boolean
   - name: peek(undefined | number)
-    uid: '@azure/service-bus.SessionReceiver.peek'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SessionReceiver.peek'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       Fetches the next batch of active messages (including deferred but not
       deadlettered messages) in
@@ -193,10 +193,12 @@ methods:
           description: The maximum number of messages to peek. Default value `1`.
       return:
         description: 'Promise<ReceivedMessageInfo[]>'
-        type: 'Promise&lt;<xref uid="@azure/service-bus.ReceivedMessageInfo" />[]&gt;'
+        type: >-
+          Promise&lt;@azure/service-bus - <xref
+          uid="v1.1.10.ReceivedMessageInfo" />[]&gt;
   - name: 'peekBySequenceNumber(Long, undefined | number)'
-    uid: '@azure/service-bus.SessionReceiver.peekBySequenceNumber'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SessionReceiver.peekBySequenceNumber'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       Peeks the desired number of active messages (including deferred but not
       deadlettered messages)
@@ -223,10 +225,12 @@ methods:
           description: ''
       return:
         description: 'Promise<ReceivedSBMessage[]>'
-        type: 'Promise&lt;<xref uid="@azure/service-bus.ReceivedMessageInfo" />[]&gt;'
+        type: >-
+          Promise&lt;@azure/service-bus - <xref
+          uid="v1.1.10.ReceivedMessageInfo" />[]&gt;
   - name: receiveDeferredMessage(Long)
-    uid: '@azure/service-bus.SessionReceiver.receiveDeferredMessage'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SessionReceiver.receiveDeferredMessage'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       Returns a promise that resolves to a deferred message identified by the
       given `sequenceNumber`.
@@ -246,11 +250,11 @@ methods:
           - Returns `Message` identified by sequence number.
           - Returns `undefined` if no such message is found.
         type: >-
-          Promise&lt;<xref uid="@azure/service-bus.ServiceBusMessage" /> |
-          undefined&gt;
+          Promise&lt;@azure/service-bus - <xref uid="v1.1.10.ServiceBusMessage"
+          /> | undefined&gt;
   - name: 'receiveDeferredMessages(Long[])'
-    uid: '@azure/service-bus.SessionReceiver.receiveDeferredMessages'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SessionReceiver.receiveDeferredMessages'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       Returns a promise that resolves to an array of deferred messages
       identified by given `sequenceNumbers`.
@@ -271,10 +275,12 @@ methods:
           Promise<ServiceBusMessage[]>
           - Returns a list of messages identified by the given sequenceNumbers.
           - Returns an empty list if no messages are found.
-        type: 'Promise&lt;<xref uid="@azure/service-bus.ServiceBusMessage" />[]&gt;'
+        type: >-
+          Promise&lt;@azure/service-bus - <xref uid="v1.1.10.ServiceBusMessage"
+          />[]&gt;
   - name: 'receiveMessages(number, undefined | number)'
-    uid: '@azure/service-bus.SessionReceiver.receiveMessages'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SessionReceiver.receiveMessages'
+    package: '@azure/service-bus - v1.1.10'
     summary: >
       Returns a promise that resolves to an array of messages based on given
       count and timeout over
@@ -312,10 +318,12 @@ methods:
         description: >-
           Promise<ServiceBusMessage[]> A promise that resolves with an array of
           Message objects.
-        type: 'Promise&lt;<xref uid="@azure/service-bus.ServiceBusMessage" />[]&gt;'
+        type: >-
+          Promise&lt;@azure/service-bus - <xref uid="v1.1.10.ServiceBusMessage"
+          />[]&gt;
   - name: 'registerMessageHandler(OnMessage, OnError, SessionMessageHandlerOptions)'
-    uid: '@azure/service-bus.SessionReceiver.registerMessageHandler'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SessionReceiver.registerMessageHandler'
+    package: '@azure/service-bus - v1.1.10'
     summary: >
       Registers handlers to deal with the incoming stream of messages over an
       AMQP receiver link
@@ -339,15 +347,17 @@ methods:
         options?: SessionMessageHandlerOptions)
       parameters:
         - id: onMessage
-          type: <xref uid="@azure/service-bus.OnMessage" />
+          type: '@azure/service-bus - <xref uid="v1.1.10.OnMessage" />'
           description: Handler for processing each incoming message.
         - id: onError
-          type: <xref uid="@azure/service-bus.OnError" />
+          type: '@azure/service-bus - <xref uid="v1.1.10.OnError" />'
           description: >-
             Handler for any error that occurs while receiving or processing
             messages.
         - id: options
-          type: <xref uid="@azure/service-bus.SessionMessageHandlerOptions" />
+          type: >-
+            @azure/service-bus - <xref
+            uid="v1.1.10.SessionMessageHandlerOptions" />
           description: >
             Options to control whether messages should be automatically
             completed
@@ -363,8 +373,8 @@ methods:
 
             before closing the receiver.
   - name: renewSessionLock()
-    uid: '@azure/service-bus.SessionReceiver.renewSessionLock'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SessionReceiver.renewSessionLock'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       Renews the lock on the session for the duration as specified during the
       Queue/Subscription
@@ -387,8 +397,8 @@ methods:
         description: Promise<Date> - New lock token expiry date and time in UTC format.
         type: Promise&lt;Date&gt;
   - name: setState(any)
-    uid: '@azure/service-bus.SessionReceiver.setState'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SessionReceiver.setState'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       Sets the state on the Session. For more on session states, see
 

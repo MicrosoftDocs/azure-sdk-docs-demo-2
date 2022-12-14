@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: ModelsResult
-uid: '@azure/cognitiveservices-formrecognizer.ModelsResult'
-package: '@azure/cognitiveservices-formrecognizer'
+uid: '@azure/cognitiveservices-formrecognizer - v2.0.1.ModelsResult'
+package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
 summary: Result of query operation to fetch multiple models.
 fullName: ModelsResult
 remarks: ''
@@ -9,8 +9,10 @@ isDeprecated: false
 type: interface
 properties:
   - name: modelsProperty
-    uid: '@azure/cognitiveservices-formrecognizer.ModelsResult.modelsProperty'
-    package: '@azure/cognitiveservices-formrecognizer'
+    uid: >-
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.ModelsResult.modelsProperty
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: Collection of models.
     fullName: modelsProperty
     remarks: ''
@@ -19,4 +21,6 @@ properties:
       content: 'modelsProperty?: ModelResult[]'
       return:
         description: ''
-        type: '<xref uid="@azure/cognitiveservices-formrecognizer.ModelResult" />[]'
+        type: >-
+          @azure/cognitiveservices-formrecognizer - <xref
+          uid="v2.0.1.ModelResult" />[]

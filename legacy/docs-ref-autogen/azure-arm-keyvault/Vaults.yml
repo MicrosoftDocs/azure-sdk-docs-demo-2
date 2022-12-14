@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: Vaults
-uid: azure-arm-keyvault.Vaults
-package: azure-arm-keyvault
+uid: azure-arm-keyvault - v1.2.0.Vaults
+package: azure-arm-keyvault - v1.2.0
 summary: ''
 fullName: Vaults
 remarks: ''
@@ -11,8 +11,8 @@ methods:
   - name: >-
       beginCreateOrUpdate(string, string, VaultCreateOrUpdateParameters,
       ServiceCallback<Vault>)
-    uid: azure-arm-keyvault.Vaults.beginCreateOrUpdate_1
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.beginCreateOrUpdate_1
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -29,16 +29,20 @@ methods:
           type: string
           description: ''
         - id: parameters
-          type: <xref uid="azure-arm-keyvault.VaultCreateOrUpdateParameters" />
+          type: >-
+            azure-arm-keyvault - <xref
+            uid="v1.2.0.VaultCreateOrUpdateParameters" />
           description: ''
         - id: callback
-          type: ServiceCallback&lt;<xref uid="azure-arm-keyvault.Vault" />&gt;
+          type: >-
+            ServiceCallback&lt;azure-arm-keyvault - <xref uid="v1.2.0.Vault"
+            />&gt;
           description: ''
   - name: >-
       beginCreateOrUpdate(string, string, VaultCreateOrUpdateParameters, {
       customHeaders?: [key: string]: string })
-    uid: azure-arm-keyvault.Vaults.beginCreateOrUpdate
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.beginCreateOrUpdate
+    package: azure-arm-keyvault - v1.2.0
     summary: Create or update a key vault in the specified subscription.
     remarks: ''
     isDeprecated: false
@@ -58,7 +62,9 @@ methods:
           description: |
             Name of the vault
         - id: parameters
-          type: <xref uid="azure-arm-keyvault.VaultCreateOrUpdateParameters" />
+          type: >-
+            azure-arm-keyvault - <xref
+            uid="v1.2.0.VaultCreateOrUpdateParameters" />
           description: |
             Parameters to create or update the vault
         - id: options
@@ -80,17 +86,17 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {Vault} [result]   - The deserialized result object if an error did not occur.
-                               See <xref:azure-arm-keyvault.Vault> for more information.
+                               See <xref:azure-arm-keyvault - v1.2.0.Vault> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
                                {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
-        type: Promise&lt;<xref uid="azure-arm-keyvault.Vault" />&gt;
+        type: Promise&lt;azure-arm-keyvault - <xref uid="v1.2.0.Vault" />&gt;
   - name: >-
       beginCreateOrUpdate(string, string, VaultCreateOrUpdateParameters, {
       customHeaders?: [key: string]: string }, ServiceCallback<Vault>)
-    uid: azure-arm-keyvault.Vaults.beginCreateOrUpdate_2
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.beginCreateOrUpdate_2
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -108,19 +114,25 @@ methods:
           type: string
           description: ''
         - id: parameters
-          type: <xref uid="azure-arm-keyvault.VaultCreateOrUpdateParameters" />
+          type: >-
+            azure-arm-keyvault - <xref
+            uid="v1.2.0.VaultCreateOrUpdateParameters" />
           description: ''
         - id: options
           type: '{ customHeaders?: [key: string]: string }'
           description: ''
         - id: callback
-          type: ServiceCallback&lt;<xref uid="azure-arm-keyvault.Vault" />&gt;
+          type: >-
+            ServiceCallback&lt;azure-arm-keyvault - <xref uid="v1.2.0.Vault"
+            />&gt;
           description: ''
   - name: >-
       beginCreateOrUpdateWithHttpOperationResponse(string, string,
       VaultCreateOrUpdateParameters, { customHeaders?: [key: string]: string })
-    uid: azure-arm-keyvault.Vaults.beginCreateOrUpdateWithHttpOperationResponse
-    package: azure-arm-keyvault
+    uid: >-
+      azure-arm-keyvault -
+      v1.2.0.Vaults.beginCreateOrUpdateWithHttpOperationResponse
+    package: azure-arm-keyvault - v1.2.0
     summary: Create or update a key vault in the specified subscription.
     remarks: ''
     isDeprecated: false
@@ -141,7 +153,9 @@ methods:
           description: |
             Name of the vault
         - id: parameters
-          type: <xref uid="azure-arm-keyvault.VaultCreateOrUpdateParameters" />
+          type: >-
+            azure-arm-keyvault - <xref
+            uid="v1.2.0.VaultCreateOrUpdateParameters" />
           description: |
             Parameters to create or update the vault
         - id: options
@@ -150,11 +164,11 @@ methods:
       return:
         description: A promise is returned
         type: >-
-          Promise&lt;HttpOperationResponse&lt;<xref
-          uid="azure-arm-keyvault.Vault" />&gt;&gt;
+          Promise&lt;HttpOperationResponse&lt;azure-arm-keyvault - <xref
+          uid="v1.2.0.Vault" />&gt;&gt;
   - name: 'beginPurgeDeleted(string, string, ServiceCallback<void>)'
-    uid: azure-arm-keyvault.Vaults.beginPurgeDeleted_1
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.beginPurgeDeleted_1
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -175,8 +189,8 @@ methods:
   - name: >-
       beginPurgeDeleted(string, string, { customHeaders?: [key: string]: string
       })
-    uid: azure-arm-keyvault.Vaults.beginPurgeDeleted
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.beginPurgeDeleted
+    package: azure-arm-keyvault - v1.2.0
     summary: |-
       Permanently deletes the specified vault. aka Purges the deleted Azure key
       vault.
@@ -222,8 +236,8 @@ methods:
   - name: >-
       beginPurgeDeleted(string, string, { customHeaders?: [key: string]: string
       }, ServiceCallback<void>)
-    uid: azure-arm-keyvault.Vaults.beginPurgeDeleted_2
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.beginPurgeDeleted_2
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -248,8 +262,10 @@ methods:
   - name: >-
       beginPurgeDeletedWithHttpOperationResponse(string, string, {
       customHeaders?: [key: string]: string })
-    uid: azure-arm-keyvault.Vaults.beginPurgeDeletedWithHttpOperationResponse
-    package: azure-arm-keyvault
+    uid: >-
+      azure-arm-keyvault -
+      v1.2.0.Vaults.beginPurgeDeletedWithHttpOperationResponse
+    package: azure-arm-keyvault - v1.2.0
     summary: |-
       Permanently deletes the specified vault. aka Purges the deleted Azure key
       vault.
@@ -278,8 +294,8 @@ methods:
   - name: >-
       checkNameAvailability(VaultCheckNameAvailabilityParameters,
       ServiceCallback<CheckNameAvailabilityResult>)
-    uid: azure-arm-keyvault.Vaults.checkNameAvailability_1
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.checkNameAvailability_1
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -291,19 +307,19 @@ methods:
       parameters:
         - id: vaultName
           type: >-
-            <xref uid="azure-arm-keyvault.VaultCheckNameAvailabilityParameters"
-            />
+            azure-arm-keyvault - <xref
+            uid="v1.2.0.VaultCheckNameAvailabilityParameters" />
           description: ''
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref
-            uid="azure-arm-keyvault.CheckNameAvailabilityResult" />&gt;
+            ServiceCallback&lt;azure-arm-keyvault - <xref
+            uid="v1.2.0.CheckNameAvailabilityResult" />&gt;
           description: ''
   - name: >-
       checkNameAvailability(VaultCheckNameAvailabilityParameters, {
       customHeaders?: [key: string]: string })
-    uid: azure-arm-keyvault.Vaults.checkNameAvailability
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.checkNameAvailability
+    package: azure-arm-keyvault - v1.2.0
     summary: Checks that the vault name is valid and is not already in use.
     remarks: ''
     isDeprecated: false
@@ -315,8 +331,8 @@ methods:
       parameters:
         - id: vaultName
           type: >-
-            <xref uid="azure-arm-keyvault.VaultCheckNameAvailabilityParameters"
-            />
+            azure-arm-keyvault - <xref
+            uid="v1.2.0.VaultCheckNameAvailabilityParameters" />
           description: |
             The name of the vault.
         - id: options
@@ -338,21 +354,21 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {CheckNameAvailabilityResult} [result]   - The deserialized result object if an error did not occur.
-                               See <xref:azure-arm-keyvault.CheckNameAvailabilityResult> for more
+                               See <xref:azure-arm-keyvault - v1.2.0.CheckNameAvailabilityResult> for more
                                information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
                                {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
         type: >-
-          Promise&lt;<xref uid="azure-arm-keyvault.CheckNameAvailabilityResult"
-          />&gt;
+          Promise&lt;azure-arm-keyvault - <xref
+          uid="v1.2.0.CheckNameAvailabilityResult" />&gt;
   - name: >-
       checkNameAvailability(VaultCheckNameAvailabilityParameters, {
       customHeaders?: [key: string]: string },
       ServiceCallback<CheckNameAvailabilityResult>)
-    uid: azure-arm-keyvault.Vaults.checkNameAvailability_2
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.checkNameAvailability_2
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -365,22 +381,24 @@ methods:
       parameters:
         - id: vaultName
           type: >-
-            <xref uid="azure-arm-keyvault.VaultCheckNameAvailabilityParameters"
-            />
+            azure-arm-keyvault - <xref
+            uid="v1.2.0.VaultCheckNameAvailabilityParameters" />
           description: ''
         - id: options
           type: '{ customHeaders?: [key: string]: string }'
           description: ''
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref
-            uid="azure-arm-keyvault.CheckNameAvailabilityResult" />&gt;
+            ServiceCallback&lt;azure-arm-keyvault - <xref
+            uid="v1.2.0.CheckNameAvailabilityResult" />&gt;
           description: ''
   - name: >-
       checkNameAvailabilityWithHttpOperationResponse(VaultCheckNameAvailabilityParameters,
       { customHeaders?: [key: string]: string })
-    uid: azure-arm-keyvault.Vaults.checkNameAvailabilityWithHttpOperationResponse
-    package: azure-arm-keyvault
+    uid: >-
+      azure-arm-keyvault -
+      v1.2.0.Vaults.checkNameAvailabilityWithHttpOperationResponse
+    package: azure-arm-keyvault - v1.2.0
     summary: Checks that the vault name is valid and is not already in use.
     remarks: ''
     isDeprecated: false
@@ -393,8 +411,8 @@ methods:
       parameters:
         - id: vaultName
           type: >-
-            <xref uid="azure-arm-keyvault.VaultCheckNameAvailabilityParameters"
-            />
+            azure-arm-keyvault - <xref
+            uid="v1.2.0.VaultCheckNameAvailabilityParameters" />
           description: |
             The name of the vault.
         - id: options
@@ -403,13 +421,13 @@ methods:
       return:
         description: A promise is returned
         type: >-
-          Promise&lt;HttpOperationResponse&lt;<xref
-          uid="azure-arm-keyvault.CheckNameAvailabilityResult" />&gt;&gt;
+          Promise&lt;HttpOperationResponse&lt;azure-arm-keyvault - <xref
+          uid="v1.2.0.CheckNameAvailabilityResult" />&gt;&gt;
   - name: >-
       createOrUpdate(string, string, VaultCreateOrUpdateParameters,
       ServiceCallback<Vault>)
-    uid: azure-arm-keyvault.Vaults.createOrUpdate_1
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.createOrUpdate_1
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -426,16 +444,20 @@ methods:
           type: string
           description: ''
         - id: parameters
-          type: <xref uid="azure-arm-keyvault.VaultCreateOrUpdateParameters" />
+          type: >-
+            azure-arm-keyvault - <xref
+            uid="v1.2.0.VaultCreateOrUpdateParameters" />
           description: ''
         - id: callback
-          type: ServiceCallback&lt;<xref uid="azure-arm-keyvault.Vault" />&gt;
+          type: >-
+            ServiceCallback&lt;azure-arm-keyvault - <xref uid="v1.2.0.Vault"
+            />&gt;
           description: ''
   - name: >-
       createOrUpdate(string, string, VaultCreateOrUpdateParameters, {
       customHeaders?: [key: string]: string })
-    uid: azure-arm-keyvault.Vaults.createOrUpdate
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.createOrUpdate
+    package: azure-arm-keyvault - v1.2.0
     summary: Create or update a key vault in the specified subscription.
     remarks: ''
     isDeprecated: false
@@ -455,7 +477,9 @@ methods:
           description: |
             Name of the vault
         - id: parameters
-          type: <xref uid="azure-arm-keyvault.VaultCreateOrUpdateParameters" />
+          type: >-
+            azure-arm-keyvault - <xref
+            uid="v1.2.0.VaultCreateOrUpdateParameters" />
           description: |
             Parameters to create or update the vault
         - id: options
@@ -477,17 +501,17 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {Vault} [result]   - The deserialized result object if an error did not occur.
-                               See <xref:azure-arm-keyvault.Vault> for more information.
+                               See <xref:azure-arm-keyvault - v1.2.0.Vault> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
                                {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
-        type: Promise&lt;<xref uid="azure-arm-keyvault.Vault" />&gt;
+        type: Promise&lt;azure-arm-keyvault - <xref uid="v1.2.0.Vault" />&gt;
   - name: >-
       createOrUpdate(string, string, VaultCreateOrUpdateParameters, {
       customHeaders?: [key: string]: string }, ServiceCallback<Vault>)
-    uid: azure-arm-keyvault.Vaults.createOrUpdate_2
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.createOrUpdate_2
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -504,19 +528,23 @@ methods:
           type: string
           description: ''
         - id: parameters
-          type: <xref uid="azure-arm-keyvault.VaultCreateOrUpdateParameters" />
+          type: >-
+            azure-arm-keyvault - <xref
+            uid="v1.2.0.VaultCreateOrUpdateParameters" />
           description: ''
         - id: options
           type: '{ customHeaders?: [key: string]: string }'
           description: ''
         - id: callback
-          type: ServiceCallback&lt;<xref uid="azure-arm-keyvault.Vault" />&gt;
+          type: >-
+            ServiceCallback&lt;azure-arm-keyvault - <xref uid="v1.2.0.Vault"
+            />&gt;
           description: ''
   - name: >-
       createOrUpdateWithHttpOperationResponse(string, string,
       VaultCreateOrUpdateParameters, { customHeaders?: [key: string]: string })
-    uid: azure-arm-keyvault.Vaults.createOrUpdateWithHttpOperationResponse
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.createOrUpdateWithHttpOperationResponse
+    package: azure-arm-keyvault - v1.2.0
     summary: Create or update a key vault in the specified subscription.
     remarks: ''
     isDeprecated: false
@@ -537,7 +565,9 @@ methods:
           description: |
             Name of the vault
         - id: parameters
-          type: <xref uid="azure-arm-keyvault.VaultCreateOrUpdateParameters" />
+          type: >-
+            azure-arm-keyvault - <xref
+            uid="v1.2.0.VaultCreateOrUpdateParameters" />
           description: |
             Parameters to create or update the vault
         - id: options
@@ -546,11 +576,11 @@ methods:
       return:
         description: A promise is returned
         type: >-
-          Promise&lt;HttpOperationResponse&lt;<xref
-          uid="azure-arm-keyvault.Vault" />&gt;&gt;
+          Promise&lt;HttpOperationResponse&lt;azure-arm-keyvault - <xref
+          uid="v1.2.0.Vault" />&gt;&gt;
   - name: 'deleteMethod(string, string, ServiceCallback<void>)'
-    uid: azure-arm-keyvault.Vaults.deleteMethod_1
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.deleteMethod_1
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -569,8 +599,8 @@ methods:
           type: ServiceCallback&lt;void&gt;
           description: ''
   - name: 'deleteMethod(string, string, { customHeaders?: [key: string]: string })'
-    uid: azure-arm-keyvault.Vaults.deleteMethod
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.deleteMethod
+    package: azure-arm-keyvault - v1.2.0
     summary: Deletes the specified Azure key vault.
     remarks: ''
     isDeprecated: false
@@ -615,8 +645,8 @@ methods:
   - name: >-
       deleteMethod(string, string, { customHeaders?: [key: string]: string },
       ServiceCallback<void>)
-    uid: azure-arm-keyvault.Vaults.deleteMethod_2
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.deleteMethod_2
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -641,8 +671,8 @@ methods:
   - name: >-
       deleteMethodWithHttpOperationResponse(string, string, { customHeaders?:
       [key: string]: string })
-    uid: azure-arm-keyvault.Vaults.deleteMethodWithHttpOperationResponse
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.deleteMethodWithHttpOperationResponse
+    package: azure-arm-keyvault - v1.2.0
     summary: Deletes the specified Azure key vault.
     remarks: ''
     isDeprecated: false
@@ -668,8 +698,8 @@ methods:
         description: A promise is returned
         type: Promise&lt;HttpOperationResponse&lt;void&gt;&gt;
   - name: 'get(string, string, ServiceCallback<Vault>)'
-    uid: azure-arm-keyvault.Vaults.get_1
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.get_1
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -685,11 +715,13 @@ methods:
           type: string
           description: ''
         - id: callback
-          type: ServiceCallback&lt;<xref uid="azure-arm-keyvault.Vault" />&gt;
+          type: >-
+            ServiceCallback&lt;azure-arm-keyvault - <xref uid="v1.2.0.Vault"
+            />&gt;
           description: ''
   - name: 'get(string, string, { customHeaders?: [key: string]: string })'
-    uid: azure-arm-keyvault.Vaults.get
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.get
+    package: azure-arm-keyvault - v1.2.0
     summary: Gets the specified Azure key vault.
     remarks: ''
     isDeprecated: false
@@ -726,17 +758,17 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {Vault} [result]   - The deserialized result object if an error did not occur.
-                               See <xref:azure-arm-keyvault.Vault> for more information.
+                               See <xref:azure-arm-keyvault - v1.2.0.Vault> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
                                {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
-        type: Promise&lt;<xref uid="azure-arm-keyvault.Vault" />&gt;
+        type: Promise&lt;azure-arm-keyvault - <xref uid="v1.2.0.Vault" />&gt;
   - name: >-
       get(string, string, { customHeaders?: [key: string]: string },
       ServiceCallback<Vault>)
-    uid: azure-arm-keyvault.Vaults.get_2
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.get_2
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -756,11 +788,13 @@ methods:
           type: '{ customHeaders?: [key: string]: string }'
           description: ''
         - id: callback
-          type: ServiceCallback&lt;<xref uid="azure-arm-keyvault.Vault" />&gt;
+          type: >-
+            ServiceCallback&lt;azure-arm-keyvault - <xref uid="v1.2.0.Vault"
+            />&gt;
           description: ''
   - name: 'getDeleted(string, string, ServiceCallback<DeletedVault>)'
-    uid: azure-arm-keyvault.Vaults.getDeleted_1
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.getDeleted_1
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -777,12 +811,12 @@ methods:
           description: ''
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref uid="azure-arm-keyvault.DeletedVault"
-            />&gt;
+            ServiceCallback&lt;azure-arm-keyvault - <xref
+            uid="v1.2.0.DeletedVault" />&gt;
           description: ''
   - name: 'getDeleted(string, string, { customHeaders?: [key: string]: string })'
-    uid: azure-arm-keyvault.Vaults.getDeleted
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.getDeleted
+    package: azure-arm-keyvault - v1.2.0
     summary: Gets the deleted Azure key vault.
     remarks: ''
     isDeprecated: false
@@ -818,17 +852,17 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {DeletedVault} [result]   - The deserialized result object if an error did not occur.
-                               See <xref:azure-arm-keyvault.DeletedVault> for more information.
+                               See <xref:azure-arm-keyvault - v1.2.0.DeletedVault> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
                                {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
-        type: Promise&lt;<xref uid="azure-arm-keyvault.DeletedVault" />&gt;
+        type: Promise&lt;azure-arm-keyvault - <xref uid="v1.2.0.DeletedVault" />&gt;
   - name: >-
       getDeleted(string, string, { customHeaders?: [key: string]: string },
       ServiceCallback<DeletedVault>)
-    uid: azure-arm-keyvault.Vaults.getDeleted_2
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.getDeleted_2
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -849,14 +883,14 @@ methods:
           description: ''
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref uid="azure-arm-keyvault.DeletedVault"
-            />&gt;
+            ServiceCallback&lt;azure-arm-keyvault - <xref
+            uid="v1.2.0.DeletedVault" />&gt;
           description: ''
   - name: >-
       getDeletedWithHttpOperationResponse(string, string, { customHeaders?:
       [key: string]: string })
-    uid: azure-arm-keyvault.Vaults.getDeletedWithHttpOperationResponse
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.getDeletedWithHttpOperationResponse
+    package: azure-arm-keyvault - v1.2.0
     summary: Gets the deleted Azure key vault.
     remarks: ''
     isDeprecated: false
@@ -880,13 +914,13 @@ methods:
       return:
         description: A promise is returned
         type: >-
-          Promise&lt;HttpOperationResponse&lt;<xref
-          uid="azure-arm-keyvault.DeletedVault" />&gt;&gt;
+          Promise&lt;HttpOperationResponse&lt;azure-arm-keyvault - <xref
+          uid="v1.2.0.DeletedVault" />&gt;&gt;
   - name: >-
       getWithHttpOperationResponse(string, string, { customHeaders?: [key:
       string]: string })
-    uid: azure-arm-keyvault.Vaults.getWithHttpOperationResponse
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.getWithHttpOperationResponse
+    package: azure-arm-keyvault - v1.2.0
     summary: Gets the specified Azure key vault.
     remarks: ''
     isDeprecated: false
@@ -911,11 +945,11 @@ methods:
       return:
         description: A promise is returned
         type: >-
-          Promise&lt;HttpOperationResponse&lt;<xref
-          uid="azure-arm-keyvault.Vault" />&gt;&gt;
+          Promise&lt;HttpOperationResponse&lt;azure-arm-keyvault - <xref
+          uid="v1.2.0.Vault" />&gt;&gt;
   - name: list(ServiceCallback<ResourceListResult>)
-    uid: azure-arm-keyvault.Vaults.list_1
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.list_1
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -924,12 +958,12 @@ methods:
       parameters:
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref uid="azure-arm-keyvault.ResourceListResult"
-            />&gt;
+            ServiceCallback&lt;azure-arm-keyvault - <xref
+            uid="v1.2.0.ResourceListResult" />&gt;
           description: ''
   - name: 'list({ customHeaders?: [key: string]: string, top?: number })'
-    uid: azure-arm-keyvault.Vaults.list
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.list
+    package: azure-arm-keyvault - v1.2.0
     summary: |-
       The List operation gets information about the vaults associated with the
       subscription.
@@ -959,17 +993,19 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {ResourceListResult} [result]   - The deserialized result object if an error did not occur.
-                               See <xref:azure-arm-keyvault.ResourceListResult> for more information.
+                               See <xref:azure-arm-keyvault - v1.2.0.ResourceListResult> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
                                {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
-        type: Promise&lt;<xref uid="azure-arm-keyvault.ResourceListResult" />&gt;
+        type: >-
+          Promise&lt;azure-arm-keyvault - <xref uid="v1.2.0.ResourceListResult"
+          />&gt;
   - name: >-
       list({ customHeaders?: [key: string]: string, top?: number },
       ServiceCallback<ResourceListResult>)
-    uid: azure-arm-keyvault.Vaults.list_2
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.list_2
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -983,12 +1019,12 @@ methods:
           description: ''
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref uid="azure-arm-keyvault.ResourceListResult"
-            />&gt;
+            ServiceCallback&lt;azure-arm-keyvault - <xref
+            uid="v1.2.0.ResourceListResult" />&gt;
           description: ''
   - name: 'listByResourceGroup(string, ServiceCallback<VaultListResult>)'
-    uid: azure-arm-keyvault.Vaults.listByResourceGroup_1
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.listByResourceGroup_1
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -1002,14 +1038,14 @@ methods:
           description: ''
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref uid="azure-arm-keyvault.VaultListResult"
-            />&gt;
+            ServiceCallback&lt;azure-arm-keyvault - <xref
+            uid="v1.2.0.VaultListResult" />&gt;
           description: ''
   - name: >-
       listByResourceGroup(string, { customHeaders?: [key: string]: string, top?:
       number })
-    uid: azure-arm-keyvault.Vaults.listByResourceGroup
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.listByResourceGroup
+    package: azure-arm-keyvault - v1.2.0
     summary: |-
       The List operation gets information about the vaults associated with the
       subscription and within the specified resource group.
@@ -1045,17 +1081,19 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {VaultListResult} [result]   - The deserialized result object if an error did not occur.
-                               See <xref:azure-arm-keyvault.VaultListResult> for more information.
+                               See <xref:azure-arm-keyvault - v1.2.0.VaultListResult> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
                                {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
-        type: Promise&lt;<xref uid="azure-arm-keyvault.VaultListResult" />&gt;
+        type: >-
+          Promise&lt;azure-arm-keyvault - <xref uid="v1.2.0.VaultListResult"
+          />&gt;
   - name: >-
       listByResourceGroup(string, { customHeaders?: [key: string]: string, top?:
       number }, ServiceCallback<VaultListResult>)
-    uid: azure-arm-keyvault.Vaults.listByResourceGroup_2
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.listByResourceGroup_2
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -1073,12 +1111,12 @@ methods:
           description: ''
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref uid="azure-arm-keyvault.VaultListResult"
-            />&gt;
+            ServiceCallback&lt;azure-arm-keyvault - <xref
+            uid="v1.2.0.VaultListResult" />&gt;
           description: ''
   - name: 'listByResourceGroupNext(string, ServiceCallback<VaultListResult>)'
-    uid: azure-arm-keyvault.Vaults.listByResourceGroupNext_1
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.listByResourceGroupNext_1
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -1092,12 +1130,12 @@ methods:
           description: ''
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref uid="azure-arm-keyvault.VaultListResult"
-            />&gt;
+            ServiceCallback&lt;azure-arm-keyvault - <xref
+            uid="v1.2.0.VaultListResult" />&gt;
           description: ''
   - name: 'listByResourceGroupNext(string, { customHeaders?: [key: string]: string })'
-    uid: azure-arm-keyvault.Vaults.listByResourceGroupNext
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.listByResourceGroupNext
+    package: azure-arm-keyvault - v1.2.0
     summary: |-
       The List operation gets information about the vaults associated with the
       subscription and within the specified resource group.
@@ -1132,17 +1170,19 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {VaultListResult} [result]   - The deserialized result object if an error did not occur.
-                               See <xref:azure-arm-keyvault.VaultListResult> for more information.
+                               See <xref:azure-arm-keyvault - v1.2.0.VaultListResult> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
                                {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
-        type: Promise&lt;<xref uid="azure-arm-keyvault.VaultListResult" />&gt;
+        type: >-
+          Promise&lt;azure-arm-keyvault - <xref uid="v1.2.0.VaultListResult"
+          />&gt;
   - name: >-
       listByResourceGroupNext(string, { customHeaders?: [key: string]: string },
       ServiceCallback<VaultListResult>)
-    uid: azure-arm-keyvault.Vaults.listByResourceGroupNext_2
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.listByResourceGroupNext_2
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -1160,14 +1200,16 @@ methods:
           description: ''
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref uid="azure-arm-keyvault.VaultListResult"
-            />&gt;
+            ServiceCallback&lt;azure-arm-keyvault - <xref
+            uid="v1.2.0.VaultListResult" />&gt;
           description: ''
   - name: >-
       listByResourceGroupNextWithHttpOperationResponse(string, { customHeaders?:
       [key: string]: string })
-    uid: azure-arm-keyvault.Vaults.listByResourceGroupNextWithHttpOperationResponse
-    package: azure-arm-keyvault
+    uid: >-
+      azure-arm-keyvault -
+      v1.2.0.Vaults.listByResourceGroupNextWithHttpOperationResponse
+    package: azure-arm-keyvault - v1.2.0
     summary: |-
       The List operation gets information about the vaults associated with the
       subscription and within the specified resource group.
@@ -1190,13 +1232,15 @@ methods:
       return:
         description: A promise is returned
         type: >-
-          Promise&lt;HttpOperationResponse&lt;<xref
-          uid="azure-arm-keyvault.VaultListResult" />&gt;&gt;
+          Promise&lt;HttpOperationResponse&lt;azure-arm-keyvault - <xref
+          uid="v1.2.0.VaultListResult" />&gt;&gt;
   - name: >-
       listByResourceGroupWithHttpOperationResponse(string, { customHeaders?:
       [key: string]: string, top?: number })
-    uid: azure-arm-keyvault.Vaults.listByResourceGroupWithHttpOperationResponse
-    package: azure-arm-keyvault
+    uid: >-
+      azure-arm-keyvault -
+      v1.2.0.Vaults.listByResourceGroupWithHttpOperationResponse
+    package: azure-arm-keyvault - v1.2.0
     summary: |-
       The List operation gets information about the vaults associated with the
       subscription and within the specified resource group.
@@ -1219,11 +1263,11 @@ methods:
       return:
         description: A promise is returned
         type: >-
-          Promise&lt;HttpOperationResponse&lt;<xref
-          uid="azure-arm-keyvault.VaultListResult" />&gt;&gt;
+          Promise&lt;HttpOperationResponse&lt;azure-arm-keyvault - <xref
+          uid="v1.2.0.VaultListResult" />&gt;&gt;
   - name: listBySubscription(ServiceCallback<VaultListResult>)
-    uid: azure-arm-keyvault.Vaults.listBySubscription_1
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.listBySubscription_1
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -1232,14 +1276,14 @@ methods:
       parameters:
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref uid="azure-arm-keyvault.VaultListResult"
-            />&gt;
+            ServiceCallback&lt;azure-arm-keyvault - <xref
+            uid="v1.2.0.VaultListResult" />&gt;
           description: ''
   - name: >-
       listBySubscription({ customHeaders?: [key: string]: string, top?: number
       })
-    uid: azure-arm-keyvault.Vaults.listBySubscription
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.listBySubscription
+    package: azure-arm-keyvault - v1.2.0
     summary: |-
       The List operation gets information about the vaults associated with the
       subscription.
@@ -1269,17 +1313,19 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {VaultListResult} [result]   - The deserialized result object if an error did not occur.
-                               See <xref:azure-arm-keyvault.VaultListResult> for more information.
+                               See <xref:azure-arm-keyvault - v1.2.0.VaultListResult> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
                                {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
-        type: Promise&lt;<xref uid="azure-arm-keyvault.VaultListResult" />&gt;
+        type: >-
+          Promise&lt;azure-arm-keyvault - <xref uid="v1.2.0.VaultListResult"
+          />&gt;
   - name: >-
       listBySubscription({ customHeaders?: [key: string]: string, top?: number
       }, ServiceCallback<VaultListResult>)
-    uid: azure-arm-keyvault.Vaults.listBySubscription_2
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.listBySubscription_2
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -1293,12 +1339,12 @@ methods:
           description: ''
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref uid="azure-arm-keyvault.VaultListResult"
-            />&gt;
+            ServiceCallback&lt;azure-arm-keyvault - <xref
+            uid="v1.2.0.VaultListResult" />&gt;
           description: ''
   - name: 'listBySubscriptionNext(string, ServiceCallback<VaultListResult>)'
-    uid: azure-arm-keyvault.Vaults.listBySubscriptionNext_1
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.listBySubscriptionNext_1
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -1312,12 +1358,12 @@ methods:
           description: ''
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref uid="azure-arm-keyvault.VaultListResult"
-            />&gt;
+            ServiceCallback&lt;azure-arm-keyvault - <xref
+            uid="v1.2.0.VaultListResult" />&gt;
           description: ''
   - name: 'listBySubscriptionNext(string, { customHeaders?: [key: string]: string })'
-    uid: azure-arm-keyvault.Vaults.listBySubscriptionNext
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.listBySubscriptionNext
+    package: azure-arm-keyvault - v1.2.0
     summary: |-
       The List operation gets information about the vaults associated with the
       subscription.
@@ -1352,17 +1398,19 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {VaultListResult} [result]   - The deserialized result object if an error did not occur.
-                               See <xref:azure-arm-keyvault.VaultListResult> for more information.
+                               See <xref:azure-arm-keyvault - v1.2.0.VaultListResult> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
                                {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
-        type: Promise&lt;<xref uid="azure-arm-keyvault.VaultListResult" />&gt;
+        type: >-
+          Promise&lt;azure-arm-keyvault - <xref uid="v1.2.0.VaultListResult"
+          />&gt;
   - name: >-
       listBySubscriptionNext(string, { customHeaders?: [key: string]: string },
       ServiceCallback<VaultListResult>)
-    uid: azure-arm-keyvault.Vaults.listBySubscriptionNext_2
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.listBySubscriptionNext_2
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -1380,14 +1428,16 @@ methods:
           description: ''
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref uid="azure-arm-keyvault.VaultListResult"
-            />&gt;
+            ServiceCallback&lt;azure-arm-keyvault - <xref
+            uid="v1.2.0.VaultListResult" />&gt;
           description: ''
   - name: >-
       listBySubscriptionNextWithHttpOperationResponse(string, { customHeaders?:
       [key: string]: string })
-    uid: azure-arm-keyvault.Vaults.listBySubscriptionNextWithHttpOperationResponse
-    package: azure-arm-keyvault
+    uid: >-
+      azure-arm-keyvault -
+      v1.2.0.Vaults.listBySubscriptionNextWithHttpOperationResponse
+    package: azure-arm-keyvault - v1.2.0
     summary: |-
       The List operation gets information about the vaults associated with the
       subscription.
@@ -1410,13 +1460,15 @@ methods:
       return:
         description: A promise is returned
         type: >-
-          Promise&lt;HttpOperationResponse&lt;<xref
-          uid="azure-arm-keyvault.VaultListResult" />&gt;&gt;
+          Promise&lt;HttpOperationResponse&lt;azure-arm-keyvault - <xref
+          uid="v1.2.0.VaultListResult" />&gt;&gt;
   - name: >-
       listBySubscriptionWithHttpOperationResponse({ customHeaders?: [key:
       string]: string, top?: number })
-    uid: azure-arm-keyvault.Vaults.listBySubscriptionWithHttpOperationResponse
-    package: azure-arm-keyvault
+    uid: >-
+      azure-arm-keyvault -
+      v1.2.0.Vaults.listBySubscriptionWithHttpOperationResponse
+    package: azure-arm-keyvault - v1.2.0
     summary: |-
       The List operation gets information about the vaults associated with the
       subscription.
@@ -1434,11 +1486,11 @@ methods:
       return:
         description: A promise is returned
         type: >-
-          Promise&lt;HttpOperationResponse&lt;<xref
-          uid="azure-arm-keyvault.VaultListResult" />&gt;&gt;
+          Promise&lt;HttpOperationResponse&lt;azure-arm-keyvault - <xref
+          uid="v1.2.0.VaultListResult" />&gt;&gt;
   - name: listDeleted(ServiceCallback<DeletedVaultListResult>)
-    uid: azure-arm-keyvault.Vaults.listDeleted_1
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.listDeleted_1
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -1447,12 +1499,12 @@ methods:
       parameters:
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref
-            uid="azure-arm-keyvault.DeletedVaultListResult" />&gt;
+            ServiceCallback&lt;azure-arm-keyvault - <xref
+            uid="v1.2.0.DeletedVaultListResult" />&gt;
           description: ''
   - name: 'listDeleted({ customHeaders?: [key: string]: string })'
-    uid: azure-arm-keyvault.Vaults.listDeleted
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.listDeleted
+    package: azure-arm-keyvault - v1.2.0
     summary: Gets information about the deleted vaults in a subscription.
     remarks: ''
     isDeprecated: false
@@ -1480,20 +1532,20 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {DeletedVaultListResult} [result]   - The deserialized result object if an error did not occur.
-                               See <xref:azure-arm-keyvault.DeletedVaultListResult> for more
+                               See <xref:azure-arm-keyvault - v1.2.0.DeletedVaultListResult> for more
                                information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
                                {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
         type: >-
-          Promise&lt;<xref uid="azure-arm-keyvault.DeletedVaultListResult"
-          />&gt;
+          Promise&lt;azure-arm-keyvault - <xref
+          uid="v1.2.0.DeletedVaultListResult" />&gt;
   - name: >-
       listDeleted({ customHeaders?: [key: string]: string },
       ServiceCallback<DeletedVaultListResult>)
-    uid: azure-arm-keyvault.Vaults.listDeleted_2
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.listDeleted_2
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -1507,12 +1559,12 @@ methods:
           description: ''
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref
-            uid="azure-arm-keyvault.DeletedVaultListResult" />&gt;
+            ServiceCallback&lt;azure-arm-keyvault - <xref
+            uid="v1.2.0.DeletedVaultListResult" />&gt;
           description: ''
   - name: 'listDeletedNext(string, ServiceCallback<DeletedVaultListResult>)'
-    uid: azure-arm-keyvault.Vaults.listDeletedNext_1
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.listDeletedNext_1
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -1526,12 +1578,12 @@ methods:
           description: ''
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref
-            uid="azure-arm-keyvault.DeletedVaultListResult" />&gt;
+            ServiceCallback&lt;azure-arm-keyvault - <xref
+            uid="v1.2.0.DeletedVaultListResult" />&gt;
           description: ''
   - name: 'listDeletedNext(string, { customHeaders?: [key: string]: string })'
-    uid: azure-arm-keyvault.Vaults.listDeletedNext
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.listDeletedNext
+    package: azure-arm-keyvault - v1.2.0
     summary: Gets information about the deleted vaults in a subscription.
     remarks: ''
     isDeprecated: false
@@ -1565,20 +1617,20 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {DeletedVaultListResult} [result]   - The deserialized result object if an error did not occur.
-                               See <xref:azure-arm-keyvault.DeletedVaultListResult> for more
+                               See <xref:azure-arm-keyvault - v1.2.0.DeletedVaultListResult> for more
                                information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
                                {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
         type: >-
-          Promise&lt;<xref uid="azure-arm-keyvault.DeletedVaultListResult"
-          />&gt;
+          Promise&lt;azure-arm-keyvault - <xref
+          uid="v1.2.0.DeletedVaultListResult" />&gt;
   - name: >-
       listDeletedNext(string, { customHeaders?: [key: string]: string },
       ServiceCallback<DeletedVaultListResult>)
-    uid: azure-arm-keyvault.Vaults.listDeletedNext_2
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.listDeletedNext_2
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -1596,14 +1648,16 @@ methods:
           description: ''
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref
-            uid="azure-arm-keyvault.DeletedVaultListResult" />&gt;
+            ServiceCallback&lt;azure-arm-keyvault - <xref
+            uid="v1.2.0.DeletedVaultListResult" />&gt;
           description: ''
   - name: >-
       listDeletedNextWithHttpOperationResponse(string, { customHeaders?: [key:
       string]: string })
-    uid: azure-arm-keyvault.Vaults.listDeletedNextWithHttpOperationResponse
-    package: azure-arm-keyvault
+    uid: >-
+      azure-arm-keyvault -
+      v1.2.0.Vaults.listDeletedNextWithHttpOperationResponse
+    package: azure-arm-keyvault - v1.2.0
     summary: Gets information about the deleted vaults in a subscription.
     remarks: ''
     isDeprecated: false
@@ -1624,13 +1678,13 @@ methods:
       return:
         description: A promise is returned
         type: >-
-          Promise&lt;HttpOperationResponse&lt;<xref
-          uid="azure-arm-keyvault.DeletedVaultListResult" />&gt;&gt;
+          Promise&lt;HttpOperationResponse&lt;azure-arm-keyvault - <xref
+          uid="v1.2.0.DeletedVaultListResult" />&gt;&gt;
   - name: >-
       listDeletedWithHttpOperationResponse({ customHeaders?: [key: string]:
       string })
-    uid: azure-arm-keyvault.Vaults.listDeletedWithHttpOperationResponse
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.listDeletedWithHttpOperationResponse
+    package: azure-arm-keyvault - v1.2.0
     summary: Gets information about the deleted vaults in a subscription.
     remarks: ''
     isDeprecated: false
@@ -1646,11 +1700,11 @@ methods:
       return:
         description: A promise is returned
         type: >-
-          Promise&lt;HttpOperationResponse&lt;<xref
-          uid="azure-arm-keyvault.DeletedVaultListResult" />&gt;&gt;
+          Promise&lt;HttpOperationResponse&lt;azure-arm-keyvault - <xref
+          uid="v1.2.0.DeletedVaultListResult" />&gt;&gt;
   - name: 'listNext(string, ServiceCallback<ResourceListResult>)'
-    uid: azure-arm-keyvault.Vaults.listNext_1
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.listNext_1
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -1664,12 +1718,12 @@ methods:
           description: ''
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref uid="azure-arm-keyvault.ResourceListResult"
-            />&gt;
+            ServiceCallback&lt;azure-arm-keyvault - <xref
+            uid="v1.2.0.ResourceListResult" />&gt;
           description: ''
   - name: 'listNext(string, { customHeaders?: [key: string]: string })'
-    uid: azure-arm-keyvault.Vaults.listNext
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.listNext
+    package: azure-arm-keyvault - v1.2.0
     summary: |-
       The List operation gets information about the vaults associated with the
       subscription.
@@ -1704,17 +1758,19 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {ResourceListResult} [result]   - The deserialized result object if an error did not occur.
-                               See <xref:azure-arm-keyvault.ResourceListResult> for more information.
+                               See <xref:azure-arm-keyvault - v1.2.0.ResourceListResult> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
                                {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
-        type: Promise&lt;<xref uid="azure-arm-keyvault.ResourceListResult" />&gt;
+        type: >-
+          Promise&lt;azure-arm-keyvault - <xref uid="v1.2.0.ResourceListResult"
+          />&gt;
   - name: >-
       listNext(string, { customHeaders?: [key: string]: string },
       ServiceCallback<ResourceListResult>)
-    uid: azure-arm-keyvault.Vaults.listNext_2
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.listNext_2
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -1731,14 +1787,14 @@ methods:
           description: ''
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref uid="azure-arm-keyvault.ResourceListResult"
-            />&gt;
+            ServiceCallback&lt;azure-arm-keyvault - <xref
+            uid="v1.2.0.ResourceListResult" />&gt;
           description: ''
   - name: >-
       listNextWithHttpOperationResponse(string, { customHeaders?: [key: string]:
       string })
-    uid: azure-arm-keyvault.Vaults.listNextWithHttpOperationResponse
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.listNextWithHttpOperationResponse
+    package: azure-arm-keyvault - v1.2.0
     summary: |-
       The List operation gets information about the vaults associated with the
       subscription.
@@ -1761,13 +1817,13 @@ methods:
       return:
         description: A promise is returned
         type: >-
-          Promise&lt;HttpOperationResponse&lt;<xref
-          uid="azure-arm-keyvault.ResourceListResult" />&gt;&gt;
+          Promise&lt;HttpOperationResponse&lt;azure-arm-keyvault - <xref
+          uid="v1.2.0.ResourceListResult" />&gt;&gt;
   - name: >-
       listWithHttpOperationResponse({ customHeaders?: [key: string]: string,
       top?: number })
-    uid: azure-arm-keyvault.Vaults.listWithHttpOperationResponse
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.listWithHttpOperationResponse
+    package: azure-arm-keyvault - v1.2.0
     summary: |-
       The List operation gets information about the vaults associated with the
       subscription.
@@ -1785,11 +1841,11 @@ methods:
       return:
         description: A promise is returned
         type: >-
-          Promise&lt;HttpOperationResponse&lt;<xref
-          uid="azure-arm-keyvault.ResourceListResult" />&gt;&gt;
+          Promise&lt;HttpOperationResponse&lt;azure-arm-keyvault - <xref
+          uid="v1.2.0.ResourceListResult" />&gt;&gt;
   - name: 'purgeDeleted(string, string, ServiceCallback<void>)'
-    uid: azure-arm-keyvault.Vaults.purgeDeleted_1
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.purgeDeleted_1
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -1808,8 +1864,8 @@ methods:
           type: ServiceCallback&lt;void&gt;
           description: ''
   - name: 'purgeDeleted(string, string, { customHeaders?: [key: string]: string })'
-    uid: azure-arm-keyvault.Vaults.purgeDeleted
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.purgeDeleted
+    package: azure-arm-keyvault - v1.2.0
     summary: |-
       Permanently deletes the specified vault. aka Purges the deleted Azure key
       vault.
@@ -1855,8 +1911,8 @@ methods:
   - name: >-
       purgeDeleted(string, string, { customHeaders?: [key: string]: string },
       ServiceCallback<void>)
-    uid: azure-arm-keyvault.Vaults.purgeDeleted_2
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.purgeDeleted_2
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -1881,8 +1937,8 @@ methods:
   - name: >-
       purgeDeletedWithHttpOperationResponse(string, string, { customHeaders?:
       [key: string]: string })
-    uid: azure-arm-keyvault.Vaults.purgeDeletedWithHttpOperationResponse
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.purgeDeletedWithHttpOperationResponse
+    package: azure-arm-keyvault - v1.2.0
     summary: |-
       Permanently deletes the specified vault. aka Purges the deleted Azure key
       vault.
@@ -1909,8 +1965,8 @@ methods:
         description: A promise is returned
         type: Promise&lt;HttpOperationResponse&lt;void&gt;&gt;
   - name: 'update(string, string, VaultPatchParameters, ServiceCallback<Vault>)'
-    uid: azure-arm-keyvault.Vaults.update_1
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.update_1
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -1926,16 +1982,18 @@ methods:
           type: string
           description: ''
         - id: parameters
-          type: <xref uid="azure-arm-keyvault.VaultPatchParameters" />
+          type: azure-arm-keyvault - <xref uid="v1.2.0.VaultPatchParameters" />
           description: ''
         - id: callback
-          type: ServiceCallback&lt;<xref uid="azure-arm-keyvault.Vault" />&gt;
+          type: >-
+            ServiceCallback&lt;azure-arm-keyvault - <xref uid="v1.2.0.Vault"
+            />&gt;
           description: ''
   - name: >-
       update(string, string, VaultPatchParameters, { customHeaders?: [key:
       string]: string })
-    uid: azure-arm-keyvault.Vaults.update
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.update
+    package: azure-arm-keyvault - v1.2.0
     summary: Update a key vault in the specified subscription.
     remarks: ''
     isDeprecated: false
@@ -1955,7 +2013,7 @@ methods:
           description: |
             Name of the vault
         - id: parameters
-          type: <xref uid="azure-arm-keyvault.VaultPatchParameters" />
+          type: azure-arm-keyvault - <xref uid="v1.2.0.VaultPatchParameters" />
           description: |
             Parameters to patch the vault
         - id: options
@@ -1977,17 +2035,17 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {Vault} [result]   - The deserialized result object if an error did not occur.
-                               See <xref:azure-arm-keyvault.Vault> for more information.
+                               See <xref:azure-arm-keyvault - v1.2.0.Vault> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
                                {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
-        type: Promise&lt;<xref uid="azure-arm-keyvault.Vault" />&gt;
+        type: Promise&lt;azure-arm-keyvault - <xref uid="v1.2.0.Vault" />&gt;
   - name: >-
       update(string, string, VaultPatchParameters, { customHeaders?: [key:
       string]: string }, ServiceCallback<Vault>)
-    uid: azure-arm-keyvault.Vaults.update_2
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.update_2
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -2004,19 +2062,21 @@ methods:
           type: string
           description: ''
         - id: parameters
-          type: <xref uid="azure-arm-keyvault.VaultPatchParameters" />
+          type: azure-arm-keyvault - <xref uid="v1.2.0.VaultPatchParameters" />
           description: ''
         - id: options
           type: '{ customHeaders?: [key: string]: string }'
           description: ''
         - id: callback
-          type: ServiceCallback&lt;<xref uid="azure-arm-keyvault.Vault" />&gt;
+          type: >-
+            ServiceCallback&lt;azure-arm-keyvault - <xref uid="v1.2.0.Vault"
+            />&gt;
           description: ''
   - name: >-
       updateAccessPolicy(string, string, string, VaultAccessPolicyParameters,
       ServiceCallback<VaultAccessPolicyParameters>)
-    uid: azure-arm-keyvault.Vaults.updateAccessPolicy_1
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.updateAccessPolicy_1
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -2036,18 +2096,20 @@ methods:
           type: string
           description: ''
         - id: parameters
-          type: <xref uid="azure-arm-keyvault.VaultAccessPolicyParameters" />
+          type: >-
+            azure-arm-keyvault - <xref uid="v1.2.0.VaultAccessPolicyParameters"
+            />
           description: ''
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref
-            uid="azure-arm-keyvault.VaultAccessPolicyParameters" />&gt;
+            ServiceCallback&lt;azure-arm-keyvault - <xref
+            uid="v1.2.0.VaultAccessPolicyParameters" />&gt;
           description: ''
   - name: >-
       updateAccessPolicy(string, string, string, VaultAccessPolicyParameters, {
       customHeaders?: [key: string]: string })
-    uid: azure-arm-keyvault.Vaults.updateAccessPolicy
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.updateAccessPolicy
+    package: azure-arm-keyvault - v1.2.0
     summary: Update access policies in a key vault in the specified subscription.
     remarks: ''
     isDeprecated: false
@@ -2073,7 +2135,9 @@ methods:
             Name of the operation. Possible values
             include: 'add', 'replace', 'remove'
         - id: parameters
-          type: <xref uid="azure-arm-keyvault.VaultAccessPolicyParameters" />
+          type: >-
+            azure-arm-keyvault - <xref uid="v1.2.0.VaultAccessPolicyParameters"
+            />
           description: |
             Access policy to merge into the vault
         - id: options
@@ -2095,21 +2159,21 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {VaultAccessPolicyParameters} [result]   - The deserialized result object if an error did not occur.
-                               See <xref:azure-arm-keyvault.VaultAccessPolicyParameters> for more
+                               See <xref:azure-arm-keyvault - v1.2.0.VaultAccessPolicyParameters> for more
                                information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
                                {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
         type: >-
-          Promise&lt;<xref uid="azure-arm-keyvault.VaultAccessPolicyParameters"
-          />&gt;
+          Promise&lt;azure-arm-keyvault - <xref
+          uid="v1.2.0.VaultAccessPolicyParameters" />&gt;
   - name: >-
       updateAccessPolicy(string, string, string, VaultAccessPolicyParameters, {
       customHeaders?: [key: string]: string },
       ServiceCallback<VaultAccessPolicyParameters>)
-    uid: azure-arm-keyvault.Vaults.updateAccessPolicy_2
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.updateAccessPolicy_2
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -2130,21 +2194,25 @@ methods:
           type: string
           description: ''
         - id: parameters
-          type: <xref uid="azure-arm-keyvault.VaultAccessPolicyParameters" />
+          type: >-
+            azure-arm-keyvault - <xref uid="v1.2.0.VaultAccessPolicyParameters"
+            />
           description: ''
         - id: options
           type: '{ customHeaders?: [key: string]: string }'
           description: ''
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref
-            uid="azure-arm-keyvault.VaultAccessPolicyParameters" />&gt;
+            ServiceCallback&lt;azure-arm-keyvault - <xref
+            uid="v1.2.0.VaultAccessPolicyParameters" />&gt;
           description: ''
   - name: >-
       updateAccessPolicyWithHttpOperationResponse(string, string, string,
       VaultAccessPolicyParameters, { customHeaders?: [key: string]: string })
-    uid: azure-arm-keyvault.Vaults.updateAccessPolicyWithHttpOperationResponse
-    package: azure-arm-keyvault
+    uid: >-
+      azure-arm-keyvault -
+      v1.2.0.Vaults.updateAccessPolicyWithHttpOperationResponse
+    package: azure-arm-keyvault - v1.2.0
     summary: Update access policies in a key vault in the specified subscription.
     remarks: ''
     isDeprecated: false
@@ -2170,7 +2238,9 @@ methods:
             Name of the operation. Possible values
             include: 'add', 'replace', 'remove'
         - id: parameters
-          type: <xref uid="azure-arm-keyvault.VaultAccessPolicyParameters" />
+          type: >-
+            azure-arm-keyvault - <xref uid="v1.2.0.VaultAccessPolicyParameters"
+            />
           description: |
             Access policy to merge into the vault
         - id: options
@@ -2179,13 +2249,13 @@ methods:
       return:
         description: A promise is returned
         type: >-
-          Promise&lt;HttpOperationResponse&lt;<xref
-          uid="azure-arm-keyvault.VaultAccessPolicyParameters" />&gt;&gt;
+          Promise&lt;HttpOperationResponse&lt;azure-arm-keyvault - <xref
+          uid="v1.2.0.VaultAccessPolicyParameters" />&gt;&gt;
   - name: >-
       updateWithHttpOperationResponse(string, string, VaultPatchParameters, {
       customHeaders?: [key: string]: string })
-    uid: azure-arm-keyvault.Vaults.updateWithHttpOperationResponse
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Vaults.updateWithHttpOperationResponse
+    package: azure-arm-keyvault - v1.2.0
     summary: Update a key vault in the specified subscription.
     remarks: ''
     isDeprecated: false
@@ -2206,7 +2276,7 @@ methods:
           description: |
             Name of the vault
         - id: parameters
-          type: <xref uid="azure-arm-keyvault.VaultPatchParameters" />
+          type: azure-arm-keyvault - <xref uid="v1.2.0.VaultPatchParameters" />
           description: |
             Parameters to patch the vault
         - id: options
@@ -2215,5 +2285,5 @@ methods:
       return:
         description: A promise is returned
         type: >-
-          Promise&lt;HttpOperationResponse&lt;<xref
-          uid="azure-arm-keyvault.Vault" />&gt;&gt;
+          Promise&lt;HttpOperationResponse&lt;azure-arm-keyvault - <xref
+          uid="v1.2.0.Vault" />&gt;&gt;

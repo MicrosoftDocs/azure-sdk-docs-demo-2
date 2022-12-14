@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: ResourceListResult
-uid: azure-arm-keyvault.ResourceListResult
-package: azure-arm-keyvault
+uid: azure-arm-keyvault - v1.2.0.ResourceListResult
+package: azure-arm-keyvault - v1.2.0
 summary: ''
 fullName: ResourceListResult
 remarks: ''
@@ -9,8 +9,8 @@ isDeprecated: false
 type: interface
 properties:
   - name: Array
-    uid: azure-arm-keyvault.ResourceListResult.Array
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.ResourceListResult.Array
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     fullName: Array
     remarks: ''
@@ -21,8 +21,8 @@ properties:
         description: ''
         type: ArrayConstructor
   - name: nextLink
-    uid: azure-arm-keyvault.ResourceListResult.nextLink
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.ResourceListResult.nextLink
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     fullName: nextLink
     remarks: ''
@@ -34,8 +34,8 @@ properties:
         type: string
 inheritedProperties:
   - name: length
-    uid: azure-arm-keyvault.ResourceListResult.length
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.ResourceListResult.length
+    package: azure-arm-keyvault - v1.2.0
     summary: >-
       Gets or sets the length of the array. This is a number one higher than the
       highest element defined in an array.
@@ -47,11 +47,11 @@ inheritedProperties:
       return:
         description: ''
         type: number
-    inheritanceDescription: <b>Inherited From</b> Array.length
+    inheritanceDescription: '<b>Inherited From</b> [Array.length](xref:Array.length)'
 inheritedMethods:
   - name: 'concat((T | ConcatArray<T>)[])'
-    uid: azure-arm-keyvault.ResourceListResult.concat_1
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.ResourceListResult.concat_1
+    package: azure-arm-keyvault - v1.2.0
     summary: Combines two or more arrays.
     remarks: ''
     isDeprecated: false
@@ -64,11 +64,11 @@ inheritedMethods:
             Additional items to add to the end of array1.
       return:
         description: ''
-        type: '<xref uid="azure-arm-keyvault.Resource" />[]'
-    inheritanceDescription: <b>Inherited From</b> Array.concat
+        type: 'azure-arm-keyvault - <xref uid="v1.2.0.Resource" />[]'
+    inheritanceDescription: '<b>Inherited From</b> [Array.concat](xref:Array.concat)'
   - name: 'concat(ConcatArray<Resource>[])'
-    uid: azure-arm-keyvault.ResourceListResult.concat
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.ResourceListResult.concat
+    package: azure-arm-keyvault - v1.2.0
     summary: Combines two or more arrays.
     remarks: ''
     isDeprecated: false
@@ -76,16 +76,18 @@ inheritedMethods:
       content: 'function concat(items: ConcatArray<Resource>[]): Resource[]'
       parameters:
         - id: items
-          type: 'ConcatArray&lt;<xref uid="azure-arm-keyvault.Resource" />&gt;[]'
+          type: >-
+            ConcatArray&lt;azure-arm-keyvault - <xref uid="v1.2.0.Resource"
+            />&gt;[]
           description: |
             Additional items to add to the end of array1.
       return:
         description: ''
-        type: '<xref uid="azure-arm-keyvault.Resource" />[]'
-    inheritanceDescription: <b>Inherited From</b> Array.concat
+        type: 'azure-arm-keyvault - <xref uid="v1.2.0.Resource" />[]'
+    inheritanceDescription: '<b>Inherited From</b> [Array.concat](xref:Array.concat)'
   - name: 'every((value: Resource, index: number, array: Resource[]) => unknown, any)'
-    uid: azure-arm-keyvault.ResourceListResult.every
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.ResourceListResult.every
+    package: azure-arm-keyvault - v1.2.0
     summary: Determines whether all the members of an array satisfy the specified test.
     remarks: ''
     isDeprecated: false
@@ -98,23 +100,29 @@ inheritedMethods:
           type: '(value: Resource, index: number, array: Resource[]) =&gt; unknown'
           description: >-
             A function that accepts up to three arguments. The every method
-            calls the callbackfn function for each element in array1 until the
-            callbackfn returns false, or until the end of the array.
+            calls
+
+            the callbackfn function for each element in the array until the
+            callbackfn returns a value
+
+            which is coercible to the Boolean value false, or until the end of
+            the array.
         - id: thisArg
           type: any
           description: >
             An object to which the this keyword can refer in the callbackfn
-            function. If thisArg is omitted, undefined is used as the this
-            value.
+            function.
+
+            If thisArg is omitted, undefined is used as the this value.
       return:
         description: ''
         type: boolean
-    inheritanceDescription: <b>Inherited From</b> Array.every
+    inheritanceDescription: '<b>Inherited From</b> [Array.every](xref:Array.every)'
   - name: >-
       filter((value: Resource, index: number, array: Resource[]) => unknown,
       any)
-    uid: azure-arm-keyvault.ResourceListResult.filter_1
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.ResourceListResult.filter_1
+    package: azure-arm-keyvault - v1.2.0
     summary: >-
       Returns the elements of an array that meet the condition specified in a
       callback function.
@@ -139,13 +147,13 @@ inheritedMethods:
             value.
       return:
         description: ''
-        type: '<xref uid="azure-arm-keyvault.Resource" />[]'
-    inheritanceDescription: <b>Inherited From</b> Array.filter
+        type: 'azure-arm-keyvault - <xref uid="v1.2.0.Resource" />[]'
+    inheritanceDescription: '<b>Inherited From</b> [Array.filter](xref:Array.filter)'
   - name: >-
-      filter<S>((value: Resource, index: number, array: Resource[]) => boolean,
+      filter<S>((value: Resource, index: number, array: Resource[]) => value,
       any)
-    uid: azure-arm-keyvault.ResourceListResult.filter
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.ResourceListResult.filter
+    package: azure-arm-keyvault - v1.2.0
     summary: >-
       Returns the elements of an array that meet the condition specified in a
       callback function.
@@ -154,10 +162,10 @@ inheritedMethods:
     syntax:
       content: >-
         function filter<S>(callbackfn: (value: Resource, index: number, array:
-        Resource[]) => boolean, thisArg?: any): S[]
+        Resource[]) => value, thisArg?: any): S[]
       parameters:
         - id: callbackfn
-          type: '(value: Resource, index: number, array: Resource[]) =&gt; boolean'
+          type: '(value: Resource, index: number, array: Resource[]) =&gt; value'
           description: >-
             A function that accepts up to three arguments. The filter method
             calls the callbackfn function one time for each element in the
@@ -171,10 +179,10 @@ inheritedMethods:
       return:
         description: ''
         type: 'S[]'
-    inheritanceDescription: <b>Inherited From</b> Array.filter
+    inheritanceDescription: '<b>Inherited From</b> [Array.filter](xref:Array.filter)'
   - name: 'forEach((value: Resource, index: number, array: Resource[]) => void, any)'
-    uid: azure-arm-keyvault.ResourceListResult.forEach
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.ResourceListResult.forEach
+    package: azure-arm-keyvault - v1.2.0
     summary: Performs the specified action for each element in an array.
     remarks: ''
     isDeprecated: false
@@ -194,10 +202,10 @@ inheritedMethods:
             An object to which the this keyword can refer in the callbackfn
             function. If thisArg is omitted, undefined is used as the this
             value.
-    inheritanceDescription: <b>Inherited From</b> Array.forEach
+    inheritanceDescription: '<b>Inherited From</b> [Array.forEach](xref:Array.forEach)'
   - name: 'indexOf(Resource, number)'
-    uid: azure-arm-keyvault.ResourceListResult.indexOf
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.ResourceListResult.indexOf
+    package: azure-arm-keyvault - v1.2.0
     summary: Returns the index of the first occurrence of a value in an array.
     remarks: ''
     isDeprecated: false
@@ -205,7 +213,7 @@ inheritedMethods:
       content: 'function indexOf(searchElement: Resource, fromIndex?: number): number'
       parameters:
         - id: searchElement
-          type: <xref uid="azure-arm-keyvault.Resource" />
+          type: azure-arm-keyvault - <xref uid="v1.2.0.Resource" />
           description: The value to locate in the array.
         - id: fromIndex
           type: number
@@ -215,10 +223,10 @@ inheritedMethods:
       return:
         description: ''
         type: number
-    inheritanceDescription: <b>Inherited From</b> Array.indexOf
+    inheritanceDescription: '<b>Inherited From</b> [Array.indexOf](xref:Array.indexOf)'
   - name: join(string)
-    uid: azure-arm-keyvault.ResourceListResult.join
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.ResourceListResult.join
+    package: azure-arm-keyvault - v1.2.0
     summary: >-
       Adds all the elements of an array separated by the specified separator
       string.
@@ -236,10 +244,10 @@ inheritedMethods:
       return:
         description: ''
         type: string
-    inheritanceDescription: <b>Inherited From</b> Array.join
+    inheritanceDescription: '<b>Inherited From</b> [Array.join](xref:Array.join)'
   - name: 'lastIndexOf(Resource, number)'
-    uid: azure-arm-keyvault.ResourceListResult.lastIndexOf
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.ResourceListResult.lastIndexOf
+    package: azure-arm-keyvault - v1.2.0
     summary: Returns the index of the last occurrence of a specified value in an array.
     remarks: ''
     isDeprecated: false
@@ -249,7 +257,7 @@ inheritedMethods:
         number
       parameters:
         - id: searchElement
-          type: <xref uid="azure-arm-keyvault.Resource" />
+          type: azure-arm-keyvault - <xref uid="v1.2.0.Resource" />
           description: The value to locate in the array.
         - id: fromIndex
           type: number
@@ -259,10 +267,10 @@ inheritedMethods:
       return:
         description: ''
         type: number
-    inheritanceDescription: <b>Inherited From</b> Array.lastIndexOf
+    inheritanceDescription: '<b>Inherited From</b> [Array.lastIndexOf](xref:Array.lastIndexOf)'
   - name: 'map<U>((value: Resource, index: number, array: Resource[]) => U, any)'
-    uid: azure-arm-keyvault.ResourceListResult.map
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.ResourceListResult.map
+    package: azure-arm-keyvault - v1.2.0
     summary: >-
       Calls a defined callback function on each element of an array, and returns
       an array that contains the results.
@@ -287,10 +295,10 @@ inheritedMethods:
       return:
         description: ''
         type: 'U[]'
-    inheritanceDescription: <b>Inherited From</b> Array.map
+    inheritanceDescription: '<b>Inherited From</b> [Array.map](xref:Array.map)'
   - name: pop()
-    uid: azure-arm-keyvault.ResourceListResult.pop
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.ResourceListResult.pop
+    package: azure-arm-keyvault - v1.2.0
     summary: Removes the last element from an array and returns it.
     remarks: ''
     isDeprecated: false
@@ -298,11 +306,11 @@ inheritedMethods:
       content: 'function pop(): Resource | undefined'
       return:
         description: ''
-        type: <xref uid="azure-arm-keyvault.Resource" /> | undefined
-    inheritanceDescription: <b>Inherited From</b> Array.pop
+        type: azure-arm-keyvault - <xref uid="v1.2.0.Resource" /> | undefined
+    inheritanceDescription: '<b>Inherited From</b> [Array.pop](xref:Array.pop)'
   - name: 'push(Resource[])'
-    uid: azure-arm-keyvault.ResourceListResult.push
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.ResourceListResult.push
+    package: azure-arm-keyvault - v1.2.0
     summary: 'Appends new elements to an array, and returns the new length of the array.'
     remarks: ''
     isDeprecated: false
@@ -310,18 +318,18 @@ inheritedMethods:
       content: 'function push(items: Resource[]): number'
       parameters:
         - id: items
-          type: '<xref uid="azure-arm-keyvault.Resource" />[]'
+          type: 'azure-arm-keyvault - <xref uid="v1.2.0.Resource" />[]'
           description: |
             New elements of the Array.
       return:
         description: ''
         type: number
-    inheritanceDescription: <b>Inherited From</b> Array.push
+    inheritanceDescription: '<b>Inherited From</b> [Array.push](xref:Array.push)'
   - name: >-
       reduce((previousValue: Resource, currentValue: Resource, currentIndex:
       number, array: Resource[]) => Resource)
-    uid: azure-arm-keyvault.ResourceListResult.reduce
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.ResourceListResult.reduce
+    package: azure-arm-keyvault - v1.2.0
     summary: >-
       Calls the specified callback function for all the elements in an array.
       The return value of the callback function is the accumulated result, and
@@ -344,13 +352,13 @@ inheritedMethods:
             array.
       return:
         description: ''
-        type: <xref uid="azure-arm-keyvault.Resource" />
-    inheritanceDescription: <b>Inherited From</b> Array.reduce
+        type: azure-arm-keyvault - <xref uid="v1.2.0.Resource" />
+    inheritanceDescription: '<b>Inherited From</b> [Array.reduce](xref:Array.reduce)'
   - name: >-
       reduce((previousValue: Resource, currentValue: Resource, currentIndex:
       number, array: Resource[]) => Resource, Resource)
-    uid: azure-arm-keyvault.ResourceListResult.reduce_1
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.ResourceListResult.reduce_1
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -366,17 +374,17 @@ inheritedMethods:
             number, array: Resource[]) =&gt; Resource
           description: ''
         - id: initialValue
-          type: <xref uid="azure-arm-keyvault.Resource" />
+          type: azure-arm-keyvault - <xref uid="v1.2.0.Resource" />
           description: ''
       return:
         description: ''
-        type: <xref uid="azure-arm-keyvault.Resource" />
-    inheritanceDescription: <b>Inherited From</b> Array.reduce
+        type: azure-arm-keyvault - <xref uid="v1.2.0.Resource" />
+    inheritanceDescription: '<b>Inherited From</b> [Array.reduce](xref:Array.reduce)'
   - name: >-
       reduce<U>((previousValue: U, currentValue: Resource, currentIndex: number,
       array: Resource[]) => U, U)
-    uid: azure-arm-keyvault.ResourceListResult.reduce_2
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.ResourceListResult.reduce_2
+    package: azure-arm-keyvault - v1.2.0
     summary: >-
       Calls the specified callback function for all the elements in an array.
       The return value of the callback function is the accumulated result, and
@@ -406,12 +414,12 @@ inheritedMethods:
       return:
         description: ''
         type: U
-    inheritanceDescription: <b>Inherited From</b> Array.reduce
+    inheritanceDescription: '<b>Inherited From</b> [Array.reduce](xref:Array.reduce)'
   - name: >-
       reduceRight((previousValue: Resource, currentValue: Resource,
       currentIndex: number, array: Resource[]) => Resource)
-    uid: azure-arm-keyvault.ResourceListResult.reduceRight
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.ResourceListResult.reduceRight
+    package: azure-arm-keyvault - v1.2.0
     summary: >-
       Calls the specified callback function for all the elements in an array, in
       descending order. The return value of the callback function is the
@@ -435,13 +443,13 @@ inheritedMethods:
             array.
       return:
         description: ''
-        type: <xref uid="azure-arm-keyvault.Resource" />
-    inheritanceDescription: <b>Inherited From</b> Array.reduceRight
+        type: azure-arm-keyvault - <xref uid="v1.2.0.Resource" />
+    inheritanceDescription: '<b>Inherited From</b> [Array.reduceRight](xref:Array.reduceRight)'
   - name: >-
       reduceRight((previousValue: Resource, currentValue: Resource,
       currentIndex: number, array: Resource[]) => Resource, Resource)
-    uid: azure-arm-keyvault.ResourceListResult.reduceRight_1
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.ResourceListResult.reduceRight_1
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -457,17 +465,17 @@ inheritedMethods:
             number, array: Resource[]) =&gt; Resource
           description: ''
         - id: initialValue
-          type: <xref uid="azure-arm-keyvault.Resource" />
+          type: azure-arm-keyvault - <xref uid="v1.2.0.Resource" />
           description: ''
       return:
         description: ''
-        type: <xref uid="azure-arm-keyvault.Resource" />
-    inheritanceDescription: <b>Inherited From</b> Array.reduceRight
+        type: azure-arm-keyvault - <xref uid="v1.2.0.Resource" />
+    inheritanceDescription: '<b>Inherited From</b> [Array.reduceRight](xref:Array.reduceRight)'
   - name: >-
       reduceRight<U>((previousValue: U, currentValue: Resource, currentIndex:
       number, array: Resource[]) => U, U)
-    uid: azure-arm-keyvault.ResourceListResult.reduceRight_2
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.ResourceListResult.reduceRight_2
+    package: azure-arm-keyvault - v1.2.0
     summary: >-
       Calls the specified callback function for all the elements in an array, in
       descending order. The return value of the callback function is the
@@ -498,10 +506,10 @@ inheritedMethods:
       return:
         description: ''
         type: U
-    inheritanceDescription: <b>Inherited From</b> Array.reduceRight
+    inheritanceDescription: '<b>Inherited From</b> [Array.reduceRight](xref:Array.reduceRight)'
   - name: reverse()
-    uid: azure-arm-keyvault.ResourceListResult.reverse
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.ResourceListResult.reverse
+    package: azure-arm-keyvault - v1.2.0
     summary: Reverses the elements in an Array.
     remarks: ''
     isDeprecated: false
@@ -509,11 +517,11 @@ inheritedMethods:
       content: 'function reverse(): Resource[]'
       return:
         description: ''
-        type: '<xref uid="azure-arm-keyvault.Resource" />[]'
-    inheritanceDescription: <b>Inherited From</b> Array.reverse
+        type: 'azure-arm-keyvault - <xref uid="v1.2.0.Resource" />[]'
+    inheritanceDescription: '<b>Inherited From</b> [Array.reverse](xref:Array.reverse)'
   - name: shift()
-    uid: azure-arm-keyvault.ResourceListResult.shift
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.ResourceListResult.shift
+    package: azure-arm-keyvault - v1.2.0
     summary: Removes the first element from an array and returns it.
     remarks: ''
     isDeprecated: false
@@ -521,11 +529,11 @@ inheritedMethods:
       content: 'function shift(): Resource | undefined'
       return:
         description: ''
-        type: <xref uid="azure-arm-keyvault.Resource" /> | undefined
-    inheritanceDescription: <b>Inherited From</b> Array.shift
+        type: azure-arm-keyvault - <xref uid="v1.2.0.Resource" /> | undefined
+    inheritanceDescription: '<b>Inherited From</b> [Array.shift](xref:Array.shift)'
   - name: 'slice(number, number)'
-    uid: azure-arm-keyvault.ResourceListResult.slice
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.ResourceListResult.slice
+    package: azure-arm-keyvault - v1.2.0
     summary: Returns a section of an array.
     remarks: ''
     isDeprecated: false
@@ -537,15 +545,16 @@ inheritedMethods:
           description: The beginning of the specified portion of the array.
         - id: end
           type: number
-          description: |
-            The end of the specified portion of the array.
+          description: >
+            The end of the specified portion of the array. This is exclusive of
+            the element at the index 'end'.
       return:
         description: ''
-        type: '<xref uid="azure-arm-keyvault.Resource" />[]'
-    inheritanceDescription: <b>Inherited From</b> Array.slice
+        type: 'azure-arm-keyvault - <xref uid="v1.2.0.Resource" />[]'
+    inheritanceDescription: '<b>Inherited From</b> [Array.slice](xref:Array.slice)'
   - name: 'some((value: Resource, index: number, array: Resource[]) => unknown, any)'
-    uid: azure-arm-keyvault.ResourceListResult.some
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.ResourceListResult.some
+    package: azure-arm-keyvault - v1.2.0
     summary: >-
       Determines whether the specified callback function returns true for any
       element of an array.
@@ -560,21 +569,26 @@ inheritedMethods:
           type: '(value: Resource, index: number, array: Resource[]) =&gt; unknown'
           description: >-
             A function that accepts up to three arguments. The some method calls
-            the callbackfn function for each element in array1 until the
-            callbackfn returns true, or until the end of the array.
+
+            the callbackfn function for each element in the array until the
+            callbackfn returns a value
+
+            which is coercible to the Boolean value true, or until the end of
+            the array.
         - id: thisArg
           type: any
           description: >
             An object to which the this keyword can refer in the callbackfn
-            function. If thisArg is omitted, undefined is used as the this
-            value.
+            function.
+
+            If thisArg is omitted, undefined is used as the this value.
       return:
         description: ''
         type: boolean
-    inheritanceDescription: <b>Inherited From</b> Array.some
+    inheritanceDescription: '<b>Inherited From</b> [Array.some](xref:Array.some)'
   - name: 'sort((a: Resource, b: Resource) => number)'
-    uid: azure-arm-keyvault.ResourceListResult.sort
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.ResourceListResult.sort
+    package: azure-arm-keyvault - v1.2.0
     summary: Sorts an array.
     remarks: ''
     isDeprecated: false
@@ -584,16 +598,27 @@ inheritedMethods:
         - id: compareFn
           type: '(a: Resource, b: Resource) =&gt; number'
           description: >
-            The name of the function used to determine the order of the
-            elements. If omitted, the elements are sorted in ascending, ASCII
-            character order.
+            Function used to determine the order of the elements. It is expected
+            to return
+
+            a negative value if first argument is less than second argument,
+            zero if they're equal and a positive
+
+            value otherwise. If omitted, the elements are sorted in ascending,
+            ASCII character order.
+
+            ```ts
+
+            [11,2,22,1].sort((a, b) => a - b)
+
+            ```
       return:
         description: ''
         type: this
-    inheritanceDescription: <b>Inherited From</b> Array.sort
+    inheritanceDescription: '<b>Inherited From</b> [Array.sort](xref:Array.sort)'
   - name: 'splice(number, number)'
-    uid: azure-arm-keyvault.ResourceListResult.splice
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.ResourceListResult.splice
+    package: azure-arm-keyvault - v1.2.0
     summary: >-
       Removes elements from an array and, if necessary, inserts new elements in
       their place, returning the deleted elements.
@@ -613,11 +638,11 @@ inheritedMethods:
             The number of elements to remove.
       return:
         description: ''
-        type: '<xref uid="azure-arm-keyvault.Resource" />[]'
-    inheritanceDescription: <b>Inherited From</b> Array.splice
+        type: 'azure-arm-keyvault - <xref uid="v1.2.0.Resource" />[]'
+    inheritanceDescription: '<b>Inherited From</b> [Array.splice](xref:Array.splice)'
   - name: 'splice(number, number, Resource[])'
-    uid: azure-arm-keyvault.ResourceListResult.splice_1
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.ResourceListResult.splice_1
+    package: azure-arm-keyvault - v1.2.0
     summary: >-
       Removes elements from an array and, if necessary, inserts new elements in
       their place, returning the deleted elements.
@@ -637,16 +662,16 @@ inheritedMethods:
           type: number
           description: The number of elements to remove.
         - id: items
-          type: '<xref uid="azure-arm-keyvault.Resource" />[]'
+          type: 'azure-arm-keyvault - <xref uid="v1.2.0.Resource" />[]'
           description: |
             Elements to insert into the array in place of the deleted elements.
       return:
         description: ''
-        type: '<xref uid="azure-arm-keyvault.Resource" />[]'
-    inheritanceDescription: <b>Inherited From</b> Array.splice
+        type: 'azure-arm-keyvault - <xref uid="v1.2.0.Resource" />[]'
+    inheritanceDescription: '<b>Inherited From</b> [Array.splice](xref:Array.splice)'
   - name: toLocaleString()
-    uid: azure-arm-keyvault.ResourceListResult.toLocaleString
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.ResourceListResult.toLocaleString
+    package: azure-arm-keyvault - v1.2.0
     summary: >-
       Returns a string representation of an array. The elements are converted to
       string using their toLocalString methods.
@@ -657,10 +682,10 @@ inheritedMethods:
       return:
         description: ''
         type: string
-    inheritanceDescription: <b>Inherited From</b> Array.toLocaleString
+    inheritanceDescription: '<b>Inherited From</b> [Array.toLocaleString](xref:Array.toLocaleString)'
   - name: toString()
-    uid: azure-arm-keyvault.ResourceListResult.toString
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.ResourceListResult.toString
+    package: azure-arm-keyvault - v1.2.0
     summary: Returns a string representation of an array.
     remarks: ''
     isDeprecated: false
@@ -669,10 +694,10 @@ inheritedMethods:
       return:
         description: ''
         type: string
-    inheritanceDescription: <b>Inherited From</b> Array.toString
+    inheritanceDescription: '<b>Inherited From</b> [Array.toString](xref:Array.toString)'
   - name: 'unshift(Resource[])'
-    uid: azure-arm-keyvault.ResourceListResult.unshift
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.ResourceListResult.unshift
+    package: azure-arm-keyvault - v1.2.0
     summary: Inserts new elements at the start of an array.
     remarks: ''
     isDeprecated: false
@@ -680,11 +705,13 @@ inheritedMethods:
       content: 'function unshift(items: Resource[]): number'
       parameters:
         - id: items
-          type: '<xref uid="azure-arm-keyvault.Resource" />[]'
+          type: 'azure-arm-keyvault - <xref uid="v1.2.0.Resource" />[]'
           description: |
             Elements to insert at the start of the Array.
       return:
         description: ''
         type: number
-    inheritanceDescription: <b>Inherited From</b> Array.unshift
-extends: Array&lt;<xref uid="azure-arm-keyvault.Resource" />&gt;
+    inheritanceDescription: '<b>Inherited From</b> [Array.unshift](xref:Array.unshift)'
+extends: >-
+  azure-arm-keyvault - <xref uid="v1.2.0.VaultListResult.Array"
+  />&lt;azure-arm-keyvault - <xref uid="v1.2.0.Resource" />&gt;

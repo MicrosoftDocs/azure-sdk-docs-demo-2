@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: ReadReceiptResult
-uid: '@azure/cognitiveservices-formrecognizer.ReadReceiptResult'
-package: '@azure/cognitiveservices-formrecognizer'
+uid: '@azure/cognitiveservices-formrecognizer - v2.0.1.ReadReceiptResult'
+package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
 summary: Analysis result of the 'Batch Read Receipt' operation.
 fullName: ReadReceiptResult
 remarks: ''
@@ -10,8 +10,9 @@ type: interface
 properties:
   - name: recognitionResults
     uid: >-
-      @azure/cognitiveservices-formrecognizer.ReadReceiptResult.recognitionResults
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.ReadReceiptResult.recognitionResults
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: Text recognition result of the 'Batch Read Receipt' operation.
     fullName: recognitionResults
     remarks: ''
@@ -21,12 +22,11 @@ properties:
       return:
         description: ''
         type: >-
-          <xref
-          uid="@azure/cognitiveservices-formrecognizer.TextRecognitionResult"
-          />[]
+          @azure/cognitiveservices-formrecognizer - <xref
+          uid="v2.0.1.TextRecognitionResult" />[]
   - name: status
-    uid: '@azure/cognitiveservices-formrecognizer.ReadReceiptResult.status'
-    package: '@azure/cognitiveservices-formrecognizer'
+    uid: '@azure/cognitiveservices-formrecognizer - v2.0.1.ReadReceiptResult.status'
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: >-
       Status of the read operation. Possible values include: 'Not Started',
       'Running', 'Failed',
@@ -40,13 +40,13 @@ properties:
       return:
         description: ''
         type: >-
-          <xref
-          uid="@azure/cognitiveservices-formrecognizer.TextOperationStatusCodes"
-          />
+          @azure/cognitiveservices-formrecognizer - <xref
+          uid="v2.0.1.TextOperationStatusCodes" />
   - name: understandingResults
     uid: >-
-      @azure/cognitiveservices-formrecognizer.ReadReceiptResult.understandingResults
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.ReadReceiptResult.understandingResults
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: Semantic understanding result of the 'Batch Read Receipt' operation.
     fullName: understandingResults
     remarks: ''
@@ -56,5 +56,5 @@ properties:
       return:
         description: ''
         type: >-
-          <xref
-          uid="@azure/cognitiveservices-formrecognizer.UnderstandingResult" />[]
+          @azure/cognitiveservices-formrecognizer - <xref
+          uid="v2.0.1.UnderstandingResult" />[]

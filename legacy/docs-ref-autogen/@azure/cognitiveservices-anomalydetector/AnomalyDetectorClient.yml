@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: AnomalyDetectorClient
-uid: '@azure/cognitiveservices-anomalydetector.AnomalyDetectorClient'
-package: '@azure/cognitiveservices-anomalydetector'
+uid: '@azure/cognitiveservices-anomalydetector - v2.1.0.AnomalyDetectorClient'
+package: '@azure/cognitiveservices-anomalydetector - v2.1.0'
 summary: ''
 fullName: AnomalyDetectorClient
 remarks: ''
@@ -11,8 +11,10 @@ constructors:
   - name: >-
       AnomalyDetectorClient(ServiceClientCredentials, string,
       msRest.ServiceClientOptions)
-    uid: '@azure/cognitiveservices-anomalydetector.AnomalyDetectorClient.constructor'
-    package: '@azure/cognitiveservices-anomalydetector'
+    uid: >-
+      @azure/cognitiveservices-anomalydetector -
+      v2.1.0.AnomalyDetectorClient.constructor
+    package: '@azure/cognitiveservices-anomalydetector - v2.1.0'
     summary: Initializes a new instance of the AnomalyDetectorClient class.
     remarks: ''
     isDeprecated: false
@@ -38,8 +40,10 @@ constructors:
           description: ''
 inheritedProperties:
   - name: credentials
-    uid: '@azure/cognitiveservices-anomalydetector.AnomalyDetectorClient.credentials'
-    package: '@azure/cognitiveservices-anomalydetector'
+    uid: >-
+      @azure/cognitiveservices-anomalydetector -
+      v2.1.0.AnomalyDetectorClient.credentials
+    package: '@azure/cognitiveservices-anomalydetector - v2.1.0'
     summary: ''
     fullName: credentials
     remarks: ''
@@ -51,10 +55,13 @@ inheritedProperties:
         type: ServiceClientCredentials
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [AnomalyDetectorClientContext.credentials](xref:@azure/cognitiveservices-anomalydetector.AnomalyDetectorClientContext.credentials)
+      [AnomalyDetectorClientContext.credentials](xref:@azure/cognitiveservices-anomalydetector
+      - v2.1.0.AnomalyDetectorClientContext.credentials)
   - name: endpoint
-    uid: '@azure/cognitiveservices-anomalydetector.AnomalyDetectorClient.endpoint'
-    package: '@azure/cognitiveservices-anomalydetector'
+    uid: >-
+      @azure/cognitiveservices-anomalydetector -
+      v2.1.0.AnomalyDetectorClient.endpoint
+    package: '@azure/cognitiveservices-anomalydetector - v2.1.0'
     summary: ''
     fullName: endpoint
     remarks: ''
@@ -66,14 +73,16 @@ inheritedProperties:
         type: string
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [AnomalyDetectorClientContext.endpoint](xref:@azure/cognitiveservices-anomalydetector.AnomalyDetectorClientContext.endpoint)
+      [AnomalyDetectorClientContext.endpoint](xref:@azure/cognitiveservices-anomalydetector
+      - v2.1.0.AnomalyDetectorClientContext.endpoint)
 inheritedMethods:
   - name: >-
       sendOperationRequest(OperationArguments, OperationSpec,
       ServiceCallback<any>)
     uid: >-
-      @azure/cognitiveservices-anomalydetector.AnomalyDetectorClient.sendOperationRequest
-    package: '@azure/cognitiveservices-anomalydetector'
+      @azure/cognitiveservices-anomalydetector -
+      v2.1.0.AnomalyDetectorClient.sendOperationRequest
+    package: '@azure/cognitiveservices-anomalydetector - v2.1.0'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
     isDeprecated: false
@@ -98,10 +107,14 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;RestResponse&gt;
-    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendOperationRequest
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [ServiceClient.sendOperationRequest](xref:ServiceClient.sendOperationRequest)
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
-    uid: '@azure/cognitiveservices-anomalydetector.AnomalyDetectorClient.sendRequest'
-    package: '@azure/cognitiveservices-anomalydetector'
+    uid: >-
+      @azure/cognitiveservices-anomalydetector -
+      v2.1.0.AnomalyDetectorClient.sendRequest
+    package: '@azure/cognitiveservices-anomalydetector - v2.1.0'
     summary: Send the provided httpRequest.
     remarks: ''
     isDeprecated: false
@@ -116,12 +129,15 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;HttpOperationResponse&gt;
-    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendRequest
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [ServiceClient.sendRequest](xref:ServiceClient.sendRequest)
 methods:
   - name: 'changePointDetect(ChangePointDetectRequest, msRest.RequestOptionsBase)'
     uid: >-
-      @azure/cognitiveservices-anomalydetector.AnomalyDetectorClient.changePointDetect
-    package: '@azure/cognitiveservices-anomalydetector'
+      @azure/cognitiveservices-anomalydetector -
+      v2.1.0.AnomalyDetectorClient.changePointDetect
+    package: '@azure/cognitiveservices-anomalydetector - v2.1.0'
     summary: Evaluate change point score of every series point
     remarks: ''
     isDeprecated: false
@@ -132,9 +148,8 @@ methods:
       parameters:
         - id: body
           type: >-
-            <xref
-            uid="@azure/cognitiveservices-anomalydetector.ChangePointDetectRequest"
-            />
+            @azure/cognitiveservices-anomalydetector - <xref
+            uid="v2.1.0.ChangePointDetectRequest" />
           description: >-
             Time series points and granularity is needed. Advanced model
             parameters can also be
@@ -150,8 +165,9 @@ methods:
       changePointDetect(ChangePointDetectRequest, RequestOptionsBase,
       ServiceCallback<ChangePointDetectResponse>)
     uid: >-
-      @azure/cognitiveservices-anomalydetector.AnomalyDetectorClient.changePointDetect_2
-    package: '@azure/cognitiveservices-anomalydetector'
+      @azure/cognitiveservices-anomalydetector -
+      v2.1.0.AnomalyDetectorClient.changePointDetect_2
+    package: '@azure/cognitiveservices-anomalydetector - v2.1.0'
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -163,9 +179,8 @@ methods:
       parameters:
         - id: body
           type: >-
-            <xref
-            uid="@azure/cognitiveservices-anomalydetector.ChangePointDetectRequest"
-            />
+            @azure/cognitiveservices-anomalydetector - <xref
+            uid="v2.1.0.ChangePointDetectRequest" />
           description: >-
             Time series points and granularity is needed. Advanced model
             parameters can also be
@@ -176,17 +191,17 @@ methods:
           description: The optional parameters
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/cognitiveservices-anomalydetector.ChangePointDetectResponse"
-            />&gt;
+            ServiceCallback&lt;@azure/cognitiveservices-anomalydetector - <xref
+            uid="v2.1.0.ChangePointDetectResponse" />&gt;
           description: |
             The callback
   - name: >-
       changePointDetect(ChangePointDetectRequest,
       ServiceCallback<ChangePointDetectResponse>)
     uid: >-
-      @azure/cognitiveservices-anomalydetector.AnomalyDetectorClient.changePointDetect_1
-    package: '@azure/cognitiveservices-anomalydetector'
+      @azure/cognitiveservices-anomalydetector -
+      v2.1.0.AnomalyDetectorClient.changePointDetect_1
+    package: '@azure/cognitiveservices-anomalydetector - v2.1.0'
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -197,9 +212,8 @@ methods:
       parameters:
         - id: body
           type: >-
-            <xref
-            uid="@azure/cognitiveservices-anomalydetector.ChangePointDetectRequest"
-            />
+            @azure/cognitiveservices-anomalydetector - <xref
+            uid="v2.1.0.ChangePointDetectRequest" />
           description: >-
             Time series points and granularity is needed. Advanced model
             parameters can also be
@@ -207,15 +221,15 @@ methods:
             set in the request if needed.
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/cognitiveservices-anomalydetector.ChangePointDetectResponse"
-            />&gt;
+            ServiceCallback&lt;@azure/cognitiveservices-anomalydetector - <xref
+            uid="v2.1.0.ChangePointDetectResponse" />&gt;
           description: |
             The callback
   - name: 'entireDetect(Request, msRest.RequestOptionsBase)'
     uid: >-
-      @azure/cognitiveservices-anomalydetector.AnomalyDetectorClient.entireDetect
-    package: '@azure/cognitiveservices-anomalydetector'
+      @azure/cognitiveservices-anomalydetector -
+      v2.1.0.AnomalyDetectorClient.entireDetect
+    package: '@azure/cognitiveservices-anomalydetector - v2.1.0'
     summary: >-
       This operation generates a model using an entire series, each point is
       detected with the same
@@ -233,7 +247,9 @@ methods:
         msRest.RequestOptionsBase): Promise<Models.EntireDetectResponse2>
       parameters:
         - id: body
-          type: <xref uid="@azure/cognitiveservices-anomalydetector.Request" />
+          type: >-
+            @azure/cognitiveservices-anomalydetector - <xref
+            uid="v2.1.0.Request" />
           description: >-
             Time series points and period if needed. Advanced model parameters
             can also be set
@@ -249,8 +265,9 @@ methods:
       entireDetect(Request, RequestOptionsBase,
       ServiceCallback<EntireDetectResponse>)
     uid: >-
-      @azure/cognitiveservices-anomalydetector.AnomalyDetectorClient.entireDetect_2
-    package: '@azure/cognitiveservices-anomalydetector'
+      @azure/cognitiveservices-anomalydetector -
+      v2.1.0.AnomalyDetectorClient.entireDetect_2
+    package: '@azure/cognitiveservices-anomalydetector - v2.1.0'
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -260,7 +277,9 @@ methods:
         callback: ServiceCallback<EntireDetectResponse>)
       parameters:
         - id: body
-          type: <xref uid="@azure/cognitiveservices-anomalydetector.Request" />
+          type: >-
+            @azure/cognitiveservices-anomalydetector - <xref
+            uid="v2.1.0.Request" />
           description: >-
             Time series points and period if needed. Advanced model parameters
             can also be set
@@ -271,15 +290,15 @@ methods:
           description: The optional parameters
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/cognitiveservices-anomalydetector.EntireDetectResponse"
-            />&gt;
+            ServiceCallback&lt;@azure/cognitiveservices-anomalydetector - <xref
+            uid="v2.1.0.EntireDetectResponse" />&gt;
           description: |
             The callback
   - name: 'entireDetect(Request, ServiceCallback<EntireDetectResponse>)'
     uid: >-
-      @azure/cognitiveservices-anomalydetector.AnomalyDetectorClient.entireDetect_1
-    package: '@azure/cognitiveservices-anomalydetector'
+      @azure/cognitiveservices-anomalydetector -
+      v2.1.0.AnomalyDetectorClient.entireDetect_1
+    package: '@azure/cognitiveservices-anomalydetector - v2.1.0'
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -289,7 +308,9 @@ methods:
         ServiceCallback<EntireDetectResponse>)
       parameters:
         - id: body
-          type: <xref uid="@azure/cognitiveservices-anomalydetector.Request" />
+          type: >-
+            @azure/cognitiveservices-anomalydetector - <xref
+            uid="v2.1.0.Request" />
           description: >-
             Time series points and period if needed. Advanced model parameters
             can also be set
@@ -297,14 +318,15 @@ methods:
             in the request.
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/cognitiveservices-anomalydetector.EntireDetectResponse"
-            />&gt;
+            ServiceCallback&lt;@azure/cognitiveservices-anomalydetector - <xref
+            uid="v2.1.0.EntireDetectResponse" />&gt;
           description: |
             The callback
   - name: 'lastDetect(Request, msRest.RequestOptionsBase)'
-    uid: '@azure/cognitiveservices-anomalydetector.AnomalyDetectorClient.lastDetect'
-    package: '@azure/cognitiveservices-anomalydetector'
+    uid: >-
+      @azure/cognitiveservices-anomalydetector -
+      v2.1.0.AnomalyDetectorClient.lastDetect
+    package: '@azure/cognitiveservices-anomalydetector - v2.1.0'
     summary: >-
       This operation generates a model using points before the latest one. With
       this method, only
@@ -322,7 +344,9 @@ methods:
         Promise<Models.LastDetectResponse2>
       parameters:
         - id: body
-          type: <xref uid="@azure/cognitiveservices-anomalydetector.Request" />
+          type: >-
+            @azure/cognitiveservices-anomalydetector - <xref
+            uid="v2.1.0.Request" />
           description: >-
             Time series points and period if needed. Advanced model parameters
             can also be set
@@ -338,8 +362,9 @@ methods:
       lastDetect(Request, RequestOptionsBase,
       ServiceCallback<LastDetectResponse>)
     uid: >-
-      @azure/cognitiveservices-anomalydetector.AnomalyDetectorClient.lastDetect_2
-    package: '@azure/cognitiveservices-anomalydetector'
+      @azure/cognitiveservices-anomalydetector -
+      v2.1.0.AnomalyDetectorClient.lastDetect_2
+    package: '@azure/cognitiveservices-anomalydetector - v2.1.0'
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -349,7 +374,9 @@ methods:
         callback: ServiceCallback<LastDetectResponse>)
       parameters:
         - id: body
-          type: <xref uid="@azure/cognitiveservices-anomalydetector.Request" />
+          type: >-
+            @azure/cognitiveservices-anomalydetector - <xref
+            uid="v2.1.0.Request" />
           description: >-
             Time series points and period if needed. Advanced model parameters
             can also be set
@@ -360,15 +387,15 @@ methods:
           description: The optional parameters
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/cognitiveservices-anomalydetector.LastDetectResponse"
-            />&gt;
+            ServiceCallback&lt;@azure/cognitiveservices-anomalydetector - <xref
+            uid="v2.1.0.LastDetectResponse" />&gt;
           description: |
             The callback
   - name: 'lastDetect(Request, ServiceCallback<LastDetectResponse>)'
     uid: >-
-      @azure/cognitiveservices-anomalydetector.AnomalyDetectorClient.lastDetect_1
-    package: '@azure/cognitiveservices-anomalydetector'
+      @azure/cognitiveservices-anomalydetector -
+      v2.1.0.AnomalyDetectorClient.lastDetect_1
+    package: '@azure/cognitiveservices-anomalydetector - v2.1.0'
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -378,7 +405,9 @@ methods:
         ServiceCallback<LastDetectResponse>)
       parameters:
         - id: body
-          type: <xref uid="@azure/cognitiveservices-anomalydetector.Request" />
+          type: >-
+            @azure/cognitiveservices-anomalydetector - <xref
+            uid="v2.1.0.Request" />
           description: >-
             Time series points and period if needed. Advanced model parameters
             can also be set
@@ -386,11 +415,10 @@ methods:
             in the request.
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/cognitiveservices-anomalydetector.LastDetectResponse"
-            />&gt;
+            ServiceCallback&lt;@azure/cognitiveservices-anomalydetector - <xref
+            uid="v2.1.0.LastDetectResponse" />&gt;
           description: |
             The callback
 extends: >-
-  <xref
-  uid="@azure/cognitiveservices-anomalydetector.AnomalyDetectorClientContext" />
+  @azure/cognitiveservices-anomalydetector - <xref
+  uid="v2.1.0.AnomalyDetectorClientContext" />

@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: KeyPhraseBatchResult
-uid: '@azure/cognitiveservices-textanalytics.KeyPhraseBatchResult'
-package: '@azure/cognitiveservices-textanalytics'
+uid: '@azure/cognitiveservices-textanalytics - v4.0.0.KeyPhraseBatchResult'
+package: '@azure/cognitiveservices-textanalytics - v4.0.0'
 summary: An interface representing KeyPhraseBatchResult.
 fullName: KeyPhraseBatchResult
 remarks: ''
@@ -9,8 +9,10 @@ isDeprecated: false
 type: interface
 properties:
   - name: documents
-    uid: '@azure/cognitiveservices-textanalytics.KeyPhraseBatchResult.documents'
-    package: '@azure/cognitiveservices-textanalytics'
+    uid: >-
+      @azure/cognitiveservices-textanalytics -
+      v4.0.0.KeyPhraseBatchResult.documents
+    package: '@azure/cognitiveservices-textanalytics - v4.0.0'
     summary: >-
       Response by document
 
@@ -24,12 +26,13 @@ properties:
       return:
         description: ''
         type: >-
-          <xref
-          uid="@azure/cognitiveservices-textanalytics.KeyPhraseBatchResultItem"
-          />[]
+          @azure/cognitiveservices-textanalytics - <xref
+          uid="v4.0.0.KeyPhraseBatchResultItem" />[]
   - name: errors
-    uid: '@azure/cognitiveservices-textanalytics.KeyPhraseBatchResult.errors'
-    package: '@azure/cognitiveservices-textanalytics'
+    uid: >-
+      @azure/cognitiveservices-textanalytics -
+      v4.0.0.KeyPhraseBatchResult.errors
+    package: '@azure/cognitiveservices-textanalytics - v4.0.0'
     summary: >-
       Errors and Warnings by document
 
@@ -42,10 +45,14 @@ properties:
       content: 'errors?: ErrorRecord[]'
       return:
         description: ''
-        type: '<xref uid="@azure/cognitiveservices-textanalytics.ErrorRecord" />[]'
+        type: >-
+          @azure/cognitiveservices-textanalytics - <xref
+          uid="v4.0.0.ErrorRecord" />[]
   - name: statistics
-    uid: '@azure/cognitiveservices-textanalytics.KeyPhraseBatchResult.statistics'
-    package: '@azure/cognitiveservices-textanalytics'
+    uid: >-
+      @azure/cognitiveservices-textanalytics -
+      v4.0.0.KeyPhraseBatchResult.statistics
+    package: '@azure/cognitiveservices-textanalytics - v4.0.0'
     summary: >-
       =(Optional) if showStats=true was specified in the request this field will
       contain information
@@ -62,5 +69,5 @@ properties:
       return:
         description: ''
         type: >-
-          <xref uid="@azure/cognitiveservices-textanalytics.RequestStatistics"
-          />
+          @azure/cognitiveservices-textanalytics - <xref
+          uid="v4.0.0.RequestStatistics" />

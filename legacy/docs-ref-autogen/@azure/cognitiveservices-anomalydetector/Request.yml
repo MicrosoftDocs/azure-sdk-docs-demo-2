@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: Request
-uid: '@azure/cognitiveservices-anomalydetector.Request'
-package: '@azure/cognitiveservices-anomalydetector'
+uid: '@azure/cognitiveservices-anomalydetector - v2.1.0.Request'
+package: '@azure/cognitiveservices-anomalydetector - v2.1.0'
 summary: An interface representing Request.
 fullName: Request
 remarks: ''
@@ -9,8 +9,8 @@ isDeprecated: false
 type: interface
 properties:
   - name: customInterval
-    uid: '@azure/cognitiveservices-anomalydetector.Request.customInterval'
-    package: '@azure/cognitiveservices-anomalydetector'
+    uid: '@azure/cognitiveservices-anomalydetector - v2.1.0.Request.customInterval'
+    package: '@azure/cognitiveservices-anomalydetector - v2.1.0'
     summary: >-
       Custom Interval is used to set non-standard time interval, for example, if
       the series is 5
@@ -26,8 +26,8 @@ properties:
         description: ''
         type: undefined | number
   - name: granularity
-    uid: '@azure/cognitiveservices-anomalydetector.Request.granularity'
-    package: '@azure/cognitiveservices-anomalydetector'
+    uid: '@azure/cognitiveservices-anomalydetector - v2.1.0.Request.granularity'
+    package: '@azure/cognitiveservices-anomalydetector - v2.1.0'
     summary: >-
       Possible values include: 'yearly', 'monthly', 'weekly', 'daily', 'hourly',
       'minutely',
@@ -40,10 +40,12 @@ properties:
       content: 'granularity: Granularity'
       return:
         description: ''
-        type: <xref uid="@azure/cognitiveservices-anomalydetector.Granularity" />
+        type: >-
+          @azure/cognitiveservices-anomalydetector - <xref
+          uid="v2.1.0.Granularity" />
   - name: maxAnomalyRatio
-    uid: '@azure/cognitiveservices-anomalydetector.Request.maxAnomalyRatio'
-    package: '@azure/cognitiveservices-anomalydetector'
+    uid: '@azure/cognitiveservices-anomalydetector - v2.1.0.Request.maxAnomalyRatio'
+    package: '@azure/cognitiveservices-anomalydetector - v2.1.0'
     summary: >-
       Optional argument, advanced model parameter, max anomaly ratio in a time
       series.
@@ -56,8 +58,8 @@ properties:
         description: ''
         type: undefined | number
   - name: period
-    uid: '@azure/cognitiveservices-anomalydetector.Request.period'
-    package: '@azure/cognitiveservices-anomalydetector'
+    uid: '@azure/cognitiveservices-anomalydetector - v2.1.0.Request.period'
+    package: '@azure/cognitiveservices-anomalydetector - v2.1.0'
     summary: >-
       Optional argument, periodic value of a time series. If the value is null
       or does not present,
@@ -72,8 +74,8 @@ properties:
         description: ''
         type: undefined | number
   - name: sensitivity
-    uid: '@azure/cognitiveservices-anomalydetector.Request.sensitivity'
-    package: '@azure/cognitiveservices-anomalydetector'
+    uid: '@azure/cognitiveservices-anomalydetector - v2.1.0.Request.sensitivity'
+    package: '@azure/cognitiveservices-anomalydetector - v2.1.0'
     summary: >-
       Optional argument, advanced model parameter, between 0-99, the lower the
       value is, the larger
@@ -88,8 +90,8 @@ properties:
         description: ''
         type: undefined | number
   - name: series
-    uid: '@azure/cognitiveservices-anomalydetector.Request.series'
-    package: '@azure/cognitiveservices-anomalydetector'
+    uid: '@azure/cognitiveservices-anomalydetector - v2.1.0.Request.series'
+    package: '@azure/cognitiveservices-anomalydetector - v2.1.0'
     summary: >-
       Time series data points. Points should be sorted by timestamp in ascending
       order to match the
@@ -106,4 +108,6 @@ properties:
       content: 'series: Point[]'
       return:
         description: ''
-        type: '<xref uid="@azure/cognitiveservices-anomalydetector.Point" />[]'
+        type: >-
+          @azure/cognitiveservices-anomalydetector - <xref uid="v2.1.0.Point"
+          />[]

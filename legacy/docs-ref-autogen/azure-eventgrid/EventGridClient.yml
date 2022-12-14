@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: EventGridClient
-uid: azure-eventgrid.EventGridClient
-package: azure-eventgrid
+uid: azure-eventgrid - v1.6.0.EventGridClient
+package: azure-eventgrid - v1.6.0
 summary: ''
 fullName: EventGridClient
 remarks: ''
@@ -9,8 +9,8 @@ isDeprecated: false
 type: class
 constructors:
   - name: 'EventGridClient(ServiceClientCredentials, AzureServiceClientOptions)'
-    uid: azure-eventgrid.EventGridClient.constructor
-    package: azure-eventgrid
+    uid: azure-eventgrid - v1.6.0.EventGridClient.constructor
+    package: azure-eventgrid - v1.6.0
     summary: Initializes a new instance of the EventGridClient class.
     remarks: ''
     isDeprecated: false
@@ -28,8 +28,8 @@ constructors:
           description: ''
 properties:
   - name: acceptLanguage
-    uid: azure-eventgrid.EventGridClient.acceptLanguage
-    package: azure-eventgrid
+    uid: azure-eventgrid - v1.6.0.EventGridClient.acceptLanguage
+    package: azure-eventgrid - v1.6.0
     summary: ''
     fullName: acceptLanguage
     remarks: ''
@@ -40,8 +40,8 @@ properties:
         description: ''
         type: string
   - name: apiVersion
-    uid: azure-eventgrid.EventGridClient.apiVersion
-    package: azure-eventgrid
+    uid: azure-eventgrid - v1.6.0.EventGridClient.apiVersion
+    package: azure-eventgrid - v1.6.0
     summary: ''
     fullName: apiVersion
     remarks: ''
@@ -52,8 +52,8 @@ properties:
         description: ''
         type: string
   - name: credentials
-    uid: azure-eventgrid.EventGridClient.credentials
-    package: azure-eventgrid
+    uid: azure-eventgrid - v1.6.0.EventGridClient.credentials
+    package: azure-eventgrid - v1.6.0
     summary: ''
     fullName: credentials
     remarks: ''
@@ -64,8 +64,8 @@ properties:
         description: ''
         type: ServiceClientCredentials
   - name: generateClientRequestId
-    uid: azure-eventgrid.EventGridClient.generateClientRequestId
-    package: azure-eventgrid
+    uid: azure-eventgrid - v1.6.0.EventGridClient.generateClientRequestId
+    package: azure-eventgrid - v1.6.0
     summary: ''
     fullName: generateClientRequestId
     remarks: ''
@@ -76,8 +76,8 @@ properties:
         description: ''
         type: boolean
   - name: longRunningOperationRetryTimeout
-    uid: azure-eventgrid.EventGridClient.longRunningOperationRetryTimeout
-    package: azure-eventgrid
+    uid: azure-eventgrid - v1.6.0.EventGridClient.longRunningOperationRetryTimeout
+    package: azure-eventgrid - v1.6.0
     summary: ''
     fullName: longRunningOperationRetryTimeout
     remarks: ''
@@ -89,8 +89,8 @@ properties:
         type: number
 inheritedMethods:
   - name: addUserAgentInfo(any)
-    uid: azure-eventgrid.EventGridClient.addUserAgentInfo
-    package: azure-eventgrid
+    uid: azure-eventgrid - v1.6.0.EventGridClient.addUserAgentInfo
+    package: azure-eventgrid - v1.6.0
     summary: Adds custom information to user agent header
     remarks: ''
     isDeprecated: false
@@ -101,12 +101,14 @@ inheritedMethods:
           type: any
           description: |
             information to be added to user agent header, as string.
-    inheritanceDescription: <b>Inherited From</b> ServiceClient.addUserAgentInfo
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [ServiceClient.addUserAgentInfo](xref:ServiceClient.addUserAgentInfo)
   - name: >-
       getLongRunningOperationResult<TResult>(HttpOperationResponse<TResult>,
       RequestOptions)
-    uid: azure-eventgrid.EventGridClient.getLongRunningOperationResult_2
-    package: azure-eventgrid
+    uid: azure-eventgrid - v1.6.0.EventGridClient.getLongRunningOperationResult_2
+    package: azure-eventgrid - v1.6.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -125,12 +127,14 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;TResult&gt;
-    inheritanceDescription: <b>Inherited From</b> AzureServiceClient.getLongRunningOperationResult
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [AzureServiceClient.getLongRunningOperationResult](xref:AzureServiceClient.getLongRunningOperationResult)
   - name: >-
       getLongRunningOperationResult<TResult>(HttpOperationResponse<TResult>,
       RequestOptions, ServiceCallback<TResult>)
-    uid: azure-eventgrid.EventGridClient.getLongRunningOperationResult
-    package: azure-eventgrid
+    uid: azure-eventgrid - v1.6.0.EventGridClient.getLongRunningOperationResult
+    package: azure-eventgrid - v1.6.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -149,12 +153,14 @@ inheritedMethods:
         - id: callback
           type: ServiceCallback&lt;TResult&gt;
           description: ''
-    inheritanceDescription: <b>Inherited From</b> AzureServiceClient.getLongRunningOperationResult
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [AzureServiceClient.getLongRunningOperationResult](xref:AzureServiceClient.getLongRunningOperationResult)
   - name: >-
       getLongRunningOperationResult<TResult>(HttpOperationResponse<TResult>,
       ServiceCallback<TResult>)
-    uid: azure-eventgrid.EventGridClient.getLongRunningOperationResult_1
-    package: azure-eventgrid
+    uid: azure-eventgrid - v1.6.0.EventGridClient.getLongRunningOperationResult_1
+    package: azure-eventgrid - v1.6.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -169,10 +175,12 @@ inheritedMethods:
         - id: callback
           type: ServiceCallback&lt;TResult&gt;
           description: ''
-    inheritanceDescription: <b>Inherited From</b> AzureServiceClient.getLongRunningOperationResult
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [AzureServiceClient.getLongRunningOperationResult](xref:AzureServiceClient.getLongRunningOperationResult)
   - name: getPackageJsonInfo(string)
-    uid: azure-eventgrid.EventGridClient.getPackageJsonInfo
-    package: azure-eventgrid
+    uid: azure-eventgrid - v1.6.0.EventGridClient.getPackageJsonInfo
+    package: azure-eventgrid - v1.6.0
     summary: >-
       Attempts to find package.json for the given azure nodejs package.
 
@@ -193,12 +201,14 @@ inheritedMethods:
       return:
         description: packageJsonInfo - "name" and "version" of the desired package.
         type: '{ name: string, version: string }'
-    inheritanceDescription: <b>Inherited From</b> ServiceClient.getPackageJsonInfo
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [ServiceClient.getPackageJsonInfo](xref:ServiceClient.getPackageJsonInfo)
   - name: >-
       sendLongRunningRequest<TResult>(LongRunningUrlBasedRequestPrepareOptions |
       LongRunningPathTemplateBasedRequestPrepareOptions)
-    uid: azure-eventgrid.EventGridClient.sendLongRunningRequest_1
-    package: azure-eventgrid
+    uid: azure-eventgrid - v1.6.0.EventGridClient.sendLongRunningRequest_1
+    package: azure-eventgrid - v1.6.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -216,13 +226,15 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;TResult&gt;
-    inheritanceDescription: <b>Inherited From</b> AzureServiceClient.sendLongRunningRequest
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [AzureServiceClient.sendLongRunningRequest](xref:AzureServiceClient.sendLongRunningRequest)
   - name: >-
       sendLongRunningRequest<TResult>(LongRunningUrlBasedRequestPrepareOptions |
       LongRunningPathTemplateBasedRequestPrepareOptions,
       ServiceCallback<TResult>)
-    uid: azure-eventgrid.EventGridClient.sendLongRunningRequest
-    package: azure-eventgrid
+    uid: azure-eventgrid - v1.6.0.EventGridClient.sendLongRunningRequest
+    package: azure-eventgrid - v1.6.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -241,13 +253,16 @@ inheritedMethods:
         - id: callback
           type: ServiceCallback&lt;TResult&gt;
           description: ''
-    inheritanceDescription: <b>Inherited From</b> AzureServiceClient.sendLongRunningRequest
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [AzureServiceClient.sendLongRunningRequest](xref:AzureServiceClient.sendLongRunningRequest)
   - name: >-
       sendLongRunningRequestWithHttpOperationResponse<TResult>(LongRunningUrlBasedRequestPrepareOptions
       | LongRunningPathTemplateBasedRequestPrepareOptions)
     uid: >-
-      azure-eventgrid.EventGridClient.sendLongRunningRequestWithHttpOperationResponse
-    package: azure-eventgrid
+      azure-eventgrid -
+      v1.6.0.EventGridClient.sendLongRunningRequestWithHttpOperationResponse
+    package: azure-eventgrid - v1.6.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -269,12 +284,12 @@ inheritedMethods:
         type: Promise&lt;HttpOperationResponse&lt;TResult&gt;&gt;
     inheritanceDescription: >-
       <b>Inherited From</b>
-      AzureServiceClient.sendLongRunningRequestWithHttpOperationResponse
+      [AzureServiceClient.sendLongRunningRequestWithHttpOperationResponse](xref:AzureServiceClient.sendLongRunningRequestWithHttpOperationResponse)
   - name: >-
       sendRequest<TResult>(PathTemplateBasedRequestPrepareOptions |
       UrlBasedRequestPrepareOptions)
-    uid: azure-eventgrid.EventGridClient.sendRequest_1
-    package: azure-eventgrid
+    uid: azure-eventgrid - v1.6.0.EventGridClient.sendRequest_1
+    package: azure-eventgrid - v1.6.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -292,12 +307,14 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;TResult&gt;
-    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendRequest
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [ServiceClient.sendRequest](xref:ServiceClient.sendRequest)
   - name: >-
       sendRequest<TResult>(PathTemplateBasedRequestPrepareOptions |
       UrlBasedRequestPrepareOptions, ServiceCallback<TResult>)
-    uid: azure-eventgrid.EventGridClient.sendRequest
-    package: azure-eventgrid
+    uid: azure-eventgrid - v1.6.0.EventGridClient.sendRequest
+    package: azure-eventgrid - v1.6.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -315,12 +332,16 @@ inheritedMethods:
         - id: callback
           type: ServiceCallback&lt;TResult&gt;
           description: ''
-    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendRequest
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [ServiceClient.sendRequest](xref:ServiceClient.sendRequest)
   - name: >-
       sendRequestWithHttpOperationResponse<TResult>(PathTemplateBasedRequestPrepareOptions
       | UrlBasedRequestPrepareOptions)
-    uid: azure-eventgrid.EventGridClient.sendRequestWithHttpOperationResponse
-    package: azure-eventgrid
+    uid: >-
+      azure-eventgrid -
+      v1.6.0.EventGridClient.sendRequestWithHttpOperationResponse
+    package: azure-eventgrid - v1.6.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -338,11 +359,13 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;HttpOperationResponse&lt;TResult&gt;&gt;
-    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendRequestWithHttpOperationResponse
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [ServiceClient.sendRequestWithHttpOperationResponse](xref:ServiceClient.sendRequestWithHttpOperationResponse)
 methods:
   - name: 'publishEvents(string, EventGridEvent[], ServiceCallback<void>)'
-    uid: azure-eventgrid.EventGridClient.publishEvents_1
-    package: azure-eventgrid
+    uid: azure-eventgrid - v1.6.0.EventGridClient.publishEvents_1
+    package: azure-eventgrid - v1.6.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -355,7 +378,7 @@ methods:
           type: string
           description: ''
         - id: events
-          type: '<xref uid="azure-eventgrid.EventGridEvent" />[]'
+          type: 'azure-eventgrid - <xref uid="v1.6.0.EventGridEvent" />[]'
           description: ''
         - id: callback
           type: ServiceCallback&lt;void&gt;
@@ -363,8 +386,8 @@ methods:
   - name: >-
       publishEvents(string, EventGridEvent[], { customHeaders?: [key: string]:
       string })
-    uid: azure-eventgrid.EventGridClient.publishEvents
-    package: azure-eventgrid
+    uid: azure-eventgrid - v1.6.0.EventGridClient.publishEvents
+    package: azure-eventgrid - v1.6.0
     summary: Publishes a batch of events to an Azure Event Grid topic.
     remarks: ''
     isDeprecated: false
@@ -379,7 +402,7 @@ methods:
             The host name of the topic, e.g.
             topic1.westus2-1.eventgrid.azure.net
         - id: events
-          type: '<xref uid="azure-eventgrid.EventGridEvent" />[]'
+          type: 'azure-eventgrid - <xref uid="v1.6.0.EventGridEvent" />[]'
           description: |
             An array of events to be published to Event Grid.
         - id: options
@@ -409,8 +432,8 @@ methods:
   - name: >-
       publishEvents(string, EventGridEvent[], { customHeaders?: [key: string]:
       string }, ServiceCallback<void>)
-    uid: azure-eventgrid.EventGridClient.publishEvents_2
-    package: azure-eventgrid
+    uid: azure-eventgrid - v1.6.0.EventGridClient.publishEvents_2
+    package: azure-eventgrid - v1.6.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -424,7 +447,7 @@ methods:
           type: string
           description: ''
         - id: events
-          type: '<xref uid="azure-eventgrid.EventGridEvent" />[]'
+          type: 'azure-eventgrid - <xref uid="v1.6.0.EventGridEvent" />[]'
           description: ''
         - id: options
           type: '{ customHeaders?: [key: string]: string }'
@@ -435,8 +458,10 @@ methods:
   - name: >-
       publishEventsWithHttpOperationResponse(string, EventGridEvent[], {
       customHeaders?: [key: string]: string })
-    uid: azure-eventgrid.EventGridClient.publishEventsWithHttpOperationResponse
-    package: azure-eventgrid
+    uid: >-
+      azure-eventgrid -
+      v1.6.0.EventGridClient.publishEventsWithHttpOperationResponse
+    package: azure-eventgrid - v1.6.0
     summary: Publishes a batch of events to an Azure Event Grid topic.
     remarks: ''
     isDeprecated: false
@@ -452,7 +477,7 @@ methods:
             The host name of the topic, e.g.
             topic1.westus2-1.eventgrid.azure.net
         - id: events
-          type: '<xref uid="azure-eventgrid.EventGridEvent" />[]'
+          type: 'azure-eventgrid - <xref uid="v1.6.0.EventGridEvent" />[]'
           description: |
             An array of events to be published to Event Grid.
         - id: options

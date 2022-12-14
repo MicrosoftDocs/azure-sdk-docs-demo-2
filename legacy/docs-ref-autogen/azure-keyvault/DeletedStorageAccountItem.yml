@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: DeletedStorageAccountItem
-uid: azure-keyvault.DeletedStorageAccountItem
-package: azure-keyvault
+uid: azure-keyvault - v3.0.5.DeletedStorageAccountItem
+package: azure-keyvault - v3.0.5
 summary: ''
 fullName: DeletedStorageAccountItem
 remarks: ''
@@ -9,8 +9,8 @@ isDeprecated: false
 type: interface
 properties:
   - name: deletedDate
-    uid: azure-keyvault.DeletedStorageAccountItem.deletedDate
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedStorageAccountItem.deletedDate
+    package: azure-keyvault - v3.0.5
     summary: ''
     fullName: deletedDate
     remarks: ''
@@ -21,8 +21,8 @@ properties:
         description: ''
         type: Date
   - name: recoveryId
-    uid: azure-keyvault.DeletedStorageAccountItem.recoveryId
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedStorageAccountItem.recoveryId
+    package: azure-keyvault - v3.0.5
     summary: ''
     fullName: recoveryId
     remarks: ''
@@ -33,8 +33,8 @@ properties:
         description: ''
         type: string
   - name: scheduledPurgeDate
-    uid: azure-keyvault.DeletedStorageAccountItem.scheduledPurgeDate
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedStorageAccountItem.scheduledPurgeDate
+    package: azure-keyvault - v3.0.5
     summary: ''
     fullName: scheduledPurgeDate
     remarks: ''
@@ -46,8 +46,8 @@ properties:
         type: Date
 inheritedProperties:
   - name: attributes
-    uid: azure-keyvault.DeletedStorageAccountItem.attributes
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedStorageAccountItem.attributes
+    package: azure-keyvault - v3.0.5
     summary: ''
     fullName: attributes
     remarks: ''
@@ -56,13 +56,13 @@ inheritedProperties:
       content: 'attributes?: StorageAccountAttributes'
       return:
         description: ''
-        type: <xref uid="azure-keyvault.StorageAccountAttributes" />
+        type: azure-keyvault - <xref uid="v3.0.5.StorageAccountAttributes" />
     inheritanceDescription: >-
-      <b>Inherited From</b>
-      [StorageAccountItem.attributes](xref:azure-keyvault.StorageAccountItem.attributes)
+      <b>Inherited From</b> [StorageAccountItem.attributes](xref:azure-keyvault
+      - v3.0.5.StorageAccountItem.attributes)
   - name: id
-    uid: azure-keyvault.DeletedStorageAccountItem.id
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedStorageAccountItem.id
+    package: azure-keyvault - v3.0.5
     summary: ''
     fullName: id
     remarks: ''
@@ -73,11 +73,11 @@ inheritedProperties:
         description: ''
         type: string
     inheritanceDescription: >-
-      <b>Inherited From</b>
-      [StorageAccountItem.id](xref:azure-keyvault.StorageAccountItem.id)
+      <b>Inherited From</b> [StorageAccountItem.id](xref:azure-keyvault -
+      v3.0.5.StorageAccountItem.id)
   - name: resourceId
-    uid: azure-keyvault.DeletedStorageAccountItem.resourceId
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedStorageAccountItem.resourceId
+    package: azure-keyvault - v3.0.5
     summary: ''
     fullName: resourceId
     remarks: ''
@@ -88,11 +88,11 @@ inheritedProperties:
         description: ''
         type: string
     inheritanceDescription: >-
-      <b>Inherited From</b>
-      [StorageAccountItem.resourceId](xref:azure-keyvault.StorageAccountItem.resourceId)
+      <b>Inherited From</b> [StorageAccountItem.resourceId](xref:azure-keyvault
+      - v3.0.5.StorageAccountItem.resourceId)
   - name: tags
-    uid: azure-keyvault.DeletedStorageAccountItem.tags
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedStorageAccountItem.tags
+    package: azure-keyvault - v3.0.5
     summary: ''
     fullName: tags
     remarks: ''
@@ -103,6 +103,6 @@ inheritedProperties:
         description: ''
         type: '[key: string]\: string'
     inheritanceDescription: >-
-      <b>Inherited From</b>
-      [StorageAccountItem.tags](xref:azure-keyvault.StorageAccountItem.tags)
-extends: <xref uid="azure-keyvault.StorageAccountItem" />
+      <b>Inherited From</b> [StorageAccountItem.tags](xref:azure-keyvault -
+      v3.0.5.StorageAccountItem.tags)
+extends: azure-keyvault - <xref uid="v3.0.5.StorageAccountItem" />

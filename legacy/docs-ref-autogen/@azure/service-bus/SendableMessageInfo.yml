@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: SendableMessageInfo
-uid: '@azure/service-bus.SendableMessageInfo'
-package: '@azure/service-bus'
+uid: '@azure/service-bus - v1.1.10.SendableMessageInfo'
+package: '@azure/service-bus - v1.1.10'
 summary: Describes the message to be sent to Service Bus.
 fullName: SendableMessageInfo
 remarks: ''
@@ -9,8 +9,8 @@ isDeprecated: false
 type: interface
 properties:
   - name: body
-    uid: '@azure/service-bus.SendableMessageInfo.body'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SendableMessageInfo.body'
+    package: '@azure/service-bus - v1.1.10'
     summary: The message body that needs to be sent or is received.
     fullName: body
     remarks: ''
@@ -21,8 +21,8 @@ properties:
         description: ''
         type: any
   - name: contentType
-    uid: '@azure/service-bus.SendableMessageInfo.contentType'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SendableMessageInfo.contentType'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The content type of the message. Optionally describes
 
@@ -39,8 +39,8 @@ properties:
         description: ''
         type: undefined | string
   - name: correlationId
-    uid: '@azure/service-bus.SendableMessageInfo.correlationId'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SendableMessageInfo.correlationId'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The correlation identifier that allows an
 
@@ -60,8 +60,8 @@ properties:
         description: ''
         type: string | number | Buffer
   - name: label
-    uid: '@azure/service-bus.SendableMessageInfo.label'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SendableMessageInfo.label'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The application specific label. This property enables the
 
@@ -78,8 +78,8 @@ properties:
         description: ''
         type: undefined | string
   - name: messageId
-    uid: '@azure/service-bus.SendableMessageInfo.messageId'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SendableMessageInfo.messageId'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The message identifier is an
 
@@ -97,8 +97,8 @@ properties:
         description: ''
         type: string | number | Buffer
   - name: partitionKey
-    uid: '@azure/service-bus.SendableMessageInfo.partitionKey'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SendableMessageInfo.partitionKey'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The partition key for sending a message to a partitioned entity.
 
@@ -126,8 +126,8 @@ properties:
         description: ''
         type: undefined | string
   - name: replyTo
-    uid: '@azure/service-bus.SendableMessageInfo.replyTo'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SendableMessageInfo.replyTo'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The address of an entity to send replies to. This optional and
 
@@ -150,8 +150,8 @@ properties:
         description: ''
         type: undefined | string
   - name: replyToSessionId
-    uid: '@azure/service-bus.SendableMessageInfo.replyToSessionId'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SendableMessageInfo.replyToSessionId'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The session identifier augmenting the `replyTo` address.
 
@@ -171,8 +171,8 @@ properties:
         description: ''
         type: undefined | string
   - name: scheduledEnqueueTimeUtc
-    uid: '@azure/service-bus.SendableMessageInfo.scheduledEnqueueTimeUtc'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SendableMessageInfo.scheduledEnqueueTimeUtc'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The date and time in UTC at which the message will
 
@@ -198,8 +198,8 @@ properties:
         description: ''
         type: Date
   - name: sessionId
-    uid: '@azure/service-bus.SendableMessageInfo.sessionId'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SendableMessageInfo.sessionId'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The session identifier for a session-aware entity. Maximum
 
@@ -225,8 +225,8 @@ properties:
         description: ''
         type: undefined | string
   - name: timeToLive
-    uid: '@azure/service-bus.SendableMessageInfo.timeToLive'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SendableMessageInfo.timeToLive'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The message’s time to live value. This value is the relative
 
@@ -254,8 +254,8 @@ properties:
         description: ''
         type: undefined | number
   - name: to
-    uid: '@azure/service-bus.SendableMessageInfo.to'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SendableMessageInfo.to'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The "to" address. This property is reserved for future use in routing
 
@@ -275,8 +275,8 @@ properties:
         description: ''
         type: undefined | string
   - name: userProperties
-    uid: '@azure/service-bus.SendableMessageInfo.userProperties'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SendableMessageInfo.userProperties'
+    package: '@azure/service-bus - v1.1.10'
     summary: |-
       The application specific properties which can be
       used for custom message metadata.
@@ -289,8 +289,8 @@ properties:
         description: ''
         type: 'undefined | [key: string]: any'
   - name: viaPartitionKey
-    uid: '@azure/service-bus.SendableMessageInfo.viaPartitionKey'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SendableMessageInfo.viaPartitionKey'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The partition key for sending a message into an entity
 

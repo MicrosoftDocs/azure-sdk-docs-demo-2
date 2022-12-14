@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: IotHubDeviceCreatedEventData
-uid: azure-eventgrid.IotHubDeviceCreatedEventData
-package: azure-eventgrid
+uid: azure-eventgrid - v1.6.0.IotHubDeviceCreatedEventData
+package: azure-eventgrid - v1.6.0
 summary: ''
 fullName: IotHubDeviceCreatedEventData
 remarks: ''
@@ -9,8 +9,8 @@ isDeprecated: false
 type: interface
 inheritedProperties:
   - name: deviceId
-    uid: azure-eventgrid.IotHubDeviceCreatedEventData.deviceId
-    package: azure-eventgrid
+    uid: azure-eventgrid - v1.6.0.IotHubDeviceCreatedEventData.deviceId
+    package: azure-eventgrid - v1.6.0
     summary: ''
     fullName: deviceId
     remarks: ''
@@ -22,10 +22,11 @@ inheritedProperties:
         type: string
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [DeviceLifeCycleEventProperties.deviceId](xref:azure-eventgrid.DeviceLifeCycleEventProperties.deviceId)
+      [DeviceLifeCycleEventProperties.deviceId](xref:azure-eventgrid -
+      v1.6.0.DeviceLifeCycleEventProperties.deviceId)
   - name: hubName
-    uid: azure-eventgrid.IotHubDeviceCreatedEventData.hubName
-    package: azure-eventgrid
+    uid: azure-eventgrid - v1.6.0.IotHubDeviceCreatedEventData.hubName
+    package: azure-eventgrid - v1.6.0
     summary: ''
     fullName: hubName
     remarks: ''
@@ -37,10 +38,11 @@ inheritedProperties:
         type: string
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [DeviceLifeCycleEventProperties.hubName](xref:azure-eventgrid.DeviceLifeCycleEventProperties.hubName)
+      [DeviceLifeCycleEventProperties.hubName](xref:azure-eventgrid -
+      v1.6.0.DeviceLifeCycleEventProperties.hubName)
   - name: twin
-    uid: azure-eventgrid.IotHubDeviceCreatedEventData.twin
-    package: azure-eventgrid
+    uid: azure-eventgrid - v1.6.0.IotHubDeviceCreatedEventData.twin
+    package: azure-eventgrid - v1.6.0
     summary: ''
     fullName: twin
     remarks: ''
@@ -49,8 +51,9 @@ inheritedProperties:
       content: 'twin?: DeviceTwinInfo'
       return:
         description: ''
-        type: <xref uid="azure-eventgrid.DeviceTwinInfo" />
+        type: azure-eventgrid - <xref uid="v1.6.0.DeviceTwinInfo" />
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [DeviceLifeCycleEventProperties.twin](xref:azure-eventgrid.DeviceLifeCycleEventProperties.twin)
-extends: <xref uid="azure-eventgrid.DeviceLifeCycleEventProperties" />
+      [DeviceLifeCycleEventProperties.twin](xref:azure-eventgrid -
+      v1.6.0.DeviceLifeCycleEventProperties.twin)
+extends: azure-eventgrid - <xref uid="v1.6.0.DeviceLifeCycleEventProperties" />

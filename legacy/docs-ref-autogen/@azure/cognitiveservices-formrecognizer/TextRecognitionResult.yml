@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: TextRecognitionResult
-uid: '@azure/cognitiveservices-formrecognizer.TextRecognitionResult'
-package: '@azure/cognitiveservices-formrecognizer'
+uid: '@azure/cognitiveservices-formrecognizer - v2.0.1.TextRecognitionResult'
+package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
 summary: An object representing a recognized text region
 fullName: TextRecognitionResult
 remarks: ''
@@ -10,8 +10,9 @@ type: interface
 properties:
   - name: clockwiseOrientation
     uid: >-
-      @azure/cognitiveservices-formrecognizer.TextRecognitionResult.clockwiseOrientation
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.TextRecognitionResult.clockwiseOrientation
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: >-
       The orientation of the image in degrees in the clockwise direction. Range
       between [0, 360).
@@ -24,8 +25,10 @@ properties:
         description: ''
         type: undefined | number
   - name: height
-    uid: '@azure/cognitiveservices-formrecognizer.TextRecognitionResult.height'
-    package: '@azure/cognitiveservices-formrecognizer'
+    uid: >-
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.TextRecognitionResult.height
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: The height of the image in pixels or the PDF in inches.
     fullName: height
     remarks: ''
@@ -36,8 +39,10 @@ properties:
         description: ''
         type: undefined | number
   - name: lines
-    uid: '@azure/cognitiveservices-formrecognizer.TextRecognitionResult.lines'
-    package: '@azure/cognitiveservices-formrecognizer'
+    uid: >-
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.TextRecognitionResult.lines
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: A list of recognized text lines.
     fullName: lines
     remarks: ''
@@ -46,10 +51,12 @@ properties:
       content: 'lines: Line[]'
       return:
         description: ''
-        type: '<xref uid="@azure/cognitiveservices-formrecognizer.Line" />[]'
+        type: '@azure/cognitiveservices-formrecognizer - <xref uid="v2.0.1.Line" />[]'
   - name: page
-    uid: '@azure/cognitiveservices-formrecognizer.TextRecognitionResult.page'
-    package: '@azure/cognitiveservices-formrecognizer'
+    uid: >-
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.TextRecognitionResult.page
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: The 1-based page number of the recognition result.
     fullName: page
     remarks: ''
@@ -60,8 +67,10 @@ properties:
         description: ''
         type: undefined | number
   - name: unit
-    uid: '@azure/cognitiveservices-formrecognizer.TextRecognitionResult.unit'
-    package: '@azure/cognitiveservices-formrecognizer'
+    uid: >-
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.TextRecognitionResult.unit
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: >-
       The unit used in the Width, Height and BoundingBox. For images, the unit
       is 'pixel'. For PDF,
@@ -75,12 +84,13 @@ properties:
       return:
         description: ''
         type: >-
-          <xref
-          uid="@azure/cognitiveservices-formrecognizer.TextRecognitionResultDimensionUnit"
-          />
+          @azure/cognitiveservices-formrecognizer - <xref
+          uid="v2.0.1.TextRecognitionResultDimensionUnit" />
   - name: width
-    uid: '@azure/cognitiveservices-formrecognizer.TextRecognitionResult.width'
-    package: '@azure/cognitiveservices-formrecognizer'
+    uid: >-
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.TextRecognitionResult.width
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: The width of the image in pixels or the PDF in inches.
     fullName: width
     remarks: ''

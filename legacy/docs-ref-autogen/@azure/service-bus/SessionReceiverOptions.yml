@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: SessionReceiverOptions
-uid: '@azure/service-bus.SessionReceiverOptions'
-package: '@azure/service-bus'
+uid: '@azure/service-bus - v1.1.10.SessionReceiverOptions'
+package: '@azure/service-bus - v1.1.10'
 summary: >-
   Describes the options passed to the `createReceiver` method when using a
   Queue/Subscription that
@@ -14,8 +14,9 @@ type: interface
 properties:
   - name: maxSessionAutoRenewLockDurationInSeconds
     uid: >-
-      @azure/service-bus.SessionReceiverOptions.maxSessionAutoRenewLockDurationInSeconds
-    package: '@azure/service-bus'
+      @azure/service-bus -
+      v1.1.10.SessionReceiverOptions.maxSessionAutoRenewLockDurationInSeconds
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The maximum duration in seconds
 
@@ -34,8 +35,8 @@ properties:
         description: ''
         type: undefined | number
   - name: sessionId
-    uid: '@azure/service-bus.SessionReceiverOptions.sessionId'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SessionReceiverOptions.sessionId'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The id of the session from which messages need to be received. If null or
       undefined is

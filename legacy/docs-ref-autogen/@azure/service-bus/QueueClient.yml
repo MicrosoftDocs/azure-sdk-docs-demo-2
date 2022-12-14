@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: QueueClient
-uid: '@azure/service-bus.QueueClient'
-package: '@azure/service-bus'
+uid: '@azure/service-bus - v1.1.10.QueueClient'
+package: '@azure/service-bus - v1.1.10'
 summary: >-
   Describes the client that allows interacting with a Service Bus Queue.
 
@@ -13,8 +13,8 @@ isDeprecated: false
 type: class
 properties:
   - name: entityPath
-    uid: '@azure/service-bus.QueueClient.entityPath'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.QueueClient.entityPath'
+    package: '@azure/service-bus - v1.1.10'
     summary: The path for the Service Bus Queue for which this client is created.
     fullName: entityPath
     remarks: ''
@@ -25,8 +25,8 @@ properties:
         description: ''
         type: string
   - name: id
-    uid: '@azure/service-bus.QueueClient.id'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.QueueClient.id'
+    package: '@azure/service-bus - v1.1.10'
     summary: A unique identifier for this client.
     fullName: id
     remarks: ''
@@ -38,8 +38,8 @@ properties:
         type: string
 methods:
   - name: close()
-    uid: '@azure/service-bus.QueueClient.close'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.QueueClient.close'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       Closes all the AMQP links for sender/receivers created by this client.
 
@@ -55,8 +55,8 @@ methods:
         description: ''
         type: Promise&lt;void&gt;
   - name: createReceiver(ReceiveMode)
-    uid: '@azure/service-bus.QueueClient.createReceiver'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.QueueClient.createReceiver'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       Creates a Receiver for receiving messages from a Queue which does not have
       sessions enabled.
@@ -66,7 +66,7 @@ methods:
       content: 'function createReceiver(receiveMode: ReceiveMode): Receiver'
       parameters:
         - id: receiveMode
-          type: <xref uid="@azure/service-bus.ReceiveMode" />
+          type: '@azure/service-bus - <xref uid="v1.1.10.ReceiveMode" />'
           description: >
             An enum indicating the mode in which messages should be received.
             Possible
@@ -91,10 +91,10 @@ methods:
           have
 
           sessions enabled.
-        type: <xref uid="@azure/service-bus.Receiver" />
+        type: '@azure/service-bus - <xref uid="v1.1.10.Receiver" />'
   - name: 'createReceiver(ReceiveMode, SessionReceiverOptions)'
-    uid: '@azure/service-bus.QueueClient.createReceiver_1'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.QueueClient.createReceiver_1'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       Creates a Receiver for receiving messages from a session enabled Queue.
       When no sessionId is
@@ -108,7 +108,7 @@ methods:
         SessionReceiverOptions): SessionReceiver
       parameters:
         - id: receiveMode
-          type: <xref uid="@azure/service-bus.ReceiveMode" />
+          type: '@azure/service-bus - <xref uid="v1.1.10.ReceiveMode" />'
           description: >-
             An enum indicating the mode in which messages should be received.
             Possible
@@ -128,7 +128,7 @@ methods:
 
             Service Bus.
         - id: sessionOptions
-          type: <xref uid="@azure/service-bus.SessionReceiverOptions" />
+          type: '@azure/service-bus - <xref uid="v1.1.10.SessionReceiverOptions" />'
           description: >
             Options to provide sessionId and duration of automatic lock renewal
             for
@@ -136,10 +136,10 @@ methods:
             the session receiver.
       return:
         description: SessionReceiver A receiver to receive from a session in the Queue.
-        type: <xref uid="@azure/service-bus.SessionReceiver" />
+        type: '@azure/service-bus - <xref uid="v1.1.10.SessionReceiver" />'
   - name: createSender()
-    uid: '@azure/service-bus.QueueClient.createSender'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.QueueClient.createSender'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       Creates a Sender to be used for sending messages, scheduling messages to
       be sent at a later time
@@ -151,10 +151,10 @@ methods:
       content: 'function createSender(): Sender'
       return:
         description: ''
-        type: <xref uid="@azure/service-bus.Sender" />
+        type: '@azure/service-bus - <xref uid="v1.1.10.Sender" />'
   - name: getDeadLetterQueuePath(string)
-    uid: '@azure/service-bus.QueueClient.getDeadLetterQueuePath'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.QueueClient.getDeadLetterQueuePath'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       Returns the corresponding dead letter queue name for the queue represented
       by the given name.
@@ -177,8 +177,8 @@ methods:
         description: ''
         type: string
   - name: peek(undefined | number)
-    uid: '@azure/service-bus.QueueClient.peek'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.QueueClient.peek'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       Fetches the next batch of active messages (including deferred but not
       deadlettered messages).
@@ -205,10 +205,12 @@ methods:
           description: ''
       return:
         description: 'Promise<ReceivedMessageInfo[]>'
-        type: 'Promise&lt;<xref uid="@azure/service-bus.ReceivedMessageInfo" />[]&gt;'
+        type: >-
+          Promise&lt;@azure/service-bus - <xref
+          uid="v1.1.10.ReceivedMessageInfo" />[]&gt;
   - name: 'peekBySequenceNumber(Long, undefined | number)'
-    uid: '@azure/service-bus.QueueClient.peekBySequenceNumber'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.QueueClient.peekBySequenceNumber'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       Peeks the desired number of active messages (including deferred but not
       deadlettered messages)
@@ -235,4 +237,6 @@ methods:
           description: ''
       return:
         description: 'Promise<ReceivedMessageInfo[]>'
-        type: 'Promise&lt;<xref uid="@azure/service-bus.ReceivedMessageInfo" />[]&gt;'
+        type: >-
+          Promise&lt;@azure/service-bus - <xref
+          uid="v1.1.10.ReceivedMessageInfo" />[]&gt;

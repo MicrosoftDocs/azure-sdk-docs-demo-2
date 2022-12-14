@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: EntityRecord
-uid: '@azure/cognitiveservices-textanalytics.EntityRecord'
-package: '@azure/cognitiveservices-textanalytics'
+uid: '@azure/cognitiveservices-textanalytics - v4.0.0.EntityRecord'
+package: '@azure/cognitiveservices-textanalytics - v4.0.0'
 summary: An interface representing EntityRecord.
 fullName: EntityRecord
 remarks: ''
@@ -9,8 +9,8 @@ isDeprecated: false
 type: interface
 properties:
   - name: bingId
-    uid: '@azure/cognitiveservices-textanalytics.EntityRecord.bingId'
-    package: '@azure/cognitiveservices-textanalytics'
+    uid: '@azure/cognitiveservices-textanalytics - v4.0.0.EntityRecord.bingId'
+    package: '@azure/cognitiveservices-textanalytics - v4.0.0'
     summary: >-
       Bing unique identifier of the recognized entity. Use in conjunction with
       the Bing Entity
@@ -25,8 +25,8 @@ properties:
         description: ''
         type: undefined | string
   - name: matches
-    uid: '@azure/cognitiveservices-textanalytics.EntityRecord.matches'
-    package: '@azure/cognitiveservices-textanalytics'
+    uid: '@azure/cognitiveservices-textanalytics - v4.0.0.EntityRecord.matches'
+    package: '@azure/cognitiveservices-textanalytics - v4.0.0'
     summary: List of instances this entity appears in the text.
     fullName: matches
     remarks: ''
@@ -35,10 +35,12 @@ properties:
       content: 'matches?: MatchRecord[]'
       return:
         description: ''
-        type: '<xref uid="@azure/cognitiveservices-textanalytics.MatchRecord" />[]'
+        type: >-
+          @azure/cognitiveservices-textanalytics - <xref
+          uid="v4.0.0.MatchRecord" />[]
   - name: name
-    uid: '@azure/cognitiveservices-textanalytics.EntityRecord.name'
-    package: '@azure/cognitiveservices-textanalytics'
+    uid: '@azure/cognitiveservices-textanalytics - v4.0.0.EntityRecord.name'
+    package: '@azure/cognitiveservices-textanalytics - v4.0.0'
     summary: Entity formal name.
     fullName: name
     remarks: ''
@@ -49,8 +51,8 @@ properties:
         description: ''
         type: undefined | string
   - name: subType
-    uid: '@azure/cognitiveservices-textanalytics.EntityRecord.subType'
-    package: '@azure/cognitiveservices-textanalytics'
+    uid: '@azure/cognitiveservices-textanalytics - v4.0.0.EntityRecord.subType'
+    package: '@azure/cognitiveservices-textanalytics - v4.0.0'
     summary: Entity sub type from Named Entity Recognition model
     fullName: subType
     remarks: ''
@@ -61,8 +63,8 @@ properties:
         description: ''
         type: undefined | string
   - name: type
-    uid: '@azure/cognitiveservices-textanalytics.EntityRecord.type'
-    package: '@azure/cognitiveservices-textanalytics'
+    uid: '@azure/cognitiveservices-textanalytics - v4.0.0.EntityRecord.type'
+    package: '@azure/cognitiveservices-textanalytics - v4.0.0'
     summary: Entity type from Named Entity Recognition model
     fullName: type
     remarks: ''
@@ -73,8 +75,8 @@ properties:
         description: ''
         type: undefined | string
   - name: wikipediaId
-    uid: '@azure/cognitiveservices-textanalytics.EntityRecord.wikipediaId'
-    package: '@azure/cognitiveservices-textanalytics'
+    uid: '@azure/cognitiveservices-textanalytics - v4.0.0.EntityRecord.wikipediaId'
+    package: '@azure/cognitiveservices-textanalytics - v4.0.0'
     summary: Wikipedia unique identifier of the recognized entity.
     fullName: wikipediaId
     remarks: ''
@@ -85,8 +87,10 @@ properties:
         description: ''
         type: undefined | string
   - name: wikipediaLanguage
-    uid: '@azure/cognitiveservices-textanalytics.EntityRecord.wikipediaLanguage'
-    package: '@azure/cognitiveservices-textanalytics'
+    uid: >-
+      @azure/cognitiveservices-textanalytics -
+      v4.0.0.EntityRecord.wikipediaLanguage
+    package: '@azure/cognitiveservices-textanalytics - v4.0.0'
     summary: Wikipedia language for which the WikipediaId and WikipediaUrl refers to.
     fullName: wikipediaLanguage
     remarks: ''
@@ -97,8 +101,8 @@ properties:
         description: ''
         type: undefined | string
   - name: wikipediaUrl
-    uid: '@azure/cognitiveservices-textanalytics.EntityRecord.wikipediaUrl'
-    package: '@azure/cognitiveservices-textanalytics'
+    uid: '@azure/cognitiveservices-textanalytics - v4.0.0.EntityRecord.wikipediaUrl'
+    package: '@azure/cognitiveservices-textanalytics - v4.0.0'
     summary: >-
       URL for the entity's Wikipedia page.
 

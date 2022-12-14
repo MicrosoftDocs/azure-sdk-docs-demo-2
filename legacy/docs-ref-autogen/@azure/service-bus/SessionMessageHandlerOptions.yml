@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: SessionMessageHandlerOptions
-uid: '@azure/service-bus.SessionMessageHandlerOptions'
-package: '@azure/service-bus'
+uid: '@azure/service-bus - v1.1.10.SessionMessageHandlerOptions'
+package: '@azure/service-bus - v1.1.10'
 summary: >-
   Describes the options passed to `registerMessageHandler` method when receiving
   messages from a
@@ -13,8 +13,8 @@ isDeprecated: false
 type: interface
 properties:
   - name: autoComplete
-    uid: '@azure/service-bus.SessionMessageHandlerOptions.autoComplete'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.SessionMessageHandlerOptions.autoComplete'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       Indicates whether the `complete()` method on the message should
       automatically be
@@ -34,8 +34,10 @@ properties:
         description: ''
         type: undefined | false | true
   - name: maxConcurrentCalls
-    uid: '@azure/service-bus.SessionMessageHandlerOptions.maxConcurrentCalls'
-    package: '@azure/service-bus'
+    uid: >-
+      @azure/service-bus -
+      v1.1.10.SessionMessageHandlerOptions.maxConcurrentCalls
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The maximum number of concurrent calls that the library
 

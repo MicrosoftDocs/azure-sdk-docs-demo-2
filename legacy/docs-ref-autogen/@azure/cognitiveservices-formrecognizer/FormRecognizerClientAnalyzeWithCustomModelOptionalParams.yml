@@ -1,8 +1,9 @@
 ### YamlMime:TSType
 name: FormRecognizerClientAnalyzeWithCustomModelOptionalParams
 uid: >-
-  @azure/cognitiveservices-formrecognizer.FormRecognizerClientAnalyzeWithCustomModelOptionalParams
-package: '@azure/cognitiveservices-formrecognizer'
+  @azure/cognitiveservices-formrecognizer -
+  v2.0.1.FormRecognizerClientAnalyzeWithCustomModelOptionalParams
+package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
 summary: Optional Parameters.
 fullName: FormRecognizerClientAnalyzeWithCustomModelOptionalParams
 remarks: ''
@@ -11,8 +12,9 @@ type: interface
 properties:
   - name: keys
     uid: >-
-      @azure/cognitiveservices-formrecognizer.FormRecognizerClientAnalyzeWithCustomModelOptionalParams.keys
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormRecognizerClientAnalyzeWithCustomModelOptionalParams.keys
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: An optional list of known keys to extract the values for.
     fullName: keys
     remarks: ''
@@ -25,8 +27,9 @@ properties:
 inheritedProperties:
   - name: abortSignal
     uid: >-
-      @azure/cognitiveservices-formrecognizer.FormRecognizerClientAnalyzeWithCustomModelOptionalParams.abortSignal
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormRecognizerClientAnalyzeWithCustomModelOptionalParams.abortSignal
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: The signal which can be used to abort requests.
     fullName: abortSignal
     remarks: ''
@@ -36,11 +39,14 @@ inheritedProperties:
       return:
         description: ''
         type: AbortSignalLike
-    inheritanceDescription: <b>Inherited From</b> RequestOptionsBase.abortSignal
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [RequestOptionsBase.abortSignal](xref:RequestOptionsBase.abortSignal)
   - name: customHeaders
     uid: >-
-      @azure/cognitiveservices-formrecognizer.FormRecognizerClientAnalyzeWithCustomModelOptionalParams.customHeaders
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormRecognizerClientAnalyzeWithCustomModelOptionalParams.customHeaders
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: |-
       {object} [customHeaders] User defined custom request headers that
       will be applied before the request is sent.
@@ -52,11 +58,14 @@ inheritedProperties:
       return:
         description: ''
         type: 'undefined | [key: string]: string'
-    inheritanceDescription: <b>Inherited From</b> RequestOptionsBase.customHeaders
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [RequestOptionsBase.customHeaders](xref:RequestOptionsBase.customHeaders)
   - name: onDownloadProgress
     uid: >-
-      @azure/cognitiveservices-formrecognizer.FormRecognizerClientAnalyzeWithCustomModelOptionalParams.onDownloadProgress
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormRecognizerClientAnalyzeWithCustomModelOptionalParams.onDownloadProgress
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: Callback which fires upon download progress.
     fullName: onDownloadProgress
     remarks: ''
@@ -68,11 +77,14 @@ inheritedProperties:
       return:
         description: ''
         type: 'undefined | (progress: TransferProgressEvent) =&gt; void'
-    inheritanceDescription: <b>Inherited From</b> RequestOptionsBase.onDownloadProgress
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [RequestOptionsBase.onDownloadProgress](xref:RequestOptionsBase.onDownloadProgress)
   - name: onUploadProgress
     uid: >-
-      @azure/cognitiveservices-formrecognizer.FormRecognizerClientAnalyzeWithCustomModelOptionalParams.onUploadProgress
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormRecognizerClientAnalyzeWithCustomModelOptionalParams.onUploadProgress
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: Callback which fires upon upload progress.
     fullName: onUploadProgress
     remarks: ''
@@ -82,11 +94,14 @@ inheritedProperties:
       return:
         description: ''
         type: 'undefined | (progress: TransferProgressEvent) =&gt; void'
-    inheritanceDescription: <b>Inherited From</b> RequestOptionsBase.onUploadProgress
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [RequestOptionsBase.onUploadProgress](xref:RequestOptionsBase.onUploadProgress)
   - name: timeout
     uid: >-
-      @azure/cognitiveservices-formrecognizer.FormRecognizerClientAnalyzeWithCustomModelOptionalParams.timeout
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormRecognizerClientAnalyzeWithCustomModelOptionalParams.timeout
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: >-
       The number of milliseconds a request can take before automatically being
       terminated.
@@ -98,5 +113,7 @@ inheritedProperties:
       return:
         description: ''
         type: undefined | number
-    inheritanceDescription: <b>Inherited From</b> RequestOptionsBase.timeout
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [RequestOptionsBase.timeout](xref:RequestOptionsBase.timeout)
 extends: RequestOptionsBase

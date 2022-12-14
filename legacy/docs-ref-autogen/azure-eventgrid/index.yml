@@ -1,87 +1,92 @@
 ### YamlMime:TSPackage
-uid: azure-eventgrid
-name: azure-eventgrid
+uid: azure-eventgrid - v1.6.0
+name: azure-eventgrid - v1.6.0
 summary: ''
 type: package
 classes:
-  - azure-eventgrid.EventGridClient
+  - azure-eventgrid - v1.6.0.EventGridClient
 interfaces:
-  - azure-eventgrid.AppConfigurationKeyValueDeletedEventData
-  - azure-eventgrid.AppConfigurationKeyValueModifiedEventData
-  - azure-eventgrid.ContainerRegistryArtifactEventData
-  - azure-eventgrid.ContainerRegistryArtifactEventTarget
-  - azure-eventgrid.ContainerRegistryChartDeletedEventData
-  - azure-eventgrid.ContainerRegistryChartPushedEventData
-  - azure-eventgrid.ContainerRegistryEventActor
-  - azure-eventgrid.ContainerRegistryEventData
-  - azure-eventgrid.ContainerRegistryEventRequest
-  - azure-eventgrid.ContainerRegistryEventSource
-  - azure-eventgrid.ContainerRegistryEventTarget
-  - azure-eventgrid.ContainerRegistryImageDeletedEventData
-  - azure-eventgrid.ContainerRegistryImagePushedEventData
-  - azure-eventgrid.DeviceConnectionStateEventInfo
-  - azure-eventgrid.DeviceConnectionStateEventProperties
-  - azure-eventgrid.DeviceLifeCycleEventProperties
-  - azure-eventgrid.DeviceTelemetryEventProperties
-  - azure-eventgrid.DeviceTwinInfo
-  - azure-eventgrid.DeviceTwinInfoProperties
-  - azure-eventgrid.DeviceTwinInfoX509Thumbprint
-  - azure-eventgrid.DeviceTwinMetadata
-  - azure-eventgrid.DeviceTwinProperties
-  - azure-eventgrid.EventGridEvent
-  - azure-eventgrid.EventHubCaptureFileCreatedEventData
-  - azure-eventgrid.IotHubDeviceConnectedEventData
-  - azure-eventgrid.IotHubDeviceCreatedEventData
-  - azure-eventgrid.IotHubDeviceDeletedEventData
-  - azure-eventgrid.IotHubDeviceDisconnectedEventData
-  - azure-eventgrid.IotHubDeviceTelemetryEventData
-  - azure-eventgrid.MapsGeofenceEnteredEventData
-  - azure-eventgrid.MapsGeofenceEventProperties
-  - azure-eventgrid.MapsGeofenceExitedEventData
-  - azure-eventgrid.MapsGeofenceGeometry
-  - azure-eventgrid.MapsGeofenceResultEventData
-  - azure-eventgrid.MediaJobCanceledEventData
-  - azure-eventgrid.MediaJobCancelingEventData
-  - azure-eventgrid.MediaJobError
-  - azure-eventgrid.MediaJobErrorDetail
-  - azure-eventgrid.MediaJobErroredEventData
-  - azure-eventgrid.MediaJobFinishedEventData
-  - azure-eventgrid.MediaJobOutput
-  - azure-eventgrid.MediaJobOutputAsset
-  - azure-eventgrid.MediaJobOutputCanceledEventData
-  - azure-eventgrid.MediaJobOutputCancelingEventData
-  - azure-eventgrid.MediaJobOutputErroredEventData
-  - azure-eventgrid.MediaJobOutputFinishedEventData
-  - azure-eventgrid.MediaJobOutputProcessingEventData
-  - azure-eventgrid.MediaJobOutputProgressEventData
-  - azure-eventgrid.MediaJobOutputScheduledEventData
-  - azure-eventgrid.MediaJobOutputStateChangeEventData
-  - azure-eventgrid.MediaJobProcessingEventData
-  - azure-eventgrid.MediaJobScheduledEventData
-  - azure-eventgrid.MediaJobStateChangeEventData
-  - azure-eventgrid.MediaLiveEventConnectionRejectedEventData
-  - azure-eventgrid.MediaLiveEventEncoderConnectedEventData
-  - azure-eventgrid.MediaLiveEventEncoderDisconnectedEventData
-  - azure-eventgrid.MediaLiveEventIncomingDataChunkDroppedEventData
-  - azure-eventgrid.MediaLiveEventIncomingStreamReceivedEventData
-  - azure-eventgrid.MediaLiveEventIncomingStreamsOutOfSyncEventData
-  - azure-eventgrid.MediaLiveEventIncomingVideoStreamsOutOfSyncEventData
-  - azure-eventgrid.MediaLiveEventIngestHeartbeatEventData
-  - azure-eventgrid.MediaLiveEventTrackDiscontinuityDetectedEventData
-  - azure-eventgrid.ResourceActionCancelData
-  - azure-eventgrid.ResourceActionFailureData
-  - azure-eventgrid.ResourceActionSuccessData
-  - azure-eventgrid.ResourceDeleteCancelData
-  - azure-eventgrid.ResourceDeleteFailureData
-  - azure-eventgrid.ResourceDeleteSuccessData
-  - azure-eventgrid.ResourceWriteCancelData
-  - azure-eventgrid.ResourceWriteFailureData
-  - azure-eventgrid.ResourceWriteSuccessData
-  - azure-eventgrid.ServiceBusActiveMessagesAvailableWithNoListenersEventData
+  - azure-eventgrid - v1.6.0.AppConfigurationKeyValueDeletedEventData
+  - azure-eventgrid - v1.6.0.AppConfigurationKeyValueModifiedEventData
+  - azure-eventgrid - v1.6.0.ContainerRegistryArtifactEventData
+  - azure-eventgrid - v1.6.0.ContainerRegistryArtifactEventTarget
+  - azure-eventgrid - v1.6.0.ContainerRegistryChartDeletedEventData
+  - azure-eventgrid - v1.6.0.ContainerRegistryChartPushedEventData
+  - azure-eventgrid - v1.6.0.ContainerRegistryEventActor
+  - azure-eventgrid - v1.6.0.ContainerRegistryEventData
+  - azure-eventgrid - v1.6.0.ContainerRegistryEventRequest
+  - azure-eventgrid - v1.6.0.ContainerRegistryEventSource
+  - azure-eventgrid - v1.6.0.ContainerRegistryEventTarget
+  - azure-eventgrid - v1.6.0.ContainerRegistryImageDeletedEventData
+  - azure-eventgrid - v1.6.0.ContainerRegistryImagePushedEventData
+  - azure-eventgrid - v1.6.0.DeviceConnectionStateEventInfo
+  - azure-eventgrid - v1.6.0.DeviceConnectionStateEventProperties
+  - azure-eventgrid - v1.6.0.DeviceLifeCycleEventProperties
+  - azure-eventgrid - v1.6.0.DeviceTelemetryEventProperties
+  - azure-eventgrid - v1.6.0.DeviceTwinInfo
+  - azure-eventgrid - v1.6.0.DeviceTwinInfoProperties
+  - azure-eventgrid - v1.6.0.DeviceTwinInfoX509Thumbprint
+  - azure-eventgrid - v1.6.0.DeviceTwinMetadata
+  - azure-eventgrid - v1.6.0.DeviceTwinProperties
+  - azure-eventgrid - v1.6.0.EventGridEvent
+  - azure-eventgrid - v1.6.0.EventHubCaptureFileCreatedEventData
+  - azure-eventgrid - v1.6.0.IotHubDeviceConnectedEventData
+  - azure-eventgrid - v1.6.0.IotHubDeviceCreatedEventData
+  - azure-eventgrid - v1.6.0.IotHubDeviceDeletedEventData
+  - azure-eventgrid - v1.6.0.IotHubDeviceDisconnectedEventData
+  - azure-eventgrid - v1.6.0.IotHubDeviceTelemetryEventData
+  - azure-eventgrid - v1.6.0.MapsGeofenceEnteredEventData
+  - azure-eventgrid - v1.6.0.MapsGeofenceEventProperties
+  - azure-eventgrid - v1.6.0.MapsGeofenceExitedEventData
+  - azure-eventgrid - v1.6.0.MapsGeofenceGeometry
+  - azure-eventgrid - v1.6.0.MapsGeofenceResultEventData
+  - azure-eventgrid - v1.6.0.MediaJobCanceledEventData
+  - azure-eventgrid - v1.6.0.MediaJobCancelingEventData
+  - azure-eventgrid - v1.6.0.MediaJobError
+  - azure-eventgrid - v1.6.0.MediaJobErrorDetail
+  - azure-eventgrid - v1.6.0.MediaJobErroredEventData
+  - azure-eventgrid - v1.6.0.MediaJobFinishedEventData
+  - azure-eventgrid - v1.6.0.MediaJobOutput
+  - azure-eventgrid - v1.6.0.MediaJobOutputAsset
+  - azure-eventgrid - v1.6.0.MediaJobOutputCanceledEventData
+  - azure-eventgrid - v1.6.0.MediaJobOutputCancelingEventData
+  - azure-eventgrid - v1.6.0.MediaJobOutputErroredEventData
+  - azure-eventgrid - v1.6.0.MediaJobOutputFinishedEventData
+  - azure-eventgrid - v1.6.0.MediaJobOutputProcessingEventData
+  - azure-eventgrid - v1.6.0.MediaJobOutputProgressEventData
+  - azure-eventgrid - v1.6.0.MediaJobOutputScheduledEventData
+  - azure-eventgrid - v1.6.0.MediaJobOutputStateChangeEventData
+  - azure-eventgrid - v1.6.0.MediaJobProcessingEventData
+  - azure-eventgrid - v1.6.0.MediaJobScheduledEventData
+  - azure-eventgrid - v1.6.0.MediaJobStateChangeEventData
+  - azure-eventgrid - v1.6.0.MediaLiveEventConnectionRejectedEventData
+  - azure-eventgrid - v1.6.0.MediaLiveEventEncoderConnectedEventData
+  - azure-eventgrid - v1.6.0.MediaLiveEventEncoderDisconnectedEventData
+  - azure-eventgrid - v1.6.0.MediaLiveEventIncomingDataChunkDroppedEventData
+  - azure-eventgrid - v1.6.0.MediaLiveEventIncomingStreamReceivedEventData
+  - azure-eventgrid - v1.6.0.MediaLiveEventIncomingStreamsOutOfSyncEventData
   - >-
-    azure-eventgrid.ServiceBusDeadletterMessagesAvailableWithNoListenersEventData
-  - azure-eventgrid.StorageBlobCreatedEventData
-  - azure-eventgrid.StorageBlobDeletedEventData
-  - azure-eventgrid.SubscriptionDeletedEventData
-  - azure-eventgrid.SubscriptionValidationEventData
-  - azure-eventgrid.SubscriptionValidationResponse
+    azure-eventgrid -
+    v1.6.0.MediaLiveEventIncomingVideoStreamsOutOfSyncEventData
+  - azure-eventgrid - v1.6.0.MediaLiveEventIngestHeartbeatEventData
+  - azure-eventgrid - v1.6.0.MediaLiveEventTrackDiscontinuityDetectedEventData
+  - azure-eventgrid - v1.6.0.ResourceActionCancelData
+  - azure-eventgrid - v1.6.0.ResourceActionFailureData
+  - azure-eventgrid - v1.6.0.ResourceActionSuccessData
+  - azure-eventgrid - v1.6.0.ResourceDeleteCancelData
+  - azure-eventgrid - v1.6.0.ResourceDeleteFailureData
+  - azure-eventgrid - v1.6.0.ResourceDeleteSuccessData
+  - azure-eventgrid - v1.6.0.ResourceWriteCancelData
+  - azure-eventgrid - v1.6.0.ResourceWriteFailureData
+  - azure-eventgrid - v1.6.0.ResourceWriteSuccessData
+  - >-
+    azure-eventgrid -
+    v1.6.0.ServiceBusActiveMessagesAvailableWithNoListenersEventData
+  - >-
+    azure-eventgrid -
+    v1.6.0.ServiceBusDeadletterMessagesAvailableWithNoListenersEventData
+  - azure-eventgrid - v1.6.0.StorageBlobCreatedEventData
+  - azure-eventgrid - v1.6.0.StorageBlobDeletedEventData
+  - azure-eventgrid - v1.6.0.SubscriptionDeletedEventData
+  - azure-eventgrid - v1.6.0.SubscriptionValidationEventData
+  - azure-eventgrid - v1.6.0.SubscriptionValidationResponse

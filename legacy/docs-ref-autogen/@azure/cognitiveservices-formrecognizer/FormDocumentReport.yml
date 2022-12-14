@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: FormDocumentReport
-uid: '@azure/cognitiveservices-formrecognizer.FormDocumentReport'
-package: '@azure/cognitiveservices-formrecognizer'
+uid: '@azure/cognitiveservices-formrecognizer - v2.0.1.FormDocumentReport'
+package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
 summary: An interface representing FormDocumentReport.
 fullName: FormDocumentReport
 remarks: ''
@@ -9,8 +9,10 @@ isDeprecated: false
 type: interface
 properties:
   - name: documentName
-    uid: '@azure/cognitiveservices-formrecognizer.FormDocumentReport.documentName'
-    package: '@azure/cognitiveservices-formrecognizer'
+    uid: >-
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormDocumentReport.documentName
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: Reference to the data that the report is for.
     fullName: documentName
     remarks: ''
@@ -21,8 +23,8 @@ properties:
         description: ''
         type: undefined | string
   - name: errors
-    uid: '@azure/cognitiveservices-formrecognizer.FormDocumentReport.errors'
-    package: '@azure/cognitiveservices-formrecognizer'
+    uid: '@azure/cognitiveservices-formrecognizer - v2.0.1.FormDocumentReport.errors'
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: List of errors per page.
     fullName: errors
     remarks: ''
@@ -33,8 +35,8 @@ properties:
         description: ''
         type: 'string[]'
   - name: pages
-    uid: '@azure/cognitiveservices-formrecognizer.FormDocumentReport.pages'
-    package: '@azure/cognitiveservices-formrecognizer'
+    uid: '@azure/cognitiveservices-formrecognizer - v2.0.1.FormDocumentReport.pages'
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: Total number of pages trained on.
     fullName: pages
     remarks: ''
@@ -45,8 +47,8 @@ properties:
         description: ''
         type: undefined | number
   - name: status
-    uid: '@azure/cognitiveservices-formrecognizer.FormDocumentReport.status'
-    package: '@azure/cognitiveservices-formrecognizer'
+    uid: '@azure/cognitiveservices-formrecognizer - v2.0.1.FormDocumentReport.status'
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: >-
       Status of the training operation. Possible values include: 'success',
       'partialSuccess',
@@ -59,4 +61,4 @@ properties:
       content: 'status?: Status'
       return:
         description: ''
-        type: <xref uid="@azure/cognitiveservices-formrecognizer.Status" />
+        type: '@azure/cognitiveservices-formrecognizer - <xref uid="v2.0.1.Status" />'

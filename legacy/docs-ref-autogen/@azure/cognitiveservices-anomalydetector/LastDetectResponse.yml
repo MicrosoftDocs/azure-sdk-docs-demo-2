@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: LastDetectResponse
-uid: '@azure/cognitiveservices-anomalydetector.LastDetectResponse'
-package: '@azure/cognitiveservices-anomalydetector'
+uid: '@azure/cognitiveservices-anomalydetector - v2.1.0.LastDetectResponse'
+package: '@azure/cognitiveservices-anomalydetector - v2.1.0'
 summary: An interface representing LastDetectResponse.
 fullName: LastDetectResponse
 remarks: ''
@@ -9,8 +9,10 @@ isDeprecated: false
 type: interface
 properties:
   - name: expectedValue
-    uid: '@azure/cognitiveservices-anomalydetector.LastDetectResponse.expectedValue'
-    package: '@azure/cognitiveservices-anomalydetector'
+    uid: >-
+      @azure/cognitiveservices-anomalydetector -
+      v2.1.0.LastDetectResponse.expectedValue
+    package: '@azure/cognitiveservices-anomalydetector - v2.1.0'
     summary: Expected value of the latest point.
     fullName: expectedValue
     remarks: ''
@@ -21,8 +23,10 @@ properties:
         description: ''
         type: number
   - name: isAnomaly
-    uid: '@azure/cognitiveservices-anomalydetector.LastDetectResponse.isAnomaly'
-    package: '@azure/cognitiveservices-anomalydetector'
+    uid: >-
+      @azure/cognitiveservices-anomalydetector -
+      v2.1.0.LastDetectResponse.isAnomaly
+    package: '@azure/cognitiveservices-anomalydetector - v2.1.0'
     summary: >-
       Anomaly status of the latest point, true means the latest point is an
       anomaly either in
@@ -38,8 +42,9 @@ properties:
         type: boolean
   - name: isNegativeAnomaly
     uid: >-
-      @azure/cognitiveservices-anomalydetector.LastDetectResponse.isNegativeAnomaly
-    package: '@azure/cognitiveservices-anomalydetector'
+      @azure/cognitiveservices-anomalydetector -
+      v2.1.0.LastDetectResponse.isNegativeAnomaly
+    package: '@azure/cognitiveservices-anomalydetector - v2.1.0'
     summary: >-
       Anomaly status in negative direction of the latest point. True means the
       latest point is an
@@ -55,8 +60,9 @@ properties:
         type: boolean
   - name: isPositiveAnomaly
     uid: >-
-      @azure/cognitiveservices-anomalydetector.LastDetectResponse.isPositiveAnomaly
-    package: '@azure/cognitiveservices-anomalydetector'
+      @azure/cognitiveservices-anomalydetector -
+      v2.1.0.LastDetectResponse.isPositiveAnomaly
+    package: '@azure/cognitiveservices-anomalydetector - v2.1.0'
     summary: >-
       Anomaly status in positive direction of the latest point. True means the
       latest point is an
@@ -71,8 +77,10 @@ properties:
         description: ''
         type: boolean
   - name: lowerMargin
-    uid: '@azure/cognitiveservices-anomalydetector.LastDetectResponse.lowerMargin'
-    package: '@azure/cognitiveservices-anomalydetector'
+    uid: >-
+      @azure/cognitiveservices-anomalydetector -
+      v2.1.0.LastDetectResponse.lowerMargin
+    package: '@azure/cognitiveservices-anomalydetector - v2.1.0'
     summary: >-
       Lower margin of the latest point. LowerMargin is used to calculate
       lowerBoundary, which equals
@@ -87,8 +95,10 @@ properties:
         description: ''
         type: number
   - name: period
-    uid: '@azure/cognitiveservices-anomalydetector.LastDetectResponse.period'
-    package: '@azure/cognitiveservices-anomalydetector'
+    uid: >-
+      @azure/cognitiveservices-anomalydetector -
+      v2.1.0.LastDetectResponse.period
+    package: '@azure/cognitiveservices-anomalydetector - v2.1.0'
     summary: >-
       Frequency extracted from the series, zero means no recurrent pattern has
       been found.
@@ -102,8 +112,9 @@ properties:
         type: number
   - name: suggestedWindow
     uid: >-
-      @azure/cognitiveservices-anomalydetector.LastDetectResponse.suggestedWindow
-    package: '@azure/cognitiveservices-anomalydetector'
+      @azure/cognitiveservices-anomalydetector -
+      v2.1.0.LastDetectResponse.suggestedWindow
+    package: '@azure/cognitiveservices-anomalydetector - v2.1.0'
     summary: Suggested input series points needed for detecting the latest point.
     fullName: suggestedWindow
     remarks: ''
@@ -114,8 +125,10 @@ properties:
         description: ''
         type: number
   - name: upperMargin
-    uid: '@azure/cognitiveservices-anomalydetector.LastDetectResponse.upperMargin'
-    package: '@azure/cognitiveservices-anomalydetector'
+    uid: >-
+      @azure/cognitiveservices-anomalydetector -
+      v2.1.0.LastDetectResponse.upperMargin
+    package: '@azure/cognitiveservices-anomalydetector - v2.1.0'
     summary: >-
       Upper margin of the latest point. UpperMargin is used to calculate
       upperBoundary, which equals

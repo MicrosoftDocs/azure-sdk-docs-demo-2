@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: ExtractedToken
-uid: '@azure/cognitiveservices-formrecognizer.ExtractedToken'
-package: '@azure/cognitiveservices-formrecognizer'
+uid: '@azure/cognitiveservices-formrecognizer - v2.0.1.ExtractedToken'
+package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
 summary: Canonical representation of single extracted text.
 fullName: ExtractedToken
 remarks: ''
@@ -9,8 +9,10 @@ isDeprecated: false
 type: interface
 properties:
   - name: boundingBox
-    uid: '@azure/cognitiveservices-formrecognizer.ExtractedToken.boundingBox'
-    package: '@azure/cognitiveservices-formrecognizer'
+    uid: >-
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.ExtractedToken.boundingBox
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: |-
       Bounding box of the extracted text. Represents the
       location of the extracted text as a pair of
@@ -26,8 +28,8 @@ properties:
         description: ''
         type: 'number[]'
   - name: confidence
-    uid: '@azure/cognitiveservices-formrecognizer.ExtractedToken.confidence'
-    package: '@azure/cognitiveservices-formrecognizer'
+    uid: '@azure/cognitiveservices-formrecognizer - v2.0.1.ExtractedToken.confidence'
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: A measure of accuracy of the extracted text.
     fullName: confidence
     remarks: ''
@@ -38,8 +40,8 @@ properties:
         description: ''
         type: undefined | number
   - name: text
-    uid: '@azure/cognitiveservices-formrecognizer.ExtractedToken.text'
-    package: '@azure/cognitiveservices-formrecognizer'
+    uid: '@azure/cognitiveservices-formrecognizer - v2.0.1.ExtractedToken.text'
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: String value of the extracted text.
     fullName: text
     remarks: ''

@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: LanguageBatchResultItem
-uid: '@azure/cognitiveservices-textanalytics.LanguageBatchResultItem'
-package: '@azure/cognitiveservices-textanalytics'
+uid: '@azure/cognitiveservices-textanalytics - v4.0.0.LanguageBatchResultItem'
+package: '@azure/cognitiveservices-textanalytics - v4.0.0'
 summary: An interface representing LanguageBatchResultItem.
 fullName: LanguageBatchResultItem
 remarks: ''
@@ -10,8 +10,9 @@ type: interface
 properties:
   - name: detectedLanguages
     uid: >-
-      @azure/cognitiveservices-textanalytics.LanguageBatchResultItem.detectedLanguages
-    package: '@azure/cognitiveservices-textanalytics'
+      @azure/cognitiveservices-textanalytics -
+      v4.0.0.LanguageBatchResultItem.detectedLanguages
+    package: '@azure/cognitiveservices-textanalytics - v4.0.0'
     summary: A list of extracted languages.
     fullName: detectedLanguages
     remarks: ''
@@ -21,11 +22,11 @@ properties:
       return:
         description: ''
         type: >-
-          <xref uid="@azure/cognitiveservices-textanalytics.DetectedLanguage"
-          />[]
+          @azure/cognitiveservices-textanalytics - <xref
+          uid="v4.0.0.DetectedLanguage" />[]
   - name: id
-    uid: '@azure/cognitiveservices-textanalytics.LanguageBatchResultItem.id'
-    package: '@azure/cognitiveservices-textanalytics'
+    uid: '@azure/cognitiveservices-textanalytics - v4.0.0.LanguageBatchResultItem.id'
+    package: '@azure/cognitiveservices-textanalytics - v4.0.0'
     summary: 'Unique, non-empty document identifier.'
     fullName: id
     remarks: ''
@@ -36,8 +37,10 @@ properties:
         description: ''
         type: undefined | string
   - name: statistics
-    uid: '@azure/cognitiveservices-textanalytics.LanguageBatchResultItem.statistics'
-    package: '@azure/cognitiveservices-textanalytics'
+    uid: >-
+      @azure/cognitiveservices-textanalytics -
+      v4.0.0.LanguageBatchResultItem.statistics
+    package: '@azure/cognitiveservices-textanalytics - v4.0.0'
     summary: >-
       (Optional) if showStats=true was specified in the request this field will
       contain information
@@ -51,5 +54,5 @@ properties:
       return:
         description: ''
         type: >-
-          <xref uid="@azure/cognitiveservices-textanalytics.DocumentStatistics"
-          />
+          @azure/cognitiveservices-textanalytics - <xref
+          uid="v4.0.0.DocumentStatistics" />

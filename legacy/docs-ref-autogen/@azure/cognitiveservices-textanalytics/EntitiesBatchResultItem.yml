@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: EntitiesBatchResultItem
-uid: '@azure/cognitiveservices-textanalytics.EntitiesBatchResultItem'
-package: '@azure/cognitiveservices-textanalytics'
+uid: '@azure/cognitiveservices-textanalytics - v4.0.0.EntitiesBatchResultItem'
+package: '@azure/cognitiveservices-textanalytics - v4.0.0'
 summary: An interface representing EntitiesBatchResultItem.
 fullName: EntitiesBatchResultItem
 remarks: ''
@@ -9,8 +9,10 @@ isDeprecated: false
 type: interface
 properties:
   - name: entities
-    uid: '@azure/cognitiveservices-textanalytics.EntitiesBatchResultItem.entities'
-    package: '@azure/cognitiveservices-textanalytics'
+    uid: >-
+      @azure/cognitiveservices-textanalytics -
+      v4.0.0.EntitiesBatchResultItem.entities
+    package: '@azure/cognitiveservices-textanalytics - v4.0.0'
     summary: >-
       Recognized entities in the document.
 
@@ -23,10 +25,12 @@ properties:
       content: 'entities?: EntityRecord[]'
       return:
         description: ''
-        type: '<xref uid="@azure/cognitiveservices-textanalytics.EntityRecord" />[]'
+        type: >-
+          @azure/cognitiveservices-textanalytics - <xref
+          uid="v4.0.0.EntityRecord" />[]
   - name: id
-    uid: '@azure/cognitiveservices-textanalytics.EntitiesBatchResultItem.id'
-    package: '@azure/cognitiveservices-textanalytics'
+    uid: '@azure/cognitiveservices-textanalytics - v4.0.0.EntitiesBatchResultItem.id'
+    package: '@azure/cognitiveservices-textanalytics - v4.0.0'
     summary: 'Unique, non-empty document identifier.'
     fullName: id
     remarks: ''
@@ -37,8 +41,10 @@ properties:
         description: ''
         type: undefined | string
   - name: statistics
-    uid: '@azure/cognitiveservices-textanalytics.EntitiesBatchResultItem.statistics'
-    package: '@azure/cognitiveservices-textanalytics'
+    uid: >-
+      @azure/cognitiveservices-textanalytics -
+      v4.0.0.EntitiesBatchResultItem.statistics
+    package: '@azure/cognitiveservices-textanalytics - v4.0.0'
     summary: >-
       (Optional) if showStats=true was specified in the request this field will
       contain information
@@ -52,5 +58,5 @@ properties:
       return:
         description: ''
         type: >-
-          <xref uid="@azure/cognitiveservices-textanalytics.DocumentStatistics"
-          />
+          @azure/cognitiveservices-textanalytics - <xref
+          uid="v4.0.0.DocumentStatistics" />

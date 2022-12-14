@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: Line
-uid: '@azure/cognitiveservices-formrecognizer.Line'
-package: '@azure/cognitiveservices-formrecognizer'
+uid: '@azure/cognitiveservices-formrecognizer - v2.0.1.Line'
+package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
 summary: An object representing a recognized text line.
 fullName: Line
 remarks: ''
@@ -9,8 +9,8 @@ isDeprecated: false
 type: interface
 properties:
   - name: boundingBox
-    uid: '@azure/cognitiveservices-formrecognizer.Line.boundingBox'
-    package: '@azure/cognitiveservices-formrecognizer'
+    uid: '@azure/cognitiveservices-formrecognizer - v2.0.1.Line.boundingBox'
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: Bounding box of a recognized line.
     fullName: boundingBox
     remarks: ''
@@ -21,8 +21,8 @@ properties:
         description: ''
         type: 'number[]'
   - name: text
-    uid: '@azure/cognitiveservices-formrecognizer.Line.text'
-    package: '@azure/cognitiveservices-formrecognizer'
+    uid: '@azure/cognitiveservices-formrecognizer - v2.0.1.Line.text'
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: The text content of the line.
     fullName: text
     remarks: ''
@@ -33,8 +33,8 @@ properties:
         description: ''
         type: undefined | string
   - name: words
-    uid: '@azure/cognitiveservices-formrecognizer.Line.words'
-    package: '@azure/cognitiveservices-formrecognizer'
+    uid: '@azure/cognitiveservices-formrecognizer - v2.0.1.Line.words'
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: List of words in the text line.
     fullName: words
     remarks: ''
@@ -43,4 +43,4 @@ properties:
       content: 'words?: Word[]'
       return:
         description: ''
-        type: '<xref uid="@azure/cognitiveservices-formrecognizer.Word" />[]'
+        type: '@azure/cognitiveservices-formrecognizer - <xref uid="v2.0.1.Word" />[]'

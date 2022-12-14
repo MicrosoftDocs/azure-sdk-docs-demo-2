@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: FormRecognizerClient
-uid: '@azure/cognitiveservices-formrecognizer.FormRecognizerClient'
-package: '@azure/cognitiveservices-formrecognizer'
+uid: '@azure/cognitiveservices-formrecognizer - v2.0.1.FormRecognizerClient'
+package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
 summary: ''
 fullName: FormRecognizerClient
 remarks: ''
@@ -11,8 +11,10 @@ constructors:
   - name: >-
       FormRecognizerClient(ServiceClientCredentials, string,
       msRest.ServiceClientOptions)
-    uid: '@azure/cognitiveservices-formrecognizer.FormRecognizerClient.constructor'
-    package: '@azure/cognitiveservices-formrecognizer'
+    uid: >-
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormRecognizerClient.constructor
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: Initializes a new instance of the FormRecognizerClient class.
     remarks: ''
     isDeprecated: false
@@ -38,8 +40,10 @@ constructors:
           description: ''
 inheritedProperties:
   - name: credentials
-    uid: '@azure/cognitiveservices-formrecognizer.FormRecognizerClient.credentials'
-    package: '@azure/cognitiveservices-formrecognizer'
+    uid: >-
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormRecognizerClient.credentials
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: ''
     fullName: credentials
     remarks: ''
@@ -51,10 +55,13 @@ inheritedProperties:
         type: ServiceClientCredentials
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [FormRecognizerClientContext.credentials](xref:@azure/cognitiveservices-formrecognizer.FormRecognizerClientContext.credentials)
+      [FormRecognizerClientContext.credentials](xref:@azure/cognitiveservices-formrecognizer
+      - v2.0.1.FormRecognizerClientContext.credentials)
   - name: endpoint
-    uid: '@azure/cognitiveservices-formrecognizer.FormRecognizerClient.endpoint'
-    package: '@azure/cognitiveservices-formrecognizer'
+    uid: >-
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormRecognizerClient.endpoint
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: ''
     fullName: endpoint
     remarks: ''
@@ -66,14 +73,16 @@ inheritedProperties:
         type: string
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [FormRecognizerClientContext.endpoint](xref:@azure/cognitiveservices-formrecognizer.FormRecognizerClientContext.endpoint)
+      [FormRecognizerClientContext.endpoint](xref:@azure/cognitiveservices-formrecognizer
+      - v2.0.1.FormRecognizerClientContext.endpoint)
 inheritedMethods:
   - name: >-
       sendOperationRequest(OperationArguments, OperationSpec,
       ServiceCallback<any>)
     uid: >-
-      @azure/cognitiveservices-formrecognizer.FormRecognizerClient.sendOperationRequest
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormRecognizerClient.sendOperationRequest
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
     isDeprecated: false
@@ -98,10 +107,14 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;RestResponse&gt;
-    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendOperationRequest
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [ServiceClient.sendOperationRequest](xref:ServiceClient.sendOperationRequest)
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
-    uid: '@azure/cognitiveservices-formrecognizer.FormRecognizerClient.sendRequest'
-    package: '@azure/cognitiveservices-formrecognizer'
+    uid: >-
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormRecognizerClient.sendRequest
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: Send the provided httpRequest.
     remarks: ''
     isDeprecated: false
@@ -116,15 +129,18 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;HttpOperationResponse&gt;
-    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendRequest
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [ServiceClient.sendRequest](xref:ServiceClient.sendRequest)
 methods:
   - name: >-
       analyzeWithCustomModel(string, msRest.HttpRequestBody,
       FormRecognizerClientAnalyzeWithCustomModelOptionalParams,
       ServiceCallback<AnalyzeResult>)
     uid: >-
-      @azure/cognitiveservices-formrecognizer.FormRecognizerClient.analyzeWithCustomModel_2
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormRecognizerClient.analyzeWithCustomModel_2
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -143,22 +159,23 @@ methods:
           description: 'A pdf document or image (jpg,png) file to analyze.'
         - id: options
           type: >-
-            <xref
-            uid="@azure/cognitiveservices-formrecognizer.FormRecognizerClientAnalyzeWithCustomModelOptionalParams"
+            @azure/cognitiveservices-formrecognizer - <xref
+            uid="v2.0.1.FormRecognizerClientAnalyzeWithCustomModelOptionalParams"
             />
           description: The optional parameters
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/cognitiveservices-formrecognizer.AnalyzeResult" />&gt;
+            ServiceCallback&lt;@azure/cognitiveservices-formrecognizer - <xref
+            uid="v2.0.1.AnalyzeResult" />&gt;
           description: |
             The callback
   - name: >-
       analyzeWithCustomModel(string, msRest.HttpRequestBody,
       Models.FormRecognizerClientAnalyzeWithCustomModelOptionalParams)
     uid: >-
-      @azure/cognitiveservices-formrecognizer.FormRecognizerClient.analyzeWithCustomModel
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormRecognizerClient.analyzeWithCustomModel
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: >-
       Extract key-value pairs from a given document. The input document must be
       of one of the
@@ -195,8 +212,9 @@ methods:
       analyzeWithCustomModel(string, msRest.HttpRequestBody,
       ServiceCallback<AnalyzeResult>)
     uid: >-
-      @azure/cognitiveservices-formrecognizer.FormRecognizerClient.analyzeWithCustomModel_1
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormRecognizerClient.analyzeWithCustomModel_1
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -213,14 +231,15 @@ methods:
           description: 'A pdf document or image (jpg,png) file to analyze.'
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/cognitiveservices-formrecognizer.AnalyzeResult" />&gt;
+            ServiceCallback&lt;@azure/cognitiveservices-formrecognizer - <xref
+            uid="v2.0.1.AnalyzeResult" />&gt;
           description: |
             The callback
   - name: 'batchReadReceipt(string, msRest.RequestOptionsBase)'
     uid: >-
-      @azure/cognitiveservices-formrecognizer.FormRecognizerClient.batchReadReceipt
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormRecognizerClient.batchReadReceipt
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: >-
       Batch Read Receipt operation. The response contains a field called
       'Operation-Location', which
@@ -245,8 +264,9 @@ methods:
         type: Promise&lt;<xref uid="Models.BatchReadReceiptResponse" />&gt;
   - name: 'batchReadReceipt(string, RequestOptionsBase, ServiceCallback<void>)'
     uid: >-
-      @azure/cognitiveservices-formrecognizer.FormRecognizerClient.batchReadReceipt_2
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormRecognizerClient.batchReadReceipt_2
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -267,8 +287,9 @@ methods:
             The callback
   - name: 'batchReadReceipt(string, ServiceCallback<void>)'
     uid: >-
-      @azure/cognitiveservices-formrecognizer.FormRecognizerClient.batchReadReceipt_1
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormRecognizerClient.batchReadReceipt_1
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -286,8 +307,9 @@ methods:
       batchReadReceiptInStream(msRest.HttpRequestBody,
       msRest.RequestOptionsBase)
     uid: >-
-      @azure/cognitiveservices-formrecognizer.FormRecognizerClient.batchReadReceiptInStream
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormRecognizerClient.batchReadReceiptInStream
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: >-
       Read Receipt operation. When you use the 'Batch Read Receipt' interface,
       the response contains a
@@ -317,8 +339,9 @@ methods:
       batchReadReceiptInStream(msRest.HttpRequestBody, RequestOptionsBase,
       ServiceCallback<void>)
     uid: >-
-      @azure/cognitiveservices-formrecognizer.FormRecognizerClient.batchReadReceiptInStream_2
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormRecognizerClient.batchReadReceiptInStream_2
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -339,8 +362,9 @@ methods:
             The callback
   - name: 'batchReadReceiptInStream(msRest.HttpRequestBody, ServiceCallback<void>)'
     uid: >-
-      @azure/cognitiveservices-formrecognizer.FormRecognizerClient.batchReadReceiptInStream_1
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormRecognizerClient.batchReadReceiptInStream_1
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -358,8 +382,9 @@ methods:
             The callback
   - name: 'deleteCustomModel(string, msRest.RequestOptionsBase)'
     uid: >-
-      @azure/cognitiveservices-formrecognizer.FormRecognizerClient.deleteCustomModel
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormRecognizerClient.deleteCustomModel
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: Delete model artifacts.
     remarks: ''
     isDeprecated: false
@@ -379,8 +404,9 @@ methods:
         type: Promise&lt;RestResponse&gt;
   - name: 'deleteCustomModel(string, RequestOptionsBase, ServiceCallback<void>)'
     uid: >-
-      @azure/cognitiveservices-formrecognizer.FormRecognizerClient.deleteCustomModel_2
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormRecognizerClient.deleteCustomModel_2
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -401,8 +427,9 @@ methods:
             The callback
   - name: 'deleteCustomModel(string, ServiceCallback<void>)'
     uid: >-
-      @azure/cognitiveservices-formrecognizer.FormRecognizerClient.deleteCustomModel_1
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormRecognizerClient.deleteCustomModel_1
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -418,8 +445,9 @@ methods:
             The callback
   - name: 'getCustomModel(string, msRest.RequestOptionsBase)'
     uid: >-
-      @azure/cognitiveservices-formrecognizer.FormRecognizerClient.getCustomModel
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormRecognizerClient.getCustomModel
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: Get information about a model.
     remarks: ''
     isDeprecated: false
@@ -439,8 +467,9 @@ methods:
         type: Promise&lt;<xref uid="Models.GetCustomModelResponse" />&gt;
   - name: 'getCustomModel(string, RequestOptionsBase, ServiceCallback<ModelResult>)'
     uid: >-
-      @azure/cognitiveservices-formrecognizer.FormRecognizerClient.getCustomModel_2
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormRecognizerClient.getCustomModel_2
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -457,14 +486,15 @@ methods:
           description: The optional parameters
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/cognitiveservices-formrecognizer.ModelResult" />&gt;
+            ServiceCallback&lt;@azure/cognitiveservices-formrecognizer - <xref
+            uid="v2.0.1.ModelResult" />&gt;
           description: |
             The callback
   - name: 'getCustomModel(string, ServiceCallback<ModelResult>)'
     uid: >-
-      @azure/cognitiveservices-formrecognizer.FormRecognizerClient.getCustomModel_1
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormRecognizerClient.getCustomModel_1
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -478,14 +508,15 @@ methods:
           description: Model identifier.
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/cognitiveservices-formrecognizer.ModelResult" />&gt;
+            ServiceCallback&lt;@azure/cognitiveservices-formrecognizer - <xref
+            uid="v2.0.1.ModelResult" />&gt;
           description: |
             The callback
   - name: getCustomModels(msRest.RequestOptionsBase)
     uid: >-
-      @azure/cognitiveservices-formrecognizer.FormRecognizerClient.getCustomModels
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormRecognizerClient.getCustomModels
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: Get information about all trained custom models
     remarks: ''
     isDeprecated: false
@@ -502,8 +533,9 @@ methods:
         type: Promise&lt;<xref uid="Models.GetCustomModelsResponse" />&gt;
   - name: 'getCustomModels(RequestOptionsBase, ServiceCallback<ModelsResult>)'
     uid: >-
-      @azure/cognitiveservices-formrecognizer.FormRecognizerClient.getCustomModels_2
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormRecognizerClient.getCustomModels_2
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -517,14 +549,15 @@ methods:
           description: The optional parameters
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/cognitiveservices-formrecognizer.ModelsResult" />&gt;
+            ServiceCallback&lt;@azure/cognitiveservices-formrecognizer - <xref
+            uid="v2.0.1.ModelsResult" />&gt;
           description: |
             The callback
   - name: getCustomModels(ServiceCallback<ModelsResult>)
     uid: >-
-      @azure/cognitiveservices-formrecognizer.FormRecognizerClient.getCustomModels_1
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormRecognizerClient.getCustomModels_1
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -533,14 +566,15 @@ methods:
       parameters:
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/cognitiveservices-formrecognizer.ModelsResult" />&gt;
+            ServiceCallback&lt;@azure/cognitiveservices-formrecognizer - <xref
+            uid="v2.0.1.ModelsResult" />&gt;
           description: |
             The callback
   - name: 'getExtractedKeys(string, msRest.RequestOptionsBase)'
     uid: >-
-      @azure/cognitiveservices-formrecognizer.FormRecognizerClient.getExtractedKeys
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormRecognizerClient.getExtractedKeys
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: |-
       Retrieve the keys that were
       extracted during the training of the specified model.
@@ -562,8 +596,9 @@ methods:
         type: Promise&lt;<xref uid="Models.GetExtractedKeysResponse" />&gt;
   - name: 'getExtractedKeys(string, RequestOptionsBase, ServiceCallback<KeysResult>)'
     uid: >-
-      @azure/cognitiveservices-formrecognizer.FormRecognizerClient.getExtractedKeys_2
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormRecognizerClient.getExtractedKeys_2
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -580,14 +615,15 @@ methods:
           description: The optional parameters
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/cognitiveservices-formrecognizer.KeysResult" />&gt;
+            ServiceCallback&lt;@azure/cognitiveservices-formrecognizer - <xref
+            uid="v2.0.1.KeysResult" />&gt;
           description: |
             The callback
   - name: 'getExtractedKeys(string, ServiceCallback<KeysResult>)'
     uid: >-
-      @azure/cognitiveservices-formrecognizer.FormRecognizerClient.getExtractedKeys_1
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormRecognizerClient.getExtractedKeys_1
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -601,14 +637,15 @@ methods:
           description: Model identifier.
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/cognitiveservices-formrecognizer.KeysResult" />&gt;
+            ServiceCallback&lt;@azure/cognitiveservices-formrecognizer - <xref
+            uid="v2.0.1.KeysResult" />&gt;
           description: |
             The callback
   - name: 'getReadReceiptResult(string, msRest.RequestOptionsBase)'
     uid: >-
-      @azure/cognitiveservices-formrecognizer.FormRecognizerClient.getReadReceiptResult
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormRecognizerClient.getReadReceiptResult
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: >-
       This interface is used for getting the analysis results of a 'Batch Read
       Receipt' operation. The
@@ -641,8 +678,9 @@ methods:
       getReadReceiptResult(string, RequestOptionsBase,
       ServiceCallback<ReadReceiptResult>)
     uid: >-
-      @azure/cognitiveservices-formrecognizer.FormRecognizerClient.getReadReceiptResult_2
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormRecognizerClient.getReadReceiptResult_2
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -663,15 +701,15 @@ methods:
           description: The optional parameters
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/cognitiveservices-formrecognizer.ReadReceiptResult"
-            />&gt;
+            ServiceCallback&lt;@azure/cognitiveservices-formrecognizer - <xref
+            uid="v2.0.1.ReadReceiptResult" />&gt;
           description: |
             The callback
   - name: 'getReadReceiptResult(string, ServiceCallback<ReadReceiptResult>)'
     uid: >-
-      @azure/cognitiveservices-formrecognizer.FormRecognizerClient.getReadReceiptResult_1
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormRecognizerClient.getReadReceiptResult_1
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -689,15 +727,15 @@ methods:
             operation.
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/cognitiveservices-formrecognizer.ReadReceiptResult"
-            />&gt;
+            ServiceCallback&lt;@azure/cognitiveservices-formrecognizer - <xref
+            uid="v2.0.1.ReadReceiptResult" />&gt;
           description: |
             The callback
   - name: 'trainCustomModel(TrainRequest, msRest.RequestOptionsBase)'
     uid: >-
-      @azure/cognitiveservices-formrecognizer.FormRecognizerClient.trainCustomModel
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormRecognizerClient.trainCustomModel
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: >-
       Create and train a custom model. The train request must include a source
       parameter that is
@@ -734,7 +772,9 @@ methods:
         msRest.RequestOptionsBase): Promise<Models.TrainCustomModelResponse>
       parameters:
         - id: trainRequest
-          type: <xref uid="@azure/cognitiveservices-formrecognizer.TrainRequest" />
+          type: >-
+            @azure/cognitiveservices-formrecognizer - <xref
+            uid="v2.0.1.TrainRequest" />
           description: Request object for training.
         - id: options
           type: <xref uid="msRest.RequestOptionsBase" />
@@ -746,8 +786,9 @@ methods:
       trainCustomModel(TrainRequest, RequestOptionsBase,
       ServiceCallback<TrainResult>)
     uid: >-
-      @azure/cognitiveservices-formrecognizer.FormRecognizerClient.trainCustomModel_2
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormRecognizerClient.trainCustomModel_2
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -757,21 +798,24 @@ methods:
         RequestOptionsBase, callback: ServiceCallback<TrainResult>)
       parameters:
         - id: trainRequest
-          type: <xref uid="@azure/cognitiveservices-formrecognizer.TrainRequest" />
+          type: >-
+            @azure/cognitiveservices-formrecognizer - <xref
+            uid="v2.0.1.TrainRequest" />
           description: Request object for training.
         - id: options
           type: RequestOptionsBase
           description: The optional parameters
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/cognitiveservices-formrecognizer.TrainResult" />&gt;
+            ServiceCallback&lt;@azure/cognitiveservices-formrecognizer - <xref
+            uid="v2.0.1.TrainResult" />&gt;
           description: |
             The callback
   - name: 'trainCustomModel(TrainRequest, ServiceCallback<TrainResult>)'
     uid: >-
-      @azure/cognitiveservices-formrecognizer.FormRecognizerClient.trainCustomModel_1
-    package: '@azure/cognitiveservices-formrecognizer'
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.FormRecognizerClient.trainCustomModel_1
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -781,14 +825,16 @@ methods:
         ServiceCallback<TrainResult>)
       parameters:
         - id: trainRequest
-          type: <xref uid="@azure/cognitiveservices-formrecognizer.TrainRequest" />
+          type: >-
+            @azure/cognitiveservices-formrecognizer - <xref
+            uid="v2.0.1.TrainRequest" />
           description: Request object for training.
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref
-            uid="@azure/cognitiveservices-formrecognizer.TrainResult" />&gt;
+            ServiceCallback&lt;@azure/cognitiveservices-formrecognizer - <xref
+            uid="v2.0.1.TrainResult" />&gt;
           description: |
             The callback
 extends: >-
-  <xref
-  uid="@azure/cognitiveservices-formrecognizer.FormRecognizerClientContext" />
+  @azure/cognitiveservices-formrecognizer - <xref
+  uid="v2.0.1.FormRecognizerClientContext" />

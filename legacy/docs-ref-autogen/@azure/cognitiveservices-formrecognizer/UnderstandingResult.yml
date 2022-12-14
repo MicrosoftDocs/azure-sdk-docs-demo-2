@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: UnderstandingResult
-uid: '@azure/cognitiveservices-formrecognizer.UnderstandingResult'
-package: '@azure/cognitiveservices-formrecognizer'
+uid: '@azure/cognitiveservices-formrecognizer - v2.0.1.UnderstandingResult'
+package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
 summary: >-
   A set of extracted fields corresponding to a semantic object, such as a
   receipt, in the input
@@ -13,8 +13,10 @@ isDeprecated: false
 type: interface
 properties:
   - name: fields
-    uid: '@azure/cognitiveservices-formrecognizer.UnderstandingResult.fields'
-    package: '@azure/cognitiveservices-formrecognizer'
+    uid: >-
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.UnderstandingResult.fields
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: Dictionary of recognized field values.
     fullName: fields
     remarks: ''
@@ -24,11 +26,11 @@ properties:
       return:
         description: ''
         type: >-
-          undefined | [key: string]: <xref
-          uid="@azure/cognitiveservices-formrecognizer.FieldValueUnion" />
+          undefined | [key: string]: @azure/cognitiveservices-formrecognizer -
+          <xref uid="v2.0.1.FieldValueUnion" />
   - name: pages
-    uid: '@azure/cognitiveservices-formrecognizer.UnderstandingResult.pages'
-    package: '@azure/cognitiveservices-formrecognizer'
+    uid: '@azure/cognitiveservices-formrecognizer - v2.0.1.UnderstandingResult.pages'
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: List of pages where the document is found.
     fullName: pages
     remarks: ''

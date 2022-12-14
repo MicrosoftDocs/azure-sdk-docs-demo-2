@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: RequestStatistics
-uid: '@azure/cognitiveservices-textanalytics.RequestStatistics'
-package: '@azure/cognitiveservices-textanalytics'
+uid: '@azure/cognitiveservices-textanalytics - v4.0.0.RequestStatistics'
+package: '@azure/cognitiveservices-textanalytics - v4.0.0'
 summary: An interface representing RequestStatistics.
 fullName: RequestStatistics
 remarks: ''
@@ -9,8 +9,10 @@ isDeprecated: false
 type: interface
 properties:
   - name: documentsCount
-    uid: '@azure/cognitiveservices-textanalytics.RequestStatistics.documentsCount'
-    package: '@azure/cognitiveservices-textanalytics'
+    uid: >-
+      @azure/cognitiveservices-textanalytics -
+      v4.0.0.RequestStatistics.documentsCount
+    package: '@azure/cognitiveservices-textanalytics - v4.0.0'
     summary: Number of documents submitted in the request.
     fullName: documentsCount
     remarks: ''
@@ -22,8 +24,9 @@ properties:
         type: undefined | number
   - name: erroneousDocumentsCount
     uid: >-
-      @azure/cognitiveservices-textanalytics.RequestStatistics.erroneousDocumentsCount
-    package: '@azure/cognitiveservices-textanalytics'
+      @azure/cognitiveservices-textanalytics -
+      v4.0.0.RequestStatistics.erroneousDocumentsCount
+    package: '@azure/cognitiveservices-textanalytics - v4.0.0'
     summary: >-
       Number of invalid documents. This includes empty, over-size limit or
       non-supported languages
@@ -38,8 +41,10 @@ properties:
         description: ''
         type: undefined | number
   - name: transactionsCount
-    uid: '@azure/cognitiveservices-textanalytics.RequestStatistics.transactionsCount'
-    package: '@azure/cognitiveservices-textanalytics'
+    uid: >-
+      @azure/cognitiveservices-textanalytics -
+      v4.0.0.RequestStatistics.transactionsCount
+    package: '@azure/cognitiveservices-textanalytics - v4.0.0'
     summary: Number of transactions for the request.
     fullName: transactionsCount
     remarks: ''
@@ -51,8 +56,9 @@ properties:
         type: undefined | number
   - name: validDocumentsCount
     uid: >-
-      @azure/cognitiveservices-textanalytics.RequestStatistics.validDocumentsCount
-    package: '@azure/cognitiveservices-textanalytics'
+      @azure/cognitiveservices-textanalytics -
+      v4.0.0.RequestStatistics.validDocumentsCount
+    package: '@azure/cognitiveservices-textanalytics - v4.0.0'
     summary: >-
       Number of valid documents. This excludes empty, over-size limit or
       non-supported languages

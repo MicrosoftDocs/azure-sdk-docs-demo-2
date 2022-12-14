@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: MessageHandlerOptions
-uid: '@azure/service-bus.MessageHandlerOptions'
-package: '@azure/service-bus'
+uid: '@azure/service-bus - v1.1.10.MessageHandlerOptions'
+package: '@azure/service-bus - v1.1.10'
 summary: >-
   Describes the options passed to `registerMessageHandler` method when receiving
   messages from a
@@ -13,8 +13,8 @@ isDeprecated: false
 type: interface
 properties:
   - name: autoComplete
-    uid: '@azure/service-bus.MessageHandlerOptions.autoComplete'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.MessageHandlerOptions.autoComplete'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       Indicates whether the `complete()` method on the message should
       automatically be
@@ -34,8 +34,8 @@ properties:
         description: ''
         type: undefined | false | true
   - name: maxConcurrentCalls
-    uid: '@azure/service-bus.MessageHandlerOptions.maxConcurrentCalls'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.MessageHandlerOptions.maxConcurrentCalls'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The maximum number of concurrent calls that the sdk can make to the user's
       message
@@ -56,8 +56,9 @@ properties:
         type: undefined | number
   - name: maxMessageAutoRenewLockDurationInSeconds
     uid: >-
-      @azure/service-bus.MessageHandlerOptions.maxMessageAutoRenewLockDurationInSeconds
-    package: '@azure/service-bus'
+      @azure/service-bus -
+      v1.1.10.MessageHandlerOptions.maxMessageAutoRenewLockDurationInSeconds
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The maximum duration in seconds until which the lock on the message will
       be renewed

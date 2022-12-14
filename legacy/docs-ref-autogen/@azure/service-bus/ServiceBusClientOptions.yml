@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: ServiceBusClientOptions
-uid: '@azure/service-bus.ServiceBusClientOptions'
-package: '@azure/service-bus'
+uid: '@azure/service-bus - v1.1.10.ServiceBusClientOptions'
+package: '@azure/service-bus - v1.1.10'
 summary: >-
   Describes the options that can be provided while creating the
   ServiceBusClient.
@@ -11,8 +11,8 @@ isDeprecated: false
 type: interface
 properties:
   - name: dataTransformer
-    uid: '@azure/service-bus.ServiceBusClientOptions.dataTransformer'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ServiceBusClientOptions.dataTransformer'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The data transformer that will be used to encode
 
@@ -32,8 +32,8 @@ properties:
         description: ''
         type: DataTransformer
   - name: webSocket
-    uid: '@azure/service-bus.ServiceBusClientOptions.webSocket'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ServiceBusClientOptions.webSocket'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The WebSocket constructor used to create an AMQP connection
 
@@ -50,8 +50,10 @@ properties:
         description: ''
         type: WebSocketImpl
   - name: webSocketConstructorOptions
-    uid: '@azure/service-bus.ServiceBusClientOptions.webSocketConstructorOptions'
-    package: '@azure/service-bus'
+    uid: >-
+      @azure/service-bus -
+      v1.1.10.ServiceBusClientOptions.webSocketConstructorOptions
+    package: '@azure/service-bus - v1.1.10'
     summary: Options to be passed to the WebSocket constructor
     fullName: webSocketConstructorOptions
     remarks: ''

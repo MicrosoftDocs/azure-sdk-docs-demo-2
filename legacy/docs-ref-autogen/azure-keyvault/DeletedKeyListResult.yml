@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: DeletedKeyListResult
-uid: azure-keyvault.DeletedKeyListResult
-package: azure-keyvault
+uid: azure-keyvault - v3.0.5.DeletedKeyListResult
+package: azure-keyvault - v3.0.5
 summary: ''
 fullName: DeletedKeyListResult
 remarks: ''
@@ -9,8 +9,8 @@ isDeprecated: false
 type: interface
 properties:
   - name: Array
-    uid: azure-keyvault.DeletedKeyListResult.Array
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedKeyListResult.Array
+    package: azure-keyvault - v3.0.5
     summary: ''
     fullName: Array
     remarks: ''
@@ -21,8 +21,8 @@ properties:
         description: ''
         type: ArrayConstructor
   - name: nextLink
-    uid: azure-keyvault.DeletedKeyListResult.nextLink
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedKeyListResult.nextLink
+    package: azure-keyvault - v3.0.5
     summary: ''
     fullName: nextLink
     remarks: ''
@@ -34,8 +34,8 @@ properties:
         type: string
 inheritedProperties:
   - name: length
-    uid: azure-keyvault.DeletedKeyListResult.length
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedKeyListResult.length
+    package: azure-keyvault - v3.0.5
     summary: >-
       Gets or sets the length of the array. This is a number one higher than the
       highest element defined in an array.
@@ -47,11 +47,11 @@ inheritedProperties:
       return:
         description: ''
         type: number
-    inheritanceDescription: <b>Inherited From</b> Array.length
+    inheritanceDescription: '<b>Inherited From</b> [Array.length](xref:Array.length)'
 inheritedMethods:
   - name: 'concat((T | ConcatArray<T>)[])'
-    uid: azure-keyvault.DeletedKeyListResult.concat_1
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedKeyListResult.concat_1
+    package: azure-keyvault - v3.0.5
     summary: Combines two or more arrays.
     remarks: ''
     isDeprecated: false
@@ -64,11 +64,11 @@ inheritedMethods:
             Additional items to add to the end of array1.
       return:
         description: ''
-        type: '<xref uid="azure-keyvault.DeletedKeyItem" />[]'
-    inheritanceDescription: <b>Inherited From</b> Array.concat
+        type: 'azure-keyvault - <xref uid="v3.0.5.DeletedKeyItem" />[]'
+    inheritanceDescription: '<b>Inherited From</b> [Array.concat](xref:Array.concat)'
   - name: 'concat(ConcatArray<DeletedKeyItem>[])'
-    uid: azure-keyvault.DeletedKeyListResult.concat
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedKeyListResult.concat
+    package: azure-keyvault - v3.0.5
     summary: Combines two or more arrays.
     remarks: ''
     isDeprecated: false
@@ -76,18 +76,20 @@ inheritedMethods:
       content: 'function concat(items: ConcatArray<DeletedKeyItem>[]): DeletedKeyItem[]'
       parameters:
         - id: items
-          type: 'ConcatArray&lt;<xref uid="azure-keyvault.DeletedKeyItem" />&gt;[]'
+          type: >-
+            ConcatArray&lt;azure-keyvault - <xref uid="v3.0.5.DeletedKeyItem"
+            />&gt;[]
           description: |
             Additional items to add to the end of array1.
       return:
         description: ''
-        type: '<xref uid="azure-keyvault.DeletedKeyItem" />[]'
-    inheritanceDescription: <b>Inherited From</b> Array.concat
+        type: 'azure-keyvault - <xref uid="v3.0.5.DeletedKeyItem" />[]'
+    inheritanceDescription: '<b>Inherited From</b> [Array.concat](xref:Array.concat)'
   - name: >-
       every((value: DeletedKeyItem, index: number, array: DeletedKeyItem[]) =>
       unknown, any)
-    uid: azure-keyvault.DeletedKeyListResult.every
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedKeyListResult.every
+    package: azure-keyvault - v3.0.5
     summary: Determines whether all the members of an array satisfy the specified test.
     remarks: ''
     isDeprecated: false
@@ -102,23 +104,29 @@ inheritedMethods:
             =&gt; unknown
           description: >-
             A function that accepts up to three arguments. The every method
-            calls the callbackfn function for each element in array1 until the
-            callbackfn returns false, or until the end of the array.
+            calls
+
+            the callbackfn function for each element in the array until the
+            callbackfn returns a value
+
+            which is coercible to the Boolean value false, or until the end of
+            the array.
         - id: thisArg
           type: any
           description: >
             An object to which the this keyword can refer in the callbackfn
-            function. If thisArg is omitted, undefined is used as the this
-            value.
+            function.
+
+            If thisArg is omitted, undefined is used as the this value.
       return:
         description: ''
         type: boolean
-    inheritanceDescription: <b>Inherited From</b> Array.every
+    inheritanceDescription: '<b>Inherited From</b> [Array.every](xref:Array.every)'
   - name: >-
       filter((value: DeletedKeyItem, index: number, array: DeletedKeyItem[]) =>
       unknown, any)
-    uid: azure-keyvault.DeletedKeyListResult.filter_1
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedKeyListResult.filter_1
+    package: azure-keyvault - v3.0.5
     summary: >-
       Returns the elements of an array that meet the condition specified in a
       callback function.
@@ -145,13 +153,13 @@ inheritedMethods:
             value.
       return:
         description: ''
-        type: '<xref uid="azure-keyvault.DeletedKeyItem" />[]'
-    inheritanceDescription: <b>Inherited From</b> Array.filter
+        type: 'azure-keyvault - <xref uid="v3.0.5.DeletedKeyItem" />[]'
+    inheritanceDescription: '<b>Inherited From</b> [Array.filter](xref:Array.filter)'
   - name: >-
       filter<S>((value: DeletedKeyItem, index: number, array: DeletedKeyItem[])
-      => boolean, any)
-    uid: azure-keyvault.DeletedKeyListResult.filter
-    package: azure-keyvault
+      => value, any)
+    uid: azure-keyvault - v3.0.5.DeletedKeyListResult.filter
+    package: azure-keyvault - v3.0.5
     summary: >-
       Returns the elements of an array that meet the condition specified in a
       callback function.
@@ -160,12 +168,12 @@ inheritedMethods:
     syntax:
       content: >-
         function filter<S>(callbackfn: (value: DeletedKeyItem, index: number,
-        array: DeletedKeyItem[]) => boolean, thisArg?: any): S[]
+        array: DeletedKeyItem[]) => value, thisArg?: any): S[]
       parameters:
         - id: callbackfn
           type: >-
             (value: DeletedKeyItem, index: number, array: DeletedKeyItem[])
-            =&gt; boolean
+            =&gt; value
           description: >-
             A function that accepts up to three arguments. The filter method
             calls the callbackfn function one time for each element in the
@@ -179,12 +187,12 @@ inheritedMethods:
       return:
         description: ''
         type: 'S[]'
-    inheritanceDescription: <b>Inherited From</b> Array.filter
+    inheritanceDescription: '<b>Inherited From</b> [Array.filter](xref:Array.filter)'
   - name: >-
       forEach((value: DeletedKeyItem, index: number, array: DeletedKeyItem[]) =>
       void, any)
-    uid: azure-keyvault.DeletedKeyListResult.forEach
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedKeyListResult.forEach
+    package: azure-keyvault - v3.0.5
     summary: Performs the specified action for each element in an array.
     remarks: ''
     isDeprecated: false
@@ -206,10 +214,10 @@ inheritedMethods:
             An object to which the this keyword can refer in the callbackfn
             function. If thisArg is omitted, undefined is used as the this
             value.
-    inheritanceDescription: <b>Inherited From</b> Array.forEach
+    inheritanceDescription: '<b>Inherited From</b> [Array.forEach](xref:Array.forEach)'
   - name: 'indexOf(DeletedKeyItem, number)'
-    uid: azure-keyvault.DeletedKeyListResult.indexOf
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedKeyListResult.indexOf
+    package: azure-keyvault - v3.0.5
     summary: Returns the index of the first occurrence of a value in an array.
     remarks: ''
     isDeprecated: false
@@ -219,7 +227,7 @@ inheritedMethods:
         number
       parameters:
         - id: searchElement
-          type: <xref uid="azure-keyvault.DeletedKeyItem" />
+          type: azure-keyvault - <xref uid="v3.0.5.DeletedKeyItem" />
           description: The value to locate in the array.
         - id: fromIndex
           type: number
@@ -229,10 +237,10 @@ inheritedMethods:
       return:
         description: ''
         type: number
-    inheritanceDescription: <b>Inherited From</b> Array.indexOf
+    inheritanceDescription: '<b>Inherited From</b> [Array.indexOf](xref:Array.indexOf)'
   - name: join(string)
-    uid: azure-keyvault.DeletedKeyListResult.join
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedKeyListResult.join
+    package: azure-keyvault - v3.0.5
     summary: >-
       Adds all the elements of an array separated by the specified separator
       string.
@@ -250,10 +258,10 @@ inheritedMethods:
       return:
         description: ''
         type: string
-    inheritanceDescription: <b>Inherited From</b> Array.join
+    inheritanceDescription: '<b>Inherited From</b> [Array.join](xref:Array.join)'
   - name: 'lastIndexOf(DeletedKeyItem, number)'
-    uid: azure-keyvault.DeletedKeyListResult.lastIndexOf
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedKeyListResult.lastIndexOf
+    package: azure-keyvault - v3.0.5
     summary: Returns the index of the last occurrence of a specified value in an array.
     remarks: ''
     isDeprecated: false
@@ -263,7 +271,7 @@ inheritedMethods:
         number
       parameters:
         - id: searchElement
-          type: <xref uid="azure-keyvault.DeletedKeyItem" />
+          type: azure-keyvault - <xref uid="v3.0.5.DeletedKeyItem" />
           description: The value to locate in the array.
         - id: fromIndex
           type: number
@@ -273,12 +281,12 @@ inheritedMethods:
       return:
         description: ''
         type: number
-    inheritanceDescription: <b>Inherited From</b> Array.lastIndexOf
+    inheritanceDescription: '<b>Inherited From</b> [Array.lastIndexOf](xref:Array.lastIndexOf)'
   - name: >-
       map<U>((value: DeletedKeyItem, index: number, array: DeletedKeyItem[]) =>
       U, any)
-    uid: azure-keyvault.DeletedKeyListResult.map
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedKeyListResult.map
+    package: azure-keyvault - v3.0.5
     summary: >-
       Calls a defined callback function on each element of an array, and returns
       an array that contains the results.
@@ -305,10 +313,10 @@ inheritedMethods:
       return:
         description: ''
         type: 'U[]'
-    inheritanceDescription: <b>Inherited From</b> Array.map
+    inheritanceDescription: '<b>Inherited From</b> [Array.map](xref:Array.map)'
   - name: pop()
-    uid: azure-keyvault.DeletedKeyListResult.pop
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedKeyListResult.pop
+    package: azure-keyvault - v3.0.5
     summary: Removes the last element from an array and returns it.
     remarks: ''
     isDeprecated: false
@@ -316,11 +324,11 @@ inheritedMethods:
       content: 'function pop(): DeletedKeyItem | undefined'
       return:
         description: ''
-        type: <xref uid="azure-keyvault.DeletedKeyItem" /> | undefined
-    inheritanceDescription: <b>Inherited From</b> Array.pop
+        type: azure-keyvault - <xref uid="v3.0.5.DeletedKeyItem" /> | undefined
+    inheritanceDescription: '<b>Inherited From</b> [Array.pop](xref:Array.pop)'
   - name: 'push(DeletedKeyItem[])'
-    uid: azure-keyvault.DeletedKeyListResult.push
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedKeyListResult.push
+    package: azure-keyvault - v3.0.5
     summary: 'Appends new elements to an array, and returns the new length of the array.'
     remarks: ''
     isDeprecated: false
@@ -328,18 +336,18 @@ inheritedMethods:
       content: 'function push(items: DeletedKeyItem[]): number'
       parameters:
         - id: items
-          type: '<xref uid="azure-keyvault.DeletedKeyItem" />[]'
+          type: 'azure-keyvault - <xref uid="v3.0.5.DeletedKeyItem" />[]'
           description: |
             New elements of the Array.
       return:
         description: ''
         type: number
-    inheritanceDescription: <b>Inherited From</b> Array.push
+    inheritanceDescription: '<b>Inherited From</b> [Array.push](xref:Array.push)'
   - name: >-
       reduce((previousValue: DeletedKeyItem, currentValue: DeletedKeyItem,
       currentIndex: number, array: DeletedKeyItem[]) => DeletedKeyItem)
-    uid: azure-keyvault.DeletedKeyListResult.reduce
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedKeyListResult.reduce
+    package: azure-keyvault - v3.0.5
     summary: >-
       Calls the specified callback function for all the elements in an array.
       The return value of the callback function is the accumulated result, and
@@ -362,14 +370,14 @@ inheritedMethods:
             array.
       return:
         description: ''
-        type: <xref uid="azure-keyvault.DeletedKeyItem" />
-    inheritanceDescription: <b>Inherited From</b> Array.reduce
+        type: azure-keyvault - <xref uid="v3.0.5.DeletedKeyItem" />
+    inheritanceDescription: '<b>Inherited From</b> [Array.reduce](xref:Array.reduce)'
   - name: >-
       reduce((previousValue: DeletedKeyItem, currentValue: DeletedKeyItem,
       currentIndex: number, array: DeletedKeyItem[]) => DeletedKeyItem,
       DeletedKeyItem)
-    uid: azure-keyvault.DeletedKeyListResult.reduce_1
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedKeyListResult.reduce_1
+    package: azure-keyvault - v3.0.5
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -386,17 +394,17 @@ inheritedMethods:
             currentIndex: number, array: DeletedKeyItem[]) =&gt; DeletedKeyItem
           description: ''
         - id: initialValue
-          type: <xref uid="azure-keyvault.DeletedKeyItem" />
+          type: azure-keyvault - <xref uid="v3.0.5.DeletedKeyItem" />
           description: ''
       return:
         description: ''
-        type: <xref uid="azure-keyvault.DeletedKeyItem" />
-    inheritanceDescription: <b>Inherited From</b> Array.reduce
+        type: azure-keyvault - <xref uid="v3.0.5.DeletedKeyItem" />
+    inheritanceDescription: '<b>Inherited From</b> [Array.reduce](xref:Array.reduce)'
   - name: >-
       reduce<U>((previousValue: U, currentValue: DeletedKeyItem, currentIndex:
       number, array: DeletedKeyItem[]) => U, U)
-    uid: azure-keyvault.DeletedKeyListResult.reduce_2
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedKeyListResult.reduce_2
+    package: azure-keyvault - v3.0.5
     summary: >-
       Calls the specified callback function for all the elements in an array.
       The return value of the callback function is the accumulated result, and
@@ -426,12 +434,12 @@ inheritedMethods:
       return:
         description: ''
         type: U
-    inheritanceDescription: <b>Inherited From</b> Array.reduce
+    inheritanceDescription: '<b>Inherited From</b> [Array.reduce](xref:Array.reduce)'
   - name: >-
       reduceRight((previousValue: DeletedKeyItem, currentValue: DeletedKeyItem,
       currentIndex: number, array: DeletedKeyItem[]) => DeletedKeyItem)
-    uid: azure-keyvault.DeletedKeyListResult.reduceRight
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedKeyListResult.reduceRight
+    package: azure-keyvault - v3.0.5
     summary: >-
       Calls the specified callback function for all the elements in an array, in
       descending order. The return value of the callback function is the
@@ -455,14 +463,14 @@ inheritedMethods:
             array.
       return:
         description: ''
-        type: <xref uid="azure-keyvault.DeletedKeyItem" />
-    inheritanceDescription: <b>Inherited From</b> Array.reduceRight
+        type: azure-keyvault - <xref uid="v3.0.5.DeletedKeyItem" />
+    inheritanceDescription: '<b>Inherited From</b> [Array.reduceRight](xref:Array.reduceRight)'
   - name: >-
       reduceRight((previousValue: DeletedKeyItem, currentValue: DeletedKeyItem,
       currentIndex: number, array: DeletedKeyItem[]) => DeletedKeyItem,
       DeletedKeyItem)
-    uid: azure-keyvault.DeletedKeyListResult.reduceRight_1
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedKeyListResult.reduceRight_1
+    package: azure-keyvault - v3.0.5
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -479,17 +487,17 @@ inheritedMethods:
             currentIndex: number, array: DeletedKeyItem[]) =&gt; DeletedKeyItem
           description: ''
         - id: initialValue
-          type: <xref uid="azure-keyvault.DeletedKeyItem" />
+          type: azure-keyvault - <xref uid="v3.0.5.DeletedKeyItem" />
           description: ''
       return:
         description: ''
-        type: <xref uid="azure-keyvault.DeletedKeyItem" />
-    inheritanceDescription: <b>Inherited From</b> Array.reduceRight
+        type: azure-keyvault - <xref uid="v3.0.5.DeletedKeyItem" />
+    inheritanceDescription: '<b>Inherited From</b> [Array.reduceRight](xref:Array.reduceRight)'
   - name: >-
       reduceRight<U>((previousValue: U, currentValue: DeletedKeyItem,
       currentIndex: number, array: DeletedKeyItem[]) => U, U)
-    uid: azure-keyvault.DeletedKeyListResult.reduceRight_2
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedKeyListResult.reduceRight_2
+    package: azure-keyvault - v3.0.5
     summary: >-
       Calls the specified callback function for all the elements in an array, in
       descending order. The return value of the callback function is the
@@ -520,10 +528,10 @@ inheritedMethods:
       return:
         description: ''
         type: U
-    inheritanceDescription: <b>Inherited From</b> Array.reduceRight
+    inheritanceDescription: '<b>Inherited From</b> [Array.reduceRight](xref:Array.reduceRight)'
   - name: reverse()
-    uid: azure-keyvault.DeletedKeyListResult.reverse
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedKeyListResult.reverse
+    package: azure-keyvault - v3.0.5
     summary: Reverses the elements in an Array.
     remarks: ''
     isDeprecated: false
@@ -531,11 +539,11 @@ inheritedMethods:
       content: 'function reverse(): DeletedKeyItem[]'
       return:
         description: ''
-        type: '<xref uid="azure-keyvault.DeletedKeyItem" />[]'
-    inheritanceDescription: <b>Inherited From</b> Array.reverse
+        type: 'azure-keyvault - <xref uid="v3.0.5.DeletedKeyItem" />[]'
+    inheritanceDescription: '<b>Inherited From</b> [Array.reverse](xref:Array.reverse)'
   - name: shift()
-    uid: azure-keyvault.DeletedKeyListResult.shift
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedKeyListResult.shift
+    package: azure-keyvault - v3.0.5
     summary: Removes the first element from an array and returns it.
     remarks: ''
     isDeprecated: false
@@ -543,11 +551,11 @@ inheritedMethods:
       content: 'function shift(): DeletedKeyItem | undefined'
       return:
         description: ''
-        type: <xref uid="azure-keyvault.DeletedKeyItem" /> | undefined
-    inheritanceDescription: <b>Inherited From</b> Array.shift
+        type: azure-keyvault - <xref uid="v3.0.5.DeletedKeyItem" /> | undefined
+    inheritanceDescription: '<b>Inherited From</b> [Array.shift](xref:Array.shift)'
   - name: 'slice(number, number)'
-    uid: azure-keyvault.DeletedKeyListResult.slice
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedKeyListResult.slice
+    package: azure-keyvault - v3.0.5
     summary: Returns a section of an array.
     remarks: ''
     isDeprecated: false
@@ -559,17 +567,18 @@ inheritedMethods:
           description: The beginning of the specified portion of the array.
         - id: end
           type: number
-          description: |
-            The end of the specified portion of the array.
+          description: >
+            The end of the specified portion of the array. This is exclusive of
+            the element at the index 'end'.
       return:
         description: ''
-        type: '<xref uid="azure-keyvault.DeletedKeyItem" />[]'
-    inheritanceDescription: <b>Inherited From</b> Array.slice
+        type: 'azure-keyvault - <xref uid="v3.0.5.DeletedKeyItem" />[]'
+    inheritanceDescription: '<b>Inherited From</b> [Array.slice](xref:Array.slice)'
   - name: >-
       some((value: DeletedKeyItem, index: number, array: DeletedKeyItem[]) =>
       unknown, any)
-    uid: azure-keyvault.DeletedKeyListResult.some
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedKeyListResult.some
+    package: azure-keyvault - v3.0.5
     summary: >-
       Determines whether the specified callback function returns true for any
       element of an array.
@@ -586,21 +595,26 @@ inheritedMethods:
             =&gt; unknown
           description: >-
             A function that accepts up to three arguments. The some method calls
-            the callbackfn function for each element in array1 until the
-            callbackfn returns true, or until the end of the array.
+
+            the callbackfn function for each element in the array until the
+            callbackfn returns a value
+
+            which is coercible to the Boolean value true, or until the end of
+            the array.
         - id: thisArg
           type: any
           description: >
             An object to which the this keyword can refer in the callbackfn
-            function. If thisArg is omitted, undefined is used as the this
-            value.
+            function.
+
+            If thisArg is omitted, undefined is used as the this value.
       return:
         description: ''
         type: boolean
-    inheritanceDescription: <b>Inherited From</b> Array.some
+    inheritanceDescription: '<b>Inherited From</b> [Array.some](xref:Array.some)'
   - name: 'sort((a: DeletedKeyItem, b: DeletedKeyItem) => number)'
-    uid: azure-keyvault.DeletedKeyListResult.sort
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedKeyListResult.sort
+    package: azure-keyvault - v3.0.5
     summary: Sorts an array.
     remarks: ''
     isDeprecated: false
@@ -612,16 +626,27 @@ inheritedMethods:
         - id: compareFn
           type: '(a: DeletedKeyItem, b: DeletedKeyItem) =&gt; number'
           description: >
-            The name of the function used to determine the order of the
-            elements. If omitted, the elements are sorted in ascending, ASCII
-            character order.
+            Function used to determine the order of the elements. It is expected
+            to return
+
+            a negative value if first argument is less than second argument,
+            zero if they're equal and a positive
+
+            value otherwise. If omitted, the elements are sorted in ascending,
+            ASCII character order.
+
+            ```ts
+
+            [11,2,22,1].sort((a, b) => a - b)
+
+            ```
       return:
         description: ''
         type: this
-    inheritanceDescription: <b>Inherited From</b> Array.sort
+    inheritanceDescription: '<b>Inherited From</b> [Array.sort](xref:Array.sort)'
   - name: 'splice(number, number)'
-    uid: azure-keyvault.DeletedKeyListResult.splice
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedKeyListResult.splice
+    package: azure-keyvault - v3.0.5
     summary: >-
       Removes elements from an array and, if necessary, inserts new elements in
       their place, returning the deleted elements.
@@ -641,11 +666,11 @@ inheritedMethods:
             The number of elements to remove.
       return:
         description: ''
-        type: '<xref uid="azure-keyvault.DeletedKeyItem" />[]'
-    inheritanceDescription: <b>Inherited From</b> Array.splice
+        type: 'azure-keyvault - <xref uid="v3.0.5.DeletedKeyItem" />[]'
+    inheritanceDescription: '<b>Inherited From</b> [Array.splice](xref:Array.splice)'
   - name: 'splice(number, number, DeletedKeyItem[])'
-    uid: azure-keyvault.DeletedKeyListResult.splice_1
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedKeyListResult.splice_1
+    package: azure-keyvault - v3.0.5
     summary: >-
       Removes elements from an array and, if necessary, inserts new elements in
       their place, returning the deleted elements.
@@ -665,16 +690,16 @@ inheritedMethods:
           type: number
           description: The number of elements to remove.
         - id: items
-          type: '<xref uid="azure-keyvault.DeletedKeyItem" />[]'
+          type: 'azure-keyvault - <xref uid="v3.0.5.DeletedKeyItem" />[]'
           description: |
             Elements to insert into the array in place of the deleted elements.
       return:
         description: ''
-        type: '<xref uid="azure-keyvault.DeletedKeyItem" />[]'
-    inheritanceDescription: <b>Inherited From</b> Array.splice
+        type: 'azure-keyvault - <xref uid="v3.0.5.DeletedKeyItem" />[]'
+    inheritanceDescription: '<b>Inherited From</b> [Array.splice](xref:Array.splice)'
   - name: toLocaleString()
-    uid: azure-keyvault.DeletedKeyListResult.toLocaleString
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedKeyListResult.toLocaleString
+    package: azure-keyvault - v3.0.5
     summary: >-
       Returns a string representation of an array. The elements are converted to
       string using their toLocalString methods.
@@ -685,10 +710,10 @@ inheritedMethods:
       return:
         description: ''
         type: string
-    inheritanceDescription: <b>Inherited From</b> Array.toLocaleString
+    inheritanceDescription: '<b>Inherited From</b> [Array.toLocaleString](xref:Array.toLocaleString)'
   - name: toString()
-    uid: azure-keyvault.DeletedKeyListResult.toString
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedKeyListResult.toString
+    package: azure-keyvault - v3.0.5
     summary: Returns a string representation of an array.
     remarks: ''
     isDeprecated: false
@@ -697,10 +722,10 @@ inheritedMethods:
       return:
         description: ''
         type: string
-    inheritanceDescription: <b>Inherited From</b> Array.toString
+    inheritanceDescription: '<b>Inherited From</b> [Array.toString](xref:Array.toString)'
   - name: 'unshift(DeletedKeyItem[])'
-    uid: azure-keyvault.DeletedKeyListResult.unshift
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedKeyListResult.unshift
+    package: azure-keyvault - v3.0.5
     summary: Inserts new elements at the start of an array.
     remarks: ''
     isDeprecated: false
@@ -708,11 +733,13 @@ inheritedMethods:
       content: 'function unshift(items: DeletedKeyItem[]): number'
       parameters:
         - id: items
-          type: '<xref uid="azure-keyvault.DeletedKeyItem" />[]'
+          type: 'azure-keyvault - <xref uid="v3.0.5.DeletedKeyItem" />[]'
           description: |
             Elements to insert at the start of the Array.
       return:
         description: ''
         type: number
-    inheritanceDescription: <b>Inherited From</b> Array.unshift
-extends: Array&lt;<xref uid="azure-keyvault.DeletedKeyItem" />&gt;
+    inheritanceDescription: '<b>Inherited From</b> [Array.unshift](xref:Array.unshift)'
+extends: >-
+  azure-keyvault - <xref uid="v3.0.5.KeyListResult.Array" />&lt;azure-keyvault -
+  <xref uid="v3.0.5.DeletedKeyItem" />&gt;

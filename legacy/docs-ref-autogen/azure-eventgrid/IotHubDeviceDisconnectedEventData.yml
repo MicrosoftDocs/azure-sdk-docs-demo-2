@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: IotHubDeviceDisconnectedEventData
-uid: azure-eventgrid.IotHubDeviceDisconnectedEventData
-package: azure-eventgrid
+uid: azure-eventgrid - v1.6.0.IotHubDeviceDisconnectedEventData
+package: azure-eventgrid - v1.6.0
 summary: ''
 fullName: IotHubDeviceDisconnectedEventData
 remarks: ''
@@ -10,8 +10,9 @@ type: interface
 inheritedProperties:
   - name: deviceConnectionStateEventInfo
     uid: >-
-      azure-eventgrid.IotHubDeviceDisconnectedEventData.deviceConnectionStateEventInfo
-    package: azure-eventgrid
+      azure-eventgrid -
+      v1.6.0.IotHubDeviceDisconnectedEventData.deviceConnectionStateEventInfo
+    package: azure-eventgrid - v1.6.0
     summary: ''
     fullName: deviceConnectionStateEventInfo
     remarks: ''
@@ -20,13 +21,15 @@ inheritedProperties:
       content: 'deviceConnectionStateEventInfo?: DeviceConnectionStateEventInfo'
       return:
         description: ''
-        type: <xref uid="azure-eventgrid.DeviceConnectionStateEventInfo" />
+        type: azure-eventgrid - <xref uid="v1.6.0.DeviceConnectionStateEventInfo" />
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [DeviceConnectionStateEventProperties.deviceConnectionStateEventInfo](xref:azure-eventgrid.DeviceConnectionStateEventProperties.deviceConnectionStateEventInfo)
+      [DeviceConnectionStateEventProperties.deviceConnectionStateEventInfo](xref:azure-eventgrid
+      -
+      v1.6.0.DeviceConnectionStateEventProperties.deviceConnectionStateEventInfo)
   - name: deviceId
-    uid: azure-eventgrid.IotHubDeviceDisconnectedEventData.deviceId
-    package: azure-eventgrid
+    uid: azure-eventgrid - v1.6.0.IotHubDeviceDisconnectedEventData.deviceId
+    package: azure-eventgrid - v1.6.0
     summary: ''
     fullName: deviceId
     remarks: ''
@@ -38,10 +41,11 @@ inheritedProperties:
         type: string
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [DeviceConnectionStateEventProperties.deviceId](xref:azure-eventgrid.DeviceConnectionStateEventProperties.deviceId)
+      [DeviceConnectionStateEventProperties.deviceId](xref:azure-eventgrid -
+      v1.6.0.DeviceConnectionStateEventProperties.deviceId)
   - name: hubName
-    uid: azure-eventgrid.IotHubDeviceDisconnectedEventData.hubName
-    package: azure-eventgrid
+    uid: azure-eventgrid - v1.6.0.IotHubDeviceDisconnectedEventData.hubName
+    package: azure-eventgrid - v1.6.0
     summary: ''
     fullName: hubName
     remarks: ''
@@ -53,10 +57,11 @@ inheritedProperties:
         type: string
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [DeviceConnectionStateEventProperties.hubName](xref:azure-eventgrid.DeviceConnectionStateEventProperties.hubName)
+      [DeviceConnectionStateEventProperties.hubName](xref:azure-eventgrid -
+      v1.6.0.DeviceConnectionStateEventProperties.hubName)
   - name: moduleId
-    uid: azure-eventgrid.IotHubDeviceDisconnectedEventData.moduleId
-    package: azure-eventgrid
+    uid: azure-eventgrid - v1.6.0.IotHubDeviceDisconnectedEventData.moduleId
+    package: azure-eventgrid - v1.6.0
     summary: ''
     fullName: moduleId
     remarks: ''
@@ -68,5 +73,6 @@ inheritedProperties:
         type: string
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [DeviceConnectionStateEventProperties.moduleId](xref:azure-eventgrid.DeviceConnectionStateEventProperties.moduleId)
-extends: <xref uid="azure-eventgrid.DeviceConnectionStateEventProperties" />
+      [DeviceConnectionStateEventProperties.moduleId](xref:azure-eventgrid -
+      v1.6.0.DeviceConnectionStateEventProperties.moduleId)
+extends: azure-eventgrid - <xref uid="v1.6.0.DeviceConnectionStateEventProperties" />

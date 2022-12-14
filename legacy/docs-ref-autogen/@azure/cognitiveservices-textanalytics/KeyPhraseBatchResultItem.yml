@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: KeyPhraseBatchResultItem
-uid: '@azure/cognitiveservices-textanalytics.KeyPhraseBatchResultItem'
-package: '@azure/cognitiveservices-textanalytics'
+uid: '@azure/cognitiveservices-textanalytics - v4.0.0.KeyPhraseBatchResultItem'
+package: '@azure/cognitiveservices-textanalytics - v4.0.0'
 summary: An interface representing KeyPhraseBatchResultItem.
 fullName: KeyPhraseBatchResultItem
 remarks: ''
@@ -9,8 +9,10 @@ isDeprecated: false
 type: interface
 properties:
   - name: id
-    uid: '@azure/cognitiveservices-textanalytics.KeyPhraseBatchResultItem.id'
-    package: '@azure/cognitiveservices-textanalytics'
+    uid: >-
+      @azure/cognitiveservices-textanalytics -
+      v4.0.0.KeyPhraseBatchResultItem.id
+    package: '@azure/cognitiveservices-textanalytics - v4.0.0'
     summary: 'Unique, non-empty document identifier.'
     fullName: id
     remarks: ''
@@ -21,8 +23,10 @@ properties:
         description: ''
         type: undefined | string
   - name: keyPhrases
-    uid: '@azure/cognitiveservices-textanalytics.KeyPhraseBatchResultItem.keyPhrases'
-    package: '@azure/cognitiveservices-textanalytics'
+    uid: >-
+      @azure/cognitiveservices-textanalytics -
+      v4.0.0.KeyPhraseBatchResultItem.keyPhrases
+    package: '@azure/cognitiveservices-textanalytics - v4.0.0'
     summary: >-
       A list of representative words or phrases. The number of key phrases
       returned is proportional
@@ -40,8 +44,10 @@ properties:
         description: ''
         type: 'string[]'
   - name: statistics
-    uid: '@azure/cognitiveservices-textanalytics.KeyPhraseBatchResultItem.statistics'
-    package: '@azure/cognitiveservices-textanalytics'
+    uid: >-
+      @azure/cognitiveservices-textanalytics -
+      v4.0.0.KeyPhraseBatchResultItem.statistics
+    package: '@azure/cognitiveservices-textanalytics - v4.0.0'
     summary: >-
       (Optional) if showStats=true was specified in the request this field will
       contain information
@@ -55,5 +61,5 @@ properties:
       return:
         description: ''
         type: >-
-          <xref uid="@azure/cognitiveservices-textanalytics.DocumentStatistics"
-          />
+          @azure/cognitiveservices-textanalytics - <xref
+          uid="v4.0.0.DocumentStatistics" />

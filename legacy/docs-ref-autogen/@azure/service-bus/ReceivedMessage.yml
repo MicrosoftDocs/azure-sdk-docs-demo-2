@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: ReceivedMessage
-uid: '@azure/service-bus.ReceivedMessage'
-package: '@azure/service-bus'
+uid: '@azure/service-bus - v1.1.10.ReceivedMessage'
+package: '@azure/service-bus - v1.1.10'
 summary: Describes the message received from Service Bus.
 fullName: ReceivedMessage
 remarks: ''
@@ -9,8 +9,8 @@ isDeprecated: false
 type: interface
 inheritedProperties:
   - name: body
-    uid: '@azure/service-bus.ReceivedMessage.body'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ReceivedMessage.body'
+    package: '@azure/service-bus - v1.1.10'
     summary: The message body that needs to be sent or is received.
     fullName: body
     remarks: ''
@@ -21,11 +21,11 @@ inheritedProperties:
         description: ''
         type: any
     inheritanceDescription: >-
-      <b>Inherited From</b>
-      [SendableMessageInfo.body](xref:@azure/service-bus.SendableMessageInfo.body)
+      <b>Inherited From</b> [SendableMessageInfo.body](xref:@azure/service-bus -
+      v1.1.10.SendableMessageInfo.body)
   - name: contentType
-    uid: '@azure/service-bus.ReceivedMessage.contentType'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ReceivedMessage.contentType'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The content type of the message. Optionally describes
 
@@ -43,10 +43,11 @@ inheritedProperties:
         type: undefined | string
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [SendableMessageInfo.contentType](xref:@azure/service-bus.SendableMessageInfo.contentType)
+      [SendableMessageInfo.contentType](xref:@azure/service-bus -
+      v1.1.10.SendableMessageInfo.contentType)
   - name: correlationId
-    uid: '@azure/service-bus.ReceivedMessage.correlationId'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ReceivedMessage.correlationId'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The correlation identifier that allows an
 
@@ -67,10 +68,11 @@ inheritedProperties:
         type: string | number | Buffer
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [SendableMessageInfo.correlationId](xref:@azure/service-bus.SendableMessageInfo.correlationId)
+      [SendableMessageInfo.correlationId](xref:@azure/service-bus -
+      v1.1.10.SendableMessageInfo.correlationId)
   - name: deadLetterSource
-    uid: '@azure/service-bus.ReceivedMessage.deadLetterSource'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ReceivedMessage.deadLetterSource'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       {string} [deadLetterSource] The name of the queue or subscription that
       this message
@@ -92,10 +94,11 @@ inheritedProperties:
         type: undefined | string
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [ReceivedMessageInfo.deadLetterSource](xref:@azure/service-bus.ReceivedMessageInfo.deadLetterSource)
+      [ReceivedMessageInfo.deadLetterSource](xref:@azure/service-bus -
+      v1.1.10.ReceivedMessageInfo.deadLetterSource)
   - name: deliveryCount
-    uid: '@azure/service-bus.ReceivedMessage.deliveryCount'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ReceivedMessage.deliveryCount'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       Number of deliveries that have been attempted for this message. The count
       is
@@ -114,10 +117,11 @@ inheritedProperties:
         type: undefined | number
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [ReceivedMessageInfo.deliveryCount](xref:@azure/service-bus.ReceivedMessageInfo.deliveryCount)
+      [ReceivedMessageInfo.deliveryCount](xref:@azure/service-bus -
+      v1.1.10.ReceivedMessageInfo.deliveryCount)
   - name: enqueuedSequenceNumber
-    uid: '@azure/service-bus.ReceivedMessage.enqueuedSequenceNumber'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ReceivedMessage.enqueuedSequenceNumber'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The original sequence number of the message. For
 
@@ -135,10 +139,11 @@ inheritedProperties:
         type: undefined | number
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [ReceivedMessageInfo.enqueuedSequenceNumber](xref:@azure/service-bus.ReceivedMessageInfo.enqueuedSequenceNumber)
+      [ReceivedMessageInfo.enqueuedSequenceNumber](xref:@azure/service-bus -
+      v1.1.10.ReceivedMessageInfo.enqueuedSequenceNumber)
   - name: enqueuedTimeUtc
-    uid: '@azure/service-bus.ReceivedMessage.enqueuedTimeUtc'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ReceivedMessage.enqueuedTimeUtc'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The UTC instant at which the message has been accepted and stored in
       Service Bus.
@@ -152,10 +157,11 @@ inheritedProperties:
         type: Date
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [ReceivedMessageInfo.enqueuedTimeUtc](xref:@azure/service-bus.ReceivedMessageInfo.enqueuedTimeUtc)
+      [ReceivedMessageInfo.enqueuedTimeUtc](xref:@azure/service-bus -
+      v1.1.10.ReceivedMessageInfo.enqueuedTimeUtc)
   - name: expiresAtUtc
-    uid: '@azure/service-bus.ReceivedMessage.expiresAtUtc'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ReceivedMessage.expiresAtUtc'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The UTC instant at which the message is marked for removal and no longer
       available for
@@ -174,10 +180,11 @@ inheritedProperties:
         type: Date
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [ReceivedMessageInfo.expiresAtUtc](xref:@azure/service-bus.ReceivedMessageInfo.expiresAtUtc)
+      [ReceivedMessageInfo.expiresAtUtc](xref:@azure/service-bus -
+      v1.1.10.ReceivedMessageInfo.expiresAtUtc)
   - name: label
-    uid: '@azure/service-bus.ReceivedMessage.label'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ReceivedMessage.label'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The application specific label. This property enables the
 
@@ -194,11 +201,11 @@ inheritedProperties:
         description: ''
         type: undefined | string
     inheritanceDescription: >-
-      <b>Inherited From</b>
-      [SendableMessageInfo.label](xref:@azure/service-bus.SendableMessageInfo.label)
+      <b>Inherited From</b> [SendableMessageInfo.label](xref:@azure/service-bus
+      - v1.1.10.SendableMessageInfo.label)
   - name: lockedUntilUtc
-    uid: '@azure/service-bus.ReceivedMessage.lockedUntilUtc'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ReceivedMessage.lockedUntilUtc'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The UTC instant until which the message is held locked in the
       queue/subscription.
@@ -222,10 +229,11 @@ inheritedProperties:
         type: Date
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [ReceivedMessageInfo.lockedUntilUtc](xref:@azure/service-bus.ReceivedMessageInfo.lockedUntilUtc)
+      [ReceivedMessageInfo.lockedUntilUtc](xref:@azure/service-bus -
+      v1.1.10.ReceivedMessageInfo.lockedUntilUtc)
   - name: lockToken
-    uid: '@azure/service-bus.ReceivedMessage.lockToken'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ReceivedMessage.lockToken'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The lock token is a reference to the lock that is being held by the broker
       in
@@ -250,10 +258,11 @@ inheritedProperties:
         type: undefined | string
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [ReceivedMessageInfo.lockToken](xref:@azure/service-bus.ReceivedMessageInfo.lockToken)
+      [ReceivedMessageInfo.lockToken](xref:@azure/service-bus -
+      v1.1.10.ReceivedMessageInfo.lockToken)
   - name: messageId
-    uid: '@azure/service-bus.ReceivedMessage.messageId'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ReceivedMessage.messageId'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The message identifier is an
 
@@ -272,10 +281,11 @@ inheritedProperties:
         type: string | number | Buffer
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [SendableMessageInfo.messageId](xref:@azure/service-bus.SendableMessageInfo.messageId)
+      [SendableMessageInfo.messageId](xref:@azure/service-bus -
+      v1.1.10.SendableMessageInfo.messageId)
   - name: partitionKey
-    uid: '@azure/service-bus.ReceivedMessage.partitionKey'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ReceivedMessage.partitionKey'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The partition key for sending a message to a partitioned entity.
 
@@ -304,10 +314,11 @@ inheritedProperties:
         type: undefined | string
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [SendableMessageInfo.partitionKey](xref:@azure/service-bus.SendableMessageInfo.partitionKey)
+      [SendableMessageInfo.partitionKey](xref:@azure/service-bus -
+      v1.1.10.SendableMessageInfo.partitionKey)
   - name: replyTo
-    uid: '@azure/service-bus.ReceivedMessage.replyTo'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ReceivedMessage.replyTo'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The address of an entity to send replies to. This optional and
 
@@ -331,10 +342,11 @@ inheritedProperties:
         type: undefined | string
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [SendableMessageInfo.replyTo](xref:@azure/service-bus.SendableMessageInfo.replyTo)
+      [SendableMessageInfo.replyTo](xref:@azure/service-bus -
+      v1.1.10.SendableMessageInfo.replyTo)
   - name: replyToSessionId
-    uid: '@azure/service-bus.ReceivedMessage.replyToSessionId'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ReceivedMessage.replyToSessionId'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The session identifier augmenting the `replyTo` address.
 
@@ -355,10 +367,11 @@ inheritedProperties:
         type: undefined | string
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [SendableMessageInfo.replyToSessionId](xref:@azure/service-bus.SendableMessageInfo.replyToSessionId)
+      [SendableMessageInfo.replyToSessionId](xref:@azure/service-bus -
+      v1.1.10.SendableMessageInfo.replyToSessionId)
   - name: scheduledEnqueueTimeUtc
-    uid: '@azure/service-bus.ReceivedMessage.scheduledEnqueueTimeUtc'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ReceivedMessage.scheduledEnqueueTimeUtc'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The date and time in UTC at which the message will
 
@@ -385,10 +398,11 @@ inheritedProperties:
         type: Date
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [SendableMessageInfo.scheduledEnqueueTimeUtc](xref:@azure/service-bus.SendableMessageInfo.scheduledEnqueueTimeUtc)
+      [SendableMessageInfo.scheduledEnqueueTimeUtc](xref:@azure/service-bus -
+      v1.1.10.SendableMessageInfo.scheduledEnqueueTimeUtc)
   - name: sequenceNumber
-    uid: '@azure/service-bus.ReceivedMessage.sequenceNumber'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ReceivedMessage.sequenceNumber'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The unique number assigned to a message by Service Bus.
 
@@ -424,10 +438,11 @@ inheritedProperties:
         type: Long
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [ReceivedMessageInfo.sequenceNumber](xref:@azure/service-bus.ReceivedMessageInfo.sequenceNumber)
+      [ReceivedMessageInfo.sequenceNumber](xref:@azure/service-bus -
+      v1.1.10.ReceivedMessageInfo.sequenceNumber)
   - name: sessionId
-    uid: '@azure/service-bus.ReceivedMessage.sessionId'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ReceivedMessage.sessionId'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The session identifier for a session-aware entity. Maximum
 
@@ -454,10 +469,11 @@ inheritedProperties:
         type: undefined | string
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [SendableMessageInfo.sessionId](xref:@azure/service-bus.SendableMessageInfo.sessionId)
+      [SendableMessageInfo.sessionId](xref:@azure/service-bus -
+      v1.1.10.SendableMessageInfo.sessionId)
   - name: timeToLive
-    uid: '@azure/service-bus.ReceivedMessage.timeToLive'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ReceivedMessage.timeToLive'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The message’s time to live value. This value is the relative
 
@@ -486,10 +502,11 @@ inheritedProperties:
         type: undefined | number
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [SendableMessageInfo.timeToLive](xref:@azure/service-bus.SendableMessageInfo.timeToLive)
+      [SendableMessageInfo.timeToLive](xref:@azure/service-bus -
+      v1.1.10.SendableMessageInfo.timeToLive)
   - name: to
-    uid: '@azure/service-bus.ReceivedMessage.to'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ReceivedMessage.to'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The "to" address. This property is reserved for future use in routing
 
@@ -509,11 +526,11 @@ inheritedProperties:
         description: ''
         type: undefined | string
     inheritanceDescription: >-
-      <b>Inherited From</b>
-      [SendableMessageInfo.to](xref:@azure/service-bus.SendableMessageInfo.to)
+      <b>Inherited From</b> [SendableMessageInfo.to](xref:@azure/service-bus -
+      v1.1.10.SendableMessageInfo.to)
   - name: userProperties
-    uid: '@azure/service-bus.ReceivedMessage.userProperties'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ReceivedMessage.userProperties'
+    package: '@azure/service-bus - v1.1.10'
     summary: |-
       The application specific properties which can be
       used for custom message metadata.
@@ -527,10 +544,11 @@ inheritedProperties:
         type: 'undefined | [key: string]: any'
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [SendableMessageInfo.userProperties](xref:@azure/service-bus.SendableMessageInfo.userProperties)
+      [SendableMessageInfo.userProperties](xref:@azure/service-bus -
+      v1.1.10.SendableMessageInfo.userProperties)
   - name: viaPartitionKey
-    uid: '@azure/service-bus.ReceivedMessage.viaPartitionKey'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ReceivedMessage.viaPartitionKey'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The partition key for sending a message into an entity
 
@@ -557,11 +575,12 @@ inheritedProperties:
         type: undefined | string
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [SendableMessageInfo.viaPartitionKey](xref:@azure/service-bus.SendableMessageInfo.viaPartitionKey)
+      [SendableMessageInfo.viaPartitionKey](xref:@azure/service-bus -
+      v1.1.10.SendableMessageInfo.viaPartitionKey)
 methods:
   - name: 'abandon(undefined | [key: string]: any)'
-    uid: '@azure/service-bus.ReceivedMessage.abandon'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ReceivedMessage.abandon'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The lock held on the message by the receiver is let go, making the message
       available again in
@@ -583,8 +602,8 @@ methods:
         description: Promise<void>.
         type: Promise&lt;void&gt;
   - name: complete()
-    uid: '@azure/service-bus.ReceivedMessage.complete'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ReceivedMessage.complete'
+    package: '@azure/service-bus - v1.1.10'
     summary: Removes the message from Service Bus.
     remarks: ''
     isDeprecated: false
@@ -594,8 +613,8 @@ methods:
         description: Promise<void>.
         type: Promise&lt;void&gt;
   - name: deadLetter(DeadLetterOptions)
-    uid: '@azure/service-bus.ReceivedMessage.deadLetter'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ReceivedMessage.deadLetter'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       Moves the message to the deadletter sub-queue. To receive a deadletted
       message, create a new
@@ -608,7 +627,7 @@ methods:
       content: 'function deadLetter(options?: DeadLetterOptions): Promise<void>'
       parameters:
         - id: options
-          type: <xref uid="@azure/service-bus.DeadLetterOptions" />
+          type: '@azure/service-bus - <xref uid="v1.1.10.DeadLetterOptions" />'
           description: |
             The DeadLetter options that can be provided while
             rejecting the message.
@@ -616,8 +635,8 @@ methods:
         description: Promise<void>
         type: Promise&lt;void&gt;
   - name: 'defer(undefined | [key: string]: any)'
-    uid: '@azure/service-bus.ReceivedMessage.defer'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ReceivedMessage.defer'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       Defers the processing of the message. Save the `sequenceNumber` of the
       message, in order to
@@ -638,4 +657,4 @@ methods:
       return:
         description: Promise<void>
         type: Promise&lt;void&gt;
-extends: <xref uid="@azure/service-bus.ReceivedMessageInfo" />
+extends: '@azure/service-bus - <xref uid="v1.1.10.ReceivedMessageInfo" />'

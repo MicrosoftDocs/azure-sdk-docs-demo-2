@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: ServiceBusMessage
-uid: '@azure/service-bus.ServiceBusMessage'
-package: '@azure/service-bus'
+uid: '@azure/service-bus - v1.1.10.ServiceBusMessage'
+package: '@azure/service-bus - v1.1.10'
 summary: Describes the message received from Service Bus.
 fullName: ServiceBusMessage
 remarks: ''
@@ -9,8 +9,8 @@ isDeprecated: false
 type: class
 properties:
   - name: body
-    uid: '@azure/service-bus.ServiceBusMessage.body'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ServiceBusMessage.body'
+    package: '@azure/service-bus - v1.1.10'
     summary: The message body that needs to be sent or is received.
     fullName: body
     remarks: ''
@@ -21,8 +21,8 @@ properties:
         description: ''
         type: any
   - name: contentType
-    uid: '@azure/service-bus.ServiceBusMessage.contentType'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ServiceBusMessage.contentType'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The content type of the message. Optionally describes
 
@@ -39,8 +39,8 @@ properties:
         description: ''
         type: undefined | string
   - name: correlationId
-    uid: '@azure/service-bus.ServiceBusMessage.correlationId'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ServiceBusMessage.correlationId'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The correlation identifier that allows an
 
@@ -60,8 +60,8 @@ properties:
         description: ''
         type: string | number | Buffer
   - name: deadLetterSource
-    uid: '@azure/service-bus.ServiceBusMessage.deadLetterSource'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ServiceBusMessage.deadLetterSource'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The name of the queue or subscription that this message
 
@@ -81,8 +81,8 @@ properties:
         description: ''
         type: undefined | string
   - name: delivery
-    uid: '@azure/service-bus.ServiceBusMessage.delivery'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ServiceBusMessage.delivery'
+    package: '@azure/service-bus - v1.1.10'
     summary: The associated delivery of the received message.
     fullName: delivery
     remarks: ''
@@ -93,8 +93,8 @@ properties:
         description: ''
         type: Delivery
   - name: deliveryCount
-    uid: '@azure/service-bus.ServiceBusMessage.deliveryCount'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ServiceBusMessage.deliveryCount'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       Number of deliveries that have been attempted for this message. The count
       is
@@ -112,8 +112,8 @@ properties:
         description: ''
         type: undefined | number
   - name: enqueuedSequenceNumber
-    uid: '@azure/service-bus.ServiceBusMessage.enqueuedSequenceNumber'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ServiceBusMessage.enqueuedSequenceNumber'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The original sequence number of the message. For
 
@@ -130,8 +130,8 @@ properties:
         description: ''
         type: undefined | number
   - name: enqueuedTimeUtc
-    uid: '@azure/service-bus.ServiceBusMessage.enqueuedTimeUtc'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ServiceBusMessage.enqueuedTimeUtc'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The UTC instant at which the message has been accepted and stored in
       Service Bus.
@@ -144,8 +144,8 @@ properties:
         description: ''
         type: Date
   - name: expiresAtUtc
-    uid: '@azure/service-bus.ServiceBusMessage.expiresAtUtc'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ServiceBusMessage.expiresAtUtc'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The UTC instant at which the message is marked for removal and no longer
       available for
@@ -163,8 +163,8 @@ properties:
         description: ''
         type: Date
   - name: isSettled
-    uid: '@azure/service-bus.ServiceBusMessage.isSettled'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ServiceBusMessage.isSettled'
+    package: '@azure/service-bus - v1.1.10'
     summary: Boolean denoting if the message has already been settled.
     fullName: isSettled
     remarks: ''
@@ -175,8 +175,8 @@ properties:
         description: ''
         type: boolean
   - name: label
-    uid: '@azure/service-bus.ServiceBusMessage.label'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ServiceBusMessage.label'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The application specific label. This property enables the
 
@@ -193,8 +193,8 @@ properties:
         description: ''
         type: undefined | string
   - name: lockedUntilUtc
-    uid: '@azure/service-bus.ServiceBusMessage.lockedUntilUtc'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ServiceBusMessage.lockedUntilUtc'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The UTC instant until which the message is held locked in the
       queue/subscription.
@@ -217,8 +217,8 @@ properties:
         description: ''
         type: Date
   - name: lockToken
-    uid: '@azure/service-bus.ServiceBusMessage.lockToken'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ServiceBusMessage.lockToken'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The lock token is a reference to the lock that is being held by the broker
       in
@@ -242,8 +242,8 @@ properties:
         description: ''
         type: undefined | string
   - name: messageId
-    uid: '@azure/service-bus.ServiceBusMessage.messageId'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ServiceBusMessage.messageId'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The message identifier is an
 
@@ -269,8 +269,8 @@ properties:
         description: ''
         type: string | number | Buffer
   - name: partitionKey
-    uid: '@azure/service-bus.ServiceBusMessage.partitionKey'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ServiceBusMessage.partitionKey'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The partition key for sending a message to a
 
@@ -296,8 +296,8 @@ properties:
         description: ''
         type: undefined | string
   - name: replyTo
-    uid: '@azure/service-bus.ServiceBusMessage.replyTo'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ServiceBusMessage.replyTo'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The address of an entity to send replies to. This optional and
 
@@ -320,8 +320,8 @@ properties:
         description: ''
         type: undefined | string
   - name: replyToSessionId
-    uid: '@azure/service-bus.ServiceBusMessage.replyToSessionId'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ServiceBusMessage.replyToSessionId'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The session identifier augmenting the `replyTo` address.
 
@@ -341,8 +341,8 @@ properties:
         description: ''
         type: undefined | string
   - name: scheduledEnqueueTimeUtc
-    uid: '@azure/service-bus.ServiceBusMessage.scheduledEnqueueTimeUtc'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ServiceBusMessage.scheduledEnqueueTimeUtc'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The date and time in UTC at which the message will
 
@@ -368,8 +368,8 @@ properties:
         description: ''
         type: Date
   - name: sequenceNumber
-    uid: '@azure/service-bus.ServiceBusMessage.sequenceNumber'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ServiceBusMessage.sequenceNumber'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The unique number assigned to a message by Service Bus.
 
@@ -392,8 +392,8 @@ properties:
         description: ''
         type: Long
   - name: sessionId
-    uid: '@azure/service-bus.ServiceBusMessage.sessionId'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ServiceBusMessage.sessionId'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The session identifier for a session-aware entity. Maximum
 
@@ -419,8 +419,8 @@ properties:
         description: ''
         type: undefined | string
   - name: timeToLive
-    uid: '@azure/service-bus.ServiceBusMessage.timeToLive'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ServiceBusMessage.timeToLive'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The message’s time to live value. This value is the relative
 
@@ -448,8 +448,8 @@ properties:
         description: ''
         type: undefined | number
   - name: to
-    uid: '@azure/service-bus.ServiceBusMessage.to'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ServiceBusMessage.to'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The "to" address. This property is reserved for future use in routing
 
@@ -469,8 +469,8 @@ properties:
         description: ''
         type: undefined | string
   - name: userProperties
-    uid: '@azure/service-bus.ServiceBusMessage.userProperties'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ServiceBusMessage.userProperties'
+    package: '@azure/service-bus - v1.1.10'
     summary: The application specific properties.
     fullName: userProperties
     remarks: ''
@@ -481,8 +481,8 @@ properties:
         description: ''
         type: 'undefined | [key: string]: any'
   - name: viaPartitionKey
-    uid: '@azure/service-bus.ServiceBusMessage.viaPartitionKey'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ServiceBusMessage.viaPartitionKey'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The partition key for sending a message into an entity
 
@@ -509,8 +509,8 @@ properties:
         type: undefined | string
 methods:
   - name: 'abandon(undefined | [key: string]: any)'
-    uid: '@azure/service-bus.ServiceBusMessage.abandon'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ServiceBusMessage.abandon'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       The lock held on the message by the receiver is let go, making the message
       available again in
@@ -532,8 +532,8 @@ methods:
         description: Promise<void>.
         type: Promise&lt;void&gt;
   - name: clone()
-    uid: '@azure/service-bus.ServiceBusMessage.clone'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ServiceBusMessage.clone'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       Creates a clone of the current message to allow it to be re-sent to the
       queue
@@ -543,10 +543,10 @@ methods:
       content: 'function clone(): SendableMessageInfo'
       return:
         description: ServiceBusMessage
-        type: <xref uid="@azure/service-bus.SendableMessageInfo" />
+        type: '@azure/service-bus - <xref uid="v1.1.10.SendableMessageInfo" />'
   - name: complete()
-    uid: '@azure/service-bus.ServiceBusMessage.complete'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ServiceBusMessage.complete'
+    package: '@azure/service-bus - v1.1.10'
     summary: Removes the message from Service Bus.
     remarks: ''
     isDeprecated: false
@@ -556,8 +556,8 @@ methods:
         description: Promise<void>.
         type: Promise&lt;void&gt;
   - name: 'deadLetter(DeadLetterOptions & [key: string]: any)'
-    uid: '@azure/service-bus.ServiceBusMessage.deadLetter'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ServiceBusMessage.deadLetter'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       Moves the message to the deadletter sub-queue. To receive a deadletted
       message, create a new
@@ -573,15 +573,15 @@ methods:
       parameters:
         - id: propertiesToModify
           type: >-
-            <xref uid="@azure/service-bus.DeadLetterOptions" /> & [key: string]:
-            any
+            @azure/service-bus - <xref uid="v1.1.10.DeadLetterOptions" /> &
+            [key: string]: any
           description: ''
       return:
         description: Promise<void>
         type: Promise&lt;void&gt;
   - name: 'defer(undefined | [key: string]: any)'
-    uid: '@azure/service-bus.ServiceBusMessage.defer'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ServiceBusMessage.defer'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       Defers the processing of the message. Save the `sequenceNumber` of the
       message, in order to

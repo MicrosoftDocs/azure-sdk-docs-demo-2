@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: ExtractedTableColumn
-uid: '@azure/cognitiveservices-formrecognizer.ExtractedTableColumn'
-package: '@azure/cognitiveservices-formrecognizer'
+uid: '@azure/cognitiveservices-formrecognizer - v2.0.1.ExtractedTableColumn'
+package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
 summary: |-
   Extraction information of a column in
   a table.
@@ -11,8 +11,10 @@ isDeprecated: false
 type: interface
 properties:
   - name: entries
-    uid: '@azure/cognitiveservices-formrecognizer.ExtractedTableColumn.entries'
-    package: '@azure/cognitiveservices-formrecognizer'
+    uid: >-
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.ExtractedTableColumn.entries
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: |-
       Extracted text for each cell of a column. Each cell
       in the column can have a list of one or more tokens.
@@ -24,11 +26,13 @@ properties:
       return:
         description: ''
         type: >-
-          <xref uid="@azure/cognitiveservices-formrecognizer.ExtractedToken"
-          />[][]
+          @azure/cognitiveservices-formrecognizer - <xref
+          uid="v2.0.1.ExtractedToken" />[][]
   - name: header
-    uid: '@azure/cognitiveservices-formrecognizer.ExtractedTableColumn.header'
-    package: '@azure/cognitiveservices-formrecognizer'
+    uid: >-
+      @azure/cognitiveservices-formrecognizer -
+      v2.0.1.ExtractedTableColumn.header
+    package: '@azure/cognitiveservices-formrecognizer - v2.0.1'
     summary: List of extracted tokens for the column header.
     fullName: header
     remarks: ''
@@ -38,5 +42,5 @@ properties:
       return:
         description: ''
         type: >-
-          <xref uid="@azure/cognitiveservices-formrecognizer.ExtractedToken"
-          />[]
+          @azure/cognitiveservices-formrecognizer - <xref
+          uid="v2.0.1.ExtractedToken" />[]

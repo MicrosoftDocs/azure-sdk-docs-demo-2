@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: MediaJobErroredEventData
-uid: azure-eventgrid.MediaJobErroredEventData
-package: azure-eventgrid
+uid: azure-eventgrid - v1.6.0.MediaJobErroredEventData
+package: azure-eventgrid - v1.6.0
 summary: ''
 fullName: MediaJobErroredEventData
 remarks: ''
@@ -9,8 +9,8 @@ isDeprecated: false
 type: interface
 properties:
   - name: outputs
-    uid: azure-eventgrid.MediaJobErroredEventData.outputs
-    package: azure-eventgrid
+    uid: azure-eventgrid - v1.6.0.MediaJobErroredEventData.outputs
+    package: azure-eventgrid - v1.6.0
     summary: ''
     fullName: outputs
     remarks: ''
@@ -19,11 +19,11 @@ properties:
       content: 'outputs?: MediaJobOutput[]'
       return:
         description: ''
-        type: '<xref uid="azure-eventgrid.MediaJobOutput" />[]'
+        type: 'azure-eventgrid - <xref uid="v1.6.0.MediaJobOutput" />[]'
 inheritedProperties:
   - name: correlationData
-    uid: azure-eventgrid.MediaJobErroredEventData.correlationData
-    package: azure-eventgrid
+    uid: azure-eventgrid - v1.6.0.MediaJobErroredEventData.correlationData
+    package: azure-eventgrid - v1.6.0
     summary: ''
     fullName: correlationData
     remarks: ''
@@ -35,10 +35,11 @@ inheritedProperties:
         type: '[key: string]\: string'
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [MediaJobStateChangeEventData.correlationData](xref:azure-eventgrid.MediaJobStateChangeEventData.correlationData)
+      [MediaJobStateChangeEventData.correlationData](xref:azure-eventgrid -
+      v1.6.0.MediaJobStateChangeEventData.correlationData)
   - name: previousState
-    uid: azure-eventgrid.MediaJobErroredEventData.previousState
-    package: azure-eventgrid
+    uid: azure-eventgrid - v1.6.0.MediaJobErroredEventData.previousState
+    package: azure-eventgrid - v1.6.0
     summary: ''
     fullName: previousState
     remarks: ''
@@ -50,10 +51,11 @@ inheritedProperties:
         type: string
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [MediaJobStateChangeEventData.previousState](xref:azure-eventgrid.MediaJobStateChangeEventData.previousState)
+      [MediaJobStateChangeEventData.previousState](xref:azure-eventgrid -
+      v1.6.0.MediaJobStateChangeEventData.previousState)
   - name: state
-    uid: azure-eventgrid.MediaJobErroredEventData.state
-    package: azure-eventgrid
+    uid: azure-eventgrid - v1.6.0.MediaJobErroredEventData.state
+    package: azure-eventgrid - v1.6.0
     summary: ''
     fullName: state
     remarks: ''
@@ -65,5 +67,6 @@ inheritedProperties:
         type: string
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [MediaJobStateChangeEventData.state](xref:azure-eventgrid.MediaJobStateChangeEventData.state)
-extends: <xref uid="azure-eventgrid.MediaJobStateChangeEventData" />
+      [MediaJobStateChangeEventData.state](xref:azure-eventgrid -
+      v1.6.0.MediaJobStateChangeEventData.state)
+extends: azure-eventgrid - <xref uid="v1.6.0.MediaJobStateChangeEventData" />

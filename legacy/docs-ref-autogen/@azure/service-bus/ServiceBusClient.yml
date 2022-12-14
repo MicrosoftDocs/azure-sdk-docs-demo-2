@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: ServiceBusClient
-uid: '@azure/service-bus.ServiceBusClient'
-package: '@azure/service-bus'
+uid: '@azure/service-bus - v1.1.10.ServiceBusClient'
+package: '@azure/service-bus - v1.1.10'
 summary: >-
   Describes the client that allows interacting with a Service Bus instance.
 
@@ -15,8 +15,8 @@ isDeprecated: false
 type: class
 properties:
   - name: name
-    uid: '@azure/service-bus.ServiceBusClient.name'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ServiceBusClient.name'
+    package: '@azure/service-bus - v1.1.10'
     summary: The name of the Service Bus Namespace.
     fullName: name
     remarks: ''
@@ -28,8 +28,8 @@ properties:
         type: string
 methods:
   - name: close()
-    uid: '@azure/service-bus.ServiceBusClient.close'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ServiceBusClient.close'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       Closes the AMQP connection created by this ServiceBusClient along with
       AMQP links for
@@ -57,8 +57,10 @@ methods:
       createFromAadTokenCredentials(string, { getToken() => Promise<{
       accessToken: string, expiresOn?: string | Date | undefined, tokenType:
       string }> }, ServiceBusClientOptions)
-    uid: '@azure/service-bus.ServiceBusClient.createFromAadTokenCredentials'
-    package: '@azure/service-bus'
+    uid: >-
+      @azure/service-bus -
+      v1.1.10.ServiceBusClient.createFromAadTokenCredentials
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       Creates a ServiceBusClient for the Service Bus Namespace represented by
       the given host using
@@ -94,16 +96,16 @@ methods:
             Token audience (or resource in case of MSI based credentials) to use
             when creating the credentials is https://servicebus.azure.net/
         - id: options
-          type: <xref uid="@azure/service-bus.ServiceBusClientOptions" />
+          type: '@azure/service-bus - <xref uid="v1.1.10.ServiceBusClientOptions" />'
           description: |-
             Options to control ways to interact with the
             Service Bus Namespace.
       return:
         description: ''
-        type: <xref uid="@azure/service-bus.ServiceBusClient" />
+        type: '@azure/service-bus - <xref uid="v1.1.10.ServiceBusClient" />'
   - name: 'createFromConnectionString(string, ServiceBusClientOptions)'
-    uid: '@azure/service-bus.ServiceBusClient.createFromConnectionString'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ServiceBusClient.createFromConnectionString'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       Creates a ServiceBusClient for the Service Bus Namespace represented in
       the given connection
@@ -123,14 +125,14 @@ methods:
 
             'Endpoint=sb://my-servicebus-namespace.servicebus.windows.net/;SharedAccessKeyName=my-SA-name;SharedAccessKey=my-SA-key'
         - id: options
-          type: <xref uid="@azure/service-bus.ServiceBusClientOptions" />
+          type: '@azure/service-bus - <xref uid="v1.1.10.ServiceBusClientOptions" />'
           description: ''
       return:
         description: ''
-        type: <xref uid="@azure/service-bus.ServiceBusClient" />
+        type: '@azure/service-bus - <xref uid="v1.1.10.ServiceBusClient" />'
   - name: 'createFromTokenProvider(string, TokenProvider, ServiceBusClientOptions)'
-    uid: '@azure/service-bus.ServiceBusClient.createFromTokenProvider'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ServiceBusClient.createFromTokenProvider'
+    package: '@azure/service-bus - v1.1.10'
     summary: >-
       Creates a ServiceBusClient for the Service Bus Namespace represented by
       the given host using
@@ -162,16 +164,16 @@ methods:
 
             interface.
         - id: options
-          type: <xref uid="@azure/service-bus.ServiceBusClientOptions" />
+          type: '@azure/service-bus - <xref uid="v1.1.10.ServiceBusClientOptions" />'
           description: |-
             Options to control ways to interact with the
             Service Bus Namespace.
       return:
         description: ''
-        type: <xref uid="@azure/service-bus.ServiceBusClient" />
+        type: '@azure/service-bus - <xref uid="v1.1.10.ServiceBusClient" />'
   - name: createQueueClient(string)
-    uid: '@azure/service-bus.ServiceBusClient.createQueueClient'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ServiceBusClient.createQueueClient'
+    package: '@azure/service-bus - v1.1.10'
     summary: Creates a QueueClient for an existing Service Bus Queue.
     remarks: ''
     isDeprecated: false
@@ -183,10 +185,10 @@ methods:
           description: The queue name.
       return:
         description: QueueClient.
-        type: <xref uid="@azure/service-bus.QueueClient" />
+        type: '@azure/service-bus - <xref uid="v1.1.10.QueueClient" />'
   - name: 'createSubscriptionClient(string, string)'
-    uid: '@azure/service-bus.ServiceBusClient.createSubscriptionClient'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ServiceBusClient.createSubscriptionClient'
+    package: '@azure/service-bus - v1.1.10'
     summary: Creates a SubscriptionClient for an existing Service Bus Subscription.
     remarks: ''
     isDeprecated: false
@@ -203,10 +205,10 @@ methods:
           description: The subscription name.
       return:
         description: SubscriptionClient.
-        type: <xref uid="@azure/service-bus.SubscriptionClient" />
+        type: '@azure/service-bus - <xref uid="v1.1.10.SubscriptionClient" />'
   - name: createTopicClient(string)
-    uid: '@azure/service-bus.ServiceBusClient.createTopicClient'
-    package: '@azure/service-bus'
+    uid: '@azure/service-bus - v1.1.10.ServiceBusClient.createTopicClient'
+    package: '@azure/service-bus - v1.1.10'
     summary: Creates a TopicClient for an existing Service Bus Topic.
     remarks: ''
     isDeprecated: false
@@ -218,4 +220,4 @@ methods:
           description: The topic name.
       return:
         description: TopicClient.
-        type: <xref uid="@azure/service-bus.TopicClient" />
+        type: '@azure/service-bus - <xref uid="v1.1.10.TopicClient" />'

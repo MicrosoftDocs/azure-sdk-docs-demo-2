@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: DeletedCertificateItem
-uid: azure-keyvault.DeletedCertificateItem
-package: azure-keyvault
+uid: azure-keyvault - v3.0.5.DeletedCertificateItem
+package: azure-keyvault - v3.0.5
 summary: ''
 fullName: DeletedCertificateItem
 remarks: ''
@@ -9,8 +9,8 @@ isDeprecated: false
 type: interface
 properties:
   - name: deletedDate
-    uid: azure-keyvault.DeletedCertificateItem.deletedDate
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedCertificateItem.deletedDate
+    package: azure-keyvault - v3.0.5
     summary: ''
     fullName: deletedDate
     remarks: ''
@@ -21,8 +21,8 @@ properties:
         description: ''
         type: Date
   - name: recoveryId
-    uid: azure-keyvault.DeletedCertificateItem.recoveryId
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedCertificateItem.recoveryId
+    package: azure-keyvault - v3.0.5
     summary: ''
     fullName: recoveryId
     remarks: ''
@@ -33,8 +33,8 @@ properties:
         description: ''
         type: string
   - name: scheduledPurgeDate
-    uid: azure-keyvault.DeletedCertificateItem.scheduledPurgeDate
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedCertificateItem.scheduledPurgeDate
+    package: azure-keyvault - v3.0.5
     summary: ''
     fullName: scheduledPurgeDate
     remarks: ''
@@ -46,8 +46,8 @@ properties:
         type: Date
 inheritedProperties:
   - name: attributes
-    uid: azure-keyvault.DeletedCertificateItem.attributes
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedCertificateItem.attributes
+    package: azure-keyvault - v3.0.5
     summary: ''
     fullName: attributes
     remarks: ''
@@ -56,13 +56,13 @@ inheritedProperties:
       content: 'attributes?: CertificateAttributes'
       return:
         description: ''
-        type: <xref uid="azure-keyvault.CertificateAttributes" />
+        type: azure-keyvault - <xref uid="v3.0.5.CertificateAttributes" />
     inheritanceDescription: >-
-      <b>Inherited From</b>
-      [CertificateItem.attributes](xref:azure-keyvault.CertificateItem.attributes)
+      <b>Inherited From</b> [CertificateItem.attributes](xref:azure-keyvault -
+      v3.0.5.CertificateItem.attributes)
   - name: id
-    uid: azure-keyvault.DeletedCertificateItem.id
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedCertificateItem.id
+    package: azure-keyvault - v3.0.5
     summary: ''
     fullName: id
     remarks: ''
@@ -73,11 +73,11 @@ inheritedProperties:
         description: ''
         type: string
     inheritanceDescription: >-
-      <b>Inherited From</b>
-      [CertificateItem.id](xref:azure-keyvault.CertificateItem.id)
+      <b>Inherited From</b> [CertificateItem.id](xref:azure-keyvault -
+      v3.0.5.CertificateItem.id)
   - name: tags
-    uid: azure-keyvault.DeletedCertificateItem.tags
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedCertificateItem.tags
+    package: azure-keyvault - v3.0.5
     summary: ''
     fullName: tags
     remarks: ''
@@ -88,11 +88,11 @@ inheritedProperties:
         description: ''
         type: '[key: string]\: string'
     inheritanceDescription: >-
-      <b>Inherited From</b>
-      [CertificateItem.tags](xref:azure-keyvault.CertificateItem.tags)
+      <b>Inherited From</b> [CertificateItem.tags](xref:azure-keyvault -
+      v3.0.5.CertificateItem.tags)
   - name: x509Thumbprint
-    uid: azure-keyvault.DeletedCertificateItem.x509Thumbprint
-    package: azure-keyvault
+    uid: azure-keyvault - v3.0.5.DeletedCertificateItem.x509Thumbprint
+    package: azure-keyvault - v3.0.5
     summary: ''
     fullName: x509Thumbprint
     remarks: ''
@@ -103,6 +103,6 @@ inheritedProperties:
         description: ''
         type: Buffer
     inheritanceDescription: >-
-      <b>Inherited From</b>
-      [CertificateItem.x509Thumbprint](xref:azure-keyvault.CertificateItem.x509Thumbprint)
-extends: <xref uid="azure-keyvault.CertificateItem" />
+      <b>Inherited From</b> [CertificateItem.x509Thumbprint](xref:azure-keyvault
+      - v3.0.5.CertificateItem.x509Thumbprint)
+extends: azure-keyvault - <xref uid="v3.0.5.CertificateItem" />

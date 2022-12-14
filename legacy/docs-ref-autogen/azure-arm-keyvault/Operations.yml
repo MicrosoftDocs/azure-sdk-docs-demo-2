@@ -1,7 +1,7 @@
 ### YamlMime:TSType
 name: Operations
-uid: azure-arm-keyvault.Operations
-package: azure-arm-keyvault
+uid: azure-arm-keyvault - v1.2.0.Operations
+package: azure-arm-keyvault - v1.2.0
 summary: ''
 fullName: Operations
 remarks: ''
@@ -9,8 +9,8 @@ isDeprecated: false
 type: interface
 methods:
   - name: list(ServiceCallback<OperationListResult>)
-    uid: azure-arm-keyvault.Operations.list_1
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Operations.list_1
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -19,12 +19,12 @@ methods:
       parameters:
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref
-            uid="azure-arm-keyvault.OperationListResult" />&gt;
+            ServiceCallback&lt;azure-arm-keyvault - <xref
+            uid="v1.2.0.OperationListResult" />&gt;
           description: ''
   - name: 'list({ customHeaders?: [key: string]: string })'
-    uid: azure-arm-keyvault.Operations.list
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Operations.list
+    package: azure-arm-keyvault - v1.2.0
     summary: Lists all of the available Key Vault Rest API operations.
     remarks: ''
     isDeprecated: false
@@ -52,17 +52,19 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {OperationListResult} [result]   - The deserialized result object if an error did not occur.
-                               See <xref:azure-arm-keyvault.OperationListResult> for more information.
+                               See <xref:azure-arm-keyvault - v1.2.0.OperationListResult> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
                                {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
-        type: Promise&lt;<xref uid="azure-arm-keyvault.OperationListResult" />&gt;
+        type: >-
+          Promise&lt;azure-arm-keyvault - <xref uid="v1.2.0.OperationListResult"
+          />&gt;
   - name: >-
       list({ customHeaders?: [key: string]: string },
       ServiceCallback<OperationListResult>)
-    uid: azure-arm-keyvault.Operations.list_2
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Operations.list_2
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -76,12 +78,12 @@ methods:
           description: ''
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref
-            uid="azure-arm-keyvault.OperationListResult" />&gt;
+            ServiceCallback&lt;azure-arm-keyvault - <xref
+            uid="v1.2.0.OperationListResult" />&gt;
           description: ''
   - name: 'listNext(string, ServiceCallback<OperationListResult>)'
-    uid: azure-arm-keyvault.Operations.listNext_1
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Operations.listNext_1
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -95,12 +97,12 @@ methods:
           description: ''
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref
-            uid="azure-arm-keyvault.OperationListResult" />&gt;
+            ServiceCallback&lt;azure-arm-keyvault - <xref
+            uid="v1.2.0.OperationListResult" />&gt;
           description: ''
   - name: 'listNext(string, { customHeaders?: [key: string]: string })'
-    uid: azure-arm-keyvault.Operations.listNext
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Operations.listNext
+    package: azure-arm-keyvault - v1.2.0
     summary: Lists all of the available Key Vault Rest API operations.
     remarks: ''
     isDeprecated: false
@@ -133,17 +135,19 @@ methods:
                                {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
 
                                {OperationListResult} [result]   - The deserialized result object if an error did not occur.
-                               See <xref:azure-arm-keyvault.OperationListResult> for more information.
+                               See <xref:azure-arm-keyvault - v1.2.0.OperationListResult> for more information.
 
                                {WebResource} [request]  - The HTTP Request object if an error did not occur.
 
                                {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
-        type: Promise&lt;<xref uid="azure-arm-keyvault.OperationListResult" />&gt;
+        type: >-
+          Promise&lt;azure-arm-keyvault - <xref uid="v1.2.0.OperationListResult"
+          />&gt;
   - name: >-
       listNext(string, { customHeaders?: [key: string]: string },
       ServiceCallback<OperationListResult>)
-    uid: azure-arm-keyvault.Operations.listNext_2
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Operations.listNext_2
+    package: azure-arm-keyvault - v1.2.0
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -160,14 +164,14 @@ methods:
           description: ''
         - id: callback
           type: >-
-            ServiceCallback&lt;<xref
-            uid="azure-arm-keyvault.OperationListResult" />&gt;
+            ServiceCallback&lt;azure-arm-keyvault - <xref
+            uid="v1.2.0.OperationListResult" />&gt;
           description: ''
   - name: >-
       listNextWithHttpOperationResponse(string, { customHeaders?: [key: string]:
       string })
-    uid: azure-arm-keyvault.Operations.listNextWithHttpOperationResponse
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Operations.listNextWithHttpOperationResponse
+    package: azure-arm-keyvault - v1.2.0
     summary: Lists all of the available Key Vault Rest API operations.
     remarks: ''
     isDeprecated: false
@@ -188,11 +192,11 @@ methods:
       return:
         description: A promise is returned
         type: >-
-          Promise&lt;HttpOperationResponse&lt;<xref
-          uid="azure-arm-keyvault.OperationListResult" />&gt;&gt;
+          Promise&lt;HttpOperationResponse&lt;azure-arm-keyvault - <xref
+          uid="v1.2.0.OperationListResult" />&gt;&gt;
   - name: 'listWithHttpOperationResponse({ customHeaders?: [key: string]: string })'
-    uid: azure-arm-keyvault.Operations.listWithHttpOperationResponse
-    package: azure-arm-keyvault
+    uid: azure-arm-keyvault - v1.2.0.Operations.listWithHttpOperationResponse
+    package: azure-arm-keyvault - v1.2.0
     summary: Lists all of the available Key Vault Rest API operations.
     remarks: ''
     isDeprecated: false
@@ -207,5 +211,5 @@ methods:
       return:
         description: A promise is returned
         type: >-
-          Promise&lt;HttpOperationResponse&lt;<xref
-          uid="azure-arm-keyvault.OperationListResult" />&gt;&gt;
+          Promise&lt;HttpOperationResponse&lt;azure-arm-keyvault - <xref
+          uid="v1.2.0.OperationListResult" />&gt;&gt;
