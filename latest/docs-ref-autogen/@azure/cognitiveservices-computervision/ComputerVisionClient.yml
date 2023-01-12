@@ -5,7 +5,6 @@ package: '@azure/cognitiveservices-computervision'
 summary: ''
 fullName: ComputerVisionClient
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -16,7 +15,6 @@ constructors:
     package: '@azure/cognitiveservices-computervision'
     summary: Initializes a new instance of the ComputerVisionClient class.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -34,33 +32,37 @@ constructors:
         - id: options
           type: <xref uid="msRest.ServiceClientOptions" />
           description: ''
-properties:
+inheritedProperties:
   - name: credentials
     uid: '@azure/cognitiveservices-computervision.ComputerVisionClient.credentials'
     package: '@azure/cognitiveservices-computervision'
     summary: ''
     fullName: credentials
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'credentials: ServiceClientCredentials'
       return:
         description: ''
         type: ServiceClientCredentials
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [ComputerVisionClientContext.credentials](xref:@azure/cognitiveservices-computervision.ComputerVisionClientContext.credentials)
   - name: endpoint
     uid: '@azure/cognitiveservices-computervision.ComputerVisionClient.endpoint'
     package: '@azure/cognitiveservices-computervision'
     summary: ''
     fullName: endpoint
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'endpoint: string'
       return:
         description: ''
         type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [ComputerVisionClientContext.endpoint](xref:@azure/cognitiveservices-computervision.ComputerVisionClientContext.endpoint)
 inheritedMethods:
   - name: >-
       sendOperationRequest(OperationArguments, OperationSpec,
@@ -70,7 +72,6 @@ inheritedMethods:
     package: '@azure/cognitiveservices-computervision'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -93,12 +94,12 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;RestResponse&gt;
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendOperationRequest
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
     uid: '@azure/cognitiveservices-computervision.ComputerVisionClient.sendRequest'
     package: '@azure/cognitiveservices-computervision'
     summary: Send the provided httpRequest.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -111,6 +112,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;HttpOperationResponse&gt;
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendRequest
 methods:
   - name: >-
       analyzeImage(string, ComputerVisionClientAnalyzeImageOptionalParams,
@@ -120,7 +122,6 @@ methods:
     package: '@azure/cognitiveservices-computervision'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -165,7 +166,6 @@ methods:
 
       an error code and a message to help understand what went wrong.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -188,7 +188,6 @@ methods:
     package: '@azure/cognitiveservices-computervision'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -213,7 +212,6 @@ methods:
     package: '@azure/cognitiveservices-computervision'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -268,7 +266,6 @@ methods:
 
       what went wrong.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -297,7 +294,6 @@ methods:
     package: '@azure/cognitiveservices-computervision'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -326,7 +322,6 @@ methods:
     package: '@azure/cognitiveservices-computervision'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -382,7 +377,6 @@ methods:
 
       what went wrong.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -416,7 +410,6 @@ methods:
     package: '@azure/cognitiveservices-computervision'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -445,7 +438,6 @@ methods:
     package: '@azure/cognitiveservices-computervision'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -491,7 +483,6 @@ methods:
 
       an error code and a message to help understand what went wrong.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -519,7 +510,6 @@ methods:
     package: '@azure/cognitiveservices-computervision'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -543,7 +533,6 @@ methods:
     package: '@azure/cognitiveservices-computervision'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -595,7 +584,6 @@ methods:
 
       an error code and a message to help understand what went wrong.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -620,7 +608,6 @@ methods:
     package: '@azure/cognitiveservices-computervision'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -646,7 +633,6 @@ methods:
     package: '@azure/cognitiveservices-computervision'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -699,7 +685,6 @@ methods:
 
       an error code and a message to help understand what went wrong.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -727,7 +712,6 @@ methods:
     package: '@azure/cognitiveservices-computervision'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -752,7 +736,6 @@ methods:
     package: '@azure/cognitiveservices-computervision'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -791,7 +774,6 @@ methods:
 
       an error code and a message to help understand what went wrong.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -816,7 +798,6 @@ methods:
     package: '@azure/cognitiveservices-computervision'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -841,7 +822,6 @@ methods:
     package: '@azure/cognitiveservices-computervision'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -881,7 +861,6 @@ methods:
 
       an error code and a message to help understand what went wrong.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -909,7 +888,6 @@ methods:
     package: '@azure/cognitiveservices-computervision'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -934,7 +912,6 @@ methods:
     package: '@azure/cognitiveservices-computervision'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1000,7 +977,6 @@ methods:
 
       FailedToProcess, Timeout, or InternalServerError.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1039,7 +1015,6 @@ methods:
     package: '@azure/cognitiveservices-computervision'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1076,7 +1051,6 @@ methods:
     package: '@azure/cognitiveservices-computervision'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1143,7 +1117,6 @@ methods:
 
       FailedToProcess, Timeout, or InternalServerError.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1186,7 +1159,6 @@ methods:
     package: '@azure/cognitiveservices-computervision'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1223,7 +1195,6 @@ methods:
     package: '@azure/cognitiveservices-computervision'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1270,7 +1241,6 @@ methods:
 
       Timeout, or InternalServerError.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1295,7 +1265,6 @@ methods:
     package: '@azure/cognitiveservices-computervision'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1321,7 +1290,6 @@ methods:
     package: '@azure/cognitiveservices-computervision'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1368,7 +1336,6 @@ methods:
 
       Timeout, or InternalServerError.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1397,7 +1364,6 @@ methods:
     package: '@azure/cognitiveservices-computervision'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1424,7 +1390,6 @@ methods:
       should be retrieved from 'Operation-Location' field returned from Read
       interface.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1450,7 +1415,6 @@ methods:
     package: '@azure/cognitiveservices-computervision'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1478,7 +1442,6 @@ methods:
     package: '@azure/cognitiveservices-computervision'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1514,7 +1477,6 @@ methods:
 
       an error code and a message to help understand what went wrong.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1532,7 +1494,6 @@ methods:
     package: '@azure/cognitiveservices-computervision'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1554,7 +1515,6 @@ methods:
     package: '@azure/cognitiveservices-computervision'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function listModels(callback: ServiceCallback<ListModelsResult>)'
@@ -1573,7 +1533,6 @@ methods:
     package: '@azure/cognitiveservices-computervision'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1611,7 +1570,6 @@ methods:
 
       results.​
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1633,7 +1591,6 @@ methods:
     package: '@azure/cognitiveservices-computervision'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function read(url: string, callback: ServiceCallback<void>)'
@@ -1653,7 +1610,6 @@ methods:
     package: '@azure/cognitiveservices-computervision'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1694,7 +1650,6 @@ methods:
 
       results.​
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1717,7 +1672,6 @@ methods:
     package: '@azure/cognitiveservices-computervision'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1740,7 +1694,6 @@ methods:
     package: '@azure/cognitiveservices-computervision'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1794,7 +1747,6 @@ methods:
 
       NotSupportedLanguage, or InternalServerError.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1830,7 +1782,6 @@ methods:
     package: '@azure/cognitiveservices-computervision'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1864,7 +1815,6 @@ methods:
     package: '@azure/cognitiveservices-computervision'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1919,7 +1869,6 @@ methods:
 
       NotSupportedLanguage, or InternalServerError.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1959,7 +1908,6 @@ methods:
     package: '@azure/cognitiveservices-computervision'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1991,7 +1939,6 @@ methods:
     package: '@azure/cognitiveservices-computervision'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2043,7 +1990,6 @@ methods:
 
       an error code and a message to help understand what went wrong.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2065,7 +2011,6 @@ methods:
     package: '@azure/cognitiveservices-computervision'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function tagImage(url: string, callback: ServiceCallback<TagResult>)'
@@ -2088,7 +2033,6 @@ methods:
     package: '@azure/cognitiveservices-computervision'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2143,7 +2087,6 @@ methods:
 
       an error code and a message to help understand what went wrong.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2168,7 +2111,6 @@ methods:
     package: '@azure/cognitiveservices-computervision'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

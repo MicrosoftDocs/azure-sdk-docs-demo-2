@@ -7,7 +7,6 @@ summary: >-
   <xref:@azure/storage-file-datalake.DataLakeFileClient.setExpiry> operation.
 fullName: FileSetExpiryOptions
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -22,7 +21,6 @@ properties:
       `AbortSignal`.
     fullName: abortSignal
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'abortSignal?: AbortSignalLike'
@@ -39,7 +37,6 @@ properties:
       A time in the past is not allowed and milliseconds will be dropped.
     fullName: expiresOn
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'expiresOn?: Date'
@@ -55,24 +52,26 @@ properties:
       <xref:@azure/storage-file-datalake.FileExpiryMode>.
     fullName: timeToExpireInMs
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'timeToExpireInMs?: number'
       return:
         description: ''
         type: number
+inheritedProperties:
   - name: tracingOptions
     uid: '@azure/storage-file-datalake.FileSetExpiryOptions.tracingOptions'
     package: '@azure/storage-file-datalake'
     summary: Options to configure spans created when tracing is enabled.
     fullName: tracingOptions
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'tracingOptions?: OperationTracingOptions'
       return:
         description: ''
         type: OperationTracingOptions
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [CommonOptions.tracingOptions](xref:@azure/storage-file-datalake.CommonOptions.tracingOptions)
 extends: <xref uid="@azure/storage-file-datalake.CommonOptions" />

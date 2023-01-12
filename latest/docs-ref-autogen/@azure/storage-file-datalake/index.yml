@@ -49,6 +49,7 @@ interfaces:
   - '@azure/storage-file-datalake.BlobPropertiesModel'
   - '@azure/storage-file-datalake.CommonGenerateSasUrlOptions'
   - '@azure/storage-file-datalake.CommonOptions'
+  - '@azure/storage-file-datalake.CpkInfo'
   - '@azure/storage-file-datalake.DataLakeRequestConditions'
   - '@azure/storage-file-datalake.DataLakeSASSignatureValues'
   - '@azure/storage-file-datalake.DeletedPath'
@@ -82,6 +83,7 @@ interfaces:
   - '@azure/storage-file-datalake.FileSystemDeleteHeaders'
   - '@azure/storage-file-datalake.FileSystemDeleteIfExistsResponse'
   - '@azure/storage-file-datalake.FileSystemDeleteOptions'
+  - '@azure/storage-file-datalake.FileSystemEncryptionScope'
   - '@azure/storage-file-datalake.FileSystemExistsOptions'
   - '@azure/storage-file-datalake.FileSystemGenerateSasUrlOptions'
   - '@azure/storage-file-datalake.FileSystemGetAccessPolicyHeaders'
@@ -162,6 +164,7 @@ typeAliases:
   - '@azure/storage-file-datalake.AccessControlType'
   - '@azure/storage-file-datalake.CopyStatusType'
   - '@azure/storage-file-datalake.CredentialPolicyCreator'
+  - '@azure/storage-file-datalake.EncryptionAlgorithmType'
   - '@azure/storage-file-datalake.FileAppendResponse'
   - '@azure/storage-file-datalake.FileExpiryMode'
   - '@azure/storage-file-datalake.FileQueryArrowConfiguration'
@@ -218,7 +221,6 @@ functions:
       See
       https://docs.microsoft.com/en-us/rest/api/storageservices/constructing-an-account-sas
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -325,7 +327,6 @@ functions:
       ```
 
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -388,7 +389,6 @@ functions:
       ```
 
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -418,7 +418,6 @@ functions:
     package: '@azure/storage-file-datalake'
     summary: Creates a new Pipeline object with Credential provided.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

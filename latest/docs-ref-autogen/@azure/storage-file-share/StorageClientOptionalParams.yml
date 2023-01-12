@@ -5,63 +5,15 @@ package: '@azure/storage-file-share'
 summary: Optional parameters.
 fullName: StorageClientOptionalParams
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: clientRequestIdHeaderName
-    uid: >-
-      @azure/storage-file-share.StorageClientOptionalParams.clientRequestIdHeaderName
-    package: '@azure/storage-file-share'
-    summary: >-
-      If specified, a GenerateRequestIdPolicy will be added to the HTTP pipeline
-      that will add a
-
-      header to all outgoing requests with this header name and a random UUID as
-      the request ID.
-    fullName: clientRequestIdHeaderName
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'clientRequestIdHeaderName?: string'
-      return:
-        description: ''
-        type: string
-  - name: credentialScopes
-    uid: '@azure/storage-file-share.StorageClientOptionalParams.credentialScopes'
-    package: '@azure/storage-file-share'
-    summary: 'If specified, will be used to build the BearerTokenAuthenticationPolicy.'
-    fullName: credentialScopes
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'credentialScopes?: string | string[]'
-      return:
-        description: ''
-        type: 'string | string[]'
-  - name: deserializationContentTypes
-    uid: >-
-      @azure/storage-file-share.StorageClientOptionalParams.deserializationContentTypes
-    package: '@azure/storage-file-share'
-    summary: The content-types that will be associated with JSON or XML serialization.
-    fullName: deserializationContentTypes
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'deserializationContentTypes?: DeserializationContentTypes'
-      return:
-        description: ''
-        type: DeserializationContentTypes
   - name: endpoint
     uid: '@azure/storage-file-share.StorageClientOptionalParams.endpoint'
     package: '@azure/storage-file-share'
     summary: Overrides client endpoint.
     fullName: endpoint
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'endpoint?: string'
@@ -77,13 +29,71 @@ properties:
       source url into the specified range.
     fullName: fileRangeWriteFromUrl
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'fileRangeWriteFromUrl?: string'
       return:
         description: ''
         type: string
+  - name: version
+    uid: '@azure/storage-file-share.StorageClientOptionalParams.version'
+    package: '@azure/storage-file-share'
+    summary: Specifies the version of the operation to use for this request.
+    fullName: version
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'version?: string'
+      return:
+        description: ''
+        type: string
+inheritedProperties:
+  - name: clientRequestIdHeaderName
+    uid: >-
+      @azure/storage-file-share.StorageClientOptionalParams.clientRequestIdHeaderName
+    package: '@azure/storage-file-share'
+    summary: >-
+      If specified, a GenerateRequestIdPolicy will be added to the HTTP pipeline
+      that will add a
+
+      header to all outgoing requests with this header name and a random UUID as
+      the request ID.
+    fullName: clientRequestIdHeaderName
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'clientRequestIdHeaderName?: string'
+      return:
+        description: ''
+        type: string
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.clientRequestIdHeaderName
+  - name: credentialScopes
+    uid: '@azure/storage-file-share.StorageClientOptionalParams.credentialScopes'
+    package: '@azure/storage-file-share'
+    summary: 'If specified, will be used to build the BearerTokenAuthenticationPolicy.'
+    fullName: credentialScopes
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'credentialScopes?: string | string[]'
+      return:
+        description: ''
+        type: 'string | string[]'
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.credentialScopes
+  - name: deserializationContentTypes
+    uid: >-
+      @azure/storage-file-share.StorageClientOptionalParams.deserializationContentTypes
+    package: '@azure/storage-file-share'
+    summary: The content-types that will be associated with JSON or XML serialization.
+    fullName: deserializationContentTypes
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'deserializationContentTypes?: DeserializationContentTypes'
+      return:
+        description: ''
+        type: DeserializationContentTypes
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.deserializationContentTypes
   - name: generateClientRequestIdHeader
     uid: >-
       @azure/storage-file-share.StorageClientOptionalParams.generateClientRequestIdHeader
@@ -93,26 +103,26 @@ properties:
       request.
     fullName: generateClientRequestIdHeader
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'generateClientRequestIdHeader?: boolean'
       return:
         description: ''
         type: boolean
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.generateClientRequestIdHeader
   - name: httpClient
     uid: '@azure/storage-file-share.StorageClientOptionalParams.httpClient'
     package: '@azure/storage-file-share'
     summary: The HttpClient that will be used to send HTTP requests.
     fullName: httpClient
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'httpClient?: HttpClient'
       return:
         description: ''
         type: HttpClient
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.httpClient
   - name: httpPipelineLogger
     uid: '@azure/storage-file-share.StorageClientOptionalParams.httpPipelineLogger'
     package: '@azure/storage-file-share'
@@ -121,39 +131,39 @@ properties:
       the HTTP pipeline.
     fullName: httpPipelineLogger
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'httpPipelineLogger?: HttpPipelineLogger'
       return:
         description: ''
         type: HttpPipelineLogger
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.httpPipelineLogger
   - name: noRetryPolicy
     uid: '@azure/storage-file-share.StorageClientOptionalParams.noRetryPolicy'
     package: '@azure/storage-file-share'
     summary: 'If set to true, turn off the default retry policy.'
     fullName: noRetryPolicy
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'noRetryPolicy?: boolean'
       return:
         description: ''
         type: boolean
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.noRetryPolicy
   - name: proxySettings
     uid: '@azure/storage-file-share.StorageClientOptionalParams.proxySettings'
     package: '@azure/storage-file-share'
     summary: Proxy settings which will be used for every HTTP request (Node.js only).
     fullName: proxySettings
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'proxySettings?: ProxySettings'
       return:
         description: ''
         type: ProxySettings
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.proxySettings
   - name: requestPolicyFactories
     uid: >-
       @azure/storage-file-share.StorageClientOptionalParams.requestPolicyFactories
@@ -168,7 +178,6 @@ properties:
       the requestPolicyFactories that will be used.
     fullName: requestPolicyFactories
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -180,6 +189,7 @@ properties:
         type: >-
           RequestPolicyFactory[] | (defaultRequestPolicyFactories:
           RequestPolicyFactory[]) =&gt; void | RequestPolicyFactory[]
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.requestPolicyFactories
   - name: rpRegistrationRetryTimeout
     uid: >-
       @azure/storage-file-share.StorageClientOptionalParams.rpRegistrationRetryTimeout
@@ -189,13 +199,13 @@ properties:
       Default value is 30.
     fullName: rpRegistrationRetryTimeout
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'rpRegistrationRetryTimeout?: number'
       return:
         description: ''
         type: number
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.rpRegistrationRetryTimeout
   - name: userAgent
     uid: '@azure/storage-file-share.StorageClientOptionalParams.userAgent'
     package: '@azure/storage-file-share'
@@ -207,13 +217,13 @@ properties:
       that will be used.
     fullName: userAgent
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'userAgent?: string | (defaultUserAgent: string) => string'
       return:
         description: ''
         type: 'string | (defaultUserAgent: string) =&gt; string'
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.userAgent
   - name: userAgentHeaderName
     uid: '@azure/storage-file-share.StorageClientOptionalParams.userAgentHeaderName'
     package: '@azure/storage-file-share'
@@ -227,7 +237,6 @@ properties:
       be used when running in a browser.
     fullName: userAgentHeaderName
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -236,19 +245,7 @@ properties:
       return:
         description: ''
         type: 'string | (defaultUserAgentHeaderName: string) =&gt; string'
-  - name: version
-    uid: '@azure/storage-file-share.StorageClientOptionalParams.version'
-    package: '@azure/storage-file-share'
-    summary: Specifies the version of the operation to use for this request.
-    fullName: version
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'version?: string'
-      return:
-        description: ''
-        type: string
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.userAgentHeaderName
   - name: withCredentials
     uid: '@azure/storage-file-share.StorageClientOptionalParams.withCredentials'
     package: '@azure/storage-file-share'
@@ -260,11 +257,11 @@ properties:
       for more information.
     fullName: withCredentials
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'withCredentials?: boolean'
       return:
         description: ''
         type: boolean
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.withCredentials
 extends: ServiceClientOptions

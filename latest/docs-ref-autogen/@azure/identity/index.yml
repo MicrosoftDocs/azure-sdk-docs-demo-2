@@ -13,6 +13,7 @@ classes:
   - '@azure/identity.AzureCliCredential'
   - '@azure/identity.AzurePowerShellCredential'
   - '@azure/identity.ChainedTokenCredential'
+  - '@azure/identity.ClientAssertionCredential'
   - '@azure/identity.ClientCertificateCredential'
   - '@azure/identity.ClientSecretCredential'
   - '@azure/identity.CredentialUnavailableError'
@@ -27,12 +28,18 @@ classes:
 interfaces:
   - '@azure/identity.AuthenticationRecord'
   - '@azure/identity.AuthenticationRequiredErrorOptions'
+  - '@azure/identity.AuthorizationCodeCredentialOptions'
   - '@azure/identity.AzureCliCredentialOptions'
   - '@azure/identity.AzurePowerShellCredentialOptions'
+  - '@azure/identity.ClientAssertionCredentialOptions'
   - '@azure/identity.ClientCertificateCredentialOptions'
+  - '@azure/identity.ClientCertificatePEMCertificate'
+  - '@azure/identity.ClientCertificatePEMCertificatePath'
   - '@azure/identity.ClientSecretCredentialOptions'
   - '@azure/identity.CredentialPersistenceOptions'
+  - '@azure/identity.DefaultAzureCredentialClientIdOptions'
   - '@azure/identity.DefaultAzureCredentialOptions'
+  - '@azure/identity.DefaultAzureCredentialResourceIdOptions'
   - '@azure/identity.DeviceCodeCredentialOptions'
   - '@azure/identity.DeviceCodeInfo'
   - '@azure/identity.EnvironmentCredentialOptions'
@@ -40,6 +47,9 @@ interfaces:
   - '@azure/identity.InteractiveBrowserCredentialInBrowserOptions'
   - '@azure/identity.InteractiveBrowserCredentialNodeOptions'
   - '@azure/identity.InteractiveCredentialOptions'
+  - '@azure/identity.ManagedIdentityCredentialClientIdOptions'
+  - '@azure/identity.ManagedIdentityCredentialResourceIdOptions'
+  - '@azure/identity.MultiTenantTokenCredentialOptions'
   - '@azure/identity.OnBehalfOfCredentialCertificateOptions'
   - '@azure/identity.OnBehalfOfCredentialSecretOptions'
   - '@azure/identity.TokenCachePersistenceOptions'
@@ -82,7 +92,6 @@ functions:
       At the moment, the only available version is: "1.0", which is always set
       when the authentication record is serialized.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -102,7 +111,6 @@ functions:
       Returns a new instance of the
       <xref:@azure/identity.DefaultAzureCredential>.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getDefaultAzureCredential(): TokenCredential'
@@ -135,7 +143,6 @@ functions:
       To later convert this string to a serialized `AuthenticationRecord`,
       please use the exported function `deserializeAuthenticationRecord()`.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -188,7 +195,6 @@ functions:
 
       ```
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function useIdentityPlugin(plugin: IdentityPlugin)'

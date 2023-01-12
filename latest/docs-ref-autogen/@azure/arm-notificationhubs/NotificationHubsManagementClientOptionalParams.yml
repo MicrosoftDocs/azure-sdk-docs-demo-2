@@ -5,7 +5,6 @@ package: '@azure/arm-notificationhubs'
 summary: Optional parameters.
 fullName: NotificationHubsManagementClientOptionalParams
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -16,41 +15,12 @@ properties:
     summary: server parameter
     fullName: $host
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: '$host?: undefined | string'
       return:
         description: ''
         type: undefined | string
-  - name: additionalPolicies
-    uid: >-
-      @azure/arm-notificationhubs.NotificationHubsManagementClientOptionalParams.additionalPolicies
-    package: '@azure/arm-notificationhubs'
-    summary: Additional policies to include in the HTTP pipeline.
-    fullName: additionalPolicies
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'additionalPolicies?: AdditionalPolicyConfig[]'
-      return:
-        description: ''
-        type: 'AdditionalPolicyConfig[]'
-  - name: allowInsecureConnection
-    uid: >-
-      @azure/arm-notificationhubs.NotificationHubsManagementClientOptionalParams.allowInsecureConnection
-    package: '@azure/arm-notificationhubs'
-    summary: Set to true if the request is sent over HTTP instead of HTTPS
-    fullName: allowInsecureConnection
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'allowInsecureConnection?: undefined | false | true'
-      return:
-        description: ''
-        type: undefined | false | true
   - name: apiVersion
     uid: >-
       @azure/arm-notificationhubs.NotificationHubsManagementClientOptionalParams.apiVersion
@@ -58,13 +28,54 @@ properties:
     summary: Api Version
     fullName: apiVersion
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'apiVersion?: undefined | string'
       return:
         description: ''
         type: undefined | string
+  - name: endpoint
+    uid: >-
+      @azure/arm-notificationhubs.NotificationHubsManagementClientOptionalParams.endpoint
+    package: '@azure/arm-notificationhubs'
+    summary: Overrides client endpoint.
+    fullName: endpoint
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'endpoint?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+inheritedProperties:
+  - name: additionalPolicies
+    uid: >-
+      @azure/arm-notificationhubs.NotificationHubsManagementClientOptionalParams.additionalPolicies
+    package: '@azure/arm-notificationhubs'
+    summary: Additional policies to include in the HTTP pipeline.
+    fullName: additionalPolicies
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'additionalPolicies?: AdditionalPolicyConfig[]'
+      return:
+        description: ''
+        type: 'AdditionalPolicyConfig[]'
+    inheritanceDescription: <b>Inherited From</b> CommonClientOptions.additionalPolicies
+  - name: allowInsecureConnection
+    uid: >-
+      @azure/arm-notificationhubs.NotificationHubsManagementClientOptionalParams.allowInsecureConnection
+    package: '@azure/arm-notificationhubs'
+    summary: Set to true if the request is sent over HTTP instead of HTTPS
+    fullName: allowInsecureConnection
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'allowInsecureConnection?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true
+    inheritanceDescription: <b>Inherited From</b> CommonClientOptions.allowInsecureConnection
   - name: baseUri
     uid: >-
       @azure/arm-notificationhubs.NotificationHubsManagementClientOptionalParams.baseUri
@@ -77,13 +88,16 @@ properties:
       property.
     fullName: baseUri
     remarks: ''
-    isPreview: false
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      This property is deprecated and will be removed soon, please use endpoint
+      instead
     syntax:
       content: 'baseUri?: undefined | string'
       return:
         description: ''
         type: undefined | string
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.baseUri
   - name: credential
     uid: >-
       @azure/arm-notificationhubs.NotificationHubsManagementClientOptionalParams.credential
@@ -91,13 +105,13 @@ properties:
     summary: Credential used to authenticate the request.
     fullName: credential
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'credential?: TokenCredential'
       return:
         description: ''
         type: TokenCredential
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.credential
   - name: credentialScopes
     uid: >-
       @azure/arm-notificationhubs.NotificationHubsManagementClientOptionalParams.credentialScopes
@@ -105,27 +119,13 @@ properties:
     summary: 'If specified, will be used to build the BearerTokenAuthenticationPolicy.'
     fullName: credentialScopes
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'credentialScopes?: string | string[]'
       return:
         description: ''
         type: 'string | string[]'
-  - name: endpoint
-    uid: >-
-      @azure/arm-notificationhubs.NotificationHubsManagementClientOptionalParams.endpoint
-    package: '@azure/arm-notificationhubs'
-    summary: Overrides client endpoint.
-    fullName: endpoint
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'endpoint?: undefined | string'
-      return:
-        description: ''
-        type: undefined | string
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.credentialScopes
   - name: httpClient
     uid: >-
       @azure/arm-notificationhubs.NotificationHubsManagementClientOptionalParams.httpClient
@@ -133,13 +133,13 @@ properties:
     summary: The HttpClient that will be used to send HTTP requests.
     fullName: httpClient
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'httpClient?: HttpClient'
       return:
         description: ''
         type: HttpClient
+    inheritanceDescription: <b>Inherited From</b> CommonClientOptions.httpClient
   - name: pipeline
     uid: >-
       @azure/arm-notificationhubs.NotificationHubsManagementClientOptionalParams.pipeline
@@ -147,13 +147,13 @@ properties:
     summary: 'A customized pipeline to use, otherwise a default one will be created.'
     fullName: pipeline
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'pipeline?: Pipeline'
       return:
         description: ''
         type: Pipeline
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.pipeline
   - name: proxyOptions
     uid: >-
       @azure/arm-notificationhubs.NotificationHubsManagementClientOptionalParams.proxyOptions
@@ -161,13 +161,13 @@ properties:
     summary: Options to configure a proxy for outgoing requests.
     fullName: proxyOptions
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'proxyOptions?: ProxySettings'
       return:
         description: ''
         type: ProxySettings
+    inheritanceDescription: <b>Inherited From</b> PipelineOptions.proxyOptions
   - name: redirectOptions
     uid: >-
       @azure/arm-notificationhubs.NotificationHubsManagementClientOptionalParams.redirectOptions
@@ -175,13 +175,13 @@ properties:
     summary: Options for how redirect responses are handled.
     fullName: redirectOptions
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'redirectOptions?: RedirectPolicyOptions'
       return:
         description: ''
         type: RedirectPolicyOptions
+    inheritanceDescription: <b>Inherited From</b> PipelineOptions.redirectOptions
   - name: requestContentType
     uid: >-
       @azure/arm-notificationhubs.NotificationHubsManagementClientOptionalParams.requestContentType
@@ -191,13 +191,13 @@ properties:
       Used if no requestContentType is present on an OperationSpec.
     fullName: requestContentType
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'requestContentType?: undefined | string'
       return:
         description: ''
         type: undefined | string
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.requestContentType
   - name: retryOptions
     uid: >-
       @azure/arm-notificationhubs.NotificationHubsManagementClientOptionalParams.retryOptions
@@ -205,13 +205,27 @@ properties:
     summary: Options that control how to retry failed requests.
     fullName: retryOptions
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'retryOptions?: PipelineRetryOptions'
       return:
         description: ''
         type: PipelineRetryOptions
+    inheritanceDescription: <b>Inherited From</b> PipelineOptions.retryOptions
+  - name: tlsOptions
+    uid: >-
+      @azure/arm-notificationhubs.NotificationHubsManagementClientOptionalParams.tlsOptions
+    package: '@azure/arm-notificationhubs'
+    summary: Options for configuring TLS authentication
+    fullName: tlsOptions
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'tlsOptions?: TlsSettings'
+      return:
+        description: ''
+        type: TlsSettings
+    inheritanceDescription: <b>Inherited From</b> PipelineOptions.tlsOptions
   - name: userAgentOptions
     uid: >-
       @azure/arm-notificationhubs.NotificationHubsManagementClientOptionalParams.userAgentOptions
@@ -219,11 +233,11 @@ properties:
     summary: Options for adding user agent details to outgoing requests.
     fullName: userAgentOptions
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'userAgentOptions?: UserAgentPolicyOptions'
       return:
         description: ''
         type: UserAgentPolicyOptions
+    inheritanceDescription: <b>Inherited From</b> PipelineOptions.userAgentOptions
 extends: ServiceClientOptions

@@ -5,7 +5,6 @@ package: '@azure/arm-network'
 summary: ''
 fullName: NetworkManagementClient
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -16,7 +15,6 @@ constructors:
     package: '@azure/arm-network'
     summary: Initializes a new instance of the NetworkManagementClient class.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -47,13 +45,36 @@ properties:
     summary: ''
     fullName: $host
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: '$host: string'
       return:
         description: ''
         type: string
+  - name: adminRuleCollections
+    uid: '@azure/arm-network.NetworkManagementClient.adminRuleCollections'
+    package: '@azure/arm-network'
+    summary: ''
+    fullName: adminRuleCollections
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'adminRuleCollections: AdminRuleCollections'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.AdminRuleCollections" />
+  - name: adminRules
+    uid: '@azure/arm-network.NetworkManagementClient.adminRules'
+    package: '@azure/arm-network'
+    summary: ''
+    fullName: adminRules
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'adminRules: AdminRules'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.AdminRules" />
   - name: applicationGatewayPrivateEndpointConnections
     uid: >-
       @azure/arm-network.NetworkManagementClient.applicationGatewayPrivateEndpointConnections
@@ -61,7 +82,6 @@ properties:
     summary: ''
     fullName: applicationGatewayPrivateEndpointConnections
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -80,7 +100,6 @@ properties:
     summary: ''
     fullName: applicationGatewayPrivateLinkResources
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -97,20 +116,53 @@ properties:
     summary: ''
     fullName: applicationGateways
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'applicationGateways: ApplicationGateways'
       return:
         description: ''
         type: <xref uid="@azure/arm-network.ApplicationGateways" />
+  - name: applicationGatewayWafDynamicManifests
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.applicationGatewayWafDynamicManifests
+    package: '@azure/arm-network'
+    summary: ''
+    fullName: applicationGatewayWafDynamicManifests
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        applicationGatewayWafDynamicManifests:
+        ApplicationGatewayWafDynamicManifests
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/arm-network.ApplicationGatewayWafDynamicManifests"
+          />
+  - name: applicationGatewayWafDynamicManifestsDefault
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.applicationGatewayWafDynamicManifestsDefault
+    package: '@azure/arm-network'
+    summary: ''
+    fullName: applicationGatewayWafDynamicManifestsDefault
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        applicationGatewayWafDynamicManifestsDefault:
+        ApplicationGatewayWafDynamicManifestsDefault
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-network.ApplicationGatewayWafDynamicManifestsDefault"
+          />
   - name: applicationSecurityGroups
     uid: '@azure/arm-network.NetworkManagementClient.applicationSecurityGroups'
     package: '@azure/arm-network'
     summary: ''
     fullName: applicationSecurityGroups
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'applicationSecurityGroups: ApplicationSecurityGroups'
@@ -123,7 +175,6 @@ properties:
     summary: ''
     fullName: availableDelegations
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'availableDelegations: AvailableDelegations'
@@ -136,7 +187,6 @@ properties:
     summary: ''
     fullName: availableEndpointServices
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'availableEndpointServices: AvailableEndpointServices'
@@ -149,7 +199,6 @@ properties:
     summary: ''
     fullName: availablePrivateEndpointTypes
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'availablePrivateEndpointTypes: AvailablePrivateEndpointTypes'
@@ -163,7 +212,6 @@ properties:
     summary: ''
     fullName: availableResourceGroupDelegations
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'availableResourceGroupDelegations: AvailableResourceGroupDelegations'
@@ -176,7 +224,6 @@ properties:
     summary: ''
     fullName: availableServiceAliases
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'availableServiceAliases: AvailableServiceAliases'
@@ -189,7 +236,6 @@ properties:
     summary: ''
     fullName: azureFirewallFqdnTags
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'azureFirewallFqdnTags: AzureFirewallFqdnTags'
@@ -202,7 +248,6 @@ properties:
     summary: ''
     fullName: azureFirewalls
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'azureFirewalls: AzureFirewalls'
@@ -215,7 +260,6 @@ properties:
     summary: ''
     fullName: bastionHosts
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'bastionHosts: BastionHosts'
@@ -228,33 +272,54 @@ properties:
     summary: ''
     fullName: bgpServiceCommunities
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'bgpServiceCommunities: BgpServiceCommunities'
       return:
         description: ''
         type: <xref uid="@azure/arm-network.BgpServiceCommunities" />
+  - name: configurationPolicyGroups
+    uid: '@azure/arm-network.NetworkManagementClient.configurationPolicyGroups'
+    package: '@azure/arm-network'
+    summary: ''
+    fullName: configurationPolicyGroups
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'configurationPolicyGroups: ConfigurationPolicyGroups'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.ConfigurationPolicyGroups" />
   - name: connectionMonitors
     uid: '@azure/arm-network.NetworkManagementClient.connectionMonitors'
     package: '@azure/arm-network'
     summary: ''
     fullName: connectionMonitors
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'connectionMonitors: ConnectionMonitors'
       return:
         description: ''
         type: <xref uid="@azure/arm-network.ConnectionMonitors" />
+  - name: connectivityConfigurations
+    uid: '@azure/arm-network.NetworkManagementClient.connectivityConfigurations'
+    package: '@azure/arm-network'
+    summary: ''
+    fullName: connectivityConfigurations
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'connectivityConfigurations: ConnectivityConfigurations'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.ConnectivityConfigurations" />
   - name: customIPPrefixes
     uid: '@azure/arm-network.NetworkManagementClient.customIPPrefixes'
     package: '@azure/arm-network'
     summary: ''
     fullName: customIPPrefixes
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'customIPPrefixes: CustomIPPrefixes'
@@ -267,7 +332,6 @@ properties:
     summary: ''
     fullName: ddosCustomPolicies
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'ddosCustomPolicies: DdosCustomPolicies'
@@ -280,7 +344,6 @@ properties:
     summary: ''
     fullName: ddosProtectionPlans
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'ddosProtectionPlans: DdosProtectionPlans'
@@ -293,7 +356,6 @@ properties:
     summary: ''
     fullName: defaultSecurityRules
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'defaultSecurityRules: DefaultSecurityRules'
@@ -306,7 +368,6 @@ properties:
     summary: ''
     fullName: dscpConfigurationOperations
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'dscpConfigurationOperations: DscpConfigurationOperations'
@@ -320,7 +381,6 @@ properties:
     summary: ''
     fullName: expressRouteCircuitAuthorizations
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'expressRouteCircuitAuthorizations: ExpressRouteCircuitAuthorizations'
@@ -333,7 +393,6 @@ properties:
     summary: ''
     fullName: expressRouteCircuitConnections
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'expressRouteCircuitConnections: ExpressRouteCircuitConnections'
@@ -346,7 +405,6 @@ properties:
     summary: ''
     fullName: expressRouteCircuitPeerings
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'expressRouteCircuitPeerings: ExpressRouteCircuitPeerings'
@@ -359,7 +417,6 @@ properties:
     summary: ''
     fullName: expressRouteCircuits
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'expressRouteCircuits: ExpressRouteCircuits'
@@ -372,7 +429,6 @@ properties:
     summary: ''
     fullName: expressRouteConnections
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'expressRouteConnections: ExpressRouteConnections'
@@ -386,7 +442,6 @@ properties:
     summary: ''
     fullName: expressRouteCrossConnectionPeerings
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'expressRouteCrossConnectionPeerings: ExpressRouteCrossConnectionPeerings'
@@ -399,7 +454,6 @@ properties:
     summary: ''
     fullName: expressRouteCrossConnections
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'expressRouteCrossConnections: ExpressRouteCrossConnections'
@@ -412,7 +466,6 @@ properties:
     summary: ''
     fullName: expressRouteGateways
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'expressRouteGateways: ExpressRouteGateways'
@@ -425,20 +478,30 @@ properties:
     summary: ''
     fullName: expressRouteLinks
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'expressRouteLinks: ExpressRouteLinks'
       return:
         description: ''
         type: <xref uid="@azure/arm-network.ExpressRouteLinks" />
+  - name: expressRoutePortAuthorizations
+    uid: '@azure/arm-network.NetworkManagementClient.expressRoutePortAuthorizations'
+    package: '@azure/arm-network'
+    summary: ''
+    fullName: expressRoutePortAuthorizations
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'expressRoutePortAuthorizations: ExpressRoutePortAuthorizations'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.ExpressRoutePortAuthorizations" />
   - name: expressRoutePorts
     uid: '@azure/arm-network.NetworkManagementClient.expressRoutePorts'
     package: '@azure/arm-network'
     summary: ''
     fullName: expressRoutePorts
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'expressRoutePorts: ExpressRoutePorts'
@@ -451,20 +514,31 @@ properties:
     summary: ''
     fullName: expressRoutePortsLocations
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'expressRoutePortsLocations: ExpressRoutePortsLocations'
       return:
         description: ''
         type: <xref uid="@azure/arm-network.ExpressRoutePortsLocations" />
+  - name: expressRouteProviderPortsLocation
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.expressRouteProviderPortsLocation
+    package: '@azure/arm-network'
+    summary: ''
+    fullName: expressRouteProviderPortsLocation
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'expressRouteProviderPortsLocation: ExpressRouteProviderPortsLocation'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.ExpressRouteProviderPortsLocation" />
   - name: expressRouteServiceProviders
     uid: '@azure/arm-network.NetworkManagementClient.expressRouteServiceProviders'
     package: '@azure/arm-network'
     summary: ''
     fullName: expressRouteServiceProviders
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'expressRouteServiceProviders: ExpressRouteServiceProviders'
@@ -477,7 +551,6 @@ properties:
     summary: ''
     fullName: firewallPolicies
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'firewallPolicies: FirewallPolicies'
@@ -490,7 +563,6 @@ properties:
     summary: ''
     fullName: firewallPolicyIdpsSignatures
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'firewallPolicyIdpsSignatures: FirewallPolicyIdpsSignatures'
@@ -504,7 +576,6 @@ properties:
     summary: ''
     fullName: firewallPolicyIdpsSignaturesFilterValues
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -522,7 +593,6 @@ properties:
     summary: ''
     fullName: firewallPolicyIdpsSignaturesOverrides
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -540,7 +610,6 @@ properties:
     summary: ''
     fullName: firewallPolicyRuleCollectionGroups
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'firewallPolicyRuleCollectionGroups: FirewallPolicyRuleCollectionGroups'
@@ -553,7 +622,6 @@ properties:
     summary: ''
     fullName: flowLogs
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'flowLogs: FlowLogs'
@@ -566,7 +634,6 @@ properties:
     summary: ''
     fullName: hubRouteTables
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'hubRouteTables: HubRouteTables'
@@ -579,7 +646,6 @@ properties:
     summary: ''
     fullName: hubVirtualNetworkConnections
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'hubVirtualNetworkConnections: HubVirtualNetworkConnections'
@@ -592,7 +658,6 @@ properties:
     summary: ''
     fullName: inboundNatRules
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'inboundNatRules: InboundNatRules'
@@ -605,7 +670,6 @@ properties:
     summary: ''
     fullName: inboundSecurityRuleOperations
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'inboundSecurityRuleOperations: InboundSecurityRuleOperations'
@@ -618,7 +682,6 @@ properties:
     summary: ''
     fullName: ipAllocations
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'ipAllocations: IpAllocations'
@@ -631,7 +694,6 @@ properties:
     summary: ''
     fullName: ipGroups
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'ipGroups: IpGroups'
@@ -644,7 +706,6 @@ properties:
     summary: ''
     fullName: loadBalancerBackendAddressPools
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'loadBalancerBackendAddressPools: LoadBalancerBackendAddressPools'
@@ -658,7 +719,6 @@ properties:
     summary: ''
     fullName: loadBalancerFrontendIPConfigurations
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -673,7 +733,6 @@ properties:
     summary: ''
     fullName: loadBalancerLoadBalancingRules
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'loadBalancerLoadBalancingRules: LoadBalancerLoadBalancingRules'
@@ -686,7 +745,6 @@ properties:
     summary: ''
     fullName: loadBalancerNetworkInterfaces
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'loadBalancerNetworkInterfaces: LoadBalancerNetworkInterfaces'
@@ -699,7 +757,6 @@ properties:
     summary: ''
     fullName: loadBalancerOutboundRules
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'loadBalancerOutboundRules: LoadBalancerOutboundRules'
@@ -712,7 +769,6 @@ properties:
     summary: ''
     fullName: loadBalancerProbes
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'loadBalancerProbes: LoadBalancerProbes'
@@ -725,7 +781,6 @@ properties:
     summary: ''
     fullName: loadBalancers
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'loadBalancers: LoadBalancers'
@@ -738,20 +793,35 @@ properties:
     summary: ''
     fullName: localNetworkGateways
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'localNetworkGateways: LocalNetworkGateways'
       return:
         description: ''
         type: <xref uid="@azure/arm-network.LocalNetworkGateways" />
+  - name: managementGroupNetworkManagerConnections
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.managementGroupNetworkManagerConnections
+    package: '@azure/arm-network'
+    summary: ''
+    fullName: managementGroupNetworkManagerConnections
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        managementGroupNetworkManagerConnections:
+        ManagementGroupNetworkManagerConnections
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-network.ManagementGroupNetworkManagerConnections" />
   - name: natGateways
     uid: '@azure/arm-network.NetworkManagementClient.natGateways'
     package: '@azure/arm-network'
     summary: ''
     fullName: natGateways
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'natGateways: NatGateways'
@@ -764,13 +834,24 @@ properties:
     summary: ''
     fullName: natRules
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'natRules: NatRules'
       return:
         description: ''
         type: <xref uid="@azure/arm-network.NatRules" />
+  - name: networkGroups
+    uid: '@azure/arm-network.NetworkManagementClient.networkGroups'
+    package: '@azure/arm-network'
+    summary: ''
+    fullName: networkGroups
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'networkGroups: NetworkGroups'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.NetworkGroups" />
   - name: networkInterfaceIPConfigurations
     uid: >-
       @azure/arm-network.NetworkManagementClient.networkInterfaceIPConfigurations
@@ -778,7 +859,6 @@ properties:
     summary: ''
     fullName: networkInterfaceIPConfigurations
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'networkInterfaceIPConfigurations: NetworkInterfaceIPConfigurations'
@@ -791,7 +871,6 @@ properties:
     summary: ''
     fullName: networkInterfaceLoadBalancers
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'networkInterfaceLoadBalancers: NetworkInterfaceLoadBalancers'
@@ -804,7 +883,6 @@ properties:
     summary: ''
     fullName: networkInterfaces
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'networkInterfaces: NetworkInterfaces'
@@ -818,20 +896,59 @@ properties:
     summary: ''
     fullName: networkInterfaceTapConfigurations
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'networkInterfaceTapConfigurations: NetworkInterfaceTapConfigurations'
       return:
         description: ''
         type: <xref uid="@azure/arm-network.NetworkInterfaceTapConfigurations" />
+  - name: networkManagerCommits
+    uid: '@azure/arm-network.NetworkManagementClient.networkManagerCommits'
+    package: '@azure/arm-network'
+    summary: ''
+    fullName: networkManagerCommits
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'networkManagerCommits: NetworkManagerCommits'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.NetworkManagerCommits" />
+  - name: networkManagerDeploymentStatusOperations
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.networkManagerDeploymentStatusOperations
+    package: '@azure/arm-network'
+    summary: ''
+    fullName: networkManagerDeploymentStatusOperations
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        networkManagerDeploymentStatusOperations:
+        NetworkManagerDeploymentStatusOperations
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-network.NetworkManagerDeploymentStatusOperations" />
+  - name: networkManagers
+    uid: '@azure/arm-network.NetworkManagementClient.networkManagers'
+    package: '@azure/arm-network'
+    summary: ''
+    fullName: networkManagers
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'networkManagers: NetworkManagers'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.NetworkManagers" />
   - name: networkProfiles
     uid: '@azure/arm-network.NetworkManagementClient.networkProfiles'
     package: '@azure/arm-network'
     summary: ''
     fullName: networkProfiles
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'networkProfiles: NetworkProfiles'
@@ -844,7 +961,6 @@ properties:
     summary: ''
     fullName: networkSecurityGroups
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'networkSecurityGroups: NetworkSecurityGroups'
@@ -857,7 +973,6 @@ properties:
     summary: ''
     fullName: networkVirtualAppliances
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'networkVirtualAppliances: NetworkVirtualAppliances'
@@ -870,7 +985,6 @@ properties:
     summary: ''
     fullName: networkWatchers
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'networkWatchers: NetworkWatchers'
@@ -883,7 +997,6 @@ properties:
     summary: ''
     fullName: operations
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'operations: Operations'
@@ -896,7 +1009,6 @@ properties:
     summary: ''
     fullName: p2SVpnGateways
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'p2SVpnGateways: P2SVpnGateways'
@@ -909,7 +1021,6 @@ properties:
     summary: ''
     fullName: packetCaptures
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'packetCaptures: PacketCaptures'
@@ -923,33 +1034,18 @@ properties:
     summary: ''
     fullName: peerExpressRouteCircuitConnections
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'peerExpressRouteCircuitConnections: PeerExpressRouteCircuitConnections'
       return:
         description: ''
         type: <xref uid="@azure/arm-network.PeerExpressRouteCircuitConnections" />
-  - name: pipeline
-    uid: '@azure/arm-network.NetworkManagementClient.pipeline'
-    package: '@azure/arm-network'
-    summary: The pipeline used by this client to make requests
-    fullName: pipeline
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'pipeline: Pipeline'
-      return:
-        description: ''
-        type: Pipeline
   - name: privateDnsZoneGroups
     uid: '@azure/arm-network.NetworkManagementClient.privateDnsZoneGroups'
     package: '@azure/arm-network'
     summary: ''
     fullName: privateDnsZoneGroups
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'privateDnsZoneGroups: PrivateDnsZoneGroups'
@@ -962,7 +1058,6 @@ properties:
     summary: ''
     fullName: privateEndpoints
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'privateEndpoints: PrivateEndpoints'
@@ -975,7 +1070,6 @@ properties:
     summary: ''
     fullName: privateLinkServices
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'privateLinkServices: PrivateLinkServices'
@@ -988,7 +1082,6 @@ properties:
     summary: ''
     fullName: publicIPAddresses
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'publicIPAddresses: PublicIPAddresses'
@@ -1001,7 +1094,6 @@ properties:
     summary: ''
     fullName: publicIPPrefixes
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'publicIPPrefixes: PublicIPPrefixes'
@@ -1014,7 +1106,6 @@ properties:
     summary: ''
     fullName: resourceNavigationLinks
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'resourceNavigationLinks: ResourceNavigationLinks'
@@ -1027,7 +1118,6 @@ properties:
     summary: ''
     fullName: routeFilterRules
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'routeFilterRules: RouteFilterRules'
@@ -1040,20 +1130,30 @@ properties:
     summary: ''
     fullName: routeFilters
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'routeFilters: RouteFilters'
       return:
         description: ''
         type: <xref uid="@azure/arm-network.RouteFilters" />
+  - name: routeMaps
+    uid: '@azure/arm-network.NetworkManagementClient.routeMaps'
+    package: '@azure/arm-network'
+    summary: ''
+    fullName: routeMaps
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'routeMaps: RouteMaps'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.RouteMaps" />
   - name: routes
     uid: '@azure/arm-network.NetworkManagementClient.routes'
     package: '@azure/arm-network'
     summary: ''
     fullName: routes
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'routes: Routes'
@@ -1066,7 +1166,6 @@ properties:
     summary: ''
     fullName: routeTables
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'routeTables: RouteTables'
@@ -1079,20 +1178,42 @@ properties:
     summary: ''
     fullName: routingIntentOperations
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'routingIntentOperations: RoutingIntentOperations'
       return:
         description: ''
         type: <xref uid="@azure/arm-network.RoutingIntentOperations" />
+  - name: scopeConnections
+    uid: '@azure/arm-network.NetworkManagementClient.scopeConnections'
+    package: '@azure/arm-network'
+    summary: ''
+    fullName: scopeConnections
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'scopeConnections: ScopeConnections'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.ScopeConnections" />
+  - name: securityAdminConfigurations
+    uid: '@azure/arm-network.NetworkManagementClient.securityAdminConfigurations'
+    package: '@azure/arm-network'
+    summary: ''
+    fullName: securityAdminConfigurations
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'securityAdminConfigurations: SecurityAdminConfigurations'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.SecurityAdminConfigurations" />
   - name: securityPartnerProviders
     uid: '@azure/arm-network.NetworkManagementClient.securityPartnerProviders'
     package: '@azure/arm-network'
     summary: ''
     fullName: securityPartnerProviders
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'securityPartnerProviders: SecurityPartnerProviders'
@@ -1105,7 +1226,6 @@ properties:
     summary: ''
     fullName: securityRules
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'securityRules: SecurityRules'
@@ -1118,7 +1238,6 @@ properties:
     summary: ''
     fullName: serviceAssociationLinks
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'serviceAssociationLinks: ServiceAssociationLinks'
@@ -1131,7 +1250,6 @@ properties:
     summary: ''
     fullName: serviceEndpointPolicies
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'serviceEndpointPolicies: ServiceEndpointPolicies'
@@ -1145,7 +1263,6 @@ properties:
     summary: ''
     fullName: serviceEndpointPolicyDefinitions
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'serviceEndpointPolicyDefinitions: ServiceEndpointPolicyDefinitions'
@@ -1158,7 +1275,6 @@ properties:
     summary: ''
     fullName: serviceTagInformationOperations
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'serviceTagInformationOperations: ServiceTagInformationOperations'
@@ -1171,20 +1287,30 @@ properties:
     summary: ''
     fullName: serviceTags
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'serviceTags: ServiceTags'
       return:
         description: ''
         type: <xref uid="@azure/arm-network.ServiceTags" />
+  - name: staticMembers
+    uid: '@azure/arm-network.NetworkManagementClient.staticMembers'
+    package: '@azure/arm-network'
+    summary: ''
+    fullName: staticMembers
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'staticMembers: StaticMembers'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.StaticMembers" />
   - name: subnets
     uid: '@azure/arm-network.NetworkManagementClient.subnets'
     package: '@azure/arm-network'
     summary: ''
     fullName: subnets
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'subnets: Subnets'
@@ -1197,33 +1323,59 @@ properties:
     summary: ''
     fullName: subscriptionId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'subscriptionId: string'
       return:
         description: ''
         type: string
+  - name: subscriptionNetworkManagerConnections
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.subscriptionNetworkManagerConnections
+    package: '@azure/arm-network'
+    summary: ''
+    fullName: subscriptionNetworkManagerConnections
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        subscriptionNetworkManagerConnections:
+        SubscriptionNetworkManagerConnections
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/arm-network.SubscriptionNetworkManagerConnections"
+          />
   - name: usages
     uid: '@azure/arm-network.NetworkManagementClient.usages'
     package: '@azure/arm-network'
     summary: ''
     fullName: usages
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'usages: Usages'
       return:
         description: ''
         type: <xref uid="@azure/arm-network.Usages" />
+  - name: vipSwap
+    uid: '@azure/arm-network.NetworkManagementClient.vipSwap'
+    package: '@azure/arm-network'
+    summary: ''
+    fullName: vipSwap
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'vipSwap: VipSwap'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.VipSwap" />
   - name: virtualApplianceSites
     uid: '@azure/arm-network.NetworkManagementClient.virtualApplianceSites'
     package: '@azure/arm-network'
     summary: ''
     fullName: virtualApplianceSites
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'virtualApplianceSites: VirtualApplianceSites'
@@ -1236,7 +1388,6 @@ properties:
     summary: ''
     fullName: virtualApplianceSkus
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'virtualApplianceSkus: VirtualApplianceSkus'
@@ -1249,7 +1400,6 @@ properties:
     summary: ''
     fullName: virtualHubBgpConnection
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'virtualHubBgpConnection: VirtualHubBgpConnection'
@@ -1262,7 +1412,6 @@ properties:
     summary: ''
     fullName: virtualHubBgpConnections
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'virtualHubBgpConnections: VirtualHubBgpConnections'
@@ -1275,7 +1424,6 @@ properties:
     summary: ''
     fullName: virtualHubIpConfiguration
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'virtualHubIpConfiguration: VirtualHubIpConfiguration'
@@ -1288,7 +1436,6 @@ properties:
     summary: ''
     fullName: virtualHubRouteTableV2S
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'virtualHubRouteTableV2S: VirtualHubRouteTableV2S'
@@ -1301,7 +1448,6 @@ properties:
     summary: ''
     fullName: virtualHubs
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'virtualHubs: VirtualHubs'
@@ -1315,7 +1461,6 @@ properties:
     summary: ''
     fullName: virtualNetworkGatewayConnections
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'virtualNetworkGatewayConnections: VirtualNetworkGatewayConnections'
@@ -1328,7 +1473,6 @@ properties:
     summary: ''
     fullName: virtualNetworkGatewayNatRules
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'virtualNetworkGatewayNatRules: VirtualNetworkGatewayNatRules'
@@ -1341,7 +1485,6 @@ properties:
     summary: ''
     fullName: virtualNetworkGateways
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'virtualNetworkGateways: VirtualNetworkGateways'
@@ -1354,7 +1497,6 @@ properties:
     summary: ''
     fullName: virtualNetworkPeerings
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'virtualNetworkPeerings: VirtualNetworkPeerings'
@@ -1367,7 +1509,6 @@ properties:
     summary: ''
     fullName: virtualNetworks
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'virtualNetworks: VirtualNetworks'
@@ -1380,7 +1521,6 @@ properties:
     summary: ''
     fullName: virtualNetworkTaps
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'virtualNetworkTaps: VirtualNetworkTaps'
@@ -1393,7 +1533,6 @@ properties:
     summary: ''
     fullName: virtualRouterPeerings
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'virtualRouterPeerings: VirtualRouterPeerings'
@@ -1406,7 +1545,6 @@ properties:
     summary: ''
     fullName: virtualRouters
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'virtualRouters: VirtualRouters'
@@ -1419,7 +1557,6 @@ properties:
     summary: ''
     fullName: virtualWans
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'virtualWans: VirtualWans'
@@ -1432,7 +1569,6 @@ properties:
     summary: ''
     fullName: vpnConnections
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'vpnConnections: VpnConnections'
@@ -1445,7 +1581,6 @@ properties:
     summary: ''
     fullName: vpnGateways
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'vpnGateways: VpnGateways'
@@ -1458,7 +1593,6 @@ properties:
     summary: ''
     fullName: vpnLinkConnections
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'vpnLinkConnections: VpnLinkConnections'
@@ -1471,7 +1605,6 @@ properties:
     summary: ''
     fullName: vpnServerConfigurations
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'vpnServerConfigurations: VpnServerConfigurations'
@@ -1485,7 +1618,6 @@ properties:
     summary: ''
     fullName: vpnServerConfigurationsAssociatedWithVirtualWan
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1503,7 +1635,6 @@ properties:
     summary: ''
     fullName: vpnSiteLinkConnections
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'vpnSiteLinkConnections: VpnSiteLinkConnections'
@@ -1516,7 +1647,6 @@ properties:
     summary: ''
     fullName: vpnSiteLinks
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'vpnSiteLinks: VpnSiteLinks'
@@ -1529,7 +1659,6 @@ properties:
     summary: ''
     fullName: vpnSites
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'vpnSites: VpnSites'
@@ -1542,7 +1671,6 @@ properties:
     summary: ''
     fullName: vpnSitesConfiguration
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'vpnSitesConfiguration: VpnSitesConfiguration'
@@ -1555,7 +1683,6 @@ properties:
     summary: ''
     fullName: webApplicationFirewallPolicies
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'webApplicationFirewallPolicies: WebApplicationFirewallPolicies'
@@ -1568,20 +1695,32 @@ properties:
     summary: ''
     fullName: webCategories
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'webCategories: WebCategories'
       return:
         description: ''
         type: <xref uid="@azure/arm-network.WebCategories" />
+inheritedProperties:
+  - name: pipeline
+    uid: '@azure/arm-network.NetworkManagementClient.pipeline'
+    package: '@azure/arm-network'
+    summary: The pipeline used by this client to make requests
+    fullName: pipeline
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'pipeline: Pipeline'
+      return:
+        description: ''
+        type: Pipeline
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.pipeline
 inheritedMethods:
   - name: 'sendOperationRequest<T>(OperationArguments, OperationSpec)'
     uid: '@azure/arm-network.NetworkManagementClient.sendOperationRequest'
     package: '@azure/arm-network'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1600,12 +1739,12 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;T&gt;
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendOperationRequest
   - name: sendRequest(PipelineRequest)
     uid: '@azure/arm-network.NetworkManagementClient.sendRequest'
     package: '@azure/arm-network'
     summary: Send the provided httpRequest.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1618,6 +1757,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;PipelineResponse&gt;
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendRequest
 methods:
   - name: >-
       beginDeleteBastionShareableLink(string, string,
@@ -1628,7 +1768,6 @@ methods:
       Deletes the Bastion Shareable Links for all the VMs specified in the
       request.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1665,7 +1804,6 @@ methods:
       Deletes the Bastion Shareable Links for all the VMs specified in the
       request.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1705,7 +1843,6 @@ methods:
 
       combination in the specified resource group.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1759,7 +1896,6 @@ methods:
 
       combination in the specified resource group.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1804,7 +1940,6 @@ methods:
     package: '@azure/arm-network'
     summary: Returns the list of currently active sessions on the Bastion.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1837,7 +1972,6 @@ methods:
       Creates a Bastion Shareable Links for all the VMs specified in the
       request.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1876,7 +2010,6 @@ methods:
       Checks whether a domain name in the cloudapp.azure.com zone is available
       for use.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1904,6 +2037,107 @@ methods:
         type: >-
           Promise&lt;<xref
           uid="@azure/arm-network.CheckDnsNameAvailabilityResponse" />&gt;
+  - name: 'expressRouteProviderPort(string, ExpressRouteProviderPortOptionalParams)'
+    uid: '@azure/arm-network.NetworkManagementClient.expressRouteProviderPort'
+    package: '@azure/arm-network'
+    summary: Retrieves detail of a provider port.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function expressRouteProviderPort(providerport: string, options?:
+        ExpressRouteProviderPortOptionalParams):
+        Promise<ExpressRouteProviderPortResponse>
+      parameters:
+        - id: providerport
+          type: string
+          description: The name of the provider port.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ExpressRouteProviderPortOptionalParams" />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.ExpressRouteProviderPortResponse" />&gt;
+  - name: >-
+      listActiveConnectivityConfigurations(string, string,
+      ActiveConfigurationParameter,
+      ListActiveConnectivityConfigurationsOptionalParams)
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.listActiveConnectivityConfigurations
+    package: '@azure/arm-network'
+    summary: Lists active connectivity configurations in a network manager.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listActiveConnectivityConfigurations(resourceGroupName: string,
+        networkManagerName: string, parameters: ActiveConfigurationParameter,
+        options?: ListActiveConnectivityConfigurationsOptionalParams):
+        Promise<ListActiveConnectivityConfigurationsResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: networkManagerName
+          type: string
+          description: The name of the network manager.
+        - id: parameters
+          type: <xref uid="@azure/arm-network.ActiveConfigurationParameter" />
+          description: Active Configuration Parameter.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ListActiveConnectivityConfigurationsOptionalParams"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.ListActiveConnectivityConfigurationsResponse"
+          />&gt;
+  - name: >-
+      listActiveSecurityAdminRules(string, string, ActiveConfigurationParameter,
+      ListActiveSecurityAdminRulesOptionalParams)
+    uid: '@azure/arm-network.NetworkManagementClient.listActiveSecurityAdminRules'
+    package: '@azure/arm-network'
+    summary: Lists active security admin rules in a network manager.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listActiveSecurityAdminRules(resourceGroupName: string,
+        networkManagerName: string, parameters: ActiveConfigurationParameter,
+        options?: ListActiveSecurityAdminRulesOptionalParams):
+        Promise<ListActiveSecurityAdminRulesResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: networkManagerName
+          type: string
+          description: The name of the network manager.
+        - id: parameters
+          type: <xref uid="@azure/arm-network.ActiveConfigurationParameter" />
+          description: Active Configuration Parameter.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ListActiveSecurityAdminRulesOptionalParams"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.ListActiveSecurityAdminRulesResponse" />&gt;
   - name: >-
       listBastionShareableLink(string, string, BastionShareableLinkListRequest,
       GetBastionShareableLinkOptionalParams)
@@ -1913,7 +2147,6 @@ methods:
       Return the Bastion Shareable Links for all the VMs specified in the
       request.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1949,7 +2182,6 @@ methods:
     package: '@azure/arm-network'
     summary: Returns the list of currently active sessions on the Bastion.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1979,13 +2211,95 @@ methods:
           PagedAsyncIterableIterator&lt;<xref
           uid="@azure/arm-network.BastionSessionState" />&gt;
   - name: >-
+      listNetworkManagerEffectiveConnectivityConfigurations(string, string,
+      QueryRequestOptions,
+      ListNetworkManagerEffectiveConnectivityConfigurationsOptionalParams)
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.listNetworkManagerEffectiveConnectivityConfigurations
+    package: '@azure/arm-network'
+    summary: >-
+      List all effective connectivity configurations applied on a virtual
+      network.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function
+        listNetworkManagerEffectiveConnectivityConfigurations(resourceGroupName:
+        string, virtualNetworkName: string, parameters: QueryRequestOptions,
+        options?:
+        ListNetworkManagerEffectiveConnectivityConfigurationsOptionalParams):
+        Promise<ListNetworkManagerEffectiveConnectivityConfigurationsResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: virtualNetworkName
+          type: string
+          description: The name of the virtual network.
+        - id: parameters
+          type: <xref uid="@azure/arm-network.QueryRequestOptions" />
+          description: Parameters supplied to list correct page.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ListNetworkManagerEffectiveConnectivityConfigurationsOptionalParams"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.ListNetworkManagerEffectiveConnectivityConfigurationsResponse"
+          />&gt;
+  - name: >-
+      listNetworkManagerEffectiveSecurityAdminRules(string, string,
+      QueryRequestOptions,
+      ListNetworkManagerEffectiveSecurityAdminRulesOptionalParams)
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.listNetworkManagerEffectiveSecurityAdminRules
+    package: '@azure/arm-network'
+    summary: List all effective security admin rules applied on a virtual network.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function
+        listNetworkManagerEffectiveSecurityAdminRules(resourceGroupName: string,
+        virtualNetworkName: string, parameters: QueryRequestOptions, options?:
+        ListNetworkManagerEffectiveSecurityAdminRulesOptionalParams):
+        Promise<ListNetworkManagerEffectiveSecurityAdminRulesResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: virtualNetworkName
+          type: string
+          description: The name of the virtual network.
+        - id: parameters
+          type: <xref uid="@azure/arm-network.QueryRequestOptions" />
+          description: Parameters supplied to list correct page.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ListNetworkManagerEffectiveSecurityAdminRulesOptionalParams"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.ListNetworkManagerEffectiveSecurityAdminRulesResponse"
+          />&gt;
+  - name: >-
       supportedSecurityProviders(string, string,
       SupportedSecurityProvidersOptionalParams)
     uid: '@azure/arm-network.NetworkManagementClient.supportedSecurityProviders'
     package: '@azure/arm-network'
     summary: Gives the supported security providers for the virtual wan.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

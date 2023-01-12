@@ -5,7 +5,6 @@ package: '@azure/arm-datafactory'
 summary: SSIS package location.
 fullName: SsisPackageLocation
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -15,7 +14,6 @@ properties:
     summary: The package access credential.
     fullName: accessCredential
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'accessCredential?: SsisAccessCredential'
@@ -28,7 +26,6 @@ properties:
     summary: The embedded child package list.
     fullName: childPackages
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'childPackages?: SsisChildPackage[]'
@@ -41,7 +38,6 @@ properties:
     summary: The configuration file access credential.
     fullName: configurationAccessCredential
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'configurationAccessCredential?: SsisAccessCredential'
@@ -56,13 +52,12 @@ properties:
       Expression with resultType string).
     fullName: configurationPath
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
-      content: 'configurationPath?: Record<string, unknown>'
+      content: 'configurationPath?: any'
       return:
         description: ''
-        type: 'Record&lt;string, unknown&gt;'
+        type: any
   - name: packageContent
     uid: '@azure/arm-datafactory.SsisPackageLocation.packageContent'
     package: '@azure/arm-datafactory'
@@ -71,20 +66,18 @@ properties:
       string).
     fullName: packageContent
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
-      content: 'packageContent?: Record<string, unknown>'
+      content: 'packageContent?: any'
       return:
         description: ''
-        type: 'Record&lt;string, unknown&gt;'
+        type: any
   - name: packageLastModifiedDate
     uid: '@azure/arm-datafactory.SsisPackageLocation.packageLastModifiedDate'
     package: '@azure/arm-datafactory'
     summary: The embedded package last modified date.
     fullName: packageLastModifiedDate
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'packageLastModifiedDate?: undefined | string'
@@ -97,7 +90,6 @@ properties:
     summary: The package name.
     fullName: packageName
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'packageName?: undefined | string'
@@ -110,7 +102,6 @@ properties:
     summary: Password of the package.
     fullName: packagePassword
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'packagePassword?: SecretBaseUnion'
@@ -125,20 +116,18 @@ properties:
       string).
     fullName: packagePath
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
-      content: 'packagePath?: Record<string, unknown>'
+      content: 'packagePath?: any'
       return:
         description: ''
-        type: 'Record&lt;string, unknown&gt;'
+        type: any
   - name: type
     uid: '@azure/arm-datafactory.SsisPackageLocation.type'
     package: '@azure/arm-datafactory'
     summary: The type of SSIS package location.
     fullName: type
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'type?: SsisPackageLocationType'

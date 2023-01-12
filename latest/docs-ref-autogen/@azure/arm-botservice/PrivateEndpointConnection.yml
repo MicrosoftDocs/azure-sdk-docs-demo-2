@@ -5,53 +5,15 @@ package: '@azure/arm-botservice'
 summary: The Private Endpoint Connection resource.
 fullName: PrivateEndpointConnection
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: id
-    uid: '@azure/arm-botservice.PrivateEndpointConnection.id'
-    package: '@azure/arm-botservice'
-    summary: >-
-      Fully qualified resource ID for the resource. Ex -
-
-      /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}
-
-      **NOTE: This property will not be serialized. It can only be populated by
-      the server.**
-    fullName: id
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'id?: undefined | string'
-      return:
-        description: ''
-        type: undefined | string
-  - name: name
-    uid: '@azure/arm-botservice.PrivateEndpointConnection.name'
-    package: '@azure/arm-botservice'
-    summary: >-
-      The name of the resource
-
-      **NOTE: This property will not be serialized. It can only be populated by
-      the server.**
-    fullName: name
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'name?: undefined | string'
-      return:
-        description: ''
-        type: undefined | string
   - name: privateEndpoint
     uid: '@azure/arm-botservice.PrivateEndpointConnection.privateEndpoint'
     package: '@azure/arm-botservice'
     summary: The resource of private end point.
     fullName: privateEndpoint
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'privateEndpoint?: PrivateEndpoint'
@@ -69,7 +31,6 @@ properties:
       provider.
     fullName: privateLinkServiceConnectionState
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'privateLinkServiceConnectionState: PrivateLinkServiceConnectionState'
@@ -86,7 +47,6 @@ properties:
       'Succeeded', 'Creating', 'Deleting', 'Failed'
     fullName: provisioningState
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'provisioningState?: PrivateEndpointConnectionProvisioningState'
@@ -96,6 +56,47 @@ properties:
           <xref
           uid="@azure/arm-botservice.PrivateEndpointConnectionProvisioningState"
           />
+inheritedProperties:
+  - name: id
+    uid: '@azure/arm-botservice.PrivateEndpointConnection.id'
+    package: '@azure/arm-botservice'
+    summary: >-
+      Fully qualified resource ID for the resource. Ex -
+
+      /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: id
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'id?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [PrivateLinkResourceBase.id](xref:@azure/arm-botservice.PrivateLinkResourceBase.id)
+  - name: name
+    uid: '@azure/arm-botservice.PrivateEndpointConnection.name'
+    package: '@azure/arm-botservice'
+    summary: >-
+      The name of the resource
+
+      **NOTE: This property will not be serialized. It can only be populated by
+      the server.**
+    fullName: name
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'name?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [PrivateLinkResourceBase.name](xref:@azure/arm-botservice.PrivateLinkResourceBase.name)
   - name: type
     uid: '@azure/arm-botservice.PrivateEndpointConnection.type'
     package: '@azure/arm-botservice'
@@ -108,11 +109,13 @@ properties:
       the server.**
     fullName: type
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'type?: undefined | string'
       return:
         description: ''
         type: undefined | string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [PrivateLinkResourceBase.type](xref:@azure/arm-botservice.PrivateLinkResourceBase.type)
 extends: <xref uid="@azure/arm-botservice.PrivateLinkResourceBase" />

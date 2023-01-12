@@ -5,7 +5,6 @@ package: '@azure/cognitiveservices-autosuggest'
 summary: ''
 fullName: AutoSuggestClient
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -16,7 +15,6 @@ constructors:
     package: '@azure/cognitiveservices-autosuggest'
     summary: Initializes a new instance of the AutoSuggestClient class.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -31,33 +29,37 @@ constructors:
         - id: options
           type: <xref uid="Models.AutoSuggestClientOptions" />
           description: ''
-properties:
+inheritedProperties:
   - name: credentials
     uid: '@azure/cognitiveservices-autosuggest.AutoSuggestClient.credentials'
     package: '@azure/cognitiveservices-autosuggest'
     summary: ''
     fullName: credentials
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'credentials: ServiceClientCredentials'
       return:
         description: ''
         type: ServiceClientCredentials
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [AutoSuggestClientContext.credentials](xref:@azure/cognitiveservices-autosuggest.AutoSuggestClientContext.credentials)
   - name: endpoint
     uid: '@azure/cognitiveservices-autosuggest.AutoSuggestClient.endpoint'
     package: '@azure/cognitiveservices-autosuggest'
     summary: ''
     fullName: endpoint
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'endpoint?: undefined | string'
       return:
         description: ''
         type: undefined | string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [AutoSuggestClientContext.endpoint](xref:@azure/cognitiveservices-autosuggest.AutoSuggestClientContext.endpoint)
 inheritedMethods:
   - name: >-
       sendOperationRequest(OperationArguments, OperationSpec,
@@ -67,7 +69,6 @@ inheritedMethods:
     package: '@azure/cognitiveservices-autosuggest'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -90,12 +91,12 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;RestResponse&gt;
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendOperationRequest
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
     uid: '@azure/cognitiveservices-autosuggest.AutoSuggestClient.sendRequest'
     package: '@azure/cognitiveservices-autosuggest'
     summary: Send the provided httpRequest.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -108,6 +109,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;HttpOperationResponse&gt;
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendRequest
 methods:
   - name: >-
       autoSuggest(string, AutoSuggestClientAutoSuggestOptionalParams,
@@ -116,7 +118,6 @@ methods:
     package: '@azure/cognitiveservices-autosuggest'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -144,7 +145,6 @@ methods:
     package: '@azure/cognitiveservices-autosuggest'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -166,7 +166,6 @@ methods:
     package: '@azure/cognitiveservices-autosuggest'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

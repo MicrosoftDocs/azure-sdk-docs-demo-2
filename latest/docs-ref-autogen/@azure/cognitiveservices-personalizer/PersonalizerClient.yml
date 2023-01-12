@@ -5,7 +5,6 @@ package: '@azure/cognitiveservices-personalizer'
 summary: ''
 fullName: PersonalizerClient
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -16,7 +15,6 @@ constructors:
     package: '@azure/cognitiveservices-personalizer'
     summary: Initializes a new instance of the PersonalizerClient class.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -35,45 +33,49 @@ constructors:
           type: <xref uid="msRest.ServiceClientOptions" />
           description: ''
 properties:
-  - name: credentials
-    uid: '@azure/cognitiveservices-personalizer.PersonalizerClient.credentials'
-    package: '@azure/cognitiveservices-personalizer'
-    summary: ''
-    fullName: credentials
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'credentials: ServiceClientCredentials'
-      return:
-        description: ''
-        type: ServiceClientCredentials
-  - name: endpoint
-    uid: '@azure/cognitiveservices-personalizer.PersonalizerClient.endpoint'
-    package: '@azure/cognitiveservices-personalizer'
-    summary: ''
-    fullName: endpoint
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'endpoint: string'
-      return:
-        description: ''
-        type: string
   - name: events
     uid: '@azure/cognitiveservices-personalizer.PersonalizerClient.events'
     package: '@azure/cognitiveservices-personalizer'
     summary: ''
     fullName: events
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'events: Events'
       return:
         description: ''
         type: <xref uid="@azure/cognitiveservices-personalizer.Events" />
+inheritedProperties:
+  - name: credentials
+    uid: '@azure/cognitiveservices-personalizer.PersonalizerClient.credentials'
+    package: '@azure/cognitiveservices-personalizer'
+    summary: ''
+    fullName: credentials
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'credentials: ServiceClientCredentials'
+      return:
+        description: ''
+        type: ServiceClientCredentials
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [PersonalizerClientContext.credentials](xref:@azure/cognitiveservices-personalizer.PersonalizerClientContext.credentials)
+  - name: endpoint
+    uid: '@azure/cognitiveservices-personalizer.PersonalizerClient.endpoint'
+    package: '@azure/cognitiveservices-personalizer'
+    summary: ''
+    fullName: endpoint
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'endpoint: string'
+      return:
+        description: ''
+        type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [PersonalizerClientContext.endpoint](xref:@azure/cognitiveservices-personalizer.PersonalizerClientContext.endpoint)
 inheritedMethods:
   - name: >-
       sendOperationRequest(OperationArguments, OperationSpec,
@@ -83,7 +85,6 @@ inheritedMethods:
     package: '@azure/cognitiveservices-personalizer'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -106,12 +107,12 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;RestResponse&gt;
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendOperationRequest
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
     uid: '@azure/cognitiveservices-personalizer.PersonalizerClient.sendRequest'
     package: '@azure/cognitiveservices-personalizer'
     summary: Send the provided httpRequest.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -124,13 +125,13 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;HttpOperationResponse&gt;
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendRequest
 methods:
   - name: 'rank(RankRequest, msRest.RequestOptionsBase)'
     uid: '@azure/cognitiveservices-personalizer.PersonalizerClient.rank'
     package: '@azure/cognitiveservices-personalizer'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -151,7 +152,6 @@ methods:
     package: '@azure/cognitiveservices-personalizer'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -175,7 +175,6 @@ methods:
     package: '@azure/cognitiveservices-personalizer'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

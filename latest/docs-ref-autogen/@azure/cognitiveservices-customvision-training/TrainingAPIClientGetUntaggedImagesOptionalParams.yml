@@ -6,40 +6,9 @@ package: '@azure/cognitiveservices-customvision-training'
 summary: Optional Parameters.
 fullName: TrainingAPIClientGetUntaggedImagesOptionalParams
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: abortSignal
-    uid: >-
-      @azure/cognitiveservices-customvision-training.TrainingAPIClientGetUntaggedImagesOptionalParams.abortSignal
-    package: '@azure/cognitiveservices-customvision-training'
-    summary: The signal which can be used to abort requests.
-    fullName: abortSignal
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'abortSignal?: AbortSignalLike'
-      return:
-        description: ''
-        type: AbortSignalLike
-  - name: customHeaders
-    uid: >-
-      @azure/cognitiveservices-customvision-training.TrainingAPIClientGetUntaggedImagesOptionalParams.customHeaders
-    package: '@azure/cognitiveservices-customvision-training'
-    summary: |-
-      {object} [customHeaders] User defined custom request headers that
-      will be applied before the request is sent.
-    fullName: customHeaders
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'customHeaders?: undefined | [key: string]: string'
-      return:
-        description: ''
-        type: 'undefined | [key: string]: string'
   - name: iterationId
     uid: >-
       @azure/cognitiveservices-customvision-training.TrainingAPIClientGetUntaggedImagesOptionalParams.iterationId
@@ -47,43 +16,12 @@ properties:
     summary: The iteration id. Defaults to workspace.
     fullName: iterationId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'iterationId?: undefined | string'
       return:
         description: ''
         type: undefined | string
-  - name: onDownloadProgress
-    uid: >-
-      @azure/cognitiveservices-customvision-training.TrainingAPIClientGetUntaggedImagesOptionalParams.onDownloadProgress
-    package: '@azure/cognitiveservices-customvision-training'
-    summary: Callback which fires upon download progress.
-    fullName: onDownloadProgress
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        onDownloadProgress?: undefined | (progress: TransferProgressEvent) =>
-        void
-      return:
-        description: ''
-        type: 'undefined | (progress: TransferProgressEvent) =&gt; void'
-  - name: onUploadProgress
-    uid: >-
-      @azure/cognitiveservices-customvision-training.TrainingAPIClientGetUntaggedImagesOptionalParams.onUploadProgress
-    package: '@azure/cognitiveservices-customvision-training'
-    summary: Callback which fires upon upload progress.
-    fullName: onUploadProgress
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'onUploadProgress?: undefined | (progress: TransferProgressEvent) => void'
-      return:
-        description: ''
-        type: 'undefined | (progress: TransferProgressEvent) =&gt; void'
   - name: orderBy
     uid: >-
       @azure/cognitiveservices-customvision-training.TrainingAPIClientGetUntaggedImagesOptionalParams.orderBy
@@ -93,7 +31,6 @@ properties:
       'Oldest'
     fullName: orderBy
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'orderBy?: OrderBy3'
@@ -109,7 +46,6 @@ properties:
       Default value: 0.
     fullName: skip
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'skip?: undefined | number'
@@ -125,13 +61,73 @@ properties:
       Default value: 50.
     fullName: take
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'take?: undefined | number'
       return:
         description: ''
         type: undefined | number
+inheritedProperties:
+  - name: abortSignal
+    uid: >-
+      @azure/cognitiveservices-customvision-training.TrainingAPIClientGetUntaggedImagesOptionalParams.abortSignal
+    package: '@azure/cognitiveservices-customvision-training'
+    summary: The signal which can be used to abort requests.
+    fullName: abortSignal
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'abortSignal?: AbortSignalLike'
+      return:
+        description: ''
+        type: AbortSignalLike
+    inheritanceDescription: <b>Inherited From</b> RequestOptionsBase.abortSignal
+  - name: customHeaders
+    uid: >-
+      @azure/cognitiveservices-customvision-training.TrainingAPIClientGetUntaggedImagesOptionalParams.customHeaders
+    package: '@azure/cognitiveservices-customvision-training'
+    summary: |-
+      {object} [customHeaders] User defined custom request headers that
+      will be applied before the request is sent.
+    fullName: customHeaders
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'customHeaders?: undefined | [key: string]: string'
+      return:
+        description: ''
+        type: 'undefined | [key: string]: string'
+    inheritanceDescription: <b>Inherited From</b> RequestOptionsBase.customHeaders
+  - name: onDownloadProgress
+    uid: >-
+      @azure/cognitiveservices-customvision-training.TrainingAPIClientGetUntaggedImagesOptionalParams.onDownloadProgress
+    package: '@azure/cognitiveservices-customvision-training'
+    summary: Callback which fires upon download progress.
+    fullName: onDownloadProgress
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        onDownloadProgress?: undefined | (progress: TransferProgressEvent) =>
+        void
+      return:
+        description: ''
+        type: 'undefined | (progress: TransferProgressEvent) =&gt; void'
+    inheritanceDescription: <b>Inherited From</b> RequestOptionsBase.onDownloadProgress
+  - name: onUploadProgress
+    uid: >-
+      @azure/cognitiveservices-customvision-training.TrainingAPIClientGetUntaggedImagesOptionalParams.onUploadProgress
+    package: '@azure/cognitiveservices-customvision-training'
+    summary: Callback which fires upon upload progress.
+    fullName: onUploadProgress
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'onUploadProgress?: undefined | (progress: TransferProgressEvent) => void'
+      return:
+        description: ''
+        type: 'undefined | (progress: TransferProgressEvent) =&gt; void'
+    inheritanceDescription: <b>Inherited From</b> RequestOptionsBase.onUploadProgress
   - name: timeout
     uid: >-
       @azure/cognitiveservices-customvision-training.TrainingAPIClientGetUntaggedImagesOptionalParams.timeout
@@ -141,11 +137,11 @@ properties:
       terminated.
     fullName: timeout
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'timeout?: undefined | number'
       return:
         description: ''
         type: undefined | number
+    inheritanceDescription: <b>Inherited From</b> RequestOptionsBase.timeout
 extends: RequestOptionsBase

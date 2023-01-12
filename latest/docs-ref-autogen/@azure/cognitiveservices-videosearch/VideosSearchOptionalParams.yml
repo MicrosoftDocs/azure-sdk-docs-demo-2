@@ -5,24 +5,9 @@ package: '@azure/cognitiveservices-videosearch'
 summary: Optional Parameters.
 fullName: VideosSearchOptionalParams
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: abortSignal
-    uid: >-
-      @azure/cognitiveservices-videosearch.VideosSearchOptionalParams.abortSignal
-    package: '@azure/cognitiveservices-videosearch'
-    summary: The signal which can be used to abort requests.
-    fullName: abortSignal
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'abortSignal?: AbortSignalLike'
-      return:
-        description: ''
-        type: AbortSignalLike
   - name: acceptLanguage
     uid: >-
       @azure/cognitiveservices-videosearch.VideosSearchOptionalParams.acceptLanguage
@@ -78,7 +63,6 @@ properties:
       Bing.com properties in the response objects apply the specified language.
     fullName: acceptLanguage
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'acceptLanguage?: undefined | string'
@@ -167,7 +151,6 @@ properties:
       you must not include cookies in the request.
     fullName: clientId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'clientId?: undefined | string'
@@ -196,7 +179,6 @@ properties:
       may result in Bing serving erroneous results.
     fullName: clientIp
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'clientIp?: undefined | string'
@@ -228,7 +210,6 @@ properties:
       Search API.
     fullName: count
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'count?: undefined | number'
@@ -273,29 +254,12 @@ properties:
       both.
     fullName: countryCode
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'countryCode?: undefined | string'
       return:
         description: ''
         type: undefined | string
-  - name: customHeaders
-    uid: >-
-      @azure/cognitiveservices-videosearch.VideosSearchOptionalParams.customHeaders
-    package: '@azure/cognitiveservices-videosearch'
-    summary: |-
-      {object} [customHeaders] User defined custom request headers that
-      will be applied before the request is sent.
-    fullName: customHeaders
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'customHeaders?: undefined | [key: string]: string'
-      return:
-        description: ''
-        type: 'undefined | [key: string]: string'
   - name: freshness
     uid: '@azure/cognitiveservices-videosearch.VideosSearchOptionalParams.freshness'
     package: '@azure/cognitiveservices-videosearch'
@@ -312,7 +276,6 @@ properties:
       days. Possible values include: 'Day', 'Week', 'Month'
     fullName: freshness
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'freshness?: Freshness'
@@ -334,7 +297,6 @@ properties:
       videos that Bing returns.
     fullName: id
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'id?: undefined | string'
@@ -360,7 +322,6 @@ properties:
       'Long'
     fullName: length
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'length?: VideoLength'
@@ -449,7 +410,6 @@ properties:
       this header.
     fullName: location
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'location?: undefined | string'
@@ -496,7 +456,6 @@ properties:
       query parameter are mutually exclusive—do not specify both.
     fullName: market
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'market?: undefined | string'
@@ -533,43 +492,12 @@ properties:
       Use this parameter only with the Video Search API.
     fullName: offset
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'offset?: undefined | number'
       return:
         description: ''
         type: undefined | number
-  - name: onDownloadProgress
-    uid: >-
-      @azure/cognitiveservices-videosearch.VideosSearchOptionalParams.onDownloadProgress
-    package: '@azure/cognitiveservices-videosearch'
-    summary: Callback which fires upon download progress.
-    fullName: onDownloadProgress
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        onDownloadProgress?: undefined | (progress: TransferProgressEvent) =>
-        void
-      return:
-        description: ''
-        type: 'undefined | (progress: TransferProgressEvent) =&gt; void'
-  - name: onUploadProgress
-    uid: >-
-      @azure/cognitiveservices-videosearch.VideosSearchOptionalParams.onUploadProgress
-    package: '@azure/cognitiveservices-videosearch'
-    summary: Callback which fires upon upload progress.
-    fullName: onUploadProgress
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'onUploadProgress?: undefined | (progress: TransferProgressEvent) => void'
-      return:
-        description: ''
-        type: 'undefined | (progress: TransferProgressEvent) =&gt; void'
   - name: pricing
     uid: '@azure/cognitiveservices-videosearch.VideosSearchOptionalParams.pricing'
     package: '@azure/cognitiveservices-videosearch'
@@ -586,7 +514,6 @@ properties:
       values include: 'All', 'Free', 'Paid'
     fullName: pricing
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'pricing?: VideoPricing'
@@ -612,7 +539,6 @@ properties:
       'HD720p', 'HD1080p'
     fullName: resolution
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'resolution?: VideoResolution'
@@ -665,7 +591,6 @@ properties:
       'Moderate', 'Strict'
     fullName: safeSearch
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'safeSearch?: SafeSearch'
@@ -704,7 +629,6 @@ properties:
       language.
     fullName: setLang
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'setLang?: undefined | string'
@@ -732,7 +656,6 @@ properties:
       Highlighting](https://docs.microsoft.com/azure/cognitive-services/bing-news-search/hit-highlighting).
     fullName: textDecorations
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'textDecorations?: undefined | false | true'
@@ -768,28 +691,12 @@ properties:
       'Raw', 'Html'
     fullName: textFormat
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'textFormat?: TextFormat'
       return:
         description: ''
         type: <xref uid="@azure/cognitiveservices-videosearch.TextFormat" />
-  - name: timeout
-    uid: '@azure/cognitiveservices-videosearch.VideosSearchOptionalParams.timeout'
-    package: '@azure/cognitiveservices-videosearch'
-    summary: >-
-      The number of milliseconds a request can take before automatically being
-      terminated.
-    fullName: timeout
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'timeout?: undefined | number'
-      return:
-        description: ''
-        type: undefined | number
   - name: userAgent
     uid: '@azure/cognitiveservices-videosearch.VideosSearchOptionalParams.userAgent'
     package: '@azure/cognitiveservices-videosearch'
@@ -831,11 +738,86 @@ properties:
       Safari / 9537.53
     fullName: userAgent
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'userAgent?: undefined | string'
       return:
         description: ''
         type: undefined | string
+inheritedProperties:
+  - name: abortSignal
+    uid: >-
+      @azure/cognitiveservices-videosearch.VideosSearchOptionalParams.abortSignal
+    package: '@azure/cognitiveservices-videosearch'
+    summary: The signal which can be used to abort requests.
+    fullName: abortSignal
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'abortSignal?: AbortSignalLike'
+      return:
+        description: ''
+        type: AbortSignalLike
+    inheritanceDescription: <b>Inherited From</b> RequestOptionsBase.abortSignal
+  - name: customHeaders
+    uid: >-
+      @azure/cognitiveservices-videosearch.VideosSearchOptionalParams.customHeaders
+    package: '@azure/cognitiveservices-videosearch'
+    summary: |-
+      {object} [customHeaders] User defined custom request headers that
+      will be applied before the request is sent.
+    fullName: customHeaders
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'customHeaders?: undefined | [key: string]: string'
+      return:
+        description: ''
+        type: 'undefined | [key: string]: string'
+    inheritanceDescription: <b>Inherited From</b> RequestOptionsBase.customHeaders
+  - name: onDownloadProgress
+    uid: >-
+      @azure/cognitiveservices-videosearch.VideosSearchOptionalParams.onDownloadProgress
+    package: '@azure/cognitiveservices-videosearch'
+    summary: Callback which fires upon download progress.
+    fullName: onDownloadProgress
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        onDownloadProgress?: undefined | (progress: TransferProgressEvent) =>
+        void
+      return:
+        description: ''
+        type: 'undefined | (progress: TransferProgressEvent) =&gt; void'
+    inheritanceDescription: <b>Inherited From</b> RequestOptionsBase.onDownloadProgress
+  - name: onUploadProgress
+    uid: >-
+      @azure/cognitiveservices-videosearch.VideosSearchOptionalParams.onUploadProgress
+    package: '@azure/cognitiveservices-videosearch'
+    summary: Callback which fires upon upload progress.
+    fullName: onUploadProgress
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'onUploadProgress?: undefined | (progress: TransferProgressEvent) => void'
+      return:
+        description: ''
+        type: 'undefined | (progress: TransferProgressEvent) =&gt; void'
+    inheritanceDescription: <b>Inherited From</b> RequestOptionsBase.onUploadProgress
+  - name: timeout
+    uid: '@azure/cognitiveservices-videosearch.VideosSearchOptionalParams.timeout'
+    package: '@azure/cognitiveservices-videosearch'
+    summary: >-
+      The number of milliseconds a request can take before automatically being
+      terminated.
+    fullName: timeout
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'timeout?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+    inheritanceDescription: <b>Inherited From</b> RequestOptionsBase.timeout
 extends: RequestOptionsBase

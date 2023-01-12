@@ -5,7 +5,6 @@ package: '@azure/arm-botservice'
 summary: ''
 fullName: AzureBotService
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -16,7 +15,6 @@ constructors:
     package: '@azure/arm-botservice'
     summary: Initializes a new instance of the AzureBotService class.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -46,39 +44,12 @@ constructors:
           type: <xref uid="Models.AzureBotServiceOptions" />
           description: ''
 properties:
-  - name: acceptLanguage
-    uid: '@azure/arm-botservice.AzureBotService.acceptLanguage'
-    package: '@azure/arm-botservice'
-    summary: ''
-    fullName: acceptLanguage
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'acceptLanguage: string'
-      return:
-        description: ''
-        type: string
-  - name: apiVersion
-    uid: '@azure/arm-botservice.AzureBotService.apiVersion'
-    package: '@azure/arm-botservice'
-    summary: ''
-    fullName: apiVersion
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'apiVersion?: undefined | string'
-      return:
-        description: ''
-        type: undefined | string
   - name: botConnection
     uid: '@azure/arm-botservice.AzureBotService.botConnection'
     package: '@azure/arm-botservice'
     summary: ''
     fullName: botConnection
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'botConnection: BotConnection'
@@ -91,7 +62,6 @@ properties:
     summary: ''
     fullName: bots
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'bots: Bots'
@@ -104,33 +74,18 @@ properties:
     summary: ''
     fullName: channels
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'channels: Channels'
       return:
         description: ''
         type: <xref uid="@azure/arm-botservice.Channels" />
-  - name: credentials
-    uid: '@azure/arm-botservice.AzureBotService.credentials'
-    package: '@azure/arm-botservice'
-    summary: ''
-    fullName: credentials
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'credentials: ServiceClientCredentials | TokenCredential'
-      return:
-        description: ''
-        type: ServiceClientCredentials | TokenCredential
   - name: directLine
     uid: '@azure/arm-botservice.AzureBotService.directLine'
     package: '@azure/arm-botservice'
     summary: ''
     fullName: directLine
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'directLine: DirectLine'
@@ -143,35 +98,18 @@ properties:
     summary: ''
     fullName: hostSettings
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'hostSettings: HostSettings'
       return:
         description: ''
         type: <xref uid="@azure/arm-botservice.HostSettings" />
-  - name: longRunningOperationRetryTimeout
-    uid: '@azure/arm-botservice.AzureBotService.longRunningOperationRetryTimeout'
-    package: '@azure/arm-botservice'
-    summary: >-
-      The retry timeout in seconds for Long Running Operations. Default value is
-      30.
-    fullName: longRunningOperationRetryTimeout
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'longRunningOperationRetryTimeout?: undefined | number'
-      return:
-        description: ''
-        type: undefined | number
   - name: operationResults
     uid: '@azure/arm-botservice.AzureBotService.operationResults'
     package: '@azure/arm-botservice'
     summary: ''
     fullName: operationResults
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'operationResults: OperationResults'
@@ -184,7 +122,6 @@ properties:
     summary: ''
     fullName: operations
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'operations: Operations'
@@ -197,7 +134,6 @@ properties:
     summary: ''
     fullName: privateEndpointConnections
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'privateEndpointConnections: PrivateEndpointConnections'
@@ -210,26 +146,86 @@ properties:
     summary: ''
     fullName: privateLinkResources
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'privateLinkResources: PrivateLinkResources'
       return:
         description: ''
         type: <xref uid="@azure/arm-botservice.PrivateLinkResources" />
+inheritedProperties:
+  - name: acceptLanguage
+    uid: '@azure/arm-botservice.AzureBotService.acceptLanguage'
+    package: '@azure/arm-botservice'
+    summary: ''
+    fullName: acceptLanguage
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'acceptLanguage: string'
+      return:
+        description: ''
+        type: string
+    inheritanceDescription: <b>Inherited From</b> AzureServiceClient.acceptLanguage
+  - name: apiVersion
+    uid: '@azure/arm-botservice.AzureBotService.apiVersion'
+    package: '@azure/arm-botservice'
+    summary: ''
+    fullName: apiVersion
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'apiVersion?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [AzureBotServiceContext.apiVersion](xref:@azure/arm-botservice.AzureBotServiceContext.apiVersion)
+  - name: credentials
+    uid: '@azure/arm-botservice.AzureBotService.credentials'
+    package: '@azure/arm-botservice'
+    summary: ''
+    fullName: credentials
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'credentials: ServiceClientCredentials | TokenCredential'
+      return:
+        description: ''
+        type: ServiceClientCredentials | TokenCredential
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [AzureBotServiceContext.credentials](xref:@azure/arm-botservice.AzureBotServiceContext.credentials)
+  - name: longRunningOperationRetryTimeout
+    uid: '@azure/arm-botservice.AzureBotService.longRunningOperationRetryTimeout'
+    package: '@azure/arm-botservice'
+    summary: >-
+      The retry timeout in seconds for Long Running Operations. Default value is
+      30.
+    fullName: longRunningOperationRetryTimeout
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'longRunningOperationRetryTimeout?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+    inheritanceDescription: <b>Inherited From</b> AzureServiceClient.longRunningOperationRetryTimeout
   - name: subscriptionId
     uid: '@azure/arm-botservice.AzureBotService.subscriptionId'
     package: '@azure/arm-botservice'
     summary: ''
     fullName: subscriptionId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'subscriptionId: string'
       return:
         description: ''
         type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [AzureBotServiceContext.subscriptionId](xref:@azure/arm-botservice.AzureBotServiceContext.subscriptionId)
 inheritedMethods:
   - name: >-
       beginLongRunningRequest(RequestPrepareOptions | WebResource,
@@ -244,7 +240,6 @@ inheritedMethods:
 
       LRO is finished.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -262,6 +257,7 @@ inheritedMethods:
           The HttpLongRunningOperationResponse
           that provides methods for interacting with the LRO.
         type: Promise&lt;LROPoller&gt;
+    inheritanceDescription: <b>Inherited From</b> AzureServiceClient.beginLongRunningRequest
   - name: restoreLROPoller(LROPollState)
     uid: '@azure/arm-botservice.AzureBotService.restoreLROPoller'
     package: '@azure/arm-botservice'
@@ -271,7 +267,6 @@ inheritedMethods:
 
       LROPoller on a different process or machine.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function restoreLROPoller(lroPollState: LROPollState): LROPoller'
@@ -282,6 +277,7 @@ inheritedMethods:
       return:
         description: ''
         type: LROPoller
+    inheritanceDescription: <b>Inherited From</b> AzureServiceClient.restoreLROPoller
   - name: >-
       sendLongRunningRequest(RequestPrepareOptions | WebResource,
       RequestOptionsBase)
@@ -291,7 +287,6 @@ inheritedMethods:
       Provides a mechanism to make a request that will poll and provide the
       final result.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -310,6 +305,7 @@ inheritedMethods:
           The HttpOperationResponse containing the final polling request,
           response and the responseBody.
         type: Promise&lt;HttpOperationResponse&gt;
+    inheritanceDescription: <b>Inherited From</b> AzureServiceClient.sendLongRunningRequest
   - name: 'sendLRORequest(OperationArguments, OperationSpec, RequestOptionsBase)'
     uid: '@azure/arm-botservice.AzureBotService.sendLRORequest'
     package: '@azure/arm-botservice'
@@ -319,7 +315,6 @@ inheritedMethods:
       LROPoller that provides methods for polling the LRO and checking if the
       LRO is finished.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -341,6 +336,7 @@ inheritedMethods:
           The LROPoller object that provides methods for interacting with the
           LRO.
         type: Promise&lt;LROPoller&gt;
+    inheritanceDescription: <b>Inherited From</b> AzureServiceClient.sendLRORequest
   - name: >-
       sendOperationRequest(OperationArguments, OperationSpec,
       ServiceCallback<any>)
@@ -348,7 +344,6 @@ inheritedMethods:
     package: '@azure/arm-botservice'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -371,12 +366,12 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;RestResponse&gt;
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendOperationRequest
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
     uid: '@azure/arm-botservice.AzureBotService.sendRequest'
     package: '@azure/arm-botservice'
     summary: Send the provided httpRequest.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -389,4 +384,5 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;HttpOperationResponse&gt;
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendRequest
 extends: <xref uid="@azure/arm-botservice.AzureBotServiceContext" />

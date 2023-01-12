@@ -5,7 +5,6 @@ package: '@azure/core-http'
 summary: ''
 fullName: RetryError
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -15,7 +14,6 @@ properties:
     summary: ''
     fullName: code
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'code?: string'
@@ -28,7 +26,6 @@ properties:
     summary: ''
     fullName: Error
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'Error: ErrorConstructor'
@@ -41,7 +38,6 @@ properties:
     summary: ''
     fullName: innerError
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'innerError?: RetryError'
@@ -54,37 +50,37 @@ properties:
     summary: ''
     fullName: message
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'message: string'
       return:
         description: ''
         type: string
+inheritedProperties:
   - name: name
     uid: '@azure/core-http.RetryError.name'
     package: '@azure/core-http'
     summary: ''
     fullName: name
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'name: string'
       return:
         description: ''
         type: string
+    inheritanceDescription: <b>Inherited From</b> Error.name
   - name: stack
     uid: '@azure/core-http.RetryError.stack'
     package: '@azure/core-http'
     summary: ''
     fullName: stack
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'stack?: string'
       return:
         description: ''
         type: string
+    inheritanceDescription: <b>Inherited From</b> Error.stack
 extends: Error

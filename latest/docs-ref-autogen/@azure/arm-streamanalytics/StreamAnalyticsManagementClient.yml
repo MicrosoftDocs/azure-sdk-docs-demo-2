@@ -5,7 +5,6 @@ package: '@azure/arm-streamanalytics'
 summary: ''
 fullName: StreamAnalyticsManagementClient
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -16,7 +15,6 @@ constructors:
     package: '@azure/arm-streamanalytics'
     summary: Initializes a new instance of the StreamAnalyticsManagementClient class.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -46,7 +44,6 @@ properties:
     summary: ''
     fullName: $host
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: '$host: string'
@@ -59,7 +56,6 @@ properties:
     summary: ''
     fullName: apiVersion
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'apiVersion: string'
@@ -72,7 +68,6 @@ properties:
     summary: ''
     fullName: clusters
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'clusters: Clusters'
@@ -85,7 +80,6 @@ properties:
     summary: ''
     fullName: functions
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'functions: Functions'
@@ -98,7 +92,6 @@ properties:
     summary: ''
     fullName: inputs
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'inputs: Inputs'
@@ -111,7 +104,6 @@ properties:
     summary: ''
     fullName: operations
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'operations: Operations'
@@ -124,26 +116,12 @@ properties:
     summary: ''
     fullName: outputs
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'outputs: Outputs'
       return:
         description: ''
         type: <xref uid="@azure/arm-streamanalytics.Outputs" />
-  - name: pipeline
-    uid: '@azure/arm-streamanalytics.StreamAnalyticsManagementClient.pipeline'
-    package: '@azure/arm-streamanalytics'
-    summary: The pipeline used by this client to make requests
-    fullName: pipeline
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'pipeline: Pipeline'
-      return:
-        description: ''
-        type: Pipeline
   - name: privateEndpoints
     uid: >-
       @azure/arm-streamanalytics.StreamAnalyticsManagementClient.privateEndpoints
@@ -151,7 +129,6 @@ properties:
     summary: ''
     fullName: privateEndpoints
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'privateEndpoints: PrivateEndpoints'
@@ -164,7 +141,6 @@ properties:
     summary: ''
     fullName: streamingJobs
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'streamingJobs: StreamingJobs'
@@ -177,7 +153,6 @@ properties:
     summary: ''
     fullName: subscriptionId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'subscriptionId: string'
@@ -190,7 +165,6 @@ properties:
     summary: ''
     fullName: subscriptions
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'subscriptions: Subscriptions'
@@ -203,13 +177,26 @@ properties:
     summary: ''
     fullName: transformations
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'transformations: Transformations'
       return:
         description: ''
         type: <xref uid="@azure/arm-streamanalytics.Transformations" />
+inheritedProperties:
+  - name: pipeline
+    uid: '@azure/arm-streamanalytics.StreamAnalyticsManagementClient.pipeline'
+    package: '@azure/arm-streamanalytics'
+    summary: The pipeline used by this client to make requests
+    fullName: pipeline
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'pipeline: Pipeline'
+      return:
+        description: ''
+        type: Pipeline
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.pipeline
 inheritedMethods:
   - name: 'sendOperationRequest<T>(OperationArguments, OperationSpec)'
     uid: >-
@@ -217,7 +204,6 @@ inheritedMethods:
     package: '@azure/arm-streamanalytics'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -236,12 +222,12 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;T&gt;
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendOperationRequest
   - name: sendRequest(PipelineRequest)
     uid: '@azure/arm-streamanalytics.StreamAnalyticsManagementClient.sendRequest'
     package: '@azure/arm-streamanalytics'
     summary: Send the provided httpRequest.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -254,4 +240,5 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;PipelineResponse&gt;
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendRequest
 extends: ServiceClient

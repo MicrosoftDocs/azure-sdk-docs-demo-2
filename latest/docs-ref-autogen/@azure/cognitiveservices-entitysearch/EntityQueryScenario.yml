@@ -11,9 +11,11 @@ summary: >-
   'List', 'ListWithPivot'
 fullName: EntityQueryScenario
 remarks: ''
-isPreview: false
 isDeprecated: false
-syntax: >-
-  type EntityQueryScenario = "DominantEntity" |
-  "DominantEntityWithDisambiguation" | "Disambiguation" | "List" |
-  "ListWithPivot"
+syntax: |
+  type EntityQueryScenario =
+    | "DominantEntity"
+    | "DominantEntityWithDisambiguation"
+    | "Disambiguation"
+    | "List"
+    | "ListWithPivot"

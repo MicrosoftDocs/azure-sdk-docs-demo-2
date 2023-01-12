@@ -5,7 +5,6 @@ package: '@azure/container-registry'
 summary: Contains response data for the listManifests operation.
 fullName: ManifestPageResponse
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -15,7 +14,6 @@ properties:
     summary: ''
     fullName: Array
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'Array: ArrayConstructor'
@@ -30,13 +28,13 @@ properties:
       if available.
     fullName: continuationToken
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'continuationToken?: string'
       return:
         description: ''
         type: string
+inheritedProperties:
   - name: length
     uid: '@azure/container-registry.ManifestPageResponse.length'
     package: '@azure/container-registry'
@@ -45,41 +43,38 @@ properties:
       highest element defined in an array.
     fullName: length
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'length: number'
       return:
         description: ''
         type: number
+    inheritanceDescription: <b>Inherited From</b> Array.length
 inheritedMethods:
-  - name: at(number)
-    uid: '@azure/container-registry.ManifestPageResponse.at'
+  - name: 'concat((T | ConcatArray<T>)[])'
+    uid: '@azure/container-registry.ManifestPageResponse.concat_1'
     package: '@azure/container-registry'
-    summary: |-
-      Takes an integer value and returns the item at that index,
-      allowing for positive and negative integers.
-      Negative integers count back from the last item in the array.
+    summary: Combines two or more arrays.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
-      content: 'function at(index: number): ArtifactManifestProperties | undefined'
+      content: >-
+        function concat(items: (T | ConcatArray<T>)[]):
+        ArtifactManifestProperties[]
       parameters:
-        - id: index
-          type: number
-          description: ''
+        - id: items
+          type: '(T | ConcatArray&lt;T&gt;)[]'
+          description: |
+            Additional items to add to the end of array1.
       return:
         description: ''
-        type: >-
-          <xref uid="@azure/container-registry.ArtifactManifestProperties" /> |
-          undefined
+        type: '<xref uid="@azure/container-registry.ArtifactManifestProperties" />[]'
+    inheritanceDescription: <b>Inherited From</b> Array.concat
   - name: 'concat(ConcatArray<ArtifactManifestProperties>[])'
     uid: '@azure/container-registry.ManifestPageResponse.concat'
     package: '@azure/container-registry'
     summary: Combines two or more arrays.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -95,67 +90,12 @@ inheritedMethods:
       return:
         description: ''
         type: '<xref uid="@azure/container-registry.ArtifactManifestProperties" />[]'
-  - name: 'concat(T | ConcatArray<T>[])'
-    uid: '@azure/container-registry.ManifestPageResponse.concat_1'
-    package: '@azure/container-registry'
-    summary: Combines two or more arrays.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function concat(items: T | ConcatArray<T>[]):
-        ArtifactManifestProperties[]
-      parameters:
-        - id: items
-          type: 'T | ConcatArray&lt;T&gt;[]'
-          description: |
-            Additional items to add to the end of array1.
-      return:
-        description: ''
-        type: '<xref uid="@azure/container-registry.ArtifactManifestProperties" />[]'
-  - name: 'copyWithin(number, number, number)'
-    uid: '@azure/container-registry.ManifestPageResponse.copyWithin'
-    package: '@azure/container-registry'
-    summary: >-
-      Returns the this object after copying a section of the array identified by
-      start and end
-
-      to the same array starting at position target
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function copyWithin(target: number, start: number, end?: number): this'
-      parameters:
-        - id: target
-          type: number
-          description: >-
-            If target is negative, it is treated as length+target where length
-            is the
-
-            length of the array.
-        - id: start
-          type: number
-          description: >-
-            If start is negative, it is treated as length+start. If end is
-            negative, it
-
-            is treated as length+end.
-        - id: end
-          type: number
-          description: >
-            If not specified, length of the this object is used as its default
-            value.
-      return:
-        description: ''
-        type: this
+    inheritanceDescription: <b>Inherited From</b> Array.concat
   - name: entries()
     uid: '@azure/container-registry.ManifestPageResponse.entries'
     package: '@azure/container-registry'
     summary: 'Returns an iterable of key, value pairs for every entry in the array'
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -164,6 +104,7 @@ inheritedMethods:
       return:
         description: ''
         type: 'IterableIterator&lt;[number, ArtifactManifestProperties]&gt;'
+    inheritanceDescription: <b>Inherited From</b> Array.entries
   - name: >-
       every((value: ArtifactManifestProperties, index: number, array:
       ArtifactManifestProperties[]) => unknown, any)
@@ -171,7 +112,6 @@ inheritedMethods:
     package: '@azure/container-registry'
     summary: Determines whether all the members of an array satisfy the specified test.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -196,40 +136,7 @@ inheritedMethods:
       return:
         description: ''
         type: boolean
-  - name: 'fill(ArtifactManifestProperties, number, number)'
-    uid: '@azure/container-registry.ManifestPageResponse.fill'
-    package: '@azure/container-registry'
-    summary: >-
-      Returns the this object after filling the section identified by start and
-      end with value
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function fill(value: ArtifactManifestProperties, start?: number, end?:
-        number): this
-      parameters:
-        - id: value
-          type: <xref uid="@azure/container-registry.ArtifactManifestProperties" />
-          description: value to fill array section with
-        - id: start
-          type: number
-          description: >-
-            index to start filling the array at. If start is negative, it is
-            treated as
-
-            length+start where length is the length of the array.
-        - id: end
-          type: number
-          description: >
-            index to stop filling the array at. If end is negative, it is
-            treated as
-
-            length+end.
-      return:
-        description: ''
-        type: this
+    inheritanceDescription: <b>Inherited From</b> Array.every
   - name: >-
       filter((value: ArtifactManifestProperties, index: number, array:
       ArtifactManifestProperties[]) => unknown, any)
@@ -239,7 +146,6 @@ inheritedMethods:
       Returns the elements of an array that meet the condition specified in a
       callback function.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -264,6 +170,7 @@ inheritedMethods:
       return:
         description: ''
         type: '<xref uid="@azure/container-registry.ArtifactManifestProperties" />[]'
+    inheritanceDescription: <b>Inherited From</b> Array.filter
   - name: >-
       filter<S>((value: ArtifactManifestProperties, index: number, array:
       ArtifactManifestProperties[]) => boolean, any)
@@ -273,7 +180,6 @@ inheritedMethods:
       Returns the elements of an array that meet the condition specified in a
       callback function.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -298,375 +204,7 @@ inheritedMethods:
       return:
         description: ''
         type: 'S[]'
-  - name: >-
-      find((value: ArtifactManifestProperties, index: number, obj:
-      ArtifactManifestProperties[]) => unknown, any)
-    uid: '@azure/container-registry.ManifestPageResponse.find_1'
-    package: '@azure/container-registry'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function find(predicate: (value: ArtifactManifestProperties, index:
-        number, obj: ArtifactManifestProperties[]) => unknown, thisArg?: any):
-        ArtifactManifestProperties | undefined
-      parameters:
-        - id: predicate
-          type: >-
-            (value: ArtifactManifestProperties, index: number, obj:
-            ArtifactManifestProperties[]) =&gt; unknown
-          description: ''
-        - id: thisArg
-          type: any
-          description: ''
-      return:
-        description: ''
-        type: >-
-          <xref uid="@azure/container-registry.ArtifactManifestProperties" /> |
-          undefined
-  - name: >-
-      find<S>((this: void, value: ArtifactManifestProperties, index: number,
-      obj: ArtifactManifestProperties[]) => boolean, any)
-    uid: '@azure/container-registry.ManifestPageResponse.find'
-    package: '@azure/container-registry'
-    summary: >-
-      Returns the value of the first element in the array where predicate is
-      true, and undefined
-
-      otherwise.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function find<S>(predicate: (this: void, value:
-        ArtifactManifestProperties, index: number, obj:
-        ArtifactManifestProperties[]) => boolean, thisArg?: any): S | undefined
-      parameters:
-        - id: predicate
-          type: >-
-            (this: void, value: ArtifactManifestProperties, index: number, obj:
-            ArtifactManifestProperties[]) =&gt; boolean
-          description: >-
-            find calls predicate once for each element of the array, in
-            ascending
-
-            order, until it finds one where predicate returns true. If such an
-            element is found, find
-
-            immediately returns that element value. Otherwise, find returns
-            undefined.
-        - id: thisArg
-          type: any
-          description: >
-            If provided, it will be used as the this value for each invocation
-            of
-
-            predicate. If it is not provided, undefined is used instead.
-      return:
-        description: ''
-        type: S | undefined
-  - name: >-
-      findIndex((value: ArtifactManifestProperties, index: number, obj:
-      ArtifactManifestProperties[]) => unknown, any)
-    uid: '@azure/container-registry.ManifestPageResponse.findIndex'
-    package: '@azure/container-registry'
-    summary: >-
-      Returns the index of the first element in the array where predicate is
-      true, and -1
-
-      otherwise.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function findIndex(predicate: (value: ArtifactManifestProperties, index:
-        number, obj: ArtifactManifestProperties[]) => unknown, thisArg?: any):
-        number
-      parameters:
-        - id: predicate
-          type: >-
-            (value: ArtifactManifestProperties, index: number, obj:
-            ArtifactManifestProperties[]) =&gt; unknown
-          description: >-
-            find calls predicate once for each element of the array, in
-            ascending
-
-            order, until it finds one where predicate returns true. If such an
-            element is found,
-
-            findIndex immediately returns that element index. Otherwise,
-            findIndex returns -1.
-        - id: thisArg
-          type: any
-          description: >
-            If provided, it will be used as the this value for each invocation
-            of
-
-            predicate. If it is not provided, undefined is used instead.
-      return:
-        description: ''
-        type: number
-  - name: flat<U>(number)
-    uid: '@azure/container-registry.ManifestPageResponse.flat_8'
-    package: '@azure/container-registry'
-    summary: >-
-      Returns a new array with all sub-array elements concatenated into it
-      recursively up to the
-
-      specified depth. If no depth is provided, flat method defaults to the
-      depth of 1.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function flat<U>(depth?: number): any[]'
-      parameters:
-        - id: depth
-          type: number
-          description: |
-            The maximum recursion depth
-      return:
-        description: ''
-        type: 'any[]'
-  - name: 'flat<U>(U[], 0)'
-    uid: '@azure/container-registry.ManifestPageResponse.flat_7'
-    package: '@azure/container-registry'
-    summary: >-
-      Returns a new array with all sub-array elements concatenated into it
-      recursively up to the
-
-      specified depth.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function flat<U>(this: U[], depth: 0): U[]'
-      parameters:
-        - id: this
-          type: 'U[]'
-          description: ''
-        - id: depth
-          type: '0'
-          description: |
-            The maximum recursion depth
-      return:
-        description: ''
-        type: 'U[]'
-  - name: 'flat<U>(U[][], 1)'
-    uid: '@azure/container-registry.ManifestPageResponse.flat_6'
-    package: '@azure/container-registry'
-    summary: >-
-      Returns a new array with all sub-array elements concatenated into it
-      recursively up to the
-
-      specified depth.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function flat<U>(this: U[][], depth?: 1): U[]'
-      parameters:
-        - id: this
-          type: 'U[][]'
-          description: ''
-        - id: depth
-          type: '1'
-          description: |
-            The maximum recursion depth
-      return:
-        description: ''
-        type: 'U[]'
-  - name: 'flat<U>(U[][][], 2)'
-    uid: '@azure/container-registry.ManifestPageResponse.flat_5'
-    package: '@azure/container-registry'
-    summary: >-
-      Returns a new array with all sub-array elements concatenated into it
-      recursively up to the
-
-      specified depth.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function flat<U>(this: U[][][], depth: 2): U[]'
-      parameters:
-        - id: this
-          type: 'U[][][]'
-          description: ''
-        - id: depth
-          type: '2'
-          description: |
-            The maximum recursion depth
-      return:
-        description: ''
-        type: 'U[]'
-  - name: 'flat<U>(U[][][][], 3)'
-    uid: '@azure/container-registry.ManifestPageResponse.flat_4'
-    package: '@azure/container-registry'
-    summary: >-
-      Returns a new array with all sub-array elements concatenated into it
-      recursively up to the
-
-      specified depth.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function flat<U>(this: U[][][][], depth: 3): U[]'
-      parameters:
-        - id: this
-          type: 'U[][][][]'
-          description: ''
-        - id: depth
-          type: '3'
-          description: |
-            The maximum recursion depth
-      return:
-        description: ''
-        type: 'U[]'
-  - name: 'flat<U>(U[][][][][], 4)'
-    uid: '@azure/container-registry.ManifestPageResponse.flat_3'
-    package: '@azure/container-registry'
-    summary: >-
-      Returns a new array with all sub-array elements concatenated into it
-      recursively up to the
-
-      specified depth.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function flat<U>(this: U[][][][][], depth: 4): U[]'
-      parameters:
-        - id: this
-          type: 'U[][][][][]'
-          description: ''
-        - id: depth
-          type: '4'
-          description: |
-            The maximum recursion depth
-      return:
-        description: ''
-        type: 'U[]'
-  - name: 'flat<U>(U[][][][][][], 5)'
-    uid: '@azure/container-registry.ManifestPageResponse.flat_2'
-    package: '@azure/container-registry'
-    summary: >-
-      Returns a new array with all sub-array elements concatenated into it
-      recursively up to the
-
-      specified depth.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function flat<U>(this: U[][][][][][], depth: 5): U[]'
-      parameters:
-        - id: this
-          type: 'U[][][][][][]'
-          description: ''
-        - id: depth
-          type: '5'
-          description: |
-            The maximum recursion depth
-      return:
-        description: ''
-        type: 'U[]'
-  - name: 'flat<U>(U[][][][][][][], 6)'
-    uid: '@azure/container-registry.ManifestPageResponse.flat_1'
-    package: '@azure/container-registry'
-    summary: >-
-      Returns a new array with all sub-array elements concatenated into it
-      recursively up to the
-
-      specified depth.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function flat<U>(this: U[][][][][][][], depth: 6): U[]'
-      parameters:
-        - id: this
-          type: 'U[][][][][][][]'
-          description: ''
-        - id: depth
-          type: '6'
-          description: |
-            The maximum recursion depth
-      return:
-        description: ''
-        type: 'U[]'
-  - name: 'flat<U>(U[][][][][][][][], 7)'
-    uid: '@azure/container-registry.ManifestPageResponse.flat'
-    package: '@azure/container-registry'
-    summary: >-
-      Returns a new array with all sub-array elements concatenated into it
-      recursively up to the
-
-      specified depth.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function flat<U>(this: U[][][][][][][][], depth: 7): U[]'
-      parameters:
-        - id: this
-          type: 'U[][][][][][][][]'
-          description: ''
-        - id: depth
-          type: '7'
-          description: |
-            The maximum recursion depth
-      return:
-        description: ''
-        type: 'U[]'
-  - name: >-
-      flatMap<U, This>((this: This, value: ArtifactManifestProperties, index:
-      number, array: ArtifactManifestProperties[]) => U | ReadonlyArray<U>,
-      This)
-    uid: '@azure/container-registry.ManifestPageResponse.flatMap'
-    package: '@azure/container-registry'
-    summary: >-
-      Calls a defined callback function on each element of an array. Then,
-      flattens the result into
-
-      a new array.
-
-      This is identical to a map followed by flat with depth 1.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function flatMap<U, This>(callback: (this: This, value:
-        ArtifactManifestProperties, index: number, array:
-        ArtifactManifestProperties[]) => U | ReadonlyArray<U>, thisArg?: This):
-        U[]
-      parameters:
-        - id: callback
-          type: >-
-            (this: This, value: ArtifactManifestProperties, index: number,
-            array: ArtifactManifestProperties[]) =&gt; U |
-            ReadonlyArray&lt;U&gt;
-          description: >-
-            A function that accepts up to three arguments. The flatMap method
-            calls the
-
-            callback function one time for each element in the array.
-        - id: thisArg
-          type: This
-          description: >
-            An object to which the this keyword can refer in the callback
-            function. If
-
-            thisArg is omitted, undefined is used as the this value.
-      return:
-        description: ''
-        type: 'U[]'
+    inheritanceDescription: <b>Inherited From</b> Array.filter
   - name: >-
       forEach((value: ArtifactManifestProperties, index: number, array:
       ArtifactManifestProperties[]) => void, any)
@@ -674,7 +212,6 @@ inheritedMethods:
     package: '@azure/container-registry'
     summary: Performs the specified action for each element in an array.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -694,37 +231,12 @@ inheritedMethods:
             An object to which the this keyword can refer in the callbackfn
             function. If thisArg is omitted, undefined is used as the this
             value.
-  - name: 'includes(ArtifactManifestProperties, number)'
-    uid: '@azure/container-registry.ManifestPageResponse.includes'
-    package: '@azure/container-registry'
-    summary: >-
-      Determines whether an array includes a certain element, returning true or
-      false as appropriate.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function includes(searchElement: ArtifactManifestProperties, fromIndex?:
-        number): boolean
-      parameters:
-        - id: searchElement
-          type: <xref uid="@azure/container-registry.ArtifactManifestProperties" />
-          description: The element to search for.
-        - id: fromIndex
-          type: number
-          description: >
-            The position in this array at which to begin searching for
-            searchElement.
-      return:
-        description: ''
-        type: boolean
+    inheritanceDescription: <b>Inherited From</b> Array.forEach
   - name: 'indexOf(ArtifactManifestProperties, number)'
     uid: '@azure/container-registry.ManifestPageResponse.indexOf'
     package: '@azure/container-registry'
     summary: Returns the index of the first occurrence of a value in an array.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -742,6 +254,7 @@ inheritedMethods:
       return:
         description: ''
         type: number
+    inheritanceDescription: <b>Inherited From</b> Array.indexOf
   - name: join(string)
     uid: '@azure/container-registry.ManifestPageResponse.join'
     package: '@azure/container-registry'
@@ -749,7 +262,6 @@ inheritedMethods:
       Adds all the elements of an array separated by the specified separator
       string.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function join(separator?: string): string'
@@ -763,24 +275,24 @@ inheritedMethods:
       return:
         description: ''
         type: string
+    inheritanceDescription: <b>Inherited From</b> Array.join
   - name: keys()
     uid: '@azure/container-registry.ManifestPageResponse.keys'
     package: '@azure/container-registry'
     summary: Returns an iterable of keys in the array
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function keys(): IterableIterator<number>'
       return:
         description: ''
         type: IterableIterator&lt;number&gt;
+    inheritanceDescription: <b>Inherited From</b> Array.keys
   - name: 'lastIndexOf(ArtifactManifestProperties, number)'
     uid: '@azure/container-registry.ManifestPageResponse.lastIndexOf'
     package: '@azure/container-registry'
     summary: Returns the index of the last occurrence of a specified value in an array.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -798,6 +310,7 @@ inheritedMethods:
       return:
         description: ''
         type: number
+    inheritanceDescription: <b>Inherited From</b> Array.lastIndexOf
   - name: >-
       map<U>((value: ArtifactManifestProperties, index: number, array:
       ArtifactManifestProperties[]) => U, any)
@@ -807,7 +320,6 @@ inheritedMethods:
       Calls a defined callback function on each element of an array, and returns
       an array that contains the results.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -830,12 +342,12 @@ inheritedMethods:
       return:
         description: ''
         type: 'U[]'
+    inheritanceDescription: <b>Inherited From</b> Array.map
   - name: pop()
     uid: '@azure/container-registry.ManifestPageResponse.pop'
     package: '@azure/container-registry'
     summary: Removes the last element from an array and returns it.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function pop(): ArtifactManifestProperties | undefined'
@@ -844,12 +356,12 @@ inheritedMethods:
         type: >-
           <xref uid="@azure/container-registry.ArtifactManifestProperties" /> |
           undefined
+    inheritanceDescription: <b>Inherited From</b> Array.pop
   - name: 'push(ArtifactManifestProperties[])'
     uid: '@azure/container-registry.ManifestPageResponse.push'
     package: '@azure/container-registry'
     summary: 'Appends new elements to an array, and returns the new length of the array.'
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function push(items: ArtifactManifestProperties[]): number'
@@ -863,6 +375,7 @@ inheritedMethods:
       return:
         description: ''
         type: number
+    inheritanceDescription: <b>Inherited From</b> Array.push
   - name: >-
       reduce((previousValue: ArtifactManifestProperties, currentValue:
       ArtifactManifestProperties, currentIndex: number, array:
@@ -874,7 +387,6 @@ inheritedMethods:
       The return value of the callback function is the accumulated result, and
       is provided as an argument in the next call to the callback function.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -895,6 +407,7 @@ inheritedMethods:
       return:
         description: ''
         type: <xref uid="@azure/container-registry.ArtifactManifestProperties" />
+    inheritanceDescription: <b>Inherited From</b> Array.reduce
   - name: >-
       reduce((previousValue: ArtifactManifestProperties, currentValue:
       ArtifactManifestProperties, currentIndex: number, array:
@@ -904,7 +417,6 @@ inheritedMethods:
     package: '@azure/container-registry'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -925,6 +437,7 @@ inheritedMethods:
       return:
         description: ''
         type: <xref uid="@azure/container-registry.ArtifactManifestProperties" />
+    inheritanceDescription: <b>Inherited From</b> Array.reduce
   - name: >-
       reduce<U>((previousValue: U, currentValue: ArtifactManifestProperties,
       currentIndex: number, array: ArtifactManifestProperties[]) => U, U)
@@ -935,7 +448,6 @@ inheritedMethods:
       The return value of the callback function is the accumulated result, and
       is provided as an argument in the next call to the callback function.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -960,6 +472,7 @@ inheritedMethods:
       return:
         description: ''
         type: U
+    inheritanceDescription: <b>Inherited From</b> Array.reduce
   - name: >-
       reduceRight((previousValue: ArtifactManifestProperties, currentValue:
       ArtifactManifestProperties, currentIndex: number, array:
@@ -972,7 +485,6 @@ inheritedMethods:
       accumulated result, and is provided as an argument in the next call to the
       callback function.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -993,6 +505,7 @@ inheritedMethods:
       return:
         description: ''
         type: <xref uid="@azure/container-registry.ArtifactManifestProperties" />
+    inheritanceDescription: <b>Inherited From</b> Array.reduceRight
   - name: >-
       reduceRight((previousValue: ArtifactManifestProperties, currentValue:
       ArtifactManifestProperties, currentIndex: number, array:
@@ -1002,7 +515,6 @@ inheritedMethods:
     package: '@azure/container-registry'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1024,6 +536,7 @@ inheritedMethods:
       return:
         description: ''
         type: <xref uid="@azure/container-registry.ArtifactManifestProperties" />
+    inheritanceDescription: <b>Inherited From</b> Array.reduceRight
   - name: >-
       reduceRight<U>((previousValue: U, currentValue:
       ArtifactManifestProperties, currentIndex: number, array:
@@ -1036,7 +549,6 @@ inheritedMethods:
       accumulated result, and is provided as an argument in the next call to the
       callback function.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1061,24 +573,24 @@ inheritedMethods:
       return:
         description: ''
         type: U
+    inheritanceDescription: <b>Inherited From</b> Array.reduceRight
   - name: reverse()
     uid: '@azure/container-registry.ManifestPageResponse.reverse'
     package: '@azure/container-registry'
     summary: Reverses the elements in an Array.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function reverse(): ArtifactManifestProperties[]'
       return:
         description: ''
         type: '<xref uid="@azure/container-registry.ArtifactManifestProperties" />[]'
+    inheritanceDescription: <b>Inherited From</b> Array.reverse
   - name: shift()
     uid: '@azure/container-registry.ManifestPageResponse.shift'
     package: '@azure/container-registry'
     summary: Removes the first element from an array and returns it.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function shift(): ArtifactManifestProperties | undefined'
@@ -1087,12 +599,12 @@ inheritedMethods:
         type: >-
           <xref uid="@azure/container-registry.ArtifactManifestProperties" /> |
           undefined
+    inheritanceDescription: <b>Inherited From</b> Array.shift
   - name: 'slice(number, number)'
     uid: '@azure/container-registry.ManifestPageResponse.slice'
     package: '@azure/container-registry'
     summary: Returns a section of an array.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1109,6 +621,7 @@ inheritedMethods:
       return:
         description: ''
         type: '<xref uid="@azure/container-registry.ArtifactManifestProperties" />[]'
+    inheritanceDescription: <b>Inherited From</b> Array.slice
   - name: >-
       some((value: ArtifactManifestProperties, index: number, array:
       ArtifactManifestProperties[]) => unknown, any)
@@ -1118,7 +631,6 @@ inheritedMethods:
       Determines whether the specified callback function returns true for any
       element of an array.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1143,6 +655,7 @@ inheritedMethods:
       return:
         description: ''
         type: boolean
+    inheritanceDescription: <b>Inherited From</b> Array.some
   - name: >-
       sort((a: ArtifactManifestProperties, b: ArtifactManifestProperties) =>
       number)
@@ -1150,7 +663,6 @@ inheritedMethods:
     package: '@azure/container-registry'
     summary: Sorts an array.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1168,6 +680,7 @@ inheritedMethods:
       return:
         description: ''
         type: this
+    inheritanceDescription: <b>Inherited From</b> Array.sort
   - name: 'splice(number, number)'
     uid: '@azure/container-registry.ManifestPageResponse.splice'
     package: '@azure/container-registry'
@@ -1175,7 +688,6 @@ inheritedMethods:
       Removes elements from an array and, if necessary, inserts new elements in
       their place, returning the deleted elements.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1194,6 +706,7 @@ inheritedMethods:
       return:
         description: ''
         type: '<xref uid="@azure/container-registry.ArtifactManifestProperties" />[]'
+    inheritanceDescription: <b>Inherited From</b> Array.splice
   - name: 'splice(number, number, ArtifactManifestProperties[])'
     uid: '@azure/container-registry.ManifestPageResponse.splice_1'
     package: '@azure/container-registry'
@@ -1201,7 +714,6 @@ inheritedMethods:
       Removes elements from an array and, if necessary, inserts new elements in
       their place, returning the deleted elements.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1225,6 +737,7 @@ inheritedMethods:
       return:
         description: ''
         type: '<xref uid="@azure/container-registry.ArtifactManifestProperties" />[]'
+    inheritanceDescription: <b>Inherited From</b> Array.splice
   - name: toLocaleString()
     uid: '@azure/container-registry.ManifestPageResponse.toLocaleString'
     package: '@azure/container-registry'
@@ -1232,31 +745,30 @@ inheritedMethods:
       Returns a string representation of an array. The elements are converted to
       string using their toLocalString methods.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function toLocaleString(): string'
       return:
         description: ''
         type: string
+    inheritanceDescription: <b>Inherited From</b> Array.toLocaleString
   - name: toString()
     uid: '@azure/container-registry.ManifestPageResponse.toString'
     package: '@azure/container-registry'
     summary: Returns a string representation of an array.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function toString(): string'
       return:
         description: ''
         type: string
+    inheritanceDescription: <b>Inherited From</b> Array.toString
   - name: 'unshift(ArtifactManifestProperties[])'
     uid: '@azure/container-registry.ManifestPageResponse.unshift'
     package: '@azure/container-registry'
     summary: Inserts new elements at the start of an array.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function unshift(items: ArtifactManifestProperties[]): number'
@@ -1270,12 +782,12 @@ inheritedMethods:
       return:
         description: ''
         type: number
+    inheritanceDescription: <b>Inherited From</b> Array.unshift
   - name: values()
     uid: '@azure/container-registry.ManifestPageResponse.values'
     package: '@azure/container-registry'
     summary: Returns an iterable of values in the array
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function values(): IterableIterator<ArtifactManifestProperties>'
@@ -1284,6 +796,7 @@ inheritedMethods:
         type: >-
           IterableIterator&lt;<xref
           uid="@azure/container-registry.ArtifactManifestProperties" />&gt;
+    inheritanceDescription: <b>Inherited From</b> Array.values
 extends: >-
   Array&lt;<xref uid="@azure/container-registry.ArtifactManifestProperties"
   />&gt;

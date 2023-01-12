@@ -5,7 +5,6 @@ package: '@azure/cognitiveservices-visualsearch'
 summary: ''
 fullName: VisualSearchClient
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -16,7 +15,6 @@ constructors:
     package: '@azure/cognitiveservices-visualsearch'
     summary: Initializes a new instance of the VisualSearchClient class.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -32,45 +30,49 @@ constructors:
           type: <xref uid="Models.VisualSearchClientOptions" />
           description: ''
 properties:
-  - name: credentials
-    uid: '@azure/cognitiveservices-visualsearch.VisualSearchClient.credentials'
-    package: '@azure/cognitiveservices-visualsearch'
-    summary: ''
-    fullName: credentials
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'credentials: ServiceClientCredentials'
-      return:
-        description: ''
-        type: ServiceClientCredentials
-  - name: endpoint
-    uid: '@azure/cognitiveservices-visualsearch.VisualSearchClient.endpoint'
-    package: '@azure/cognitiveservices-visualsearch'
-    summary: ''
-    fullName: endpoint
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'endpoint?: undefined | string'
-      return:
-        description: ''
-        type: undefined | string
   - name: images
     uid: '@azure/cognitiveservices-visualsearch.VisualSearchClient.images'
     package: '@azure/cognitiveservices-visualsearch'
     summary: ''
     fullName: images
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'images: Images'
       return:
         description: ''
         type: <xref uid="@azure/cognitiveservices-visualsearch.Images" />
+inheritedProperties:
+  - name: credentials
+    uid: '@azure/cognitiveservices-visualsearch.VisualSearchClient.credentials'
+    package: '@azure/cognitiveservices-visualsearch'
+    summary: ''
+    fullName: credentials
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'credentials: ServiceClientCredentials'
+      return:
+        description: ''
+        type: ServiceClientCredentials
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [VisualSearchClientContext.credentials](xref:@azure/cognitiveservices-visualsearch.VisualSearchClientContext.credentials)
+  - name: endpoint
+    uid: '@azure/cognitiveservices-visualsearch.VisualSearchClient.endpoint'
+    package: '@azure/cognitiveservices-visualsearch'
+    summary: ''
+    fullName: endpoint
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'endpoint?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [VisualSearchClientContext.endpoint](xref:@azure/cognitiveservices-visualsearch.VisualSearchClientContext.endpoint)
 inheritedMethods:
   - name: >-
       sendOperationRequest(OperationArguments, OperationSpec,
@@ -80,7 +82,6 @@ inheritedMethods:
     package: '@azure/cognitiveservices-visualsearch'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -103,12 +104,12 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;RestResponse&gt;
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendOperationRequest
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
     uid: '@azure/cognitiveservices-visualsearch.VisualSearchClient.sendRequest'
     package: '@azure/cognitiveservices-visualsearch'
     summary: Send the provided httpRequest.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -121,4 +122,5 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;HttpOperationResponse&gt;
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendRequest
 extends: <xref uid="@azure/cognitiveservices-visualsearch.VisualSearchClientContext" />

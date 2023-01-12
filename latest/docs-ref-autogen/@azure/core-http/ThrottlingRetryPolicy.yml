@@ -18,7 +18,6 @@ summary: >
   https://docs.microsoft.com/en-us/azure/virtual-machines/troubleshooting/troubleshooting-throttling-errors
 fullName: ThrottlingRetryPolicy
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -29,7 +28,6 @@ constructors:
     package: '@azure/core-http'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -56,7 +54,6 @@ inheritedMethods:
       the log level does not meat the logger's threshold, then nothing will be
       logged.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function log(logLevel: HttpPipelineLogLevel, message: string)'
@@ -68,12 +65,14 @@ inheritedMethods:
           type: string
           description: |
             The message of this log.
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [BaseRequestPolicy.log](xref:@azure/core-http.BaseRequestPolicy.log)
   - name: shouldLog(HttpPipelineLogLevel)
     uid: '@azure/core-http.ThrottlingRetryPolicy.shouldLog'
     package: '@azure/core-http'
     summary: Get whether or not a log with the provided log level should be logged.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function shouldLog(logLevel: HttpPipelineLogLevel): boolean'
@@ -84,13 +83,15 @@ inheritedMethods:
       return:
         description: Whether or not a log with the provided log level should be logged.
         type: boolean
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [BaseRequestPolicy.shouldLog](xref:@azure/core-http.BaseRequestPolicy.shouldLog)
 methods:
   - name: parseDateRetryAfterHeader(string)
     uid: '@azure/core-http.ThrottlingRetryPolicy.parseDateRetryAfterHeader'
     package: '@azure/core-http'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -108,7 +109,6 @@ methods:
     package: '@azure/core-http'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -126,7 +126,6 @@ methods:
     package: '@azure/core-http'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

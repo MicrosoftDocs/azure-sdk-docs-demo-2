@@ -5,10 +5,21 @@ package: '@azure/arm-eventgrid'
 summary: Properties of the Topic update
 fullName: TopicUpdateParameters
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
+  - name: dataResidencyBoundary
+    uid: '@azure/arm-eventgrid.TopicUpdateParameters.dataResidencyBoundary'
+    package: '@azure/arm-eventgrid'
+    summary: The data residency boundary for the topic.
+    fullName: dataResidencyBoundary
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'dataResidencyBoundary?: DataResidencyBoundary'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-eventgrid.DataResidencyBoundary" />
   - name: disableLocalAuth
     uid: '@azure/arm-eventgrid.TopicUpdateParameters.disableLocalAuth'
     package: '@azure/arm-eventgrid'
@@ -18,7 +29,6 @@ properties:
       authenticate if user is allowed to publish to the topic.
     fullName: disableLocalAuth
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'disableLocalAuth?: undefined | false | true'
@@ -31,7 +41,6 @@ properties:
     summary: Topic resource identity information.
     fullName: identity
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'identity?: IdentityInfo'
@@ -46,7 +55,6 @@ properties:
       Note: These are considered only if PublicNetworkAccess is enabled.
     fullName: inboundIpRules
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'inboundIpRules?: InboundIpRule[]'
@@ -65,7 +73,6 @@ properties:
       />
     fullName: publicNetworkAccess
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'publicNetworkAccess?: PublicNetworkAccess'
@@ -75,10 +82,9 @@ properties:
   - name: tags
     uid: '@azure/arm-eventgrid.TopicUpdateParameters.tags'
     package: '@azure/arm-eventgrid'
-    summary: Tags of the resource.
+    summary: Tags of the Topic resource.
     fullName: tags
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'tags?: undefined | [key: string]: string'

@@ -7,7 +7,6 @@ summary: >-
   pipeline run
 fullName: Trigger
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -17,20 +16,18 @@ properties:
     summary: List of tags that can be used for describing the trigger.
     fullName: annotations
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
-      content: 'annotations?: Record<string, unknown>[]'
+      content: 'annotations?: any[]'
       return:
         description: ''
-        type: 'Record&lt;string, unknown&gt;[]'
+        type: 'any[]'
   - name: description
     uid: '@azure/arm-datafactory.Trigger.description'
     package: '@azure/arm-datafactory'
     summary: Trigger description.
     fullName: description
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'description?: undefined | string'
@@ -48,7 +45,6 @@ properties:
       the server.
     fullName: runtimeState
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'runtimeState?: TriggerRuntimeState'
@@ -63,7 +59,6 @@ properties:
       can be
     fullName: type
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

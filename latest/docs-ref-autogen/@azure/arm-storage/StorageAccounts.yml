@@ -5,7 +5,6 @@ package: '@azure/arm-storage'
 summary: Interface representing a StorageAccounts.
 fullName: StorageAccounts
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 methods:
@@ -17,7 +16,6 @@ methods:
     package: '@azure/arm-storage'
     summary: Abort live Migration of storage account to enable Hns
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -57,7 +55,6 @@ methods:
     package: '@azure/arm-storage'
     summary: Abort live Migration of storage account to enable Hns
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -107,7 +104,6 @@ methods:
 
       issued with the exact same set of properties, the request will succeed.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -162,7 +158,6 @@ methods:
 
       issued with the exact same set of properties, the request will succeed.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -202,15 +197,34 @@ methods:
     uid: '@azure/arm-storage.StorageAccounts.beginFailover'
     package: '@azure/arm-storage'
     summary: >-
-      Failover request can be triggered for a storage account in case of
-      availability issues. The failover
+      A failover request can be triggered for a storage account in the event a
+      primary endpoint becomes
 
-      occurs from the storage account's primary cluster to secondary cluster for
-      RA-GRS accounts. The
+      unavailable for any reason. The failover occurs from the storage account's
+      primary cluster to the
 
-      secondary cluster will become primary after failover.
+      secondary cluster for RA-GRS accounts. The secondary cluster will become
+      primary after failover and
+
+      the account is converted to LRS. In the case of a Planned Failover, the
+      primary and secondary
+
+      clusters are swapped after failover and the account remains
+      geo-replicated. Failover should continue
+
+      to be used in the event of availability issues as Planned failover is only
+      available while the
+
+      primary and secondary endpoints are available. The primary use case of a
+      Planned Failover is
+
+      disaster recovery testing drills. This type of failover is invoked by
+      setting FailoverType parameter
+
+      to 'Planned'. Learn more about the failover options here-
+
+      https://learn.microsoft.com/azure/storage/common/storage-disaster-recovery-guidanceS
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -246,15 +260,34 @@ methods:
     uid: '@azure/arm-storage.StorageAccounts.beginFailoverAndWait'
     package: '@azure/arm-storage'
     summary: >-
-      Failover request can be triggered for a storage account in case of
-      availability issues. The failover
+      A failover request can be triggered for a storage account in the event a
+      primary endpoint becomes
 
-      occurs from the storage account's primary cluster to secondary cluster for
-      RA-GRS accounts. The
+      unavailable for any reason. The failover occurs from the storage account's
+      primary cluster to the
 
-      secondary cluster will become primary after failover.
+      secondary cluster for RA-GRS accounts. The secondary cluster will become
+      primary after failover and
+
+      the account is converted to LRS. In the case of a Planned Failover, the
+      primary and secondary
+
+      clusters are swapped after failover and the account remains
+      geo-replicated. Failover should continue
+
+      to be used in the event of availability issues as Planned failover is only
+      available while the
+
+      primary and secondary endpoints are available. The primary use case of a
+      Planned Failover is
+
+      disaster recovery testing drills. This type of failover is invoked by
+      setting FailoverType parameter
+
+      to 'Planned'. Learn more about the failover options here-
+
+      https://learn.microsoft.com/azure/storage/common/storage-disaster-recovery-guidance
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -290,7 +323,6 @@ methods:
     package: '@azure/arm-storage'
     summary: Live Migration of storage account to enable Hns
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -338,7 +370,6 @@ methods:
     package: '@azure/arm-storage'
     summary: Live Migration of storage account to enable Hns
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -385,7 +416,6 @@ methods:
     package: '@azure/arm-storage'
     summary: Restore blobs in the specified blob ranges
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -433,7 +463,6 @@ methods:
     package: '@azure/arm-storage'
     summary: Restore blobs in the specified blob ranges
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -478,7 +507,6 @@ methods:
     package: '@azure/arm-storage'
     summary: Checks that the storage account name is valid and is not already in use.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -515,7 +543,6 @@ methods:
     package: '@azure/arm-storage'
     summary: Deletes a storage account in Microsoft Azure.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -554,7 +581,6 @@ methods:
       name, location, and account status. The ListKeys operation should be used
       to retrieve storage keys.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -596,7 +622,6 @@ methods:
 
       returned; use the ListKeys operation for this.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -619,7 +644,6 @@ methods:
     package: '@azure/arm-storage'
     summary: List SAS credentials of a storage account.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -669,7 +693,6 @@ methods:
 
       not returned; use the ListKeys operation for this.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -704,7 +727,6 @@ methods:
 
       account.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -743,7 +765,6 @@ methods:
     package: '@azure/arm-storage'
     summary: List service SAS credentials of a specific resource.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -789,7 +810,6 @@ methods:
       Regenerates one of the access keys or Kerberos keys for the specified
       storage account.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -838,7 +858,6 @@ methods:
     package: '@azure/arm-storage'
     summary: Revoke user delegation keys.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -895,7 +914,6 @@ methods:
 
       location and name of the storage account cannot be changed after creation.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

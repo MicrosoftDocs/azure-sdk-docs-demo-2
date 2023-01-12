@@ -6,8 +6,8 @@ package: '@azure/cognitiveservices-contentmoderator'
 summary: Contains response data for the update operation.
 fullName: ListManagementTermListsUpdateResponse
 remarks: ''
-isPreview: false
 isDeprecated: false
-syntax: >-
-  type ListManagementTermListsUpdateResponse = TermList & { _response:
-  HttpResponse & { bodyAsText: string, parsedBody: TermList } }
+syntax: |
+  type ListManagementTermListsUpdateResponse = TermList & {
+    _response: HttpResponse & { bodyAsText: string, parsedBody: TermList },
+  }

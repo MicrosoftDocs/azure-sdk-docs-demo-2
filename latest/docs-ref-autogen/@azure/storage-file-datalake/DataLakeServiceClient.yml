@@ -8,7 +8,6 @@ summary: |-
   the top-level namespace for the Data Lake service.
 fullName: DataLakeServiceClient
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -17,7 +16,6 @@ constructors:
     package: '@azure/storage-file-datalake'
     summary: Creates an instance of DataLakeServiceClient from url and pipeline.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'new DataLakeServiceClient(url: string, pipeline: Pipeline)'
@@ -40,7 +38,6 @@ constructors:
     package: '@azure/storage-file-datalake'
     summary: Creates an instance of DataLakeServiceClient from url.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -69,20 +66,22 @@ constructors:
           type: <xref uid="@azure/storage-file-datalake.StoragePipelineOptions" />
           description: |
             Optional. Options to configure the HTTP pipeline.
-properties:
+inheritedProperties:
   - name: accountName
     uid: '@azure/storage-file-datalake.DataLakeServiceClient.accountName'
     package: '@azure/storage-file-datalake'
     summary: ''
     fullName: accountName
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'accountName: string'
       return:
         description: ''
         type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [StorageClient.accountName](xref:@azure/storage-file-datalake.StorageClient.accountName)
   - name: credential
     uid: '@azure/storage-file-datalake.DataLakeServiceClient.credential'
     package: '@azure/storage-file-datalake'
@@ -93,7 +92,6 @@ properties:
       TokenCredential interface. If not specified, AnonymousCredential is used.
     fullName: credential
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -105,26 +103,30 @@ properties:
           <xref uid="@azure/storage-file-datalake.StorageSharedKeyCredential" />
           | <xref uid="@azure/storage-file-datalake.AnonymousCredential" /> |
           TokenCredential
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [StorageClient.credential](xref:@azure/storage-file-datalake.StorageClient.credential)
   - name: url
     uid: '@azure/storage-file-datalake.DataLakeServiceClient.url'
     package: '@azure/storage-file-datalake'
     summary: Encoded URL string value.
     fullName: url
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'url: string'
       return:
         description: ''
         type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [StorageClient.url](xref:@azure/storage-file-datalake.StorageClient.url)
 methods:
   - name: 'fromConnectionString(string, StoragePipelineOptions)'
     uid: '@azure/storage-file-datalake.DataLakeServiceClient.fromConnectionString'
     package: '@azure/storage-file-datalake'
     summary: Creates an instance of DataLakeServiceClient from connection string.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -168,7 +170,6 @@ methods:
       See
       https://docs.microsoft.com/en-us/rest/api/storageservices/create-account-sas
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -207,7 +208,6 @@ methods:
       Creates a <xref:@azure/storage-file-datalake.DataLakeFileSystemClient>
       object.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -234,7 +234,6 @@ methods:
       See
       https://docs.microsoft.com/en-us/rest/api/storageservices/get-blob-service-properties
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -291,7 +290,6 @@ methods:
       See
       https://docs.microsoft.com/en-us/rest/api/storageservices/get-user-delegation-key
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -436,7 +434,6 @@ methods:
       See
       https://docs.microsoft.com/en-us/rest/api/storageservices/list-containers2
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -471,7 +468,6 @@ methods:
       See
       https://docs.microsoft.com/en-us/rest/api/storageservices/set-blob-service-properties
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -496,7 +492,6 @@ methods:
       This API is only functional if Container Soft Delete is enabled for the
       storage account.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

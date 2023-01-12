@@ -5,7 +5,6 @@ package: '@azure/service-bus'
 summary: Errors that occur within Service Bus.
 fullName: ServiceBusError
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -14,7 +13,6 @@ constructors:
     package: '@azure/service-bus'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'new ServiceBusError(messagingError: MessagingError)'
@@ -28,7 +26,6 @@ constructors:
     package: '@azure/service-bus'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'new ServiceBusError(message: string, code: ServiceBusErrorCode)'
@@ -41,23 +38,6 @@ constructors:
           description: |
             The reason for the failure.
 properties:
-  - name: address
-    uid: '@azure/service-bus.ServiceBusError.address'
-    package: '@azure/service-bus'
-    summary: >-
-      Address to which the network connection failed.
-
-      Only present if the `MessagingError` was instantiated with a Node.js
-      `SystemError`.
-    fullName: address
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'address?: string'
-      return:
-        description: ''
-        type: string
   - name: code
     uid: '@azure/service-bus.ServiceBusError.code'
     package: '@azure/service-bus'
@@ -104,13 +84,30 @@ properties:
       - **UnauthorizedAccess"**: The user doesn't have access to the entity.
     fullName: code
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'code: ServiceBusErrorCode'
       return:
         description: ''
         type: <xref uid="@azure/service-bus.ServiceBusErrorCode" />
+inheritedProperties:
+  - name: address
+    uid: '@azure/service-bus.ServiceBusError.address'
+    package: '@azure/service-bus'
+    summary: >-
+      Address to which the network connection failed.
+
+      Only present if the `MessagingError` was instantiated with a Node.js
+      `SystemError`.
+    fullName: address
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'address?: string'
+      return:
+        description: ''
+        type: string
+    inheritanceDescription: <b>Inherited From</b> MessagingError.address
   - name: errno
     uid: '@azure/service-bus.ServiceBusError.errno'
     package: '@azure/service-bus'
@@ -121,52 +118,52 @@ properties:
       `SystemError`.
     fullName: errno
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'errno?: number | string'
       return:
         description: ''
         type: number | string
+    inheritanceDescription: <b>Inherited From</b> MessagingError.errno
   - name: info
     uid: '@azure/service-bus.ServiceBusError.info'
     package: '@azure/service-bus'
     summary: Extra details about the error.
     fullName: info
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'info?: any'
       return:
         description: ''
         type: any
+    inheritanceDescription: <b>Inherited From</b> MessagingError.info
   - name: message
     uid: '@azure/service-bus.ServiceBusError.message'
     package: '@azure/service-bus'
     summary: ''
     fullName: message
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'message: string'
       return:
         description: ''
         type: string
+    inheritanceDescription: <b>Inherited From</b> Error.message
   - name: name
     uid: '@azure/service-bus.ServiceBusError.name'
     package: '@azure/service-bus'
     summary: 'The error name. Default value: "MessagingError".'
     fullName: name
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'name: string'
       return:
         description: ''
         type: string
+    inheritanceDescription: <b>Inherited From</b> MessagingError.name
   - name: port
     uid: '@azure/service-bus.ServiceBusError.port'
     package: '@azure/service-bus'
@@ -177,39 +174,39 @@ properties:
       `SystemError`.
     fullName: port
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'port?: number'
       return:
         description: ''
         type: number
+    inheritanceDescription: <b>Inherited From</b> MessagingError.port
   - name: retryable
     uid: '@azure/service-bus.ServiceBusError.retryable'
     package: '@azure/service-bus'
     summary: 'Describes whether the error is retryable. Default: true.'
     fullName: retryable
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'retryable: boolean'
       return:
         description: ''
         type: boolean
+    inheritanceDescription: <b>Inherited From</b> MessagingError.retryable
   - name: stack
     uid: '@azure/service-bus.ServiceBusError.stack'
     package: '@azure/service-bus'
     summary: ''
     fullName: stack
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'stack?: string'
       return:
         description: ''
         type: string
+    inheritanceDescription: <b>Inherited From</b> Error.stack
   - name: syscall
     uid: '@azure/service-bus.ServiceBusError.syscall'
     package: '@azure/service-bus'
@@ -220,11 +217,11 @@ properties:
       `SystemError`.
     fullName: syscall
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'syscall?: string'
       return:
         description: ''
         type: string
+    inheritanceDescription: <b>Inherited From</b> MessagingError.syscall
 extends: MessagingError

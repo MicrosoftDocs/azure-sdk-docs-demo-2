@@ -19,10 +19,9 @@ summary: >
   The AttestationPolicyToken represents this JWS object.
 fullName: AttestationPolicyToken
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
-properties:
+inheritedProperties:
   - name: algorithm
     uid: '@azure/attestation.AttestationPolicyToken.algorithm'
     package: '@azure/attestation'
@@ -35,13 +34,15 @@ properties:
       unsecured.
     fullName: algorithm
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'algorithm: string'
       return:
         description: ''
         type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [AttestationToken.algorithm](xref:@azure/attestation.AttestationToken.algorithm)
   - name: certificateChain
     uid: '@azure/attestation.AttestationPolicyToken.certificateChain'
     package: '@azure/attestation'
@@ -53,13 +54,15 @@ properties:
 
     fullName: certificateChain
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'certificateChain?: AttestationSigner'
       return:
         description: ''
         type: <xref uid="@azure/attestation.AttestationSigner" />
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [AttestationToken.certificateChain](xref:@azure/attestation.AttestationToken.certificateChain)
   - name: certificateSha256Thumbprint
     uid: '@azure/attestation.AttestationPolicyToken.certificateSha256Thumbprint'
     package: '@azure/attestation'
@@ -71,13 +74,15 @@ properties:
 
     fullName: certificateSha256Thumbprint
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'certificateSha256Thumbprint?: string'
       return:
         description: ''
         type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [AttestationToken.certificateSha256Thumbprint](xref:@azure/attestation.AttestationToken.certificateSha256Thumbprint)
   - name: certificateThumbprint
     uid: '@azure/attestation.AttestationPolicyToken.certificateThumbprint'
     package: '@azure/attestation'
@@ -88,13 +93,15 @@ properties:
       4.1.7](https://www.rfc-editor.org/rfc/rfc7515.html#section-4.1.7))
     fullName: certificateThumbprint
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'certificateThumbprint?: string'
       return:
         description: ''
         type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [AttestationToken.certificateThumbprint](xref:@azure/attestation.AttestationToken.certificateThumbprint)
   - name: contentType
     uid: '@azure/attestation.AttestationPolicyToken.contentType'
     package: '@azure/attestation'
@@ -105,13 +112,15 @@ properties:
       4.1.10](https://www.rfc-editor.org/rfc/rfc7515.html#section-4.1.10))
     fullName: contentType
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'contentType?: string'
       return:
         description: ''
         type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [AttestationToken.contentType](xref:@azure/attestation.AttestationToken.contentType)
   - name: critical
     uid: '@azure/attestation.AttestationPolicyToken.critical'
     package: '@azure/attestation'
@@ -122,13 +131,15 @@ properties:
 
     fullName: critical
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'critical?: boolean'
       return:
         description: ''
         type: boolean
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [AttestationToken.critical](xref:@azure/attestation.AttestationToken.critical)
   - name: expiresOn
     uid: '@azure/attestation.AttestationPolicyToken.expiresOn'
     package: '@azure/attestation'
@@ -140,13 +151,15 @@ properties:
         for details.
     fullName: expiresOn
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'expiresOn?: Date'
       return:
         description: ''
         type: Date
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [AttestationToken.expiresOn](xref:@azure/attestation.AttestationToken.expiresOn)
   - name: issuedAt
     uid: '@azure/attestation.AttestationPolicyToken.issuedAt'
     package: '@azure/attestation'
@@ -158,13 +171,15 @@ properties:
         for details.
     fullName: issuedAt
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'issuedAt?: Date'
       return:
         description: ''
         type: Date
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [AttestationToken.issuedAt](xref:@azure/attestation.AttestationToken.issuedAt)
   - name: issuer
     uid: '@azure/attestation.AttestationPolicyToken.issuer'
     package: '@azure/attestation'
@@ -176,13 +191,15 @@ properties:
         for details.
     fullName: issuer
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'issuer?: string'
       return:
         description: ''
         type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [AttestationToken.issuer](xref:@azure/attestation.AttestationToken.issuer)
   - name: keyId
     uid: '@azure/attestation.AttestationPolicyToken.keyId'
     package: '@azure/attestation'
@@ -192,13 +209,15 @@ properties:
         for details.
     fullName: keyId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'keyId?: string'
       return:
         description: ''
         type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [AttestationToken.keyId](xref:@azure/attestation.AttestationToken.keyId)
   - name: keyUrl
     uid: '@azure/attestation.AttestationPolicyToken.keyUrl'
     package: '@azure/attestation'
@@ -210,13 +229,15 @@ properties:
       4.1.2](https://www.rfc-editor.org/rfc/rfc7515.html#section-4.1.2))
     fullName: keyUrl
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'keyUrl?: string'
       return:
         description: ''
         type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [AttestationToken.keyUrl](xref:@azure/attestation.AttestationToken.keyUrl)
   - name: notBefore
     uid: '@azure/attestation.AttestationPolicyToken.notBefore'
     package: '@azure/attestation'
@@ -228,13 +249,15 @@ properties:
         for details.
     fullName: notBefore
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'notBefore?: Date'
       return:
         description: ''
         type: Date
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [AttestationToken.notBefore](xref:@azure/attestation.AttestationToken.notBefore)
   - name: type
     uid: '@azure/attestation.AttestationPolicyToken.type'
     package: '@azure/attestation'
@@ -246,13 +269,15 @@ properties:
       4.1.9](https://www.rfc-editor.org/rfc/rfc7515.html#section-4.1.9))
     fullName: type
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'type?: string'
       return:
         description: ''
         type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [AttestationToken.type](xref:@azure/attestation.AttestationToken.type)
   - name: x509Url
     uid: '@azure/attestation.AttestationPolicyToken.x509Url'
     package: '@azure/attestation'
@@ -264,32 +289,35 @@ properties:
       4.1.5](https://www.rfc-editor.org/rfc/rfc7515.html#section-4.1.5))
     fullName: x509Url
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'x509Url?: string'
       return:
         description: ''
         type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [AttestationToken.x509Url](xref:@azure/attestation.AttestationToken.x509Url)
 inheritedMethods:
   - name: getBody()
     uid: '@azure/attestation.AttestationPolicyToken.getBody'
     package: '@azure/attestation'
     summary: Returns the deserialized body of the AttestationToken object.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getBody(): unknown'
       return:
         description: The body of the attestation token as an object.
         type: unknown
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [AttestationToken.getBody](xref:@azure/attestation.AttestationToken.getBody)
   - name: 'getTokenProblems(AttestationSigner[], AttestationTokenValidationOptions)'
     uid: '@azure/attestation.AttestationPolicyToken.getTokenProblems'
     package: '@azure/attestation'
     summary: Validates the attestation token to verify that it is semantically correct.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -306,16 +334,21 @@ inheritedMethods:
       return:
         description: ''
         type: 'string[]'
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [AttestationToken.getTokenProblems](xref:@azure/attestation.AttestationToken.getTokenProblems)
   - name: serialize()
     uid: '@azure/attestation.AttestationPolicyToken.serialize'
     package: '@azure/attestation'
     summary: the token to a string.
     remarks: Serializes the token to a string.
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function serialize(): string'
       return:
         description: The token serialized to a RFC 7515 JSON Web Signature.
         type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [AttestationToken.serialize](xref:@azure/attestation.AttestationToken.serialize)
 extends: <xref uid="@azure/attestation.AttestationToken" />

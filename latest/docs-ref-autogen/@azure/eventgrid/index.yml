@@ -41,6 +41,7 @@ interfaces:
   - '@azure/eventgrid.AppEventTypeDetail'
   - '@azure/eventgrid.AppServicePlanEventTypeDetail'
   - '@azure/eventgrid.CloudEvent'
+  - '@azure/eventgrid.CloudEventSendOptions'
   - '@azure/eventgrid.CommunicationIdentifierModel'
   - '@azure/eventgrid.CommunicationUserIdentifierModel'
   - '@azure/eventgrid.ContainerRegistryArtifactEventData'
@@ -64,10 +65,13 @@ interfaces:
   - '@azure/eventgrid.EventGridEvent'
   - '@azure/eventgrid.EventHubCaptureFileCreatedEventData'
   - '@azure/eventgrid.GenerateSharedAccessSignatureOptions'
+  - '@azure/eventgrid.HealthcareDicomImageCreatedEventData'
+  - '@azure/eventgrid.HealthcareDicomImageDeletedEventData'
   - '@azure/eventgrid.HealthcareFhirResourceCreatedEventData'
   - '@azure/eventgrid.HealthcareFhirResourceDeletedEventData'
   - '@azure/eventgrid.HealthcareFhirResourceUpdatedEventData'
   - '@azure/eventgrid.InputSchemaToInputTypeMap'
+  - '@azure/eventgrid.InputSchemaToOptionsTypeMap'
   - '@azure/eventgrid.KeyVaultAccessPolicyChangedEventData'
   - '@azure/eventgrid.KeyVaultCertificateExpiredEventData'
   - '@azure/eventgrid.KeyVaultCertificateNearExpiryEventData'
@@ -225,7 +229,6 @@ functions:
       function may only be called when the EventGridPublisherClient was
       constructed with a KeyCredential instance.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -263,7 +266,6 @@ functions:
 
       identify the underlying data
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -294,7 +296,6 @@ functions:
 
       identify the underlying data
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

@@ -5,10 +5,11 @@ package: '@azure/arm-keyvault'
 summary: Private endpoint connection resource.
 fullName: MhsmPrivateEndpointConnection
 remarks: ''
-isPreview: false
 isDeprecated: false
-syntax: >-
-  type MhsmPrivateEndpointConnection = ManagedHsmResource & { etag?: undefined |
-  string, privateEndpoint?: MhsmPrivateEndpoint,
-  privateLinkServiceConnectionState?: MhsmPrivateLinkServiceConnectionState,
-  provisioningState?: PrivateEndpointConnectionProvisioningState }
+syntax: |
+  type MhsmPrivateEndpointConnection = ManagedHsmResource & {
+    etag?: undefined | string,
+    privateEndpoint?: MhsmPrivateEndpoint,
+    privateLinkServiceConnectionState?: MhsmPrivateLinkServiceConnectionState,
+    provisioningState?: PrivateEndpointConnectionProvisioningState,
+  }

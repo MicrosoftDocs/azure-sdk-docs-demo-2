@@ -6,24 +6,9 @@ package: '@azure/cognitiveservices-customimagesearch'
 summary: Optional Parameters.
 fullName: CustomInstanceImageSearchOptionalParams
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: abortSignal
-    uid: >-
-      @azure/cognitiveservices-customimagesearch.CustomInstanceImageSearchOptionalParams.abortSignal
-    package: '@azure/cognitiveservices-customimagesearch'
-    summary: The signal which can be used to abort requests.
-    fullName: abortSignal
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'abortSignal?: AbortSignalLike'
-      return:
-        description: ''
-        type: AbortSignalLike
   - name: acceptLanguage
     uid: >-
       @azure/cognitiveservices-customimagesearch.CustomInstanceImageSearchOptionalParams.acceptLanguage
@@ -79,7 +64,6 @@ properties:
       Bing.com properties in the response objects apply the specified language.
     fullName: acceptLanguage
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'acceptLanguage?: undefined | string'
@@ -103,7 +87,6 @@ properties:
       aspect ratio. Possible values include: 'All', 'Square', 'Wide', 'Tall'
     fullName: aspect
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'aspect?: ImageAspect'
@@ -193,7 +176,6 @@ properties:
       you must not include cookies in the request.
     fullName: clientId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'clientId?: undefined | string'
@@ -223,7 +205,6 @@ properties:
       may result in Bing serving erroneous results.
     fullName: clientIp
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'clientIp?: undefined | string'
@@ -250,7 +231,6 @@ properties:
       'Pink', 'Purple', 'Red', 'Teal', 'White', 'Yellow'
     fullName: color
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'color?: ImageColor'
@@ -283,7 +263,6 @@ properties:
       Search APIs.
     fullName: count
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'count?: undefined | number'
@@ -331,29 +310,12 @@ properties:
       query parameter are mutually exclusive—do not specify both.
     fullName: countryCode
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'countryCode?: undefined | string'
       return:
         description: ''
         type: undefined | string
-  - name: customHeaders
-    uid: >-
-      @azure/cognitiveservices-customimagesearch.CustomInstanceImageSearchOptionalParams.customHeaders
-    package: '@azure/cognitiveservices-customimagesearch'
-    summary: |-
-      {object} [customHeaders] User defined custom request headers that
-      will be applied before the request is sent.
-    fullName: customHeaders
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'customHeaders?: undefined | [key: string]: string'
-      return:
-        description: ''
-        type: 'undefined | [key: string]: string'
   - name: freshness
     uid: >-
       @azure/cognitiveservices-customimagesearch.CustomInstanceImageSearchOptionalParams.freshness
@@ -371,7 +333,6 @@ properties:
       'Week', 'Month'
     fullName: freshness
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'freshness?: Freshness'
@@ -389,7 +350,6 @@ properties:
       filter to return small images that have a height of 150 pixels.
     fullName: height
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'height?: undefined | number'
@@ -411,7 +371,6 @@ properties:
       object's imageId field contains the ID that you set this parameter to.
     fullName: id
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'id?: undefined | string'
@@ -432,7 +391,6 @@ properties:
       include: 'Face', 'Portrait'
     fullName: imageContent
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'imageContent?: ImageContent'
@@ -465,7 +423,6 @@ properties:
       'Transparent'
     fullName: imageType
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'imageType?: ImageType'
@@ -524,7 +481,6 @@ properties:
       'Public', 'Share', 'ShareCommercially', 'Modify', 'ModifyCommercially'
     fullName: license
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'license?: ImageLicense'
@@ -614,7 +570,6 @@ properties:
       this header.
     fullName: location
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'location?: undefined | string'
@@ -662,7 +617,6 @@ properties:
       query parameter are mutually exclusive—do not specify both.
     fullName: market
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'market?: undefined | string'
@@ -689,7 +643,6 @@ properties:
       sizes.
     fullName: maxFileSize
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'maxFileSize?: undefined | number'
@@ -711,7 +664,6 @@ properties:
       exclusive.
     fullName: maxHeight
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'maxHeight?: undefined | number'
@@ -732,7 +684,6 @@ properties:
       widths. This filter and the width filter are mutually exclusive.
     fullName: maxWidth
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'maxWidth?: undefined | number'
@@ -759,7 +710,6 @@ properties:
       sizes.
     fullName: minFileSize
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'minFileSize?: undefined | number'
@@ -781,7 +731,6 @@ properties:
       exclusive.
     fullName: minHeight
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'minHeight?: undefined | number'
@@ -802,7 +751,6 @@ properties:
       of widths. This filter and the width filter are mutually exclusive.
     fullName: minWidth
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'minWidth?: undefined | number'
@@ -843,43 +791,12 @@ properties:
       Trending Images API or the Web Search API.
     fullName: offset
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'offset?: undefined | number'
       return:
         description: ''
         type: undefined | number
-  - name: onDownloadProgress
-    uid: >-
-      @azure/cognitiveservices-customimagesearch.CustomInstanceImageSearchOptionalParams.onDownloadProgress
-    package: '@azure/cognitiveservices-customimagesearch'
-    summary: Callback which fires upon download progress.
-    fullName: onDownloadProgress
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        onDownloadProgress?: undefined | (progress: TransferProgressEvent) =>
-        void
-      return:
-        description: ''
-        type: 'undefined | (progress: TransferProgressEvent) =&gt; void'
-  - name: onUploadProgress
-    uid: >-
-      @azure/cognitiveservices-customimagesearch.CustomInstanceImageSearchOptionalParams.onUploadProgress
-    package: '@azure/cognitiveservices-customimagesearch'
-    summary: Callback which fires upon upload progress.
-    fullName: onUploadProgress
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'onUploadProgress?: undefined | (progress: TransferProgressEvent) => void'
-      return:
-        description: ''
-        type: 'undefined | (progress: TransferProgressEvent) =&gt; void'
   - name: safeSearch
     uid: >-
       @azure/cognitiveservices-customimagesearch.CustomInstanceImageSearchOptionalParams.safeSearch
@@ -924,7 +841,6 @@ properties:
       content. Possible values include: 'Off', 'Moderate', 'Strict'
     fullName: safeSearch
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'safeSearch?: SafeSearch'
@@ -964,7 +880,6 @@ properties:
       language.
     fullName: setLang
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'setLang?: undefined | string'
@@ -997,29 +912,12 @@ properties:
       Possible values include: 'All', 'Small', 'Medium', 'Large', 'Wallpaper'
     fullName: size
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'size?: ImageSize'
       return:
         description: ''
         type: <xref uid="@azure/cognitiveservices-customimagesearch.ImageSize" />
-  - name: timeout
-    uid: >-
-      @azure/cognitiveservices-customimagesearch.CustomInstanceImageSearchOptionalParams.timeout
-    package: '@azure/cognitiveservices-customimagesearch'
-    summary: >-
-      The number of milliseconds a request can take before automatically being
-      terminated.
-    fullName: timeout
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'timeout?: undefined | number'
-      return:
-        description: ''
-        type: undefined | number
   - name: userAgent
     uid: >-
       @azure/cognitiveservices-customimagesearch.CustomInstanceImageSearchOptionalParams.userAgent
@@ -1062,7 +960,6 @@ properties:
       Safari / 9537.53
     fullName: userAgent
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'userAgent?: undefined | string'
@@ -1080,11 +977,87 @@ properties:
       filter to return small images that have a width of 150 pixels.
     fullName: width
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'width?: undefined | number'
       return:
         description: ''
         type: undefined | number
+inheritedProperties:
+  - name: abortSignal
+    uid: >-
+      @azure/cognitiveservices-customimagesearch.CustomInstanceImageSearchOptionalParams.abortSignal
+    package: '@azure/cognitiveservices-customimagesearch'
+    summary: The signal which can be used to abort requests.
+    fullName: abortSignal
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'abortSignal?: AbortSignalLike'
+      return:
+        description: ''
+        type: AbortSignalLike
+    inheritanceDescription: <b>Inherited From</b> RequestOptionsBase.abortSignal
+  - name: customHeaders
+    uid: >-
+      @azure/cognitiveservices-customimagesearch.CustomInstanceImageSearchOptionalParams.customHeaders
+    package: '@azure/cognitiveservices-customimagesearch'
+    summary: |-
+      {object} [customHeaders] User defined custom request headers that
+      will be applied before the request is sent.
+    fullName: customHeaders
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'customHeaders?: undefined | [key: string]: string'
+      return:
+        description: ''
+        type: 'undefined | [key: string]: string'
+    inheritanceDescription: <b>Inherited From</b> RequestOptionsBase.customHeaders
+  - name: onDownloadProgress
+    uid: >-
+      @azure/cognitiveservices-customimagesearch.CustomInstanceImageSearchOptionalParams.onDownloadProgress
+    package: '@azure/cognitiveservices-customimagesearch'
+    summary: Callback which fires upon download progress.
+    fullName: onDownloadProgress
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        onDownloadProgress?: undefined | (progress: TransferProgressEvent) =>
+        void
+      return:
+        description: ''
+        type: 'undefined | (progress: TransferProgressEvent) =&gt; void'
+    inheritanceDescription: <b>Inherited From</b> RequestOptionsBase.onDownloadProgress
+  - name: onUploadProgress
+    uid: >-
+      @azure/cognitiveservices-customimagesearch.CustomInstanceImageSearchOptionalParams.onUploadProgress
+    package: '@azure/cognitiveservices-customimagesearch'
+    summary: Callback which fires upon upload progress.
+    fullName: onUploadProgress
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'onUploadProgress?: undefined | (progress: TransferProgressEvent) => void'
+      return:
+        description: ''
+        type: 'undefined | (progress: TransferProgressEvent) =&gt; void'
+    inheritanceDescription: <b>Inherited From</b> RequestOptionsBase.onUploadProgress
+  - name: timeout
+    uid: >-
+      @azure/cognitiveservices-customimagesearch.CustomInstanceImageSearchOptionalParams.timeout
+    package: '@azure/cognitiveservices-customimagesearch'
+    summary: >-
+      The number of milliseconds a request can take before automatically being
+      terminated.
+    fullName: timeout
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'timeout?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+    inheritanceDescription: <b>Inherited From</b> RequestOptionsBase.timeout
 extends: RequestOptionsBase

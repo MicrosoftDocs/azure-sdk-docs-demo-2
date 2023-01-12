@@ -5,7 +5,6 @@ package: '@azure/arm-appconfiguration'
 summary: The details of the error.
 fullName: ErrorDetails
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -15,11 +14,10 @@ properties:
     summary: >-
       The error additional info.
 
-      **NOTE: This property will not be serialized. It can only be populated by
-      the server.**
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
     fullName: additionalInfo
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'additionalInfo?: ErrorAdditionalInfo[]'
@@ -32,11 +30,10 @@ properties:
     summary: >-
       Error code.
 
-      **NOTE: This property will not be serialized. It can only be populated by
-      the server.**
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
     fullName: code
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'code?: undefined | string'
@@ -49,11 +46,10 @@ properties:
     summary: >-
       Error message indicating why the operation failed.
 
-      **NOTE: This property will not be serialized. It can only be populated by
-      the server.**
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
     fullName: message
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'message?: undefined | string'

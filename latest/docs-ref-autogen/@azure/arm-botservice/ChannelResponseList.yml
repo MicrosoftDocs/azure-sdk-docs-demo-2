@@ -5,7 +5,6 @@ package: '@azure/arm-botservice'
 summary: ''
 fullName: ChannelResponseList
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -15,13 +14,25 @@ properties:
     summary: ''
     fullName: Array
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'Array: ArrayConstructor'
       return:
         description: ''
         type: ArrayConstructor
+  - name: nextLink
+    uid: '@azure/arm-botservice.ChannelResponseList.nextLink'
+    package: '@azure/arm-botservice'
+    summary: The link used to get the next page of bot service channel resources.
+    fullName: nextLink
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'nextLink?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+inheritedProperties:
   - name: length
     uid: '@azure/arm-botservice.ChannelResponseList.length'
     package: '@azure/arm-botservice'
@@ -30,52 +41,36 @@ properties:
       highest element defined in an array.
     fullName: length
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'length: number'
       return:
         description: ''
         type: number
-  - name: nextLink
-    uid: '@azure/arm-botservice.ChannelResponseList.nextLink'
-    package: '@azure/arm-botservice'
-    summary: The link used to get the next page of bot service channel resources.
-    fullName: nextLink
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'nextLink?: undefined | string'
-      return:
-        description: ''
-        type: undefined | string
+    inheritanceDescription: <b>Inherited From</b> Array.length
 inheritedMethods:
-  - name: at(number)
-    uid: '@azure/arm-botservice.ChannelResponseList.at'
+  - name: 'concat((T | ConcatArray<T>)[])'
+    uid: '@azure/arm-botservice.ChannelResponseList.concat_1'
     package: '@azure/arm-botservice'
-    summary: |-
-      Takes an integer value and returns the item at that index,
-      allowing for positive and negative integers.
-      Negative integers count back from the last item in the array.
+    summary: Combines two or more arrays.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
-      content: 'function at(index: number): BotChannel | undefined'
+      content: 'function concat(items: (T | ConcatArray<T>)[]): BotChannel[]'
       parameters:
-        - id: index
-          type: number
-          description: ''
+        - id: items
+          type: '(T | ConcatArray&lt;T&gt;)[]'
+          description: |
+            Additional items to add to the end of array1.
       return:
         description: ''
-        type: <xref uid="@azure/arm-botservice.BotChannel" /> | undefined
+        type: '<xref uid="@azure/arm-botservice.BotChannel" />[]'
+    inheritanceDescription: <b>Inherited From</b> Array.concat
   - name: 'concat(ConcatArray<BotChannel>[])'
     uid: '@azure/arm-botservice.ChannelResponseList.concat'
     package: '@azure/arm-botservice'
     summary: Combines two or more arrays.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function concat(items: ConcatArray<BotChannel>[]): BotChannel[]'
@@ -87,23 +82,7 @@ inheritedMethods:
       return:
         description: ''
         type: '<xref uid="@azure/arm-botservice.BotChannel" />[]'
-  - name: 'concat(T | ConcatArray<T>[])'
-    uid: '@azure/arm-botservice.ChannelResponseList.concat_1'
-    package: '@azure/arm-botservice'
-    summary: Combines two or more arrays.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function concat(items: T | ConcatArray<T>[]): BotChannel[]'
-      parameters:
-        - id: items
-          type: 'T | ConcatArray&lt;T&gt;[]'
-          description: |
-            Additional items to add to the end of array1.
-      return:
-        description: ''
-        type: '<xref uid="@azure/arm-botservice.BotChannel" />[]'
+    inheritanceDescription: <b>Inherited From</b> Array.concat
   - name: 'copyWithin(number, number, undefined | number)'
     uid: '@azure/arm-botservice.ChannelResponseList.copyWithin'
     package: '@azure/arm-botservice'
@@ -113,7 +92,6 @@ inheritedMethods:
 
       to the same array starting at position target
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -142,18 +120,19 @@ inheritedMethods:
       return:
         description: ''
         type: this
+    inheritanceDescription: <b>Inherited From</b> Array.copyWithin
   - name: entries()
     uid: '@azure/arm-botservice.ChannelResponseList.entries'
     package: '@azure/arm-botservice'
     summary: 'Returns an iterable of key, value pairs for every entry in the array'
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function entries(): IterableIterator<[number, BotChannel]>'
       return:
         description: ''
         type: 'IterableIterator&lt;[number, BotChannel]&gt;'
+    inheritanceDescription: <b>Inherited From</b> Array.entries
   - name: >-
       every((value: BotChannel, index: number, array: BotChannel[]) => unknown,
       any)
@@ -161,7 +140,6 @@ inheritedMethods:
     package: '@azure/arm-botservice'
     summary: Determines whether all the members of an array satisfy the specified test.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -185,6 +163,7 @@ inheritedMethods:
       return:
         description: ''
         type: boolean
+    inheritanceDescription: <b>Inherited From</b> Array.every
   - name: 'fill(BotChannel, undefined | number, undefined | number)'
     uid: '@azure/arm-botservice.ChannelResponseList.fill'
     package: '@azure/arm-botservice'
@@ -192,7 +171,6 @@ inheritedMethods:
       Returns the this object after filling the section identified by start and
       end with value
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -219,6 +197,7 @@ inheritedMethods:
       return:
         description: ''
         type: this
+    inheritanceDescription: <b>Inherited From</b> Array.fill
   - name: >-
       filter((value: BotChannel, index: number, array: BotChannel[]) => unknown,
       any)
@@ -228,7 +207,6 @@ inheritedMethods:
       Returns the elements of an array that meet the condition specified in a
       callback function.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -252,6 +230,7 @@ inheritedMethods:
       return:
         description: ''
         type: '<xref uid="@azure/arm-botservice.BotChannel" />[]'
+    inheritanceDescription: <b>Inherited From</b> Array.filter
   - name: >-
       filter<S>((value: BotChannel, index: number, array: BotChannel[]) =>
       boolean, any)
@@ -261,7 +240,6 @@ inheritedMethods:
       Returns the elements of an array that meet the condition specified in a
       callback function.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -285,6 +263,7 @@ inheritedMethods:
       return:
         description: ''
         type: 'S[]'
+    inheritanceDescription: <b>Inherited From</b> Array.filter
   - name: >-
       find((value: BotChannel, index: number, obj: BotChannel[]) => unknown,
       any)
@@ -292,7 +271,6 @@ inheritedMethods:
     package: '@azure/arm-botservice'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -308,6 +286,7 @@ inheritedMethods:
       return:
         description: ''
         type: <xref uid="@azure/arm-botservice.BotChannel" /> | undefined
+    inheritanceDescription: <b>Inherited From</b> Array.find
   - name: >-
       find<S>((this: void, value: BotChannel, index: number, obj: BotChannel[])
       => boolean, any)
@@ -319,7 +298,6 @@ inheritedMethods:
 
       otherwise.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -349,6 +327,7 @@ inheritedMethods:
       return:
         description: ''
         type: S | undefined
+    inheritanceDescription: <b>Inherited From</b> Array.find
   - name: >-
       findIndex((value: BotChannel, index: number, obj: BotChannel[]) =>
       unknown, any)
@@ -360,7 +339,6 @@ inheritedMethods:
 
       otherwise.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -388,260 +366,7 @@ inheritedMethods:
       return:
         description: ''
         type: number
-  - name: flat<U>(undefined | number)
-    uid: '@azure/arm-botservice.ChannelResponseList.flat_8'
-    package: '@azure/arm-botservice'
-    summary: >-
-      Returns a new array with all sub-array elements concatenated into it
-      recursively up to the
-
-      specified depth. If no depth is provided, flat method defaults to the
-      depth of 1.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function flat<U>(depth?: undefined | number): any[]'
-      parameters:
-        - id: depth
-          type: undefined | number
-          description: |
-            The maximum recursion depth
-      return:
-        description: ''
-        type: 'any[]'
-  - name: 'flat<U>(U[], 0)'
-    uid: '@azure/arm-botservice.ChannelResponseList.flat_7'
-    package: '@azure/arm-botservice'
-    summary: >-
-      Returns a new array with all sub-array elements concatenated into it
-      recursively up to the
-
-      specified depth.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function flat<U>(this: U[], depth: 0): U[]'
-      parameters:
-        - id: this
-          type: 'U[]'
-          description: ''
-        - id: depth
-          type: '0'
-          description: |
-            The maximum recursion depth
-      return:
-        description: ''
-        type: 'U[]'
-  - name: 'flat<U>(U[][], undefined | 1)'
-    uid: '@azure/arm-botservice.ChannelResponseList.flat_6'
-    package: '@azure/arm-botservice'
-    summary: >-
-      Returns a new array with all sub-array elements concatenated into it
-      recursively up to the
-
-      specified depth.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function flat<U>(this: U[][], depth?: undefined | 1): U[]'
-      parameters:
-        - id: this
-          type: 'U[][]'
-          description: ''
-        - id: depth
-          type: undefined | 1
-          description: |
-            The maximum recursion depth
-      return:
-        description: ''
-        type: 'U[]'
-  - name: 'flat<U>(U[][][], 2)'
-    uid: '@azure/arm-botservice.ChannelResponseList.flat_5'
-    package: '@azure/arm-botservice'
-    summary: >-
-      Returns a new array with all sub-array elements concatenated into it
-      recursively up to the
-
-      specified depth.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function flat<U>(this: U[][][], depth: 2): U[]'
-      parameters:
-        - id: this
-          type: 'U[][][]'
-          description: ''
-        - id: depth
-          type: '2'
-          description: |
-            The maximum recursion depth
-      return:
-        description: ''
-        type: 'U[]'
-  - name: 'flat<U>(U[][][][], 3)'
-    uid: '@azure/arm-botservice.ChannelResponseList.flat_4'
-    package: '@azure/arm-botservice'
-    summary: >-
-      Returns a new array with all sub-array elements concatenated into it
-      recursively up to the
-
-      specified depth.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function flat<U>(this: U[][][][], depth: 3): U[]'
-      parameters:
-        - id: this
-          type: 'U[][][][]'
-          description: ''
-        - id: depth
-          type: '3'
-          description: |
-            The maximum recursion depth
-      return:
-        description: ''
-        type: 'U[]'
-  - name: 'flat<U>(U[][][][][], 4)'
-    uid: '@azure/arm-botservice.ChannelResponseList.flat_3'
-    package: '@azure/arm-botservice'
-    summary: >-
-      Returns a new array with all sub-array elements concatenated into it
-      recursively up to the
-
-      specified depth.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function flat<U>(this: U[][][][][], depth: 4): U[]'
-      parameters:
-        - id: this
-          type: 'U[][][][][]'
-          description: ''
-        - id: depth
-          type: '4'
-          description: |
-            The maximum recursion depth
-      return:
-        description: ''
-        type: 'U[]'
-  - name: 'flat<U>(U[][][][][][], 5)'
-    uid: '@azure/arm-botservice.ChannelResponseList.flat_2'
-    package: '@azure/arm-botservice'
-    summary: >-
-      Returns a new array with all sub-array elements concatenated into it
-      recursively up to the
-
-      specified depth.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function flat<U>(this: U[][][][][][], depth: 5): U[]'
-      parameters:
-        - id: this
-          type: 'U[][][][][][]'
-          description: ''
-        - id: depth
-          type: '5'
-          description: |
-            The maximum recursion depth
-      return:
-        description: ''
-        type: 'U[]'
-  - name: 'flat<U>(U[][][][][][][], 6)'
-    uid: '@azure/arm-botservice.ChannelResponseList.flat_1'
-    package: '@azure/arm-botservice'
-    summary: >-
-      Returns a new array with all sub-array elements concatenated into it
-      recursively up to the
-
-      specified depth.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function flat<U>(this: U[][][][][][][], depth: 6): U[]'
-      parameters:
-        - id: this
-          type: 'U[][][][][][][]'
-          description: ''
-        - id: depth
-          type: '6'
-          description: |
-            The maximum recursion depth
-      return:
-        description: ''
-        type: 'U[]'
-  - name: 'flat<U>(U[][][][][][][][], 7)'
-    uid: '@azure/arm-botservice.ChannelResponseList.flat'
-    package: '@azure/arm-botservice'
-    summary: >-
-      Returns a new array with all sub-array elements concatenated into it
-      recursively up to the
-
-      specified depth.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function flat<U>(this: U[][][][][][][][], depth: 7): U[]'
-      parameters:
-        - id: this
-          type: 'U[][][][][][][][]'
-          description: ''
-        - id: depth
-          type: '7'
-          description: |
-            The maximum recursion depth
-      return:
-        description: ''
-        type: 'U[]'
-  - name: >-
-      flatMap<U, This>((this: This, value: BotChannel, index: number, array:
-      BotChannel[]) => U | ReadonlyArray<U>, This)
-    uid: '@azure/arm-botservice.ChannelResponseList.flatMap'
-    package: '@azure/arm-botservice'
-    summary: >-
-      Calls a defined callback function on each element of an array. Then,
-      flattens the result into
-
-      a new array.
-
-      This is identical to a map followed by flat with depth 1.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function flatMap<U, This>(callback: (this: This, value: BotChannel,
-        index: number, array: BotChannel[]) => U | ReadonlyArray<U>, thisArg?:
-        This): U[]
-      parameters:
-        - id: callback
-          type: >-
-            (this: This, value: BotChannel, index: number, array: BotChannel[])
-            =&gt; U | ReadonlyArray&lt;U&gt;
-          description: >-
-            A function that accepts up to three arguments. The flatMap method
-            calls the
-
-            callback function one time for each element in the array.
-        - id: thisArg
-          type: This
-          description: >
-            An object to which the this keyword can refer in the callback
-            function. If
-
-            thisArg is omitted, undefined is used as the this value.
-      return:
-        description: ''
-        type: 'U[]'
+    inheritanceDescription: <b>Inherited From</b> Array.findIndex
   - name: >-
       forEach((value: BotChannel, index: number, array: BotChannel[]) => void,
       any)
@@ -649,7 +374,6 @@ inheritedMethods:
     package: '@azure/arm-botservice'
     summary: Performs the specified action for each element in an array.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -667,37 +391,12 @@ inheritedMethods:
             An object to which the this keyword can refer in the callbackfn
             function. If thisArg is omitted, undefined is used as the this
             value.
-  - name: 'includes(BotChannel, undefined | number)'
-    uid: '@azure/arm-botservice.ChannelResponseList.includes'
-    package: '@azure/arm-botservice'
-    summary: >-
-      Determines whether an array includes a certain element, returning true or
-      false as appropriate.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function includes(searchElement: BotChannel, fromIndex?: undefined |
-        number): boolean
-      parameters:
-        - id: searchElement
-          type: <xref uid="@azure/arm-botservice.BotChannel" />
-          description: The element to search for.
-        - id: fromIndex
-          type: undefined | number
-          description: >
-            The position in this array at which to begin searching for
-            searchElement.
-      return:
-        description: ''
-        type: boolean
+    inheritanceDescription: <b>Inherited From</b> Array.forEach
   - name: 'indexOf(BotChannel, undefined | number)'
     uid: '@azure/arm-botservice.ChannelResponseList.indexOf'
     package: '@azure/arm-botservice'
     summary: Returns the index of the first occurrence of a value in an array.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -715,6 +414,7 @@ inheritedMethods:
       return:
         description: ''
         type: number
+    inheritanceDescription: <b>Inherited From</b> Array.indexOf
   - name: join(undefined | string)
     uid: '@azure/arm-botservice.ChannelResponseList.join'
     package: '@azure/arm-botservice'
@@ -722,7 +422,6 @@ inheritedMethods:
       Adds all the elements of an array separated by the specified separator
       string.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function join(separator?: undefined | string): string'
@@ -736,24 +435,24 @@ inheritedMethods:
       return:
         description: ''
         type: string
+    inheritanceDescription: <b>Inherited From</b> Array.join
   - name: keys()
     uid: '@azure/arm-botservice.ChannelResponseList.keys'
     package: '@azure/arm-botservice'
     summary: Returns an iterable of keys in the array
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function keys(): IterableIterator<number>'
       return:
         description: ''
         type: IterableIterator&lt;number&gt;
+    inheritanceDescription: <b>Inherited From</b> Array.keys
   - name: 'lastIndexOf(BotChannel, undefined | number)'
     uid: '@azure/arm-botservice.ChannelResponseList.lastIndexOf'
     package: '@azure/arm-botservice'
     summary: Returns the index of the last occurrence of a specified value in an array.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -771,6 +470,7 @@ inheritedMethods:
       return:
         description: ''
         type: number
+    inheritanceDescription: <b>Inherited From</b> Array.lastIndexOf
   - name: 'map<U>((value: BotChannel, index: number, array: BotChannel[]) => U, any)'
     uid: '@azure/arm-botservice.ChannelResponseList.map'
     package: '@azure/arm-botservice'
@@ -778,7 +478,6 @@ inheritedMethods:
       Calls a defined callback function on each element of an array, and returns
       an array that contains the results.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -799,24 +498,24 @@ inheritedMethods:
       return:
         description: ''
         type: 'U[]'
+    inheritanceDescription: <b>Inherited From</b> Array.map
   - name: pop()
     uid: '@azure/arm-botservice.ChannelResponseList.pop'
     package: '@azure/arm-botservice'
     summary: Removes the last element from an array and returns it.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function pop(): BotChannel | undefined'
       return:
         description: ''
         type: <xref uid="@azure/arm-botservice.BotChannel" /> | undefined
+    inheritanceDescription: <b>Inherited From</b> Array.pop
   - name: 'push(BotChannel[])'
     uid: '@azure/arm-botservice.ChannelResponseList.push'
     package: '@azure/arm-botservice'
     summary: 'Appends new elements to an array, and returns the new length of the array.'
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function push(items: BotChannel[]): number'
@@ -828,6 +527,7 @@ inheritedMethods:
       return:
         description: ''
         type: number
+    inheritanceDescription: <b>Inherited From</b> Array.push
   - name: >-
       reduce((previousValue: BotChannel, currentValue: BotChannel, currentIndex:
       number, array: BotChannel[]) => BotChannel)
@@ -838,7 +538,6 @@ inheritedMethods:
       The return value of the callback function is the accumulated result, and
       is provided as an argument in the next call to the callback function.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -857,6 +556,7 @@ inheritedMethods:
       return:
         description: ''
         type: <xref uid="@azure/arm-botservice.BotChannel" />
+    inheritanceDescription: <b>Inherited From</b> Array.reduce
   - name: >-
       reduce((previousValue: BotChannel, currentValue: BotChannel, currentIndex:
       number, array: BotChannel[]) => BotChannel, BotChannel)
@@ -864,7 +564,6 @@ inheritedMethods:
     package: '@azure/arm-botservice'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -883,6 +582,7 @@ inheritedMethods:
       return:
         description: ''
         type: <xref uid="@azure/arm-botservice.BotChannel" />
+    inheritanceDescription: <b>Inherited From</b> Array.reduce
   - name: >-
       reduce<U>((previousValue: U, currentValue: BotChannel, currentIndex:
       number, array: BotChannel[]) => U, U)
@@ -893,7 +593,6 @@ inheritedMethods:
       The return value of the callback function is the accumulated result, and
       is provided as an argument in the next call to the callback function.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -918,6 +617,7 @@ inheritedMethods:
       return:
         description: ''
         type: U
+    inheritanceDescription: <b>Inherited From</b> Array.reduce
   - name: >-
       reduceRight((previousValue: BotChannel, currentValue: BotChannel,
       currentIndex: number, array: BotChannel[]) => BotChannel)
@@ -929,7 +629,6 @@ inheritedMethods:
       accumulated result, and is provided as an argument in the next call to the
       callback function.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -948,6 +647,7 @@ inheritedMethods:
       return:
         description: ''
         type: <xref uid="@azure/arm-botservice.BotChannel" />
+    inheritanceDescription: <b>Inherited From</b> Array.reduceRight
   - name: >-
       reduceRight((previousValue: BotChannel, currentValue: BotChannel,
       currentIndex: number, array: BotChannel[]) => BotChannel, BotChannel)
@@ -955,7 +655,6 @@ inheritedMethods:
     package: '@azure/arm-botservice'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -974,6 +673,7 @@ inheritedMethods:
       return:
         description: ''
         type: <xref uid="@azure/arm-botservice.BotChannel" />
+    inheritanceDescription: <b>Inherited From</b> Array.reduceRight
   - name: >-
       reduceRight<U>((previousValue: U, currentValue: BotChannel, currentIndex:
       number, array: BotChannel[]) => U, U)
@@ -985,7 +685,6 @@ inheritedMethods:
       accumulated result, and is provided as an argument in the next call to the
       callback function.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1010,36 +709,36 @@ inheritedMethods:
       return:
         description: ''
         type: U
+    inheritanceDescription: <b>Inherited From</b> Array.reduceRight
   - name: reverse()
     uid: '@azure/arm-botservice.ChannelResponseList.reverse'
     package: '@azure/arm-botservice'
     summary: Reverses the elements in an Array.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function reverse(): BotChannel[]'
       return:
         description: ''
         type: '<xref uid="@azure/arm-botservice.BotChannel" />[]'
+    inheritanceDescription: <b>Inherited From</b> Array.reverse
   - name: shift()
     uid: '@azure/arm-botservice.ChannelResponseList.shift'
     package: '@azure/arm-botservice'
     summary: Removes the first element from an array and returns it.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function shift(): BotChannel | undefined'
       return:
         description: ''
         type: <xref uid="@azure/arm-botservice.BotChannel" /> | undefined
+    inheritanceDescription: <b>Inherited From</b> Array.shift
   - name: 'slice(undefined | number, undefined | number)'
     uid: '@azure/arm-botservice.ChannelResponseList.slice'
     package: '@azure/arm-botservice'
     summary: Returns a section of an array.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1056,6 +755,7 @@ inheritedMethods:
       return:
         description: ''
         type: '<xref uid="@azure/arm-botservice.BotChannel" />[]'
+    inheritanceDescription: <b>Inherited From</b> Array.slice
   - name: >-
       some((value: BotChannel, index: number, array: BotChannel[]) => unknown,
       any)
@@ -1065,7 +765,6 @@ inheritedMethods:
       Determines whether the specified callback function returns true for any
       element of an array.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1089,12 +788,12 @@ inheritedMethods:
       return:
         description: ''
         type: boolean
+    inheritanceDescription: <b>Inherited From</b> Array.some
   - name: 'sort(undefined | (a: BotChannel, b: BotChannel) => number)'
     uid: '@azure/arm-botservice.ChannelResponseList.sort'
     package: '@azure/arm-botservice'
     summary: Sorts an array.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1110,6 +809,7 @@ inheritedMethods:
       return:
         description: ''
         type: this
+    inheritanceDescription: <b>Inherited From</b> Array.sort
   - name: 'splice(number, number, BotChannel[])'
     uid: '@azure/arm-botservice.ChannelResponseList.splice_1'
     package: '@azure/arm-botservice'
@@ -1117,7 +817,6 @@ inheritedMethods:
       Removes elements from an array and, if necessary, inserts new elements in
       their place, returning the deleted elements.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1139,6 +838,7 @@ inheritedMethods:
       return:
         description: ''
         type: '<xref uid="@azure/arm-botservice.BotChannel" />[]'
+    inheritanceDescription: <b>Inherited From</b> Array.splice
   - name: 'splice(number, undefined | number)'
     uid: '@azure/arm-botservice.ChannelResponseList.splice'
     package: '@azure/arm-botservice'
@@ -1146,7 +846,6 @@ inheritedMethods:
       Removes elements from an array and, if necessary, inserts new elements in
       their place, returning the deleted elements.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1165,6 +864,7 @@ inheritedMethods:
       return:
         description: ''
         type: '<xref uid="@azure/arm-botservice.BotChannel" />[]'
+    inheritanceDescription: <b>Inherited From</b> Array.splice
   - name: toLocaleString()
     uid: '@azure/arm-botservice.ChannelResponseList.toLocaleString'
     package: '@azure/arm-botservice'
@@ -1172,31 +872,30 @@ inheritedMethods:
       Returns a string representation of an array. The elements are converted to
       string using their toLocalString methods.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function toLocaleString(): string'
       return:
         description: ''
         type: string
+    inheritanceDescription: <b>Inherited From</b> Array.toLocaleString
   - name: toString()
     uid: '@azure/arm-botservice.ChannelResponseList.toString'
     package: '@azure/arm-botservice'
     summary: Returns a string representation of an array.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function toString(): string'
       return:
         description: ''
         type: string
+    inheritanceDescription: <b>Inherited From</b> Array.toString
   - name: 'unshift(BotChannel[])'
     uid: '@azure/arm-botservice.ChannelResponseList.unshift'
     package: '@azure/arm-botservice'
     summary: Inserts new elements at the start of an array.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function unshift(items: BotChannel[]): number'
@@ -1208,12 +907,12 @@ inheritedMethods:
       return:
         description: ''
         type: number
+    inheritanceDescription: <b>Inherited From</b> Array.unshift
   - name: values()
     uid: '@azure/arm-botservice.ChannelResponseList.values'
     package: '@azure/arm-botservice'
     summary: Returns an iterable of values in the array
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function values(): IterableIterator<BotChannel>'
@@ -1222,4 +921,5 @@ inheritedMethods:
         type: >-
           IterableIterator&lt;<xref uid="@azure/arm-botservice.BotChannel"
           />&gt;
+    inheritanceDescription: <b>Inherited From</b> Array.values
 extends: Array&lt;<xref uid="@azure/arm-botservice.BotChannel" />&gt;

@@ -5,10 +5,22 @@ package: '@azure/arm-botservice'
 summary: An interface representing AzureBotServiceOptions.
 fullName: AzureBotServiceOptions
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
+  - name: baseUri
+    uid: '@azure/arm-botservice.AzureBotServiceOptions.baseUri'
+    package: '@azure/arm-botservice'
+    summary: ''
+    fullName: baseUri
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'baseUri?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+inheritedProperties:
   - name: acceptLanguage
     uid: '@azure/arm-botservice.AzureBotServiceOptions.acceptLanguage'
     package: '@azure/arm-botservice'
@@ -17,13 +29,13 @@ properties:
       for the response. Default value is: "en-US".
     fullName: acceptLanguage
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'acceptLanguage?: undefined | string'
       return:
         description: ''
         type: undefined | string
+    inheritanceDescription: <b>Inherited From</b> AzureServiceClientOptions.acceptLanguage
   - name: agentSettings
     uid: '@azure/arm-botservice.AzureBotServiceOptions.agentSettings'
     package: '@azure/arm-botservice'
@@ -32,26 +44,13 @@ properties:
       only).
     fullName: agentSettings
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'agentSettings?: AgentSettings'
       return:
         description: ''
         type: AgentSettings
-  - name: baseUri
-    uid: '@azure/arm-botservice.AzureBotServiceOptions.baseUri'
-    package: '@azure/arm-botservice'
-    summary: ''
-    fullName: baseUri
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'baseUri?: undefined | string'
-      return:
-        description: ''
-        type: undefined | string
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.agentSettings
   - name: clientRequestIdHeaderName
     uid: '@azure/arm-botservice.AzureBotServiceOptions.clientRequestIdHeaderName'
     package: '@azure/arm-botservice'
@@ -63,26 +62,26 @@ properties:
       the request ID.
     fullName: clientRequestIdHeaderName
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'clientRequestIdHeaderName?: undefined | string'
       return:
         description: ''
         type: undefined | string
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.clientRequestIdHeaderName
   - name: deserializationContentTypes
     uid: '@azure/arm-botservice.AzureBotServiceOptions.deserializationContentTypes'
     package: '@azure/arm-botservice'
     summary: The content-types that will be associated with JSON or XML serialization.
     fullName: deserializationContentTypes
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'deserializationContentTypes?: DeserializationContentTypes'
       return:
         description: ''
         type: DeserializationContentTypes
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.deserializationContentTypes
   - name: generateClientRequestIdHeader
     uid: '@azure/arm-botservice.AzureBotServiceOptions.generateClientRequestIdHeader'
     package: '@azure/arm-botservice'
@@ -91,26 +90,26 @@ properties:
       request.
     fullName: generateClientRequestIdHeader
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'generateClientRequestIdHeader?: undefined | false | true'
       return:
         description: ''
         type: undefined | false | true
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.generateClientRequestIdHeader
   - name: httpClient
     uid: '@azure/arm-botservice.AzureBotServiceOptions.httpClient'
     package: '@azure/arm-botservice'
     summary: The HttpClient that will be used to send HTTP requests.
     fullName: httpClient
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'httpClient?: HttpClient'
       return:
         description: ''
         type: HttpClient
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.httpClient
   - name: httpPipelineLogger
     uid: '@azure/arm-botservice.AzureBotServiceOptions.httpPipelineLogger'
     package: '@azure/arm-botservice'
@@ -119,13 +118,13 @@ properties:
       the HTTP pipeline.
     fullName: httpPipelineLogger
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'httpPipelineLogger?: HttpPipelineLogger'
       return:
         description: ''
         type: HttpPipelineLogger
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.httpPipelineLogger
   - name: longRunningOperationRetryTimeout
     uid: >-
       @azure/arm-botservice.AzureBotServiceOptions.longRunningOperationRetryTimeout
@@ -137,52 +136,54 @@ properties:
       Long Running Operations. Default value is 30.
     fullName: longRunningOperationRetryTimeout
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'longRunningOperationRetryTimeout?: undefined | number'
       return:
         description: ''
         type: undefined | number
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      AzureServiceClientOptions.longRunningOperationRetryTimeout
   - name: noRetryPolicy
     uid: '@azure/arm-botservice.AzureBotServiceOptions.noRetryPolicy'
     package: '@azure/arm-botservice'
     summary: 'If set to true, turn off the default retry policy.'
     fullName: noRetryPolicy
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'noRetryPolicy?: undefined | false | true'
       return:
         description: ''
         type: undefined | false | true
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.noRetryPolicy
   - name: proxySettings
     uid: '@azure/arm-botservice.AzureBotServiceOptions.proxySettings'
     package: '@azure/arm-botservice'
     summary: Proxy settings which will be used for every HTTP request (Node.js only).
     fullName: proxySettings
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'proxySettings?: ProxySettings'
       return:
         description: ''
         type: ProxySettings
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.proxySettings
   - name: redirectOptions
     uid: '@azure/arm-botservice.AzureBotServiceOptions.redirectOptions'
     package: '@azure/arm-botservice'
     summary: Options for how redirect responses are handled.
     fullName: redirectOptions
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'redirectOptions?: RedirectOptions'
       return:
         description: ''
         type: RedirectOptions
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.redirectOptions
   - name: requestPolicyFactories
     uid: '@azure/arm-botservice.AzureBotServiceOptions.requestPolicyFactories'
     package: '@azure/arm-botservice'
@@ -196,7 +197,6 @@ properties:
       the requestPolicyFactories that will be used.
     fullName: requestPolicyFactories
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -208,6 +208,7 @@ properties:
         type: >-
           RequestPolicyFactory[] | (defaultRequestPolicyFactories:
           RequestPolicyFactory[]) =&gt; void | RequestPolicyFactory[]
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.requestPolicyFactories
   - name: rpRegistrationRetryTimeout
     uid: '@azure/arm-botservice.AzureBotServiceOptions.rpRegistrationRetryTimeout'
     package: '@azure/arm-botservice'
@@ -216,13 +217,13 @@ properties:
       Default value is 30.
     fullName: rpRegistrationRetryTimeout
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'rpRegistrationRetryTimeout?: undefined | number'
       return:
         description: ''
         type: undefined | number
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.rpRegistrationRetryTimeout
   - name: userAgent
     uid: '@azure/arm-botservice.AzureBotServiceOptions.userAgent'
     package: '@azure/arm-botservice'
@@ -234,13 +235,13 @@ properties:
       that will be used.
     fullName: userAgent
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'userAgent?: string | (defaultUserAgent: string) => string'
       return:
         description: ''
         type: 'string | (defaultUserAgent: string) =&gt; string'
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.userAgent
   - name: userAgentHeaderName
     uid: '@azure/arm-botservice.AzureBotServiceOptions.userAgentHeaderName'
     package: '@azure/arm-botservice'
@@ -254,7 +255,6 @@ properties:
       be used when running in a browser.
     fullName: userAgentHeaderName
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -263,6 +263,7 @@ properties:
       return:
         description: ''
         type: 'string | (defaultUserAgentHeaderName: string) =&gt; string'
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.userAgentHeaderName
   - name: withCredentials
     uid: '@azure/arm-botservice.AzureBotServiceOptions.withCredentials'
     package: '@azure/arm-botservice'
@@ -274,11 +275,11 @@ properties:
       for more information.
     fullName: withCredentials
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'withCredentials?: undefined | false | true'
       return:
         description: ''
         type: undefined | false | true
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.withCredentials
 extends: AzureServiceClientOptions

@@ -5,10 +5,29 @@ package: '@azure/cognitiveservices-spellcheck'
 summary: An interface representing SpellCheckClientOptions.
 fullName: SpellCheckClientOptions
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
+  - name: endpoint
+    uid: '@azure/cognitiveservices-spellcheck.SpellCheckClientOptions.endpoint'
+    package: '@azure/cognitiveservices-spellcheck'
+    summary: >-
+      Supported Cognitive Services endpoints (protocol and hostname, for
+      example:
+
+      "https://westus.api.cognitive.microsoft.com",
+      "https://api.cognitive.microsoft.com"). Default
+
+      value: 'https://api.cognitive.microsoft.com'.
+    fullName: endpoint
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'endpoint?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+inheritedProperties:
   - name: agentSettings
     uid: '@azure/cognitiveservices-spellcheck.SpellCheckClientOptions.agentSettings'
     package: '@azure/cognitiveservices-spellcheck'
@@ -17,13 +36,13 @@ properties:
       only).
     fullName: agentSettings
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'agentSettings?: AgentSettings'
       return:
         description: ''
         type: AgentSettings
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.agentSettings
   - name: baseUri
     uid: '@azure/cognitiveservices-spellcheck.SpellCheckClientOptions.baseUri'
     package: '@azure/cognitiveservices-spellcheck'
@@ -47,13 +66,13 @@ properties:
       `getToken` scope is set to be "https://management.azure.com/.default".
     fullName: baseUri
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'baseUri?: undefined | string'
       return:
         description: ''
         type: undefined | string
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.baseUri
   - name: clientRequestIdHeaderName
     uid: >-
       @azure/cognitiveservices-spellcheck.SpellCheckClientOptions.clientRequestIdHeaderName
@@ -66,13 +85,13 @@ properties:
       the request ID.
     fullName: clientRequestIdHeaderName
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'clientRequestIdHeaderName?: undefined | string'
       return:
         description: ''
         type: undefined | string
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.clientRequestIdHeaderName
   - name: deserializationContentTypes
     uid: >-
       @azure/cognitiveservices-spellcheck.SpellCheckClientOptions.deserializationContentTypes
@@ -80,33 +99,13 @@ properties:
     summary: The content-types that will be associated with JSON or XML serialization.
     fullName: deserializationContentTypes
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'deserializationContentTypes?: DeserializationContentTypes'
       return:
         description: ''
         type: DeserializationContentTypes
-  - name: endpoint
-    uid: '@azure/cognitiveservices-spellcheck.SpellCheckClientOptions.endpoint'
-    package: '@azure/cognitiveservices-spellcheck'
-    summary: >-
-      Supported Cognitive Services endpoints (protocol and hostname, for
-      example:
-
-      "https://westus.api.cognitive.microsoft.com",
-      "https://api.cognitive.microsoft.com"). Default
-
-      value: 'https://api.cognitive.microsoft.com'.
-    fullName: endpoint
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'endpoint?: undefined | string'
-      return:
-        description: ''
-        type: undefined | string
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.deserializationContentTypes
   - name: generateClientRequestIdHeader
     uid: >-
       @azure/cognitiveservices-spellcheck.SpellCheckClientOptions.generateClientRequestIdHeader
@@ -116,26 +115,26 @@ properties:
       request.
     fullName: generateClientRequestIdHeader
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'generateClientRequestIdHeader?: undefined | false | true'
       return:
         description: ''
         type: undefined | false | true
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.generateClientRequestIdHeader
   - name: httpClient
     uid: '@azure/cognitiveservices-spellcheck.SpellCheckClientOptions.httpClient'
     package: '@azure/cognitiveservices-spellcheck'
     summary: The HttpClient that will be used to send HTTP requests.
     fullName: httpClient
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'httpClient?: HttpClient'
       return:
         description: ''
         type: HttpClient
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.httpClient
   - name: httpPipelineLogger
     uid: >-
       @azure/cognitiveservices-spellcheck.SpellCheckClientOptions.httpPipelineLogger
@@ -145,39 +144,39 @@ properties:
       the HTTP pipeline.
     fullName: httpPipelineLogger
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'httpPipelineLogger?: HttpPipelineLogger'
       return:
         description: ''
         type: HttpPipelineLogger
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.httpPipelineLogger
   - name: noRetryPolicy
     uid: '@azure/cognitiveservices-spellcheck.SpellCheckClientOptions.noRetryPolicy'
     package: '@azure/cognitiveservices-spellcheck'
     summary: 'If set to true, turn off the default retry policy.'
     fullName: noRetryPolicy
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'noRetryPolicy?: undefined | false | true'
       return:
         description: ''
         type: undefined | false | true
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.noRetryPolicy
   - name: proxySettings
     uid: '@azure/cognitiveservices-spellcheck.SpellCheckClientOptions.proxySettings'
     package: '@azure/cognitiveservices-spellcheck'
     summary: Proxy settings which will be used for every HTTP request (Node.js only).
     fullName: proxySettings
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'proxySettings?: ProxySettings'
       return:
         description: ''
         type: ProxySettings
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.proxySettings
   - name: redirectOptions
     uid: >-
       @azure/cognitiveservices-spellcheck.SpellCheckClientOptions.redirectOptions
@@ -185,13 +184,13 @@ properties:
     summary: Options for how redirect responses are handled.
     fullName: redirectOptions
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'redirectOptions?: RedirectOptions'
       return:
         description: ''
         type: RedirectOptions
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.redirectOptions
   - name: requestPolicyFactories
     uid: >-
       @azure/cognitiveservices-spellcheck.SpellCheckClientOptions.requestPolicyFactories
@@ -206,7 +205,6 @@ properties:
       the requestPolicyFactories that will be used.
     fullName: requestPolicyFactories
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -218,6 +216,7 @@ properties:
         type: >-
           RequestPolicyFactory[] | (defaultRequestPolicyFactories:
           RequestPolicyFactory[]) =&gt; void | RequestPolicyFactory[]
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.requestPolicyFactories
   - name: rpRegistrationRetryTimeout
     uid: >-
       @azure/cognitiveservices-spellcheck.SpellCheckClientOptions.rpRegistrationRetryTimeout
@@ -227,13 +226,13 @@ properties:
       Default value is 30.
     fullName: rpRegistrationRetryTimeout
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'rpRegistrationRetryTimeout?: undefined | number'
       return:
         description: ''
         type: undefined | number
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.rpRegistrationRetryTimeout
   - name: userAgent
     uid: '@azure/cognitiveservices-spellcheck.SpellCheckClientOptions.userAgent'
     package: '@azure/cognitiveservices-spellcheck'
@@ -245,13 +244,13 @@ properties:
       that will be used.
     fullName: userAgent
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'userAgent?: string | (defaultUserAgent: string) => string'
       return:
         description: ''
         type: 'string | (defaultUserAgent: string) =&gt; string'
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.userAgent
   - name: userAgentHeaderName
     uid: >-
       @azure/cognitiveservices-spellcheck.SpellCheckClientOptions.userAgentHeaderName
@@ -266,7 +265,6 @@ properties:
       be used when running in a browser.
     fullName: userAgentHeaderName
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -275,6 +273,7 @@ properties:
       return:
         description: ''
         type: 'string | (defaultUserAgentHeaderName: string) =&gt; string'
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.userAgentHeaderName
   - name: withCredentials
     uid: >-
       @azure/cognitiveservices-spellcheck.SpellCheckClientOptions.withCredentials
@@ -287,11 +286,11 @@ properties:
       for more information.
     fullName: withCredentials
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'withCredentials?: undefined | false | true'
       return:
         description: ''
         type: undefined | false | true
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.withCredentials
 extends: ServiceClientOptions

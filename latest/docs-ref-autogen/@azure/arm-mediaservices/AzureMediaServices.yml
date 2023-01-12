@@ -5,7 +5,6 @@ package: '@azure/arm-mediaservices'
 summary: ''
 fullName: AzureMediaServices
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -16,7 +15,6 @@ constructors:
     package: '@azure/arm-mediaservices'
     summary: Initializes a new instance of the AzureMediaServices class.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -44,7 +42,6 @@ properties:
     summary: ''
     fullName: $host
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: '$host: string'
@@ -57,7 +54,6 @@ properties:
     summary: ''
     fullName: accountFilters
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'accountFilters: AccountFilters'
@@ -70,7 +66,6 @@ properties:
     summary: ''
     fullName: assetFilters
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'assetFilters: AssetFilters'
@@ -83,7 +78,6 @@ properties:
     summary: ''
     fullName: assets
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'assets: Assets'
@@ -96,7 +90,6 @@ properties:
     summary: ''
     fullName: contentKeyPolicies
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'contentKeyPolicies: ContentKeyPolicies'
@@ -109,7 +102,6 @@ properties:
     summary: ''
     fullName: jobs
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'jobs: Jobs'
@@ -122,7 +114,6 @@ properties:
     summary: ''
     fullName: liveEvents
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'liveEvents: LiveEvents'
@@ -135,7 +126,6 @@ properties:
     summary: ''
     fullName: liveOutputs
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'liveOutputs: LiveOutputs'
@@ -148,7 +138,6 @@ properties:
     summary: ''
     fullName: locations
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'locations: Locations'
@@ -161,20 +150,42 @@ properties:
     summary: ''
     fullName: mediaservices
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'mediaservices: Mediaservices'
       return:
         description: ''
         type: <xref uid="@azure/arm-mediaservices.Mediaservices" />
+  - name: mediaServicesOperationResults
+    uid: '@azure/arm-mediaservices.AzureMediaServices.mediaServicesOperationResults'
+    package: '@azure/arm-mediaservices'
+    summary: ''
+    fullName: mediaServicesOperationResults
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'mediaServicesOperationResults: MediaServicesOperationResults'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mediaservices.MediaServicesOperationResults" />
+  - name: mediaServicesOperationStatuses
+    uid: '@azure/arm-mediaservices.AzureMediaServices.mediaServicesOperationStatuses'
+    package: '@azure/arm-mediaservices'
+    summary: ''
+    fullName: mediaServicesOperationStatuses
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'mediaServicesOperationStatuses: MediaServicesOperationStatuses'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mediaservices.MediaServicesOperationStatuses" />
   - name: operationResults
     uid: '@azure/arm-mediaservices.AzureMediaServices.operationResults'
     package: '@azure/arm-mediaservices'
     summary: ''
     fullName: operationResults
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'operationResults: OperationResults'
@@ -187,7 +198,6 @@ properties:
     summary: ''
     fullName: operations
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'operations: Operations'
@@ -200,33 +210,18 @@ properties:
     summary: ''
     fullName: operationStatuses
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'operationStatuses: OperationStatuses'
       return:
         description: ''
         type: <xref uid="@azure/arm-mediaservices.OperationStatuses" />
-  - name: pipeline
-    uid: '@azure/arm-mediaservices.AzureMediaServices.pipeline'
-    package: '@azure/arm-mediaservices'
-    summary: The pipeline used by this client to make requests
-    fullName: pipeline
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'pipeline: Pipeline'
-      return:
-        description: ''
-        type: Pipeline
   - name: privateEndpointConnections
     uid: '@azure/arm-mediaservices.AzureMediaServices.privateEndpointConnections'
     package: '@azure/arm-mediaservices'
     summary: ''
     fullName: privateEndpointConnections
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'privateEndpointConnections: PrivateEndpointConnections'
@@ -239,7 +234,6 @@ properties:
     summary: ''
     fullName: privateLinkResources
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'privateLinkResources: PrivateLinkResources'
@@ -252,7 +246,6 @@ properties:
     summary: ''
     fullName: streamingEndpoints
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'streamingEndpoints: StreamingEndpoints'
@@ -265,7 +258,6 @@ properties:
     summary: ''
     fullName: streamingLocators
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'streamingLocators: StreamingLocators'
@@ -278,7 +270,6 @@ properties:
     summary: ''
     fullName: streamingPolicies
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'streamingPolicies: StreamingPolicies'
@@ -291,7 +282,6 @@ properties:
     summary: ''
     fullName: subscriptionId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'subscriptionId: string'
@@ -304,7 +294,6 @@ properties:
     summary: ''
     fullName: tracks
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'tracks: Tracks'
@@ -317,20 +306,32 @@ properties:
     summary: ''
     fullName: transforms
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'transforms: Transforms'
       return:
         description: ''
         type: <xref uid="@azure/arm-mediaservices.Transforms" />
+inheritedProperties:
+  - name: pipeline
+    uid: '@azure/arm-mediaservices.AzureMediaServices.pipeline'
+    package: '@azure/arm-mediaservices'
+    summary: The pipeline used by this client to make requests
+    fullName: pipeline
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'pipeline: Pipeline'
+      return:
+        description: ''
+        type: Pipeline
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.pipeline
 inheritedMethods:
   - name: 'sendOperationRequest<T>(OperationArguments, OperationSpec)'
     uid: '@azure/arm-mediaservices.AzureMediaServices.sendOperationRequest'
     package: '@azure/arm-mediaservices'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -349,12 +350,12 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;T&gt;
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendOperationRequest
   - name: sendRequest(PipelineRequest)
     uid: '@azure/arm-mediaservices.AzureMediaServices.sendRequest'
     package: '@azure/arm-mediaservices'
     summary: Send the provided httpRequest.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -367,4 +368,5 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;PipelineResponse&gt;
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendRequest
 extends: ServiceClient

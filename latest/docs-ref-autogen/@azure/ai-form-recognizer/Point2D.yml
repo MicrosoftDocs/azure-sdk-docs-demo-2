@@ -3,21 +3,19 @@ name: Point2D
 uid: '@azure/ai-form-recognizer.Point2D'
 package: '@azure/ai-form-recognizer'
 summary: >-
-  Represents a point used to defined bounding boxes. The unit is either 'pixel'
-  or 'inch', @see <xref:@azure/ai-form-recognizer.LengthUnit>.
+  Represents a point used to define bounding polygons. The unit is either
+  'pixel' or 'inch' (See <xref:@azure/ai-form-recognizer.LengthUnit>).
 fullName: Point2D
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: x
     uid: '@azure/ai-form-recognizer.Point2D.x'
     package: '@azure/ai-form-recognizer'
-    summary: x coordinate
+    summary: x coordinate - relative from the left side of the page
     fullName: x
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'x: number'
@@ -27,10 +25,9 @@ properties:
   - name: 'y'
     uid: '@azure/ai-form-recognizer.Point2D.y'
     package: '@azure/ai-form-recognizer'
-    summary: y coordinate
+    summary: y coordinate - relative from the top of the page
     fullName: 'y'
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'y: number'

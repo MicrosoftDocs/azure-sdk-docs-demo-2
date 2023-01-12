@@ -5,7 +5,6 @@ package: '@azure/cognitiveservices-contentmoderator'
 summary: ''
 fullName: ContentModeratorClient
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -17,7 +16,6 @@ constructors:
     package: '@azure/cognitiveservices-contentmoderator'
     summary: Initializes a new instance of the ContentModeratorClient class.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -40,33 +38,6 @@ constructors:
           type: <xref uid="msRest.ServiceClientOptions" />
           description: ''
 properties:
-  - name: credentials
-    uid: >-
-      @azure/cognitiveservices-contentmoderator.ContentModeratorClient.credentials
-    package: '@azure/cognitiveservices-contentmoderator'
-    summary: ''
-    fullName: credentials
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'credentials: ServiceClientCredentials'
-      return:
-        description: ''
-        type: ServiceClientCredentials
-  - name: endpoint
-    uid: '@azure/cognitiveservices-contentmoderator.ContentModeratorClient.endpoint'
-    package: '@azure/cognitiveservices-contentmoderator'
-    summary: ''
-    fullName: endpoint
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'endpoint: string'
-      return:
-        description: ''
-        type: string
   - name: imageModeration
     uid: >-
       @azure/cognitiveservices-contentmoderator.ContentModeratorClient.imageModeration
@@ -74,7 +45,6 @@ properties:
     summary: ''
     fullName: imageModeration
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'imageModeration: ImageModeration'
@@ -90,7 +60,6 @@ properties:
     summary: ''
     fullName: listManagementImage
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'listManagementImage: ListManagementImage'
@@ -106,7 +75,6 @@ properties:
     summary: ''
     fullName: listManagementImageLists
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'listManagementImageLists: ListManagementImageLists'
@@ -123,7 +91,6 @@ properties:
     summary: ''
     fullName: listManagementTerm
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'listManagementTerm: ListManagementTerm'
@@ -139,7 +106,6 @@ properties:
     summary: ''
     fullName: listManagementTermLists
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'listManagementTermLists: ListManagementTermLists'
@@ -155,7 +121,6 @@ properties:
     summary: ''
     fullName: reviews
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'reviews: Reviews'
@@ -169,7 +134,6 @@ properties:
     summary: ''
     fullName: textModeration
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'textModeration: TextModeration'
@@ -178,6 +142,38 @@ properties:
         type: >-
           <xref uid="@azure/cognitiveservices-contentmoderator.TextModeration"
           />
+inheritedProperties:
+  - name: credentials
+    uid: >-
+      @azure/cognitiveservices-contentmoderator.ContentModeratorClient.credentials
+    package: '@azure/cognitiveservices-contentmoderator'
+    summary: ''
+    fullName: credentials
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'credentials: ServiceClientCredentials'
+      return:
+        description: ''
+        type: ServiceClientCredentials
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [ContentModeratorClientContext.credentials](xref:@azure/cognitiveservices-contentmoderator.ContentModeratorClientContext.credentials)
+  - name: endpoint
+    uid: '@azure/cognitiveservices-contentmoderator.ContentModeratorClient.endpoint'
+    package: '@azure/cognitiveservices-contentmoderator'
+    summary: ''
+    fullName: endpoint
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'endpoint: string'
+      return:
+        description: ''
+        type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [ContentModeratorClientContext.endpoint](xref:@azure/cognitiveservices-contentmoderator.ContentModeratorClientContext.endpoint)
 inheritedMethods:
   - name: >-
       sendOperationRequest(OperationArguments, OperationSpec,
@@ -187,7 +183,6 @@ inheritedMethods:
     package: '@azure/cognitiveservices-contentmoderator'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -210,13 +205,13 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;RestResponse&gt;
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendOperationRequest
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
     uid: >-
       @azure/cognitiveservices-contentmoderator.ContentModeratorClient.sendRequest
     package: '@azure/cognitiveservices-contentmoderator'
     summary: Send the provided httpRequest.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -229,6 +224,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;HttpOperationResponse&gt;
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendRequest
 extends: >-
   <xref
   uid="@azure/cognitiveservices-contentmoderator.ContentModeratorClientContext"

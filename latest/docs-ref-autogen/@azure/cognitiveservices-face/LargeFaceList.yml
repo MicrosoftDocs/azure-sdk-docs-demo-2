@@ -5,7 +5,6 @@ package: '@azure/cognitiveservices-face'
 summary: Large face list object.
 fullName: LargeFaceList
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -15,26 +14,28 @@ properties:
     summary: LargeFaceListId of the target large face list.
     fullName: largeFaceListId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'largeFaceListId: string'
       return:
         description: ''
         type: string
+inheritedProperties:
   - name: name
     uid: '@azure/cognitiveservices-face.LargeFaceList.name'
     package: '@azure/cognitiveservices-face'
     summary: 'User defined name, maximum length is 128.'
     fullName: name
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'name: string'
       return:
         description: ''
         type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [NonNullableNameAndNullableUserDataContract.name](xref:@azure/cognitiveservices-face.NonNullableNameAndNullableUserDataContract.name)
   - name: recognitionModel
     uid: '@azure/cognitiveservices-face.LargeFaceList.recognitionModel'
     package: '@azure/cognitiveservices-face'
@@ -45,24 +46,28 @@ properties:
       'recognition_04'. Default value: 'recognition_01'.
     fullName: recognitionModel
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'recognitionModel?: RecognitionModel'
       return:
         description: ''
         type: <xref uid="@azure/cognitiveservices-face.RecognitionModel" />
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [MetaDataContract.recognitionModel](xref:@azure/cognitiveservices-face.MetaDataContract.recognitionModel)
   - name: userData
     uid: '@azure/cognitiveservices-face.LargeFaceList.userData'
     package: '@azure/cognitiveservices-face'
     summary: User specified data. Length should not exceed 16KB.
     fullName: userData
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'userData?: undefined | string'
       return:
         description: ''
         type: undefined | string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [NonNullableNameAndNullableUserDataContract.userData](xref:@azure/cognitiveservices-face.NonNullableNameAndNullableUserDataContract.userData)
 extends: <xref uid="@azure/cognitiveservices-face.MetaDataContract" />

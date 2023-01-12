@@ -3,12 +3,10 @@ name: BlobLeaseClient
 uid: '@azure/storage-blob.BlobLeaseClient'
 package: '@azure/storage-blob'
 summary: >-
-  A client that manages leases for a
-  <xref:@azure/storage-blob.BlobServiceClient.getContainerClient> or a
-  <xref:@azure/storage-blob.AppendBlobClient>.
+  A client that manages leases for a <xref:@azure/storage-blob.ContainerClient>
+  or a <xref:@azure/storage-blob.BlobClient>.
 fullName: BlobLeaseClient
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -17,7 +15,6 @@ constructors:
     package: '@azure/storage-blob'
     summary: Creates an instance of BlobLeaseClient.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -40,7 +37,6 @@ properties:
     summary: Gets the lease Id.
     fullName: leaseId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: string leaseId
@@ -53,7 +49,6 @@ properties:
     summary: Gets the url.
     fullName: url
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: string url
@@ -81,7 +76,6 @@ methods:
 
       See https://docs.microsoft.com/en-us/rest/api/storageservices/lease-blob
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -116,7 +110,6 @@ methods:
 
       See https://docs.microsoft.com/en-us/rest/api/storageservices/lease-blob
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -149,7 +142,6 @@ methods:
 
       See https://docs.microsoft.com/en-us/rest/api/storageservices/lease-blob
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -184,7 +176,6 @@ methods:
 
       See https://docs.microsoft.com/en-us/rest/api/storageservices/lease-blob
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -214,7 +205,6 @@ methods:
 
       See https://docs.microsoft.com/en-us/rest/api/storageservices/lease-blob
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function renewLease(options?: LeaseOperationOptions): Promise<Lease>'

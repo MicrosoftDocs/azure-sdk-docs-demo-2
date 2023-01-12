@@ -5,7 +5,6 @@ package: '@azure/arm-appservice'
 summary: ''
 fullName: WebSiteManagementClient
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -16,7 +15,6 @@ constructors:
     package: '@azure/arm-appservice'
     summary: Initializes a new instance of the WebSiteManagementClient class.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -46,7 +44,6 @@ properties:
     summary: ''
     fullName: $host
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: '$host: string'
@@ -59,7 +56,6 @@ properties:
     summary: ''
     fullName: apiVersion
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'apiVersion: string'
@@ -72,7 +68,6 @@ properties:
     summary: ''
     fullName: appServiceCertificateOrders
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'appServiceCertificateOrders: AppServiceCertificateOrders'
@@ -85,7 +80,6 @@ properties:
     summary: ''
     fullName: appServiceEnvironments
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'appServiceEnvironments: AppServiceEnvironments'
@@ -98,7 +92,6 @@ properties:
     summary: ''
     fullName: appServicePlans
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'appServicePlans: AppServicePlans'
@@ -111,7 +104,6 @@ properties:
     summary: ''
     fullName: certificateOrdersDiagnostics
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'certificateOrdersDiagnostics: CertificateOrdersDiagnostics'
@@ -125,7 +117,6 @@ properties:
     summary: ''
     fullName: certificateRegistrationProvider
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'certificateRegistrationProvider: CertificateRegistrationProvider'
@@ -138,7 +129,6 @@ properties:
     summary: ''
     fullName: certificates
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'certificates: Certificates'
@@ -151,7 +141,6 @@ properties:
     summary: ''
     fullName: containerApps
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'containerApps: ContainerApps'
@@ -164,7 +153,6 @@ properties:
     summary: ''
     fullName: containerAppsRevisions
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'containerAppsRevisions: ContainerAppsRevisions'
@@ -177,7 +165,6 @@ properties:
     summary: ''
     fullName: deletedWebApps
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'deletedWebApps: DeletedWebApps'
@@ -190,7 +177,6 @@ properties:
     summary: ''
     fullName: diagnostics
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'diagnostics: Diagnostics'
@@ -203,7 +189,6 @@ properties:
     summary: ''
     fullName: domainRegistrationProvider
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'domainRegistrationProvider: DomainRegistrationProvider'
@@ -216,7 +201,6 @@ properties:
     summary: ''
     fullName: domains
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'domains: Domains'
@@ -229,7 +213,6 @@ properties:
     summary: ''
     fullName: global
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'global: Global_2'
@@ -242,33 +225,18 @@ properties:
     summary: ''
     fullName: kubeEnvironments
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'kubeEnvironments: KubeEnvironments'
       return:
         description: ''
         type: <xref uid="@azure/arm-appservice.KubeEnvironments" />
-  - name: pipeline
-    uid: '@azure/arm-appservice.WebSiteManagementClient.pipeline'
-    package: '@azure/arm-appservice'
-    summary: The pipeline used by this client to make requests
-    fullName: pipeline
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'pipeline: Pipeline'
-      return:
-        description: ''
-        type: Pipeline
   - name: provider
     uid: '@azure/arm-appservice.WebSiteManagementClient.provider'
     package: '@azure/arm-appservice'
     summary: ''
     fullName: provider
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'provider: Provider'
@@ -281,7 +249,6 @@ properties:
     summary: ''
     fullName: recommendations
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'recommendations: Recommendations'
@@ -295,7 +262,6 @@ properties:
     summary: ''
     fullName: resourceHealthMetadataOperations
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'resourceHealthMetadataOperations: ResourceHealthMetadataOperations'
@@ -308,7 +274,6 @@ properties:
     summary: ''
     fullName: staticSites
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'staticSites: StaticSites'
@@ -321,7 +286,6 @@ properties:
     summary: ''
     fullName: subscriptionId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'subscriptionId: string'
@@ -334,7 +298,6 @@ properties:
     summary: ''
     fullName: topLevelDomains
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'topLevelDomains: TopLevelDomains'
@@ -347,20 +310,147 @@ properties:
     summary: ''
     fullName: webApps
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'webApps: WebApps'
       return:
         description: ''
         type: <xref uid="@azure/arm-appservice.WebApps" />
+  - name: workflowRunActionRepetitions
+    uid: '@azure/arm-appservice.WebSiteManagementClient.workflowRunActionRepetitions'
+    package: '@azure/arm-appservice'
+    summary: ''
+    fullName: workflowRunActionRepetitions
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'workflowRunActionRepetitions: WorkflowRunActionRepetitions'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.WorkflowRunActionRepetitions" />
+  - name: workflowRunActionRepetitionsRequestHistories
+    uid: >-
+      @azure/arm-appservice.WebSiteManagementClient.workflowRunActionRepetitionsRequestHistories
+    package: '@azure/arm-appservice'
+    summary: ''
+    fullName: workflowRunActionRepetitionsRequestHistories
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        workflowRunActionRepetitionsRequestHistories:
+        WorkflowRunActionRepetitionsRequestHistories
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-appservice.WorkflowRunActionRepetitionsRequestHistories"
+          />
+  - name: workflowRunActions
+    uid: '@azure/arm-appservice.WebSiteManagementClient.workflowRunActions'
+    package: '@azure/arm-appservice'
+    summary: ''
+    fullName: workflowRunActions
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'workflowRunActions: WorkflowRunActions'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.WorkflowRunActions" />
+  - name: workflowRunActionScopeRepetitions
+    uid: >-
+      @azure/arm-appservice.WebSiteManagementClient.workflowRunActionScopeRepetitions
+    package: '@azure/arm-appservice'
+    summary: ''
+    fullName: workflowRunActionScopeRepetitions
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'workflowRunActionScopeRepetitions: WorkflowRunActionScopeRepetitions'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.WorkflowRunActionScopeRepetitions" />
+  - name: workflowRuns
+    uid: '@azure/arm-appservice.WebSiteManagementClient.workflowRuns'
+    package: '@azure/arm-appservice'
+    summary: ''
+    fullName: workflowRuns
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'workflowRuns: WorkflowRuns'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.WorkflowRuns" />
+  - name: workflows
+    uid: '@azure/arm-appservice.WebSiteManagementClient.workflows'
+    package: '@azure/arm-appservice'
+    summary: ''
+    fullName: workflows
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'workflows: Workflows'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.Workflows" />
+  - name: workflowTriggerHistories
+    uid: '@azure/arm-appservice.WebSiteManagementClient.workflowTriggerHistories'
+    package: '@azure/arm-appservice'
+    summary: ''
+    fullName: workflowTriggerHistories
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'workflowTriggerHistories: WorkflowTriggerHistories'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.WorkflowTriggerHistories" />
+  - name: workflowTriggers
+    uid: '@azure/arm-appservice.WebSiteManagementClient.workflowTriggers'
+    package: '@azure/arm-appservice'
+    summary: ''
+    fullName: workflowTriggers
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'workflowTriggers: WorkflowTriggers'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.WorkflowTriggers" />
+  - name: workflowVersions
+    uid: '@azure/arm-appservice.WebSiteManagementClient.workflowVersions'
+    package: '@azure/arm-appservice'
+    summary: ''
+    fullName: workflowVersions
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'workflowVersions: WorkflowVersions'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-appservice.WorkflowVersions" />
+inheritedProperties:
+  - name: pipeline
+    uid: '@azure/arm-appservice.WebSiteManagementClient.pipeline'
+    package: '@azure/arm-appservice'
+    summary: The pipeline used by this client to make requests
+    fullName: pipeline
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'pipeline: Pipeline'
+      return:
+        description: ''
+        type: Pipeline
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.pipeline
 inheritedMethods:
   - name: 'sendOperationRequest<T>(OperationArguments, OperationSpec)'
     uid: '@azure/arm-appservice.WebSiteManagementClient.sendOperationRequest'
     package: '@azure/arm-appservice'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -379,12 +469,12 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;T&gt;
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendOperationRequest
   - name: sendRequest(PipelineRequest)
     uid: '@azure/arm-appservice.WebSiteManagementClient.sendRequest'
     package: '@azure/arm-appservice'
     summary: Send the provided httpRequest.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -397,6 +487,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;PipelineResponse&gt;
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendRequest
 methods:
   - name: >-
       checkNameAvailability(string, CheckNameResourceTypes,
@@ -405,7 +496,6 @@ methods:
     package: '@azure/arm-appservice'
     summary: Description for Check if a resource name is available.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -435,7 +525,6 @@ methods:
     package: '@azure/arm-appservice'
     summary: Description for Gets publishing user
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -456,7 +545,6 @@ methods:
     package: '@azure/arm-appservice'
     summary: Description for Gets source control token
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -482,7 +570,6 @@ methods:
     package: '@azure/arm-appservice'
     summary: Description for Gets list of available geo regions plus ministamps
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -508,7 +595,6 @@ methods:
     package: '@azure/arm-appservice'
     summary: Description for Gets a list of meters for a given location.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -529,7 +615,6 @@ methods:
     package: '@azure/arm-appservice'
     summary: Get custom hostnames under this subscription
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -553,7 +638,6 @@ methods:
     package: '@azure/arm-appservice'
     summary: Description for Get a list of available geographical regions.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -574,7 +658,6 @@ methods:
     package: '@azure/arm-appservice'
     summary: Description for List all premier add-on offers.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -601,7 +684,6 @@ methods:
     package: '@azure/arm-appservice'
     summary: Description for List all apps that are assigned to a hostname.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -630,7 +712,6 @@ methods:
     package: '@azure/arm-appservice'
     summary: Description for List all SKUs.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -649,7 +730,6 @@ methods:
     package: '@azure/arm-appservice'
     summary: Description for Gets the source controls available for Azure websites.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -672,7 +752,6 @@ methods:
     package: '@azure/arm-appservice'
     summary: Description for Move resources between resource groups.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -697,7 +776,6 @@ methods:
     package: '@azure/arm-appservice'
     summary: Description for Updates publishing user
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -726,7 +804,6 @@ methods:
     package: '@azure/arm-appservice'
     summary: Description for Updates source control token
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -756,7 +833,6 @@ methods:
     package: '@azure/arm-appservice'
     summary: Description for Validate if a resource can be created.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -784,7 +860,6 @@ methods:
     package: '@azure/arm-appservice'
     summary: Description for Validate whether a resource can be moved.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -816,7 +891,6 @@ methods:
 
       Network Security Group rules.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

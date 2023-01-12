@@ -5,7 +5,6 @@ package: '@azure/arm-network'
 summary: Interface representing a PublicIPAddresses.
 fullName: PublicIPAddresses
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 methods:
@@ -16,7 +15,6 @@ methods:
     package: '@azure/arm-network'
     summary: Creates or updates a static or dynamic public IP address.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -59,7 +57,6 @@ methods:
     package: '@azure/arm-network'
     summary: Creates or updates a static or dynamic public IP address.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -92,12 +89,82 @@ methods:
           Promise&lt;<xref
           uid="@azure/arm-network.PublicIPAddressesCreateOrUpdateResponse"
           />&gt;
+  - name: >-
+      beginDdosProtectionStatus(string, string,
+      PublicIPAddressesDdosProtectionStatusOptionalParams)
+    uid: '@azure/arm-network.PublicIPAddresses.beginDdosProtectionStatus'
+    package: '@azure/arm-network'
+    summary: Gets the Ddos Protection Status of a Public IP Address
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDdosProtectionStatus(resourceGroupName: string,
+        publicIpAddressName: string, options?:
+        PublicIPAddressesDdosProtectionStatusOptionalParams):
+        Promise<PollerLike<PollOperationState<PublicIPAddressesDdosProtectionStatusResponse>,
+        PublicIPAddressesDdosProtectionStatusResponse>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: publicIpAddressName
+          type: string
+          description: The name of the public IP address.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.PublicIPAddressesDdosProtectionStatusOptionalParams"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-network.PublicIPAddressesDdosProtectionStatusResponse"
+          />&gt;, <xref
+          uid="@azure/arm-network.PublicIPAddressesDdosProtectionStatusResponse"
+          />&gt;&gt;
+  - name: >-
+      beginDdosProtectionStatusAndWait(string, string,
+      PublicIPAddressesDdosProtectionStatusOptionalParams)
+    uid: '@azure/arm-network.PublicIPAddresses.beginDdosProtectionStatusAndWait'
+    package: '@azure/arm-network'
+    summary: Gets the Ddos Protection Status of a Public IP Address
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDdosProtectionStatusAndWait(resourceGroupName: string,
+        publicIpAddressName: string, options?:
+        PublicIPAddressesDdosProtectionStatusOptionalParams):
+        Promise<PublicIPAddressesDdosProtectionStatusResponse>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: publicIpAddressName
+          type: string
+          description: The name of the public IP address.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.PublicIPAddressesDdosProtectionStatusOptionalParams"
+            />
+          description: |
+            The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.PublicIPAddressesDdosProtectionStatusResponse"
+          />&gt;
   - name: 'beginDelete(string, string, PublicIPAddressesDeleteOptionalParams)'
     uid: '@azure/arm-network.PublicIPAddresses.beginDelete'
     package: '@azure/arm-network'
     summary: Deletes the specified public IP address.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -125,7 +192,6 @@ methods:
     package: '@azure/arm-network'
     summary: Deletes the specified public IP address.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -153,7 +219,6 @@ methods:
     package: '@azure/arm-network'
     summary: Gets the specified public IP address in a specified resource group.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -183,7 +248,6 @@ methods:
     package: '@azure/arm-network'
     summary: Get the specified public IP address in a cloud service.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -234,7 +298,6 @@ methods:
     package: '@azure/arm-network'
     summary: Get the specified public IP address in a virtual machine scale set.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -281,7 +344,6 @@ methods:
     package: '@azure/arm-network'
     summary: Gets all public IP addresses in a resource group.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -308,7 +370,6 @@ methods:
     package: '@azure/arm-network'
     summary: Gets all the public IP addresses in a subscription.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -333,7 +394,6 @@ methods:
     package: '@azure/arm-network'
     summary: Gets information about all public IP addresses on a cloud service level.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -373,7 +433,6 @@ methods:
 
       service.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -421,7 +480,6 @@ methods:
       Gets information about all public IP addresses on a virtual machine scale
       set level.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -461,7 +519,6 @@ methods:
 
       machine scale set.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -506,7 +563,6 @@ methods:
     package: '@azure/arm-network'
     summary: Updates public IP address tags.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

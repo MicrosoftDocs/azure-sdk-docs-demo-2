@@ -5,10 +5,23 @@ package: '@azure/cognitiveservices-contentmoderator'
 summary: Optional Parameters.
 fullName: ReviewsAddVideoFrameOptionalParams
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
+  - name: timescale
+    uid: >-
+      @azure/cognitiveservices-contentmoderator.ReviewsAddVideoFrameOptionalParams.timescale
+    package: '@azure/cognitiveservices-contentmoderator'
+    summary: Timescale of the video you are adding frames to.
+    fullName: timescale
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'timescale?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+inheritedProperties:
   - name: abortSignal
     uid: >-
       @azure/cognitiveservices-contentmoderator.ReviewsAddVideoFrameOptionalParams.abortSignal
@@ -16,13 +29,13 @@ properties:
     summary: The signal which can be used to abort requests.
     fullName: abortSignal
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'abortSignal?: AbortSignalLike'
       return:
         description: ''
         type: AbortSignalLike
+    inheritanceDescription: <b>Inherited From</b> RequestOptionsBase.abortSignal
   - name: customHeaders
     uid: >-
       @azure/cognitiveservices-contentmoderator.ReviewsAddVideoFrameOptionalParams.customHeaders
@@ -32,13 +45,13 @@ properties:
       will be applied before the request is sent.
     fullName: customHeaders
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'customHeaders?: undefined | [key: string]: string'
       return:
         description: ''
         type: 'undefined | [key: string]: string'
+    inheritanceDescription: <b>Inherited From</b> RequestOptionsBase.customHeaders
   - name: onDownloadProgress
     uid: >-
       @azure/cognitiveservices-contentmoderator.ReviewsAddVideoFrameOptionalParams.onDownloadProgress
@@ -46,7 +59,6 @@ properties:
     summary: Callback which fires upon download progress.
     fullName: onDownloadProgress
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -55,6 +67,7 @@ properties:
       return:
         description: ''
         type: 'undefined | (progress: TransferProgressEvent) =&gt; void'
+    inheritanceDescription: <b>Inherited From</b> RequestOptionsBase.onDownloadProgress
   - name: onUploadProgress
     uid: >-
       @azure/cognitiveservices-contentmoderator.ReviewsAddVideoFrameOptionalParams.onUploadProgress
@@ -62,13 +75,13 @@ properties:
     summary: Callback which fires upon upload progress.
     fullName: onUploadProgress
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'onUploadProgress?: undefined | (progress: TransferProgressEvent) => void'
       return:
         description: ''
         type: 'undefined | (progress: TransferProgressEvent) =&gt; void'
+    inheritanceDescription: <b>Inherited From</b> RequestOptionsBase.onUploadProgress
   - name: timeout
     uid: >-
       @azure/cognitiveservices-contentmoderator.ReviewsAddVideoFrameOptionalParams.timeout
@@ -78,25 +91,11 @@ properties:
       terminated.
     fullName: timeout
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'timeout?: undefined | number'
       return:
         description: ''
         type: undefined | number
-  - name: timescale
-    uid: >-
-      @azure/cognitiveservices-contentmoderator.ReviewsAddVideoFrameOptionalParams.timescale
-    package: '@azure/cognitiveservices-contentmoderator'
-    summary: Timescale of the video you are adding frames to.
-    fullName: timescale
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'timescale?: undefined | number'
-      return:
-        description: ''
-        type: undefined | number
+    inheritanceDescription: <b>Inherited From</b> RequestOptionsBase.timeout
 extends: RequestOptionsBase

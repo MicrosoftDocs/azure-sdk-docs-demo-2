@@ -5,7 +5,6 @@ package: '@azure/cognitiveservices-newssearch'
 summary: ''
 fullName: NewsSearchClient
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -14,7 +13,6 @@ constructors:
     package: '@azure/cognitiveservices-newssearch'
     summary: Initializes a new instance of the NewsSearchClient class.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -30,45 +28,49 @@ constructors:
           type: <xref uid="Models.NewsSearchClientOptions" />
           description: ''
 properties:
-  - name: credentials
-    uid: '@azure/cognitiveservices-newssearch.NewsSearchClient.credentials'
-    package: '@azure/cognitiveservices-newssearch'
-    summary: ''
-    fullName: credentials
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'credentials: ServiceClientCredentials'
-      return:
-        description: ''
-        type: ServiceClientCredentials
-  - name: endpoint
-    uid: '@azure/cognitiveservices-newssearch.NewsSearchClient.endpoint'
-    package: '@azure/cognitiveservices-newssearch'
-    summary: ''
-    fullName: endpoint
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'endpoint?: undefined | string'
-      return:
-        description: ''
-        type: undefined | string
   - name: news
     uid: '@azure/cognitiveservices-newssearch.NewsSearchClient.news'
     package: '@azure/cognitiveservices-newssearch'
     summary: ''
     fullName: news
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'news: NewsOperations'
       return:
         description: ''
         type: <xref uid="@azure/cognitiveservices-newssearch.NewsOperations" />
+inheritedProperties:
+  - name: credentials
+    uid: '@azure/cognitiveservices-newssearch.NewsSearchClient.credentials'
+    package: '@azure/cognitiveservices-newssearch'
+    summary: ''
+    fullName: credentials
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'credentials: ServiceClientCredentials'
+      return:
+        description: ''
+        type: ServiceClientCredentials
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [NewsSearchClientContext.credentials](xref:@azure/cognitiveservices-newssearch.NewsSearchClientContext.credentials)
+  - name: endpoint
+    uid: '@azure/cognitiveservices-newssearch.NewsSearchClient.endpoint'
+    package: '@azure/cognitiveservices-newssearch'
+    summary: ''
+    fullName: endpoint
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'endpoint?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [NewsSearchClientContext.endpoint](xref:@azure/cognitiveservices-newssearch.NewsSearchClientContext.endpoint)
 inheritedMethods:
   - name: >-
       sendOperationRequest(OperationArguments, OperationSpec,
@@ -77,7 +79,6 @@ inheritedMethods:
     package: '@azure/cognitiveservices-newssearch'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -100,12 +101,12 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;RestResponse&gt;
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendOperationRequest
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
     uid: '@azure/cognitiveservices-newssearch.NewsSearchClient.sendRequest'
     package: '@azure/cognitiveservices-newssearch'
     summary: Send the provided httpRequest.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -118,4 +119,5 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;HttpOperationResponse&gt;
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendRequest
 extends: <xref uid="@azure/cognitiveservices-newssearch.NewsSearchClientContext" />

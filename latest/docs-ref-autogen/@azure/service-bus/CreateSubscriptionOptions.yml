@@ -5,23 +5,9 @@ package: '@azure/service-bus'
 summary: Represents settable options on a subscription
 fullName: CreateSubscriptionOptions
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: abortSignal
-    uid: '@azure/service-bus.CreateSubscriptionOptions.abortSignal'
-    package: '@azure/service-bus'
-    summary: The signal which can be used to abort requests.
-    fullName: abortSignal
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'abortSignal?: AbortSignalLike'
-      return:
-        description: ''
-        type: AbortSignalLike
   - name: autoDeleteOnIdle
     uid: '@azure/service-bus.CreateSubscriptionOptions.autoDeleteOnIdle'
     package: '@azure/service-bus'
@@ -36,7 +22,6 @@ properties:
       https://en.wikipedia.org/wiki/ISO_8601#Durations
     fullName: autoDeleteOnIdle
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'autoDeleteOnIdle?: string'
@@ -49,7 +34,6 @@ properties:
     summary: Availability status of the messaging entity.
     fullName: availabilityStatus
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'availabilityStatus?: EntityAvailabilityStatus'
@@ -81,7 +65,6 @@ properties:
       creation time.
     fullName: deadLetteringOnFilterEvaluationExceptions
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'deadLetteringOnFilterEvaluationExceptions?: boolean'
@@ -104,7 +87,6 @@ properties:
       Settable only at subscription creation time.
     fullName: deadLetteringOnMessageExpiration
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'deadLetteringOnMessageExpiration?: boolean'
@@ -130,7 +112,6 @@ properties:
       https://en.wikipedia.org/wiki/ISO_8601#Durations
     fullName: defaultMessageTimeToLive
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'defaultMessageTimeToLive?: string'
@@ -143,7 +124,6 @@ properties:
     summary: Represents the options to create the default rule for the subscription.
     fullName: defaultRuleOptions
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -160,7 +140,6 @@ properties:
     summary: Specifies if batched operations should be allowed.
     fullName: enableBatchedOperations
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'enableBatchedOperations?: boolean'
@@ -177,7 +156,6 @@ properties:
       `sb://<your-service-bus-namespace-endpoint>/<queue-or-topic-name>`
     fullName: forwardDeadLetteredMessagesTo
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'forwardDeadLetteredMessagesTo?: string'
@@ -194,7 +172,6 @@ properties:
       `sb://<your-service-bus-namespace-endpoint>/<queue-or-topic-name>`
     fullName: forwardTo
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'forwardTo?: string'
@@ -222,7 +199,6 @@ properties:
       https://en.wikipedia.org/wiki/ISO_8601#Durations
     fullName: lockDuration
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'lockDuration?: string'
@@ -239,26 +215,12 @@ properties:
       gets moved to the dead-letter sub-queue.
     fullName: maxDeliveryCount
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'maxDeliveryCount?: number'
       return:
         description: ''
         type: number
-  - name: requestOptions
-    uid: '@azure/service-bus.CreateSubscriptionOptions.requestOptions'
-    package: '@azure/service-bus'
-    summary: Options used when creating and sending HTTP requests for this operation.
-    fullName: requestOptions
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'requestOptions?: OperationRequestOptions'
-      return:
-        description: ''
-        type: OperationRequestOptions
   - name: requiresSession
     uid: '@azure/service-bus.CreateSubscriptionOptions.requiresSession'
     package: '@azure/service-bus'
@@ -272,7 +234,6 @@ properties:
       Settable only at subscription creation time.
     fullName: requiresSession
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'requiresSession?: boolean'
@@ -285,26 +246,12 @@ properties:
     summary: Status of the messaging entity.
     fullName: status
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'status?: EntityStatus'
       return:
         description: ''
         type: <xref uid="@azure/service-bus.EntityStatus" />
-  - name: tracingOptions
-    uid: '@azure/service-bus.CreateSubscriptionOptions.tracingOptions'
-    package: '@azure/service-bus'
-    summary: Options used when tracing is enabled.
-    fullName: tracingOptions
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'tracingOptions?: OperationTracingOptions'
-      return:
-        description: ''
-        type: OperationTracingOptions
   - name: userMetadata
     uid: '@azure/service-bus.CreateSubscriptionOptions.userMetadata'
     package: '@azure/service-bus'
@@ -314,11 +261,79 @@ properties:
       Value must not exceed 1024 bytes encoded in utf-8.
     fullName: userMetadata
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'userMetadata?: string'
       return:
         description: ''
         type: string
+inheritedProperties:
+  - name: abortSignal
+    uid: '@azure/service-bus.CreateSubscriptionOptions.abortSignal'
+    package: '@azure/service-bus'
+    summary: The signal which can be used to abort requests.
+    fullName: abortSignal
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'abortSignal?: AbortSignalLike'
+      return:
+        description: ''
+        type: AbortSignalLike
+    inheritanceDescription: <b>Inherited From</b> OperationOptions.abortSignal
+  - name: onResponse
+    uid: '@azure/service-bus.CreateSubscriptionOptions.onResponse'
+    package: '@azure/service-bus'
+    summary: |-
+      A function to be called each time a response is received from the server
+      while performing the requested operation.
+      May be called multiple times.
+    fullName: onResponse
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'onResponse?: RawResponseCallback'
+      return:
+        description: ''
+        type: RawResponseCallback
+    inheritanceDescription: <b>Inherited From</b> OperationOptions.onResponse
+  - name: requestOptions
+    uid: '@azure/service-bus.CreateSubscriptionOptions.requestOptions'
+    package: '@azure/service-bus'
+    summary: Options used when creating and sending HTTP requests for this operation.
+    fullName: requestOptions
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'requestOptions?: OperationRequestOptions'
+      return:
+        description: ''
+        type: OperationRequestOptions
+    inheritanceDescription: <b>Inherited From</b> OperationOptions.requestOptions
+  - name: serializerOptions
+    uid: '@azure/service-bus.CreateSubscriptionOptions.serializerOptions'
+    package: '@azure/service-bus'
+    summary: Options to override serialization/de-serialization behavior.
+    fullName: serializerOptions
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'serializerOptions?: SerializerOptions'
+      return:
+        description: ''
+        type: SerializerOptions
+    inheritanceDescription: <b>Inherited From</b> OperationOptions.serializerOptions
+  - name: tracingOptions
+    uid: '@azure/service-bus.CreateSubscriptionOptions.tracingOptions'
+    package: '@azure/service-bus'
+    summary: Options used when tracing is enabled.
+    fullName: tracingOptions
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'tracingOptions?: OperationTracingOptions'
+      return:
+        description: ''
+        type: OperationTracingOptions
+    inheritanceDescription: <b>Inherited From</b> OperationOptions.tracingOptions
 extends: OperationOptions

@@ -5,7 +5,6 @@ package: '@azure/arm-notificationhubs'
 summary: ''
 fullName: NotificationHubsManagementClient
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -16,7 +15,6 @@ constructors:
     package: '@azure/arm-notificationhubs'
     summary: Initializes a new instance of the NotificationHubsManagementClient class.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -49,7 +47,6 @@ properties:
     summary: ''
     fullName: $host
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: '$host: string'
@@ -62,7 +59,6 @@ properties:
     summary: ''
     fullName: apiVersion
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'apiVersion: string'
@@ -75,7 +71,6 @@ properties:
     summary: ''
     fullName: namespaces
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'namespaces: Namespaces'
@@ -89,7 +84,6 @@ properties:
     summary: ''
     fullName: notificationHubs
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'notificationHubs: NotificationHubs'
@@ -102,26 +96,12 @@ properties:
     summary: ''
     fullName: operations
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'operations: Operations'
       return:
         description: ''
         type: <xref uid="@azure/arm-notificationhubs.Operations" />
-  - name: pipeline
-    uid: '@azure/arm-notificationhubs.NotificationHubsManagementClient.pipeline'
-    package: '@azure/arm-notificationhubs'
-    summary: The pipeline used by this client to make requests
-    fullName: pipeline
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'pipeline: Pipeline'
-      return:
-        description: ''
-        type: Pipeline
   - name: subscriptionId
     uid: >-
       @azure/arm-notificationhubs.NotificationHubsManagementClient.subscriptionId
@@ -129,13 +109,26 @@ properties:
     summary: ''
     fullName: subscriptionId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'subscriptionId: string'
       return:
         description: ''
         type: string
+inheritedProperties:
+  - name: pipeline
+    uid: '@azure/arm-notificationhubs.NotificationHubsManagementClient.pipeline'
+    package: '@azure/arm-notificationhubs'
+    summary: The pipeline used by this client to make requests
+    fullName: pipeline
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'pipeline: Pipeline'
+      return:
+        description: ''
+        type: Pipeline
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.pipeline
 inheritedMethods:
   - name: 'sendOperationRequest<T>(OperationArguments, OperationSpec)'
     uid: >-
@@ -143,7 +136,6 @@ inheritedMethods:
     package: '@azure/arm-notificationhubs'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -162,12 +154,12 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;T&gt;
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendOperationRequest
   - name: sendRequest(PipelineRequest)
     uid: '@azure/arm-notificationhubs.NotificationHubsManagementClient.sendRequest'
     package: '@azure/arm-notificationhubs'
     summary: Send the provided httpRequest.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -180,4 +172,5 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;PipelineResponse&gt;
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendRequest
 extends: ServiceClient

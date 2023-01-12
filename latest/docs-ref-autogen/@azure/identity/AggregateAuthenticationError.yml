@@ -4,13 +4,12 @@ uid: '@azure/identity.AggregateAuthenticationError'
 package: '@azure/identity'
 summary: >-
   Provides an `errors` array containing
-  <xref:@azure/identity.AggregateAuthenticationError> instance
+  <xref:@azure/identity.AuthenticationError> instance
 
   for authentication failures from credentials in a
   <xref:@azure/identity.ChainedTokenCredential>.
 fullName: AggregateAuthenticationError
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -19,7 +18,6 @@ constructors:
     package: '@azure/identity'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'new AggregateAuthenticationError(errors: any[], errorMessage?: string)'
@@ -37,7 +35,6 @@ properties:
     summary: ''
     fullName: Error
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'static Error: ErrorConstructor'
@@ -52,50 +49,50 @@ properties:
       with the credentials in a <xref:@azure/identity.ChainedTokenCredential>.
     fullName: errors
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'errors: any[]'
       return:
         description: ''
         type: 'any[]'
+inheritedProperties:
   - name: message
     uid: '@azure/identity.AggregateAuthenticationError.message'
     package: '@azure/identity'
     summary: ''
     fullName: message
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'message: string'
       return:
         description: ''
         type: string
+    inheritanceDescription: <b>Inherited From</b> Error.message
   - name: name
     uid: '@azure/identity.AggregateAuthenticationError.name'
     package: '@azure/identity'
     summary: ''
     fullName: name
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'name: string'
       return:
         description: ''
         type: string
+    inheritanceDescription: <b>Inherited From</b> Error.name
   - name: stack
     uid: '@azure/identity.AggregateAuthenticationError.stack'
     package: '@azure/identity'
     summary: ''
     fullName: stack
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'stack?: string'
       return:
         description: ''
         type: string
+    inheritanceDescription: <b>Inherited From</b> Error.stack
 extends: Error

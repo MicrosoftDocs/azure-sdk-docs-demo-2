@@ -5,8 +5,8 @@ package: '@azure/cognitiveservices-contentmoderator'
 summary: Contains response data for the oCRMethod operation.
 fullName: ImageModerationOCRMethodResponse
 remarks: ''
-isPreview: false
 isDeprecated: false
-syntax: >-
-  type ImageModerationOCRMethodResponse = OCR & { _response: HttpResponse & {
-  bodyAsText: string, parsedBody: OCR } }
+syntax: |
+  type ImageModerationOCRMethodResponse = OCR & {
+    _response: HttpResponse & { bodyAsText: string, parsedBody: OCR },
+  }

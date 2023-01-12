@@ -10,7 +10,6 @@ summary: >-
   container; use `.item(id)`.
 fullName: Items
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 properties:
@@ -20,7 +19,6 @@ properties:
     summary: ''
     fullName: container
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'container: Container'
@@ -65,12 +63,11 @@ methods:
 
       ```
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
         function batch(operations: OperationInput[], partitionKey?: string,
-        options?: RequestOptions): Promise<Response_2<any>>
+        options?: RequestOptions): Promise<Response_2<OperationResponse[]>>
       parameters:
         - id: operations
           type: '<xref uid="@azure/cosmos.OperationInput" />[]'
@@ -84,7 +81,9 @@ methods:
             Used for modifying the request
       return:
         description: ''
-        type: Promise&lt;Response_2&lt;any&gt;&gt;
+        type: >-
+          Promise&lt;Response_2&lt;<xref uid="@azure/cosmos.OperationResponse"
+          />[]&gt;&gt;
   - name: 'bulk(OperationInput[], BulkOptions, RequestOptions)'
     uid: '@azure/cosmos.Items.bulk'
     package: '@azure/cosmos'
@@ -121,7 +120,6 @@ methods:
 
       ```
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -150,7 +148,6 @@ methods:
     package: '@azure/cosmos'
     summary: Create a `ChangeFeedIterator` to iterate over pages of changes
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -180,7 +177,6 @@ methods:
       ```
 
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -201,7 +197,6 @@ methods:
     package: '@azure/cosmos'
     summary: Create a `ChangeFeedIterator` to iterate over pages of changes
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -219,7 +214,6 @@ methods:
     package: '@azure/cosmos'
     summary: Create a `ChangeFeedIterator` to iterate over pages of changes
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -250,7 +244,6 @@ methods:
       There is no set schema for JSON items. They may contain any number of
       custom properties.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -290,7 +283,6 @@ methods:
       ```
 
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -338,7 +330,6 @@ methods:
       ```
 
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -382,7 +373,6 @@ methods:
       ```
 
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function readAll(options?: FeedOptions): QueryIterator<ItemDefinition>'
@@ -426,7 +416,6 @@ methods:
       ```
 
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function readAll<T>(options?: FeedOptions): QueryIterator<T>'
@@ -444,7 +433,6 @@ methods:
     package: '@azure/cosmos'
     summary: Create a `ChangeFeedIterator` to iterate over pages of changes
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: Use `changeFeed` instead.
     syntax:
@@ -475,7 +463,6 @@ methods:
       ```
 
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: Use `changeFeed` instead.
     syntax:
@@ -497,7 +484,6 @@ methods:
     package: '@azure/cosmos'
     summary: Create a `ChangeFeedIterator` to iterate over pages of changes
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: Use `changeFeed` instead.
     syntax:
@@ -516,7 +502,6 @@ methods:
     package: '@azure/cosmos'
     summary: Create a `ChangeFeedIterator` to iterate over pages of changes
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: Use `changeFeed` instead.
     syntax:
@@ -542,7 +527,6 @@ methods:
       There is no set schema for JSON items. They may contain any number of
       custom properties.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -579,7 +563,6 @@ methods:
       There is no set schema for JSON items. They may contain any number of
       custom properties.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

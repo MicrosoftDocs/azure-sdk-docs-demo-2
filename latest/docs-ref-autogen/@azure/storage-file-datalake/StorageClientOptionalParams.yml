@@ -5,10 +5,61 @@ package: '@azure/storage-file-datalake'
 summary: Optional parameters.
 fullName: StorageClientOptionalParams
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
+  - name: endpoint
+    uid: '@azure/storage-file-datalake.StorageClientOptionalParams.endpoint'
+    package: '@azure/storage-file-datalake'
+    summary: Overrides client endpoint.
+    fullName: endpoint
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'endpoint?: string'
+      return:
+        description: ''
+        type: string
+  - name: resource
+    uid: '@azure/storage-file-datalake.StorageClientOptionalParams.resource'
+    package: '@azure/storage-file-datalake'
+    summary: The value must be "filesystem" for all filesystem operations.
+    fullName: resource
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'resource?: string'
+      return:
+        description: ''
+        type: string
+  - name: version
+    uid: '@azure/storage-file-datalake.StorageClientOptionalParams.version'
+    package: '@azure/storage-file-datalake'
+    summary: Specifies the version of the operation to use for this request.
+    fullName: version
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'version?: string'
+      return:
+        description: ''
+        type: string
+  - name: xMsLeaseDuration
+    uid: '@azure/storage-file-datalake.StorageClientOptionalParams.xMsLeaseDuration'
+    package: '@azure/storage-file-datalake'
+    summary: >-
+      The lease duration is required to acquire a lease, and specifies the
+      duration of the lease in seconds.  The lease duration must be between 15
+      and 60 seconds or -1 for infinite lease.
+    fullName: xMsLeaseDuration
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'xMsLeaseDuration?: number'
+      return:
+        description: ''
+        type: number
+inheritedProperties:
   - name: clientRequestIdHeaderName
     uid: >-
       @azure/storage-file-datalake.StorageClientOptionalParams.clientRequestIdHeaderName
@@ -21,26 +72,26 @@ properties:
       the request ID.
     fullName: clientRequestIdHeaderName
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'clientRequestIdHeaderName?: string'
       return:
         description: ''
         type: string
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.clientRequestIdHeaderName
   - name: credentialScopes
     uid: '@azure/storage-file-datalake.StorageClientOptionalParams.credentialScopes'
     package: '@azure/storage-file-datalake'
     summary: 'If specified, will be used to build the BearerTokenAuthenticationPolicy.'
     fullName: credentialScopes
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'credentialScopes?: string | string[]'
       return:
         description: ''
         type: 'string | string[]'
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.credentialScopes
   - name: deserializationContentTypes
     uid: >-
       @azure/storage-file-datalake.StorageClientOptionalParams.deserializationContentTypes
@@ -48,26 +99,13 @@ properties:
     summary: The content-types that will be associated with JSON or XML serialization.
     fullName: deserializationContentTypes
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'deserializationContentTypes?: DeserializationContentTypes'
       return:
         description: ''
         type: DeserializationContentTypes
-  - name: endpoint
-    uid: '@azure/storage-file-datalake.StorageClientOptionalParams.endpoint'
-    package: '@azure/storage-file-datalake'
-    summary: Overrides client endpoint.
-    fullName: endpoint
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'endpoint?: string'
-      return:
-        description: ''
-        type: string
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.deserializationContentTypes
   - name: generateClientRequestIdHeader
     uid: >-
       @azure/storage-file-datalake.StorageClientOptionalParams.generateClientRequestIdHeader
@@ -77,26 +115,26 @@ properties:
       request.
     fullName: generateClientRequestIdHeader
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'generateClientRequestIdHeader?: boolean'
       return:
         description: ''
         type: boolean
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.generateClientRequestIdHeader
   - name: httpClient
     uid: '@azure/storage-file-datalake.StorageClientOptionalParams.httpClient'
     package: '@azure/storage-file-datalake'
     summary: The HttpClient that will be used to send HTTP requests.
     fullName: httpClient
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'httpClient?: HttpClient'
       return:
         description: ''
         type: HttpClient
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.httpClient
   - name: httpPipelineLogger
     uid: >-
       @azure/storage-file-datalake.StorageClientOptionalParams.httpPipelineLogger
@@ -106,39 +144,39 @@ properties:
       the HTTP pipeline.
     fullName: httpPipelineLogger
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'httpPipelineLogger?: HttpPipelineLogger'
       return:
         description: ''
         type: HttpPipelineLogger
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.httpPipelineLogger
   - name: noRetryPolicy
     uid: '@azure/storage-file-datalake.StorageClientOptionalParams.noRetryPolicy'
     package: '@azure/storage-file-datalake'
     summary: 'If set to true, turn off the default retry policy.'
     fullName: noRetryPolicy
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'noRetryPolicy?: boolean'
       return:
         description: ''
         type: boolean
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.noRetryPolicy
   - name: proxySettings
     uid: '@azure/storage-file-datalake.StorageClientOptionalParams.proxySettings'
     package: '@azure/storage-file-datalake'
     summary: Proxy settings which will be used for every HTTP request (Node.js only).
     fullName: proxySettings
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'proxySettings?: ProxySettings'
       return:
         description: ''
         type: ProxySettings
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.proxySettings
   - name: requestPolicyFactories
     uid: >-
       @azure/storage-file-datalake.StorageClientOptionalParams.requestPolicyFactories
@@ -153,7 +191,6 @@ properties:
       the requestPolicyFactories that will be used.
     fullName: requestPolicyFactories
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -165,19 +202,7 @@ properties:
         type: >-
           RequestPolicyFactory[] | (defaultRequestPolicyFactories:
           RequestPolicyFactory[]) =&gt; void | RequestPolicyFactory[]
-  - name: resource
-    uid: '@azure/storage-file-datalake.StorageClientOptionalParams.resource'
-    package: '@azure/storage-file-datalake'
-    summary: The value must be "filesystem" for all filesystem operations.
-    fullName: resource
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'resource?: string'
-      return:
-        description: ''
-        type: string
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.requestPolicyFactories
   - name: rpRegistrationRetryTimeout
     uid: >-
       @azure/storage-file-datalake.StorageClientOptionalParams.rpRegistrationRetryTimeout
@@ -187,13 +212,13 @@ properties:
       Default value is 30.
     fullName: rpRegistrationRetryTimeout
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'rpRegistrationRetryTimeout?: number'
       return:
         description: ''
         type: number
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.rpRegistrationRetryTimeout
   - name: userAgent
     uid: '@azure/storage-file-datalake.StorageClientOptionalParams.userAgent'
     package: '@azure/storage-file-datalake'
@@ -205,13 +230,13 @@ properties:
       that will be used.
     fullName: userAgent
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'userAgent?: string | (defaultUserAgent: string) => string'
       return:
         description: ''
         type: 'string | (defaultUserAgent: string) =&gt; string'
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.userAgent
   - name: userAgentHeaderName
     uid: >-
       @azure/storage-file-datalake.StorageClientOptionalParams.userAgentHeaderName
@@ -226,7 +251,6 @@ properties:
       be used when running in a browser.
     fullName: userAgentHeaderName
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -235,19 +259,7 @@ properties:
       return:
         description: ''
         type: 'string | (defaultUserAgentHeaderName: string) =&gt; string'
-  - name: version
-    uid: '@azure/storage-file-datalake.StorageClientOptionalParams.version'
-    package: '@azure/storage-file-datalake'
-    summary: Specifies the version of the operation to use for this request.
-    fullName: version
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'version?: string'
-      return:
-        description: ''
-        type: string
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.userAgentHeaderName
   - name: withCredentials
     uid: '@azure/storage-file-datalake.StorageClientOptionalParams.withCredentials'
     package: '@azure/storage-file-datalake'
@@ -259,11 +271,11 @@ properties:
       for more information.
     fullName: withCredentials
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'withCredentials?: boolean'
       return:
         description: ''
         type: boolean
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.withCredentials
 extends: ServiceClientOptions

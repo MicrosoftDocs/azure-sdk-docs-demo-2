@@ -5,7 +5,6 @@ package: '@azure/cognitiveservices-customimagesearch'
 summary: ''
 fullName: CustomImageSearchClient
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -17,7 +16,6 @@ constructors:
     package: '@azure/cognitiveservices-customimagesearch'
     summary: Initializes a new instance of the CustomImageSearchClient class.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -33,20 +31,6 @@ constructors:
           type: <xref uid="Models.CustomImageSearchClientOptions" />
           description: ''
 properties:
-  - name: credentials
-    uid: >-
-      @azure/cognitiveservices-customimagesearch.CustomImageSearchClient.credentials
-    package: '@azure/cognitiveservices-customimagesearch'
-    summary: ''
-    fullName: credentials
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'credentials: ServiceClientCredentials'
-      return:
-        description: ''
-        type: ServiceClientCredentials
   - name: customInstance
     uid: >-
       @azure/cognitiveservices-customimagesearch.CustomImageSearchClient.customInstance
@@ -54,7 +38,6 @@ properties:
     summary: ''
     fullName: customInstance
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'customInstance: CustomInstance'
@@ -63,6 +46,23 @@ properties:
         type: >-
           <xref uid="@azure/cognitiveservices-customimagesearch.CustomInstance"
           />
+inheritedProperties:
+  - name: credentials
+    uid: >-
+      @azure/cognitiveservices-customimagesearch.CustomImageSearchClient.credentials
+    package: '@azure/cognitiveservices-customimagesearch'
+    summary: ''
+    fullName: credentials
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'credentials: ServiceClientCredentials'
+      return:
+        description: ''
+        type: ServiceClientCredentials
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [CustomImageSearchClientContext.credentials](xref:@azure/cognitiveservices-customimagesearch.CustomImageSearchClientContext.credentials)
   - name: endpoint
     uid: >-
       @azure/cognitiveservices-customimagesearch.CustomImageSearchClient.endpoint
@@ -70,13 +70,15 @@ properties:
     summary: ''
     fullName: endpoint
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'endpoint?: undefined | string'
       return:
         description: ''
         type: undefined | string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [CustomImageSearchClientContext.endpoint](xref:@azure/cognitiveservices-customimagesearch.CustomImageSearchClientContext.endpoint)
 inheritedMethods:
   - name: >-
       sendOperationRequest(OperationArguments, OperationSpec,
@@ -86,7 +88,6 @@ inheritedMethods:
     package: '@azure/cognitiveservices-customimagesearch'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -109,13 +110,13 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;RestResponse&gt;
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendOperationRequest
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
     uid: >-
       @azure/cognitiveservices-customimagesearch.CustomImageSearchClient.sendRequest
     package: '@azure/cognitiveservices-customimagesearch'
     summary: Send the provided httpRequest.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -128,6 +129,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;HttpOperationResponse&gt;
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendRequest
 extends: >-
   <xref
   uid="@azure/cognitiveservices-customimagesearch.CustomImageSearchClientContext"

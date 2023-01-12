@@ -7,7 +7,6 @@ summary: >-
   data stores, such as tables, files, folders, and documents.
 fullName: Dataset
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -17,20 +16,18 @@ properties:
     summary: List of tags that can be used for describing the Dataset.
     fullName: annotations
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
-      content: 'annotations?: Record<string, unknown>[]'
+      content: 'annotations?: any[]'
       return:
         description: ''
-        type: 'Record&lt;string, unknown&gt;[]'
+        type: 'any[]'
   - name: description
     uid: '@azure/arm-datafactory.Dataset.description'
     package: '@azure/arm-datafactory'
     summary: Dataset description.
     fullName: description
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'description?: undefined | string'
@@ -45,7 +42,6 @@ properties:
       at the root level.
     fullName: folder
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'folder?: DatasetFolder'
@@ -58,7 +54,6 @@ properties:
     summary: Linked service reference.
     fullName: linkedServiceName
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'linkedServiceName: LinkedServiceReference'
@@ -71,7 +66,6 @@ properties:
     summary: Parameters for dataset.
     fullName: parameters
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'parameters?: undefined | [key: string]: ParameterSpecification'
@@ -88,13 +82,12 @@ properties:
       (or Expression with resultType array), itemType: DatasetSchemaDataElement.
     fullName: schema
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
-      content: 'schema?: Record<string, unknown>'
+      content: 'schema?: any'
       return:
         description: ''
-        type: 'Record&lt;string, unknown&gt;'
+        type: any
   - name: structure
     uid: '@azure/arm-datafactory.Dataset.structure'
     package: '@azure/arm-datafactory'
@@ -103,13 +96,12 @@ properties:
       Expression with resultType array), itemType: DatasetDataElement.
     fullName: structure
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
-      content: 'structure?: Record<string, unknown>'
+      content: 'structure?: any'
       return:
         description: ''
-        type: 'Record&lt;string, unknown&gt;'
+        type: any
   - name: type
     uid: '@azure/arm-datafactory.Dataset.type'
     package: '@azure/arm-datafactory'
@@ -118,7 +110,6 @@ properties:
       can be
     fullName: type
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -138,15 +129,16 @@ properties:
         "SalesforceServiceCloudObject" | "SybaseTable" | "SapBwCube" |
         "SapCloudForCustomerResource" | "SapEccResource" | "SapHanaTable" |
         "SapOpenHubTable" | "SqlServerTable" | "AmazonRdsForSqlServerTable" |
-        "RestResource" | "SapTableResource" | "WebTable" | "AzureSearchIndex" |
-        "HttpFile" | "AmazonMWSObject" | "AzurePostgreSqlTable" | "ConcurObject"
-        | "CouchbaseTable" | "DrillTable" | "EloquaObject" |
-        "GoogleBigQueryObject" | "GreenplumTable" | "HBaseObject" | "HiveObject"
-        | "HubspotObject" | "ImpalaObject" | "JiraObject" | "MagentoObject" |
-        "MariaDBTable" | "AzureMariaDBTable" | "MarketoObject" | "PaypalObject"
-        | "PhoenixObject" | "PrestoObject" | "QuickBooksObject" |
-        "ServiceNowObject" | "ShopifyObject" | "SparkObject" | "SquareObject" |
-        "XeroObject" | "ZohoObject" | "NetezzaTable" | "VerticaTable" |
+        "RestResource" | "SapTableResource" | "SapOdpResource" | "WebTable" |
+        "AzureSearchIndex" | "HttpFile" | "AmazonMWSObject" |
+        "AzurePostgreSqlTable" | "ConcurObject" | "CouchbaseTable" |
+        "DrillTable" | "EloquaObject" | "GoogleBigQueryObject" |
+        "GreenplumTable" | "HBaseObject" | "HiveObject" | "HubspotObject" |
+        "ImpalaObject" | "JiraObject" | "MagentoObject" | "MariaDBTable" |
+        "AzureMariaDBTable" | "MarketoObject" | "PaypalObject" | "PhoenixObject"
+        | "PrestoObject" | "QuickBooksObject" | "ServiceNowObject" |
+        "ShopifyObject" | "SparkObject" | "SquareObject" | "XeroObject" |
+        "ZohoObject" | "NetezzaTable" | "VerticaTable" |
         "SalesforceMarketingCloudObject" | "ResponsysObject" |
         "DynamicsAXResource" | "OracleServiceCloudObject" |
         "AzureDataExplorerTable" | "GoogleAdWordsObject" | "SnowflakeTable" |
@@ -170,16 +162,17 @@ properties:
           "SalesforceServiceCloudObject" | "SybaseTable" | "SapBwCube" |
           "SapCloudForCustomerResource" | "SapEccResource" | "SapHanaTable" |
           "SapOpenHubTable" | "SqlServerTable" | "AmazonRdsForSqlServerTable" |
-          "RestResource" | "SapTableResource" | "WebTable" | "AzureSearchIndex"
-          | "HttpFile" | "AmazonMWSObject" | "AzurePostgreSqlTable" |
-          "ConcurObject" | "CouchbaseTable" | "DrillTable" | "EloquaObject" |
-          "GoogleBigQueryObject" | "GreenplumTable" | "HBaseObject" |
-          "HiveObject" | "HubspotObject" | "ImpalaObject" | "JiraObject" |
-          "MagentoObject" | "MariaDBTable" | "AzureMariaDBTable" |
-          "MarketoObject" | "PaypalObject" | "PhoenixObject" | "PrestoObject" |
-          "QuickBooksObject" | "ServiceNowObject" | "ShopifyObject" |
-          "SparkObject" | "SquareObject" | "XeroObject" | "ZohoObject" |
-          "NetezzaTable" | "VerticaTable" | "SalesforceMarketingCloudObject" |
-          "ResponsysObject" | "DynamicsAXResource" | "OracleServiceCloudObject"
-          | "AzureDataExplorerTable" | "GoogleAdWordsObject" | "SnowflakeTable"
-          | "SharePointOnlineListResource" | "AzureDatabricksDeltaLakeDataset"
+          "RestResource" | "SapTableResource" | "SapOdpResource" | "WebTable" |
+          "AzureSearchIndex" | "HttpFile" | "AmazonMWSObject" |
+          "AzurePostgreSqlTable" | "ConcurObject" | "CouchbaseTable" |
+          "DrillTable" | "EloquaObject" | "GoogleBigQueryObject" |
+          "GreenplumTable" | "HBaseObject" | "HiveObject" | "HubspotObject" |
+          "ImpalaObject" | "JiraObject" | "MagentoObject" | "MariaDBTable" |
+          "AzureMariaDBTable" | "MarketoObject" | "PaypalObject" |
+          "PhoenixObject" | "PrestoObject" | "QuickBooksObject" |
+          "ServiceNowObject" | "ShopifyObject" | "SparkObject" | "SquareObject"
+          | "XeroObject" | "ZohoObject" | "NetezzaTable" | "VerticaTable" |
+          "SalesforceMarketingCloudObject" | "ResponsysObject" |
+          "DynamicsAXResource" | "OracleServiceCloudObject" |
+          "AzureDataExplorerTable" | "GoogleAdWordsObject" | "SnowflakeTable" |
+          "SharePointOnlineListResource" | "AzureDatabricksDeltaLakeDataset"

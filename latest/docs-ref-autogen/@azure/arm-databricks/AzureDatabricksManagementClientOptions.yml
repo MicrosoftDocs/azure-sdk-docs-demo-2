@@ -5,10 +5,22 @@ package: '@azure/arm-databricks'
 summary: An interface representing AzureDatabricksManagementClientOptions.
 fullName: AzureDatabricksManagementClientOptions
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
+  - name: baseUri
+    uid: '@azure/arm-databricks.AzureDatabricksManagementClientOptions.baseUri'
+    package: '@azure/arm-databricks'
+    summary: ''
+    fullName: baseUri
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'baseUri?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+inheritedProperties:
   - name: acceptLanguage
     uid: >-
       @azure/arm-databricks.AzureDatabricksManagementClientOptions.acceptLanguage
@@ -18,13 +30,13 @@ properties:
       for the response. Default value is: "en-US".
     fullName: acceptLanguage
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'acceptLanguage?: undefined | string'
       return:
         description: ''
         type: undefined | string
+    inheritanceDescription: <b>Inherited From</b> AzureServiceClientOptions.acceptLanguage
   - name: agentSettings
     uid: '@azure/arm-databricks.AzureDatabricksManagementClientOptions.agentSettings'
     package: '@azure/arm-databricks'
@@ -33,26 +45,13 @@ properties:
       only).
     fullName: agentSettings
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'agentSettings?: AgentSettings'
       return:
         description: ''
         type: AgentSettings
-  - name: baseUri
-    uid: '@azure/arm-databricks.AzureDatabricksManagementClientOptions.baseUri'
-    package: '@azure/arm-databricks'
-    summary: ''
-    fullName: baseUri
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'baseUri?: undefined | string'
-      return:
-        description: ''
-        type: undefined | string
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.agentSettings
   - name: clientRequestIdHeaderName
     uid: >-
       @azure/arm-databricks.AzureDatabricksManagementClientOptions.clientRequestIdHeaderName
@@ -65,13 +64,13 @@ properties:
       the request ID.
     fullName: clientRequestIdHeaderName
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'clientRequestIdHeaderName?: undefined | string'
       return:
         description: ''
         type: undefined | string
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.clientRequestIdHeaderName
   - name: deserializationContentTypes
     uid: >-
       @azure/arm-databricks.AzureDatabricksManagementClientOptions.deserializationContentTypes
@@ -79,13 +78,13 @@ properties:
     summary: The content-types that will be associated with JSON or XML serialization.
     fullName: deserializationContentTypes
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'deserializationContentTypes?: DeserializationContentTypes'
       return:
         description: ''
         type: DeserializationContentTypes
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.deserializationContentTypes
   - name: generateClientRequestIdHeader
     uid: >-
       @azure/arm-databricks.AzureDatabricksManagementClientOptions.generateClientRequestIdHeader
@@ -95,26 +94,26 @@ properties:
       request.
     fullName: generateClientRequestIdHeader
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'generateClientRequestIdHeader?: undefined | false | true'
       return:
         description: ''
         type: undefined | false | true
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.generateClientRequestIdHeader
   - name: httpClient
     uid: '@azure/arm-databricks.AzureDatabricksManagementClientOptions.httpClient'
     package: '@azure/arm-databricks'
     summary: The HttpClient that will be used to send HTTP requests.
     fullName: httpClient
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'httpClient?: HttpClient'
       return:
         description: ''
         type: HttpClient
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.httpClient
   - name: httpPipelineLogger
     uid: >-
       @azure/arm-databricks.AzureDatabricksManagementClientOptions.httpPipelineLogger
@@ -124,13 +123,13 @@ properties:
       the HTTP pipeline.
     fullName: httpPipelineLogger
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'httpPipelineLogger?: HttpPipelineLogger'
       return:
         description: ''
         type: HttpPipelineLogger
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.httpPipelineLogger
   - name: longRunningOperationRetryTimeout
     uid: >-
       @azure/arm-databricks.AzureDatabricksManagementClientOptions.longRunningOperationRetryTimeout
@@ -142,39 +141,41 @@ properties:
       Long Running Operations. Default value is 30.
     fullName: longRunningOperationRetryTimeout
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'longRunningOperationRetryTimeout?: undefined | number'
       return:
         description: ''
         type: undefined | number
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      AzureServiceClientOptions.longRunningOperationRetryTimeout
   - name: noRetryPolicy
     uid: '@azure/arm-databricks.AzureDatabricksManagementClientOptions.noRetryPolicy'
     package: '@azure/arm-databricks'
     summary: 'If set to true, turn off the default retry policy.'
     fullName: noRetryPolicy
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'noRetryPolicy?: undefined | false | true'
       return:
         description: ''
         type: undefined | false | true
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.noRetryPolicy
   - name: proxySettings
     uid: '@azure/arm-databricks.AzureDatabricksManagementClientOptions.proxySettings'
     package: '@azure/arm-databricks'
     summary: Proxy settings which will be used for every HTTP request (Node.js only).
     fullName: proxySettings
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'proxySettings?: ProxySettings'
       return:
         description: ''
         type: ProxySettings
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.proxySettings
   - name: redirectOptions
     uid: >-
       @azure/arm-databricks.AzureDatabricksManagementClientOptions.redirectOptions
@@ -182,13 +183,13 @@ properties:
     summary: Options for how redirect responses are handled.
     fullName: redirectOptions
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'redirectOptions?: RedirectOptions'
       return:
         description: ''
         type: RedirectOptions
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.redirectOptions
   - name: requestPolicyFactories
     uid: >-
       @azure/arm-databricks.AzureDatabricksManagementClientOptions.requestPolicyFactories
@@ -203,7 +204,6 @@ properties:
       the requestPolicyFactories that will be used.
     fullName: requestPolicyFactories
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -215,6 +215,7 @@ properties:
         type: >-
           RequestPolicyFactory[] | (defaultRequestPolicyFactories:
           RequestPolicyFactory[]) =&gt; void | RequestPolicyFactory[]
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.requestPolicyFactories
   - name: rpRegistrationRetryTimeout
     uid: >-
       @azure/arm-databricks.AzureDatabricksManagementClientOptions.rpRegistrationRetryTimeout
@@ -224,13 +225,13 @@ properties:
       Default value is 30.
     fullName: rpRegistrationRetryTimeout
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'rpRegistrationRetryTimeout?: undefined | number'
       return:
         description: ''
         type: undefined | number
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.rpRegistrationRetryTimeout
   - name: userAgent
     uid: '@azure/arm-databricks.AzureDatabricksManagementClientOptions.userAgent'
     package: '@azure/arm-databricks'
@@ -242,13 +243,13 @@ properties:
       that will be used.
     fullName: userAgent
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'userAgent?: string | (defaultUserAgent: string) => string'
       return:
         description: ''
         type: 'string | (defaultUserAgent: string) =&gt; string'
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.userAgent
   - name: userAgentHeaderName
     uid: >-
       @azure/arm-databricks.AzureDatabricksManagementClientOptions.userAgentHeaderName
@@ -263,7 +264,6 @@ properties:
       be used when running in a browser.
     fullName: userAgentHeaderName
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -272,6 +272,7 @@ properties:
       return:
         description: ''
         type: 'string | (defaultUserAgentHeaderName: string) =&gt; string'
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.userAgentHeaderName
   - name: withCredentials
     uid: >-
       @azure/arm-databricks.AzureDatabricksManagementClientOptions.withCredentials
@@ -284,11 +285,11 @@ properties:
       for more information.
     fullName: withCredentials
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'withCredentials?: undefined | false | true'
       return:
         description: ''
         type: undefined | false | true
+    inheritanceDescription: <b>Inherited From</b> ServiceClientOptions.withCredentials
 extends: AzureServiceClientOptions

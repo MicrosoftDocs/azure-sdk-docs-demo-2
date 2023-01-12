@@ -5,8 +5,8 @@ package: '@azure/cognitiveservices-customvision-training'
 summary: Contains response data for the getProjects operation.
 fullName: GetProjectsResponse
 remarks: ''
-isPreview: false
 isDeprecated: false
-syntax: >-
-  type GetProjectsResponse = Array<Project> & { _response: HttpResponse & {
-  bodyAsText: string, parsedBody: Project[] } }
+syntax: |
+  type GetProjectsResponse = Array<Project> & {
+    _response: HttpResponse & { bodyAsText: string, parsedBody: Project[] },
+  }

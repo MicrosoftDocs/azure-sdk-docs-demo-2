@@ -6,25 +6,11 @@ summary: |-
   The results of a healthcare operation represented as a paged iterator that can
   either iterate over the results on a document-by-document basis or, by
   byPage(), can iterate over pages of documents.
-fullName: 'PagedAnalyzeHealthcareEntitiesResult<T, PageT, PageSettingsT>'
+fullName: 'PagedAnalyzeHealthcareEntitiesResult<TElement, TPage, TPageSettings>'
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: byPage
-    uid: '@azure/ai-text-analytics.PagedAnalyzeHealthcareEntitiesResult.byPage'
-    package: '@azure/ai-text-analytics'
-    summary: Return an AsyncIterableIterator that works a page at a time
-    fullName: byPage
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'byPage: (settings?: PageSettingsT) => AsyncIterableIterator<PageT>'
-      return:
-        description: ''
-        type: '(settings?: PageSettingsT) =&gt; AsyncIterableIterator&lt;PageT&gt;'
   - name: modelVersion
     uid: '@azure/ai-text-analytics.PagedAnalyzeHealthcareEntitiesResult.modelVersion'
     package: '@azure/ai-text-analytics'
@@ -33,7 +19,6 @@ properties:
       batch of input documents.
     fullName: modelVersion
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'modelVersion: string'
@@ -52,24 +37,37 @@ properties:
       in the client call.
     fullName: statistics
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'statistics?: TextDocumentBatchStatistics'
       return:
         description: ''
         type: <xref uid="@azure/ai-text-analytics.TextDocumentBatchStatistics" />
+inheritedProperties:
+  - name: byPage
+    uid: '@azure/ai-text-analytics.PagedAnalyzeHealthcareEntitiesResult.byPage'
+    package: '@azure/ai-text-analytics'
+    summary: Return an AsyncIterableIterator that works a page at a time
+    fullName: byPage
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'byPage: (settings?: TPageSettings) => AsyncIterableIterator<TPage>'
+      return:
+        description: ''
+        type: '(settings?: TPageSettings) =&gt; AsyncIterableIterator&lt;TPage&gt;'
+    inheritanceDescription: <b>Inherited From</b> PagedAsyncIterableIterator.byPage
 inheritedMethods:
   - name: next()
     uid: '@azure/ai-text-analytics.PagedAnalyzeHealthcareEntitiesResult.next'
     package: '@azure/ai-text-analytics'
     summary: 'The next method, part of the iteration protocol'
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
-      content: 'function next(): Promise<IteratorResult<T>>'
+      content: 'function next(): Promise<IteratorResult<TElement>>'
       return:
         description: ''
-        type: Promise&lt;IteratorResult&lt;T&gt;&gt;
+        type: Promise&lt;IteratorResult&lt;TElement&gt;&gt;
+    inheritanceDescription: <b>Inherited From</b> PagedAsyncIterableIterator.next
 extends: PagedAsyncIterableIterator

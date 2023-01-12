@@ -7,7 +7,6 @@ summary: |-
   allowing you to manipulate its directories and files.
 fullName: DataLakeFileSystemClient
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -16,7 +15,6 @@ constructors:
     package: '@azure/storage-file-datalake'
     summary: Creates an instance of DataLakeFileSystemClient from url and pipeline.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'new DataLakeFileSystemClient(url: string, pipeline: Pipeline)'
@@ -40,7 +38,6 @@ constructors:
     package: '@azure/storage-file-datalake'
     summary: Creates an instance of DataLakeFileSystemClient from url and credential.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -71,19 +68,34 @@ constructors:
           description: |
             Optional. Options to configure the HTTP pipeline.
 properties:
+  - name: name
+    uid: '@azure/storage-file-datalake.DataLakeFileSystemClient.name'
+    package: '@azure/storage-file-datalake'
+    summary: Name of current file system.
+    fullName: name
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: string name
+      return:
+        description: ''
+        type: string
+inheritedProperties:
   - name: accountName
     uid: '@azure/storage-file-datalake.DataLakeFileSystemClient.accountName'
     package: '@azure/storage-file-datalake'
     summary: ''
     fullName: accountName
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'accountName: string'
       return:
         description: ''
         type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [StorageClient.accountName](xref:@azure/storage-file-datalake.StorageClient.accountName)
   - name: credential
     uid: '@azure/storage-file-datalake.DataLakeFileSystemClient.credential'
     package: '@azure/storage-file-datalake'
@@ -94,7 +106,6 @@ properties:
       TokenCredential interface. If not specified, AnonymousCredential is used.
     fullName: credential
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -106,32 +117,24 @@ properties:
           <xref uid="@azure/storage-file-datalake.StorageSharedKeyCredential" />
           | <xref uid="@azure/storage-file-datalake.AnonymousCredential" /> |
           TokenCredential
-  - name: name
-    uid: '@azure/storage-file-datalake.DataLakeFileSystemClient.name'
-    package: '@azure/storage-file-datalake'
-    summary: Name of current file system.
-    fullName: name
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: string name
-      return:
-        description: ''
-        type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [StorageClient.credential](xref:@azure/storage-file-datalake.StorageClient.credential)
   - name: url
     uid: '@azure/storage-file-datalake.DataLakeFileSystemClient.url'
     package: '@azure/storage-file-datalake'
     summary: Encoded URL string value.
     fullName: url
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'url: string'
       return:
         description: ''
         type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [StorageClient.url](xref:@azure/storage-file-datalake.StorageClient.url)
 methods:
   - name: create(FileSystemCreateOptions)
     uid: '@azure/storage-file-datalake.DataLakeFileSystemClient.create'
@@ -146,7 +149,6 @@ methods:
       See
       https://docs.microsoft.com/en-us/rest/api/storageservices/create-container
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -175,7 +177,6 @@ methods:
       See
       https://docs.microsoft.com/en-us/rest/api/storageservices/create-container
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -202,7 +203,6 @@ methods:
       See
       https://docs.microsoft.com/en-us/rest/api/storageservices/delete-container
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -228,7 +228,6 @@ methods:
       See
       https://docs.microsoft.com/en-us/rest/api/storageservices/delete-container
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -260,7 +259,6 @@ methods:
 
       applications after this function completes.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function exists(options?: FileSystemExistsOptions): Promise<boolean>'
@@ -290,7 +288,6 @@ methods:
       See
       https://docs.microsoft.com/en-us/rest/api/storageservices/constructing-a-service-sas
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -328,7 +325,6 @@ methods:
       See
       https://docs.microsoft.com/en-us/rest/api/storageservices/get-container-acl
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -353,11 +349,9 @@ methods:
       @azure/storage-file-datalake.DataLakeFileSystemClient.getDataLakeLeaseClient
     package: '@azure/storage-file-datalake'
     summary: >-
-      Get a
-      <xref:@azure/storage-file-datalake.DataLakeDirectoryClient.getDataLakeLeaseClient>
-      that manages leases on the file system.
+      Get a <xref:@azure/storage-file-datalake.DataLakeLeaseClient> that manages
+      leases on the file system.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -378,7 +372,6 @@ methods:
       Creates a <xref:@azure/storage-file-datalake.DataLakeDirectoryClient>
       object under current file system.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -399,7 +392,6 @@ methods:
       Creates a <xref:@azure/storage-file-datalake.DataLakeFileClient> object
       under current file system.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getFileClient(fileName: string): DataLakeFileClient'
@@ -436,7 +428,6 @@ methods:
       See
       https://docs.microsoft.com/en-us/rest/api/storageservices/get-container-properties
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -570,7 +561,6 @@ methods:
 
       See https://docs.microsoft.com/rest/api/storageservices/list-blobs
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -703,7 +693,6 @@ methods:
 
       See https://docs.microsoft.com/rest/api/storageservices/list-blobs
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -744,7 +733,6 @@ methods:
       See
       https://docs.microsoft.com/en-us/rest/api/storageservices/set-container-acl
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -793,7 +781,6 @@ methods:
       See
       https://docs.microsoft.com/en-us/rest/api/storageservices/set-container-metadata
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -827,7 +814,6 @@ methods:
       See
       https://docs.microsoft.com/en-us/rest/api/storageservices/undelete-blob
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

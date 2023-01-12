@@ -7,7 +7,6 @@ summary: >-
   on.
 fullName: DataLakeAclChangeFailedError
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -16,7 +15,6 @@ constructors:
     package: '@azure/storage-file-datalake'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -37,7 +35,6 @@ properties:
     summary: Continuation token to continue next batch of operations.
     fullName: continuationToken
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'continuationToken?: string'
@@ -50,7 +47,6 @@ properties:
     summary: ''
     fullName: Error
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'static Error: ErrorConstructor'
@@ -63,50 +59,50 @@ properties:
     summary: Internal error.
     fullName: innerError
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'innerError: RestError | Error'
       return:
         description: ''
         type: RestError | Error
+inheritedProperties:
   - name: message
     uid: '@azure/storage-file-datalake.DataLakeAclChangeFailedError.message'
     package: '@azure/storage-file-datalake'
     summary: ''
     fullName: message
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'message: string'
       return:
         description: ''
         type: string
+    inheritanceDescription: <b>Inherited From</b> Error.message
   - name: name
     uid: '@azure/storage-file-datalake.DataLakeAclChangeFailedError.name'
     package: '@azure/storage-file-datalake'
     summary: ''
     fullName: name
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'name: string'
       return:
         description: ''
         type: string
+    inheritanceDescription: <b>Inherited From</b> Error.name
   - name: stack
     uid: '@azure/storage-file-datalake.DataLakeAclChangeFailedError.stack'
     package: '@azure/storage-file-datalake'
     summary: ''
     fullName: stack
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'stack?: string'
       return:
         description: ''
         type: string
+    inheritanceDescription: <b>Inherited From</b> Error.stack
 extends: Error

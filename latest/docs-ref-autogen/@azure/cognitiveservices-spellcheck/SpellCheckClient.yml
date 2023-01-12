@@ -5,7 +5,6 @@ package: '@azure/cognitiveservices-spellcheck'
 summary: ''
 fullName: SpellCheckClient
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -14,7 +13,6 @@ constructors:
     package: '@azure/cognitiveservices-spellcheck'
     summary: Initializes a new instance of the SpellCheckClient class.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -29,33 +27,37 @@ constructors:
         - id: options
           type: <xref uid="Models.SpellCheckClientOptions" />
           description: ''
-properties:
+inheritedProperties:
   - name: credentials
     uid: '@azure/cognitiveservices-spellcheck.SpellCheckClient.credentials'
     package: '@azure/cognitiveservices-spellcheck'
     summary: ''
     fullName: credentials
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'credentials: ServiceClientCredentials'
       return:
         description: ''
         type: ServiceClientCredentials
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [SpellCheckClientContext.credentials](xref:@azure/cognitiveservices-spellcheck.SpellCheckClientContext.credentials)
   - name: endpoint
     uid: '@azure/cognitiveservices-spellcheck.SpellCheckClient.endpoint'
     package: '@azure/cognitiveservices-spellcheck'
     summary: ''
     fullName: endpoint
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'endpoint?: undefined | string'
       return:
         description: ''
         type: undefined | string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [SpellCheckClientContext.endpoint](xref:@azure/cognitiveservices-spellcheck.SpellCheckClientContext.endpoint)
 inheritedMethods:
   - name: >-
       sendOperationRequest(OperationArguments, OperationSpec,
@@ -64,7 +66,6 @@ inheritedMethods:
     package: '@azure/cognitiveservices-spellcheck'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -87,12 +88,12 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;RestResponse&gt;
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendOperationRequest
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
     uid: '@azure/cognitiveservices-spellcheck.SpellCheckClient.sendRequest'
     package: '@azure/cognitiveservices-spellcheck'
     summary: Send the provided httpRequest.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -105,13 +106,13 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;HttpOperationResponse&gt;
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendRequest
 methods:
   - name: 'spellChecker(string, Models.SpellCheckClientSpellCheckerOptionalParams)'
     uid: '@azure/cognitiveservices-spellcheck.SpellCheckClient.spellChecker'
     package: '@azure/cognitiveservices-spellcheck'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -146,7 +147,6 @@ methods:
     package: '@azure/cognitiveservices-spellcheck'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -182,7 +182,6 @@ methods:
     package: '@azure/cognitiveservices-spellcheck'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

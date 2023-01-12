@@ -5,7 +5,6 @@ package: '@azure/cognitiveservices-anomalydetector'
 summary: ''
 fullName: AnomalyDetectorClient
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -16,7 +15,6 @@ constructors:
     package: '@azure/cognitiveservices-anomalydetector'
     summary: Initializes a new instance of the AnomalyDetectorClient class.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -38,33 +36,37 @@ constructors:
         - id: options
           type: <xref uid="msRest.ServiceClientOptions" />
           description: ''
-properties:
+inheritedProperties:
   - name: credentials
     uid: '@azure/cognitiveservices-anomalydetector.AnomalyDetectorClient.credentials'
     package: '@azure/cognitiveservices-anomalydetector'
     summary: ''
     fullName: credentials
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'credentials: ServiceClientCredentials'
       return:
         description: ''
         type: ServiceClientCredentials
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [AnomalyDetectorClientContext.credentials](xref:@azure/cognitiveservices-anomalydetector.AnomalyDetectorClientContext.credentials)
   - name: endpoint
     uid: '@azure/cognitiveservices-anomalydetector.AnomalyDetectorClient.endpoint'
     package: '@azure/cognitiveservices-anomalydetector'
     summary: ''
     fullName: endpoint
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'endpoint: string'
       return:
         description: ''
         type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [AnomalyDetectorClientContext.endpoint](xref:@azure/cognitiveservices-anomalydetector.AnomalyDetectorClientContext.endpoint)
 inheritedMethods:
   - name: >-
       sendOperationRequest(OperationArguments, OperationSpec,
@@ -74,7 +76,6 @@ inheritedMethods:
     package: '@azure/cognitiveservices-anomalydetector'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -97,12 +98,12 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;RestResponse&gt;
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendOperationRequest
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
     uid: '@azure/cognitiveservices-anomalydetector.AnomalyDetectorClient.sendRequest'
     package: '@azure/cognitiveservices-anomalydetector'
     summary: Send the provided httpRequest.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -115,6 +116,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;HttpOperationResponse&gt;
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendRequest
 methods:
   - name: 'changePointDetect(ChangePointDetectRequest, msRest.RequestOptionsBase)'
     uid: >-
@@ -122,7 +124,6 @@ methods:
     package: '@azure/cognitiveservices-anomalydetector'
     summary: Evaluate change point score of every series point
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -153,7 +154,6 @@ methods:
     package: '@azure/cognitiveservices-anomalydetector'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -189,7 +189,6 @@ methods:
     package: '@azure/cognitiveservices-anomalydetector'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -227,7 +226,6 @@ methods:
       it is an anomaly. The entire detection can give user an overall status of
       the time series.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -255,7 +253,6 @@ methods:
     package: '@azure/cognitiveservices-anomalydetector'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -285,7 +282,6 @@ methods:
     package: '@azure/cognitiveservices-anomalydetector'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -319,7 +315,6 @@ methods:
       detecting operation matches the scenario of real-time monitoring of
       business metrics.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -347,7 +342,6 @@ methods:
     package: '@azure/cognitiveservices-anomalydetector'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -377,7 +371,6 @@ methods:
     package: '@azure/cognitiveservices-anomalydetector'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

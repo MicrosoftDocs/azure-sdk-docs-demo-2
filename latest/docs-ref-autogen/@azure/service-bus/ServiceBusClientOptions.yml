@@ -23,10 +23,40 @@ summary: >
         retry attempts remaining. Minimum value: 60000 milliseconds.
 fullName: ServiceBusClientOptions
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
+  - name: customEndpointAddress
+    uid: '@azure/service-bus.ServiceBusClientOptions.customEndpointAddress'
+    package: '@azure/service-bus'
+    summary: |
+      A custom endpoint to use when connecting to the Service Bus service.
+      This can be useful when your network does not allow connecting to the
+      standard Azure Service Bus endpoint address, but does allow connecting
+      through an intermediary.
+      Example: "https://my.custom.endpoint:100/"
+    fullName: customEndpointAddress
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'customEndpointAddress?: string'
+      return:
+        description: ''
+        type: string
+  - name: identifier
+    uid: '@azure/service-bus.ServiceBusClientOptions.identifier'
+    package: '@azure/service-bus'
+    summary: >-
+      ID to identify this client. This can be used to correlate logs and
+      exceptions.
+    fullName: identifier
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'identifier?: string'
+      return:
+        description: ''
+        type: string
   - name: retryOptions
     uid: '@azure/service-bus.ServiceBusClientOptions.retryOptions'
     package: '@azure/service-bus'
@@ -35,7 +65,6 @@ properties:
       interval etc.
     fullName: retryOptions
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'retryOptions?: RetryOptions'
@@ -48,13 +77,12 @@ properties:
     summary: Options for adding user agent details to outgoing requests.
     fullName: userAgentOptions
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
-      content: 'userAgentOptions?: UserAgentOptions'
+      content: 'userAgentOptions?: UserAgentPolicyOptions'
       return:
         description: ''
-        type: UserAgentOptions
+        type: UserAgentPolicyOptions
   - name: webSocketOptions
     uid: '@azure/service-bus.ServiceBusClientOptions.webSocketOptions'
     package: '@azure/service-bus'
@@ -63,7 +91,6 @@ properties:
       Sockets.
     fullName: webSocketOptions
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'webSocketOptions?: WebSocketOptions'

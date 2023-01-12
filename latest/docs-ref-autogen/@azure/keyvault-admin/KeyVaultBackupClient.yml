@@ -13,7 +13,6 @@ summary: >-
   and full restores of Key Vault instances.
 fullName: KeyVaultBackupClient
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -33,7 +32,6 @@ constructors:
       let client = new KeyVaultBackupClient(vaultUrl, credentials);
       ```
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -44,7 +42,9 @@ constructors:
           type: string
           description: >-
             the URL of the Key Vault. It should have this shape:
-            `https://${your-key-vault-name}.vault.azure.net`
+            `https://${your-key-vault-name}.vault.azure.net`. You should
+            validate that this URL references a valid Key Vault or Managed HSM
+            resource. See https://aka.ms/azsdk/blog/vault-uri for details.
         - id: credential
           type: TokenCredential
           description: >-
@@ -62,7 +62,6 @@ properties:
     summary: The base URL to the vault
     fullName: vaultUrl
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'vaultUrl: string'
@@ -124,7 +123,6 @@ methods:
 
       Starts a full backup operation.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -206,7 +204,6 @@ methods:
 
       Starts a full restore operation.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -291,7 +288,6 @@ methods:
 
       Creates a new role assignment.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

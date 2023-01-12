@@ -5,30 +5,15 @@ package: '@azure/keyvault-keys'
 summary: 'Options for <xref:@azure/keyvault-keys.KeyClient.updateKeyProperties>.'
 fullName: UpdateKeyPropertiesOptions
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: abortSignal
-    uid: '@azure/keyvault-keys.UpdateKeyPropertiesOptions.abortSignal'
-    package: '@azure/keyvault-keys'
-    summary: The signal which can be used to abort requests.
-    fullName: abortSignal
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'abortSignal?: AbortSignalLike'
-      return:
-        description: ''
-        type: AbortSignalLike
   - name: enabled
     uid: '@azure/keyvault-keys.UpdateKeyPropertiesOptions.enabled'
     package: '@azure/keyvault-keys'
     summary: Determines whether the object is enabled.
     fullName: enabled
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'enabled?: boolean'
@@ -41,7 +26,6 @@ properties:
     summary: Expiry date in UTC.
     fullName: expiresOn
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'expiresOn?: Date'
@@ -56,7 +40,6 @@ properties:
       information on possible key operations, see KeyOperation.
     fullName: keyOps
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'keyOps?: KeyOperation[]'
@@ -69,7 +52,6 @@ properties:
     summary: Not before date in UTC.
     fullName: notBefore
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'notBefore?: Date'
@@ -87,50 +69,91 @@ properties:
       key creation.
     fullName: releasePolicy
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'releasePolicy?: KeyReleasePolicy'
       return:
         description: ''
         type: <xref uid="@azure/keyvault-keys.KeyReleasePolicy" />
-  - name: requestOptions
-    uid: '@azure/keyvault-keys.UpdateKeyPropertiesOptions.requestOptions'
-    package: '@azure/keyvault-keys'
-    summary: Options used when creating and sending HTTP requests for this operation.
-    fullName: requestOptions
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'requestOptions?: OperationRequestOptions'
-      return:
-        description: ''
-        type: OperationRequestOptions
   - name: tags
     uid: '@azure/keyvault-keys.UpdateKeyPropertiesOptions.tags'
     package: '@azure/keyvault-keys'
     summary: Application specific metadata in the form of key-value pairs.
     fullName: tags
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'tags?: [key: string]: string'
       return:
         description: ''
         type: '[key: string]\: string'
+inheritedProperties:
+  - name: abortSignal
+    uid: '@azure/keyvault-keys.UpdateKeyPropertiesOptions.abortSignal'
+    package: '@azure/keyvault-keys'
+    summary: The signal which can be used to abort requests.
+    fullName: abortSignal
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'abortSignal?: AbortSignalLike'
+      return:
+        description: ''
+        type: AbortSignalLike
+    inheritanceDescription: <b>Inherited From</b> OperationOptions.abortSignal
+  - name: onResponse
+    uid: '@azure/keyvault-keys.UpdateKeyPropertiesOptions.onResponse'
+    package: '@azure/keyvault-keys'
+    summary: |-
+      A function to be called each time a response is received from the server
+      while performing the requested operation.
+      May be called multiple times.
+    fullName: onResponse
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'onResponse?: RawResponseCallback'
+      return:
+        description: ''
+        type: RawResponseCallback
+    inheritanceDescription: <b>Inherited From</b> OperationOptions.onResponse
+  - name: requestOptions
+    uid: '@azure/keyvault-keys.UpdateKeyPropertiesOptions.requestOptions'
+    package: '@azure/keyvault-keys'
+    summary: Options used when creating and sending HTTP requests for this operation.
+    fullName: requestOptions
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'requestOptions?: OperationRequestOptions'
+      return:
+        description: ''
+        type: OperationRequestOptions
+    inheritanceDescription: <b>Inherited From</b> OperationOptions.requestOptions
+  - name: serializerOptions
+    uid: '@azure/keyvault-keys.UpdateKeyPropertiesOptions.serializerOptions'
+    package: '@azure/keyvault-keys'
+    summary: Options to override serialization/de-serialization behavior.
+    fullName: serializerOptions
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'serializerOptions?: SerializerOptions'
+      return:
+        description: ''
+        type: SerializerOptions
+    inheritanceDescription: <b>Inherited From</b> OperationOptions.serializerOptions
   - name: tracingOptions
     uid: '@azure/keyvault-keys.UpdateKeyPropertiesOptions.tracingOptions'
     package: '@azure/keyvault-keys'
     summary: Options used when tracing is enabled.
     fullName: tracingOptions
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'tracingOptions?: OperationTracingOptions'
       return:
         description: ''
         type: OperationTracingOptions
+    inheritanceDescription: <b>Inherited From</b> OperationOptions.tracingOptions
 extends: OperationOptions

@@ -5,23 +5,9 @@ package: '@azure/cognitiveservices-face'
 summary: Optional Parameters.
 fullName: SnapshotListOptionalParams
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: abortSignal
-    uid: '@azure/cognitiveservices-face.SnapshotListOptionalParams.abortSignal'
-    package: '@azure/cognitiveservices-face'
-    summary: The signal which can be used to abort requests.
-    fullName: abortSignal
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'abortSignal?: AbortSignalLike'
-      return:
-        description: ''
-        type: AbortSignalLike
   - name: applyScope
     uid: '@azure/cognitiveservices-face.SnapshotListOptionalParams.applyScope'
     package: '@azure/cognitiveservices-face'
@@ -35,72 +21,12 @@ properties:
       Snapshot - Take.
     fullName: applyScope
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'applyScope?: string[]'
       return:
         description: ''
         type: 'string[]'
-  - name: customHeaders
-    uid: '@azure/cognitiveservices-face.SnapshotListOptionalParams.customHeaders'
-    package: '@azure/cognitiveservices-face'
-    summary: |-
-      {object} [customHeaders] User defined custom request headers that
-      will be applied before the request is sent.
-    fullName: customHeaders
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'customHeaders?: undefined | [key: string]: string'
-      return:
-        description: ''
-        type: 'undefined | [key: string]: string'
-  - name: onDownloadProgress
-    uid: >-
-      @azure/cognitiveservices-face.SnapshotListOptionalParams.onDownloadProgress
-    package: '@azure/cognitiveservices-face'
-    summary: Callback which fires upon download progress.
-    fullName: onDownloadProgress
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        onDownloadProgress?: undefined | (progress: TransferProgressEvent) =>
-        void
-      return:
-        description: ''
-        type: 'undefined | (progress: TransferProgressEvent) =&gt; void'
-  - name: onUploadProgress
-    uid: '@azure/cognitiveservices-face.SnapshotListOptionalParams.onUploadProgress'
-    package: '@azure/cognitiveservices-face'
-    summary: Callback which fires upon upload progress.
-    fullName: onUploadProgress
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'onUploadProgress?: undefined | (progress: TransferProgressEvent) => void'
-      return:
-        description: ''
-        type: 'undefined | (progress: TransferProgressEvent) =&gt; void'
-  - name: timeout
-    uid: '@azure/cognitiveservices-face.SnapshotListOptionalParams.timeout'
-    package: '@azure/cognitiveservices-face'
-    summary: >-
-      The number of milliseconds a request can take before automatically being
-      terminated.
-    fullName: timeout
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'timeout?: undefined | number'
-      return:
-        description: ''
-        type: undefined | number
   - name: type
     uid: '@azure/cognitiveservices-face.SnapshotListOptionalParams.type'
     package: '@azure/cognitiveservices-face'
@@ -111,11 +37,83 @@ properties:
       'LargeFaceList', 'LargePersonGroup', 'PersonGroup'
     fullName: type
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'type?: SnapshotObjectType'
       return:
         description: ''
         type: <xref uid="@azure/cognitiveservices-face.SnapshotObjectType" />
+inheritedProperties:
+  - name: abortSignal
+    uid: '@azure/cognitiveservices-face.SnapshotListOptionalParams.abortSignal'
+    package: '@azure/cognitiveservices-face'
+    summary: The signal which can be used to abort requests.
+    fullName: abortSignal
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'abortSignal?: AbortSignalLike'
+      return:
+        description: ''
+        type: AbortSignalLike
+    inheritanceDescription: <b>Inherited From</b> RequestOptionsBase.abortSignal
+  - name: customHeaders
+    uid: '@azure/cognitiveservices-face.SnapshotListOptionalParams.customHeaders'
+    package: '@azure/cognitiveservices-face'
+    summary: |-
+      {object} [customHeaders] User defined custom request headers that
+      will be applied before the request is sent.
+    fullName: customHeaders
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'customHeaders?: undefined | [key: string]: string'
+      return:
+        description: ''
+        type: 'undefined | [key: string]: string'
+    inheritanceDescription: <b>Inherited From</b> RequestOptionsBase.customHeaders
+  - name: onDownloadProgress
+    uid: >-
+      @azure/cognitiveservices-face.SnapshotListOptionalParams.onDownloadProgress
+    package: '@azure/cognitiveservices-face'
+    summary: Callback which fires upon download progress.
+    fullName: onDownloadProgress
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        onDownloadProgress?: undefined | (progress: TransferProgressEvent) =>
+        void
+      return:
+        description: ''
+        type: 'undefined | (progress: TransferProgressEvent) =&gt; void'
+    inheritanceDescription: <b>Inherited From</b> RequestOptionsBase.onDownloadProgress
+  - name: onUploadProgress
+    uid: '@azure/cognitiveservices-face.SnapshotListOptionalParams.onUploadProgress'
+    package: '@azure/cognitiveservices-face'
+    summary: Callback which fires upon upload progress.
+    fullName: onUploadProgress
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'onUploadProgress?: undefined | (progress: TransferProgressEvent) => void'
+      return:
+        description: ''
+        type: 'undefined | (progress: TransferProgressEvent) =&gt; void'
+    inheritanceDescription: <b>Inherited From</b> RequestOptionsBase.onUploadProgress
+  - name: timeout
+    uid: '@azure/cognitiveservices-face.SnapshotListOptionalParams.timeout'
+    package: '@azure/cognitiveservices-face'
+    summary: >-
+      The number of milliseconds a request can take before automatically being
+      terminated.
+    fullName: timeout
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'timeout?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+    inheritanceDescription: <b>Inherited From</b> RequestOptionsBase.timeout
 extends: RequestOptionsBase

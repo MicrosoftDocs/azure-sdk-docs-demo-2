@@ -7,7 +7,6 @@ summary: |-
   the poller will be rejected with an instance of the PollerStoppedError.
 fullName: PollerStoppedError
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -16,7 +15,6 @@ constructors:
     package: '@azure/core-lro'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'new PollerStoppedError(message: string)'
@@ -31,50 +29,50 @@ properties:
     summary: ''
     fullName: Error
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'static Error: ErrorConstructor'
       return:
         description: ''
         type: ErrorConstructor
+inheritedProperties:
   - name: message
     uid: '@azure/core-lro.PollerStoppedError.message'
     package: '@azure/core-lro'
     summary: ''
     fullName: message
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'message: string'
       return:
         description: ''
         type: string
+    inheritanceDescription: <b>Inherited From</b> Error.message
   - name: name
     uid: '@azure/core-lro.PollerStoppedError.name'
     package: '@azure/core-lro'
     summary: ''
     fullName: name
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'name: string'
       return:
         description: ''
         type: string
+    inheritanceDescription: <b>Inherited From</b> Error.name
   - name: stack
     uid: '@azure/core-lro.PollerStoppedError.stack'
     package: '@azure/core-lro'
     summary: ''
     fullName: stack
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'stack?: string'
       return:
         description: ''
         type: string
+    inheritanceDescription: <b>Inherited From</b> Error.stack
 extends: Error

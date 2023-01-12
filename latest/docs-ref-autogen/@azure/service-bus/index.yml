@@ -16,6 +16,9 @@ interfaces:
   - '@azure/service-bus.CreateTopicOptions'
   - '@azure/service-bus.DeadLetterOptions'
   - '@azure/service-bus.GetMessageIteratorOptions'
+  - '@azure/service-bus.HttpHeader'
+  - '@azure/service-bus.HttpHeadersLike'
+  - '@azure/service-bus.HttpResponse'
   - '@azure/service-bus.MessageHandlers'
   - '@azure/service-bus.NamespaceProperties'
   - '@azure/service-bus.PeekMessagesOptions'
@@ -32,7 +35,9 @@ interfaces:
   - '@azure/service-bus.ServiceBusReceivedMessage'
   - '@azure/service-bus.ServiceBusReceiver'
   - '@azure/service-bus.ServiceBusReceiverOptions'
+  - '@azure/service-bus.ServiceBusRuleManager'
   - '@azure/service-bus.ServiceBusSender'
+  - '@azure/service-bus.ServiceBusSenderOptions'
   - '@azure/service-bus.ServiceBusSessionReceiver'
   - '@azure/service-bus.ServiceBusSessionReceiverOptions'
   - '@azure/service-bus.SqlRuleFilter'
@@ -42,13 +47,16 @@ interfaces:
   - '@azure/service-bus.TopicProperties'
   - '@azure/service-bus.TopicRuntimeProperties'
   - '@azure/service-bus.TryAddOptions'
+  - '@azure/service-bus.WebResourceLike'
 typeAliases:
   - '@azure/service-bus.EntitiesResponse'
   - '@azure/service-bus.EntityAvailabilityStatus'
   - '@azure/service-bus.EntityStatus'
   - '@azure/service-bus.OperationOptionsBase'
+  - '@azure/service-bus.RawHttpHeaders'
   - '@azure/service-bus.ServiceBusErrorCode'
   - '@azure/service-bus.SqlRuleAction'
+  - '@azure/service-bus.TransferProgressEvent'
   - '@azure/service-bus.WithResponse'
 functions:
   - name: isServiceBusError(unknown)
@@ -56,7 +64,6 @@ functions:
     package: '@azure/service-bus'
     summary: Determines if an error is of type `ServiceBusError`
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function isServiceBusError(err: unknown): boolean'
@@ -77,7 +84,6 @@ functions:
 
       The properties are useful to then construct a ServiceBusClient.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

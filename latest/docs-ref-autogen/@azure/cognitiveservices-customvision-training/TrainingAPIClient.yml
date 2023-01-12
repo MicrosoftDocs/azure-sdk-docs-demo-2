@@ -5,7 +5,6 @@ package: '@azure/cognitiveservices-customvision-training'
 summary: ''
 fullName: TrainingAPIClient
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -17,7 +16,6 @@ constructors:
     package: '@azure/cognitiveservices-customvision-training'
     summary: Initializes a new instance of the TrainingAPIClient class.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -35,7 +33,7 @@ constructors:
         - id: options
           type: <xref uid="msRest.ServiceClientOptions" />
           description: ''
-properties:
+inheritedProperties:
   - name: credentials
     uid: >-
       @azure/cognitiveservices-customvision-training.TrainingAPIClient.credentials
@@ -43,26 +41,30 @@ properties:
     summary: ''
     fullName: credentials
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'credentials: ServiceClientCredentials'
       return:
         description: ''
         type: ServiceClientCredentials
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [TrainingAPIClientContext.credentials](xref:@azure/cognitiveservices-customvision-training.TrainingAPIClientContext.credentials)
   - name: endpoint
     uid: '@azure/cognitiveservices-customvision-training.TrainingAPIClient.endpoint'
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     fullName: endpoint
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'endpoint: string'
       return:
         description: ''
         type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [TrainingAPIClientContext.endpoint](xref:@azure/cognitiveservices-customvision-training.TrainingAPIClientContext.endpoint)
 inheritedMethods:
   - name: >-
       sendOperationRequest(OperationArguments, OperationSpec,
@@ -72,7 +74,6 @@ inheritedMethods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: Send an HTTP request that is populated using the provided OperationSpec.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -95,13 +96,13 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;RestResponse&gt;
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendOperationRequest
   - name: sendRequest(RequestPrepareOptions | WebResourceLike)
     uid: >-
       @azure/cognitiveservices-customvision-training.TrainingAPIClient.sendRequest
     package: '@azure/cognitiveservices-customvision-training'
     summary: Send the provided httpRequest.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -114,6 +115,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;HttpOperationResponse&gt;
+    inheritanceDescription: <b>Inherited From</b> ServiceClient.sendRequest
 methods:
   - name: >-
       createImageRegions(string, ImageRegionCreateBatch,
@@ -137,7 +139,6 @@ methods:
 
       will be listed in the response payload.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -170,7 +171,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -207,7 +207,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -255,7 +254,6 @@ methods:
 
       be listed in the response payload.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -290,7 +288,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -323,7 +320,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -375,7 +371,6 @@ methods:
 
       be listed in the response payload.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -408,7 +403,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -445,7 +439,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -490,7 +483,6 @@ methods:
 
       be listed in the response payload.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -525,7 +517,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -562,7 +553,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -607,7 +597,6 @@ methods:
 
       be listed in the response payload.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -640,7 +629,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -677,7 +665,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -708,7 +695,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -739,7 +725,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -774,7 +759,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -803,7 +787,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -826,7 +809,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function createProject(name: string, callback: ServiceCallback<Project>)'
@@ -848,7 +830,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -876,7 +857,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -902,7 +882,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -929,7 +908,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -961,7 +939,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -988,7 +965,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1014,7 +990,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1037,7 +1012,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1060,7 +1034,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1082,7 +1055,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1109,7 +1081,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1139,7 +1110,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1168,7 +1138,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1194,7 +1163,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1219,7 +1187,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1245,7 +1212,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1268,7 +1234,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1295,7 +1260,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1321,7 +1285,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1344,7 +1307,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1366,7 +1328,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1389,7 +1350,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1408,7 +1368,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1433,7 +1392,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1459,7 +1417,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1484,7 +1441,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1520,7 +1476,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1556,7 +1511,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1597,7 +1551,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1619,7 +1572,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1645,7 +1597,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1668,7 +1619,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1693,7 +1643,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1719,7 +1668,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1741,7 +1689,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1763,7 +1710,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1788,7 +1734,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getDomain(domainId: string, callback: ServiceCallback<Domain>)'
@@ -1808,7 +1753,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1827,7 +1771,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1849,7 +1792,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getDomains(callback: ServiceCallback<Domain[]>)'
@@ -1866,7 +1808,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1893,7 +1834,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1922,7 +1862,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1954,7 +1893,6 @@ methods:
 
       "Cat" tags, then only images tagged with Dog and/or Cat will be returned
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1977,7 +1915,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1999,7 +1936,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2034,7 +1970,6 @@ methods:
 
       "Cat" tags, then only images tagged with Dog and/or Cat will be returned
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2064,7 +1999,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2090,7 +2024,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2137,7 +2070,6 @@ methods:
 
       "Cat" tags, then only images tagged with Dog and/or Cat will be returned
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2165,7 +2097,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2194,7 +2125,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2231,7 +2161,6 @@ methods:
 
       returns an empty array if no proposals are found.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2259,7 +2188,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2291,7 +2219,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2330,7 +2257,6 @@ methods:
 
       "Cat" tags, then only images tagged with Dog and/or Cat will be returned
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2353,7 +2279,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2377,7 +2302,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2414,7 +2338,6 @@ methods:
 
       current workspace is used.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2437,7 +2360,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2461,7 +2383,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2490,7 +2411,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2517,7 +2437,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2546,7 +2465,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2574,7 +2492,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2606,7 +2523,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2635,7 +2551,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2668,7 +2583,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2690,7 +2604,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2716,7 +2629,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2739,7 +2651,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2761,7 +2672,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2786,7 +2696,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2808,7 +2717,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2827,7 +2735,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2850,7 +2757,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getProjects(callback: ServiceCallback<Project[]>)'
@@ -2867,7 +2773,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2892,7 +2797,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2918,7 +2822,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2957,7 +2860,6 @@ methods:
 
       "Cat" tags, then only images tagged with Dog and/or Cat will be returned
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2982,7 +2884,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3005,7 +2906,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3048,7 +2948,6 @@ methods:
 
       "Cat" tags, then only images tagged with Dog and/or Cat will be returned
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3071,7 +2970,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3095,7 +2993,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3123,7 +3020,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3145,7 +3041,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getTags(projectId: string, callback: ServiceCallback<Tag[]>)'
@@ -3166,7 +3061,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3203,7 +3097,6 @@ methods:
 
       current workspace is used.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3228,7 +3121,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3251,7 +3143,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3287,7 +3178,6 @@ methods:
       Use the {take} and {skip} parameters to control how many images to return
       in a given batch.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3312,7 +3202,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3337,7 +3226,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3366,7 +3254,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3389,7 +3276,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3413,7 +3299,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3444,7 +3329,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3479,7 +3363,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3511,7 +3394,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3548,7 +3430,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3581,7 +3462,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3618,7 +3498,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3655,7 +3534,6 @@ methods:
 
       threshold.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3688,7 +3566,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3722,7 +3599,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3757,7 +3633,6 @@ methods:
 
       no images are found.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3791,7 +3666,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3829,7 +3703,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3864,7 +3737,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3897,7 +3769,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3930,7 +3801,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -3970,7 +3840,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4000,7 +3869,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4031,7 +3899,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4072,7 +3939,6 @@ methods:
 
       There is a limit of 64 images in the batch.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4107,7 +3973,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4146,7 +4011,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4179,7 +4043,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4202,7 +4065,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4227,7 +4089,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4257,7 +4118,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4284,7 +4144,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4310,7 +4169,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4339,7 +4197,6 @@ methods:
 
       images.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4375,7 +4232,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4415,7 +4271,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4450,7 +4305,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4483,7 +4337,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4518,7 +4371,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4549,7 +4401,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4579,7 +4430,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4609,7 +4459,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4635,7 +4484,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4663,7 +4511,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -4694,7 +4541,6 @@ methods:
     package: '@azure/cognitiveservices-customvision-training'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

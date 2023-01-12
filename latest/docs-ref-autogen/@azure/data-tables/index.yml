@@ -87,7 +87,6 @@ functions:
       See
       https://docs.microsoft.com/en-us/rest/api/storageservices/create-account-sas
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -117,7 +116,6 @@ functions:
       See
       https://docs.microsoft.com/en-us/rest/api/storageservices/constructing-a-service-sas
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -144,8 +142,9 @@ functions:
     summary: >-
       Escapes an odata filter expression to avoid errors with quoting string
       literals.
+
+      Encodes Date objects.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function odata(strings: TemplateStringsArray, values: unknown[]): string'

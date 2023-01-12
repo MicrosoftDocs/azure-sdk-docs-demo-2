@@ -7,7 +7,6 @@ summary: >-
   Management.
 fullName: CommunicationIdentityClient
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -16,7 +15,6 @@ constructors:
     package: '@azure/communication-identity'
     summary: Initializes a new instance of the CommunicationIdentity class.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -45,7 +43,6 @@ constructors:
       Initializes a new instance of the CommunicationIdentity class using an
       Azure KeyCredential.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -78,7 +75,6 @@ constructors:
       Initializes a new instance of the CommunicationIdentity class using a
       TokenCredential.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -108,7 +104,6 @@ methods:
     package: '@azure/communication-identity'
     summary: Creates a single user.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -122,24 +117,25 @@ methods:
       return:
         description: ''
         type: Promise&lt;CommunicationUserIdentifier&gt;
-  - name: 'createUserAndToken(TokenScope[], OperationOptions)'
+  - name: 'createUserAndToken(TokenScope[], CreateUserAndTokenOptions)'
     uid: >-
       @azure/communication-identity.CommunicationIdentityClient.createUserAndToken
     package: '@azure/communication-identity'
     summary: Creates a single user and a token simultaneously.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
         function createUserAndToken(scopes: TokenScope[], options?:
-        OperationOptions): Promise<CommunicationUserToken>
+        CreateUserAndTokenOptions): Promise<CommunicationUserToken>
       parameters:
         - id: scopes
           type: '<xref uid="@azure/communication-identity.TokenScope" />[]'
           description: Scopes to include in the token.
         - id: options
-          type: OperationOptions
+          type: >-
+            <xref uid="@azure/communication-identity.CreateUserAndTokenOptions"
+            />
           description: |
             Additional options for the request.
       return:
@@ -152,7 +148,6 @@ methods:
     package: '@azure/communication-identity'
     summary: Triggers revocation event for user and deletes all its data.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -169,17 +164,16 @@ methods:
       return:
         description: ''
         type: Promise&lt;void&gt;
-  - name: 'getToken(CommunicationUserIdentifier, TokenScope[], OperationOptions)'
+  - name: 'getToken(CommunicationUserIdentifier, TokenScope[], GetTokenOptions)'
     uid: '@azure/communication-identity.CommunicationIdentityClient.getToken'
     package: '@azure/communication-identity'
     summary: Creates a scoped user token.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
         function getToken(user: CommunicationUserIdentifier, scopes:
-        TokenScope[], options?: OperationOptions):
+        TokenScope[], options?: GetTokenOptions):
         Promise<CommunicationAccessToken>
       parameters:
         - id: user
@@ -189,9 +183,35 @@ methods:
           type: '<xref uid="@azure/communication-identity.TokenScope" />[]'
           description: Scopes to include in the token.
         - id: options
-          type: OperationOptions
+          type: <xref uid="@azure/communication-identity.GetTokenOptions" />
           description: |
             Additional options for the request.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/communication-identity.CommunicationAccessToken" />&gt;
+  - name: getTokenForTeamsUser(GetTokenForTeamsUserOptions)
+    uid: >-
+      @azure/communication-identity.CommunicationIdentityClient.getTokenForTeamsUser
+    package: '@azure/communication-identity'
+    summary: >-
+      Exchanges an Azure AD access token of a Teams user for a new Communication
+      Identity access token with a matching expiration time.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getTokenForTeamsUser(options: GetTokenForTeamsUserOptions):
+        Promise<CommunicationAccessToken>
+      parameters:
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/communication-identity.GetTokenForTeamsUserOptions" />
+          description: >
+            Options used to exchange an Azure AD access token of a Teams user
+            for a new Communication Identity access token.
       return:
         description: ''
         type: >-
@@ -202,7 +222,6 @@ methods:
     package: '@azure/communication-identity'
     summary: Revokes all data and tokens created for a user.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

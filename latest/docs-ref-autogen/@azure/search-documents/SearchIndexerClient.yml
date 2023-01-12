@@ -8,11 +8,12 @@ summary: |-
   indexers, datasources & skillsets.
 fullName: SearchIndexerClient
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
-  - name: 'SearchIndexerClient(string, KeyCredential, SearchIndexerClientOptions)'
+  - name: >-
+      SearchIndexerClient(string, KeyCredential | TokenCredential,
+      SearchIndexerClientOptions)
     uid: '@azure/search-documents.SearchIndexerClient.constructor'
     package: '@azure/search-documents'
     summary: >-
@@ -33,18 +34,17 @@ constructors:
 
       ```
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        new SearchIndexerClient(endpoint: string, credential: KeyCredential,
-        options?: SearchIndexerClientOptions)
+        new SearchIndexerClient(endpoint: string, credential: KeyCredential |
+        TokenCredential, options?: SearchIndexerClientOptions)
       parameters:
         - id: endpoint
           type: string
           description: The endpoint of the search service
         - id: credential
-          type: KeyCredential
+          type: KeyCredential | TokenCredential
           description: Used to authenticate requests to the service.
         - id: options
           type: <xref uid="@azure/search-documents.SearchIndexerClientOptions" />
@@ -57,7 +57,6 @@ properties:
     summary: The API version to use when communicating with the service.
     fullName: apiVersion
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'apiVersion: string'
@@ -70,7 +69,6 @@ properties:
     summary: The endpoint of the search service
     fullName: endpoint
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'endpoint: string'
@@ -85,7 +83,6 @@ methods:
     package: '@azure/search-documents'
     summary: Creates a new dataSource in a search service.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -115,7 +112,6 @@ methods:
     package: '@azure/search-documents'
     summary: Creates a new indexer in a search service.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -140,7 +136,6 @@ methods:
     package: '@azure/search-documents'
     summary: Creates a new datasource or modifies an existing one.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -171,7 +166,6 @@ methods:
     package: '@azure/search-documents'
     summary: Creates a new indexer or modifies an existing one.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -195,7 +189,6 @@ methods:
     package: '@azure/search-documents'
     summary: Creates a new Skillset or modifies an existing one.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -219,7 +212,6 @@ methods:
     package: '@azure/search-documents'
     summary: Creates a new skillset in a search service.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -247,7 +239,6 @@ methods:
     package: '@azure/search-documents'
     summary: Deletes an existing datasource.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -274,7 +265,6 @@ methods:
     package: '@azure/search-documents'
     summary: Deletes an existing indexer.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -296,7 +286,6 @@ methods:
     package: '@azure/search-documents'
     summary: Deletes an existing Skillset.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -320,7 +309,6 @@ methods:
     package: '@azure/search-documents'
     summary: Retrieves information about a DataSource
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -347,7 +335,6 @@ methods:
     package: '@azure/search-documents'
     summary: Retrieves information about an Indexer.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -369,7 +356,6 @@ methods:
     package: '@azure/search-documents'
     summary: Returns the current status and execution history of an indexer.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -393,7 +379,6 @@ methods:
     package: '@azure/search-documents'
     summary: Retrieves information about an Skillset.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -417,7 +402,6 @@ methods:
     package: '@azure/search-documents'
     summary: Retrieves a list of existing data sources in the service.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -442,7 +426,6 @@ methods:
     package: '@azure/search-documents'
     summary: Retrieves a list of names of existing data sources in the service.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -463,7 +446,6 @@ methods:
     package: '@azure/search-documents'
     summary: Retrieves a list of existing indexers in the service.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -484,7 +466,6 @@ methods:
     package: '@azure/search-documents'
     summary: Retrieves a list of names of existing indexers in the service.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -503,7 +484,6 @@ methods:
     package: '@azure/search-documents'
     summary: Retrieves a list of existing Skillsets in the service.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -524,7 +504,6 @@ methods:
     package: '@azure/search-documents'
     summary: Retrieves a list of names of existing Skillsets in the service.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -543,7 +522,6 @@ methods:
     package: '@azure/search-documents'
     summary: Resets the change tracking state associated with an indexer.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -565,7 +543,6 @@ methods:
     package: '@azure/search-documents'
     summary: Runs an indexer on-demand.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

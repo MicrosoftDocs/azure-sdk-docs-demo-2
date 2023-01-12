@@ -5,16 +5,14 @@ package: '@azure/arm-mediaservices'
 summary: Interface representing a PrivateLinkResources.
 fullName: PrivateLinkResources
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 methods:
   - name: 'get(string, string, string, PrivateLinkResourcesGetOptionalParams)'
     uid: '@azure/arm-mediaservices.PrivateLinkResources.get'
     package: '@azure/arm-mediaservices'
-    summary: Get group ID.
+    summary: Get details of a group ID.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -46,9 +44,8 @@ methods:
   - name: 'list(string, string, PrivateLinkResourcesListOptionalParams)'
     uid: '@azure/arm-mediaservices.PrivateLinkResources.list'
     package: '@azure/arm-mediaservices'
-    summary: Get list of group IDs.
+    summary: List supported group IDs.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

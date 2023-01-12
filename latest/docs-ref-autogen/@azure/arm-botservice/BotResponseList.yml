@@ -5,7 +5,6 @@ package: '@azure/arm-botservice'
 summary: ''
 fullName: BotResponseList
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -15,13 +14,25 @@ properties:
     summary: ''
     fullName: Array
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'Array: ArrayConstructor'
       return:
         description: ''
         type: ArrayConstructor
+  - name: nextLink
+    uid: '@azure/arm-botservice.BotResponseList.nextLink'
+    package: '@azure/arm-botservice'
+    summary: The link used to get the next page of bot service resources.
+    fullName: nextLink
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'nextLink?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+inheritedProperties:
   - name: length
     uid: '@azure/arm-botservice.BotResponseList.length'
     package: '@azure/arm-botservice'
@@ -30,52 +41,36 @@ properties:
       highest element defined in an array.
     fullName: length
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'length: number'
       return:
         description: ''
         type: number
-  - name: nextLink
-    uid: '@azure/arm-botservice.BotResponseList.nextLink'
-    package: '@azure/arm-botservice'
-    summary: The link used to get the next page of bot service resources.
-    fullName: nextLink
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'nextLink?: undefined | string'
-      return:
-        description: ''
-        type: undefined | string
+    inheritanceDescription: <b>Inherited From</b> Array.length
 inheritedMethods:
-  - name: at(number)
-    uid: '@azure/arm-botservice.BotResponseList.at'
+  - name: 'concat((T | ConcatArray<T>)[])'
+    uid: '@azure/arm-botservice.BotResponseList.concat_1'
     package: '@azure/arm-botservice'
-    summary: |-
-      Takes an integer value and returns the item at that index,
-      allowing for positive and negative integers.
-      Negative integers count back from the last item in the array.
+    summary: Combines two or more arrays.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
-      content: 'function at(index: number): Bot | undefined'
+      content: 'function concat(items: (T | ConcatArray<T>)[]): Bot[]'
       parameters:
-        - id: index
-          type: number
-          description: ''
+        - id: items
+          type: '(T | ConcatArray&lt;T&gt;)[]'
+          description: |
+            Additional items to add to the end of array1.
       return:
         description: ''
-        type: <xref uid="@azure/arm-botservice.Bot" /> | undefined
+        type: '<xref uid="@azure/arm-botservice.Bot" />[]'
+    inheritanceDescription: <b>Inherited From</b> Array.concat
   - name: 'concat(ConcatArray<Bot>[])'
     uid: '@azure/arm-botservice.BotResponseList.concat'
     package: '@azure/arm-botservice'
     summary: Combines two or more arrays.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function concat(items: ConcatArray<Bot>[]): Bot[]'
@@ -87,23 +82,7 @@ inheritedMethods:
       return:
         description: ''
         type: '<xref uid="@azure/arm-botservice.Bot" />[]'
-  - name: 'concat(T | ConcatArray<T>[])'
-    uid: '@azure/arm-botservice.BotResponseList.concat_1'
-    package: '@azure/arm-botservice'
-    summary: Combines two or more arrays.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function concat(items: T | ConcatArray<T>[]): Bot[]'
-      parameters:
-        - id: items
-          type: 'T | ConcatArray&lt;T&gt;[]'
-          description: |
-            Additional items to add to the end of array1.
-      return:
-        description: ''
-        type: '<xref uid="@azure/arm-botservice.Bot" />[]'
+    inheritanceDescription: <b>Inherited From</b> Array.concat
   - name: 'copyWithin(number, number, undefined | number)'
     uid: '@azure/arm-botservice.BotResponseList.copyWithin'
     package: '@azure/arm-botservice'
@@ -113,7 +92,6 @@ inheritedMethods:
 
       to the same array starting at position target
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -142,24 +120,24 @@ inheritedMethods:
       return:
         description: ''
         type: this
+    inheritanceDescription: <b>Inherited From</b> Array.copyWithin
   - name: entries()
     uid: '@azure/arm-botservice.BotResponseList.entries'
     package: '@azure/arm-botservice'
     summary: 'Returns an iterable of key, value pairs for every entry in the array'
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function entries(): IterableIterator<[number, Bot]>'
       return:
         description: ''
         type: 'IterableIterator&lt;[number, Bot]&gt;'
+    inheritanceDescription: <b>Inherited From</b> Array.entries
   - name: 'every((value: Bot, index: number, array: Bot[]) => unknown, any)'
     uid: '@azure/arm-botservice.BotResponseList.every'
     package: '@azure/arm-botservice'
     summary: Determines whether all the members of an array satisfy the specified test.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -181,6 +159,7 @@ inheritedMethods:
       return:
         description: ''
         type: boolean
+    inheritanceDescription: <b>Inherited From</b> Array.every
   - name: 'fill(Bot, undefined | number, undefined | number)'
     uid: '@azure/arm-botservice.BotResponseList.fill'
     package: '@azure/arm-botservice'
@@ -188,7 +167,6 @@ inheritedMethods:
       Returns the this object after filling the section identified by start and
       end with value
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -215,6 +193,7 @@ inheritedMethods:
       return:
         description: ''
         type: this
+    inheritanceDescription: <b>Inherited From</b> Array.fill
   - name: 'filter((value: Bot, index: number, array: Bot[]) => unknown, any)'
     uid: '@azure/arm-botservice.BotResponseList.filter_1'
     package: '@azure/arm-botservice'
@@ -222,7 +201,6 @@ inheritedMethods:
       Returns the elements of an array that meet the condition specified in a
       callback function.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -244,6 +222,7 @@ inheritedMethods:
       return:
         description: ''
         type: '<xref uid="@azure/arm-botservice.Bot" />[]'
+    inheritanceDescription: <b>Inherited From</b> Array.filter
   - name: 'filter<S>((value: Bot, index: number, array: Bot[]) => boolean, any)'
     uid: '@azure/arm-botservice.BotResponseList.filter'
     package: '@azure/arm-botservice'
@@ -251,7 +230,6 @@ inheritedMethods:
       Returns the elements of an array that meet the condition specified in a
       callback function.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -273,12 +251,12 @@ inheritedMethods:
       return:
         description: ''
         type: 'S[]'
+    inheritanceDescription: <b>Inherited From</b> Array.filter
   - name: 'find((value: Bot, index: number, obj: Bot[]) => unknown, any)'
     uid: '@azure/arm-botservice.BotResponseList.find_1'
     package: '@azure/arm-botservice'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -294,6 +272,7 @@ inheritedMethods:
       return:
         description: ''
         type: <xref uid="@azure/arm-botservice.Bot" /> | undefined
+    inheritanceDescription: <b>Inherited From</b> Array.find
   - name: >-
       find<S>((this: void, value: Bot, index: number, obj: Bot[]) => boolean,
       any)
@@ -305,7 +284,6 @@ inheritedMethods:
 
       otherwise.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -333,6 +311,7 @@ inheritedMethods:
       return:
         description: ''
         type: S | undefined
+    inheritanceDescription: <b>Inherited From</b> Array.find
   - name: 'findIndex((value: Bot, index: number, obj: Bot[]) => unknown, any)'
     uid: '@azure/arm-botservice.BotResponseList.findIndex'
     package: '@azure/arm-botservice'
@@ -342,7 +321,6 @@ inheritedMethods:
 
       otherwise.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -370,265 +348,12 @@ inheritedMethods:
       return:
         description: ''
         type: number
-  - name: flat<U>(undefined | number)
-    uid: '@azure/arm-botservice.BotResponseList.flat_8'
-    package: '@azure/arm-botservice'
-    summary: >-
-      Returns a new array with all sub-array elements concatenated into it
-      recursively up to the
-
-      specified depth. If no depth is provided, flat method defaults to the
-      depth of 1.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function flat<U>(depth?: undefined | number): any[]'
-      parameters:
-        - id: depth
-          type: undefined | number
-          description: |
-            The maximum recursion depth
-      return:
-        description: ''
-        type: 'any[]'
-  - name: 'flat<U>(U[], 0)'
-    uid: '@azure/arm-botservice.BotResponseList.flat_7'
-    package: '@azure/arm-botservice'
-    summary: >-
-      Returns a new array with all sub-array elements concatenated into it
-      recursively up to the
-
-      specified depth.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function flat<U>(this: U[], depth: 0): U[]'
-      parameters:
-        - id: this
-          type: 'U[]'
-          description: ''
-        - id: depth
-          type: '0'
-          description: |
-            The maximum recursion depth
-      return:
-        description: ''
-        type: 'U[]'
-  - name: 'flat<U>(U[][], undefined | 1)'
-    uid: '@azure/arm-botservice.BotResponseList.flat_6'
-    package: '@azure/arm-botservice'
-    summary: >-
-      Returns a new array with all sub-array elements concatenated into it
-      recursively up to the
-
-      specified depth.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function flat<U>(this: U[][], depth?: undefined | 1): U[]'
-      parameters:
-        - id: this
-          type: 'U[][]'
-          description: ''
-        - id: depth
-          type: undefined | 1
-          description: |
-            The maximum recursion depth
-      return:
-        description: ''
-        type: 'U[]'
-  - name: 'flat<U>(U[][][], 2)'
-    uid: '@azure/arm-botservice.BotResponseList.flat_5'
-    package: '@azure/arm-botservice'
-    summary: >-
-      Returns a new array with all sub-array elements concatenated into it
-      recursively up to the
-
-      specified depth.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function flat<U>(this: U[][][], depth: 2): U[]'
-      parameters:
-        - id: this
-          type: 'U[][][]'
-          description: ''
-        - id: depth
-          type: '2'
-          description: |
-            The maximum recursion depth
-      return:
-        description: ''
-        type: 'U[]'
-  - name: 'flat<U>(U[][][][], 3)'
-    uid: '@azure/arm-botservice.BotResponseList.flat_4'
-    package: '@azure/arm-botservice'
-    summary: >-
-      Returns a new array with all sub-array elements concatenated into it
-      recursively up to the
-
-      specified depth.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function flat<U>(this: U[][][][], depth: 3): U[]'
-      parameters:
-        - id: this
-          type: 'U[][][][]'
-          description: ''
-        - id: depth
-          type: '3'
-          description: |
-            The maximum recursion depth
-      return:
-        description: ''
-        type: 'U[]'
-  - name: 'flat<U>(U[][][][][], 4)'
-    uid: '@azure/arm-botservice.BotResponseList.flat_3'
-    package: '@azure/arm-botservice'
-    summary: >-
-      Returns a new array with all sub-array elements concatenated into it
-      recursively up to the
-
-      specified depth.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function flat<U>(this: U[][][][][], depth: 4): U[]'
-      parameters:
-        - id: this
-          type: 'U[][][][][]'
-          description: ''
-        - id: depth
-          type: '4'
-          description: |
-            The maximum recursion depth
-      return:
-        description: ''
-        type: 'U[]'
-  - name: 'flat<U>(U[][][][][][], 5)'
-    uid: '@azure/arm-botservice.BotResponseList.flat_2'
-    package: '@azure/arm-botservice'
-    summary: >-
-      Returns a new array with all sub-array elements concatenated into it
-      recursively up to the
-
-      specified depth.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function flat<U>(this: U[][][][][][], depth: 5): U[]'
-      parameters:
-        - id: this
-          type: 'U[][][][][][]'
-          description: ''
-        - id: depth
-          type: '5'
-          description: |
-            The maximum recursion depth
-      return:
-        description: ''
-        type: 'U[]'
-  - name: 'flat<U>(U[][][][][][][], 6)'
-    uid: '@azure/arm-botservice.BotResponseList.flat_1'
-    package: '@azure/arm-botservice'
-    summary: >-
-      Returns a new array with all sub-array elements concatenated into it
-      recursively up to the
-
-      specified depth.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function flat<U>(this: U[][][][][][][], depth: 6): U[]'
-      parameters:
-        - id: this
-          type: 'U[][][][][][][]'
-          description: ''
-        - id: depth
-          type: '6'
-          description: |
-            The maximum recursion depth
-      return:
-        description: ''
-        type: 'U[]'
-  - name: 'flat<U>(U[][][][][][][][], 7)'
-    uid: '@azure/arm-botservice.BotResponseList.flat'
-    package: '@azure/arm-botservice'
-    summary: >-
-      Returns a new array with all sub-array elements concatenated into it
-      recursively up to the
-
-      specified depth.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function flat<U>(this: U[][][][][][][][], depth: 7): U[]'
-      parameters:
-        - id: this
-          type: 'U[][][][][][][][]'
-          description: ''
-        - id: depth
-          type: '7'
-          description: |
-            The maximum recursion depth
-      return:
-        description: ''
-        type: 'U[]'
-  - name: >-
-      flatMap<U, This>((this: This, value: Bot, index: number, array: Bot[]) =>
-      U | ReadonlyArray<U>, This)
-    uid: '@azure/arm-botservice.BotResponseList.flatMap'
-    package: '@azure/arm-botservice'
-    summary: >-
-      Calls a defined callback function on each element of an array. Then,
-      flattens the result into
-
-      a new array.
-
-      This is identical to a map followed by flat with depth 1.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function flatMap<U, This>(callback: (this: This, value: Bot, index:
-        number, array: Bot[]) => U | ReadonlyArray<U>, thisArg?: This): U[]
-      parameters:
-        - id: callback
-          type: >-
-            (this: This, value: Bot, index: number, array: Bot[]) =&gt; U |
-            ReadonlyArray&lt;U&gt;
-          description: >-
-            A function that accepts up to three arguments. The flatMap method
-            calls the
-
-            callback function one time for each element in the array.
-        - id: thisArg
-          type: This
-          description: >
-            An object to which the this keyword can refer in the callback
-            function. If
-
-            thisArg is omitted, undefined is used as the this value.
-      return:
-        description: ''
-        type: 'U[]'
+    inheritanceDescription: <b>Inherited From</b> Array.findIndex
   - name: 'forEach((value: Bot, index: number, array: Bot[]) => void, any)'
     uid: '@azure/arm-botservice.BotResponseList.forEach'
     package: '@azure/arm-botservice'
     summary: Performs the specified action for each element in an array.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -646,37 +371,12 @@ inheritedMethods:
             An object to which the this keyword can refer in the callbackfn
             function. If thisArg is omitted, undefined is used as the this
             value.
-  - name: 'includes(Bot, undefined | number)'
-    uid: '@azure/arm-botservice.BotResponseList.includes'
-    package: '@azure/arm-botservice'
-    summary: >-
-      Determines whether an array includes a certain element, returning true or
-      false as appropriate.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        function includes(searchElement: Bot, fromIndex?: undefined | number):
-        boolean
-      parameters:
-        - id: searchElement
-          type: <xref uid="@azure/arm-botservice.Bot" />
-          description: The element to search for.
-        - id: fromIndex
-          type: undefined | number
-          description: >
-            The position in this array at which to begin searching for
-            searchElement.
-      return:
-        description: ''
-        type: boolean
+    inheritanceDescription: <b>Inherited From</b> Array.forEach
   - name: 'indexOf(Bot, undefined | number)'
     uid: '@azure/arm-botservice.BotResponseList.indexOf'
     package: '@azure/arm-botservice'
     summary: Returns the index of the first occurrence of a value in an array.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -694,6 +394,7 @@ inheritedMethods:
       return:
         description: ''
         type: number
+    inheritanceDescription: <b>Inherited From</b> Array.indexOf
   - name: join(undefined | string)
     uid: '@azure/arm-botservice.BotResponseList.join'
     package: '@azure/arm-botservice'
@@ -701,7 +402,6 @@ inheritedMethods:
       Adds all the elements of an array separated by the specified separator
       string.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function join(separator?: undefined | string): string'
@@ -715,24 +415,24 @@ inheritedMethods:
       return:
         description: ''
         type: string
+    inheritanceDescription: <b>Inherited From</b> Array.join
   - name: keys()
     uid: '@azure/arm-botservice.BotResponseList.keys'
     package: '@azure/arm-botservice'
     summary: Returns an iterable of keys in the array
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function keys(): IterableIterator<number>'
       return:
         description: ''
         type: IterableIterator&lt;number&gt;
+    inheritanceDescription: <b>Inherited From</b> Array.keys
   - name: 'lastIndexOf(Bot, undefined | number)'
     uid: '@azure/arm-botservice.BotResponseList.lastIndexOf'
     package: '@azure/arm-botservice'
     summary: Returns the index of the last occurrence of a specified value in an array.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -750,6 +450,7 @@ inheritedMethods:
       return:
         description: ''
         type: number
+    inheritanceDescription: <b>Inherited From</b> Array.lastIndexOf
   - name: 'map<U>((value: Bot, index: number, array: Bot[]) => U, any)'
     uid: '@azure/arm-botservice.BotResponseList.map'
     package: '@azure/arm-botservice'
@@ -757,7 +458,6 @@ inheritedMethods:
       Calls a defined callback function on each element of an array, and returns
       an array that contains the results.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -778,24 +478,24 @@ inheritedMethods:
       return:
         description: ''
         type: 'U[]'
+    inheritanceDescription: <b>Inherited From</b> Array.map
   - name: pop()
     uid: '@azure/arm-botservice.BotResponseList.pop'
     package: '@azure/arm-botservice'
     summary: Removes the last element from an array and returns it.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function pop(): Bot | undefined'
       return:
         description: ''
         type: <xref uid="@azure/arm-botservice.Bot" /> | undefined
+    inheritanceDescription: <b>Inherited From</b> Array.pop
   - name: 'push(Bot[])'
     uid: '@azure/arm-botservice.BotResponseList.push'
     package: '@azure/arm-botservice'
     summary: 'Appends new elements to an array, and returns the new length of the array.'
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function push(items: Bot[]): number'
@@ -807,6 +507,7 @@ inheritedMethods:
       return:
         description: ''
         type: number
+    inheritanceDescription: <b>Inherited From</b> Array.push
   - name: >-
       reduce((previousValue: Bot, currentValue: Bot, currentIndex: number,
       array: Bot[]) => Bot)
@@ -817,7 +518,6 @@ inheritedMethods:
       The return value of the callback function is the accumulated result, and
       is provided as an argument in the next call to the callback function.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -835,6 +535,7 @@ inheritedMethods:
       return:
         description: ''
         type: <xref uid="@azure/arm-botservice.Bot" />
+    inheritanceDescription: <b>Inherited From</b> Array.reduce
   - name: >-
       reduce((previousValue: Bot, currentValue: Bot, currentIndex: number,
       array: Bot[]) => Bot, Bot)
@@ -842,7 +543,6 @@ inheritedMethods:
     package: '@azure/arm-botservice'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -860,6 +560,7 @@ inheritedMethods:
       return:
         description: ''
         type: <xref uid="@azure/arm-botservice.Bot" />
+    inheritanceDescription: <b>Inherited From</b> Array.reduce
   - name: >-
       reduce<U>((previousValue: U, currentValue: Bot, currentIndex: number,
       array: Bot[]) => U, U)
@@ -870,7 +571,6 @@ inheritedMethods:
       The return value of the callback function is the accumulated result, and
       is provided as an argument in the next call to the callback function.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -894,6 +594,7 @@ inheritedMethods:
       return:
         description: ''
         type: U
+    inheritanceDescription: <b>Inherited From</b> Array.reduce
   - name: >-
       reduceRight((previousValue: Bot, currentValue: Bot, currentIndex: number,
       array: Bot[]) => Bot)
@@ -905,7 +606,6 @@ inheritedMethods:
       accumulated result, and is provided as an argument in the next call to the
       callback function.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -923,6 +623,7 @@ inheritedMethods:
       return:
         description: ''
         type: <xref uid="@azure/arm-botservice.Bot" />
+    inheritanceDescription: <b>Inherited From</b> Array.reduceRight
   - name: >-
       reduceRight((previousValue: Bot, currentValue: Bot, currentIndex: number,
       array: Bot[]) => Bot, Bot)
@@ -930,7 +631,6 @@ inheritedMethods:
     package: '@azure/arm-botservice'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -948,6 +648,7 @@ inheritedMethods:
       return:
         description: ''
         type: <xref uid="@azure/arm-botservice.Bot" />
+    inheritanceDescription: <b>Inherited From</b> Array.reduceRight
   - name: >-
       reduceRight<U>((previousValue: U, currentValue: Bot, currentIndex: number,
       array: Bot[]) => U, U)
@@ -959,7 +660,6 @@ inheritedMethods:
       accumulated result, and is provided as an argument in the next call to the
       callback function.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -983,36 +683,36 @@ inheritedMethods:
       return:
         description: ''
         type: U
+    inheritanceDescription: <b>Inherited From</b> Array.reduceRight
   - name: reverse()
     uid: '@azure/arm-botservice.BotResponseList.reverse'
     package: '@azure/arm-botservice'
     summary: Reverses the elements in an Array.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function reverse(): Bot[]'
       return:
         description: ''
         type: '<xref uid="@azure/arm-botservice.Bot" />[]'
+    inheritanceDescription: <b>Inherited From</b> Array.reverse
   - name: shift()
     uid: '@azure/arm-botservice.BotResponseList.shift'
     package: '@azure/arm-botservice'
     summary: Removes the first element from an array and returns it.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function shift(): Bot | undefined'
       return:
         description: ''
         type: <xref uid="@azure/arm-botservice.Bot" /> | undefined
+    inheritanceDescription: <b>Inherited From</b> Array.shift
   - name: 'slice(undefined | number, undefined | number)'
     uid: '@azure/arm-botservice.BotResponseList.slice'
     package: '@azure/arm-botservice'
     summary: Returns a section of an array.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1029,6 +729,7 @@ inheritedMethods:
       return:
         description: ''
         type: '<xref uid="@azure/arm-botservice.Bot" />[]'
+    inheritanceDescription: <b>Inherited From</b> Array.slice
   - name: 'some((value: Bot, index: number, array: Bot[]) => unknown, any)'
     uid: '@azure/arm-botservice.BotResponseList.some'
     package: '@azure/arm-botservice'
@@ -1036,7 +737,6 @@ inheritedMethods:
       Determines whether the specified callback function returns true for any
       element of an array.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1058,12 +758,12 @@ inheritedMethods:
       return:
         description: ''
         type: boolean
+    inheritanceDescription: <b>Inherited From</b> Array.some
   - name: 'sort(undefined | (a: Bot, b: Bot) => number)'
     uid: '@azure/arm-botservice.BotResponseList.sort'
     package: '@azure/arm-botservice'
     summary: Sorts an array.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function sort(compareFn?: undefined | (a: Bot, b: Bot) => number): this'
@@ -1077,6 +777,7 @@ inheritedMethods:
       return:
         description: ''
         type: this
+    inheritanceDescription: <b>Inherited From</b> Array.sort
   - name: 'splice(number, number, Bot[])'
     uid: '@azure/arm-botservice.BotResponseList.splice_1'
     package: '@azure/arm-botservice'
@@ -1084,7 +785,6 @@ inheritedMethods:
       Removes elements from an array and, if necessary, inserts new elements in
       their place, returning the deleted elements.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function splice(start: number, deleteCount: number, items: Bot[]): Bot[]'
@@ -1104,6 +804,7 @@ inheritedMethods:
       return:
         description: ''
         type: '<xref uid="@azure/arm-botservice.Bot" />[]'
+    inheritanceDescription: <b>Inherited From</b> Array.splice
   - name: 'splice(number, undefined | number)'
     uid: '@azure/arm-botservice.BotResponseList.splice'
     package: '@azure/arm-botservice'
@@ -1111,7 +812,6 @@ inheritedMethods:
       Removes elements from an array and, if necessary, inserts new elements in
       their place, returning the deleted elements.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function splice(start: number, deleteCount?: undefined | number): Bot[]'
@@ -1128,6 +828,7 @@ inheritedMethods:
       return:
         description: ''
         type: '<xref uid="@azure/arm-botservice.Bot" />[]'
+    inheritanceDescription: <b>Inherited From</b> Array.splice
   - name: toLocaleString()
     uid: '@azure/arm-botservice.BotResponseList.toLocaleString'
     package: '@azure/arm-botservice'
@@ -1135,31 +836,30 @@ inheritedMethods:
       Returns a string representation of an array. The elements are converted to
       string using their toLocalString methods.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function toLocaleString(): string'
       return:
         description: ''
         type: string
+    inheritanceDescription: <b>Inherited From</b> Array.toLocaleString
   - name: toString()
     uid: '@azure/arm-botservice.BotResponseList.toString'
     package: '@azure/arm-botservice'
     summary: Returns a string representation of an array.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function toString(): string'
       return:
         description: ''
         type: string
+    inheritanceDescription: <b>Inherited From</b> Array.toString
   - name: 'unshift(Bot[])'
     uid: '@azure/arm-botservice.BotResponseList.unshift'
     package: '@azure/arm-botservice'
     summary: Inserts new elements at the start of an array.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function unshift(items: Bot[]): number'
@@ -1171,16 +871,17 @@ inheritedMethods:
       return:
         description: ''
         type: number
+    inheritanceDescription: <b>Inherited From</b> Array.unshift
   - name: values()
     uid: '@azure/arm-botservice.BotResponseList.values'
     package: '@azure/arm-botservice'
     summary: Returns an iterable of values in the array
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function values(): IterableIterator<Bot>'
       return:
         description: ''
         type: IterableIterator&lt;<xref uid="@azure/arm-botservice.Bot" />&gt;
+    inheritanceDescription: <b>Inherited From</b> Array.values
 extends: Array&lt;<xref uid="@azure/arm-botservice.Bot" />&gt;

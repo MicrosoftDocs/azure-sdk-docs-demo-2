@@ -5,7 +5,6 @@ package: '@azure/storage-file-datalake'
 summary: ''
 fullName: FileFlushOptions
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -15,7 +14,6 @@ properties:
     summary: ''
     fullName: abortSignal
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'abortSignal?: AbortSignalLike'
@@ -28,7 +26,6 @@ properties:
     summary: ''
     fullName: close
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'close?: boolean'
@@ -41,20 +38,30 @@ properties:
     summary: ''
     fullName: conditions
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'conditions?: DataLakeRequestConditions'
       return:
         description: ''
         type: <xref uid="@azure/storage-file-datalake.DataLakeRequestConditions" />
+  - name: customerProvidedKey
+    uid: '@azure/storage-file-datalake.FileFlushOptions.customerProvidedKey'
+    package: '@azure/storage-file-datalake'
+    summary: Customer Provided Key Info.
+    fullName: customerProvidedKey
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'customerProvidedKey?: CpkInfo'
+      return:
+        description: ''
+        type: <xref uid="@azure/storage-file-datalake.CpkInfo" />
   - name: pathHttpHeaders
     uid: '@azure/storage-file-datalake.FileFlushOptions.pathHttpHeaders'
     package: '@azure/storage-file-datalake'
     summary: ''
     fullName: pathHttpHeaders
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'pathHttpHeaders?: PathHttpHeaders'
@@ -67,24 +74,26 @@ properties:
     summary: ''
     fullName: retainUncommittedData
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'retainUncommittedData?: boolean'
       return:
         description: ''
         type: boolean
+inheritedProperties:
   - name: tracingOptions
     uid: '@azure/storage-file-datalake.FileFlushOptions.tracingOptions'
     package: '@azure/storage-file-datalake'
     summary: Options to configure spans created when tracing is enabled.
     fullName: tracingOptions
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'tracingOptions?: OperationTracingOptions'
       return:
         description: ''
         type: OperationTracingOptions
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [CommonOptions.tracingOptions](xref:@azure/storage-file-datalake.CommonOptions.tracingOptions)
 extends: <xref uid="@azure/storage-file-datalake.CommonOptions" />

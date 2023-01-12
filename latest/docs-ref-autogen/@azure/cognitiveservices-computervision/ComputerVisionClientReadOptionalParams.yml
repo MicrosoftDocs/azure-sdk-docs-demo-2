@@ -5,40 +5,9 @@ package: '@azure/cognitiveservices-computervision'
 summary: Optional Parameters.
 fullName: ComputerVisionClientReadOptionalParams
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: abortSignal
-    uid: >-
-      @azure/cognitiveservices-computervision.ComputerVisionClientReadOptionalParams.abortSignal
-    package: '@azure/cognitiveservices-computervision'
-    summary: The signal which can be used to abort requests.
-    fullName: abortSignal
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'abortSignal?: AbortSignalLike'
-      return:
-        description: ''
-        type: AbortSignalLike
-  - name: customHeaders
-    uid: >-
-      @azure/cognitiveservices-computervision.ComputerVisionClientReadOptionalParams.customHeaders
-    package: '@azure/cognitiveservices-computervision'
-    summary: |-
-      {object} [customHeaders] User defined custom request headers that
-      will be applied before the request is sent.
-    fullName: customHeaders
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'customHeaders?: undefined | [key: string]: string'
-      return:
-        description: ''
-        type: 'undefined | [key: string]: string'
   - name: language
     uid: >-
       @azure/cognitiveservices-computervision.ComputerVisionClientReadOptionalParams.language
@@ -71,7 +40,6 @@ properties:
       'zh-Hant', 'zu'
     fullName: language
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'language?: OcrDetectionLanguage'
@@ -94,43 +62,12 @@ properties:
       'latest'.
     fullName: modelVersion
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'modelVersion?: undefined | string'
       return:
         description: ''
         type: undefined | string
-  - name: onDownloadProgress
-    uid: >-
-      @azure/cognitiveservices-computervision.ComputerVisionClientReadOptionalParams.onDownloadProgress
-    package: '@azure/cognitiveservices-computervision'
-    summary: Callback which fires upon download progress.
-    fullName: onDownloadProgress
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        onDownloadProgress?: undefined | (progress: TransferProgressEvent) =>
-        void
-      return:
-        description: ''
-        type: 'undefined | (progress: TransferProgressEvent) =&gt; void'
-  - name: onUploadProgress
-    uid: >-
-      @azure/cognitiveservices-computervision.ComputerVisionClientReadOptionalParams.onUploadProgress
-    package: '@azure/cognitiveservices-computervision'
-    summary: Callback which fires upon upload progress.
-    fullName: onUploadProgress
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'onUploadProgress?: undefined | (progress: TransferProgressEvent) => void'
-      return:
-        description: ''
-        type: 'undefined | (progress: TransferProgressEvent) =&gt; void'
   - name: pages
     uid: >-
       @azure/cognitiveservices-computervision.ComputerVisionClientReadOptionalParams.pages
@@ -145,7 +82,6 @@ properties:
       comma.
     fullName: pages
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'pages?: string[]'
@@ -166,13 +102,73 @@ properties:
       specified. Default value: 'basic'.
     fullName: readingOrder
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readingOrder?: undefined | string'
       return:
         description: ''
         type: undefined | string
+inheritedProperties:
+  - name: abortSignal
+    uid: >-
+      @azure/cognitiveservices-computervision.ComputerVisionClientReadOptionalParams.abortSignal
+    package: '@azure/cognitiveservices-computervision'
+    summary: The signal which can be used to abort requests.
+    fullName: abortSignal
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'abortSignal?: AbortSignalLike'
+      return:
+        description: ''
+        type: AbortSignalLike
+    inheritanceDescription: <b>Inherited From</b> RequestOptionsBase.abortSignal
+  - name: customHeaders
+    uid: >-
+      @azure/cognitiveservices-computervision.ComputerVisionClientReadOptionalParams.customHeaders
+    package: '@azure/cognitiveservices-computervision'
+    summary: |-
+      {object} [customHeaders] User defined custom request headers that
+      will be applied before the request is sent.
+    fullName: customHeaders
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'customHeaders?: undefined | [key: string]: string'
+      return:
+        description: ''
+        type: 'undefined | [key: string]: string'
+    inheritanceDescription: <b>Inherited From</b> RequestOptionsBase.customHeaders
+  - name: onDownloadProgress
+    uid: >-
+      @azure/cognitiveservices-computervision.ComputerVisionClientReadOptionalParams.onDownloadProgress
+    package: '@azure/cognitiveservices-computervision'
+    summary: Callback which fires upon download progress.
+    fullName: onDownloadProgress
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        onDownloadProgress?: undefined | (progress: TransferProgressEvent) =>
+        void
+      return:
+        description: ''
+        type: 'undefined | (progress: TransferProgressEvent) =&gt; void'
+    inheritanceDescription: <b>Inherited From</b> RequestOptionsBase.onDownloadProgress
+  - name: onUploadProgress
+    uid: >-
+      @azure/cognitiveservices-computervision.ComputerVisionClientReadOptionalParams.onUploadProgress
+    package: '@azure/cognitiveservices-computervision'
+    summary: Callback which fires upon upload progress.
+    fullName: onUploadProgress
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'onUploadProgress?: undefined | (progress: TransferProgressEvent) => void'
+      return:
+        description: ''
+        type: 'undefined | (progress: TransferProgressEvent) =&gt; void'
+    inheritanceDescription: <b>Inherited From</b> RequestOptionsBase.onUploadProgress
   - name: timeout
     uid: >-
       @azure/cognitiveservices-computervision.ComputerVisionClientReadOptionalParams.timeout
@@ -182,11 +178,11 @@ properties:
       terminated.
     fullName: timeout
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'timeout?: undefined | number'
       return:
         description: ''
         type: undefined | number
+    inheritanceDescription: <b>Inherited From</b> RequestOptionsBase.timeout
 extends: RequestOptionsBase

@@ -7,7 +7,6 @@ summary: >-
   <xref:@azure/storage-file-share.ShareFileClient.getRangeList> operation.
 fullName: FileGetRangeListOptions
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -22,7 +21,6 @@ properties:
       `AbortSignal`.
     fullName: abortSignal
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'abortSignal?: AbortSignalLike'
@@ -35,7 +33,6 @@ properties:
     summary: Lease access conditions.
     fullName: leaseAccessConditions
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'leaseAccessConditions?: LeaseAccessConditions'
@@ -50,24 +47,26 @@ properties:
       inclusively.
     fullName: range
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'range?: Range_2'
       return:
         description: ''
         type: <xref uid="@azure/storage-file-share.Range_2" />
+inheritedProperties:
   - name: tracingOptions
     uid: '@azure/storage-file-share.FileGetRangeListOptions.tracingOptions'
     package: '@azure/storage-file-share'
     summary: ''
     fullName: tracingOptions
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'tracingOptions?: OperationTracingOptions'
       return:
         description: ''
         type: OperationTracingOptions
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [CommonOptions.tracingOptions](xref:@azure/storage-file-share.CommonOptions.tracingOptions)
 extends: <xref uid="@azure/storage-file-share.CommonOptions" />

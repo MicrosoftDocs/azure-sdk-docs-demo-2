@@ -5,7 +5,6 @@ package: '@azure/service-bus'
 summary: A receiver that does not handle sessions.
 fullName: ServiceBusReceiver
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -15,10 +14,25 @@ properties:
     summary: Path of the entity for which the receiver has been created.
     fullName: entityPath
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'entityPath: string'
+      return:
+        description: ''
+        type: string
+  - name: identifier
+    uid: '@azure/service-bus.ServiceBusReceiver.identifier'
+    package: '@azure/service-bus'
+    summary: >-
+      A name used to identify the receiver. This can be used to correlate logs
+      and exceptions.
+
+      If not specified or empty, a random unique one will be generated.
+    fullName: identifier
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'identifier: string'
       return:
         description: ''
         type: string
@@ -30,7 +44,6 @@ properties:
       been closed.
     fullName: isClosed
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'isClosed: boolean'
@@ -43,7 +56,6 @@ properties:
     summary: The receive mode used to create the receiver.
     fullName: receiveMode
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'receiveMode: "peekLock" | "receiveAndDelete"'
@@ -51,7 +63,7 @@ properties:
         description: ''
         type: '"peekLock" | "receiveAndDelete"'
 methods:
-  - name: 'abandonMessage(ServiceBusReceivedMessage, [key: string]: any)'
+  - name: 'abandonMessage(ServiceBusReceivedMessage, [key: string]: function)'
     uid: '@azure/service-bus.ServiceBusReceiver.abandonMessage'
     package: '@azure/service-bus'
     summary: >-
@@ -60,18 +72,17 @@ methods:
 
       Service Bus for another receive operation.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
         function abandonMessage(message: ServiceBusReceivedMessage,
-        propertiesToModify?: [key: string]: any): Promise<void>
+        propertiesToModify?: [key: string]: function): Promise<void>
       parameters:
         - id: message
           type: <xref uid="@azure/service-bus.ServiceBusReceivedMessage" />
           description: ''
         - id: propertiesToModify
-          type: '[key: string]\: any'
+          type: '[key: string]\: function'
           description: >
             The properties of the message to modify while abandoning the
             message.
@@ -89,7 +100,6 @@ methods:
       Use the `createReceiver()` method on the ServiceBusClient to create a new
       Receiver.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function close(): Promise<void>'
@@ -101,7 +111,6 @@ methods:
     package: '@azure/service-bus'
     summary: Removes the message from Service Bus.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -116,7 +125,7 @@ methods:
         type: Promise&lt;void&gt;
   - name: >-
       deadLetterMessage(ServiceBusReceivedMessage, DeadLetterOptions & [key:
-      string]: any)
+      string]: function)
     uid: '@azure/service-bus.ServiceBusReceiver.deadLetterMessage'
     package: '@azure/service-bus'
     summary: >-
@@ -126,12 +135,11 @@ methods:
       QueueClient/SubscriptionClient using the path for the deadletter
       sub-queue.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
         function deadLetterMessage(message: ServiceBusReceivedMessage, options?:
-        DeadLetterOptions & [key: string]: any): Promise<void>
+        DeadLetterOptions & [key: string]: function): Promise<void>
       parameters:
         - id: message
           type: <xref uid="@azure/service-bus.ServiceBusReceivedMessage" />
@@ -139,14 +147,14 @@ methods:
         - id: options
           type: >-
             <xref uid="@azure/service-bus.DeadLetterOptions" /> & [key: string]:
-            any
+            function
           description: |
             The DeadLetter options that can be provided while
             rejecting the message.
       return:
         description: ''
         type: Promise&lt;void&gt;
-  - name: 'deferMessage(ServiceBusReceivedMessage, [key: string]: any)'
+  - name: 'deferMessage(ServiceBusReceivedMessage, [key: string]: function)'
     uid: '@azure/service-bus.ServiceBusReceiver.deferMessage'
     package: '@azure/service-bus'
     summary: >-
@@ -156,18 +164,17 @@ methods:
       receive it message again in the future using the `receiveDeferredMessage`
       method.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
         function deferMessage(message: ServiceBusReceivedMessage,
-        propertiesToModify?: [key: string]: any): Promise<void>
+        propertiesToModify?: [key: string]: function): Promise<void>
       parameters:
         - id: message
           type: <xref uid="@azure/service-bus.ServiceBusReceivedMessage" />
           description: ''
         - id: propertiesToModify
-          type: '[key: string]\: any'
+          type: '[key: string]\: function'
           description: |
             The properties of the message to modify while deferring the message
       return:
@@ -178,7 +185,6 @@ methods:
     package: '@azure/service-bus'
     summary: Returns an iterator that can be used to receive messages from Service Bus.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -214,7 +220,6 @@ methods:
 
       It cannot be `Completed/Abandoned/Deferred/Deadlettered`.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -237,22 +242,21 @@ methods:
         type: >-
           Promise&lt;<xref uid="@azure/service-bus.ServiceBusReceivedMessage"
           />[]&gt;
-  - name: 'receiveDeferredMessages(Long_2 | Long_2[], OperationOptionsBase)'
+  - name: 'receiveDeferredMessages(Long | Long[], OperationOptionsBase)'
     uid: '@azure/service-bus.ServiceBusReceiver.receiveDeferredMessages'
     package: '@azure/service-bus'
     summary: >-
       Returns a promise that resolves to an array of deferred messages
       identified by given `sequenceNumbers`.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        function receiveDeferredMessages(sequenceNumbers: Long_2 | Long_2[],
+        function receiveDeferredMessages(sequenceNumbers: Long | Long[],
         options?: OperationOptionsBase): Promise<ServiceBusReceivedMessage[]>
       parameters:
         - id: sequenceNumbers
-          type: 'Long_2 | Long_2[]'
+          type: 'Long | Long[]'
           description: >-
             The sequence number or an array of sequence numbers for the messages
             that need to be received.
@@ -273,7 +277,6 @@ methods:
       Returns a promise that resolves to an array of messages received from
       Service Bus.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -317,7 +320,6 @@ methods:
 
       receive operation.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -335,7 +337,6 @@ methods:
     package: '@azure/service-bus'
     summary: Streams messages to message handlers.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

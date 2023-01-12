@@ -5,7 +5,6 @@ package: '@azure/arm-appconfiguration'
 summary: The key-value resource along with all resource properties.
 fullName: KeyValue
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -16,12 +15,9 @@ properties:
       The content type of the key-value's value.
 
       Providing a proper content-type can enable transformations of values when
-      they are retrieved
-
-      by applications.
+      they are retrieved by applications.
     fullName: contentType
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'contentType?: undefined | string'
@@ -34,11 +30,10 @@ properties:
     summary: >-
       An ETag indicating the state of a key-value within a configuration store.
 
-      **NOTE: This property will not be serialized. It can only be populated by
-      the server.**
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
     fullName: eTag
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'eTag?: undefined | string'
@@ -51,11 +46,10 @@ properties:
     summary: >-
       The resource ID.
 
-      **NOTE: This property will not be serialized. It can only be populated by
-      the server.**
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
     fullName: id
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'id?: undefined | string'
@@ -70,11 +64,10 @@ properties:
 
       The key is used in unison with the label to uniquely identify a key-value.
 
-      **NOTE: This property will not be serialized. It can only be populated by
-      the server.**
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
     fullName: key
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'key?: undefined | string'
@@ -89,11 +82,10 @@ properties:
 
       The label is used in unison with the key to uniquely identify a key-value.
 
-      **NOTE: This property will not be serialized. It can only be populated by
-      the server.**
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
     fullName: label
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'label?: undefined | string'
@@ -106,11 +98,10 @@ properties:
     summary: >-
       The last time a modifying operation was performed on the given key-value.
 
-      **NOTE: This property will not be serialized. It can only be populated by
-      the server.**
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
     fullName: lastModified
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'lastModified?: Date'
@@ -125,11 +116,10 @@ properties:
 
       A locked key-value may not be modified until it is unlocked.
 
-      **NOTE: This property will not be serialized. It can only be populated by
-      the server.**
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
     fullName: locked
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'locked?: undefined | false | true'
@@ -142,11 +132,10 @@ properties:
     summary: >-
       The name of the resource.
 
-      **NOTE: This property will not be serialized. It can only be populated by
-      the server.**
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
     fullName: name
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'name?: undefined | string'
@@ -161,7 +150,6 @@ properties:
       applicable for.
     fullName: tags
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'tags?: undefined | [key: string]: string'
@@ -174,11 +162,10 @@ properties:
     summary: >-
       The type of the resource.
 
-      **NOTE: This property will not be serialized. It can only be populated by
-      the server.**
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
     fullName: type
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'type?: undefined | string'
@@ -191,11 +178,9 @@ properties:
     summary: The value of the key-value.
     fullName: value
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'value?: undefined | string'
       return:
         description: ''
         type: undefined | string
-extends: BaseResource

@@ -5,30 +5,15 @@ package: '@azure/arm-monitor'
 summary: Optional parameters.
 fullName: MetricsListOptionalParams
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: abortSignal
-    uid: '@azure/arm-monitor.MetricsListOptionalParams.abortSignal'
-    package: '@azure/arm-monitor'
-    summary: The signal which can be used to abort requests.
-    fullName: abortSignal
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'abortSignal?: AbortSignalLike'
-      return:
-        description: ''
-        type: AbortSignalLike
   - name: aggregation
     uid: '@azure/arm-monitor.MetricsListOptionalParams.aggregation'
     package: '@azure/arm-monitor'
     summary: The list of aggregation types (comma separated) to retrieve.
     fullName: aggregation
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'aggregation?: undefined | string'
@@ -56,7 +41,6 @@ properties:
       'dim3 %2528test%2529 val' "**
     fullName: filter
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'filter?: undefined | string'
@@ -69,7 +53,6 @@ properties:
     summary: The interval (i.e. timegrain) of the query.
     fullName: interval
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'interval?: undefined | string'
@@ -85,7 +68,6 @@ properties:
       'Metric,Name1' should be **'Metric%2Name1'**
     fullName: metricnames
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'metricnames?: undefined | string'
@@ -98,29 +80,12 @@ properties:
     summary: Metric namespace to query metric definitions for.
     fullName: metricnamespace
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'metricnamespace?: undefined | string'
       return:
         description: ''
         type: undefined | string
-  - name: onResponse
-    uid: '@azure/arm-monitor.MetricsListOptionalParams.onResponse'
-    package: '@azure/arm-monitor'
-    summary: |-
-      A function to be called each time a response is received from the server
-      while performing the requested operation.
-      May be called multiple times.
-    fullName: onResponse
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'onResponse?: RawResponseCallback'
-      return:
-        description: ''
-        type: RawResponseCallback
   - name: orderby
     uid: '@azure/arm-monitor.MetricsListOptionalParams.orderby'
     package: '@azure/arm-monitor'
@@ -130,26 +95,12 @@ properties:
       Examples: sum asc.
     fullName: orderby
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'orderby?: undefined | string'
       return:
         description: ''
         type: undefined | string
-  - name: requestOptions
-    uid: '@azure/arm-monitor.MetricsListOptionalParams.requestOptions'
-    package: '@azure/arm-monitor'
-    summary: Options used when creating and sending HTTP requests for this operation.
-    fullName: requestOptions
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'requestOptions?: OperationRequestOptions'
-      return:
-        description: ''
-        type: OperationRequestOptions
   - name: resultType
     uid: '@azure/arm-monitor.MetricsListOptionalParams.resultType'
     package: '@azure/arm-monitor'
@@ -158,26 +109,12 @@ properties:
       operation. See the operation's description for details.
     fullName: resultType
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'resultType?: ResultType'
       return:
         description: ''
         type: <xref uid="@azure/arm-monitor.ResultType" />
-  - name: serializerOptions
-    uid: '@azure/arm-monitor.MetricsListOptionalParams.serializerOptions'
-    package: '@azure/arm-monitor'
-    summary: Options to override serialization/de-serialization behavior.
-    fullName: serializerOptions
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'serializerOptions?: SerializerOptions'
-      return:
-        description: ''
-        type: SerializerOptions
   - name: timespan
     uid: '@azure/arm-monitor.MetricsListOptionalParams.timespan'
     package: '@azure/arm-monitor'
@@ -186,7 +123,6 @@ properties:
       'startDateTime_ISO/endDateTime_ISO'.
     fullName: timespan
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'timespan?: undefined | string'
@@ -202,24 +138,79 @@ properties:
       Defaults to 10.
     fullName: top
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'top?: undefined | number'
       return:
         description: ''
         type: undefined | number
+inheritedProperties:
+  - name: abortSignal
+    uid: '@azure/arm-monitor.MetricsListOptionalParams.abortSignal'
+    package: '@azure/arm-monitor'
+    summary: The signal which can be used to abort requests.
+    fullName: abortSignal
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'abortSignal?: AbortSignalLike'
+      return:
+        description: ''
+        type: AbortSignalLike
+    inheritanceDescription: <b>Inherited From</b> OperationOptions.abortSignal
+  - name: onResponse
+    uid: '@azure/arm-monitor.MetricsListOptionalParams.onResponse'
+    package: '@azure/arm-monitor'
+    summary: |-
+      A function to be called each time a response is received from the server
+      while performing the requested operation.
+      May be called multiple times.
+    fullName: onResponse
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'onResponse?: RawResponseCallback'
+      return:
+        description: ''
+        type: RawResponseCallback
+    inheritanceDescription: <b>Inherited From</b> OperationOptions.onResponse
+  - name: requestOptions
+    uid: '@azure/arm-monitor.MetricsListOptionalParams.requestOptions'
+    package: '@azure/arm-monitor'
+    summary: Options used when creating and sending HTTP requests for this operation.
+    fullName: requestOptions
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'requestOptions?: OperationRequestOptions'
+      return:
+        description: ''
+        type: OperationRequestOptions
+    inheritanceDescription: <b>Inherited From</b> OperationOptions.requestOptions
+  - name: serializerOptions
+    uid: '@azure/arm-monitor.MetricsListOptionalParams.serializerOptions'
+    package: '@azure/arm-monitor'
+    summary: Options to override serialization/de-serialization behavior.
+    fullName: serializerOptions
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'serializerOptions?: SerializerOptions'
+      return:
+        description: ''
+        type: SerializerOptions
+    inheritanceDescription: <b>Inherited From</b> OperationOptions.serializerOptions
   - name: tracingOptions
     uid: '@azure/arm-monitor.MetricsListOptionalParams.tracingOptions'
     package: '@azure/arm-monitor'
     summary: Options used when tracing is enabled.
     fullName: tracingOptions
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'tracingOptions?: OperationTracingOptions'
       return:
         description: ''
         type: OperationTracingOptions
+    inheritanceDescription: <b>Inherited From</b> OperationOptions.tracingOptions
 extends: OperationOptions

@@ -5,9 +5,12 @@ package: '@azure/arm-botservice'
 summary: Contains response data for the listServiceProviders operation.
 fullName: BotConnectionListServiceProvidersResponse
 remarks: ''
-isPreview: false
 isDeprecated: false
-syntax: >-
+syntax: >
   type BotConnectionListServiceProvidersResponse = ServiceProviderResponseList &
-  { _response: HttpResponse & { bodyAsText: string, parsedBody:
-  ServiceProviderResponseList } }
+  {
+    _response: HttpResponse & {
+      bodyAsText: string,
+      parsedBody: ServiceProviderResponseList,
+    },
+  }

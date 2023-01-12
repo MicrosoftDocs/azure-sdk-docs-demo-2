@@ -11,8 +11,14 @@ summary: >-
   'OnlineOnly', 'OutOfStock', 'PreOrder', 'SoldOut'
 fullName: ItemAvailability
 remarks: ''
-isPreview: false
 isDeprecated: false
-syntax: >-
-  type ItemAvailability = "Discontinued" | "InStock" | "InStoreOnly" |
-  "LimitedAvailability" | "OnlineOnly" | "OutOfStock" | "PreOrder" | "SoldOut"
+syntax: |
+  type ItemAvailability =
+    | "Discontinued"
+    | "InStock"
+    | "InStoreOnly"
+    | "LimitedAvailability"
+    | "OnlineOnly"
+    | "OutOfStock"
+    | "PreOrder"
+    | "SoldOut"

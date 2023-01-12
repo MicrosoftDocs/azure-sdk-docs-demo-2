@@ -5,7 +5,6 @@ package: '@azure/storage-file-datalake'
 summary: A DataLakeDirectoryClient represents a URL to the Azure Storage directory.
 fullName: DataLakeDirectoryClient
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -14,7 +13,6 @@ constructors:
     package: '@azure/storage-file-datalake'
     summary: Creates an instance of DataLakePathClient from url and pipeline.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'new DataLakeDirectoryClient(url: string, pipeline: Pipeline)'
@@ -38,7 +36,6 @@ constructors:
     package: '@azure/storage-file-datalake'
     summary: Creates an instance of DataLakePathClient from url and credential.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -69,48 +66,12 @@ constructors:
           description: |
             Optional. Options to configure the HTTP pipeline.
 properties:
-  - name: accountName
-    uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.accountName'
-    package: '@azure/storage-file-datalake'
-    summary: ''
-    fullName: accountName
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'accountName: string'
-      return:
-        description: ''
-        type: string
-  - name: credential
-    uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.credential'
-    package: '@azure/storage-file-datalake'
-    summary: >-
-      Such as AnonymousCredential, StorageSharedKeyCredential or any credential
-      from the `@azure/identity` package to authenticate requests to the
-      service. You can also provide an object that implements the
-      TokenCredential interface. If not specified, AnonymousCredential is used.
-    fullName: credential
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        credential: StorageSharedKeyCredential | AnonymousCredential |
-        TokenCredential
-      return:
-        description: ''
-        type: >-
-          <xref uid="@azure/storage-file-datalake.StorageSharedKeyCredential" />
-          | <xref uid="@azure/storage-file-datalake.AnonymousCredential" /> |
-          TokenCredential
   - name: fileSystemName
     uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.fileSystemName'
     package: '@azure/storage-file-datalake'
     summary: Name of current file system.
     fullName: fileSystemName
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: string fileSystemName
@@ -123,26 +84,67 @@ properties:
     summary: Name of current path (directory or file).
     fullName: name
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: string name
       return:
         description: ''
         type: string
+inheritedProperties:
+  - name: accountName
+    uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.accountName'
+    package: '@azure/storage-file-datalake'
+    summary: ''
+    fullName: accountName
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'accountName: string'
+      return:
+        description: ''
+        type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [StorageClient.accountName](xref:@azure/storage-file-datalake.StorageClient.accountName)
+  - name: credential
+    uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.credential'
+    package: '@azure/storage-file-datalake'
+    summary: >-
+      Such as AnonymousCredential, StorageSharedKeyCredential or any credential
+      from the `@azure/identity` package to authenticate requests to the
+      service. You can also provide an object that implements the
+      TokenCredential interface. If not specified, AnonymousCredential is used.
+    fullName: credential
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        credential: StorageSharedKeyCredential | AnonymousCredential |
+        TokenCredential
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/storage-file-datalake.StorageSharedKeyCredential" />
+          | <xref uid="@azure/storage-file-datalake.AnonymousCredential" /> |
+          TokenCredential
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [StorageClient.credential](xref:@azure/storage-file-datalake.StorageClient.credential)
   - name: url
     uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.url'
     package: '@azure/storage-file-datalake'
     summary: Encoded URL string value.
     fullName: url
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'url: string'
       return:
         description: ''
         type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [StorageClient.url](xref:@azure/storage-file-datalake.StorageClient.url)
 inheritedMethods:
   - name: 'delete(boolean, PathDeleteOptions)'
     uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.delete'
@@ -154,7 +156,6 @@ inheritedMethods:
       See
       https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/delete
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -175,6 +176,9 @@ inheritedMethods:
         type: >-
           Promise&lt;<xref uid="@azure/storage-file-datalake.PathDeleteResponse"
           />&gt;
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [DataLakePathClient.delete](xref:@azure/storage-file-datalake.DataLakePathClient.delete)
   - name: 'deleteIfExists(boolean, PathDeleteOptions)'
     uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.deleteIfExists'
     package: '@azure/storage-file-datalake'
@@ -185,7 +189,6 @@ inheritedMethods:
       See
       https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/delete
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -206,6 +209,9 @@ inheritedMethods:
         type: >-
           Promise&lt;<xref
           uid="@azure/storage-file-datalake.PathDeleteIfExistsResponse" />&gt;
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [DataLakePathClient.deleteIfExists](xref:@azure/storage-file-datalake.DataLakePathClient.deleteIfExists)
   - name: exists(PathExistsOptions)
     uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.exists'
     package: '@azure/storage-file-datalake'
@@ -221,7 +227,6 @@ inheritedMethods:
 
       function completes.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function exists(options?: PathExistsOptions): Promise<boolean>'
@@ -233,6 +238,9 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;boolean&gt;
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [DataLakePathClient.exists](xref:@azure/storage-file-datalake.DataLakePathClient.exists)
   - name: getAccessControl(PathGetAccessControlOptions)
     uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.getAccessControl'
     package: '@azure/storage-file-datalake'
@@ -243,7 +251,6 @@ inheritedMethods:
       See
       https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/getproperties
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -261,16 +268,17 @@ inheritedMethods:
         type: >-
           Promise&lt;<xref
           uid="@azure/storage-file-datalake.PathGetAccessControlResponse" />&gt;
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [DataLakePathClient.getAccessControl](xref:@azure/storage-file-datalake.DataLakePathClient.getAccessControl)
   - name: getDataLakeLeaseClient(string)
     uid: >-
       @azure/storage-file-datalake.DataLakeDirectoryClient.getDataLakeLeaseClient
     package: '@azure/storage-file-datalake'
     summary: >-
-      Get a
-      <xref:@azure/storage-file-datalake.DataLakeDirectoryClient.getDataLakeLeaseClient>
-      that manages leases on the path (directory or file).
+      Get a <xref:@azure/storage-file-datalake.DataLakeLeaseClient> that manages
+      leases on the path (directory or file).
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -284,6 +292,9 @@ inheritedMethods:
       return:
         description: ''
         type: <xref uid="@azure/storage-file-datalake.DataLakeLeaseClient" />
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [DataLakePathClient.getDataLakeLeaseClient](xref:@azure/storage-file-datalake.DataLakePathClient.getDataLakeLeaseClient)
   - name: getProperties(PathGetPropertiesOptions)
     uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.getProperties'
     package: '@azure/storage-file-datalake'
@@ -310,7 +321,6 @@ inheritedMethods:
       See
       https://docs.microsoft.com/en-us/rest/api/storageservices/get-blob-properties
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -326,6 +336,9 @@ inheritedMethods:
         type: >-
           Promise&lt;<xref
           uid="@azure/storage-file-datalake.PathGetPropertiesResponse" />&gt;
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [DataLakePathClient.getProperties](xref:@azure/storage-file-datalake.DataLakePathClient.getProperties)
   - name: 'move(string, PathMoveOptions)'
     uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.move'
     package: '@azure/storage-file-datalake'
@@ -336,7 +349,6 @@ inheritedMethods:
       See
       https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/create
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -358,6 +370,9 @@ inheritedMethods:
         type: >-
           Promise&lt;<xref uid="@azure/storage-file-datalake.PathMoveResponse"
           />&gt;
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [DataLakePathClient.move](xref:@azure/storage-file-datalake.DataLakePathClient.move)
   - name: 'move(string, string, PathMoveOptions)'
     uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.move_1'
     package: '@azure/storage-file-datalake'
@@ -368,7 +383,6 @@ inheritedMethods:
       See
       https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/create
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -393,6 +407,9 @@ inheritedMethods:
         type: >-
           Promise&lt;<xref uid="@azure/storage-file-datalake.PathMoveResponse"
           />&gt;
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [DataLakePathClient.move](xref:@azure/storage-file-datalake.DataLakePathClient.move)
   - name: >-
       removeAccessControlRecursive(RemovePathAccessControlItem[],
       PathChangeAccessControlRecursiveOptions)
@@ -406,7 +423,6 @@ inheritedMethods:
       See
       https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/update
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -433,6 +449,9 @@ inheritedMethods:
           Promise&lt;<xref
           uid="@azure/storage-file-datalake.PathChangeAccessControlRecursiveResponse"
           />&gt;
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [DataLakePathClient.removeAccessControlRecursive](xref:@azure/storage-file-datalake.DataLakePathClient.removeAccessControlRecursive)
   - name: 'setAccessControl(PathAccessControlItem[], PathSetAccessControlOptions)'
     uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.setAccessControl'
     package: '@azure/storage-file-datalake'
@@ -443,7 +462,6 @@ inheritedMethods:
       See
       https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/update
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -464,6 +482,9 @@ inheritedMethods:
         type: >-
           Promise&lt;<xref
           uid="@azure/storage-file-datalake.PathSetAccessControlResponse" />&gt;
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [DataLakePathClient.setAccessControl](xref:@azure/storage-file-datalake.DataLakePathClient.setAccessControl)
   - name: >-
       setAccessControlRecursive(PathAccessControlItem[],
       PathChangeAccessControlRecursiveOptions)
@@ -477,7 +498,6 @@ inheritedMethods:
       See
       https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/update
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -501,6 +521,9 @@ inheritedMethods:
           Promise&lt;<xref
           uid="@azure/storage-file-datalake.PathChangeAccessControlRecursiveResponse"
           />&gt;
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [DataLakePathClient.setAccessControlRecursive](xref:@azure/storage-file-datalake.DataLakePathClient.setAccessControlRecursive)
   - name: 'setHttpHeaders(PathHttpHeaders, PathSetHttpHeadersOptions)'
     uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.setHttpHeaders'
     package: '@azure/storage-file-datalake'
@@ -516,7 +539,6 @@ inheritedMethods:
       See
       https://docs.microsoft.com/en-us/rest/api/storageservices/set-blob-properties
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -537,6 +559,9 @@ inheritedMethods:
         type: >-
           Promise&lt;<xref
           uid="@azure/storage-file-datalake.PathSetHttpHeadersResponse" />&gt;
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [DataLakePathClient.setHttpHeaders](xref:@azure/storage-file-datalake.DataLakePathClient.setHttpHeaders)
   - name: 'setMetadata(Metadata, PathSetMetadataOptions)'
     uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.setMetadata'
     package: '@azure/storage-file-datalake'
@@ -553,7 +578,6 @@ inheritedMethods:
       See
       https://docs.microsoft.com/en-us/rest/api/storageservices/set-blob-metadata
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -574,6 +598,9 @@ inheritedMethods:
         type: >-
           Promise&lt;<xref
           uid="@azure/storage-file-datalake.PathSetMetadataResponse" />&gt;
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [DataLakePathClient.setMetadata](xref:@azure/storage-file-datalake.DataLakePathClient.setMetadata)
   - name: 'setPermissions(PathPermissions, PathSetPermissionsOptions)'
     uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.setPermissions'
     package: '@azure/storage-file-datalake'
@@ -584,7 +611,6 @@ inheritedMethods:
       See
       https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/update
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -607,6 +633,9 @@ inheritedMethods:
         type: >-
           Promise&lt;<xref
           uid="@azure/storage-file-datalake.PathSetAccessControlResponse" />&gt;
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [DataLakePathClient.setPermissions](xref:@azure/storage-file-datalake.DataLakePathClient.setPermissions)
   - name: toDirectoryClient()
     uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.toDirectoryClient'
     package: '@azure/storage-file-datalake'
@@ -614,13 +643,15 @@ inheritedMethods:
       Convert current DataLakePathClient to DataLakeDirectoryClient if current
       path is a directory.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function toDirectoryClient(): DataLakeDirectoryClient'
       return:
         description: ''
         type: <xref uid="@azure/storage-file-datalake.DataLakeDirectoryClient" />
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [DataLakePathClient.toDirectoryClient](xref:@azure/storage-file-datalake.DataLakePathClient.toDirectoryClient)
   - name: toFileClient()
     uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.toFileClient'
     package: '@azure/storage-file-datalake'
@@ -628,13 +659,15 @@ inheritedMethods:
       Convert current DataLakePathClient to DataLakeFileClient if current path
       is a file.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function toFileClient(): DataLakeFileClient'
       return:
         description: ''
         type: <xref uid="@azure/storage-file-datalake.DataLakeFileClient" />
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [DataLakePathClient.toFileClient](xref:@azure/storage-file-datalake.DataLakePathClient.toFileClient)
   - name: >-
       updateAccessControlRecursive(PathAccessControlItem[],
       PathChangeAccessControlRecursiveOptions)
@@ -648,7 +681,6 @@ inheritedMethods:
       See
       https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/update
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -672,6 +704,9 @@ inheritedMethods:
           Promise&lt;<xref
           uid="@azure/storage-file-datalake.PathChangeAccessControlRecursiveResponse"
           />&gt;
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [DataLakePathClient.updateAccessControlRecursive](xref:@azure/storage-file-datalake.DataLakePathClient.updateAccessControlRecursive)
 methods:
   - name: create(DirectoryCreateOptions)
     uid: '@azure/storage-file-datalake.DataLakeDirectoryClient.create_1'
@@ -683,7 +718,6 @@ methods:
       See
       https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/create
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -709,7 +743,6 @@ methods:
       See
       https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/create
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -738,7 +771,6 @@ methods:
       See
       https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/create
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -768,7 +800,6 @@ methods:
       See
       https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/create
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -808,7 +839,6 @@ methods:
       See
       https://docs.microsoft.com/en-us/rest/api/storageservices/constructing-a-service-sas
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -832,7 +862,6 @@ methods:
       Creates a <xref:@azure/storage-file-datalake.DataLakeFileClient> object
       under current directory.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getFileClient(fileName: string): DataLakeFileClient'
@@ -851,7 +880,6 @@ methods:
       Creates a <xref:@azure/storage-file-datalake.DataLakeDirectoryClient>
       object under current directory.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
